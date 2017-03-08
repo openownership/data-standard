@@ -1,3 +1,0 @@
-[submodule "docs/_static/docson"]
-	path = docs/_static/docson
-	url = https://github.com/lbovet/docson.git
