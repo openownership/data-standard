@@ -23,4 +23,27 @@ This section will be built out as the standard develops.
 
 ### Virtual Environment Set-up
 
+To set up a virtual environment for the project:
+
+```
+virtualenv -p python3 .ve
+source .ve/bin/activate
+pip install -r requirements.txt
+```
+
 ### Building the documentation
+
+```
+cd docs
+make html
+```
+
+To serve a copy of the docs locally:
+
+```
+cd docs
+python -m http.server 
+```
+
+And then access at http://localhost:8000/ 
+

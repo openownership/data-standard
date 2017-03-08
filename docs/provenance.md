@@ -1,5 +1,12 @@
 ## Provenance Information
 
+```eval_rst
+.. note:: 
+
+    This page provide work-in-progress background documentation on the provenance approach taken in the standard.
+
+```
+
 ### Design considerations
 
 It is important to have access to provenance information about each of the statements made as part of a beneficial ownership disclosure.
