@@ -1,0 +1,6 @@
+Field Name,Description,Format
+id, See `ID <#id>`__,Object
+date, See `StatementDate <#statementdate>`__,Object
+type,Type of qualification statement: ,string
+description,Description: A description of this qualification,string
+provenance,,

@@ -1,0 +1,4 @@
+Field Name,Description,Format
+id,ID: The identifier for this entity as provided in the declared scheme.,string
+scheme,"Scheme: For entity statements, the scheme should be a entry from the `org-id.guide <http://www.org-id.guide>`__ codelist. For person statements, recognised values include 'passport', 'internal' and 'id-card'.",string
+uri,URI: Where this identifier has a `canonical URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__ this may be included,uri string

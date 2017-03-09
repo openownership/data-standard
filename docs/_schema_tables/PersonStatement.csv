@@ -1,0 +1,14 @@
+Field Name,Description,Format
+id, See `ID <#id>`__,Object
+type,Type: The ultimate beneficial owner of a legal entity is always a natural person.,string
+date, See `StatementDate <#statementdate>`__,Object
+name,Name: The full name of this person.,string
+alternateNames,Alternate names: Other known names for this individual. See `AlternateName <#alternatename>`__ section for further details.,Object Array
+identifiers,"Identifiers: One or more official identifiers for this perrson. Where available, official registration numbers should be provided. See `Identifier <#identifier>`__ section for further details.",Object Array
+nationalities,Nationality: An array of ISO 2-Digit country codes representing nationalities held by this individual.,Array
+placeOfResidence, See `Address <#address>`__,Object
+placeOfBirth, See `Address <#address>`__,Object
+birthDate,"Created date: The date of birth for this individual. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",string
+deathDate,"End date: If this individual is no longer alive, provide their date of death. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",string
+addresses,Addresses: One or more addresses for this entity. See `Address <#address>`__ section for further details.,Object Array
+provenance,,

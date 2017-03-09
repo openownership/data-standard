@@ -13,3 +13,83 @@ The schema can be [accessed on GitHub](https://github.com/openownership/data-sta
 
 
 <script src="_static/docson/widget.js" data-schema="../beneficial-ownership-statements.json"></script>
+
+
+### Statement Groups
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/statementGroup.csv
+```
+
+
+### Statements
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/statements.csv
+```
+
+### Person Statement
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/PersonStatement.csv
+```
+
+### Entity Statement
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/EntityStatement.csv
+```
+
+### Qualification Statement
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/QualificationStatement.csv
+```
+
+### Address
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/Address.csv
+```
+
+### Identifier
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/Identifier.csv
+```
+
+### Alternate Name
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/AlternateName.csv
+```
+
+### Date
+
+
+### ID
+

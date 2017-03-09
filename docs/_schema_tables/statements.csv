@@ -1,0 +1,2 @@
+Field Name,Description,Format
+statements,"Beneficial ownership statements: A collection of statements that describe the relationship between legal entities or between legal entities and natural persons, or that explain the non-availability of this information. See `BeneficialOwnershipStatement <#beneficialownershipstatement>`__ section for further details.",Object Array
