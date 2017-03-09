@@ -1,3 +1,4 @@
 # sphinx build folder
 _build
 .ve
+node_modules
