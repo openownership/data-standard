@@ -51,4 +51,27 @@ For each source there will be at least one associated **agent** who was involved
 
 An source may, itself, be derived from some other source as it's input. For example, when a validation process draws upon documents orginally submitted by an individual.
 
+### Provenance block
 
+The provenance building block of the schema can be attached at the ```statementGroup```, ```beneficialOwnershipStatement``` or individual entity, person and qualification statement levels.
+
+Provenance statements can also be chained together using the ```derivedFrom``` property. 
+
+In PROV-DM terms, all the properties within a provenance block attach to the statement they are nested within (i.e. asserting that this statement ```wasAtributedTo``` or ```wasGeneratedBy```). 
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/Provenance.csv
+```
+
+```eval_rst
+
+.. note:: 
+    
+    How should applications interpret the nesting of provenance information?
+
+    For example: does a provenanceStatement attached to a statementGroup apply to all the statements within that group?
+
+```

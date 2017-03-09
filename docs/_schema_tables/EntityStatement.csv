@@ -1,6 +1,6 @@
 Field Name,Description,Format
 id, See `ID <#id>`__,Object
-type,"Type: What kind of entity is this? The 'registeredEntity' code covers any legal entity created through an act of official registration, usually resulting in an identifier being assigned to the entity. The 'arrangement' code covers artificial entities, described in the data model for the purpose of associating one or more natural or legal persons together in an ownership or control relationship.",string
+type,"Type: What kind of entity is this? The 'registeredEntity' code covers any legal entity created through an act of official registration, usually resulting in an identifier being assigned to the entity. The 'arrangement' code covers artificial entities, described in the data model for the purpose of associating one or more natural or legal persons together in an ownership or control relationship. List options: [ 'registeredEntity', 'arrangement' ]",string
 date, See `StatementDate <#statementdate>`__,Object
 name,Name: The declared name of this entity.,string
 jurisdiction,"Jurisdiction: The jurisdiction in which this entity is registered, expressed using an ISO ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code, where the sub-division in question (e.g. a sub-national state or region) has relevant jurisdiction over the registration of operation of this entity.",string
@@ -9,4 +9,5 @@ createdDate,"Created date: When was this entity first created or registered. Ple
 endDate,"End date: If this entity is no longer active, provide the date on which it ceased. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",string
 addresses,Addresses: One or more addresses for this entity. See `Address <#address>`__ section for further details.,Object Array
 uri,URI: Where a `persisten URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__ is available for this entity this should be included.,uri string
-provenance,,
+provenance, One of  `ProvenanceStatement <#provenancestatement>`__  or  `StatementReference <#statementreference>`__ ,
+replacesStatement, See `ReplacesStatement <#replacesstatement>`__,Object

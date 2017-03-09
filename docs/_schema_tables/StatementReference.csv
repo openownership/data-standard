@@ -1,0 +1,4 @@
+Field Name,Description,Format
+type,"Type: What type of statement is being referred to? List options: [ 'entityStatement', 'personStatement', 'provenanceStatement', 'qualificationStatement' ]",string
+id,ID: The identifier of the statement being referenced.,string
+uri,URI: A persistent URI for the statement being referenced.,uri string

@@ -1,26 +1,74 @@
 {
-  "id":"beneficial-ownership-statements.json",
+  "id": "beneficial-ownership-statements.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
     "statementGroups": {
       "title": "Statement group",
       "description": "A statement group is used to collect together statements relating to a particular disclosure, company or individual. Statement groups are a logical grouping designed to limit duplication of provenance information, and bring together statements that contain cross references. Where statements in a statementGroup cross-references to other statements, those statements MUST also be contained within the group.",
-      "type": "array",
-      "items": {
-          "title": "Statement group",
-          "type": "object",
-          "properties": {
-            "statements": {
-              "title": "Beneficial ownership statements",
-              "description": "A collection of statements that describe the relationship between legal entities or between legal entities and natural persons, or that explain the non-availability of this information.",
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/BeneficialOwnershipStatement"
-              }
-            }
+      "type": "object",
+      "required":["beneficialOwnershipStatements"],
+      "properties": {
+        "id": {
+          "title":"Statement group identifier",
+          "description":"An optional globally unique and persistent identifier for this statement group.",
+          "type":"string"
+        },
+        "beneficialOwnershipStatements": {
+          "title": "Beneficial ownership statements",
+          "description": "A collection of statements that describe the relationship between legal entities or between legal entities and natural persons, or that explain the non-availability of this information. Entity, person, qualification and provenance statements may be embeded within these statements, or provided in the neighbouring arrays and cross-referenced.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BeneficialOwnershipStatement"
           }
-        
+        },
+        "entityStatements": {
+          "title": "Entity statements",
+          "description": "A collection of statements that describe legal persons or arrangements. Cross-referenced within beneficial ownership statements.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EntityStatement"
+          }
+        },
+        "personStatements": {
+          "title": "Person statements",
+          "description": "A collection of statements that describe natural persons. Cross-referenced within beneficial ownership statements.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EntityStatement"
+          }
+        },
+        "qualificationStatements": {
+          "title": "Qualification statements",
+          "description": "A collection of statements that qualify a beneficial ownership statement. Cross-referenced within beneficial ownership statements.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/QualificationStatement"
+          }
+        },
+        "provenanceStatements": {
+          "title": "Provenance statements",
+          "description": "A collection of provenance statements.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProvenanceStatement"
+          }
+        },
+        "provenance": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/ProvenanceStatement"
+            },
+            {
+              "$ref": "#/definitions/StatementReference"
+            }
+          ]
+        },
+        "replacesStatementGroup":{
+          "title":"Replaces statement group",
+          "description":"If this statement group replaces all the statements from a previously published group, provide the globally unique identifier for the previous group here. Consuming applications are advised to mark all statements from the identified group as no longer active.",
+          "type":"string"
+        }
       }
     }
   },
@@ -72,7 +120,14 @@
           "description": "A qualification statement can be used to record any additional information about this Beneficial Ownership Statement, including information about any reasons non-disclosure of information.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/QualificationStatement"
+            "oneOf": [
+              {
+                "$ref": "#/definitions/QualificationStatement"
+              },
+              {
+                "$ref": "#/definitions/StatementReference"
+              }
+            ]
           }
         },
         "provenance": {
@@ -84,6 +139,9 @@
               "$ref": "#/definitions/StatementReference"
             }
           ]
+        },
+        "replacesStatement":{
+           "$ref":"#/definitions/ReplacesStatement"
         }
       }
     },
@@ -99,7 +157,8 @@
           "enum": [
             "entityStatement",
             "personStatement",
-            "provenanceStatement"
+            "provenanceStatement",
+            "qualificationStatement"
           ]
         },
         "id": {
@@ -190,6 +249,9 @@
               "$ref": "#/definitions/StatementReference"
             }
           ]
+        },
+        "replacesStatement":{
+           "$ref":"#/definitions/ReplacesStatement"
         }
       }
     },
@@ -278,6 +340,9 @@
               "$ref": "#/definitions/StatementReference"
             }
           ]
+        },
+        "replacesStatement":{
+           "$ref":"#/definitions/ReplacesStatement"
         }
       }
     },
@@ -289,7 +354,7 @@
         "id": {
           "$ref": "#/definitions/ID"
         },
-        "type:": {
+        "type": {
           "title": "Source type",
           "description": "What kind of source is this? [ToDo: Identify an appropriate codelist for this field]",
           "type": "string",
@@ -362,6 +427,9 @@
               "$ref": "#/definitions/StatementReference"
             }
           ]
+        },
+        "replacesStatement":{
+           "$ref":"#/definitions/ReplacesStatement"
         }
       }
     },
@@ -397,8 +465,16 @@
               "$ref": "#/definitions/StatementReference"
             }
           ]
+        },
+        "replacesStatement":{
+           "$ref":"#/definitions/ReplacesStatement"
         }
       }
+    },
+    "ReplacesStatement":{
+        "title":"Replaces statement",
+        "description":"If this statement replaces a previous statement, provide the globally unique identifier for the previous statement here. Consuming applications are advised to mark the identified statements as no longer active.",
+          "type":"string"
     },
     "Identifier": {
       "title": "Identifier",
@@ -493,7 +569,7 @@
           "type": "string"
         },
         "familyName": {
-          "title": "",
+          "title": "Family name",
           "description": "A family name is usually shared by members of a family. This attribute also carries prefixes or suffixes which are part of the Family Name, e.g. 'de Boer', 'van de Putte', 'von und zu Orlow'. Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single Family Name field so that, for example, Miguel de Cervantes Saavedra's Family Name would be recorded as 'Cervantes Saavedra.'",
           "type": "string"
         },
@@ -525,11 +601,15 @@
             "influence-or-control"
           ]
         },
-        "interestLevel":{
-          "title":"Interest level (direct/indirect?)",
-          "description":"Is this interest held directly or indirectly?",
-          "type":"string",
-          "enum":["direct","indirect","unknown"]
+        "interestLevel": {
+          "title": "Interest level",
+          "description": "Is this interest held directly or indirectly?",
+          "type": "string",
+          "enum": [
+            "direct",
+            "indirect",
+            "unknown"
+          ]
         },
         "details": {
           "title": "Details",
