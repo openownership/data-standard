@@ -39,10 +39,10 @@
         "entity": {
           "oneOf": [
             {
-              "$ref": "#/definitions/EntityStatement"
+              "$ref": "#/definitions/StatementReference"
             },
             {
-              "$ref": "#/definitions/StatementReference"
+              "$ref": "#/definitions/EntityStatement"
             }
           ]
         },

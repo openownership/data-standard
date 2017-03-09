@@ -2,6 +2,7 @@
 
 var program = require('commander');
 var jsf = require('json-schema-faker');
+var faker = require('faker');
 var schema
 
 program
@@ -29,15 +30,16 @@ jsf.option({
 });
 
 
-
 var modifySchema = function(schema) {
     var change_definition = function(def, prop) {
 
         delete def.title
         delete def.description
+    
         if (prop === 'id') {
             def['minLength'] = 20;
             def['type'] = 'string';
+            def['faker'] = 'random.uuid';
         }
         if (def.type === 'object') {
             modifySchema(def)

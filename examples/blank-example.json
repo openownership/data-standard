@@ -1,0 +1,100 @@
+{
+  "statementGroups": [
+    {
+      "statements": [
+        {
+          "id": "",
+          "date": "",
+          "entity": {
+            "addresses": [
+              {
+                "address": "",
+                "country": "",
+                "postalcode": "",
+                "type": ""
+              }
+            ],
+            "createdDate": "",
+            "endDate": "",
+            "id": "",
+            "identifiers": [
+              {
+                "id": "",
+                "scheme": "",
+                "uri": ""
+              }
+            ],
+            "jurisdiction": "",
+            "name": "",
+            "provenance": {
+              "id": "",
+              "type": "",
+              "uri": ""
+            },
+            "type": "",
+            "uri": ""
+          },
+          "interestedParty": {
+            "alternateNames": [
+              {
+                "familyName": "",
+                "fullName": "",
+                "givenName": "",
+                "patronymicName": "",
+                "type": ""
+              }
+            ],
+            "birthDate": "",
+            "deathDate": "",
+            "id": "",
+            "name": "",
+            "nationalities": [
+              "do"
+            ],
+            "provenance": {
+              "id": "",
+              "type": "",
+              "uri": ""
+            },
+            "type": ""
+          },
+          "interests": [
+            {
+              "details": "",
+              "endDate": "",
+              "share": {
+                "exact": 0,
+                "exclusiveMinimum": false,
+                "maximum": 0,
+                "minimum": 0
+              },
+              "startDate": "",
+              "type": ""
+            }
+          ],
+          "qualifications": [
+            {
+              "date": "",
+              "description": "",
+              "id": "",
+              "provenance": {
+                "attributedTo": {
+                  "name": "",
+                  "type": ""
+                },
+                "generatedBy": {
+                  "description": "",
+                  "type": ""
+                },
+                "id": "",
+                "primarySource": "",
+                "type:": ""
+              },
+              "type": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
