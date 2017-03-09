@@ -94,6 +94,12 @@ if __name__ == "__main__":
 
     make_definition_table(schema,join(file_path,"statements.csv"),what="properties",section="statementGroups/statements")
 
+    make_definition_table(schema,join(file_path,"BeneficialOwnershipStatement.csv"),what="definitions",section="BeneficialOwnershipStatement")
+
+    make_definition_table(schema,join(file_path,"Interest.csv"),what="definitions",section="Interest")
+
+    make_definition_table(schema,join(file_path,"Share.csv"),what="definitions",section="Interest/share")
+
     make_definition_table(schema,join(file_path,"EntityStatement.csv"),what="definitions",section="EntityStatement")
 
     make_definition_table(schema,join(file_path,"PersonStatement.csv"),what="definitions",section="PersonStatement")

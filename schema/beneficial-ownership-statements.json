@@ -5,7 +5,7 @@
   "properties": {
     "statementGroups": {
       "title": "Statement group",
-      "description": "A statement group is used to collect together statements relating to a particular disclosure.",
+      "description": "A statement group is used to collect together statements relating to a particular disclosure, company or individual. Statement groups are a logical grouping designed to limit duplication of provenance information, and bring together statements that contain cross references. Where statements in a statementGroup cross-references to other statements, those statements MUST also be contained within the group.",
       "type": "array",
       "items": {
           "title": "Statement group",
@@ -454,10 +454,10 @@
         },
         "address": {
           "title": "Address",
-          "description": "The address, with each line or component of the address separated by a line-break or comma. This field may also include the postalcode.",
+          "description": "The address, with each line or component of the address separated by a line-break or comma. This field may also include the postal code.",
           "type": "string"
         },
-        "postalcode": {
+        "postCode": {
           "title": "Postcode",
           "description": "The postal code for this address.",
           "type": "string"
@@ -519,15 +519,17 @@
           "description": "A codelist value indicating the nature of the interest.",
           "type": "string",
           "enum": [
-            "direct-shareholding",
-            "direct-voting-rights",
-            "direct-appointment-of-board",
-            "direct-influence",
-            "indirect-shareholding",
-            "indirect-voting-rights",
-            "indirect-appointment-of-board",
-            "indirect-influence"
+            "shareholding",
+            "voting-rights",
+            "appointment-of-board",
+            "influence-or-control"
           ]
+        },
+        "interestLevel":{
+          "title":"Interest level (direct/indirect?)",
+          "description":"Is this interest held directly or indirectly?",
+          "type":"string",
+          "enum":["direct","indirect","unknown"]
         },
         "details": {
           "title": "Details",
@@ -562,7 +564,13 @@
             },
             "exclusiveMinimum": {
               "title": "Exclusive minimum",
-              "description": "If exclusiveMinimum is true, then the share is at least greater than the minimum value given. E.g. if minimum is 25, the share is at least 25.1, and not simple 25.",
+              "description": "If exclusiveMinimum is true, then the share is at least greater than the minimum value given. E.g. if minimum is 25, the share is at least 25.1, and not simply 25.",
+              "type": "boolean",
+              "default": false
+            },
+            "exclusiveMaximum": {
+              "title": "Exclusive maximum",
+              "description": "If exclusiveMaximum is true, then the share is at least less than the maximum value given. E.g. if maximum is 50, the share is less than 49.999, and not simply 50.",
               "type": "boolean",
               "default": false
             }

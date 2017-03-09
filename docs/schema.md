@@ -24,15 +24,33 @@ The schema can be [accessed on GitHub](https://github.com/openownership/data-sta
    :file: docs/_schema_tables/statementGroup.csv
 ```
 
-
-### Statements
+### Beneficial Ownership Statement
 
 ```eval_rst
 .. csv-table::
    :header-rows: 1
    :widths: 20 65 15
-   :file: docs/_schema_tables/statements.csv
+   :file: docs/_schema_tables/BeneficialOwnershipStatement.csv
 ```
+
+#### Interest
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/Interest.csv
+```
+
+#### Share
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/Share.csv
+```
+
 
 ### Person Statement
 
