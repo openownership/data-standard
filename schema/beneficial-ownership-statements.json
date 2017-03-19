@@ -143,7 +143,8 @@
         "replacesStatement":{
            "$ref":"#/definitions/ReplacesStatement"
         }
-      }
+      },
+      "required": ["entity", "interestedParty"]
     },
     "StatementReference": {
       "title": "Statement reference",
