@@ -41,6 +41,24 @@ var modifySchema = function(schema) {
             def['type'] = 'string';
             def['faker'] = 'random.uuid';
         }
+        if (prop === 'jurisdiction' ||
+            prop === 'country' ||
+            prop === 'nationalities') {
+            def.faker = 'address.countryCode';
+        }
+        if (prop === 'address') {
+            def.faker = 'address.streetAddress';
+        }
+        if (prop === 'name') {
+            def.faker = 'company.companyName';
+        }
+        if (prop === 'postCode') {
+            def.faker = 'address.zipCode';
+        }
+        if (prop === 'fullName') {
+            def.faker = 'name.findName';
+        }
+
         if (def.type === 'object') {
             modifySchema(def)
         }
@@ -50,6 +68,7 @@ var modifySchema = function(schema) {
         if (def.format && def.format === 'uri') {
             def.format = 'URI'
         }
+        // generate blank data
         if (program.blank) {
           if (def.type === 'array') {
             def.minItems = 1
