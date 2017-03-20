@@ -3,13 +3,12 @@
 var program = require('commander');
 var jsf = require('json-schema-faker');
 var faker = require('faker');
-var schema
+var schema;
 
 program
     .option('-b --blank', 'Blank data')
+    .option('-c --crossref', 'Cross-referenced data')
     .parse(process.argv);
-
-
 
 var jsonschema = 
     JSON.parse(
@@ -19,8 +18,6 @@ var jsonschema =
                 '../beneficial-ownership-statements.json'),
             'utf8'));
 
-
-
 jsf.format('URI', function(gen, jsonschema) {
     return gen.randexp('^http://[A-Za-z0-9]+\\.com$');
 });
@@ -29,6 +26,18 @@ jsf.option({
     alwaysFakeOptionals: true
 });
 
+if (!program.crossref) {
+    console.log("Creating hierarchical data");
+    jsonschema.definitions.BeneficialOwnershipStatement.required = ["entity"];
+    jsonschema.definitions.BeneficialOwnershipStatement.anyOf = [
+        {"required": ["interestedParty"]},
+        {"required": ["qualifications"]}
+    ];
+    delete jsonschema.properties.statementGroups.properties.entityStatements;
+    delete jsonschema.properties.statementGroups.properties.personStatements;
+    delete jsonschema.properties.statementGroups.properties.qualificationStatements;
+    delete jsonschema.properties.statementGroups.properties.provenanceStatements;
+}
 
 var modifySchema = function(schema) {
     var change_definition = function(def, prop) {
