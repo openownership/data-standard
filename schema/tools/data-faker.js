@@ -27,7 +27,6 @@ jsf.option({
 });
 
 if (!program.crossref) {
-    console.log("Creating hierarchical data");
     jsonschema.definitions.BeneficialOwnershipStatement.required = ["entity"];
     jsonschema.definitions.BeneficialOwnershipStatement.anyOf = [
         {"required": ["interestedParty"]},
