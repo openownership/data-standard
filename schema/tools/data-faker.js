@@ -26,16 +26,41 @@ jsf.option({
     alwaysFakeOptionals: true
 });
 
+var beneficialOwnershipStatement = jsonschema.definitions.BeneficialOwnershipStatement;
+var statementGroups = jsonschema.properties.statementGroups;
+
 if (!program.crossref) {
-    jsonschema.definitions.BeneficialOwnershipStatement.required = ["entity"];
-    jsonschema.definitions.BeneficialOwnershipStatement.anyOf = [
+    // adjust schema for nested publication
+    beneficialOwnershipStatement.required = ["entity"];
+    beneficialOwnershipStatement.anyOf = [
         {"required": ["interestedParty"]},
         {"required": ["qualifications"]}
     ];
-    delete jsonschema.properties.statementGroups.properties.entityStatements;
-    delete jsonschema.properties.statementGroups.properties.personStatements;
-    delete jsonschema.properties.statementGroups.properties.qualificationStatements;
-    delete jsonschema.properties.statementGroups.properties.provenanceStatements;
+    // replace StatementReference from oneOf in nested properties
+    beneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatement"};
+    beneficialOwnershipStatement.properties.interestedParty = {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/EntityStatement"
+            },
+            {
+              "$ref": "#/definitions/PersonStatement"
+            }
+          ]
+        };
+    beneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatement"};
+    beneficialOwnershipStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
+    // remove arrays of top-level statements for cross-ref publication
+    delete statementGroups.properties.entityStatements;
+    delete statementGroups.properties.personStatements;
+    delete statementGroups.properties.qualificationStatements;
+    delete statementGroups.properties.provenanceStatements;
+}
+else {
+    // adjust schema for cross-referenced publication
+    jsonschema.definitions
+        .BeneficialOwnershipStatement
+        .properties.entity = {"$ref": "#/definitions/StatementReference"};
 }
 
 var modifySchema = function(schema) {
@@ -57,6 +82,7 @@ var modifySchema = function(schema) {
         if (prop === 'address') {
             def.faker = 'address.streetAddress';
         }
+        // conflating natural person and company names
         if (prop === 'name') {
             def.faker = 'company.companyName';
         }
@@ -65,6 +91,9 @@ var modifySchema = function(schema) {
         }
         if (prop === 'fullName') {
             def.faker = 'name.findName';
+        }
+        if (prop === 'startDate' || prop === 'endDate') {
+            def.format = 'date-time';
         }
 
         if (def.type === 'object') {
