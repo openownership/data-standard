@@ -8,6 +8,7 @@ var schema;
 program
     .option('-b --blank', 'Blank data')
     .option('-c --crossref', 'Cross-referenced data')
+    .option('-d --debugschema', 'Output modified schema')
     .parse(process.argv);
 
 var jsonschema = 
@@ -147,3 +148,12 @@ var modifySchema = function(schema) {
 jsonschema = modifySchema(jsonschema);
 sample = jsf(jsonschema);
 console.log(JSON.stringify(sample, null, 2))
+if (program.debugschema) {
+    console.log(JSON.stringify(jsonschema, null, 2));
+}
+else {
+    sample = jsf(jsonschema);
+    console.log(JSON.stringify(sample, null, 2));
+}
+
+

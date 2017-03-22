@@ -27,3 +27,9 @@ To generate a datafile with all the fields blank:
 ```
 node data-faker.js -b > myblankdatafile.json
 ```
+
+The fake data generator alters the schema, and uses data types from JSON Schema Faker, to create realistic-looking data. To generate a file with this altered schema, run:
+
+```
+node data-faker.js -d > alteredschema.json
+```  
