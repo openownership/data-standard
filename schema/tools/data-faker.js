@@ -34,6 +34,33 @@ jsf.option({
     alwaysFakeOptionals: true
 });
 
+
+
+// add common definitions for faker formats
+// patch in company and natural person names
+jsonschema.definitions.PersonName = schemapatches.definitions.PersonName;
+jsonschema.definitions.PersonStatement.properties.name = {"$ref": "#/definitions/PersonName"};
+jsonschema.definitions.CompanyName = schemapatches.definitions.CompanyName;
+jsonschema.definitions.EntityStatement.properties.name = {"$ref": "#/definitions/CompanyName"};
+
+// patch in identifiers - missing software agents
+jsonschema.definitions.PersonIdentifier = schemapatches.definitions.PersonIdentifier;
+jsonschema.definitions.CompanyIdentifier =   schemapatches.definitions.CompanyIdentifier;
+jsonschema.definitions.EntityStatement.properties.identifiers = {"type": "array",
+"items": {"$ref": "#/definitions/CompanyIdentifier"}};
+jsonschema.definitions.PersonStatement.properties.identifiers = {"type": "array",
+"items": {"$ref": "#definitions/PersonIdentifier"}};
+
+//patch in fuzzy dates
+jsonschema.definitions.FuzzyDate = schemapatches.definitions.FuzzyDate;
+jsonschema.definitions.PersonStatement.properties.birthDate = {"$ref": "#/definitions/FuzzyDate"};
+jsonschema.definitions.PersonStatement.properties.deathDate = {"$ref": "#/definitions/FuzzyDate"};
+jsonschema.definitions.EntityStatement.properties.createdDate = {"$ref": "#/definitions/FuzzyDate"};
+jsonschema.definitions.EntityStatement.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
+jsonschema.definitions.Interest.properties.startDate = {"$ref": "#/definitions/FuzzyDate"};
+jsonschema.definitions.Interest.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
+
+
 var beneficialOwnershipStatement = jsonschema.definitions.BeneficialOwnershipStatement;
 var statementGroups = jsonschema.properties.statementGroups;
 
@@ -58,18 +85,28 @@ if (!program.crossref) {
         };
     beneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatement"};
     beneficialOwnershipStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
+    jsonschema.definitions.PersonStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
+    jsonschema.definitions.EntityStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
+    jsonschema.definitions.QualificationStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
+
+
     // remove arrays of top-level statements for cross-ref publication
     delete statementGroups.properties.entityStatements;
     delete statementGroups.properties.personStatements;
     delete statementGroups.properties.qualificationStatements;
     delete statementGroups.properties.provenanceStatements;
+    // adjust provenance types and names
+    jsonschema.definitions.ProvenanceStatement.required = ["attributedTo", "id"];
+    // patch in attributedTo, with oneOf constraint
+    jsonschema.definitions.ProvenanceStatement.properties.attributedTo = schemapatches.definitions.attributedTo;
+
 }
 else {
     // adjust schema for cross-referenced publication
     jsonschema.definitions
         .BeneficialOwnershipStatement
         .properties.entity = {"$ref": "#/definitions/StatementReference"};
-}
+};
 
 var modifySchema = function(schema) {
     var change_definition = function(def, prop) {
@@ -90,20 +127,13 @@ var modifySchema = function(schema) {
         if (prop === 'address') {
             def.faker = 'address.streetAddress';
         }
-        // conflating natural person and company names
-        if (prop === 'name') {
-            def.faker = 'company.companyName';
-        }
+
         if (prop === 'postCode') {
             def.faker = 'address.zipCode';
         }
         if (prop === 'fullName') {
             def.faker = 'name.findName';
         }
-        if (prop === 'startDate' || prop === 'endDate') {
-            def.format = 'date-time';
-        }
-
         if (def.type === 'object') {
             modifySchema(def)
         }
@@ -113,6 +143,7 @@ var modifySchema = function(schema) {
         if (def.format && def.format === 'uri') {
             def.format = 'URI'
         }
+
         // generate blank data
         if (program.blank) {
           if (def.type === 'array') {
@@ -153,8 +184,7 @@ var modifySchema = function(schema) {
 }
 
 jsonschema = modifySchema(jsonschema);
-sample = jsf(jsonschema);
-console.log(JSON.stringify(sample, null, 2))
+
 if (program.debugschema) {
     console.log(JSON.stringify(jsonschema, null, 2));
 }
