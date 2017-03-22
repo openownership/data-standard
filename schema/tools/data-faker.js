@@ -120,10 +120,14 @@ var modifySchema = function(schema) {
             def['faker'] = 'random.uuid';
         }
         if (prop === 'jurisdiction' ||
-            prop === 'country' ||
-            prop === 'nationalities') {
+            prop === 'country')  {
             def.faker = 'address.countryCode';
         }
+
+        if (prop === 'nationalities') {
+            def.items.faker = 'address.countryCode'
+        }
+
         if (prop === 'address') {
             def.faker = 'address.streetAddress';
         }
