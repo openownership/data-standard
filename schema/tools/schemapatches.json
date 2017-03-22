@@ -1,0 +1,115 @@
+{
+   "id":"schemapatches.json",
+   "definitions":{
+      "FuzzyDate":{
+         "oneOf":[
+            {
+               "type":"string",
+               "format":"date-time"
+            },
+            {
+               "type":"string",
+               "pattern":"^([12]{1})\\d{3}|^([12]{1})\\d{3}\\-(0[1-9]|1[012])|^([12]{1})\\d{3}\\-(0[1-9]|1[012])\\-(0[1-9]|[12][0-9]|3[01])$"
+            }
+         ]
+      },
+      "CompanyIdentifier":{
+         "type":"object",
+         "properties":{
+            "id":{
+               "type":"string"
+            },
+            "scheme":{
+               "enum":[
+                  "GB-COH",
+                  "GB-VAT",
+                  "MISC-NEWPUB"
+               ],
+               "uri":{
+                  "type":"string",
+                  "format":"uri"
+               }
+            }
+         }
+      },
+      "PersonIdentifier":
+        {"type": "object",
+            "properties":{
+                "id": {
+                    "type" : "string"
+                },
+                "scheme":{
+                     "enum" : [
+                        "PASSPORT-AF",
+                        "PASSPORT-GB"
+                    ],
+                     "uri" : {
+                        "type" : "string", "format" : "uri"
+                    }
+                }
+            }
+        },
+        "attributedTo" :{
+            "type": "object",
+            "oneOf": [
+            {
+              "properties": {
+                "type": {
+                  "title": "Type",
+                  "description": "What type of agent is this?",
+                  "type": "string",
+                  "enum": [
+                    "Person"
+                  ]
+                },
+                "name": {
+                  "$ref": "#/definitions/PersonName"
+                },
+                "identifier": {
+                  "$ref": "#/definitions/PersonIdentifier"
+                }
+              },
+              "required": [
+                "type",
+                "name",
+                "identifier"
+              ]
+            },
+            {
+              "properties": {
+                "type": {
+                  "title": "Type",
+                  "description": "What type of agent is this?",
+                  "type": "string",
+                  "enum": [
+                    "Organization"
+                  ]
+                },
+                "name": {
+                  "$ref": "#/definitions/CompanyName"
+                },
+                "identifier": {
+                  "$ref": "#/definitions/CompanyIdentifier"
+                }
+              },
+              "required": [
+                "type",
+                "name",
+                "identifier"
+              ]
+            }
+          ]
+        },
+        "PersonName": {
+            "type": "string",
+            "faker": "name.findName"
+        },
+        "CompanyName": {
+            "type": "string",
+            "faker": "company.companyName"
+        }
+    }
+}
+
+
+

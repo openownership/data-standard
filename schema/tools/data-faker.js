@@ -19,6 +19,13 @@ var jsonschema =
                 '../beneficial-ownership-statements.json'),
             'utf8'));
 
+var schemapatches = 
+    JSON.parse(require('fs').readFileSync(
+        require('path').resolve(
+            __dirname,
+        'schemapatches.json'),
+    'utf8'));
+
 jsf.format('URI', function(gen, jsonschema) {
     return gen.randexp('^http://[A-Za-z0-9]+\\.com$');
 });
