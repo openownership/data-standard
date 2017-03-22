@@ -59,13 +59,13 @@ Where the publisher is providing an internal identifier, the publisher should ei
 
 The values for scheme within a person statement should be based on the following pattern:
 
-{TYPE}-{JURISDICTION}
+{JURISDICTION}-{TYPE}
 
-Where jurisdiction is expressed using ISO 2-digit country codes. 
+Where jurisdiction is expressed using thee extended ISO 3-digit country codes list proposed by in [ICAO Document 9303 §5](http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf) (pages 22-29).
 
 For example, a passport number from Afghanistan would have the scheme:
 
-> PASSPORT-AF
+> AFG-PASSPORT-{NUMBER}
 
 Where the publisher is providing an internal identifier, these should use 'MISC-{Publisher_Name}' as the scheme.
 
