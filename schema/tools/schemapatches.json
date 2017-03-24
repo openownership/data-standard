@@ -107,7 +107,60 @@
         "CompanyName": {
             "type": "string",
             "faker": "company.companyName"
-        }
+        },
+        "StatementReference": {
+          "type": "object",
+          "required": ["id", "uri"],
+          "properties": {
+            "id": {
+              "title": "ID",
+              "description": "The identifier of the statement being referenced.",
+              "type": "string"
+            },
+            "uri": {
+              "title": "URI",
+              "description": "A persistent URI for the statement being referenced.",
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+       "EntityStatementReference": {
+        "allOf": [
+          { "$ref": "#/definitions/StatementReference" },
+          { "properties":
+            { "type": { "enum": [ "entityStatement" ] } },
+            "required": ["type"]
+          }
+        ]
+      },
+      "PersonStatementReference": {
+        "allOf": [
+          { "$ref": "#/definitions/StatementReference" },
+          { "properties":
+            { "type": { "enum": [ "personStatement" ] } },
+            "required": ["type"]
+          }
+        ]
+      },
+      "ProvenanceStatementReference": {
+        "allOf": [
+          { "$ref": "#/definitions/StatementReference" },
+          { "properties":
+            { "type": { "enum": [ "provenanceStatement" ] } },
+            "required": ["type"]
+          }
+        ]
+      },
+       "QualificationStatementReference": {
+        "allOf": [
+          { "$ref": "#/definitions/StatementReference" },
+          { "properties":
+            { "type": { "enum": [ "qualificationStatement" ] } },
+            "required": ["type"]
+          }
+        ]
+      }
     }
 }
 

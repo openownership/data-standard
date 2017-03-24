@@ -102,10 +102,26 @@ if (!program.crossref) {
 
 }
 else {
-    // adjust schema for cross-referenced publication
-    jsonschema.definitions
-        .BeneficialOwnershipStatement
-        .properties.entity = {"$ref": "#/definitions/StatementReference"};
+    // patch in statement references
+    jsonschema.definitions.StatementReference = schemapatches.definitions.StatementReference;
+    jsonschema.definitions.EntityStatementReference = schemapatches.definitions.EntityStatementReference;
+    jsonschema.definitions.PersonStatementReference = schemapatches.definitions.PersonStatementReference;
+    jsonschema.definitions.QualificationStatementReference = schemapatches.definitions.QualificationStatementReference;
+    jsonschema.definitions.ProvenanceStatementReference = schemapatches.definitions.ProvenanceStatementReference;
+    
+    beneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatementReference"};
+    beneficialOwnershipStatement.properties.interestedParty = {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/EntityStatementReference"
+            },
+            {
+              "$ref": "#/definitions/PersonStatementReference"
+            }
+          ]
+        };
+    beneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatementReference"};
+    beneficialOwnershipStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatementReference"};
 };
 
 var modifySchema = function(schema) {
