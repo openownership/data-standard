@@ -55,8 +55,8 @@ jsonschema.definitions.PersonStatement.properties.identifiers = {"type": "array"
 jsonschema.definitions.FuzzyDate = schemapatches.definitions.FuzzyDate;
 jsonschema.definitions.PersonStatement.properties.birthDate = {"$ref": "#/definitions/FuzzyDate"};
 jsonschema.definitions.PersonStatement.properties.deathDate = {"$ref": "#/definitions/FuzzyDate"};
-jsonschema.definitions.EntityStatement.properties.createdDate = {"$ref": "#/definitions/FuzzyDate"};
-jsonschema.definitions.EntityStatement.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
+jsonschema.definitions.EntityStatement.properties.foundingDate = {"$ref": "#/definitions/FuzzyDate"};
+jsonschema.definitions.EntityStatement.properties.dissolutionDate = {"$ref": "#/definitions/FuzzyDate"};
 jsonschema.definitions.Interest.properties.startDate = {"$ref": "#/definitions/FuzzyDate"};
 jsonschema.definitions.Interest.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
 
@@ -68,8 +68,9 @@ if (!program.crossref) {
     // adjust schema for nested publication
     beneficialOwnershipStatement.required = ["entity"];
     beneficialOwnershipStatement.anyOf = [
-        {"required": ["interestedParty"]},
-        {"required": ["qualifications"]}
+        {"required": ["interestedParty"]}
+    //    {"required": ["interestedParty"]},
+    //    {"required": ["qualifications"]}
     ];
     // replace StatementReference from oneOf in nested properties
     beneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatement"};
@@ -83,17 +84,17 @@ if (!program.crossref) {
             }
           ]
         };
-    beneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatement"};
+    // beneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatement"};
     beneficialOwnershipStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
     jsonschema.definitions.PersonStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
     jsonschema.definitions.EntityStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
-    jsonschema.definitions.QualificationStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
+    //jsonschema.definitions.QualificationStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
 
 
     // remove arrays of top-level statements for cross-ref publication
     delete statementGroups.properties.entityStatements;
     delete statementGroups.properties.personStatements;
-    delete statementGroups.properties.qualificationStatements;
+    // delete statementGroups.properties.qualificationStatements;
     delete statementGroups.properties.provenanceStatements;
     // adjust provenance types and names
     jsonschema.definitions.ProvenanceStatement.required = ["attributedTo", "id"];
@@ -129,7 +130,7 @@ else {
             }
           ]
         };
-    beneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatementReference"};
+    // beneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatementReference"};
     beneficialOwnershipStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatementReference"};
 };
 

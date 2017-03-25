@@ -17,6 +17,6 @@ Publishers providing additional properties in their implementations are encourag
 
 ## Validation
 
-There is no public validator available for the beta release. 
+No public validator available for the beta release is currently available.
 
 The current schema includes minimal validation requirements, and should be treated as a guide to data structure, rather than a full validation schema. 

@@ -59,7 +59,7 @@ We model information on beneficial ownership in terms of a collection of stateme
 
 It is up to data consumers to decide which statements to trust, and to reconcile the identity of the entities and persons described in those statements based on the identifying information contained within each statement. 
 
-![Conceptual Model](https://cloud.githubusercontent.com/assets/342624/22198388/3defb136-e14e-11e6-8da5-82ab84a8529d.png)
+![Conceptual Model](https://cloud.githubusercontent.com/assets/342624/24324778/3b714986-1184-11e7-9c24-c0b5a7dcdd8e.png)
 
 This abstraction is important to represent the reality of how data is provided, to support integration of data from different systems and [bi-temporal modelling](https://en.wikipedia.org/wiki/Bitemporal_Modeling), and to recognise that any dataset may contain overlapping or conflicting claims about ownership and control that need to be resolved in application specific ways. 
 
