@@ -34,7 +34,7 @@ jsf.option({
     alwaysFakeOptionals: true
 });
 
-
+var minBeneficialOwnershipStatements = 1;
 
 // add common definitions for faker formats
 // patch in company and natural person names
@@ -102,6 +102,15 @@ if (!program.crossref) {
 
 }
 else {
+      var flat_arrays = ["qualificationStatements", "entityStatements",
+                   "personStatements", "provenanceStatements"];
+
+    statementGroups.required = flat_arrays; 
+    beneficialOwnershipStatement.required = ["entity"];
+    beneficialOwnershipStatement.anyOf = [
+        {"required": ["interestedParty"]},
+        {"required": ["qualifications"]}
+    ];
     // patch in statement references
     jsonschema.definitions.StatementReference = schemapatches.definitions.StatementReference;
     jsonschema.definitions.EntityStatementReference = schemapatches.definitions.EntityStatementReference;
@@ -202,15 +211,87 @@ var modifySchema = function(schema) {
 
     return schema
 }
-
 jsonschema = modifySchema(jsonschema);
 
-if (program.debugschema) {
-    console.log(JSON.stringify(jsonschema, null, 2));
-}
-else {
+
+if (program.crossref) {
     sample = jsf(jsonschema);
-    console.log(JSON.stringify(sample, null, 2));
-}
+    //add some extra items to prune after sample data is generated
+    for (prop in statementGroups.properties) {
+        if(flat_arrays.includes(prop)) {
+            statementGroups.properties[prop].minItems = minBeneficialOwnershipStatements * 5;
+        }
+    }
+    //store statement IDs generated in beneficial ownership statement
+    var identifiers = {"entityStatements": [],
+           "personStatements": [],
+           "qualificationStatements": [],
+           "provenanceStatements": []};
+    sample
+        .statementGroups
+        .beneficialOwnershipStatements
+        .forEach(function(sg) {
+            identifiers.entityStatements.push(sg.entity.id);
+            if(sg.hasOwnProperty('interestedParty')){
+                if(sg.interestedParty.type === "entityStatement") {
+                    identifiers.entityStatements.push(sg.interestedParty.id);
+                }
+                if(sg.interestedParty.type === "personStatement") {
+                    identifiers.personStatements.push(sg.interestedParty.id);
+                }
+            }
+            if(sg.hasOwnProperty('provenance')) {
+                identifiers.provenanceStatements.push(sg.provenance.id);
+            }
+            if(sg.hasOwnProperty('qualifications')) {
+                sg.qualifications.forEach(function(qual) {
+                    identifiers.qualificationStatements.push(qual.id);
+                });
+            }
+        });
+
+        //delete empty statement groups if they exist
+        Object.keys(identifiers).forEach(function(id_array) {
+            if(identifiers[id_array].length === 0) {
+                delete identifiers[id_array];
+                delete sample.statementGroups[id_array];
+            }
+        });
+
+        Object.keys(identifiers).forEach(function (id_array) {
+            //trim beneficial ownership statement references and cross-referenced data to same size
+            if (identifiers[id_array] && sample.statementGroups[id_array]) {
+                if (identifiers[id_array].length > sample.statementGroups[id_array].length) {
+                    identifiers[id_array] = identifiers[id_array].slice(0, sample.statementGroups[id_array].length);
+                }
+                else {
+                    sample.statementGroups[id_array] = sample.statementGroups[id_array].slice(0, identifiers[id_array].length);
+                }
+
+                //swap out random guids for guids present in beneficial ownership statement
+                sample.statementGroups[id_array].forEach(function(sg, index) {
+                    Object.keys(sg).forEach(function(prop) {
+                        if(prop === "id") {
+                            sample.statementGroups[id_array][index]["id"] = identifiers[id_array][index];
+                        }
+                    });
+                });
+            }
+        });
+
+
+    }
+else {
+        sample = jsf(jsonschema);
+    }
+
+        if (program.debugschema) {
+            console.log(JSON.stringify(jsonschema, null, 2));
+        }
+        else {
+            console.log(JSON.stringify(sample, null, 2));
+        }
+
+
 
 

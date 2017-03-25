@@ -110,13 +110,8 @@
         },
         "StatementReference": {
           "type": "object",
-          "required": ["id", "uri"],
+          "required": ["uri"],
           "properties": {
-            "id": {
-              "title": "ID",
-              "description": "The identifier of the statement being referenced.",
-              "type": "string"
-            },
             "uri": {
               "title": "URI",
               "description": "A persistent URI for the statement being referenced.",
@@ -126,38 +121,55 @@
           }
         },
        "EntityStatementReference": {
+        "type": "object",
         "allOf": [
           { "$ref": "#/definitions/StatementReference" },
           { "properties":
-            { "type": { "enum": [ "entityStatement" ] } },
-            "required": ["type"]
+            { "type": { "enum": [ "entityStatement" ]},
+              "id": { "type": "string",
+                      "minLength": 20,
+                      "faker": "random.uuid"}},
+            "required": ["type", "id"]
           }
         ]
       },
       "PersonStatementReference": {
+        "type": "object",
         "allOf": [
           { "$ref": "#/definitions/StatementReference" },
           { "properties":
-            { "type": { "enum": [ "personStatement" ] } },
-            "required": ["type"]
+            { "type": { "enum": [ "personStatement" ]},
+              "id": { "type": "string",
+                      "minLength": 20,
+                      "faker": "random.uuid"}},
+            "required": ["type", "id"]
           }
         ]
       },
       "ProvenanceStatementReference": {
+        "type": "object",
         "allOf": [
           { "$ref": "#/definitions/StatementReference" },
           { "properties":
-            { "type": { "enum": [ "provenanceStatement" ] } },
-            "required": ["type"]
+            { "type": { "enum": [ "provenanceStatement" ]},
+               "id": { "type": "string",
+                       "minLength": 20,
+                       "faker": "random.uuid"
+                        }},
+            "required": ["type", "id"]
           }
         ]
       },
        "QualificationStatementReference": {
+        "type": "object",
         "allOf": [
           { "$ref": "#/definitions/StatementReference" },
           { "properties":
-            { "type": { "enum": [ "qualificationStatement" ] } },
-            "required": ["type"]
+            { "type": { "enum": [ "qualificationStatement" ]},
+              "id": { "type": "string",
+                      "minLength": 20,
+                      "faker": "random.uuid"}},
+            "required": ["type", "id"]
           }
         ]
       }
