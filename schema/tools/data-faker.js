@@ -35,45 +35,47 @@ jsf.option({
 });
 
 var minBeneficialOwnershipStatements = 1;
-
-// add common definitions for faker formats
-// patch in company and natural person names
-jsonschema.definitions.PersonName = schemapatches.definitions.PersonName;
-jsonschema.definitions.PersonStatement.properties.name = {"$ref": "#/definitions/PersonName"};
-jsonschema.definitions.CompanyName = schemapatches.definitions.CompanyName;
-jsonschema.definitions.EntityStatement.properties.name = {"$ref": "#/definitions/CompanyName"};
-
-// patch in identifiers - missing software agents
-jsonschema.definitions.PersonIdentifier = schemapatches.definitions.PersonIdentifier;
-jsonschema.definitions.CompanyIdentifier =   schemapatches.definitions.CompanyIdentifier;
-jsonschema.definitions.EntityStatement.properties.identifiers = {"type": "array",
-"items": {"$ref": "#/definitions/CompanyIdentifier"}};
-jsonschema.definitions.PersonStatement.properties.identifiers = {"type": "array",
-"items": {"$ref": "#definitions/PersonIdentifier"}};
-
-//patch in fuzzy dates
-jsonschema.definitions.FuzzyDate = schemapatches.definitions.FuzzyDate;
-jsonschema.definitions.PersonStatement.properties.birthDate = {"$ref": "#/definitions/FuzzyDate"};
-jsonschema.definitions.PersonStatement.properties.deathDate = {"$ref": "#/definitions/FuzzyDate"};
-jsonschema.definitions.EntityStatement.properties.createdDate = {"$ref": "#/definitions/FuzzyDate"};
-jsonschema.definitions.EntityStatement.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
-jsonschema.definitions.Interest.properties.startDate = {"$ref": "#/definitions/FuzzyDate"};
-jsonschema.definitions.Interest.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
-
-
 var beneficialOwnershipStatement = jsonschema.definitions.BeneficialOwnershipStatement;
 var statementGroups = jsonschema.properties.statementGroups;
+var flat_arrays = ["qualificationStatements", "entityStatements",
+                   "personStatements", "provenanceStatements"];
 
-if (!program.crossref) {
+var applyCommonPatches = function(original, patched) {
+    // add common definitions for faker formats
+    // patch in company and natural person names
+    original.definitions.PersonName = patched.definitions.PersonName;
+    original.definitions.PersonStatement.properties.name = {"$ref": "#/definitions/PersonName"};
+    original.definitions.CompanyName = patched.definitions.CompanyName;
+    original.definitions.EntityStatement.properties.name = {"$ref": "#/definitions/CompanyName"};
+
+    // patch in identifiers - missing software agents
+    original.definitions.PersonIdentifier = patched.definitions.PersonIdentifier;
+    original.definitions.CompanyIdentifier =   patched.definitions.CompanyIdentifier;
+    original.definitions.EntityStatement.properties.identifiers = {"type": "array",
+    "items": {"$ref": "#/definitions/CompanyIdentifier"}};
+    original.definitions.PersonStatement.properties.identifiers = {"type": "array",
+    "items": {"$ref": "#definitions/PersonIdentifier"}};
+
+    //patch in fuzzy dates
+    original.definitions.FuzzyDate = patched.definitions.FuzzyDate;
+    original.definitions.PersonStatement.properties.birthDate = {"$ref": "#/definitions/FuzzyDate"};
+    original.definitions.PersonStatement.properties.deathDate = {"$ref": "#/definitions/FuzzyDate"};
+    original.definitions.EntityStatement.properties.createdDate = {"$ref": "#/definitions/FuzzyDate"};
+    original.definitions.EntityStatement.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
+    original.definitions.Interest.properties.startDate = {"$ref": "#/definitions/FuzzyDate"};
+    original.definitions.Interest.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
+};
+
+var applyHierarchicalPatches = function(original, patched) {
     // adjust schema for nested publication
-    beneficialOwnershipStatement.required = ["entity"];
-    beneficialOwnershipStatement.anyOf = [
+    original.definitions.BeneficialOwnershipStatement.required = ["entity"];
+    original.definitions.BeneficialOwnershipStatement.anyOf = [
         {"required": ["interestedParty"]},
         {"required": ["qualifications"]}
     ];
     // replace StatementReference from oneOf in nested properties
-    beneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatement"};
-    beneficialOwnershipStatement.properties.interestedParty = {
+    original.definitions.BeneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatement"};
+    original.definitions.BeneficialOwnershipStatement.properties.interestedParty = {
           "oneOf": [
             {
               "$ref": "#/definitions/EntityStatement"
@@ -83,11 +85,11 @@ if (!program.crossref) {
             }
           ]
         };
-    beneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatement"};
-    beneficialOwnershipStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
-    jsonschema.definitions.PersonStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
-    jsonschema.definitions.EntityStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
-    jsonschema.definitions.QualificationStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
+    original.definitions.BeneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatement"};
+    original.definitions.BeneficialOwnershipStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
+    original.definitions.PersonStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
+    original.definitions.EntityStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
+    original.definitions.QualificationStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
 
 
     // remove arrays of top-level statements for cross-ref publication
@@ -96,30 +98,27 @@ if (!program.crossref) {
     delete statementGroups.properties.qualificationStatements;
     delete statementGroups.properties.provenanceStatements;
     // adjust provenance types and names
-    jsonschema.definitions.ProvenanceStatement.required = ["attributedTo", "id"];
+    original.definitions.ProvenanceStatement.required = ["attributedTo", "id"];
     // patch in attributedTo, with oneOf constraint
-    jsonschema.definitions.ProvenanceStatement.properties.attributedTo = schemapatches.definitions.attributedTo;
+    original.definitions.ProvenanceStatement.properties.attributedTo = patched.definitions.attributedTo;
+};
 
-}
-else {
-      var flat_arrays = ["qualificationStatements", "entityStatements",
-                   "personStatements", "provenanceStatements"];
-
-    statementGroups.required = flat_arrays; 
-    beneficialOwnershipStatement.required = ["entity"];
-    beneficialOwnershipStatement.anyOf = [
+var applyCrossReferencedPatches = function(original, patched) {
+    original.properties.statementGroups.required = flat_arrays; 
+    original.definitions.BeneficialOwnershipStatement.required = ["entity"];
+    original.definitions.BeneficialOwnershipStatement.anyOf = [
         {"required": ["interestedParty"]},
         {"required": ["qualifications"]}
     ];
     // patch in statement references
-    jsonschema.definitions.StatementReference = schemapatches.definitions.StatementReference;
-    jsonschema.definitions.EntityStatementReference = schemapatches.definitions.EntityStatementReference;
-    jsonschema.definitions.PersonStatementReference = schemapatches.definitions.PersonStatementReference;
-    jsonschema.definitions.QualificationStatementReference = schemapatches.definitions.QualificationStatementReference;
-    jsonschema.definitions.ProvenanceStatementReference = schemapatches.definitions.ProvenanceStatementReference;
+    original.definitions.StatementReference = patched.definitions.StatementReference;
+    original.definitions.EntityStatementReference = patched.definitions.EntityStatementReference;
+    original.definitions.PersonStatementReference = patched.definitions.PersonStatementReference;
+    original.definitions.QualificationStatementReference = patched.definitions.QualificationStatementReference;
+    original.definitions.ProvenanceStatementReference = patched.definitions.ProvenanceStatementReference;
     
-    beneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatementReference"};
-    beneficialOwnershipStatement.properties.interestedParty = {
+    original.definitions.BeneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatementReference"};
+    original.definitions.BeneficialOwnershipStatement.properties.interestedParty = {
           "oneOf": [
             {
               "$ref": "#/definitions/EntityStatementReference"
@@ -129,15 +128,21 @@ else {
             }
           ]
         };
-    beneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatementReference"};
-    beneficialOwnershipStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatementReference"};
+    original.definitions.BeneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatementReference"};
+    original.definitions.BeneficialOwnershipStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatementReference"};
+
 };
 
-var modifySchema = function(schema) {
+var modifySchema = function (schema) {
     var change_definition = function(def, prop) {
 
-        delete def.title
-        delete def.description
+        if (def.hasOwnProperty('title')) {
+            delete def.title;
+        }
+
+        if (def.hasOwnProperty('description')) {
+            delete def.description;
+        }
     
         if (prop === 'id') {
             def['minLength'] = 20;
@@ -150,7 +155,7 @@ var modifySchema = function(schema) {
         }
 
         if (prop === 'nationalities') {
-            def.items.faker = 'address.countryCode'
+            def.items.faker = 'address.countryCode';
         }
 
         if (prop === 'address') {
@@ -164,58 +169,64 @@ var modifySchema = function(schema) {
             def.faker = 'name.findName';
         }
         if (def.type === 'object') {
-            modifySchema(def)
+            modifySchema(def);
         }
         if (def.format === 'date') {
-            def.format = 'date-time'
+            def.format = 'date-time';
         }
         if (def.format && def.format === 'uri') {
-            def.format = 'URI'
+            def.format = 'URI';
         }
 
         // generate blank data
         if (program.blank) {
+               
           if (def.type === 'array') {
-            def.minItems = 1
-            def.maxItems = 1
+            def.minItems = 1;
+            def.maxItems = 1;
           }
           if (def.type === 'string') {
-            delete def.format
-            def.enum = [""]
+            delete def.faker;
+            delete def.format;
+            def.enum = [""];
           }
           if (def.type === 'number') {
-            def.enum = [0]
+            def.enum = [0];
           }
           if (def.type === 'boolean') {
-            def.enum = [false]
+            def.enum = [false];
           }
+
+
         }
     }
     var prop;
     var definition;
 
     for (prop in schema.properties) {
-      var def = schema.properties[prop]
-      change_definition(def, prop)
+      var def = schema.properties[prop];
+      change_definition(def, prop);
     }
 
     if (schema.definitions) {
         for (definition in schema.definitions) {
             if (schema.definitions[definition].hasOwnProperty('properties')) {
-              modifySchema(schema.definitions[definition])
-            } else {
-              change_definition(schema.definitions[definition])
+              modifySchema(schema.definitions[definition]);
+          } else {
+              change_definition(schema.definitions[definition]);
             }
         }
     }
 
     return schema
-}
-jsonschema = modifySchema(jsonschema);
+};
 
-
+var postProcessCrossrefencedSample = function (modifiedSchema) {
+    var sample = jsf(modifiedSchema);
     //add some extra items to prune after sample data is generated
+    for (prop in modifiedSchema.properties.statementGroups.properties) {
         if(flat_arrays.includes(prop)) {
+            modifiedSchema.properties.statementGroups.properties[prop].minItems = minBeneficialOwnershipStatements * 5;
         }
     }
     //store statement IDs generated in beneficial ownership statement
@@ -274,15 +285,41 @@ jsonschema = modifySchema(jsonschema);
                 });
             }
         });
+    console.log(JSON.stringify(sample, null, 2));
+};
 
+var makeSample = function() {
+    console.log("MAKE A SAMPLE");
+};
+
+applyCommonPatches(jsonschema, schemapatches);
+
+if (!program.crossref) {
+    applyHierarchicalPatches(jsonschema, schemapatches);
+    jsonschema = modifySchema(jsonschema);
+    sample = jsf(jsonschema);
+    console.log(JSON.stringify(sample, null, 2));
 
     }
 else {
+    applyCrossReferencedPatches(jsonschema, schemapatches);
+    jsonschema = modifySchema(jsonschema);
+    if (program.debugschema) {
+        console.log(JSON.stringify(jsonschema, null, 2));
     }
+    else {
+        if (!program.blank) {
+           postProcessCrossrefencedSample(jsonschema);
         }
         else {
+            console.log(JSON.stringify(jsf(jsonschema, null, 2)));
         }
 
+    }
+}
 
+if (require.main === module) {
+    makeSample();
+}
 
 
