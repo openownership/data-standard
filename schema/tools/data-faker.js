@@ -289,39 +289,36 @@ var postProcessCrossrefencedSample = function (modifiedSchema) {
 };
 
 var makeSample = function() {
-    console.log("MAKE A SAMPLE");
-};
+    applyCommonPatches(jsonschema, schemapatches);
 
-applyCommonPatches(jsonschema, schemapatches);
-
-if (!program.crossref) {
-    applyHierarchicalPatches(jsonschema, schemapatches);
-    jsonschema = modifySchema(jsonschema);
-    if (program.debugschema) {
-        console.log(JSON.stringify(jsonschema, null, 2));
-    }
+    if (!program.crossref) {
+            applyHierarchicalPatches(jsonschema, schemapatches);
+            jsonschema = modifySchema(jsonschema);
+            if (program.debugschema) {
+                console.log(JSON.stringify(jsonschema, null, 2));
+            }
+            else {
+                sample = jsf(jsonschema);
+                console.log(JSON.stringify(sample, null, 2));
+            }
+        }
     else {
-        sample = jsf(jsonschema);
-        console.log(JSON.stringify(sample, null, 2));
-    }
-
-    }
-else {
-    applyCrossReferencedPatches(jsonschema, schemapatches);
-    jsonschema = modifySchema(jsonschema);
-    if (program.debugschema) {
-        console.log(JSON.stringify(jsonschema, null, 2));
-    }
-
+        applyCrossReferencedPatches(jsonschema, schemapatches);
+        jsonschema = modifySchema(jsonschema);
         if (program.debugschema) {
             console.log(JSON.stringify(jsonschema, null, 2));
         }
-        else {
-            postProcessCrossrefencedSample(jsonschema);
-            //console.log(JSON.stringify(sample, null, 2));
-        }
 
-    }
+            if (program.debugschema) {
+                console.log(JSON.stringify(jsonschema, null, 2));
+            }
+            else {
+                postProcessCrossrefencedSample(jsonschema);
+                //console.log(JSON.stringify(sample, null, 2));
+            }
+
+        }
+};
 
 if (require.main === module) {
     makeSample();

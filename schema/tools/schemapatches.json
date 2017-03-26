@@ -24,12 +24,12 @@
                   "GB-COH",
                   "GB-VAT",
                   "MISC-NEWPUB"
-               ],
+               ]
+             },
                "uri":{
                   "type":"string",
                   "format":"uri"
                }
-            }
          }
       },
       "PersonIdentifier":
@@ -42,13 +42,15 @@
                      "enum" : [
                         "PASSPORT-AF",
                         "PASSPORT-GB"
-                    ],
-                     "uri" : {
-                        "type" : "string", "format" : "uri"
-                    }
+                    ]
+                },
+                "uri" : {
+                        "type" : "string",
+                        "format" : "uri"
                 }
-            }
-        },
+          }
+        }
+        ,
         "attributedTo" :{
             "type": "object",
             "oneOf": [
