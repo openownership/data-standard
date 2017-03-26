@@ -60,8 +60,8 @@ var applyCommonPatches = function(original, patched) {
     original.definitions.FuzzyDate = patched.definitions.FuzzyDate;
     original.definitions.PersonStatement.properties.birthDate = {"$ref": "#/definitions/FuzzyDate"};
     original.definitions.PersonStatement.properties.deathDate = {"$ref": "#/definitions/FuzzyDate"};
-    original.definitions.EntityStatement.properties.createdDate = {"$ref": "#/definitions/FuzzyDate"};
-    original.definitions.EntityStatement.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
+    original.definitions.EntityStatement.properties.foundingDate = {"$ref": "#/definitions/FuzzyDate"};
+    original.definitions.EntityStatement.properties.dissolutionDate = {"$ref": "#/definitions/FuzzyDate"};
     original.definitions.Interest.properties.startDate = {"$ref": "#/definitions/FuzzyDate"};
     original.definitions.Interest.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
 };
