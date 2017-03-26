@@ -297,8 +297,13 @@ applyCommonPatches(jsonschema, schemapatches);
 if (!program.crossref) {
     applyHierarchicalPatches(jsonschema, schemapatches);
     jsonschema = modifySchema(jsonschema);
-    sample = jsf(jsonschema);
-    console.log(JSON.stringify(sample, null, 2));
+    if (program.debugschema) {
+        console.log(JSON.stringify(jsonschema, null, 2));
+    }
+    else {
+        sample = jsf(jsonschema);
+        console.log(JSON.stringify(sample, null, 2));
+    }
 
     }
 else {
@@ -307,16 +312,16 @@ else {
     if (program.debugschema) {
         console.log(JSON.stringify(jsonschema, null, 2));
     }
-    else {
-        if (!program.blank) {
-           postProcessCrossrefencedSample(jsonschema);
+
+        if (program.debugschema) {
+            console.log(JSON.stringify(jsonschema, null, 2));
         }
         else {
-            console.log(JSON.stringify(jsf(jsonschema, null, 2)));
+            postProcessCrossrefencedSample(jsonschema);
+            //console.log(JSON.stringify(sample, null, 2));
         }
 
     }
-}
 
 if (require.main === module) {
     makeSample();
