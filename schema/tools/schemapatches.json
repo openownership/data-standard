@@ -2,6 +2,7 @@
    "id":"schemapatches.json",
    "definitions":{
       "FuzzyDate":{
+        "type": "object",
          "oneOf":[
             {
                "type":"string",
@@ -20,18 +21,18 @@
                "type":"string"
             },
             "scheme":{
-               "enum":[
+              "type": "string",
+              "enum":[
                   "GB-COH",
                   "GB-VAT",
                   "MISC-NEWPUB"
-               ],
+               ]},
                "uri":{
                   "type":"string",
                   "format":"uri"
                }
             }
-         }
-      },
+         },
       "PersonIdentifier":
         {"type": "object",
             "properties":{
@@ -39,20 +40,24 @@
                     "type" : "string"
                 },
                 "scheme":{
+                     "type": "string",
                      "enum" : [
                         "PASSPORT-AF",
                         "PASSPORT-GB"
-                    ],
+                    ]
+                   },
                      "uri" : {
                         "type" : "string", "format" : "uri"
                     }
                 }
             }
-        },
+        ,
         "attributedTo" :{
-            "type": "object",
+            
             "oneOf": [
+
             {
+              "type": "object",
               "properties": {
                 "type": {
                   "title": "Type",
@@ -75,7 +80,7 @@
                 "identifier"
               ]
             },
-            {
+            {"type": "object",
               "properties": {
                 "type": {
                   "title": "Type",
@@ -125,7 +130,7 @@
         "allOf": [
           { "$ref": "#/definitions/StatementReference" },
           { "properties":
-            { "type": { "enum": [ "entityStatement" ]},
+            { "type": { "type": "string", "enum": [ "entityStatement" ]},
               "id": { "type": "string",
                       "minLength": 20,
                       "faker": "random.uuid"}},
@@ -138,7 +143,7 @@
         "allOf": [
           { "$ref": "#/definitions/StatementReference" },
           { "properties":
-            { "type": { "enum": [ "personStatement" ]},
+            { "type": {"type": "string", "enum": [ "personStatement" ]},
               "id": { "type": "string",
                       "minLength": 20,
                       "faker": "random.uuid"}},
@@ -151,7 +156,7 @@
         "allOf": [
           { "$ref": "#/definitions/StatementReference" },
           { "properties":
-            { "type": { "enum": [ "provenanceStatement" ]},
+            { "type": {"type": "string", "enum": [ "provenanceStatement" ]},
                "id": { "type": "string",
                        "minLength": 20,
                        "faker": "random.uuid"
@@ -165,7 +170,7 @@
         "allOf": [
           { "$ref": "#/definitions/StatementReference" },
           { "properties":
-            { "type": { "enum": [ "qualificationStatement" ]},
+            { "type": {"type": "string", "enum": [ "qualificationStatement" ]},
               "id": { "type": "string",
                       "minLength": 20,
                       "faker": "random.uuid"}},

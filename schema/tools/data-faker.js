@@ -214,12 +214,8 @@ var modifySchema = function(schema) {
 jsonschema = modifySchema(jsonschema);
 
 
-if (program.crossref) {
-    sample = jsf(jsonschema);
     //add some extra items to prune after sample data is generated
-    for (prop in statementGroups.properties) {
         if(flat_arrays.includes(prop)) {
-            statementGroups.properties[prop].minItems = minBeneficialOwnershipStatements * 5;
         }
     }
     //store statement IDs generated in beneficial ownership statement
@@ -282,14 +278,9 @@ if (program.crossref) {
 
     }
 else {
-        sample = jsf(jsonschema);
     }
-
-        if (program.debugschema) {
-            console.log(JSON.stringify(jsonschema, null, 2));
         }
         else {
-            console.log(JSON.stringify(sample, null, 2));
         }
 
 
