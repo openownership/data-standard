@@ -1,232 +1,221 @@
 {
-  "statementGroups": {
-    "beneficialOwnershipStatements": [
-      {
-        "entity": {
-          "id": "9092e13f-798a-441e-99bd-2db993a1c72e",
-          "addresses": [
-            {
-              "address": "3307 Ila Bridge",
-              "type": "service",
-              "postCode": "24592",
-              "country": "SA"
-            }
-          ],
-          "uri": "http://WDqGEV4.com",
+  "statementGroups": [{
+      "beneficialOwnershipStatements": [
+        {
+          "id": "1f5681e7-fd16-418c-885e-3d7edf151186",
           "date": "2017-03-25",
-          "foundingDate": "1999-05-09",
-          "name": "Abshire Group",
-          "type": "registeredEntity",
-          "identifiers": [
+          "entity": {
+            "id": "9092e13f-798a-441e-99bd-2db993a1c72e",
+            "date": "2017-03-25",
+            "name": "Abshire Group",
+            "type": "registeredEntity",
+            "jurisdiction": "GB",
+            "foundingDate": "1999-05-09",
+            "addresses": [
+              {
+                "address": "3307 Ila Bridge",
+                "type": "service",
+                "postCode": "24592",
+                "country": "SA"
+              }
+            ],
+            "uri": "http://WDqGEV4.com",
+            "identifiers": [
+              {
+                "uri": "http://wCXYGSkMUq.com",
+                "id": "1f331297-20f6-46a1-97f8-802ce8940d2e",
+                "scheme": "GB-VAT"
+              },
+              {
+                "scheme": "GB-COH",
+                "uri": "http://wZr.com",
+                "id": "131107c6-8765-4de5-a7d0-e7c8673899fe"
+              }
+            ]
+          },
+          "interestedParty": {
+            "id": "9a4d4a09-6d8d-43dc-881e-52a1fe74a120",
+            "date": "2017-03-25",
+            "jurisdiction": "GB",
+            "type": "registeredEntity",
+            "name": "Krajcik - Kutch Trust",
+            "foundingDate": "1999-05-09",
+            "addresses": [
+              {
+                "postCode": "06936",
+                "address": "43236 Feil Knoll",
+                "country": "GB",
+                "type": "alternative"
+              }
+            ],
+            "uri": "http://ZAs9Ro2BY.com",
+            "identifiers": [
+            ]
+          },
+          "interests": [
             {
-              "uri": "http://wCXYGSkMUq.com",
-              "id": "1f331297-20f6-46a1-97f8-802ce8940d2e",
-              "scheme": "GB-VAT"
-            },
-            {
-              "scheme": "GB-COH",
-              "uri": "http://wZr.com",
-              "id": "131107c6-8765-4de5-a7d0-e7c8673899fe"
+              "details": "A trust that owns 100% of the shares in an entity",
+              "share": {
+                "exact": 100
+              },
+              "interestLevel": "direct",
+              "type": "shareholding"
             }
           ],
-          "jurisdiction": "GB"
-        },
-        "interests": [
-          {
-            "details": "A trust that owns 100% of the shares in an entity",
-            "share": {
-              "exact": 100
+          "provenance": {
+            "attributedTo": {
+              "type": "Organization",
+              "name": "Companies House PSC Register"
             },
-            "interestLevel": "direct",
-            "type": "shareholding"
+            "id": "3ba79f7a-6117-469a-adc8-1d6c5ec258cb",
+            "replacesStatement": "reprehenderit",
+            "generatedBy": {
+              "type": "user-submission"
+            },
+            "type": "official-records",
+            "primarySource": "http://Sewel2Jc.com"
           }
-        ],
-        "date": "2017-03-25",
-        "interestedParty": {
-          "id": "9a4d4a09-6d8d-43dc-881e-52a1fe74a120",
-          "jurisdiction": "GB",
-          "type": "registeredEntity",
-          "addresses": [
-            {
-              "postCode": "06936",
-              "address": "43236 Feil Knoll",
-              "country": "GB",
-              "type": "alternative"
-            }
-          ],
-          "uri": "http://ZAs9Ro2BY.com",
-          "name": "Krajcik - Kutch Trust",
-          "identifiers": [
-            {
-              "scheme": "GB-COH",
-              "uri": "http://wZr.com",
-              "id": "c7a7c49a-13ec-4e39-9d26-57de8cf18921"
-            }
-          ],
-          "foundingDate": "1999-05-09",
-          "date": "2017-03-25"
         },
-        "id": "1f5681e7-fd16-418c-885e-3d7edf151186",
-        "provenance": {
-          "attributedTo": {
-            "type": "Organization",
-            "name": "Companies House PSC Register"
-          },
-          "id": "3ba79f7a-6117-469a-adc8-1d6c5ec258cb",
-          "replacesStatement": "reprehenderit",
-          "generatedBy": {
-            "type": "user-submission"
-          },
-          "type": "official-records",
-          "primarySource": "http://Sewel2Jc.com"
-        }
-      },
-      {
-        "entity": {
-          "id": "29fe10b5-ad9e-48db-94a2-eb3b61f75688",
-          "jurisdiction": "GB",
-          "type": "registeredEntity",
-          "addresses": [
-            {
-              "postCode": "06936",
-              "address": "43236 Feil Knoll",
-              "country": "GB",
-              "type": "alternative"
-            }
-          ],
-          "uri": "http://ZAs9Ro2BY.com",
-          "name": "Krajcik - Kutch Trust",
-          "identifiers": [
-            {
-              "scheme": "GB-COH",
-              "uri": "http://wZr.com",
-              "id": "c7a7c49a-13ec-4e39-9d26-57de8cf18921"
-            }
-          ],
-          "foundingDate": "1999-05-09",
-          "date": "2017-03-25"
-        },
-        "interests": [
-          {
-            "details": "A natural person who owns 100% of a trust that owns 100% an entity",
-            "share": {
-              "exact": 100
-            },
-            "interestLevel": "direct",
-            "type": "shareholding"
-          }
-        ],
-        "date": "2017-03-25",
-        "interestedParty": {
-          "id": "f6b33181-1ef4-495f-aca1-e3b4d1e50917",
-          "jurisdiction": "GB",
-          "type": "naturalPerson",
-          "addresses": [
-            {
-              "postCode": "83972",
-              "address": "705 Granville Locks,West Royal,Mid Glamorgan",
-              "country": "GB",
-              "type": "home"
-            }
-          ],
-          "uri": "http://ZAs9Ro2BY.com",
-          "name": "Dennis Hansen",
-          "nationalities": [
-            "GB",
-            "EG"
-          ]
-        },
-        "id": "ea875c67-95bc-4c80-b69d-15b8279ea117",
-        "provenance": {
-          "attributedTo": {
-            "type": "Organization",
-            "name": "Companies House PSC Register"
-          },
-          "id": "5a30d2ab-c7bb-4baf-8ed9-92ec480080d7",
-          "replacesStatement": "reprehenderit",
-          "generatedBy": {
-            "type": "user-submission"
-          },
-          "type": "official-records",
-          "primarySource": "http://Sewel2Jc.com"
-        }
-      },
-      {
-        "entity": {
-          "id": "66cf0633-fcfe-4fa6-9308-95eaa8df1a76",
-          "addresses": [
-            {
-              "address": "3307 Ila Bridge",
-              "type": "service",
-              "postCode": "24592",
-              "country": "SA"
-            }
-          ],
-          "uri": "http://WDqGEV4.com",
+        {
+          "id": "ea875c67-95bc-4c80-b69d-15b8279ea117",
           "date": "2017-03-25",
-          "foundingDate": "1999-05-09",
-          "name": "Abshire Group",
-          "type": "registeredEntity",
-          "identifiers": [
+          "entity": {
+            "id": "29fe10b5-ad9e-48db-94a2-eb3b61f75688",
+            "jurisdiction": "GB",
+            "type": "registeredEntity",
+            "name": "Krajcik - Kutch Trust",
+            "addresses": [
+              {
+                "postCode": "06936",
+                "address": "43236 Feil Knoll",
+                "country": "GB",
+                "type": "alternative"
+              }
+            ],
+            "uri": "http://ZAs9Ro2BY.com",
+            "identifiers": [],
+            "foundingDate": "1999-05-09",
+            "date": "2017-03-25"
+          },
+          "interestedParty": {
+            "id": "f6b33181-1ef4-495f-aca1-e3b4d1e50917",
+            "jurisdiction": "GB",
+            "type": "naturalPerson",
+            "name": "Dennis Hansen",
+            "addresses": [
+              {
+                "postCode": "83972",
+                "address": "705 Granville Locks,West Royal,Mid Glamorgan",
+                "country": "GB",
+                "type": "home"
+              }
+            ],
+            "uri": "http://ZAs9Ro2BY.com",
+            "nationalities": [
+              "GB",
+              "EG"
+            ]
+          },
+          "interests": [
             {
-              "uri": "http://wCXYGSkMUq.com",
-              "id": "1f331297-20f6-46a1-97f8-802ce8940d2e",
-              "scheme": "GB-VAT"
-            },
-            {
-              "scheme": "GB-COH",
-              "uri": "http://wZr.com",
-              "id": "131107c6-8765-4de5-a7d0-e7c8673899fe"
+              "details": "A natural person who owns 100% of a trust that owns 100% an entity",
+              "share": {
+                "exact": 100
+              },
+              "interestLevel": "direct",
+              "type": "shareholding"
             }
           ],
-          "jurisdiction": "GB"
-        },
-        "interests": [
-          {
-            "details": "A natural person that has an indirect shareholding in an entity through 100% ownership of a trust",
-            "share": {
-              "exact": 100
+          "provenance": {
+            "attributedTo": {
+              "type": "Organization",
+              "name": "Companies House PSC Register"
             },
-            "interestLevel": "indirect",
-            "type": "shareholding"
+            "id": "5a30d2ab-c7bb-4baf-8ed9-92ec480080d7",
+            "replacesStatement": "reprehenderit",
+            "generatedBy": {
+              "type": "user-submission"
+            },
+            "type": "official-records",
+            "primarySource": "http://Sewel2Jc.com"
           }
-        ],
-        "date": "2017-03-25",
-        "interestedParty": {
-          "id": "f6b33181-1ef4-495f-aca1-e3b4d1e50917",
-          "jurisdiction": "GB",
-          "type": "naturalPerson",
-          "addresses": [
+        },
+        {
+          "entity": {
+            "id": "66cf0633-fcfe-4fa6-9308-95eaa8df1a76",
+            "date": "2017-03-25",
+            "name": "Abshire Group",
+            "type": "registeredEntity",
+            "addresses": [
+              {
+                "address": "3307 Ila Bridge",
+                "type": "service",
+                "postCode": "24592",
+                "country": "SA"
+              }
+            ],
+            "uri": "http://WDqGEV4.com",
+            "foundingDate": "1999-05-09",
+            "identifiers": [
+              {
+                "uri": "http://wCXYGSkMUq.com",
+                "id": "1f331297-20f6-46a1-97f8-802ce8940d2e",
+                "scheme": "GB-VAT"
+              },
+              {
+                "scheme": "GB-COH",
+                "uri": "http://wZr.com",
+                "id": "131107c6-8765-4de5-a7d0-e7c8673899fe"
+              }
+            ],
+            "jurisdiction": "GB"
+          },
+          "interests": [
             {
-              "postCode": "83972",
-              "address": "705 Granville Locks,West Royal,Mid Glamorgan",
-              "country": "GB",
-              "type": "home"
+              "details": "A natural person that has an indirect shareholding in an entity through 100% ownership of a trust",
+              "share": {
+                "exact": 100
+              },
+              "interestLevel": "indirect",
+              "type": "shareholding"
             }
           ],
-          "uri": "http://ZAs9Ro2BY.com",
-          "name": "Dennis Hansen",
-          "nationalities": [
-            "GB",
-            "EG"
-          ]
-        },
-        "id": "45cf01ce-f9cd-4910-a6b9-4f8ec620285a",
-        "provenance": {
-          "attributedTo": {
-            "type": "Organization",
-            "name": "Companies House PSC Register"
+          "date": "2017-03-25",
+          "interestedParty": {
+            "id": "f6b33181-1ef4-495f-aca1-e3b4d1e50917",
+            "jurisdiction": "GB",
+            "type": "naturalPerson",
+            "addresses": [
+              {
+                "postCode": "83972",
+                "address": "705 Granville Locks,West Royal,Mid Glamorgan",
+                "country": "GB",
+                "type": "home"
+              }
+            ],
+            "uri": "http://ZAs9Ro2BY.com",
+            "name": "Dennis Hansen",
+            "nationalities": [
+              "GB",
+              "EG"
+            ]
           },
-          "id": "6c7fceac-a85e-4ee9-ad8f-65b6cb01b154",
-          "replacesStatement": "reprehenderit",
-          "generatedBy": {
-            "type": "user-submission"
-          },
-          "type": "official-records",
-          "primarySource": "http://Sewel2Jc.com"
+          "id": "45cf01ce-f9cd-4910-a6b9-4f8ec620285a",
+          "provenance": {
+            "attributedTo": {
+              "type": "Organization",
+              "name": "Companies House PSC Register"
+            },
+            "id": "6c7fceac-a85e-4ee9-ad8f-65b6cb01b154",
+            "replacesStatement": "reprehenderit",
+            "generatedBy": {
+              "type": "user-submission"
+            },
+            "type": "official-records",
+            "primarySource": "http://Sewel2Jc.com"
+          }
         }
-      }
-    ],
-    "id": "11ecc5a9-9e1c-46d7-bfc5-afff589eab48"
-  }
+      ],
+      "id": "11ecc5a9-9e1c-46d7-bfc5-afff589eab48"
+    }]
 }
