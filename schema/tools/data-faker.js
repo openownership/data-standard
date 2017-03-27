@@ -50,11 +50,12 @@ var applyCommonPatches = function(original, patched) {
 
     // patch in identifiers - missing software agents
     original.definitions.PersonIdentifier = patched.definitions.PersonIdentifier;
-    original.definitions.CompanyIdentifier =   patched.definitions.CompanyIdentifier;
+    original.definitions.CompanyIdentifier = patched.definitions.CompanyIdentifier;
     original.definitions.EntityStatement.properties.identifiers = {"type": "array",
-    "items": {"$ref": "#/definitions/CompanyIdentifier"}};
+    "items": {"type": "object", "$ref": "#/definitions/CompanyIdentifier"}};
     original.definitions.PersonStatement.properties.identifiers = {"type": "array",
-    "items": {"$ref": "#definitions/PersonIdentifier"}};
+    "items": {"type": "object", "$ref": "#/definitions/PersonIdentifier"}};
+    //original.definitions.PersonStatement.properties.identifiers = {"type": "array","items": {"type": "object", "$ref": "#definitions/PersonIdentifier"}};
 
     //patch in fuzzy dates
     original.definitions.FuzzyDate = patched.definitions.FuzzyDate;
@@ -308,13 +309,8 @@ var makeSample = function() {
         if (program.debugschema) {
             console.log(JSON.stringify(jsonschema, null, 2));
         }
-
-            if (program.debugschema) {
-                console.log(JSON.stringify(jsonschema, null, 2));
-            }
             else {
                 postProcessCrossrefencedSample(jsonschema);
-                //console.log(JSON.stringify(sample, null, 2));
             }
 
         }
