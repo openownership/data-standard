@@ -7,12 +7,14 @@
       "title": "Statement group",
       "description": "A statement group is used to collect together statements relating to a particular disclosure, company or individual. Statement groups are a logical grouping designed to limit duplication of provenance information, and bring together statements that contain cross references. Where statements in a statementGroup cross-references to other statements, those statements MUST also be contained within the group.",
       "type": "object",
-      "required":["beneficialOwnershipStatements"],
+      "required": [
+        "beneficialOwnershipStatements"
+      ],
       "properties": {
         "id": {
-          "title":"Statement group identifier",
-          "description":"An optional globally unique and persistent identifier for this statement group.",
-          "type":"string"
+          "title": "Statement group identifier",
+          "description": "An optional globally unique and persistent identifier for this statement group.",
+          "type": "string"
         },
         "beneficialOwnershipStatements": {
           "title": "Beneficial ownership statements",
@@ -35,7 +37,7 @@
           "description": "A collection of statements that describe natural persons. Cross-referenced within beneficial ownership statements.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/EntityStatement"
+            "$ref": "#/definitions/PersonStatement"
           }
         },
         "qualificationStatements": {
@@ -64,10 +66,10 @@
             }
           ]
         },
-        "replacesStatementGroup":{
-          "title":"Replaces statement group",
-          "description":"If this statement group replaces all the statements from a previously published group, provide the globally unique identifier for the previous group here. Consuming applications are advised to mark all statements from the identified group as no longer active.",
-          "type":"string"
+        "replacesStatementGroup": {
+          "title": "Replaces statement group",
+          "description": "If this statement group replaces all the statements from a previously published group, provide the globally unique identifier for the previous group here. Consuming applications are advised to mark all statements from the identified group as no longer active.",
+          "type": "string"
         }
       }
     }
@@ -140,8 +142,8 @@
             }
           ]
         },
-        "replacesStatement":{
-           "$ref":"#/definitions/ReplacesStatement"
+        "replacesStatement": {
+          "$ref": "#/definitions/ReplacesStatement"
         }
       }
     },
@@ -184,10 +186,11 @@
         },
         "type": {
           "title": "Type",
-          "description": "What kind of entity is this? The 'registeredEntity' code covers any legal entity created through an act of official registration, usually resulting in an identifier being assigned to the entity. The 'arrangement' code covers artificial entities, described in the data model for the purpose of associating one or more natural or legal persons together in an ownership or control relationship.",
+          "description": "What kind of entity is this? The 'registeredEntity' code covers any legal entity created through an act of official registration, usually resulting in an identifier being assigned to the entity. The 'legalEntity' code covers other bodies with distinct legal personality (government departments, international institutions etc.).  The 'arrangement' code covers artificial entities, described in the data model for the purpose of associating one or more natural or legal persons together in an ownership or control relationship, but without implying that the parties to this arrangement have any other form of collective legal identity.",
           "type": "string",
           "enum": [
             "registeredEntity",
+            "legalEntity",
             "arrangement"
           ]
         },
@@ -214,15 +217,15 @@
             "$ref": "#/definitions/Identifier"
           }
         },
-        "createdDate": {
+        "foundingDate": {
           "title": "Created date",
-          "description": "When was this entity first created or registered. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
+          "description": "When was this entity founded, created or registered. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
           "type": "string",
           "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
         },
-        "endDate": {
+        "dissolutionDate": {
           "title": "End date",
-          "description": "If this entity is no longer active, provide the date on which it ceased. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
+          "description": "If this entity is no longer active, provide the date on which it was disolved or ceased. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
           "type": "string",
           "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
         },
@@ -250,8 +253,8 @@
             }
           ]
         },
-        "replacesStatement":{
-           "$ref":"#/definitions/ReplacesStatement"
+        "replacesStatement": {
+          "$ref": "#/definitions/ReplacesStatement"
         }
       }
     },
@@ -341,8 +344,8 @@
             }
           ]
         },
-        "replacesStatement":{
-           "$ref":"#/definitions/ReplacesStatement"
+        "replacesStatement": {
+          "$ref": "#/definitions/ReplacesStatement"
         }
       }
     },
@@ -428,8 +431,8 @@
             }
           ]
         },
-        "replacesStatement":{
-           "$ref":"#/definitions/ReplacesStatement"
+        "replacesStatement": {
+          "$ref": "#/definitions/ReplacesStatement"
         }
       }
     },
@@ -442,7 +445,7 @@
           "$ref": "#/definitions/StatementDate"
         },
         "type": {
-          "title": "Type of qualification statement",
+          "title": "Type of qualification statement.",
           "description": "",
           "type": "string",
           "enum": [
@@ -466,15 +469,15 @@
             }
           ]
         },
-        "replacesStatement":{
-           "$ref":"#/definitions/ReplacesStatement"
+        "replacesStatement": {
+          "$ref": "#/definitions/ReplacesStatement"
         }
       }
     },
-    "ReplacesStatement":{
-        "title":"Replaces statement",
-        "description":"If this statement replaces a previous statement, provide the globally unique identifier for the previous statement here. Consuming applications are advised to mark the identified statements as no longer active.",
-          "type":"string"
+    "ReplacesStatement": {
+      "title": "Replaces statement",
+      "description": "If this statement replaces a previous statement, provide the globally unique identifier for the previous statement here. Consuming applications are advised to mark the identified statements as no longer active.",
+      "type": "string"
     },
     "Identifier": {
       "title": "Identifier",
@@ -502,7 +505,8 @@
     "ID": {
       "title": "ID",
       "description": "A persistent globally unique identifier for this statement.",
-      "type": "string"
+      "type": "string",
+      "minLength": 32
     },
     "StatementDate": {
       "title": "Statement date",
