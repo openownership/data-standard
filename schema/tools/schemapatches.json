@@ -24,31 +24,32 @@
                   "GB-COH",
                   "GB-VAT",
                   "MISC-NEWPUB"
-               ],
+               ]
+             },
                "uri":{
                   "type":"string",
                   "format":"uri"
                }
-            }
          }
       },
-      "PersonIdentifier":
-        {"type": "object",
-            "properties":{
-                "id": {
-                    "type" : "string"
-                },
-                "scheme":{
-                     "enum" : [
-                        "PASSPORT-AF",
-                        "PASSPORT-GB"
-                    ],
-                     "uri" : {
-                        "type" : "string", "format" : "uri"
-                    }
-                }
-            }
-        },
+      "PersonIdentifier":{
+         "type":"object",
+         "properties":{
+            "id":{
+               "type":"string"
+            },
+            "scheme":{
+               "enum":[
+                  "GB-PASSPORT"
+               ]
+             },
+               "uri":{
+                  "type":"string",
+                  "format":"uri"
+               }
+         }
+      },
+
         "attributedTo" :{
             "type": "object",
             "oneOf": [
