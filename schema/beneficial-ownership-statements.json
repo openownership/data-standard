@@ -341,12 +341,12 @@
     },
     "NullParty": {
       "title": "Null party",
-      "description": "When no beneficial owners exist, or no beneficial owners have been located, then a null party entry should be included.",
+      "description": "When confirmation has been provided that no beneficial owners exist, or beneficial ownership information does not need to be provided, then a null party entry should be included.",
       "type": "object",
       "properties": {
         "type": {
-          "title": "Null type",
-          "description": "Why can't a beneficial owner be specified?",
+          "title": "Reason",
+          "description": "The reason for this null statement.",
           "type": "string",
           "enum": [
             "unknown",
