@@ -73,20 +73,7 @@
                 "exact": 100
               }
             }
-          ],
-          "provenance": {
-            "id": "c04c854b-2b77-4158-b5cc-3ada77d53446",
-            "type": "official-records",
-            "attributedTo": {
-              "type": "organization",
-              "name": "Companies House PSC Register"
-            },
-            "primarySource": "https://beta.companieshouse.gov.uk/company/07444723/filing-history/MzE2NDA0NTA4N2FkaXF6a2N4/document?format=pdf&download=0",
-            "generatedBy": {
-              "type": "user-submission",
-              "description": "Confirmation Statement"
-            }
-          }
+          ]
         }
       ]
     }

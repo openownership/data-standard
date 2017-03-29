@@ -32,6 +32,8 @@ def make_definition_table(json,file_path,what="properties",section=""):
     
     for prop in block:
         types = block[prop].get('type','')
+        if block[prop].get("enum") or block[prop].get("items",{}).get("enum"):
+            types = types + (" enum (codelist)")
         if isinstance(types,list):
             types = format(", ".join(types).replace(", null","").replace("null,",""))
         else:
@@ -47,6 +49,12 @@ def make_definition_table(json,file_path,what="properties",section=""):
 
         description = title + format(block[prop].get('description',''))
 
+        if block[prop].get("enum"):
+            description = description + _(" Codelist options: [``") + "``, ``".join(block[prop].get("enum")) + "``]"
+
+        if block[prop].get("items",{}).get("enum"):
+            description = description + _(" Codelist options: [``") + "``, ``".join(block[prop].get("items",{}).get("enum")) + "``]"
+
         if types == "array":
            if block[prop].get('items').get("$ref"):
                table.append([prop,description + _(" See ") + make_link(block[prop]['items']["$ref"]) + _(" section for further details."),"Object Array"])
@@ -54,6 +62,8 @@ def make_definition_table(json,file_path,what="properties",section=""):
                table.append([prop,description,"Array"])
         elif block[prop].get("$ref"):
           table.append([prop,description + _(" See ") + make_link(block[prop]["$ref"]),"Object"])
+        elif block[prop].get("oneOf"):
+          table.append([prop,description + _(" One of ") + " or ".join([make_link(oneOf['$ref']) for oneOf in block[prop].get("oneOf")])])
         elif "object" in types:
             table.append([prop,description + _(" See ") + make_link(prop),"Object"])
         elif(block[prop].get('format','')):
@@ -92,8 +102,6 @@ if __name__ == "__main__":
 
     make_definition_table(schema,join(file_path,"statementGroup.csv"))
 
-    # make_definition_table(schema,join(file_path,"statements.csv"),what="properties",section="statementGroups/statements")
-
     make_definition_table(schema,join(file_path,"BeneficialOwnershipStatement.csv"),what="definitions",section="BeneficialOwnershipStatement")
 
     make_definition_table(schema,join(file_path,"Interest.csv"),what="definitions",section="Interest")
@@ -114,16 +122,10 @@ if __name__ == "__main__":
 
     make_definition_table(schema,join(file_path,"AlternateName.csv"),what="definitions",section="AlternateName")
 
-    make_definition_table(schema,join(file_path,"Provenance.csv"),what="definitions",section="ProvenanceStatement")
+    make_definition_table(schema,join(file_path,"Source.csv"),what="definitions",section="Source")
+
+    make_definition_table(schema,join(file_path,"PersonStatementReference.csv"),what="definitions",section="PersonStatementReference")
+
+    make_definition_table(schema,join(file_path,"EntityStatementReference.csv"),what="definitions",section="EntityStatementReference")
 
 
-#    
-#    make_definition_table(release,join(file_path,"release-toplevel.csv"))
-#
-#    make_definition_table(release,join(file_path,"release-tender.csv"),what="definitions",section="Tender")
-#    
-#    make_definition_table(release,join(file_path,"release-planning.csv"),what="definitions",section="Planning")
-#    
-#    make_definition_table(release,join(file_path,"release-award.csv"),what="definitions",section="Award")
-#    
-#    make_definition_table(release,join(file_path,"release-contract.csv"),what="definitions",section="Contract")    

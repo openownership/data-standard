@@ -43,11 +43,9 @@ The beneficial ownership standard is made up of two parts:
 
 .. attention:: 
     
-    This is the first **rough draft** of the schema. It is a living document, and undergoing constant updates. 
+    This is the first **alpha version** of the schema. It is a living document, and undergoing constant updates. 
 
-    It currently contains a draft **structure** and **fields** but does not yet specify any constraints or explicit required fields. 
-
-    Comments are inviting using hypothes.is annotations (see sidebar on right-hand side), or GitHub issues (https://github.com/openownership/data-standard/issues/) before 20th March. 
+    The schema contains a draft **structure** and **fields** but does not yet specify substantial constraints or explicit required fields. 
 
 ```
 
@@ -60,6 +58,8 @@ We model information on beneficial ownership in terms of a collection of stateme
 It is up to data consumers to decide which statements to trust, and to reconcile the identity of the entities and persons described in those statements based on the identifying information contained within each statement. 
 
 ![Conceptual Model](https://cloud.githubusercontent.com/assets/342624/24324778/3b714986-1184-11e7-9c24-c0b5a7dcdd8e.png)
+
+> ToDo: Diagram needs updating
 
 This abstraction is important to represent the reality of how data is provided, to support integration of data from different systems and [bi-temporal modelling](https://en.wikipedia.org/wiki/Bitemporal_Modeling), and to recognise that any dataset may contain overlapping or conflicting claims about ownership and control that need to be resolved in application specific ways. 
 
@@ -90,17 +90,10 @@ At the top level of any structured file is always an array of ```statementGroups
 .. csv-table::
    :header-rows: 1
    :widths: 20 65 15
-   :file: docs/_schema_tables/root.csv
+   :file: docs/_schema_tables/statementGroup.csv
 ```
 
 Each statementGroup MUST include an array of one or more ```beneficialOwnershipStatements``` and, where a cross-reference publication pattern is followed, may include arrays of other statements.
-
-```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/statementGroup.csv
-```
 
 --- 
 
@@ -124,6 +117,17 @@ A beneficial ownership statement is made up of statements about an entity, an in
    :file: docs/_schema_tables/Interest.csv
 ```
 
+#### Annotation
+
+The annotation property currently allows for an array of simple annotation objects. This is a placeholder which could be extended in future to include structured information qualifying the nature of the interest held.
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/Annotation.csv
+```
+
 #### Share
 
 ```eval_rst
@@ -133,16 +137,6 @@ A beneficial ownership statement is made up of statements about an entity, an in
    :file: docs/_schema_tables/Share.csv
 ```
 
-#### Annotation
-
-The annotation property currently allows for an array of simply annotation objects. This is a placeholder which could be extended in future to include structured information qualifying the nature of the interest held.
-
-```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/Annotation.csv
-```
 
 ---
 
@@ -180,7 +174,7 @@ The annotation property currently allows for an array of simply annotation objec
 ---
 
 
-### Null party
+### NullParty
 
 ```eval_rst
 .. csv-table::
@@ -192,7 +186,7 @@ The annotation property currently allows for an array of simply annotation objec
 
 
 ---
-### ProvenanceStatement
+### Source
 
 See [the provenance pages](provenance.md) for a discussion of provenance modelling.
 
@@ -200,19 +194,29 @@ See [the provenance pages](provenance.md) for a discussion of provenance modelli
 .. csv-table::
    :header-rows: 1
    :widths: 20 65 15
-   :file: docs/_schema_tables/Provenance.csv
+   :file: docs/_schema_tables/Source.csv
 ```
 
 ---
 
-### StatementReference
+### EntityStatementReference
 
 ```eval_rst
 .. csv-table::
    :header-rows: 1
    :widths: 20 65 15
-   :file: docs/_schema_tables/StatementReference.csv
+   :file: docs/_schema_tables/EntityStatementReference.csv
 ```
+
+### PersonStatementReference
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/PersonStatementReference.csv
+```
+
 
 ---
 
