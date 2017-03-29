@@ -92,7 +92,7 @@ if __name__ == "__main__":
 
     make_definition_table(schema,join(file_path,"statementGroup.csv"))
 
-    make_definition_table(schema,join(file_path,"statements.csv"),what="properties",section="statementGroups/statements")
+    # make_definition_table(schema,join(file_path,"statements.csv"),what="properties",section="statementGroups/statements")
 
     make_definition_table(schema,join(file_path,"BeneficialOwnershipStatement.csv"),what="definitions",section="BeneficialOwnershipStatement")
 
@@ -100,11 +100,13 @@ if __name__ == "__main__":
 
     make_definition_table(schema,join(file_path,"Share.csv"),what="definitions",section="Interest/share")
 
+    make_definition_table(schema,join(file_path,"Annotation.csv"),what="definitions",section="Annotation")
+
     make_definition_table(schema,join(file_path,"EntityStatement.csv"),what="definitions",section="EntityStatement")
 
     make_definition_table(schema,join(file_path,"PersonStatement.csv"),what="definitions",section="PersonStatement")
 
-    make_definition_table(schema,join(file_path,"QualificationStatement.csv"),what="definitions",section="QualificationStatement")
+    make_definition_table(schema,join(file_path,"NullParty.csv"),what="definitions",section="NullParty")
 
     make_definition_table(schema,join(file_path,"Address.csv"),what="definitions",section="Address")
 

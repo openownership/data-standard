@@ -6,70 +6,66 @@
     "statementGroups": {
       "title": "Statement group",
       "description": "A statement group is used to collect together statements relating to a particular disclosure, company or individual. Statement groups are a logical grouping designed to limit duplication of provenance information, and bring together statements that contain cross references. Where statements in a statementGroup cross-references to other statements, those statements MUST also be contained within the group.",
-      "type": "object",
-      "required": [
-        "beneficialOwnershipStatements"
-      ],
-      "properties": {
-        "id": {
-          "title": "Statement group identifier",
-          "description": "An optional globally unique and persistent identifier for this statement group.",
-          "type": "string"
-        },
-        "beneficialOwnershipStatements": {
-          "title": "Beneficial ownership statements",
-          "description": "A collection of statements that describe the relationship between legal entities or between legal entities and natural persons, or that explain the non-availability of this information. Entity, person, qualification and provenance statements may be embeded within these statements, or provided in the neighbouring arrays and cross-referenced.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/BeneficialOwnershipStatement"
-          }
-        },
-        "entityStatements": {
-          "title": "Entity statements",
-          "description": "A collection of statements that describe legal persons or arrangements. Cross-referenced within beneficial ownership statements.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/EntityStatement"
-          }
-        },
-        "personStatements": {
-          "title": "Person statements",
-          "description": "A collection of statements that describe natural persons. Cross-referenced within beneficial ownership statements.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/PersonStatement"
-          }
-        },
-        "qualificationStatements": {
-          "title": "Qualification statements",
-          "description": "A collection of statements that qualify a beneficial ownership statement. Cross-referenced within beneficial ownership statements.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/QualificationStatement"
-          }
-        },
-        "provenanceStatements": {
-          "title": "Provenance statements",
-          "description": "A collection of provenance statements.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ProvenanceStatement"
-          }
-        },
-        "provenance": {
-          "oneOf": [
-            {
-              "$ref": "#/definitions/ProvenanceStatement"
-            },
-            {
-              "$ref": "#/definitions/StatementReference"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title":"Statement group",
+        "required": [
+          "beneficialOwnershipStatements"
+        ],
+        "properties": {
+          "id": {
+            "title": "Statement group identifier",
+            "description": "An optional globally unique and persistent identifier for this statement group.",
+            "type": "string"
+          },
+          "beneficialOwnershipStatements": {
+            "title": "Beneficial ownership statements",
+            "description": "A collection of statements that describe the relationship between legal entities or between legal entities and natural persons, or that explain the non-availability of this information. Entity, person, qualification and provenance statements may be embeded within these statements, or provided in the neighbouring arrays and cross-referenced.",
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/BeneficialOwnershipStatement"
             }
-          ]
-        },
-        "replacesStatementGroup": {
-          "title": "Replaces statement group",
-          "description": "If this statement group replaces all the statements from a previously published group, provide the globally unique identifier for the previous group here. Consuming applications are advised to mark all statements from the identified group as no longer active.",
-          "type": "string"
+          },
+          "entityStatements": {
+            "title": "Entity statements",
+            "description": "A collection of statements that describe legal persons or arrangements. Cross-referenced within beneficial ownership statements.",
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/EntityStatement"
+            }
+          },
+          "personStatements": {
+            "title": "Person statements",
+            "description": "A collection of statements that describe natural persons. Cross-referenced within beneficial ownership statements.",
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/PersonStatement"
+            }
+          },
+          "provenanceStatements": {
+            "title": "Provenance statements",
+            "description": "A collection of provenance statements.",
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/ProvenanceStatement"
+            }
+          },
+          "provenance": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/ProvenanceStatement"
+              },
+              {
+                "$ref": "#/definitions/StatementReference"
+              }
+            ]
+          },
+          "replacesStatementGroup": {
+            "title": "Replaces statement group",
+            "description": "If this statement group replaces all the statements from a previously published group, provide the globally unique identifier for the previous group here. Consuming applications are advised to mark all statements from the identified group as no longer active.",
+            "type": "string"
+          }
         }
       }
     }
@@ -105,31 +101,19 @@
               "$ref": "#/definitions/PersonStatement"
             },
             {
+              "$ref": "#/definitions/NullParty"
+            },
+            {
               "$ref": "#/definitions/StatementReference"
             }
           ]
         },
         "interests": {
           "title": "Interests",
-          "description": "A description of the interests held by the interestedParty covered by this statement in the entity covered by this statement.",
+          "description": "A describecription of the interests held by the interestedParty covered by this statement in the entity covered by this statement.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Interest"
-          }
-        },
-        "qualifications": {
-          "title": "Qualifications",
-          "description": "A qualification statement can be used to record any additional information about this Beneficial Ownership Statement, including information about any reasons non-disclosure of information.",
-          "type": "array",
-          "items": {
-            "oneOf": [
-              {
-                "$ref": "#/definitions/QualificationStatement"
-              },
-              {
-                "$ref": "#/definitions/StatementReference"
-              }
-            ]
           }
         },
         "provenance": {
@@ -159,8 +143,7 @@
           "enum": [
             "entityStatement",
             "personStatement",
-            "provenanceStatement",
-            "qualificationStatement"
+            "provenanceStatement"
           ]
         },
         "id": {
@@ -239,7 +222,7 @@
         },
         "uri": {
           "title": "URI",
-          "description": "Where a [persisten URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available for this entity this should be included.",
+          "description": "Where a [persistent URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available for this entity this should be included.",
           "type": "string",
           "format": "uri"
         },
@@ -266,16 +249,23 @@
         "id": {
           "$ref": "#/definitions/ID"
         },
-        "type": {
-          "title": "Type",
-          "description": "The ultimate beneficial owner of a legal entity is always a natural person.",
-          "type": "string",
-          "enum": [
-            "naturalPerson"
-          ]
-        },
         "date": {
           "$ref": "#/definitions/StatementDate"
+        },
+        "type": {
+          "title": "Type",
+          "description": "The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, by information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'.",
+          "type": "string",
+          "enum": [
+            "naturalPerson",
+            "anonymousPerson",
+            "unknownPerson"
+          ]
+        },
+        "missingInfoReason": {
+          "title": "Missing information reason(s)",
+          "description": "For PersonStatement's with the type 'anonymousPerson' or 'unknownPerson' this field should contain an explanation of the reason that detailed information on the person is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification.",
+          "type": "string"
         },
         "name": {
           "title": "Name",
@@ -346,6 +336,28 @@
         },
         "replacesStatement": {
           "$ref": "#/definitions/ReplacesStatement"
+        }
+      }
+    },
+    "NullParty": {
+      "title": "Null party",
+      "description": "When no beneficial owners exist, or no beneficial owners have been located, then a null party entry should be included.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "title": "Null type",
+          "description": "Why can't a beneficial owner be specified?",
+          "type": "string",
+          "enum": [
+            "unknown",
+            "noBeneficialOwners",
+            "noNotifiableOwners"
+          ]
+        },
+        "description": {
+          "title": "Description",
+          "description": "Any supporting information about the absence of a confirmed beneficial owner. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
+          "type": "string"
         }
       }
     },
@@ -422,44 +434,6 @@
         "derivedFrom": {
           "title": "Derived from",
           "description": "If this source was derived from a prior source either provide the identifier of a provenanceStatement about that prior source, or nest the provenace statement here.",
-          "oneOf": [
-            {
-              "$ref": "#/definitions/ProvenanceStatement"
-            },
-            {
-              "$ref": "#/definitions/StatementReference"
-            }
-          ]
-        },
-        "replacesStatement": {
-          "$ref": "#/definitions/ReplacesStatement"
-        }
-      }
-    },
-    "QualificationStatement": {
-      "properties": {
-        "id": {
-          "$ref": "#/definitions/ID"
-        },
-        "date": {
-          "$ref": "#/definitions/StatementDate"
-        },
-        "type": {
-          "title": "Type of qualification statement.",
-          "description": "",
-          "type": "string",
-          "enum": [
-            "non-disclosure",
-            "redaction",
-            "restrictions-on-control"
-          ]
-        },
-        "description": {
-          "title": "Description",
-          "description": "A description of this qualification",
-          "type": "string"
-        },
-        "provenance": {
           "oneOf": [
             {
               "$ref": "#/definitions/ProvenanceStatement"
@@ -561,6 +535,7 @@
           "description": "What kind of alternative name is this? Select from 'translation', 'formerName','birth', and 'alias'.",
           "type": "string",
           "enum": [
+            "detailed",
             "translation",
             "former",
             "alias",
@@ -671,6 +646,26 @@
           "description": "When did this interest cease. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
           "type": "string",
           "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+        },
+        "annotations": {
+          "title": "Annotations",
+          "description": "Any further details to qualify this interest.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Annotation"
+          }
+        }
+      }
+    },
+    "Annotation": {
+      "title": "Annotation",
+      "description": "Annotations can be provided in free-text. Additional extended properties can be included on the annotation object to provide structured data if required.",
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "title": "Description",
+          "description": "A free-text description to annotate this interest."
         }
       }
     }

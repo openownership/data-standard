@@ -1,0 +1,43 @@
+{
+  "statementGroups": [
+    {
+      "id": "9b57a603-ffdb-413c-ab8d-50a8325820c8",
+      "beneficialOwnershipStatements": [
+        {
+          "id": "c4bbe7a6-ec59-43dd-8ef8-b6ec954a11b0",
+          "date": "2017-03-25",
+          "entity": {
+            "id": "3af298b8-a8db-48a6-b95c-f60bc8473dae",
+            "date": "2017-03-25",
+            "type": "registeredEntity",
+            "name": "CHRINON LTD",
+            "foundingDate": "2010-11-18",
+            "dissolutionDate": null,
+            "identifiers": [
+              {
+                "scheme": "GB-COH",
+                "id": "07444723"
+              }
+            ],
+            "addresses": [
+              {
+                "type": "registered",
+                "address": "Aston House, Cornwall Avenue, London, N3 1LF",
+                "country": "GB",
+                "postCode": "N3 1LF"
+              }
+            ],
+            "jurisdiction": "GB",
+            "uri": "https://beta.companieshouse.gov.uk/company/07444723"
+          },
+          "interestedParty": {
+            "type": "unknown",
+            "description":"No beneficial owner has been located. A search is ongoing."
+          },
+          "interests": [
+          ]
+        }
+      ]
+    }
+  ]
+}

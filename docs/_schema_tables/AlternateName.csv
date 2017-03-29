@@ -1,5 +1,5 @@
 Field Name,Description,Format
-type,"Type: What kind of alternative name is this? Select from 'translation', 'formerName','birth', and 'alias'. List options: [ 'translation', 'former', 'alias', 'birth' ]",string
+type,"Type: What kind of alternative name is this? Select from 'translation', 'formerName','birth', and 'alias'.",string
 fullName,Full name: The full name contains the complete name of a person as one string.,string
 familyName,"Family name: A family name is usually shared by members of a family. This attribute also carries prefixes or suffixes which are part of the Family Name, e.g. 'de Boer', 'van de Putte', 'von und zu Orlow'. Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single Family Name field so that, for example, Miguel de Cervantes Saavedra's Family Name would be recorded as 'Cervantes Saavedra.'",string
 givenName,"Given names: A given name, or multiple given names, are the denominator(s) that identify an individual within a family. These are given to a person by his or her parents at birth or may be legally recognised as 'given names' through a formal process. All given names are ordered in one field so that, for example, the given name for Johan Sebastian Bach is 'Johan Sebastian.'",string

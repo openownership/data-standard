@@ -59,7 +59,7 @@ We model information on beneficial ownership in terms of a collection of stateme
 
 It is up to data consumers to decide which statements to trust, and to reconcile the identity of the entities and persons described in those statements based on the identifying information contained within each statement. 
 
-![Conceptual Model](https://cloud.githubusercontent.com/assets/342624/22198388/3defb136-e14e-11e6-8da5-82ab84a8529d.png)
+![Conceptual Model](https://cloud.githubusercontent.com/assets/342624/24324778/3b714986-1184-11e7-9c24-c0b5a7dcdd8e.png)
 
 This abstraction is important to represent the reality of how data is provided, to support integration of data from different systems and [bi-temporal modelling](https://en.wikipedia.org/wiki/Bitemporal_Modeling), and to recognise that any dataset may contain overlapping or conflicting claims about ownership and control that need to be resolved in application specific ways. 
 
@@ -73,7 +73,7 @@ The draft Beneficial Ownership Data Standard is defined using [JSON Schema 0.4](
 
 We have currently modelled the schema with the option for:
 
-* (1) Entity, person, qualification and provenance statements to be nested inside a beneficial ownership statement;
+* (1) Entity, person and provenance statements to be nested inside a beneficial ownership statement;
 * (2) Each kind of statement to be provided at the same level of heiarchy, with a cross-reference between them;
 
 This second option is sketched out with a view of serialisations that may make use of the [JSON Lines](http://jsonlines.org/) format for sharing or streaming large quantities of statements, rather than enclosing all statements ot be exchanged in a single object. 
@@ -106,7 +106,7 @@ Each statementGroup MUST include an array of one or more ```beneficialOwnershipS
 
 ### BeneficialOwnershipStatement
 
-A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity or a person), and detailes of the interest. Additionally, qualifications on this, provenance and versioning information can be provided. 
+A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided. 
 
 ```eval_rst
 .. csv-table::
@@ -131,6 +131,17 @@ A beneficial ownership statement is made up of statements about an entity, an in
    :header-rows: 1
    :widths: 20 65 15
    :file: docs/_schema_tables/Share.csv
+```
+
+#### Annotation
+
+The annotation property currently allows for an array of simply annotation objects. This is a placeholder which could be extended in future to include structured information qualifying the nature of the interest held.
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/Annotation.csv
 ```
 
 ---
@@ -168,17 +179,19 @@ A beneficial ownership statement is made up of statements about an entity, an in
 
 ---
 
-### QualificationStatement
+
+### Null party
 
 ```eval_rst
 .. csv-table::
    :header-rows: 1
    :widths: 20 65 15
-   :file: docs/_schema_tables/QualificationStatement.csv
+   :file: docs/_schema_tables/NullParty.csv
 ```
 
----
 
+
+---
 ### ProvenanceStatement
 
 See [the provenance pages](provenance.md) for a discussion of provenance modelling.

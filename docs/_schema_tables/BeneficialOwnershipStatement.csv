@@ -1,9 +1,8 @@
 Field Name,Description,Format
 id, See `ID <#id>`__,Object
 date, See `StatementDate <#statementdate>`__,Object
-entity, One of  `StatementReference <#statementreference>`__  or  `EntityStatement <#entitystatement>`__ ,
-interestedParty, One of  `EntityStatement <#entitystatement>`__  or  `PersonStatement <#personstatement>`__  or  `StatementReference <#statementreference>`__ ,
-interests,Interests: A description of the interests held by the interestedParty covered by this statement in the entity covered by this statement. See `Interest <#interest>`__ section for further details.,Object Array
-qualifications,"Qualifications: A qualification statement can be used to record any additional information about this Beneficial Ownership Statement, including information about any reasons non-disclosure of information.",Array
-provenance, One of  `ProvenanceStatement <#provenancestatement>`__  or  `StatementReference <#statementreference>`__ ,
+entity,,
+interestedParty,,
+interests,Interests: A describecription of the interests held by the interestedParty covered by this statement in the entity covered by this statement. See `Interest <#interest>`__ section for further details.,Object Array
+provenance,,
 replacesStatement, See `ReplacesStatement <#replacesstatement>`__,Object
