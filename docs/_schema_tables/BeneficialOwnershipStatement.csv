@@ -1,7 +1,7 @@
 Field Name,Description,Format
 id, See `ID <#id>`__,Object
 date, See `StatementDate <#statementdate>`__,Object
-entity,Entity: This entity is the subject of a beneficial ownership relationship. One of `EntitytatementReference <#entitytatementreference>`__ or `EntityStatement <#entitystatement>`__
+entity,Entity: This entity is the subject of a beneficial ownership relationship. One of `EntityStatementReference <#entitystatementreference>`__ or `EntityStatement <#entitystatement>`__
 interestedParty,Interested party: The interested party has some level of ownership or control over the entity referenced in this beneficial ownership statement. One of `EntityStatement <#entitystatement>`__ or `PersonStatement <#personstatement>`__ or `NullParty <#nullparty>`__ or `EntityStatementReference <#entitystatementreference>`__ or `PersonStatementReference <#personstatementreference>`__
 interests,Interests: A describecription of the interests held by the interestedParty covered by this statement in the entity covered by this statement. See `Interest <#interest>`__ section for further details.,Object Array
 source,"Source: The source of the information that links the entity and the interested party, or that supports a null statement. See `Source <#source>`__",Object

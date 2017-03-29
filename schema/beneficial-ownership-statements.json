@@ -74,7 +74,7 @@
           "description":"This entity is the subject of a beneficial ownership relationship.",
           "oneOf": [
             {
-              "$ref": "#/definitions/EntitytatementReference"
+              "$ref": "#/definitions/EntityStatementReference"
             },
             {
               "$ref": "#/definitions/EntityStatement"
@@ -121,7 +121,7 @@
       }
     },
     "EntityStatementReference": {
-      "title": "Statement reference",
+      "title": "Entity statement reference",
       "description": "Where entity, person and provenance statements are not nested within the beneficial ownership statement, they may be cross-referenced using a Statement Reference.",
       "type": "object",
       "properties": {
@@ -147,7 +147,7 @@
       }
     },
     "PersonStatementReference": {
-      "title": "Statement reference",
+      "title": "Person statement reference",
       "description": "Where entity, person and provenance statements are not nested within the beneficial ownership statement, they may be cross-referenced using a Statement Reference.",
       "type": "object",
       "properties": {
