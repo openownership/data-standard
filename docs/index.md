@@ -26,6 +26,14 @@ The work is guided by the Data Standard Working Group, and the initial phase of 
 .. toctree::
    :maxdepth: 1
    :glob:
+
+   overview.md
+   usecases.md
+   schema.md
+   identifiers.md
+   examples.md
+   provenance.md
+   serialization.md
    
    *
 

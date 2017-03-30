@@ -1,100 +1,129 @@
 {
-  "statementGroups": [
-    {
-      "statements": [
-        {
-          "id": "",
+  "statementGroups": {
+    "beneficialOwnershipStatements": [
+      {
+        "entity": {
           "date": "",
-          "entity": {
-            "addresses": [
-              {
-                "address": "",
-                "country": "",
-                "postalcode": "",
-                "type": ""
-              }
-            ],
-            "createdDate": "",
-            "endDate": "",
-            "id": "",
-            "identifiers": [
-              {
+          "replacesStatement": "",
+          "dissolutionDate": "2478-04-07T10:09:44.478Z",
+          "name": "",
+          "type": "",
+          "provenance": {
+            "attributedTo": {
+              "type": "Organization",
+              "name": "",
+              "identifier": {
                 "id": "",
-                "scheme": "",
-                "uri": ""
+                "scheme": "GB-VAT"
               }
-            ],
-            "jurisdiction": "",
-            "name": "",
-            "provenance": {
-              "id": "",
-              "type": "",
-              "uri": ""
             },
-            "type": "",
-            "uri": ""
-          },
-          "interestedParty": {
-            "alternateNames": [
-              {
-                "familyName": "",
-                "fullName": "",
-                "givenName": "",
-                "patronymicName": "",
-                "type": ""
-              }
-            ],
-            "birthDate": "",
-            "deathDate": "",
             "id": "",
-            "name": "",
-            "nationalities": [
-              "do"
-            ],
-            "provenance": {
-              "id": "",
+            "generatedBy": {
               "type": "",
-              "uri": ""
+              "description": ""
             },
-            "type": ""
+            "replacesStatement": "",
+            "type": "",
+            "primarySource": ""
           },
-          "interests": [
+          "identifiers": [
             {
-              "details": "",
-              "endDate": "",
-              "share": {
-                "exact": 0,
-                "exclusiveMinimum": false,
-                "maximum": 0,
-                "minimum": 0
-              },
-              "startDate": "",
-              "type": ""
+              "scheme": "MISC-NEWPUB",
+              "id": ""
             }
           ],
-          "qualifications": [
+          "addresses": [
             {
-              "date": "",
-              "description": "",
-              "id": "",
-              "provenance": {
-                "attributedTo": {
-                  "name": "",
-                  "type": ""
-                },
-                "generatedBy": {
-                  "description": "",
-                  "type": ""
-                },
-                "id": "",
-                "primarySource": "",
-                "type:": ""
-              },
-              "type": ""
+              "type": "",
+              "address": "",
+              "country": "",
+              "postCode": ""
             }
-          ]
-        }
-      ]
-    }
-  ]
+          ],
+          "foundingDate": "",
+          "jurisdiction": "",
+          "id": "",
+          "foundedDate": "2279",
+          "uri": ""
+        },
+        "interestedParty": {
+          "identifiers": [
+            {
+              "statementGroups": {
+                "replacesStatementGroup": "",
+                "id": "",
+                "provenance": {
+                  "type": "",
+                  "uri": "",
+                  "id": ""
+                }
+              }
+            }
+          ],
+          "nationalities": [
+            "DE"
+          ],
+          "missingInfoReason": "",
+          "id": "",
+          "alternateNames": [
+            {
+              "fullName": "",
+              "patronymicName": "",
+              "type": "",
+              "givenName": "",
+              "familyName": ""
+            }
+          ],
+          "type": ""
+        },
+        "id": "",
+        "provenance": {
+          "attributedTo": {
+            "type": "Person",
+            "name": "",
+            "identifier": {
+              "scheme": "PASSPORT-AF",
+              "id": ""
+            }
+          },
+          "id": "",
+          "primarySource": "",
+          "generatedBy": {
+            "type": "",
+            "description": ""
+          },
+          "derivedFrom": {
+            "uri": "",
+            "id": "",
+            "type": ""
+          },
+          "type": "",
+          "replacesStatement": ""
+        },
+        "date": "",
+        "interests": [
+          {
+            "startDate": "3904-12-14T02:50:34.089Z",
+            "type": "",
+            "share": {
+              "maximum": 0,
+              "exclusiveMaximum": false,
+              "exact": 0,
+              "exclusiveMinimum": false,
+              "minimum": 0
+            },
+            "annotations": [
+              {
+                "description": ""
+              }
+            ],
+            "interestLevel": "",
+            "details": ""
+          }
+        ]
+      }
+    ],
+    "replacesStatementGroup": "",
+    "id": ""
+  }
 }
