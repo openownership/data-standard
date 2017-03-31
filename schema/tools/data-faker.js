@@ -86,22 +86,13 @@ var applyHierarchicalPatches = function(original, patched) {
             }
           ]
         };
-    original.definitions.BeneficialOwnershipStatement.properties.qualifications.items = { "$ref": "#/definitions/QualificationStatement"};
-    original.definitions.BeneficialOwnershipStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
-    original.definitions.PersonStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
-    original.definitions.EntityStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
-    original.definitions.QualificationStatement.properties.provenance = {"$ref": "#/definitions/ProvenanceStatement" };
-
+    
 
     // remove arrays of top-level statements for cross-ref publication
-    delete statementGroups.properties.entityStatements;
-    delete statementGroups.properties.personStatements;
-    delete statementGroups.properties.qualificationStatements;
-    delete statementGroups.properties.provenanceStatements;
     // adjust provenance types and names
-    original.definitions.ProvenanceStatement.required = ["attributedTo", "id"];
+    
     // patch in attributedTo, with oneOf constraint
-    original.definitions.ProvenanceStatement.properties.attributedTo = patched.definitions.attributedTo;
+    
 };
 
 var applyCrossReferencedPatches = function(original, patched) {

@@ -1,0 +1,149 @@
+{
+  "statementGroups": [
+    {
+      "id": "2d129b31-7d00-4b40-97d9-311848115f28",
+      "beneficialOwnershipStatements": [
+        {
+          "#summary":"This statement shows an entity 100% owned by an arrangement",
+          "id": "39d83fed-a5c4-47ef-a477-72a32860584a",
+          "statementDate": "2017-03-25",
+          "entity": {
+            "id": "8549d14e-3864-44c2-a1f8-d5f397c4069e",
+            "statementDate": "2017-03-25",
+            "type": "registeredEntity",
+            "name": "CHRINON LTD",
+            "foundingDate": "2010-11-18",
+            "identifiers": [
+              {
+                "scheme": "GB-COH",
+                "id": "07444723"
+              }
+            ],
+            "addresses": [
+              {
+                "type": "registered",
+                "address": "Aston House, Cornwall Avenue, London, N3 1LF",
+                "country": "GB",
+                "postCode": "N3 1LF"
+              }
+            ],
+            "jurisdiction": "GB",
+            "uri": "https://beta.companieshouse.gov.uk/company/07444723"
+          },
+          "interestedParty": {
+            "id": "4cfc6d0c-8de4-4a62-803b-c0485fd61f68",
+            "statementDate":"2017-03-25",
+            "type": "arrangement",
+            "name": "Joint shareholding",
+            "identifiers": [
+              {
+                "scheme": "MISC-etag",
+                "id": "ee4d04b1-48d5-48c2-a77b-2054a0fc8203"
+              }
+            ]
+          },
+          "interests": [
+            {
+              "type": "shareholding",
+              "interestLevel": "direct",
+              "startDate": "2016-04-06",
+              "share": {
+                "exact": 100
+              }
+            }
+          ]
+        },
+        {
+          "#summary":"This statement shows Person A owns 50% of the arrangement.",
+          "id": "acdc0c13-43ea-4c5d-9bf9-4ee625dcfdd1",
+          "statementDate": "2017-03-25",
+          "entity": {
+            "id": "d51e90c1-0f75-46de-92e4-8a9096c13128",
+            "statementDate": "2017-03-25",
+            "type": "arrangement",
+            "name": "Joint shareholding",
+            "foundingDate": "2015-01-01",
+            "identifiers": [
+              {
+                "scheme": "MISC-etag",
+                "id": "ee4d04b1-48d5-48c2-a77b-2054a0fc8203"
+              }
+            ],
+            "jurisdiction": "GB"
+          },
+          "interestedParty": {
+            "id": "ec6a9066-15e0-42a7-947e-6ae044c3c80a",
+            "statementDate":"2017-03-25",
+            "type": "naturalPerson",
+            "name": "Person A",
+            "identifiers": [
+              {
+                "scheme": "MISC-etag",
+                "id": "7d779eaa-d4c8-4d0f-b21f-b19025525903"
+              }
+            ],
+            "nationalities": [
+              "GB"
+            ],
+            "birthDate": "1970-04"
+          },
+          "interests": [
+            {
+              "type": "shareholding",
+              "interestLevel": "direct",
+              "startDate": "2016-04-06",
+              "share": {
+                "exact": 50
+              }
+            }
+          ]
+        },
+        {
+          "#summary":"This statement shows Person B owns 50% of the arrangement.",
+          "id": "afe5ad43-6367-41da-bec1-1c5f923d5ffe",
+          "statementDate": "2017-03-25",
+          "entity": {
+            "id": "932a934e-03a9-4430-8a74-38672ce568ec",
+            "statementDate": "2017-03-25",
+            "type": "arrangement",
+            "name": "Joint shareholding",
+            "foundingDate": "2015-01-01",
+            "identifiers": [
+              {
+                "scheme": "MISC-etag",
+                "id": "ee4d04b1-48d5-48c2-a77b-2054a0fc8203"
+              }
+            ],
+            "jurisdiction": "GB"
+          },
+          "interestedParty": {
+            "id": "18db873b-c645-4f3c-8e9b-4db7d0e26d7d",
+            "statementDate":"2017-03-25",
+            "type": "naturalPerson",
+            "name": "Person B",
+            "identifiers": [
+              {
+                "scheme": "MISC-etag",
+                "id": "90885848-bbab-4f97-b84d-ca50f6ec68f2"
+              }
+            ],
+            "nationalities": [
+              "GB"
+            ],
+            "birthDate": "1970-04"
+          },
+          "interests": [
+            {
+              "type": "shareholding",
+              "interestLevel": "direct",
+              "startDate": "2016-04-06",
+              "share": {
+                "exact": 50
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

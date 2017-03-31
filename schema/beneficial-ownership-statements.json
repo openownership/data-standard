@@ -104,7 +104,7 @@
         },
         "interests": {
           "title": "Interests",
-          "description": "A describecription of the interests held by the interestedParty covered by this statement in the entity covered by this statement.",
+          "description": "A description of the interests held by the interestedParty covered by this statement in the entity covered by this statement.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Interest"
@@ -413,7 +413,13 @@
           "description": "Who is making this statement? This may be the name of the person or organisation making a self-declaration (in which case, please make sure the name field matches the organisation or person name field), or the name or description of some other party. If this statment has been verified, this may also include the name of the organisation providing verification.",
           "type": "array",
           "items": {
-            "type": "object",
+            "$ref":"#/definitions/AssertingParty"
+          }
+        }
+      }
+    },
+    "AssertingParty":{
+      "type": "object",
             "title": "Asserting party",
             "description": "An individual, organisation or other entity making, or supporting, a given statement.",
             "properties": {
@@ -429,9 +435,6 @@
                 "format": "uri"
               }
             }
-          }
-        }
-      }
     },
     "ReplacesStatement": {
       "title": "Replaces statement",
@@ -493,7 +496,7 @@
         },
         "address": {
           "title": "Address",
-          "description": "The address, with each line or component of the address separated by a line-break or comma. This field may also include the postal code.",
+          "description": "The address, with each line or component of the address separated by a line-break or comma. This field may also include the postal code. ",
           "type": "string"
         },
         "postCode": {
@@ -517,7 +520,7 @@
       "properties": {
         "type": {
           "title": "Type",
-          "description": "What kind of alternative name is this? Select from 'translation', 'formerName','birth', and 'alias'.",
+          "description": "What kind of alternative name is this?",
           "type": "string",
           "enum": [
             "detailed",
@@ -539,7 +542,7 @@
         },
         "givenName": {
           "title": "Given names",
-          "description": "A given name, or multiple given names, are the denominator(s) that identify an individual within a family. These are given to a person by his or her parents at birth or may be legally recognised as 'given names' through a formal process. All given names are ordered in one field so that, for example, the given name for Johan Sebastian Bach is 'Johan Sebastian.'",
+          "description": "A given name, or multiple given names, are the denominator(s) that identify an individual within a family. These are given to a person by his or her parents at birth or may be legally recognised as 'given names' through a formal process. All given names are ordered in one field so that, for example, the given name for Johann Sebastian Bach is 'Johann Sebastian.'",
           "type": "string"
         },
         "patronymicName": {

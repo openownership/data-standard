@@ -197,6 +197,16 @@ See [the provenance pages](provenance.md) for a discussion of provenance modelli
    :file: docs/_schema_tables/Source.csv
 ```
 
+#### AssertingParty
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/AssertingParty.csv
+```
+
+
 ---
 
 ### EntityStatementReference
@@ -225,6 +235,8 @@ See [the provenance pages](provenance.md) for a discussion of provenance modelli
 The following components are used at a number of points in the schema
 
 #### Address
+
+Due to the diversity of address formats used across systems, and the extent to which data is inconsistently entered across these data fields in source systems and legacy datasets, the schema uses a very simple address format for data exchange - relying upon consuming systems to parse addresses before carrying out any structured comparison. However, designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See [issue 18](https://github.com/openownership/data-standard/issues/18) for more details.
 
 ```eval_rst
 .. csv-table::

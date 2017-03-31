@@ -8,11 +8,10 @@
           "date": "2017-03-25",
           "entity": {
             "id": "3af298b8-a8db-48a6-b95c-f60bc8473dae",
-            "date": "2017-03-25",
+            "statementDate": "2017-03-25",
             "type": "registeredEntity",
             "name": "CHRINON LTD",
             "foundingDate": "2010-11-18",
-            "dissolutionDate": null,
             "identifiers": [
               {
                 "scheme": "GB-COH",

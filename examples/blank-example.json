@@ -1,129 +1,680 @@
 {
-  "statementGroups": {
-    "beneficialOwnershipStatements": [
-      {
-        "entity": {
-          "date": "",
-          "replacesStatement": "",
-          "dissolutionDate": "2478-04-07T10:09:44.478Z",
-          "name": "",
-          "type": "",
-          "provenance": {
-            "attributedTo": {
-              "type": "Organization",
-              "name": "",
-              "identifier": {
-                "id": "",
-                "scheme": "GB-VAT"
+  "statementGroups": [
+    {
+      "beneficialOwnershipStatements": [
+        {
+          "entity": {
+            "statementDate": "",
+            "uri": "",
+            "addresses": [
+              {
+                "address": "",
+                "postCode": "",
+                "type": "",
+                "country": ""
               }
-            },
+            ],
+            "name": "",
+            "type": "",
             "id": "",
-            "generatedBy": {
-              "type": "",
-              "description": ""
+            "source": {
+              "retrievedAt": "",
+              "url": "",
+              "assertedBy": [
+                {
+                  "name": "",
+                  "uri": ""
+                }
+              ],
+              "description": "",
+              "type": [
+                "thirdParty"
+              ]
             },
             "replacesStatement": "",
-            "type": "",
-            "primarySource": ""
+            "jurisdiction": "",
+            "identifiers": [
+              {
+                "uri": "",
+                "scheme": "",
+                "id": ""
+              }
+            ],
+            "missingInfoReason": "",
+            "foundingDate": "",
+            "dissolutionDate": ""
           },
+          "id": "",
+          "source": {
+            "description": "",
+            "type": [
+              "selfDeclaration"
+            ],
+            "assertedBy": [
+              {
+                "uri": "",
+                "name": ""
+              }
+            ],
+            "url": "",
+            "retrievedAt": ""
+          },
+          "interests": [
+            {
+              "interestLevel": "",
+              "share": {
+                "exclusiveMaximum": false,
+                "maximum": 0,
+                "minimum": 0,
+                "exact": 0,
+                "exclusiveMinimum": false
+              },
+              "details": "",
+              "annotations": [
+                {
+                  "description": ""
+                }
+              ],
+              "type": "",
+              "startDate": ""
+            }
+          ],
+          "replacesStatement": "",
+          "statementDate": "",
+          "interestedParty": {
+            "name": "",
+            "jurisdiction": "",
+            "uri": "",
+            "id": "",
+            "type": "",
+            "identifiers": [
+              {
+                "scheme": "",
+                "uri": "",
+                "id": ""
+              }
+            ],
+            "missingInfoReason": ""
+          }
+        },
+        {
+          "entity": {
+            "dissolutionDate": "",
+            "replacesStatement": "",
+            "source": {
+              "assertedBy": [
+                {
+                  "uri": "",
+                  "name": ""
+                }
+              ],
+              "url": "",
+              "retrievedAt": "",
+              "description": "",
+              "type": [
+                ""
+              ]
+            },
+            "id": "",
+            "identifiers": [
+              {
+                "uri": "",
+                "scheme": "",
+                "id": ""
+              }
+            ],
+            "addresses": [
+              {
+                "type": "",
+                "postCode": "",
+                "country": "",
+                "address": ""
+              }
+            ],
+            "type": "",
+            "missingInfoReason": "",
+            "name": "",
+            "statementDate": "",
+            "jurisdiction": "",
+            "uri": "",
+            "foundingDate": ""
+          },
+          "source": {
+            "type": [
+              ""
+            ],
+            "description": "",
+            "retrievedAt": "",
+            "assertedBy": [
+              {
+                "name": "",
+                "uri": ""
+              }
+            ],
+            "url": ""
+          },
+          "statementDate": "",
+          "id": "",
+          "interestedParty": {
+            "name": "",
+            "type": "",
+            "identifiers": [
+              {
+                "scheme": "",
+                "id": "",
+                "uri": ""
+              }
+            ],
+            "id": "",
+            "missingInfoReason": "",
+            "jurisdiction": "",
+            "uri": ""
+          },
+          "interests": [
+            {
+              "share": {
+                "exclusiveMaximum": false,
+                "exclusiveMinimum": false,
+                "exact": 0,
+                "maximum": 0,
+                "minimum": 0
+              },
+              "annotations": [
+                {
+                  "description": ""
+                }
+              ],
+              "interestLevel": "",
+              "type": "",
+              "details": "",
+              "startDate": ""
+            }
+          ],
+          "replacesStatement": ""
+        },
+        {
+          "entity": {
+            "identifiers": [
+              {
+                "scheme": "",
+                "id": "",
+                "uri": ""
+              }
+            ],
+            "uri": "",
+            "jurisdiction": "",
+            "name": "",
+            "addresses": [
+              {
+                "type": "",
+                "postCode": "",
+                "address": "",
+                "country": ""
+              }
+            ],
+            "dissolutionDate": "",
+            "missingInfoReason": "",
+            "replacesStatement": "",
+            "statementDate": "",
+            "type": "",
+            "source": {
+              "url": "",
+              "type": [
+                "officialRegister"
+              ],
+              "retrievedAt": "",
+              "description": "",
+              "assertedBy": [
+                {
+                  "name": "",
+                  "uri": ""
+                }
+              ]
+            },
+            "id": "",
+            "foundingDate": ""
+          },
+          "replacesStatement": "",
+          "id": "",
+          "statementDate": "",
+          "interests": [
+            {
+              "details": "",
+              "interestLevel": "",
+              "type": "",
+              "share": {
+                "exact": 0,
+                "exclusiveMinimum": false,
+                "minimum": 0,
+                "exclusiveMaximum": false,
+                "maximum": 0
+              },
+              "annotations": [
+                {
+                  "description": ""
+                }
+              ],
+              "startDate": ""
+            }
+          ],
+          "source": {
+            "type": [
+              "thirdParty"
+            ],
+            "retrievedAt": "",
+            "description": "",
+            "url": "",
+            "assertedBy": [
+              {
+                "name": "",
+                "uri": ""
+              }
+            ]
+          },
+          "interestedParty": {
+            "identifiers": [
+              {
+                "id": "",
+                "scheme": "",
+                "uri": ""
+              }
+            ],
+            "type": "",
+            "name": "",
+            "jurisdiction": "",
+            "id": "",
+            "missingInfoReason": "",
+            "uri": ""
+          }
+        },
+        {
+          "entity": {
+            "id": "",
+            "dissolutionDate": "",
+            "addresses": [
+              {
+                "country": "",
+                "postCode": "",
+                "type": "",
+                "address": ""
+              }
+            ],
+            "name": "",
+            "source": {
+              "retrievedAt": "",
+              "url": "",
+              "description": "",
+              "type": [
+                "officialRegister"
+              ],
+              "assertedBy": [
+                {
+                  "uri": "",
+                  "name": ""
+                }
+              ]
+            },
+            "foundingDate": "",
+            "statementDate": "",
+            "type": "",
+            "replacesStatement": "",
+            "identifiers": [
+              {
+                "scheme": "",
+                "uri": "",
+                "id": ""
+              }
+            ],
+            "jurisdiction": "",
+            "uri": "",
+            "missingInfoReason": ""
+          },
+          "id": "",
+          "statementDate": "",
+          "replacesStatement": "",
+          "source": {
+            "assertedBy": [
+              {
+                "uri": "",
+                "name": ""
+              }
+            ],
+            "description": "",
+            "retrievedAt": "",
+            "url": "",
+            "type": [
+              "thirdParty"
+            ]
+          },
+          "interests": [
+            {
+              "annotations": [
+                {
+                  "description": ""
+                }
+              ],
+              "type": "",
+              "startDate": "",
+              "details": "",
+              "share": {
+                "maximum": 0,
+                "exclusiveMinimum": false,
+                "exact": 0,
+                "minimum": 0,
+                "exclusiveMaximum": false
+              },
+              "interestLevel": ""
+            }
+          ],
+          "interestedParty": {
+            "id": "",
+            "uri": "",
+            "type": "",
+            "name": "",
+            "jurisdiction": "",
+            "missingInfoReason": "",
+            "identifiers": [
+              {
+                "id": "",
+                "scheme": "",
+                "uri": ""
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "missingInfoReason": "",
+            "statementDate": "",
+            "foundingDate": "",
+            "type": "",
+            "source": {
+              "retrievedAt": "",
+              "url": "",
+              "description": "",
+              "assertedBy": [
+                {
+                  "name": "",
+                  "uri": ""
+                }
+              ],
+              "type": [
+                ""
+              ]
+            },
+            "identifiers": [
+              {
+                "id": "",
+                "scheme": "",
+                "uri": ""
+              }
+            ],
+            "name": "",
+            "id": "",
+            "uri": "",
+            "jurisdiction": "",
+            "dissolutionDate": "",
+            "replacesStatement": "",
+            "addresses": [
+              {
+                "address": "",
+                "type": "",
+                "postCode": "",
+                "country": ""
+              }
+            ]
+          },
+          "id": "",
+          "statementDate": "",
+          "interestedParty": {
+            "jurisdiction": "",
+            "identifiers": [
+              {
+                "scheme": "",
+                "id": "",
+                "uri": ""
+              }
+            ],
+            "type": "",
+            "uri": "",
+            "name": "",
+            "id": "",
+            "missingInfoReason": ""
+          },
+          "replacesStatement": "",
+          "interests": [
+            {
+              "share": {
+                "maximum": 0,
+                "exact": 0,
+                "exclusiveMaximum": false,
+                "exclusiveMinimum": false,
+                "minimum": 0
+              },
+              "annotations": [
+                {
+                  "description": ""
+                }
+              ],
+              "startDate": "",
+              "interestLevel": "",
+              "type": "",
+              "details": ""
+            }
+          ],
+          "source": {
+            "url": "",
+            "assertedBy": [
+              {
+                "uri": "",
+                "name": ""
+              }
+            ],
+            "type": [
+              "verified"
+            ],
+            "retrievedAt": "",
+            "description": ""
+          }
+        }
+      ],
+      "source": {
+        "title": "",
+        "description": ""
+      },
+      "personStatements": [
+        {
+          "nationalities": [
+            "IT"
+          ],
+          "missingInfoReason": "",
+          "placeOfResidence": {
+            "type": "",
+            "address": "",
+            "country": "",
+            "postCode": ""
+          },
+          "id": "",
+          "name": "",
+          "type": "",
+          "alternateNames": [
+            {
+              "patronymicName": "",
+              "fullName": "",
+              "familyName": "",
+              "givenName": "",
+              "type": ""
+            }
+          ],
+          "identifiers": [
+            {
+              "scheme": "GB-PASSPORT",
+              "uri": "",
+              "id": ""
+            }
+          ]
+        }
+      ],
+      "replacesStatementGroup": "amet",
+      "entityStatements": [
+        {
+          "name": "",
+          "statementDate": "",
+          "uri": "",
+          "jurisdiction": "",
+          "replacesStatement": "",
+          "id": "",
+          "type": "",
+          "source": {
+            "retrievedAt": "",
+            "description": "",
+            "url": "",
+            "type": [
+              "thirdParty"
+            ],
+            "assertedBy": [
+              {
+                "name": "",
+                "uri": ""
+              }
+            ]
+          },
+          "addresses": [
+            {
+              "address": "",
+              "country": "",
+              "postCode": "",
+              "type": ""
+            }
+          ],
+          "missingInfoReason": "",
           "identifiers": [
             {
               "scheme": "MISC-NEWPUB",
+              "uri": "",
+              "id": ""
+            }
+          ]
+        },
+        {
+          "replacesStatement": "",
+          "statementDate": "",
+          "jurisdiction": "",
+          "type": "",
+          "source": {
+            "url": "",
+            "type": [
+              "primaryResearch"
+            ],
+            "assertedBy": [
+              {
+                "uri": "",
+                "name": ""
+              }
+            ],
+            "description": "",
+            "retrievedAt": ""
+          },
+          "identifiers": [
+            {
+              "uri": "",
+              "scheme": "GB-VAT",
               "id": ""
             }
           ],
           "addresses": [
             {
-              "type": "",
+              "country": "",
+              "postCode": "",
               "address": "",
+              "type": ""
+            }
+          ],
+          "missingInfoReason": "",
+          "uri": "",
+          "name": "",
+          "id": ""
+        },
+        {
+          "identifiers": [
+            {
+              "uri": "",
+              "id": "",
+              "scheme": "GB-VAT"
+            }
+          ],
+          "replacesStatement": "",
+          "missingInfoReason": "",
+          "addresses": [
+            {
+              "country": "",
+              "postCode": "",
+              "address": "",
+              "type": ""
+            }
+          ],
+          "jurisdiction": "",
+          "uri": "",
+          "statementDate": "",
+          "id": "",
+          "source": {
+            "retrievedAt": "",
+            "type": [
+              "verified"
+            ],
+            "assertedBy": [
+              {
+                "name": "",
+                "uri": ""
+              }
+            ],
+            "url": "",
+            "description": ""
+          },
+          "name": "",
+          "type": ""
+        },
+        {
+          "identifiers": [
+            {
+              "scheme": "GB-VAT",
+              "id": "",
+              "uri": ""
+            }
+          ],
+          "name": "",
+          "addresses": [
+            {
+              "address": "",
+              "type": "",
               "country": "",
               "postCode": ""
             }
           ],
-          "foundingDate": "",
-          "jurisdiction": "",
-          "id": "",
-          "foundedDate": "2279",
-          "uri": ""
-        },
-        "interestedParty": {
-          "identifiers": [
-            {
-              "statementGroups": {
-                "replacesStatementGroup": "",
-                "id": "",
-                "provenance": {
-                  "type": "",
-                  "uri": "",
-                  "id": ""
-                }
-              }
-            }
-          ],
-          "nationalities": [
-            "DE"
-          ],
           "missingInfoReason": "",
-          "id": "",
-          "alternateNames": [
-            {
-              "fullName": "",
-              "patronymicName": "",
-              "type": "",
-              "givenName": "",
-              "familyName": ""
-            }
-          ],
-          "type": ""
-        },
-        "id": "",
-        "provenance": {
-          "attributedTo": {
-            "type": "Person",
-            "name": "",
-            "identifier": {
-              "scheme": "PASSPORT-AF",
-              "id": ""
-            }
-          },
-          "id": "",
-          "primarySource": "",
-          "generatedBy": {
-            "type": "",
-            "description": ""
-          },
-          "derivedFrom": {
-            "uri": "",
-            "id": "",
-            "type": ""
-          },
+          "jurisdiction": "",
           "type": "",
-          "replacesStatement": ""
-        },
-        "date": "",
-        "interests": [
-          {
-            "startDate": "3904-12-14T02:50:34.089Z",
-            "type": "",
-            "share": {
-              "maximum": 0,
-              "exclusiveMaximum": false,
-              "exact": 0,
-              "exclusiveMinimum": false,
-              "minimum": 0
-            },
-            "annotations": [
+          "replacesStatement": "",
+          "statementDate": "",
+          "source": {
+            "description": "",
+            "url": "",
+            "assertedBy": [
               {
-                "description": ""
+                "name": "",
+                "uri": ""
               }
             ],
-            "interestLevel": "",
-            "details": ""
-          }
-        ]
-      }
-    ],
-    "replacesStatementGroup": "",
-    "id": ""
-  }
+            "retrievedAt": "",
+            "type": [
+              "primaryResearch"
+            ]
+          },
+          "id": "",
+          "uri": ""
+        }
+      ],
+      "id": "pariatur sint ex ut"
+    }
+  ]
 }
