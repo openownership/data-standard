@@ -43,7 +43,9 @@ The beneficial ownership standard is made up of two parts:
 
 .. attention:: 
     
-    This is the first **alpha version** of the schema. It is a living document, and undergoing constant updates. 
+    This is the **beta** of the schema. This version is ready for test implementations. 
+
+    Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this beta release onwards, any structural changes, or major definitional changes will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form. 
 
     The schema contains a draft **structure** and **fields** but does not yet specify substantial constraints or explicit required fields. 
 
@@ -57,9 +59,7 @@ We model information on beneficial ownership in terms of a collection of stateme
 
 It is up to data consumers to decide which statements to trust, and to reconcile the identity of the entities and persons described in those statements based on the identifying information contained within each statement. 
 
-![Conceptual Model](https://cloud.githubusercontent.com/assets/342624/24324778/3b714986-1184-11e7-9c24-c0b5a7dcdd8e.png)
-
-> ToDo: Diagram needs updating
+![Conceptual Model](_assets/ConceptualModel-March2017.png)
 
 This abstraction is important to represent the reality of how data is provided, to support integration of data from different systems and [bi-temporal modelling](https://en.wikipedia.org/wiki/Bitemporal_Modeling), and to recognise that any dataset may contain overlapping or conflicting claims about ownership and control that need to be resolved in application specific ways. 
 

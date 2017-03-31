@@ -1,7 +1,7 @@
-Beneficial Ownership Data Standard (alpha)
+Beneficial Ownership Data Standard (beta)
 ==========================================
 
-This is a stub documentation site for the alpha version of the Beneficial Ownership Data Standard. 
+This site contains documentation site for the beta version of the Beneficial Ownership Data Standard, developed as part of the OpenOwnership project.
 
 ## About
 
