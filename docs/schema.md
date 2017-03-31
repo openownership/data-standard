@@ -31,7 +31,7 @@
     width:10%;
 }--></style>
 
-# Schema
+# Specification
 
 The beneficial ownership standard is made up of two parts:
 

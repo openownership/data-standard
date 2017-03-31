@@ -12,9 +12,7 @@ The work is guided by the Data Standard Working Group, and the initial phase of 
 ```eval_rst
 .. attention:: 
 
-    This documentation site is a work in progress.
-
-    A draft schema is ready for review on the schema page.
+    This is the pre-beta version of the standard. It is subject to working group approval.
 ```
 
 
