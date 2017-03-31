@@ -56,7 +56,7 @@ source_suffix = ['.rst','.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'Beneficial Ownership Data Standard (alpha)'
+project = 'Beneficial Ownership Data Standard (beta)'
 copyright = '2017, OpenOwnership'
 author = 'OpenOwnership'
 

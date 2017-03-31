@@ -1,6 +1,6 @@
 Field Name,Description,Format
 id, See `ID <#id>`__,Object
-date, See `StatementDate <#statementdate>`__,Object
+statementDate, See `StatementDate <#statementdate>`__,Object
 type,"Type: The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, by information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'. Codelist options: [``naturalPerson``, ``anonymousPerson``, ``unknownPerson``]",string enum (codelist)
 missingInfoReason,"Missing information reason(s): For PersonStatements with the type 'anonymousPerson' or 'unknownPerson' this field should contain an explanation of the reason that detailed information on the person is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification.",string
 name,Name: The full name of this person.,string

@@ -31,7 +31,7 @@
     width:10%;
 }--></style>
 
-# Schema
+# Specification
 
 The beneficial ownership standard is made up of two parts:
 
@@ -43,7 +43,9 @@ The beneficial ownership standard is made up of two parts:
 
 .. attention:: 
     
-    This is the first **alpha version** of the schema. It is a living document, and undergoing constant updates. 
+    This is the **beta** of the schema. This version is ready for test implementations. 
+
+    Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this beta release onwards, any structural changes, or major definitional changes will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form. 
 
     The schema contains a draft **structure** and **fields** but does not yet specify substantial constraints or explicit required fields. 
 
@@ -57,15 +59,13 @@ We model information on beneficial ownership in terms of a collection of stateme
 
 It is up to data consumers to decide which statements to trust, and to reconcile the identity of the entities and persons described in those statements based on the identifying information contained within each statement. 
 
-![Conceptual Model](https://cloud.githubusercontent.com/assets/342624/24324778/3b714986-1184-11e7-9c24-c0b5a7dcdd8e.png)
-
-> ToDo: Diagram needs updating
+![Conceptual Model](_assets/ConceptualModel-March2017.png)
 
 This abstraction is important to represent the reality of how data is provided, to support integration of data from different systems and [bi-temporal modelling](https://en.wikipedia.org/wiki/Bitemporal_Modeling), and to recognise that any dataset may contain overlapping or conflicting claims about ownership and control that need to be resolved in application specific ways. 
 
 ## Schema browser
 
-The draft Beneficial Ownership Data Standard is defined using [JSON Schema 0.4](http://json-schema.org/). The structured schema can be [accessed on GitHub](https://github.com/openownership/data-standard/tree/master/schema) or explored using the viewer below.
+The draft Beneficial Ownership Data Standard is defined using [JSON Schema 0.4](http://json-schema.org/). The structured schema can be [accessed here](_static/beneficial-ownership-statements.json) or explored using the viewer below.
 
 <script src="_static/docson/widget.js" data-schema="../beneficial-ownership-statements.json"></script>
 
@@ -197,6 +197,16 @@ See [the provenance pages](provenance.md) for a discussion of provenance modelli
    :file: docs/_schema_tables/Source.csv
 ```
 
+#### AssertingParty
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :widths: 20 65 15
+   :file: docs/_schema_tables/AssertingParty.csv
+```
+
+
 ---
 
 ### EntityStatementReference
@@ -225,6 +235,8 @@ See [the provenance pages](provenance.md) for a discussion of provenance modelli
 The following components are used at a number of points in the schema
 
 #### Address
+
+Due to the diversity of address formats used across systems, and the extent to which data is inconsistently entered across these data fields in source systems and legacy datasets, the schema uses a very simple address format for data exchange - relying upon consuming systems to parse addresses before carrying out any structured comparison. However, designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See [issue 18](https://github.com/openownership/data-standard/issues/18) for more details.
 
 ```eval_rst
 .. csv-table::

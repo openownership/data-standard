@@ -1,7 +1,7 @@
-Beneficial Ownership Data Standard (alpha)
+Beneficial Ownership Data Standard (beta)
 ==========================================
 
-This is a stub documentation site for the alpha version of the Beneficial Ownership Data Standard. 
+This site contains documentation site for the beta version of the Beneficial Ownership Data Standard, developed as part of the OpenOwnership project.
 
 ## About
 
@@ -12,11 +12,10 @@ The work is guided by the Data Standard Working Group, and the initial phase of 
 ```eval_rst
 .. attention:: 
 
-    This documentation site is a work in progress.
-
-    A draft schema is ready for review on the schema page.
+    This is the pre-beta version of the standard. It is subject to working group approval.
 ```
 
+The beta schema is documented at **[specification](schema.md)**.
 
 
 ### Contents

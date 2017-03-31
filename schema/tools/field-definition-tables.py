@@ -128,4 +128,6 @@ if __name__ == "__main__":
 
     make_definition_table(schema,join(file_path,"EntityStatementReference.csv"),what="definitions",section="EntityStatementReference")
 
+    make_definition_table(schema,join(file_path,"AssertingParty.csv"),what="definitions",section="AssertingParty")
+
 
