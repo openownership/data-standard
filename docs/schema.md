@@ -65,7 +65,7 @@ This abstraction is important to represent the reality of how data is provided, 
 
 ## Schema browser
 
-The draft Beneficial Ownership Data Standard is defined using [JSON Schema 0.4](http://json-schema.org/). The structured schema can be [accessed on GitHub](https://github.com/openownership/data-standard/tree/master/schema) or explored using the viewer below.
+The draft Beneficial Ownership Data Standard is defined using [JSON Schema 0.4](http://json-schema.org/). The structured schema can be [accessed here](_static/beneficial-ownership-statements.json) or explored using the viewer below.
 
 <script src="_static/docson/widget.js" data-schema="../beneficial-ownership-statements.json"></script>
 

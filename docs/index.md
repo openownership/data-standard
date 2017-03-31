@@ -15,6 +15,7 @@ The work is guided by the Data Standard Working Group, and the initial phase of 
     This is the pre-beta version of the standard. It is subject to working group approval.
 ```
 
+The beta schema is documented at **[specification](schema.md)**.
 
 
 ### Contents

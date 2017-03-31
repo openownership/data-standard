@@ -66,7 +66,7 @@
         "id": {
           "$ref": "#/definitions/ID"
         },
-        "date": {
+        "statementDate": {
           "$ref": "#/definitions/StatementDate"
         },
         "entity": {
@@ -180,7 +180,7 @@
         "id": {
           "$ref": "#/definitions/ID"
         },
-        "date": {
+        "statementDate": {
           "$ref": "#/definitions/StatementDate"
         },
         "type": {
@@ -265,7 +265,7 @@
         "id": {
           "$ref": "#/definitions/ID"
         },
-        "date": {
+        "statementDate": {
           "$ref": "#/definitions/StatementDate"
         },
         "type": {
