@@ -310,6 +310,27 @@ var postProcessHierarchicalSample = function (sample) {
                             if (no_address.includes(bos.entity.type)) {
                                 delete bos.entity.addresses;
                             }
+                            bos.interests.forEach( function (interest) {
+                                if (interest.type != "shareholding") {
+                                    delete interest.share;
+                                } else {
+                                    //choose an exact or non-exact shareholding
+                                    if (Math.random() > 0.5) {
+                                        delete interest.share.exact;
+                                        if (interest.share.minimum > interest.share.maximum) {
+                                            var newMax = interest.share.minimum;
+                                            interest.share.minimum = interest.share.maximum;
+                                            interest.share.maximum = newMax;
+                                        }
+                                    } else {
+                                        interest.share.minimum = interest.share.exact;
+                                        interest.share.maximum = interest.share.exact;
+                                        delete interest.share.exclusiveMinimum;
+                                        delete interest.share.exclusiveMaximum;
+                                    }
+                                }
+                            })
+
                         });
                     }  
             });
