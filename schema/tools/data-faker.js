@@ -299,7 +299,19 @@ var postProcessHierarchicalSample = function (sample) {
         Object.keys(sg).forEach( function (arr) {
                     if (flat_arrays.includes(arr)) {
                        delete sg[arr];
-                    } 
+                    }
+                    if (arr === 'beneficialOwnershipStatements'){
+                        sg[arr].forEach( function (bos) {
+                            var no_identifiers =  ["legalEntity", "arrangement", "anonymousEntity", "unknownEntity"];
+                            var no_address = ["anonymousEntity", "unknownEntity"];
+                            if(no_identifiers.includes(bos.entity.type)) {
+                                delete bos.entity.identifiers;
+                            }
+                            if (no_address.includes(bos.entity.type)) {
+                                delete bos.entity.addresses;
+                            }
+                        });
+                    }  
             });
         });
     return sample;
