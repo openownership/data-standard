@@ -339,6 +339,12 @@ var postProcessHierarchicalSample = function(sample) {
             } else {
                 return undefined;
             }
+        }
+        if (key === 'fullName') {
+            return this.givenName + " " + this.familyName;
+        }
+        if (key === 'alternateNames') {
+            this.name = value[0].fullName;
         } 
         return value;
     });
