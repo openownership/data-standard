@@ -26,6 +26,8 @@ var schemapatches =
         'schemapatches.json'),
     'utf8'));
 
+
+
 jsf.format('URI', function(gen, jsonschema) {
     return gen.randexp('^http://[A-Za-z0-9]+\\.com$');
 });
@@ -54,7 +56,7 @@ var required = {"common": {"BeneficialOwnershipStatement": ["entity", "intereste
                             "EntityStatement": ["statementDate"],
                             "PersonStatement": ["statementDate"] } };
 
-var patch = function(original, patched) {
+var applyCommonPatches = function(original, patched) {
     var modified = JSON.parse(JSON.stringify(original), function(key, value) {
         var required_keys = Object.keys(required.common);
 
@@ -78,7 +80,7 @@ var patch = function(original, patched) {
 
 
 
-var applyCommonPatches = function(original, patched) {
+/*var applyCommonPatches = function(original, patched) {
     // add common definitions for faker formats
     // patch in company and natural person names
     original.definitions.PersonName = patched.definitions.PersonName;
@@ -94,15 +96,16 @@ var applyCommonPatches = function(original, patched) {
     original.definitions.PersonStatement.properties.identifiers = {"type": "array",
     "items": {"type": "object", "$ref": "#/definitions/PersonIdentifier"}};
     //original.definitions.PersonStatement.properties.identifiers = {"type": "array","items": {"type": "object", "$ref": "#definitions/PersonIdentifier"}};
-};
+};*/
 
 var applyHierarchicalPatches = function(original, patched) {
+    //console.log(patched["hierarchicalDefinitions"]);
     // adjust schema for nested publication
     modified = original;
     //original.definitions.BeneficialOwnershipStatement.required = ["entity", "interestedParty"];
     // replace StatementReference from oneOf in nested properties
     modified.definitions.BeneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatement"};
-    //original.definitions.BeneficialOwnershipStatement.properties.interestedParty = patched.hierarchicalDefinitions.interestedParty;
+    original.definitions.BeneficialOwnershipStatement.properties.interestedParty = patched.hierarchicalDefinitions.interestedParty;
     
     // adjust provenance types and names
     
@@ -211,6 +214,9 @@ var modifyForFaker = function(schema) {
         }
         if (key === 'fullName') {
             value.faker = 'name.findName';
+        }
+        if (key === 'url') {
+            value.faker = 'internet.url';
         } 
         return value;
         
@@ -303,7 +309,7 @@ var postProcessHierarchicalSample = function (sample) {
 
 var pickOne = function(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
-}
+};
 
 var postProcessBlankSample = function (sample, schema) {
     // workaround to create samples for nested objects that otherwise aren't guaranteed to generate
@@ -314,20 +320,15 @@ var postProcessBlankSample = function (sample, schema) {
     modified.statementGroups[0].beneficialOwnershipStatements[0].interestedParty = 
     fakeSchemaChunk(schema, pickOne(nestedInterestPartyStatements));
     if (!("source" in sample.statementGroups[0].beneficialOwnershipStatements[0])) {
-        console.log("missing source");
         var newSource = fakeSchemaChunk(schema, schema.definitions.Source);
-        console.log(newSource);
         modified.statementGroups[0].beneficialOwnershipStatements[0].source = newSource;
-            
     }
     if (!("replacesStatement" in sample.statementGroups[0].beneficialOwnershipStatements[0])) {
-        console.log("missing rp");
-        console.log(schema.definitions.ReplacesStatement);
         var newRP = fakeSchemaChunk(schema, schema.definitions.ReplacesStatement);
-        console.log(newRP);
         modified.statementGroups[0].beneficialOwnershipStatements[0].replacesStatement = newRP;
     }
 
+    // remove flat arrays used in flat publishing structure
     Object.keys(modified.statementGroups[0]).forEach( function (k) {
         if(flat_arrays.includes(k)) {
             delete modified.statementGroups[0][k];
@@ -347,11 +348,13 @@ var fakeSchemaChunk = function (schema, schemaChunk, chunkKey="k", withKey = fal
     return jsf(modifiedSchema)[chunkKey];
 };
 
-var makeSample = function() {
+var makeSample = function(schema, patches) {
+    //console.log(patches);
+    var modifiedSchema = schema;
+    var sample;
     if (program.blank) {
-        var modifiedSchema = jsonschema;
         if (!program.crossref) {
-            modifiedSchema = applyHierarchicalPatches(modifiedSchema);
+            modifiedSchema = applyHierarchicalPatches(modifiedSchema, patches);
         }
         modifiedSchema = makeBlank(modifiedSchema);
         modifiedSchema.definitions.BeneficialOwnershipStatement.required = Object.keys(modifiedSchema.definitions.BeneficialOwnershipStatement.properties);
@@ -359,16 +362,34 @@ var makeSample = function() {
             console.log(JSON.stringify(modifiedSchema, null, 2));
             return;
         }
-        var sample = jsf(modifiedSchema);
+        sample = jsf(modifiedSchema);
         sample = postProcessBlankSample(sample, modifiedSchema);
         console.log(JSON.stringify(sample, null, 2));
         return;
+    } else {
+        modifiedSchema = applyCommonPatches(jsonschema, patches);
+        if (! program.crossref) {
+            modifiedSchema = applyHierarchicalPatches(modifiedSchema, patches);
+            modifiedSchema = modifyForFaker(modifiedSchema);
+            if (program.debugschema) {
+                console.log(JSON.stringify(modifiedSchema, null, 2));
+                return;
+            }
+            sample = jsf(modifiedSchema);
+            sample = postProcessHierarchicalSample(sample);
+            console.log(JSON.stringify(sample, null, 2));
+            return;
+        } else {
+            throw new Error('Cross-referenced example data not implemented yet');
+        }
+
     }
+}
 
-    jsonschema = patch(jsonschema, schemapatches);
+    
 
 
-    if (!program.crossref) {
+/*    if (!program.crossref) {
             applyHierarchicalPatches(jsonschema, schemapatches);
             //jsonschema = modifySchema(jsonschema);
             jsonschema = modifyForFaker(jsonschema);
@@ -395,9 +416,9 @@ var makeSample = function() {
             }
 
         }
-};
+};*/
 
 if (require.main === module) {
-    makeSample();
+    makeSample(jsonschema, schemapatches);
 }
 
