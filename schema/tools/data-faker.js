@@ -52,22 +52,14 @@ var flat_arrays = [ "qualificationStatements", "entityStatements",
                    "personStatements"];
 var fuzzy_dates = [ "birthDate", "deathDate", "foundingDate", 
                     "dissolutionDate", "startDate", "endDate"];
-var required = {"common": {"BeneficialOwnershipStatement": ["entity", "interestedParty", "statementDate"],
-                            "EntityStatement": ["statementDate"],
-                            "PersonStatement": ["statementDate"] } };
+
 
 var applyCommonPatches = function(original, patched) {
     var modified = JSON.parse(JSON.stringify(original), function(key, value) {
-        var required_keys = Object.keys(required.common);
-
         if (key === "definitions") {
             value.FuzzyDate = patched.definitions.FuzzyDate;
             return value;
         }
-/*        if (required_keys.includes(key)) {
-            value.required = required.common[key];
-            return value;
-        }*/
         if (fuzzy_dates.includes(key) && !program.blank) {
             return {"$ref": "#/definitions/FuzzyDate"};
         }
@@ -99,17 +91,14 @@ var applyCommonPatches = function(original, patched) {
 };*/
 
 var applyHierarchicalPatches = function(original, patched) {
-    //console.log(patched["hierarchicalDefinitions"]);
     // adjust schema for nested publication
+    var modified;
     modified = original;
-    //original.definitions.BeneficialOwnershipStatement.required = ["entity", "interestedParty"];
+    modified.definitions.BeneficialOwnershipStatement.required = ["entity", "interestedParty", "id",
+            "statementDate", "interests"];
     // replace StatementReference from oneOf in nested properties
     modified.definitions.BeneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatement"};
     original.definitions.BeneficialOwnershipStatement.properties.interestedParty = patched.hierarchicalDefinitions.interestedParty;
-    
-    // adjust provenance types and names
-    
-    // patch in attributedTo, with oneOf constraint
     return modified;
     
 };
@@ -184,6 +173,11 @@ var makeBlank =  function(schema) {
 
 var modifyForFaker = function(schema) {
     var modified = JSON.parse(JSON.stringify(schema), function(key, value) {
+        
+        // mitigates this empty array pruning bug - https://github.com/json-schema-faker/json-schema-faker/issues/232
+        if (key === 'type' && value === 'array') {
+            this.minItems = 1;
+        }
     
         if (key === 'title' || key === 'description') {
             return undefined;
@@ -212,8 +206,12 @@ var modifyForFaker = function(schema) {
         if (key === 'postCode') {
             value.faker = 'address.zipCode'
         }
-        if (key === 'fullName') {
-            value.faker = 'name.findName';
+        if (key == 'EntityStatement') {
+            value.properties.name.faker = 'company.companyName';
+        }
+        if (key === 'AlternateName') {
+            value.properties.familyName.faker = 'name.lastName';
+            value.properties.givenName.faker = 'name.firstName';
         }
         if (key === 'url') {
             value.faker = 'internet.url';
