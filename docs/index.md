@@ -3,19 +3,9 @@ Beneficial Ownership Data Standard (beta)
 
 This site contains documentation site for the beta version of the Beneficial Ownership Data Standard, developed as part of the OpenOwnership project.
 
-## About
-
 This work is taking place under the auspices of the Open Ownership project. More details on the project are avaiable at [http://www.openownership.org](http://www.openownership.org)
 
-The work is guided by the Data Standard Working Group, and the initial phase of development is taking place between December 2016 and March 2017.
-
-```eval_rst
-.. attention:: 
-
-    This is the pre-beta version of the standard. It is subject to working group approval.
-```
-
-The beta schema is documented at **[specification](schema.md)**.
+The beta schema is documented on the **[specification pages](schema.md)**.
 
 
 ### Contents

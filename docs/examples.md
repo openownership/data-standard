@@ -42,6 +42,17 @@ To model joint ownership, an artificial 'arrangement', owned by the two parties 
     :language: json
 ```
 
+### Ownership via trust
+
+To model ownership via a trust:
+
+```eval_rst
+
+.. literalinclude:: ../examples/4-ownership-via-trust.json
+    :language: json
+```
+
+
 ### Blank data
 
 If the beneficial owner of Chrinon Ltd had not been identified, a null statement as follows could be used:
