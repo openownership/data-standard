@@ -1,17 +1,35 @@
 {
-   "id":"schemapatches.json",
+"id":"schemapatches.json",
+"hierarchicalDefinitions":
+     {
+      "interestedParty": {
+            "title":"Interested party",
+            "description":"The interested party has some level of ownership or control over the entity referenced in this beneficial ownership statement.",
+            "oneOf": [
+              {
+                "$ref": "#/definitions/EntityStatement"
+              },
+              {
+                "$ref": "#/definitions/PersonStatement"
+              },
+              {
+                "$ref": "#/definitions/NullParty"
+              }
+            ]
+          }},
    "definitions":{
-      "FuzzyDate":{
-         "oneOf":[
-            {
+    "FuzzyDate":{
+        "oneOf": [
+          {
                "type":"string",
                "format":"date-time"
-            },
-            {
+          }
+          ,
+          {
                "type":"string",
                "pattern":"^([12]{1})\\d{3}|^([12]{1})\\d{3}\\-(0[1-9]|1[012])|^([12]{1})\\d{3}\\-(0[1-9]|1[012])\\-(0[1-9]|[12][0-9]|3[01])$"
-            }
-         ]
+         }
+       ]
       },
       "CompanyIdentifier":{
          "type":"object",

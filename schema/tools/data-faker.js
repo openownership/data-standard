@@ -3,7 +3,7 @@
 var program = require('commander');
 var jsf = require('json-schema-faker');
 var faker = require('faker');
-var schema;
+var sample;
 
 program
     .option('-b --blank', 'Blank data')
@@ -26,8 +26,19 @@ var schemapatches =
         'schemapatches.json'),
     'utf8'));
 
+
+
 jsf.format('URI', function(gen, jsonschema) {
     return gen.randexp('^http://[A-Za-z0-9]+\\.com$');
+});
+
+jsf.extend('faker', function(faker) {
+  faker.custom = {
+    fullAddress: function() {
+      return faker.address.streetAddress() + ", " + faker.address.city();
+    }
+  };
+  return faker;
 });
 
 jsf.option({
@@ -36,11 +47,32 @@ jsf.option({
 
 var minBeneficialOwnershipStatements = 1;
 var beneficialOwnershipStatement = jsonschema.definitions.BeneficialOwnershipStatement;
-var statementGroups = jsonschema.properties.statementGroups;
-var flat_arrays = ["qualificationStatements", "entityStatements",
-                   "personStatements", "provenanceStatements"];
+
+var flat_arrays = [ "qualificationStatements", "entityStatements",
+                   "personStatements"];
+var fuzzy_dates = [ "birthDate", "deathDate", "foundingDate", 
+                    "dissolutionDate", "startDate", "endDate"];
+
 
 var applyCommonPatches = function(original, patched) {
+    var modified = JSON.parse(JSON.stringify(original), function(key, value) {
+        if (key === "definitions") {
+            value.FuzzyDate = patched.definitions.FuzzyDate;
+            return value;
+        }
+        if (fuzzy_dates.includes(key) && !program.blank) {
+            return {"$ref": "#/definitions/FuzzyDate"};
+        }
+        return value;
+    });
+    return modified;
+};
+
+
+
+
+
+/*var applyCommonPatches = function(original, patched) {
     // add common definitions for faker formats
     // patch in company and natural person names
     original.definitions.PersonName = patched.definitions.PersonName;
@@ -56,42 +88,18 @@ var applyCommonPatches = function(original, patched) {
     original.definitions.PersonStatement.properties.identifiers = {"type": "array",
     "items": {"type": "object", "$ref": "#/definitions/PersonIdentifier"}};
     //original.definitions.PersonStatement.properties.identifiers = {"type": "array","items": {"type": "object", "$ref": "#definitions/PersonIdentifier"}};
-
-    //patch in fuzzy dates
-    original.definitions.FuzzyDate = patched.definitions.FuzzyDate;
-    original.definitions.PersonStatement.properties.birthDate = {"$ref": "#/definitions/FuzzyDate"};
-    original.definitions.PersonStatement.properties.deathDate = {"$ref": "#/definitions/FuzzyDate"};
-    original.definitions.EntityStatement.properties.foundingDate = {"$ref": "#/definitions/FuzzyDate"};
-    original.definitions.EntityStatement.properties.dissolutionDate = {"$ref": "#/definitions/FuzzyDate"};
-    original.definitions.Interest.properties.startDate = {"$ref": "#/definitions/FuzzyDate"};
-    original.definitions.Interest.properties.endDate = {"$ref": "#/definitions/FuzzyDate"};
-};
+};*/
 
 var applyHierarchicalPatches = function(original, patched) {
     // adjust schema for nested publication
-    original.definitions.BeneficialOwnershipStatement.required = ["entity"];
-    original.definitions.BeneficialOwnershipStatement.anyOf = [
-        {"required": ["interestedParty"]},
-        {"required": ["qualifications"]}
-    ];
+    var modified;
+    modified = original;
+    modified.definitions.BeneficialOwnershipStatement.required = ["entity", "interestedParty", "id",
+            "statementDate", "interests"];
     // replace StatementReference from oneOf in nested properties
-    original.definitions.BeneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatement"};
-    original.definitions.BeneficialOwnershipStatement.properties.interestedParty = {
-          "oneOf": [
-            {
-              "$ref": "#/definitions/EntityStatement"
-            },
-            {
-              "$ref": "#/definitions/PersonStatement"
-            }
-          ]
-        };
-    
-
-    // remove arrays of top-level statements for cross-ref publication
-    // adjust provenance types and names
-    
-    // patch in attributedTo, with oneOf constraint
+    modified.definitions.BeneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatement"};
+    //original.definitions.BeneficialOwnershipStatement.properties.interestedParty = patched.hierarchicalDefinitions.interestedParty;
+    return modified;
     
 };
 
@@ -107,7 +115,6 @@ var applyCrossReferencedPatches = function(original, patched) {
     original.definitions.EntityStatementReference = patched.definitions.EntityStatementReference;
     original.definitions.PersonStatementReference = patched.definitions.PersonStatementReference;
     original.definitions.QualificationStatementReference = patched.definitions.QualificationStatementReference;
-    original.definitions.ProvenanceStatementReference = patched.definitions.ProvenanceStatementReference;
     
     original.definitions.BeneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatementReference"};
     original.definitions.BeneficialOwnershipStatement.properties.interestedParty = {
@@ -125,92 +132,99 @@ var applyCrossReferencedPatches = function(original, patched) {
 
 };
 
-var modifySchema = function (schema) {
-    var change_definition = function(def, prop) {
-
-        if (def.hasOwnProperty('title')) {
-            delete def.title;
+var makeBlank =  function(schema) {
+    /**
+    * Reviver function to parse the schema and set to blank defautls
+    */
+    var modified = JSON.parse(JSON.stringify(schema), function(key, value){
+        if (key === 'title' || key === 'description') {
+            return undefined;
+        }
+        if (key === "type" && value === "array") {
+            this.minItems = 1;
+            this.maxItems = 1;
+        }
+        if (key === "type" && value === "string") {
+            delete this.faker;
+            delete this.format;
+            delete this.pattern;
+            delete this.minLength;
+            delete this.maxLength;
+            this.enum = [""];
         }
 
-        if (def.hasOwnProperty('description')) {
-            delete def.description;
+        if (key === "type" && value === "number") {
+            this.enum = [0];
+        }
+        if (key ==="type" && value === "boolean") {
+            this.enum = [false];
+        }
+        return value;
+
+    });
+    // put back description properties
+    modified.definitions.Annotation.properties.description = {"type": "string", "enum": [""]};
+    modified.definitions.NullParty.properties.description = {"type": "string", "enum": [""]};
+    modified.definitions.Source.properties.description = {"type": "string", "enum": [""]};
+
+
+    return modified;
+};
+
+var modifyForFaker = function(schema) {
+    var modified = JSON.parse(JSON.stringify(schema), function(key, value) {
+        
+        // mitigates this empty array pruning bug - https://github.com/json-schema-faker/json-schema-faker/issues/232
+        if (key === 'type' && value === 'array') {
+            this.minItems = 1;
         }
     
-        if (prop === 'id') {
-            def['minLength'] = 20;
-            def['type'] = 'string';
-            def['faker'] = 'random.uuid';
+        if (key === 'title' || key === 'description') {
+            return undefined;
         }
-        if (prop === 'jurisdiction' ||
-            prop === 'country')  {
-            def.faker = 'address.countryCode';
+        if (value === 'date' || value === 'datetime') {
+            return 'date-time';
         }
+        if (key === 'id' || key === 'ReplacesStatement' || key === 'replacesStatementGroup') {
+            value.minLength = 20;
+            value.type = 'string';
+            value.faker = 'random.uuid';
+        }
+        if (key === 'jurisdiction' ||
+            key === 'country') {
+            value.faker = 'address.countryCode';
+        }
+        if (key === 'nationalities') {
+            value.items.faker = 'address.countryCode';
+        }
+        if (key === 'format' && value === 'uri') {
+            return 'URI';
+        }
+        if (key === 'address') {
+            value.faker = 'custom.fullAddress';
+        }
+        if (key === 'postCode') {
+            value.faker = 'address.zipCode'
+        }
+        if (key == 'EntityStatement') {
+            value.properties.name.faker = 'company.companyName';
+        }
+        if (key === 'AlternateName') {
+            value.properties.familyName.faker = 'name.lastName';
+            value.properties.givenName.faker = 'name.firstName';
+        }
+        if (key === 'url') {
+            value.faker = 'internet.url';
+        } 
+        return value;
+        
+    });
+    // put back the description properties removed in reviver function
+    modified.definitions.Annotation.properties.description = schema.definitions.Annotation.properties.description;
+    modified.definitions.NullParty.properties.description = schema.definitions.NullParty.properties.description;
+    modified.definitions.Source.properties.description = schema.definitions.Source.properties.description;
 
-        if (prop === 'nationalities') {
-            def.items.faker = 'address.countryCode';
-        }
-
-        if (prop === 'address') {
-            def.faker = 'address.streetAddress';
-        }
-
-        if (prop === 'postCode') {
-            def.faker = 'address.zipCode';
-        }
-        if (prop === 'fullName') {
-            def.faker = 'name.findName';
-        }
-        if (def.type === 'object') {
-            modifySchema(def);
-        }
-        if (def.format === 'date') {
-            def.format = 'date-time';
-        }
-        if (def.format && def.format === 'uri') {
-            def.format = 'URI';
-        }
-
-        // generate blank data
-        if (program.blank) {
-               
-          if (def.type === 'array') {
-            def.minItems = 1;
-            def.maxItems = 1;
-          }
-          if (def.type === 'string') {
-            delete def.faker;
-            delete def.format;
-            def.enum = [""];
-          }
-          if (def.type === 'number') {
-            def.enum = [0];
-          }
-          if (def.type === 'boolean') {
-            def.enum = [false];
-          }
-
-
-        }
-    }
-    var prop;
-    var definition;
-
-    for (prop in schema.properties) {
-      var def = schema.properties[prop];
-      change_definition(def, prop);
-    }
-
-    if (schema.definitions) {
-        for (definition in schema.definitions) {
-            if (schema.definitions[definition].hasOwnProperty('properties')) {
-              modifySchema(schema.definitions[definition]);
-          } else {
-              change_definition(schema.definitions[definition]);
-            }
-        }
-    }
-
-    return schema
+    return modified;
 };
 
 var postProcessCrossrefencedSample = function (modifiedSchema) {
@@ -280,17 +294,170 @@ var postProcessCrossrefencedSample = function (modifiedSchema) {
     console.log(JSON.stringify(sample, null, 2));
 };
 
-var makeSample = function() {
-    applyCommonPatches(jsonschema, schemapatches);
+var postProcessShare = function(share) {
+    if (Math.random() > 0.5) {
+        delete share.exact;
+        if (share.minimum > share.maximum) {
+            var newMax = share.minimum;
+            share.minimum = share.maximum;
+            share.maximum = newMax;
+        }
+    } else {
+        share.minimum = share.exact;
+        share.maximum = share.exact;
+        delete share.exclusiveMinimum;
+        delete share.exclusiveMaximum;
+    }
+    return share;
+}
 
-    if (!program.crossref) {
+var postProcessHierarchicalSample = function(sample, schema) {
+    var no_identifiers =  ["legalEntity", "arrangement",
+                           "anonymousEntity", "unknownEntity",
+                           "anonymousPerson", "unknownPerson"];
+    var unknown_types = ["anonymousEntity", "unknownEntity",
+                      "anonymousPerson", "unknownPerson"];
+    var unknown_properties = ["addresses", "name", "alternateNames",
+                              "nationalities"]
+    var modified = sample.statementGroups.forEach(function (sg) {
+        Object.keys(sg).forEach( function (arr) {
+                    if (flat_arrays.includes(arr)) {
+                       delete sg[arr];
+                    }
+                    if (arr === 'beneficialOwnershipStatements') {
+                        sg[arr].forEach(function (bos) {
+                            bos.interestedParty = fakeInterestedParty(schema);
+                        });
+                    }
+                });
+    });
+    modified = JSON.parse(JSON.stringify(sample), function(key, value) {
+        if(key === "identifiers" && no_identifiers.includes(this.type)) {
+            return undefined;
+        }
+        if (unknown_properties.includes(key)  && unknown_types.includes(this.type)) {
+            return undefined;
+        }
+        if (key === "share") {
+            if (this.type === "shareholding") {
+                return postProcessShare(value);
+            } else {
+                return undefined;
+            }
+        }
+        if (key === 'fullName') {
+            return this.givenName + " " + this.familyName;
+        }
+        if (key === 'alternateNames') {
+            this.name = value[0].fullName;
+        }
+        return value;
+    });
+    return modified;
+}
+
+var pickOne = function(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+};
+
+var fakeInterestedParty = function(schema){
+    var nestedInterestPartyStatements = [schema.definitions.PersonStatement,
+                                         schema.definitions.EntityStatement, 
+                                         schema.definitions.NullParty];
+    return fakeSchemaChunk(schema, pickOne(nestedInterestPartyStatements));
+};
+
+var postProcessBlankSample = function (sample, schema) {
+    // workaround to create samples for nested objects that otherwise aren't guaranteed to generate
+    var modified = sample;
+    var nestedInterestPartyStatements = [schema.definitions.PersonStatement,
+                                         schema.definitions.EntityStatement, 
+                                         schema.definitions.NullParty]
+    modified.statementGroups[0].beneficialOwnershipStatements[0].interestedParty = 
+    fakeSchemaChunk(schema, pickOne(nestedInterestPartyStatements));
+    if (!("source" in sample.statementGroups[0].beneficialOwnershipStatements[0])) {
+        var newSource = fakeSchemaChunk(schema, schema.definitions.Source);
+        modified.statementGroups[0].beneficialOwnershipStatements[0].source = newSource;
+    }
+    if (!("replacesStatement" in sample.statementGroups[0].beneficialOwnershipStatements[0])) {
+        var newRP = fakeSchemaChunk(schema, schema.definitions.ReplacesStatement);
+        modified.statementGroups[0].beneficialOwnershipStatements[0].replacesStatement = newRP;
+    }
+
+    // remove flat arrays used in flat publishing structure
+    Object.keys(modified.statementGroups[0]).forEach( function (k) {
+        if(flat_arrays.includes(k)) {
+            delete modified.statementGroups[0][k];
+        }
+    });
+    return modified;
+};
+
+var fakeSchemaChunk = function (schema, schemaChunk, chunkKey="k", withKey = false) {
+    // fake a bit of a schema
+    var modifiedSchema = {"properties": {}};
+    modifiedSchema.properties[chunkKey] = schemaChunk; 
+    modifiedSchema.definitions = schema.definitions;
+    if (withKey) {
+        return jsf(modifiedSchema);
+    }
+    return jsf(modifiedSchema)[chunkKey];
+};
+
+var makeSample = function(schema, patches) {
+    //console.log(patches);
+    var modifiedSchema = schema;
+    var sample;
+    if (program.blank) {
+        if (!program.crossref) {
+            modifiedSchema = applyHierarchicalPatches(modifiedSchema, patches);
+        }
+        modifiedSchema = makeBlank(modifiedSchema);
+        modifiedSchema.definitions.BeneficialOwnershipStatement.required = Object.keys(modifiedSchema.definitions.BeneficialOwnershipStatement.properties);
+        if (program.debugschema) {
+            console.log(JSON.stringify(modifiedSchema, null, 2));
+            return;
+        }
+        sample = jsf(modifiedSchema);
+        sample = postProcessBlankSample(sample, modifiedSchema);
+        console.log(JSON.stringify(sample, null, 2));
+        return;
+    } else {
+        modifiedSchema = applyCommonPatches(jsonschema, patches);
+        if (! program.crossref) {
+            modifiedSchema = applyHierarchicalPatches(modifiedSchema, patches);
+            modifiedSchema = modifyForFaker(modifiedSchema);
+            if (program.debugschema) {
+                console.log(JSON.stringify(modifiedSchema, null, 2));
+                return;
+            }
+            sample = jsf(modifiedSchema);
+            sample = postProcessHierarchicalSample(sample, modifiedSchema);
+            console.log(JSON.stringify(sample, null, 2));
+            return;
+        } else {
+            throw new Error('Cross-referenced example data not implemented yet');
+        }
+
+    }
+}
+
+    
+
+
+/*    if (!program.crossref) {
             applyHierarchicalPatches(jsonschema, schemapatches);
-            jsonschema = modifySchema(jsonschema);
+            //jsonschema = modifySchema(jsonschema);
+            jsonschema = modifyForFaker(jsonschema);
+            if (program.blank) {
+                jsonschema = makeBlank(jsonschema);
+            }
             if (program.debugschema) {
                 console.log(JSON.stringify(jsonschema, null, 2));
             }
             else {
                 sample = jsf(jsonschema);
+                sample = postProcessHierarchicalSample(sample);
                 console.log(JSON.stringify(sample, null, 2));
             }
         }
@@ -305,9 +472,9 @@ var makeSample = function() {
             }
 
         }
-};
+};*/
 
 if (require.main === module) {
-    makeSample();
+    makeSample(jsonschema, schemapatches);
 }
 

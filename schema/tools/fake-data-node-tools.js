@@ -27,6 +27,8 @@ copyWithNewIds: function(obj) {
     return idd;
 },
 
+
+
 makeBlank: function(schema) {
     /**
     * Traverse the object and set to blank: NOT FINISHED
@@ -35,6 +37,20 @@ makeBlank: function(schema) {
     var idd = traverse(blankschema).map(function (x) {
         if (this.key === "enum") {
             this.update([""]);
+        }
+    });
+    return idd;
+
+},
+
+modifyForFaker: function(schema) {
+    /**
+    * Traverse schema and fill with sensible faker formats
+    **/
+    var blankschema = JSON.parse(JSON.stringify(schema));
+    var idd = traverse(blankschema).map(function (x) {
+        if (this.node === "datetime") {
+            this.update("date-time");
         }
     });
     return idd;
