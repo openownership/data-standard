@@ -311,7 +311,7 @@ var postProcessShare = function(share) {
     return share;
 }
 
-var postProcessHierarchicalSample = function(sample) {
+var postProcessHierarchicalSample = function(sample, schema) {
     var no_identifiers =  ["legalEntity", "arrangement",
                            "anonymousEntity", "unknownEntity",
                            "anonymousPerson", "unknownPerson"];
@@ -323,6 +323,11 @@ var postProcessHierarchicalSample = function(sample) {
         Object.keys(sg).forEach( function (arr) {
                     if (flat_arrays.includes(arr)) {
                        delete sg[arr];
+                    }
+                    if (arr === 'beneficialOwnershipStatements') {
+                        sg[arr].forEach(function (bos) {
+                            bos.interestedParty = fakeInterestedParty(schema);
+                        });
                     }
                 });
     });
@@ -345,7 +350,7 @@ var postProcessHierarchicalSample = function(sample) {
         }
         if (key === 'alternateNames') {
             this.name = value[0].fullName;
-        } 
+        }
         return value;
     });
     return modified;
@@ -353,6 +358,13 @@ var postProcessHierarchicalSample = function(sample) {
 
 var pickOne = function(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
+};
+
+var fakeInterestedParty = function(schema){
+    var nestedInterestPartyStatements = [schema.definitions.PersonStatement,
+                                         schema.definitions.EntityStatement, 
+                                         schema.definitions.NullParty];
+    return fakeSchemaChunk(schema, pickOne(nestedInterestPartyStatements));
 };
 
 var postProcessBlankSample = function (sample, schema) {
@@ -420,7 +432,7 @@ var makeSample = function(schema, patches) {
                 return;
             }
             sample = jsf(modifiedSchema);
-            sample = postProcessHierarchicalSample(sample);
+            sample = postProcessHierarchicalSample(sample, modifiedSchema);
             console.log(JSON.stringify(sample, null, 2));
             return;
         } else {
