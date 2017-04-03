@@ -98,7 +98,7 @@ var applyHierarchicalPatches = function(original, patched) {
             "statementDate", "interests"];
     // replace StatementReference from oneOf in nested properties
     modified.definitions.BeneficialOwnershipStatement.properties.entity = {"$ref": "#/definitions/EntityStatement"};
-    original.definitions.BeneficialOwnershipStatement.properties.interestedParty = patched.hierarchicalDefinitions.interestedParty;
+    //original.definitions.BeneficialOwnershipStatement.properties.interestedParty = patched.hierarchicalDefinitions.interestedParty;
     return modified;
     
 };
@@ -185,7 +185,7 @@ var modifyForFaker = function(schema) {
         if (value === 'date' || value === 'datetime') {
             return 'date-time';
         }
-        if (key === 'id' || key === 'ReplacesStatement') {
+        if (key === 'id' || key === 'ReplacesStatement' || key === 'replacesStatementGroup') {
             value.minLength = 20;
             value.type = 'string';
             value.faker = 'random.uuid';
@@ -294,49 +294,56 @@ var postProcessCrossrefencedSample = function (modifiedSchema) {
     console.log(JSON.stringify(sample, null, 2));
 };
 
-var postProcessHierarchicalSample = function (sample) {
-    sample.statementGroups.forEach(function (sg) {
+var postProcessShare = function(share) {
+    if (Math.random() > 0.5) {
+        delete share.exact;
+        if (share.minimum > share.maximum) {
+            var newMax = share.minimum;
+            share.minimum = share.maximum;
+            share.maximum = newMax;
+        }
+    } else {
+        share.minimum = share.exact;
+        share.maximum = share.exact;
+        delete share.exclusiveMinimum;
+        delete share.exclusiveMaximum;
+    }
+    return share;
+}
+
+var postProcessHierarchicalSample = function(sample) {
+    var no_identifiers =  ["legalEntity", "arrangement",
+                           "anonymousEntity", "unknownEntity",
+                           "anonymousPerson", "unknownPerson"];
+    var unknown_types = ["anonymousEntity", "unknownEntity",
+                      "anonymousPerson", "unknownPerson"];
+    var unknown_properties = ["addresses", "name", "alternateNames",
+                              "nationalities"]
+    var modified = sample.statementGroups.forEach(function (sg) {
         Object.keys(sg).forEach( function (arr) {
                     if (flat_arrays.includes(arr)) {
                        delete sg[arr];
                     }
-                    if (arr === 'beneficialOwnershipStatements'){
-                        sg[arr].forEach( function (bos) {
-                            var no_identifiers =  ["legalEntity", "arrangement", "anonymousEntity", "unknownEntity"];
-                            var no_address = ["anonymousEntity", "unknownEntity"];
-                            if(no_identifiers.includes(bos.entity.type)) {
-                                delete bos.entity.identifiers;
-                            }
-                            if (no_address.includes(bos.entity.type)) {
-                                delete bos.entity.addresses;
-                            }
-                            bos.interests.forEach( function (interest) {
-                                if (interest.type != "shareholding") {
-                                    delete interest.share;
-                                } else {
-                                    //choose an exact or non-exact shareholding
-                                    if (Math.random() > 0.5) {
-                                        delete interest.share.exact;
-                                        if (interest.share.minimum > interest.share.maximum) {
-                                            var newMax = interest.share.minimum;
-                                            interest.share.minimum = interest.share.maximum;
-                                            interest.share.maximum = newMax;
-                                        }
-                                    } else {
-                                        interest.share.minimum = interest.share.exact;
-                                        interest.share.maximum = interest.share.exact;
-                                        delete interest.share.exclusiveMinimum;
-                                        delete interest.share.exclusiveMaximum;
-                                    }
-                                }
-                            })
-
-                        });
-                    }  
-            });
-        });
-    return sample;
-};
+                });
+    });
+    modified = JSON.parse(JSON.stringify(sample), function(key, value) {
+        if(key === "identifiers" && no_identifiers.includes(this.type)) {
+            return undefined;
+        }
+        if (unknown_properties.includes(key)  && unknown_types.includes(this.type)) {
+            return undefined;
+        }
+        if (key === "share") {
+            if (this.type === "shareholding") {
+                return postProcessShare(value);
+            } else {
+                return undefined;
+            }
+        } 
+        return value;
+    });
+    return modified;
+}
 
 var pickOne = function(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
