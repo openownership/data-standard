@@ -5,7 +5,7 @@ This is a stub documentation site for the alpha version of the Beneficial Owners
 
 ## About
 
-This work is taking place under the auspices of the Open Ownership project. More details on the project are avaiable at [http://www.openownership.org](http://www.openownership.org)
+This work is taking place under the auspices of the Open Ownership project. More details on the project are available at [http://www.openownership.org](http://www.openownership.org)
 
 The work is guided by the Data Standard Working Group, and the initial phase of development is taking place between December 2016 and March 2017.
 
