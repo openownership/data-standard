@@ -125,7 +125,7 @@
         "id": {
           "title": "ID",
           "description": "The identifier of the statement being referenced.",
-          "type": "string"
+          "$ref": "#/definitions/ID"
         },
         "uri": {
           "title": "URI",
@@ -151,7 +151,7 @@
         "id": {
           "title": "ID",
           "description": "The identifier of the statement being referenced.",
-          "type": "string"
+          "$ref": "#/definitions/ID"
         },
         "uri": {
           "title": "URI",
