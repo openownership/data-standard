@@ -75,31 +75,20 @@
           "oneOf": [
             {
               "$ref": "#/definitions/EntityStatementReference"
-            },
-            {
-              "$ref": "#/definitions/EntityStatement"
             }
           ]
         },
         "interestedParty": {
           "title":"Interested party",
           "description":"The interested party has some level of ownership or control over the entity referenced in this beneficial ownership statement.",
+          "type": "object",
           "oneOf": [
-            {
-              "$ref": "#/definitions/EntityStatement"
-            },
-            {
-              "$ref": "#/definitions/PersonStatement"
-            },
-            {
-              "$ref": "#/definitions/NullParty"
-            },
-            {
-              "$ref": "#/definitions/EntityStatementReference"
-            },
-            {
-              "$ref": "#/definitions/PersonStatementReference"
-            }
+              {
+                "entity": {"$ref": "#/definitions/EntityStatementReference"}
+              },
+              {
+                "naturalPerson": {"$ref": "#/definitions/PersonStatementReference"}
+              }
           ]
         },
         "interests": {
@@ -200,7 +189,6 @@
           "description": "For EntityStatements with the type 'anonymousEntity' or 'unknownEntity' this field should contain an explanation of the reason that detailed information on the entity is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification.",
           "type": "string"
         },
-        
         "name": {
           "title": "Name",
           "description": "The declared name of this entity.",
