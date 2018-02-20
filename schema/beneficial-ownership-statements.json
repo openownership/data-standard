@@ -11,13 +11,14 @@
         "type": "object",
         "title": "Statement group",
         "required": [
-          "beneficialOwnershipStatements"
+          "beneficialOwnershipStatements",
+          "id"
         ],
         "properties": {
           "id": {
             "title": "Statement group identifier",
             "description": "An optional globally unique and persistent identifier for this statement group.",
-            "type": "string"
+            "$ref": "#/definitions/ID"
           },
           "beneficialOwnershipStatements": {
             "title": "Beneficial ownership statements",
@@ -115,7 +116,8 @@
         "replacesStatement": {
           "$ref": "#/definitions/ReplacesStatement"
         }
-      }
+      },
+            "required": ["id"]
     },
     "EntityStatementReference": {
       "title": "Entity statement reference",
