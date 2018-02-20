@@ -1,0 +1,13 @@
+{
+  "statementGroups": [
+    {
+      "beneficialOwnershipStatements": [
+        {
+          "entity": {
+            "type": "entityStatement"
+          }
+        }
+      ]
+    }
+  ]
+}
