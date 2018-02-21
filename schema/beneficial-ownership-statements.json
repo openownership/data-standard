@@ -12,13 +12,20 @@
         "title": "Statement group",
         "required": [
           "beneficialOwnershipStatements",
-          "id"
+          "id",
+          "version"
         ],
         "properties": {
           "id": {
             "title": "Statement group identifier",
             "description": "An optional globally unique and persistent identifier for this statement group.",
             "$ref": "#/definitions/ID"
+          },
+          "version": {
+            "title": "BODS schema version",
+            "description": "BODS version number in format major.minor",
+            "type": "string",
+            "pattern": "^(\\d+\\.)(\\d+)$"
           },
           "beneficialOwnershipStatements": {
             "title": "Beneficial ownership statements",

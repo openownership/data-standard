@@ -2,11 +2,13 @@
   "statementGroups": [
     {
       "id": "57d881b9-a35c-413e-870f-39ab8a1ac9e2",
+      "version": "0.1",
       "beneficialOwnershipStatements": [
         {
           "id": "fbfd0547-d0c6-4a00-b559-5c5e91c34f5c",
           "entity": {
             "type": "entityStatement",
+            "statementDate": "2017-11-18",
             "id": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7"
           },
           "interestedParty": {
@@ -45,6 +47,7 @@
       "personStatements": [
         {
           "id": "019a93f1-e470-42e9-957b-03559861b2e2",
+          "statementDate": "2017-11-18",
           "name": "Chris Taggart",
           "nationalities": [
               "GB"
