@@ -12,11 +12,11 @@
         "title": "Statement group",
         "required": [
           "beneficialOwnershipStatements",
-          "id",
+          "statementID",
           "version"
         ],
         "properties": {
-          "id": {
+          "statementID": {
             "title": "Statement group identifier",
             "description": "An optional globally unique and persistent identifier for this statement group.",
             "$ref": "#/definitions/ID"
@@ -71,7 +71,7 @@
       "description": "A beneficial ownership statement is made up of an entity, an interested party (a reference to an entity, natural person, arrangement or trust), details of the interest and provenance information.",
       "type": "object",
       "properties": {
-        "id": {
+        "statementID": {
           "$ref": "#/definitions/ID"
         },
         "statementDate": {
@@ -124,7 +124,7 @@
           "$ref": "#/definitions/ReplacesStatement"
         }
       },
-            "required": ["id"]
+      "required": ["statementID"]
     },
     "EntityStatementReference": {
       "title": "Entity statement reference",
@@ -139,7 +139,7 @@
             "entityStatement"
           ]
         },
-        "id": {
+        "statementID": {
           "title": "ID",
           "description": "The identifier of the statement being referenced.",
           "$ref": "#/definitions/ID"
@@ -150,7 +150,8 @@
           "type": "string",
           "format": "uri"
         }
-      }
+      },
+      "required": ["statementID"]
     },
     "PersonStatementReference": {
       "title": "Person statement reference",
@@ -176,7 +177,8 @@
           "type": "string",
           "format": "uri"
         }
-      }
+      },
+      "required": ["statementID"]
     },
     "EntityStatement": {
       "title": "Entity statement",
@@ -260,14 +262,15 @@
         "replacesStatement": {
           "$ref": "#/definitions/ReplacesStatement"
         }
-      }
+      },
+      "required": ["statementID"]
     },
     "PersonStatement": {
       "title": "Person statement",
       "description": "A person statement describes the information known about a natural person at a particular point in time, or from a given submission of information",
       "type": "object",
       "properties": {
-        "id": {
+        "statementID": {
           "$ref": "#/definitions/ID"
         },
         "statementDate": {
@@ -353,7 +356,8 @@
         "replacesStatement": {
           "$ref": "#/definitions/ReplacesStatement"
         }
-      }
+      },
+      "required": ["statementID"]
     },
     "NullParty": {
       "title": "Null party",
