@@ -77,13 +77,16 @@
         "statementDate": {
           "$ref": "#/definitions/StatementDate"
         },
-        "entity": {
-          "title":"Entity",
-          "description":"This entity is the subject of a beneficial ownership relationship.",
+        "subject": {
+          "title":"Subject",
+          "description":"The subject of a beneficial ownership relationship.",
+          "properties": {
+            "subjectEntity": {
+                  "$ref": "#/definitions/EntityStatementReference"
+                }
+              },
           "oneOf": [
-            {
-              "$ref": "#/definitions/EntityStatementReference"
-            }
+            { "required": [ "subjectEntity"] }
           ]
         },
         "interestedParty": {
@@ -91,10 +94,10 @@
           "description":"The interested party has some level of ownership or control over the entity referenced in this beneficial ownership statement.",
           "type": "object",
           "properties": {
-            "entity": {
+            "interestedEntity": {
                   "$ref": "#/definitions/EntityStatementReference"
                 },
-            "person": {
+            "interestedPerson": {
                   "$ref": "#/definitions/PersonStatementReference"
                 },
             "unspecified": {
@@ -102,8 +105,8 @@
                 }
               },
           "oneOf": [
-            { "required": [ "entity"] },
-            { "required": [ "person" ] },
+            { "required": [ "interestedEntity"] },
+            { "required": [ "interestedPerson" ] },
             { "required": [ "unspecified" ]}
           ]
         },
@@ -124,7 +127,7 @@
           "$ref": "#/definitions/ReplacesStatement"
         }
       },
-      "required": ["statementID"]
+      "required": ["statementID", "subject", "interestedParty"]
     },
     "EntityStatementReference": {
       "title": "Entity statement reference",
