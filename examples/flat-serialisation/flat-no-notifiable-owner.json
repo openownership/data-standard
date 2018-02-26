@@ -1,0 +1,40 @@
+{
+  "statementGroups": [
+    {
+      "statementID": "8de215d7-e7d3-4ec7-b003-def5003a77e9",
+      "version": "0.1",
+      "beneficialOwnershipStatements": [
+        {
+          "statementID": "cc8d4be5-534d-470b-8cc4-883039abdd66",
+          "entity": {
+            "type": "entityStatement",
+            "statementDate": "2016-10-26",
+            "statementID": "7308330c-ff76-4988-a52e-37f860e917e1"
+          },
+          "interestedParty": {
+            "unspecified": {
+              "reason": "noNotifiableOwners",
+              "description": "The company knows or has reasonable cause to believe that there is no registrable person or registrable relevant legal entity in relation to the company"
+            }
+          }
+        }
+      ],
+      "entityStatements": [
+        {
+          "statementID": "7308330c-ff76-4988-a52e-37f860e917e1",
+          "statementDate": "2017-10-26",
+          "name": "PRACTICAL ACTION",
+          "type": "registeredEntity",
+          "jurisdiction": "GB",
+          "foundingDate": "1966-02-21",
+          "identifiers": [
+            {
+              "scheme": "GB-COH",
+              "id": "00871954"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

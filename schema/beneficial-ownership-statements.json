@@ -90,21 +90,21 @@
           "title":"Interested party",
           "description":"The interested party has some level of ownership or control over the entity referenced in this beneficial ownership statement.",
           "type": "object",
+          "properties": {
+            "entity": {
+                  "$ref": "#/definitions/EntityStatementReference"
+                },
+            "person": {
+                  "$ref": "#/definitions/PersonStatementReference"
+                },
+            "unspecified": {
+                  "$ref": "#/definitions/Unspecified"
+                }
+              },
           "oneOf": [
-            {
-              "properties": {
-                "entity": {
-                  "$ref": "#/definitions/EntityStatement"
-                }
-              }
-            },
-            {
-              "properties": {
-                "person": {
-                  "$ref": "#/definitions/PersonStatement"
-                }
-              }
-            }
+            { "required": [ "entity"] },
+            { "required": [ "person" ] },
+            { "required": [ "unspecified" ]}
           ]
         },
         "interests": {
@@ -151,7 +151,7 @@
           "format": "uri"
         }
       },
-      "required": ["statementID"]
+      "required": ["statementID", "type"]
     },
     "PersonStatementReference": {
       "title": "Person statement reference",
@@ -178,7 +178,7 @@
           "format": "uri"
         }
       },
-      "required": ["statementID"]
+      "required": ["statementID", "type"]
     },
     "EntityStatement": {
       "title": "Entity statement",
@@ -359,12 +359,12 @@
       },
       "required": ["statementID"]
     },
-    "NullParty": {
-      "title": "Null party",
+    "Unspecified": {
+      "title": "Unspecified",
       "description": "When confirmation has been provided that no beneficial owners exist, or beneficial ownership information does not need to be provided, then a null party entry should be included.",
       "type": "object",
       "properties": {
-        "type": {
+        "reason": {
           "title": "Reason",
           "description": "The reason for this null statement.",
           "type": "string",
@@ -379,7 +379,8 @@
           "description": "Any supporting information about the absence of a confirmed beneficial owner. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
           "type": "string"
         }
-      }
+      },
+      "required": ["reason"]
     },
     "Source": {
       "title": "Statement source",
