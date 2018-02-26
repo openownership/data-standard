@@ -6,10 +6,10 @@
       "beneficialOwnershipStatements": [
         {
           "statementID": "cc8d4be5-534d-470b-8cc4-883039abdd66",
+          "statementDate": "2016-10-26",
           "subject": {
             "subjectEntity": {
               "type": "entityStatement",
-              "statementDate": "2016-10-26",
               "statementID": "7308330c-ff76-4988-a52e-37f860e917e1"
             }
           },
