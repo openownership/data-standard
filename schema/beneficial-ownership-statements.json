@@ -279,17 +279,16 @@
         "statementDate": {
           "$ref": "#/definitions/StatementDate"
         },
-        "type": {
-          "title": "Type",
+        "missingPersonType": {
+          "title": "Missing person type",
           "description": "The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, by information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'.",
           "type": "string",
           "enum": [
-            "naturalPerson",
             "anonymousPerson",
             "unknownPerson"
           ]
         },
-        "missingInfoReason": {
+        "missingPersonReason": {
           "title": "Missing information reason(s)",
           "description": "For PersonStatements with the type 'anonymousPerson' or 'unknownPerson' this field should contain an explanation of the reason that detailed information on the person is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification.",
           "type": "string"
@@ -360,7 +359,10 @@
           "$ref": "#/definitions/ReplacesStatement"
         }
       },
-      "required": ["statementID"]
+      "required": ["statementID"],
+      "dependencies": {
+        "missingPersonReason": ["missingPersonType"]
+      }
     },
     "Unspecified": {
       "title": "Unspecified",
