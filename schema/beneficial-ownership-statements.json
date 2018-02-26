@@ -86,7 +86,7 @@
                 }
               },
           "oneOf": [
-            { "required": [ "subjectEntity"] }
+            { "required": [ "subjectEntity" ] }
           ]
         },
         "interestedParty": {
@@ -105,7 +105,7 @@
                 }
               },
           "oneOf": [
-            { "required": [ "interestedEntity"] },
+            { "required": [ "interestedEntity" ] },
             { "required": [ "interestedPerson" ] },
             { "required": [ "unspecified" ]}
           ]
