@@ -1,6 +1,7 @@
 {
   "id": "beneficial-ownership-statements.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "version": "0.1",
   "type": "object",
   "properties": {
     "statementGroups": {
