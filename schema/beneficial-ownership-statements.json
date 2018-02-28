@@ -4,6 +4,12 @@
   "version": "0.1",
   "type": "object",
   "properties": {
+    "version": {
+      "title": "BODS schema version",
+      "description": "BODS version number in format major.minor",
+      "type": "string",
+      "pattern": "^(\\d+\\.)(\\d+)$"
+    },
     "statementGroups": {
       "title": "Statement group",
       "description": "A statement group is used to collect together statements relating to a particular disclosure, company or individual. Statement groups are a logical grouping designed to limit duplication of provenance information, and bring together statements that contain cross references. Where statements in a statementGroup cross-references to other statements, those statements MUST also be contained within the group.",
@@ -13,8 +19,7 @@
         "title": "Statement group",
         "required": [
           "beneficialOwnershipStatements",
-          "statementID",
-          "version"
+          "statementID"
         ],
         "properties": {
           "statementID": {
@@ -22,12 +27,7 @@
             "description": "An optional globally unique and persistent identifier for this statement group.",
             "$ref": "#/definitions/ID"
           },
-          "version": {
-            "title": "BODS schema version",
-            "description": "BODS version number in format major.minor",
-            "type": "string",
-            "pattern": "^(\\d+\\.)(\\d+)$"
-          },
+
           "beneficialOwnershipStatements": {
             "title": "Beneficial ownership statements",
             "description": "A collection of statements that describe the relationship between legal entities or between legal entities and natural persons, or that explain the non-availability of this information. Entity, person, qualification and provenance statements may be embeded within these statements, or provided in the neighbouring arrays and cross-referenced.",
@@ -66,6 +66,10 @@
       }
     }
   },
+  "required": [
+    "version",
+    "statementGroups"
+  ],
   "definitions": {
     "BeneficialOwnershipStatement": {
       "title": "Beneficial Ownership Statement",
