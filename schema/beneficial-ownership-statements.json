@@ -99,10 +99,10 @@
           "description":"The interested party has some level of ownership or control over the entity referenced in this beneficial ownership statement.",
           "type": "object",
           "properties": {
-            "interestedEntity": {
+            "entity": {
                   "$ref": "#/definitions/EntityStatementReference"
                 },
-            "interestedPerson": {
+            "person": {
                   "$ref": "#/definitions/PersonStatementReference"
                 },
             "unspecified": {
@@ -110,8 +110,8 @@
                 }
               },
           "oneOf": [
-            { "required": [ "interestedEntity" ] },
-            { "required": [ "interestedPerson" ] },
+            { "required": [ "entity" ] },
+            { "required": [ "person" ] },
             { "required": [ "unspecified" ]}
           ]
         },

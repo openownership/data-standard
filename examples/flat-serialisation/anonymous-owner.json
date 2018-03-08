@@ -14,7 +14,7 @@
             }
           },
           "interestedParty": {
-            "interestedPerson": {
+            "person": {
               "type": "personStatement",
               "statementID": "3154a26d-d29e-4db0-8815-866f57c75f0c"
             }
