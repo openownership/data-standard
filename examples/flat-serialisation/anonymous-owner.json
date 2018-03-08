@@ -10,13 +10,13 @@
           "subject": {
             "entity": {
               "type": "entityStatement",
-              "statementID": "77ee64ba-858e-4413-bfaf-991be2200f71"
+              "describedByStatement": "77ee64ba-858e-4413-bfaf-991be2200f71"
             }
           },
           "interestedParty": {
             "person": {
               "type": "personStatement",
-              "statementID": "3154a26d-d29e-4db0-8815-866f57c75f0c"
+              "describedByStatement": "3154a26d-d29e-4db0-8815-866f57c75f0c"
             }
           }
         }

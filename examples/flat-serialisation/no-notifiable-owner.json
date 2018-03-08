@@ -10,7 +10,7 @@
           "subject": {
             "entity": {
               "type": "entityStatement",
-              "statementID": "7308330c-ff76-4988-a52e-37f860e917e1"
+              "describedByStatement": "7308330c-ff76-4988-a52e-37f860e917e1"
             }
           },
           "interestedParty": {
