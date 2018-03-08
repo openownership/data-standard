@@ -41,8 +41,8 @@
         {
           "statementID": "3154a26d-d29e-4db0-8815-866f57c75f0c",
           "statementDate": "2017-07-18",
-          "missingPersonType": "anonymousPerson",
-          "missingPersonReason": "The person with significant control's details are not shown because restrictions on using or disclosing any of the individual’s particulars are in force under regulations under section 790ZG in relation to this company"
+          "personType": "anonymousPerson",
+          "missingInfoReason": "The person with significant control's details are not shown because restrictions on using or disclosing any of the individual’s particulars are in force under regulations under section 790ZG in relation to this company"
         }
       ]
     }
