@@ -188,6 +188,35 @@
       },
       "required": ["statementID", "type"]
     },
+    "StatementReference": {
+      "title": "Statement reference",
+      "description": "Where entity, person and provenance statements are not nested within the beneficial ownership statement, they may be cross-referenced using a Statement Reference.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "title": "Type",
+          "description": "What type of statement is being referred to?",
+          "type": "string",
+          "enum": [
+            "personStatement",
+            "entityStatement",
+            "arrangementStatement"
+          ]
+        },
+        "id": {
+          "title": "ID",
+          "description": "The identifier of the statement being referenced.",
+          "$ref": "#/definitions/ID"
+        },
+        "uri": {
+          "title": "URI",
+          "description": "A persistent URI for the statement being referenced.",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": ["statementID", "type"]
+    },
     "EntityStatement": {
       "title": "Entity statement",
       "description": "A statement identifying and describing the entity that is the subject of the ownership or control described in a beneficial ownership statement.",
