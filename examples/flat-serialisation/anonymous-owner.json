@@ -8,7 +8,7 @@
           "statementID": "0e5c86db-f2b0-4e11-bff0-db9eee3db221",
           "statementDate": "2017-07-18",
           "subject": {
-            "subjectEntity": {
+            "entity": {
               "type": "entityStatement",
               "statementID": "77ee64ba-858e-4413-bfaf-991be2200f71"
             }

@@ -86,12 +86,12 @@
           "title":"Subject",
           "description":"The subject of a beneficial ownership relationship.",
           "properties": {
-            "subjectEntity": {
+            "entity": {
                   "$ref": "#/definitions/EntityStatementReference"
                 }
               },
           "oneOf": [
-            { "required": [ "subjectEntity" ] }
+            { "required": [ "entity" ] }
           ]
         },
         "interestedParty": {
