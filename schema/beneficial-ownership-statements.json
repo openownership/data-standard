@@ -1,8 +1,15 @@
 {
   "id": "beneficial-ownership-statements.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "version": "0.1",
   "type": "object",
   "properties": {
+    "version": {
+      "title": "BODS schema version",
+      "description": "BODS version number in format major.minor",
+      "type": "string",
+      "pattern": "^(\\d+\\.)(\\d+)$"
+    },
     "statementGroups": {
       "title": "Statement group",
       "description": "A statement group is used to collect together statements relating to a particular disclosure, company or individual. Statement groups are a logical grouping designed to limit duplication of provenance information, and bring together statements that contain cross references. Where statements in a statementGroup cross-references to other statements, those statements MUST also be contained within the group.",
@@ -11,14 +18,16 @@
         "type": "object",
         "title": "Statement group",
         "required": [
-          "beneficialOwnershipStatements"
+          "beneficialOwnershipStatements",
+          "statementID"
         ],
         "properties": {
-          "id": {
+          "statementID": {
             "title": "Statement group identifier",
             "description": "An optional globally unique and persistent identifier for this statement group.",
-            "type": "string"
+            "$ref": "#/definitions/ID"
           },
+
           "beneficialOwnershipStatements": {
             "title": "Beneficial ownership statements",
             "description": "A collection of statements that describe the relationship between legal entities or between legal entities and natural persons, or that explain the non-availability of this information. Entity, person, qualification and provenance statements may be embeded within these statements, or provided in the neighbouring arrays and cross-referenced.",
@@ -57,49 +66,53 @@
       }
     }
   },
+  "required": [
+    "version",
+    "statementGroups"
+  ],
   "definitions": {
     "BeneficialOwnershipStatement": {
       "title": "Beneficial Ownership Statement",
-      "description": "ToDo",
+      "description": "A beneficial ownership statement is made up of an entity, an interested party (a reference to an entity, natural person, arrangement or trust), details of the interest and provenance information.",
       "type": "object",
       "properties": {
-        "id": {
+        "statementID": {
           "$ref": "#/definitions/ID"
         },
         "statementDate": {
           "$ref": "#/definitions/StatementDate"
         },
-        "entity": {
-          "title":"Entity",
-          "description":"This entity is the subject of a beneficial ownership relationship.",
+        "subject": {
+          "title":"Subject",
+          "description":"The subject of a beneficial ownership relationship.",
+          "properties": {
+            "entity": {
+                  "$ref": "#/definitions/StatementReference"
+                }
+              },
           "oneOf": [
-            {
-              "$ref": "#/definitions/EntityStatementReference"
-            },
-            {
-              "$ref": "#/definitions/EntityStatement"
-            }
+            { "required": [ "entity" ] }
           ]
         },
         "interestedParty": {
           "title":"Interested party",
           "description":"The interested party has some level of ownership or control over the entity referenced in this beneficial ownership statement.",
+          "type": "object",
+          "properties": {
+            "entity": {
+                  "$ref": "#/definitions/StatementReference"
+                },
+            "person": {
+                  "$ref": "#/definitions/StatementReference"
+                },
+            "unspecified": {
+                  "$ref": "#/definitions/Unspecified"
+                }
+              },
           "oneOf": [
-            {
-              "$ref": "#/definitions/EntityStatement"
-            },
-            {
-              "$ref": "#/definitions/PersonStatement"
-            },
-            {
-              "$ref": "#/definitions/NullParty"
-            },
-            {
-              "$ref": "#/definitions/EntityStatementReference"
-            },
-            {
-              "$ref": "#/definitions/PersonStatementReference"
-            }
+            { "required": [ "entity" ] },
+            { "required": [ "person" ] },
+            { "required": [ "unspecified" ]}
           ]
         },
         "interests": {
@@ -118,10 +131,11 @@
         "replacesStatement": {
           "$ref": "#/definitions/ReplacesStatement"
         }
-      }
+      },
+      "required": ["statementID", "subject", "interestedParty"]
     },
-    "EntityStatementReference": {
-      "title": "Entity statement reference",
+    "StatementReference": {
+      "title": "Statement reference",
       "description": "Where entity, person and provenance statements are not nested within the beneficial ownership statement, they may be cross-referenced using a Statement Reference.",
       "type": "object",
       "properties": {
@@ -130,13 +144,15 @@
           "description": "What type of statement is being referred to?",
           "type": "string",
           "enum": [
-            "entityStatement"
+            "personStatement",
+            "entityStatement",
+            "arrangementStatement"
           ]
         },
-        "id": {
+        "describedByStatement": {
           "title": "ID",
           "description": "The identifier of the statement being referenced.",
-          "type": "string"
+          "$ref": "#/definitions/ID"
         },
         "uri": {
           "title": "URI",
@@ -144,33 +160,8 @@
           "type": "string",
           "format": "uri"
         }
-      }
-    },
-    "PersonStatementReference": {
-      "title": "Person statement reference",
-      "description": "Where entity, person and provenance statements are not nested within the beneficial ownership statement, they may be cross-referenced using a Statement Reference.",
-      "type": "object",
-      "properties": {
-        "type": {
-          "title": "Type",
-          "description": "What type of statement is being referred to?",
-          "type": "string",
-          "enum": [
-            "personStatement"
-          ]
-        },
-        "id": {
-          "title": "ID",
-          "description": "The identifier of the statement being referenced.",
-          "type": "string"
-        },
-        "uri": {
-          "title": "URI",
-          "description": "A persistent URI for the statement being referenced.",
-          "type": "string",
-          "format": "uri"
-        }
-      }
+      },
+      "required": ["describedByStatement", "type"]
     },
     "EntityStatement": {
       "title": "Entity statement",
@@ -200,7 +191,6 @@
           "description": "For EntityStatements with the type 'anonymousEntity' or 'unknownEntity' this field should contain an explanation of the reason that detailed information on the entity is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification.",
           "type": "string"
         },
-        
         "name": {
           "title": "Name",
           "description": "The declared name of this entity.",
@@ -255,27 +245,28 @@
         "replacesStatement": {
           "$ref": "#/definitions/ReplacesStatement"
         }
-      }
+      },
+      "required": ["statementID"]
     },
     "PersonStatement": {
       "title": "Person statement",
       "description": "A person statement describes the information known about a natural person at a particular point in time, or from a given submission of information",
       "type": "object",
       "properties": {
-        "id": {
+        "statementID": {
           "$ref": "#/definitions/ID"
         },
         "statementDate": {
           "$ref": "#/definitions/StatementDate"
         },
-        "type": {
-          "title": "Type",
-          "description": "The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, by information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'.",
+        "personType": {
+          "title": "Person type",
+          "description": "The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, but information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'. Where the beneficial owner has been identified use knownPerson.",
           "type": "string",
           "enum": [
-            "naturalPerson",
             "anonymousPerson",
-            "unknownPerson"
+            "unknownPerson",
+            "knownPerson"
           ]
         },
         "missingInfoReason": {
@@ -348,14 +339,18 @@
         "replacesStatement": {
           "$ref": "#/definitions/ReplacesStatement"
         }
+      },
+      "required": ["statementID"],
+      "dependencies": {
+        "missingPersonReason": ["missingPersonType"]
       }
     },
-    "NullParty": {
-      "title": "Null party",
+    "Unspecified": {
+      "title": "Unspecified",
       "description": "When confirmation has been provided that no beneficial owners exist, or beneficial ownership information does not need to be provided, then a null party entry should be included.",
       "type": "object",
       "properties": {
-        "type": {
+        "reason": {
           "title": "Reason",
           "description": "The reason for this null statement.",
           "type": "string",
@@ -370,7 +365,8 @@
           "description": "Any supporting information about the absence of a confirmed beneficial owner. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
           "type": "string"
         }
-      }
+      },
+      "required": ["reason"]
     },
     "Source": {
       "title": "Statement source",

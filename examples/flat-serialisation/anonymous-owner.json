@@ -1,0 +1,50 @@
+{
+  "version": "0.1",
+  "statementGroups": [
+    {
+      "statementID": "32e09b90-203d-42d1-bd77-a6465bca2552",
+      "beneficialOwnershipStatements": [
+        {
+          "statementID": "0e5c86db-f2b0-4e11-bff0-db9eee3db221",
+          "statementDate": "2017-07-18",
+          "subject": {
+            "entity": {
+              "type": "entityStatement",
+              "describedByStatement": "77ee64ba-858e-4413-bfaf-991be2200f71"
+            }
+          },
+          "interestedParty": {
+            "person": {
+              "type": "personStatement",
+              "describedByStatement": "3154a26d-d29e-4db0-8815-866f57c75f0c"
+            }
+          }
+        }
+      ],
+      "entityStatements": [
+        {
+          "statementID": "77ee64ba-858e-4413-bfaf-991be2200f71",
+          "statementDate": "2017-07-18",
+          "name": "FERRERO UK LIMITED",
+          "type": "registeredEntity",
+          "jurisdiction": "GB",
+          "foundingDate": "1966-04-04",
+          "identifiers": [
+            {
+              "scheme": "GB-COH",
+              "id": "00876127"
+            }
+          ]
+        }
+      ],
+      "personStatements": [
+        {
+          "statementID": "3154a26d-d29e-4db0-8815-866f57c75f0c",
+          "statementDate": "2017-07-18",
+          "personType": "anonymousPerson",
+          "missingInfoReason": "The person with significant control's details are not shown because restrictions on using or disclosing any of the individual’s particulars are in force under regulations under section 790ZG in relation to this company"
+        }
+      ]
+    }
+  ]
+}
