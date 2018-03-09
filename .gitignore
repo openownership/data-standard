@@ -2,3 +2,5 @@
 _build
 .ve
 node_modules
+*~
+*.swp

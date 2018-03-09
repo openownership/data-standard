@@ -87,10 +87,8 @@ The following tables are generated from the schema, and outline the different co
 At the top level of any structured file is always an array of ```statementGroups```.
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/statementGroup.csv
+.. jsonschema:: ../schema/beneficial-ownership-statements.json
+    :collapse: statementGroups/0/beneficialOwnershipStatements,statementGroups/0/entityStatements,statementGroups/0/personStatements
 ```
 
 Each statementGroup MUST include an array of one or more ```beneficialOwnershipStatements``` and, where a cross-reference publication pattern is followed, may include arrays of other statements.
@@ -102,10 +100,9 @@ Each statementGroup MUST include an array of one or more ```beneficialOwnershipS
 A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided. 
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/BeneficialOwnershipStatement.csv
+.. jsonschema:: ../schema/beneficial-ownership-statements.json
+    :pointer: /definitions/BeneficialOwnershipStatement
+    :collapse: interests
 ```
 
 #### Interest
