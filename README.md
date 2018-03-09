@@ -23,29 +23,34 @@ The initial development of the Beneficial Ownership Data Standard is funded thro
 
 ## Technical documentation
 
-### Virtual Environment Set-up
-
-To set up a virtual environment for the project:
+### Build the docs locally
+  
+Assuming a unix based system:
 
 ```
-virtualenv -p python3 .ve
+# Make sure you have python3 venv, e.g. for Ubuntu
+# If you're not sure, try creating a venv, and see if it errors
+sudo apt-get install python3-venv
+
+# Create a venv
+python3 -m venv .ve    
+# Enter the venv, needs to be run for every new shell
 source .ve/bin/activate
+# Install requirements
+pip install -r pre_requirements.txt
 pip install -r requirements.txt
-```
-
-### Building the documentation
-
-```
+# Build the docs
 cd docs
-make html
+make dirhtml
 ```
 
-To serve a copy of the docs locally:
+Built docs are in `docs/_build/dirhtml`.
 
+
+Viewing the docs:
 ```
-cd docs
-python -m http.server 
+cd _build/dirhtml
+python -m http.server
 ```
 
-And then access at http://localhost:8000/ 
-
+Then go to http://localhost:8000/ in a browser.

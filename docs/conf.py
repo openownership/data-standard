@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Beneficial Ownership Data Standard (alpha) documentation build configuration file, created by
-# sphinx-quickstart on Wed Mar  8 17:50:48 2017.
+# Beneficial Ownership Data Standard (alpha) documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -20,13 +19,10 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
-
-# -- General configuration ------------------------------------------------
-
 from recommonmark.transform import AutoStructify
 from recommonmark.parser import CommonMarkParser
-import os 
+
+# -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
@@ -35,9 +31,7 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.todo',
-    'sphinx.ext.ifconfig',
-    'sphinx.ext.githubpages']
+extensions = ['sphinxcontrib.opendataservices', 'sphinxcontrib.jsonschema']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -50,7 +44,11 @@ source_parsers = {
     '.md': CommonMarkParser,
     }
 
-source_suffix = ['.rst','.md']
+source_suffix = ['.rst', '.md']
+
+# The encoding of source files.
+#
+# source_encoding = 'utf-8-sig'
 
 # The master toctree document.
 master_doc = 'index'
@@ -85,7 +83,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = True
+todo_include_todos = False
 
 
 # -- Options for HTML output ----------------------------------------------
@@ -93,6 +91,7 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
+# on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 import os
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
@@ -121,9 +120,6 @@ else:
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-
-# -- Options for HTMLHelp output ------------------------------------------
-
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'BODS'
 
@@ -131,21 +127,21 @@ htmlhelp_basename = 'BODS'
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
+     # The paper size ('letterpaper' or 'a4paper').
+     #
+     # 'papersize': 'letterpaper',
 
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
+     # The font size ('10pt', '11pt' or '12pt').
+     #
+     # 'pointsize': '10pt',
 
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
+     # Additional stuff for the LaTeX preamble.
+     #
+     # 'preamble': '',
 
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
+     # Latex figure (float) alignment
+     #
+     # 'figure_align': 'htbp',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

@@ -1,8 +1,0 @@
-Field Name,Description,Format
-type,"Type of interest: A codelist value indicating the nature of the interest. Codelist options: [``shareholding``, ``voting-rights``, ``appointment-of-board``, ``influence-or-control``]",string enum (codelist)
-interestLevel,"Interest level: Is this interest held directly or indirectly? Codelist options: [``direct``, ``indirect``, ``unknown``]",string enum (codelist)
-details,"Details: This field may be used to provide the local name given to this kind of interest, or any further semi-structured or unstructured information to clarify the nature of the interest held.",string
-annotations,Annotations: Any further details to qualify this interest. See `Annotation <#annotation>`__ section for further details.,Object Array
-share,"Percentage share: Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls. See `share <#share>`__",Object
-startDate,"State date: When did this interest first occur. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",string
-endDate,"End date: When did this interest cease. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",string

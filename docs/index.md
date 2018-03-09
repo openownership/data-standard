@@ -5,7 +5,7 @@ This site contains documentation site for the beta version of the Beneficial Own
 
 This work is taking place under the auspices of the Open Ownership project. More details on the project are avaiable at [http://www.openownership.org](http://www.openownership.org)
 
-The beta schema is documented on the **[specification pages](schema.md)**.
+The beta schema is documented on the [specification pages](schema.md).
 
 
 ### Contents

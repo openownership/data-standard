@@ -1,2 +1,0 @@
-Field Name,Description,Format
-statementGroups,"Statement group: A statement group is used to collect together statements relating to a particular disclosure, company or individual. Statement groups are a logical grouping designed to limit duplication of provenance information, and bring together statements that contain cross references. Where statements in a statementGroup cross-references to other statements, those statements MUST also be contained within the group.",Array
