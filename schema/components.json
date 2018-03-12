@@ -1,0 +1,13 @@
+{
+  "id": "components.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "version": "0.1",
+  "definitions": {
+      "StatementDate": {
+      "title": "Statement date",
+      "description": "The date on which this statement was made",
+      "type": "string",
+      "format": "date"
+    }
+  }
+ }

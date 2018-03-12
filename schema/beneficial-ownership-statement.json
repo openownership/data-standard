@@ -1,0 +1,6 @@
+{
+  "id": "beneficial-ownership-statment.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "version": "0.1",
+  "type": "object"
+}
