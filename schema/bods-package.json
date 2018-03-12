@@ -2,5 +2,10 @@
   "id": "bods-package.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "version": "0.1",
-  "type": "array"
+  "type": "array",
+  "items": [
+    {"$ref": "person-statement.json"},
+    {"$ref": "entity-statement.json"},
+    {"$ref": "beneficial-ownership-statement.json"}
+  ]
 }

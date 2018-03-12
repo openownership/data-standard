@@ -2,5 +2,70 @@
   "id": "beneficial-ownership-statment.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "version": "0.1",
-  "type": "object"
+  "type": "object",
+  "properties": {
+      "BeneficialOwnershipStatement": {
+          "title": "Beneficial Ownership Statement",
+          "description": "A beneficial ownership statement is made up of an entity, an interested party (a reference to an entity, natural person, arrangement or trust), details of the interest and provenance information.",
+          "type": "object",
+          "properties": {
+            "statementID": {
+              "$ref": "#/definitions/ID"
+            },
+            "statementDate": {
+              "$ref": "#/definitions/StatementDate"
+            },
+            "subject": {
+              "title":"Subject",
+              "description":"The subject of a beneficial ownership relationship.",
+              "properties": {
+                "entity": {
+                      "$ref": "#/definitions/StatementReference"
+                    }
+                  },
+              "oneOf": [
+                { "required": [ "entity" ] }
+              ]
+            },
+            "interestedParty": {
+              "title":"Interested party",
+              "description":"The interested party has some level of ownership or control over the entity referenced in this beneficial ownership statement.",
+              "type": "object",
+              "properties": {
+                "entity": {
+                      "$ref": "#/definitions/StatementReference"
+                    },
+                "person": {
+                      "$ref": "#/definitions/StatementReference"
+                    },
+                "unspecified": {
+                      "$ref": "#/definitions/Unspecified"
+                    }
+                  },
+              "oneOf": [
+                { "required": [ "entity" ] },
+                { "required": [ "person" ] },
+                { "required": [ "unspecified" ]}
+              ]
+            },
+            "interests": {
+              "title": "Interests",
+              "description": "A description of the interests held by the interestedParty covered by this statement in the entity covered by this statement.",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Interest"
+              }
+            },
+            "source": {
+              "title":"Source",
+              "description":"The source of the information that links the entity and the interested party, or that supports a null statement.",
+              "$ref": "#/definitions/Source"
+            },
+            "replacesStatement": {
+              "$ref": "#/definitions/ReplacesStatement"
+            }
+          },
+          "required": ["statementID", "subject", "interestedParty"]
+        }
+    }
 }
