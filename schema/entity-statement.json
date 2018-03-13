@@ -12,6 +12,12 @@
       "statementDate": {
         "$ref": "components.json#/definitions/StatementDate"
       },
+      "statementType": {
+        "title": "The type of statement. This should always be 'entityStatement'",
+        "description": "What is being described by this statement?",
+        "type": "string",
+        "enum": ["entityStatement"]
+      },
       "type": {
         "title": "Type",
         "description": "What kind of entity is this? The 'registeredEntity' code covers any legal entity created through an act of official registration, usually resulting in an identifier being assigned to the entity. The 'legalEntity' code covers other bodies with distinct legal personality (government departments, international institutions etc.).  The 'arrangement' code covers artificial entities, described in the data model for the purpose of associating one or more natural or legal persons together in an ownership or control relationship, but without implying that the parties to this arrangement have any other form of collective legal identity.",
@@ -84,5 +90,5 @@
         "$ref": "components.json#/definitions/ReplacesStatement"
       }
     },
-    "required": ["statementID"]
+    "required": ["statementID", "statementType"]
 }
