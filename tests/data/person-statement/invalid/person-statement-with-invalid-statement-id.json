@@ -1,0 +1,26 @@
+{
+  "statementID": "too-short-so-fail",
+  "statementDate": "2017-11-18",
+  "personType": "knownPerson",
+  "name": "Chris Taggart",
+  "nationalities": [
+      "GB"
+    ],
+  "alternateNames": [
+    {
+      "type": "detailed",
+      "fullName": "Christopher Taggart",
+      "givenName": "Christopher",
+      "familyName": "Taggart"
+    }
+  ],
+  "birthDate": "1964-04",
+  "addresses": [
+    {
+      "type": "service",
+      "address": "Aston House, Cornwall Avenue, London",
+      "country": "GB",
+      "postCode": "N3 1LF"
+    }
+  ]
+}
