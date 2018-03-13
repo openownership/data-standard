@@ -4,8 +4,14 @@
   "version": "0.1",
   "type": "array",
   "items": [
-    {"$ref": "person-statement.json"},
-    {"$ref": "entity-statement.json"},
-    {"$ref": "beneficial-ownership-statement.json"}
+    {
+        "$ref": "entity-statement.json"
+    },
+    {
+        "$ref": "person-statement.json"
+    },
+    {
+        "$ref": "beneficial-ownership-statement.json"
+    }
   ]
 }
