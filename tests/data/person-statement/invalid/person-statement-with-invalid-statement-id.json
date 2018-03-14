@@ -1,5 +1,6 @@
 {
   "statementID": "too-short-so-fail",
+  "statementType": "personStatement",
   "statementDate": "2017-11-18",
   "personType": "knownPerson",
   "name": "Chris Taggart",

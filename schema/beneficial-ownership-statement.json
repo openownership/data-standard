@@ -12,6 +12,12 @@
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate"
     },
+    "statementType": {
+      "title": "The type of statement. This should always be 'beneficialOwnershipStatement'",
+      "description": "What is being described by this statement?",
+      "type": "string",
+      "enum": ["beneficialOwnershipStatement"]
+    },
     "subject": {
       "title":"Subject",
       "description":"The subject of a beneficial ownership relationship.",
@@ -62,5 +68,5 @@
       "$ref": "components.json#/definitions/ReplacesStatement"
     }
   },
-  "required": ["statementID", "subject", "interestedParty"]
+  "required": ["statementID", "statementType", "subject", "interestedParty"]
 }

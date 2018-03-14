@@ -12,6 +12,12 @@
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate"
     },
+    "statementType": {
+        "title": "The type of statement. This should always be 'entityStatement'",
+        "description": "What is being described by this statement?",
+        "type": "string",
+        "enum": ["personStatement"]
+    },
     "personType": {
       "title": "Person type",
       "description": "The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, but information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'. Where the beneficial owner has been identified use knownPerson.",
@@ -93,7 +99,7 @@
       "$ref": "components.json#/definitions/ReplacesStatement"
     }
   },
-  "required": ["statementID"],
+  "required": ["statementID", "statementType"],
   "dependencies": {
     "missingPersonReason": ["missingPersonType"]
   }
