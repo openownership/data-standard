@@ -9,14 +9,17 @@
       "statementID": {
         "$ref": "components.json#/definitions/ID"
       },
-      "statementDate": {
-        "$ref": "components.json#/definitions/StatementDate"
-      },
       "statementType": {
         "title": "The type of statement. This should always be 'entityStatement'",
         "description": "What is being described by this statement?",
         "type": "string",
         "enum": ["entityStatement"]
+      },
+      "groupID": {
+        "$ref": "components.json#definitions/ID"
+      },
+      "statementDate": {
+        "$ref": "components.json#/definitions/StatementDate"
       },
       "type": {
         "title": "Type",
@@ -90,5 +93,5 @@
         "$ref": "components.json#/definitions/ReplacesStatement"
       }
     },
-    "required": ["statementID", "statementType"]
+    "required": ["statementID", "statementType", "groupID"]
 }
