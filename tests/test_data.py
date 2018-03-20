@@ -5,7 +5,7 @@ import pytest
 
 
 this_dir = os.path.dirname(os.path.realpath(__file__))
-absolute_path_to_schema_dir = this_dir  + '/../schema/'
+absolute_path_to_schema_dir = this_dir + '/../schema/'
 resolver = RefResolver('file://' + absolute_path_to_schema_dir + '/', None)
 format_checker = FormatChecker()
 
@@ -71,7 +71,6 @@ def test_valid_package_json(json_path):
     with open(os.path.join(absolute_path_to_schema_dir, schema_path)) as f:
         schema = json.load(f)
     validate(json_data, schema, resolver=resolver, format_checker=format_checker)
-
 
 
 @pytest.mark.parametrize(('json_path', 'error'), [

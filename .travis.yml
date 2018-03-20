@@ -6,3 +6,4 @@ install:
   - "pip install -r requirements_test.txt"
 script:
   - "py.test"
+  - "flake8 tests"
