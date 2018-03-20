@@ -12,7 +12,7 @@ from bods_validate import bods_validate_package, bods_validate_statement
     'data/entity-statement/valid/valid-entity-statement.json',
     'data/person-statement/valid/valid-person-statement.json',
     'data/beneficial-ownership-statement/valid/valid-beneficial-ownership-statement.json',
-    pytest.mark.xfail('../examples/flat-serialisation/gb-coh-entity-statement.json'),
+    '../examples/flat-serialisation/gb-coh-entity-statement.json',
     '../examples/flat-serialisation/gb-coh-person-statement.json',
 ])
 def test_valid_statement_json(json_path):
@@ -24,7 +24,6 @@ def test_valid_statement_json(json_path):
 @pytest.mark.parametrize('json_path', [
     'data/bods-package/valid/valid-bods-package.json',
     '../examples/flat-serialisation/gb-coh-bods-package.json',
-    pytest.mark.xfail('../examples/flat-serialisation/single-direct.json'),
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
