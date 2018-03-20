@@ -6,6 +6,7 @@ from jsonschema import validate, ValidationError
 from bods_validate import this_dir, format_checker, absolute_path_to_schema_dir, resolver
 from bods_validate import MissingStatementTypeError
 from bods_validate import bods_validate_package, bods_validate_statement
+from bods_validate import bods_iter_errors_package, bods_iter_errors_statement
 
 
 @pytest.mark.parametrize('json_path', [
@@ -47,7 +48,7 @@ def test_valid_package_json(json_path):
     ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-with-invalid-statement-id.json', ValidationError),
     ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json', MissingStatementTypeError),
 ])
-def test_invalid_json(json_path, error):
+def test_invalid_statement_json(json_path, error):
     with open(os.path.join(this_dir, json_path)) as f:
         json_data = json.load(f)
     with pytest.raises(error):
@@ -66,11 +67,8 @@ def test_invalid_json(json_path, error):
         'data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json',
     ], MissingStatementTypeError),
 ])
-def test_invalid_package(json_paths, error):
+def test_invalid_package_json(json_paths, error):
     json_data = [json.load(open(os.path.join(this_dir, json_path))) for json_path in json_paths]
-    schema_path = 'bods-package.json'
-    with open(os.path.join(absolute_path_to_schema_dir, schema_path)) as f:
-        schema = json.load(f)
 
     # Validate statement by statement
     with pytest.raises(error):
@@ -82,3 +80,58 @@ def test_invalid_package(json_paths, error):
         schema = json.load(f)
     with pytest.raises(ValidationError):
         validate(json_data, schema, resolver=resolver, format_checker=format_checker)
+
+
+@pytest.mark.parametrize(('json_path', 'expected_errors'), [
+    ('data/entity-statement/valid/valid-entity-statement.json', set()),
+    ('data/person-statement/valid/valid-person-statement.json', set()),
+    ('data/beneficial-ownership-statement/valid/valid-beneficial-ownership-statement.json', set()),
+    ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', {
+        "'too-short-so-fail' is too short",
+        "'entityType' is a required property",
+    }),
+    ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', {
+        "'too-short-so-fail' is too short"
+    }),
+    ('data/person-statement/invalid/person-statement-with-bad-date.json', {
+        "'Tuesday' is not a 'date'",
+    }),
+    ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-with-invalid-statement-id.json', {
+        "'too-short-so-fail' is too short",
+    }),
+    ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json', {
+        "'statementType' is a required property",
+    }),
+])
+def test_invalid_statement_json_iter_errors(json_path, expected_errors):
+    with open(os.path.join(this_dir, json_path)) as f:
+        json_data = json.load(f)
+    actual_errors = {e.message for e in bods_iter_errors_statement(json_data)}
+    assert actual_errors == expected_errors
+
+
+@pytest.mark.parametrize(('json_path', 'json_paths', 'expected_errors'), [
+    ('data/bods-package/valid/valid-bods-package.json', None, set()),
+    (None, [
+        'data/entity-statement/valid/valid-entity-statement.json',
+        'data/person-statement/valid/valid-person-statement.json',
+        'data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-with-invalid-statement-id.json',
+    ], {
+        "'too-short-so-fail' is too short"
+    }),
+    (None, [
+        'data/entity-statement/valid/valid-entity-statement.json',
+        'data/person-statement/valid/valid-person-statement.json',
+        'data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json',
+    ], {
+        "'statementType' is a required property",
+    }),
+])
+def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):
+    if json_path:
+        with open(os.path.join(this_dir, json_path)) as f:
+            json_data = json.load(f)
+    else:
+        json_data = [json.load(open(os.path.join(this_dir, json_path))) for json_path in json_paths]
+    actual_errors = {e.message for e in bods_iter_errors_package(json_data)}
+    assert actual_errors == expected_errors
