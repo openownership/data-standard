@@ -1,12 +1,13 @@
 import os
 import json
-from jsonschema import validate, ValidationError, RefResolver
+from jsonschema import validate, ValidationError, RefResolver, FormatChecker
 import pytest
 
 
 this_dir = os.path.dirname(os.path.realpath(__file__))
 absolute_path_to_schema_dir = this_dir  + '/../schema/'
 resolver = RefResolver('file://' + absolute_path_to_schema_dir + '/', None)
+format_checker = FormatChecker()
 
 
 class MissingStatementTypeError(ValueError):
@@ -31,7 +32,7 @@ def bods_validate_statement(statement):
         raise UnknownStatementTypeError('Unknown statementType {}'.format(statement.get('statementType')))
     with open(os.path.join(absolute_path_to_schema_dir, schema_path)) as f:
         schema = json.load(f)
-    validate(statement, schema, resolver=resolver)
+    validate(statement, schema, resolver=resolver, format_checker=format_checker)
 
 
 def bods_validate_package(statement_list):
@@ -69,13 +70,14 @@ def test_valid_package_json(json_path):
     schema_path = 'bods-package.json'
     with open(os.path.join(absolute_path_to_schema_dir, schema_path)) as f:
         schema = json.load(f)
-    validate(json_data, schema, resolver=resolver)
+    validate(json_data, schema, resolver=resolver, format_checker=format_checker)
 
 
 
 @pytest.mark.parametrize(('json_path', 'error'), [
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-with-bad-date.json', ValidationError),
     ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-with-invalid-statement-id.json', ValidationError),
     ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json', MissingStatementTypeError),
 ])
@@ -113,4 +115,4 @@ def test_invalid_package(json_paths, error):
     with open(os.path.join(absolute_path_to_schema_dir, schema_path)) as f:
         schema = json.load(f)
     with pytest.raises(ValidationError):
-        validate(json_data, schema, resolver=resolver)
+        validate(json_data, schema, resolver=resolver, format_checker=format_checker)
