@@ -43,6 +43,7 @@ def test_valid_package_json(json_path):
 
 @pytest.mark.parametrize(('json_path', 'error'), [
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', ValidationError),
+    ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id-no-entity-type.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-bad-date.json', ValidationError),
     ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-with-invalid-statement-id.json', ValidationError),
@@ -97,6 +98,9 @@ def test_invalid_package_json(json_path, json_paths, error):
     ('data/person-statement/valid/valid-person-statement.json', set()),
     ('data/beneficial-ownership-statement/valid/valid-beneficial-ownership-statement.json', set()),
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', {
+        "'too-short-so-fail' is too short"
+    }),
+    ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id-no-entity-type.json', {
         "'too-short-so-fail' is too short",
         "'entityType' is a required property",
     }),
