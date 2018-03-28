@@ -71,6 +71,7 @@ def test_invalid_statement_json(json_path, error):
         'data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json',
     ], MissingStatementTypeError),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-entity-statement.json', None, UnrecognisedStatementID),
+    ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, UnrecognisedStatementID),
 ])
 def test_invalid_package_json(json_path, json_paths, error):
     if json_path:
@@ -146,6 +147,9 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     }),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-entity-statement.json', None, {
         "subject/entitiy/describedByStatement '1dc0e987-5c57-4a1c-b3ad-61353b66a9b7' does not match any known entities"
+    }),
+    ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, {
+        "interestedParty/person/describedByStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
     }),
 ])
 def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):
