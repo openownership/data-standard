@@ -45,7 +45,7 @@
      id="namedview215"
      showgrid="false"
      inkscape:zoom="1.4254587"
-     inkscape:cx="390.34393"
+     inkscape:cx="218.8202"
      inkscape:cy="-25.591696"
      inkscape:window-x="0"
      inkscape:window-y="24"
@@ -177,7 +177,7 @@
          inkscape:connector-curvature="0"
          id="path4374-0-7"
          d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#00deb6;fill-opacity:1;fill-rule:evenodd;stroke:#00deb6;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#88c9d3;fill-opacity:1;fill-rule:evenodd;stroke:#88c9d3;stroke-width:1pt;stroke-opacity:1"
          transform="matrix(0.4,0,0,0.4,4,0)" />
     </marker>
     <marker
@@ -501,7 +501,7 @@
      cy="226.6658"
      r="36.63768"
      id="circle209-2"
-     style="fill:none;stroke:#00deb6;stroke-width:5.72463751px;stroke-miterlimit:10"
+     style="fill:none;stroke:#88c9d3;stroke-width:5.72463751px;stroke-miterlimit:10;stroke-opacity:1"
      inkscape:transform-center-x="-8.8351931"
      inkscape:transform-center-y="121.2831" />
   <g
@@ -583,7 +583,7 @@
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start">Company 3</tspan>
   </text>
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#00deb6;stroke-width:1.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-2-2)"
+     style="fill:none;fill-rule:evenodd;stroke:#88c9d3;stroke-width:1.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-2-2)"
      d="m 345.5,120.45782 0,67.57461 0,0"
      id="path12354-2-9"
      inkscape:connector-curvature="0" />
@@ -593,7 +593,7 @@
      cy="227.40831"
      r="36.63768"
      id="circle209-2-9"
-     style="fill:none;stroke:#00deb6;stroke-width:5.72463751px;stroke-miterlimit:10"
+     style="fill:none;stroke:#88c9d3;stroke-width:5.72463751px;stroke-miterlimit:10;stroke-opacity:1"
      inkscape:transform-center-x="-8.8351931"
      inkscape:transform-center-y="121.2831" />
   <g
@@ -648,7 +648,7 @@
      style="fill:none;stroke:#b2b3b9;stroke-width:1.5579437;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
      r="38.721027" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#00deb6;stroke-width:1.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-2-2-9)"
+     style="fill:none;fill-rule:evenodd;stroke:#88c9d3;stroke-width:1.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-2-2-9)"
      d="m 69.500002,119.61181 0,67.57461 0,0"
      id="path12354-2-9-9"
      inkscape:connector-curvature="0" />
