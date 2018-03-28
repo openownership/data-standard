@@ -1,0 +1,79 @@
+{
+  "version": "0.1",
+  "statementGroups": [
+    {
+      "statementID": "57d881b9-a35c-413e-870f-39ab8a1ac9e2",
+      "beneficialOwnershipStatements": [
+        {
+          "statementID": "fbfd0547-d0c6-4a00-b559-5c5e91c34f5c",
+          "statementDate": "2017-11-18",
+          "subject": {
+            "entity": {
+              "type": "entityStatement",
+              "describedByStatement": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7"
+            }
+          },
+          "interestedParty": {
+            "person": {
+              "type": "personStatement",
+              "describedByStatement": "019a93f1-e470-42e9-957b-03559861b2e2"
+            }
+          },
+          "interests": [
+            {
+              "type": "shareholding",
+              "interestLevel": "direct",
+              "startDate": "2016-04-06",
+              "share": {
+                "exact": 100
+              }
+            }
+          ]
+        }
+      ],
+      "entityStatements": [
+        {
+          "statementID": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
+          "statementDate": "2017-11-18",
+          "type": "registeredEntity",
+          "name": "CHRINON LTD",
+          "foundingDate": "2010-11-18",
+          "identifiers": [
+            {
+              "scheme": "GB-COH",
+              "id": "07444723"
+            }
+          ]
+        }
+      ],
+      "personStatements": [
+        {
+          "statementID": "019a93f1-e470-42e9-957b-03559861b2e2",
+          "statementDate": "2017-11-18",
+          "personType": "knownPerson",
+          "name": "Chris Taggart",
+          "nationalities": [
+              "GB"
+            ],
+          "alternateNames": [
+            {
+              "type": "detailed",
+              "fullName": "Christopher Taggart",
+              "givenName": "Christopher",
+              "familyName": "Taggart"
+            }
+          ],
+          "birthDate": "1964-04",
+          "addresses": [
+            {
+              "type": "service",
+              "address": "Aston House, Cornwall Avenue, London",
+              "country": "GB",
+              "postCode": "N3 1LF"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

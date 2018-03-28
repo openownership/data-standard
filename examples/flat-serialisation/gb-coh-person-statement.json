@@ -1,0 +1,28 @@
+{
+  "statementID": "019a93f1-e470-42e9-957b-03559861b2e2",
+  "statementType": "personStatement",
+  "groupID": "f25fb48c-ab3b-44e3-aaa5-45fb5930f769",
+  "statementDate": "2017-11-18",
+  "personType": "knownPerson",
+  "name": "Chris Taggart",
+  "nationalities": [
+      "GB"
+    ],
+  "alternateNames": [
+    {
+      "type": "detailed",
+      "fullName": "Christopher Taggart",
+      "givenName": "Christopher",
+      "familyName": "Taggart"
+    }
+  ],
+  "birthDate": "1964-04",
+  "addresses": [
+    {
+      "type": "service",
+      "address": "Aston House, Cornwall Avenue, London",
+      "country": "GB",
+      "postCode": "N3 1LF"
+    }
+  ]
+}
