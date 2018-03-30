@@ -16,7 +16,7 @@ The data may include:
 
 And so on.
 
-But accessing this data and understanding its relevance to beneficial ownership can be challenging. The data may only be small part of a longer document. The same types of data will be represented differently by different publishers. Relevant data may appear across different documents.
+But accessing this data and understanding its relevance to beneficial ownership can be challenging. The data may only be a small part of a longer document. The same types of data will be represented differently by different publishers. Relevant data may appear across different documents.
 
 And increasingly, governments and regulatory authorities require beneficial ownership data to be disclosed and filed in official registers.
 
