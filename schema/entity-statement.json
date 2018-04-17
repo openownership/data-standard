@@ -50,12 +50,24 @@
         "minLength": 2,
         "maxLength": 10
       },
+      "unvalidatedJurisdiction": {
+        "title": "Jurisdiction",
+        "description": "The jurisdiction in which this entity is registered, as a string. The jusrisdiction should either be a country or the sub-national state or region that has relevant jurisdiction over the registration of operation of this entity.",
+        "type": "string"
+      },
       "identifiers": {
         "title": "Identifiers",
         "description": "One or more official identifiers for this entity. Where available, official registration numbers should be provided.",
         "type": "array",
         "items": {
-          "$ref": "components.json#/definitions/Identifier"
+          "oneOf": [
+            {
+             "$ref": "components.json#/definitions/Identifier"
+            },
+                      {
+             "$ref": "components.json#/definitions/UnvalidatedIdentifier"
+            }
+          ]
         }
       },
       "foundingDate": {

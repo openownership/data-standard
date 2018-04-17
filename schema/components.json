@@ -140,6 +140,12 @@
       "description":"An identifier that has been assigned to this entity. The scheme or list from which the identifier is drawn should be declared. ",
       "type":"object",
       "properties":{
+        "validationType": {
+          "title": "The type of validation used on this identifier.",
+          "description": "Should this object be strictly validated?",
+          "type": "string",
+          "enum": ["strict"]
+        },
         "id":{
           "title":"ID",
           "description":"The identifier for this entity as provided in the declared scheme.",
@@ -156,7 +162,38 @@
           "type":"string",
           "format":"uri"
         }
-      }
+      },
+      "required": ["validationType"]
+    },
+    "UnvalidatedIdentifier":{
+      "title":"Unvalidated Identifier",
+      "description":"An identifier that has been assigned to this entity. The scheme or list from which the identifier is drawn should be declared. ",
+      "type":"object",
+      "properties":{
+        "validationType": {
+          "title": "The type of validation used on this identifier.",
+          "description": "Should this object be strictly validated?",
+          "type": "string",
+          "enum": ["loose"]
+        },
+        "id":{
+          "title":"ID",
+          "description":"The identifier for this entity as provided in the declared scheme.",
+          "type":"string"
+        },
+        "scheme":{
+          "title":"Scheme",
+          "description":"For entity statements, the scheme should be a register name. For person statements, recognised values include 'passport', 'internal' and 'id-card'.",
+          "type":"string"
+        },
+        "uri":{
+          "title":"URI",
+          "description":"Where this identifier has a [canonical URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be included",
+          "type":"string",
+          "format":"uri"
+        }
+      },
+      "required": ["validationType"]
     },
     "ID":{
       "title":"ID",

@@ -5,12 +5,14 @@
     "groupID":"f25fb48c-ab3b-44e3-aaa5-45fb5930f769",
     "statementDate":"2017-11-18",
     "entityType":"registeredEntity",
+    "jurisdiction": "GB",
     "name":"CHRINON LTD",
     "foundingDate":"2010-11-18",
     "identifiers":[
       {
         "scheme":"GB-COH",
-        "id":"07444723"
+        "id":"07444723",
+        "validationType": "strict"
       }
     ]
   },
