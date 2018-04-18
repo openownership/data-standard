@@ -1,6 +1,6 @@
 # What is the Beneficial Ownership Data Standard?
 
-The value from beneficial ownership data comes when we can share it easily, knowing that it will correctly understood. Data from different companies and different countries can then be combined, analysed and visualised.
+The value from beneficial ownership data comes when we can share it easily, knowing that it will be correctly understood. Data from different companies and different countries can then be combined, analysed and visualised.
 
 ## To gain insights about beneficial ownership...
 
