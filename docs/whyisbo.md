@@ -10,7 +10,7 @@ The person both controls Company 2 indirectly and owns half of Company 3. This c
 
 .. highlights:: 
 
-    Uniting ownership and control under the banner of beneficial ownership allows us to represent the complex reality of corporate structures.
+    Uniting ownership and control under the banner of beneficial ownership allows us to represent the complex reality of corporate structures, and the multiple corporate interests a person might have.
 
 ```
 

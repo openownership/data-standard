@@ -1,12 +1,12 @@
 # What is the Beneficial Ownership Data Standard?
 
-The value from beneficial ownership data comes when we can combine, analyse and visualise data from different companies and different countries.
+The value from beneficial ownership data comes when we can share it easily, knowing that it will correctly understood. Data from different companies and different countries can then be combined, analysed and visualised.
 
 ## To gain insights about beneficial ownership...
 
 Bringing together data from a variety of sources can give us insights into sprawling or complicated ownership and control structures. But processing, combining and analysing data that exists in a multitude of formats is extremely difficult and time-consuming.
 
-![A standardised 'template' for data makes processing the data easier.](_assets/Diag7-dataStandardBlackBox.svg)
+![Data sources separately feeding into an unclear picture.](_assets/Diag7-dataStandardBlackBox.svg)
 
 Without a consistent approach to organizing the beneficial ownership data the bigger picture remains obscure. 
 
@@ -18,19 +18,20 @@ The Beneficial Ownership Data Standard provides a structured data format plus gu
 
 * The [User guides](index.md) give support for publishers and users of the data.
 
+![A standardised 'template' for data makes processing it easier, leading to a clear picture.](_assets/Diag8-dataStandardTemplate.svg)
+
+
+Using the Standard simplifies the sharing and use of beneficial ownership information.
+
 
 ## ...as structured data...
 
-The [data schema](schema.md) describes how data about the beneficial owners of a legal entity can be organized and stored, making it is easy to access, analyse and understand. The schema is defined in a structured data format called JSON.
+The data schema describes how data about the beneficial owners of a legal entity can be organized and stored. The schema is defined in a structured data format called JSON.
 
-(DIAG 8. A two-column diagram. Direct ownership example from DIAG 1 on the left: the related JSON code on the right.)
+![A two-column diagram. A company document containing beneficial ownership information: the related JSON code on the right.](_assets/Diag9-JSONdata.svg)
 
+Using the popular JSON format facilitates computerised access and analysis of the data. The format is also human-readable.
 
-## ...which respects jurisdictional differences.
-
-Thresholds for meeting beneficial ownership criteria do not form part of the Standard. Instead, each statement of beneficial ownership expressed using the Standard describes the degree of ownership or control.
-
-In this way, the Standard can accommodate definitions of beneficial ownership that differ across jurisdictions.
 
 ```eval_rst 
 
@@ -39,3 +40,4 @@ In this way, the Standard can accommodate definitions of beneficial ownership th
     The **Beneficial Ownership Data Standard** describes what data should be shared and how (as a JSON schema) and provides guidance on data publishing processes and data use.
 
 ``` 
+

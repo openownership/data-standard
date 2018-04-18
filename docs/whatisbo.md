@@ -10,7 +10,7 @@ The idea that people own companies and sometimes companies own companies is well
 
 ## ...but it's people that ultimately benefit...
 
-Even when companies own companies, individuals always appear at the end of the ownership chain. They ultimately benefit from companies’ financial successes, and often share in its failures.
+Even when companies own companies, individuals always appear at the end of the ownership chain. They ultimately benefit from companies’ financial successes, and often share in their failures.
 
 ![Company 2 owns 100% of Company 3's shares. And Person B owns 30% of Company 2's shares](_assets/Diag2-simpleInd.svg)
 
@@ -20,7 +20,7 @@ If a person owns something, they usually have some control over it. Owning share
 
 ![Person B owns 30% of Company 2's shares. And Person C (an executive director) has the right to appoint 60% of Company 2's board members](_assets/Diag3-splitContr.svg)
 
-Significant control over a company’s prospects can can be used to steer benefits and direct risks.
+Significant control over a company’s composition and decisions may be used to steer benefits and direct risks. So we need to know who has that control.
 
 ## ...to see the big picture.
 
