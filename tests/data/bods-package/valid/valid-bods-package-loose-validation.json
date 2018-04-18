@@ -1,0 +1,63 @@
+[
+  {
+    "statementID":"eaa57b0d-2920-4b4b-a465-708994497774",
+    "statementType":"entityStatement",
+    "groupID":"9d3a6ff3-6cc4-436f-85dc-cd7ac853d3f7",
+    "statementDate":"2018-02-28",
+    "entityType":"registeredEntity",
+    "jurisdiction": "GB",
+    "name":"CJ ICM (UK) LTD",
+    "foundingDate":"1996-06-07",
+    "identifiers":[
+      {
+        "scheme":"GB-COH",
+        "id":"03209262",
+        "validationType": "strict"
+      }
+    ]
+  },
+  {
+    "statementID":"1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
+    "statementType":"entityStatement",
+    "groupID":"9d3a6ff3-6cc4-436f-85dc-cd7ac853d3f7",
+    "statementDate":"2016-06-30",
+    "entityType":"registeredEntity",
+    "unvalidatedJurisdiction": "Uae",
+    "name":"Ibrakom Fzco",
+    "identifiers":[
+      {
+        "scheme":"Jebel Ali Free Zone",
+        "id":"00335",
+        "validationType": "loose"
+      }
+    ]
+  },
+  {
+    "statementID":"611e4aec-9da8-44f5-a03b-b7382111d84f",
+    "statementType":"beneficialOwnershipStatement",
+    "groupID":"9d3a6ff3-6cc4-436f-85dc-cd7ac853d3f7",
+    "statementDate":"2017-11-18",
+    "subject":{
+      "entity":{
+        "type":"entityStatement",
+        "describedByStatement":"eaa57b0d-2920-4b4b-a465-708994497774"
+      }
+    },
+    "interestedParty":{
+      "entity":{
+        "type":"entityStatement",
+        "describedByStatement":"1dc0e987-5c57-4a1c-b3ad-61353b66a9b7"
+      }
+    },
+    "interests":[
+      {
+        "type":"shareholding",
+        "interestLevel":"direct",
+        "share":{
+          "minimum":75,
+          "maximum": 100
+        }
+      }
+    ]
+  }
+]

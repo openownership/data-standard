@@ -10,7 +10,8 @@
     "identifiers":[
       {
         "scheme":"GB-COH",
-        "id":"07444723"
+        "id":"07444723",
+        "validationType": "strict"
       }
     ]
   },
@@ -21,9 +22,13 @@
     "statementDate":"2017-11-18",
     "personType":"knownPerson",
     "name":"Chris Taggart",
-    "nationalities":[
-      "GB"
-    ],
+    "nationalities":
+     {
+      "validated":
+        [
+          "GB"
+        ]
+     },
     "alternateNames":[
       {
         "type":"detailed",
