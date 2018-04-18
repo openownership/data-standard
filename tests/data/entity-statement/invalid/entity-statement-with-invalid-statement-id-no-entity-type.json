@@ -9,7 +9,8 @@
   "identifiers": [
     {
       "scheme": "GB-COH",
-      "id": "07444723"
+      "id": "07444723",
+      "validationType": "strict"
     }
   ]
 }
