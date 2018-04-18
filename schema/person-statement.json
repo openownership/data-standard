@@ -60,11 +60,26 @@
     "nationalities": {
       "title": "Nationality",
       "description": "An array of ISO 2-Digit country codes representing nationalities held by this individual.",
-      "type": "array",
-      "items": {
-        "type": "string",
-        "maxLength": 2,
-        "minLength": 2
+      "type": "object",
+      "properties":
+      {
+        "validated": {
+          "title": "Validated nationalities",
+          "description": "An array of ISO 2-Digit country codes representing nationalities held by this individual.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 2,
+            "minLength": 2
+          }
+        },
+        "unvalidated": {
+          "title": "Unvalidated nationalities",
+          "description": "An array of strings representing nationalities held by this individual",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "placeOfResidence": {
