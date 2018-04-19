@@ -50,11 +50,11 @@ def check_ids(statement, entity_statement_ids, person_statement_ids):
         entity_statement_id = statement.get('subject', {}).get('entity', {}).get('describedByStatement')
         if entity_statement_id not in entity_statement_ids:
             raise UnrecognisedStatementID("subject/entity/describedByStatement '{}' does not match any known entities".format(entity_statement_id))
-        if 'person' in statement.get('interestedParty', {}).keys():
+        if 'person' in statement.get('interestedParty', {}):
             person_statement_id = statement.get('interestedParty', {}).get('person', {}).get('describedByStatement')
             if person_statement_id not in person_statement_ids:
                 raise UnrecognisedStatementID("interestedParty/person/describedByStatement '{}' does not match any known persons".format(person_statement_id))
-        if 'entity' in statement.get('interestedParty', {}).keys():
+        if 'entity' in statement.get('interestedParty', {}):
             interested_entity_statement_id = statement.get('interestedParty', {}).get('entity', {}).get('describedByStatement')
             if interested_entity_statement_id not in entity_statement_ids:
                 raise UnrecognisedStatementID("subject/entity/describedByStatement '{}' does not match any known entities".format(interested_entity_statement_id))
