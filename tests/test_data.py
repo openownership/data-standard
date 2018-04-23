@@ -145,7 +145,7 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
         "subject/entity/describedByStatement '1dc0e987-5c57-4a1c-b3ad-61353b66a9b7' does not match any known entities"
     }),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-interested-party-entity-statement.json', None, {
-        "subject/entity/describedByStatement 'd36e6807-020c-4fb5-a0d4-5ab9eb971514' does not match any known entities"
+        "interestedParty/entity/describedByStatement 'd36e6807-020c-4fb5-a0d4-5ab9eb971514' does not match any known entities"
         })
 ])
 def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):

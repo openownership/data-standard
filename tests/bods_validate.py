@@ -57,7 +57,7 @@ def check_ids(statement, entity_statement_ids, person_statement_ids):
         if 'entity' in statement.get('interestedParty', {}):
             interested_entity_statement_id = statement.get('interestedParty', {}).get('entity', {}).get('describedByStatement')
             if interested_entity_statement_id not in entity_statement_ids:
-                raise UnrecognisedStatementID("subject/entity/describedByStatement '{}' does not match any known entities".format(interested_entity_statement_id))
+                raise UnrecognisedStatementID("interestedParty/entity/describedByStatement '{}' does not match any known entities".format(interested_entity_statement_id))
 
 
 def bods_validate_statement(statement):
