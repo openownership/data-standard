@@ -14,13 +14,15 @@ Even when companies own companies, individuals almost always appear at the end o
 
 ![Company 2 owns 100% of Company 3's shares. And Person B owns 30% of Company 2's shares](_assets/Diag2-simpleInd.svg)
 
+Here, Company 2 acts as an intermediary in a chain of ownership.
+
 ## ...so, we need to know who ultimately controls a company...
 
-If a person owns something, they usually have some control over it. Owning shares in a company may confer voting rights, for example. But ownership and control are sometimes separated - by share classes, contracts, agreements and other mechanisms. For example, an executive director might have the right to appoint 60% of the other board members.
+If a person owns something, they usually have some control over it. Owning shares in a company may confer voting rights, for example. But ownership and control are sometimes separated - by share classes, contracts, agreements and other mechanisms. For example, an executive director might have the right to appoint 60% of the other board members, while having little financial stake in the business.
 
 ![Person B owns 30% of Company 2's shares. And Person C (an executive director) has the right to appoint 60% of Company 2's board members](_assets/Diag3-splitContr.svg)
 
-An individual with significant control over a company’s board-composition and decision-making may be able to separate the risks undertaken by owners from the financial benefits derived from the company. So we need to know who has that control.
+Significant control over a company’s composition and decisions may be used to steer benefits and direct risks. Those people taking the financial risks for a company may not be the ones making the decisions. In which case, we need to know who is in control.
 
 ## ...to see the big picture.
 
