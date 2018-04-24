@@ -7,7 +7,7 @@ Data relating to beneficial ownership may include:
 * Details of individuals
 * Details of other legal entities
 * A breakdown of share holdings 
-* Rules about voting rights
+* The voting rights attached to different share classes
 * Details of intermediate entities in an ownership chain
 * Rules of board membership 
 
