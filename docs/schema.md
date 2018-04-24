@@ -67,7 +67,7 @@ This abstraction is important to represent the reality of how data is provided, 
 
 The draft Beneficial Ownership Data Standard is defined using [JSON Schema 0.4](http://json-schema.org/). The structured schema can be [accessed here](_static/beneficial-ownership-statements.json) or explored using the viewer below.
 
-<script src="_static/docson/widget.js" data-schema="../beneficial-ownership-statements.json"></script>
+<script src="_static/docson/widget.js" data-schema="../beneficial-ownership-statement.json"></script>
 
 ## Serializations
 
@@ -87,7 +87,7 @@ The following tables are generated from the schema, and outline the different co
 At the top level of any structured file is always an array of ```statementGroups```.
 
 ```eval_rst
-.. jsonschema:: ../schema/beneficial-ownership-statements.json
+.. jsonschema:: ../schema/beneficial-ownership-statement.json
     :collapse: statementGroups/0/beneficialOwnershipStatements,statementGroups/0/entityStatements,statementGroups/0/personStatements
 ```
 
@@ -100,7 +100,7 @@ Each statementGroup MUST include an array of one or more ```beneficialOwnershipS
 A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided. 
 
 ```eval_rst
-.. jsonschema:: ../schema/beneficial-ownership-statements.json
+.. jsonschema:: ../schema/beneficial-ownership-statement.json
     :pointer: /definitions/BeneficialOwnershipStatement
     :collapse: interests
 ```
