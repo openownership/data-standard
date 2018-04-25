@@ -11,6 +11,7 @@ Primer
    whyisbo.md
    whatisbodata.md
    whatisthebods.md
+   whatdoesbodscover.md
    
 
 ```
