@@ -28,7 +28,7 @@ Accessing this data and understanding its relevance to beneficial ownership can 
 * Relevant data may appear across different documents.
 * Legal terminology may differ across jurisdictions.
 
-<h2>... which is becoming a frequent requirement for companies.
+<h2>... which is becoming a frequent requirement for companies.</h2>
 
 Increasingly, governments and regulatory authorities require beneficial ownership data to be disclosed and filed in official registers.
 
