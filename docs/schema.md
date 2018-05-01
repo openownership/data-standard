@@ -31,7 +31,8 @@
     width:10%;
 }--></style>
 
-# Specification
+Schema reference
+================
 
 The beneficial ownership standard is made up of two parts:
 
@@ -50,33 +51,6 @@ The beneficial ownership standard is made up of two parts:
     The schema contains a draft **structure** and **fields** but does not yet specify substantial constraints or explicit required fields. 
 
 ```
-
-## Conceptual model
-
-The conceptual model for the standard was developed in late 2016/early 2017 and [is documented here](https://github.com/openownership/data-standard/issues/7).
-
-We model information on beneficial ownership in terms of a collection of statements. Each statement represents the assertions made by a particular agent at a particular point in time.
-
-It is up to data consumers to decide which statements to trust, and to reconcile the identity of the entities and persons described in those statements based on the identifying information contained within each statement. 
-
-![Conceptual Model](_assets/ConceptualModel-March2017.png)
-
-This abstraction is important to represent the reality of how data is provided, to support integration of data from different systems and [bi-temporal modelling](https://en.wikipedia.org/wiki/Bitemporal_Modeling), and to recognise that any dataset may contain overlapping or conflicting claims about ownership and control that need to be resolved in application specific ways. 
-
-## Schema browser
-
-The draft Beneficial Ownership Data Standard is defined using [JSON Schema 0.4](http://json-schema.org/). The structured schema can be [accessed here](_static/beneficial-ownership-statements.json) or explored using the viewer below.
-
-<script src="_static/docson/widget.js" data-schema="../beneficial-ownership-statement.json"></script>
-
-## Serializations
-
-We have currently modelled the schema with the option for:
-
-* (1) Entity, person and provenance statements to be nested inside a beneficial ownership statement;
-* (2) Each kind of statement to be provided at the same level of heiarchy, with a cross-reference between them;
-
-This second option is sketched out with a view of serialisations that may make use of the [JSON Lines](http://jsonlines.org/) format for sharing or streaming large quantities of statements, rather than enclosing all statements ot be exchanged in a single object. 
 
 ## Sections
 
@@ -99,11 +73,6 @@ Each statementGroup MUST include an array of one or more ```beneficialOwnershipS
 
 A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided. 
 
-```eval_rst
-.. jsonschema:: ../schema/beneficial-ownership-statement.json
-    :pointer: /definitions/BeneficialOwnershipStatement
-    :collapse: interests
-```
 
 #### Interest
 
@@ -260,25 +229,6 @@ See https://github.com/openownership/data-standard/issues/12 for a discussion of
 
 Our current schema uses a regular expression to allow YYYY, YYYY-MM, YYYY-MM-DD or full datetimes. 
 
-#### ID
-
-Publishers MUST generate globally unique and persisent identifiers for each statement.
-
-These SHOULD start with a [uuid](https://en.wikipedia.org/wiki/Universally_unique_identifier) to avoid any clash between identifiers from different publishers, and MAY be suffixed with additional characters to distinguish versions of a statement as required by local implementations.
-
-In many implementation scenarios, it will be appropriate to simply generate a distinct uuid for each statement. 
-
-## Publication and use considerations
-
-This section outlines considerations for publishers and consumers of the data
-
-### Immutability of statements
-
-Statements are considered immutable. If a field is updated, this should be considered to create a new statement, with a new identifier. 
-
-### Updating statements
-
-Where a ```statementGroup``` or ```statement``` replaces a previous statement this should be explicitly declared using a ```replacesStatementGroup``` or ```replacesStatement``` property. 
 
 
 

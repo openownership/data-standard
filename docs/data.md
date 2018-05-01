@@ -7,13 +7,10 @@ Data Schema
 .. toctree::
    :maxdepth: 1
 
-   overview.md
-   usecases.md
+   modelling-beneficial-ownership-info.md
+   data-schema-browser.md
    schema.md
-   identifiers.md
-   provenance.md
-   serialization.md
-   conformance.md
+   technical-requirements.md
    
 
 ```
