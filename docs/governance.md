@@ -1,19 +1,6 @@
 Governance 
 ==========
 
-## Get involved
-
-All changes to the standard draft, documentation and specification take place via GitHub at [https://github.com/openownership/data-standard/](https://github.com/openownership/data-standard/).
-
-Suggestions for changes can be [made via the project issue tracker](https://github.com/openownership/data-standard/issues).
-
-## License and contributor agreement
-
-Schema contents of the Open Ownership Register are Copyright 2016 World Wide Web Foundation on behalf of the Open Ownership Register Steering Group.
-
-The schema is licensed under the Apache License, Version 2.0
-
-Contributors are required to accept the [contributor agreement](https://github.com/openownership/data-standard/blob/master/CONTRIBUTING.md).
 
 ## Data Standard Working Group Terms of Reference
 
