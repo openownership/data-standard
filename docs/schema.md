@@ -34,11 +34,17 @@
 Schema reference
 ================
 
+
+
+**NO LONGER NEEDED?**
+
 The beneficial ownership standard is made up of two parts:
 
 * A data schema that sets out how beneficial ownership data MUST or SHOULD be formatted for interoperability, and that describes the fields of data that systems MUST or SHOULD provide. 
 
 * A set of implementation recommendations that describe the way in which beneficial ownership data SHOULD be collected and published. 
+
+**/NO LONGER NEEDED?**
 
 ```eval_rst 
 
@@ -52,11 +58,12 @@ The beneficial ownership standard is made up of two parts:
 
 ```
 
-## Sections
+
+
 
 The following tables are generated from the schema, and outline the different components of the data model. 
 
-### Statement Groups
+## Statement Groups
 
 At the top level of any structured file is always an array of ```statementGroups```.
 
@@ -69,7 +76,7 @@ Each statementGroup MUST include an array of one or more ```beneficialOwnershipS
 
 --- 
 
-### BeneficialOwnershipStatement
+## BeneficialOwnershipStatement
 
 A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided. 
 
@@ -106,7 +113,7 @@ The annotation property currently allows for an array of simple annotation objec
 
 ---
 
-### EntityStatement
+## EntityStatement
 
 ```eval_rst
 .. csv-table::
@@ -117,7 +124,7 @@ The annotation property currently allows for an array of simple annotation objec
 
 ---
 
-### PersonStatement
+## PersonStatement
 
 ```eval_rst
 .. csv-table::
@@ -127,7 +134,7 @@ The annotation property currently allows for an array of simple annotation objec
 ```
 
 
-#### AlternateName
+### AlternateName
 
 ```eval_rst
 .. csv-table::
@@ -140,7 +147,7 @@ The annotation property currently allows for an array of simple annotation objec
 ---
 
 
-### NullParty
+## NullParty
 
 ```eval_rst
 .. csv-table::
@@ -152,7 +159,7 @@ The annotation property currently allows for an array of simple annotation objec
 
 
 ---
-### Source
+## Source
 
 See [the provenance pages](provenance.md) for a discussion of provenance modelling.
 
@@ -163,7 +170,7 @@ See [the provenance pages](provenance.md) for a discussion of provenance modelli
    :file: docs/_schema_tables/Source.csv
 ```
 
-#### AssertingParty
+### AssertingParty
 
 ```eval_rst
 .. csv-table::
@@ -175,7 +182,7 @@ See [the provenance pages](provenance.md) for a discussion of provenance modelli
 
 ---
 
-### EntityStatementReference
+## EntityStatementReference
 
 ```eval_rst
 .. csv-table::
@@ -184,7 +191,7 @@ See [the provenance pages](provenance.md) for a discussion of provenance modelli
    :file: docs/_schema_tables/EntityStatementReference.csv
 ```
 
-### PersonStatementReference
+## PersonStatementReference
 
 ```eval_rst
 .. csv-table::
@@ -196,11 +203,11 @@ See [the provenance pages](provenance.md) for a discussion of provenance modelli
 
 ---
 
-### Common components
+<h2>Common components</h2>
 
 The following components are used at a number of points in the schema
 
-#### Address
+## Address
 
 Due to the diversity of address formats used across systems, and the extent to which data is inconsistently entered across these data fields in source systems and legacy datasets, the schema uses a very simple address format for data exchange - relying upon consuming systems to parse addresses before carrying out any structured comparison. However, designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See [issue 18](https://github.com/openownership/data-standard/issues/18) for more details.
 
@@ -211,7 +218,7 @@ Due to the diversity of address formats used across systems, and the extent to w
    :file: docs/_schema_tables/Address.csv
 ```
 
-#### Identifier
+## Identifier
 
 The identifier component is used to connect a statement to the person or entity that it refers to, using one or more existing known identifiers.
 
@@ -223,7 +230,7 @@ The identifier component is used to connect a statement to the person or entity 
 ```
 
 
-#### Date
+## Date
 
 See https://github.com/openownership/data-standard/issues/12 for a discussion of handling fuzzy dates.
 

@@ -32,7 +32,8 @@
 }--></style>
 
 
-## Provenance Information
+Provenance information
+======================
 
 Provenance information can be attached through use of the ``Source`` object on a ``StatementGroup``, a ``BeneficialOwnershipStatement``, an ``EntityStatement`` or a ``PersonStatement``. 
 

@@ -8,6 +8,8 @@ Technical requirements
 
    serialization.md
    identifiers.md
+   provenance.md
+   conformance.md
    
 
 ```
