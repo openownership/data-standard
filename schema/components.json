@@ -348,7 +348,7 @@
     "Country":{
       "title":"Country",
       "description":"A country MUST have a name. A country SHOULD have an ISO 2-Digit county code.",
-      "type":"objecy",
+      "type":"object",
       "properties":{
         "name":{
           "title":"Name",
