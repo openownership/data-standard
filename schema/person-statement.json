@@ -62,9 +62,7 @@
       "description": "An array of ISO 2-Digit country codes representing nationalities held by this individual.",
       "type": "array",
       "items": {
-        "type": "string",
-        "maxLength": 2,
-        "minLength": 2
+        "$ref": "components.json#definitions/Country"
       }
     },
     "placeOfResidence": {

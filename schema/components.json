@@ -137,7 +137,7 @@
     },
     "Identifier":{
       "title":"Identifier",
-      "description":"An identifier that has been assigned to this entity. The scheme or list from which the identifier is drawn should be declared. ",
+      "description":"An identifier that has been assigned to this entity. The scheme or list from which the identifier is drawn should be declared.",
       "type":"object",
       "properties":{
         "id":{
@@ -342,6 +342,25 @@
           "type":"string",
           "title":"Description",
           "description":"A free-text description to annotate this interest."
+        }
+      }
+    },
+    "Country":{
+      "title":"Country",
+      "description":"A country MUST have a name. A country SHOULD have an ISO 2-Digit county code.",
+      "type":"objecy",
+      "properties":{
+        "name":{
+          "title":"Name",
+          "description":"The name of the country",
+          "type":"string"
+        },
+        "code":{
+          "title":"Name",
+          "description":"The ISO 2-digit code for the country",
+          "type":"string",
+          "maxLength": 2,
+          "minLength": 2
         }
       }
     }
