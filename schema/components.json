@@ -363,6 +363,25 @@
           "minLength": 2
         }
       }
+    },
+    "Jurisdiction":{
+      "title":"Jurisdiction",
+      "description":"A jurisdiction MUST have a name. A jurisdiction SHOULD have an ISO ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code.",
+      "type":"object",
+      "properties":{
+        "name":{
+          "title":"Name",
+          "description":"The name of the jurisdiction",
+          "type":"string"
+        },
+        "code":{
+          "title":"Name",
+          "description":"The ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code of the jurisdiction",
+          "type":"string",
+          "maxLength": 2,
+          "minLength": 6
+        }
+      }
     }
   }
 }
