@@ -1,2 +1,0 @@
-# Install a dummy package, in order to run pip twice
--e readthedocs_setup

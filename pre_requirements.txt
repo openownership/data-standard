@@ -1,3 +1,0 @@
-# pip master, and latest setuptools to fix https://github.com/pypa/pip/issues/4216
--e git+https://github.com/pypa/pip.git@5a8b11cbe4b5e143e3ef6ebacfabe831b620f93b#egg=pip
-setuptools==37.0.0

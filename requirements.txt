@@ -4,8 +4,9 @@ transifex-client==0.12.4
 sphinx-rtd-theme==0.2.4
 # recommonmark commit pinned from master branch
 -e git+https://github.com/rtfd/recommonmark.git@c410abb565a3c4ad4de0ce204ab2fa2db8031cf1#egg=recommonmark
--e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@e39a92f4238bf022db11e4e88ba92fdaff2b31c9#egg=sphinxcontrib-jsonschema
+-e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8d0d2bb00742b25707866b0f7a2b6c0c35948c5e#egg=sphinxcontrib-jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@fab0ff0167d32ec243d42f272e0e50766299c078#egg=sphinxcontrib-opendataservices
+-e git+https://github.com/openownership/data-standard-sphinx-theme.git@1c1f70b58ad5baf787489c655cc1fc9ab8585889#egg=standard_theme
 ## The following requirements were added by pip freeze:
 alabaster==0.7.10
 Babel==2.4.0
