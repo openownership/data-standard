@@ -9,14 +9,14 @@
     "statementID": {
       "$ref": "components.json#/definitions/ID"
     },
+    "groupID": {
+      "$ref": "components.json#definitions/ID"
+    },
     "statementType": {
       "title": "The type of statement. This should always be 'beneficialOwnershipStatement'",
       "description": "What is being described by this statement?",
       "type": "string",
       "enum": ["beneficialOwnershipStatement"]
-    },
-    "groupID": {
-      "$ref": "components.json#definitions/ID"
     },
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate"
