@@ -378,8 +378,8 @@
           "title":"Name",
           "description":"The ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code of the jurisdiction",
           "type":"string",
-          "maxLength": 2,
-          "minLength": 6
+          "maxLength": 6,
+          "minLength": 2
         }
       }
     }

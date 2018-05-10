@@ -11,5 +11,10 @@
       "scheme": "GB-COH",
       "id": "07444723"
     }
-  ]
+  ],
+  "incorporatedIn": {
+    "jurisdiction": {
+      "code": "GB"
+    }
+  }
 }
