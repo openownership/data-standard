@@ -117,9 +117,6 @@ def test_invalid_package_json(json_path, json_paths, error):
     ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json', {
         "'statementType' is a required property",
     }),
-    ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-two-interested-parties.json', {
-       "{'person': {'type': 'personStatement', 'describedByStatement': 'a0d3157b-d204-48e7-ac91-fb4c06713b7a'}, 'entity': {'type': 'entityStatement', 'describedByStatement': 'e0c9330a-610c-48c5-9654-db75903e8ed6'}} is valid under each of {'required': ['person']}, {'required': ['entity']}",
-        })
 ])
 def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     with open(os.path.join(this_dir, json_path)) as f:
