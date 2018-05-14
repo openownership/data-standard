@@ -338,12 +338,39 @@
       "description":"Annotations can be provided in free-text. Additional extended properties can be included on the annotation object to provide structured data if required.",
       "type":"object",
       "properties":{
+        "target": {
+          "Title": "Target",
+          "Description": "The target of this annotation, either a whole statement represented by statement identifier or part of the statement this annotation is nested inside, represented by a JSON Pointer.",
+          "type": "object",
+          "properties":{
+            "statementID":{
+              "$ref":"#/definitions/ID"
+            },
+            "statementPointer":{
+              "title": "Statement Pointer",
+              "description": "An RFC6901 JSON Pointer describing the part of the statement this annotation applies to.",
+              "type": "string"
+              }
+          },
+          "anyOf": [
+            {"required": ["statementID"] },
+            {"required": ["statementPointer"] },
+            {"required": ["statementID", "statementPointer"]}
+          ]
+        },
+        "motivation": {
+          "Title": "Motivation",
+          "Description": "The motivation for this annotation, chosen from a codelist.",
+          "type": "string",
+          "enum": ["context", "correction", "transformation", "provenance"]
+        },
         "description":{
           "type":"string",
           "title":"Description",
-          "description":"A free-text description to annotate this interest."
+          "description":"A free-text description to annotate this statment or field."
         }
-      }
+      },
+       "required": ["target"]
     },
     "Country":{
       "title":"Country",
