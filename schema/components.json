@@ -362,7 +362,7 @@
           "Title": "Motivation",
           "Description": "The motivation for this annotation, chosen from a codelist.",
           "type": "string",
-          "enum": ["context", "correction", "transformation", "provenance"]
+          "enum": ["linking", "identifying", "provenance", "commenting", "correcting", "transformation"]
         },
         "description":{
           "type":"string",
