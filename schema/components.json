@@ -368,9 +368,25 @@
           "type":"string",
           "title":"Description",
           "description":"A free-text description to annotate this statment or field."
+        },
+        "source":{
+          "$ref": "#definitions/Source"
         }
       },
-       "required": ["target"]
+      "anyOf": [
+        {
+          "properties": {
+            "motivation": { "enum": [ "provenance"] }
+          },
+          "required": ["source", "target"]
+        },
+        {
+          "properties": {
+            "motivation": { "enum": [ "linking", "identifying", "commenting", "correcting", "transformation"] }
+          },
+          "required": ["target"]
+        }
+      ]
     },
     "Country":{
       "title":"Country",
