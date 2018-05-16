@@ -1,36 +1,3 @@
-<style><!--
-/* override table width restrictions */
-.wy-table-responsive table td, .wy-table-responsive table th {
-    white-space: normal !important;
-}
-
-.wy-table-responsive {
-    margin-bottom: 24px;
-    max-width: 100%;
-    overflow: visible !important;
-}
-
-
-.wy-table-responsive th:nth-of-type(1) {
-    width:10%;
-}
-
-.wy-table-responsive th:nth-of-type(2) {
-    width:10%;
-}
-
-.wy-table-responsive th:nth-of-type(3) {
-    width:60%;
-}
-
-.wy-table-responsive th:nth-of-type(4) {
-    width:10%;
-}
-
-.wy-table-responsive th:nth-of-type(5) {
-    width:10%;
-}--></style>
-
 Schema reference
 ================
 
@@ -63,51 +30,44 @@ The beneficial ownership standard is made up of two parts:
 
 The following tables are generated from the schema, and outline the different components of the data model. 
 
-## Statement Groups
+## Statement packages
 
-At the top level of any structured file is always an array of ```statementGroups```.
+At the top level of any structured file are arrays (packages) of statements. All the statements in a package must be the same type of object; that is, all ```beneficialOwnershipStatements```, all ```entityStatements```, all ```beneficialOwnershipStatements```, or similar.
 
 ```eval_rst
-.. jsonschema:: ../schema/beneficial-ownership-statement.json
-    :collapse: statementGroups/0/beneficialOwnershipStatements,statementGroups/0/entityStatements,statementGroups/0/personStatements
+.. jsonschema:: ../schema/bods-package.json
 ```
-
-Each statementGroup MUST include an array of one or more ```beneficialOwnershipStatements``` and, where a cross-reference publication pattern is followed, may include arrays of other statements.
 
 --- 
 
 ## BeneficialOwnershipStatement
 
-A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided. 
-
-
-#### Interest
+A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided.
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/Interest.csv
+.. jsonschema:: ../schema/beneficial-ownership-statement.json
+    :collapse: interestedParty,interests,source,subject/entity
 ```
 
-#### Annotation
+
+## Interest
+
+```eval_rst
+.. jsonschema:: ../schema/components.json#/definitions/Interest
+```
+
+## Annotation
 
 The annotation property currently allows for an array of simple annotation objects. This is a placeholder which could be extended in future to include structured information qualifying the nature of the interest held.
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/Annotation.csv
+.. jsonschema:: ../schema/components.json#/definitions/Annotation
 ```
 
-#### Share
+## Share
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/Share.csv
+.. jsonschema:: ../schema/components.json#/definitions/Interest/share
 ```
 
 
@@ -116,10 +76,8 @@ The annotation property currently allows for an array of simple annotation objec
 ## EntityStatement
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/EntityStatement.csv
+.. jsonschema:: ../schema/entity-statement.json
+   :collapse: identifiers,addresses,source
 ```
 
 ---
@@ -127,33 +85,25 @@ The annotation property currently allows for an array of simple annotation objec
 ## PersonStatement
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/PersonStatement.csv
+.. jsonschema:: ../schema/person-statement.json
+   :collapse: alternateNames,identifiers,source,placeOfResidence,placeOfBirth,addresses
 ```
 
 
-### AlternateName
+## AlternateName
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/AlternateName.csv
+.. jsonschema:: ../schema/components.json#/definitions/AlternateName
 ```
 
 
 ---
 
 
-## NullParty
+## Uspecified
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/NullParty.csv
+.. jsonschema:: ../schema/components.json#/definitions/Unspecified
 ```
 
 
@@ -164,40 +114,22 @@ The annotation property currently allows for an array of simple annotation objec
 See [the provenance pages](provenance.md) for a discussion of provenance modelling.
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/Source.csv
+.. jsonschema:: ../schema/components.json#/definitions/Source
 ```
 
-### AssertingParty
+## AssertingParty
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/AssertingParty.csv
+.. jsonschema:: ../schema/components.json#/definitions/AssertingParty
 ```
 
 
 ---
 
-## EntityStatementReference
+## StatementReference
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/EntityStatementReference.csv
-```
-
-## PersonStatementReference
-
-```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/PersonStatementReference.csv
+.. jsonschema:: ../schema/components.json#/definitions/StatementReference
 ```
 
 
@@ -212,25 +144,18 @@ The following components are used at a number of points in the schema
 Due to the diversity of address formats used across systems, and the extent to which data is inconsistently entered across these data fields in source systems and legacy datasets, the schema uses a very simple address format for data exchange - relying upon consuming systems to parse addresses before carrying out any structured comparison. However, designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See [issue 18](https://github.com/openownership/data-standard/issues/18) for more details.
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/Address.csv
+.. jsonschema:: ../schema/components.json#/definitions/Address
 ```
 
 ## Identifier
 
-The identifier component is used to connect a statement to the person or entity that it refers to, using one or more existing known identifiers.
+The identifier component is used to connect a statement to the real-world person or entity that it refers to, using one or more existing known identifiers.
 
 ```eval_rst
-.. csv-table::
-   :header-rows: 1
-   :widths: 20 65 15
-   :file: docs/_schema_tables/Identifier.csv
+.. jsonschema:: ../schema/components.json#/definitions/Identifier
 ```
 
-
-## Date
+## StatementDate
 
 See https://github.com/openownership/data-standard/issues/12 for a discussion of handling fuzzy dates.
 
