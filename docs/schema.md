@@ -100,7 +100,7 @@ The annotation property currently allows for an array of simple annotation objec
 ---
 
 
-## Uspecified
+## Unspecified
 
 ```eval_rst
 .. jsonschema:: ../schema/components.json#/definitions/Unspecified

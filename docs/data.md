@@ -24,9 +24,9 @@ People working on data management systems implementing the Standard will want to
    :maxdepth: 1
 
    modelling-beneficial-ownership-info.md
+   technical-requirements.md
    data-schema-browser.md
    schema.md
-   technical-requirements.md
    
 
 ```

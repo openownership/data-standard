@@ -7,11 +7,11 @@ Publishing beneficial ownership data
 .. toctree::
    :maxdepth: 1
 
-   functional-requirements.md
+   updating-data.md
    validating-and-verifying.md
    licensing.md
    bulk-data-and-api.md
-   updating-data.md
+   links-other-standards.md
    
 
 ```
