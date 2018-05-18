@@ -12,18 +12,19 @@ The concept of a 'statement' is at the heart of the Beneficial Ownership Data St
 
 Details of how an interested party controls or owns a company or other legal entity (an entity) are wrapped in a Beneficial ownership statement.
 
-(Diagram based on left-hand image here: https://docs.google.com/drawings/d/1NcphaIfl2W2xExeCfC-giwBxQ6yfVXGDdRsYf_zZ6J4)
+![A Beneficial ownership statement block containing two 'interests': one a 60% share-holding interest, the other a 30% voting-rights interest](_assets/data-schema-model-1.svg)
 
 Details of interested parties and entities are wrapped in their own statements. A beneficial ownership statement refers out to these statements, acting as a connector.
 
-(Diagram based on right-hand image here: https://docs.google.com/drawings/d/1NcphaIfl2W2xExeCfC-giwBxQ6yfVXGDdRsYf_zZ6J4)
+![A Beneficial ownership statement block containing two 'interests': one a 60% share-holding interest, the other a 30% voting-rights interest](_assets/data-schema-model-2.svg)
+
 
 
 ## Statements as claims
 
 Each statement represents a claim about beneficial ownership made by a particular source at a particular point in time.
 
-(Diagram of BO statement containing source object with type, retrievedAt, and assertedBy properties and values)
+![A Beneficial ownership statement block containing a source block with type-selfDeclaration, retrievedAt date of 2018-11-07 and assertedBy value of Acme Industries Ltd. Statement also has statementDate of 2018-07-12](_assets/data-schema-model-3.svg)
 
 Modelling beneficial ownership information in this way allows us to make sense of data received from multiple sources over extended periods of time. In particular, it allows:
 
