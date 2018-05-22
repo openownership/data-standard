@@ -10,11 +10,11 @@ The concept of a 'statement' is at the heart of the Beneficial Ownership Data St
 
 ## Statements
 
-Details of how an interested party controls or owns a company or other legal entity (an entity) are wrapped in a Beneficial ownership statement.
+Details of how an interested party controls or owns a company or other legal entity are wrapped in a Beneficial ownership statement.
 
 ![A Beneficial ownership statement block containing two 'interests': one a 60% share-holding interest, the other a 30% voting-rights interest](_assets/data-schema-model-1.svg)
 
-Details of interested parties and entities are wrapped in their own statements. A beneficial ownership statement refers out to these statements, acting as a connector.
+Details of the subject of a beneficial ownership statement and its interested party are wrapped in their own statements. The beneficial ownership statement refers out to these statements, acting as a connector.
 
 ![A Beneficial ownership statement block containing two 'interests': one a 60% share-holding interest, the other a 30% voting-rights interest](_assets/data-schema-model-2.svg)
 
