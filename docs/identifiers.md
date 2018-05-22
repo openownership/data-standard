@@ -1,5 +1,5 @@
-Identifiers
-===========
+Real-world identifiers
+======================
 
 To create a link between statements, and the real-world organisations and people they relate to, statements may include a range of identifying information. We use a common identifier object, with two required properties, and one optional property.
 
