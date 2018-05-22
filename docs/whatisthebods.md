@@ -14,7 +14,7 @@ Without a consistent approach to organizing the beneficial ownership data the bi
 
 The Beneficial Ownership Data Standard provides a structured data format plus guidance for collecting, sharing and using data on beneficial ownership:
 
-* The [Data schema](schema.md) describes how and what data should be shared. It can also inform the design of data collection and management systems;
+* The [Data schema](data.md) describes how and what data should be shared. It can also inform the design of data collection and management systems;
 
 * The [User guides](userguides.md) give support for publishers and users of the data.
 

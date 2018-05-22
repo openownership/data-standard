@@ -3,7 +3,7 @@ Data Schema
 
 This data schema sets out how beneficial ownership data **must** (or **should** be) structured and formatted in order to [conform](conformance.md) to the Beneficial Ownership Data Standard.
 
-People working on data management systems implementing the Standard will want to understand the [concepts](modelling-beneficial-ownership-info.md) on which the Standard is modelled. The [schema browser](data-schema-browser.md) provides a way of digging through the schema's structure, showing how its objects and fields fit together. Alternatively, the [schema reference](schema.md) presents these elements and their descriptions in easy-to-reference tables. Further considerations regarding the validation, publishing, and lifecycle of data are included as [technical requirements](technical-requirements.md).
+People working on data management systems implementing the Standard will want to understand the [concepts](modelling-beneficial-ownership-info.md) on which the Standard is modelled. The [schema browser](data-schema-browser.md) provides a way of digging through the schema's structure, showing how its objects and fields fit together. Alternatively, the [schema reference](data-schema-reference.md) presents these elements and their descriptions in easy-to-reference tables. Further considerations regarding the validation, publishing, and lifecycle of data are included as [technical requirements](technical-requirements.md).
 
 
 
@@ -26,7 +26,7 @@ People working on data management systems implementing the Standard will want to
    modelling-beneficial-ownership-info.md
    technical-requirements.md
    data-schema-browser.md
-   schema.md
+   data-schema-reference.md
    
 
 ```
