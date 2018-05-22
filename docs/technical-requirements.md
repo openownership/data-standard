@@ -17,6 +17,7 @@ Technical requirements
    provenance.md
    conformance.md
    functional-requirements.md
+   building-data-releases.md
    
 
 ```
