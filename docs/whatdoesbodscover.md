@@ -4,12 +4,12 @@
 
 The Beneficial Ownership Data Standard allows publishers to include:
 
-* [Identifiers](identifiers.md) and [details](schema.md#personstatement) for individuals
-* [Identifiers](identifiers.md) and [details](schema.md#entitystatement) for companies
-* [Types and levels of involvement](schema.md#interest) in companies
+* [Identifiers](identifiers.md) and [details](data-schema-reference.md#personstatement) for individuals
+* [Identifiers](identifiers.md) and [details](data-schema-reference.md#entitystatement) for companies
+* [Types and levels of involvement](data-schema-reference.md#interest) in companies
 * [Provenance](provenance.md) information
 * Historical, as well as current, information
-* [Placeholders](schema.md#unspecified), when information must be redacted
+* [Placeholders](data-schema-reference.md#unspecified), when information must be redacted
 
 	[LINK above to relevant sections in docs]
 
