@@ -24,6 +24,7 @@ def test_valid_statement_json(json_path):
 
 @pytest.mark.parametrize('json_path', [
     'data/bods-package/valid/valid-bods-package.json',
+    'data/bods-package/valid/valid-bods-package-entity-owning-entity.json',
     '../examples/flat-serialisation/gb-coh-bods-package.json',
 ])
 def test_valid_package_json(json_path):
@@ -43,6 +44,7 @@ def test_valid_package_json(json_path):
 
 @pytest.mark.parametrize(('json_path', 'error'), [
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', ValidationError),
+    ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id-no-entity-type.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-bad-date.json', ValidationError),
     ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-with-invalid-statement-id.json', ValidationError),
@@ -98,6 +100,9 @@ def test_invalid_package_json(json_path, json_paths, error):
     ('data/person-statement/valid/valid-person-statement.json', set()),
     ('data/beneficial-ownership-statement/valid/valid-beneficial-ownership-statement.json', set()),
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', {
+        "'too-short-so-fail' is too short"
+    }),
+    ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id-no-entity-type.json', {
         "'too-short-so-fail' is too short",
         "'entityType' is a required property",
     }),
@@ -138,11 +143,14 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
         "'statementType' is a required property",
     }),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-entity-statement.json', None, {
-        "subject/entitiy/describedByStatement '1dc0e987-5c57-4a1c-b3ad-61353b66a9b7' does not match any known entities"
+        "subject/entity/describedByStatement '1dc0e987-5c57-4a1c-b3ad-61353b66a9b7' does not match any known entities"
     }),
+    ('data/bods-package/fails-secondary-validation/bods-package-missing-interested-party-entity-statement.json', None, {
+        "interestedParty/entity/describedByStatement 'd36e6807-020c-4fb5-a0d4-5ab9eb971514' does not match any known entities"
+        }),
     ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, {
         "interestedParty/person/describedByStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
-    }),
+    })
 ])
 def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):
     if json_path:
