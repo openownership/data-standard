@@ -1,7 +1,12 @@
 Serialization
 =============
 
-The beta specification does not contain detailed information on serialization. 
+The beta specification does not contain detailed information on serialization. We have currently modelled the schema with the option for:
+
+* (1) Entity, person and provenance statements to be nested inside a beneficial ownership statement;
+* (2) Each kind of statement to be provided at the same level of heiarchy, with a cross-reference between them;
+
+This second option is sketched out with a view of serialisations that may make use of the [JSON Lines](http://jsonlines.org/) format for sharing or streaming large quantities of statements, rather than enclosing all statements ot be exchanged in a single object. 
 
 However, the specification, defined by a JSON Schema, is designed to support:
 
