@@ -43,20 +43,20 @@
         "description": "The declared name of this entity.",
         "type": "string"
       },
-      "incorporatedIn": {
-        "title": "Incorporated In",
+      "incorporatedInJurisdiction": {
+        "title": "Incorporated In Jurisdiction",
         "description": "Details on where this legal entity is incorporated",
         "type": "object",
         "properties":{
           "jurisdiction":{
             "$ref": "components.json#definitions/Jurisdiction"
-          },
-          "companyRegisterName":{
-            "title": "Company Register Name",
-            "description": "The official register in which incorporation infomration for this legal entity is held. An entity MAY have a company register name where a suitable scheme code is unknown or unavailable.",
-            "type":"string"
           }
         }
+      },
+      "incorporatedInCompanyRegister": {
+        "title": "Incorporated In Company Register",
+        "description": "The official register in which incorporation infomration for this legal entity is held. An entity MAY have a company register name where a suitable scheme code is unknown or unavailable.",
+        "type":"string"
       },
       "identifiers": {
         "title": "Identifiers",

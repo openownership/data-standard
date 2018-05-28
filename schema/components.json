@@ -150,6 +150,11 @@
           "description":"For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, recognised values include 'passport', 'internal' and 'id-card'.",
           "type":"string"
         },
+        "schemeName": {
+          "title": "Schema name",
+          "Description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided.",
+          "type": "string"
+        },
         "uri":{
           "title":"URI",
           "description":"Where this identifier has a [canonical URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be included",
