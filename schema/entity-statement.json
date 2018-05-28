@@ -46,12 +46,7 @@
       "incorporatedInJurisdiction": {
         "title": "Incorporated In Jurisdiction",
         "description": "Details on where this legal entity is incorporated",
-        "type": "object",
-        "properties":{
-          "jurisdiction":{
-            "$ref": "components.json#definitions/Jurisdiction"
-          }
-        }
+        "$ref": "components.json#definitions/Jurisdiction"
       },
       "incorporatedInCompanyRegister": {
         "title": "Incorporated In Company Register",
