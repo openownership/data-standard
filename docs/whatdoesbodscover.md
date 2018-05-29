@@ -2,7 +2,7 @@
 
 <h2>A broad, flexible range of fields and options...</h2>
 
-The Beneficial Ownership Data Standard allows publishers to include:
+The Beneficial Ownership Data Standard (BODS) allows publishers to provide statements that describe:
 
 * [Identifiers](identifiers.md) and [details](data-schema-reference.md#personstatement) for individuals
 * [Identifiers](identifiers.md) and [details](data-schema-reference.md#entitystatement) for companies
@@ -20,11 +20,11 @@ The [design](modelling-beneficial-ownership-info.md) of the Standard allows:
 
 * Changes to beneficial ownership information to be tracked over time.
 * Competing claims about beneficial ownership to be considered alongside one another.
-* Publishers to use whatever definition of beneficial ownership is relevant to them.
+* Publishers to use the definitions of beneficial ownership provided by the relevant law or policy framework they are operating under.
 
-Although the Data Standard is not a data model for the storage of beneficial ownership information, it can inform the design of data collection and storage systems. A set of [functional requirements](functional-requirements.md) for such databases and systems is available for this purpose.
+Although BODS is not a data model for the storage of beneficial ownership information, it can inform the design of data collection and storage systems. A set of [functional requirements](functional-requirements.md) for such databases and systems is available for this purpose.
 
-In order to enable worldwide use of the Standard, thresholds for meeting beneficial ownership criteria are undefined. Instead, each statement of beneficial ownership expressed using the Standard describes the degree of ownership or control.
+In order to enable worldwide use of the Standard, it does not directly define thresholds for meeting beneficial ownership criteria. Instead, each statement of beneficial ownership expressed using the Standard can describe the degree of ownership or control, allowing each implementer of the standard to set their own thresholds. 
 
 ```eval_rst 
 

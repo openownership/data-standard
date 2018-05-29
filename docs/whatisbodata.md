@@ -1,10 +1,10 @@
 # What is beneficial ownership data?
 
-<h2>From people's birth places to rules about shareholders' voting rights...</h2>
+<h2>From owners' birth places to rules about shareholders' voting rights...</h2>
 
 Data relating to beneficial ownership may include:
 
-* Details of individuals
+* Details to identify individual owners
 * Details of other legal entities
 * A breakdown of share holdings 
 * The voting rights attached to different share classes
@@ -13,7 +13,7 @@ Data relating to beneficial ownership may include:
 
 And so on.
 
-<h2>...data clarifying beneficial ownership is often scattered across documents...</h2>
+<h2>...data describing beneficial ownership is often scattered across documents...</h2>
 
 The data is often included in companies’ annual reports, founding articles and filings to regulatory authorities. Bringing it all together can build the big picture about a company’s beneficial owners.
 
@@ -40,7 +40,7 @@ These challenges require us to structure and standardise beneficial ownership da
 
 .. highlights:: 
     
-    Companies already hold data about beneficial ownership. Historically it has not been in a consistent format that facilitates reporting requirements. 
+    Companies already hold data about beneficial ownership. It is not always recorded, stored or shared in consistent ways, making reporting and interpreting reports challenging. 
 
 ```
 
