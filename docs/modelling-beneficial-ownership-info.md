@@ -18,8 +18,6 @@ Details of the subject of a beneficial ownership statement and its interested pa
 
 ![A Beneficial ownership statement block containing two 'interests': one a 60% share-holding interest, the other a 30% voting-rights interest](_assets/data-schema-model-2.svg)
 
-
-
 ## Statements as claims
 
 Each statement represents a claim about beneficial ownership made by a particular source at a particular point in time.
@@ -30,9 +28,9 @@ Modelling beneficial ownership information in this way allows us to make sense o
 
 * Statements about beneficial ownership to conflict.
 * Statements about beneficial ownership to overlap.
-* Production of historical beneficial ownership snapshots: what was known when. (Known as [bi-temporal modelling](https://en.wikipedia.org/wiki/Bitemporal_Modeling).)
+* Production of historical beneficial ownership snapshots: what was known when ([bi-temporal modelling](https://en.wikipedia.org/wiki/Bitemporal_Modeling)).
 
-When representing data conforming to the Standard, users should therefore handle statements with due care. Ultimately it is up to data consumers to decide which statements to trust (and to verify identities using the [identifying information](identifiers.md) contained in person and entity statements).
+When representing data conforming to BODS, users should therefore handle statements with due care. Ultimately it is up to data consumers to decide which statements to trust, and to verify identities using the [identifying information](identifiers.md) contained in person and entity statements.
 
 
 ## Anatomy of a statement - the data model
