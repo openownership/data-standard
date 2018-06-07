@@ -18,21 +18,31 @@
           "statementID": "78db70df-49cd-47c9-9ee9-2e5539ec7a5f"
         },
         "motivation": "provenance",
-        "source": {}
+        "source": {
+          "type": ["officialRegister"],
+          "url": "https://beta.companieshouse.gov.uk/company/02585514/persons-with-significant-control",
+          "assertedBy": [
+            {
+              "name": "MONSOON HOLDINGS (NO.1) LIMITED"
+            }
+          ]
+        }
       },
       {
         "target": {
           "statementPointer": "/identifiers/0"
         },
-        "motivation" : "provenance",
-        "source": {}
-      },
-      {
-        "target": {
-          "statementPointer": "/identifiers/0"
-        },
-        "motivation": "identifying",
-        "description": "Company number missing from benenficial ownership statement. Manually reconciled against official register."
+        "motivation" : "identifying",
+        "description": "Company number missing from benenficial ownership statement. Manually reconciled against official register.",
+        "source": {
+          "type": ["primaryResearch", "officialRegister"],
+          "url": "https://beta.companieshouse.gov.uk/company/06292597",
+          "assertedBy": [
+            {
+              "name": "Jack Lord"
+            }
+          ]
+        }
       }
     ]
   },
