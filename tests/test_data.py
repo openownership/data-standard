@@ -132,7 +132,7 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
 
 @pytest.mark.parametrize(('json_path', 'json_paths', 'expected_errors'), [
     ('data/bods-package/valid/valid-bods-package.json', None, set()),
-    ('data/bods-package/valid/valid-bods-package-annotations.json', None, set()),  
+    ('data/bods-package/valid/valid-bods-package-annotations.json', None, set()),
     (None, [
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/person-statement/valid/valid-person-statement.json',
