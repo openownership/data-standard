@@ -92,11 +92,6 @@
         "type": "string",
         "format": "uri"
       },
-      "source": {
-        "title":"Source",
-        "description":"The source of information about this entity.",
-        "$ref": "components.json#/definitions/Source"
-      },
       "replacesStatement": {
         "$ref": "components.json#/definitions/ReplacesStatement"
       },
