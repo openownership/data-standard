@@ -48,11 +48,6 @@
         "description": "Details on where this legal entity is incorporated",
         "$ref": "components.json#definitions/Jurisdiction"
       },
-      "incorporatedInCompanyRegister": {
-        "title": "Incorporated In Company Register",
-        "description": "The official register in which incorporation infomration for this legal entity is held. An entity MAY have a company register name where a suitable scheme code is unknown or unavailable.",
-        "type":"string"
-      },
       "identifiers": {
         "title": "Identifiers",
         "description": "One or more official identifiers for this entity. Where available, official registration numbers should be provided.",
