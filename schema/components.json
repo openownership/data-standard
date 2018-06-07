@@ -271,14 +271,6 @@
           "description":"This field may be used to provide the local name given to this kind of interest, or any further semi-structured or unstructured information to clarify the nature of the interest held.",
           "type":"string"
         },
-        "annotations":{
-          "title":"Annotations",
-          "description":"Any further details to qualify this interest.",
-          "type":"array",
-          "items":{
-            "$ref":"#/definitions/Annotation"
-          }
-        },
         "share":{
           "title":"Percentage share",
           "description":"Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls.",
