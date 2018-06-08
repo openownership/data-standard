@@ -6,13 +6,16 @@
   "items": {
     "oneOf": [
       {
-          "$ref": "entity-statement.json"
+        "$ref": "entity-statement.json"
       },
       {
-          "$ref": "person-statement.json"
+        "$ref": "person-statement.json"
       },
       {
-          "$ref": "beneficial-ownership-statement.json"
+        "$ref": "beneficial-ownership-statement.json"
+      },
+      {
+        "$ref": "annotation-statement.json"
       }
     ]
   }
