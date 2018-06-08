@@ -19,7 +19,7 @@
   },
   "annotations": [
     {
-      "target": {"statementPointer": "/incorporatedIn/jurisdiction"},
+      "statementPointerTarget": "/incorporatedIn/jurisdiction",
       "motivation" : "transformation"
     }
 

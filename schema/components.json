@@ -330,25 +330,15 @@
       "description":"Annotations can be provided in free-text. Additional extended properties can be included on the annotation object to provide structured data if required.",
       "type":"object",
       "properties":{
-        "target": {
-          "Title": "Target",
-          "Description": "The target of this annotation, either a whole statement represented by statement identifier or part of the statement this annotation is nested inside, represented by a JSON Pointer.",
-          "type": "object",
-          "properties":{
-            "statementID":{
-              "$ref":"#/definitions/ID"
-            },
-            "statementPointer":{
-              "title": "Statement Pointer",
-              "description": "An RFC6901 JSON Pointer describing the part of the statement this annotation applies to.",
-              "type": "string"
-              }
+        "statementPointerTarget": {
+          "title": "Statement Fragment Pointer",
+          "description": "An RFC6901 JSON Pointer describing the target fragment of the statement that this annotation applies to. A statement pointer MUST only be used when an annotation is used at the statement level. A value of '/' indicates that the annotation applies to the whole statement.",
+          "type": "string"
           },
-          "anyOf": [
-            {"required": ["statementID"] },
-            {"required": ["statementPointer"] },
-            {"required": ["statementID", "statementPointer"]}
-          ]
+        "statementIDTarget":{
+          "title": "Statement ID Target",
+          "description": "The uuid of the statement that this annotation applies to. A statement ID target MUST only be used when an annotation statment is published in a top-level array to refer; it may refer to a statement in the same array or to a statement published elsewhere.",
+          "$ref":"#/definitions/ID"
         },
         "motivation": {
           "Title": "Motivation",
@@ -370,13 +360,25 @@
           "properties": {
             "motivation": { "enum": [ "provenance"] }
           },
-          "required": ["source", "target"]
+          "required": ["statementPointerTarget", "source"]
+        },
+        {
+          "properties": {
+            "motivation": { "enum": [ "provenance"] }
+          },
+          "required": ["statementIDTarget", "source"]
         },
         {
           "properties": {
             "motivation": { "enum": [ "linking", "identifying", "commenting", "correcting", "transformation"] }
           },
-          "required": ["target"]
+          "required": ["statementPointerTarget"]
+        },
+                {
+          "properties": {
+            "motivation": { "enum": [ "linking", "identifying", "commenting", "correcting", "transformation"] }
+          },
+          "required": ["statementIDTarget"]
         }
       ]
     },
