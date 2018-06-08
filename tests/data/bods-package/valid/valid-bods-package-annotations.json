@@ -14,7 +14,7 @@
     ],
     "annotations": [
       {
-        "statementIDTarget": "78db70df-49cd-47c9-9ee9-2e5539ec7a5f",
+        "statementPointerTarget": "/",
         "motivation": "provenance",
         "source": {
           "type": ["officialRegister"],
@@ -63,7 +63,7 @@
     },
     "annotations": [
       {
-        "statementIDTarget": "cfd1747f-9fbc-461a-af94-710120705b4c",
+        "statementPointerTarget": "/",
         "motivation" : "provenance",
         "source": {}
       }
