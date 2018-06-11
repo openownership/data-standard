@@ -360,25 +360,25 @@
           "properties": {
             "motivation": { "enum": [ "provenance"] }
           },
-          "required": ["statementPointerTarget", "source"]
+          "required": ["statementPointerTarget", "source", "motivation"]
         },
         {
           "properties": {
             "motivation": { "enum": [ "provenance"] }
           },
-          "required": ["statementIDTarget", "source"]
+          "required": ["statementIDTarget", "source", "motivation"]
         },
         {
           "properties": {
             "motivation": { "enum": [ "linking", "identifying", "commenting", "correcting", "transformation"] }
           },
-          "required": ["statementPointerTarget"]
+          "required": ["statementPointerTarget", "motivation"]
         },
                 {
           "properties": {
             "motivation": { "enum": [ "linking", "identifying", "commenting", "correcting", "transformation"] }
           },
-          "required": ["statementIDTarget"]
+          "required": ["statementIDTarget", "motivation"]
         }
       ]
     },
