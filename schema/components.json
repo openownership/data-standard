@@ -351,6 +351,11 @@
           "title":"Description",
           "description":"A free-text description to annotate this statment or field."
         },
+        "transformedContent": {
+          "type": "string",
+          "title": "Transformed content",
+          "description": "A representation of the annotation target after the transformation in the description field has been applied. This field SHOULD only be used when the motivation is transformation."
+        },
         "source":{
           "$ref": "#definitions/Source"
         }
