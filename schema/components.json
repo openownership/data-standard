@@ -67,8 +67,8 @@
       ]
     },
     "Source":{
-      "title":"Statement source",
-      "description":"The source object is used to provide basic provenance information about a group of statements or a single statement.",
+      "title":"Source",
+      "description":"The source object is used to provide basic provenance information about a statement or a statement fragment. A source object can also be used in annotations that link a statement or statement fragment to contextual information published elsewhere.",
       "type":"object",
       "properties":{
         "type":{
@@ -342,9 +342,9 @@
         },
         "motivation": {
           "Title": "Motivation",
-          "Description": "The motivation for this annotation, chosen from a codelist.",
+          "Description": "The motivation for this annotation, chosen from a codelist. Commenting should be used with the description field to add contextual comments to a field or statement. Correcting should be used to indicate that original material has been corrected, using the method in the description field. Identifying should be used when original data has been augmented or processed for the purpose of identifying natural persons or legal entities, using the method in the description field. Linking should be used to provide contextual material that explains the statement or field; URLs to linked material can be provided in the source field. Provenance should be used to identify the source of information at a statement or field level. Transformation should be used to describe how data has in fields has been changed from its original form. The new form MAY be provided in the transformedContent field.",
           "type": "string",
-          "enum": ["linking", "identifying", "provenance", "commenting", "correcting", "transformation"]
+          "enum": ["commenting", "correcting", "identifying", "linking", "provenance", "transformation"]
         },
         "description":{
           "type":"string",
