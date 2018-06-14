@@ -107,24 +107,24 @@
           "description":"Who is making this statement? This may be the name of the person or organisation making a self-declaration (in which case, please make sure the name field matches the organisation or person name field), or the name or description of some other party. If this statment has been verified, this may also include the name of the organisation providing verification.",
           "type":"array",
           "items":{
-            "$ref":"#/definitions/AssertingParty"
+            "$ref":"#/definitions/Agent"
           }
         }
       }
     },
-    "AssertingParty":{
+    "Agent":{
       "type":"object",
-      "title":"Asserting party",
-      "description":"An individual, organisation or other entity making, or supporting, a given statement or annotation.",
+      "title":"Agent",
+      "description":"An individual, organisation or other responsible agent making, or supporting, a given statement or annotation.",
       "properties":{
         "name":{
           "title":"Name",
-          "description":"The name of the asserting party",
+          "description":"The name of the agent",
           "type":"string"
         },
         "uri":{
           "title":"URI",
-          "description":"An optional URI to identify the asserting party.",
+          "description":"An optional URI to identify the agent.",
           "type":"string",
           "format":"uri"
         }
@@ -346,8 +346,13 @@
           "type": "string",
           "format": "date"
         },
-        "creatingParty":{
-          "$ref": "#/definitions/AssertingParty"
+        "createdBy":{
+          "title": "Created By",
+          "description": "The person, organisation or agent that created this annotation.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Agent"
+          }
         },
         "motivation": {
           "Title": "Motivation",
