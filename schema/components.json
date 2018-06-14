@@ -115,7 +115,7 @@
     "AssertingParty":{
       "type":"object",
       "title":"Asserting party",
-      "description":"An individual, organisation or other entity making, or supporting, a given statement.",
+      "description":"An individual, organisation or other entity making, or supporting, a given statement or annotation.",
       "properties":{
         "name":{
           "title":"Name",
@@ -339,6 +339,15 @@
           "title": "Statement ID Target",
           "description": "The uuid of the statement that this annotation applies to. A statement ID target MUST only be used when an annotation statment is published in a top-level array to refer; it may refer to a statement in the same array or to a statement published elsewhere.",
           "$ref":"#/definitions/ID"
+        },
+        "creationDate":{
+          "title": "Creation Date",
+          "description": "The date this annotation was created.",
+          "type": "string",
+          "format": "date"
+        },
+        "creatingParty":{
+          "$ref": "#/definitions/AssertingParty"
         },
         "motivation": {
           "Title": "Motivation",
