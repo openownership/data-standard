@@ -28,6 +28,7 @@ def test_valid_statement_json(json_path):
     'data/bods-package/valid/valid-bods-package-entity-owning-entity.json',
     'data/bods-package/valid/valid-bods-package-annotations.json',
     'data/bods-package/valid/valid-bods-package-linking-annotations.json',
+    'data/bods-package/valid/valid-bods-package-single-annotation-statement.json',
     '../examples/flat-serialisation/gb-coh-bods-package.json',
 ])
 def test_valid_package_json(json_path):
@@ -137,6 +138,7 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     ('data/bods-package/valid/valid-bods-package.json', None, set()),
     ('data/bods-package/valid/valid-bods-package-annotations.json', None, set()),
     ('data/bods-package/valid/valid-bods-package-linking-annotations.json', None, set()),
+    ('data/bods-package/valid/valid-bods-package-single-annotation-statement.json', None, set()),
     (None, [
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/person-statement/valid/valid-person-statement.json',
