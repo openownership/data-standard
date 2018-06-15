@@ -11,10 +11,15 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
       <h2>For Newcomers</h2>
 
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis augue at leo euismod, vitae varius nulla elementum.
-   Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sollicitudin.
+   Get an overview of beneficial ownership and why a standardised format for data is important.
 
-   :doc:`Visit the primer <primer>`
+   - What is beneficial ownership?
+   - What is the Data Standard?
+   - What resources and tools are available?
+
+   .. cssclass:: frontpageboxlink
+
+      :doc:`Visit the primer <primer>`
 
 
 
@@ -24,10 +29,21 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
       <h2>For Developers</h2>
 
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis augue at leo euismod, vitae varius nulla elementum.
-   Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sollicitudin.
+   Understand how to package up and release beneficial ownership data.
 
-   :doc:`Visit the primer <primer>`
+   - The data model
+   - Schema browser
+   - JSON validator
+   - Requirements for publication systems
+
+   .. cssclass:: frontpageboxlink
+
+      :doc:`Visit the primer <primer>`
+
+
+.. raw:: html
+
+   <div class="frontpageboxclear"></div>
 
 
 .. container:: frontpageboxleft
@@ -36,10 +52,15 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
       <h2>For Data Publishers</h2>
 
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis augue at leo euismod, vitae varius nulla elementum.
-   Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sollicitudin.
+   Review your collection, publishing and updating practices.
 
-   :doc:`Visit the primer <primer>`
+   - What and how to publish
+   - Validating and verifying data
+   - Updating data
+
+   .. cssclass:: frontpageboxlink
+
+      :doc:`Visit the primer <primer>`
 
 
 
@@ -49,16 +70,20 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
       <h2>For Data Users</h2>
 
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis augue at leo euismod, vitae varius nulla elementum.
-   Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sollicitudin.
+   Learn to interpret beneficial ownership data.
 
-   :doc:`Visit the primer <primer>`
+   - Schema reference
+   - Interpreting beneficial ownership data
+   - Example data
+
+   .. cssclass:: frontpageboxlink
+
+      :doc:`Visit the primer <primer>`
 
 
+.. raw:: html
 
-
-
-
+   <div class="frontpageboxclear"></div>
 
 .. toctree::
    :maxdepth: 1
