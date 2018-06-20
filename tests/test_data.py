@@ -26,6 +26,7 @@ def test_valid_statement_json(json_path):
 
 @pytest.mark.parametrize('json_path', [
     'data/bods-package/valid/valid-bods-package.json',
+    'data/bods-package/valid/valid-bods-package-entity-owning-entity.json',
     '../examples/flat-serialisation/gb-coh-bods-package.json',
 ])
 def test_valid_package_json(json_path):
@@ -152,8 +153,11 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
         "OrderedDict([('id', '00335'), ('register', 'Jebel Ali Free Zone')]) is not valid under any of the given schemas",
     }),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-entity-statement.json', None, {
-        "subject/entitiy/describedByStatement '1dc0e987-5c57-4a1c-b3ad-61353b66a9b7' does not match any known entities"
+        "subject/entity/describedByStatement '1dc0e987-5c57-4a1c-b3ad-61353b66a9b7' does not match any known entities"
     }),
+    ('data/bods-package/fails-secondary-validation/bods-package-missing-interested-party-entity-statement.json', None, {
+        "interestedParty/entity/describedByStatement 'd36e6807-020c-4fb5-a0d4-5ab9eb971514' does not match any known entities"
+        }),
     ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, {
         "interestedParty/person/describedByStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
     })

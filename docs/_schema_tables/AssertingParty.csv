@@ -1,3 +1,0 @@
-Field Name,Description,Format
-name,Name: The name of the asserting party,string
-uri,URI: An optional URI to identify the asserting party.,uri string
