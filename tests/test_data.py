@@ -160,13 +160,13 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
         "OrderedDict([('id', '00335'), ('register', 'Jebel Ali Free Zone')]) is not valid under any of the given schemas",
     }),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-entity-statement.json', None, {
-        "subject/entity/describedByStatement '1dc0e987-5c57-4a1c-b3ad-61353b66a9b7' does not match any known entities"
+        "subject/describedByEntityStatement '1dc0e987-5c57-4a1c-b3ad-61353b66a9b7' does not match any known entities"
     }),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-interested-party-entity-statement.json', None, {
-        "interestedParty/entity/describedByStatement 'd36e6807-020c-4fb5-a0d4-5ab9eb971514' does not match any known entities"
+        "interestedParty/describedByEntityStatement 'd36e6807-020c-4fb5-a0d4-5ab9eb971514' does not match any known entities"
         }),
     ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, {
-        "interestedParty/person/describedByStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
+        "interestedParty/describedByPersonStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
     })
 ])
 def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):
