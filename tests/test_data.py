@@ -27,6 +27,9 @@ def test_valid_statement_json(json_path):
 @pytest.mark.parametrize('json_path', [
     'data/bods-package/valid/valid-bods-package.json',
     'data/bods-package/valid/valid-bods-package-entity-owning-entity.json',
+    'data/bods-package/valid/valid-bods-package-annotations.json',
+    'data/bods-package/valid/valid-bods-package-linking-annotations.json',
+    'data/bods-package/valid/valid-bods-package-single-annotation-statement.json',
     '../examples/flat-serialisation/gb-coh-bods-package.json',
 ])
 def test_valid_package_json(json_path):
@@ -102,6 +105,7 @@ def test_invalid_package_json(json_path, json_paths, error):
 @pytest.mark.parametrize(('json_path', 'expected_errors'), [
     ('data/entity-statement/valid/valid-entity-statement.json', set()),
     ('data/entity-statement/valid/valid-entity-statement-loose-validation.json', set()),
+    ('data/entity-statement/valid/valid-entity-statement-transliteration-annotations.json', set()),
     ('data/person-statement/valid/valid-person-statement.json', set()),
     ('data/beneficial-ownership-statement/valid/valid-beneficial-ownership-statement.json', set()),
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', {
@@ -133,6 +137,9 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
 
 @pytest.mark.parametrize(('json_path', 'json_paths', 'expected_errors'), [
     ('data/bods-package/valid/valid-bods-package.json', None, set()),
+    ('data/bods-package/valid/valid-bods-package-annotations.json', None, set()),
+    ('data/bods-package/valid/valid-bods-package-linking-annotations.json', None, set()),
+    ('data/bods-package/valid/valid-bods-package-single-annotation-statement.json', None, set()),
     (None, [
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/person-statement/valid/valid-person-statement.json',

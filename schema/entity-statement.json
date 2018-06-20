@@ -82,13 +82,16 @@
         "type": "string",
         "format": "uri"
       },
-      "source": {
-        "title":"Source",
-        "description":"The source of information about this entity.",
-        "$ref": "components.json#/definitions/Source"
-      },
       "replacesStatement": {
         "$ref": "components.json#/definitions/ReplacesStatement"
+      },
+      "annotations": {
+        "title": "Annotations",
+        "description": "Annotations about this statement or parts of this statement",
+        "type": "array",
+        "items": {
+          "$ref": "components.json#definitions/Annotation"
+        }
       }
     },
     "required": ["statementID", "statementType", "groupID", "entityType"]

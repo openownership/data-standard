@@ -67,6 +67,14 @@
       "description":"The source of the information that links the entity and the interested party, or that supports a null statement.",
       "$ref": "components.json#/definitions/Source"
     },
+    "annotations": {
+      "title": "Annotations",
+      "description": "Annotations about this statement or parts of this statement",
+      "type": "array",
+      "items": {
+        "$ref": "components.json#definitions/Annotation"
+      }
+    },
     "replacesStatement": {
       "$ref": "components.json#/definitions/ReplacesStatement"
     }

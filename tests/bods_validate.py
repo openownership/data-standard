@@ -26,6 +26,7 @@ class UnrecognisedStatementID(ValidationError):
 
 def schema_path_from_statement(statement):
     schemas = {
+        'annotationStatement': 'annotation-statement.json',
         'entityStatement': 'entity-statement.json',
         'personStatement': 'person-statement.json',
         'beneficialOwnershipStatement': 'beneficial-ownership-statement.json',

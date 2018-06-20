@@ -1,0 +1,26 @@
+{
+  "id": "annotation-statement.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "version": "0.1",
+  "title": "Annotation statement",
+  "description": "A statement annotating another statment.",
+  "type": "object",
+  "properties": {
+      "statementID": {
+        "$ref": "components.json#/definitions/ID"
+      },
+      "statementType": {
+        "title": "The type of statement. This should always be 'entityStatement'",
+        "description": "What is being described by this statement?",
+        "type": "string",
+        "enum": ["annotationStatement"]
+      },
+      "groupID": {
+        "$ref": "components.json#definitions/ID"
+      },
+      "annotation": {
+        "$ref": "components.json#/definitions/Annotation"
+      }
+  },
+  "required": ["statementID", "statementType"]
+}
