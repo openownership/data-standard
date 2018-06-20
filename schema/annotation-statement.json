@@ -15,9 +15,6 @@
         "type": "string",
         "enum": ["annotationStatement"]
       },
-      "groupID": {
-        "$ref": "components.json#definitions/ID"
-      },
       "annotation": {
         "$ref": "components.json#/definitions/Annotation"
       }

@@ -9,9 +9,6 @@
     "statementID": {
       "$ref": "components.json#/definitions/ID"
     },
-    "groupID": {
-      "$ref": "components.json#definitions/ID"
-    },
     "statementType": {
       "title": "The type of statement. This should always be 'beneficialOwnershipStatement'",
       "description": "What is being described by this statement?",
@@ -79,5 +76,5 @@
       "$ref": "components.json#/definitions/ReplacesStatement"
     }
   },
-  "required": ["statementID", "statementType", "groupID", "subject", "interestedParty"]
+  "required": ["statementID", "statementType", "subject", "interestedParty"]
 }

@@ -15,9 +15,6 @@
         "type": "string",
         "enum": ["entityStatement"]
       },
-      "groupID": {
-        "$ref": "components.json#definitions/ID"
-      },
       "statementDate": {
         "$ref": "components.json#/definitions/StatementDate"
       },
@@ -94,5 +91,5 @@
         }
       }
     },
-    "required": ["statementID", "statementType", "groupID", "entityType"]
+    "required": ["statementID", "statementType", "entityType"]
 }
