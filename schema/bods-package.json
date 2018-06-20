@@ -13,9 +13,6 @@
       },
       {
         "$ref": "beneficial-ownership-statement.json"
-      },
-      {
-        "$ref": "annotation-statement.json"
       }
     ]
   }

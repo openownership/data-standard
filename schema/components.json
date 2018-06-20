@@ -3,41 +3,9 @@
   "$schema":"http://json-schema.org/draft-04/schema#",
   "version":"0.1",
   "definitions":{
-    "StatementReference":{
-      "title":"Statement reference",
-      "description":"Where entity, person and provenance statements are not nested within the beneficial ownership statement, they may be cross-referenced using a Statement Reference.",
-      "type":"object",
-      "properties":{
-        "type":{
-          "title":"Type",
-          "description":"What type of statement is being referred to?",
-          "type":"string",
-          "enum":[
-            "personStatement",
-            "entityStatement",
-            "arrangementStatement"
-          ]
-        },
-        "describedByStatement":{
-          "title":"ID",
-          "description":"The identifier of the statement being referenced.",
-          "$ref":"#/definitions/ID"
-        },
-        "uri":{
-          "title":"URI",
-          "description":"A persistent URI for the statement being referenced.",
-          "type":"string",
-          "format":"uri"
-        }
-      },
-      "required":[
-        "describedByStatement",
-        "type"
-      ]
-    },
     "StatementDate":{
       "title":"Statement date",
-      "description":"The date on which this statement was made",
+      "description":"The date on which this statement was made.",
       "type":"string",
       "format":"date"
     },

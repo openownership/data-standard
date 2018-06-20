@@ -44,14 +44,13 @@
           "title": "Described by entity statement",
           "description": "A reference to a statement describing a registered entity, trust or arrangement that has an ownership or control interest in the subject of this beneficial ownership statement. An entityStatement should be used when the direct interests to be described represents known control or ownership by anyone other than a natural person.",
           "type": "string"
-        }
-      },
-      "describedByPersonStatement": {
+        }, 
+       "describedByPersonStatement": {
         "title": "Described by person statement",
         "description": "A reference to a statement describing a natural person who has an ownership or control interest in the subject of this beneficial ownership statement.",
         "type": "string"
-      },
-      "unspecified": {
+       },
+       "unspecified": {
         "Unspecified": {
           "title": "Unspecified or unknown party",
           "description": "When confirmation has been provided that no interested party exists, where beneficial ownership information does not need to be provided, or where defaults of beneficial ownership are unknown, details for this can be given. Where there is natural person with ownership or control, but their name or details are not known or cannot be disclosed for some reason, a personStatement should still be used, but identifying details of the person left blank. ",
@@ -77,6 +76,7 @@
             "reason"
           ]
         }
+      }
       },
       "oneOf": [
         {
