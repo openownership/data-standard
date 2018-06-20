@@ -292,7 +292,7 @@
               "title":"Exclusive maximum",
               "description":"If exclusiveMaximum is true, then the share is at least less than the maximum value given. E.g. if maximum is 50, the share is less than 49.999, and not simply 50.",
               "type":"boolean",
-              "default":false
+              "default":true
             }
           }
         },
