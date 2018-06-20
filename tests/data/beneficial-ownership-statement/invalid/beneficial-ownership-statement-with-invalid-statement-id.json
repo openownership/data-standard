@@ -1,7 +1,6 @@
 {
   "statementID": "too-short-so-fail",
   "statementType": "beneficialOwnershipStatement",
-  "groupID": "0bd981da-b893-4a6a-8116-f046b45a0350",
   "statementDate": "2017-11-18",
   "subject": {
     "entity": {

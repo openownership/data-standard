@@ -1,7 +1,6 @@
 [
   {
     "statementID": "cc3869b3-3ddd-4585-868e-ff561a3e9709",
-    "groupID": "80493b5a-825b-4ec1-b2c0-0b75d1297f16",
     "statementType": "entityStatement",
     "statementDate": "2018-03-08",
     "name": "MARE POND PROPERTIES LIMITED",
@@ -25,7 +24,6 @@
   },
   {
     "statementID": "9132d890-0658-4e84-b7b6-9f1886225e45",
-    "groupID": "d1a00f9f-cb6a-4325-b5cc-02583794901f",
     "statementType": "personStatement",
     "statementDate": "2018-03-29",
     "name": "Mr Jeremy Hunt",
@@ -42,7 +40,6 @@
   },
   {
     "statementID": "6bf33a35-4c3a-40a9-b5d6-bc3e20b4b39a",
-    "groupID": "d1a00f9f-cb6a-4325-b5cc-02583794901f",
     "statementType": "beneficialOwnershipStatement",
     "statementDate": "2018-03-29",
     "subject": {

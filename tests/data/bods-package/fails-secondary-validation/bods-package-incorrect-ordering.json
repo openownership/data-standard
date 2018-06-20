@@ -2,7 +2,6 @@
   {
     "statementID":"1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
     "statementType":"entityStatement",
-    "groupID":"f25fb48c-ab3b-44e3-aaa5-45fb5930f769",
     "statementDate":"2017-11-18",
     "entityType":"registeredEntity",
     "name":"CHRINON LTD",
@@ -17,7 +16,6 @@
   {
     "statementID":"fbfd0547-d0c6-4a00-b559-5c5e91c34f5c",
     "statementType":"beneficialOwnershipStatement",
-    "groupID":"f25fb48c-ab3b-44e3-aaa5-45fb5930f769",
     "statementDate":"2017-11-18",
     "subject":{
       "entity":{
@@ -44,7 +42,6 @@
   },
     {
     "statementID":"019a93f1-e470-42e9-957b-03559861b2e2",
-    "groupID":"f25fb48c-ab3b-44e3-aaa5-45fb5930f769",
     "statementType":"personStatement",
     "statementDate":"2017-11-18",
     "personType":"knownPerson",
