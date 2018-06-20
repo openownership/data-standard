@@ -1,0 +1,19 @@
+  {
+    "statementID":"1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
+    "statementType":"entityStatement",
+    "groupID":"9d3a6ff3-6cc4-436f-85dc-cd7ac853d3f7",
+    "statementDate":"2016-06-30",
+    "entityType":"registeredEntity",
+    "name":"Ibrakom Fzco",
+    "incorporatedIn":{
+      "jurisdiction": {
+        "name": "Uae"
+      },
+      "companyRegisterName": "Jebel Ali Free Zone"
+    },
+    "identifiers":[
+      {
+        "id":"00335"
+      }
+    ]
+  }

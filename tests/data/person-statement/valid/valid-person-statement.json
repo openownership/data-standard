@@ -6,7 +6,9 @@
   "personType": "knownPerson",
   "name": "Chris Taggart",
   "nationalities": [
-      "GB"
+      {
+        "code": "GB"
+      }
     ],
   "alternateNames": [
     {

@@ -62,9 +62,7 @@
       "description": "An array of ISO 2-Digit country codes representing nationalities held by this individual.",
       "type": "array",
       "items": {
-        "type": "string",
-        "maxLength": 2,
-        "minLength": 2
+        "$ref": "components.json#definitions/Country"
       }
     },
     "placeOfResidence": {
@@ -93,10 +91,13 @@
         "$ref": "components.json#/definitions/Address"
       }
     },
-    "source": {
-      "title":"Source",
-      "description":"The source of information about this person.",
-      "$ref": "components.json#/definitions/Source"
+    "annotations": {
+      "title": "Annotations",
+      "description": "Annotations about this statement or parts of this statement",
+      "type": "array",
+      "items": {
+        "$ref": "components.json#definitions/Annotation"
+      }
     },
     "replacesStatement": {
       "$ref": "components.json#/definitions/ReplacesStatement"

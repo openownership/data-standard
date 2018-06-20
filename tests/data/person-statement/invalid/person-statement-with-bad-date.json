@@ -5,9 +5,11 @@
   "statementDate": "Tuesday",
   "personType": "knownPerson",
   "name": "Chris Taggart",
-  "nationalities": [
-      "GB"
-    ],
+    "nationalities": [
+        {
+          "code": "GB"
+        }
+      ],
   "alternateNames": [
     {
       "type": "detailed",

@@ -43,12 +43,20 @@
         "description": "The declared name of this entity.",
         "type": "string"
       },
-      "jurisdiction": {
-        "title": "Jurisdiction",
-        "description": "The jurisdiction in which this entity is registered, expressed using an ISO ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code, where the sub-division in question (e.g. a sub-national state or region) has relevant jurisdiction over the registration of operation of this entity.",
-        "type": "string",
-        "minLength": 2,
-        "maxLength": 10
+      "incorporatedIn": {
+        "title": "Incorporated In",
+        "description": "Details on where this legal entity is incorporated",
+        "type": "object",
+        "properties":{
+          "jurisdiction":{
+            "$ref": "components.json#definitions/Jurisdiction"
+          },
+          "companyRegisterName":{
+            "title": "Company Register Name",
+            "description": "The official register in which incorporation infomration for this legal entity is held. An entity MAY have a company register name where a suitable scheme code is unknown or unavailable.",
+            "type":"string"
+          }
+        }
       },
       "identifiers": {
         "title": "Identifiers",
@@ -84,13 +92,16 @@
         "type": "string",
         "format": "uri"
       },
-      "source": {
-        "title":"Source",
-        "description":"The source of information about this entity.",
-        "$ref": "components.json#/definitions/Source"
-      },
       "replacesStatement": {
         "$ref": "components.json#/definitions/ReplacesStatement"
+      },
+      "annotations": {
+        "title": "Annotations",
+        "description": "Annotations about this statement or parts of this statement",
+        "type": "array",
+        "items": {
+          "$ref": "components.json#definitions/Annotation"
+        }
       }
     },
     "required": ["statementID", "statementType", "groupID", "entityType"]

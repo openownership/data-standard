@@ -67,8 +67,8 @@
       ]
     },
     "Source":{
-      "title":"Statement source",
-      "description":"The source object is used to provide basic provenance information about a group of statements or a single statement.",
+      "title":"Source",
+      "description":"The source object is used to provide basic provenance information about a statement or a statement fragment. A source object can also be used in annotations that link a statement or statement fragment to contextual information published elsewhere.",
       "type":"object",
       "properties":{
         "type":{
@@ -107,24 +107,24 @@
           "description":"Who is making this statement? This may be the name of the person or organisation making a self-declaration (in which case, please make sure the name field matches the organisation or person name field), or the name or description of some other party. If this statment has been verified, this may also include the name of the organisation providing verification.",
           "type":"array",
           "items":{
-            "$ref":"#/definitions/AssertingParty"
+            "$ref":"#/definitions/Agent"
           }
         }
       }
     },
-    "AssertingParty":{
+    "Agent":{
       "type":"object",
-      "title":"Asserting party",
-      "description":"An individual, organisation or other entity making, or supporting, a given statement.",
+      "title":"Agent",
+      "description":"An individual, organisation or other responsible agent making, or supporting, a given statement or annotation.",
       "properties":{
         "name":{
           "title":"Name",
-          "description":"The name of the asserting party",
+          "description":"The name of the agent",
           "type":"string"
         },
         "uri":{
           "title":"URI",
-          "description":"An optional URI to identify the asserting party.",
+          "description":"An optional URI to identify the agent.",
           "type":"string",
           "format":"uri"
         }
@@ -137,7 +137,7 @@
     },
     "Identifier":{
       "title":"Identifier",
-      "description":"An identifier that has been assigned to this entity. The scheme or list from which the identifier is drawn should be declared. ",
+      "description":"An identifier that has been assigned to this entity. The scheme or list from which the identifier is drawn should be declared.",
       "type":"object",
       "properties":{
         "id":{
@@ -271,14 +271,6 @@
           "description":"This field may be used to provide the local name given to this kind of interest, or any further semi-structured or unstructured information to clarify the nature of the interest held.",
           "type":"string"
         },
-        "annotations":{
-          "title":"Annotations",
-          "description":"Any further details to qualify this interest.",
-          "type":"array",
-          "items":{
-            "$ref":"#/definitions/Annotation"
-          }
-        },
         "share":{
           "title":"Percentage share",
           "description":"Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls.",
@@ -338,10 +330,112 @@
       "description":"Annotations can be provided in free-text. Additional extended properties can be included on the annotation object to provide structured data if required.",
       "type":"object",
       "properties":{
+        "statementPointerTarget": {
+          "title": "Statement Fragment Pointer",
+          "description": "An RFC6901 JSON Pointer describing the target fragment of the statement that this annotation applies to. A statement pointer MUST only be used when an annotation is used at the statement level. A value of '/' indicates that the annotation applies to the whole statement.",
+          "type": "string"
+          },
+        "statementIDTarget":{
+          "title": "Statement ID Target",
+          "description": "The uuid of the statement that this annotation applies to. A statement ID target MUST only be used when an annotation statment is published in a top-level array to refer; it may refer to a statement in the same array or to a statement published elsewhere.",
+          "$ref":"#/definitions/ID"
+        },
+        "creationDate":{
+          "title": "Creation Date",
+          "description": "The date this annotation was created.",
+          "type": "string",
+          "format": "date"
+        },
+        "createdBy":{
+          "title": "Created By",
+          "description": "The person, organisation or agent that created this annotation.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Agent"
+          }
+        },
+        "motivation": {
+          "Title": "Motivation",
+          "Description": "The motivation for this annotation, chosen from a codelist. Commenting should be used with the description field to add contextual comments to a field or statement. Correcting should be used to indicate that original material has been corrected, using the method in the description field. Identifying should be used when original data has been augmented or processed for the purpose of identifying natural persons or legal entities, using the method in the description field. Linking should be used to provide contextual material that explains the statement or field; URLs to linked material can be provided in the source field. Provenance should be used to identify the source of information at a statement or field level. Transformation should be used to describe how data has in fields has been changed from its original form. The new form MAY be provided in the transformedContent field.",
+          "type": "string",
+          "enum": ["commenting", "correcting", "identifying", "linking", "provenance", "transformation"]
+        },
         "description":{
           "type":"string",
           "title":"Description",
-          "description":"A free-text description to annotate this interest."
+          "description":"A free-text description to annotate this statment or field."
+        },
+        "transformedContent": {
+          "type": "string",
+          "title": "Transformed content",
+          "description": "A representation of the annotation target after the transformation in the description field has been applied. This field SHOULD only be used when the motivation is transformation."
+        },
+        "source":{
+          "$ref": "#definitions/Source"
+        }
+      },
+      "anyOf": [
+        {
+          "properties": {
+            "motivation": { "enum": [ "provenance"] }
+          },
+          "required": ["statementPointerTarget", "source", "motivation"]
+        },
+        {
+          "properties": {
+            "motivation": { "enum": [ "provenance"] }
+          },
+          "required": ["statementIDTarget", "source", "motivation"]
+        },
+        {
+          "properties": {
+            "motivation": { "enum": [ "linking", "identifying", "commenting", "correcting", "transformation"] }
+          },
+          "required": ["statementPointerTarget", "motivation"]
+        },
+                {
+          "properties": {
+            "motivation": { "enum": [ "linking", "identifying", "commenting", "correcting", "transformation"] }
+          },
+          "required": ["statementIDTarget", "motivation"]
+        }
+      ]
+    },
+    "Country":{
+      "title":"Country",
+      "description":"A country MUST have a name. A country SHOULD have an ISO 2-Digit county code.",
+      "type":"object",
+      "properties":{
+        "name":{
+          "title":"Name",
+          "description":"The name of the country",
+          "type":"string"
+        },
+        "code":{
+          "title":"Name",
+          "description":"The ISO 2-digit code for the country",
+          "type":"string",
+          "maxLength": 2,
+          "minLength": 2
+        }
+      }
+    },
+    "Jurisdiction":{
+      "title":"Jurisdiction",
+      "description":"A jurisdiction MUST have a name. A jurisdiction SHOULD have an ISO ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code.",
+      "type":"object",
+      "properties":{
+        "name":{
+          "title":"Name",
+          "description":"The name of the jurisdiction",
+          "type":"string"
+        },
+        "code":{
+          "title":"Name",
+          "description":"The ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code of the jurisdiction",
+          "type":"string",
+          "maxLength": 6,
+          "minLength": 2
         }
       }
     }
