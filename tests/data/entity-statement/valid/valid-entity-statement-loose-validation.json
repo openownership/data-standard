@@ -5,15 +5,13 @@
     "statementDate":"2016-06-30",
     "entityType":"registeredEntity",
     "name":"Ibrakom Fzco",
-    "incorporatedIn":{
-      "jurisdiction": {
-        "name": "Uae"
-      },
-      "companyRegisterName": "Jebel Ali Free Zone"
+    "incorporatedInJurisdiction":{
+       "name":"UAE"
     },
     "identifiers":[
       {
-        "id":"00335"
+        "id":"00335",
+        "schemeName":"Jebel Ali Free Zone"
       }
     ]
   }

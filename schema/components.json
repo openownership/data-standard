@@ -150,13 +150,23 @@
           "description":"For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, recognised values include 'passport', 'internal' and 'id-card'.",
           "type":"string"
         },
+        "schemeName": {
+          "title": "Schema name",
+          "Description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided.",
+          "type": "string"
+        },
         "uri":{
           "title":"URI",
           "description":"Where this identifier has a [canonical URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be included",
           "type":"string",
           "format":"uri"
         }
-      }
+      },
+      "anyOf": [
+        {"required": ["scheme"]},
+        {"required": ["schemeName"]},
+        {"required": ["scheme", "schemeName"]}
+      ]
     },
     "ID":{
       "title":"ID",
@@ -438,6 +448,49 @@
           "minLength": 2
         }
       }
+    },
+    "Country":{
+      "title":"Country",
+      "description":"A country MUST have a name. A country SHOULD have an ISO 2-Digit county code.",
+      "type":"object",
+      "properties":{
+        "name":{
+          "title":"Name",
+          "description":"The name of the country",
+          "type":"string"
+        },
+        "code":{
+          "title":"Name",
+          "description":"The ISO 2-digit code for the country",
+          "type":"string",
+          "maxLength": 2,
+          "minLength": 2
+        }
+      }
+    },
+    "Jurisdiction":{
+      "title":"Jurisdiction",
+      "description":"A jurisdiction MUST have a name. A jurisdiction SHOULD have an ISO ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code.",
+      "type":"object",
+      "properties":{
+        "name":{
+          "title":"Name",
+          "description":"The name of the jurisdiction",
+          "type":"string"
+        },
+        "code":{
+          "title":"Name",
+          "description":"The ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code of the jurisdiction",
+          "type":"string",
+          "maxLength": 6,
+          "minLength": 2
+        }
+      },
+      "anyOf": [
+        {"required": ["name"]},
+        {"required": ["code"]},
+        {"required": ["name", "code"]}
+      ]
     }
   }
 }

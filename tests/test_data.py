@@ -1,6 +1,7 @@
 import os
 import json
 import pytest
+from collections import OrderedDict
 from jsonschema import validate, ValidationError
 
 from bods_validate import this_dir, format_checker, absolute_path_to_schema_dir, resolver
@@ -19,7 +20,7 @@ from bods_validate import bods_iter_errors_package, bods_iter_errors_statement
 ])
 def test_valid_statement_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
-        json_data = json.load(f)
+        json_data = json.load(f, object_pairs_hook=OrderedDict)
     bods_validate_statement(json_data)
 
 
@@ -33,7 +34,7 @@ def test_valid_statement_json(json_path):
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
-        json_data = json.load(f)
+        json_data = json.load(f, object_pairs_hook=OrderedDict)
     assert isinstance(json_data, list)
 
     # Validate statement by statement
@@ -42,7 +43,7 @@ def test_valid_package_json(json_path):
     # Validate the whole package at once
     schema_path = 'bods-package.json'
     with open(os.path.join(absolute_path_to_schema_dir, schema_path)) as f:
-        schema = json.load(f)
+        schema = json.load(f, object_pairs_hook=OrderedDict)
     validate(json_data, schema, resolver=resolver, format_checker=format_checker)
 
 
@@ -56,7 +57,7 @@ def test_valid_package_json(json_path):
 ])
 def test_invalid_statement_json(json_path, error):
     with open(os.path.join(this_dir, json_path)) as f:
-        json_data = json.load(f)
+        json_data = json.load(f, object_pairs_hook=OrderedDict)
     with pytest.raises(error):
         bods_validate_statement(json_data)
 
@@ -80,7 +81,7 @@ def test_invalid_statement_json(json_path, error):
 def test_invalid_package_json(json_path, json_paths, error):
     if json_path:
         with open(os.path.join(this_dir, json_path)) as f:
-            json_data = json.load(f)
+            json_data = json.load(f, object_pairs_hook=OrderedDict)
     else:
         json_data = [json.load(open(os.path.join(this_dir, json_path))) for json_path in json_paths]
 
@@ -96,7 +97,7 @@ def test_invalid_package_json(json_path, json_paths, error):
     # Validate the whole package at once
     schema_path = 'bods-package.json'
     with open(os.path.join(absolute_path_to_schema_dir, schema_path)) as f:
-        schema = json.load(f)
+        schema = json.load(f, object_pairs_hook=OrderedDict)
     with pytest.raises(ValidationError):
         validate(json_data, schema, resolver=resolver, format_checker=format_checker)
 
@@ -129,7 +130,7 @@ def test_invalid_package_json(json_path, json_paths, error):
 ])
 def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     with open(os.path.join(this_dir, json_path)) as f:
-        json_data = json.load(f)
+        json_data = json.load(f, object_pairs_hook=OrderedDict)
     actual_errors = {e.message for e in bods_iter_errors_statement(json_data)}
     assert actual_errors == expected_errors
 
@@ -153,6 +154,11 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     ], {
         "'statementType' is a required property",
     }),
+    (None, [
+        'data/entity-statement/invalid/entity-statement-loose-validation-without-required-fields.json',
+    ], {
+        "OrderedDict([('id', '00335'), ('register', 'Jebel Ali Free Zone')]) is not valid under any of the given schemas",
+    }),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-entity-statement.json', None, {
         "subject/entity/describedByStatement '1dc0e987-5c57-4a1c-b3ad-61353b66a9b7' does not match any known entities"
     }),
@@ -166,8 +172,8 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
 def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):
     if json_path:
         with open(os.path.join(this_dir, json_path)) as f:
-            json_data = json.load(f)
+            json_data = json.load(f, object_pairs_hook=OrderedDict)
     else:
-        json_data = [json.load(open(os.path.join(this_dir, json_path))) for json_path in json_paths]
+        json_data = [json.load(open(os.path.join(this_dir, json_path)), object_pairs_hook=OrderedDict) for json_path in json_paths]
     actual_errors = {e.message for e in bods_iter_errors_package(json_data)}
     assert actual_errors == expected_errors

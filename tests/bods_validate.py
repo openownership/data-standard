@@ -1,5 +1,6 @@
 import os
 import json
+from collections import OrderedDict
 from jsonschema import validate, RefResolver, FormatChecker
 from jsonschema.validators import Draft4Validator
 from jsonschema.exceptions import ValidationError
@@ -64,7 +65,7 @@ def check_ids(statement, entity_statement_ids, person_statement_ids):
 def bods_validate_statement(statement):
     schema_path = schema_path_from_statement(statement)
     with open(os.path.join(absolute_path_to_schema_dir, schema_path)) as f:
-        schema = json.load(f)
+        schema = json.load(f, object_pairs_hook=OrderedDict)
     validate(statement, schema, resolver=resolver, format_checker=format_checker)
 
 
@@ -88,7 +89,7 @@ def bods_iter_errors_statement(statement):
         yield e
         return
     with open(os.path.join(absolute_path_to_schema_dir, schema_path)) as f:
-        schema = json.load(f)
+        schema = json.load(f, object_pairs_hook=OrderedDict)
     validator = Draft4Validator(schema, resolver=resolver, format_checker=format_checker)
     yield from validator.iter_errors(statement)
 
