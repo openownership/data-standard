@@ -8,8 +8,6 @@ The structure of each of the schema's top level components can be explored using
 * [Beneficial ownership statement](#beneficial-ownership-statement)
 * [Entity statement](#entity-statement)
 * [Person statement](#person-statement)
-* [Arrangement statement](#arrangement-statement)
-
 
 ## Beneficial ownership statement
 View the [Beneficial Ownership Statement JSON schema](_static/beneficial-ownership-statement.json) or explore it using the viewer below.

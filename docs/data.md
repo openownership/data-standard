@@ -26,6 +26,7 @@ People working on data management systems implementing BODS will want to underst
    technical-requirements.md
    data-schema-browser.md
    data-schema-reference.md
+   data-codelists.md
    
 
 ```
