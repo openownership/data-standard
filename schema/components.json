@@ -312,18 +312,13 @@
     },
     "Annotation":{
       "title":"Annotation",
-      "description":"Annotations can be provided in free-text. Additional extended properties can be included on the annotation object to provide structured data if required.",
+      "description":"An annotation provides additional information about beneficial ownership data being provided. Annotations can be provided in free-text, and can apply to a whole statement, an object or a single field. Additional extended properties can be included on the annotation object to provide structured data where required.",
       "type":"object",
       "properties":{
         "statementPointerTarget": {
           "title": "Statement Fragment Pointer",
-          "description": "An RFC6901 JSON Pointer describing the target fragment of the statement that this annotation applies to. A statement pointer MUST only be used when an annotation is used at the statement level. A value of '/' indicates that the annotation applies to the whole statement.",
+          "description": "An [RFC6901 JSON Pointer](https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this annotation applies to, starting from the root of the statement. A value of '/' indicates that the annotation applies to the whole statement.",
           "type": "string"
-          },
-        "statementIDTarget":{
-          "title": "Statement ID Target",
-          "description": "The uuid of the statement that this annotation applies to. A statement ID target MUST only be used when an annotation statment is published in a top-level array to refer; it may refer to a statement in the same array or to a statement published elsewhere.",
-          "$ref":"#/definitions/ID"
         },
         "creationDate":{
           "title": "Creation Date",
@@ -354,9 +349,6 @@
           "type": "string",
           "title": "Transformed content",
           "description": "A representation of the annotation target after the transformation in the description field has been applied. This field SHOULD only be used when the motivation is transformation."
-        },
-        "source":{
-          "$ref": "#definitions/Source"
         }
       },
       "anyOf": [
@@ -364,25 +356,13 @@
           "properties": {
             "motivation": { "enum": [ "provenance"] }
           },
-          "required": ["statementPointerTarget", "source", "motivation"]
-        },
-        {
-          "properties": {
-            "motivation": { "enum": [ "provenance"] }
-          },
-          "required": ["statementIDTarget", "source", "motivation"]
+          "required": ["statementPointerTarget", "motivation"]
         },
         {
           "properties": {
             "motivation": { "enum": [ "linking", "identifying", "commenting", "correcting", "transformation"] }
           },
           "required": ["statementPointerTarget", "motivation"]
-        },
-                {
-          "properties": {
-            "motivation": { "enum": [ "linking", "identifying", "commenting", "correcting", "transformation"] }
-          },
-          "required": ["statementIDTarget", "motivation"]
         }
       ]
     },
