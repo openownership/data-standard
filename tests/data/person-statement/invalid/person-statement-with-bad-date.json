@@ -3,18 +3,21 @@
   "statementType": "personStatement",
   "statementDate": "Tuesday",
   "personType": "knownPerson",
-  "name": "Chris Taggart",
-    "nationalities": [
-        {
-          "code": "GB"
-        }
-      ],
-  "alternateNames": [
+  "nationalities": [
     {
-      "type": "detailed",
+      "code": "GB"
+    }
+  ],
+  "names": [
+    {
+      "type": "individual",
       "fullName": "Christopher Taggart",
       "givenName": "Christopher",
       "familyName": "Taggart"
+    },
+    {
+      "type": "aka",
+      "fullName": "Chris Taggart"
     }
   ],
   "birthDate": "1964-04",

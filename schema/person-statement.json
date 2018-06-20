@@ -10,7 +10,7 @@
       "$ref": "components.json#/definitions/ID"
     },
     "statementType": {
-        "title": "The type of statement. This should always be 'entityStatement'",
+        "title": "The type of statement. This should always be 'personStatement'",
         "description": "What is being described by this statement?",
         "type": "string",
         "enum": ["personStatement"]
@@ -33,17 +33,12 @@
       "description": "For PersonStatements with the type 'anonymousPerson' or 'unknownPerson' this field should contain an explanation of the reason that detailed information on the person is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification.",
       "type": "string"
     },
-    "name": {
-      "title": "Name",
-      "description": "The full name of this person.",
-      "type": "string"
-    },
-    "alternateNames": {
-      "title": "Alternate names",
-      "description": "Other known names for this individual.",
+    "names": {
+      "title": "Names",
+      "description": "One or more known names for this individual.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/AlternateName"
+        "$ref": "components.json#/definitions/Name"
       }
     },
     "identifiers": {
@@ -93,7 +88,7 @@
       "description": "Annotations about this statement or parts of this statement",
       "type": "array",
       "items": {
-        "$ref": "components.json#definitions/Annotation"
+        "$ref": "components.json#/definitions/Annotation"
       }
     },
     "replacesStatement": {

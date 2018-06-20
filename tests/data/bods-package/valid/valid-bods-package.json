@@ -18,18 +18,21 @@
     "statementType": "personStatement",
     "statementDate": "2017-11-18",
     "personType": "knownPerson",
-    "name": "Chris Taggart",
     "nationalities": [
-        {
-          "code": "GB"
-        }
-      ],
-    "alternateNames": [
       {
-        "type": "detailed",
+        "code": "GB"
+      }
+    ],
+    "names": [
+      {
+        "type": "individual",
         "fullName": "Christopher Taggart",
         "givenName": "Christopher",
         "familyName": "Taggart"
+      },
+      {
+        "type": "aka",
+        "fullName": "Chris Taggart"
       }
     ],
     "birthDate": "1964-04",
@@ -47,10 +50,10 @@
     "statementType": "beneficialOwnershipStatement",
     "statementDate": "2017-11-18",
     "subject": {
-        "describedByEntityStatement": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7"
+      "describedByEntityStatement": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7"
     },
     "interestedParty": {
-        "describedByPersonStatement": "019a93f1-e470-42e9-957b-03559861b2e2"
+      "describedByPersonStatement": "019a93f1-e470-42e9-957b-03559861b2e2"
     },
     "interests": [
       {

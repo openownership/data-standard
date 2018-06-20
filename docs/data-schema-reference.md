@@ -13,18 +13,24 @@ Schema reference
 
 ```
 
-The following is an A - Z guide to the components of the Data Standard's schema. Details of each component's properties are provided in a table generated from the JSON schema. (For a structured view of how components fit together in the JSON schema, use the [Schema browser](data-schema-browser.md).)
+The following is a guide to the components of the Data Standard's schema. Details of each component's properties are provided in a table generated from the JSON schema. (For a structured view of how components fit together in the JSON schema, use the [Schema browser](data-schema-browser.md).)
 
 The top-level components are:
 
 * [Beneficial ownership statements](#beneficialownershipstatement)
 * [Entity statements](#entitystatement)
 * [Person statements](#personstatement)
-* [Arrangement statements]()
 
 These top-level components must be packaged up in a [statement package](#statement-packages) for a [data release](building-data-releases.md).
 
+## BeneficialOwnershipStatement
 
+A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided.
+
+```eval_rst
+.. jsonschema:: ../schema/beneficial-ownership-statement.json
+    :collapse: interests,source,annotations
+```
 
 ## Address
 
@@ -36,11 +42,11 @@ Due to the diversity of address formats used across systems, and the extent to w
 ```
 
 
-## AlternateName
+## Name
 
 ```eval_rst
 .. jsonschema:: ../schema/components.json
-   :pointer: /definitions/AlternateName
+   :pointer: /definitions/Name
 ```
 
 
@@ -54,22 +60,7 @@ The annotation property currently allows for an array of simple annotation objec
 ```
 
 
-## AssertingParty
 
-```eval_rst
-.. jsonschema:: ../schema/components.json
-   :pointer: /definitions/AssertingParty
-```
-
-
-## BeneficialOwnershipStatement
-
-A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided.
-
-```eval_rst
-.. jsonschema:: ../schema/beneficial-ownership-statement.json
-    :collapse: interestedParty,interests,source,subject/entity
-```
 
 ## EntityStatement
 
@@ -140,21 +131,5 @@ At the top level of any structured file are arrays (packages) of statements. All
 ```eval_rst
 .. jsonschema:: ../schema/bods-package.json
 ```
-
-## StatementReference
-
-```eval_rst
-.. jsonschema:: ../schema/components.json
-   :pointer: /definitions/StatementReference
-```
-
-## Unspecified
-
-```eval_rst
-.. jsonschema:: ../schema/components.json
-   :pointer: /definitions/Unspecified
-```
-
-
 
 

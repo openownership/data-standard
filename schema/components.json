@@ -154,20 +154,22 @@
         }
       }
     },
-    "AlternateName":{
-      "title":"Alternative name",
-      "description":"An alternative known name for this individual. Names should be provided in fullName, and may optionally be broken down in the familyName, givenName and patronymicName fields, based on the EC ISA Core Person Vocabulary definitions.",
+    "Name":{
+      "title":"Name",
+      "description":"An name by which this individual is known. Names should be provided in fullName, and may optionally be broken down in the familyName, givenName and patronymicName fields, based on the [EC ISA Core Person Vocabulary](https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
       "type":"object",
       "properties":{
         "type":{
           "title":"Type",
-          "description":"What kind of alternative name is this?",
+          "description":"What kind of name is this?",
           "type":"string",
           "enum":[
-            "detailed",
+            "individual",
             "translation",
             "former",
             "alias",
+            "aka",
+            "nick",
             "birth"
           ]
         },
