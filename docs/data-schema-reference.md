@@ -174,6 +174,17 @@ At the top level of any structured file are arrays (packages) of statements. All
 .. jsonschema:: ../schema/bods-package.json
 ```
 
+## Modelling notes
+
+This section will outline some of the more complex modelling decisions, such as:
+
+* Trusts - modelled as an entity, with a BO statement for each trustee etc.
+* Joint Shareholding - modelled as an artificial entity with each joint shareholder related by a BO statement to the artificial joint shareholding entity
+* Agreements - modelled as a qualification/annotation on an interest
+
+
+TODO.
+
 
 ## Normative references
 
