@@ -114,7 +114,7 @@
       "description": "Annotations about this statement or parts of this statement",
       "type": "array",
       "items": {
-        "$ref": "components.json#definitions/Annotation"
+        "$ref": "components.json#/definitions/Annotation"
       }
     },
     "replacesStatement": {
