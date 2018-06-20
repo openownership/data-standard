@@ -66,16 +66,10 @@
     "statementType": "beneficialOwnershipStatement",
     "statementDate": "2016-04-06",
     "subject": {
-      "entity": {
-        "type": "entityStatement",
-        "describedByStatement": "cfd1747f-9fbc-461a-af94-710120705b4c"
-      }
+        "describedByEntityStatement": "cfd1747f-9fbc-461a-af94-710120705b4c"
     },
     "interestedParty": {
-      "entity": {
-        "type": "entityStatement",
-        "describedByStatement": "78db70df-49cd-47c9-9ee9-2e5539ec7a5f"
-      }
+        "describedByEntityStatement": "78db70df-49cd-47c9-9ee9-2e5539ec7a5f"
     },
     "annotations": [
       {
