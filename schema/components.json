@@ -41,31 +41,6 @@
       "type":"string",
       "format":"date"
     },
-    "Unspecified":{
-      "title":"Unspecified",
-      "description":"When confirmation has been provided that no beneficial owners exist, or beneficial ownership information does not need to be provided, then a null party entry should be included.",
-      "type":"object",
-      "properties":{
-        "reason":{
-          "title":"Reason",
-          "description":"The reason for this null statement.",
-          "type":"string",
-          "enum":[
-            "unknown",
-            "noBeneficialOwners",
-            "noNotifiableOwners"
-          ]
-        },
-        "description":{
-          "title":"Description",
-          "description":"Any supporting information about the absence of a confirmed beneficial owner. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
-          "type":"string"
-        }
-      },
-      "required":[
-        "reason"
-      ]
-    },
     "Source":{
       "title":"Source",
       "description":"The source object is used to provide basic provenance information about a statement or a statement fragment. A source object can also be used in annotations that link a statement or statement fragment to contextual information published elsewhere.",
