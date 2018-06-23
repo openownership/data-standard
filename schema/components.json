@@ -302,6 +302,19 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/Agent"
+          "type": "object",
+          "properties": {
+            "name":{
+              "title":"Name",
+              "description":"The name of the person, organisation or agent that created this annotation.",
+              "type":"string"
+            },
+            "uri":{
+              "title":"URI",
+              "description":"An optional URI to identify person, organisation or agent that created this annotation.",
+              "type":"string",
+              "format":"uri"
+            }
           }
         },
         "motivation": {
