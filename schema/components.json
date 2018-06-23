@@ -299,9 +299,6 @@
         "createdBy":{
           "title": "Created By",
           "description": "The person, organisation or agent that created this annotation.",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Agent"
           "type": "object",
           "properties": {
             "name":{
@@ -319,7 +316,7 @@
         },
         "motivation": {
           "title": "Motivation",
-          "description": "The motivation for this annotation, chosen from a codelist. Commenting should be used with the description field to add contextual comments to a field or statement. Correcting should be used to indicate that original material has been corrected, using the method in the description field. Identifying should be used when original data has been augmented or processed for the purpose of identifying natural persons or legal entities, using the method in the description field. Linking should be used to provide contextual material that explains the statement or field; URLs to linked material can be provided in the source field. Provenance should be used to identify the source of information at a statement or field level. Transformation should be used to describe how data has in fields has been changed from its original form. The new form MAY be provided in the transformedContent field.",
+          "description": "The motivation for this annotation, chosen from a codelist. Commenting should be used with the description field to add contextual comments to a field or statement. Correcting should be used to indicate that original material has been corrected, using the method in the description field. Identifying should be used when original data has been augmented or processed for the purpose of identifying natural persons or legal entities, using the method in the description field. Linking should be used to provide contextual material that explains the statement or field; URLs to linked material can be provided in the url field. Provenance should be used to identify the source of information at a statement or field level. Transformation should be used to describe how data has in fields has been changed from its original form. The new form MAY be provided in the transformedContent field.",
           "type": "string",
           "enum": ["commenting", "correcting", "identifying", "linking", "transformation"]
         },
@@ -332,6 +329,12 @@
           "type": "string",
           "title": "Transformed content",
           "description": "A representation of the annotation target after the transformation in the description field has been applied. This field SHOULD only be used when the motivation is transformation."
+        },
+        "url": {
+          "title": "URL",
+          "description": "A linked resource that annotates, provides context for or enhances this statement. The content of the resource, or the relationship to the statement, MAY be described in the description field.",
+          "type":"string",
+          "format": "uri"
         }
       },
       "anyOf": [
