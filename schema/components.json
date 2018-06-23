@@ -311,9 +311,9 @@
           "enum": ["commenting", "correcting", "identifying", "linking", "transformation"]
         },
         "description":{
-          "type":"string",
           "title":"Description",
-          "description":"A free-text description to annotate this statment or field."
+          "description":"A free-text description to annotate this statment or field.",
+          "type":"string"
         },
         "transformedContent": {
           "type": "string",
