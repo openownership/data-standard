@@ -91,9 +91,9 @@
         "$ref": "components.json#/definitions/Annotation"
       }
     },
-    "pep_status": {
-      "title": "PEP Status",
-      "description": "One or more descriptions of this person's Politically-Exposed Person status.",
+    "pepStatus": {
+      "title": "Politically Exposed Person Status",
+      "description": "One or more descriptions of this person's Politically-Exposed Person (PEP) status.",
       "type": "array",
       "items": {
         "$ref": "components.json#definitions/PepStatus"
