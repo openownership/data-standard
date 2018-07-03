@@ -11,21 +11,15 @@
         "id": "06292597"
       }
     ],
-    "annotations": [
-      {
-        "statementPointerTarget": "/",
-        "motivation": "provenance",
-        "source": {
-          "type": ["officialRegister"],
-          "url": "https://beta.companieshouse.gov.uk/company/06292597",
-          "assertedBy": [
-            {
-            "name": "DRILLGREAT LIMITED"
-            }
-          ]
+    "source": {
+      "type": ["officialRegister"],
+      "url": "https://beta.companieshouse.gov.uk/company/06292597",
+      "assertedBy": [
+        {
+        "name": "DRILLGREAT LIMITED"
         }
-      }
-    ]
+      ]
+    }
   },
   {
     "statementID": "cfd1747f-9fbc-461a-af94-710120705b4c",
@@ -40,26 +34,18 @@
         "id": "02585514"
       }
     ],
-    "incorporatedIn": {
-      "jurisdiction": {
-        "code": "GB"
-      }
+    "incorporatedInJurisdiction": {
+      "code": "GB"
     },
-    "annotations": [
-      {
-        "statementPointerTarget": "/",
-        "motivation" : "provenance",
-        "source": {
-          "type": ["officialRegister"],
-          "url": "https://beta.companieshouse.gov.uk/company/02585514/persons-with-significant-control",
-          "assertedBy": [
-            {
-              "name": "MONSOON HOLDINGS (NO.1) LIMITED"
-            }
-          ]
+    "source": {
+      "type": ["officialRegister"],
+      "url": "https://beta.companieshouse.gov.uk/company/02585514/persons-with-significant-control",
+      "assertedBy": [
+        {
+          "name": "MONSOON HOLDINGS (NO.1) LIMITED"
         }
-      }
-    ]
+      ]
+    }
   },
   {
     "statementID": "ac11f4c3-3dc5-499b-acc5-599632187ebd",
@@ -71,32 +57,22 @@
     "interestedParty": {
         "describedByEntityStatement": "78db70df-49cd-47c9-9ee9-2e5539ec7a5f"
     },
-    "annotations": [
-      {
-        "statementPointerTarget": "/",
-        "motivation": "provenance",
-        "source": {
-          "type": ["officialRegister"],
-          "url": "https://beta.companieshouse.gov.uk/company/02585514/persons-with-significant-control",
-          "assertedBy": [
-            {
-              "name": "MONSOON HOLDINGS (NO.1) LIMITED"
-            }
-          ]
+    "source": {
+      "type": ["officialRegister"],
+      "url": "https://beta.companieshouse.gov.uk/company/02585514/persons-with-significant-control",
+      "assertedBy": [
+        {
+          "name": "MONSOON HOLDINGS (NO.1) LIMITED"
         }
-      },
+      ]
+    },
+    "annotations": [
       {
         "statementPointerTarget": "/interestedParty",
         "motivation" : "identifying",
         "description": "Company number missing from benenficial ownership statement. Manually reconciled against official register.",
-        "source": {
-          "type": ["primaryResearch", "officialRegister"],
-          "url": "https://beta.companieshouse.gov.uk/company/06292597",
-          "assertedBy": [
-            {
-              "name": "Jack Lord"
-            }
-          ]
+        "createdBy": {
+          "name": "Jack Lord"
         }
       }
     ]
