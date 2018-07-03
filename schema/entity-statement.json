@@ -43,7 +43,7 @@
       "incorporatedInJurisdiction": {
         "title": "Incorporated In Jurisdiction",
         "description": "Details on where this legal entity is incorporated",
-        "$ref": "components.json#definitions/Jurisdiction"
+        "$ref": "components.json#/definitions/Jurisdiction"
       },
       "identifiers": {
         "title": "Identifiers",
@@ -87,7 +87,7 @@
         "description": "Annotations about this statement or parts of this statement",
         "type": "array",
         "items": {
-          "$ref": "components.json#definitions/Annotation"
+          "$ref": "components.json#/definitions/Annotation"
         }
       }
     },
