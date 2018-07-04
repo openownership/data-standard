@@ -7,16 +7,19 @@
   "type": "object",
   "properties": {
       "statementID": {
-        "$ref": "components.json#/definitions/ID"
+        "$ref": "components.json#/definitions/ID",
+        "propertyOrder": 1
       },
       "statementType": {
-        "title": "The type of statement. This should always be 'entityStatement'",
-        "description": "What is being described by this statement?",
+        "title": "The type of statement.'",
+        "description": " This should always be 'entityStatement.",
         "type": "string",
-        "enum": ["entityStatement"]
+        "enum": ["entityStatement"],
+        "propertyOrder":2
       },
       "statementDate": {
-        "$ref": "components.json#/definitions/StatementDate"
+        "$ref": "components.json#/definitions/StatementDate",
+        "propertyOrder":3
       },
       "entityType": {
         "title": "Type",
@@ -28,22 +31,26 @@
           "arrangement",
           "anonymousEntity",
           "unknownEntity"
-        ]
+        ],
+        "propertyOrder":4
       },
       "missingInfoReason": {
         "title": "Missing information reason(s)",
         "description": "For EntityStatements with the type 'anonymousEntity' or 'unknownEntity' this field should contain an explanation of the reason that detailed information on the entity is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification.",
-        "type": "string"
+        "type": "string",
+        "propertyOrder":5
       },
       "name": {
-        "title": "Name",
+        "title": "Entity name",
         "description": "The declared name of this entity.",
-        "type": "string"
+        "type": "string",
+        "propertyOrder":6
       },
       "incorporatedInJurisdiction": {
         "title": "Incorporated In Jurisdiction",
         "description": "Details on where this legal entity is incorporated",
-        "$ref": "components.json#/definitions/Jurisdiction"
+        "$ref": "components.json#/definitions/Jurisdiction",
+        "propertyOrder":10
       },
       "identifiers": {
         "title": "Identifiers",
@@ -51,19 +58,22 @@
         "type": "array",
         "items": {
           "$ref": "components.json#/definitions/Identifier"
-        }
+        },
+        "propertyOrder":20
       },
       "foundingDate": {
         "title": "Created date",
         "description": "When was this entity founded, created or registered. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
         "type": "string",
-        "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+        "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$",
+        "propertyOrder":30
       },
       "dissolutionDate": {
         "title": "End date",
         "description": "If this entity is no longer active, provide the date on which it was disolved or ceased. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
         "type": "string",
-        "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+        "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$",
+        "propertyOrder":35
       },
       "addresses": {
         "title": "Addresses",
@@ -71,16 +81,19 @@
         "type": "array",
         "items": {
           "$ref": "components.json#/definitions/Address"
-        }
+        },
+        "propertyOrder":40
       },
       "uri": {
         "title": "URI",
         "description": "Where a [persistent URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available for this entity this should be included.",
         "type": "string",
-        "format": "uri"
+        "format": "uri",
+        "propertyOrder":21
       },
       "replacesStatement": {
-        "$ref": "components.json#/definitions/ReplacesStatement"
+        "$ref": "components.json#/definitions/ReplacesStatement",
+        "propertyOrder":100
       },
       "annotations": {
         "title": "Annotations",
@@ -88,7 +101,8 @@
         "type": "array",
         "items": {
           "$ref": "components.json#/definitions/Annotation"
-        }
+        },
+        "propertyOrder":90
       }
     },
     "required": ["statementID", "statementType", "entityType"]
