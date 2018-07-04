@@ -65,10 +65,6 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
    Review your collection, publishing and updating practices.
 
-   - What and how to publish
-   - Validating and verifying data
-   - Updating data
-
    .. cssclass:: primaryfrontpageboxlink
 
       :doc:`Visit the User Guides <userguides/index>`
