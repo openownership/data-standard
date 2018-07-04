@@ -14,7 +14,7 @@ from bods_validate import bods_iter_errors_package, bods_iter_errors_statement
     'data/entity-statement/valid/valid-entity-statement.json',
     'data/entity-statement/valid/valid-entity-statement-loose-validation.json',
     'data/person-statement/valid/valid-person-statement.json',
-    'data/beneficial-ownership-statement/valid/valid-beneficial-ownership-statement.json',
+    'data/ownership-or-control-statement/valid/valid-ownership-or-control-statement.json',
     '../examples/flat-serialisation/gb-coh-entity-statement.json',
     '../examples/flat-serialisation/gb-coh-person-statement.json',
 ])
@@ -51,8 +51,8 @@ def test_valid_package_json(json_path):
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id-no-entity-type.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-bad-date.json', ValidationError),
-    ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-with-invalid-statement-id.json', ValidationError),
-    ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json', MissingStatementTypeError),
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json', ValidationError),
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-statement-type.json', MissingStatementTypeError),
 ])
 def test_invalid_statement_json(json_path, error):
     with open(os.path.join(this_dir, json_path)) as f:
@@ -66,13 +66,13 @@ def test_invalid_statement_json(json_path, error):
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/entity-statement/valid/valid-entity-statement-loose-validation.json',
         'data/person-statement/valid/valid-person-statement.json',
-        'data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-with-invalid-statement-id.json',
+        'data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json',
     ], ValidationError),
     (None, [
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/entity-statement/valid/valid-entity-statement-loose-validation.json',
         'data/person-statement/valid/valid-person-statement.json',
-        'data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json',
+        'data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-statement-type.json',
     ], MissingStatementTypeError),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-entity-statement.json', None, UnrecognisedStatementID),
     ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, UnrecognisedStatementID),
@@ -106,7 +106,7 @@ def test_invalid_package_json(json_path, json_paths, error):
     ('data/entity-statement/valid/valid-entity-statement-loose-validation.json', set()),
     ('data/entity-statement/valid/valid-entity-statement-transliteration-annotations.json', set()),
     ('data/person-statement/valid/valid-person-statement.json', set()),
-    ('data/beneficial-ownership-statement/valid/valid-beneficial-ownership-statement.json', set()),
+    ('data/ownership-or-control-statement/valid/valid-ownership-or-control-statement.json', set()),
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', {
         "'too-short-so-fail' is too short"
     }),
@@ -120,10 +120,10 @@ def test_invalid_package_json(json_path, json_paths, error):
     ('data/person-statement/invalid/person-statement-with-bad-date.json', {
         "'Tuesday' is not a 'date'",
     }),
-    ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-with-invalid-statement-id.json', {
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json', {
         "'too-short-so-fail' is too short",
     }),
-    ('data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json', {
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-statement-type.json', {
         "'statementType' is a required property",
     }),
 ])
@@ -141,14 +141,14 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     (None, [
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/person-statement/valid/valid-person-statement.json',
-        'data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-with-invalid-statement-id.json',
+        'data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json',
     ], {
         "'too-short-so-fail' is too short"
     }),
     (None, [
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/person-statement/valid/valid-person-statement.json',
-        'data/beneficial-ownership-statement/invalid/beneficial-ownership-statement-no-statement-type.json',
+        'data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-statement-type.json',
     ], {
         "'statementType' is a required property",
     }),

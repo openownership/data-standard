@@ -68,18 +68,18 @@ DETAILS OF STATEMENT IDENTIFIERS HERE
 
 The schema consists of a number of components which are detailed below, along with their definition and data types.
 
-Statements: [Beneficial ownership statements](#beneficialownershipstatement); [Entity statements](#entitystatement); [Person statements](#personstatement)
+Statements: [Ownership or control statements](#beneficialownershipstatement); [Entity statements](#entitystatement); [Person statements](#personstatement)
 
 Common components: 
 
 <!--TODO - CHECK THIS -->Statements must be packaged up in a [statement package](#statement-packages) for a [data release](building-data-releases.md).
 
-### BeneficialOwnershipStatement
+### OwnershipOrControlStatement
 
-A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided.
+An ownership or control statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided.
 
 ```eval_rst
-.. jsonschema:: ../../schema/beneficial-ownership-statement.json
+.. jsonschema:: ../../schema/ownership-or-control-statement.json
     :collapse: interests,source,annotations
 ```
 

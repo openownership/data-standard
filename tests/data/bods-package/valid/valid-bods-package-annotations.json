@@ -49,7 +49,7 @@
   },
   {
     "statementID": "ac11f4c3-3dc5-499b-acc5-599632187ebd",
-    "statementType": "beneficialOwnershipStatement",
+    "statementType": "ownershipOrControlStatement",
     "statementDate": "2016-04-06",
     "subject": {
         "describedByEntityStatement": "cfd1747f-9fbc-461a-af94-710120705b4c"

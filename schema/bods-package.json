@@ -12,7 +12,7 @@
         "$ref": "person-statement.json"
       },
       {
-        "$ref": "beneficial-ownership-statement.json"
+        "$ref": "ownership-or-control-statement.json"
       }
     ]
   }

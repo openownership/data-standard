@@ -29,7 +29,7 @@ def schema_path_from_statement(statement):
         'annotationStatement': 'annotation-statement.json',
         'entityStatement': 'entity-statement.json',
         'personStatement': 'person-statement.json',
-        'beneficialOwnershipStatement': 'beneficial-ownership-statement.json',
+        'ownershipOrControlStatement': 'ownership-or-control-statement.json',
     }
     statement_type = statement.get('statementType')
     if not statement_type:
@@ -48,7 +48,7 @@ def check_ids(statement, entity_statement_ids, person_statement_ids):
             entity_statement_ids.add(statement_id)
         elif statement_type == 'personStatement':
             person_statement_ids.add(statement_id)
-    if statement_type == 'beneficialOwnershipStatement':
+    if statement_type == 'ownershipOrControlStatement':
         entity_statement_id = statement.get('subject', {}).get('describedByEntityStatement', '')
         if entity_statement_id not in entity_statement_ids:
             raise UnrecognisedStatementID("subject/describedByEntityStatement '{}' does not match any known entities".format(entity_statement_id))
