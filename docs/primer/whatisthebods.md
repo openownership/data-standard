@@ -6,7 +6,7 @@ The value from beneficial ownership data comes when we can share it easily, know
 
 Bringing together data from a variety of sources can give us insights into sprawling or complicated ownership and control structures. But, without common standards, combining and analysing data from different sources can be extremely difficult, expensive and time-consuming.
 
-![Data sources separately feeding into an unclear picture.](_assets/Diag7-dataStandardBlackBox.svg)
+![Data sources separately feeding into an unclear picture.](../_assets/Diag7-dataStandardBlackBox.svg)
 
 When we only have scattered documents to draw upon, the bigger picture of beneficial ownership remains obscure. 
 
@@ -18,7 +18,7 @@ The Beneficial Ownership Data Standard (BODS) provides a structured data format,
 
 * The [user guides](userguides.md) give support for publishers and users of the data.
 
-![A standardised 'template' for data makes processing it easier, leading to a clear picture.](_assets/Diag8-dataStandardTemplate.svg)
+![A standardised 'template' for data makes processing it easier, leading to a clear picture.](../_assets/Diag8-dataStandardTemplate.svg)
 
 
 Using BODS simplifies the sharing and use of beneficial ownership information.
@@ -27,7 +27,7 @@ Using BODS simplifies the sharing and use of beneficial ownership information.
 
 The data schema describes how data about the beneficial owners of a legal entity can be organized and exchanged. The schema is defined in a structured data format called JSON.
 
-![Company documents containing beneficial ownership information: the related structured data representation of these documents is on the right.](_assets/Diag9-JSONdata.svg)
+![Company documents containing beneficial ownership information: the related structured data representation of these documents is on the right.](../_assets/Diag9-JSONdata.svg)
 
 Using the popular JSON format facilitates computerised access and analysis of the data, whilst also providing human-readable data. 
 

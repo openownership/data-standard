@@ -32,9 +32,4 @@ In order to enable worldwide use of the Standard, it does not directly define th
     
     The Standard is well-defined yet flexible: as suited for use by national registers of beneficial ownership as by corporate researchers.
 
-``` 
-
-
-
-
-
+```

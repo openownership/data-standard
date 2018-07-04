@@ -88,9 +88,9 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 .. toctree::
    :maxdepth: 1
 
-   primer.md
-   data.md
-   userguides.md
-   examples.md
-   toolbox.md
-   about.md
+   primer/index.md
+   schema/index.md
+   userguides/index.md
+   examples/index.md
+   toolbox/index.md
+   about/index.md

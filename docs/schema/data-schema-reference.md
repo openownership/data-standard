@@ -23,7 +23,7 @@ This data model is intended for use in the representation of information on Ulti
 
 Data is published as a series of related statements. Each statement represents information provided by a particular source at a particular point in time. 
 
-![DRAFT (ToDo: Replace) Schematic representation of schema conceptual model](_assets/data-schema-model-2.svg)
+![DRAFT (ToDo: Replace) Schematic representation of schema conceptual model](../_assets/data-schema-model-2.svg)
 
 **Statements describe:**
 
@@ -79,28 +79,28 @@ Common components:
 A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided.
 
 ```eval_rst
-.. jsonschema:: ../schema/beneficial-ownership-statement.json
+.. jsonschema:: ../../schema/beneficial-ownership-statement.json
     :collapse: interests,source,annotations
 ```
 
 ### EntityStatement
 
 ```eval_rst
-.. jsonschema:: ../schema/entity-statement.json
+.. jsonschema:: ../../schema/entity-statement.json
    :collapse: identifiers,addresses,source
 ```
 
 ### PersonStatement
 
 ```eval_rst
-.. jsonschema:: ../schema/person-statement.json
+.. jsonschema:: ../../schema/person-statement.json
    :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses
 ```
 
 ### Interest
 
 ```eval_rst
-.. jsonschema:: ../schema/components.json
+.. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Interest
    :collapse: share,annotations
 ```
@@ -108,14 +108,14 @@ A beneficial ownership statement is made up of statements about an entity, an in
 ### Share
 
 ```eval_rst
-.. jsonschema:: ../schema/components.json
+.. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Interest/properties/share
 ```
 
 ### Name
 
 ```eval_rst
-.. jsonschema:: ../schema/components.json
+.. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Name
 ```
 
@@ -125,7 +125,7 @@ The identifier component is used to connect a statement to the real-world person
 
 
 ```eval_rst
-.. jsonschema:: ../schema/components.json
+.. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Identifier
 ```
 
@@ -134,7 +134,7 @@ The identifier component is used to connect a statement to the real-world person
 Due to the diversity of address formats used across systems, and the extent to which data is inconsistently entered across these data fields in source systems and legacy datasets, the schema uses a very simple address format for data exchange - relying upon consuming systems to parse addresses before carrying out any structured comparison. However, designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See [issue 18](https://github.com/openownership/data-standard/issues/18) for more details.
 
 ```eval_rst
-.. jsonschema:: ../schema/components.json
+.. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Address
 ```
 
@@ -143,7 +143,7 @@ Due to the diversity of address formats used across systems, and the extent to w
 See [the provenance pages](provenance.md) for a discussion of provenance modelling.
 
 ```eval_rst
-.. jsonschema:: ../schema/components.json
+.. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Source
 ```
 
@@ -152,7 +152,7 @@ See [the provenance pages](provenance.md) for a discussion of provenance modelli
 The annotation property currently allows for an array of simple annotation objects. This is a placeholder which could be extended in future to include structured information qualifying the nature of the interest held.
 
 ```eval_rst
-.. jsonschema:: ../schema/components.json
+.. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Annotation
 ```
 
@@ -171,7 +171,7 @@ See [Updating statements](updating-statements.md) for technical guidance on when
 At the top level of any structured file are arrays (packages) of statements. All the statements in a package must be the same type of object; that is, all ```beneficialOwnershipStatements```, all ```entityStatements```, all ```beneficialOwnershipStatements```, or similar. See [Building a release package](building-release-package.md) for technical guidance.
 
 ```eval_rst
-.. jsonschema:: ../schema/bods-package.json
+.. jsonschema:: ../../schema/bods-package.json
 ```
 
 ## Modelling notes

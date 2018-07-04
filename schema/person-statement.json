@@ -54,7 +54,7 @@
       "description": "An array of ISO 2-Digit country codes representing nationalities held by this individual.",
       "type": "array",
       "items": {
-        "$ref": "components.json#definitions/Country"
+        "$ref": "components.json#/definitions/Country"
       }
     },
     "placeOfResidence": {
@@ -96,7 +96,7 @@
       "description": "One or more descriptions of this person's Politically-Exposed Person (PEP) status.",
       "type": "array",
       "items": {
-        "$ref": "components.json#definitions/PepStatus"
+        "$ref": "components.json#/definitions/PepStatus"
       }
     },
     "replacesStatement": {
