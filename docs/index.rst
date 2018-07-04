@@ -13,13 +13,18 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
    Get an overview of beneficial ownership and why a standardised format for data is important.
 
-   - What is beneficial ownership?
-   - What is the Data Standard?
-   - What resources and tools are available?
+   .. cssclass:: primaryfrontpageboxlink
 
-   .. cssclass:: frontpageboxlink
+      :doc:`Visit the primer <primer/index>`
 
-      :doc:`Visit the primer <primer>`
+   .. cssclass:: secondaryfrontpageboxlink
+
+      :doc:`What is beneficial ownership? <primer/whatisbo>`
+
+   .. cssclass:: secondaryfrontpageboxlink
+
+      :doc:`What is the Data Standard? <primer/whatisthebods>`
+
 
 
 
@@ -31,15 +36,21 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
    Understand how to package up and release beneficial ownership data.
 
-   - The data model
-   - Schema browser
-   - JSON validator
-   - Requirements for publication systems
+   .. cssclass:: primaryfrontpageboxlink
 
-   .. cssclass:: frontpageboxlink
+      :doc:`Visit the Data Schema <schema/index>`
 
-      :doc:`Visit the primer <primer>`
+   .. cssclass:: secondaryfrontpageboxlink
 
+      :doc:`The data model  <schema/modelling-beneficial-ownership-info>`
+
+   .. cssclass:: secondaryfrontpageboxlink
+
+      :doc:`Schema browser <schema/data-schema-browser>`
+
+   .. cssclass:: secondaryfrontpageboxlink
+
+      :doc:`Requirements for publication systems <schema/functional-requirements>`
 
 .. raw:: html
 
@@ -58,10 +69,9 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
    - Validating and verifying data
    - Updating data
 
-   .. cssclass:: frontpageboxlink
+   .. cssclass:: primaryfrontpageboxlink
 
-      :doc:`Visit the primer <primer>`
-
+      :doc:`Visit the User Guides <userguides/index>`
 
 
 .. container:: frontpageboxright
@@ -72,13 +82,15 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
    Learn to interpret beneficial ownership data.
 
-   - Schema reference
-   - Interpreting beneficial ownership data
-   - Example data
+   .. cssclass:: primaryfrontpageboxlink
 
-   .. cssclass:: frontpageboxlink
+      :doc:`Visit the User Guides <userguides/index>`
 
-      :doc:`Visit the primer <primer>`
+
+   .. cssclass:: secondaryfrontpageboxlink
+
+      :doc:`Schema reference <schema/data-schema-reference>`
+
 
 
 .. raw:: html
