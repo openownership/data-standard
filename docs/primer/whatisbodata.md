@@ -17,7 +17,7 @@ And so on.
 
 The data is often included in companies’ annual reports, founding articles and filings to regulatory authorities. Bringing it all together can build the big picture about a company’s beneficial owners.
 
-![A variety of information sources may hold beneficial ownership data](_assets/Diag5-sourcesData.svg)
+![A variety of information sources may hold beneficial ownership data](../_assets/Diag5-sourcesData.svg)
 
 <h2>...presenting challenges when sharing or collating beneficial ownership information...</h2>
 
@@ -32,7 +32,7 @@ Accessing this data and understanding its relevance to beneficial ownership can 
 
 Increasingly, governments and regulatory authorities require beneficial ownership data to be disclosed and filed in official registers.
 
-![Data has to be brought together for registration](_assets/Diag6-registers.svg)
+![Data has to be brought together for registration](../_assets/Diag6-registers.svg)
 
 These challenges require us to structure and standardise beneficial ownership data, so that it has a reliable scope and predictable format.
 
