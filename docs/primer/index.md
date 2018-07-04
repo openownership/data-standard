@@ -7,10 +7,10 @@ Primer
 .. toctree::
    :maxdepth: 1
 
-   whatisbo.md
-   whyisbo.md
-   whatisbodata.md
-   whatisthebods.md
+   whatisbo.rst
+   whyisbo.rst
+   whatisbodata.rst
+   whatisthebods.rst
    whatdoesbodscover.md
    
 
