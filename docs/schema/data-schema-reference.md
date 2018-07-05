@@ -80,7 +80,7 @@ An ownership or control statement is made up of statements about an entity, an i
 
 ```eval_rst
 .. jsonschema:: ../../schema/ownership-or-control-statement.json
-    :collapse: interests,source,annotations
+    :collapse: interests,source,annotations,interestedParty
 ```
 
 ### EntityStatement
@@ -103,6 +103,14 @@ An ownership or control statement is made up of statements about an entity, an i
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Interest
    :collapse: share,annotations
+```
+
+### InterestedParty
+
+```eval_rst
+.. jsonschema:: ../../schema/ownership-or-control-statement.json
+   :pointer: /properties/interestedParty
+   :collapse: 
 ```
 
 ### Share

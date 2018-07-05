@@ -36,6 +36,41 @@
       ]
     },
     "interestedParty": {
+      "$ref": "#/definitions/InterestedParty"
+    },
+    "interests": {
+      "title": "Interests",
+      "description": "A description of the interests held by the interestedParty covered by this statement in the entity covered by this statement.",
+      "type": "array",
+      "items": {
+        "$ref": "components.json#/definitions/Interest"
+      }
+    },
+    "source": {
+      "title": "Source",
+      "description": "The source of the information that links the entity and the interested party, or that supports a null statement.",
+      "$ref": "components.json#/definitions/Source"
+    },
+    "annotations": {
+      "title": "Annotations",
+      "description": "Annotations about this statement or parts of this statement",
+      "type": "array",
+      "items": {
+        "$ref": "components.json#/definitions/Annotation"
+      }
+    },
+    "replacesStatement": {
+      "$ref": "components.json#/definitions/ReplacesStatement"
+    }
+  },
+  "required": [
+    "statementID",
+    "statementType",
+    "subject",
+    "interestedParty"
+  ],
+  "definitions":{
+    "InterestedParty": {
       "title": "Interested party",
       "description": "The interested party has some level of ownership or control over the entity referenced in this ownership or control statement. This should be described with reference to either an entity statement or person statement, or, where the interestedParty is unknown, details of why. ",
       "type": "object",
@@ -76,36 +111,6 @@
           ]
         }
       }
-    },
-    "interests": {
-      "title": "Interests",
-      "description": "A description of the interests held by the interestedParty covered by this statement in the entity covered by this statement.",
-      "type": "array",
-      "items": {
-        "$ref": "components.json#/definitions/Interest"
-      }
-    },
-    "source": {
-      "title": "Source",
-      "description": "The source of the information that links the entity and the interested party, or that supports a null statement.",
-      "$ref": "components.json#/definitions/Source"
-    },
-    "annotations": {
-      "title": "Annotations",
-      "description": "Annotations about this statement or parts of this statement",
-      "type": "array",
-      "items": {
-        "$ref": "components.json#/definitions/Annotation"
-      }
-    },
-    "replacesStatement": {
-      "$ref": "components.json#/definitions/ReplacesStatement"
     }
-  },
-  "required": [
-    "statementID",
-    "statementType",
-    "subject",
-    "interestedParty"
-  ]
+  }
 }
