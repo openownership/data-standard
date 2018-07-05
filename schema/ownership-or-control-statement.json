@@ -39,7 +39,6 @@
       "title": "Interested party",
       "description": "The interested party has some level of ownership or control over the entity referenced in this ownership or control statement. This should be described with reference to either an entity statement or person statement, or, where the interestedParty is unknown, details of why. ",
       "type": "object",
-      "format":"grid",
       "properties": {
         "describedByEntityStatement": {
           "title": "Described by entity statement",
@@ -76,24 +75,7 @@
               "reason"
           ]
         }
-      },
-      "oneOf": [
-        {
-          "required": [
-            "describedByEntityStatement"
-          ]
-        },
-        {
-          "required": [
-            "describedByPersonStatement"
-          ]
-        },
-        {
-          "required": [
-            "unspecified"
-          ]
-        }
-      ]
+      }
     },
     "interests": {
       "title": "Interests",
