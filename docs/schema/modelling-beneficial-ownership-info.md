@@ -16,13 +16,13 @@ Details of how an interested party controls or owns a company or other legal ent
 
 Details of the subject of an ownership or control statement and its interested party are wrapped in their own statements. The ownership or control statement refers out to these statements, acting as a connector.
 
-![An ownership or control ownership statement block containing two 'interests': one a 60% share-holding interest, the other a 30% voting-rights interest](_assets/data-schema-model-2.svg)
+![An ownership or control statement block containing two 'interests': one a 60% share-holding interest, the other a 30% voting-rights interest](_assets/data-schema-model-2.svg)
 
 ## Statements as claims
 
 Each statement represents a claim about beneficial ownership made by a particular source at a particular point in time.
 
-![An ownership or control ownership statement block containing a source block with type-selfDeclaration, retrievedAt date of 2018-11-07 and assertedBy value of Acme Industries Ltd. Statement also has statementDate of 2018-07-12](_assets/data-schema-model-3.svg)
+![An ownership or control statement block containing a source block with type-selfDeclaration, retrievedAt date of 2018-11-07 and assertedBy value of Acme Industries Ltd. Statement also has statementDate of 2018-07-12](_assets/data-schema-model-3.svg)
 
 Modelling beneficial ownership information in this way allows us to make sense of data received from multiple sources over extended periods of time. In particular, it allows:
 

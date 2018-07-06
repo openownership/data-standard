@@ -1,4 +1,0 @@
-{
-  "test_data.py::test_invalid_statement_json_iter_errors[data/ownership-or-control-statement/valid/valid-ownership-or-control-statement.json-expected_errors4]": true,
-  "test_data.py::test_valid_statement_json[data/ownership-or-control-statement/valid/valid-ownership-or-control-statement.json]": true
-}

@@ -76,7 +76,7 @@ Common components:
 
 ### OwnershipOrControlStatement
 
-An ownership or control statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided.
+An ownership or control statement is made up of statements about an entity, an interestedParty (either an entity, a person or unspecified party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided.
 
 ```eval_rst
 .. jsonschema:: ../../schema/ownership-or-control-statement.json
