@@ -221,7 +221,7 @@
       "properties": {
         "type": {
           "title": "Type of interest",
-          "description": "A codelist value indicating the nature of the interest. See the [interestType codelist](interesttype)",
+          "description": "A codelist value indicating the nature of the interest. See the [interestType codelist](#interesttype)",
           "type": "string",
           "enum": [
             "shareholding",

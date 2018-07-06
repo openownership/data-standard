@@ -283,7 +283,7 @@ TODO.
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/unspecifiedParty.csv
+   :file: ../../schema/codelists/unspecifiedReason.csv
 ```
 
 
