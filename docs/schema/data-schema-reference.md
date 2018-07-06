@@ -194,6 +194,90 @@ This section will outline some of the more complex modelling decisions, such as:
 TODO.
 
 
+## Codelists
+
+### AddressType
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../../schema/codelists/addressType.csv
+```
+
+### AnnotationMotivation
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../../schema/codelists/annotationMotivation.csv
+```
+
+### EntityType
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../../schema/codelists/entityType.csv
+```
+
+### InterestLevel
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../../schema/codelists/interestLevel.csv
+```
+
+### NameType
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../../schema/codelists/nameType.csv
+```
+
+### PersonType
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../../schema/codelists/personType.csv
+```
+
+### Source
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../../schema/codelists/source.csv
+```
+
+### StatementType
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../../schema/codelists/statementType.csv
+```
+
+### UnspecifiedParty
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../../schema/codelists/unspecifiedParty.csv
+```
+
+
 ## Normative references
 
 * JSON: https://tools.ietf.org/html/rfc8259 

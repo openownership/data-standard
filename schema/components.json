@@ -26,7 +26,9 @@
               "thirdParty",
               "primaryResearch",
               "verified"
-            ]
+            ],
+            "codelist":"source.csv",
+            "openCodelist":false
           }
         },
         "description":{
@@ -133,7 +135,9 @@
             "registered",
             "service",
             "alternative"
-          ]
+          ],
+          "codelist":"addressType.csv",
+          "openCodelist":false
         },
         "address":{
           "title":"Address",
@@ -161,7 +165,7 @@
       "properties":{
         "type":{
           "title":"Type",
-          "description":"What kind of name is this?",
+          "description":"What kind of name is this? See the [nameType](nametype) codelist.",
           "type":"string",
           "enum":[
             "individual",
@@ -171,7 +175,9 @@
             "aka",
             "nick",
             "birth"
-          ]
+          ],
+          "codelist":"nameType.csv",
+          "openCodelist":false
         },
         "fullName":{
           "title":"Full name",
@@ -202,14 +208,16 @@
       "properties":{
         "type":{
           "title":"Type of interest",
-          "description":"A codelist value indicating the nature of the interest.",
+          "description":"A codelist value indicating the nature of the interest. See the [interestType codelist](interesttype)",
           "type":"string",
           "enum":[
             "shareholding",
             "voting-rights",
             "appointment-of-board",
             "influence-or-control"
-          ]
+          ],
+          "codelist":"interestType.csv",
+          "openCodelist":false
         },
         "interestLevel":{
           "title":"Interest level",
@@ -219,7 +227,9 @@
             "direct",
             "indirect",
             "unknown"
-          ]
+          ],
+          "codelist":"interestLevel.csv",
+          "openCodelist":false
         },
         "details":{
           "title":"Details",

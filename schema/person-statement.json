@@ -15,7 +15,9 @@
         "description": "This should always be 'personStatement.",
         "type": "string",
         "enum": ["personStatement"],
-        "propertyOrder": 2
+        "propertyOrder": 2,
+        "openCodelist":false,
+        "codelist":"statementType.csv"
     },
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate",
@@ -23,14 +25,16 @@
     },
     "personType": {
       "title": "Person type",
-      "description": "The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, but information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'. Where the beneficial owner has been identified use knownPerson.",
+      "description": "Use the [personType codelist](#persontype). The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, but information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'. Where the beneficial owner has been identified use knownPerson.",
       "type": "string",
       "enum": [
         "anonymousPerson",
         "unknownPerson",
         "knownPerson"
       ],
-      "propertyOrder": 4
+      "propertyOrder": 4,
+      "codelist":"personType.csv",
+      "openCodelist":false  
     },
     "missingInfoReason": {
       "title": "Missing information reason(s)",

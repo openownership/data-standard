@@ -1,0 +1,4 @@
+code,title,description,technical note
+personStatement,Person Statement,,The parent object should be validated using the person-statement schema.
+entityStatement,Entity Statement,,The parent object should be validated using the entity-statement schema
+ownershipOrControlStatement,Ownership or Control Statement,,The parent object should be validated using the ownership-or-control-statement schema. 
