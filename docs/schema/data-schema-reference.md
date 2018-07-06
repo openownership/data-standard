@@ -29,7 +29,7 @@ Data is published as a series of related statements. Each statement represents i
 
 * [Entities](#entitystatement) - including registered legal entities that are the subject of ownership such as companies, as well as non-registered entities such as trusts, and artificial entities such as joint shareholding arrangements
 * [Persons](#personstatement) - providing details of the natural persons who stand in  relationships of ultimate beneficial ownership or control
-* [Beneficial Ownership Interests](#beneficialownershipStatement) - providing details of the interest held by one entity in another, or one person in an entity by reference to the statements that describe those entities and persons
+* [Beneficial Ownership Interests](#ownershipOrControlStatement) - providing details of the interest held by one entity in another, or one person in an entity by reference to the statements that describe those entities and persons
 
 Provenance information (sources) and annotations can be attached to each statement to provide an audit trail on where information was obtained from, and any verification of the information that has taken place. 
 
@@ -39,7 +39,7 @@ Both entity and person statements include name and identifier blocks that can be
 
 The canonical serialization of BODS data is as a [JSON document](https://tools.ietf.org/html/rfc8259). A JSON BODS file SHOULD consists of a series of ordered statements within a top-level array. 
 
-Each of the entityStatements or personStatements referenced by a particular [beneficialOwnershipStatement] MUST appear before that particular statement in the ordered array. 
+Each of the entityStatements or personStatements referenced by a particular [ownershipOrControlStatement] MUST appear before that particular statement in the ordered array. 
 
 BODS data MAY also be serialized in tabular form, using the relative JSON Pointer from the statement root for each relevant field as the column header. For example, the extract:
 
@@ -68,18 +68,18 @@ DETAILS OF STATEMENT IDENTIFIERS HERE
 
 The schema consists of a number of components which are detailed below, along with their definition and data types.
 
-Statements: [Beneficial ownership statements](#beneficialownershipstatement); [Entity statements](#entitystatement); [Person statements](#personstatement)
+Statements: [Ownership or control statements](#ownershipOrControlStatement); [Entity statements](#entitystatement); [Person statements](#personstatement)
 
 Common components: 
 
 <!--TODO - CHECK THIS -->Statements must be packaged up in a [statement package](#statement-packages) for a [data release](building-data-releases.md).
 
-### BeneficialOwnershipStatement
+### OwnershipOrControlStatement
 
-A beneficial ownership statement is made up of statements about an entity, an interestedParty (either an entity, a person or null party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided.
+An ownership or control statement is made up of statements about an entity, an interestedParty (either an entity, a person or unspecified party), and details of the interest. Additionally, annotations on the interest, provenance and versioning information can be provided.
 
 ```eval_rst
-.. jsonschema:: ../../schema/beneficial-ownership-statement.json
+.. jsonschema:: ../../schema/ownership-or-control-statement.json
     :collapse: interests,source,annotations
 ```
 
@@ -168,7 +168,7 @@ See [Updating statements](updating-statements.md) for technical guidance on when
 
 ### Statement packages
 
-At the top level of any structured file are arrays (packages) of statements. All the statements in a package must be the same type of object; that is, all ```beneficialOwnershipStatements```, all ```entityStatements```, all ```beneficialOwnershipStatements```, or similar. See [Building a release package](building-release-package.md) for technical guidance.
+At the top level of any structured file are arrays (packages) of statements. All the statements in a package must be the same type of object; that is, all ```ownershipOrControlStatements```, all ```entityStatements```, all ```ownershipOrControlStatements```, or similar. See [Building a release package](building-release-package.md) for technical guidance.
 
 ```eval_rst
 .. jsonschema:: ../../schema/bods-package.json

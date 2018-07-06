@@ -282,7 +282,7 @@
     },
     "Annotation":{
       "title":"Annotation",
-      "description":"An annotation provides additional information about beneficial ownership data being provided. Annotations can be provided in free-text, and can apply to a whole statement, an object or a single field. Additional extended properties can be included on the annotation object to provide structured data where required.",
+      "description":"An annotation provides additional information about ownership or control data being provided. Annotations can be provided in free-text, and can apply to a whole statement, an object or a single field. Additional extended properties can be included on the annotation object to provide structured data where required.",
       "type":"object",
       "properties":{
         "statementPointerTarget": {
