@@ -232,6 +232,15 @@ TODO.
    :file: ../../schema/codelists/interestLevel.csv
 ```
 
+### InterestType
+
+```eval_rst
+.. csv-table::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../../schema/codelists/interestType.csv
+```
+
 ### NameType
 
 ```eval_rst
