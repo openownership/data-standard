@@ -1,0 +1,12 @@
+{
+  "statementID": "62d05c14-9fd8-45c1-9f4c-ec2469f67a87",
+  "statementType": "entityStatement",
+  "entityType": "registeredEntity",
+  "name": "RENCO Holding Company",
+  "identifiers": [
+    {
+      "scheme": "XE-LO-COH",
+      "id": "28367095"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "statementID": "f98459ce-a1f9-48d2-a2d2-324e5e07ff29",
+  "statementType": "entityStatement",
+  "entityType": "registeredEntity",
+  "name": "REN Consulting Limited",
+  "identifiers": [
+    {
+      "scheme": "XE-KS-SRC",
+      "id": "93821344"
+    }
+  ]
+}
