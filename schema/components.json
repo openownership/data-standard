@@ -127,10 +127,11 @@
       ]
     },
     "ID": {
-      "title": "ID",
+      "title": "Statement Identifier",
       "description": "A persistent globally unique identifier for this statement.",
       "type": "string",
-      "minLength": 32
+      "minLength": 32,
+      "maxLenth":64
     },
     "Address": {
       "title": "Address",

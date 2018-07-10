@@ -1,7 +1,10 @@
+.. _conformance:
+
 Conformance and validation
 ===========================
 
-## Conformance statement
+Conformance statement
+---------------------
 
 * A conforming implementation **may** use only a subset of this specification’s terms.
 * It **must not** use terms from outside this specification’s terms where this specification’s terms would suffice.
@@ -9,13 +12,15 @@ Conformance and validation
 * Its usage of this specification’s terms **must** be consistent with the semantics of those terms.
 * If an implementation serializes to JSON, its serializations **must** validate against this specification’s JSON Schema.
 
-(Statement [adapted from Popolo Project specification](http://www.popoloproject.com/specs/#conformance))
+(Statement `adapted from Popolo Project specification <http://www.popoloproject.com/specs/#conformance>`_)
 
-## Extending the schema
+Extending the schema
+--------------------
 
-Publishers providing additional properties in their implementations are encouraged to [document these in the project issue tracker](https://github.com/openownership/data-standard/issues/) with the 'extensions' tag, and to re-use [other publisher's extensions](https://github.com/openownership/data-standard/issues?q=is%3Aissue+label%3Aextension) where possible.
+Publishers providing additional properties in their implementations are encouraged to `document these in the project issue tracker <https://github.com/openownership/data-standard/issues/>`_ with the 'extensions' tag, and to re-use `other publisher's extensions <https://github.com/openownership/data-standard/issues?q=is%3Aissue+label%3Aextension>`_ where possible.
 
-## Validation
+Validation
+----------
 
 No public validator available for the beta release is currently available.
 

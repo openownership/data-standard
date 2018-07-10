@@ -9,7 +9,7 @@ Technical requirements
 .. toctree::
    :maxdepth: 1
 
-   statement-IDs.md
+   statement-identifiers
    updating-statements.md
    serialization.md
    identifiers.md
