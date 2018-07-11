@@ -1,0 +1,21 @@
+{
+  "statementID": "2dc0015e-7ae4-4c21-945e-0651d1c49e81",
+  "statementType": "ownershipOrControlStatement",
+  "subject": {
+    "describedByEntityStatement": "98b4bbd8-80cd-4546-bc2c-c32f268a3fa6"
+  },
+  "interests": [
+    {
+      "type": "voting-rights",
+      "interestLevel": "direct",
+      "share": {
+        "minimum": 25,
+        "maximum": 50
+      },
+      "startDate": "2016-07-07"
+    }
+  ],
+  "interestedParty": {
+    "describedByPersonStatement": "5eb1e15c-fd25-40c7-8a75-246c79654185"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "statementID": "4a0e93d8-20da-4dae-b38d-eef57490037e",
+  "statementType": "ownershipOrControlStatement",
+  "subject": {
+    "describedByEntityStatement": "309523dc-8bdc-48a6-bca5-bdd3c879db65"
+  },
+  "interests": [
+    {
+      "type": "shareholding",
+      "interestLevel": "direct",
+      "share": {
+        "exact": 25
+      },
+      "startDate": "2016-07-07"
+    },
+    {
+      "type": "voting-rights",
+      "interestLevel": "direct",
+      "share": {
+        "exact": 25
+      },
+      "startDate": "2016-07-07"
+    }
+  ],
+  "interestedParty": {
+    "describedByPersonStatement": "e5027662-b2bf-4a55-8319-1e4ff1c7e6a2"
+  }
+}
