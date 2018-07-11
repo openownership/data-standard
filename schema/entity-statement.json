@@ -50,6 +50,17 @@
       "type": "string",
       "propertyOrder": 6
     },
+    "alternateNames": {
+      "title": "Alternative names",
+      "description": "An array of other names this entity is known by.",
+      "type": "array",
+      "items":{
+        "type":"string",
+        "title":"Name",
+        "description":"A name this entity is known by."
+      },
+      "propertyOrder": 7
+    },
     "incorporatedInJurisdiction": {
       "title": "Incorporated In Jurisdiction",
       "description": "Details on where this legal entity is incorporated",

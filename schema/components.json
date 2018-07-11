@@ -11,7 +11,7 @@
     },
     "Source": {
       "title": "Source",
-      "description": "The source object is used to provide basic provenance information about a statement or a statement fragment. A source object can also be used in annotations that link a statement or statement fragment to contextual information published elsewhere.",
+      "description": "The source object is used to explain where information in a statement originated from, and to link to supporting information.",
       "type": "object",
       "properties": {
         "type": {
@@ -27,7 +27,7 @@
               "primaryResearch",
               "verified"
             ],
-            "codelist": "source.csv",
+            "codelist": "sourceType.csv",
             "openCodelist": false
           }
         },
@@ -181,7 +181,7 @@
       "properties": {
         "type": {
           "title": "Type",
-          "description": "What kind of name is this? See the [nameType](nametype) codelist.",
+          "description": "What kind of name is this? See the [nameType](#nametype) codelist.",
           "type": "string",
           "enum": [
             "individual",
@@ -350,7 +350,7 @@
         },
         "motivation": {
           "title": "Motivation",
-          "description": "The motivation for this annotation, chosen from a codelist. Commenting should be used with the description field to add contextual comments to a field or statement. Correcting should be used to indicate that original material has been corrected, using the method in the description field. Identifying should be used when original data has been augmented or processed for the purpose of identifying natural persons or legal entities, using the method in the description field. Linking should be used to provide contextual material that explains the statement or field; URLs to linked material can be provided in the url field. Provenance should be used to identify the source of information at a statement or field level. Transformation should be used to describe how data has in fields has been changed from its original form. The new form MAY be provided in the transformedContent field.",
+          "description": "The motivation for this annotation, chosen from a codelist. See the [annotationMotivation](#annotationmotivation) codelist.",
           "type": "string",
           "enum": [
             "commenting",

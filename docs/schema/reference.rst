@@ -390,13 +390,13 @@ PersonType
    :file: ../../schema/codelists/personType.csv
 
 
-Source
-++++++
+SourceType
+++++++++++
 
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/source.csv
+   :file: ../../schema/codelists/sourceType.csv
 
 
 StatementType
