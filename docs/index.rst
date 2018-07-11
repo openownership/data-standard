@@ -42,15 +42,15 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`The data model  <schema/modelling-beneficial-ownership-info>`
+      :doc:`The data model  <schema/concepts>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`Schema browser <schema/data-schema-browser>`
+      :doc:`Schema browser <schema/schema-browser>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`Requirements for publication systems <schema/functional-requirements>`
+      :doc:`Requirements for publication systems <schema/guidance/functional-requirements>`
 
 .. raw:: html
 
@@ -85,7 +85,7 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`Schema reference <schema/data-schema-reference>`
+      :doc:`Schema reference <schema/reference>`
 
 
 
