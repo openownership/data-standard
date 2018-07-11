@@ -164,6 +164,9 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
+
+# Adapted from https://github.com/OpenDataServices/sphinxcontrib-opendataservices/blob/master/sphinxcontrib/opendataservices.py#L50
+# Should eventually move into there
 from sphinx.directives.code import LiteralInclude
 from docutils.parsers.rst import directives, Directive
 import os
