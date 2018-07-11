@@ -69,10 +69,10 @@
     "subject",
     "interestedParty"
   ],
-  "definitions":{
+  "definitions": {
     "InterestedParty": {
       "title": "Interested party",
-      "description": "The interested party has some level of ownership or control over the entity referenced in this ownership or control statement. This should be described with reference to either an entity statement or person statement, or, where the interestedParty is unknown, details of why. ",
+      "description": "The interested party has some level of ownership or control over the entity referenced in this ownership or control statement. This should be described with reference to either an entity statement or person statement, or, where the interested party is unknown, details of why. ",
       "type": "object",
       "properties": {
         "describedByEntityStatement": {
@@ -87,20 +87,23 @@
         },
         "unspecified": {
           "title": "Unspecified or unknown ownership and control",
-          "description": "From the [unspecifiedReason codelist](#unspecifiedreason). When confirmation has been provided that no interested party exists, where ownership and control information does not need to be provided, or where details of ownership and control are unknown, information explaining this should be given. Where there is a natural person with ownership or control, but their name or details are not known, or cannot be disclosed for some reason, a reference to a personStatement should be provided but identifying details of the person left blank. ",
+          "description": "When confirmation has been provided that no interested party exists, where ownership and control information does not need to be provided, or where details of ownership and control are unknown, information explaining this should be given using the unspecified reason and description. Where there is a natural person with ownership or control, but their name or details are not known, or cannot be disclosed for some reason, unspecified should not be used, but instead a reference to a personStatement should be provided but identifying details of the person left blank.",
           "type": "object",
           "properties": {
             "reason": {
               "title": "Reason",
-              "description": "The reason that no interested party can be .",
+              "description": "The reason that an interested party cannot be specified. From the [unspecifiedReason codelist](#unspecifiedreason).",
               "type": "string",
               "enum": [
-                "unknown",
-                "noBeneficialOwners",
-                "noNotifiableOwners"
+                "no-beneficial-owners",
+                "subject-unable-to-confirm-or-identify-beneficial-owner",
+                "interested-party-has-not-provided-information",
+                "subject-exempt-from-disclosure",
+                "interested-party-exempt-from-disclosure",
+                "unknown"
               ],
-              "codelist":"unspecifiedReason.csv",
-              "openCodelist":false
+              "codelist": "unspecifiedReason.csv",
+              "openCodelist": false
             },
             "description": {
               "title": "Description",
@@ -109,7 +112,7 @@
             }
           },
           "required": [
-              "reason"
+            "reason"
           ]
         }
       }

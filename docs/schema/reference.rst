@@ -1,3 +1,5 @@
+.. _schema-reference:
+
 Schema reference
 ================
 
@@ -245,21 +247,40 @@ The identifier component is used to connect a statement to the real-world person
 Address
 +++++++
 
-TODO TODO TODO TODO TODO TODO TODO TODO TODO
-
-Due to the diversity of address formats used across systems, and the extent to which data is inconsistently entered across these data fields in source systems and legacy datasets, the schema uses a very simple address format for data exchange - relying upon consuming systems to parse addresses before carrying out any structured comparison. However, designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See `issue 18 <https://github.com/openownership/data-standard/issues/18>`_ for more details.
+.. json-value:: ../../schema/components.json
+   :pointer: /definitions/Address/description
 
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Address
 
 
+.. note::
+
+    Due to the diversity of address formats used across systems, and the extent to which data is inconsistently entered across these data fields in source systems and legacy datasets, the schema uses a very simple address format for data exchange - relying upon consuming systems to parse addresses before carrying out any structured comparison. However, designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See `issue 18 <https://github.com/openownership/data-standard/issues/18>`_ for more details.
+
 Source
 ++++++
 
-See :any:`the provenance pages <provenance>` for a discussion of provenance modelling.
+.. json-value:: ../../schema/components.json
+   :pointer: /definitions/Source/description
 
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Source
+   :collapse: assertedBy
+
+
+See :any:`the provenance pages <provenance>` for a discussion of provenance modelling.
+
+
+Agent
+++++++
+
+.. json-value:: ../../schema/components.json
+   :pointer: /definitions/Agent/description
+
+.. jsonschema:: ../../schema/components.json
+   :pointer: /definitions/Agent
+   :collapse:
 
 
 Annotation
@@ -286,7 +307,12 @@ Dates MUST be provided according to `ISO 8601 <https://en.wikipedia.org/wiki/ISO
 ReplacesStatement
 +++++++++++++++++
 
-See [Updating statements](updating-statements.md) for technical guidance on when and how to use this property.
+``replacesStatement``
+
+.. json-value:: ../../schema/components.json
+   :pointer: /definitions/ReplacesStatement/description
+
+See :any:`handling changing data <guidance-updating-data>` for technical guidance on working with updates to date. 
 
 
 Statement packages
@@ -296,19 +322,6 @@ At the top level of any structured file are arrays (packages) of statements. All
 
 
 .. jsonschema:: ../../schema/bods-package.json
-
-
-Modelling notes
----------------
-
-This section will outline some of the more complex modelling decisions, such as:
-
-* Trusts - modelled as an entity, with a BO statement for each trustee etc.
-* Joint Shareholding - modelled as an artificial entity with each joint shareholder related by a BO statement to the artificial joint shareholding entity
-* Agreements - modelled as a qualification/annotation on an interest
-
-
-TODO.
 
 
 Codelists
