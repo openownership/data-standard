@@ -77,7 +77,7 @@ In some cases ownership or control is exercised through:
 
 Depending on the particular jurisdiction these are covered by, they may or may not have an registered legal identity. 
 
-In BODS arrangements such as these are treated as a special kind of ``Entity``, expressed with ``entityType``='arrangement'. 
+In BODS arrangements such as these are treated as a special kind of ``Entity``, expressed with ``entityType`` = 'arrangement'. 
 
 This allows control via arrangements to be modelled in two steps, describing how:
 

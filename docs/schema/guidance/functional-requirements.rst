@@ -1,3 +1,5 @@
+.. _functional-requirements:
+
 Functional requirements
 =======================
 

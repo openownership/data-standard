@@ -158,6 +158,7 @@ PersonStatement
 .. jsonschema:: ../../schema/person-statement.json
    :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatus
 
+.. _schema-interest:
 
 Interest
 ++++++++
@@ -169,6 +170,7 @@ Interest
    :pointer: /definitions/Interest
    :collapse: share,annotations
 
+.. _schema-interested-party:
 
 InterestedParty
 +++++++++++++++
@@ -180,6 +182,7 @@ InterestedParty
    :pointer: /properties/interestedParty
    :collapse: 
 
+.. _schema-share:
 
 Share
 +++++
@@ -190,6 +193,7 @@ Share
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Interest/properties/share
 
+.. _schema-jurisdiction:
 
 Jurisdiction
 ++++++++++++
@@ -200,6 +204,7 @@ Jurisdiction
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Jurisdiction
 
+.. _schema-country:
 
 Country
 +++++++
@@ -210,6 +215,7 @@ Country
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Country
 
+.. _schema-name:
 
 Name
 ++++
@@ -220,6 +226,7 @@ Name
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Name
 
+.. _schema-pep-status:
 
 PEPStatus
 +++++++++
@@ -231,6 +238,7 @@ PEPStatus
    :pointer: /definitions/PepStatus
    :collapse: jurisdiction
 
+.. _schema-identifier:
 
 Identifier
 ++++++++++
@@ -243,6 +251,7 @@ The identifier component is used to connect a statement to the real-world person
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Identifier
 
+.. _schema-address:
 
 Address
 +++++++
@@ -258,6 +267,8 @@ Address
 
     Due to the diversity of address formats used across systems, and the extent to which data is inconsistently entered across these data fields in source systems and legacy datasets, the schema uses a very simple address format for data exchange - relying upon consuming systems to parse addresses before carrying out any structured comparison. However, designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See `issue 18 <https://github.com/openownership/data-standard/issues/18>`_ for more details.
 
+.. _schema-source:
+
 Source
 ++++++
 
@@ -271,6 +282,7 @@ Source
 
 See :any:`the provenance pages <provenance>` for a discussion of provenance modelling.
 
+.. _schema-agent:
 
 Agent
 ++++++
@@ -283,6 +295,8 @@ Agent
    :collapse:
 
 
+.. _schema-annotation:
+
 Annotation
 ++++++++++
 
@@ -291,6 +305,7 @@ The annotation property currently allows for an array of simple annotation objec
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Annotation
 
+.. _schema-statement-date:
 
 StatementDate
 +++++++++++++
@@ -303,9 +318,10 @@ Dates MUST be provided according to `ISO 8601 <https://en.wikipedia.org/wiki/ISO
 * A year (YYYY)
 
 
+.. _schema-replaces-statements:
 
 ReplacesStatements
-+++++++++++++++++
+++++++++++++++++++
 
 ``replacesStatements``
 
@@ -314,6 +330,7 @@ ReplacesStatements
 
 See :any:`handling changing data <guidance-updating-data>` for technical guidance on working with updates to date. 
 
+.. _schema-codelists:
 
 Codelists
 ---------

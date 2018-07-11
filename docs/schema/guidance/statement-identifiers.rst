@@ -15,7 +15,7 @@ Statement identifiers should generally be created and used internally within app
 Each publishers should identifier an appropriate strategy for creating and maintaining identifiers. The standard enforces a minimum identifier length of 32 characters, and a maximum length of 64 characters. 
 
 Possible strategies for identifier creation
-------------------------------------------
+-------------------------------------------
 
 * Generating a `UUID <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ for each statement, storing this in internal systems, and updating it whenever the relevant record(s) that make up a statement are updated; 
 
