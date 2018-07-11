@@ -75,12 +75,18 @@
         }
       }
     },
-    "ReplacesStatement": {
-      "title": "Replaces statement",
-      "description": "If this statement replaces a previous statement, provide the globally unique identifier for the previous statement here. Consuming applications are advised to mark the identified statements as no longer active.",
-      "type": "string",
-      "minLength":32,
-      "maxLength":64
+    "ReplacesStatements": {
+      "title": "Replaces statement(s)",
+      "description": "If this statement replaces a previous statement or statements, provide the identifier(s) for the previous statement(s) here. Consuming applications are advised to mark the identified statements as no longer active.",
+      "type":"array",
+      "items":{
+        "title":"Statement identifier",
+        "description":"The identifier of a statement that is no longer active.",
+        "type": "string",
+        "minLength":32,
+        "maxLength":64  
+      }
+      
     },
     "Identifier": {
       "title": "Identifier",

@@ -1,0 +1,109 @@
+[
+  {
+    "statementID": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
+    "statementType": "entityStatement",
+    "statementDate": "2017-11-18",
+    "entityType": "registeredEntity",
+    "name": "CHRINON LTD",
+    "foundingDate": "2010-11-18",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "07444723"
+      }
+    ],
+    "addresses": [
+      {
+        "type": "registered",
+        "address": "Aston House, Cornwall Avenue, London, N3 1LF",
+        "country": "GB",
+        "postCode": "N3 1LF"
+      }
+    ],
+    "incorporatedInJurisdiction": {
+      "code": "GB"
+    }
+  },
+  {
+    "statementID": "26e786f0-54c5-497d-a52d-b83439ce3dad",
+    "statementType": "entityStatement",
+    "statementDate": "2018-01-05",
+    "entityType": "arrangement",
+    "name": "Joint shareholding"
+  },
+  {
+    "statementID": "676ce2ec-e244-409e-85f9-9823e88bc099",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-01-05",
+    "subject": {
+      "describedByEntityStatement": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7"
+    },
+    "interestedParty": {
+      "describedByEntityStatement": "26e786f0-54c5-497d-a52d-b83439ce3dad"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "startDate": "2018-01-01",
+        "share": {
+          "exact": 100
+        }
+      }
+    ]
+  },
+  {
+    "statementID": "17bfeb0d-4a63-41d3-814d-b8a54c81a1f",
+    "statementType": "personStatement",
+    "statementDate": "2018-01-05",
+    "name": "Natalie Coleman"
+  },
+  {
+    "statementID": "d1eb52de-ff02-4690-8359-f4bbf9c128b1",
+    "statementType": "personStatement",
+    "statementDate": "2018-01-05",
+    "name": "Roberto López"
+  },
+  {
+    "statementID": "c222fe05-2bf3-4cc0-b126-f665109d7211",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-01-05",
+    "subject": {
+      "describedByEntityStatement": "26e786f0-54c5-497d-a52d-b83439ce3dad"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "17bfeb0d-4a63-41d3-814d-b8a54c81a1f"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "startDate": "2018-01-01",
+        "share": {
+          "exact": 50
+        }
+      }
+    ]
+  },
+  {
+    "statementID": "c222fe05-2bf3-4cc0-b126-f665109d7211",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-01-05",
+    "subject": {
+      "describedByEntityStatement": "26e786f0-54c5-497d-a52d-b83439ce3dad"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "d1eb52de-ff02-4690-8359-f4bbf9c128b1"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "startDate": "2018-01-01",
+        "share": {
+          "exact": 50
+        }
+      }
+    ]
+  }
+]

@@ -59,8 +59,8 @@
         "$ref": "components.json#/definitions/Annotation"
       }
     },
-    "replacesStatement": {
-      "$ref": "components.json#/definitions/ReplacesStatement"
+    "replacesStatements": {
+      "$ref": "components.json#/definitions/ReplacesStatements"
     }
   },
   "required": [

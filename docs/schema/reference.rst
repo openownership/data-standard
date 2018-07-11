@@ -304,24 +304,15 @@ Dates MUST be provided according to `ISO 8601 <https://en.wikipedia.org/wiki/ISO
 
 
 
-ReplacesStatement
+ReplacesStatements
 +++++++++++++++++
 
-``replacesStatement``
+``replacesStatements``
 
 .. json-value:: ../../schema/components.json
-   :pointer: /definitions/ReplacesStatement/description
+   :pointer: /definitions/ReplacesStatements/description
 
 See :any:`handling changing data <guidance-updating-data>` for technical guidance on working with updates to date. 
-
-
-Statement packages
-------------------
-
-At the top level of any structured file are arrays (packages) of statements. All the statements in a package must be the same type of object; that is, all ```ownershipOrControlStatements```, all ```entityStatements```, all ```ownershipOrControlStatements```, or similar. See [Building a release package](building-release-package.md) for technical guidance.
-
-
-.. jsonschema:: ../../schema/bods-package.json
 
 
 Codelists
