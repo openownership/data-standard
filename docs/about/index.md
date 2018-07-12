@@ -13,9 +13,11 @@ The Standard is being developed under the guidance of OpenOwnership. More detail
    :alt: Timeline of standard development. End of 2016: rapid prototype. 2017, Q2: release of BODS Beta-1. 2017, Q3: initital pilots. 2018, Q3: release of BODS Beta-2. 2019: release of BODS v1.0.
 
 ```
+This is Beta-2 of the Beneficial Ownership Data Standard. The data model has been updated and additional codelist information added since Beta-1.
 
-The Beneficial Ownership Data Standard has not yet reached its first official release. In this Beta form the schema structure is now stable and there are unlikely to be changes to property names. See the complete log of [version-to-version changes](../schema/changelog.html) for more details.
+Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this beta release onwards, any structural changes or major definitional changes will only take place following consultation. A clear [changelog](../schema/changelog.html) will be provided, and the documentation of previous versions maintained in archive form.
 
+The schema contains a structure, fields and codelists but does not yet enforce validation constraints on most fields.
 
 <h2>Get involved</h2>
 
