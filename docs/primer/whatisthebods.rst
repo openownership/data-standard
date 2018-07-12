@@ -41,11 +41,11 @@ The Beneficial Ownership Data Standard (BODS) provides a structured data
 format, along with guidance for collecting, sharing and using data on
 beneficial ownership:
 
--  The `data schema <data.md>`__ describes how and what data should be
+-  The `data schema <../schema/index.html>`__ describes how and what data should be
    shared. It can also inform the design of data collection and
    management systems;
 
--  The `user guides <userguides.md>`__ give support for publishers and
+-  The `technical guidance <../schema/guidance/index.html>`__ provides support for publishers and
    users of the data.
 
 .. figure:: ../_assets/Diag8-dataStandardTemplate.svg
@@ -73,7 +73,7 @@ structured data format called JSON.
 .. figure:: ../_assets/Diag9-JSONdata.svg
    :alt: Company documents containing beneficial ownership information:
      the related structured data representation of these documents is on
-     the right.
+     the right, in JSON.
 
 
 Using the popular JSON format facilitates computerised access and

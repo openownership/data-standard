@@ -1,8 +1,8 @@
-Beneficial Ownership Data Standard (beta)
+Beneficial Ownership Data Standard (Beta)
 ==========================================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis augue at leo euismod, vitae varius nulla elementum.
-Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sollicitudin.
+This website contains the draft specification of the Beneficial Ownership Data Standard (Beta-2 version) plus support for its use. :doc:`Find out more <about/index>` about the standard's development and how to get involved.
+
 
 
 .. container:: frontpageboxleft
@@ -23,7 +23,11 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`What is the Data Standard? <primer/whatisthebods>`
+      :doc:`What is the data standard? <primer/whatisthebods>`
+
+   .. cssclass:: secondaryfrontpageboxlink
+
+      :doc:`About the standard's development <about/index>`
 
 
 
@@ -57,48 +61,13 @@ Ut nec diam non nunc laoreet varius in eu mauris. Vestibulum aliquet viverra sol
    <div class="frontpageboxclear"></div>
 
 
-.. container:: frontpageboxleft
 
-   .. raw:: html
-
-      <h2>For Data Publishers</h2>
-
-   Review your collection, publishing and updating practices.
-
-   .. cssclass:: primaryfrontpageboxlink
-
-      :doc:`Visit the User Guides <userguides/index>`
-
-
-.. container:: frontpageboxright
-
-   .. raw:: html
-
-      <h2>For Data Users</h2>
-
-   Learn to interpret beneficial ownership data.
-
-   .. cssclass:: primaryfrontpageboxlink
-
-      :doc:`Visit the User Guides <userguides/index>`
-
-
-   .. cssclass:: secondaryfrontpageboxlink
-
-      :doc:`Schema reference <schema/reference>`
-
-
-
-.. raw:: html
-
-   <div class="frontpageboxclear"></div>
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
 
-   primer/index.md
-   schema/index.md
-   userguides/index.md
-   examples/index.md
-   toolbox/index.md
-   about/index.md
+   primer/index
+   schema/index
+   examples/index
+   about/index

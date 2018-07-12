@@ -36,6 +36,7 @@ The :ref:`design <key-concepts>` of the standard allows:
 * Competing claims about beneficial ownership to be considered alongside one another.
 * Publishers to use the definitions of beneficial ownership provided by the relevant law or policy framework they are operating under.
 
+
 Although BODS is not a data model for the storage of beneficial ownership information, it can inform the design of data collection and storage systems. A set of :ref:`functional requirements <functional-requirements>` for such databases and systems is available for this purpose.
 
 In order to enable worldwide use of the Standard, it does not directly define thresholds for meeting beneficial ownership criteria. Instead, each statement of beneficial ownership expressed using the Standard can describe the degree of ownership or control, allowing each implementer of the standard to set their own thresholds. 
