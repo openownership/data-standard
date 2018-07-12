@@ -17,6 +17,13 @@ from bods_validate import bods_iter_errors_package, bods_iter_errors_statement
     'data/ownership-or-control-statement/valid/valid-ownership-or-control-statement.json',
     '../examples/flat-serialisation/gb-coh-entity-statement.json',
     '../examples/flat-serialisation/gb-coh-person-statement.json',
+    '../examples/workshop/modelling-bods-data/natalie-coleman-person-statement.json',
+    '../examples/workshop/modelling-bods-data/ren-consulting-limited-natalie-coleman.json',
+    '../examples/workshop/modelling-bods-data/ren-consulting-limited.json',
+    '../examples/workshop/modelling-bods-data/renco-energy-ltd-entity-statement.json',
+    '../examples/workshop/modelling-bods-data/renco-energy-ltd-roberto-lopez.json',
+    '../examples/workshop/modelling-bods-data/renco-holding-company-limited.json',
+    '../examples/workshop/modelling-bods-data/roberto-lopez.json'
 ])
 def test_valid_statement_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
@@ -30,6 +37,7 @@ def test_valid_statement_json(json_path):
     'data/bods-package/valid/valid-bods-package-annotations.json',
     'data/bods-package/valid/valid-bods-package-linking-annotations.json',
     '../examples/flat-serialisation/gb-coh-bods-package.json',
+    '../examples/workshop/modelling-bods-data/bods-package-ren-consulting-limited.json'
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
