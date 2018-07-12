@@ -15,7 +15,7 @@ The Standard is being developed under the guidance of OpenOwnership. More detail
 ```
 This is Beta-2 of the Beneficial Ownership Data Standard. The data model has been updated and additional codelist information added since Beta-1.
 
-Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this beta release onwards, any structural changes or major definitional changes will only take place following consultation. A clear [changelog](../schema/changelog.html) will be provided, and the documentation of previous versions maintained in archive form.
+Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this beta release onwards, any structural changes or major definitional changes will only take place following consultation. A clear [changelog](changelog) will be provided, and the documentation of previous versions maintained in archive form.
 
 The schema contains a structure, fields and codelists but does not yet enforce validation constraints on most fields.
 

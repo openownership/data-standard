@@ -1,4 +1,4 @@
-.. _get-support:
+.. _support:
 
 Support
 -------

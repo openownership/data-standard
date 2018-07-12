@@ -16,7 +16,7 @@ For example, if a source system holds:
 - A registered company number; and
 - A VAT number;
 
-for a company, two entries could be created in the ``Entity/identifiers` array, as in the example below:
+for a company, two entries could be created in the ``Entity/identifiers`` array, as in the example below:
 
 .. code-block:: json
 

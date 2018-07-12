@@ -77,7 +77,7 @@ In some cases ownership or control is exercised through:
 
 Depending on the particular jurisdiction these are covered by, they may or may not have an registered legal identity. 
 
-In BODS arrangements such as these are treated as a special kind of ``Entity``, expressed with ``entityType``='arrangement'. 
+In BODS arrangements such as these are treated as a special kind of ``Entity``, expressed with ``entityType`` = 'arrangement'. 
 
 This allows control via arrangements to be modelled in two steps, describing how:
 
@@ -92,8 +92,12 @@ Direct and indirect ownership and control
 BODS can be used to describe both direct ownership and control (where Person A has a direct share in Company B), or indirect ownership and control (Where Person A is an ultimate beneficial owner of B, but where there may be any number of known or unknown intermediate companies or arrangements). This is indicated by use of the ``interestLevel`` property that can be set for each interest declared. 
 
 
-Sources, Provenance and Annotations
+Sources, provenance and annotations
 -----------------------------------
+
+Each statement should contain information on its source, and whether or not the information it contains has been verified. For example, a statement may be taken from official records, or self declaration - and it may or may not have been checked through some process to verify that the information provided is accurate. 
+
+In some cases, systems processing BODS data may make changes to clean, enhance or otherwise update the data, such as reconciling company names against identifiers. Details of these changes should be recorded as annotations, to allow users to clearly understand the provenance of information.
 
 
 Immutability of statements
@@ -103,6 +107,4 @@ A collection of BODS statements should be treated as a write-only ledger, with n
 
 Statements must be treated as immutable: once a statement is published it must not be republished with the same ``statementID`` but different field values. 
 
-If a particular field needs to be updated, a new statement with a new ``statementID` must be published and the `replacesStatement` property used. See [Updating statements](updating-statements.md).
-
-
+If a particular field needs to be updated, a new statement with a new ``statementID`` must be published and the ``replacesStatement`` property used. See :any:`Updating statements <guidance-updating-data>`

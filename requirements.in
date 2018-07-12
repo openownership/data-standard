@@ -5,4 +5,4 @@ sphinx_rtd_theme
 -e git+https://github.com/rtfd/recommonmark.git@450909bdcf4c5eafde7c89696006530ba7cc78de#egg=recommonmark
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8d0d2bb00742b25707866b0f7a2b6c0c35948c5e#egg=sphinxcontrib-jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@fab0ff0167d32ec243d42f272e0e50766299c078#egg=sphinxcontrib-opendataservices
--e git+https://github.com/openownership/data-standard-sphinx-theme.git@4c08bb88345ebc57cf18266bf574d93cf9a561ba#egg=standard_theme
+-e git+https://github.com/openownership/data-standard-sphinx-theme.git@9f1e94a2f6f87a7366e5e3d05271d9831f832b1f#egg=standard_theme

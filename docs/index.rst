@@ -67,9 +67,7 @@ This website contains the draft specification of the Beneficial Ownership Data S
    :maxdepth: 1
    :hidden:
 
-   primer/index.md
-   schema/index.md
-   userguides/index.md
-   examples/index.md
-   toolbox/index.md
-   about/index.md
+   primer/index
+   schema/index
+   examples/index
+   about/index
