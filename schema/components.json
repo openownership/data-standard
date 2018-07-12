@@ -263,7 +263,7 @@
         },
         "beneficialOwnershipOrControl":{
           "title":"Beneficial ownership or control",
-          "description":"Is this interest one of beneficial ownership or control? A beneficial ownership or control interest is always between a natural person and an entity. Such an interest exists where the person ultimately benefits from, or has a degree of control over, the entity (as specified by the interest). There may be cases where a person has an interest in an entity, but where arrangements or other conditions exist that mean this interest does not qualify as beneficial ownership or control.",
+          "description":"Does this statement assert this as a beneficial ownership or control interest? A beneficial ownership or control interest is always between a natural person and some entity, and exists where the person ultimately benefits from, or has a degree of control over, the entity. There may be cases where a person has an interest in an entity, but where there are arrangements or other conditions that mean this interest does not constitute beneficial ownership or control.",
           "type":"boolean"
         },
         "details": {

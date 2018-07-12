@@ -21,5 +21,5 @@ Possible strategies for identifier creation
 
 * Generating a `UUID <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ as a publisher-related prefix, and appending a local record identifier, and version identifier to it;
 
-* Using an appropriately designed hash function that generates identifiers from a normalised JSON representation of the statement (excluding the `id` field) with a low colision probability. 
+* Using an appropriately designed hash function that generates identifiers from a normalised JSON representation of the statement (excluding the `id` field) with a low collision probability. 
 
