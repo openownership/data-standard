@@ -45,6 +45,7 @@
       {
         "type": "shareholding",
         "interestLevel": "direct",
+        "beneficialOwnershipOrControl":false,
         "startDate": "2018-01-01",
         "share": {
           "exact": 100
@@ -78,6 +79,7 @@
       {
         "type": "shareholding",
         "interestLevel": "direct",
+        "beneficialOwnershipOrControl":true,
         "startDate": "2018-01-01",
         "share": {
           "exact": 50
@@ -99,6 +101,7 @@
       {
         "type": "shareholding",
         "interestLevel": "direct",
+        "beneficialOwnershipOrControl":true,
         "startDate": "2018-01-01",
         "share": {
           "exact": 50
