@@ -1,5 +1,7 @@
-Functional requirements for publication systems
-===============================================
+.. _functional-requirements:
+
+Functional requirements
+=======================
 
 The Beneficial Ownership Data Standard can accommodate data from a range of sources. Collection and publication systems need to ensure that this data is of high quality and that it can be shared efficiently. They therefore need to meet the following functional requirements:
 
@@ -13,9 +15,4 @@ The Beneficial Ownership Data Standard can accommodate data from a range of sour
 
 * Publication systems should be able to validate statements against the JSON schema;
 
-* Publication systems should be able to group statements in statement groups;
-
 * Statements should be immutable.
-
-(TO DO: Include requirements around synchronicity, data model, verification of user updates to information (cf. companies house issue).)
-

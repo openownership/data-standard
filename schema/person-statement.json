@@ -11,13 +11,15 @@
       "propertyOrder": 1
     },
     "statementType": {
-        "title": "Statement type",
-        "description": "This should always be 'personStatement.",
-        "type": "string",
-        "enum": ["personStatement"],
-        "propertyOrder": 2,
-        "openCodelist":false,
-        "codelist":"statementType.csv"
+      "title": "Statement type",
+      "description": "This should always be 'personStatement.",
+      "type": "string",
+      "enum": [
+        "personStatement"
+      ],
+      "propertyOrder": 2,
+      "openCodelist": false,
+      "codelist": "statementType.csv"
     },
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate",
@@ -33,8 +35,8 @@
         "knownPerson"
       ],
       "propertyOrder": 4,
-      "codelist":"personType.csv",
-      "openCodelist":false  
+      "codelist": "personType.csv",
+      "openCodelist": false
     },
     "missingInfoReason": {
       "title": "Missing information reason(s)",
@@ -70,9 +72,9 @@
       "propertyOrder": 30
     },
     "placeOfBirth": {
-      "title":"Place of birth",
+      "title": "Place of birth",
       "$ref": "components.json#/definitions/Address",
-      "propertyOrder" : 40
+      "propertyOrder": 40
     },
     "birthDate": {
       "title": "Date of birth",
@@ -80,7 +82,6 @@
       "type": "string",
       "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$",
       "propertyOrder": 35
-
     },
     "deathDate": {
       "title": "Death date",
@@ -90,7 +91,7 @@
       "propertyOrder": 36
     },
     "placeOfResidence": {
-      "title":"Place of residence",
+      "title": "Place of residence",
       "$ref": "components.json#/definitions/Address",
       "propertyOrder": 50
     },
@@ -103,15 +104,6 @@
       },
       "propertyOrder": 60
     },
-    "annotations": {
-      "title": "Annotations",
-      "description": "Annotations about this statement or parts of this statement",
-      "type": "array",
-      "items": {
-        "$ref": "components.json#/definitions/Annotation"
-      },
-      "propertyOrder": 90
-    },
     "pepStatus": {
       "title": "Politically Exposed Person Status",
       "description": "One or more descriptions of this person's Politically-Exposed Person (PEP) status.",
@@ -121,12 +113,32 @@
       },
       "propertyOrder": 80
     },
-    "replacesStatement": {
-      "$ref": "components.json#/definitions/ReplacesStatement"
+    "source": {
+      "title": "Source",
+      "description": "The source of the information that links the entity and the interested party, or that supports a null statement.",
+      "$ref": "components.json#/definitions/Source",
+      "propertyOrder":89
+    },
+    "annotations": {
+      "title": "Annotations",
+      "description": "Annotations about this statement or parts of this statement",
+      "type": "array",
+      "items": {
+        "$ref": "components.json#/definitions/Annotation"
+      },
+      "propertyOrder": 90
+    },
+    "replacesStatements": {
+      "$ref": "components.json#/definitions/ReplacesStatements"
     }
   },
-  "required": ["statementID", "statementType"],
+  "required": [
+    "statementID",
+    "statementType"
+  ],
   "dependencies": {
-    "missingPersonReason": ["missingPersonType"]
+    "missingPersonReason": [
+      "missingPersonType"
+    ]
   }
 }

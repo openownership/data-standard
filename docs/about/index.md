@@ -19,8 +19,9 @@ If you would like to be involved in the development and review of the Standard, 
    :hidden:
    :maxdepth: 1
 
-   governance.md
-   credits.md
+   governance
+   credits
+   support
    
 
 ```

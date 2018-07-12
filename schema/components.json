@@ -11,12 +11,12 @@
     },
     "Source": {
       "title": "Source",
-      "description": "The source object is used to provide basic provenance information about a statement or a statement fragment. A source object can also be used in annotations that link a statement or statement fragment to contextual information published elsewhere.",
+      "description": "The source object is used to explain where information in a statement originated from, and to link to supporting information.",
       "type": "object",
       "properties": {
         "type": {
           "title": "Source type",
-          "description": "What type of source is this? Multiple tags can be combined.",
+          "description": "What type of source is this? Multiple tags can be combined. Values should come from the [source type](#sourcetype) codelist.",
           "type": "array",
           "items": {
             "type": "string",
@@ -27,7 +27,7 @@
               "primaryResearch",
               "verified"
             ],
-            "codelist": "source.csv",
+            "codelist": "sourceType.csv",
             "openCodelist": false
           }
         },
@@ -75,10 +75,18 @@
         }
       }
     },
-    "ReplacesStatement": {
-      "title": "Replaces statement",
-      "description": "If this statement replaces a previous statement, provide the globally unique identifier for the previous statement here. Consuming applications are advised to mark the identified statements as no longer active.",
-      "type": "string"
+    "ReplacesStatements": {
+      "title": "Replaces statement(s)",
+      "description": "If this statement replaces a previous statement or statements, provide the identifier(s) for the previous statement(s) here. Consuming applications are advised to mark the identified statements as no longer active.",
+      "type":"array",
+      "items":{
+        "title":"Statement identifier",
+        "description":"The identifier of a statement that is no longer active.",
+        "type": "string",
+        "minLength":32,
+        "maxLength":64  
+      }
+      
     },
     "Identifier": {
       "title": "Identifier",
@@ -127,10 +135,11 @@
       ]
     },
     "ID": {
-      "title": "ID",
+      "title": "Statement Identifier",
       "description": "A persistent globally unique identifier for this statement.",
       "type": "string",
-      "minLength": 32
+      "minLength": 32,
+      "maxLenth":64
     },
     "Address": {
       "title": "Address",
@@ -178,7 +187,7 @@
       "properties": {
         "type": {
           "title": "Type",
-          "description": "What kind of name is this? See the [nameType](nametype) codelist.",
+          "description": "What kind of name is this? See the [nameType](#nametype) codelist.",
           "type": "string",
           "enum": [
             "individual",
@@ -251,6 +260,11 @@
           ],
           "codelist": "interestLevel.csv",
           "openCodelist": false
+        },
+        "beneficialOwnershipOrControl":{
+          "title":"Beneficial ownership or control",
+          "description":"Is this interest one of beneficial ownership or control? A beneficial ownership or control interest is always between a natural person and an entity. Such an interest exists where the person ultimately benefits from, or has a degree of control over, the entity (as specified by the interest). There may be cases where a person has an interest in an entity, but where arrangements or other conditions exist that mean this interest does not qualify as beneficial ownership or control.",
+          "type":"boolean"
         },
         "details": {
           "title": "Details",
@@ -347,7 +361,7 @@
         },
         "motivation": {
           "title": "Motivation",
-          "description": "The motivation for this annotation, chosen from a codelist. Commenting should be used with the description field to add contextual comments to a field or statement. Correcting should be used to indicate that original material has been corrected, using the method in the description field. Identifying should be used when original data has been augmented or processed for the purpose of identifying natural persons or legal entities, using the method in the description field. Linking should be used to provide contextual material that explains the statement or field; URLs to linked material can be provided in the url field. Provenance should be used to identify the source of information at a statement or field level. Transformation should be used to describe how data has in fields has been changed from its original form. The new form MAY be provided in the transformedContent field.",
+          "description": "The motivation for this annotation, chosen from a codelist. See the [annotationMotivation](#annotationmotivation) codelist.",
           "type": "string",
           "enum": [
             "commenting",
