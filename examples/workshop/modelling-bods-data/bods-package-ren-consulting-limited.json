@@ -14,7 +14,11 @@
   {
     "statementID": "5eb1e15c-fd25-40c7-8a75-246c79654185",
     "statementType": "personStatement",
-    "name": "Natalie Coleman"
+    "names": [
+      {
+        "fullName": "Natalie Coleman"
+      }
+    ]
   },
   {
     "statementID": "487e303b-f5be-4dc2-bcae-b0803546fa29",

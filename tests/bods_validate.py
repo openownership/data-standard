@@ -66,6 +66,7 @@ def bods_validate_statement(statement):
     schema_path = schema_path_from_statement(statement)
     with open(os.path.join(absolute_path_to_schema_dir, schema_path)) as f:
         schema = json.load(f, object_pairs_hook=OrderedDict)
+    schema['additionalProperties'] = False
     validate(statement, schema, resolver=resolver, format_checker=format_checker)
 
 

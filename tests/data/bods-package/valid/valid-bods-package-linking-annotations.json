@@ -28,7 +28,11 @@
     "statementID": "9132d890-0658-4e84-b7b6-9f1886225e45",
     "statementType": "personStatement",
     "statementDate": "2018-03-29",
-    "name": "Mr Jeremy Hunt",
+    "names": [
+      {
+        "fullName": "Mr Jeremy Hunt"
+      }
+    ],
     "source": {
       "type": [
         "officialRegister"
