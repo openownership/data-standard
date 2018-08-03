@@ -57,6 +57,7 @@ def test_valid_package_json(json_path):
 @pytest.mark.parametrize(('json_path', 'error'), [
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', ValidationError),
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id-no-entity-type.json', ValidationError),
+    ('data/entity-statement/invalid/entity-statement-extra-field.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-bad-date.json', ValidationError),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json', ValidationError),
