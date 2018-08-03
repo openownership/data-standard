@@ -1,8 +1,14 @@
 # About
 
-This website contains the draft specification of the Beneficial Ownership Data Standard (Beta-2 version) plus support for its use.
+This website contains the draft specification of the Beneficial Ownership Data Standard (Beta-2 version) plus support for its use. The Standard provides a structured template for describing beneficial ownership as machine-readable data.
 
-The Standard is being developed under the guidance of OpenOwnership. More details about the organisation are available at [www.openownership.org](http://www.openownership.org).
+<h2>Background</h2>
+
+Money laundering, tax evasion and obscure chains of ownership are transnational problems that require a transnational solution. Civil society, government and business can all benefit from greater transparency around [beneficial ownership](http://standard.openownership.org/en/schema-beta-2/primer/whatisbo.html). 
+
+The Beneficial Ownership Data Standard enables this transparency by providing a solid conceptual and practical framework for collecting and publishing beneficial ownership data, resulting in data that is interoperable, more easily reused, and of higher quality.
+
+The Standard is being developed under the guidance of a [working group](http://standard.openownership.org/en/schema-beta-2/about/governance.html) co-chaired by OpenOwnership. More details about the organisation are available at www.openownership.org.
 
 <h2>Current status of the standard</h2>
 
