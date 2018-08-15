@@ -16,7 +16,7 @@ The structure of each of the schema's top level components can be explored using
 Ownership or control statement
 ------------------------------
 
-View the `Ownership or control statement JSON schema <_static/ownership-or-control-statement.json>`_ or explore it using the viewer below.
+View the `Ownership or control statement JSON schema <../_static/ownership-or-control-statement.json>`_ or explore it using the viewer below.
 
 .. raw:: html
 
@@ -28,7 +28,7 @@ Entity statement
 ----------------
 
 
-View the `Entity Statement JSON schema <_static/entity-statement.json>`_ or explore it using the viewer below.
+View the `Entity Statement JSON schema <../_static/entity-statement.json>`_ or explore it using the viewer below.
 
 .. raw:: html
 
@@ -40,7 +40,7 @@ View the `Entity Statement JSON schema <_static/entity-statement.json>`_ or expl
 Person statement
 ----------------
 
-View the `Person Statement JSON schema <_static/person-statementt.json>`_ or explore it using the viewer below.
+View the `Person Statement JSON schema <../_static/person-statement.json>`_ or explore it using the viewer below.
 
 .. raw:: html
 
