@@ -3,11 +3,18 @@
 Key concepts
 ============
 
+.. attention:: 
+    
+    This is **beta 2** of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information. Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
+
+    **MUST** and **SHOULD** are used in the schema to denote required and recommended elements of the Standard, as defined in `RFC2119 <https://tools.ietf.org/html/rfc2119>`_.
+
+
 The concept of a 'statement' is at the heart of the Beneficial Ownership Data Standard. BODS data consists of a collection of ordered statements describing:
 
 * Ownership or control
 * Entities (including companies, trusts and arrangements)
-* Natural persons (who ultimately own or control entities)
+* Natural persons (who own or control entities)
 
 Statements
 -----------
@@ -20,7 +27,9 @@ Details of how an interested party controls or owns a company or other legal ent
 Details of the subject of an ownership or control statement and its interested party are wrapped in their own statements. The ownership or control statement refers out to these statements, acting as a connector.
 
 .. figure:: ../_assets/data-schema-model-2.svg
-   :alt: An ownership or control statement block containing two 'interests': one a 60% share-holding interest, the other a 30% voting-rights interest
+   :alt: A person statement linked to an ownership or control statement linked to an entity statement.
+
+Together, the statements above tell us that Roberto Lopez has some kind of controlling or ownership stake in RENCO Energy Ltd.
 
 The :any:`schema reference <schema-reference>` defines in detail the fields that each statement should have, and how they should be structured.
 
@@ -38,32 +47,46 @@ Modelling beneficial ownership information in this way allows us to make sense o
 * Statements about beneficial ownership to overlap
 * Production of historical beneficial ownership snapshots (to answer questions of 'who knew what, when?'). This is known as `bi-temporal modelling <https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_. 
 
-When representing data conforming to BODS, users should therefore handle statements with due care. Ultimately it is up to data consumers to decide which statements to trust, and to verify identities using the :any:`identifying information <guidance-identifiers>` contained in ``Person`` and ``Entity`` statements.
+When representing data conforming to BODS, users therefore need to handle statements with due care. Ultimately it is up to data consumers to decide which statements to trust, and to verify identities using the :any:`identifying information <guidance-identifiers>` contained in ``personStatements`` and ``entityStatements``.
 
 
 Data model overview
 -------------------
 
-The canonical representation of each statement is a JSON object with a `statementIdentifier` and `statementType`. The `statementIdentifier` exists solely for the purpose of cross-referencing between statements. 
+Statements are specified in the data schema as JSON objects:
 
-**``Person`` and ``Entity`` statements** both contain a set of fields that can be used to discover the real-world identify of the entity or individual. These include:
+- :any:`Beneficial ownership statement <schema-ownership-or-control-statement>`
+- :any:`Entity statement <schema-entity-statement>`
+- :any:`Person statement <schema-person-statement>`
+
+Each statement has a ``statementIdentifier`` and ``statementType`` field. The ``statementIdentifier`` exists solely for the purpose of connecting statements. 
+
+- **Entity statements** are used to describe registered legal entities that are the subject of legal ownership (such as companies, non-registered entities (such as trusts), and artificial entities (such as joint shareholding arrangements).
+- **Person statements** describe the natural persons who stand in relationships of ultimate beneficial ownership or control
+- **Beneficial ownership or control statements** describe the interest(s) held by one entity in another, or a person in an entity. They are connected to those entities and persons using ``statementIdentifier`` references.
+
+All statements have ``source`` and ``annotation`` fields which can provide an audit trail describing where information was obtained from, when, and any verification of the information that has taken place. 
+
+``personStatements`` and ``entityStatements`` both contain a set of fields that can be used to disclose the real-world identity of the entity or individual. These include:
 
 * An ``identifiers`` array that is used to provide known identifiers such as company registration for firms, or publicly shareable taxpayer identifiers for individuals. 
 * Jurisdiction or Nationality information
-* Important dates (birth date, death date, foundingDate, dissolutionDate)
+* Important dates (birth date, death date, founding date, dissolution date)
 * Addresses
+
+Including such identifiers allows intelligent integration of information across disclosures, datasets and time.
   
-These fields are designed to support 'strict' and 'relaxed' validation, to accommodate different data sources. New data sources should seek to provide the data required for strict validation, such as country codes, and full dates. Other sources should provide as much data as possible, subject to relevant policy and privacy constraints. 
+CHECK - These fields are designed to support 'strict' and 'relaxed' validation, to accommodate different data sources. New data sources should seek to provide the data required for strict validation, such as country codes, and full dates. Other sources should provide as much data as possible, subject to relevant policy and privacy constraints. 
 
-An **ownership or control statement** contains a reference to a statement describing an entity (the ``subject`` of the statement), and an ``interestedParty`` reference to either:
+An ``ownershipOrControlStatement`` connects (via ``statementIdentifier`` references) the ``subject`` of the statement (an entity described by an ``entityStatement``) and an ``interestedParty``. This interested party may be: 
 
-* A statement describing another entity which has ownership or control interests in the subject;
-* A statement describing a person who has an ownership or control interest in the subject; or
+* Another entity described by an ``entityStatement``;
+* A person described by a ``personStatement``; or
 * An unspecified party and the reasons that no ownership or control can be specified. 
 
-The ownership and control statement then contains an array of `interests`, each with a type (specified by the interestType codelist) and, where relevant, percentages indicating the size of the interest. 
+The ownership and control statement also contains an array of ``interests``, each with a type (selected from the `interestType codelist <reference.html#interesttype>`_) and, where relevant, percentages indicating the size of the interest. 
 
-Use the schema browser to see the structure of each statement, or check the :any:`schema reference <schema-reference>` for detailed definitions of each field. 
+To explore the structure of the data model in full use the :doc:`Schema browser <schema-browser>`. Or read the :any:`Schema reference <schema-reference>` for detailed definitions of each object and field. 
 
 
 Ownership or control through arrangements

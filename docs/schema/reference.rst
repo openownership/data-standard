@@ -5,36 +5,19 @@ Schema reference
 
 .. attention:: 
     
-    This is **beta 2** of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information.
+    This is **beta 2** of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information. Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
 
-    Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this beta release onwards, any structural changes, or major definitional changes will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form. 
+    **MUST** and **SHOULD** are used in the schema to denote required and recommended elements of the Standard, as defined in `RFC2119 <https://tools.ietf.org/html/rfc2119>`_.
 
-    The schema contains a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields. 
 
-Introduction
-------------
+The following is an A - Z guide to the objects of the Data Standard's schema. Details of each object's properties are provided in a table generated from the JSON schema. (For a structured view of how objects fit together in the JSON schema, use the :doc:`Schema browser <schema-browser>`.)
 
-The Beneficial Ownership Data Specification (BODS) provides a common data model for representing the direct or indirect relationships of ownership and control of some entity (such as a company) by some other entities (including trusts and joint shareholdings) or by natural persons. 
+The top-level objects are `statements <key-concepts>`:
 
-This data model is intended for use in the representation of information on Ultimate Beneficial Ownership, whereby the natural persons who ultimately benefit from, or control, and entity, are declared. 
+- `Beneficial ownership statements <#schema-ownership-or-control-statement>`_
+- `Entity statements <#schema-entity-statement>`_
+- `Person statements <#schema-person-statement>`_
 
-Conceptual model
-----------------
-
-Data is published as a series of related statements. Each statement represents information provided by a particular source at a particular point in time. 
-
-.. figure:: ../_assets/data-schema-model-2.svg
-   :alt: Schematic representation of schema conceptual model
-
-**Statements describe:**
-
-* `Entities <#entitystatement>`_ - including registered legal entities that are the subject of ownership such as companies, as well as non-registered entities such as trusts, and artificial entities such as joint shareholding arrangements
-* `Persons <#personstatement>`_ - providing details of the natural persons who stand in  relationships of ultimate beneficial ownership or control
-* `Beneficial Ownership or Control Interests <#ownershiporcontrolstatement>`_ - providing details of the interest held by one entity in another, or one person in an entity by reference to the statements that describe those entities and persons
-
-Provenance information (sources) and annotations can be attached to each statement to provide an audit trail on where information was obtained from, and any verification of the information that has taken place. 
-
-Both entity and person statements include name and identifier blocks that can be used to relate them to real world entities or persons, and allow intelligent integration of information across disclosures, datasets and time
 
 Serialization
 -------------
