@@ -65,7 +65,7 @@ Each statement has a ``statementIdentifier`` and ``statementType`` field. The ``
 - **Person statements** describe the natural persons who stand in relationships of ultimate beneficial ownership or control
 - **Beneficial ownership or control statements** describe the interest(s) held by one entity in another, or a person in an entity. They are connected to those entities and persons using ``statementIdentifier`` references.
 
-All statements have ``source`` and ``annotation`` fields which can provide an audit trail describing where information was obtained from, when, and any verification of the information that has taken place. 
+All statements have ``source`` and ``annotation`` properties which can provide an audit trail describing where information was obtained from, when, and any verification of the information that has taken place. See :ref:`Sources and annotations <provenance>` for guidance.
 
 ``personStatements`` and ``entityStatements`` both contain a set of fields that can be used to disclose the real-world identity of the entity or individual. These include:
 
@@ -115,19 +115,7 @@ Direct and indirect ownership and control
 BODS can be used to describe both direct ownership and control (where Person A has a direct share in Company B), or indirect ownership and control (Where Person A is an ultimate beneficial owner of B, but where there may be any number of known or unknown intermediate companies or arrangements). This is indicated by use of the ``interestLevel`` property that can be set for each interest declared. 
 
 
-Sources, provenance and annotations
------------------------------------
-
-Each statement should contain information on its source, and whether or not the information it contains has been verified. For example, a statement may be taken from official records, or self declaration - and it may or may not have been checked through some process to verify that the information provided is accurate. 
-
-In some cases, systems processing BODS data may make changes to clean, enhance or otherwise update the data, such as reconciling company names against identifiers. Details of these changes should be recorded as annotations, to allow users to clearly understand the provenance of information.
-
-
 Immutability of statements
 --------------------------
 
-A collection of BODS statements should be treated as a write-only ledger, with new statements appended on the end. 
-
-Statements must be treated as immutable: once a statement is published it must not be republished with the same ``statementID`` but different field values. 
-
-If a particular field needs to be updated, a new statement with a new ``statementID`` must be published and the ``replacesStatement`` property used. See :any:`Updating statements <guidance-updating-data>`
+Published BODS statements should be treated as a write-only ledger, with new statements being issued to amend data contained in older statements and those new statements appended to the ledger. See :any:`Updating statements <guidance-updating-data>` for further guidance.
