@@ -38,7 +38,7 @@
         },
         "url": {
           "title": "Source URL",
-          "description": "If this information was fetched from an external URL, or a machine or human readable web page is available that provides addition information on how this statement was sourced, provide the URL.",
+          "description": "If this information was fetched from an external URL, or a machine or human readable web page is available that provides additional information on how this statement was sourced, provide the URL.",
           "type": "string"
         },
         "retrievedAt": {
@@ -84,9 +84,8 @@
         "description":"The identifier of a statement that is no longer active.",
         "type": "string",
         "minLength":32,
-        "maxLength":64  
+        "maxLength":64
       }
-      
     },
     "Identifier": {
       "title": "Identifier",
