@@ -45,7 +45,7 @@
           "title": "Retrieved at",
           "description": "If this statement was imported from some external system, include a timestamp indicating when this took place. The statement's own date should be set based on the source information. ",
           "type": "string",
-          "format": "datetime"
+          "format": "date-time"
         },
         "assertedBy": {
           "title": "Asserted by",
