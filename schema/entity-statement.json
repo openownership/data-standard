@@ -1,7 +1,7 @@
 {
   "id": "entity-statement.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "version": "0.1",
+  "version": "0.2-beta",
   "title": "Entity statement",
   "description": "A statement identifying and describing the entity that is the subject of the ownership or control described in an ownership or control statement.",
   "type": "object",
