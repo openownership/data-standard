@@ -148,7 +148,7 @@
       "properties": {
         "type": {
           "title": "Type",
-          "description": "What type of address is this?",
+          "description": "What type of address is this? See the [addressType](#addresstype) codelist.",
           "type": "string",
           "enum": [
             "placeOfBirth",
