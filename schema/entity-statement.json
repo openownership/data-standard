@@ -112,7 +112,7 @@
     },
     "source": {
       "title": "Source",
-      "description": "he source of information about this entity, or of information that supports an anonymous or unknown entity statement.",
+      "description": "The source of information about this entity, or of information that supports an anonymous or unknown entity statement.",
       "$ref": "components.json#/definitions/Source",
       "propertyOrder":89
     },
