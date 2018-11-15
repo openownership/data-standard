@@ -115,7 +115,7 @@
     },
     "source": {
       "title": "Source",
-      "description": "The source of information about this person, or that supports an unknown or anonymous person statement.",
+      "description": "The source of information about this person, or of information that supports an unknown or anonymous person statement.",
       "$ref": "components.json#/definitions/Source",
       "propertyOrder":89
     },
