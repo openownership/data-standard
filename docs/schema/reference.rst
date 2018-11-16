@@ -14,7 +14,7 @@ The following is an A - Z guide to the objects of the Data Standard's schema, pl
 
 The top-level objects are :doc:`statements <concepts>`:
 
-- :any:`Ownership or control statements <schema-ownership-or-control-statement>`
+- :any:`Ownership-or-control statements <schema-ownership-or-control-statement>`
 - :any:`Entity statements <schema-entity-statement>`
 - :any:`Person statements <schema-person-statement>`
 
