@@ -13,6 +13,7 @@ from bods_validate import bods_iter_errors_package, bods_iter_errors_statement
 @pytest.mark.parametrize('json_path', [
     'data/entity-statement/valid/valid-entity-statement.json',
     'data/entity-statement/valid/valid-entity-statement-loose-validation.json',
+    'data/entity-statement/valid/valid-entity-statement-with-source.json',
     'data/person-statement/valid/valid-person-statement.json',
     'data/ownership-or-control-statement/valid/valid-ownership-or-control-statement.json',
     '../examples/flat-serialisation/gb-coh-entity-statement.json',
@@ -58,6 +59,7 @@ def test_valid_package_json(json_path):
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', ValidationError),
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id-no-entity-type.json', ValidationError),
     ('data/entity-statement/invalid/entity-statement-extra-field.json', ValidationError),
+    ('data/entity-statement/invalid/entity-statement-invalid-date-in-source.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-bad-date.json', ValidationError),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json', ValidationError),
@@ -128,6 +130,9 @@ def test_invalid_package_json(json_path, json_paths, error):
     }),
     ('data/person-statement/invalid/person-statement-with-bad-date.json', {
         "'Tuesday' is not a 'date'",
+    }),
+    ('data/entity-statement/invalid/entity-statement-invalid-date-in-source.json', {
+        "'2018-11-14' is not a 'date-time'",
     }),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json', {
         "'too-short-so-fail' is too short",
