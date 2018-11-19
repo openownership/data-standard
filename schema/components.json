@@ -89,17 +89,17 @@
     },
     "Identifier": {
       "title": "Identifier",
-      "description": "An identifier that has been assigned to this entity. The scheme or list from which the identifier is drawn should be declared.",
+      "description": "An identifier that has been assigned to this person or entity. The scheme or list from which the identifier is drawn should be declared.",
       "type": "object",
       "properties": {
         "id": {
           "title": "ID",
-          "description": "The identifier for this entity as provided in the declared scheme.",
+          "description": "The identifier for this person or entity as provided in the declared scheme.",
           "type": "string"
         },
         "scheme": {
           "title": "Scheme",
-          "description": "For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, recognised values include 'passport', 'internal' and 'id-card'.",
+          "description": "For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD.",
           "type": "string"
         },
         "schemeName": {
