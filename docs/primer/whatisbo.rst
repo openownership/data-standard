@@ -1,3 +1,5 @@
+.. _what-is-bo:
+
 What is beneficial ownership?
 =============================
 

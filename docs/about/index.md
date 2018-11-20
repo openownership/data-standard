@@ -1,14 +1,14 @@
 # About
 
-This website contains the draft specification of the Beneficial Ownership Data Standard (Beta-2 version) plus support for its use. The Standard provides a structured template for describing beneficial ownership as machine-readable data.
+This website contains the draft specification of the Beneficial Ownership Data Standard (0.1 version - release candidate) plus support for its use. The Standard provides a structured template for describing beneficial ownership as machine-readable data.
 
 <h2>Background</h2>
 
-Money laundering, tax evasion and obscure chains of ownership are transnational problems that require a transnational solution. Civil society, government and business can all benefit from greater transparency around [beneficial ownership](http://standard.openownership.org/en/schema-beta-2/primer/whatisbo.html). 
+Money laundering, tax evasion and obscure chains of ownership are transnational problems that require a transnational solution. Civil society, government and business can all benefit from greater transparency around [beneficial ownership](what-is-bo). 
 
 The Beneficial Ownership Data Standard enables this transparency by providing a solid conceptual and practical framework for collecting and publishing beneficial ownership data, resulting in data that is interoperable, more easily reused, and of higher quality.
 
-The Standard is being developed under the guidance of a [working group](http://standard.openownership.org/en/schema-beta-2/about/governance.html) co-chaired by OpenOwnership. More details about the organisation are available at www.openownership.org.
+The Standard is being developed under the guidance of a [working group](governance.md) co-chaired by OpenOwnership. More details about the organisation are available at www.openownership.org.
 
 <h2>Current status of the standard</h2>
 
@@ -19,7 +19,7 @@ The Standard is being developed under the guidance of a [working group](http://s
    :alt: Timeline of standard development. End of 2016: rapid prototype. 2017, Q2: release of BODS Beta-1. 2017, Q3: initital pilots. 2018, Q3: release of BODS Beta-2. 2019: release of BODS v1.0.
 
 ```
-This is Beta-2 of the Beneficial Ownership Data Standard. The data model has been updated and additional codelist information added since Beta-1.
+This is v0.1-rc (release candidate) of the Beneficial Ownership Data Standard. The data model has been updated and additional codelist information added since Beta-1.
 
 Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this beta release onwards, any structural changes or major definitional changes will only take place following consultation. A clear [changelog](changelog) will be provided, and the documentation of previous versions maintained in archive form.
 
