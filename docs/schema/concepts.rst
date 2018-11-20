@@ -39,7 +39,7 @@ Statements as claims
 Each statement represents a claim about beneficial ownership made by a particular source at a particular point in time.
 
 .. figure:: ../_assets/data-schema-model-3.svg
-   :alt: An ownership-or-control statement block containing a source block with type-selfDeclaration, retrievedAt date of 2018-11-07 and assertedBy value of Acme Industries Ltd. Statement also has statementDate of 2018-07-12
+   :alt: An ownership-or-control statement block containing a source block with type-selfDeclaration, retrievedAt date of 2018-11-07T13:55:32.734Z and assertedBy value of Acme Industries Ltd. Statement also has statementDate of 2018-07-12
 
 Modelling beneficial ownership information in this way allows us to make sense of data received from multiple sources over extended periods of time. In particular, it allows:
 
