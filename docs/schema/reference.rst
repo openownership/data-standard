@@ -5,141 +5,80 @@ Schema reference
 
 .. attention:: 
     
-    This is **beta 2** of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information.
+    This is v0.1-rc (release candidate) of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information. Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
 
-    Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this beta release onwards, any structural changes, or major definitional changes will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form. 
-
-    The schema contains a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields. 
-
-Introduction
-------------
-
-The Beneficial Ownership Data Specification (BODS) provides a common data model for representing the direct or indirect relationships of ownership and control of some entity (such as a company) by some other entities (including trusts and joint shareholdings) or by natural persons. 
-
-This data model is intended for use in the representation of information on Ultimate Beneficial Ownership, whereby the natural persons who ultimately benefit from, or control, and entity, are declared. 
-
-Conceptual model
-----------------
-
-Data is published as a series of related statements. Each statement represents information provided by a particular source at a particular point in time. 
-
-.. figure:: ../_assets/data-schema-model-2.svg
-   :alt: Schematic representation of schema conceptual model
-
-**Statements describe:**
-
-* `Entities <#entitystatement>`_ - including registered legal entities that are the subject of ownership such as companies, as well as non-registered entities such as trusts, and artificial entities such as joint shareholding arrangements
-* `Persons <#personstatement>`_ - providing details of the natural persons who stand in  relationships of ultimate beneficial ownership or control
-* `Beneficial Ownership or Control Interests <#ownershiporcontrolstatement>`_ - providing details of the interest held by one entity in another, or one person in an entity by reference to the statements that describe those entities and persons
-
-Provenance information (sources) and annotations can be attached to each statement to provide an audit trail on where information was obtained from, and any verification of the information that has taken place. 
-
-Both entity and person statements include name and identifier blocks that can be used to relate them to real world entities or persons, and allow intelligent integration of information across disclosures, datasets and time
-
-Serialization
--------------
-
-The canonical serialization of BODS data is as a `JSON document <https://tools.ietf.org/html/rfc8259>`_. A JSON BODS file SHOULD consists of a series of ordered statements within a top-level array. 
-
-Each of the `entityStatements <#entitystatement>`_ or `personStatements <#personstatement>`_ referenced by a particular `ownershipOrControlStatement <#ownershiporcontrolstatement>`_  MUST appear before that particular statement in the ordered array. 
-
-BODS data MAY also be serialized in tabular form, using the relative JSON Pointer from the statement root for each relevant field as the column header. 
-
-For example, the extract:
-
-.. code-block:: json
-   
-   [
-    {
-      "statementID": "e3c07f34-1810-4eed-b845-4d9f4d97f9d5",
-      "statementType": "entityStatement",
-      "identifiers": [
-        {
-          "scheme": "GB-COH",
-          "id": "07444723"
-        }
-      ]
-    },
-    {
-      "statementID":"a2b485be-e3b6-4fd7-8a6a-930e46cf9957",
-      "statementType":"personStatement",
-      "identifiers":[
-        {
-          "scheme":"MX-RFC",
-          "id":"ABC680524P-76"
-        }
-      ]
-    },
-    {
-      "statementID":"34b479f2-1681-4064-ab51-1e703fbafa",
-      "statementType":"ownershipOrControlStatement"
-    }
-   ]
-
-may be serialized in a table as:
-
-.. list-table:: 
-   :header-rows: 1
-
-   * - statementID 
-     - statementType 
-     - identifiers/0/scheme 
-     - identifiers/0/id
-   * - e3c07f34-1810-4eed-b845-4d9f4d97f9d5
-     - entityStatement
-     - GB-COH
-     - 07444723
-   * - a2b485be-e3b6-4fd7-8a6a-930e46cf9957
-     - personStatement
-     - MX-RFC
-     - ABC680524P-76
-
-   * - 34b479f2-1681-4064-ab51-1e703fbafa
-     - ownershipOrControlStatement
-     - 
-     - 
+    **MUST** and **SHOULD** are used in the schema to denote required and recommended elements of the Standard, as defined in `RFC2119 <https://tools.ietf.org/html/rfc2119>`_.
 
 
-.. _id:
+The following is an A - Z guide to the objects of the Data Standard's schema, plus its `codelists`_ . Details of each object's properties are provided in a table generated from the JSON schema. (For a structured view of how objects fit together in the JSON schema, use the :doc:`Schema browser <schema-browser>`.)
 
-Statement Identifiers
----------------------
+The top-level objects are :doc:`statements <concepts>`:
 
-Each statement MUST have an entirely unique identifier. There MUST be no possibility of collision between identifiers for different statements. 
-
-Publishers MAY use a guid or uuid as the statement identifier, a reproducible hash of the statement or unique components thereof, or an internal identifier combined with a unique prefix to avoid collision between identifiers from different publishers. 
-
-The schema enforces a minimum statement identifier length of 32 characters, and maximum length of 64 characters. 
-
-See :ref:`guidance on statement identifiers <guidance-statement-identifiers>` for more information.
-
-Component Reference
--------------------
+- :any:`Ownership-or-control statements <schema-ownership-or-control-statement>`
+- :any:`Entity statements <schema-entity-statement>`
+- :any:`Person statements <schema-person-statement>`
 
 Statements are built up from a set of nested objects and properties, each of which has a field name, a title and a description that defines how the object or field should be used. 
 
-**Statements:** `Ownership or control statements <#schema-ownership-or-control-statement>`_; `Entity statements <#schema-entity-statement>`_ `Person statements <#schema-person-statement>`_
-
-**Components:** 
+BODS data MAY be published as a valid `JSON document <https://tools.ietf.org/html/rfc8259>`_. See :any:`Serialization <guidance-serialization>` for more options.  
 
 
+.. _schema-address:
 
-.. _schema-ownership-or-control-statement:
+Address
+-------
 
-OwnershipOrControlStatement
-+++++++++++++++++++++++++++
+.. json-value:: ../../schema/components.json
+   :pointer: /definitions/Address/description
 
-.. json-value:: ../../schema/ownership-or-control-statement.json
-   :pointer: /description
+.. jsonschema:: ../../schema/components.json
+   :pointer: /definitions/Address
 
 
-.. jsonschema:: ../../schema/ownership-or-control-statement.json
-    :collapse: interests,source,annotations,interestedParty
+.. note::
+
+    A diversity of address formats are used across data management systems, and data is often inconsistently entered across data fields in these source systems (and legacy datasets). Therefore the BODS schema uses a very simple address format for data exchange. Consuming systems will need to parse BODS addresses before carrying out any structured comparison.
+
+    Designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See `issue 18 <https://github.com/openownership/data-standard/issues/18>`_ for more details.
+
+.. _schema-agent:
+
+Agent
+-----
+
+.. json-value:: ../../schema/components.json
+   :pointer: /definitions/Agent/description
+
+.. jsonschema:: ../../schema/components.json
+   :pointer: /definitions/Agent
+   :collapse:
+
+.. _schema-annotation:
+
+Annotation
+----------
+
+The ``annotations`` property of statements currently allows an array of these simple annotation objects to be included. An annotation can be used to hold information (structured or otherwise) for which a place does not exist elsewhere in the schema. See :ref:`Sources and annotations <provenance>` for further guidance. 
+
+.. jsonschema:: ../../schema/components.json
+   :pointer: /definitions/Annotation
+
+.. _schema-country:
+
+Country
+-------
+
+.. json-value:: ../../schema/components.json
+   :pointer: /definitions/Country/description
+
+.. jsonschema:: ../../schema/components.json
+   :pointer: /definitions/Country
+
 
 .. _schema-entity-statement:
 
 EntityStatement
-+++++++++++++++
+---------------
 
 .. json-value:: ../../schema/entity-statement.json
    :pointer: /description
@@ -147,21 +86,23 @@ EntityStatement
 .. jsonschema:: ../../schema/entity-statement.json
    :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations
 
-.. _schema-person-statement:
+.. _schema-identifier:
 
-PersonStatement
-+++++++++++++++
+Identifier
+----------
 
-.. json-value:: ../../schema/person-statement.json
-   :pointer: /description
+The identifier component is used to connect a statement to the real-world person or entity that it refers to, using one or more existing known identifiers. See [Real world identifiers](identifiers.md) for technical guidance on when and how to use this component.
 
-.. jsonschema:: ../../schema/person-statement.json
-   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatus
+.. json-value:: ../../schema/components.json
+   :pointer: /definitions/Identifier/description
+
+.. jsonschema:: ../../schema/components.json
+   :pointer: /definitions/Identifier
 
 .. _schema-interest:
 
 Interest
-++++++++
+--------
 
 .. json-value:: ../../schema/components.json
    :pointer: /definitions/Interest/description
@@ -173,7 +114,7 @@ Interest
 .. _schema-interested-party:
 
 InterestedParty
-+++++++++++++++
+---------------
 
 .. json-value:: ../../schema/ownership-or-control-statement.json
    :pointer: /definitions/InterestedParty/description
@@ -182,21 +123,10 @@ InterestedParty
    :pointer: /properties/interestedParty
    :collapse: 
 
-.. _schema-share:
-
-Share
-+++++
-
-.. json-value:: ../../schema/components.json
-   :pointer: /definitions/Interest/properties/share/description
-
-.. jsonschema:: ../../schema/components.json
-   :pointer: /definitions/Interest/properties/share
-
 .. _schema-jurisdiction:
 
 Jurisdiction
-++++++++++++
+------------
 
 .. json-value:: ../../schema/components.json
    :pointer: /definitions/Jurisdiction/description
@@ -204,21 +134,10 @@ Jurisdiction
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Jurisdiction
 
-.. _schema-country:
-
-Country
-+++++++
-
-.. json-value:: ../../schema/components.json
-   :pointer: /definitions/Country/description
-
-.. jsonschema:: ../../schema/components.json
-   :pointer: /definitions/Country
-
 .. _schema-name:
 
 Name
-++++
+----
 
 .. json-value:: ../../schema/components.json
    :pointer: /definitions/Name/description
@@ -226,10 +145,22 @@ Name
 .. jsonschema:: ../../schema/components.json
    :pointer: /definitions/Name
 
+.. _schema-ownership-or-control-statement:
+
+OwnershipOrControlStatement
+---------------------------
+
+.. json-value:: ../../schema/ownership-or-control-statement.json
+   :pointer: /description
+
+
+.. jsonschema:: ../../schema/ownership-or-control-statement.json
+    :collapse: interests,source,annotations,interestedParty
+
 .. _schema-pep-status:
 
 PEPStatus
-+++++++++
+---------
 
 .. json-value:: ../../schema/components.json
    :pointer: /definitions/PepStatus/description
@@ -238,39 +169,47 @@ PEPStatus
    :pointer: /definitions/PepStatus
    :collapse: jurisdiction
 
-.. _schema-identifier:
+.. _schema-person-statement:
 
-Identifier
-++++++++++
+PersonStatement
+---------------
 
-The identifier component is used to connect a statement to the real-world person or entity that it refers to, using one or more existing known identifiers. See [Real world identifiers](identifiers.md) for technical guidance on when and how to use this component.
+.. json-value:: ../../schema/person-statement.json
+   :pointer: /description
+
+.. jsonschema:: ../../schema/person-statement.json
+   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatus
+
+
+.. _schema-replaces-statements:
+
+ReplacesStatements
+------------------
+
+``replacesStatements``
 
 .. json-value:: ../../schema/components.json
-   :pointer: /definitions/Identifier/description
+   :pointer: /definitions/ReplacesStatements/description
 
-.. jsonschema:: ../../schema/components.json
-   :pointer: /definitions/Identifier
+See :any:`Updating statements <guidance-updating-data>` for technical guidance on working with updates to data. 
 
-.. _schema-address:
 
-Address
-+++++++
+.. _schema-share:
+
+Share
+-----
 
 .. json-value:: ../../schema/components.json
-   :pointer: /definitions/Address/description
+   :pointer: /definitions/Interest/properties/share/description
 
 .. jsonschema:: ../../schema/components.json
-   :pointer: /definitions/Address
+   :pointer: /definitions/Interest/properties/share
 
-
-.. note::
-
-    Due to the diversity of address formats used across systems, and the extent to which data is inconsistently entered across these data fields in source systems and legacy datasets, the schema uses a very simple address format for data exchange - relying upon consuming systems to parse addresses before carrying out any structured comparison. However, designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See `issue 18 <https://github.com/openownership/data-standard/issues/18>`_ for more details.
 
 .. _schema-source:
 
 Source
-++++++
+------
 
 .. json-value:: ../../schema/components.json
    :pointer: /definitions/Source/description
@@ -280,55 +219,20 @@ Source
    :collapse: assertedBy
 
 
-See :any:`the provenance pages <provenance>` for a discussion of provenance modelling.
-
-.. _schema-agent:
-
-Agent
-++++++
-
-.. json-value:: ../../schema/components.json
-   :pointer: /definitions/Agent/description
-
-.. jsonschema:: ../../schema/components.json
-   :pointer: /definitions/Agent
-   :collapse:
-
-
-.. _schema-annotation:
-
-Annotation
-++++++++++
-
-The annotation property currently allows for an array of simple annotation objects. This is a placeholder which could be extended in future to include structured information qualifying the nature of the interest held.
-
-.. jsonschema:: ../../schema/components.json
-   :pointer: /definitions/Annotation
+See :any:`Sources and annotations <provenance>` for a discussion of provenance modelling.
 
 .. _schema-statement-date:
 
 StatementDate
-+++++++++++++
+-------------
 
-Dates MUST be provided according to `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ in one of the following formats:
+Dates MUST conform with the extended format of `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_. All of the following, for example, are valid:
 
 * A full datetime string (YYYY-MM-DDTHH:MM:SSZ)
 * A year, month and day (YYYY-MM-DD)
 * A year and month (YYYY-MM)
 * A year (YYYY)
 
-
-.. _schema-replaces-statements:
-
-ReplacesStatements
-++++++++++++++++++
-
-``replacesStatements``
-
-.. json-value:: ../../schema/components.json
-   :pointer: /definitions/ReplacesStatements/description
-
-See :any:`handling changing data <guidance-updating-data>` for technical guidance on working with updates to date. 
 
 .. _schema-codelists:
 
@@ -424,9 +328,4 @@ UnspecifiedReason
    :class: codelist-table
    :file: ../../schema/codelists/unspecifiedReason.csv
 
-
-Normative references
---------------------
-
-* JSON: https://tools.ietf.org/html/rfc8259 
 
