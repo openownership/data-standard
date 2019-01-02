@@ -6,7 +6,7 @@ ChangeLog
 
 .. attention:: 
    
-    This is v0.1-rc (release candidate) of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information.
+    This is v0.1 (release candidate) of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information.
 
     Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this v0.1 release onwards, any structural changes, or major definitional changes will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form.
 
