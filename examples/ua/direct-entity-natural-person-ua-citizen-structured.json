@@ -1,0 +1,97 @@
+[
+  {
+    "statementID": "b56941cb-c970-4363-921d-4f908d7050dd",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-19",
+    "entityType": "registeredEntity",
+    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО",
+    "alternateNames": [
+      "ЯКОВЕНКО"
+    ],
+    "foundingDate": "2015-10-30",
+    "identifiers": [
+      {
+        "scheme": "UA-EDR",
+        "id": "XE9876"
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
+        }
+      ]
+    }
+  },
+  {
+    "statementID": "655a867e-6ecb-42a9-8e71-e7f1aa237c2f",
+    "statementType": "personStatement",
+    "statementDate": "2018-12-18",
+    "entityType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Ірина Яковенко"
+      }
+    ],
+    "nationalities": [
+      {
+        "name": "Україна",
+        "code": "UA"
+      }
+    ],
+    "birthDate": "1965-11",
+    "addresses": [
+      {
+        "type": "service",
+        "address": "1 Шевченка, Киев",
+        "postCode": "12345",
+        "country": "UA"
+      }
+    ],
+   "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
+        }
+      ]
+    }
+  },
+  {
+    "statementID": "7bd1cde7-a44b-4b5e-8e34-86af9bd46265",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-18",
+    "subject": {
+      "describedByEntityStatement": "b56941cb-c970-4363-921d-4f908d7050dd"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "655a867e-6ecb-42a9-8e71-e7f1aa237c2f"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 100
+        }
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
+        }
+      ]
+    }
+  }
+]
