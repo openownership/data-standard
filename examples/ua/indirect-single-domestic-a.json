@@ -78,7 +78,7 @@
         "statementPointerTarget": "/interests",
         "motivation": "linking",
         "description": "The indirect interests in this ownership-or-control statement are exercised, in whole or in part, through the direct ownership-or-control relationship described in the linked statement.",
-        "url": "bods:ua:ua-adr:646f2538-a606-48f8-bed9-144c8f6ea07f"
+        "linkedStatementID": "646f2538-a606-48f8-bed9-144c8f6ea07f"
       }
     ]
   },
