@@ -59,7 +59,7 @@
       {
         "statementPointerTarget": "/",
         "motivation": "commenting",
-        "description": "This ownership-or-control relationship is referenced in the disclosure with filename `indirect-single-domestic-b.json`. The detailed disclosure is delegated to the subject entity and interested party is this statement."
+        "description": "This same ownership-or-control relationship is referenced in the disclosure with filename `indirect-single-domestic-a.json` (statementID 2473c337-107e-424a-867a-0aae4272a98d). In that statement, the interest type is `unknown` because detailed disclosures are delegated to the relevant subject entity and interested party - this statement represents those details."
       }
     ]
   }
