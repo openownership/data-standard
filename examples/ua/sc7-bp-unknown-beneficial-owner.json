@@ -1,0 +1,48 @@
+[
+  {
+    "statementID": "b56941cb-c970-4363-921d-4f908d7050dd",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-19",
+    "entityType": "registeredEntity",
+    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО",
+    "alternateNames": [
+      "ЯКОВЕНКО"
+    ],
+    "foundingDate": "2015-10-30",
+    "identifiers": [
+      {
+        "scheme": "UA-EDR",
+        "id": "XE9876"
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
+        }
+      ]
+    }
+  },
+  {
+    "statementID": "7bd1cde7-a44b-4b5e-8e34-86af9bd46265",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-18",
+    "subject": {
+      "describedByEntityStatement": "b56941cb-c970-4363-921d-4f908d7050dd"
+    },
+    "interestedParty": {
+      "unspecified": {
+        "reason": "subject-unable-to-confirm-or-identify-beneficial-owner"
+      }
+    },
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
+        }
+      ]
+    }
+  }
+]
