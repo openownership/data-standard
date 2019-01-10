@@ -1,0 +1,156 @@
+[
+  {
+    "statementID": "2dc4efdd-d179-4958-8372-073c69eb8274",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-19",
+    "entityType": "registeredEntity",
+    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО",
+    "alternateNames": [
+      "ОВЧАРЕНКО"
+    ],
+    "foundingDate": "2010-10-01",
+    "identifiers": [
+      {
+        "scheme": "UA-EDR",
+        "id": "XE2222"
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
+        }
+      ]
+    }
+  },
+  {
+    "statementID": "fb4b8542-0c95-4504-b17b-6f926016359d",
+    "statementType": "personStatement",
+    "statementDate": "2018-12-18",
+    "entityType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Дмитрий Овчаренко"
+      }
+    ],
+    "addresses": [
+      {
+        "type": "service",
+        "address": "Молдова, г. Кишенев, ул. Винная 5, кв 44"
+      }
+    ],
+   "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Дмитрий Овчаренко"
+        },
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
+        }
+      ]
+    }
+  },
+  {
+    "statementID": "5acd2ef4-4984-4495-bda4-3726868d1d40",
+    "statementType": "personStatement",
+    "statementDate": "2018-12-19",
+    "entityType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Ірина Яковенко"
+      }
+    ],
+    "nationalities": [
+      {
+        "name": "Україна",
+        "code": "UA"
+      }
+    ],
+    "birthDate": "1965-11",
+    "addresses": [
+      {
+        "type": "service",
+        "address": "1 Шевченка, Киев",
+        "postCode": "12345",
+        "country": "UA"
+      }
+    ],
+   "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
+        }
+      ]
+    }
+  },
+  {
+    "statementID": "7bd1cde7-a44b-4b5e-8e34-86af9bd46265",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-18",
+    "subject": {
+      "describedByEntityStatement": "2dc4efdd-d179-4958-8372-073c69eb8274"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "fb4b8542-0c95-4504-b17b-6f926016359d"
+    },
+    "interests": [
+      {
+        "type": "influence-or-control",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 25
+        }      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Дмитрий Овчаренко"
+        },
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
+        }
+      ]
+    }
+  },
+  {
+    "statementID": "1d22e61f-57cc-4aac-ab0e-a14417899951",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-18",
+    "subject": {
+      "describedByEntityStatement": "2dc4efdd-d179-4958-8372-073c69eb8274"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "5acd2ef4-4984-4495-bda4-3726868d1d40"
+    },
+    "interests": [
+      {
+        "type": "influence-or-control",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 50
+        }      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
+        }
+      ]
+    }
+  }
+]
