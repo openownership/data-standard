@@ -77,8 +77,9 @@
         "interestLevel": "direct",
         "beneficialOwnershipOrControl": true,
         "share": {
-          "exact": 100
-        }
+          "exact": 25
+        },
+        "startDate": "2010-10-01"
       }
     ],
     "source": {

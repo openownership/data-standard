@@ -65,11 +65,11 @@
     },
     "interests": [
       {
-        "type": "shareholding",
+        "type": "influence-or-control",
         "interestLevel": "direct",
         "beneficialOwnershipOrControl": true,
         "share": {
-          "exact": 100
+          "exact": 25
         }
       }
     ],
