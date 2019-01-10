@@ -1,0 +1,136 @@
+[
+  {
+    "statementID": "891c9b38-5f92-432d-832c-0cb03c5b4745",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-17",
+    "entityType": "registeredEntity",
+    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО-АБРАГАМОВСЬКИЙ",
+    "alternateNames": [
+      "ЯКОВЕНКО-АБРАГАМОВСЬКИЙ"
+    ],
+    "foundingDate": "2015-10-30",
+    "identifiers": [
+      {
+        "scheme": "UA-EDR",
+        "id": "XE1234"
+      }
+    ]
+  },
+  {
+    "statementID": "6e66cdb7-f5da-4f3d-ae42-c07568d874a2",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-17",
+    "entityType": "registeredEntity",
+    "name": "IRINA LTD",
+    "foundingDate": "2015-10-30",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "XE101"
+      }
+    ]
+  },
+  {
+    "statementID": "9e8a9184-e53e-448b-ab0f-5411297e33a5",
+    "statementType": "personStatement",
+    "statementDate": "2018-12-17",
+    "entityType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Ірина Яковенко"
+      }
+    ],
+    "nationalities": [
+      {
+        "name": "Україна",
+        "code": "UA"
+      }
+    ],
+    "birthDate": "1965-11"
+  },
+  {
+    "statementID": "a6e44acf-bd46-40aa-b8a6-f534463f3292",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "891c9b38-5f92-432d-832c-0cb03c5b4745"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "9e8a9184-e53e-448b-ab0f-5411297e33a5"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "indirect",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 50
+        },
+        "startDate": "2017-11-01"
+      }
+    ],
+   "annotations": [
+      {
+        "statementPointerTarget": "/interests",
+        "motivation": "linking",
+        "description": "The indirect interests in this ownership-or-control statement are exercised, in whole or in part, through the direct ownership-or-control relationship described in the linked statement.",
+        "linkedStatementID": "c3473991-1274-4a2d-ae11-010573fa5ec7"
+      }
+    ]
+  },
+  {
+    "statementID": "c3473991-1274-4a2d-ae11-010573fa5ec7",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "891c9b38-5f92-432d-832c-0cb03c5b4745"
+    },
+    "interestedParty": {
+      "describedByEntityStatement": "6e66cdb7-f5da-4f3d-ae42-c07568d874a2"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": false,
+        "share": {
+          "exact": 50
+        },
+        "startDate": "2017-11-01"
+      }
+    ],
+    "annotations": [
+      {
+        "statementPointerTarget": "/",
+        "motivation": "commenting",
+        "description": "This ownership-or-control statement was made as part of the disclosure of an indirect beneficial ownership relationship."
+      }
+    ]
+  },
+  {
+    "statementID": "f433f7ca-6192-41b7-aff1-9fdad1950036",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "6e66cdb7-f5da-4f3d-ae42-c07568d874a2"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "9e8a9184-e53e-448b-ab0f-5411297e33a5"
+    },
+    "interests": [
+      {
+        "type": "influence-or-control",
+        "interestLevel": "unknown",
+        "beneficialOwnershipOrControl": false
+      }
+    ],
+    "annotations": [
+      {
+        "statementPointerTarget": "/",
+        "motivation": "commenting",
+        "description": "This ownership-or-control statement was made as part of the disclosure of an indirect beneficial ownership relationship."
+      }
+    ]
+  }
+]
