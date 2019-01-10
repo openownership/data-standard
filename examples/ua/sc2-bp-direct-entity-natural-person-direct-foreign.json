@@ -1,0 +1,96 @@
+[
+  {
+    "statementID": "2dc4efdd-d179-4958-8372-073c69eb8274",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-19",
+    "entityType": "registeredEntity",
+    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО",
+    "alternateNames": [
+      "ОВЧАРЕНКО"
+    ],
+    "foundingDate": "2010-10-01",
+    "identifiers": [
+      {
+        "scheme": "UA-EDR",
+        "id": "XE2222"
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
+        }
+      ]
+    }
+  },
+  {
+    "statementID": "a187549e-c456-4969-a9e4-2c1ece1d90cc",
+    "statementType": "personStatement",
+    "statementDate": "2018-12-18",
+    "entityType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Дмитрий Овчаренко"
+      }
+    ],
+    "birthDate": "1974-10",
+    "addresses": [
+      {
+        "type": "service",
+        "address": "Молдова, г. Кишенев, ул. Винная 5, кв 44",
+        "country": "MD"
+      }
+    ],
+    "nationalities": [
+      {
+        "name": "Mолдова",
+        "code": "MD"
+      }
+    ],
+   "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Дмитрий Овчаренко"
+        },
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
+        }
+      ]
+    }
+  },
+  {
+    "statementID": "7bd1cde7-a44b-4b5e-8e34-86af9bd46265",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-18",
+    "subject": {
+      "describedByEntityStatement": "2dc4efdd-d179-4958-8372-073c69eb8274"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "a187549e-c456-4969-a9e4-2c1ece1d90cc"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 100
+        }
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Дмитрий Овчаренко"
+        },
+        {
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
+        }
+      ]
+    }
+  }
+]
