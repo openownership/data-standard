@@ -3,7 +3,7 @@ Beneficial Ownership Data Standard
 
 This repository contains work in progress for the development of a data specification and standard for publication and consumption of data about Beneficial Ownership.
 
-You can find the latest draft of the schema and documentation for review at [http://beneficial-ownership-data-standard.readthedocs.io/](http://beneficial-ownership-data-standard.readthedocs.io/)
+You can find the latest draft of the schema and documentation for review at [http://standard.openownership.org/](http://standard.openownership.org/)
 
 You can share feedback on the standard through this project's issue tracker. 
 
