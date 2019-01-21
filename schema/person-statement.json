@@ -1,7 +1,7 @@
 {
   "id": "person-statement.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "version": "0.1-rc",
+  "version": "0.1",
   "type": "object",
   "title": "Person statement",
   "description": "A person statement describes the information known about a natural person at a particular point in time, or from a given submission of information",

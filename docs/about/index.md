@@ -19,7 +19,7 @@ The Standard is being developed under the guidance of a [working group](governan
    :alt: Timeline of standard development. End of 2016: rapid prototype. 2017, Q2: release of BODS Beta-1. 2017, Q3: initital pilots. 2018, Q3: release of BODS Beta-2. 2019: release of BODS v1.0.
 
 ```
-This is v0.1-rc (release candidate) of the Beneficial Ownership Data Standard. The data model has been updated and additional codelist information added since Beta-1.
+This is v0.1 of the Beneficial Ownership Data Standard. The data model has been updated and additional codelist information added since Beta-1.
 
 Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this v0.1 release onwards, any structural changes or major definitional changes will only take place following consultation. A clear [changelog](changelog) will be provided, and the documentation of previous versions maintained in archive form.
 
