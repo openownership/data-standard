@@ -1,6 +1,6 @@
 # About
 
-This website contains the draft specification of the Beneficial Ownership Data Standard (0.1 version - release candidate) plus support for its use. The Standard provides a structured template for describing beneficial ownership as machine-readable data.
+This website contains the draft specification of the Beneficial Ownership Data Standard (version 0.1) plus support for its use. The Standard provides a structured template for describing beneficial ownership as machine-readable data.
 
 <h2>Background</h2>
 
