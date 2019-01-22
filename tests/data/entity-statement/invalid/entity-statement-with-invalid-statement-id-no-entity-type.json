@@ -1,0 +1,13 @@
+{
+  "statementID": "too-short-so-fail",
+  "statementType": "entityStatement",
+  "statementDate": "2017-11-18",
+  "name": "CHRINON LTD",
+  "foundingDate": "2010-11-18",
+  "identifiers": [
+    {
+      "scheme": "GB-COH",
+      "id": "07444723"
+    }
+  ]
+}

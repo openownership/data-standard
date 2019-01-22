@@ -59,7 +59,6 @@
       {
         "type": "shareholding",
         "interestLevel": "direct",
-        "beneficialOwnershipOrControl":true,
         "startDate": "2016-04-06",
         "share": {
           "exact": 100

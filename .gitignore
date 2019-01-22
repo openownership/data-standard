@@ -2,3 +2,6 @@
 _build
 .ve
 node_modules
+*~
+*.swp
+*.pytest_cache*

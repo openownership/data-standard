@@ -1,0 +1,12 @@
+{
+  "statementID": "155009d4-9295-4845-9079-b6b69a17e185",
+  "statementType": "entityStatement",
+  "entityType": "registeredEntity",
+  "name": "RENCO Energy Ltd",
+  "identifiers": [
+    {
+      "scheme": "XE-DI-CR",
+      "id": "56462342"
+    }
+  ]
+}

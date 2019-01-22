@@ -1,6 +1,0 @@
-Field Name,Description,Format
-type,"Source type: What type of source is this? Multiple tags can be combined. Codelist options: [``selfDeclaration``, ``officialRegister``, ``thirdParty``, ``primaryResearch``, ``verified``]",array enum (codelist)
-description,"Description: Where required, additional free-text information about the source of this statement can be provided here.",string
-url,"Source URL: If this information was fetched from an external URL, or a machine or human readable web page is available that provides addition information on how this statement was sourced, provide the URL.",string
-retrievedAt,"Retrieved at: If this statement was imported from some external system, include a timestamp indicating when this took place. The statement's own date should be set based on the source information. ",datetime string
-assertedBy,"Asserted by: Who is making this statement? This may be the name of the person or organisation making a self-declaration (in which case, please make sure the name field matches the organisation or person name field), or the name or description of some other party. If this statment has been verified, this may also include the name of the organisation providing verification. See `AssertingParty <#assertingparty>`__ section for further details.",Object Array

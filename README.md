@@ -23,29 +23,6 @@ The initial development of the Beneficial Ownership Data Standard is funded thro
 
 ## Technical documentation
 
-### Virtual Environment Set-up
+### Build the docs locally
 
-To set up a virtual environment for the project:
-
-```
-virtualenv -p python3 .ve
-source .ve/bin/activate
-pip install -r requirements.txt
-```
-
-### Building the documentation
-
-```
-cd docs
-make html
-```
-
-To serve a copy of the docs locally:
-
-```
-cd docs
-python -m http.server 
-```
-
-And then access at http://localhost:8000/ 
-
+Please see https://github.com/openownership/data-standard-sphinx-theme

@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Beneficial Ownership Data Standard (alpha) documentation build configuration file, created by
-# sphinx-quickstart on Wed Mar  8 17:50:48 2017.
+# Beneficial Ownership Data Standard (alpha) documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -20,13 +19,10 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
-
-# -- General configuration ------------------------------------------------
-
 from recommonmark.transform import AutoStructify
 from recommonmark.parser import CommonMarkParser
-import os 
+
+# -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
@@ -35,9 +31,7 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.todo',
-    'sphinx.ext.ifconfig',
-    'sphinx.ext.githubpages']
+extensions = ['sphinxcontrib.jsonschema','sphinxcontrib.opendataservices']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -50,13 +44,17 @@ source_parsers = {
     '.md': CommonMarkParser,
     }
 
-source_suffix = ['.rst','.md']
+source_suffix = ['.rst', '.md']
+
+# The encoding of source files.
+#
+# source_encoding = 'utf-8-sig'
 
 # The master toctree document.
 master_doc = 'index'
 
 # General information about the project.
-project = 'Beneficial Ownership Data Standard (beta)'
+project = 'Beneficial Ownership Data Standard'
 copyright = '2017, OpenOwnership'
 author = 'OpenOwnership'
 
@@ -79,13 +77,16 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_static/docson']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+
+import oods.pygments
+oods.pygments.pygments_monkeypatch_style("oods", oods.pygments.OODSStyle)
+pygments_style = 'oods'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = True
+todo_include_todos = False
 
 
 # -- Options for HTML output ----------------------------------------------
@@ -93,22 +94,10 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-import os
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-
-if not on_rtd:  # only import and set the theme if we're building docs locally
-  import sphinx_rtd_theme
-  html_theme = 'sphinx_rtd_theme'
-  html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-else:
-  html_context = { 
-    'css_files': [
-        'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
-        'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
-        '_static/theme_overrides.css',
-    ],
-  }
-
+# on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
+import oods.sphinxtheme
+html_theme = 'sphinxtheme'
+html_theme_path = [oods.sphinxtheme.get_html_theme_path()]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -119,10 +108,7 @@ else:
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
-
-
-# -- Options for HTMLHelp output ------------------------------------------
+html_static_path = ['_static','../schema']
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'BODS'
@@ -131,21 +117,21 @@ htmlhelp_basename = 'BODS'
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
+     # The paper size ('letterpaper' or 'a4paper').
+     #
+     # 'papersize': 'letterpaper',
 
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
+     # The font size ('10pt', '11pt' or '12pt').
+     #
+     # 'pointsize': '10pt',
 
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
+     # Additional stuff for the LaTeX preamble.
+     #
+     # 'preamble': '',
 
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
+     # Latex figure (float) alignment
+     #
+     # 'figure_align': 'htbp',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -179,7 +165,47 @@ texinfo_documents = [
 ]
 
 
+# Adapted from https://github.com/OpenDataServices/sphinxcontrib-opendataservices/blob/master/sphinxcontrib/opendataservices.py#L50
+# Should eventually move into there
+from sphinx.directives.code import LiteralInclude
+from docutils.parsers.rst import directives, Directive
+import os
+import json
+from collections import OrderedDict
+from jsonpointer import resolve_pointer
+from docutils import nodes
+
+class JSONValue(LiteralInclude):
+    option_spec = {
+        'pointer': directives.unchanged,
+    }
+
+    def run(self):
+        env = self.state.document.settings.env
+        dirname = os.path.dirname(env.doc2path(env.docname, base=None))
+        relpath = os.path.join(dirname, self.arguments[0])
+        abspath = os.path.join(env.srcdir, relpath)
+        if not os.access(abspath, os.R_OK):
+            raise self.warning('JSON file not readable: %s' %
+                               self.arguments[0])
+
+        with open(abspath) as fp:
+            json_obj = json.load(fp, object_pairs_hook=OrderedDict)
+        filename = str(self.arguments[0]).split("/")[-1].replace(".json", "")
+        try:
+            title = self.options['title']
+        except KeyError as e:
+            title = filename
+        pointed = resolve_pointer(json_obj, self.options['pointer'])
+     
+        string = json.dumps(pointed, indent='    ')
+        if string.startswith('"') and string.endswith('"'):
+            string = string[1:-1]
+        return [nodes.paragraph(string,string)]
+
+
 def setup(app):
+    app.add_directive('json-value', JSONValue)
     app.add_config_value('recommonmark_config', {
         #'url_resolver': lambda url: github_doc_root + url,
         'auto_toc_tree_section': 'Contents',

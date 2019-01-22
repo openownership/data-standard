@@ -1,0 +1,36 @@
+{
+  "statementID": "118e9402-054e-4f6f-bfb0-8e4e9bfe3756",
+  "statementType": "entityStatement",
+  "entityType": "registeredEntity",
+  "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ 'НАУКОВО-ВИРОБНИЧА ФІРМА 'MARCH-A''",
+  "identifiers": [
+    {
+      "scheme": "UA-EDR",
+      "id": "21505721"
+    }
+  ],
+  "addresses": [
+    {
+      "address": "01021, м.Київ, Печерський район, ВУЛИЦЯ М.ГРУШЕВСЬКОГО, будинок 28/2, нежиле приміщення 43"
+    }
+  ],
+  "annotations": [
+    {
+      "statementPointerTarget": "/name",
+      "motivation": "transformation",
+      "description": "Transliterated from Ukranian to Latin characters using...",
+      "transformedContent": "TOVARYSTVO Z OBMEZHENOYU VIDPOVIDALʹNISTYU 'NAUKOVO-VYROBNYCHA FIRMA 'MARCH-A''"
+    },
+    {
+      "statementPointerTarget": "/addresses/0",
+      "motivation": "transformation",
+      "description": "Transliterated from Ukranian to Latin characters using...",
+      "transformedContent": "T01021, m.Kyyiv, Pechersʹkyy rayon, VULYTSYA M.HRUSHEVSʹKOHO, budynok 28/2, nezhyle prymishchennya 43"
+    }
+  ],
+  "source": {
+    "type": ["officialRegister", "thirdParty"],
+    "description": "Open Ownership Register, using data from the Ukraine United State Register and OpenCorporates",
+    "url": "https://register.openownership.org/entities/5a7b038b9dfc3fae18417a58?transliterated=true"
+  }
+}

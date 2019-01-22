@@ -1,6 +1,0 @@
-Field Name,Description,Format
-exact,Exact share: The exact share of this interest held (where available).,number
-maximum,Maximum share: The upper bound of the share of this interest known to be held.,number
-minimum,Minimum share: The lower bound of the share of this interest known to be held.,number
-exclusiveMinimum,"Exclusive minimum: If exclusiveMinimum is true, then the share is at least greater than the minimum value given. E.g. if minimum is 25, the share is at least 25.1, and not simply 25.",boolean
-exclusiveMaximum,"Exclusive maximum: If exclusiveMaximum is true, then the share is at least less than the maximum value given. E.g. if maximum is 50, the share is less than 49.999, and not simply 50.",boolean
