@@ -1,0 +1,225 @@
+[main]
+host = https://www.transifex.com
+
+[bods-v01.privacy-notice]
+file_filter = docs/locale/<lang>/LC_MESSAGES/privacy-notice.po
+source_file = docs/_build/gettext/privacy-notice.pot
+source_lang = en
+type = PO
+
+[bods-v01.usecases]
+file_filter = docs/locale/<lang>/LC_MESSAGES/usecases.po
+source_file = docs/_build/gettext/usecases.pot
+source_lang = en
+type = PO
+
+[bods-v01.index]
+file_filter = docs/locale/<lang>/LC_MESSAGES/index.po
+source_file = docs/_build/gettext/index.pot
+source_lang = en
+type = PO
+
+[bods-v01.about--governance]
+file_filter = docs/locale/<lang>/LC_MESSAGES/about/governance.po
+source_file = docs/_build/gettext/about/governance.pot
+source_lang = en
+type = PO
+
+[bods-v01.about--credits]
+file_filter = docs/locale/<lang>/LC_MESSAGES/about/credits.po
+source_file = docs/_build/gettext/about/credits.pot
+source_lang = en
+type = PO
+
+[bods-v01.about--index]
+file_filter = docs/locale/<lang>/LC_MESSAGES/about/index.po
+source_file = docs/_build/gettext/about/index.pot
+source_lang = en
+type = PO
+
+[bods-v01.about--support]
+file_filter = docs/locale/<lang>/LC_MESSAGES/about/support.po
+source_file = docs/_build/gettext/about/support.pot
+source_lang = en
+type = PO
+
+[bods-v01.userguides--validating-and-verifying]
+file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/validating-and-verifying.po
+source_file = docs/_build/gettext/userguides/validating-and-verifying.pot
+source_lang = en
+type = PO
+
+[bods-v01.userguides--updating-data]
+file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/updating-data.po
+source_file = docs/_build/gettext/userguides/updating-data.pot
+source_lang = en
+type = PO
+
+[bods-v01.userguides--publishing-ben-ownership-data]
+file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/publishing-ben-ownership-data.po
+source_file = docs/_build/gettext/userguides/publishing-ben-ownership-data.pot
+source_lang = en
+type = PO
+
+[bods-v01.userguides--using-ben-ownership-data]
+file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/using-ben-ownership-data.po
+source_file = docs/_build/gettext/userguides/using-ben-ownership-data.pot
+source_lang = en
+type = PO
+
+[bods-v01.userguides--index]
+file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/index.po
+source_file = docs/_build/gettext/userguides/index.pot
+source_lang = en
+type = PO
+
+[bods-v01.userguides--links-other-standards]
+file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/links-other-standards.po
+source_file = docs/_build/gettext/userguides/links-other-standards.pot
+source_lang = en
+type = PO
+
+[bods-v01.userguides--bulk-data-and-api]
+file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/bulk-data-and-api.po
+source_file = docs/_build/gettext/userguides/bulk-data-and-api.pot
+source_lang = en
+type = PO
+
+[bods-v01.userguides--licensing]
+file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/licensing.po
+source_file = docs/_build/gettext/userguides/licensing.pot
+source_lang = en
+type = PO
+
+[bods-v01.toolbox--index]
+file_filter = docs/locale/<lang>/LC_MESSAGES/toolbox/index.po
+source_file = docs/_build/gettext/toolbox/index.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--reference]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/reference.po
+source_file = docs/_build/gettext/schema/reference.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--conformance]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/conformance.po
+source_file = docs/_build/gettext/schema/conformance.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--schema-browser]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/schema-browser.po
+source_file = docs/_build/gettext/schema/schema-browser.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--index]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/index.po
+source_file = docs/_build/gettext/schema/index.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--changelog]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/changelog.po
+source_file = docs/_build/gettext/schema/changelog.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--concepts]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/concepts.po
+source_file = docs/_build/gettext/schema/concepts.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--guidance--identifiers]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/identifiers.po
+source_file = docs/_build/gettext/schema/guidance/identifiers.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--guidance--updating-data]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/updating-data.po
+source_file = docs/_build/gettext/schema/guidance/updating-data.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--guidance--provenance]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/provenance.po
+source_file = docs/_build/gettext/schema/guidance/provenance.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--guidance--functional-requirements]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/functional-requirements.po
+source_file = docs/_build/gettext/schema/guidance/functional-requirements.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--guidance--index]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/index.po
+source_file = docs/_build/gettext/schema/guidance/index.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--guidance--languages]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/languages.po
+source_file = docs/_build/gettext/schema/guidance/languages.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--guidance--statement-identifiers]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/statement-identifiers.po
+source_file = docs/_build/gettext/schema/guidance/statement-identifiers.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema--guidance--serialization]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/serialization.po
+source_file = docs/_build/gettext/schema/guidance/serialization.pot
+source_lang = en
+type = PO
+
+[bods-v01.examples--index]
+file_filter = docs/locale/<lang>/LC_MESSAGES/examples/index.po
+source_file = docs/_build/gettext/examples/index.pot
+source_lang = en
+type = PO
+
+[bods-v01.primer--whyisbo]
+file_filter = docs/locale/<lang>/LC_MESSAGES/primer/whyisbo.po
+source_file = docs/_build/gettext/primer/whyisbo.pot
+source_lang = en
+type = PO
+
+[bods-v01.primer--index]
+file_filter = docs/locale/<lang>/LC_MESSAGES/primer/index.po
+source_file = docs/_build/gettext/primer/index.pot
+source_lang = en
+type = PO
+
+[bods-v01.primer--whatisbo]
+file_filter = docs/locale/<lang>/LC_MESSAGES/primer/whatisbo.po
+source_file = docs/_build/gettext/primer/whatisbo.pot
+source_lang = en
+type = PO
+
+[bods-v01.primer--whatisthebods]
+file_filter = docs/locale/<lang>/LC_MESSAGES/primer/whatisthebods.po
+source_file = docs/_build/gettext/primer/whatisthebods.pot
+source_lang = en
+type = PO
+
+[bods-v01.primer--whatisbodata]
+file_filter = docs/locale/<lang>/LC_MESSAGES/primer/whatisbodata.po
+source_file = docs/_build/gettext/primer/whatisbodata.pot
+source_lang = en
+type = PO
+
+[bods-v01.primer--whatdoesbodscover]
+file_filter = docs/locale/<lang>/LC_MESSAGES/primer/whatdoesbodscover.po
+source_file = docs/_build/gettext/primer/whatdoesbodscover.pot
+source_lang = en
+type = PO
+
