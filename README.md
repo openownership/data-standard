@@ -55,5 +55,5 @@ Now the files are ready to be translated in Transifex.
 **To build another language locally** use `make html` (in the `docs` directory) but pass the language you want:
 
 ```
-$ make -e SPHINXOPTS="-D language='ru'" html
+$ sphinx-build -b html -D language=ru . _build/html/ru
 ```
