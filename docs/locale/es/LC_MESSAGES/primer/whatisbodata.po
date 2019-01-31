@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 654ecf475142480dbaad1a244fdf67d5
+#: ../../primer/whatisbodata.rst:2
+msgid "What is beneficial ownership data?"
+msgstr ""
+
+# 1e46348c9d734846b86c027b6ee6d945
+#: ../../primer/whatisbodata.rst:8
+msgid ""
+"From owners' birth places to rules about shareholders' voting rights..."
+msgstr ""
+
+# 0d70159036ac40e6939ca481304dfca4
+#: ../../primer/whatisbodata.rst:14
+msgid "Data relating to beneficial ownership may include:"
+msgstr ""
+
+# 5e92cd635fe14edd8b5c600af464d22a
+#: ../../primer/whatisbodata.rst:16
+msgid "Details to identify individual owners"
+msgstr ""
+
+# 1439b3ce3d5d429488281a9ca638f84d
+#: ../../primer/whatisbodata.rst:17
+msgid "Details of other legal entities"
+msgstr ""
+
+# a3daef27587741e3be59b810eadb4030
+#: ../../primer/whatisbodata.rst:18
+msgid "A breakdown of share holdings"
+msgstr ""
+
+# 7fd669bca24442aa9ea31fe8cf224375
+#: ../../primer/whatisbodata.rst:19
+msgid "The voting rights attached to different share classes"
+msgstr ""
+
+# 64d361caa933487788db7bcd4de66e50
+#: ../../primer/whatisbodata.rst:20
+msgid "Details of intermediate entities in an ownership chain"
+msgstr ""
+
+# d480908d1496437eb5dd8a260d6f6245
+#: ../../primer/whatisbodata.rst:21
+msgid "Rules of board membership"
+msgstr ""
+
+# 3d0265e4d80d4f5794109ee73718e4d4
+#: ../../primer/whatisbodata.rst:23
+msgid "And so on."
+msgstr ""
+
+# 1a911252b88448918d1a31d29b51a423
+#: ../../primer/whatisbodata.rst:29
+msgid ""
+"...data describing beneficial ownership is often scattered across "
+"documents..."
+msgstr ""
+
+# 821ed56cf07844bb806bbfa8cde4cb4e
+#: ../../primer/whatisbodata.rst:36
+msgid ""
+"The data is often included in companies’ annual reports, founding articles "
+"and filings to regulatory authorities. Bringing it all together can build "
+"the big picture about a company’s beneficial owners."
+msgstr ""
+
+# edb3cf8d5e3a4189b810c7f2a2544b6a
+#: ../../primer/whatisbodata.rst:48
+msgid ""
+"...presenting challenges when sharing or collating beneficial ownership "
+"information..."
+msgstr ""
+
+# 7a4ecb7843994ac9a732c48a941735a3
+#: ../../primer/whatisbodata.rst:55
+msgid ""
+"Accessing this data and understanding its relevance to beneficial ownership "
+"can be challenging:"
+msgstr ""
+
+# 78a6fe95bab24c9db84f0f10dc4b8a76
+#: ../../primer/whatisbodata.rst:58
+msgid "The data may only be a small part of a longer document."
+msgstr ""
+
+# 08174d885094427c9ff44f9250828baf
+#: ../../primer/whatisbodata.rst:59
+msgid ""
+"The same types of data will be represented differently by different "
+"publishers."
+msgstr ""
+
+# 1edead209add4314aab10f7d9823c3dd
+#: ../../primer/whatisbodata.rst:61
+msgid "Relevant data may appear across different documents."
+msgstr ""
+
+# 3520a3b3a13a4352acbb3f7bfab7841d
+#: ../../primer/whatisbodata.rst:62
+msgid "Legal terminology may differ across jurisdictions."
+msgstr ""
+
+# 29dbf0f4ae6e49c29be116e3dc0b6988
+#: ../../primer/whatisbodata.rst:68
+msgid "... which is becoming a frequent requirement for companies."
+msgstr ""
+
+# 4a691dc8823c485cb2921c8a5f9066f5
+#: ../../primer/whatisbodata.rst:74
+msgid ""
+"Increasingly, governments and regulatory authorities require beneficial "
+"ownership data to be disclosed and filed in official registers."
+msgstr ""
+
+# 282c0827db244c6c835288ca27479046
+#: ../../primer/whatisbodata.rst:80
+msgid ""
+"These challenges require us to structure and standardise beneficial "
+"ownership data, so that it has a reliable scope and predictable format."
+msgstr ""
+
+# 76e578f47afd407eb5aa7fc59dbc9d59
+#: ../../primer/whatisbodata.rst:86
+msgid ""
+"Companies already hold data about beneficial ownership. It is not always "
+"recorded, stored or shared in consistent ways, making reporting and "
+"interpreting reports challenging."
+msgstr ""

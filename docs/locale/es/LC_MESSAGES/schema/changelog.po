@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 3bed4fd40705455ba3b8ecb47363efd6
+#: ../../schema/changelog.rst:5
+msgid "ChangeLog"
+msgstr ""
+
+# bee1ba83739a4a2da8f6abe479970a9d
+#: ../../schema/changelog.rst:9
+msgid ""
+"This is v0.1 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model and additional codelist information."
+msgstr ""
+
+# c9d327295438440299f49d96172a8fd6
+#: ../../schema/changelog.rst:11
+msgid ""
+"Implementers should be aware that future changes are anticipated, before a "
+"version 1.0 release. However, from this v0.1 release onwards, any structural"
+" changes, or major definitional changes will only take place following "
+"consultation, with a clear changelog provided, and with the documentation of"
+" previous versions maintained in archive form."
+msgstr ""
+
+# c5e9959743c6449286f77b84418cc279
+#: ../../schema/changelog.rst:13
+msgid ""
+"The schema specifies a **structure**, **fields** and **codelists** but does "
+"not yet enforce validation constraints on most fields."
+msgstr ""
+
+# ee28b99f00e24d43a30d08600762adb5
+#: ../../schema/changelog.rst:17
+msgid "[0.1] - 2018-12-12"
+msgstr ""
+
+# 94282a0174664c6a86c64f1e3fb30823
+#: ../../schema/changelog.rst:20
+msgid "Added"
+msgstr ""
+
+# e1dbd708c94b4d2fb2ed31370467743e
+#: ../../schema/changelog.rst:21
+msgid ""
+"``beneficialOwnershipOrControl`` property added to ``Interest`` object. "
+"Takes a boolean value. Can be used to to assert that an interest between a "
+"natural person and an entity makes that person a beneficial owner."
+msgstr ""
+
+# baa759b4248c4006a6d6c56b5a5153a9
+#: ../../schema/changelog.rst:22
+msgid ""
+"``pepStatus`` property add to ``personStatement`` object. Allows a natural "
+"person to be recorded as a politically exposed person (with a related "
+"reason, jurisdiction, start date and end date)."
+msgstr ""
+
+# 4b7a2b1a85a04a998a39e4be6ce48e65
+#: ../../schema/changelog.rst:23
+msgid ""
+"``annotations`` property added to all three types of statement. Annotations "
+"provide a way of including additional (structured) data or transforming "
+"existing data in a targeted way."
+msgstr ""
+
+# abdf798808eb4b6db4ad868094dceb63
+#: ../../schema/changelog.rst:24
+msgid ""
+"An ``unspecified`` property replaces the ``nullParty`` option for interested"
+" parties.  An unspecifiedReason codelist provides options for describing why"
+" an interested party is not recorded."
+msgstr ""
+
+# 2b46dcda8e3f45efbe227c0c43dbb028
+#: ../../schema/changelog.rst:27
+msgid "Changed"
+msgstr ""
+
+# 4ccc0f81fb734577947776276d3d1d70
+#: ../../schema/changelog.rst:28
+msgid ""
+"The interestType codelist has been extended to include interests in trusts."
+msgstr ""
+
+# 4be721048fe84f0ab5119f4535a213dd
+#: ../../schema/changelog.rst:29
+msgid ""
+"The structure of BODS-formatted data has been flattened, to remove "
+"extraneous nesting and facilitate serialization using JSON Lines."
+msgstr ""
+
+# 6f6a1d9ddf634ddfab23b98ee9d76ab2
+#: ../../schema/changelog.rst:30
+msgid ""
+"'Beneficial ownership statements' have been renamed 'Ownership-or-control "
+"statements' to reflect the scope of their use."
+msgstr ""
+
+# a887a0dab56b45cc9dae19ceaa2cd8f0
+#: ../../schema/changelog.rst:33
+msgid "Removed"
+msgstr ""
+
+# de0ce36caa4f4e2e8037629d13b1a1e2
+#: ../../schema/changelog.rst:34
+msgid ""
+"Arrays of ``statementGroup`` objects (each object with its own statement "
+"group id) are no longer used to package arrays of statements. This reflects "
+"a flattening of the structure of BODS formatted data."
+msgstr ""
+
+# 75e5e0bfc7b54b35bb24456cb546c040
+#: ../../schema/changelog.rst:35
+msgid ""
+"The ``nullParty`` option for interested parties. See ``unspecified`` "
+"property in the Added section above."
+msgstr ""
