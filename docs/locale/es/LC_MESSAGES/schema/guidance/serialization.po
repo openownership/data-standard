@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# c36c0261dd524adba605f5c1a0bf2a5a
+#: ../../schema/guidance/serialization.rst:4
+msgid "Serialization"
+msgstr ""
+
+# 078c383deeb34e7ca8949f30c2ee1c1d
+#: ../../schema/guidance/serialization.rst:6
+msgid ""
+"The canonical serialization of BODS data is as a `JSON document "
+"<https://tools.ietf.org/html/rfc8259>`_. A JSON BODS file SHOULD consists of"
+" a series of ordered statement objects within a top-level array. JSON Lines "
+"MAY also be used when creating large files."
+msgstr ""
+
+# b831923f50bf475dbd31e7319a39bce9
+#: ../../schema/guidance/serialization.rst:8
+msgid ""
+"Each of the :ref:`entityStatements <schema-entity-statement>` or "
+":ref:`personStatements <schema-person-statement>` referenced by a particular"
+" :ref:`ownershipOrControlStatement <schema-ownership-or-control-statement>`"
+"  MUST appear before that particular ownership-or-control statement in the "
+"ordered array."
+msgstr ""
+
+# ca79063af8f34627ae2722eab50a8056
+#: ../../schema/guidance/serialization.rst:10
+msgid ""
+"BODS data MAY also be serialized in tabular form, with each row representing"
+" a statement. Columns SHOULD represent statement fields and column titles "
+"SHOULD use the relevant relative JSON Pointer from the statement root."
+msgstr ""
+
+# c8e28dea007c4b129c54d67d4a6ccead
+#: ../../schema/guidance/serialization.rst:12
+msgid "For example, the extract:"
+msgstr ""
+
+# 421bbf560af84d538ccec7bed364eee2
+#: ../../schema/guidance/serialization.rst:43
+msgid "may be serialized in a table as:"
+msgstr ""
+
+# 9aca00881f6341649a6e384f8cbdfd32
+#: ../../schema/guidance/serialization.rst:48
+msgid "statementID"
+msgstr ""
+
+# 11c3a6ac089e4865986fe4332c4b5478
+#: ../../schema/guidance/serialization.rst:49
+msgid "statementType"
+msgstr ""
+
+# ad046acd560947cd9a8e272e11f3d7a8
+#: ../../schema/guidance/serialization.rst:50
+msgid "identifiers/0/scheme"
+msgstr ""
+
+# 421c7a1e65d241bda4a8f25f72e2cad3
+#: ../../schema/guidance/serialization.rst:51
+msgid "identifiers/0/id"
+msgstr ""
+
+# 5359bb4b566d403ca8483758fb234e77
+#: ../../schema/guidance/serialization.rst:52
+msgid "e3c07f34-1810-4eed-b845-4d9f4d97f9d5"
+msgstr ""
+
+# db56503af4004896853085ba72032b9c
+#: ../../schema/guidance/serialization.rst:53
+msgid "entityStatement"
+msgstr ""
+
+# 1dcc70776d514b7caf18c7af3a276cd0
+#: ../../schema/guidance/serialization.rst:54
+msgid "GB-COH"
+msgstr ""
+
+# ea6b43f13dea4f979874e32717ecf9c2
+#: ../../schema/guidance/serialization.rst:55
+msgid "07444723"
+msgstr ""
+
+# 68b0d262edea4280b180ce68998b715c
+#: ../../schema/guidance/serialization.rst:56
+msgid "a2b485be-e3b6-4fd7-8a6a-930e46cf9957"
+msgstr ""
+
+# 5661955b841a43069382344cf30d66f2
+#: ../../schema/guidance/serialization.rst:57
+msgid "personStatement"
+msgstr ""
+
+# ff262c09f9df44f0a5a489964c4dc032
+#: ../../schema/guidance/serialization.rst:58
+msgid "MX-RFC"
+msgstr ""
+
+# 7970e3ecae4b4ab589ca4dd2b34c29b7
+#: ../../schema/guidance/serialization.rst:59
+msgid "ABC680524P-76"
+msgstr ""
+
+# f18c155e2abb4d18b47963429a7a21f7
+#: ../../schema/guidance/serialization.rst:61
+msgid "34b479f2-1681-4064-ab51-1e703fbafa"
+msgstr ""
+
+# acb322d6d824499daa1d60d32ca01bec
+#: ../../schema/guidance/serialization.rst:62
+msgid "ownershipOrControlStatement"
+msgstr ""

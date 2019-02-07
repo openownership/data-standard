@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:18+0000\n"
+"Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# 7555fc1b30674584adb5cbbf9822761f
+#: ../../schema/conformance.rst:4
+msgid "Conformance and validation"
+msgstr ""
+
+# aa81c6d6a77f41eca7829cbee1168b55
+#: ../../schema/conformance.rst:7
+msgid "Conformance statement"
+msgstr ""
+
+# b287033bdae1444ca10bdabb8d763157
+#: ../../schema/conformance.rst:9
+msgid ""
+"A conforming implementation **may** use only a subset of this "
+"specification’s terms."
+msgstr ""
+
+# ce13550f8c9f469284f3089186c89aa3
+#: ../../schema/conformance.rst:10
+msgid ""
+"It **must not** use terms from outside this specification’s terms where this"
+" specification’s terms would suffice."
+msgstr ""
+
+# 8f5229d6c5fb4a1d8f791edfa310d038
+#: ../../schema/conformance.rst:11
+msgid ""
+"It **may** use terms from outside this specification’s terms where this "
+"specification’s terms are insufficient."
+msgstr ""
+
+# 38bd9aebda8845feb0337dd665f90030
+#: ../../schema/conformance.rst:12
+msgid ""
+"Its usage of this specification’s terms **must** be consistent with the "
+"semantics of those terms."
+msgstr ""
+
+# 3a196f8b773c414099c10f97f55976d9
+#: ../../schema/conformance.rst:13
+msgid ""
+"If an implementation serializes to JSON, its serializations **must** "
+"validate against this specification’s JSON Schema."
+msgstr ""
+
+# c5286b400a584e62861ce88df562dae1
+#: ../../schema/conformance.rst:15
+msgid ""
+"(Statement `adapted from Popolo Project specification "
+"<http://www.popoloproject.com/specs/#conformance>`_)"
+msgstr ""
+
+# cd7b9bbeb5074e1199cd60223dd6637e
+#: ../../schema/conformance.rst:18
+msgid "Extending the schema"
+msgstr ""
+
+# 2c26c52ba1f94655a9c6a54c5c4d2caa
+#: ../../schema/conformance.rst:20
+msgid ""
+"Publishers providing additional properties in their implementations are "
+"encouraged to `document these in the project issue tracker "
+"<https://github.com/openownership/data-standard/issues/>`_ with the "
+"'extensions' tag, and to re-use `other publisher's extensions "
+"<https://github.com/openownership/data-"
+"standard/issues?q=is%3Aissue+label%3Aextension>`_ where possible."
+msgstr ""
+
+# 96de866bdf384c3083c50ec7f211d842
+#: ../../schema/conformance.rst:23
+msgid "Validation"
+msgstr ""
+
+# 3a5dbf0282714299b1dec655f0a3b264
+#: ../../schema/conformance.rst:25
+msgid "No public validator for the v0.1 release is currently available."
+msgstr ""
+
+# 2c70c351e2194ef7a4b00b5c89ca9e40
+#: ../../schema/conformance.rst:27
+msgid ""
+"The current schema includes minimal validation requirements, and should be "
+"treated as a guide to data structure, rather than a full validation schema."
+msgstr ""

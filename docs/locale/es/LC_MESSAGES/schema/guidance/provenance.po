@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# fa65c71213194cdc8ad764940fc4beed
+#: ../../schema/guidance/provenance.rst:4
+msgid "Sources and annotations"
+msgstr ""
+
+# 11293484b92b4cb89c044ca9c2c237a7
+#: ../../schema/guidance/provenance.rst:6
+msgid ""
+"It is important to indicate clearly where data has come from, and any "
+"changes to it that have been made since it was originally collected."
+msgstr ""
+
+# c50d57db49f4447fbc0a3ffe8a8c3d05
+#: ../../schema/guidance/provenance.rst:8
+msgid ""
+"Each statement SHOULD contain information on its source, and whether or not "
+"the information it contains has been verified. (For example, a statement may"
+" be taken from official records, or self declaration, and it may or may not "
+"have been checked through some process to verify that the information "
+"provided is accurate.)"
+msgstr ""
+
+# 44de8d6e6d5f4aa9a0a54e85ed5ed088
+#: ../../schema/guidance/provenance.rst:10
+msgid ""
+"The ``source`` property of each statement MAY be used to provide provenance "
+"information."
+msgstr ""
+
+# 25775331c0164f9e92b9e659dbc397a7
+#: ../../schema/guidance/provenance.rst:12
+msgid ""
+"The ``annotations`` property of each statement MAY be used to provide "
+"additional contextual information at the level of a whole statement, a sub-"
+"object, or an individual property. For example an annotation might be used "
+"to include structured information detailing the nature of the interest held "
+"by a natural person in a company. In some cases, systems processing BODS "
+"data may make changes to clean, enhance or otherwise update the data, such "
+"as reconciling company names against identifiers. In this case, details of "
+"these changes SHOULD be recorded as annotations, to allow users to clearly "
+"understand the provenance of information."
+msgstr ""

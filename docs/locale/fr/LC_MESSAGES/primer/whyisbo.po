@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# f93787e594be4b089ca8e42dd1ccee7f
+#: ../../primer/whyisbo.rst:2
+msgid "Why beneficial ownership is a useful concept"
+msgstr ""
+
+# 7afd9969839249c998a2976306495da3
+#: ../../primer/whyisbo.rst:4
+msgid ""
+"People can be involved in a number of companies and in different ways. By "
+"limiting our understanding of people's involvement to ownership only, we "
+"would miss instances like below."
+msgstr ""
+
+# e1f50c64a6ed4a6792d00fb5bed06460
+#: ../../primer/whyisbo.rst:12
+msgid ""
+"The person both controls Company 1 and owns half of Company 2. This could be"
+" important to know if both companies bid for the same government contract, "
+"or if they both appeared in a procurement chain."
+msgstr ""
+
+# dbb468bb1d3345b3a9368cad1c1a27b7
+#: ../../primer/whyisbo.rst:16
+msgid ""
+"It might be equally important to see that a person's control over a company "
+"is greater than one might expect given their financial stake in it."
+msgstr ""
+
+# 49811da63fb240adb7d08463d3ae678c
+#: ../../primer/whyisbo.rst:27
+msgid ""
+"Uniting ownership and control under the banner of beneficial ownership "
+"allows us to represent the complex reality of corporate structures, and the "
+"multiple corporate interests a person might have."
+msgstr ""

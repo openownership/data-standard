@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# de451af9a8fb4bf783c10988b330572c
+#: ../../schema/guidance/statement-identifiers.rst:4
+msgid "Statement Identifiers"
+msgstr ""
+
+# f3332f120f544cb1b43dfa1d1f0f5ef0
+#: ../../schema/guidance/statement-identifiers.rst:6
+msgid ""
+"Each statement MUST have an entirely unique identifier. There MUST be no "
+"possibility of collision between identifiers for different statements."
+msgstr ""
+
+# 4a9c8be92aae4e46b6c568db82e39f61
+#: ../../schema/guidance/statement-identifiers.rst:8
+msgid "This means that:"
+msgstr ""
+
+# d56a0cd5d8fa4596b9cfea5cc764dd10
+#: ../../schema/guidance/statement-identifiers.rst:10
+msgid "Two **different** statements SHOULD never have the same identifier;"
+msgstr ""
+
+# 0617560b1823428182ef1bac9d729978
+#: ../../schema/guidance/statement-identifiers.rst:11
+msgid ""
+"Once an identifier is assigned to a statement, the identifier SHOULD NOT "
+"change."
+msgstr ""
+
+# 8710ff13e7ce4471b5a42297756163b4
+#: ../../schema/guidance/statement-identifiers.rst:13
+msgid ""
+"The schema enforces a minimum statement identifier length of 32 characters, "
+"and maximum length of 64 characters."
+msgstr ""
+
+# f21eb795e7d04d97890400d6dafde1d1
+#: ../../schema/guidance/statement-identifiers.rst:15
+msgid ""
+"Publishers MAY use one of the following strategies for creating statement "
+"identifiers."
+msgstr ""
+
+# 1a05bf5cabfe4c219045bfe88249f78d
+#: ../../schema/guidance/statement-identifiers.rst:20
+msgid "Strategies for identifier creation"
+msgstr ""
+
+# 6938903a29814062a134cb5055568442
+#: ../../schema/guidance/statement-identifiers.rst:22
+msgid ""
+"Generating a `UUID "
+"<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ for each "
+"statement, storing this in internal systems, and updating it whenever the "
+"relevant record(s) that make up a statement are updated;"
+msgstr ""
+
+# cc9fd26320184195aae128ff0d6620c4
+#: ../../schema/guidance/statement-identifiers.rst:24
+msgid ""
+"Generating a `UUID "
+"<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ as a "
+"publisher-related prefix, and appending a local record identifier, and "
+"version identifier to it;"
+msgstr ""
+
+# fd27d162ff67445886c4e739d952f96a
+#: ../../schema/guidance/statement-identifiers.rst:26
+msgid ""
+"Using an appropriately designed hash function that generates identifiers "
+"from a normalised JSON representation of the statement (excluding the `id` "
+"field) with a low collision probability."
+msgstr ""
+
+# f7e2625f5d3e4118b3ac677d06bd1df3
+#: ../../schema/guidance/statement-identifiers.rst:28
+msgid ""
+"Using an internal identifier combined with a unique prefix to avoid "
+"collision between identifiers from different publishers"
+msgstr ""
+
+# 22c52ce79b3347b3b5e07fd61454cde0
+#: ../../schema/guidance/statement-identifiers.rst:31
+msgid ""
+"Statement identifiers are generally for creation and internal use within "
+"applications. In most circumstances they do not need to be displayed to "
+"users. This is in contrast to :ref:`entity or person identifiers <guidance-"
+"identifiers>`, which may be useful to display to users."
+msgstr ""

@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# 7281ee3684be48c48cdea007f00a4a2d
+#: ../../examples/index.rst:2
+msgid "Examples"
+msgstr ""
+
+# 7524ddb1f8a3479291009e8cdce42010
+#: ../../examples/index.rst:4
+msgid ""
+"The following examples highlight key elements of how ownership and control "
+"information is built up through the use of statements."
+msgstr ""
+
+# 352c697182014c2caff9ab0e2ed01431
+#: ../../examples/index.rst:7
+msgid "A single direct owner"
+msgstr ""
+
+# e45a4e4c3ffb48f4a667967ad9da2226
+#: ../../examples/index.rst:9
+msgid ""
+"The example below presents three statements (Entity, Person and "
+"OwnershipOrControl) that describe the 100% beneficial ownership of Chrinon "
+"Ltd by Chris Taggart."
+msgstr ""
+
+# 429153f4de7b42e1b947ad3fbeadd4a3
+#: ../../examples/index.rst:15
+msgid "Joint ownership"
+msgstr ""
+
+# 8ef681490848497187f9fffcde21fe5d
+#: ../../examples/index.rst:17
+msgid ""
+"To model joint ownership, an artificial 'arrangement', owned by the two "
+"parties responsible for it, should be included within a chain of ownership."
+msgstr ""
+
+# db3546a4432149d2b8742696421c2ee1
+#: ../../examples/index.rst:24
+msgid "Updating ownership"
+msgstr ""
+
+# 781b193b5e864d79b4d2fa2a004bc2e8
+#: ../../examples/index.rst:26
+msgid ""
+"To update a previous statement, a new beneficial ownership statement, with a"
+" ``replacesStatement`` property is required."
+msgstr ""
+
+# 4f4d9c12331342d1826b3033e653c461
+#: ../../examples/index.rst:28
+msgid ""
+"In the (fictional) example below, the previous statement that Chris Taggart "
+"has 100% ownership of Chrinon Ltd is replaced by a new statement showing 50%"
+" ownership. A separate statement declares that the owner of the other 50% "
+"has not yet been identified."
+msgstr ""
+
+# d4f13d9f5d144986b667a2b0c4fa0726
+#: ../../examples/index.rst:30
+msgid ""
+"Note that only **changed statements** need to new statement identifiers."
+msgstr ""
+
+# 61d7c4eb26e0410cb92ad8b99cfaa7d7
+#: ../../examples/index.rst:35
+msgid ""
+"When a data file is provided, all the person or entity statements referenced"
+" from an ownershipOrControl statement ``subject`` or ``interestedParty`` "
+"field should be included in the file."
+msgstr ""
