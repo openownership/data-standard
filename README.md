@@ -48,11 +48,19 @@ To run the steps in the translation workflow, you need to install this repo and 
 $ pip install -r requirements.txt
 ```
 
+You also need to make sure you have `gettext` and `pybabel` installed in whatever environment you're running this in:
+
+```
+$ apt-get install gettext
+$ apt-get install python-babel
+```
+
 And you need to get a [Transifex API key](https://www.transifex.com/user/settings/api/), make sure you have access to the [BODS project on Transifex](https://www.transifex.com/OpenDataServices/bods-v01)
 
 **When you add or update the docs** you need to do the following so that they can be translated, in the `docs` directory:
 
-1. Run `make gettext` to extract translatable English strings.
+1. Run `make gettext` to extract translatable English strings from the docs.
+2. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/locale/codelists.pot` to extract translatable English strings from the codelists.
 2. *If you have new pages* run `sphinx-intl update-txconfig-resources --pot-dir _build/gettext --transifex-project-name bods-v01` to register the translation files with Transifex (generates or updates contents `.tx/config` file).
 3. Run `tx push -s` to push to Transifex.
 
@@ -67,3 +75,15 @@ Now the files are ready to be translated in Transifex.
 ```
 $ sphinx-build -b html -D language=ru . _build/html/ru
 ```
+
+` pybabel extract -F babel_bods_codelist.cfg . -o docs/locale/codelists.pot`
+<!-- ` pybabel extract -F babel_bods_schema.cfg . -o docs/locale/schema.pot` -->
+
+<!-- # Directory in which to build documentation files.
+BUILD_DIR=build
+
+# Directory in which to build .pot files.
+POT_DIR=$(BUILD_DIR)/locale
+
+# Directory of catalog files.
+LOCALE_DIR=docs/locale -->
