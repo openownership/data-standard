@@ -61,6 +61,7 @@ And you need to get a [Transifex API key](https://www.transifex.com/user/setting
 
 1. Run `make gettext` to extract translatable English strings from the docs.
 2. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/locale/codelists.pot` to extract translatable English strings from the codelists.
+2. Run `pybabel extract -F babel_bods_schema.cfg . -o docs/locale/schema.pot` to extract translatable English strings from the schema.
 2. *If you have new pages* run `sphinx-intl update-txconfig-resources --pot-dir _build/gettext --transifex-project-name bods-v01` to register the translation files with Transifex (generates or updates contents `.tx/config` file).
 3. Run `tx push -s` to push to Transifex.
 
