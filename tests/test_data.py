@@ -41,7 +41,9 @@ def test_valid_statement_json(json_path):
     '../examples/workshop/modelling-bods-data/bods-package-ren-consulting-limited.json',
     '../examples/1-single-direct.json',
     '../examples/2-single-update.json',
-    '../examples/3-joint-ownership.json'
+    '../examples/3-joint-ownership.json',
+    '../examples/4a-simple-pep-declaration.json',
+    '../examples/4b-full-pep-declaration.json'
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
