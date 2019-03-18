@@ -104,12 +104,18 @@
       },
       "propertyOrder": 60
     },
-    "pepStatus": {
+    "hasPepStatus": {
       "title": "Politically Exposed Person Status",
+      "description": "Is the person described this statement a politically exposed person? This field should not be used if PEP declarations are not expected as part of this disclosure. If a PEP declaration is expected but missing this field should not be used but the reason for the missing data declared in the pepStatusDetails field.",
+      "type": "boolean",
+      "propertyOrder": 79
+    },
+    "pepStatusDetails": {
+      "title": "Politically Exposed Person Status Details",
       "description": "One or more descriptions of this person's Politically-Exposed Person (PEP) status.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/PepStatus"
+        "$ref": "components.json#/definitions/PepStatusDetails"
       },
       "propertyOrder": 80
     },

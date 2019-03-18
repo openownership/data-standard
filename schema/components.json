@@ -460,7 +460,7 @@
         }
       }
     },
-    "PepStatus": {
+    "PepStatusDetails": {
       "title": "PEP Status",
       "description": "A description of a politically-exposed person status.",
       "type": "object",
@@ -470,7 +470,14 @@
           "description": "The reason for this person being declared a politically-exposed person.",
           "type": "string"
         },
+        "missingInfoReason": {
+          "title": "Missing information reason(s)",
+          "description": "For disclosure regimes where a PEP declarations is required but not provided, this field should contain an explanation of the reason that PEP status for the person is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification. This field should only be filled out where hasPepStatus is missing. Where this field is present it should be the only field except for `source`.",
+          "type": "string"
+        },
         "jurisdiction": {
+          "title": "Jurisdiction",
+          "description": "The jurisdiction where this person is a PEP.",
           "$ref": "#/definitions/Jurisdiction"
         },
         "startDate": {
@@ -484,6 +491,11 @@
           "description": "When did this PEP status end. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
           "type": "string",
           "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+        },
+        "source": {
+          "title": "Source",
+          "description": "The source of this PEP information",
+          "$ref": "components.json#/definitions/Source"
         }
       }
     }

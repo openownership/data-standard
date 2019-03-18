@@ -19,21 +19,7 @@
                 "fullName": "Michael Hubbard"
             }
         ],
-        "pepStatus": {
-            "isPep": true,
-            "source": {
-                "type": ["selfDeclaration"],
-                "description": "EITI declaration",
-                "assertedBy": [
-                    {
-                        "name": "Michael Hubbard"
-                    },
-                    {
-                        "name": "Platinum Emerald and Plutonim Mining Limited"
-                    }
-                ]
-            }
-        }
+        "hasPepStatus": true
     },
     {
         "statementID": "ef7e0d77-1e2b-44c0-a91c-7670db09d2a4",
