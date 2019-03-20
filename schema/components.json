@@ -104,7 +104,7 @@
         },
         "schemeName": {
           "title": "Scheme name",
-          "Description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided.",
+          "description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided.",
           "type": "string"
         },
         "uri": {
@@ -138,7 +138,7 @@
       "description": "A persistent globally unique identifier for this statement.",
       "type": "string",
       "minLength": 32,
-      "maxLenth":64
+      "maxLength": 64
     },
     "Address": {
       "title": "Address",
