@@ -1,0 +1,56 @@
+[
+    {
+        "statementID": "41fd9f6c-ad31-4209-9ed8-1ec46cb0cae5",
+        "statementType": "entityStatement",
+        "entityType": "registeredEntity",
+        "name": "Platinum Emerald and Plutonim Mining Limited",
+        "identifiers": [
+            {
+                "scheme": "GB-COH",
+                "id": "XE-000079054"
+            }
+        ]
+    },
+    {
+        "statementID": "a40f766e-0c33-4e34-b9d4-80e39aa99496",
+        "statementType": "personStatement",
+        "names": [
+            {
+                "fullName": "Michael Hubbard"
+            }
+        ],
+        "hasPepStatus": true
+    },
+    {
+        "statementID": "ef7e0d77-1e2b-44c0-a91c-7670db09d2a4",
+        "statementType": "ownershipOrControlStatement",
+        "subject": {
+            "describedByEntityStatement": "41fd9f6c-ad31-4209-9ed8-1ec46cb0cae5"
+        },
+        "interestedParty": {
+            "describedByPersonStatement": "a40f766e-0c33-4e34-b9d4-80e39aa99496"
+        },
+        "interests": [
+            {
+                "type": "shareholding",
+                "interestLevel": "direct",
+                "share": {
+                    "minimum": 25,
+                    "maximum": 50
+                },
+                "startDate": "2016-07-07",
+                "beneficialOwnershipOrControl": true
+            },
+            {
+                "type": "voting-rights",
+                "interestLevel": "direct",
+                "share": {
+                    "minimum": 25,
+                    "maximum": 50
+                },
+                "startDate": "2016-07-07",
+                "beneficialOwnershipOrControl": true
+            }
+        ]
+    }
+]

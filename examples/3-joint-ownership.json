@@ -57,13 +57,21 @@
     "statementID": "17bfeb0d-4a63-41d3-814d-b8a54c81a1f",
     "statementType": "personStatement",
     "statementDate": "2018-01-05",
-    "name": "Natalie Coleman"
+    "names": [
+      {
+        "fullName": "Natalie Coleman"
+      }
+    ]
   },
   {
     "statementID": "d1eb52de-ff02-4690-8359-f4bbf9c128b1",
     "statementType": "personStatement",
     "statementDate": "2018-01-05",
-    "name": "Roberto López"
+    "names": [
+      {
+        "fullName": "Roberto López"
+      }
+    ]
   },
   {
     "statementID": "c222fe05-2bf3-4cc0-b126-f665109d7211",

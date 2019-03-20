@@ -1,0 +1,77 @@
+[
+    {
+        "statementID": "0d2a7a15-3291-4ac7-9663-e3659056dadc",
+        "statementType": "entityStatement",
+        "statementDate": "2019-03-18",
+        "entityType": "registeredEntity",
+        "name": "Platinum Emerald and Plutonim Mining Limited",
+        "identifiers": [
+            {
+                "scheme": "GB-COH",
+                "id": "XE-000079054"
+            }
+        ]
+    },
+    {
+        "statementID": "a5680770-899f-4f7a-b795-e266f1ce8668",
+        "statementType": "personStatement",
+        "statementDate": "2019-03-18",
+        "names": [
+            {
+                "fullName": "Michael Hubbard"
+            }
+        ],
+        "hasPepStatus": true,
+        "pepStatusDetails":
+        [
+            {
+                "jurisdiction": {
+                    "code": "gb"
+                },
+                "reason": "Member of Parliament",
+                "startDate": "2017-10-15",
+                "source": {
+                    "type": ["selfDeclaration"],
+                    "assertedBy": [
+                        {
+                            "name": "Michael Hubbard"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "statementID": "106271aa-10ff-48ad-a5ba-f3f8132b59ff",
+        "statementType": "ownershipOrControlStatement",
+        "statementDate": "2019-03-18",
+        "subject": {
+            "describedByEntityStatement": "0d2a7a15-3291-4ac7-9663-e3659056dadc"
+        },
+        "interestedParty": {
+            "describedByPersonStatement": "a5680770-899f-4f7a-b795-e266f1ce8668"
+        },
+        "interests": [
+            {
+                "type": "shareholding",
+                "interestLevel": "direct",
+                "share": {
+                    "minimum": 25,
+                    "maximum": 50
+                },
+                "startDate": "2016-07-07",
+                "beneficialOwnershipOrControl": true
+            },
+            {
+                "type": "voting-rights",
+                "interestLevel": "direct",
+                "share": {
+                    "minimum": 25,
+                    "maximum": 50
+                },
+                "startDate": "2016-07-07",
+                "beneficialOwnershipOrControl": true
+            }
+        ]
+    }
+]
