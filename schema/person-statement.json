@@ -95,6 +95,15 @@
       "$ref": "components.json#/definitions/Address",
       "propertyOrder": 50
     },
+    "taxResidencies": {
+      "title": "Tax residency",
+      "description": "An array of ISO 2-Digit country codes representing the tax residencies held by this individual.",
+      "type": "array",
+      "items": {
+        "$ref": "components.json#/definitions/Country"
+      },
+      "propertyOrder": 55
+    },
     "addresses": {
       "title": "Addresses",
       "description": "One or more addresses for this entity.",
