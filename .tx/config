@@ -223,3 +223,15 @@ source_file = docs/_build/gettext/primer/whatdoesbodscover.pot
 source_lang = en
 type = PO
 
+[bods-v01.codelist]
+file_filter = docs/locale/<lang>/LC_MESSAGES/codelist.po
+source_file = docs/locale/codelist.pot
+source_lang = en
+type = PO
+
+[bods-v01.schema]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema.po
+source_file = docs/locale/schema.pot
+source_lang = en
+type = PO
+

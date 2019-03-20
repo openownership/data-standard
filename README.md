@@ -60,7 +60,7 @@ And you need to get a [Transifex API key](https://www.transifex.com/user/setting
 **When you add or update the docs** you need to do the following so that they can be translated, in the `docs` directory:
 
 1. Run `make gettext` to extract translatable English strings from the docs.
-2. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/locale/codelists.pot` to extract translatable English strings from the codelists.
+2. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/locale/codelist.pot` to extract translatable English strings from the codelists.
 2. Run `pybabel extract -F babel_bods_schema.cfg . -o docs/locale/schema.pot` to extract translatable English strings from the schema.
 2. *If you have new pages* run `sphinx-intl update-txconfig-resources --pot-dir _build/gettext --transifex-project-name bods-v01` to register the translation files with Transifex (generates or updates contents `.tx/config` file).
 3. Run `tx push -s` to push to Transifex.
@@ -70,15 +70,21 @@ Now the files are ready to be translated in Transifex.
 **To fetch new translations** when they're done, you need to:
 
 1. Run `tx pull -a` to fetch all, or `tx pull -l ru` to fetch a particular language.
-
-**To build another language locally** use `make html` (in the `docs` directory) but pass the language you want:
+2. Compile the schema and codelist translations:
 
 ```
+$ pybabel compile --use-fuzzy -d docs/locale -D schema
+$ pybabel compile --use-fuzzy -d docs/locale -D codelist
+```
+
+**To build another language locally** (pass the language code you want)..
+
+```
+$ cd docs
 $ sphinx-build -b html -D language=ru . _build/html/ru
 ```
 
-` pybabel extract -F babel_bods_codelist.cfg . -o docs/locale/codelists.pot`
-<!-- ` pybabel extract -F babel_bods_schema.cfg . -o docs/locale/schema.pot` -->
+
 
 <!-- # Directory in which to build documentation files.
 BUILD_DIR=build
@@ -88,3 +94,8 @@ POT_DIR=$(BUILD_DIR)/locale
 
 # Directory of catalog files.
 LOCALE_DIR=docs/locale -->
+
+<!--
+    pybabel compile --use-fuzzy -d $(LOCALE_DIR) -D $(DOMAIN_PREFIX)schema
+pybabel compile --use-fuzzy -d $(LOCALE_DIR) -D $(DOMAIN_PREFIX)codelists
+-->

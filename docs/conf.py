@@ -170,13 +170,17 @@ texinfo_documents = [
 
 # Adapted from https://github.com/OpenDataServices/sphinxcontrib-opendataservices/blob/master/sphinxcontrib/opendataservices.py#L50
 # Should eventually move into there
-from sphinx.directives.code import LiteralInclude
-from docutils.parsers.rst import directives, Directive
 import os
 import json
+from glob import glob
 from collections import OrderedDict
-from jsonpointer import resolve_pointer
 from docutils import nodes
+from docutils.parsers.rst import directives, Directive
+from jsonpointer import resolve_pointer
+from pathlib import Path
+from sphinx.directives.code import LiteralInclude
+
+from bods_babel.translate import translate
 
 class JSONValue(LiteralInclude):
     option_spec = {
@@ -200,7 +204,7 @@ class JSONValue(LiteralInclude):
         except KeyError as e:
             title = filename
         pointed = resolve_pointer(json_obj, self.options['pointer'])
-     
+
         string = json.dumps(pointed, indent='    ')
         if string.startswith('"') and string.endswith('"'):
             string = string[1:-1]
@@ -246,3 +250,23 @@ def setup(app):
     app.add_transform(AutoStructify)
     app.connect('build-finished', copy_legacy_redirects)
 
+    # The root of the repository.
+    basedir = Path(os.path.realpath(__file__)).parents[1]
+    # The `LOCALE_DIR` from `config.mk`.
+    localedir = basedir / 'docs' / 'locale'
+
+    language = app.config.overrides.get('language', 'en')
+
+    # The gettext domain for schema translations. Should match the domain in the `pybabel compile` command.
+    schema_domain = 'schema'
+    # The gettext domain for codelist translations. Should match the domain in the `pybabel compile` command.
+    codelists_domain = 'codelist'
+
+    build_dir = basedir / '_build/html'
+
+    translate([
+        # The glob patterns in `babel_bods_schema.cfg` should match these filenames.
+        (glob(str(build_dir / '*.json')), build_dir / language, schema_domain),
+        # The glob patterns in `babel_bods_codelist.cfg` should match these.
+        (glob(str(build_dir / 'codelists' / '*.csv')), build_dir / 'codelists' / language, codelists_domain),
+    ], localedir, language, version=os.environ.get('TRAVIS_BRANCH', 'latest'))

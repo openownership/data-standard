@@ -8,7 +8,7 @@ CommonMark==0.7.5
 -e git+https://github.com/openownership/data-standard-sphinx-theme.git@038d4cef0a7baa63cc329d67093315ce4c931ca3#egg=standard_theme
 urllib3==1.24.1
 requests==2.21.0
-git+https://github.com/rhiaro/bods-babel.git@3d0372caadf687c0281cd8096a5abb4bafe3bb78#egg=bods-babel
+git+https://github.com/openownership/bods-babel.git@73cc4860dec9d86c5c563f7579f3516e3b88a014#egg=bods-babel
 ## The following requirements were added by pip freeze:
 alabaster==0.7.12
 Babel==2.6.0
