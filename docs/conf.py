@@ -101,7 +101,7 @@ html_theme_path = [oods.sphinxtheme.get_html_theme_path()]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static','../schema']
+html_static_path = ['_static']
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'BODS'
@@ -260,13 +260,17 @@ def setup(app):
     # The gettext domain for schema translations. Should match the domain in the `pybabel compile` command.
     schema_domain = 'schema'
     # The gettext domain for codelist translations. Should match the domain in the `pybabel compile` command.
-    codelists_domain = 'codelist'
+    codelist_domain = 'codelist'
 
-    build_dir = basedir / '_build/html'
+    build_dir = basedir / 'docs/_build/html'
+    schema_source_dir = basedir / 'schema'
+    codelist_source_dir = basedir / 'schema' / 'codelists'
+    schema_target_dir = build_dir / language / '_static'
+    codelist_target_dir = build_dir / language / '_static' / 'codelists'
 
     translate([
         # The glob patterns in `babel_bods_schema.cfg` should match these filenames.
-        (glob(str(build_dir / '*.json')), build_dir / language, schema_domain),
+        (glob(str(schema_source_dir / '*.json')), schema_target_dir, schema_domain),
         # The glob patterns in `babel_bods_codelist.cfg` should match these.
-        (glob(str(build_dir / 'codelists' / '*.csv')), build_dir / 'codelists' / language, codelists_domain),
+        (glob(str(codelist_source_dir / '*.csv')), codelist_target_dir, codelist_domain),
     ], localedir, language, version=os.environ.get('TRAVIS_BRANCH', 'latest'))
