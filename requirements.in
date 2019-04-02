@@ -7,6 +7,6 @@ CommonMark==0.7.5 # Higher versions rename the package which mean we need code c
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8d0d2bb00742b25707866b0f7a2b6c0c35948c5e#egg=sphinxcontrib-jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@fab0ff0167d32ec243d42f272e0e50766299c078#egg=sphinxcontrib-opendataservices
 -e git+https://github.com/openownership/data-standard-sphinx-theme.git@038d4cef0a7baa63cc329d67093315ce4c931ca3#egg=standard_theme
-git+https://github.com/openownership/bods-babel.git@73cc4860dec9d86c5c563f7579f3516e3b88a014#egg=bods-babel
+git+https://github.com/openownership/bods-babel.git@c391be94700cdaa50b915e23981f9058097d6bc3#egg=bods-babel
 urllib3>=1.23
 requests>=2.21.0
