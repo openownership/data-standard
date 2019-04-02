@@ -9,7 +9,7 @@ You can share feedback on the standard through this project's issue tracker.
 
 ## About
 
-This work is taking place under the auspices of the Open Ownership project. More details on the project are avaiable at http://www.openownership.org
+This work is taking place under the auspices of the Open Ownership project. More details on the project are available at http://www.openownership.org
 
 The work will be guided by the Data Standard Working Group, and initial phases will take place between December 2016 and March 2017.
 
