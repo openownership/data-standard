@@ -64,7 +64,12 @@
         },
         "startDate": "2017-11-01"
       }
-    ]
+    ],
+    "source": {
+      "statementGeneration": {
+        "directOrGenerated": "direct"
+      }
+    }
   },
   {
     "statementID": "426b7dc8-8b7a-4d50-93de-8e200a4aedf5",
@@ -78,15 +83,16 @@
     },
     "interests": [
       {
-        "type": "shareholding",
         "interestLevel": "direct",
-        "beneficialOwnershipOrControl": false,
-        "share": {
-          "exact": 30
-        },
-        "startDate": "2017-11-01"
+        "beneficialOwnershipOrControl": false
       }
-    ]
+    ],
+    "source": {
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "e3b45ef5-45d1-487f-9913-c7c99e910221"
+      }
+    }
   },
   {
     "statementID": "24e604f2-790f-4600-8ff2-7fd8e46f047e",
@@ -100,10 +106,15 @@
     },
     "interests": [
       {
-        "type": "influence-or-control",
         "interestLevel": "unknown",
-        "beneficialOwnershipOrControl": false
+        "beneficialOwnershipOrControl": true
       }
-    ]
+    ],
+    "source": {
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "e3b45ef5-45d1-487f-9913-c7c99e910221"
+      }
+    }
   }
 ]
