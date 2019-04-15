@@ -1,0 +1,109 @@
+[
+  {
+    "statementID": "8729fec1-eb01-4866-ba40-dd5525d43db8",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-17",
+    "entityType": "registeredEntity",
+    "name": "Company A",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "XE9999"
+      }
+    ]
+  },
+  {
+    "statementID": "e2bbe3ce-f5b4-42d0-bb68-9b405e8fd6a0",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-17",
+    "entityType": "registeredEntity",
+    "name": "Company B",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "XE1010"
+      }
+    ]
+  },
+  {
+    "statementID": "6b9cfb52-505a-49cb-ab02-cc856a4e5c66",
+    "statementType": "personStatement",
+    "statementDate": "2018-12-17",
+    "entityType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Person 1"
+      }
+    ],
+    "nationalities": [
+      {
+        "name": "British",
+        "code": "GB"
+      }
+    ],
+    "birthDate": "1965-11"
+  },
+  {
+    "statementID": "cdb6acc7-426e-4a7a-9410-895d556fd329",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "8729fec1-eb01-4866-ba40-dd5525d43db8"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "6b9cfb52-505a-49cb-ab02-cc856a4e5c66"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "indirect",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 30
+        },
+        "startDate": "2017-11-01"
+      }
+    ]
+  },
+  {
+    "statementID": "7fff3986-233f-413f-bec8-3b28c62a4a51",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "8729fec1-eb01-4866-ba40-dd5525d43db8"
+    },
+    "interestedParty": {
+      "describedByEntityStatement": "e2bbe3ce-f5b4-42d0-bb68-9b405e8fd6a0"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": false,
+        "share": {
+          "exact": 30
+        },
+        "startDate": "2017-11-01"
+      }
+    ]
+  },
+  {
+    "statementID": "860155d1-a4fb-4742-9735-7a7deb899075",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "e2bbe3ce-f5b4-42d0-bb68-9b405e8fd6a0"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "6b9cfb52-505a-49cb-ab02-cc856a4e5c66"
+    },
+    "interests": [
+      {
+        "type": "influence-or-control",
+        "interestLevel": "unknown",
+        "beneficialOwnershipOrControl": false
+      }
+    ]
+  }
+]
