@@ -42,7 +42,7 @@
     "statementID": "78feb28a-4331-4341-b9cb-c3a695a76e63",
     "statementType": "personStatement",
     "statementDate": "2018-12-17",
-    "entityType": "knownPerson",
+    "personType": "knownPerson",
     "names": [
       {
         "type": "individual",
