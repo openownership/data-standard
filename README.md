@@ -57,13 +57,23 @@ $ apt-get install python-babel
 
 And you need to get a [Transifex API key](https://www.transifex.com/user/settings/api/), make sure you have access to the [BODS project on Transifex](https://www.transifex.com/OpenDataServices/bods-v01)
 
-**When you add or update the docs** you need to do the following so that they can be translated, in the `docs` directory:
+**When you change text in the docs** you need to do the following so that they can be translated:
 
-1. Run `make gettext` to extract translatable English strings from the docs.
-2. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/locale/codelist.pot` to extract translatable English strings from the codelists.
-2. Run `pybabel extract -F babel_bods_schema.cfg . -o docs/locale/schema.pot` to extract translatable English strings from the schema.
-2. *If you have new pages* run `sphinx-intl update-txconfig-resources --pot-dir _build/gettext --transifex-project-name bods-v01` to register the translation files with Transifex (generates or updates contents `.tx/config` file).
-3. Run `tx push -s` to push to Transifex.
+1. `cd docs`
+2. Run `make gettext` to extract translatable English strings from the docs.
+3. *If you have new pages* run `sphinx-intl update-txconfig-resources --pot-dir _build/gettext --transifex-project-name bods-v01` to register the translation files with Transifex (generates or updates contents `.tx/config` file).
+
+**If you modified the codelists** also:
+
+1. Run `pybabel extract -F babel_bods_schema.cfg . -o docs/locale/schema.pot` to extract translatable English strings from the schema.
+
+**If you modified the schema** also:
+
+1. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/locale/codelist.pot` to extract translatable English strings from the codelists.
+
+And then always:
+
+4. Run `tx push -s` to push to Transifex.
 
 Now the files are ready to be translated in Transifex.
 
@@ -84,18 +94,4 @@ $ cd docs
 $ sphinx-build -b html -D language=ru . _build/html/ru
 ```
 
-
-
-<!-- # Directory in which to build documentation files.
-BUILD_DIR=build
-
-# Directory in which to build .pot files.
-POT_DIR=$(BUILD_DIR)/locale
-
-# Directory of catalog files.
-LOCALE_DIR=docs/locale -->
-
-<!--
-    pybabel compile --use-fuzzy -d $(LOCALE_DIR) -D $(DOMAIN_PREFIX)schema
-pybabel compile --use-fuzzy -d $(LOCALE_DIR) -D $(DOMAIN_PREFIX)codelists
--->
+Note: in this version, the schema and codelists are available for translation in Transifex, but they are *not* yet translated when the docs are built.
