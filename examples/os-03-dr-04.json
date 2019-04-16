@@ -64,7 +64,17 @@
         },
         "startDate": "2017-11-01"
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "direct"
+      }
+    }
   },
   {
     "statementID": "7fff3986-233f-413f-bec8-3b28c62a4a51",
@@ -86,7 +96,18 @@
         },
         "startDate": "2017-11-01"
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "cdb6acc7-426e-4a7a-9410-895d556fd329"
+      }
+    }
   },
   {
     "statementID": "860155d1-a4fb-4742-9735-7a7deb899075",
@@ -104,6 +125,17 @@
         "interestLevel": "unknown",
         "beneficialOwnershipOrControl": false
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "cdb6acc7-426e-4a7a-9410-895d556fd329"
+      }
+    }
   }
 ]

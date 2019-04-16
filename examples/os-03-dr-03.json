@@ -66,6 +66,11 @@
       }
     ],
     "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
       "statementGeneration": {
         "directOrGenerated": "direct"
       }
@@ -88,6 +93,11 @@
       }
     ],
     "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
       "statementGeneration": {
         "directOrGenerated": "generated",
         "generatedByStatementID": "e3b45ef5-45d1-487f-9913-c7c99e910221"
@@ -111,6 +121,11 @@
       }
     ],
     "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
       "statementGeneration": {
         "directOrGenerated": "generated",
         "generatedByStatementID": "e3b45ef5-45d1-487f-9913-c7c99e910221"

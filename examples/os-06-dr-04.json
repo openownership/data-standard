@@ -77,7 +77,17 @@
         },
         "startDate": "2017-11-01"
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "direct"
+      }
+    }
   },
   {
     "statementID": "426507cf-e5ac-45c4-b6b0-92952a954623",
@@ -99,7 +109,18 @@
         },
         "startDate": "2017-11-01"
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b"
+      }
+    }
   },
   {
     "statementID": "3a1ba916-5f3d-4335-860d-3f7c20283c42",
@@ -121,7 +142,18 @@
         },
         "startDate": "2017-11-01"
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b"
+      }
+    }
   },
   {
     "statementID": "a56a0ced-447e-420d-9a07-42dcbc960a5f",
@@ -139,7 +171,18 @@
         "interestLevel": "unknown",
         "beneficialOwnershipOrControl": true
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b"
+      }
+    }
   },
   {
     "statementID": "337d8ba1-9d0d-4a64-bc5d-820c95a127fc",
@@ -157,6 +200,17 @@
         "interestLevel": "unknown",
         "beneficialOwnershipOrControl": true
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b"
+      }
+    }
   }
 ]

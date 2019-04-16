@@ -77,7 +77,17 @@
         },
         "startDate": "2017-11-01"
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "direct"
+      }
+    }
   },
   {
     "statementID": "25999409-ccf1-42ea-8e68-8a0b814b3604",
@@ -91,15 +101,21 @@
     },
     "interests": [
       {
-        "type": "shareholding",
         "interestLevel": "direct",
-        "beneficialOwnershipOrControl": false,
-        "share": {
-          "exact": 40
-        },
-        "startDate": "2017-11-01"
+        "beneficialOwnershipOrControl": false
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "415a01cc-d43a-45f9-b665-75741f571fa1"
+      }
+    }
   },
   {
     "statementID": "ee43cc3c-3e95-4859-a8e7-523a447f7c8c",
@@ -113,15 +129,21 @@
     },
     "interests": [
       {
-        "type": "shareholding",
         "interestLevel": "direct",
-        "beneficialOwnershipOrControl": false,
-        "share": {
-          "exact": 20
-        },
-        "startDate": "2017-11-01"
+        "beneficialOwnershipOrControl": false
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "415a01cc-d43a-45f9-b665-75741f571fa1"
+      }
+    }
   },
   {
     "statementID": "77240aa3-4072-4b66-8515-986530339512",
@@ -135,11 +157,21 @@
     },
     "interests": [
       {
-        "type": "influence-or-control",
         "interestLevel": "unknown",
         "beneficialOwnershipOrControl": true
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "415a01cc-d43a-45f9-b665-75741f571fa1"
+      }
+    }
   },
   {
     "statementID": "8394383d-e2d2-4300-8bb8-5613059bf5a9",
@@ -153,10 +185,20 @@
     },
     "interests": [
       {
-        "type": "influence-or-control",
         "interestLevel": "unknown",
         "beneficialOwnershipOrControl": true
       }
-    ]
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ],
+      "statementGeneration": {
+        "directOrGenerated": "generated",
+        "generatedByStatementID": "415a01cc-d43a-45f9-b665-75741f571fa1"
+      }
+    }
   }
 ]
