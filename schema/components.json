@@ -250,7 +250,7 @@
         },
         "interestLevel": {
           "title": "Interest level",
-          "description": "Is this interest held directly or indirectly?",
+          "description": "A codelist value indicating whether this interest is held directly or indirectly. See the [interestLevel codelist](#interestlevel)",
           "type": "string",
           "enum": [
             "direct",
