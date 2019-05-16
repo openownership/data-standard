@@ -44,10 +44,10 @@ def test_valid_statement_json(json_path):
     '../examples/3-joint-ownership.json',
     '../examples/4a-simple-pep-declaration.json',
     '../examples/4b-full-pep-declaration.json',
-    '../examples/os-03-dr-03.json',
-    '../examples/os-03-dr-04.json',
-    '../examples/os-06-dr-03.json',
-    '../examples/os-06-dr-04.json'
+    '../examples/indirect-ownership/os-03-dr-03.json',
+    '../examples/indirect-ownership/os-03-dr-04.json',
+    '../examples/indirect-ownership/os-06-dr-03.json',
+    '../examples/indirect-ownership/os-06-dr-04.json'
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
@@ -86,7 +86,7 @@ def test_invalid_statement_json(json_path, error):
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/entity-statement/valid/valid-entity-statement-loose-validation.json',
         'data/person-statement/valid/valid-person-statement.json',
-        'data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json',
+        'data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json'
     ], ValidationError),
     (None, [
         'data/entity-statement/valid/valid-entity-statement.json',
@@ -188,7 +188,13 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
         }),
     ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, {
         "interestedParty/describedByPersonStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
-    })
+    }),
+       ('data/bods-package/fails-schema-validation/generated-statement-no-generated-by-statement-id.json', None, {
+        "'generatedByStatementID' is a dependency of 'generatedStatement'"
+        }),
+    ('data/bods-package/fails-schema-validation/primary-statement-has-generated-by-statement-id.json', None, {
+        "'generatedStatement' is a dependency of 'generatedByStatementID'"
+        }),
 ])
 def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):
     if json_path:
