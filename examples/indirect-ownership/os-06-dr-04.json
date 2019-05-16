@@ -77,7 +77,9 @@
         "interestLevel": "indirect",
         "beneficialOwnershipOrControl": true,
         "share": {
-          "exact": 60
+          "exact": 60,
+          "minimum": 60,
+          "maximum": 60
         },
         "startDate": "2017-11-01"
       }

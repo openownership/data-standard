@@ -1,0 +1,135 @@
+[
+  {
+    "statementID": "1d189f87-7b91-4a1d-a5a7-bbfb9aae89c1",
+    "statementType": "entityStatement",
+    "statementDate": "2019-05-16",
+    "entityType": "registeredEntity",
+    "name": "Company A",
+    "identifiers": [
+      {
+        "scheme": "UA-EDR",
+        "id": "UA-XE-01"
+      }
+    ]
+  },
+  {
+    "statementID": "93ec439e-70e9-4f3c-a018-bc0878bd6ec8",
+    "statementType": "personStatement",
+    "statementDate": "2018-12-17",
+    "personType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Person 1"
+      }
+    ],
+    "nationalities": [
+      {
+        "name": "Ukrainian",
+        "code": "UA"
+      }
+    ],
+    "birthDate": "1965-10"
+  },
+  {
+    "statementID": "79b88c98-3b58-4e4c-9128-2fd2c7b37ebd",
+    "statementType": "entityStatement",
+    "statementDate": "2019-05-16",
+    "generatedStatement": true,
+    "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b",
+    "entityType": "registeredEntity",
+    "name": "Company B",
+    "identifiers": [
+      {
+        "scheme": "UA-EDR",
+        "id": "UA-XE-02"
+      }
+    ]
+  },
+  {
+    "statementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "1d189f87-7b91-4a1d-a5a7-bbfb9aae89c1"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "93ec439e-70e9-4f3c-a018-bc0878bd6ec8"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "indirect",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 30,
+          "maximum": 30,
+          "minimum": 30
+        },
+        "startDate": "2017-11-01"
+      }
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ]
+    }
+  },
+  {
+    "statementID": "729f407b-7833-4c05-be53-1d00893f1b2b",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "generatedStatement": true,
+    "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b",
+    "subject": {
+      "describedByEntityStatement": "1d189f87-7b91-4a1d-a5a7-bbfb9aae89c1"
+    },
+    "interestedParty": {
+      "describedByEntityStatement": "79b88c98-3b58-4e4c-9128-2fd2c7b37ebd"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": false,
+        "share": {
+          "exact": 50,
+          "maximum": 50,
+          "minimum": 50
+        },
+        "startDate": "2017-11-01"
+      }
+    ]
+  },
+  {
+    "statementID": "6102cc5e-cc49-4dd1-ae25-dc3ca8eb7969",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "generatedStatement": true,
+    "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b",
+    "subject": {
+      "describedByEntityStatement": "79b88c98-3b58-4e4c-9128-2fd2c7b37ebd"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "93ec439e-70e9-4f3c-a018-bc0878bd6ec8"
+    },
+    "interests": [
+      {
+        "interestLevel": "unknown",
+        "beneficialOwnershipOrControl": true
+      }
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        },
+        {
+          "name": "Company B"
+        }
+      ]
+    }
+  }
+]
