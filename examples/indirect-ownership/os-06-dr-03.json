@@ -1,6 +1,6 @@
 [
   {
-    "statementID": "c814b8ce-b120-46a0-a4ea-d58e9288e098",
+    "statementID": "64a89f27-3ced-4610-aaa4-9441f7b1b895",
     "statementType": "entityStatement",
     "statementDate": "2018-12-17",
     "entityType": "registeredEntity",
@@ -13,9 +13,11 @@
     ]
   },
   {
-    "statementID": "59368bde-e38d-4a95-9a6c-8ef6aec54f9f",
+    "statementID": "91f13c05-ee70-4c6a-8749-41955d5b418a",
     "statementType": "entityStatement",
     "statementDate": "2018-12-17",
+    "generatedStatement": true,
+    "generatedByStatementID": "415a01cc-d43a-45f9-b665-75741f571fa1",
     "entityType": "registeredEntity",
     "name": "Company B",
     "identifiers": [
@@ -26,9 +28,11 @@
     ]
   },
   {
-    "statementID": "829ec2d1-6ecb-4ca6-874f-c9c59f2cd843",
+    "statementID": "c211c40b-6103-4bd7-86b7-527fd5829931",
     "statementType": "entityStatement",
     "statementDate": "2018-12-17",
+    "generatedStatement": true,
+    "generatedByStatementID": "415a01cc-d43a-45f9-b665-75741f571fa1",
     "entityType": "registeredEntity",
     "name": "Company C",
     "identifiers": [
@@ -39,7 +43,7 @@
     ]
   },
   {
-    "statementID": "78feb28a-4331-4341-b9cb-c3a695a76e63",
+    "statementID": "d1601b39-f1e6-4a22-b9eb-72983d7e370e",
     "statementType": "personStatement",
     "statementDate": "2018-12-17",
     "personType": "knownPerson",
@@ -58,14 +62,14 @@
     "birthDate": "1975-11"
   },
   {
-    "statementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b",
+    "statementID": "415a01cc-d43a-45f9-b665-75741f571fa1",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
     "subject": {
-      "describedByEntityStatement": "c814b8ce-b120-46a0-a4ea-d58e9288e098"
+      "describedByEntityStatement": "64a89f27-3ced-4610-aaa4-9441f7b1b895"
     },
     "interestedParty": {
-      "describedByPersonStatement": "78feb28a-4331-4341-b9cb-c3a695a76e63"
+      "describedByPersonStatement": "d1601b39-f1e6-4a22-b9eb-72983d7e370e"
     },
     "interests": [
       {
@@ -73,7 +77,9 @@
         "interestLevel": "indirect",
         "beneficialOwnershipOrControl": true,
         "share": {
-          "exact": 60
+          "exact": 60,
+          "minimum": 60,
+          "maximum": 60
         },
         "startDate": "2017-11-01"
       }
@@ -83,31 +89,25 @@
         {
           "name": "Company A"
         }
-      ],
-      "statementGeneration": {
-        "directOrGenerated": "direct"
-      }
+      ]
     }
   },
   {
-    "statementID": "426507cf-e5ac-45c4-b6b0-92952a954623",
+    "statementID": "25999409-ccf1-42ea-8e68-8a0b814b3604",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
+    "generatedStatement": true,
+    "generatedByStatementID": "415a01cc-d43a-45f9-b665-75741f571fa1",
     "subject": {
-      "describedByEntityStatement": "c814b8ce-b120-46a0-a4ea-d58e9288e098"
+      "describedByEntityStatement": "64a89f27-3ced-4610-aaa4-9441f7b1b895"
     },
     "interestedParty": {
-      "describedByEntityStatement": "59368bde-e38d-4a95-9a6c-8ef6aec54f9f"
+      "describedByEntityStatement": "91f13c05-ee70-4c6a-8749-41955d5b418a"
     },
     "interests": [
       {
-        "type": "shareholding",
         "interestLevel": "direct",
-        "beneficialOwnershipOrControl": false,
-        "share": {
-          "exact": 40
-        },
-        "startDate": "2017-11-01"
+        "beneficialOwnershipOrControl": false
       }
     ],
     "source": {
@@ -115,32 +115,25 @@
         {
           "name": "Company A"
         }
-      ],
-      "statementGeneration": {
-        "directOrGenerated": "generated",
-        "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b"
-      }
+      ]
     }
   },
   {
-    "statementID": "3a1ba916-5f3d-4335-860d-3f7c20283c42",
+    "statementID": "ee43cc3c-3e95-4859-a8e7-523a447f7c8c",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
+    "generatedStatement": true,
+    "generatedByStatementID": "415a01cc-d43a-45f9-b665-75741f571fa1",
     "subject": {
-      "describedByEntityStatement": "c814b8ce-b120-46a0-a4ea-d58e9288e098"
+      "describedByEntityStatement": "64a89f27-3ced-4610-aaa4-9441f7b1b895"
     },
     "interestedParty": {
-      "describedByEntityStatement": "829ec2d1-6ecb-4ca6-874f-c9c59f2cd843"
+      "describedByEntityStatement": "c211c40b-6103-4bd7-86b7-527fd5829931"
     },
     "interests": [
       {
-        "type": "shareholding",
         "interestLevel": "direct",
-        "beneficialOwnershipOrControl": false,
-        "share": {
-          "exact": 20
-        },
-        "startDate": "2017-11-01"
+        "beneficialOwnershipOrControl": false
       }
     ],
     "source": {
@@ -148,26 +141,23 @@
         {
           "name": "Company A"
         }
-      ],
-      "statementGeneration": {
-        "directOrGenerated": "generated",
-        "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b"
-      }
+      ]
     }
   },
   {
-    "statementID": "a56a0ced-447e-420d-9a07-42dcbc960a5f",
+    "statementID": "77240aa3-4072-4b66-8515-986530339512",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
+    "generatedStatement": true,
+    "generatedByStatementID": "415a01cc-d43a-45f9-b665-75741f571fa1",
     "subject": {
-      "describedByEntityStatement": "59368bde-e38d-4a95-9a6c-8ef6aec54f9f"
+      "describedByEntityStatement": "91f13c05-ee70-4c6a-8749-41955d5b418a"
     },
     "interestedParty": {
-      "describedByPersonStatement": "78feb28a-4331-4341-b9cb-c3a695a76e63"
+      "describedByPersonStatement": "d1601b39-f1e6-4a22-b9eb-72983d7e370e"
     },
     "interests": [
       {
-        "type": "influence-or-control",
         "interestLevel": "unknown",
         "beneficialOwnershipOrControl": true
       }
@@ -177,26 +167,23 @@
         {
           "name": "Company A"
         }
-      ],
-      "statementGeneration": {
-        "directOrGenerated": "generated",
-        "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b"
-      }
+      ]
     }
   },
   {
-    "statementID": "337d8ba1-9d0d-4a64-bc5d-820c95a127fc",
+    "statementID": "8394383d-e2d2-4300-8bb8-5613059bf5a9",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
+    "generatedStatement": true,
+    "generatedByStatementID": "415a01cc-d43a-45f9-b665-75741f571fa1",
     "subject": {
-      "describedByEntityStatement": "829ec2d1-6ecb-4ca6-874f-c9c59f2cd843"
+      "describedByEntityStatement": "c211c40b-6103-4bd7-86b7-527fd5829931"
     },
     "interestedParty": {
-      "describedByPersonStatement": "78feb28a-4331-4341-b9cb-c3a695a76e63"
+      "describedByPersonStatement": "d1601b39-f1e6-4a22-b9eb-72983d7e370e"
     },
     "interests": [
       {
-        "type": "influence-or-control",
         "interestLevel": "unknown",
         "beneficialOwnershipOrControl": true
       }
@@ -206,11 +193,7 @@
         {
           "name": "Company A"
         }
-      ],
-      "statementGeneration": {
-        "directOrGenerated": "generated",
-        "generatedByStatementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b"
-      }
+      ]
     }
   }
 ]
