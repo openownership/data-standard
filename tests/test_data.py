@@ -47,7 +47,11 @@ def test_valid_statement_json(json_path):
     '../examples/indirect-ownership/os-03-dr-03.json',
     '../examples/indirect-ownership/os-03-dr-04.json',
     '../examples/indirect-ownership/os-06-dr-03.json',
-    '../examples/indirect-ownership/os-06-dr-04.json'
+    '../examples/indirect-ownership/os-06-dr-04.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-a.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-b.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-c.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-d.json'
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
