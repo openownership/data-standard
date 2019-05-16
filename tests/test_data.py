@@ -193,7 +193,7 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, {
         "interestedParty/describedByPersonStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
     }),
-       ('data/bods-package/fails-schema-validation/generated-statement-no-generated-by-statement-id.json', None, {
+    ('data/bods-package/fails-schema-validation/generated-statement-no-generated-by-statement-id.json', None, {
         "'generatedByStatementID' is a dependency of 'generatedStatement'"
         }),
     ('data/bods-package/fails-schema-validation/primary-statement-has-generated-by-statement-id.json', None, {
