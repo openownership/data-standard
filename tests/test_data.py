@@ -43,7 +43,8 @@ def test_valid_statement_json(json_path):
     '../examples/2-single-update.json',
     '../examples/3-joint-ownership.json',
     '../examples/4a-simple-pep-declaration.json',
-    '../examples/4b-full-pep-declaration.json'
+    '../examples/4b-full-pep-declaration.json',
+    '../examples/os-01-dr-01.json'
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
