@@ -273,7 +273,7 @@
         },
         "share": {
           "title": "Percentage share",
-          "description": "Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls.",
+          "description": "Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls. By default the minimum is inclusive and the maximum exclusive (minimum-value ≤ share < maximum-value ). If you wish to change these defaults, use the exclusiveMinimum and exclusiveMaximum properties.",
           "type": "object",
           "properties": {
             "exact": {
