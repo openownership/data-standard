@@ -39,7 +39,8 @@
         "url": {
           "title": "Source URL",
           "description": "If this information was fetched from an external URL, or a machine or human readable web page is available that provides additional information on how this statement was sourced, provide the URL.",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         },
         "retrievedAt": {
           "title": "Retrieved at",
@@ -272,7 +273,7 @@
         },
         "share": {
           "title": "Percentage share",
-          "description": "Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls.",
+          "description": "Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls. By default the minimum is inclusive and the maximum exclusive (minimum-value ≤ share < maximum-value ). If you wish to change these defaults, use the exclusiveMinimum and exclusiveMaximum properties.",
           "type": "object",
           "properties": {
             "exact": {
