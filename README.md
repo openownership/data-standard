@@ -44,6 +44,8 @@ Translation consists of generating strings to be translated from the English doc
 
 To run the steps in the translation workflow, you need to install this repo and its dependencies in your local environment.
 
+The rest of the instructions assume you have built the docs into the `_build` directory.
+
 ```
 $ pip install -r requirements.txt
 ```
@@ -61,7 +63,6 @@ And you need to get a [Transifex API key](https://www.transifex.com/user/setting
 
 1. `cd docs`
 2. Run `make gettext` to extract translatable English strings from the docs.
-3. *If you have new pages* run `sphinx-intl update-txconfig-resources --pot-dir _build/gettext --transifex-project-name bods-v01` to register the translation files with Transifex (generates or updates contents `.tx/config` file).
 
 **If you modified the codelists** also:
 
@@ -71,9 +72,18 @@ And you need to get a [Transifex API key](https://www.transifex.com/user/setting
 
 1. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/locale/codelist.pot` to extract translatable English strings from the codelists.
 
-And then always:
+And then:
 
-4. Run `tx push -s` to push to Transifex.
+1. **Update the Transifex config** with the changes (noting the `transifex-project-name` which may change with new versions of the standard), run:
+
+```
+rm -f .tx/config
+sphinx-intl create-txconfig
+sphinx-intl update-txconfig-resources --pot-dir _build/gettext --transifex-project-name bods-v01
+sphinx-intl update-txconfig-resources --pot-dir locale --transifex-project-name bods-v01
+```
+
+2. Run `tx push -s` to **push to Transifex**.
 
 Now the files are ready to be translated in Transifex.
 
