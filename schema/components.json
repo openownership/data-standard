@@ -243,8 +243,10 @@
             "protector-of-trust",
             "beneficiary-of-trust",
             "other-influence-or-control-of-trust",
-            "rights-to-surplus-assets",
-            "rights-to-profit-or-income"
+            "rights-to-surplus-assets-on-dissolution",
+            "rights-to-profit-or-income",
+            "rights-granted-by-contract",
+            "conditional-rights-granted-by-contract"
           ],
           "codelist": "interestType.csv",
           "openCodelist": false

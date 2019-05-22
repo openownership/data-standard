@@ -9,5 +9,7 @@ trustee-of-trust,Trustee of a trust.
 protector-of-trust,Protector of a trust
 beneficiary-of-trust,Beneficiary of a trust
 other-influence-or-control-of-trust,Other influence or control of a trust
-rights-to-surplus-assets,Rights to surplus assets
+rights-to-surplus-assets-on-dissolution,Rights to surplus assets
 rights-to-profit-or-income,Rights to receive profits or income
+rights-granted-by-contract,Rights granted by contract,The right to use or enjoyment of assets or income granted by contract rather than legal ownership 
+conditional-rights-granted-by-contract,An agreement that defines the conditions under which a beneficial ownership interest would come into existence
