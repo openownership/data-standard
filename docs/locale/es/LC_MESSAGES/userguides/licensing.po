@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:18+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 14017afa3bff499c9e73626635d27c79
+# f5682663870a4e93b6722ea26e6235f4
 #: ../../userguides/licensing.md:1
 msgid "Licensing considerations"
 msgstr ""
 
-# a2c0a692445a4d36a4b36fd318997e97
+# 20f5b7a6f8ed46ad93c0c1492f73ea5a
 #: ../../userguides/licensing.md:4
 msgid "(TBC)"
 msgstr ""

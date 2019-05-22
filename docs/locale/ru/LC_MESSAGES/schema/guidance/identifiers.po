@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 95536a11a99446a2bb3a10984f9d9644
+# 63d8aef02fa549fab9a1ae63aca289b7
 #: ../../schema/guidance/identifiers.rst:4
 msgid "Real world identifiers"
 msgstr ""
 
-# bd883c9cbd1246fd892d9c8bc7a1d993
+# baa6e68e4a5f415fb748966e5c2ecf16
 #: ../../schema/guidance/identifiers.rst:6
 msgid ""
 "To create a link between statements, and the real-world organisations and "
@@ -31,53 +31,53 @@ msgid ""
 "properties, and one optional property."
 msgstr ""
 
-# fe68460ece934ec1b5b63ff69d54a23b
+# 46b64cc281db469cb208ea441ba340a9
 #: ../../schema/guidance/identifiers.rst:8
 msgid ""
 "**scheme** must be a value from a codelist of known identifier sources. "
 "Separate codelists exist for entities and persons."
 msgstr ""
 
-# dacec29882b24e678a83d8dd391a5d45
+# 922abb80ad994fd7bed03dac7f21acf9
 #: ../../schema/guidance/identifiers.rst:10
 msgid ""
 "**id** must be the value assigned to the relevant entity or person in that "
 "scheme;"
 msgstr ""
 
-# 256a7ada9a764a7c86f5fb54e28c07ca
+# 4da3ffa3279c4e00b027bf1f8d085538
 #: ../../schema/guidance/identifiers.rst:12
 msgid "**uri** may be used to provide a canonical URI from this scheme."
 msgstr ""
 
-# 0577ed9cd4154a3588b82e5deb2cdc2f
+# a25c143ffbe64f6da91ae4299801369d
 #: ../../schema/guidance/identifiers.rst:14
 msgid "For example, if a source system holds:"
 msgstr ""
 
-# 69d256d17a4945d18d8e55de3f130f2e
+# 6738d7de0327427485f8e0a1fe456ccd
 #: ../../schema/guidance/identifiers.rst:16
 msgid "A registered company number; and"
 msgstr ""
 
-# 42ad94b4f77047f7b65a3279b9f7c1e8
+# 06b544510d844903aa834f37451ec00d
 #: ../../schema/guidance/identifiers.rst:17
 msgid "A VAT number;"
 msgstr ""
 
-# f252c7a104c04cec9a31f780f66ab862
+# bdf36785385b46569b8942170717d30d
 #: ../../schema/guidance/identifiers.rst:19
 msgid ""
 "for a company, two entries could be created in the ``Entity/identifiers`` "
 "array, as in the example below:"
 msgstr ""
 
-# 8da5b96b8c7f452184713e32c2806dcd
+# f9659d4dc2a44ca2bb4bf6d86bcfbfc4
 #: ../../schema/guidance/identifiers.rst:36
 msgid "Entity Identifiers"
 msgstr ""
 
-# 6b6ce45819134058b448d7adbd25410b
+# 5c63a7a4663243898d264ff76b57bd4c
 #: ../../schema/guidance/identifiers.rst:38
 msgid ""
 "The values for scheme within an entity statement identifier should be drawn "
@@ -85,36 +85,36 @@ msgid ""
 "contains details of 100s of company registers and other identifier sources."
 msgstr ""
 
-# af3491be8b2f42458b0ad298ade51d68
+# ced84b782188468da395a422874dfbab
 #: ../../schema/guidance/identifiers.rst:40
 msgid ""
 "Where the publisher is providing an internal identifier, the publisher "
 "should either:"
 msgstr ""
 
-# f85832950c01489e834dfc26739e8bbf
+# 3f6767f8d6e3402fbcf79f5db01e3db5
 #: ../../schema/guidance/identifiers.rst:42
 msgid ""
 "Publish their full list of internal identifiers, and register this list with"
 " the `http://org-id.guide <http://org-id.guide>`_ codelist; or"
 msgstr ""
 
-# f897cc2baacd4198b23e7c6ab0817ac2
+# 2e3ad9c1a5c14e82b565baa3be3a2498
 #: ../../schema/guidance/identifiers.rst:43
 msgid "Use MISC-{Publisher_Name} as the scheme"
 msgstr ""
 
-# abaf4d67be0b4d838690716e77232ead
+# f4c0d1c27816442990046e2dc835b831
 #: ../../schema/guidance/identifiers.rst:47
 msgid "Person Identifiers"
 msgstr ""
 
-# a08c4f4ee9bc47739412102196c0e11c
+# 67a84ce3bce24010ab383deb618e2bef
 #: ../../schema/guidance/identifiers.rst:50
 msgid "System identifiers"
 msgstr ""
 
-# bd860bfc6a9a4ea786874ca3b6303542
+# 5358b48f9297452d9461ae3a719f200d
 #: ../../schema/guidance/identifiers.rst:52
 msgid ""
 "If the source system has assigned a unique identifier to individual persons,"
@@ -122,7 +122,7 @@ msgid ""
 " scheme 'MISC-{Publisher Name}'."
 msgstr ""
 
-# a02d40c59abc498f82837ed493e717f0
+# ff05444c61f7489a8f86c5ed60370a44
 #: ../../schema/guidance/identifiers.rst:54
 msgid ""
 "For example, a beneficial ownership reporting system may maintain a database"
@@ -132,12 +132,12 @@ msgid ""
 "either in raw form, or modified to ensure a unique value."
 msgstr ""
 
-# 73f7e21bd285421c8a2a60077beb7135
+# 4149a7c2e5e743c69e19ec85be753f63
 #: ../../schema/guidance/identifiers.rst:58
 msgid "Shared identifiers"
 msgstr ""
 
-# 542ea10424dd4b69a93e883251b0d52c
+# 467c3f3159624ab9936471b7f0fa2738
 #: ../../schema/guidance/identifiers.rst:60
 msgid ""
 "If the source system has collected one or more known identification numbers "
@@ -145,19 +145,19 @@ msgid ""
 "then these should also be included in the ``Person/identifiers`` array."
 msgstr ""
 
-# 11d05d75e2d149be9cab27fb8a3ea46e
+# f7ff9068751b4a5fb9932cda4e5ace48
 #: ../../schema/guidance/identifiers.rst:62
 msgid ""
 "The values for scheme within a person statement should be based on the "
 "following pattern:"
 msgstr ""
 
-# ae7ab30182b04704ba495ad51ccb2c3e
+# fdc676f2dbd34b4ca8b5a1b810d93f65
 #: ../../schema/guidance/identifiers.rst:64
 msgid "{JURISDICTION}-{TYPE}"
 msgstr ""
 
-# 6ad3ff2620374616ac4bb4b5bd92f795
+# 35e9e1b9d98b49558c5dcf0f14093b95
 #: ../../schema/guidance/identifiers.rst:66
 msgid ""
 "Where jurisdiction is expressed using the extended ISO 3-digit country codes"
@@ -166,24 +166,24 @@ msgid ""
 "22-29)."
 msgstr ""
 
-# 1ea828f646be4788b39c71a9b53237c0
+# 094472b91e974ace8ee7f8f7f3570ce5
 #: ../../schema/guidance/identifiers.rst:68
 msgid "For example, a passport number from Afghanistan would have the scheme:"
 msgstr ""
 
-# 10ed047dc08a44c184f1ef0278ead742
+# 71d20b9fe3b64f16b49a1eeb71797e7a
 #: ../../schema/guidance/identifiers.rst:70
 msgid "> AFG-PASSPORT-{NUMBER}"
 msgstr ""
 
-# 380c1c916f32488f96c3645d14d9e95a
+# efca4a6745f94a92a9f2210c44a5d611
 #: ../../schema/guidance/identifiers.rst:72
 msgid ""
 "Where the publisher is providing an internal identifier, these should use "
 "'MISC-{Publisher_Name}' as the scheme."
 msgstr ""
 
-# ceac4e5d9b0249fe8fe558c40dcf572a
+# a63bf033edaa4aff947513ed6a09addd
 #: ../../schema/guidance/identifiers.rst:76
 msgid ""
 "When using BODS to provide open data, it is important to ensure any person "
@@ -191,14 +191,14 @@ msgid ""
 "protection frameworks."
 msgstr ""
 
-# 7fae1add32bd41ac9284617ab8dc2056
+# e7703f1fc39c42238d78decd3f006043
 #: ../../schema/guidance/identifiers.rst:78
 msgid ""
 "Most of the identifier types listed below **are not** suitable for "
 "publication as part of an open dataset."
 msgstr ""
 
-# 86a46f61ad3442b888db4add960b45f7
+# 9ded9e998107419ea28e1ad7f0cb9023
 #: ../../schema/guidance/identifiers.rst:81
 msgid ""
 "The following identification types are currently documented. Suggestions for"
@@ -206,12 +206,12 @@ msgid ""
 "<https://github.com/openownership/data-standard/issues>`_."
 msgstr ""
 
-# d955712f6dd3442f844996825e00186d
+# b878a057d7bf4cc3bbedf8b8b83129cb
 #: ../../schema/guidance/identifiers.rst:84
 msgid "PASSPORT"
 msgstr ""
 
-# 9e03772a4e2f463bb191597c2d2efb11
+# cd504898f18d481c9cc417fb01f417ad
 #: ../../schema/guidance/identifiers.rst:86
 msgid ""
 "Passport numbers should follow the format of the identifier (second) line in"
@@ -220,7 +220,7 @@ msgid ""
 "including at least the document number."
 msgstr ""
 
-# 876dfeff1b7941d89ecb8273fd10a20f
+# e168e175ff32485ba2010115931475fb
 #: ../../schema/guidance/identifiers.rst:88
 msgid ""
 "Parsers should be able to extract the document number from the first 9 "
@@ -228,12 +228,12 @@ msgid ""
 "the ICAO format."
 msgstr ""
 
-# 106dde1493134ee0a2f3a571bc682be7
+# 55ccff50d66e4136b6d196b7d71fa3b2
 #: ../../schema/guidance/identifiers.rst:91
 msgid "TAXID"
 msgstr ""
 
-# 582c041cdfd24f08b3c1aa111baff186
+# 9c5552613728438bbec4fc19b2d548fe
 #: ../../schema/guidance/identifiers.rst:93
 msgid ""
 "Country taxpayer identification systems vary. Where specific guidance on "
@@ -241,12 +241,12 @@ msgid ""
 "included here in future."
 msgstr ""
 
-# 21fcced5b0c94a178ee366ae283442db
+# 015c13fec2244de9819b2b57581e53de
 #: ../../schema/guidance/identifiers.rst:96
 msgid "IDCARD"
 msgstr ""
 
-# 1eef5b3d76dc475498137801e5694c7b
+# bc6b4a3e26604fa38913fe691a1e7d7b
 #: ../../schema/guidance/identifiers.rst:98
 msgid ""
 "Country ID card systems vary. Where specific guidance on including numbers "

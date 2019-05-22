@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:16+0000\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# b870c5c7b8b348c6a6fd0ea79f92a4a5
+# 03f7de9866c7436b8df00df9d8f9ef37
 #: ../../userguides/validating-and-verifying.md:1
 msgid "Validating and verifying data"
 msgstr ""
 
-# 9be630fffd2f47d9b17bcfd4527d9723
+# 6d8882e1abff459bbccd81b2877d9d5f
 #: ../../userguides/validating-and-verifying.md:4
 msgid ""
 "In order to be useful, the data that is published will need to be validated."
@@ -30,7 +30,7 @@ msgid ""
 "data phase."
 msgstr ""
 
-# 8c5308df34f443c3b0c94b55370b06ff
+# a607964f239f430da3a156d38d81697e
 #: ../../userguides/validating-and-verifying.md:6
 msgid ""
 "<h2>Validation against the standard</h2> For interoperability with other "
@@ -40,7 +40,7 @@ msgid ""
 "formats should be tested to ensure that the data is correctly represented."
 msgstr ""
 
-# c01161ce160741debabf94a403e82d17
+# 1d0db3fbd9de4e8493e18891d6e98948
 #: ../../userguides/validating-and-verifying.md:9
 msgid ""
 "For now, generic JSON schema validation tools should be used to test for "
@@ -49,19 +49,19 @@ msgid ""
 "formats."
 msgstr ""
 
-# 0bbd267dbc08460aa428502862c7de27
+# 244949b649a9459794844c1306ddfea2
 #: ../../userguides/validating-and-verifying.md:11
 msgid "<h2>Pre-validation of data during collection</h2>"
 msgstr ""
 
-# 5c0f2c4a4a4d494c9a77866c8719b431
-# c3dd1fe16f01453093754820e9b5a159
+# bf4b5a4d53bc44279c07250201870841
+# 7fcc59e41d0048ef9abaa3d270159068
 #: ../../userguides/validating-and-verifying.md:13
 #: ../../userguides/validating-and-verifying.md:17
 msgid "(TBC)"
 msgstr ""
 
-# b266cd4488e549d8b630938a563f8f09
+# e34bf58281134746be1ec95f885a35e3
 #: ../../userguides/validating-and-verifying.md:15
 msgid "<h2>Verifying data</h2>"
 msgstr ""

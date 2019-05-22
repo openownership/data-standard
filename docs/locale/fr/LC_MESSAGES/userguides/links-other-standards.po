@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:16+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -17,22 +17,22 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# 13559fbc608d4221915ec9c8d428ab81
+# d8e8cae6bdbc47608e1b1446d48e92f4
 #: ../../userguides/links-other-standards.md:1
 msgid "Links with other data standards"
 msgstr ""
 
-# ee738b72944d48b68cc4e89da504eb11
+# 3b21e3bb25db45f2b08eb4ba80291235
 #: ../../userguides/links-other-standards.md:4
 msgid "(To be added."
 msgstr ""
 
-# 83363042fdae4d739994e821bd2cfee3
+# e25ba7bec6ce4444a52365bbfb1f6fc6
 #: ../../userguides/links-other-standards.md:6
 msgid "Populo"
 msgstr ""
 
-# 14465fb74bd341ecb84aaab06844850a
+# 1c23f41f5e3848df89138bae1931edf0
 #: ../../userguides/links-other-standards.md:7
 msgid "Common reporting standard etc. )"
 msgstr ""

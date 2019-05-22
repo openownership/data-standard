@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -17,65 +17,65 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 654ecf475142480dbaad1a244fdf67d5
+# a2ac02039b204a139ab2da54995a8e04
 #: ../../primer/whatisbodata.rst:2
 msgid "What is beneficial ownership data?"
 msgstr ""
 
-# 1e46348c9d734846b86c027b6ee6d945
+# 45c3e7255d6549eeb522a257b619f24f
 #: ../../primer/whatisbodata.rst:8
 msgid ""
 "From owners' birth places to rules about shareholders' voting rights..."
 msgstr ""
 
-# 0d70159036ac40e6939ca481304dfca4
+# f22810fc7f4b422cb19395e6df884477
 #: ../../primer/whatisbodata.rst:14
 msgid "Data relating to beneficial ownership may include:"
 msgstr ""
 
-# 5e92cd635fe14edd8b5c600af464d22a
+# aa3a7c8f8b48499fb0f136dbf3a920a9
 #: ../../primer/whatisbodata.rst:16
 msgid "Details to identify individual owners"
 msgstr ""
 
-# 1439b3ce3d5d429488281a9ca638f84d
+# 076d59ff9fe34d529111615e808cad90
 #: ../../primer/whatisbodata.rst:17
 msgid "Details of other legal entities"
 msgstr ""
 
-# a3daef27587741e3be59b810eadb4030
+# ebcebfaee2a24fdc8582071ded37efcd
 #: ../../primer/whatisbodata.rst:18
 msgid "A breakdown of share holdings"
 msgstr ""
 
-# 7fd669bca24442aa9ea31fe8cf224375
+# 16fae6eab24a44509ec1d40d115b0b64
 #: ../../primer/whatisbodata.rst:19
 msgid "The voting rights attached to different share classes"
 msgstr ""
 
-# 64d361caa933487788db7bcd4de66e50
+# b76a7f2750ca41d182317a518ce27b22
 #: ../../primer/whatisbodata.rst:20
 msgid "Details of intermediate entities in an ownership chain"
 msgstr ""
 
-# d480908d1496437eb5dd8a260d6f6245
+# f09ca9e7e9924b509ca5c30b3457a0d1
 #: ../../primer/whatisbodata.rst:21
 msgid "Rules of board membership"
 msgstr ""
 
-# 3d0265e4d80d4f5794109ee73718e4d4
+# 72a3c55670974c0b828235cdb06b158c
 #: ../../primer/whatisbodata.rst:23
 msgid "And so on."
 msgstr ""
 
-# 1a911252b88448918d1a31d29b51a423
+# 5d4ba13299364dafbecf667cf080d78a
 #: ../../primer/whatisbodata.rst:29
 msgid ""
 "...data describing beneficial ownership is often scattered across "
 "documents..."
 msgstr ""
 
-# 821ed56cf07844bb806bbfa8cde4cb4e
+# 6549582cb6c2470a897681a4d1c561d1
 #: ../../primer/whatisbodata.rst:36
 msgid ""
 "The data is often included in companies’ annual reports, founding articles "
@@ -83,62 +83,62 @@ msgid ""
 "the big picture about a company’s beneficial owners."
 msgstr ""
 
-# edb3cf8d5e3a4189b810c7f2a2544b6a
+# 82b05fb7340a4326bc94ccb13ee038d8
 #: ../../primer/whatisbodata.rst:48
 msgid ""
 "...presenting challenges when sharing or collating beneficial ownership "
 "information..."
 msgstr ""
 
-# 7a4ecb7843994ac9a732c48a941735a3
+# a63b9baa02424907be4ed513567c1369
 #: ../../primer/whatisbodata.rst:55
 msgid ""
 "Accessing this data and understanding its relevance to beneficial ownership "
 "can be challenging:"
 msgstr ""
 
-# 78a6fe95bab24c9db84f0f10dc4b8a76
+# 07d3b4f38ed94e80a4d1264a18ea4991
 #: ../../primer/whatisbodata.rst:58
 msgid "The data may only be a small part of a longer document."
 msgstr ""
 
-# 08174d885094427c9ff44f9250828baf
+# dd977ae76fc143d29f30c8fc1537baf6
 #: ../../primer/whatisbodata.rst:59
 msgid ""
 "The same types of data will be represented differently by different "
 "publishers."
 msgstr ""
 
-# 1edead209add4314aab10f7d9823c3dd
+# 0f1f67f56fc64d87a5ac028697b84407
 #: ../../primer/whatisbodata.rst:61
 msgid "Relevant data may appear across different documents."
 msgstr ""
 
-# 3520a3b3a13a4352acbb3f7bfab7841d
+# e5f474a7b36b4cfd9abfaf3f98885639
 #: ../../primer/whatisbodata.rst:62
 msgid "Legal terminology may differ across jurisdictions."
 msgstr ""
 
-# 29dbf0f4ae6e49c29be116e3dc0b6988
+# 29ebafe1792e49a3ab5a19922f676da7
 #: ../../primer/whatisbodata.rst:68
 msgid "... which is becoming a frequent requirement for companies."
 msgstr ""
 
-# 4a691dc8823c485cb2921c8a5f9066f5
+# ad4d9503231e45319220f95f5d5b33ef
 #: ../../primer/whatisbodata.rst:74
 msgid ""
 "Increasingly, governments and regulatory authorities require beneficial "
 "ownership data to be disclosed and filed in official registers."
 msgstr ""
 
-# 282c0827db244c6c835288ca27479046
+# 0ff5b71dbd0b413a96383ff4d05b2447
 #: ../../primer/whatisbodata.rst:80
 msgid ""
 "These challenges require us to structure and standardise beneficial "
 "ownership data, so that it has a reliable scope and predictable format."
 msgstr ""
 
-# 76e578f47afd407eb5aa7fc59dbc9d59
+# 3ccb39e9cb8649018328830073758f06
 #: ../../primer/whatisbodata.rst:86
 msgid ""
 "Companies already hold data about beneficial ownership. It is not always "

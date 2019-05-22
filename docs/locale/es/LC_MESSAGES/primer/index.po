@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 86f13e53db8640f19f742a0eb50e5c24
+# eaef5920b97043ef91298dd0abf3a7a0
 #: ../../primer/index.md:1
 msgid "Primer"
 msgstr ""
 
-# 3bc84a555f654033ac4e1ca1db7af421
+# d2d2c35641f84a9a89fc849bf8f3d86f
 #: ../../primer/index.md:4
 msgid ""
 "This Primer sets out to explain the basics of Beneficial Ownership and the "
 "basics of a data standard handling Beneficial Ownership."
 msgstr ""
 
-# 7719fa32b0c049d1baf991a7d63dcfbb
+# 8e2d93e288bf43d1b7c738c9c58dfc7c
 #: ../../primer/index.md:6
 msgid ""
 "People new to the concept of Beneficial Ownership will want to know what it "

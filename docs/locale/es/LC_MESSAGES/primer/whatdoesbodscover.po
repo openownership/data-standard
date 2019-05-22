@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,89 +17,89 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# e0e90f4d4e1d4bd7bfe56c52f0935274
+# 27d4344c709444a78db0312fb53e335c
 #: ../../primer/whatdoesbodscover.rst:2
 msgid "What does the Data Standard cover?"
 msgstr ""
 
-# 0beb26469c2047ad8c84b819355177e5
+# 9ddbbc0ca5254316a550aeed18f87600
 #: ../../primer/whatdoesbodscover.rst:8
 msgid "A broad, flexible range of fields and options..."
 msgstr ""
 
-# 7c41776e046a4f3eb48a94581f26ace3
+# 1d0f42f50c834f73b10b6a776bc03628
 #: ../../primer/whatdoesbodscover.rst:14
 msgid ""
 "The Beneficial Ownership Data Standard (BODS) allows publishers to provide "
 "statements that describe:"
 msgstr ""
 
-# 08d6bbebedf6492e8fdc0d141f398f03
+# 74cc3f1682cd424ab48c1bbf0e16460c
 #: ../../primer/whatdoesbodscover.rst:16
 msgid ""
 ":ref:`Identifiers <schema-identifier>` and :ref:`details <schema-person-"
 "statement>` for individuals"
 msgstr ""
 
-# e99e11a9ec0547f5b4f018cb307a3441
+# 852d2f64fcf14730b148f8c041aa4274
 #: ../../primer/whatdoesbodscover.rst:17
 msgid ""
 ":ref:`Identifiers <schema-identifier>` and :ref:`details <schema-entity-"
 "statement>` for companies"
 msgstr ""
 
-# 09da1a7e1b7f47ef8304a4d005ed04ea
+# c1c4bb4098b641b4a380097f171f83af
 #: ../../primer/whatdoesbodscover.rst:18
 msgid ":ref:`Types and levels of involvement <schema-interest>` in companies"
 msgstr ""
 
-# 928e66b021f044dcaed2efafd50070a5
+# 065b920039da491d81476e7f32a8da9b
 #: ../../primer/whatdoesbodscover.rst:19
 msgid ":ref:`Provenance <schema-source>` information"
 msgstr ""
 
-# 6b039d954f0346febd8a54dd0e03cc01
+# 81b7dca75e18410286145b296060e1a8
 #: ../../primer/whatdoesbodscover.rst:20
 msgid "Historical, as well as current, information"
 msgstr ""
 
-# 618180f191ef4cf39170353b53b4a4d5
+# 577667e08be142cca64948a7cc53e48b
 #: ../../primer/whatdoesbodscover.rst:21
 msgid ""
 ":ref:`Placeholders <schema-interested-party>`, when information must be "
 "redacted"
 msgstr ""
 
-# 9a496131b3fc4ff191b93544d86d50ce
+# eefbf65c10fe4962baacd621d531b269
 #: ../../primer/whatdoesbodscover.rst:27
 msgid "... meets the diverse needs of publishers and data users."
 msgstr ""
 
-# 3940c7b75a224e249e203896c31f9650
+# 4ea938181ea942be812b0092cf91db85
 #: ../../primer/whatdoesbodscover.rst:33
 msgid "The :ref:`design <key-concepts>` of the standard allows:"
 msgstr ""
 
-# e512f64d1f1649238b87dff56881ee74
+# 7e2a7be7a09f458c80b9f21d004f059d
 #: ../../primer/whatdoesbodscover.rst:35
 msgid "Changes to beneficial ownership information to be tracked over time."
 msgstr ""
 
-# 29cc122a453841bda11b3fe9cf9b6827
+# c3129189316b4f2f8201a58f9f6e45ac
 #: ../../primer/whatdoesbodscover.rst:36
 msgid ""
 "Competing claims about beneficial ownership to be considered alongside one "
 "another."
 msgstr ""
 
-# 9c93a454a99b4ca9994c3910c6cb414f
+# a9556b414594436da13507b4af10b8f5
 #: ../../primer/whatdoesbodscover.rst:37
 msgid ""
 "Publishers to use the definitions of beneficial ownership provided by the "
 "relevant law or policy framework they are operating under."
 msgstr ""
 
-# cf447bb7a05b4693955c8cecc2926dc7
+# 2a5dfa0bf03549a48e48cf81a07bd2bf
 #: ../../primer/whatdoesbodscover.rst:40
 msgid ""
 "Although BODS is not a data model for the storage of beneficial ownership "
@@ -108,7 +108,7 @@ msgid ""
 "for such databases and systems is available for this purpose."
 msgstr ""
 
-# 2d01492b75dc4439addb03d24bf6710b
+# eb3941f1657e4ebbb6cdd522a120fd81
 #: ../../primer/whatdoesbodscover.rst:42
 msgid ""
 "In order to enable worldwide use of the Standard, it does not directly "
@@ -118,7 +118,7 @@ msgid ""
 "standard to set their own thresholds."
 msgstr ""
 
-# 60350057603448ad95366602a6cc2d00
+# f1e7ea3c4288451da571a099584ce19d
 #: ../../primer/whatdoesbodscover.rst:46
 msgid ""
 "The Standard is well-defined yet flexible: as suited for use by national "

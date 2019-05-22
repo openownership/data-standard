@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# e938f4e3dace41d4bf54775eed798928
+# c97f1ec7681f4d009d196a8e722f1ac4
 #: ../../schema/guidance/updating-data.rst:4
 msgid "Updating statements"
 msgstr ""
 
-# cb6a480ac39f45eea5a22956c4480969
+# fd26077a208845f5847cfbb42074f23b
 #: ../../schema/guidance/updating-data.rst:6
 msgid ""
 "Statements MUST be treated as immutable: once a statement is published it "
@@ -32,7 +32,7 @@ msgid ""
 " statements."
 msgstr ""
 
-# 2c3debeb93c244aa8168e422bd1156f4
+# 9691d03e2e284e9e8ebd86c635302b0d
 #: ../../schema/guidance/updating-data.rst:8
 msgid ""
 "Therefore, if a particular value needs to be updated, a new statement with a"

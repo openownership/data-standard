@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:16+0000\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# a8d6d56abc7b46b08caab01a9b2a3fe3
+# 271e4bf8ef2949adaa12278c3a33837e
 #: ../../userguides/updating-data.md:1
 msgid "Updating data"
 msgstr ""
 
-# 6b77f716861f41a19f6e31f2f72c4e75
+# 5ab6a140b36344618636cc52f2a54f01
 #: ../../userguides/updating-data.md:4
 msgid ""
 "(New section. Info on best practice in updating, correcting, ‘deleting’ and "

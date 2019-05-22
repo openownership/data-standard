@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# c36c0261dd524adba605f5c1a0bf2a5a
+# af27c2d47d7649fcb977e9f9c67508ea
 #: ../../schema/guidance/serialization.rst:4
 msgid "Serialization"
 msgstr ""
 
-# 078c383deeb34e7ca8949f30c2ee1c1d
+# 1643b4cf0a504e2184f662882420b9ff
 #: ../../schema/guidance/serialization.rst:6
 msgid ""
 "The canonical serialization of BODS data is as a `JSON document "
@@ -31,7 +31,7 @@ msgid ""
 "MAY also be used when creating large files."
 msgstr ""
 
-# b831923f50bf475dbd31e7319a39bce9
+# fa27f8f234f649aa9008720b1f5b729b
 #: ../../schema/guidance/serialization.rst:8
 msgid ""
 "Each of the :ref:`entityStatements <schema-entity-statement>` or "
@@ -41,7 +41,7 @@ msgid ""
 "ordered array."
 msgstr ""
 
-# ca79063af8f34627ae2722eab50a8056
+# e47455ac52fd4d40b28f02b8bdb1bff3
 #: ../../schema/guidance/serialization.rst:10
 msgid ""
 "BODS data MAY also be serialized in tabular form, with each row representing"
@@ -49,82 +49,82 @@ msgid ""
 "SHOULD use the relevant relative JSON Pointer from the statement root."
 msgstr ""
 
-# c8e28dea007c4b129c54d67d4a6ccead
+# 7a72bc9cbaf44703a79e8af73fbef5f1
 #: ../../schema/guidance/serialization.rst:12
 msgid "For example, the extract:"
 msgstr ""
 
-# 421bbf560af84d538ccec7bed364eee2
+# 28131906f7ca48e5bed9e34c2ff0209b
 #: ../../schema/guidance/serialization.rst:43
 msgid "may be serialized in a table as:"
 msgstr ""
 
-# 9aca00881f6341649a6e384f8cbdfd32
+# 4438d53c07954b7ead9f2cf42ac509f8
 #: ../../schema/guidance/serialization.rst:48
 msgid "statementID"
 msgstr ""
 
-# 11c3a6ac089e4865986fe4332c4b5478
+# 64b73fa7dc844f9697f950d5a7764d22
 #: ../../schema/guidance/serialization.rst:49
 msgid "statementType"
 msgstr ""
 
-# ad046acd560947cd9a8e272e11f3d7a8
+# 3fbbad545b6249588114c3d3e8c3ebe1
 #: ../../schema/guidance/serialization.rst:50
 msgid "identifiers/0/scheme"
 msgstr ""
 
-# 421c7a1e65d241bda4a8f25f72e2cad3
+# 526a126b3bd5417e8c2d35a2a880a94f
 #: ../../schema/guidance/serialization.rst:51
 msgid "identifiers/0/id"
 msgstr ""
 
-# 5359bb4b566d403ca8483758fb234e77
+# de7076bf96a3419c96ec05a36b7933ba
 #: ../../schema/guidance/serialization.rst:52
 msgid "e3c07f34-1810-4eed-b845-4d9f4d97f9d5"
 msgstr ""
 
-# db56503af4004896853085ba72032b9c
+# 4146854939b9487cb635302e54068074
 #: ../../schema/guidance/serialization.rst:53
 msgid "entityStatement"
 msgstr ""
 
-# 1dcc70776d514b7caf18c7af3a276cd0
+# 30accce9db994889a902f8c12deebaf7
 #: ../../schema/guidance/serialization.rst:54
 msgid "GB-COH"
 msgstr ""
 
-# ea6b43f13dea4f979874e32717ecf9c2
+# a9af422a0cdd4d1199d1c663c28be98b
 #: ../../schema/guidance/serialization.rst:55
 msgid "07444723"
 msgstr ""
 
-# 68b0d262edea4280b180ce68998b715c
+# c3d29af9a52943cba8b129b35adc311a
 #: ../../schema/guidance/serialization.rst:56
 msgid "a2b485be-e3b6-4fd7-8a6a-930e46cf9957"
 msgstr ""
 
-# 5661955b841a43069382344cf30d66f2
+# 8411034f82974afdb3e8f525e2481ec1
 #: ../../schema/guidance/serialization.rst:57
 msgid "personStatement"
 msgstr ""
 
-# ff262c09f9df44f0a5a489964c4dc032
+# 3655c5843dd94ca49c088a720b7b3bf7
 #: ../../schema/guidance/serialization.rst:58
 msgid "MX-RFC"
 msgstr ""
 
-# 7970e3ecae4b4ab589ca4dd2b34c29b7
+# 138b39df66294bd5b1b3002a6e8b4abc
 #: ../../schema/guidance/serialization.rst:59
 msgid "ABC680524P-76"
 msgstr ""
 
-# f18c155e2abb4d18b47963429a7a21f7
+# b0f75637bb1645e38114f165462b43ed
 #: ../../schema/guidance/serialization.rst:61
 msgid "34b479f2-1681-4064-ab51-1e703fbafa"
 msgstr ""
 
-# acb322d6d824499daa1d60d32ca01bec
+# 7ce367da3b9746b89ec8a31623bfe617
 #: ../../schema/guidance/serialization.rst:62
 msgid "ownershipOrControlStatement"
 msgstr ""

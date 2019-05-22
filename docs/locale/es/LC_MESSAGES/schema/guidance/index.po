@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# c10f2b82332245949f5e543491030350
+# 935171b5d0e049fd893d0d013c2ecd65
 #: ../../schema/guidance/index.rst:2
 msgid "Technical guidance"
 msgstr ""
 
-# 51ace8460efd4c028c01fe4d10725477
+# 4cb0a04f436c4d70bd4f3364d34530bc
 #: ../../schema/guidance/index.rst:6
 msgid ""
 "This is v0.1 of the Beneficial Ownership Data Standard. It includes updates "
@@ -32,7 +32,7 @@ msgid ""
 "information."
 msgstr ""
 
-# 71c6883dca22486db3224d0e3648ee48
+# d1ab889cff054cb0a72cc67d445e88be
 #: ../../schema/guidance/index.rst:8
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
@@ -40,7 +40,7 @@ msgid ""
 "<https://tools.ietf.org/html/rfc2119>`_."
 msgstr ""
 
-# dcf8fbb8190347ca8b25b61b53835962
+# bcb6a7608bce487a8d8b20ac2db83788
 #: ../../schema/guidance/index.rst:10
 msgid ""
 "This section contains guidance and instruction on preparing and using BODS "

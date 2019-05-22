@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -17,24 +17,24 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# 7281ee3684be48c48cdea007f00a4a2d
+# 599f97d18be54cadb31579947138f2fe
 #: ../../examples/index.rst:2
 msgid "Examples"
 msgstr ""
 
-# 7524ddb1f8a3479291009e8cdce42010
+# 04eab033f0154c7eb8f86fbfd2332852
 #: ../../examples/index.rst:4
 msgid ""
 "The following examples highlight key elements of how ownership and control "
 "information is built up through the use of statements."
 msgstr ""
 
-# 352c697182014c2caff9ab0e2ed01431
+# 1698fa454b1c46e981542554479bf8e4
 #: ../../examples/index.rst:7
 msgid "A single direct owner"
 msgstr ""
 
-# e45a4e4c3ffb48f4a667967ad9da2226
+# a9439782276f409da35d4e7980b5cf87
 #: ../../examples/index.rst:9
 msgid ""
 "The example below presents three statements (Entity, Person and "
@@ -42,31 +42,31 @@ msgid ""
 "Ltd by Chris Taggart."
 msgstr ""
 
-# 429153f4de7b42e1b947ad3fbeadd4a3
+# d2cece43ad784643a118b8a0fc4a86b9
 #: ../../examples/index.rst:15
 msgid "Joint ownership"
 msgstr ""
 
-# 8ef681490848497187f9fffcde21fe5d
+# b7c6d93942d34000bf0f36972eb2a7b3
 #: ../../examples/index.rst:17
 msgid ""
 "To model joint ownership, an artificial 'arrangement', owned by the two "
 "parties responsible for it, should be included within a chain of ownership."
 msgstr ""
 
-# db3546a4432149d2b8742696421c2ee1
+# 2ea56d9895544e05bb4e9fb624835a76
 #: ../../examples/index.rst:24
 msgid "Updating ownership"
 msgstr ""
 
-# 781b193b5e864d79b4d2fa2a004bc2e8
+# 5bb21b53ec5a41ae9e52f3efd0d6166b
 #: ../../examples/index.rst:26
 msgid ""
 "To update a previous statement, a new beneficial ownership statement, with a"
 " ``replacesStatement`` property is required."
 msgstr ""
 
-# 4f4d9c12331342d1826b3033e653c461
+# 4a7966b8d9da46b8bd3c93ace1a21585
 #: ../../examples/index.rst:28
 msgid ""
 "In the (fictional) example below, the previous statement that Chris Taggart "
@@ -75,13 +75,13 @@ msgid ""
 "has not yet been identified."
 msgstr ""
 
-# d4f13d9f5d144986b667a2b0c4fa0726
+# 40ad5b5f4b36475abce3860cd805d195
 #: ../../examples/index.rst:30
 msgid ""
 "Note that only **changed statements** need to new statement identifiers."
 msgstr ""
 
-# 61d7c4eb26e0410cb92ad8b99cfaa7d7
+# 6127901907354ceea0083e822c64aa7a
 #: ../../examples/index.rst:35
 msgid ""
 "When a data file is provided, all the person or entity statements referenced"

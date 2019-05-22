@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:15+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -17,102 +17,102 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# 14045683be8f47089fb4554cf45344c3
+# 44ec0e9d694b4a589a4e7f20439d8328
 #: ../../usecases.md:1
 msgid "Use cases"
 msgstr ""
 
-# b5e95ef058064a13a6f4fe428cfe7708
+# 759c8c4edd14407cb6ee2d9c051628f8
 #: ../../usecases.md:4
 msgid ""
 "The Beneficial Ownership Data Standard beta has been designed with reference"
 " to the requirements of eight use-cases:"
 msgstr ""
 
-# 99385d46b54c4daa9709894a06380757
-# 87fe8701003f40debec6369dfcdf269c
+# 1e30652497b3464d98124108bf90b172
+# 7645b41ac2614195a2da5c014b458ead
 #: ../../usecases.md:6 ../../usecases.md:27
 msgid "Data supply"
 msgstr ""
 
-# b4ce688afe5842788f22f6123bfe6bcf
+# f98437f8c6f14fb2a1dbcec631afdc98
 #: ../../usecases.md:7
 msgid "Public Registers of Beneficial Ownership"
 msgstr ""
 
-# 5e438aaf97514d1bb7b3ba812671ec23
+# a589d6c6dffd4d7c88fd4eb3f9fc02d7
 #: ../../usecases.md:8
 msgid "Self-submitted data"
 msgstr ""
 
-# 106afedc85d248e783a7c186830313e1
+# 4cb89c0086624970868191ca3102180b
 #: ../../usecases.md:9
 msgid "Third-party submitted data"
 msgstr ""
 
-# 75dfaeeda2184f359b6034394c356a0b
+# 03e94c35006c4dd6971bf88be3d408eb
 #: ../../usecases.md:10
 msgid "Self-published data"
 msgstr ""
 
-# 242ae40a851240f3b232887a4ae0391c
-# eea4c23d7d6943c6924339c549cc9045
+# b2e9098ac6cf4b308606af884b7ec8aa
+# 954f98db747c4f7f80c789be1449ea29
 #: ../../usecases.md:12 ../../usecases.md:74
 msgid "Data use"
 msgstr ""
 
-# cdaeecfe9cc144dba61dfb6dd1c932db
+# 4457a71f975f4dfca30ec54592d2fe7a
 #: ../../usecases.md:13
 msgid "Procurement & onboarding screening and audit"
 msgstr ""
 
-# 2b80ce7a29694237bafdf1a289aeb282
+# d7f23281f5764332bf4dc7adfbf2d868
 #: ../../usecases.md:14
 msgid "General investigations"
 msgstr ""
 
-# c7e058f9d306445e9f5d88040cb0332d
+# 71b5ac4a26df4ef4b171d4cf9a899dc4
 #: ../../usecases.md:15
 msgid "Data-led investigations"
 msgstr ""
 
-# ea72cf73205c4f7d8d2352697a8cd0bb
+# 166f6c6e05874fd4b8e4d83f670dc8bf
 #: ../../usecases.md:16
 msgid "Data validation"
 msgstr ""
 
-# c14565c5612a4ee292619fb387b6911b
+# 9b3414c30651492db3b2fa06b52cd87e
 #: ../../usecases.md:18
 msgid "These use cases are described below."
 msgstr ""
 
-# 8a8e9b1f864b452981a2f6654aee78e6
+# 27aa57fba4634849998b30bd61afe98d
 #: ../../usecases.md:2
 msgid ""
 "A full analysis of how far the needs of these use cases are met will take "
 "place as part of progress towards a 1.0 Release Candidate of the standard."
 msgstr ""
 
-# 8c193aca021f45e8908b4819e291bd96
+# b696f9844cee4e4589a038f66ea578cb
 #: ../../usecases.md:25
 msgid ""
 "This page builds on the use case consultation document published in December"
 " 2016."
 msgstr ""
 
-# 0d2ecde98212437e9d8007f3135dbf70
+# ab9c9c0168ce43b5aa920385d2e814a2
 #: ../../usecases.md:29
 msgid ""
 "The following cases sketch out ways in which open beneficial ownership data "
 "might be published."
 msgstr ""
 
-# 5d08e7122d26412d8338275ef8afa2b2
+# 7ed5b073d8e648ad9d45a697809c0b8e
 #: ../../usecases.md:31
 msgid "S1: Public Registers of Beneficial Ownership"
 msgstr ""
 
-# cfd1d920f94b4b9395a31a31da6264bd
+# 3da2728e3168482f86be1ada93d1d6e3
 #: ../../usecases.md:33
 msgid ""
 "A government or other body creating a public register of beneficial "
@@ -121,7 +121,7 @@ msgid ""
 "API on the data."
 msgstr ""
 
-# b463b218b3f74fe8895a52af72e32736
+# 637c585fb5504f0185ca40e7e43c8e00
 #: ../../usecases.md:35
 msgid ""
 "The data that the register should contain is likely to be determined by "
@@ -129,7 +129,7 @@ msgid ""
 "develop open data services or APIs."
 msgstr ""
 
-# 8dd4c0aeeb064dea9c6b9144e18e09da
+# f7c4235d71c34bdbb4ebebd7e143e291
 #: ../../usecases.md:37
 msgid ""
 "Organisations building a register may also be interested in using the "
@@ -137,7 +137,7 @@ msgid ""
 "processes."
 msgstr ""
 
-# 3f3e7de425ed4100b7bbcb1b4a9083b4
+# 32683a6b9a224921baa945a3a6cf79af
 #: ../../usecases.md:39
 msgid ""
 "Possible examples of this case may include the UK Register of Persons of "
@@ -146,19 +146,19 @@ msgid ""
 "from the Extractives Industry Transparency Initiative."
 msgstr ""
 
-# f957da0fb58147c4bb807047d8915f39
+# 292567e49288479d9c400cd6aee895d0
 #: ../../usecases.md:42
 msgid "S2: Self-submitted data"
 msgstr ""
 
-# 0fa7186ef59d4caeacb167713ff2e2ec
+# 3801d6f025764c7a8a787d50800e1999
 #: ../../usecases.md:44
 msgid ""
 "An individual or an organisation may make use of online tools to self-report"
 " beneficial ownership information."
 msgstr ""
 
-# a3b4111c7f0540a0acc9e089da902e6a
+# 11c0cb3f7da149a8b7e13cce5b4609c5
 #: ../../usecases.md:46
 msgid ""
 "For example, Who Controls It was a proof-of-concept  Beneficial Ownership "
@@ -168,28 +168,28 @@ msgid ""
 "structure of a company."
 msgstr ""
 
-# 5c485079c81a4f05a78adbeea85f812d
+# e394b7b848bf440c9fcb59c12b11e65d
 #: ../../usecases.md:48
 msgid ""
 "There are many complex cases a comprehensive system should be able to deal "
 "with, including:"
 msgstr ""
 
-# a879ca199d634f52867584b0fc877bab
+# a6bbb8cdbd404b63bd4908f82b269113
 #: ../../usecases.md:50
 msgid ""
 "Recording economics interests, but without control (e.g. 1% of a mining "
 "company, which may be valuable, but give little shareholder power);"
 msgstr ""
 
-# bcd6b916f3544e5391520c7b10d6461b
+# cfa616d269ba471584e4c831adc41d88
 #: ../../usecases.md:52
 msgid ""
 "Mutual funds, that separate control (the fund manager) from the economic "
 "interest (the entities that put the money in);"
 msgstr ""
 
-# 3711ea7657424a04bb2cea9b18dc1657
+# df649e6a738b4c568b2d6b07752cc3cc
 #: ../../usecases.md:54
 msgid ""
 "Bonds, preference shares and other investments that don’t give control, but "
@@ -197,19 +197,19 @@ msgid ""
 "such as veto rights, e.g. over mergers or asset sales;"
 msgstr ""
 
-# c8b196a2e1ec466eb67448c8c5f2fcc1
+# 4d684797a6db4307b23cffc8c85ca87d
 #: ../../usecases.md:56
 msgid ""
 "Control via nominees, particularly when a nominee may act for a number of "
 "different parties in control of the same company;"
 msgstr ""
 
-# 3fc5d9c84eff41beaeb88d5b0a1caf37
+# 9ca1bd8de12445de8936e88a4c5345bf
 #: ../../usecases.md:58
 msgid "Contractual control limited to a particular set of circumstances."
 msgstr ""
 
-# 3448bb11193c4fa7a16a1f858abde8a5
+# cefa119c8bb04a038209e896003eebee
 #: ../../usecases.md:60
 msgid ""
 "The designers of systems capturing self-submitted data may want to use the "
@@ -217,12 +217,12 @@ msgid ""
 "collection of other data in future."
 msgstr ""
 
-# 76fbbfd558b242c2ba9319fdc6f37b43
+# 8cc4eee0ffc743a2b3480f9b7dc23e82
 #: ../../usecases.md:62
 msgid "S3: Third-party submitted data"
 msgstr ""
 
-# e03ee33a5fd3454199b75899827200b1
+# 353e636be1254f80a291bbdc8fdac89a
 #: ../../usecases.md:64
 msgid ""
 "Researchers, journalists or corporate information services may use filings, "
@@ -230,19 +230,19 @@ msgid ""
 "ownership."
 msgstr ""
 
-# 21687ef2d3ec4588a30cbd6f5516b6c0
+# 6e0a9cee710c4807b87dbbdb4c29b1bc
 #: ../../usecases.md:66
 msgid ""
 "They may wish to share this data for others to re-use, but with suitable "
 "caveats about the sourcing of the data."
 msgstr ""
 
-# 49323da45c4b4db1aef99224b4c537d1
+# 007fe5552c954e088ed7c0b9f7d9997e
 #: ../../usecases.md:68
 msgid "S4: Self-published data"
 msgstr ""
 
-# 071da5633d7949d09ff77f2b34973e76
+# cad3b32bc4a54ba29b21b98762a3bcf8
 #: ../../usecases.md:70
 msgid ""
 "Companies may wish to publish structured data about their own beneficial "
@@ -253,7 +253,7 @@ msgid ""
 "platforms like OpenOwnership."
 msgstr ""
 
-# 0193f5dcf4d64728901de4dedf9b0279
+# 8fa11db3a0f245018ecae7895c2cf18e
 #: ../../usecases.md:72
 msgid ""
 "The data may be periodically updated at a single URL, or have regular "
@@ -261,19 +261,19 @@ msgid ""
 " at a new URL."
 msgstr ""
 
-# c51f4b0aa7ec4ecda1ae758e7c19e2bd
+# 8316f058f8264d8b987652b2ed667308
 #: ../../usecases.md:76
 msgid ""
 "The following cases look at different ways in which stakeholders may wish to"
 " make use of beneficial ownership data."
 msgstr ""
 
-# 0fcd034c90b54c968ee62989079aeda0
+# 08ef205083bb4b419a89d5a63009106e
 #: ../../usecases.md:78
 msgid "U1: Procurement & onboarding screening and audit"
 msgstr ""
 
-# d7ed1146470a4b4fa0fa0d2977760200
+# e14eb25333804fcf98d6117ef2b56f7e
 #: ../../usecases.md:80
 msgid ""
 "There are a variety of cases related to onboarding, by which we mean the "
@@ -286,7 +286,7 @@ msgid ""
 "onboarded."
 msgstr ""
 
-# dedce020bec049208bb6233203d4e26b
+# 175b08dd2e8a4e0d80528f1b3314d00b
 #: ../../usecases.md:82
 msgid ""
 "Information of ownership and control is typically collected by onboarding "
@@ -302,7 +302,7 @@ msgid ""
 "policy requirements of the business."
 msgstr ""
 
-# 76cfae0bcbfd46529821ae53338f8d84
+# 9169dbb086054246b27bd417fbf83d86
 #: ../../usecases.md:84
 msgid ""
 "As part of an onboarding process, beneficial ownership information might be "
@@ -312,7 +312,7 @@ msgid ""
 "important."
 msgstr ""
 
-# 8fbbd286b0ce409c8b38f1e652a3df89
+# ae5f6fc115534e629390f0a2dd54c409
 #: ../../usecases.md:86
 msgid ""
 "Example user story: A procurement officer at a multilateral development bank"
@@ -321,43 +321,43 @@ msgid ""
 "PEPs, and that they are not on debarment lists."
 msgstr ""
 
-# 16b208bd7274405f9db03aa24a804123
+# 0fe187ff43de44b7945c6aa3d8ac3820
 #: ../../usecases.md:88
 msgid "U2: General investigations"
 msgstr ""
 
-# 62d57f11be6f4decb9cf10ba940da506
+# 327200ec30df45968dd6c3faa7edfda9
 #: ../../usecases.md:90
 msgid ""
 "There are a number of parties that need to investigate specific companies or"
 " individuals (as opposed to doing data-led investigations/mappings)."
 msgstr ""
 
-# 27538da42b7c4f8ea1026b86644d1521
+# e3d55603dbf54f3f8f26b50a007828c8
 #: ../../usecases.md:92
 msgid "These include:"
 msgstr ""
 
-# 3db34ef160e343a484210dcf565941c7
+# b1a7cd77ec3e483e803511748504ccf8
 #: ../../usecases.md:94
 msgid ""
 "Journalists - researching stories on a particular company, individual or "
 "group of companies"
 msgstr ""
 
-# 4d1c598fd9c04a0eb17e7b06badba119
+# e59c7ac2aaca49ea8c64711c273f4479
 #: ../../usecases.md:96
 msgid "NGO anti-corruption investigation - finding leads, following them"
 msgstr ""
 
-# 2d456283c9bb4e8aa4dfd39b331a82c3
+# dbc4a00743164395826b51e12240ed1d
 #: ../../usecases.md:98
 msgid ""
 "Law enforcement - looking to establish a clear evidence base, and seeking to"
 " establish proof of intent"
 msgstr ""
 
-# b31e4fc9fbba49b78fcf5ed7ba3cc4cb
+# 929ae8022b93411bb32d007835a69f72
 #: ../../usecases.md:100
 msgid ""
 "Asset recovery - recovering money/assets that are due to a client, for "
@@ -365,7 +365,7 @@ msgid ""
 "settlements"
 msgstr ""
 
-# 07f2c68347374fcdbcd29e2f09796b2f
+# 7df905ac81e94a93a0f51f1b2eb13fd6
 #: ../../usecases.md:102
 msgid ""
 "In many ways the processes around such investigations are very similar, and "
@@ -380,7 +380,7 @@ msgid ""
 "enforcement, lying in public proves intent)."
 msgstr ""
 
-# 3035c04e65b0496e8e4e1ea7fb31ccdf
+# 63a65e683910466fbe9570dee11166ac
 #: ../../usecases.md:104
 msgid ""
 "Tax and accounting investigations are similar, but may be more focused on "
@@ -388,7 +388,7 @@ msgid ""
 "ultimate relationships"
 msgstr ""
 
-# 7818f517f5f44e61816c6198d767ee69
+# 9246de02b4484e2e9b8b4ab6cd438554
 #: ../../usecases.md:106
 msgid ""
 "Example user story: A journalist is investigating a politician including "
@@ -396,12 +396,12 @@ msgid ""
 "other jurisdictions."
 msgstr ""
 
-# 39a42c1c28af4182ac2a716275a0e1ec
+# 3638fede02604effa8dcc1f13e65fd01
 #: ../../usecases.md:108
 msgid "U3: Data-led investigations"
 msgstr ""
 
-# c9d68d06bdf14345a12090000a1e7931
+# 15608cd9226648959fc81bd883e11e63
 #: ../../usecases.md:110
 msgid ""
 "As well as targeted and general purpose investigations, where there is a "
@@ -413,7 +413,7 @@ msgid ""
 "data from company registers."
 msgstr ""
 
-# 1fd04e5a03ba4791a2acdcb71c94f06e
+# 55d3090a16e4499fbfde2bada57c3a44
 #: ../../usecases.md:112
 msgid ""
 "To give an example user story: Data journalists wish to find anomalies "
@@ -421,12 +421,12 @@ msgid ""
 "identify lies"
 msgstr ""
 
-# 16f6faa9bdd349adb0ddfb9b85e88bc8
+# 125b4d3f85e84520a7acf956c662ad2c
 #: ../../usecases.md:114
 msgid "U4: Data validation"
 msgstr ""
 
-# b6fd80d05c9546b19b442ab29e75d0fc
+# 7c98461b6fd44b87b4365502297ef58d
 #: ../../usecases.md:116
 msgid ""
 "Systems collecting beneficial ownership data can benefit from checking the "
@@ -435,7 +435,7 @@ msgid ""
 " reports to the UK Register of Persons with Significant Control."
 msgstr ""
 
-# 424015f0cd3b435ab97c29cbc04f25ae
+# b478f98f375f4cfe83c5c4b4f02cace1
 #: ../../usecases.md:118
 msgid ""
 "To give an example user story: *National EITI groups may wish to check "

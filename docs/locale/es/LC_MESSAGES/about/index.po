@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:16+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# dd523f3056b040e8ac67484083030ea0
+# 4c7d77b1215e43a6a3c8aa74d5e22efc
 #: ../../about/index.md:1
 msgid "About"
 msgstr ""
 
-# 8c1ed254cca04e0b9a187b62fe72e258
+# 57b2ceed7df94c629e0d2174eb14ac53
 #: ../../about/index.md:3
 msgid ""
 "This website contains the draft specification of the Beneficial Ownership "
@@ -31,12 +31,12 @@ msgid ""
 "readable data."
 msgstr ""
 
-# 1a158d4dfcb4491eb49995225b348388
+# 7de0a35fbfdb453481da0c4e5929eed2
 #: ../../about/index.md:5
 msgid "<h2>Background</h2>"
 msgstr ""
 
-# b983157e876441d8b944d83833fd1ab7
+# 9396c57eed8b4808ad9190eaeb6a71da
 #: ../../about/index.md:7
 msgid ""
 "Money laundering, tax evasion and obscure chains of ownership are "
@@ -45,7 +45,7 @@ msgid ""
 "beneficial ownership."
 msgstr ""
 
-# 40085322f94445b6a6c5e396edb2e058
+# 12cf3f46e44b49928c4d0fe1f1f4176c
 #: ../../about/index.md:9
 msgid ""
 "The Beneficial Ownership Data Standard enables this transparency by "
@@ -54,7 +54,7 @@ msgid ""
 "interoperable, more easily reused, and of higher quality."
 msgstr ""
 
-# 9ced79a2d71f4037817f00c56c2b3699
+# d304b834e8db4b269ce17137eaa754f7
 #: ../../about/index.md:11
 msgid ""
 "The Standard is being developed under the guidance of a working group co-"
@@ -62,19 +62,19 @@ msgid ""
 "at www.openownership.org."
 msgstr ""
 
-# 95db4e4464dc4cdeb414cfd6d33f419c
+# 5ae1bf63c68b419fa48cf417ca4e0622
 #: ../../about/index.md:13
 msgid "<h2>Current status of the standard</h2>"
 msgstr ""
 
-# 31b794ad068a42049201c92d299ff64f
+# 4e63ee16accb44bdacd572e8a3842e4e
 #: ../../about/index.md:22
 msgid ""
 "This is v0.1 of the Beneficial Ownership Data Standard. The data model has "
 "been updated and additional codelist information added since Beta-1."
 msgstr ""
 
-# 2179d02caac24bcea1a040fac8d04447
+# ee56c193036244e1b924de17addabc55
 #: ../../about/index.md:24
 msgid ""
 "Implementers should be aware that future changes are anticipated, before a "
@@ -84,43 +84,43 @@ msgid ""
 "previous versions maintained in archive form."
 msgstr ""
 
-# b958143879e04aa18ada485f796fc666
+# e295d3a5ccfa493e9568233a64cb8b7c
 #: ../../about/index.md:26
 msgid ""
 "The schema contains a structure, fields and codelists but does not yet "
 "enforce validation constraints on most fields."
 msgstr ""
 
-# a7c74cb42da345ee8c997fc7de1b57e0
+# f831866e299949048b937380dcd8e040
 #: ../../about/index.md:28
 msgid "<h2>Get involved</h2>"
 msgstr ""
 
-# 78da624edb1d4fc290d8114784fa127b
+# 96022a8fea324cd08762fec1e6f85377
 #: ../../about/index.md:30
 msgid ""
 "All changes to the standard draft, documentation and specification take "
 "place via GitHub at https://github.com/openownership/data-standard/."
 msgstr ""
 
-# afff013ccedb42bebb69e8631d1501e7
+# 7c671279df324bbaabd9b1b9f86914f2
 #: ../../about/index.md:32
 msgid "Suggestions for changes can be made via the project issue tracker."
 msgstr ""
 
-# 4ba6458b3ab640fbb7b8e4b647d3e289
+# 2d6b660c439847a8b9a76f8a6ad369e0
 #: ../../about/index.md:34
 msgid ""
 "If you would like to be involved in the development and review of the "
 "Standard, see the Governance page."
 msgstr ""
 
-# 51c7e3da7bd14f8e887bcedea86c0cfb
+# 079688d3277547ceb5b26eaba6c3805f
 #: ../../about/index.md:49
 msgid "<h2>Partners and funders</h2>"
 msgstr ""
 
-# ac8f1e45473447ff97ac8ca8ebcfc096
+# 6af280b03271413a8e01f008a2b17d8f
 #: ../../about/index.md:51
 msgid ""
 "The initial development of the Beneficial Ownership Data Standard was funded"
@@ -131,7 +131,7 @@ msgid ""
 "The B Team."
 msgstr ""
 
-# 8c3446fda5a24916ba3d9cb6b71d6c2e
+# 3e1cd212e1784ad2af793ff3a82b4341
 #: ../../about/index.md:53
 msgid ""
 "The specification and documentation have been developed by Open Data "
@@ -139,34 +139,34 @@ msgid ""
 "of the Standard's developers."
 msgstr ""
 
-# d173a79357394e94b6a9d7575bf2aa66
+# 12d3087014cf48909a6356b86436ac37
 #: ../../about/index.md:56
 msgid "<h2>License and contributor agreement</h2>"
 msgstr ""
 
-# d8b3e10b8b77444c88742746511647ce
+# ed76a0a41b104e6e9c568a38462447cb
 #: ../../about/index.md:58
 msgid ""
 "Schema contents of the Open Ownership Register are Copyright 2016 World Wide"
 " Web Foundation on behalf of the Open Ownership Register Steering Group."
 msgstr ""
 
-# 5ac4159e7cc048f19c45043d0a356809
+# 11ce5c1735584aa3b40a16ade8f2a7fa
 #: ../../about/index.md:60
 msgid "The schema is licensed under the Apache License, Version 2.0."
 msgstr ""
 
-# e795c9bca64b44e3b0593091518ddb8e
+# b23bd26d77454ff1b03937a138031dc1
 #: ../../about/index.md:62
 msgid "Contributors are required to accept the contributor agreement."
 msgstr ""
 
-# b0cf34e1b4a048009c17a4f0786c0d7d
+# b0caa515ae5c4349a9fb13f275313767
 #: ../../about/index.md:64
 msgid "<h2>Contact</h2>"
 msgstr ""
 
-# 21c171dca69d4c7e84d670de19116a3c
+# 39d464e0b9ad46098cbb0ab4f6c0ab04
 #: ../../about/index.md:66
 msgid ""
 "For more details about OpenOwnership, please contact its coordinator, Zosia "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:16+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 2ecce5a2c01b4f9487c0a3492e13f43a
+# 143dee29fa6640d8a323d9d42ce91a7d
 #: ../../about/credits.md:1
 msgid "Credits"
 msgstr ""
 
-# 675ee2e810064612befeeeeb0217a7e8
+# 54176251c46a4893b583807a31b25514
 #: ../../about/credits.md:4
 msgid ""
 "The first beta version of the Beneficial Ownership Data Standard was written"
@@ -31,7 +31,7 @@ msgid ""
 "Services Co-operative) and supported by the data standard working group."
 msgstr ""
 
-# 9773c6249b444e7fae24be716c29e236
+# 0f1f7ecac1004cf7a0dede3ce41e646b
 #: ../../about/credits.md:6
 msgid ""
 "The 0.1 version was written by Tim Davies and Jack Lord with supporting "

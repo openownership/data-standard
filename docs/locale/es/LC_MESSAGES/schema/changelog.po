@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 3bed4fd40705455ba3b8ecb47363efd6
+# f641bc6055114b75ab416c439d1cc557
 #: ../../schema/changelog.rst:5
 msgid "ChangeLog"
 msgstr ""
 
-# bee1ba83739a4a2da8f6abe479970a9d
+# 9847481f5d6a4789acc1fa8761849a1e
 #: ../../schema/changelog.rst:9
 msgid ""
 "This is v0.1 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model and additional codelist information."
 msgstr ""
 
-# c9d327295438440299f49d96172a8fd6
+# fb5e5cb2920c45fc9065d033e880c28b
 #: ../../schema/changelog.rst:11
 msgid ""
 "Implementers should be aware that future changes are anticipated, before a "
@@ -39,24 +39,24 @@ msgid ""
 " previous versions maintained in archive form."
 msgstr ""
 
-# c5e9959743c6449286f77b84418cc279
+# dcb759f4b7424bc78ae7554adf1c106b
 #: ../../schema/changelog.rst:13
 msgid ""
 "The schema specifies a **structure**, **fields** and **codelists** but does "
 "not yet enforce validation constraints on most fields."
 msgstr ""
 
-# ee28b99f00e24d43a30d08600762adb5
+# 3e1995ea8f004eb1b8c9cf0b2399accf
 #: ../../schema/changelog.rst:17
 msgid "[0.1] - 2018-12-12"
 msgstr ""
 
-# 94282a0174664c6a86c64f1e3fb30823
+# b8a762b7ca1c4fe599e1e0c048b52ffd
 #: ../../schema/changelog.rst:20
 msgid "Added"
 msgstr ""
 
-# e1dbd708c94b4d2fb2ed31370467743e
+# d28dfd419dd4419f8eddf7443fee2cc2
 #: ../../schema/changelog.rst:21
 msgid ""
 "``beneficialOwnershipOrControl`` property added to ``Interest`` object. "
@@ -64,7 +64,7 @@ msgid ""
 "natural person and an entity makes that person a beneficial owner."
 msgstr ""
 
-# baa759b4248c4006a6d6c56b5a5153a9
+# 2843ab04222c4057bf8d509822fcd3e1
 #: ../../schema/changelog.rst:22
 msgid ""
 "``pepStatus`` property add to ``personStatement`` object. Allows a natural "
@@ -72,7 +72,7 @@ msgid ""
 "reason, jurisdiction, start date and end date)."
 msgstr ""
 
-# 4b7a2b1a85a04a998a39e4be6ce48e65
+# 7a0dff073550406db408cc0548dff104
 #: ../../schema/changelog.rst:23
 msgid ""
 "``annotations`` property added to all three types of statement. Annotations "
@@ -80,7 +80,7 @@ msgid ""
 "existing data in a targeted way."
 msgstr ""
 
-# abdf798808eb4b6db4ad868094dceb63
+# 46dfbe245f554c09b9b7a3f81e94689d
 #: ../../schema/changelog.rst:24
 msgid ""
 "An ``unspecified`` property replaces the ``nullParty`` option for interested"
@@ -88,37 +88,37 @@ msgid ""
 " an interested party is not recorded."
 msgstr ""
 
-# 2b46dcda8e3f45efbe227c0c43dbb028
+# eb9bd6f19d3044bfb141df38fa73af4d
 #: ../../schema/changelog.rst:27
 msgid "Changed"
 msgstr ""
 
-# 4ccc0f81fb734577947776276d3d1d70
+# c1f0163dc63446f1a33a0d31ecc4d107
 #: ../../schema/changelog.rst:28
 msgid ""
 "The interestType codelist has been extended to include interests in trusts."
 msgstr ""
 
-# 4be721048fe84f0ab5119f4535a213dd
+# 36e9fd0368f2445d89dad26cf9210651
 #: ../../schema/changelog.rst:29
 msgid ""
 "The structure of BODS-formatted data has been flattened, to remove "
 "extraneous nesting and facilitate serialization using JSON Lines."
 msgstr ""
 
-# 6f6a1d9ddf634ddfab23b98ee9d76ab2
+# 326a300a26cf4bf5b4493f5997a5f732
 #: ../../schema/changelog.rst:30
 msgid ""
 "'Beneficial ownership statements' have been renamed 'Ownership-or-control "
 "statements' to reflect the scope of their use."
 msgstr ""
 
-# a887a0dab56b45cc9dae19ceaa2cd8f0
+# 4d95b4209d54467a80867b4ba7fe5691
 #: ../../schema/changelog.rst:33
 msgid "Removed"
 msgstr ""
 
-# de0ce36caa4f4e2e8037629d13b1a1e2
+# e013f00d89b34b398962ee341e0e2d8d
 #: ../../schema/changelog.rst:34
 msgid ""
 "Arrays of ``statementGroup`` objects (each object with its own statement "
@@ -126,7 +126,7 @@ msgid ""
 "a flattening of the structure of BODS formatted data."
 msgstr ""
 
-# 75e5e0bfc7b54b35bb24456cb546c040
+# e4dd7089e1234dd5a37507701be843ee
 #: ../../schema/changelog.rst:35
 msgid ""
 "The ``nullParty`` option for interested parties. See ``unspecified`` "

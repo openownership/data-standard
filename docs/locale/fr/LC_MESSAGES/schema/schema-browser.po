@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# 3156dc8cbbc54e8da202c57164c99c79
+# f8c7e7d030a147afab9922ecd3849e3d
 #: ../../schema/schema-browser.rst:4
 msgid "Schema browser"
 msgstr ""
 
-# 4718eef735f64baeb68dc58316a91809
+# 5b565f7c3b9b48cfa71e1bfa648d55d8
 #: ../../schema/schema-browser.rst:8
 msgid ""
 "This is v0.1 of the Beneficial Ownership Data Standard. It includes updates "
@@ -32,7 +32,7 @@ msgid ""
 "information."
 msgstr ""
 
-# 112f21b3337a418aada33bb21bfe5f01
+# 878d194a0d2a422cb7fe1f80f50c4e21
 #: ../../schema/schema-browser.rst:10
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
@@ -40,14 +40,14 @@ msgid ""
 "<https://tools.ietf.org/html/rfc2119>`_."
 msgstr ""
 
-# c5fe0ee318d8446fb1915dca7c31f941
+# bc70e5b796234cd98c998d38bce06b69
 #: ../../schema/schema-browser.rst:13
 msgid ""
 "The draft Beneficial Ownership Data Standard schema is defined using `JSON "
 "Schema 0.4 <http://json-schema.org/>`_."
 msgstr ""
 
-# 1b0363821138447cad94fad8bd5a639d
+# 48d34a7020e34364bfb9ddb00f096fde
 #: ../../schema/schema-browser.rst:15
 msgid ""
 "The structure of each of the schema's top level components can be explored "
@@ -55,52 +55,52 @@ msgid ""
 "properties.)"
 msgstr ""
 
-# 92185fc97808482b8f5424aadc205cea
+# 3e06b2fccae5436a8416fef269b7918f
 #: ../../schema/schema-browser.rst:17
 msgid ""
 ":ref:`Ownership-or-control statement <schema-browser-ownership-or-control>`"
 msgstr ""
 
-# b87905c6177146aab6a67eb8710dd1bd
+# 10a6a4970f7f49e88ee29f6d36bff418
 #: ../../schema/schema-browser.rst:18
 msgid ":ref:`Entity statement <schema-browser-entity>`"
 msgstr ""
 
-# c92a36df9b55465f85a1c886a337bf81
+# b6df91f67afa42d88b401bbb9ba55a69
 #: ../../schema/schema-browser.rst:19
 msgid ":ref:`Person statement <schema-browser-person>`"
 msgstr ""
 
-# edc9bb4ed2564223ad6ca5268e0ec17c
+# 52e572296e724c7e8306dd1e245bcd88
 #: ../../schema/schema-browser.rst:24
 msgid "Ownership-or-control statement"
 msgstr ""
 
-# 022dcb0c9ccb4f07a220624839027b2a
+# 68242f01e39e419e971231bcc9e54614
 #: ../../schema/schema-browser.rst:26
 msgid ""
 "View the `Ownership-or-control statement JSON schema <../_static/ownership-"
 "or-control-statement.json>`_ or explore it using the viewer below."
 msgstr ""
 
-# a36dfa020fca4fe4a1be7c27f9f128de
+# 36cd773f168f4d4ba56c36171846ef3c
 #: ../../schema/schema-browser.rst:35
 msgid "Entity statement"
 msgstr ""
 
-# 01baaf5c491c4780b10230ed94ed3c15
+# e77a1b9d5ac44ca4bac828fc8648cb99
 #: ../../schema/schema-browser.rst:38
 msgid ""
 "View the `Entity Statement JSON schema <../_static/entity-statement.json>`_ "
 "or explore it using the viewer below."
 msgstr ""
 
-# 359bf8102e5d4d13a4a8785be07c1137
+# b00afa6e32ad41d3acffeb41b564beb2
 #: ../../schema/schema-browser.rst:48
 msgid "Person statement"
 msgstr ""
 
-# 8d1d841c95424bed8c114ae933a3af7b
+# 8ed8222cc76245509ab21b3018988fce
 #: ../../schema/schema-browser.rst:50
 msgid ""
 "View the `Person Statement JSON schema <../_static/person-statement.json>`_ "

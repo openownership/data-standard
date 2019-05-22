@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:18+0000\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 8a3a44abde3e4b60938495f44931c285
+# 9c9aff8fac5d482c8afc507335e844cc
 #: ../../schema/reference.rst:4
 msgid "Schema reference"
 msgstr ""
 
-# 61efec3614ea4134af2f35c102db3808
+# fb8ca466c03e40cf9bb3cc28b8fcaf27
 #: ../../schema/reference.rst:8
 msgid ""
 "This is v0.1 of the Beneficial Ownership Data Standard. It includes updates "
@@ -32,7 +32,7 @@ msgid ""
 "information."
 msgstr ""
 
-# 4e39e7d843bf4b7dbaba14578b53d4b4
+# 57d29221f8ef402bb5f5bad483cd7b37
 #: ../../schema/reference.rst:10
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
@@ -40,7 +40,7 @@ msgid ""
 "<https://tools.ietf.org/html/rfc2119>`_."
 msgstr ""
 
-# fc0acc4fd9f347abbc328819c3f8134e
+# f86f2854e1ea4c9b998b457160ecc6a0
 #: ../../schema/reference.rst:13
 msgid ""
 "The following is an A - Z guide to the objects of the Data Standard's "
@@ -50,29 +50,29 @@ msgid ""
 " <schema-browser>`.)"
 msgstr ""
 
-# eb20bc58e37c42af82bffa871a0e52c9
+# d240354a50e24e1a91ed67e359308343
 #: ../../schema/reference.rst:15
 msgid "The top-level objects are :doc:`statements <concepts>`:"
 msgstr ""
 
-# 4c0c60501848420685241f3dbdd32d7d
+# 12944ebe4f9347d2a87b50fc160ed4b9
 #: ../../schema/reference.rst:17
 msgid ""
 ":any:`Ownership-or-control statements <schema-ownership-or-control-"
 "statement>`"
 msgstr ""
 
-# 7eeb0c06a2ef426cb633bd3dd7ebf79d
+# 6f1a8fc2d176473c93336cfc2da88534
 #: ../../schema/reference.rst:18
 msgid ":any:`Entity statements <schema-entity-statement>`"
 msgstr ""
 
-# a246008d5a004789bcbeeae3c3f2403f
+# 0aee19ee2b374f50b70d8b43ed1730c3
 #: ../../schema/reference.rst:19
 msgid ":any:`Person statements <schema-person-statement>`"
 msgstr ""
 
-# 92691632936c4cc48275fa893119db4b
+# 8c6a8d00e6d44cd1927c6f02c030912a
 #: ../../schema/reference.rst:21
 msgid ""
 "Statements are built up from a set of nested objects and properties, each of"
@@ -80,7 +80,7 @@ msgid ""
 "object or field should be used."
 msgstr ""
 
-# 225d54b935ff4a6594e0096ef6f94c6b
+# cad9133fdac64e7ba5144dbbb39905c7
 #: ../../schema/reference.rst:23
 msgid ""
 "BODS data MAY be published as a valid `JSON document "
@@ -88,12 +88,12 @@ msgid ""
 "serialization>` for more options."
 msgstr ""
 
-# eb663653fc7747809a1f1ba2eff5015b
+# 6157673199d54cb48e4c0958f2eb68bc
 #: ../../schema/reference.rst:29
 msgid "Address"
 msgstr ""
 
-# 7e6a5e77d9c14ed39143fc3931f5c956
+# 17bfdef153ed4525a7ee5868f8ebb553
 #: ../../schema/reference.rstNone
 msgid ""
 "A free text address string, providing as much address data as is relevant, "
@@ -101,21 +101,21 @@ msgid ""
 " example, Place of Birth) only a town and country are required."
 msgstr ""
 
-# f0544965186b42489094351792617a3f
-# 1fe658c039804905aca527bb155cecbc
-# 31c1dab5735948049fe4132f3818550c
-# 8b8a4f2db04a4eeba2d3d32ab0f94df4
-# 148b4f6cf03e4d259ef84432e975f1e5
-# 47ef3f4684264f6a8b933345cdc70ee7
-# e4f3b3ddc46d435ead79e53c84a4a3ca
-# ff9bff72ed35401bbf2565c8673c23d1
-# b1d7f96cddb643f7ac290db0a21747e1
-# ca7e445ec32b4558aa90ed7d1b47e79e
-# edcc1860b9fb403aace865723a9e81e3
-# cbdebf5c6f6441dda5addb24fb45cd7b
-# 9cdf29fad33448d1ad53a4abd6e56171
-# 84c14b0bc4b2471a8b7d3c35962e0fcf
-# bbbb865f971a4c228fca46e92fa162fa
+# 6cba18f040334b4ba02f53889cf14436
+# 0ab83ff1ddf0402cade76d042f363ee9
+# da0860660b294737875730ca8164c5e1
+# ab39eaa0a7824c41a5c174871909de85
+# a2510034a65946618c21ba9a40ad6656
+# eafc79bfb8b24fdaa3f82c496c33e41c
+# 8a326a49915846d0a706c58aaf8048de
+# 01f47527b1d94f0ba6ac37e5ac11a693
+# b6b67a57b41c432f9f331b4f1bd1ae58
+# becf5b4cde974acab395a2c61ec27e4d
+# e80d189a54104305b4b835ed3f9f7dee
+# 43a7b010a9bc421795c8df2a64182e0c
+# 5ee37f95b74c479b9d20e68d978a88b9
+# f07bf63131244bb5a26502ecfc5bbeb7
+# 510a4b5d3cb24c5689f458b812e26f9c
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -127,21 +127,21 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-# 75c4db3aa23a4528a15f78aacb6770cc
-# 16326edb7dd04690abb6e45a3f7df9da
-# 89620ba28efb4c7a8235372e7d7c34b8
-# 466e6d025dd04f399b61626bb1d0639e
-# 3eaa0e98ef5a48438c67b0c490175391
-# 2838b2ea9de54a4ab46471f93004f48d
-# 3375bcadba0948449dfc80917cf4710a
-# 138c5f5c1cb942afbbcfeecff6f234c4
-# b47d6f05f8f64330b1019d8faf3f5acd
-# 3b9d3d28a4814849984939fee2187f66
-# ee610c93a8de4a85a36c31a9811b893a
-# 13f2706c3ce8482e916400d2c01419ba
-# 81a994fb1d014204b4f508fbdd92c43c
-# e8b72d344cb44e7b9c0a4296312d2e4b
-# 9bfc24c11e9848d6a949eb62451034df
+# bf4e44ee8bc94177ac00e37aa6b0e622
+# e80601e4cb6d460db9efe15bf679ef43
+# 46fdd35a586545e38eaebf1e16d20544
+# f3ac4869c9a74d3da75e7446db08f41b
+# 5542c3dd65804ab2bae59add653b8d48
+# cde4fcf8fcb24c438320275e109fb8e9
+# 30cc8b4a9ee04239a4e8b481e263dab4
+# 7213f1f47c4243d78c8415767ca0e391
+# ebbdc6cbf18b4ffb93e32280c050c843
+# f687aa79fd394fadb79527e2d3ea51ba
+# 359a98bc043a480681225d1b1bcaca41
+# bcb883a03b8647fc99eb96adb4ed5ed6
+# 6ad76e6a165d40b39ecdb298c8c543d6
+# 0e8e252edfcc431c80133f07df96e073
+# f6dbb03ee9fd4d648a72b673bf504195
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -153,21 +153,21 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-# a6de4e52e69049e8be6e389f8f6bfa28
-# 7417aeec3af34fcca9cac44383d827d9
-# 6c970e4faf75495d804ced16ce50209d
-# 43a0fb0ca6e24fb58e3ebe34e0931bdf
-# 3a0dbd348d064f6fbf0db27acf945ab1
-# a37a34d9890b47a3ac636bb677146366
-# a403ea0fd906455cae2a2cf1a8f32214
-# 37ddb75ddb6e44fab5c65fe72ae47db3
-# 2563f683246043eea40406a4d6b87a37
-# f54656970be74924af28ec0d7fd85ed4
-# 24c0dcc6942c4e5db669d0366b275e31
-# 4c80f3b1cea541b4ab16a59d11f2cab9
-# c31e949304a849e1a6fcc813e046cfa2
-# 27a99113163c4a2ba929f6aa215a3f89
-# 1636126645b74ed0adadac7c983c587b
+# 6b02b03280d1478e8649d694fe53392b
+# 94bff3cf2dd14e78a19659ee436d6b55
+# 33ee7ee041884ca6833f2625a6c4b1be
+# 4d5d80ffce444834a6dd4133e16822de
+# 7ed745f7987d48dab0b061974bbba140
+# 67682e7888d24d82a79f2d40a8cc2bcc
+# 9e9e3cb6a004418fa290f2f78d724577
+# 309d5f8ada464c4dac0f861658845fab
+# b508cb78e49741f08975b4a8bf9cec84
+# f00143ae58d840b198a1ee7e484f5bd3
+# b055e3747c4d4ce084e6ba8a73d103c3
+# 001280f4c5eb4605ad44599a9e3471ba
+# 135945efb5cb4263aeffd7c5cd8729f3
+# c3d4ed202c1044a8ab3bbd01669f18ad
+# c1909c577dd7458b8020a433fba24ab1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -179,21 +179,21 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-# 91afab1f350640a5998db552bf5a1a2e
-# 19e4ae1b5014402fa461c0acd5030619
-# c4706832c1c1454698121a1b62214a92
-# 26ec8c859bab4bd3a42b8275eb4cd1b1
-# 9cacbbf06e2a407b9ad40e921f6fc1be
-# bb097918bda145758e0559a718e2341e
-# 28f2d501a9a04212806d71efd3bdab7b
-# 23ec217f1365402eac1856007a68a35f
-# 7d23c50d350440359afc74d28c09f51f
-# c78e7b32079542fc84d1374c1dae5730
-# 9e181eb2e7fc4b448c136eb0121480a9
-# bbf146aa51b64292b563c4efdd7ac702
-# b6905931bbd54983915c9a9c52f17d17
-# 906383ce33f54ee480c1782a2aaeaf2d
-# 03cbe9472bae43a1ab92e8e864b54cbf
+# 8d311ae0f482441fb834ab8a47e44d00
+# 9d4272b6c15e4ecb85a601971cd577f4
+# 42c8f80a9f504fc4b3520d84675a6952
+# 2aa5d97388d64e138b04c7c68f41fb6e
+# f6456fdc27ed471d9c6527073edee319
+# 560997a78cf741b3add53b918d59695c
+# 50a1a7599322495b832561127542bdcb
+# 45f00a8c14994b6a9b3c631e4d08b3c9
+# e9d4ab0bd7ed4d4fb354f92cb8878391
+# 1d404593ba4f40bdbe48966e0ea72f91
+# 3c546481469d41028c05e9d69f897a6f
+# 27a10bd27d244d72acee9e6323bb5ac1
+# 4e514514a5e24f6b947542231decfa1a
+# 170248821ed74e9c956c05ccef6e436b
+# c4ade243f7ee48178ee5e518678706fc
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -205,21 +205,21 @@ msgstr ""
 msgid "Format"
 msgstr ""
 
-# e6587c1af1c24f5eb2d567aa57ef1fe6
-# 17fe5f21f8fa4c888dc71eef2f041cb4
-# eb316071546a4bfbacbcac6c235c7028
-# 69006432d6bb4ed487a1d7517c88b205
-# 766a74a3f9b5497a9f485f1c65d45113
-# 2866cf0a19d84c53915892249db6d9c7
-# c7968e4bf5ec4e0dbd0256b57a589063
-# 2e4532e423ac40fb9903e23d64023811
-# e337e1b27cbc4a9fa5a440d31029097d
-# b3eff6572324475ab04d6c00cbc2bb16
-# 5c7dd07ff891417685379bb3c82b7751
-# c6c3fb4b046e44beaa6990c518f4221b
-# fbfe9e5275d046bca3b0aa6bf3a598ed
-# 24bbb54be02a446c8aa0bbc26d013319
-# 383ccb4d8be54d4389d575e6c8cb5e9d
+# d568111c99bf422ca105385d3f383ddb
+# 8ee25c8e55dc4843ae028a8a78a627c3
+# a55ef13b718d43bb9294cbd41e86c918
+# 1281f44044dd4fb69359bff8a7fef732
+# e5987fe4a69b4a0fabff4f7ab8126384
+# a9cfbf020b5c470db790be421340f90a
+# e8ce7a91201a4873b40343738845d77e
+# 2edb50d7975d4c21b099d58b0af0c830
+# 950af2eb53c3466ebcfdcc5ad70fd3ad
+# 4b462532a4704f749f2724f2cc57d534
+# 2ddd2ea51bce4c0c92f700a9e32c990c
+# b83db8d6766d46f089924ddc02627ac8
+# 87f90f9798db4f7a954c306daa3b9300
+# 4ca70ab1a4bb48ea9060e62a6086bcb2
+# 9cd8fb4a6cd74fbd9ba3d22fa602ac9c
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -231,7 +231,7 @@ msgstr ""
 msgid "Required"
 msgstr ""
 
-# 497153c5618443c1a164413023b2892d
+# 2241648d2d8245fc83e5f874c1e914d3
 #: ../../schema/reference.rst:40
 msgid ""
 "A diversity of address formats are used across data management systems, and "
@@ -241,7 +241,7 @@ msgid ""
 "addresses before carrying out any structured comparison."
 msgstr ""
 
-# 8caf1b87bce24455bb78e6fdfd46d3e9
+# 84883c181b1c4c11ac3acc8f847e15ed
 #: ../../schema/reference.rst:42
 msgid ""
 "Designers of new data collection systems are encouraged to choose an "
@@ -251,24 +251,24 @@ msgid ""
 "more details."
 msgstr ""
 
-# ffd477ed87b042b4b3364d6238a010a6
+# 4f1e477277924e76a45c70724fba7157
 #: ../../schema/reference.rst:47
 msgid "Agent"
 msgstr ""
 
-# bf8a126deddd471fbe85fd6ebe94364e
+# 3fd5c6629e214817aa6988efed224f50
 #: ../../schema/reference.rstNone
 msgid ""
 "An individual, organisation or other responsible agent making, or "
 "supporting, a given statement or annotation."
 msgstr ""
 
-# cb14c939d542480d933cf821bf28383d
+# 6cc48fb7e0504eaa9dcb87774f44371c
 #: ../../schema/reference.rst:59
 msgid "Annotation"
 msgstr ""
 
-# 4818c40709134595840402aae6c89949
+# 4655aad52fa141ae8a5f32dbe551fdea
 #: ../../schema/reference.rst:61
 msgid ""
 "The ``annotations`` property of statements currently allows an array of "
@@ -278,36 +278,36 @@ msgid ""
 "for further guidance."
 msgstr ""
 
-# 796b3c1df02f46599f3e3135367fc261
+# 619031daabb34326924f8eb03227adcc
 #: ../../schema/reference.rst:69
 msgid "Country"
 msgstr ""
 
-# 4b140779983c48e3a5cb4fab7a6b76e3
+# 28b9b04f2b7e46958837802e5578b6e1
 #: ../../schema/reference.rstNone
 msgid ""
 "A country MUST have a name. A country SHOULD have an ISO 2-Digit county "
 "code."
 msgstr ""
 
-# 05a6dc90813b494583356386722d7185
+# a77291bfeb434dc19d2cd67ce53f7e21
 #: ../../schema/reference.rst:81
 msgid "EntityStatement"
 msgstr ""
 
-# b7ba0eb9c911404ab9a4e88291e67820
+# e6ce1dcda6dd45d19f2e79dcedb4a6c6
 #: ../../schema/reference.rstNone
 msgid ""
 "A statement identifying and describing the entity that is the subject of the"
 " ownership or control described in an ownership or control statement."
 msgstr ""
 
-# 9afcb8def313407fab49e059d21e1d42
+# 057ce206aa304b139ae9b0b53df6a94e
 #: ../../schema/reference.rst:92
 msgid "Identifier"
 msgstr ""
 
-# 38455b5e335c416daba72e538a8bb58d
+# b2b45d9d5a5e4a0881c8230b81285e45
 #: ../../schema/reference.rst:94
 msgid ""
 "The identifier component is used to connect a statement to the real-world "
@@ -316,30 +316,30 @@ msgid ""
 "guidance on when and how to use this component."
 msgstr ""
 
-# e700223d0db44b9f909c14dc00d435ac
+# 76e6cd2369744780a816eb8c76eba983
 #: ../../schema/reference.rstNone
 msgid ""
 "An identifier that has been assigned to this person or entity. The scheme or"
 " list from which the identifier is drawn should be declared."
 msgstr ""
 
-# 68a67993b7cd4ad0bfdee236805238a4
+# f802e09d0afb43af9d01147cdd606e4d
 #: ../../schema/reference.rst:105
 msgid "Interest"
 msgstr ""
 
-# e5a72e27a395421585f8b3a7074f1c24
+# ed86526d5c1c42639bbb4b4c703ae180
 #: ../../schema/reference.rstNone
 msgid ""
 "A description of the interest held by an interestedParty in another entity."
 msgstr ""
 
-# 1e88c1a8eb8c4be79cd135e55cf2181d
+# cf80cd10c82a4bb5b243f7fcbdec5935
 #: ../../schema/reference.rst:117
 msgid "InterestedParty"
 msgstr ""
 
-# bb288a8dee0040198b944660debb72d4
+# 1aa1d50dc30642359575fd22b9eaf876
 #: ../../schema/reference.rstNone
 msgid ""
 "The interested party has some level of ownership or control over the entity "
@@ -348,24 +348,24 @@ msgid ""
 "the interested party is unknown, details of why."
 msgstr ""
 
-# f7c86cf824f8435ea4256f668d7f512e
+# fe935292c3324af5a2ed40614ea9bff1
 #: ../../schema/reference.rst:129
 msgid "Jurisdiction"
 msgstr ""
 
-# 4d7ff8a4fe2142dea3c9a308b11e3644
+# 08ae9d12438b4cf187ffe21bf79c765b
 #: ../../schema/reference.rstNone
 msgid ""
 "A jurisdiction MUST have a name. A jurisdiction SHOULD have an ISO "
 "ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code."
 msgstr ""
 
-# ddad2b32fdd64b158b8d677b9b4314ee
+# c7d4db94545e4d20ab5326a64dcfd951
 #: ../../schema/reference.rst:140
 msgid "Name"
 msgstr ""
 
-# d12824eba1ce4d85ba1b243e3bcb4548
+# 29b2c030fac24984818fe3b5c99f1e0c
 #: ../../schema/reference.rstNone
 msgid ""
 "An name by which this individual is known. Names should be provided in "
@@ -375,12 +375,12 @@ msgid ""
 "vocabularies) definitions."
 msgstr ""
 
-# 2fe776260748477c83a908a451c6c0ce
+# 5e0577b4c64144e19245c9800ca2c2e8
 #: ../../schema/reference.rst:151
 msgid "OwnershipOrControlStatement"
 msgstr ""
 
-# 96398300673943d5bc92a19f0f9c592e
+# 11add5134261493da3609a8ff11f6308
 #: ../../schema/reference.rstNone
 msgid ""
 "An ownership or control statement is made up of an entity, an interested "
@@ -388,39 +388,39 @@ msgid ""
 "details of the interest and provenance information for the statement."
 msgstr ""
 
-# 3191ad6fe1394a09ba8286337f547fdb
+# 5ed9ebb4f62f4a598edffc9c130e12b9
 #: ../../schema/reference.rst:163
 msgid "PEPStatus"
 msgstr ""
 
-# 4b699eb7e8434b728bfd2066315ca1fc
+# 5ae57c009c7845cf8d86e7df4f870c15
 #: ../../schema/reference.rstNone
 msgid "A description of a politically-exposed person status."
 msgstr ""
 
-# 9dd808c882964add9891042132e0eac5
+# 11e89fc8b435405f83d85cb02af1b80a
 #: ../../schema/reference.rst:175
 msgid "PersonStatement"
 msgstr ""
 
-# 83044bb5ff134cc69c280122a61ac629
+# 8b22546271cc43e8a5a4bffda07362eb
 #: ../../schema/reference.rstNone
 msgid ""
 "A person statement describes the information known about a natural person at"
 " a particular point in time, or from a given submission of information"
 msgstr ""
 
-# e4ee7c16c8e24d33a045978ccdcfae46
+# 6749c7f882eb44819f767d43dd2e6694
 #: ../../schema/reference.rst:187
 msgid "ReplacesStatements"
 msgstr ""
 
-# a618daf516d342e59ed07ba62580652e
+# c7dacd360f8e43348588eb7f7972fc84
 #: ../../schema/reference.rst:189
 msgid "``replacesStatements``"
 msgstr ""
 
-# 72196ba2987e4416a91b8f55c9189d42
+# b527ad0a21be42689a9fa855098bf509
 #: ../../schema/reference.rstNone
 msgid ""
 "If this statement replaces a previous statement or statements, provide the "
@@ -428,19 +428,19 @@ msgid ""
 " advised to mark the identified statements as no longer active."
 msgstr ""
 
-# 9d0d170f06c74ddabbd79e893fc80d05
+# 10a186f316024e789f7055623a5c2cf6
 #: ../../schema/reference.rst:194
 msgid ""
 "See :any:`Updating statements <guidance-updating-data>` for technical "
 "guidance on working with updates to data."
 msgstr ""
 
-# 25de20308718416a97946c458875b0f5
+# 4eadf0466dd24663a5fa486ffffb2cfc
 #: ../../schema/reference.rst:200
 msgid "Share"
 msgstr ""
 
-# 0021640ceda9438587419ef6b1bf7bd7
+# fb6e1cc1a1f449ea9e112eb606411a39
 #: ../../schema/reference.rstNone
 msgid ""
 "Where an exact percentage is available, this should be given, and maximum "
@@ -449,31 +449,31 @@ msgid ""
 "this kind of interest falls."
 msgstr ""
 
-# 88c315cc7bea4ee1823a035ce8ebe1dd
+# c82439069cf247cf897547c5e37f3329
 #: ../../schema/reference.rst:212
 msgid "Source"
 msgstr ""
 
-# a3a6abc63635422399fcc300e119dd7a
+# c3ebf3b93c704b2b801ed7b236d99571
 #: ../../schema/reference.rstNone
 msgid ""
 "The source object is used to explain where information in a statement "
 "originated from, and to link to supporting information."
 msgstr ""
 
-# 57184ee773fb462b81b31909c829f242
+# 6868d9976ac445a4b445259fab4435cb
 #: ../../schema/reference.rst:222
 msgid ""
 "See :any:`Sources and annotations <provenance>` for a discussion of "
 "provenance modelling."
 msgstr ""
 
-# cd6f15c7311946879278a34afaace26c
+# bafc4a2d8f2a454db5761468400e7ed9
 #: ../../schema/reference.rst:227
 msgid "StatementDate"
 msgstr ""
 
-# f0673fcd41344cbda9b34164b77afddc
+# b35c81488ffb4de183b847459231cbcd
 #: ../../schema/reference.rst:229
 msgid ""
 "Dates MUST conform with the extended format of `ISO 8601 "
@@ -481,46 +481,46 @@ msgid ""
 "example, are valid:"
 msgstr ""
 
-# daa882fe886740a7a1d0a5caa33a81e9
+# b0742b027d8f45a5985eca02564c13c4
 #: ../../schema/reference.rst:231
 msgid "A full datetime string (YYYY-MM-DDTHH:MM:SSZ)"
 msgstr ""
 
-# b19d45d81eab4a7eb8b0f9738e18975f
+# 88ad1cd0929d425b9e27d863696dab6c
 #: ../../schema/reference.rst:232
 msgid "A year, month and day (YYYY-MM-DD)"
 msgstr ""
 
-# 2d1cd88cbc8944619af2e6947529e538
+# 063d73208019492fad3dd69484ab1f70
 #: ../../schema/reference.rst:233
 msgid "A year and month (YYYY-MM)"
 msgstr ""
 
-# eba2a35dbf264e19becc75c071b3c60b
+# 5de2d159050643e68cced7e796e01e63
 #: ../../schema/reference.rst:234
 msgid "A year (YYYY)"
 msgstr ""
 
-# 77af91e466da41db8b4685310ef8de1a
+# af1ed437d18141808875512a7bab78e9
 #: ../../schema/reference.rst:240
 msgid "Codelists"
 msgstr ""
 
-# 36208954d2c94a008ecbd14fac6390fc
+# 8f1fb28402cb4c3199952aff44c3824c
 #: ../../schema/reference.rst:243
 msgid "AddressType"
 msgstr ""
 
-# e38bf1931a3148318dbc6cf141d99e1b
-# af118f846ac54650883b2fdcd0492940
-# 46208a48b2ac4e3ea9dce4ee136328c4
-# eab31fbef49a49998e9f52c73771ecb5
-# b510e4ce5aab4f37b3926017f4ff806d
-# 5824bec9863f413b9ebe648c8353967c
-# 6da38349555b4a1f8062f4610f603548
-# 5ba6b7b734b14d50bb70fa7cbc2aa15d
-# e772076c71c744c6aaf7803f4580cfa4
-# f3abddaaf75940b3b215d9529ef16c51
+# d9da83b2daaf4c709a85601fd05df9cc
+# 24b2c91d696e4259921963d5e6cc13a7
+# 0f571e3b60ab4653875981f46abe283d
+# ec3a72672c9d4139a212077ab4b0ac56
+# 3ad534a70c6b40268171080b4bd34f0c
+# 39ce3ddb39fe49a6bccbe5e969c001cc
+# 767ab82ea640450d922c5b7b56291174
+# 8af8c835d91a45c9bc505fe3c42cc037
+# 140d0cd2a26f4098932bd947cb3d39b5
+# b7b3111ec5944638ac50b22283f316f9
 #: ../../../schema/codelists/addressType.csv:1
 #: ../../../schema/codelists/annotationMotivation.csv:1
 #: ../../../schema/codelists/entityType.csv:1
@@ -534,16 +534,16 @@ msgstr ""
 msgid "code"
 msgstr ""
 
-# 7e46f889db014ecb9a613ce40d10e255
-# 222252177317420b80bae09e563d3435
-# 4032d17276eb42ae8a88c6dd99548c87
-# 71d13aff7ddf49f880106afe543c11b7
-# acf5241f2e7349ad8ac9192f9ccfde57
-# 3308824cc42e46c38e0a95c3f18ce6fe
-# 689f0106a7654f5e8f069120540b9817
-# 2c2d2ebe751f4ba6a916e11864cf6ce2
-# 0583d985209d46e7a11407a1b6442366
-# 56767e39b90b484e9dccae9521ea74ff
+# 3c2783c0fa514af5abe18cefdef5c2b6
+# 326dd7faf99b480aa4c0333effcf37b4
+# 60757b376acf4c0cad7f6840dbcb9368
+# d002e42e907a48ac840f47207fa1f1b3
+# aec5bfcc3c86421abcc2a64568fa3991
+# 1181c17deff245c7bfcbfa2c08a188f5
+# 747b96411aae4bc2b39ce2e05ed29275
+# 623beff6d5aa49a79a6abcd235d17648
+# 78c1f677f6e847d6a137abd41f8b571c
+# 4110e578a4834dc9a7fbbfafd9298572
 #: ../../../schema/codelists/addressType.csv:1
 #: ../../../schema/codelists/annotationMotivation.csv:1
 #: ../../../schema/codelists/entityType.csv:1
@@ -557,16 +557,16 @@ msgstr ""
 msgid "title"
 msgstr ""
 
-# 80ace33497354d84a50eca364a568f05
-# fc2d5e8411b1470a986469e810e0fae4
-# 971f69d4b7f94ce6a397e1fa49b5426d
-# 514982ac80dc4406a2799b5f87c02c52
-# e2b6768ca77c476680adc084624a8e2f
-# bb867f2879c04977999016a2840dfe2c
-# 332a3214772443089ef4cd7aacc207e4
-# 3676643d1a5a41c78fa57e91d0e9f71e
-# 9d0e6eeffd5048099cc89b900c8040c9
-# 176692883cb042dba4dedf5138c2baff
+# 9b64b088992746cfad693da1c7f6ad9e
+# 114b74fb78364e31bd0a472f4f9f1b1d
+# ad7ab1bf0a034200b97864d7cb338b5c
+# 76b4fc4304b14b2593a88d4680858d55
+# 7df8a2983eca4257b52bd368294707db
+# 1ce16986905947b5bea640523d3aa9d9
+# 093b0ab5d6e647fdbdd1fc6c86a0c5cd
+# 7682d12f954a47859c20d03eded58403
+# 0bbd1938204643429bff107b72a8a7d0
+# 211de750ee3541028638a2017726247a
 #: ../../../schema/codelists/addressType.csv:1
 #: ../../../schema/codelists/annotationMotivation.csv:1
 #: ../../../schema/codelists/entityType.csv:1
@@ -580,16 +580,16 @@ msgstr ""
 msgid "description"
 msgstr ""
 
-# 82ccb69e633940939464556684b048e8
-# 8ac5ab4acd65458bb875043bc32dceb6
-# 40a84765c7d5414eb4478b95edeb16b8
-# a7239235c83a4ddebada7d4a92f3b0ae
-# db0b6ca906b745e48516310d5110c177
-# b4994dbb655848c38c0896a888e74c55
-# ccf6240338f94fdb8432843a1f5c84bb
-# b5a8815c61ce4c0eb4b7ff526be8293c
-# 15ab7cad92794ed0a0dbc1ee56b40395
-# 769577d87b3a49e29eb6d3394d1c583a
+# a62b4112c47f4b8096699942c4231e6f
+# f37d19365421400098015a53e57793a4
+# aa1d9d26273a4654a9779d8c100e7e41
+# 71ce89e00ef7417c9b673525481f4c34
+# b39445eef7544b9f8bc587562861e9f0
+# 567a3e3d4ded488aaeca488911efe70f
+# ef803744f97046e3a194e880d2dfaaac
+# 46cfc12a93dd490e838924fcc762ba86
+# 6b2d72ba8b0749529eb48ac58fdacc4d
+# 173debf589ea4e129d8f7a36ad9fb3c3
 #: ../../../schema/codelists/addressType.csv:1
 #: ../../../schema/codelists/annotationMotivation.csv:1
 #: ../../../schema/codelists/entityType.csv:1
@@ -603,99 +603,99 @@ msgstr ""
 msgid "technical note"
 msgstr ""
 
-# 79e9711fedd6495eab7587646198a792
+# 5c6ca32b227f4f5ebf4fec3f3db43fe5
 #: ../../../schema/codelists/addressType.csv:1
 msgid "placeOfBirth"
 msgstr ""
 
-# 2454c818cfa842fb9ee2e9e022e07c42
+# f9acb9117c8c432897e43c72a6bb8365
 #: ../../../schema/codelists/addressType.csv:1
 msgid "Place of birth"
 msgstr ""
 
-# 2bdd929e497743ef834510c5cf17a673
+# b6e3048875244e068eed784717b75f76
 #: ../../../schema/codelists/addressType.csv:1
 msgid "home"
 msgstr ""
 
-# 209b352d16d54714a54868a9ef685495
+# bf21430dafd147ea8124370f810f55bc
 #: ../../../schema/codelists/addressType.csv:1
 msgid "Home address"
 msgstr ""
 
-# 3e6c30a6ee104f0f9928c02e565ccd38
+# 59817d34a13f4ff7af1d69b3a6af781d
 #: ../../../schema/codelists/addressType.csv:1
 msgid "residence"
 msgstr ""
 
-# 1bee00631da0448ca06f1108ccdbc325
+# cb285bba20df4bfe8ff91c22f32d91db
 #: ../../../schema/codelists/addressType.csv:1
 msgid "Residential address"
 msgstr ""
 
-# 870260b585ea404b85410753b8aa51ad
+# f02e83041d5445cda36aa457891b31b4
 #: ../../../schema/codelists/addressType.csv:1
 msgid "registered"
 msgstr ""
 
-# 7dbd0e0f593549d6ac7fdeb5d0924644
+# 8fa7fbf5f6d04e70b823c7330299384b
 #: ../../../schema/codelists/addressType.csv:1
 msgid "Registered address"
 msgstr ""
 
-# 4421aec98ef640788ea02e8be075570b
+# f80b417384234846af31355cf279b791
 #: ../../../schema/codelists/addressType.csv:1
 msgid "service"
 msgstr ""
 
-# f99c772f8a26494aac2a2cf98023e4c6
+# 085ad36850b54fce9d91748d6695fd86
 #: ../../../schema/codelists/addressType.csv:1
 msgid "Service address"
 msgstr ""
 
-# 426769ef87d04193a79abdd556e88223
+# 56ac2fdf2060405fb4a0d0c536ff015b
 #: ../../../schema/codelists/addressType.csv:1
 msgid "alternative"
 msgstr ""
 
-# 3ab1c59f537341c8b97cf36f9b35517e
+# 0a1744400f724c3aae22ce60be1195ec
 #: ../../../schema/codelists/addressType.csv:1
 msgid "Alternative address"
 msgstr ""
 
-# f5aae3f8ebfb4b818d2fbd09df659389
+# 6e13aa68185a461ba57f5c64122d8d5d
 #: ../../schema/reference.rst:252
 msgid "AnnotationMotivation"
 msgstr ""
 
-# 594903f9cd4146e5a45953a30734fd98
+# 06084b5a7a0a4e11ad16f30e7e9cfe95
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid "commenting"
 msgstr ""
 
-# f3eb00e00dc84a23a9f08e7efdb4d1a8
+# 6eecae3b1e2f4f7aaf0328a20fc0d674
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid "Commenting"
 msgstr ""
 
-# 92f01947fa794c9294cbf50de17ba30c
+# 7441acb0f4b441e39531c72ec8f4116c
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid ""
 "The description field provides contextual comments for a field, object or "
 "statement."
 msgstr ""
 
-# 148fb3d2443f46aa84065c3b8d8105a6
+# 88a4d515362d427c9c32e5f25cbe4a66
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid "correcting"
 msgstr ""
 
-# 8b1c799a14a14511a2590576444055ea
+# 53047ec3dcf245e793bfe8dc05a1fda8
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid "Correcting"
 msgstr ""
 
-# 234fe2ac6b944ac2b0b5a71c9febdf98
+# 64c45049b1a149b9a8d5fc29b6c2ac8a
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid ""
 "The value of this field, object or statement has been corrected, using the "
@@ -703,17 +703,17 @@ msgid ""
 "description field."
 msgstr ""
 
-# 8c170a048c2d41cf924f619a2f770a26
+# 9bc9505846a84ee7a1e283a4629c0be8
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid "identifying"
 msgstr ""
 
-# 62d3525da9964dc795cb35ff83590af4
+# 9e4cb67d18e344eea56bba146a2d60db
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid "Identifying"
 msgstr ""
 
-# 2d021a3c951947e5ae98a2859515ccca
+# 6f1e3f6419b84048bda319bf17345c53
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid ""
 "The value of this field, object or statement has been augmented or processed"
@@ -721,34 +721,34 @@ msgid ""
 " method in the description field."
 msgstr ""
 
-# 9dee30e1b97e46ce8eb24dab339ba026
+# 5750b039eeea4ee9ab3eb8597abb1f95
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid "linking"
 msgstr ""
 
-# d878e0ec8627424ebce1ebf3c701221f
+# c87d7e74ff6e453aa7a423950d5ea539
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid "Linking"
 msgstr ""
 
-# 4a747af466144413ba64933a96e64e22
+# bcd8890962094045928c23f22fa34401
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid ""
 "The description provide contextual material that explains the field, object "
 "or statement. URLs to linked material are be provided in the url field."
 msgstr ""
 
-# c08b4974b4514094ab7f4bc8d5f2c470
+# e0d7ca106bd3467db9e542562a71dada
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid "transformation"
 msgstr ""
 
-# 2189ea0e428a43988e0f6ef825904888
+# 8ef293c911f045a3b73368eb45998cbd
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid "Transformation"
 msgstr ""
 
-# 689553a1c1c145deaf0b3cce9be1f2fb
+# b89596f695e8431dbdde303e90a4c49b
 #: ../../../schema/codelists/annotationMotivation.csv:1
 msgid ""
 "The values of this field, object or statement have been changed from their "
@@ -756,39 +756,39 @@ msgid ""
 "representation may be provided in the transformedContent field."
 msgstr ""
 
-# 62218eb6234a4ce09292a111ddf01b3b
+# 9ab56aa95c1149d4983a4fe7389edd2b
 #: ../../schema/reference.rst:261
 msgid "EntityType"
 msgstr ""
 
-# 2d9c8dc0a73947fa9948e9898234455f
+# 0e8e94097f6e4e0d800f31ccc655f447
 #: ../../../schema/codelists/entityType.csv:1
 msgid "registeredEntity"
 msgstr ""
 
-# 2ddc42675bda41a99550ccf928633e0b
+# 38c04b382c6148f39e2d62fb0a7437ad
 #: ../../../schema/codelists/entityType.csv:1
 msgid "Registered Entity"
 msgstr ""
 
-# 7ce56891b11041b4aebb6b6ad87e1582
+# 51e5089c0b634c968d80a609f0a9dc98
 #: ../../../schema/codelists/entityType.csv:1
 msgid ""
 "Any legal entity created through an act of official registration. In most "
 "cases, registered entities will have an official issued identifier."
 msgstr ""
 
-# 345d8601f67640e78a44df691b7af73c
+# 623d54ffc0d04437acfd6c89a04d5515
 #: ../../../schema/codelists/entityType.csv:1
 msgid "legalEntity"
 msgstr ""
 
-# e290b0c797824043a35ec76ec6beba66
+# 1e0fec15476844f2a0dd6c912d696ff2
 #: ../../../schema/codelists/entityType.csv:1
 msgid "Legal entity"
 msgstr ""
 
-# 240674ab0e9c4919af7a8263a79a133a
+# 2875a8717b2a4fd28fac192dbd3e0616
 #: ../../../schema/codelists/entityType.csv:1
 msgid ""
 "A body with distinct legal personality, such as a government departments or "
@@ -796,341 +796,341 @@ msgid ""
 "in some official register."
 msgstr ""
 
-# 00037e9448f04cc8b17794f63e4502ec
+# d9dd1000f1c34dbeab95f9c75b9cc22f
 #: ../../../schema/codelists/entityType.csv:1
 msgid "arrangement"
 msgstr ""
 
-# d9388c57f3b6486c9ef47ecbc340793c
+# e3d54ee53cb54a1888bb86e0aba93169
 #: ../../../schema/codelists/entityType.csv:1
 msgid "Arrangement"
 msgstr ""
 
-# bb5df279370e4a3d9dda0f29b124fa0d
+# 67281789175747c7ae9fa690f593ddfe
 #: ../../../schema/codelists/entityType.csv:1
 msgid ""
 "An artificial entity, created by agreements, contracts or other processes."
 msgstr ""
 
-# 1a424db5279a47309febc9abfd542f00
+# e7743ac40d454302be5ceb88f7f3b5a1
 #: ../../../schema/codelists/entityType.csv:1
 msgid "anonymousEntity"
 msgstr ""
 
-# c32f0abc1bef46c18cb13d4c1073abcd
+# 128963cdb2e54b228d4756afdaf3a4f6
 #: ../../../schema/codelists/entityType.csv:1
 msgid "Anonymous entity"
 msgstr ""
 
-# 4dede98699ab4e078d0725c07880809b
+# 06176668d1d14c9d8ceeeceda02448c7
 #: ../../../schema/codelists/entityType.csv:1
 msgid ""
 "An entity that has been identified, but for which no identifying information"
 " is being published."
 msgstr ""
 
-# e2b82e90a2e74f38a38b3d2948ff4dd7
+# c24bf43394934f3daff1ac9c2c0141d0
 #: ../../../schema/codelists/entityType.csv:1
 msgid "unknownEntity"
 msgstr ""
 
-# ac845bc615304620914efe62c333b871
+# 4b7fb79cd732451f99ebc7109ca903bc
 #: ../../../schema/codelists/entityType.csv:1
 msgid "Unknown entity"
 msgstr ""
 
-# 4961cdd3233f417c8f5ecf19e9ae3d6d
+# 2f31cc9cd8f247e980da4d076fc182c9
 #: ../../../schema/codelists/entityType.csv:1
 msgid "An entity that has not been identified."
 msgstr ""
 
-# 6f04e895723440f7a83b3d94ac0a1ea2
+# efa032d1efa04cd1b4dc34c413406d0d
 #: ../../schema/reference.rst:270
 msgid "InterestLevel"
 msgstr ""
 
-# 7f36df4c49344aa2889dc7681051d961
+# 971ff734e30d4e87844bdf8956b39729
 #: ../../../schema/codelists/interestLevel.csv:1
 msgid "direct"
 msgstr ""
 
-# c403596e080244a3b21efefa79611ed0
+# 96e688613f5040729ef76489fad89fd7
 #: ../../../schema/codelists/interestLevel.csv:1
 msgid "Direct"
 msgstr ""
 
-# deb10a3ad5a4420d82bcee81f6a00811
+# b2f26ca3f1174a3aa6154bfdb13a0d9b
 #: ../../../schema/codelists/interestLevel.csv:1
 msgid "The interest is held directly."
 msgstr ""
 
-# ad852e406126425199310c55cfcf2171
+# d5cbb1828ab24807b436878700f38025
 #: ../../../schema/codelists/interestLevel.csv:1
 msgid "indirect"
 msgstr ""
 
-# b492a7e3cc72488a93d3a3c0e4ed387f
+# b2a052f4622344ddb386d2e66bc2d258
 #: ../../../schema/codelists/interestLevel.csv:1
 msgid "Indirect"
 msgstr ""
 
-# f9f2961c06794e598237f0bb23cede67
+# 309d5d054ee6476c9ee1dd600bea3eab
 #: ../../../schema/codelists/interestLevel.csv:1
 msgid ""
 "The interest is held through one or more intermediate entities (including "
 "arrangements)."
 msgstr ""
 
-# 8f49af336b14426ba3c2ab6cb0e9f373
-# 329a6cd548444c9a88cde44155808575
+# 81f0cdbbd8914845a29f37394fce0b4f
+# ff33354ed0c74b579b30a9238cbc5a89
 #: ../../../schema/codelists/interestLevel.csv:1
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "unknown"
 msgstr ""
 
-# 1c622a2bec5d4de98a622aa7e2649a5f
+# b754ff6f872f49f49a3568395578a57a
 #: ../../../schema/codelists/interestLevel.csv:1
 msgid "Unknown"
 msgstr ""
 
-# 186cacfb88414774a0003b25ec4abac1
+# edda88d1d80044a794ba96b1ecc6d59c
 #: ../../../schema/codelists/interestLevel.csv:1
 msgid "The interest may be direct or indirect."
 msgstr ""
 
-# 528d44b138644f9d8ca7e5b7335ff61f
+# 4fae5f8497074eaba830a6048b03b04f
 #: ../../schema/reference.rst:279
 msgid "InterestType"
 msgstr ""
 
-# b54ab93a3b164ee6a95c384270226fc9
+# bf0c8dc04bf649aa95c80a384c71e322
 #: ../../../schema/codelists/interestType.csv:1
 msgid "shareholding"
 msgstr ""
 
-# 43ed90140d28401db7e275269abee794
+# 33d42ff384924696b5b6c3ea0339b215
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Shareholding"
 msgstr ""
 
-# d42cd9ea70804e21b1965b5ef5bbaba3
+# 7087d3f57048442cb6fc3def2b7a84b6
 #: ../../../schema/codelists/interestType.csv:1
 msgid "voting-rights"
 msgstr ""
 
-# 4b6283746ce74a3cad79aa0aa670ce7f
+# 1af81ee94ddc405284c69e399c728f87
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Voting rights"
 msgstr ""
 
-# 842921439608437d8d415289793fc28f
+# 1445bf962d8349d3b21f7c9d1aec2bbb
 #: ../../../schema/codelists/interestType.csv:1
 msgid "appointment-of-board"
 msgstr ""
 
-# 4edab20688cc447eb66eb6a1144b1636
+# 97aa1dd3881940c0a17cfce3e0995909
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Appointment of board"
 msgstr ""
 
-# b350cba419094826a25d28605ed87079
+# f25173ca503e4b0497246b5fa85918ea
 #: ../../../schema/codelists/interestType.csv:1
 msgid "influence-or-control"
 msgstr ""
 
-# 8f4c0ec754ef4a848c9dbb39e0063dfb
+# 771785bde4b1433691bd93c6721a073f
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Influence or control"
 msgstr ""
 
-# 95d458f5918447dcba4880c7fe9aa7ab
+# aa294c80e2624b19a14ccfe90873c25e
 #: ../../../schema/codelists/interestType.csv:1
 msgid "senior-managing-official"
 msgstr ""
 
-# cfa019148de04415aabead2517b66d62
+# 6d99bb9575a84fd89940e2dd66c16656
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Senior managing official"
 msgstr ""
 
-# 36ef89e0e4894548bbffdbf1385a9df7
+# 4f6d4234b0994bb89eb6538b0551c658
 #: ../../../schema/codelists/interestType.csv:1
 msgid "settlor-of-trust"
 msgstr ""
 
-# a7d3e63d90984593b63f6037029e3cfd
+# 0035e5e119624c6db6d7d18de3a111c1
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Settlor of trust"
 msgstr ""
 
-# be20c90eae2546cda59360d0cbb83fa1
+# 93b4648aae0747ada27d94f855b09046
 #: ../../../schema/codelists/interestType.csv:1
 msgid "trustee-of-trust"
 msgstr ""
 
-# 4817f6dae4d740efa5f0d0f84e2dc60e
+# f8d977f01f9d481fb671e29f0dacd5b7
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Trustee of a trust."
 msgstr ""
 
-# c56101f8c2ae4dd9884721177960313a
+# 27322e67491046d9a7fb8071171e8671
 #: ../../../schema/codelists/interestType.csv:1
 msgid "protector-of-trust"
 msgstr ""
 
-# 07e4b31f250f462b9d439ffa0129c620
+# d0f7c33e0a7e48a782ca58f094f0c46e
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Protector of a trust"
 msgstr ""
 
-# 6c12464498fc4bb095fa023bb8cdf62f
+# f15674c822214364943b0974015efd6f
 #: ../../../schema/codelists/interestType.csv:1
 msgid "beneficiary-of-trust"
 msgstr ""
 
-# b859a6fc7907462abe2eb81b43f0bbfa
+# 22eb7013b2f84f75ad584dde010ab9f3
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Beneficiary of a trust"
 msgstr ""
 
-# af4734d765a544edb39a4b6751e3c131
+# e6d25cfdeaa24048b8999a52671d118f
 #: ../../../schema/codelists/interestType.csv:1
 msgid "other-influence-or-control-of-trust"
 msgstr ""
 
-# 21d401993d87402eadaa281d3f19a226
+# 0f010a48e0d44fb9a5f17173c83d9f27
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Other influence or control of a trust"
 msgstr ""
 
-# 707523746bf44999a70f163c0fa04902
+# 2d89ca6f6fbc423a8cf14e7bfeac53e0
 #: ../../../schema/codelists/interestType.csv:1
 msgid "rights-to-surplus-assets"
 msgstr ""
 
-# 731edc3abde34ee78f45911a9774ddfb
+# 6ac537e3f9c6410ab5d2c5f2672ed588
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Rights to surplus assets"
 msgstr ""
 
-# 9362fc89acf14ceeba0f4d32028b7c92
+# 9715c7e17d134d588d20b1451d643e1c
 #: ../../../schema/codelists/interestType.csv:1
 msgid "rights-to-profit-or-income"
 msgstr ""
 
-# 4471df330e2a4e2297dd77d9600148cb
+# 86ad33ed0e3349608c0d7424c2b089a1
 #: ../../../schema/codelists/interestType.csv:1
 msgid "Rights to receive profits or income"
 msgstr ""
 
-# 28e5f8b42fdf48368d6f1125844aa289
+# b231ea8aeefc4376af0027e2b20e7e4e
 #: ../../schema/reference.rst:288
 msgid "NameType"
 msgstr ""
 
-# a6a63179871f4fabaa06817fd1f2b22b
+# a5ad1d9af3bb4b9fada57f8a1278062b
 #: ../../../schema/codelists/nameType.csv:1
 msgid "individual"
 msgstr ""
 
-# 1826ab4aa1144193ace8b14e77712926
+# d9395be12e5f45a9822164589297821f
 #: ../../../schema/codelists/nameType.csv:1
 msgid "Given name"
 msgstr ""
 
-# b7cb56e357a8455bbbb1d1ce15b9b5c1
+# 9f06706b83fb45eca3a56f29746001ee
 #: ../../../schema/codelists/nameType.csv:1
 msgid "translation"
 msgstr ""
 
-# ba768d50125949ee9a5462668c12ff45
+# a84c41fb14f8413ab0b7c3598908b0d9
 #: ../../../schema/codelists/nameType.csv:1
 msgid "Translation of name"
 msgstr ""
 
-# abbd7c6e13fd404a8f2b880001b619ed
+# 8203d284319148dd9b774cb9b0639614
 #: ../../../schema/codelists/nameType.csv:1
 msgid "former"
 msgstr ""
 
-# 50f362c2b79948dc96a40a7d5a216be5
+# 85c2306de3e34f5aa4d3841d09b33c70
 #: ../../../schema/codelists/nameType.csv:1
 msgid "Former name"
 msgstr ""
 
-# 7d572b3b0b8848a2b57706468afe31fa
+# 6e0af0b6bbf249e595fdf1cb288ac2c6
 #: ../../../schema/codelists/nameType.csv:1
 msgid "alias"
 msgstr ""
 
-# c61997c85dc540b7b13e3b52a4dfb0f1
+# 3a7614c475394f15926ccd5b95207cb0
 #: ../../../schema/codelists/nameType.csv:1
 msgid "Alias"
 msgstr ""
 
-# 963260c0f02642ebada6e248909e1d50
+# c1faf0ac78524adfb3403aa87a71b643
 #: ../../../schema/codelists/nameType.csv:1
 msgid "aka"
 msgstr ""
 
-# 4545443e7597402c8b004ca973f33e13
+# 19c3d9449d0f43b692d0cc1abb621351
 #: ../../../schema/codelists/nameType.csv:1
 msgid "Also Known As"
 msgstr ""
 
-# 0e0227f056bf4e49bdc4b3e294a7bdae
+# 9c03b18730ce48c09867eaadb8fdf5bd
 #: ../../../schema/codelists/nameType.csv:1
 msgid "nick"
 msgstr ""
 
-# 5d1f073676334aaaa47b9e97042a0c09
+# 2c010e8a9ab04a448055d37eb43f6e77
 #: ../../../schema/codelists/nameType.csv:1
 msgid "Nickname"
 msgstr ""
 
-# 41561c0133ce431090cb1b23e89cc9e1
+# baa601f2cfa94619bb7116c6bfcc075f
 #: ../../../schema/codelists/nameType.csv:1
 msgid "birth"
 msgstr ""
 
-# 2b15076601544af682ca37ab4f542ed0
+# 4abce532711e47bbbde6edcbee294512
 #: ../../../schema/codelists/nameType.csv:1
 msgid "Birth name"
 msgstr ""
 
-# d91dc0818f16406fa92b50b1fba15325
+# 0c454c34bf5c483a8efe4bb17dd69e4e
 #: ../../schema/reference.rst:297
 msgid "PersonType"
 msgstr ""
 
-# 674ec726b06b4dd39f0ceac2189bb815
+# 3c001361496b42428c848a0790556390
 #: ../../../schema/codelists/personType.csv:1
 msgid "knownPerson"
 msgstr ""
 
-# 14575fe7872d47609d72476498871dcb
+# cf407b64cb344e858ae45abdf835e42f
 #: ../../../schema/codelists/personType.csv:1
 msgid "Known person"
 msgstr ""
 
-# a183389cc2c043529fa42fa6e2490218
+# 607c77a8a90440d7a2933542a74801e7
 #: ../../../schema/codelists/personType.csv:1
 msgid ""
 "This person has been identified, and information such as names, identifiers "
 "or biographical information may be provided about them."
 msgstr ""
 
-# 60082611d6384884a1e80513c2eada58
+# 2be095723f4f40a79794dfc75ee73acc
 #: ../../../schema/codelists/personType.csv:1
 msgid "anonymousPerson"
 msgstr ""
 
-# 53beaca602024b5787a01feb1784d837
+# 780af15718be43e785c8715f37d631cf
 #: ../../../schema/codelists/personType.csv:1
 msgid "Anonymous person"
 msgstr ""
 
-# 115ab38ee1a1478e9b48b9f2d2595562
+# cae436d2bd1c41228dfdce29d7749690
 #: ../../../schema/codelists/personType.csv:1
 msgid ""
 "This person has been identified, but identifying information is being "
@@ -1138,195 +1138,195 @@ msgid ""
 "`missingInfoReason` field."
 msgstr ""
 
-# 3e889d290d1147f6820d7ba3415fa0c3
+# feffed80869d4c5e8a329294ce1e2018
 #: ../../../schema/codelists/personType.csv:1
 msgid "unknownPerson"
 msgstr ""
 
-# c8d27219c05e4336b8a8c8681abc42a1
+# 70c1b1a59f67438395b754a2fd0c7517
 #: ../../../schema/codelists/personType.csv:1
 msgid "Unknown person"
 msgstr ""
 
-# 6a981d816d2f4716a81bb9f5cd52530b
+# 7b0721ed1d4c4a5c8b962ea929a5e35d
 #: ../../../schema/codelists/personType.csv:1
 msgid "The identity of this person has not been discovered or confirmed."
 msgstr ""
 
-# 5fdca6ba99f64a1494f27c111764669e
+# 1cdb67506c844109b0752cf165857d47
 #: ../../schema/reference.rst:306
 msgid "SourceType"
 msgstr ""
 
-# db2542c10c48400fa35569b23ba9e8fe
+# 636c0de2a63246b8b36a4b06da25e395
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "selfDeclaration"
 msgstr ""
 
-# 0c82b0b4b01447c7bdcf3282b42617de
+# 46944d27d47342b39c94264a2d984b64
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "Self declaration"
 msgstr ""
 
-# 5df4499e67eb4db2b0ff980a9396c7ca
+# 816f8772d99a401b86caf7671d255b81
 #: ../../../schema/codelists/sourceType.csv:1
 msgid ""
 "The information was provided by the individual or entity referred to in this"
 " statement, or by their authorised representative."
 msgstr ""
 
-# ef06fd7d55fc4b98a5e628044dcbab21
+# 67c3e5404602451399368410b0513953
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "officialRegister"
 msgstr ""
 
-# cbe26d32a75d4db7808a5fc157df208a
+# 354847381f0a4e79ab0aef7e8247f059
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "Official register"
 msgstr ""
 
-# 7a8929df9022472e92276abe88e8aff7
+# b075e45d49e24053b381ef353f6a7106
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "The information was taken from an official register."
 msgstr ""
 
-# c7598ec09a89450ab947530bd38e25dc
+# 15d367844b5549b7954cfb3ba790a4bc
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "thirdParty"
 msgstr ""
 
-# 80a0172100f54c588126dfa61d237a4d
+# 045b52d57a304530ac8533d71c36388f
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "Third party"
 msgstr ""
 
-# 661759f528b143efacb49af4f6319da2
+# 8d30d851395642a6ad7c84b1fc7f2aac
 #: ../../../schema/codelists/sourceType.csv:1
 msgid ""
 "The information was provided by a third party, not directly related to the "
 "individual, entity or interests described by this statement."
 msgstr ""
 
-# 6ebc77bc162347519339fa24cd508156
+# 41ba95c533ac4e1597bbecf85d5ba1c3
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "primaryResearch"
 msgstr ""
 
-# 6cfc58913fd041aa89d7d12d410403ef
+# 90cddc308b5647e99911722e555d8176
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "Primary research"
 msgstr ""
 
-# 61dca388fb0c4d298fc44a052ebacfeb
+# bb83eda545c545b8bc41e2eb4b4f486b
 #: ../../../schema/codelists/sourceType.csv:1
 msgid ""
 "The information was provided as a result of research into primary sources."
 msgstr ""
 
-# 46d02ff5f5644b8893a7c0da7386f7ce
+# 39cf1fc278e6404f803145c7983c093d
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "verified"
 msgstr ""
 
-# 9787a1fbab494c07b1991aa8bfea0287
+# d5ef55bf5b364d588a6ff0783a6cec4e
 #: ../../../schema/codelists/sourceType.csv:1
 msgid "Verified"
 msgstr ""
 
-# 3262dfac75f343f6b779e24073375cae
+# 04dd2a9b71204fe1a68ae516cf7bd7d5
 #: ../../../schema/codelists/sourceType.csv:1
 msgid ""
 "The information has been verified through the process documented in the "
 "associated description."
 msgstr ""
 
-# b045637c467641bd9f94b56b70aff538
+# dcc053a7517b4af39c59fe01e5e15e7d
 #: ../../schema/reference.rst:315
 msgid "StatementType"
 msgstr ""
 
-# d277c8511ba1404f906ab1a9c0c30432
+# b1b49b4c08a343b5a9bffef39863ba3b
 #: ../../../schema/codelists/statementType.csv:1
 msgid "personStatement"
 msgstr ""
 
-# 62befc4a423d443aa29cc8938a39f3f1
+# 0535cae554f7461a8d358482ee39d7b2
 #: ../../../schema/codelists/statementType.csv:1
 msgid "Person Statement"
 msgstr ""
 
-# f9cb1cd799e24189a67c702fb032a441
+# b383577d44e0450ca0f122440a50aefe
 #: ../../../schema/codelists/statementType.csv:1
 msgid ""
 "The parent object should be validated using the person-statement schema."
 msgstr ""
 
-# efa7e8312a874641a50f8fc41fc08057
+# fd73410d35df497a87d2c1c16b176f8f
 #: ../../../schema/codelists/statementType.csv:1
 msgid "entityStatement"
 msgstr ""
 
-# bb44e29eeec14bb482027f4284683503
+# 371a7b3ba7da41ed90f15268b6131ccb
 #: ../../../schema/codelists/statementType.csv:1
 msgid "Entity Statement"
 msgstr ""
 
-# b152295c7cd44478b89a3907260d57d3
+# 0e82693a7d4e4b3d8dda95d7a3236f23
 #: ../../../schema/codelists/statementType.csv:1
 msgid ""
 "The parent object should be validated using the entity-statement schema"
 msgstr ""
 
-# 09ea35704f474be8a4708cc56bef4735
+# d07b54fd94814e80a346731074e1564e
 #: ../../../schema/codelists/statementType.csv:1
 msgid "ownershipOrControlStatement"
 msgstr ""
 
-# 245eab97d41b421296c0eb5f3209362c
+# 50f71e76bdf94fbd936cb900f40d7260
 #: ../../../schema/codelists/statementType.csv:1
 msgid "Ownership or Control Statement"
 msgstr ""
 
-# 76c461b447324a16b7b1c67ddd0af6e0
+# 10f40b0e49df49f3bee5d80be036fc6a
 #: ../../../schema/codelists/statementType.csv:1
 msgid ""
 "The parent object should be validated using the ownership-or-control-"
 "statement schema."
 msgstr ""
 
-# c6aa40224af04099b44daf46dd7a1e7d
+# d0557a08c71e401db658aa6d09bad0d5
 #: ../../schema/reference.rst:324
 msgid "UnspecifiedReason"
 msgstr ""
 
-# 06050bf4c1d84b6eaa69d3a85533c195
+# b6b981df66c74df7a63f8b1eb0b81fc9
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "no-beneficial-owners"
 msgstr ""
 
-# f69104b5a35642a6b69b0e6a3027ac3d
+# e965e4bed1cf4161b83bae836517eb97
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "No beneficial owners"
 msgstr ""
 
-# f5fbd83430c74b538f013a6d85ef1a73
+# 47eaea9bd5b446afaba7f616ddac74fb
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "There are no beneficial owners who need to disclose ownership according to "
 "the rules under which this statement is made."
 msgstr ""
 
-# daf2090ca8744d7ba8b56629ea3a5978
+# 4a927e95799948f69109d439c3d47555
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "subject-unable-to-confirm-or-identify-beneficial-owner"
 msgstr ""
 
-# b9eafc07ca054ef18cbdfce4333a4256
+# 1b7ea0cdd0f84d37933ce92629037dcb
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "Subject unable to confirm or identify beneficial owner"
 msgstr ""
 
-# 67f04d79847f4b4abe53ea4b4e09af92
+# ccae09d74b9746deb60800cf258fceee
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "The subject of this ownership or control statement has, as the disclosing "
@@ -1334,17 +1334,17 @@ msgid ""
 "beneficial owner."
 msgstr ""
 
-# 6c067c532ae648a89aff763f61e3e7eb
+# b081fd5c7822442e9a994bfd22d47b11
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "interested-party-has-not-provided-information"
 msgstr ""
 
-# 13db5c3770624b298045bb6acd16b9df
+# 9160db4b72814129a87adce50acf4c26
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "Interested party has not provided information"
 msgstr ""
 
-# 382eb312e510485d92433a9dae54f1b1
+# d59c5516f04f4840b23211b9efa800ac
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "The interested party in this ownership or control statement has not provided"
@@ -1352,46 +1352,46 @@ msgid ""
 "owner."
 msgstr ""
 
-# 5e85b189c64346f48221068731bba618
+# 90024ca05452462f9e00a7417b8a271d
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "subject-exempt-from-disclosure"
 msgstr ""
 
-# 02df041e6fe44d9bb41e918a9aee22dd
+# 28069a63781b4d88b6eec55a2732ab6f
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "Subject exempt from disclosure"
 msgstr ""
 
-# e92000c704f546d58996f2d8bd50cabd
+# d67f817f64694739916694aba4415219
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "The subject of this ownership or control statement is not required to "
 "disclose its beneficial owner. (Replaces noNotifiableOwners.)"
 msgstr ""
 
-# 112b5a8401354f10be4ac0ca9e196648
+# ffa23cc5263c430ebb7c84897041521e
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "interested-party-exempt-from-disclosure"
 msgstr ""
 
-# 3f862e656388422b9f335ecbf7f9214d
+# 337e450cd8804ddfa1c3ecb7b40523ae
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "Interested party exempt from disclosure"
 msgstr ""
 
-# 68cc0ad6d6ba470f9c32b3a461928cac
+# 107224f1af994d579ae0af3f6357be54
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "The interested party in this ownership or control statement is exempt from "
 "having their identity disclosed."
 msgstr ""
 
-# cd7c5a4a580c4d5192e46cbf0a23f9f9
+# ffc89e6ff5dd448dbb8d5102398c2dc5
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "Unknown reason"
 msgstr ""
 
-# 5c53d6b8c37a47779e1f637912f745d6
+# 76cd771c214143e188b4db22f0d084db
 #: ../../../schema/codelists/unspecifiedReason.csv:1
 msgid "The reason an interested party cannot be provided is not known."
 msgstr ""

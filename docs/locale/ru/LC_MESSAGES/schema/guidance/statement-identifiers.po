@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -17,55 +17,55 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# de451af9a8fb4bf783c10988b330572c
+# 87d88f17c2e84cd8ac3bbc51d1884980
 #: ../../schema/guidance/statement-identifiers.rst:4
 msgid "Statement Identifiers"
 msgstr ""
 
-# f3332f120f544cb1b43dfa1d1f0f5ef0
+# 800cbf97b0564987bb79315b0ff02752
 #: ../../schema/guidance/statement-identifiers.rst:6
 msgid ""
 "Each statement MUST have an entirely unique identifier. There MUST be no "
 "possibility of collision between identifiers for different statements."
 msgstr ""
 
-# 4a9c8be92aae4e46b6c568db82e39f61
+# dc2bbb4a65de4192a2400040e5cb21ce
 #: ../../schema/guidance/statement-identifiers.rst:8
 msgid "This means that:"
 msgstr ""
 
-# d56a0cd5d8fa4596b9cfea5cc764dd10
+# 8317e6d61d29468d8e81187e87d2450b
 #: ../../schema/guidance/statement-identifiers.rst:10
 msgid "Two **different** statements SHOULD never have the same identifier;"
 msgstr ""
 
-# 0617560b1823428182ef1bac9d729978
+# d277564bf1d042d895017530b7d34168
 #: ../../schema/guidance/statement-identifiers.rst:11
 msgid ""
 "Once an identifier is assigned to a statement, the identifier SHOULD NOT "
 "change."
 msgstr ""
 
-# 8710ff13e7ce4471b5a42297756163b4
+# 172ddaa89227407f82593639279aba36
 #: ../../schema/guidance/statement-identifiers.rst:13
 msgid ""
 "The schema enforces a minimum statement identifier length of 32 characters, "
 "and maximum length of 64 characters."
 msgstr ""
 
-# f21eb795e7d04d97890400d6dafde1d1
+# 010bb1ca1c394e45ae21efdd94427972
 #: ../../schema/guidance/statement-identifiers.rst:15
 msgid ""
 "Publishers MAY use one of the following strategies for creating statement "
 "identifiers."
 msgstr ""
 
-# 1a05bf5cabfe4c219045bfe88249f78d
+# c65a41004b0840e1bb87f4d4e1878777
 #: ../../schema/guidance/statement-identifiers.rst:20
 msgid "Strategies for identifier creation"
 msgstr ""
 
-# 6938903a29814062a134cb5055568442
+# afd2ee1747ff4f59b0800b81c866aed0
 #: ../../schema/guidance/statement-identifiers.rst:22
 msgid ""
 "Generating a `UUID "
@@ -74,7 +74,7 @@ msgid ""
 "relevant record(s) that make up a statement are updated;"
 msgstr ""
 
-# cc9fd26320184195aae128ff0d6620c4
+# a6e49587ce9f4eb496f3ee0259ebfe63
 #: ../../schema/guidance/statement-identifiers.rst:24
 msgid ""
 "Generating a `UUID "
@@ -83,7 +83,7 @@ msgid ""
 "version identifier to it;"
 msgstr ""
 
-# fd27d162ff67445886c4e739d952f96a
+# 0b20b3ead7c1402fb34333b6d484da37
 #: ../../schema/guidance/statement-identifiers.rst:26
 msgid ""
 "Using an appropriately designed hash function that generates identifiers "
@@ -91,14 +91,14 @@ msgid ""
 "field) with a low collision probability."
 msgstr ""
 
-# f7e2625f5d3e4118b3ac677d06bd1df3
+# c7085bbe89554d80ad536b5bcd2e9461
 #: ../../schema/guidance/statement-identifiers.rst:28
 msgid ""
 "Using an internal identifier combined with a unique prefix to avoid "
 "collision between identifiers from different publishers"
 msgstr ""
 
-# 22c52ce79b3347b3b5e07fd61454cde0
+# a718f282a1624c51afa327b3b7540413
 #: ../../schema/guidance/statement-identifiers.rst:31
 msgid ""
 "Statement identifiers are generally for creation and internal use within "

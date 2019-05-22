@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# f93787e594be4b089ca8e42dd1ccee7f
+# 825a121a3e6541ab8a9ee36c3b416bdc
 #: ../../primer/whyisbo.rst:2
 msgid "Why beneficial ownership is a useful concept"
 msgstr ""
 
-# 7afd9969839249c998a2976306495da3
+# 47ddcff6d7f744849723561b90b2af57
 #: ../../primer/whyisbo.rst:4
 msgid ""
 "People can be involved in a number of companies and in different ways. By "
@@ -30,7 +30,7 @@ msgid ""
 "would miss instances like below."
 msgstr ""
 
-# e1f50c64a6ed4a6792d00fb5bed06460
+# 1139c216e4884d0295560763d85c11e3
 #: ../../primer/whyisbo.rst:12
 msgid ""
 "The person both controls Company 1 and owns half of Company 2. This could be"
@@ -38,14 +38,14 @@ msgid ""
 "or if they both appeared in a procurement chain."
 msgstr ""
 
-# dbb468bb1d3345b3a9368cad1c1a27b7
+# aab0f9fcd9974f7e949d27a2694668c1
 #: ../../primer/whyisbo.rst:16
 msgid ""
 "It might be equally important to see that a person's control over a company "
 "is greater than one might expect given their financial stake in it."
 msgstr ""
 
-# 49811da63fb240adb7d08463d3ae678c
+# 99c44489c6e1426a9d661a067672b4c5
 #: ../../primer/whyisbo.rst:27
 msgid ""
 "Uniting ownership and control under the banner of beneficial ownership "

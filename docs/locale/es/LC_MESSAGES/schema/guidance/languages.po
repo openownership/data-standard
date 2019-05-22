@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,31 +17,31 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 23e3374db039446b8f485cb6b779b5c4
+# b5b0370dcf324cd0bccde5ec00bc16ef
 #: ../../schema/guidance/languages.rst:2
 msgid "Languages and transliteration"
 msgstr ""
 
-# 199ebee8b6bd4e7381a3bab45ff0df38
+# 12799c2468cb455694fde1e19523d299
 #: ../../schema/guidance/languages.rst:4
 msgid ""
 "There may be times when beneficial ownership information needs to be "
 "provided in different languages."
 msgstr ""
 
-# 8363ca1014654e17a8b324c3d47edb6a
+# 2033282a71564131a592d205aedb16ba
 #: ../../schema/guidance/languages.rst:6
 msgid ""
 "For people's names, use an entry in the ``names`` array with a ``type`` of "
 "'translation'"
 msgstr ""
 
-# 3a5a440553704c9294daff31a1be42c9
+# 780a24bbc0304ab38ec4dcdbc5c5a0ea
 #: ../../schema/guidance/languages.rst:7
 msgid "For entity names, use an entry in the ``alternativeNames`` array"
 msgstr ""
 
-# 16f9f503d8184ce9b0d9a94faa7ad271
+# 3b1c77a8abfa4878b1ba05aa800cc198
 #: ../../schema/guidance/languages.rst:9
 msgid ""
 "For other fields, an ``annotations`` object can be used to indicate that a "

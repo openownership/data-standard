@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"POT-Creation-Date: 2019-05-22 22:17+0000\n"
 "PO-Revision-Date: 2019-01-31 16:19+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# f5eadb08772a4090b73308b1afa14646
+# 6168838520124028b58f7c8a6d3239fe
 #: ../../primer/whatisthebods.rst:2
 msgid "What is the Beneficial Ownership Data Standard?"
 msgstr ""
 
-# dc105c7fc3114719816ed9d136a7bfc7
+# 642e4cd123ac4917918371251a4f7878
 #: ../../primer/whatisthebods.rst:4
 msgid ""
 "The value from beneficial ownership data comes when we can share it easily, "
@@ -31,12 +31,12 @@ msgid ""
 "analysed."
 msgstr ""
 
-# ca016e18bd054d3185f32de688957883
+# 851ad166658946c499270abe9313c395
 #: ../../primer/whatisthebods.rst:13
 msgid "To gain insights about beneficial ownership..."
 msgstr ""
 
-# d22b3a96feae4e72b295db6b90a73724
+# f0d6b0ed677e4693bd7164626a5ae30c
 #: ../../primer/whatisthebods.rst:19
 msgid ""
 "Bringing together data from a variety of sources can give us insights into "
@@ -45,19 +45,19 @@ msgid ""
 " extremely difficult, expensive and time-consuming."
 msgstr ""
 
-# 1b350a1a199e4cd88f9877bc1ca50b78
+# bb3ef6c96e3a4f1eb055d2892ae19650
 #: ../../primer/whatisthebods.rst:27
 msgid ""
 "When we only have scattered documents to draw upon, the bigger picture of "
 "beneficial ownership remains obscure."
 msgstr ""
 
-# 5970503060324d5e8601f50a8d4473ee
+# fdb7c73746494d49b03ef2bd5fb22874
 #: ../../primer/whatisthebods.rst:34
 msgid "...data must be shared in standardised way..."
 msgstr ""
 
-# 9402d6066b7540bdb021df69dec40f9a
+# 304c29724f21484080631f5787a2186a
 #: ../../primer/whatisthebods.rst:40
 msgid ""
 "The Beneficial Ownership Data Standard (BODS) provides a structured data "
@@ -65,7 +65,7 @@ msgid ""
 "beneficial ownership:"
 msgstr ""
 
-# d11e0f1c42d3471582c84051c76e5017
+# 5c5a49b6a08c4340822829e6b833eff8
 #: ../../primer/whatisthebods.rst:44
 msgid ""
 "The `data schema <../schema/index.html>`__ describes how and what data "
@@ -73,26 +73,26 @@ msgid ""
 "management systems;"
 msgstr ""
 
-# 29cd96471456418ba3515538453835ab
+# 501ed74915364fc2976b8b23a42b0fbc
 #: ../../primer/whatisthebods.rst:48
 msgid ""
 "The `technical guidance <../schema/guidance/index.html>`__ provides support "
 "for publishers and users of the data."
 msgstr ""
 
-# 6bd32cffe0c0410f82385662b7ce16ae
+# 9aefd02cd63640dda96206b691c16d2a
 #: ../../primer/whatisthebods.rst:56
 msgid ""
 "Using BODS simplifies the sharing and use of beneficial ownership "
 "information."
 msgstr ""
 
-# 0fc77418190a40ff89ae25b45ce0851b
+# 674f6eee01104f66966a8194002038f7
 #: ../../primer/whatisthebods.rst:63
 msgid "...as structured data."
 msgstr ""
 
-# c77492c1a6a644b5b5d4b34a66f5b051
+# 4c305c3fcad74db68f74e15e064dd15e
 #: ../../primer/whatisthebods.rst:69
 msgid ""
 "The data schema describes how data about the beneficial owners of a legal "
@@ -100,14 +100,14 @@ msgid ""
 " data format called JSON."
 msgstr ""
 
-# dad32d8bdf4c47748e96538d103f5683
+# 07c89db94e004003989e5dd62fd71124
 #: ../../primer/whatisthebods.rst:79
 msgid ""
 "Using the popular JSON format facilitates computerised access and analysis "
 "of the data, whilst also providing human-readable data."
 msgstr ""
 
-# e3d9d118175d4f14955c423fc6626a86
+# df8e2503021a41fe9f8aafd0a0ff584b
 #: ../../primer/whatisthebods.rst:84
 msgid ""
 "The **Beneficial Ownership Data Standard** describes what data should be "
