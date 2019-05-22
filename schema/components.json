@@ -100,12 +100,12 @@
         },
         "scheme": {
           "title": "Scheme",
-          "description": "For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD.",
+          "description": "For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
           "type": "string"
         },
         "schemeName": {
           "title": "Scheme name",
-          "description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided.",
+          "description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
           "type": "string"
         },
         "uri": {

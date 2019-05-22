@@ -91,7 +91,7 @@ EntityStatement
 Identifier
 ----------
 
-The identifier component is used to connect a statement to the real-world person or entity that it refers to, using one or more existing known identifiers. See [Real world identifiers](identifiers.md) for technical guidance on when and how to use this component.
+The Identifier object is used to connect a statement to the real-world person or entity that it refers to, using one or more existing known identifiers. See :any:`Real world identifiers <guidance-identifiers>` for technical guidance on when and how to use this object.
 
 .. json-value:: ../../schema/components.json
    :pointer: /definitions/Identifier/description
@@ -163,10 +163,10 @@ PEPStatus
 ---------
 
 .. json-value:: ../../schema/components.json
-   :pointer: /definitions/PepStatus/description
+   :pointer: /definitions/PepStatusDetails/description
 
 .. jsonschema:: ../../schema/components.json
-   :pointer: /definitions/PepStatus
+   :pointer: /definitions/PepStatusDetails
    :collapse: jurisdiction
 
 .. _schema-person-statement:
