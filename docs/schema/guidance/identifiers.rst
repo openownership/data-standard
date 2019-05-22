@@ -3,20 +3,28 @@
 Real world identifiers
 =============================
 
-To create a link between statements, and the real-world organisations and people they relate to, statements may include a range of identifying information. We use a common identifier object, with two required properties, and one optional property.
+To create a link between statements, and the real-world organisations and people they relate to, statements may include a range of identifying information. We use a common :any:`Identifier object <schema-identifier>` with the following properties:
 
-* **scheme** must be a value from a codelist of known identifier sources. Separate codelists exist for entities and persons. 
+* ``scheme`` should be a value from a codelist of known identifier sources. Separate codelists exist for entities and persons. See below.
 
-* **id** must be the value assigned to the relevant entity or person in that scheme;
+* ``id`` should be the value assigned to the relevant entity or person in that scheme.
 
-  - **uri** may be used to provide a canonical URI from this scheme.
+* ``uri`` may be used to provide a canonical URI for the entity or person within the scheme.
 
-For example, if a source system holds:
+* ``schemeName`` should be the name of the list, registry or ID system.
+
+A good-quality Identifier will contain ``scheme`` and ``id`` values which will uniquely identify an entity or person. Where these are not available, ``schemeName`` can be used to refer to the registration system in which the person or entity is known to be represented. When publishing an Identifier object, a value for either ``scheme`` or ``schemeName`` MUST be present.
+
+
+Multiple Identifiers
+--------------------
+
+A source system might hold the following identifying information for a single company:
 
 - A registered company number; and
 - A VAT number;
 
-for a company, two entries could be created in the ``Entity/identifiers`` array, as in the example below:
+In this case, two entries can be created in the Entity statement's ``identifiers`` array:
 
 .. code-block:: json
 
@@ -31,11 +39,13 @@ for a company, two entries could be created in the ``Entity/identifiers`` array,
         }
     ]
 
+Person Statements may also hold an array of Identifiers.
+
 
 Entity Identifiers
 ------------------
 
-The values for scheme within an entity statement identifier should be drawn from the `http://org-id.guide <http://org-id.guide>`_ codelist. This contains details of 100s of company registers and other identifier sources. 
+The values for ``scheme`` within an Entity Statement Identifier should be drawn from the `http://org-id.guide <http://org-id.guide>`_ codelist. This contains details of hundreds of company registers and other identifier sources. 
 
 Where the publisher is providing an internal identifier, the publisher should either:
 
@@ -46,20 +56,20 @@ Where the publisher is providing an internal identifier, the publisher should ei
 Person Identifiers
 ------------------
 
-System identifiers
+System Identifiers
 ++++++++++++++++++
 
 If the source system has assigned a unique identifier to individual persons, and this identifier can be published, then this should be included with the scheme 'MISC-{Publisher Name}'.
 
-For example, a beneficial ownership reporting system may maintain a database table of 'person' records, each with it's identifier as a primary key. So that users can recognise references to the same person mentioned in separate statements, this identifier should be included in the published data, either in raw form, or modified to ensure a unique value. 
+For example, a beneficial ownership reporting system may maintain a database table of 'person' records, each with its identifier as a primary key. So that users can recognise references to the same person mentioned in separate statements, this identifier should be included in the published data, either in raw form, or modified to ensure a unique value. 
 
 
 Shared identifiers
 ++++++++++++++++++
 
-If the source system has collected one or more known identification numbers for a person, and these can be published without privacy or security risks, then these should also be included in the ``Person/identifiers`` array. 
+If the source system has collected one or more known identification numbers for a person, and these can be published without privacy or security risks, then these should also be included in the ``PersonStatement.identifiers`` array. 
 
-The values for scheme within a person statement should be based on the following pattern:
+In such cases, the values for ``scheme`` should be based on the following pattern:
 
 {JURISDICTION}-{TYPE}
 
