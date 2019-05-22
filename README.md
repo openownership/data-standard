@@ -44,8 +44,6 @@ Translation consists of generating strings to be translated from the English doc
 
 To run the steps in the translation workflow, you need to install this repo and its dependencies in your local environment.
 
-The rest of the instructions assume you have built the docs into the `_build` directory.
-
 ```
 $ pip install -r requirements.txt
 ```
@@ -58,6 +56,8 @@ $ apt-get install python-babel
 ```
 
 And you need to get a [Transifex API key](https://www.transifex.com/user/settings/api/), make sure you have access to the [BODS project on Transifex](https://www.transifex.com/OpenDataServices/bods-v01)
+
+Run the following commands from the root directory unless otherwise specified (eg. sometimes it's less complicated to run them from `docs`).
 
 **When you change text in the docs** you need to do the following so that they can be translated:
 
@@ -72,16 +72,18 @@ And you need to get a [Transifex API key](https://www.transifex.com/user/setting
 
 1. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/locale/codelist.pot` to extract translatable English strings from the codelists.
 
-And then:
-
-1. **Update the Transifex config** with the changes (noting the `transifex-project-name` which may change with new versions of the standard), run:
+**If you added, deleted or renamed** files or you want to use a **different Transifex project**, run (from root, ie. `cd ../`):
 
 ```
 rm -f .tx/config
 sphinx-intl create-txconfig
-sphinx-intl update-txconfig-resources --pot-dir _build/gettext --transifex-project-name bods-v01
-sphinx-intl update-txconfig-resources --pot-dir locale --transifex-project-name bods-v01
+sphinx-intl update-txconfig-resources --pot-dir docs/_build/gettext --locale-dir docs/locale --transifex-project-name bods-v01
+sphinx-intl update-txconfig-resources --pot-dir docs/locale --locale-dir docs/locale --transifex-project-name bods-v01
 ```
+
+(Replacing `bods-v01` with a different Transifex project name if necessary.)
+
+And then:
 
 2. Run `tx push -s` to **push to Transifex**.
 
