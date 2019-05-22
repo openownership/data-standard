@@ -163,7 +163,7 @@
         },
         "address": {
           "title": "Address",
-          "description": "The address, with each line or component of the address separated by a line-break or comma. This field may also include the postal code. ",
+          "description": "The address, with each line or component of the address separated by a line-break or comma. Where postal codes are isolated fields in source systems, this `address` field SHOULD NOT include the postal code.",
           "type": "string"
         },
         "postCode": {
