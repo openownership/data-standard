@@ -1,5 +1,6 @@
 # sphinx build folder
 _build
+docs/locale/*.pot
 .ve
 node_modules
 *~
