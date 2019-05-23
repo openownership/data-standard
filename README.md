@@ -5,11 +5,11 @@ This repository contains work in progress for the development of a data specific
 
 You can find the latest draft of the schema and documentation for review at [http://standard.openownership.org/](http://standard.openownership.org/)
 
-You can share feedback on the standard through this project's issue tracker. 
+You can share feedback on the standard through this project's issue tracker.
 
 ## About
 
-This work is taking place under the auspices of the Open Ownership project. More details on the project are avaiable at http://www.openownership.org 
+This work is taking place under the auspices of the Open Ownership project. More details on the project are avaiable at http://www.openownership.org
 
 The work will be guided by the Data Standard Working Group, and initial phases will take place between December 2016 and March 2017.
 
@@ -23,6 +23,17 @@ The initial development of the Beneficial Ownership Data Standard is funded thro
 
 ## Technical documentation
 
+### Dependencies
+
+The frontend uses **docson** JavaScript library to visualise the JSON schema. BODS uses [a specific patched fork of docson](https://github.com/OpenDataServices/docson/tree/master-bods) (which is different from the patched fork used by other standards). This is included in the `data-standard` repo rather than as part of the [Sphinx theme](https://github.com/openownership/data-standard-sphinx-theme) because it is necessary regardless of which theme is used to build the docs. See [data-standard-sphinx-theme#36](https://github.com/openownership/data-standard-sphinx-theme/issues/36) for the particulars of the patches. The situation with the various branches and patches of docson is in need of serious improvement.
+
+Meanwhile, to include the appropriate version of docson JS after you clone this repo, you need to run:
+
+```
+git submodules init
+git submodules update
+```
+
 ### Build the docs locally
 
 Please see https://github.com/openownership/data-standard-sphinx-theme
@@ -34,7 +45,7 @@ Translation consists of generating strings to be translated from the English doc
 To run the steps in the translation workflow, you need to install this repo and its dependencies in your local environment.
 
 ```
-$ pip install -r requirements.txt 
+$ pip install -r requirements.txt
 ```
 
 And you need to get a [Transifex API key](https://www.transifex.com/user/settings/api/), make sure you have access to the [BODS project on Transifex](https://www.transifex.com/OpenDataServices/bods-v01)
