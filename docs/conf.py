@@ -101,7 +101,7 @@ html_theme_path = [oods.sphinxtheme.get_html_theme_path()]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['_static', '_build_schema']
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'BODS'
@@ -239,8 +239,7 @@ def copy_legacy_redirects(app, docname): # Sphinx expects two arguments
 def translate_schema_and_codelists(language='en'):
     # The root of the repository.
     basedir = Path(os.path.realpath(__file__)).parents[1]
-    build_dir = basedir / 'docs' / '_build' / 'html' / language
-    static_dir = build_dir / '_static'
+    build_dir = basedir / 'docs' / '_build_schema'
 
     localedir = basedir / 'docs' / 'locale'
     # The gettext domain for schema translations. Should match the domain in the `pybabel compile` command.
@@ -250,8 +249,8 @@ def translate_schema_and_codelists(language='en'):
 
     schema_source_dir = basedir / 'schema'
     codelist_source_dir = basedir / 'schema' / 'codelists'
-    schema_target_dir = static_dir
-    codelist_target_dir = static_dir / 'codelists'
+    schema_target_dir = build_dir
+    codelist_target_dir = build_dir / 'codelists'
 
     translate([
         # The glob patterns in `babel_bods_schema.cfg` should match these filenames.
@@ -259,6 +258,8 @@ def translate_schema_and_codelists(language='en'):
         # The glob patterns in `babel_bods_codelist.cfg` should match these.
         (glob(str(codelist_source_dir / '*.csv')), codelist_target_dir, codelist_domain),
     ], localedir, language, version=os.environ.get('TRAVIS_BRANCH', 'latest'))
+
+    print("Translated schema and codelists to {}".format(language))
 
 
 # -- Finally, Setup -------------------------------------------------------
@@ -272,3 +273,5 @@ def setup(app):
         }, True)
     app.add_transform(AutoStructify)
     app.connect('build-finished', copy_legacy_redirects)
+    language = app.config.overrides.get('language', 'en')
+    translate_schema_and_codelists(language)
