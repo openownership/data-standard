@@ -27,7 +27,7 @@ View the `Ownership-or-control statement JSON schema <../_static/ownership-or-co
 
 .. raw:: html
 
-    <script src="../_static/docson/widget.js" data-schema="../_static/ownership-or-control-statement.json"></script>
+    <script src="../_static/docson/widget.js" data-schema="../ownership-or-control-statement.json"></script>
 
 .. _schema-browser-entity:
 
@@ -39,7 +39,7 @@ View the `Entity Statement JSON schema <../_static/entity-statement.json>`_ or e
 
 .. raw:: html
 
-    <script src="../_static/docson/widget.js" data-schema="../_static/entity-statement.json"></script>
+    <script src="../_static/docson/widget.js" data-schema="../entity-statement.json"></script>
 
 
 .. _schema-browser-person:
@@ -51,5 +51,5 @@ View the `Person Statement JSON schema <../_static/person-statement.json>`_ or e
 
 .. raw:: html
 
-    <script src="../_static/docson/widget.js" data-schema="../_static/person-statement.json"></script>
+    <script src="../_static/docson/widget.js" data-schema="../person-statement.json"></script>
 
