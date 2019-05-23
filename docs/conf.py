@@ -207,6 +207,35 @@ class JSONValue(LiteralInclude):
         return [nodes.paragraph(string,string)]
 
 
+
+# -- Legacy Redirects -------------------------------------------------------
+
+redirect_files = [
+    'conformance.html',
+    'credits.html',
+    'examples.html',
+    'governance.html',
+    'identifiers.html',
+    'overview.html',
+    'provenance.html',
+    'schema.html',
+    'serialization.html',
+]
+
+from shutil import copyfile
+
+
+def copy_legacy_redirects(app, docname): # Sphinx expects two arguments
+    if app.builder.name == 'html' or app.builder.name == 'readthedocs':
+        for html_src_path in redirect_files:
+            target_path = app.outdir + '/' + html_src_path
+            src_path = app.srcdir + '/' + html_src_path
+            if os.path.isfile(src_path):
+                copyfile(src_path, target_path)
+
+# -- Finally, Setup -------------------------------------------------------
+
+
 def setup(app):
     app.add_directive('json-value', JSONValue)
     app.add_config_value('recommonmark_config', {
@@ -215,3 +244,5 @@ def setup(app):
         'enable_eval_rst': True
         }, True)
     app.add_transform(AutoStructify)
+    app.connect('build-finished', copy_legacy_redirects)
+
