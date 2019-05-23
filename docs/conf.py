@@ -101,7 +101,7 @@ html_theme_path = [oods.sphinxtheme.get_html_theme_path()]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static','../schema']
+html_static_path = ['_static']
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'BODS'
@@ -170,13 +170,17 @@ texinfo_documents = [
 
 # Adapted from https://github.com/OpenDataServices/sphinxcontrib-opendataservices/blob/master/sphinxcontrib/opendataservices.py#L50
 # Should eventually move into there
-from sphinx.directives.code import LiteralInclude
-from docutils.parsers.rst import directives, Directive
 import os
 import json
+from glob import glob
 from collections import OrderedDict
-from jsonpointer import resolve_pointer
 from docutils import nodes
+from docutils.parsers.rst import directives, Directive
+from jsonpointer import resolve_pointer
+from pathlib import Path
+from sphinx.directives.code import LiteralInclude
+
+from bods_babel.translate import translate
 
 class JSONValue(LiteralInclude):
     option_spec = {
@@ -200,12 +204,11 @@ class JSONValue(LiteralInclude):
         except KeyError as e:
             title = filename
         pointed = resolve_pointer(json_obj, self.options['pointer'])
-     
+
         string = json.dumps(pointed, indent='    ')
         if string.startswith('"') and string.endswith('"'):
             string = string[1:-1]
         return [nodes.paragraph(string,string)]
-
 
 
 # -- Legacy Redirects -------------------------------------------------------
@@ -233,8 +236,32 @@ def copy_legacy_redirects(app, docname): # Sphinx expects two arguments
             if os.path.isfile(src_path):
                 copyfile(src_path, target_path)
 
-# -- Finally, Setup -------------------------------------------------------
+def translate_schema_and_codelists(language='en'):
+    # The root of the repository.
+    basedir = Path(os.path.realpath(__file__)).parents[1]
+    build_dir = basedir / 'docs' / '_build' / 'html' / language
+    static_dir = build_dir / '_static'
 
+    localedir = basedir / 'docs' / 'locale'
+    # The gettext domain for schema translations. Should match the domain in the `pybabel compile` command.
+    schema_domain = 'schema'
+    # The gettext domain for codelist translations. Should match the domain in the `pybabel compile` command.
+    codelist_domain = 'codelist'
+
+    schema_source_dir = basedir / 'schema'
+    codelist_source_dir = basedir / 'schema' / 'codelists'
+    schema_target_dir = static_dir
+    codelist_target_dir = static_dir / 'codelists'
+
+    translate([
+        # The glob patterns in `babel_bods_schema.cfg` should match these filenames.
+        (glob(str(schema_source_dir / '*.json')), schema_target_dir, schema_domain),
+        # The glob patterns in `babel_bods_codelist.cfg` should match these.
+        (glob(str(codelist_source_dir / '*.csv')), codelist_target_dir, codelist_domain),
+    ], localedir, language, version=os.environ.get('TRAVIS_BRANCH', 'latest'))
+
+
+# -- Finally, Setup -------------------------------------------------------
 
 def setup(app):
     app.add_directive('json-value', JSONValue)
@@ -245,4 +272,3 @@ def setup(app):
         }, True)
     app.add_transform(AutoStructify)
     app.connect('build-finished', copy_legacy_redirects)
-
