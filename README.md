@@ -9,7 +9,7 @@ You can share feedback on the standard through this project's issue tracker.
 
 ## About
 
-This work is taking place under the auspices of the Open Ownership project. More details on the project are avaiable at http://www.openownership.org
+This work is taking place under the auspices of the Open Ownership project. More details on the project are available at http://www.openownership.org
 
 The work will be guided by the Data Standard Working Group, and initial phases will take place between December 2016 and March 2017.
 
@@ -48,22 +48,61 @@ To run the steps in the translation workflow, you need to install this repo and 
 $ pip install -r requirements.txt
 ```
 
+You also need to make sure you have `gettext` and `pybabel` installed in whatever environment you're running this in:
+
+```
+$ apt-get install gettext
+$ apt-get install python-babel
+```
+
 And you need to get a [Transifex API key](https://www.transifex.com/user/settings/api/), make sure you have access to the [BODS project on Transifex](https://www.transifex.com/OpenDataServices/bods-v01)
 
-**When you add or update the docs** you need to do the following so that they can be translated, in the `docs` directory:
+Run the following commands from the root directory unless otherwise specified (eg. sometimes it's less complicated to run them from `docs`).
 
-1. Run `make gettext` to extract translatable English strings.
-2. *If you have new pages* run `sphinx-intl update-txconfig-resources --pot-dir _build/gettext --transifex-project-name bods-v01` to register the translation files with Transifex (generates or updates contents `.tx/config` file).
-3. Run `tx push -s` to push to Transifex.
+**When you change text in the docs** you need to do the following so that they can be translated:
+
+1. `cd docs`
+2. Run `make gettext` to extract translatable English strings from the docs.
+
+**If you modified the codelists** also:
+
+1. Run `pybabel extract -F babel_bods_schema.cfg . -o docs/_build/gettext/schema.pot` to extract translatable English strings from the schema.
+
+**If you modified the schema** also:
+
+1. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/_build/gettext/codelist.pot` to extract translatable English strings from the codelists.
+
+**If you added, deleted or renamed** files or you want to use a **different Transifex project**, run (from root, ie. `cd ../`):
+
+```
+rm -f .tx/config
+sphinx-intl create-txconfig
+sphinx-intl update-txconfig-resources --pot-dir docs/_build/gettext --locale-dir docs/locale --transifex-project-name bods-v01
+```
+
+(Replacing `bods-v01` with a different Transifex project name if necessary.)
+
+And then:
+
+2. Run `tx push -s` to **push to Transifex**.
 
 Now the files are ready to be translated in Transifex.
 
 **To fetch new translations** when they're done, you need to:
 
 1. Run `tx pull -a` to fetch all, or `tx pull -l ru` to fetch a particular language.
-
-**To build another language locally** use `make html` (in the `docs` directory) but pass the language you want:
+2. Compile the schema and codelist translations:
 
 ```
+$ pybabel compile --use-fuzzy -d docs/locale -D schema
+$ pybabel compile --use-fuzzy -d docs/locale -D codelist
+```
+
+**To build another language locally** (pass the language code you want)..
+
+```
+$ cd docs
 $ sphinx-build -b html -D language=ru . _build/html/ru
 ```
+
+Note: in this version, the schema and codelists are available for translation in Transifex, but they are *not* yet translated when the docs are built.
