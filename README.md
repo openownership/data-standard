@@ -30,8 +30,8 @@ The frontend uses **docson** JavaScript library to visualise the JSON schema. BO
 Meanwhile, to include the appropriate version of docson JS after you clone this repo, you need to run:
 
 ```
-git submodules init
-git submodules update
+git submodule init
+git submodule update
 ```
 
 ### Build the docs locally
