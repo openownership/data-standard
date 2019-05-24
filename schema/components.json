@@ -499,6 +499,71 @@
           "$ref": "components.json#/definitions/Source"
         }
       }
+    },
+    "PublicationDetails": {
+      "title": "Publication Details",
+      "description": "Information concerning the publication of this statement.",
+      "type": "object",
+      "properties": {
+        "publicationDate": {
+          "title": "Publication date",
+          "description": "The date on which this statement was published.",
+          "type": "string",
+          "format": "date"
+        },
+        "bodsVersion": {
+          "title": "BODS version",
+          "description": "The version of the Beneficial Ownership Data Standard to which this statement conforms, expressed as major.minor. For example: 0.2 or 1.0.",
+          "type": "string",
+          "pattern": "^(\\d+\\.)(\\d+)$"
+        },
+        "license": {
+          "title": "License URL",
+          "description": "A link to licensing information for this statement.",
+          "type": "string",
+          "format": "uri" 
+        },
+        "publisher": {
+          "title": "Publisher",
+          "description": "The publisher of this statement. In cases of self-declaration of beneficial ownership, the publisher SHOULD also be listed as an Agent under `Source.assertedBy` ",
+          "$ref": "components.json#/definitions/Publisher"
+        }
+      },
+      "required": [
+        "publicationDate",
+        "bodsVersion",
+        "publisher"
+      ]
+    },
+    "Publisher": {
+      "type": "object",
+      "title": "Publisher",
+      "description": "An individual, organisation or other responsible agent making, or supporting, a given statement or annotation.",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "The name of the publisher",
+          "type": "string"
+        },
+        "url": {
+          "title": "URL",
+          "description": "The URL of the parent dataset or of the publisher's website homepage",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "name"
+          ]
+        },
+        {
+          "required": [
+            "url"
+          ]
+        }      
+       ]
     }
   }
 }
