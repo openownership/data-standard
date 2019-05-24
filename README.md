@@ -98,6 +98,15 @@ $ pybabel compile --use-fuzzy -d docs/locale -D schema
 $ pybabel compile --use-fuzzy -d docs/locale -D codelist
 ```
 
+**Commit** the new or updated .po files in `docs/locale`, using a separate commit from your edits to the source (RST, JSON or CSV) files.
+
+**TEMPORARILY** also commit `schema.mo` and `codelist.mo` for each language. You'll need to force add these as usually git ignores .mo files. This is a quick fix for readthedocs, and this stage will be going away soon (see [#190](https://github.com/openownership/data-standard/issues/190)). ie (replacing `ru` for any other languages and repeating):
+
+```
+git add -f docs/locale/ru/LC_MESSAGES/schema.mo
+git add -f docs/locale/ru/LC_MESSAGES/codelist.mo
+```
+
 **To build another language locally** (pass the language code you want)..
 
 ```
