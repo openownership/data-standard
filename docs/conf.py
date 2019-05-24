@@ -242,10 +242,7 @@ def translate_schema_and_codelists(language='en'):
     build_dir = basedir / 'docs' / '_build_schema'
 
     localedir = basedir / 'docs' / 'locale'
-    print("-------------")
-    print(localedir)
-    print(os.listdir(str(localedir / 'ru' / 'LC_MESSAGES')))
-    print("-------------")
+
     # The gettext domain for schema translations. Should match the domain in the `pybabel compile` command.
     schema_domain = 'schema'
     # The gettext domain for codelist translations. Should match the domain in the `pybabel compile` command.
