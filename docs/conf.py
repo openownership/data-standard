@@ -239,10 +239,13 @@ def copy_legacy_redirects(app, docname): # Sphinx expects two arguments
 def translate_schema_and_codelists(language='en'):
     # The root of the repository.
     basedir = Path(os.path.realpath(__file__)).parents[1]
-    print(basedir)
     build_dir = basedir / 'docs' / '_build_schema'
 
     localedir = basedir / 'docs' / 'locale'
+    print("-------------")
+    print(basedir)
+    print(localedir)
+    print("-------------")
     # The gettext domain for schema translations. Should match the domain in the `pybabel compile` command.
     schema_domain = 'schema'
     # The gettext domain for codelist translations. Should match the domain in the `pybabel compile` command.
