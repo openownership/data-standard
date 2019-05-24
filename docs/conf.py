@@ -239,6 +239,7 @@ def copy_legacy_redirects(app, docname): # Sphinx expects two arguments
 def translate_schema_and_codelists(language='en'):
     # The root of the repository.
     basedir = Path(os.path.realpath(__file__)).parents[1]
+    print(basedir)
     build_dir = basedir / 'docs' / '_build_schema'
 
     localedir = basedir / 'docs' / 'locale'
