@@ -241,7 +241,7 @@ def translate_schema_and_codelists(language='en'):
     basedir = Path(os.path.realpath(__file__)).parents[1]
     build_dir = basedir / 'docs' / '_build_schema'
 
-    localedir = basedir / 'docs' / 'locale'
+    localedir = basedir / 'data-standard' / 'docs' / 'locale'
     print("-------------")
     print(basedir)
     print(localedir)
