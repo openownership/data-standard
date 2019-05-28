@@ -6,7 +6,7 @@ CommonMark==0.7.5
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8d0d2bb00742b25707866b0f7a2b6c0c35948c5e#egg=sphinxcontrib_jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@fab0ff0167d32ec243d42f272e0e50766299c078#egg=sphinxcontrib_opendataservices
 -e git+https://github.com/openownership/data-standard-sphinx-theme.git@038d4cef0a7baa63cc329d67093315ce4c931ca3#egg=standard_theme
-urllib3==1.24.1
+urllib3==1.24.2
 requests==2.21.0
 git+https://github.com/openownership/bods-babel.git@c391be94700cdaa50b915e23981f9058097d6bc3#egg=bods-babel
 ## The following requirements were added by pip freeze:
@@ -19,7 +19,7 @@ docutils==0.14
 future==0.17.1
 idna==2.8
 imagesize==1.1.0
-Jinja2==2.10
+Jinja2==2.10.1
 jsonpointer==2.0
 jsonref==0.2
 MarkupSafe==1.1.0
