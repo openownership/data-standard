@@ -519,7 +519,7 @@
         },
         "license": {
           "title": "License URL",
-          "description": "A link to licensing information for this statement.",
+          "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or [Open Definition Conformant](http://opendefinition.org/licenses/) license.",
           "type": "string",
           "format": "uri" 
         },
@@ -538,7 +538,7 @@
     "Publisher": {
       "type": "object",
       "title": "Publisher",
-      "description": "An individual, organisation or other responsible agent making, or supporting, a given statement or annotation.",
+      "description": "Details of the organisation or individual publishing a statement.",
       "properties": {
         "name": {
           "title": "Name",
