@@ -552,7 +552,7 @@
           "format": "uri"
         }
       },
-      "oneOf": [
+      "anyof": [
         {
           "required": [
             "name"
