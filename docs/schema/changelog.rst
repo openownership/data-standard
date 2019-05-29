@@ -18,8 +18,18 @@ ChangeLog
 
 Added
 -----
+- A required ``publicationDetails`` property has been added to all three Statement objects. It represents metadata for Statements: information about their original publisher. Sub-properties (and their sub-properties) are:
+ - ``publicationDate``*
+ - ``bodsVersion``*
+ - ``license``
+ - ``publisher``* (``name``, ``url``)
+* required
+
 - A ``hasPepStatus`` property (taking a boolean value) has been added to Person Statements. It is only to be used where disclosure requirements require that Politically Exposed Persons are flagged.
+
 - PEP Status objects now have the additional properties ``missingInfoReason`` and ``source``.
+
+- A ``taxResidencies`` property has been added to Person Statements. It takes an array of Country objects.
 
 Changed
 -------
