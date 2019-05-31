@@ -3,17 +3,15 @@ Privacy Notice
 
 ReadTheDocs provide the platform these docs are hosted on, for information about how they collect and process personal data, [see their Privacy Policy](https://docs.readthedocs.io/en/latest/privacy-policy.html).
 
-Open Ownership is committed to ensuring that your privacy is protected. This privacy notice sets out how we collect and process any personal data when you use this website.
+OpenOwnership is committed to ensuring that your privacy is protected. This privacy notice sets out how we collect and process any personal data when you use this website.
 
 We may change this notice from time to time by updating this page. This notice is effective from 24th May 2018.
 
-Data controller: <br/>
-<br/>
-Contact us if would like a copy of the information held on you or if you believe that any information we are holding on you is incorrect or incomplete.
+You can contact us at OpenOwnership (as the data controller) if would like a copy of the information held on you or if you believe that any information we are holding on you is incorrect or incomplete.
 
 You have the following rights concerning this data:
 
-*   Right to be informed, which is the purpose of this privacy notice
+*   Right to be informed, which is the purpose of this privacy notice.
 *   Right to Access, Rectification, Erasure, and to Restrict Processing. Note that the right to Erasure and Restrict Processing are balanced against our legitimate interests. Where relevant, you need to provide information to re-identify yourself from our pseudonymised data, see [GDPR Article 11](https://gdpr-info.eu/art-11-gdpr/)
 *   Right to object to our processing.
 
@@ -38,14 +36,14 @@ Personal data we collect:
 
 We do not use this data to personally identify individuals, but it is possible that it could be used to do so, particularly if combined with other datasets.
 
-You can opt out of this processing: If you have set your web browser to "I do not want to be tracked" (DoNotTrack is enabled) then Matomo will not track your visit.
+You can opt out of this processing: if you have set your web browser to "I do not want to be tracked" (DoNotTrack is enabled) then Matomo will not track your visit.
 
-Matomo also it’s own opt out mechanism:
+Matomo also has its own opt out mechanism:
 <!-- opt out iframe - clicking this will mean people can opt out of tracking -->
 <iframe style="border: 1; height: 150px; width: 600px;" src="https://mon.opendataservices.coop/piwik/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=en"></iframe>
 
 Data processors: Open Data Services Co-operative Limited, Bytemark.
 
-The data controller (Open Ownership) is based in the USA.
+The data controller (OpenOwnership) is based in the USA.
 
 The data is kept indefinitely, in pseudonymised form.
