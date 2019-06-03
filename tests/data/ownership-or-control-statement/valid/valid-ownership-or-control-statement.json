@@ -17,5 +17,12 @@
         "exact": 100
       }
     }
-  ]
+  ],
+  "publicationDetails": {
+    "publicationDate": "2017-11-18",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "CHRINON LTD"
+    }
+  }
 }

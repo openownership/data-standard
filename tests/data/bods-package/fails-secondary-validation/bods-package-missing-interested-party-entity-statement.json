@@ -11,7 +11,14 @@
         "scheme": "GB-COH",
         "id": "03209885"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2018-03-30",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "JENEX LIMITED"
+      }
+    }
   },
   {
     "statementID": "85e7cbb2-992d-4bd2-a2f7-1274b1137f6d",
@@ -32,6 +39,13 @@
           "maximum": 100
         }
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2018-03-30",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "JENEX LIMITED"
+      }
+    }
   }
 ]

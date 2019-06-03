@@ -29,7 +29,14 @@
         "country": "GB",
         "postCode": "N3 1LF"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2018-03-30",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
+    }
   },
   {
     "statementID": "fbfd0547-d0c6-4a00-b559-5c5e91c34f5c",
@@ -50,6 +57,13 @@
           "exact": 100
         }
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2018-03-30",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
+    }
   }
 ]

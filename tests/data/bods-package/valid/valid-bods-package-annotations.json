@@ -19,6 +19,13 @@
         "name": "DRILLGREAT LIMITED"
         }
       ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2017-05-31",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "MONSOON HOLDINGS (NO.1) LIMITED"
+      }
     }
   },
   {
@@ -45,6 +52,13 @@
           "name": "MONSOON HOLDINGS (NO.1) LIMITED"
         }
       ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2017-05-31",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "MONSOON HOLDINGS (NO.1) LIMITED"
+      }
     }
   },
   {
@@ -75,6 +89,13 @@
           "name": "Jack Lord"
         }
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2017-05-31",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "MONSOON HOLDINGS (NO.1) LIMITED"
+      }
+    }
   }
 ]
