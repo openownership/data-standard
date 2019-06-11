@@ -371,7 +371,7 @@
             "transformation"
           ],
           "codelist": "annotationMotivation.csv",
-          "openCodelist": true
+          "openCodelist": false
         },
         "description": {
           "title": "Description",
@@ -401,14 +401,14 @@
           },
           "required": [
             "statementPointerTarget",
-            "motivation"
+            "motivation",
+            "url"
           ]
         },
         {
           "properties": {
             "motivation": {
               "enum": [
-                "linking",
                 "identifying",
                 "commenting",
                 "correcting",

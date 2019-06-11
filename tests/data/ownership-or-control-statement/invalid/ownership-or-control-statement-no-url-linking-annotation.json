@@ -1,0 +1,48 @@
+  {
+    "statementID": "6bf33a35-4c3a-40a9-b5d6-bc3e20b4b39a",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-03-29",
+    "subject": {
+      "describedByEntityStatement": "cc3869b3-3ddd-4585-868e-ff561a3e9709"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "9132d890-0658-4e84-b7b6-9f1886225e45"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "startDate": "2018-09-19",
+        "share": {
+          "minimum": 25,
+          "maximum": 50,
+          "exclusiveMinimum": true,
+          "exclusiveMaximum": true
+        },
+        "details": "The person holds, directly or indirectly, more than 25% but not more than 50% of the shares in the company."
+      }
+    ],
+    "annotations": [
+      {
+        "statementPointerTarget": "/interestedParty/person",
+        "motivation": "commenting",
+        "description": "The interested party is a British MP and, at the time this statement was made, the Secretary of State for Health and Social Care."
+      },
+      {
+        "statementPointerTarget": "/interests/0",
+        "motivation": "linking",
+        "description": "Register of Members' Interests. The interest in Mare Pond Properties Limited was declared retroactively in both the UK PSC register and the linked Register of Members' Interests following press reports."
+      }
+    ],
+    "source":{
+      "type": [
+        "officialRegister"
+      ],
+      "url": "https://beta.companieshouse.gov.uk/company/10970413",
+      "assertedBy": [
+        {
+          "name": "MARE POND PROPERTIES LIMITED",
+          "uri": "https://beta.companieshouse.gov.uk/company/10970413"
+        }
+      ]
+    }
+  }
