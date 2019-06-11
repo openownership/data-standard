@@ -27,7 +27,7 @@
     },
     "personType": {
       "title": "Person type",
-      "description": "Use the [personType codelist](#persontype). The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, but information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'. Where the beneficial owner has been identified use knownPerson.",
+      "description": "Use the [personType codelist](#persontype). The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, but information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'. Where the beneficial owner has been identified use knownPerson. Where a person has the type 'anonymousPerson' or 'unknownPerson' a reason for the absence of information SHOULD be provided in 'unspecifiedPersonDetails')",
       "type": "string",
       "enum": [
         "anonymousPerson",
@@ -38,10 +38,36 @@
       "codelist": "personType.csv",
       "openCodelist": false
     },
-    "missingInfoReason": {
-      "title": "Missing information reason(s)",
-      "description": "For PersonStatements with the type 'anonymousPerson' or 'unknownPerson' this field should contain an explanation of the reason that detailed information on the person is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification.",
-      "type": "string",
+    "unspecifiedPersonDetails": {
+      "title": "Unspecified person details",
+      "description": "When this person has a 'personType' of 'anonymousPerson' or 'unknownPerson' information explaining this should be given using the reason and description.",
+      "type": "object",
+      "properties": {
+        "reason": {
+          "title": "Reason",
+          "description": "The reason that an interested party cannot be specified. From the [unspecifiedReason codelist](#unspecifiedreason).",
+          "type": "string",
+          "enum": [
+            "no-beneficial-owners",
+            "subject-unable-to-confirm-or-identify-beneficial-owner",
+            "interested-party-has-not-provided-information",
+            "subject-exempt-from-disclosure",
+            "interested-party-exempt-from-disclosure",
+            "information-unknown-to-publisher",
+            "unknown"
+          ],
+          "codelist": "unspecifiedReason.csv",
+          "openCodelist": false
+        },
+        "description": {
+          "title": "Description",
+          "description": "Any supporting information about the absence of a confirmed beneficial owner. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reason"
+      ],
       "propertyOrder": 5
     },
     "names": {
@@ -149,11 +175,7 @@
   },
   "required": [
     "statementID",
-    "statementType"
-  ],
-  "dependencies": {
-    "missingPersonReason": [
-      "missingPersonType"
-    ]
-  }
+    "statementType",
+    "personType"
+  ]
 }
