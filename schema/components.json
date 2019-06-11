@@ -39,7 +39,8 @@
         "url": {
           "title": "Source URL",
           "description": "If this information was fetched from an external URL, or a machine or human readable web page is available that provides additional information on how this statement was sourced, provide the URL.",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         },
         "retrievedAt": {
           "title": "Retrieved at",
@@ -99,12 +100,12 @@
         },
         "scheme": {
           "title": "Scheme",
-          "description": "For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD.",
+          "description": "For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
           "type": "string"
         },
         "schemeName": {
           "title": "Scheme name",
-          "description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided.",
+          "description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
           "type": "string"
         },
         "uri": {
@@ -162,7 +163,7 @@
         },
         "address": {
           "title": "Address",
-          "description": "The address, with each line or component of the address separated by a line-break or comma. This field may also include the postal code. ",
+          "description": "The address, with each line or component of the address separated by a line-break or comma. Where postal codes are isolated fields in source systems, this `address` field SHOULD NOT include the postal code.",
           "type": "string"
         },
         "postCode": {
@@ -272,7 +273,7 @@
         },
         "share": {
           "title": "Percentage share",
-          "description": "Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls.",
+          "description": "Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls. By default the minimum is inclusive and the maximum exclusive (minimum-value ≤ share < maximum-value ). If you wish to change these defaults, use the exclusiveMinimum and exclusiveMaximum properties.",
           "type": "object",
           "properties": {
             "exact": {
