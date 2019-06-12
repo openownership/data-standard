@@ -525,7 +525,7 @@
         },
         "publisher": {
           "title": "Publisher",
-          "description": "The publisher of this statement. In cases of self-declaration of beneficial ownership, the publisher SHOULD also be listed as an Agent under `Source.assertedBy` ",
+          "description": "Details of the organisation or individual publishing this statement.",
           "$ref": "components.json#/definitions/Publisher"
         }
       },
