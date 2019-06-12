@@ -6,24 +6,26 @@ ChangeLog
 
 .. attention:: 
    
-    This is v0.1 of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information.
+    This is v0.2 of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information.
 
-    Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this v0.1 release onwards, any structural changes, or major definitional changes will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form.
+    Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this v0.2 release onwards, any structural changes, or major definitional changes will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form.
 
     The schema specifies a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields. 
 
 
-[0.2] - 2019-05-29
+[0.2] - 2019-06-30
 ==================
 
 Added
 -----
 - A required ``publicationDetails`` property has been added to all three Statement objects. It represents metadata for Statements: information about their original publisher. Sub-properties (and their sub-properties) are:
- - ``publicationDate``*
- - ``bodsVersion``*
- - ``license``
- - ``publisher``* (``name``, ``url``)
-* required
+
+  - ``publicationDate``\*
+  - ``bodsVersion``\*
+  - ``license``
+  - ``publisher``\* (``name``, ``url``)
+
+  \* required
 
 - A ``hasPepStatus`` property (taking a boolean value) has been added to Person Statements. It is only to be used where disclosure requirements require that Politically Exposed Persons are flagged.
 
@@ -34,9 +36,10 @@ Added
 Changed
 -------
 - The interestType codelist has been amended:
- - 'rights-to-surplus-assets' is renamed 'rights-to-surplus-assets-on-dissolution'
- - 'rights-granted-by-contract' has been added
- - 'conditional-rights-granted-by-contract' has been added
+
+  - 'rights-to-surplus-assets' is renamed 'rights-to-surplus-assets-on-dissolution'
+  - 'rights-granted-by-contract' has been added
+  - 'conditional-rights-granted-by-contract' has been added
 
 - The ``pepStatus`` property of Person Statements has been renamed ``pepStatusDetails`` (and still references an array of PEP Status objects).
 
