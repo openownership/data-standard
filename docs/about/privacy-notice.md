@@ -12,7 +12,7 @@ You can contact us at OpenOwnership (as the data controller) if would like a cop
 You have the following rights concerning this data:
 
 *   Right to be informed, which is the purpose of this privacy notice.
-*   Right to Access, Rectification, Erasure, and to Restrict Processing. Note that the right to Erasure and Restrict Processing are balanced against our legitimate interests. Where relevant, you need to provide information to re-identify yourself from our pseudonymised data, see [GDPR Article 11](https://gdpr-info.eu/art-11-gdpr/)
+*   Right to Access, Rectification, Erasure, and to Restrict Processing. Note that the right to Erasure and Restrict Processing are balanced against our legitimate interests. Where relevant, you need to provide information to re-identify yourself from our pseudonymised data, see [GDPR Article 11](https://gdpr-info.eu/art-11-gdpr/).
 *   Right to object to our processing.
 
 Our supervisory authority is the [ICO in the UK](https://ico.org.uk/). You have the right to lodge a complaint with them.
