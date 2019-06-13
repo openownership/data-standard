@@ -93,7 +93,7 @@
         },
         "unspecified": {
           "title": "Unspecified or unknown ownership and control",
-          "description": "When confirmation has been provided that no interested party exists, where ownership and control information does not need to be provided, or where details of ownership and control are unknown, a `reason` MUST be specified. Where an unknown entity is the `subject` of further ownershipOrControlStatements in the same structure, or where there is a natural person with ownership or control but their name or details are not known or cannot be disclosed for some reason, `unspecified` should not be used, but instead a reference to a `personStatement` or `entityStatement` should be provided but identifying details MAY be left blank.",
+          "description": "When confirmation has been provided that no interested party exists, where ownership and control information does not need to be provided, or where details of ownership and control are unknown, a `reason` MUST be given. Where an unknown entity is the `subject` of further ownershipOrControlStatements in the same structure, or where there is a natural person with ownership or control but their name or details are not known or cannot be disclosed for some reason, `unspecified` should not be used, but instead a reference to a `personStatement` or `entityStatement` should be provided but identifying details MAY be left blank.",
           "type": "object",
           "properties": {
             "reason": {
