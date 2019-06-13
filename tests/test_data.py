@@ -48,11 +48,11 @@ def test_valid_statement_json(json_path):
     '../examples/indirect-ownership/os-03-dr-04.json',
     '../examples/indirect-ownership/os-06-dr-03.json',
     '../examples/indirect-ownership/os-06-dr-04.json',
-    '../examples/indirect-ownership/os-07-dr-04-company-a.json',
-    '../examples/indirect-ownership/os-07-dr-04-company-b.json',
-    '../examples/indirect-ownership/os-07-dr-04-company-c.json',
-    '../examples/indirect-ownership/os-07-dr-04-company-d.json',
-    '../examples/indirect-ownership/os-08-dr-04-company-a.json'
+    # '../examples/indirect-ownership/os-07-dr-04-company-a.json',
+    # '../examples/indirect-ownership/os-07-dr-04-company-b.json',
+    # '../examples/indirect-ownership/os-07-dr-04-company-c.json',
+    # '../examples/indirect-ownership/os-07-dr-04-company-d.json',
+    # '../examples/indirect-ownership/os-08-dr-04-company-a.json'
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
@@ -194,12 +194,6 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, {
         "interestedParty/describedByPersonStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
     }),
-    ('data/bods-package/fails-schema-validation/generated-statement-no-generated-by-statement-id.json', None, {
-        "'generatedByStatementID' is a dependency of 'generatedStatement'"
-        }),
-    ('data/bods-package/fails-schema-validation/primary-statement-has-generated-by-statement-id.json', None, {
-        "'generatedStatement' is a dependency of 'generatedByStatementID'"
-        }),
 ])
 def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):
     if json_path:
