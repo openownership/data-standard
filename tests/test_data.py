@@ -81,6 +81,7 @@ def test_valid_package_json(json_path):
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json', ValidationError),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-publication-details.json', ValidationError),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-statement-type.json', MissingStatementTypeError),
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-url-linking-annotation.json', ValidationError),
 ])
 def test_invalid_statement_json(json_path, error):
     with open(os.path.join(this_dir, json_path)) as f:
