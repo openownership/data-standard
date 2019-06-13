@@ -40,7 +40,7 @@
     },
     "unspecifiedEntityDetails": {
       "title": "Unspecified entity details",
-      "description": "When this entity has an 'entityType' of 'anonymousEntity' or 'unknownEntity' information explaining this should be given using the reason and description.",
+      "description": "An explanation of why this entity has an `entityType` of 'anonymousEntity' or 'unknownEntity'. A `reason` MUST be specified.",
       "type": "object",
       "properties": {
         "reason": {

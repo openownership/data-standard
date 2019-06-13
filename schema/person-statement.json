@@ -40,7 +40,7 @@
     },
     "unspecifiedPersonDetails": {
       "title": "Unspecified person details",
-      "description": "When this person has a 'personType' of 'anonymousPerson' or 'unknownPerson' information explaining this should be given using the reason and description.",
+      "description": "An explanation of why this person has a `personType` of 'anonymousPerson' or 'unknownPerson'. A `reason` MUST be specified.",
       "type": "object",
       "properties": {
         "reason": {
