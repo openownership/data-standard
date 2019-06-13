@@ -12,5 +12,12 @@
         "id":"00335",
         "schemeName":"Jebel Ali Free Zone"
       }
-    ]
+    ],
+    "publicationDetails": {
+        "publicationDate": "2016-07-01",
+        "bodsVersion": "0.2",
+        "publisher": {
+            "name": "Ibrakom Fzco"
+        }
+    }
   }

@@ -22,6 +22,13 @@
     ],
     "incorporatedInJurisdiction": {
       "code": "GB"
+    },
+    "publicationDetails": {
+        "publicationDate": "2018-11-18",
+        "bodsVersion": "0.2",
+        "publisher": {
+            "name": "CHRINON LTD"
+        }
     }
   },
   {
@@ -29,7 +36,14 @@
     "statementType": "entityStatement",
     "statementDate": "2018-01-05",
     "entityType": "arrangement",
-    "name": "Joint shareholding"
+    "name": "Joint shareholding",
+    "publicationDetails": {
+        "publicationDate": "2018-11-18",
+        "bodsVersion": "0.2",
+        "publisher": {
+            "name": "CHRINON LTD"
+        }
+    }
   },
   {
     "statementID": "676ce2ec-e244-409e-85f9-9823e88bc099",
@@ -51,7 +65,14 @@
           "exact": 100
         }
       }
-    ]
+    ],
+    "publicationDetails": {
+        "publicationDate": "2018-11-18",
+        "bodsVersion": "0.2",
+        "publisher": {
+            "name": "CHRINON LTD"
+        }
+    }
   },
   {
     "statementID": "17bfeb0d-4a63-41d3-814d-b8a54c81a1f",
@@ -61,7 +82,14 @@
       {
         "fullName": "Natalie Coleman"
       }
-    ]
+    ],
+    "publicationDetails": {
+        "publicationDate": "2018-11-18",
+        "bodsVersion": "0.2",
+        "publisher": {
+            "name": "CHRINON LTD"
+        }
+    }
   },
   {
     "statementID": "d1eb52de-ff02-4690-8359-f4bbf9c128b1",
@@ -71,7 +99,14 @@
       {
         "fullName": "Roberto López"
       }
-    ]
+    ],
+    "publicationDetails": {
+        "publicationDate": "2018-11-18",
+        "bodsVersion": "0.2",
+        "publisher": {
+            "name": "CHRINON LTD"
+        }
+    }
   },
   {
     "statementID": "c222fe05-2bf3-4cc0-b126-f665109d7211",
@@ -93,7 +128,14 @@
           "exact": 50
         }
       }
-    ]
+    ],
+    "publicationDetails": {
+        "publicationDate": "2018-11-18",
+        "bodsVersion": "0.2",
+        "publisher": {
+            "name": "CHRINON LTD"
+        }
+    }
   },
   {
     "statementID": "c222fe05-2bf3-4cc0-b126-f665109d7211",
@@ -115,6 +157,13 @@
           "exact": 50
         }
       }
-    ]
+    ],
+    "publicationDetails": {
+        "publicationDate": "2018-11-18",
+        "bodsVersion": "0.2",
+        "publisher": {
+            "name": "CHRINON LTD"
+        }
+    }
   }
 ]
