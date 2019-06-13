@@ -154,6 +154,12 @@
       },
       "propertyOrder": 80
     },
+    "publicationDetails": {
+      "title": "Publication details",
+      "description": "Information concerning the original publication of this statement.",
+      "$ref": "components.json#/definitions/PublicationDetails",
+      "propertyOrder":85
+    },
     "source": {
       "title": "Source",
       "description": "The source of information about this person, or of information that supports an unknown or anonymous person statement.",
@@ -176,6 +182,7 @@
   "required": [
     "statementID",
     "statementType",
-    "personType"
+    "personType",
+    "publicationDetails"
   ]
 }

@@ -8,5 +8,12 @@
       "scheme": "XE-DI-CR",
       "id": "56462342"
     }
-  ]
+  ],
+  "publicationDetails": {
+    "publicationDate": "2017-12-01",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "XXXXXXXXX"
+    }
+  }
 }

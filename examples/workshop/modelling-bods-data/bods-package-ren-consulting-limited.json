@@ -1,6 +1,7 @@
 [
   {
     "statementID": "3ff64336-9d26-49da-b0ce-f4685c6af139",
+    "statementDate": "2017-12-01",
     "statementType": "entityStatement",
     "entityType": "registeredEntity",
     "name": "REN Consulting Limited",
@@ -9,20 +10,36 @@
         "scheme": "XE-KS-SRC",
         "id": "93821344"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
   },
   {
     "statementID": "5eb1e15c-fd25-40c7-8a75-246c79654185",
+    "statementDate": "2017-12-01",
     "statementType": "personStatement",
     "personType": "knownPerson",
     "names": [
       {
         "fullName": "Natalie Coleman"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
   },
   {
     "statementID": "487e303b-f5be-4dc2-bcae-b0803546fa29",
+    "statementDate": "2017-12-01",
     "statementType": "ownershipOrControlStatement",
     "subject": {
       "describedByEntityStatement": "3ff64336-9d26-49da-b0ce-f4685c6af139"
@@ -49,6 +66,13 @@
         },
         "startDate": "2016-07-07"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
   }
 ]

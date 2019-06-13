@@ -46,6 +46,11 @@
         "$ref": "components.json#/definitions/Interest"
       }
     },
+    "publicationDetails": {
+      "title": "Publication details",
+      "description": "Information concerning the original publication of this statement.",
+      "$ref": "components.json#/definitions/PublicationDetails"
+    },
     "source": {
       "title": "Source",
       "description": "The source of the information that links the entity and the interested party, or that supports a null statement.",
@@ -67,7 +72,8 @@
     "statementID",
     "statementType",
     "subject",
-    "interestedParty"
+    "interestedParty",
+    "publicationDetails"
   ],
   "definitions": {
     "InterestedParty": {
