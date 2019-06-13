@@ -1,5 +1,12 @@
 [
   {
+    "publicationDetails": {
+      "publicationDate": "2019-06-13",
+      "publisher": {
+        "name": "Example Register"
+      },
+      "bodsVersion": "0.2"
+    },
     "statementID": "e9c5bedd-2627-4f16-ac0c-a1b7ebfa051d",
     "statementType": "entityStatement",
     "statementDate": "2018-12-17",
@@ -13,6 +20,13 @@
     ]
   },
   {
+    "publicationDetails": {
+      "publicationDate": "2019-06-13",
+      "publisher": {
+        "name": "Example Register"
+      },
+      "bodsVersion": "0.2"
+    },
     "statementID": "4f683208-f571-40a5-8a5a-ec78c2930387",
     "statementType": "personStatement",
     "statementDate": "2018-12-17",
@@ -23,6 +37,13 @@
     }
   },
   {
+    "publicationDetails": {
+      "publicationDate": "2019-06-13",
+      "publisher": {
+        "name": "Example Register"
+      },
+      "bodsVersion": "0.2"
+    },
     "statementID": "a63852a4-ee66-44b2-870c-747692c4d393",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
