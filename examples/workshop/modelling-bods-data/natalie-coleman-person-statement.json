@@ -5,5 +5,12 @@
     {
       "fullName": "Natalie Coleman"
     }
-  ]
+  ],
+  "publicationDetails": {
+    "publicationDate": "2017-12-01",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "XXXXXXXXX"
+    }
+  }
 }

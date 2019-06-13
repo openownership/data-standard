@@ -22,6 +22,13 @@
           "uri": "https://beta.companieshouse.gov.uk/company/10970413"
         }
       ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2018-03-30",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "A. Journo"
+      }
     }
   },
   {
@@ -44,6 +51,13 @@
           "uri": "https://beta.companieshouse.gov.uk/company/10970413"
         }
       ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2018-03-30",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "A. Journo"
+      }
     }
   },
   {
@@ -93,6 +107,13 @@
           "uri": "https://beta.companieshouse.gov.uk/company/10970413"
         }
       ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2018-03-30",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "A. Journo"
+      }
     }
   }
 ]

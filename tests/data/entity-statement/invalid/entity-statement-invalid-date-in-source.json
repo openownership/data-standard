@@ -24,5 +24,12 @@
       }
     ],
     "retrievedAt": "2018-11-14"
+  },
+  "publicationDetails": {
+    "publicationDate": "2018-12-24",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "A. Researcher"
+    }
   }
 }
