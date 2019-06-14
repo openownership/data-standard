@@ -5,3 +5,4 @@ interested-party-has-not-provided-information,Interested party has not provided 
 subject-exempt-from-disclosure,Subject exempt from disclosure,"The subject of this ownership or control statement is not required to disclose its beneficial owner. (Replaces noNotifiableOwners.)",,
 interested-party-exempt-from-disclosure,Interested party exempt from disclosure,"The interested party in this ownership or control statement is exempt from having their identity disclosed.",,
 unknown,Unknown reason,"The reason an interested party cannot be provided is not known.",,
+information-unknown-to-publisher,Information unknown to the publisher of the data,"A publisher does not have access to information on this person or entity. This should not generally be used in situations where one party has the responsibility to provide such information.",,

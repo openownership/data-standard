@@ -24,5 +24,12 @@
       }
     ],
     "retrievedAt": "2018-11-14T17:23:43.977Z"
+  },
+  "publicationDetails": {
+    "publicationDate": "2019-01-05",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "url": "http://example.com/"
+    }
   }
 }

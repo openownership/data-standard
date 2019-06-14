@@ -1,9 +1,17 @@
 {
   "statementID": "e5027662-b2bf-4a55-8319-1e4ff1c7e6a2",
   "statementType": "personStatement",
+  "personType": "knownPerson",
   "names": [
     {
       "fullName": "Roberto López"
     }
-  ]
+  ],
+  "publicationDetails": {
+    "publicationDate": "2017-12-01",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "XXXXXXXXX"
+    }
+  }
 }
