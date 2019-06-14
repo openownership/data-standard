@@ -53,6 +53,9 @@ def test_valid_statement_json(json_path):
     # '../examples/indirect-ownership/os-07-dr-04-company-c.json',
     # '../examples/indirect-ownership/os-07-dr-04-company-d.json',
     # '../examples/indirect-ownership/os-08-dr-04-company-a.json'
+    '../examples/os-01-dr-01.json',
+    '../examples/missing-data/os-01-dr-02-dc-05.json',
+    '../examples/missing-data/os-17-dr-02-dc-06.json'
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
@@ -74,10 +77,22 @@ def test_valid_package_json(json_path):
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id-no-entity-type.json', ValidationError),
     ('data/entity-statement/invalid/entity-statement-extra-field.json', ValidationError),
     ('data/entity-statement/invalid/entity-statement-invalid-date-in-source.json', ValidationError),
+    ('data/entity-statement/invalid/entity-statement-no-publication-details.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-bad-date.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-no-publication-details.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-no-bods-version.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-no-publication-date.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-no-publisher-sub-prop.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-no-publisher.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-with-bad-bods-version.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-with-bad-licence-url.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-with-bad-publication-date.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-with-bad-publisher-url.json', ValidationError),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json', ValidationError),
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-publication-details.json', ValidationError),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-statement-type.json', MissingStatementTypeError),
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-url-linking-annotation.json', ValidationError),
 ])
 def test_invalid_statement_json(json_path, error):
     with open(os.path.join(this_dir, json_path)) as f:
@@ -139,11 +154,44 @@ def test_invalid_package_json(json_path, json_paths, error):
         "'too-short-so-fail' is too short",
         "'entityType' is a required property",
     }),
+    ('data/entity-statement/invalid/entity-statement-no-publication-details.json', {
+        "'publicationDetails' is a required property"
+    }),
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-publication-details.json', {
+        "'publicationDetails' is a required property"
+    }),
+    ('data/person-statement/invalid/person-statement-no-publication-details.json', {
+        "'publicationDetails' is a required property"
+    }),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', {
         "'too-short-so-fail' is too short"
     }),
     ('data/person-statement/invalid/person-statement-with-bad-date.json', {
         "'Tuesday' is not a 'date'",
+    }),
+    ('data/person-statement/invalid/person-statement-no-bods-version.json', {
+        "'bodsVersion' is a required property",
+    }),
+    ('data/person-statement/invalid/person-statement-no-publication-date.json', {
+        "'publicationDate' is a required property",
+    }),
+    ('data/person-statement/invalid/person-statement-no-publisher-sub-prop.json', {
+        "OrderedDict([('nameTypo', 'CHRINON LTD')]) is not valid under any of the given schemas",
+    }),
+    ('data/person-statement/invalid/person-statement-no-publisher.json', {
+        "'publisher' is a required property",
+    }),
+    ('data/person-statement/invalid/person-statement-with-bad-bods-version.json', {
+        "'1' does not match '^(\\\\d+\\\\.)(\\\\d+)$'",
+    }),
+    ('data/person-statement/invalid/person-statement-with-bad-licence-url.json', {
+        "'exampledotcom' is not a 'uri'",
+    }),
+    ('data/person-statement/invalid/person-statement-with-bad-publication-date.json', {
+        "'2017/11/18' is not a 'date'",
+    }),
+    ('data/person-statement/invalid/person-statement-with-bad-publisher-url.json', {
+        "'CHRINON LTD' is not a 'uri'",
     }),
     ('data/entity-statement/invalid/entity-statement-invalid-date-in-source.json', {
         "'2018-11-14' is not a 'date-time'",

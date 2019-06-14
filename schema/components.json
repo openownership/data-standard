@@ -39,7 +39,8 @@
         "url": {
           "title": "Source URL",
           "description": "If this information was fetched from an external URL, or a machine or human readable web page is available that provides additional information on how this statement was sourced, provide the URL.",
-          "type": "string"
+          "type": "string",
+          "format": "uri"
         },
         "retrievedAt": {
           "title": "Retrieved at",
@@ -99,12 +100,12 @@
         },
         "scheme": {
           "title": "Scheme",
-          "description": "For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD.",
+          "description": "For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
           "type": "string"
         },
         "schemeName": {
           "title": "Scheme name",
-          "description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided.",
+          "description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
           "type": "string"
         },
         "uri": {
@@ -162,7 +163,7 @@
         },
         "address": {
           "title": "Address",
-          "description": "The address, with each line or component of the address separated by a line-break or comma. This field may also include the postal code. ",
+          "description": "The address, with each line or component of the address separated by a line-break or comma. Where postal codes are isolated fields in source systems, this `address` field SHOULD NOT include the postal code.",
           "type": "string"
         },
         "postCode": {
@@ -272,7 +273,7 @@
         },
         "share": {
           "title": "Percentage share",
-          "description": "Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls.",
+          "description": "Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls. By default the minimum is inclusive and the maximum exclusive (minimum-value ≤ share < maximum-value ). If you wish to change these defaults, use the exclusiveMinimum and exclusiveMaximum properties.",
           "type": "object",
           "properties": {
             "exact": {
@@ -370,7 +371,7 @@
             "transformation"
           ],
           "codelist": "annotationMotivation.csv",
-          "openCodelist": true
+          "openCodelist": false
         },
         "description": {
           "title": "Description",
@@ -400,14 +401,14 @@
           },
           "required": [
             "statementPointerTarget",
-            "motivation"
+            "motivation",
+            "url"
           ]
         },
         {
           "properties": {
             "motivation": {
               "enum": [
-                "linking",
                 "identifying",
                 "commenting",
                 "correcting",
@@ -498,6 +499,71 @@
           "$ref": "components.json#/definitions/Source"
         }
       }
+    },
+    "PublicationDetails": {
+      "title": "Publication Details",
+      "description": "Information concerning the publication of this statement.",
+      "type": "object",
+      "properties": {
+        "publicationDate": {
+          "title": "Publication date",
+          "description": "The date on which this statement was published.",
+          "type": "string",
+          "format": "date"
+        },
+        "bodsVersion": {
+          "title": "BODS version",
+          "description": "The version of the Beneficial Ownership Data Standard to which this statement conforms, expressed as major.minor. For example: 0.2 or 1.0.",
+          "type": "string",
+          "pattern": "^(\\d+\\.)(\\d+)$"
+        },
+        "license": {
+          "title": "License URL",
+          "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or [Open Definition Conformant](http://opendefinition.org/licenses/) license.",
+          "type": "string",
+          "format": "uri" 
+        },
+        "publisher": {
+          "title": "Publisher",
+          "description": "Details of the organisation or individual publishing this statement.",
+          "$ref": "components.json#/definitions/Publisher"
+        }
+      },
+      "required": [
+        "publicationDate",
+        "bodsVersion",
+        "publisher"
+      ]
+    },
+    "Publisher": {
+      "type": "object",
+      "title": "Publisher",
+      "description": "Details of the organisation or individual publishing a statement.",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "The name of the publisher",
+          "type": "string"
+        },
+        "url": {
+          "title": "URL",
+          "description": "The URL of the parent dataset or of the publisher's website homepage",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "name"
+          ]
+        },
+        {
+          "required": [
+            "url"
+          ]
+        }      
+       ]
     }
   }
 }

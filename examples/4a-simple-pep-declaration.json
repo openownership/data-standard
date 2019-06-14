@@ -9,17 +9,34 @@
                 "scheme": "GB-COH",
                 "id": "XE-000079054"
             }
-        ]
+        ],
+        "publicationDetails": {
+            "publicationDate": "2019-06-07",
+            "bodsVersion": "0.2",
+            "license": "https://example.com/document/ei-open-data-policy-2015",
+            "publisher": {
+                "name": "ETI International"
+            }
+        }
     },
     {
         "statementID": "a40f766e-0c33-4e34-b9d4-80e39aa99496",
         "statementType": "personStatement",
+        "personType": "knownPerson",
         "names": [
             {
                 "fullName": "Michael Hubbard"
             }
         ],
-        "hasPepStatus": true
+        "hasPepStatus": true,
+        "publicationDetails": {
+            "publicationDate": "2019-06-07",
+            "bodsVersion": "0.2",
+            "license": "https://example.com/document/ei-open-data-policy-2015",
+            "publisher": {
+                "name": "ETI International"
+            }
+        }
     },
     {
         "statementID": "ef7e0d77-1e2b-44c0-a91c-7670db09d2a4",
@@ -51,6 +68,14 @@
                 "startDate": "2016-07-07",
                 "beneficialOwnershipOrControl": true
             }
-        ]
+        ],
+        "publicationDetails": {
+            "publicationDate": "2019-06-07",
+            "bodsVersion": "0.2",
+            "license": "https://example.com/document/ei-open-data-policy-2015",
+            "publisher": {
+                "name": "ETI International"
+            }
+        }
     }
 ]
