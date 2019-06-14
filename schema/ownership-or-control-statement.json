@@ -106,8 +106,8 @@
                 "interested-party-has-not-provided-information",
                 "subject-exempt-from-disclosure",
                 "interested-party-exempt-from-disclosure",
-                "information-unknown-to-publisher",
-                "unknown"
+                "unknown",
+                "information-unknown-to-publisher"
               ],
               "codelist": "unspecifiedReason.csv",
               "openCodelist": false
