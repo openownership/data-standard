@@ -42,6 +42,7 @@ If you would like to be involved in the development and review of the Standard, 
    governance
    credits
    support
+   privacy-notice
    
 
 ```
