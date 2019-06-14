@@ -44,7 +44,9 @@ def test_valid_statement_json(json_path):
     '../examples/3-joint-ownership.json',
     '../examples/4a-simple-pep-declaration.json',
     '../examples/4b-full-pep-declaration.json',
-    '../examples/os-01-dr-01.json'
+    '../examples/os-01-dr-01.json',
+    '../examples/missing-data/os-01-dr-02-dc-05.json',
+    '../examples/missing-data/os-17-dr-02-dc-06.json'
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:

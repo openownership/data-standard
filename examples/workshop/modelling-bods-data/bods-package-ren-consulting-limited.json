@@ -23,6 +23,7 @@
     "statementID": "5eb1e15c-fd25-40c7-8a75-246c79654185",
     "statementDate": "2017-12-01",
     "statementType": "personStatement",
+    "personType": "knownPerson",
     "names": [
       {
         "fullName": "Natalie Coleman"

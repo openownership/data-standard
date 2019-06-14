@@ -76,7 +76,9 @@
         "beneficialOwnershipOrControl":true,
         "startDate": "2016-04-06",
         "share": {
-          "exact": 100
+          "exact": 100,
+          "minimum": 100,
+          "maximum": 100
         }
       }
     ],

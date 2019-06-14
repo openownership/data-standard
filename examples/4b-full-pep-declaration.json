@@ -23,6 +23,7 @@
     {
         "statementID": "a5680770-899f-4f7a-b795-e266f1ce8668",
         "statementType": "personStatement",
+        "personType": "knownPerson",
         "statementDate": "2019-03-18",
         "names": [
             {

@@ -38,10 +38,36 @@
       "openCodelist": false,
       "propertyOrder": 4
     },
-    "missingInfoReason": {
-      "title": "Missing information reason(s)",
-      "description": "For EntityStatements with the type 'anonymousEntity' or 'unknownEntity' this field should contain an explanation of the reason that detailed information on the entity is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification.",
-      "type": "string",
+    "unspecifiedEntityDetails": {
+      "title": "Unspecified entity details",
+      "description": "An explanation of why this entity has an `entityType` of 'anonymousEntity' or 'unknownEntity'. A `reason` MUST be specified.",
+      "type": "object",
+      "properties": {
+        "reason": {
+          "title": "Reason",
+          "description": "The reason that an entity cannot be specified. From the [unspecifiedReason codelist](#unspecifiedreason).",
+          "type": "string",
+          "enum": [
+            "no-beneficial-owners",
+            "subject-unable-to-confirm-or-identify-beneficial-owner",
+            "interested-party-has-not-provided-information",
+            "subject-exempt-from-disclosure",
+            "interested-party-exempt-from-disclosure",
+            "information-unknown-to-publisher",
+            "unknown"
+          ],
+          "codelist": "unspecifiedReason.csv",
+          "openCodelist": false
+        },
+        "description": {
+          "title": "Description",
+          "description": "Any supporting information about the absence of a specific entity. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reason"
+      ],
       "propertyOrder": 5
     },
     "name": {

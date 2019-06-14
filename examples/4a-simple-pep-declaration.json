@@ -22,6 +22,7 @@
     {
         "statementID": "a40f766e-0c33-4e34-b9d4-80e39aa99496",
         "statementType": "personStatement",
+        "personType": "knownPerson",
         "names": [
             {
                 "fullName": "Michael Hubbard"
