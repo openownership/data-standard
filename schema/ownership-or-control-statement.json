@@ -22,12 +22,12 @@
     },
     "isComponent": {
       "title": "Component of statement",
-      "description": "Is this statement a component of another statement? A `ownershipOrControlStatement` where `isComponent` is 'false' is assumed to be the primary ownership-or-control declaration and to be a complete representation of the declarable ownership relationship between the `subject` and the `interestedParty`. A statement where `isComponent` is 'true' MUST be the component of an `ownershipOrControlStatement` where `isComponent` is `false` and come before that statement in a BODS package or stream. A component statement MAY be a partial representation of ownership between two parties, representing the portion relevant to the generating statement.",
+      "description": "IDoes this Ownership-or-control Statement represent a component of a wider indirect ownership-or-control relationship? Where `componentOfStatement` is 'true': (1) the `statementID` of this secondary Ownership-or-control Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Ownership-or-control Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Ownership-or-control Statement SHOULD be considered when replacing the primary Ownership-or-control Statement, and (4) the primary Ownership-or-control Statement MUST have a `componentOfStatement` value of 'false'. Where `componentOfStatement` is 'false', this Ownership-or-control Statement is the primary declaration of the relationship between the `subject` and the `interestedParty`.",
       "type": "boolean"
     },
     "componentStatementIDs": {
       "title": "Component statement IDs",
-      "description": "The identifiers of all statements that are components of this statement.",
+      "description": "The identifiers of all component statements that provide detail about the indirect relationship between this Statement's `subject` and `interestedParty`. If this Ownership-or-control Statement has components, it MUST itself have a `componentOfStatement` value of 'false'.",
       "type": "array",
       "items": {
         "$ref": "components.json#/definitions/ID"

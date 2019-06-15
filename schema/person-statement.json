@@ -27,7 +27,7 @@
     },
     "isComponent": {
       "title": "Component of statement",
-      "description": "Is this statement a component of another statement? A `personStatement` where `isComponent` is `true` MUST be the component of an `ownershipOrControlStatement` where `isComponent` is `false` and come before that statement in a BODS package or stream. A personStatement where `isComponent` is 'true' is assumed to contain information that exists only within the context of the associated `ownershipOrControlStatement`(s) (for example, a nominee owner listed by a declaring entity). An `personStatement` where `isComponent` is 'false' is assumed to have an update process independent of the process through which any particular `ownershipOrControlStatement` is generated (for example, a natural person listed in an published shareholder's register with a clear update policy).",
+      "description": "Does this Person Statement represent a component of an indirect ownership-or-control relationship? Where `componentOfStatement` is 'true': (1) the `statementID` of this Person Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Person Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Person Statement SHOULD be considered when replacing the primary Ownership-or-control Statement. The primary Ownership-or-control Statement MUST have a `componentOfStatement` value of 'false'.",
       "type": "boolean"
     },
     "personType": {

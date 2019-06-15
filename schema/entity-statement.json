@@ -25,7 +25,7 @@
     },
     "isComponent": {
       "title": "Component of statement",
-      "description": "Is this statement a component of another statement? An `entityStatement` where `isComponent` is `true` MUST be the component of an `ownershipOrControlStatement` where `isComponent` is `false` and come before that statement in a BODS package or stream. An entityStatement where `isComponent` is 'true' is assumed to contain information that exists only within the context of the associated `ownershipOrControlStatement`(s) (for example, an intermediate entity listed by a declaring entity). An `entityStatement` where `isComponent` is 'false' is assumed to have an update process independent of the process through which any particular `ownershipOrControlStatement` is generated (for example, an entry on a company register).",
+      "description": "Does this Entity Statement represent a component of an indirect ownership-or-control relationship? Where `componentOfStatement` is 'true': (1) the `statementID` of this Entity Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Entity Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Entity Statement SHOULD be considered when replacing the primary Ownership-or-control Statement. The primary Ownership-or-control Statement MUST have a `componentOfStatement` value of 'false'.",
       "type": "boolean"
     },
     "entityType": {
