@@ -152,11 +152,11 @@
           "type": "string",
           "enum": [
             "placeOfBirth",
-            "home",
             "residence",
             "registered",
             "service",
-            "alternative"
+            "alternative",
+            "business"
           ],
           "codelist": "addressType.csv",
           "openCodelist": false
@@ -192,10 +192,9 @@
           "enum": [
             "individual",
             "translation",
+            "transliteration",
             "former",
-            "alias",
-            "aka",
-            "nick",
+            "alternative",
             "birth"
           ],
           "codelist": "nameType.csv",
@@ -236,15 +235,17 @@
             "shareholding",
             "voting-rights",
             "appointment-of-board",
-            "influence-or-control",
+            "other-influence-or-control",
             "senior-managing-official",
             "settlor-of-trust",
             "trustee-of-trust",
             "protector-of-trust",
             "beneficiary-of-trust",
             "other-influence-or-control-of-trust",
-            "rights-to-surplus-assets",
-            "rights-to-profit-or-income"
+            "rights-to-surplus-assets-on-dissolution",
+            "rights-to-profit-or-income",
+            "rights-granted-by-contract",
+            "conditional-rights-granted-by-contract"
           ],
           "codelist": "interestType.csv",
           "openCodelist": false
@@ -521,7 +522,7 @@
           "title": "License URL",
           "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or [Open Definition Conformant](http://opendefinition.org/licenses/) license.",
           "type": "string",
-          "format": "uri" 
+          "format": "uri"
         },
         "publisher": {
           "title": "Publisher",
@@ -562,7 +563,7 @@
           "required": [
             "url"
           ]
-        }      
+        }
        ]
     }
   }
