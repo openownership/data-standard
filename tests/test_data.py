@@ -48,11 +48,11 @@ def test_valid_statement_json(json_path):
     '../examples/indirect-ownership/os-03-dr-04.json',
     '../examples/indirect-ownership/os-06-dr-03.json',
     '../examples/indirect-ownership/os-06-dr-04.json',
-    # '../examples/indirect-ownership/os-07-dr-04-company-a.json',
-    # '../examples/indirect-ownership/os-07-dr-04-company-b.json',
-    # '../examples/indirect-ownership/os-07-dr-04-company-c.json',
-    # '../examples/indirect-ownership/os-07-dr-04-company-d.json',
-    # '../examples/indirect-ownership/os-08-dr-04-company-a.json'
+    '../examples/indirect-ownership/os-07-dr-04-company-a.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-b.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-c.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-d.json',
+    '../examples/indirect-ownership/os-08-dr-04-company-a.json',
     '../examples/os-01-dr-01.json',
     '../examples/missing-data/os-01-dr-02-dc-05.json',
     '../examples/missing-data/os-17-dr-02-dc-06.json'

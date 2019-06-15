@@ -3,7 +3,7 @@
     "statementID": "1d189f87-7b91-4a1d-a5a7-bbfb9aae89c1",
     "statementType": "entityStatement",
     "statementDate": "2019-05-16",
-    "componentOfStatement": false,
+    "isComponent": false,
     "entityType": "registeredEntity",
     "name": "Company A",
     "identifiers": [
@@ -11,13 +11,20 @@
         "scheme": "UA-EDR",
         "id": "UA-XE-01"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
   },
   {
     "statementID": "93ec439e-70e9-4f3c-a018-bc0878bd6ec8",
     "statementType": "personStatement",
     "statementDate": "2018-12-17",
-    "componentOfStatement": false,
+    "isComponent": false,
     "personType": "knownPerson",
     "names": [
       {
@@ -31,13 +38,20 @@
         "code": "UA"
       }
     ],
-    "birthDate": "1965-10"
+    "birthDate": "1965-10",
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
   },
   {
     "statementID": "79b88c98-3b58-4e4c-9128-2fd2c7b37ebd",
     "statementType": "entityStatement",
     "statementDate": "2019-05-16",
-    "componentOfStatement": true,
+    "isComponent": true,
     "entityType": "registeredEntity",
     "name": "Company B",
     "identifiers": [
@@ -45,13 +59,20 @@
         "scheme": "UA-EDR",
         "id": "UA-XE-02"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
   },
   {
     "statementID": "729f407b-7833-4c05-be53-1d00893f1b2b",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
-    "componentOfStatement": true,
+    "isComponent": true,
     "subject": {
       "describedByEntityStatement": "1d189f87-7b91-4a1d-a5a7-bbfb9aae89c1"
     },
@@ -70,13 +91,20 @@
         },
         "startDate": "2017-11-01"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
   },
   {
     "statementID": "6102cc5e-cc49-4dd1-ae25-dc3ca8eb7969",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
-    "componentOfStatement": true,
+    "isComponent": true,
     "subject": {
       "describedByEntityStatement": "79b88c98-3b58-4e4c-9128-2fd2c7b37ebd"
     },
@@ -98,13 +126,21 @@
           "name": "Company B"
         }
       ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
     }
   },
   {
     "statementID": "0713bc04-13a5-49d0-aefe-0c6cc35f7d3b",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2018-12-17",
-    "comonentStatementIDs": [
+    "componentStatementIDs": [
       "79b88c98-3b58-4e4c-9128-2fd2c7b37ebd",
       "729f407b-7833-4c05-be53-1d00893f1b2b",
       "6102cc5e-cc49-4dd1-ae25-dc3ca8eb7969"
@@ -134,6 +170,13 @@
           "name": "Company A"
         }
       ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
     }
   }
 ]
