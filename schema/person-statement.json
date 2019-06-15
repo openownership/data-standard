@@ -188,6 +188,7 @@
     "statementID",
     "statementType",
     "personType",
+    "isComponent",
     "publicationDetails"
   ]
 }

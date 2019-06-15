@@ -3,6 +3,7 @@
         "statementID": "41fd9f6c-ad31-4209-9ed8-1ec46cb0cae5",
         "statementType": "entityStatement",
         "entityType": "registeredEntity",
+        "isComponent": false,
         "name": "Platinum Emerald and Plutonim Mining Limited",
         "identifiers": [
             {
@@ -22,6 +23,7 @@
     {
         "statementID": "a40f766e-0c33-4e34-b9d4-80e39aa99496",
         "statementType": "personStatement",
+        "isComponent": false,
         "personType": "knownPerson",
         "names": [
             {
@@ -41,6 +43,7 @@
     {
         "statementID": "ef7e0d77-1e2b-44c0-a91c-7670db09d2a4",
         "statementType": "ownershipOrControlStatement",
+        "isComponent": false,
         "subject": {
             "describedByEntityStatement": "41fd9f6c-ad31-4209-9ed8-1ec46cb0cae5"
         },
