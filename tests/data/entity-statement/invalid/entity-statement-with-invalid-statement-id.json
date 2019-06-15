@@ -1,6 +1,7 @@
 {
   "statementID": "too-short-so-fail",
   "statementType": "entityStatement",
+  "isComponent": false,
   "entityType": "registeredEntity",
   "statementDate": "2017-11-18",
   "name": "CHRINON LTD",

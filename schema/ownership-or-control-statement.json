@@ -84,6 +84,7 @@
   "required": [
     "statementID",
     "statementType",
+    "isComponent",
     "subject",
     "interestedParty",
     "publicationDetails"

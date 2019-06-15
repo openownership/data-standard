@@ -2,6 +2,7 @@
   "statementID": "4dc0d9ba-ab30-42e2-b4c5-b895bacc59f5",
   "statementType": "entityStatement",
   "entityType": "registeredEntity",
+  "isComponent": false,
   "name": "RENCO Holding Company",
   "identifiers": [
     {

@@ -166,6 +166,7 @@
   "required": [
     "statementID",
     "statementType",
+    "isComponent",
     "entityType",
     "publicationDetails"
   ]
