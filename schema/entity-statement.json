@@ -23,9 +23,9 @@
       "$ref": "components.json#/definitions/StatementDate",
       "propertyOrder": 3
     },
-    "componentOfStatement": {
+    "isComponent": {
       "title": "Component of statement",
-      "description": "Is this statement a component of another statement? An `entityStatement` where `componentOfStatement` is `true` MUST be the component of an `ownershipOrControlStatement` where `componentOfStatement` is `false` and come before that statement in a BODS package or stream. An entityStatement where `componentOfStatement` is 'true' is assumed to contain information that exists only within the context of the associated `ownershipOrControlStatement`(s) (for example, an intermediate entity listed by a declaring entity). An `entityStatement` where `componentOfStatement` is 'false' is assumed to have an update process independent of the process through which any particular `ownershipOrControlStatement` is generated (for example, an entry on a company register).",
+      "description": "Is this statement a component of another statement? An `entityStatement` where `isComponent` is `true` MUST be the component of an `ownershipOrControlStatement` where `isComponent` is `false` and come before that statement in a BODS package or stream. An entityStatement where `isComponent` is 'true' is assumed to contain information that exists only within the context of the associated `ownershipOrControlStatement`(s) (for example, an intermediate entity listed by a declaring entity). An `entityStatement` where `isComponent` is 'false' is assumed to have an update process independent of the process through which any particular `ownershipOrControlStatement` is generated (for example, an entry on a company register).",
       "type": "boolean"
     },
     "entityType": {

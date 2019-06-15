@@ -20,9 +20,9 @@
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate"
     },
-    "componentOfStatement": {
+    "isComponent": {
       "title": "Component of statement",
-      "description": "Is this statement a component of another statement? A `ownershipOrControlStatement` where `componentOfStatement` is 'false' is assumed to be the primary ownership-or-control declaration and to be a complete representation of the declarable ownership relationship between the `subject` and the `interestedParty`. A statement where `componentOfStatement` is 'true' MUST be the component of an `ownershipOrControlStatement` where `componentOfStatement` is `false` and come before that statement in a BODS package or stream. A component statement MAY be a partial representation of ownership between two parties, representing the portion relevant to the generating statement.",
+      "description": "Is this statement a component of another statement? A `ownershipOrControlStatement` where `isComponent` is 'false' is assumed to be the primary ownership-or-control declaration and to be a complete representation of the declarable ownership relationship between the `subject` and the `interestedParty`. A statement where `isComponent` is 'true' MUST be the component of an `ownershipOrControlStatement` where `isComponent` is `false` and come before that statement in a BODS package or stream. A component statement MAY be a partial representation of ownership between two parties, representing the portion relevant to the generating statement.",
       "type": "boolean"
     },
     "componentStatementIDs": {

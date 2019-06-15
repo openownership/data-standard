@@ -10,7 +10,7 @@
     "statementID": "f6889b75-d0f9-4f33-947f-e4ef0213300c",
     "statementType": "entityStatement",
     "statementDate": "2018-12-17",
-    "componentOfStatement": false,
+    "isComponent": false,
     "entityType": "registeredEntity",
     "name": "Company A",
     "identifiers": [
@@ -31,7 +31,7 @@
     "statementID": "59436a9e-a618-47b3-9693-d565051f6914",
     "statementType": "entityStatement",
     "statementDate": "2018-12-17",
-    "componentOfStatement": true,
+    "isComponent": true,
     "entityType": "registeredEntity",
     "name": "Company B",
     "identifiers": [
@@ -52,7 +52,7 @@
     "statementID": "85fb08b6-5c57-4b9d-9e9c-2f6d80b30082",
     "statementType": "personStatement",
     "statementDate": "2018-12-17",
-    "componentOfStatement": false,
+    "isComponent": false,
     "personType": "knownPerson",
     "names": [
       {
@@ -79,7 +79,7 @@
     "statementID": "426b7dc8-8b7a-4d50-93de-8e200a4aedf5",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
-    "componentOfStatement": true,
+    "isComponent": true,
     "subject": {
       "describedByEntityStatement": "f6889b75-d0f9-4f33-947f-e4ef0213300c"
     },
@@ -111,7 +111,7 @@
     "statementID": "24e604f2-790f-4600-8ff2-7fd8e46f047e",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
-    "componentOfStatement": true,
+    "isComponent": true,
     "subject": {
       "describedByEntityStatement": "59436a9e-a618-47b3-9693-d565051f6914"
     },
@@ -143,7 +143,7 @@
     "statementID": "e3b45ef5-45d1-487f-9913-c7c99e910221",
     "statementType": "ownershipOrControlStatement",
     "statementDate": "2018-12-17",
-    "componentOfStatement": false,
+    "isComponent": false,
     "componentStatementIDs": [
       "59436a9e-a618-47b3-9693-d565051f6914",
       "426b7dc8-8b7a-4d50-93de-8e200a4aedf5",
