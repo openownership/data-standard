@@ -16,7 +16,7 @@ The Standard is being developed under the guidance of a [working group](governan
 ```eval_rst
 
 .. figure:: ../_assets/timeline.png
-   :alt: Timeline of standard development. End of 2016: rapid prototype. 2017, Q2: release of BODS Beta-1. 2017, Q3: initital pilots. 2018, Q3: release of BODS Beta-2. 2019: release of BODS v1.0.
+   :alt: Timeline of standard development. 2018, Q4: release of BODS v0.1. 2019, Q2: release of BODS v0.2, Q4: release of BODS v0.3. 2020, Q1: release of BODS v1.0.
 
 ```
 This is v0.2 of the Beneficial Ownership Data Standard. The data model has been updated and additional codelist information added since v0.1.
@@ -55,7 +55,7 @@ The specification and documentation have been developed by [Open Data Services C
 
 <h2>License and contributor agreement</h2>
 
-Schema contents of the Open Ownership Register are Copyright 2016 World Wide Web Foundation on behalf of the Open Ownership Register Steering Group.
+Schema contents of the OpenOwnership Register are Copyright 2016 World Wide Web Foundation on behalf of the OpenOwnership Steering Group.
 
 The schema is licensed under the Apache License, Version 2.0.
 
@@ -63,4 +63,4 @@ Contributors are required to accept the [contributor agreement](https://github.c
 
 <h2>Contact</h2>
 
-For more details about OpenOwnership, please contact its coordinator, [Zosia Sztykowski](mailto:zosia@openownership.org)
+For more details about OpenOwnership, please email [support@openownership.org](mailto:support@openownership.org).
