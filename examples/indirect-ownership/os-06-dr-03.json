@@ -1,0 +1,267 @@
+[
+  {
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    },
+    "statementID": "64a89f27-3ced-4610-aaa4-9441f7b1b895",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-17",
+    "isComponent": false,
+    "entityType": "registeredEntity",
+    "name": "Company A",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "XE1111"
+      }
+    ]
+  },
+  {
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    },
+    "statementID": "91f13c05-ee70-4c6a-8749-41955d5b418a",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-17",
+    "isComponent": true,
+    "entityType": "registeredEntity",
+    "name": "Company B",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "XE2222"
+      }
+    ]
+  },
+  {
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    },
+    "statementID": "c211c40b-6103-4bd7-86b7-527fd5829931",
+    "statementType": "entityStatement",
+    "statementDate": "2018-12-17",
+    "isComponent": true,
+    "entityType": "registeredEntity",
+    "name": "Company C",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "XE3333"
+      }
+    ]
+  },
+  {
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    },
+    "statementID": "d1601b39-f1e6-4a22-b9eb-72983d7e370e",
+    "statementType": "personStatement",
+    "statementDate": "2018-12-17",
+    "isComponent": false,
+    "personType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Person 1"
+      }
+    ],
+    "nationalities": [
+      {
+        "name": "British",
+        "code": "GB"
+      }
+    ],
+    "birthDate": "1975-11"
+  },
+  {
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    },
+    "statementID": "25999409-ccf1-42ea-8e68-8a0b814b3604",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "isComponent": true,
+    "subject": {
+      "describedByEntityStatement": "64a89f27-3ced-4610-aaa4-9441f7b1b895"
+    },
+    "interestedParty": {
+      "describedByEntityStatement": "91f13c05-ee70-4c6a-8749-41955d5b418a"
+    },
+    "interests": [
+      {
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": false
+      }
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ]
+    }
+  },
+  {
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    },
+    "statementID": "ee43cc3c-3e95-4859-a8e7-523a447f7c8c",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "isComponent": true,
+    "subject": {
+      "describedByEntityStatement": "64a89f27-3ced-4610-aaa4-9441f7b1b895"
+    },
+    "interestedParty": {
+      "describedByEntityStatement": "c211c40b-6103-4bd7-86b7-527fd5829931"
+    },
+    "interests": [
+      {
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": false
+      }
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ]
+    }
+  },
+  {
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    },
+    "statementID": "77240aa3-4072-4b66-8515-986530339512",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "isComponent": true,
+    "subject": {
+      "describedByEntityStatement": "91f13c05-ee70-4c6a-8749-41955d5b418a"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "d1601b39-f1e6-4a22-b9eb-72983d7e370e"
+    },
+    "interests": [
+      {
+        "interestLevel": "unknown",
+        "beneficialOwnershipOrControl": true
+      }
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ]
+    }
+  },
+  {
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    },
+    "statementID": "8394383d-e2d2-4300-8bb8-5613059bf5a9",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "isComponent": true,
+    "subject": {
+      "describedByEntityStatement": "c211c40b-6103-4bd7-86b7-527fd5829931"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "d1601b39-f1e6-4a22-b9eb-72983d7e370e"
+    },
+    "interests": [
+      {
+        "interestLevel": "unknown",
+        "beneficialOwnershipOrControl": true
+      }
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ]
+    }
+  },
+  {
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    },
+    "statementID": "415a01cc-d43a-45f9-b665-75741f571fa1",
+    "statementType": "ownershipOrControlStatement",
+    "statementDate": "2018-12-17",
+    "isComponent": false,
+    "componentStatementIDs": [
+      "8394383d-e2d2-4300-8bb8-5613059bf5a9",
+      "77240aa3-4072-4b66-8515-986530339512",
+      "ee43cc3c-3e95-4859-a8e7-523a447f7c8c",
+      "25999409-ccf1-42ea-8e68-8a0b814b3604",
+      "c211c40b-6103-4bd7-86b7-527fd5829931",
+      "91f13c05-ee70-4c6a-8749-41955d5b418a"
+    ],
+    "subject": {
+      "describedByEntityStatement": "64a89f27-3ced-4610-aaa4-9441f7b1b895"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "d1601b39-f1e6-4a22-b9eb-72983d7e370e"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "indirect",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 60,
+          "minimum": 60,
+          "maximum": 60
+        },
+        "startDate": "2017-11-01"
+      }
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ]
+    }
+  }
+]

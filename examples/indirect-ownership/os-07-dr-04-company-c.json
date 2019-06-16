@@ -1,0 +1,89 @@
+[
+  {
+    "statementID": "d83c1cbf-7938-40a0-a827-ab84b5cdf754",
+    "statementType": "entityStatement",
+    "isComponent": false,
+    "statementDate": "2019-05-16",
+    "entityType": "registeredEntity",
+    "name": "Company C",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "GB-XE-03"
+      }
+    ],
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
+  },
+  {
+    "statementID": "1e23b926-2c30-4354-8249-d007308cd193",
+    "statementType": "personStatement",
+    "isComponent": false,
+    "statementDate": "2018-12-17",
+    "personType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Person 1"
+      }
+    ],
+    "nationalities": [
+      {
+        "name": "Ukrainian",
+        "code": "UA"
+      }
+    ],
+    "birthDate": "1965-10",
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
+  },
+  {
+    "statementID": "6c527d2a-a949-4bdc-b276-2528065f1323",
+    "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "d83c1cbf-7938-40a0-a827-ab84b5cdf754"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "1e23b926-2c30-4354-8249-d007308cd193"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 100,
+          "maximum": 100,
+          "minimum": 100
+        },
+        "startDate": "2017-11-01"
+      }
+    ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company C"
+        }
+      ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
+  }
+]

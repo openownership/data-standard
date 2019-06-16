@@ -1,6 +1,7 @@
 {
   "statementID": "too-short-so-fail",
   "statementType": "entityStatement",
+  "isComponent": false,
   "entityType": "registeredEntity",
   "statementDate": "2017-11-18",
   "name": "CHRINON LTD",
@@ -10,5 +11,12 @@
       "scheme": "GB-COH",
       "id": "07444723"
     }
-  ]
+  ],
+  "publicationDetails": {
+    "publicationDate": "2017-11-18",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "CHRINON LTD"
+    }
+  }
 }

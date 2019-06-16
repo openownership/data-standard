@@ -4,6 +4,7 @@
     "statementType": "entityStatement",
     "statementDate": "2017-06-30",
     "entityType": "registeredEntity",
+    "isComponent": false,
     "name": "JENEX LIMITED",
     "foundingDate": "1996-06-10",
     "identifiers": [
@@ -11,11 +12,19 @@
         "scheme": "GB-COH",
         "id": "03209885"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2018-03-30",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "JENEX LIMITED"
+      }
+    }
   },
   {
     "statementID": "85e7cbb2-992d-4bd2-a2f7-1274b1137f6d",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2016-06-30",
     "subject": {
       "describedByEntityStatement": "ba2fcf1e-04d2-40ef-8508-d633404b43aa"
@@ -32,6 +41,13 @@
           "maximum": 100
         }
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2018-03-30",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "JENEX LIMITED"
+      }
+    }
   }
 ]

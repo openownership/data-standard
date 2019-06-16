@@ -1,6 +1,7 @@
 {
   "statementID": "323591c5-2093-4716-8494-c5573c7452e6",
   "statementType": "entityStatement",
+  "isComponent": false,
   "statementDate": "2018-11-14",
   "entityType": "registeredEntity",
   "name": "OPEN DATA SERVICES CO-OPERATIVE LIMITED",
@@ -24,5 +25,12 @@
       }
     ],
     "retrievedAt": "2018-11-14"
+  },
+  "publicationDetails": {
+    "publicationDate": "2018-12-24",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "A. Researcher"
+    }
   }
 }

@@ -44,7 +44,18 @@ def test_valid_statement_json(json_path):
     '../examples/3-joint-ownership.json',
     '../examples/4a-simple-pep-declaration.json',
     '../examples/4b-full-pep-declaration.json',
-    '../examples/os-01-dr-01.json'
+    '../examples/indirect-ownership/os-03-dr-03.json',
+    '../examples/indirect-ownership/os-03-dr-04.json',
+    '../examples/indirect-ownership/os-06-dr-03.json',
+    '../examples/indirect-ownership/os-06-dr-04.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-a.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-b.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-c.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-d.json',
+    '../examples/indirect-ownership/os-08-dr-04-company-a.json',
+    '../examples/os-01-dr-01.json',
+    '../examples/missing-data/os-01-dr-02-dc-05.json',
+    '../examples/missing-data/os-17-dr-02-dc-06.json'
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
@@ -66,10 +77,22 @@ def test_valid_package_json(json_path):
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id-no-entity-type.json', ValidationError),
     ('data/entity-statement/invalid/entity-statement-extra-field.json', ValidationError),
     ('data/entity-statement/invalid/entity-statement-invalid-date-in-source.json', ValidationError),
+    ('data/entity-statement/invalid/entity-statement-no-publication-details.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', ValidationError),
     ('data/person-statement/invalid/person-statement-with-bad-date.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-no-publication-details.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-no-bods-version.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-no-publication-date.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-no-publisher-sub-prop.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-no-publisher.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-with-bad-bods-version.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-with-bad-licence-url.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-with-bad-publication-date.json', ValidationError),
+    ('data/person-statement/invalid/person-statement-with-bad-publisher-url.json', ValidationError),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json', ValidationError),
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-publication-details.json', ValidationError),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-statement-type.json', MissingStatementTypeError),
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-url-linking-annotation.json', ValidationError),
 ])
 def test_invalid_statement_json(json_path, error):
     with open(os.path.join(this_dir, json_path)) as f:
@@ -83,7 +106,7 @@ def test_invalid_statement_json(json_path, error):
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/entity-statement/valid/valid-entity-statement-loose-validation.json',
         'data/person-statement/valid/valid-person-statement.json',
-        'data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json',
+        'data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json'
     ], ValidationError),
     (None, [
         'data/entity-statement/valid/valid-entity-statement.json',
@@ -131,11 +154,44 @@ def test_invalid_package_json(json_path, json_paths, error):
         "'too-short-so-fail' is too short",
         "'entityType' is a required property",
     }),
+    ('data/entity-statement/invalid/entity-statement-no-publication-details.json', {
+        "'publicationDetails' is a required property"
+    }),
+    ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-publication-details.json', {
+        "'publicationDetails' is a required property"
+    }),
+    ('data/person-statement/invalid/person-statement-no-publication-details.json', {
+        "'publicationDetails' is a required property"
+    }),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', {
         "'too-short-so-fail' is too short"
     }),
     ('data/person-statement/invalid/person-statement-with-bad-date.json', {
         "'Tuesday' is not a 'date'",
+    }),
+    ('data/person-statement/invalid/person-statement-no-bods-version.json', {
+        "'bodsVersion' is a required property",
+    }),
+    ('data/person-statement/invalid/person-statement-no-publication-date.json', {
+        "'publicationDate' is a required property",
+    }),
+    ('data/person-statement/invalid/person-statement-no-publisher-sub-prop.json', {
+        "OrderedDict([('nameTypo', 'CHRINON LTD')]) is not valid under any of the given schemas",
+    }),
+    ('data/person-statement/invalid/person-statement-no-publisher.json', {
+        "'publisher' is a required property",
+    }),
+    ('data/person-statement/invalid/person-statement-with-bad-bods-version.json', {
+        "'1' does not match '^(\\\\d+\\\\.)(\\\\d+)$'",
+    }),
+    ('data/person-statement/invalid/person-statement-with-bad-licence-url.json', {
+        "'exampledotcom' is not a 'uri'",
+    }),
+    ('data/person-statement/invalid/person-statement-with-bad-publication-date.json', {
+        "'2017/11/18' is not a 'date'",
+    }),
+    ('data/person-statement/invalid/person-statement-with-bad-publisher-url.json', {
+        "'CHRINON LTD' is not a 'uri'",
     }),
     ('data/entity-statement/invalid/entity-statement-invalid-date-in-source.json', {
         "'2018-11-14' is not a 'date-time'",
@@ -185,7 +241,7 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
         }),
     ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, {
         "interestedParty/describedByPersonStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
-    })
+    }),
 ])
 def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):
     if json_path:

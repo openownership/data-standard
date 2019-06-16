@@ -1,0 +1,25 @@
+{
+  "statementID": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
+  "statementType": "entityStatement",
+  "isComponent": false,
+  "statementDate": "2017-11-18",
+  "entityType": "registeredEntity",
+  "name": "CHRINON LTD",
+  "foundingDate": "2010-11-18",
+  "identifiers": [
+    {
+      "scheme": "GB-COH",
+      "id": "07444723"
+    }
+  ],
+  "incorporatedInJurisdiction": {
+    "code": "GB"
+  },
+  "publicationDetailsTypo": {
+    "publicationDate": "2017-11-18",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "CHRINON LTD"
+    }
+  }
+}

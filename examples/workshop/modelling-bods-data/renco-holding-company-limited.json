@@ -2,11 +2,19 @@
   "statementID": "4dc0d9ba-ab30-42e2-b4c5-b895bacc59f5",
   "statementType": "entityStatement",
   "entityType": "registeredEntity",
+  "isComponent": false,
   "name": "RENCO Holding Company",
   "identifiers": [
     {
       "scheme": "XE-LO-COH",
       "id": "28367095"
     }
-  ]
+  ],
+  "publicationDetails": {
+    "publicationDate": "2017-12-01",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "XXXXXXXXX"
+    }
+  }
 }
