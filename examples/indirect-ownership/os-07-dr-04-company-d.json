@@ -1,0 +1,51 @@
+[
+  {
+    "statementID": "c95c1267-3d2c-421e-8c46-8234a7b7c29e",
+    "statementType": "entityStatement",
+    "isComponent": false,
+    "statementDate": "2019-05-16",
+    "entityType": "registeredEntity",
+    "name": "Company D",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "GB-XE-04"
+      }
+    ],
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
+  },
+  {
+    "statementID": "43bbbc24-5b3b-408a-9da8-220be3f6d54b",
+    "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "c95c1267-3d2c-421e-8c46-8234a7b7c29e"
+    },
+    "interestedParty": {
+      "unspecified": {
+        "reason": "no-beneficial-owners"
+      }
+    },
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company D"
+        }
+      ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2017-12-01",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "XXXXXXXXX"
+      }
+    }
+  }
+]

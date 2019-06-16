@@ -44,6 +44,15 @@ def test_valid_statement_json(json_path):
     '../examples/3-joint-ownership.json',
     '../examples/4a-simple-pep-declaration.json',
     '../examples/4b-full-pep-declaration.json',
+    '../examples/indirect-ownership/os-03-dr-03.json',
+    '../examples/indirect-ownership/os-03-dr-04.json',
+    '../examples/indirect-ownership/os-06-dr-03.json',
+    '../examples/indirect-ownership/os-06-dr-04.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-a.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-b.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-c.json',
+    '../examples/indirect-ownership/os-07-dr-04-company-d.json',
+    '../examples/indirect-ownership/os-08-dr-04-company-a.json',
     '../examples/os-01-dr-01.json',
     '../examples/missing-data/os-01-dr-02-dc-05.json',
     '../examples/missing-data/os-17-dr-02-dc-06.json'
@@ -97,7 +106,7 @@ def test_invalid_statement_json(json_path, error):
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/entity-statement/valid/valid-entity-statement-loose-validation.json',
         'data/person-statement/valid/valid-person-statement.json',
-        'data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json',
+        'data/ownership-or-control-statement/invalid/ownership-or-control-statement-with-invalid-statement-id.json'
     ], ValidationError),
     (None, [
         'data/entity-statement/valid/valid-entity-statement.json',
@@ -232,7 +241,7 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
         }),
     ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, {
         "interestedParty/describedByPersonStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
-    })
+    }),
 ])
 def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):
     if json_path:

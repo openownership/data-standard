@@ -1,6 +1,7 @@
   {
     "statementID": "6bf33a35-4c3a-40a9-b5d6-bc3e20b4b39a",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2018-03-29",
     "subject": {
       "describedByEntityStatement": "cc3869b3-3ddd-4585-868e-ff561a3e9709"

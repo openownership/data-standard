@@ -9,6 +9,7 @@
     },
     "statementID": "60bb3996-b434-4377-930b-39972c65b400",
     "statementType": "entityStatement",
+    "isComponent": false,
     "statementDate": "2019-05-05",
     "entityType": "registeredEntity",
     "name": "Listed Company OS-17",
@@ -36,6 +37,7 @@
     },
     "statementID": "5b7273f7-6ca1-40f3-9146-646ce0f8b03e",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2019-05-10",
     "subject": {
       "describedByEntityStatement": "60bb3996-b434-4377-930b-39972c65b400"
