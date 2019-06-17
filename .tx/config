@@ -7,6 +7,12 @@ source_file = docs/_build/gettext/schema.pot
 source_lang = en
 type = PO
 
+[bods-v02.codelist]
+file_filter = docs/locale/<lang>/LC_MESSAGES/codelist.po
+source_file = docs/_build/gettext/codelist.pot
+source_lang = en
+type = PO
+
 [bods-v02.index]
 file_filter = docs/locale/<lang>/LC_MESSAGES/index.po
 source_file = docs/_build/gettext/index.pot
