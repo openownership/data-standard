@@ -1,6 +1,6 @@
 # About
 
-This website contains the draft specification of the Beneficial Ownership Data Standard (version 0.1) plus support for its use. The Standard provides a structured template for describing beneficial ownership as machine-readable data.
+This website contains the draft specification of the Beneficial Ownership Data Standard (version 0.2) plus support for its use. The Standard provides a structured template for describing beneficial ownership as machine-readable data.
 
 <h2>Background</h2>
 
@@ -16,12 +16,12 @@ The Standard is being developed under the guidance of a [working group](governan
 ```eval_rst
 
 .. figure:: ../_assets/timeline.png
-   :alt: Timeline of standard development. End of 2016: rapid prototype. 2017, Q2: release of BODS Beta-1. 2017, Q3: initital pilots. 2018, Q3: release of BODS Beta-2. 2019: release of BODS v1.0.
+   :alt: Timeline of standard development. 2018, Q4: release of BODS v0.1. 2019, Q2: release of BODS v0.2, Q4: release of BODS v0.3. 2020, Q1: release of BODS v1.0.
 
 ```
-This is v0.1 of the Beneficial Ownership Data Standard. The data model has been updated and additional codelist information added since Beta-1.
+This is v0.2 of the Beneficial Ownership Data Standard. The data model has been updated and additional codelist information added since v0.1.
 
-Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this v0.1 release onwards, any structural changes or major definitional changes will only take place following consultation. A clear [changelog](changelog) will be provided, and the documentation of previous versions maintained in archive form.
+Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from the v0.1 release onwards, any structural changes or major definitional changes only take place following consultation. A clear [changelog](changelog) is provided, and the documentation of previous versions is maintained in archive form.
 
 The schema contains a structure, fields and codelists but does not yet enforce validation constraints on most fields.
 
@@ -56,7 +56,7 @@ The specification and documentation have been developed by [Open Data Services C
 
 <h2>License and contributor agreement</h2>
 
-Schema contents of the Open Ownership Register are Copyright 2016 World Wide Web Foundation on behalf of the Open Ownership Register Steering Group.
+Schema contents of the OpenOwnership Register are Copyright 2016 World Wide Web Foundation on behalf of the OpenOwnership Steering Group.
 
 The schema is licensed under the Apache License, Version 2.0.
 
@@ -64,4 +64,4 @@ Contributors are required to accept the [contributor agreement](https://github.c
 
 <h2>Contact</h2>
 
-For more details about OpenOwnership, please contact its coordinator, [Zosia Sztykowski](mailto:zosia@openownership.org)
+For more details about OpenOwnership, please email [support@openownership.org](mailto:support@openownership.org).

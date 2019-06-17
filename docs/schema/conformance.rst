@@ -22,6 +22,6 @@ Publishers providing additional properties in their implementations are encourag
 Validation
 ----------
 
-No public validator for the v0.1 release is currently available.
+Validation of BODS data can be carried out using the `BODS Data Review Tool <https://datareview.openownership.org/>`_.
 
 The current schema includes minimal validation requirements, and should be treated as a guide to data structure, rather than a full validation schema. 
