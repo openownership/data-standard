@@ -7,12 +7,6 @@ source_file = docs/_build/gettext/schema.pot
 source_lang = en
 type = PO
 
-[bods-v02.codelist]
-file_filter = docs/locale/<lang>/LC_MESSAGES/codelist.po
-source_file = docs/_build/gettext/codelist.pot
-source_lang = en
-type = PO
-
 [bods-v02.index]
 file_filter = docs/locale/<lang>/LC_MESSAGES/index.po
 source_file = docs/_build/gettext/index.pot
@@ -22,12 +16,6 @@ type = PO
 [bods-v02.usecases]
 file_filter = docs/locale/<lang>/LC_MESSAGES/usecases.po
 source_file = docs/_build/gettext/usecases.pot
-source_lang = en
-type = PO
-
-[bods-v02.privacy-notice]
-file_filter = docs/locale/<lang>/LC_MESSAGES/privacy-notice.po
-source_file = docs/_build/gettext/privacy-notice.pot
 source_lang = en
 type = PO
 
@@ -94,6 +82,12 @@ type = PO
 [bods-v02.about--credits]
 file_filter = docs/locale/<lang>/LC_MESSAGES/about/credits.po
 source_file = docs/_build/gettext/about/credits.pot
+source_lang = en
+type = PO
+
+[bods-v02.about--privacy-notice]
+file_filter = docs/locale/<lang>/LC_MESSAGES/about/privacy-notice.po
+source_file = docs/_build/gettext/about/privacy-notice.pot
 source_lang = en
 type = PO
 
@@ -234,3 +228,4 @@ file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/languages.po
 source_file = docs/_build/gettext/schema/guidance/languages.pot
 source_lang = en
 type = PO
+
