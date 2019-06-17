@@ -23,6 +23,11 @@
       "$ref": "components.json#/definitions/StatementDate",
       "propertyOrder": 3
     },
+    "isComponent": {
+      "title": "Is component",
+      "description": "Does this Entity Statement represent a component of an indirect ownership-or-control relationship? Where `isComponent` is 'true': (1) the `statementID` of this Entity Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Entity Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Entity Statement SHOULD be considered when replacing the primary Ownership-or-control Statement. The primary Ownership-or-control Statement MUST have a `isComponent` value of 'false'.",
+      "type": "boolean"
+    },
     "entityType": {
       "title": "Type",
       "description": "From the [entityType codelist](#entitytype). What kind of entity is this? The 'registeredEntity' code covers any legal entity created through an act of official registration, usually resulting in an identifier being assigned to the entity. The 'legalEntity' code covers other bodies with distinct legal personality (government departments, international institutions etc.).  The 'arrangement' code covers artificial entities, described in the data model for the purpose of associating one or more natural or legal persons together in an ownership or control relationship, but without implying that the parties to this arrangement have any other form of collective legal identity.",
@@ -161,6 +166,7 @@
   "required": [
     "statementID",
     "statementType",
+    "isComponent",
     "entityType",
     "publicationDetails"
   ]

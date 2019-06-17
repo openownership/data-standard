@@ -2,6 +2,7 @@
   {
     "statementID": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
     "statementType": "entityStatement",
+    "isComponent": false,
     "statementDate": "2017-11-18",
     "entityType": "registeredEntity",
     "name": "CHRINON LTD",
@@ -34,6 +35,7 @@
   {
     "statementID": "26e786f0-54c5-497d-a52d-b83439ce3dad",
     "statementType": "entityStatement",
+    "isComponent": false,
     "statementDate": "2018-01-05",
     "entityType": "arrangement",
     "name": "Joint shareholding",
@@ -48,6 +50,7 @@
   {
     "statementID": "676ce2ec-e244-409e-85f9-9823e88bc099",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2018-01-05",
     "subject": {
       "describedByEntityStatement": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7"
@@ -77,6 +80,7 @@
   {
     "statementID": "17bfeb0d-4a63-41d3-814d-b8a54c81a1f",
     "statementType": "personStatement",
+    "isComponent": false,
     "personType": "knownPerson",
     "statementDate": "2018-01-05",
     "names": [
@@ -95,6 +99,7 @@
   {
     "statementID": "d1eb52de-ff02-4690-8359-f4bbf9c128b1",
     "statementType": "personStatement",
+    "isComponent": false,
     "personType": "knownPerson",
     "statementDate": "2018-01-05",
     "names": [
@@ -113,6 +118,7 @@
   {
     "statementID": "c222fe05-2bf3-4cc0-b126-f665109d7211",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2018-01-05",
     "subject": {
       "describedByEntityStatement": "26e786f0-54c5-497d-a52d-b83439ce3dad"
@@ -142,6 +148,7 @@
   {
     "statementID": "c222fe05-2bf3-4cc0-b126-f665109d7211",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2018-01-05",
     "subject": {
       "describedByEntityStatement": "26e786f0-54c5-497d-a52d-b83439ce3dad"

@@ -1,15 +1,15 @@
 [
   {
-    "statementID": "3ff64336-9d26-49da-b0ce-f4685c6af139",
-    "statementDate": "2017-12-01",
+    "statementID": "d83c1cbf-7938-40a0-a827-ab84b5cdf754",
     "statementType": "entityStatement",
     "isComponent": false,
+    "statementDate": "2019-05-16",
     "entityType": "registeredEntity",
-    "name": "REN Consulting Limited",
+    "name": "Company C",
     "identifiers": [
       {
-        "scheme": "XE-KS-SRC",
-        "id": "93821344"
+        "scheme": "GB-COH",
+        "id": "GB-XE-03"
       }
     ],
     "publicationDetails": {
@@ -21,16 +21,24 @@
     }
   },
   {
-    "statementID": "5eb1e15c-fd25-40c7-8a75-246c79654185",
-    "statementDate": "2017-12-01",
+    "statementID": "1e23b926-2c30-4354-8249-d007308cd193",
     "statementType": "personStatement",
     "isComponent": false,
+    "statementDate": "2018-12-17",
     "personType": "knownPerson",
     "names": [
       {
-        "fullName": "Natalie Coleman"
+        "type": "individual",
+        "fullName": "Person 1"
       }
     ],
+    "nationalities": [
+      {
+        "name": "Ukrainian",
+        "code": "UA"
+      }
+    ],
+    "birthDate": "1965-10",
     "publicationDetails": {
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.2",
@@ -40,36 +48,36 @@
     }
   },
   {
-    "statementID": "487e303b-f5be-4dc2-bcae-b0803546fa29",
-    "statementDate": "2017-12-01",
+    "statementID": "6c527d2a-a949-4bdc-b276-2528065f1323",
     "statementType": "ownershipOrControlStatement",
     "isComponent": false,
+    "statementDate": "2018-12-17",
     "subject": {
-      "describedByEntityStatement": "3ff64336-9d26-49da-b0ce-f4685c6af139"
+      "describedByEntityStatement": "d83c1cbf-7938-40a0-a827-ab84b5cdf754"
     },
     "interestedParty": {
-      "describedByPersonStatement": "5eb1e15c-fd25-40c7-8a75-246c79654185"
+      "describedByPersonStatement": "1e23b926-2c30-4354-8249-d007308cd193"
     },
     "interests": [
       {
         "type": "shareholding",
         "interestLevel": "direct",
+        "beneficialOwnershipOrControl": true,
         "share": {
-          "minimum": 25,
-          "maximum": 50
+          "exact": 100,
+          "maximum": 100,
+          "minimum": 100
         },
-        "startDate": "2016-07-07"
-      },
-      {
-        "type": "voting-rights",
-        "interestLevel": "direct",
-        "share": {
-          "minimum": 25,
-          "maximum": 50
-        },
-        "startDate": "2016-07-07"
+        "startDate": "2017-11-01"
       }
     ],
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company C"
+        }
+      ]
+    },
     "publicationDetails": {
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.2",

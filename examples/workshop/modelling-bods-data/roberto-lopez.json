@@ -1,6 +1,7 @@
 {
   "statementID": "e5027662-b2bf-4a55-8319-1e4ff1c7e6a2",
   "statementType": "personStatement",
+  "isComponent": false,
   "personType": "knownPerson",
   "names": [
     {

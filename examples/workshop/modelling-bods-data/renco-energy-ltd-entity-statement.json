@@ -2,6 +2,7 @@
   "statementID": "155009d4-9295-4845-9079-b6b69a17e185",
   "statementType": "entityStatement",
   "entityType": "registeredEntity",
+  "isComponent": false,
   "name": "RENCO Energy Ltd",
   "identifiers": [
     {
