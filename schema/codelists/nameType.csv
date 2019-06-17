@@ -1,7 +1,7 @@
-code,title,description,technical note,
-individual,Legal name,"A name that identifies the person for legal, administrative and other official purposes. A person's legal name will usually be the one that is found on official government documents.",,
-translation,Translation of name,"A translation of the person's individual name in a different language.",,
-transliteration, Transliteration of name, "A transliteration of the person's individual name in a different script.",,
-former,Former name,"A name that the person has used in the past.",,
-alternative, Alternative name,"Another name that the person is known by. This might be an alias, a nickname or a name that the person is also known as (aka).",,
-birth,Birth name, "The legal name of the person at birth.",,
+code,title,description,technical note
+individual,Legal name,"A name that identifies the person for legal, administrative and other official purposes. A person's legal name will usually be the one that is found on official government documents."
+translation,Translation of name,"A translation of the person's individual name in a different language."
+transliteration, Transliteration of name, "A transliteration of the person's individual name in a different script.",
+former,Former name,"A name that the person has used in the past."
+alternative, Alternative name,"Another name that the person is known by. This might be an alias, a nickname or a name that the person is also known as (aka)."
+birth,Birth name, "The legal name of the person at birth."

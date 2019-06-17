@@ -1,4 +1,4 @@
-code,title,description,technical note,
-knownPerson,Known person,"This person has been identified, and information such as names, identifiers or biographical information may be provided about them.",,
-anonymousPerson,Anonymous person,"This person has been identified, but identifying information is being withheld. The reason for non disclosure should be given in the accompanying `missingInfoReason` field.",,
-unknownPerson,Unknown person,"The identity of this person has not been discovered or confirmed.",,
+code,title,description,technical note
+knownPerson,Known person,"This person has been identified, and information such as names, identifiers or biographical information may be provided about them."
+anonymousPerson,Anonymous person,"This person has been identified, but identifying information is being withheld. The reason for non disclosure should be given in the accompanying `missingInfoReason` field."
+unknownPerson,Unknown person,"The identity of this person has not been discovered or confirmed."
