@@ -113,5 +113,3 @@ git add -f docs/locale/ru/LC_MESSAGES/codelist.mo
 $ cd docs
 $ sphinx-build -b html -D language=ru . _build/html/ru
 ```
-
-Note: in this version, the schema and codelists are available for translation in Transifex, but they are *not* yet translated when the docs are built.
