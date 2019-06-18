@@ -180,6 +180,18 @@ PersonStatement
 .. jsonschema:: ../_build_schema/person-statement.json
    :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails
 
+.. _schema-publicationdetails:
+
+PublicationDetails
+---------------
+
+.. json-value:: ../_build_schema/components.json
+   :pointer: /definitions/PublicationDetails/description
+
+.. jsonschema:: ../_build_schema/components.json
+   :pointer: /definitions/PublicationDetails
+   :collapse: publisher
+
 
 .. _schema-replaces-statements:
 
