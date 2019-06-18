@@ -178,7 +178,7 @@ PersonStatement
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/person-statement.json
-   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatus
+   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails
 
 .. _schema-publicationdetails:
 
