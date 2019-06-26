@@ -2,6 +2,7 @@
   {
     "statementID": "2dc4efdd-d179-4958-8372-073c69eb8274",
     "statementType": "entityStatement",
+    "isComponent": false,
     "statementDate": "2018-12-19",
     "entityType": "registeredEntity",
     "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО",
@@ -22,13 +23,21 @@
           "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
         }
       ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
     }
   },
   {
     "statementID": "fb4b8542-0c95-4504-b17b-6f926016359d",
     "statementType": "personStatement",
+    "isComponent": false,
     "statementDate": "2018-12-18",
-    "entityType": "knownPerson",
+    "personType": "knownPerson",
     "names": [
       {
         "type": "individual",
@@ -51,13 +60,21 @@
           "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
         }
       ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
     }
   },
   {
     "statementID": "5acd2ef4-4984-4495-bda4-3726868d1d40",
     "statementType": "personStatement",
+    "isComponent": false,
     "statementDate": "2018-12-19",
-    "entityType": "knownPerson",
+    "personType": "knownPerson",
     "names": [
       {
         "type": "individual",
@@ -89,11 +106,19 @@
           "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
         }
       ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
     }
   },
   {
     "statementID": "7bd1cde7-a44b-4b5e-8e34-86af9bd46265",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2018-12-18",
     "subject": {
       "describedByEntityStatement": "2dc4efdd-d179-4958-8372-073c69eb8274"
@@ -103,7 +128,7 @@
     },
     "interests": [
       {
-        "type": "influence-or-control",
+        "type": "other-influence-or-control",
         "interestLevel": "direct",
         "beneficialOwnershipOrControl": true,
         "share": {
@@ -120,11 +145,19 @@
           "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
         }
       ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
     }
   },
   {
     "statementID": "1d22e61f-57cc-4aac-ab0e-a14417899951",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2018-12-18",
     "subject": {
       "describedByEntityStatement": "2dc4efdd-d179-4958-8372-073c69eb8274"
@@ -134,7 +167,7 @@
     },
     "interests": [
       {
-        "type": "influence-or-control",
+        "type": "other-influence-or-control",
         "interestLevel": "direct",
         "beneficialOwnershipOrControl": true,
         "share": {
@@ -151,6 +184,13 @@
           "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
         }
       ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
     }
   }
 ]

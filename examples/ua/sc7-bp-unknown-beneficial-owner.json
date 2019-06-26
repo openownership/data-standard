@@ -3,6 +3,7 @@
     "statementID": "b56941cb-c970-4363-921d-4f908d7050dd",
     "statementType": "entityStatement",
     "statementDate": "2018-12-19",
+    "isComponent": false,
     "entityType": "registeredEntity",
     "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО",
     "alternateNames": [
@@ -22,11 +23,19 @@
           "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
         }
       ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
     }
   },
   {
     "statementID": "7bd1cde7-a44b-4b5e-8e34-86af9bd46265",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2018-12-18",
     "subject": {
       "describedByEntityStatement": "b56941cb-c970-4363-921d-4f908d7050dd"
@@ -43,6 +52,13 @@
           "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
         }
       ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
     }
   }
 ]

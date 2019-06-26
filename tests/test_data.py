@@ -55,7 +55,24 @@ def test_valid_statement_json(json_path):
     '../examples/indirect-ownership/os-08-dr-04-company-a.json',
     '../examples/os-01-dr-01.json',
     '../examples/missing-data/os-01-dr-02-dc-05.json',
-    '../examples/missing-data/os-17-dr-02-dc-06.json'
+    '../examples/missing-data/os-17-dr-02-dc-06.json',
+    # '../examples/ua/indirect-single-domestic-a.json',
+    # '../examples/ua/indirect-single-domestic-b.json',
+    '../examples/ua/sc1-bp-entity-natural-person-direct-domestic.json',
+    '../examples/ua/sc1-ms1-entity-natural-person-direct-domestic.json',
+    '../examples/ua/sc2-bp-direct-entity-natural-person-direct-foreign.json',
+    '../examples/ua/sc2-ms1-direct-entity-natural-person-direct-foreign.json',
+    '../examples/ua/sc3-bp-direct-entity-natural-persons-direct-multiple.json',
+    '../examples/ua/sc3-ms1-direct-entity-natural-persons-direct-multiple.json',
+    # '../examples/ua/sc4-bp-indirect-natural-person-via-domestic-entity.json',
+    # '../examples/ua/sc4-ms1-indirect-natural-person-via-domestic-entity.json',
+    # '../examples/ua/sc5-bp-indirect-natural-person-via-foreign-entity.json',
+    # '../examples/ua/sc5-ms1-indirect-natural-person-via-foreign-entity.json',
+    # '../examples/ua/sc6-bp1-indirect-natural-person-via-unknown-entity.json',
+    # '../examples/ua/sc6-ms1-indirect-natural-person-via-unknown-entity.json',
+    '../examples/ua/sc7-bp-unknown-beneficial-owner.json',
+    '../examples/ua/sc7-ms1-unknown-beneficial-owner.json',
+    '../examples/ua/sc8-bp-unknown-beneficial-owner.json'
 ])
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
