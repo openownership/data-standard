@@ -1,7 +1,7 @@
 {
   "id": "entity-statement.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "version": "0.1-rc",
+  "version": "0.1",
   "title": "Entity statement",
   "description": "A statement identifying and describing the entity that is the subject of the ownership or control described in an ownership or control statement.",
   "type": "object",
@@ -23,6 +23,11 @@
       "$ref": "components.json#/definitions/StatementDate",
       "propertyOrder": 3
     },
+    "isComponent": {
+      "title": "Is component",
+      "description": "Does this Entity Statement represent a component of an indirect ownership-or-control relationship? Where `isComponent` is 'true': (1) the `statementID` of this Entity Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Entity Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Entity Statement SHOULD be considered when replacing the primary Ownership-or-control Statement. The primary Ownership-or-control Statement MUST have a `isComponent` value of 'false'.",
+      "type": "boolean"
+    },
     "entityType": {
       "title": "Type",
       "description": "From the [entityType codelist](#entitytype). What kind of entity is this? The 'registeredEntity' code covers any legal entity created through an act of official registration, usually resulting in an identifier being assigned to the entity. The 'legalEntity' code covers other bodies with distinct legal personality (government departments, international institutions etc.).  The 'arrangement' code covers artificial entities, described in the data model for the purpose of associating one or more natural or legal persons together in an ownership or control relationship, but without implying that the parties to this arrangement have any other form of collective legal identity.",
@@ -38,10 +43,36 @@
       "openCodelist": false,
       "propertyOrder": 4
     },
-    "missingInfoReason": {
-      "title": "Missing information reason(s)",
-      "description": "For EntityStatements with the type 'anonymousEntity' or 'unknownEntity' this field should contain an explanation of the reason that detailed information on the entity is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification.",
-      "type": "string",
+    "unspecifiedEntityDetails": {
+      "title": "Unspecified entity details",
+      "description": "An explanation of why this entity has an `entityType` of 'anonymousEntity' or 'unknownEntity'. A `reason` MUST be specified.",
+      "type": "object",
+      "properties": {
+        "reason": {
+          "title": "Reason",
+          "description": "The reason that an entity cannot be specified. From the [unspecifiedReason codelist](#unspecifiedreason).",
+          "type": "string",
+          "enum": [
+            "no-beneficial-owners",
+            "subject-unable-to-confirm-or-identify-beneficial-owner",
+            "interested-party-has-not-provided-information",
+            "subject-exempt-from-disclosure",
+            "interested-party-exempt-from-disclosure",
+            "information-unknown-to-publisher",
+            "unknown"
+          ],
+          "codelist": "unspecifiedReason.csv",
+          "openCodelist": false
+        },
+        "description": {
+          "title": "Description",
+          "description": "Any supporting information about the absence of a specific entity. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reason"
+      ],
       "propertyOrder": 5
     },
     "name": {
@@ -110,6 +141,12 @@
       "$ref": "components.json#/definitions/ReplacesStatements",
       "propertyOrder": 100
     },
+    "publicationDetails": {
+      "title": "Publication details",
+      "description": "Information concerning the original publication of this statement.",
+      "$ref": "components.json#/definitions/PublicationDetails",
+      "propertyOrder":85
+    },
     "source": {
       "title": "Source",
       "description": "The source of information about this entity, or of information that supports an anonymous or unknown entity statement.",
@@ -129,6 +166,8 @@
   "required": [
     "statementID",
     "statementType",
-    "entityType"
+    "isComponent",
+    "entityType",
+    "publicationDetails"
   ]
 }

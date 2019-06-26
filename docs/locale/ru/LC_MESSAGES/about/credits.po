@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:16+0000\n"
+"Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+# 2ecce5a2c01b4f9487c0a3492e13f43a
+#: ../../about/credits.md:1
+msgid "Credits"
+msgstr ""
+
+# 675ee2e810064612befeeeeb0217a7e8
+#: ../../about/credits.md:4
+msgid ""
+"The first beta version of the Beneficial Ownership Data Standard was written"
+" by Tim Davies (Open Data Services Co-operative) with Ben Symonds "
+"(OpenCorporates), Chris Taggart (OpenCorporates) and Jack Lord (Open Data "
+"Services Co-operative) and supported by the data standard working group."
+msgstr ""
+
+# 9773c6249b444e7fae24be716c29e236
+#: ../../about/credits.md:6
+msgid ""
+"The 0.1 version was written by Tim Davies and Jack Lord with supporting "
+"documentation from Kadie Armstrong (Open Data Services Co-operative), "
+"technical work from James Baster (Open Data Services Co-operative) and input"
+" from the data standard working group."
+msgstr ""

@@ -5,7 +5,7 @@ Schema reference
 
 .. attention:: 
     
-    This is v0.1-rc (release candidate) of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information. Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
+    This is v0.2 of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information. Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
 
     **MUST** and **SHOULD** are used in the schema to denote required and recommended elements of the Standard, as defined in `RFC2119 <https://tools.ietf.org/html/rfc2119>`_.
 
@@ -18,9 +18,9 @@ The top-level objects are :doc:`statements <concepts>`:
 - :any:`Entity statements <schema-entity-statement>`
 - :any:`Person statements <schema-person-statement>`
 
-Statements are built up from a set of nested objects and properties, each of which has a field name, a title and a description that defines how the object or field should be used. 
+Statements are built up from a set of nested objects and properties, each of which has a field name, a title and a description that defines how the object or field should be used.
 
-BODS data MAY be published as a valid `JSON document <https://tools.ietf.org/html/rfc8259>`_. See :any:`Serialization <guidance-serialization>` for more options.  
+BODS data MAY be published as a valid `JSON document <https://tools.ietf.org/html/rfc8259>`_. See :any:`Serialization <guidance-serialization>` for more options.
 
 
 .. _schema-address:
@@ -28,10 +28,10 @@ BODS data MAY be published as a valid `JSON document <https://tools.ietf.org/htm
 Address
 -------
 
-.. json-value:: ../../schema/components.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /definitions/Address/description
 
-.. jsonschema:: ../../schema/components.json
+.. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Address
 
 
@@ -46,10 +46,10 @@ Address
 Agent
 -----
 
-.. json-value:: ../../schema/components.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /definitions/Agent/description
 
-.. jsonschema:: ../../schema/components.json
+.. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Agent
    :collapse:
 
@@ -58,9 +58,9 @@ Agent
 Annotation
 ----------
 
-The ``annotations`` property of statements currently allows an array of these simple annotation objects to be included. An annotation can be used to hold information (structured or otherwise) for which a place does not exist elsewhere in the schema. See :ref:`Sources and annotations <provenance>` for further guidance. 
+The ``annotations`` property of statements currently allows an array of these simple annotation objects to be included. An annotation can be used to hold information (structured or otherwise) for which a place does not exist elsewhere in the schema. See :ref:`Sources and annotations <provenance>` for further guidance.
 
-.. jsonschema:: ../../schema/components.json
+.. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Annotation
 
 .. _schema-country:
@@ -68,10 +68,10 @@ The ``annotations`` property of statements currently allows an array of these si
 Country
 -------
 
-.. json-value:: ../../schema/components.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /definitions/Country/description
 
-.. jsonschema:: ../../schema/components.json
+.. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Country
 
 
@@ -80,10 +80,10 @@ Country
 EntityStatement
 ---------------
 
-.. json-value:: ../../schema/entity-statement.json
+.. json-value:: ../_build_schema/entity-statement.json
    :pointer: /description
 
-.. jsonschema:: ../../schema/entity-statement.json
+.. jsonschema:: ../_build_schema/entity-statement.json
    :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations
 
 .. _schema-identifier:
@@ -91,12 +91,12 @@ EntityStatement
 Identifier
 ----------
 
-The identifier component is used to connect a statement to the real-world person or entity that it refers to, using one or more existing known identifiers. See [Real world identifiers](identifiers.md) for technical guidance on when and how to use this component.
+The Identifier object is used to connect a statement to the real-world person or entity that it refers to, using one or more existing known identifiers. See :any:`Real world identifiers <guidance-identifiers>` for technical guidance on when and how to use this object.
 
-.. json-value:: ../../schema/components.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /definitions/Identifier/description
 
-.. jsonschema:: ../../schema/components.json
+.. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Identifier
 
 .. _schema-interest:
@@ -104,10 +104,10 @@ The identifier component is used to connect a statement to the real-world person
 Interest
 --------
 
-.. json-value:: ../../schema/components.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /definitions/Interest/description
 
-.. jsonschema:: ../../schema/components.json
+.. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Interest
    :collapse: share,annotations
 
@@ -116,22 +116,22 @@ Interest
 InterestedParty
 ---------------
 
-.. json-value:: ../../schema/ownership-or-control-statement.json
+.. json-value:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /definitions/InterestedParty/description
 
-.. jsonschema:: ../../schema/ownership-or-control-statement.json
+.. jsonschema:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /properties/interestedParty
-   :collapse: 
+   :collapse:
 
 .. _schema-jurisdiction:
 
 Jurisdiction
 ------------
 
-.. json-value:: ../../schema/components.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /definitions/Jurisdiction/description
 
-.. jsonschema:: ../../schema/components.json
+.. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Jurisdiction
 
 .. _schema-name:
@@ -139,10 +139,10 @@ Jurisdiction
 Name
 ----
 
-.. json-value:: ../../schema/components.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /definitions/Name/description
 
-.. jsonschema:: ../../schema/components.json
+.. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Name
 
 .. _schema-ownership-or-control-statement:
@@ -150,11 +150,11 @@ Name
 OwnershipOrControlStatement
 ---------------------------
 
-.. json-value:: ../../schema/ownership-or-control-statement.json
+.. json-value:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /description
 
 
-.. jsonschema:: ../../schema/ownership-or-control-statement.json
+.. jsonschema:: ../_build_schema/ownership-or-control-statement.json
     :collapse: interests,source,annotations,interestedParty
 
 .. _schema-pep-status:
@@ -162,11 +162,11 @@ OwnershipOrControlStatement
 PEPStatus
 ---------
 
-.. json-value:: ../../schema/components.json
-   :pointer: /definitions/PepStatus/description
+.. json-value:: ../_build_schema/components.json
+   :pointer: /definitions/PepStatusDetails/description
 
-.. jsonschema:: ../../schema/components.json
-   :pointer: /definitions/PepStatus
+.. jsonschema:: ../_build_schema/components.json
+   :pointer: /definitions/PepStatusDetails
    :collapse: jurisdiction
 
 .. _schema-person-statement:
@@ -174,11 +174,23 @@ PEPStatus
 PersonStatement
 ---------------
 
-.. json-value:: ../../schema/person-statement.json
+.. json-value:: ../_build_schema/person-statement.json
    :pointer: /description
 
-.. jsonschema:: ../../schema/person-statement.json
-   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatus
+.. jsonschema:: ../_build_schema/person-statement.json
+   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails
+
+.. _schema-publicationdetails:
+
+PublicationDetails
+---------------
+
+.. json-value:: ../_build_schema/components.json
+   :pointer: /definitions/PublicationDetails/description
+
+.. jsonschema:: ../_build_schema/components.json
+   :pointer: /definitions/PublicationDetails
+   :collapse: publisher
 
 
 .. _schema-replaces-statements:
@@ -188,10 +200,10 @@ ReplacesStatements
 
 ``replacesStatements``
 
-.. json-value:: ../../schema/components.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /definitions/ReplacesStatements/description
 
-See :any:`Updating statements <guidance-updating-data>` for technical guidance on working with updates to data. 
+See :any:`Updating statements <guidance-updating-data>` for technical guidance on working with updates to data.
 
 
 .. _schema-share:
@@ -199,10 +211,10 @@ See :any:`Updating statements <guidance-updating-data>` for technical guidance o
 Share
 -----
 
-.. json-value:: ../../schema/components.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /definitions/Interest/properties/share/description
 
-.. jsonschema:: ../../schema/components.json
+.. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Interest/properties/share
 
 
@@ -211,10 +223,10 @@ Share
 Source
 ------
 
-.. json-value:: ../../schema/components.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /definitions/Source/description
 
-.. jsonschema:: ../../schema/components.json
+.. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Source
    :collapse: assertedBy
 
@@ -245,7 +257,7 @@ AddressType
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/addressType.csv
+   :file: ../_build_schema/codelists/addressType.csv
 
 
 AnnotationMotivation
@@ -254,7 +266,7 @@ AnnotationMotivation
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/annotationMotivation.csv
+   :file: ../_build_schema/codelists/annotationMotivation.csv
 
 
 EntityType
@@ -263,7 +275,7 @@ EntityType
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/entityType.csv
+   :file: ../_build_schema/codelists/entityType.csv
 
 
 InterestLevel
@@ -272,7 +284,7 @@ InterestLevel
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/interestLevel.csv
+   :file: ../_build_schema/codelists/interestLevel.csv
 
 
 InterestType
@@ -281,7 +293,7 @@ InterestType
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/interestType.csv
+   :file: ../_build_schema/codelists/interestType.csv
 
 
 NameType
@@ -290,7 +302,7 @@ NameType
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/nameType.csv
+   :file: ../_build_schema/codelists/nameType.csv
 
 
 PersonType
@@ -299,7 +311,7 @@ PersonType
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/personType.csv
+   :file: ../_build_schema/codelists/personType.csv
 
 
 SourceType
@@ -308,7 +320,7 @@ SourceType
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/sourceType.csv
+   :file: ../_build_schema/codelists/sourceType.csv
 
 
 StatementType
@@ -317,7 +329,7 @@ StatementType
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/statementType.csv
+   :file: ../_build_schema/codelists/statementType.csv
 
 
 UnspecifiedReason
@@ -326,6 +338,6 @@ UnspecifiedReason
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../../schema/codelists/unspecifiedReason.csv
+   :file: ../_build_schema/codelists/unspecifiedReason.csv
 
 

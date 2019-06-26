@@ -1,7 +1,7 @@
 {
   "id": "ownership-or-control-statement.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "version": "0.1-rc",
+  "version": "0.1",
   "title": "Ownership or control Statement",
   "description": "An ownership or control statement is made up of an entity, an interested party (a reference to an entity, natural person, arrangement or trust), details of the interest and provenance information for the statement.",
   "type": "object",
@@ -19,6 +19,19 @@
     },
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate"
+    },
+    "isComponent": {
+      "title": "Is component",
+      "description": "Does this Ownership-or-control Statement represent a component of a wider indirect ownership-or-control relationship? Where `isComponent` is 'true': (1) the `statementID` of this secondary Ownership-or-control Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Ownership-or-control Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Ownership-or-control Statement SHOULD be considered when replacing the primary Ownership-or-control Statement, and (4) the primary Ownership-or-control Statement MUST have a `isComponent` value of 'false'. Where `isComponent` is 'false', this Ownership-or-control Statement is the primary declaration of the relationship between the `subject` and the `interestedParty`.",
+      "type": "boolean"
+    },
+    "componentStatementIDs": {
+      "title": "Component statement IDs",
+      "description": "The identifiers of all component statements that provide detail about the indirect relationship between this Statement's `subject` and `interestedParty`. If this Ownership-or-control Statement has components, it MUST itself have a `isComponent` value of 'false'.",
+      "type": "array",
+      "items": {
+        "$ref": "components.json#/definitions/ID"
+      }
     },
     "subject": {
       "title": "Subject",
@@ -46,6 +59,11 @@
         "$ref": "components.json#/definitions/Interest"
       }
     },
+    "publicationDetails": {
+      "title": "Publication details",
+      "description": "Information concerning the original publication of this statement.",
+      "$ref": "components.json#/definitions/PublicationDetails"
+    },
     "source": {
       "title": "Source",
       "description": "The source of the information that links the entity and the interested party, or that supports a null statement.",
@@ -66,8 +84,10 @@
   "required": [
     "statementID",
     "statementType",
+    "isComponent",
     "subject",
-    "interestedParty"
+    "interestedParty",
+    "publicationDetails"
   ],
   "definitions": {
     "InterestedParty": {
@@ -87,7 +107,7 @@
         },
         "unspecified": {
           "title": "Unspecified or unknown ownership and control",
-          "description": "When confirmation has been provided that no interested party exists, where ownership and control information does not need to be provided, or where details of ownership and control are unknown, information explaining this should be given using the unspecified reason and description. Where there is a natural person with ownership or control, but their name or details are not known, or cannot be disclosed for some reason, unspecified should not be used, but instead a reference to a personStatement should be provided but identifying details of the person left blank.",
+          "description": "When confirmation has been provided that no interested party exists, where ownership and control information does not need to be provided, or where details of ownership and control are unknown, a `reason` MUST be given. Where an unknown entity is the `subject` of further ownershipOrControlStatements in the same structure, or where there is a natural person with ownership or control but their name or details are not known or cannot be disclosed for some reason, `unspecified` should not be used, but instead a reference to a `personStatement` or `entityStatement` should be provided but identifying details MAY be left blank.",
           "type": "object",
           "properties": {
             "reason": {
@@ -100,7 +120,8 @@
                 "interested-party-has-not-provided-information",
                 "subject-exempt-from-disclosure",
                 "interested-party-exempt-from-disclosure",
-                "unknown"
+                "unknown",
+                "information-unknown-to-publisher"
               ],
               "codelist": "unspecifiedReason.csv",
               "openCodelist": false

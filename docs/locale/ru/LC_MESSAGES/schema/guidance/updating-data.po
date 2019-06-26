@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+# e938f4e3dace41d4bf54775eed798928
+#: ../../schema/guidance/updating-data.rst:4
+msgid "Updating statements"
+msgstr ""
+
+# cb6a480ac39f45eea5a22956c4480969
+#: ../../schema/guidance/updating-data.rst:6
+msgid ""
+"Statements MUST be treated as immutable: once a statement is published it "
+"MUST NOT be republished with the same ``statementID`` and different property"
+" values. The ``replacesStatements`` property can be used to indicate that "
+"one statement should be considered as a replacement for one or more previous"
+" statements."
+msgstr ""
+
+# 2c3debeb93c244aa8168e422bd1156f4
+#: ../../schema/guidance/updating-data.rst:8
+msgid ""
+"Therefore, if a particular value needs to be updated, a new statement with a"
+" new ``statementID`` MUST be published and the ``replacesStatements`` "
+"property used to reference the old, out-of-date statement."
+msgstr ""

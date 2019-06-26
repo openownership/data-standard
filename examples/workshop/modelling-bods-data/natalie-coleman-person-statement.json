@@ -1,9 +1,18 @@
 {
   "statementID": "5eb1e15c-fd25-40c7-8a75-246c79654185",
   "statementType": "personStatement",
+  "isComponent": false,
+  "personType": "knownPerson",
   "names": [
     {
       "fullName": "Natalie Coleman"
     }
-  ]
+  ],
+  "publicationDetails": {
+    "publicationDate": "2017-12-01",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "XXXXXXXXX"
+    }
+  }
 }

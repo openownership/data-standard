@@ -1,0 +1,31 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:16+0000\n"
+"Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# 6032ccbb76ac4e0e8ce515f33ae3473a
+#: ../../userguides/using-ben-ownership-data.md:1
+msgid "Using beneficial ownership data"
+msgstr ""
+
+# 42ef4f694d6c47d3abfee1b98f165690
+#: ../../userguides/using-ben-ownership-data.md:4
+msgid ""
+"(New section. Considerations when representing conflicting statements, "
+"multiple statements relating to single real-world entities etc. Matching and"
+" deduplication.)"
+msgstr ""

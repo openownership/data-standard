@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 15:20+0000\n"
+"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# b89fd8bf56c74a8a82986786b0c26f96
+#: ../../primer/whatisbo.rst:4
+msgid "What is beneficial ownership?"
+msgstr ""
+
+# 05da653c8c454596b7f8a96758cf3a7f
+#: ../../primer/whatisbo.rst:6
+msgid ""
+"The concept of beneficial ownership helps us understand how companies and "
+"other legal entities are owned and controlled."
+msgstr ""
+
+# 7ee2b796f12644bebc6dfd96bcbfa077
+#: ../../primer/whatisbo.rst:13
+msgid "Companies or people can own other companies..."
+msgstr ""
+
+# 1564efb158874e7aacbebc505156d7ee
+#: ../../primer/whatisbo.rst:19
+msgid ""
+"The idea that people own companies and sometimes companies own companies is "
+"well understood."
+msgstr ""
+
+# f0acf069fde64e11a3781455aefa3b2e
+#: ../../primer/whatisbo.rst:29
+msgid "...but it's people that ultimately benefit..."
+msgstr ""
+
+# 6f18051312e5481a8ed4631df8dc7e4a
+#: ../../primer/whatisbo.rst:35
+msgid ""
+"Even when companies own companies, individuals almost always appear at the "
+"end of the ownership chain. They ultimately benefit from companies’ "
+"financial successes, and often share in their failures."
+msgstr ""
+
+# 5573db36f5b24a7ab73ce8ae4d6c6832
+#: ../../primer/whatisbo.rst:43
+msgid "Here, Company 2 acts as an intermediary in a chain of ownership."
+msgstr ""
+
+# 427629d5a88643e7b161f33ad9ceed21
+#: ../../primer/whatisbo.rst:49
+msgid "...so, we need to know who ultimately controls a company..."
+msgstr ""
+
+# 8a5a365d86264abaabaf6645ece3eb5e
+#: ../../primer/whatisbo.rst:55
+msgid ""
+"If a person owns something, they usually have some control over it. Owning "
+"shares in a company may confer voting rights, for example. But ownership and"
+" control are sometimes separated - by share classes, contracts, agreements "
+"and other mechanisms. For example, an executive director might have the "
+"right to appoint 60% of the other board members, while having little "
+"financial stake in the business."
+msgstr ""
+
+# fc9d68f25fda42559161be099bfcc5de
+#: ../../primer/whatisbo.rst:67
+msgid ""
+"Significant control over a company’s composition and decisions may be used "
+"to steer benefits and direct risks. Those people taking the financial risks "
+"for a company may not be the ones making the decisions. In which case, we "
+"need to know who is in control."
+msgstr ""
+
+# 66dd2d1bdafd420aa599ca90e69307a2
+#: ../../primer/whatisbo.rst:76
+msgid "...to see the big picture."
+msgstr ""
+
+# 95eae638b1b54db8a4859cb99d503741
+#: ../../primer/whatisbo.rst:82
+msgid ""
+"Beneficial ownership therefore takes in both types of involvement with a "
+"company: ownership and control."
+msgstr ""
+
+# 357fbf32619e4c3cb8a0a8cca0501bbf
+#: ../../primer/whatisbo.rst:87
+msgid ""
+"**Beneficial ownership** is the right to some share of a legal entity's "
+"income or assets (ownership) or the right to direct or influence the "
+"entity's activities (control)."
+msgstr ""

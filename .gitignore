@@ -1,7 +1,10 @@
 # sphinx build folder
 _build
+# translated schema build folder
+_build_schema
 .ve
 node_modules
 *~
 *.swp
 *.pytest_cache*
+*.mo

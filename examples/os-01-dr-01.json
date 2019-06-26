@@ -1,0 +1,106 @@
+[
+  {
+    "statementID": "a7b06b12-f5ff-49ff-a83f-41b2883d229b",
+    "statementType": "entityStatement",
+    "isComponent": false,
+    "statementDate": "2019-05-15",
+    "entityType": "registeredEntity",
+    "name": "Company A",
+    "foundingDate": "2019-01-01",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "XE-A-01"
+      }
+    ],
+    "publicationDetails": {
+      "publicationDate": "2019-05-15",
+      "bodsVersion": "0.2",
+      "license": "https://opendatacommons.org/licenses/pddl/1.0/",
+      "publisher": {
+        "name": "A. Aygun",
+        "url": "http://www.aaygun.com/real-owners-project"
+      }
+    }
+  },
+  {
+    "statementID": "60f05827-bbb0-4397-9dbd-5031dd3e49d9",
+    "statementType": "personStatement",
+    "isComponent": false,
+    "statementDate": "2017-11-18",
+    "personType": "knownPerson",
+    "nationalities": [
+      {
+        "code": "GB"
+      }
+    ],
+    "taxResidencies": [
+      {
+        "code": "GB"
+      },
+      {
+        "code": "UA"
+      }
+    ],
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Logan Morton",
+        "givenName": "Logan",
+        "familyName": "Morton"
+      }
+    ],
+    "birthDate": "1975-01",
+    "addresses": [
+      {
+        "type": "service",
+        "address": "52  Front St, London",
+        "country": "GB",
+        "postCode": "SE16 2WN"
+      }
+    ],
+    "publicationDetails": {
+      "publicationDate": "2019-05-15",
+      "bodsVersion": "0.2",
+      "license": "https://opendatacommons.org/licenses/pddl/1.0/",
+      "publisher": {
+        "name": "A. Aygun",
+        "url": "http://www.aaygun.com/real-owners-project"
+      }
+    }
+  },
+  {
+    "statementID": "069675f7-d44b-4c52-b9c3-c9e4f160228e",
+    "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
+    "statementDate": "2017-11-18",
+    "subject": {
+      "describedByEntityStatement": "a7b06b12-f5ff-49ff-a83f-41b2883d229b"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "60f05827-bbb0-4397-9dbd-5031dd3e49d9"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": true,
+        "startDate": "2016-04-06",
+        "share": {
+          "exact": 100,
+          "minimum": 100,
+          "maximum": 100
+        }
+      }
+    ],
+    "publicationDetails": {
+      "publicationDate": "2019-05-15",
+      "bodsVersion": "0.2",
+      "license": "https://opendatacommons.org/licenses/pddl/1.0/",
+      "publisher": {
+        "name": "A. Aygun",
+        "url": "http://www.aaygun.com/real-owners-project"
+      }
+    }
+  }
+]

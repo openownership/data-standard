@@ -1,13 +1,15 @@
 code,title,description,technical note
-shareholding,Shareholding
-voting-rights,Voting rights
-appointment-of-board,Appointment of board
-influence-or-control,Influence or control
-senior-managing-official,Senior managing official
-settlor-of-trust,Settlor of trust
-trustee-of-trust,Trustee of a trust.
-protector-of-trust,Protector of a trust
-beneficiary-of-trust,Beneficiary of a trust
-other-influence-or-control-of-trust,Other influence or control of a trust
-rights-to-surplus-assets,Rights to surplus assets
-rights-to-profit-or-income,Rights to receive profits or income
+shareholding,Shareholding,"An economic interest in an entity gained by holding shares."
+voting-rights,Voting rights,"A controlling interest in an entity gained by holding shares. Defined as the right of shareholders to vote on matters of corporate policy, including decisions on the makeup of the board of directors, issuing securities, initiating corporate actions and making substantial changes in the corporation's operations."
+appointment-of-board,Appointment of board,"A controlling interest in an entity. Defined as the absolute right to appoint members of the board of directors."
+other-influence-or-control,Other influence or control, "Any influence or control in an entity that is distinct from being a shareholder, having voting rights or having the absolute right to appoint to the board."
+senior-managing-official,Senior managing official,"A controlling interest in an entity gained by employment. Defined as the person who exercises control over the management of the entity."
+settlor-of-trust,Settlor of trust,"A controlling interest in a trust. Defined as the person who gives property into trust for the benefit of beneficiaries. In some legal systems, a settlor is also referred to as a trustor, or occasionally, a grantor or donor."
+trustee-of-trust,Trustee of a trust.,"A controlling interest in a trust. Defined as a person or firm that holds and administers property or assets for the benefit of a third party."
+protector-of-trust,Protector of a trust,"A controlling interest in a trust. Defined as a person appointed under the trust instrument to direct or restrain the trustees in relation to their administration of the trust."
+beneficiary-of-trust,Beneficiary of a trust,"An economic interest in a trust. Defined as a person or legal entity who profits from a trust's holdings or activities."
+other-influence-or-control-of-trust,Other influence or control of a trust,"Any influence or control in a trust that is distinct from being a settlor, trustee, protector or beneficiary."
+rights-to-surplus-assets-on-dissolution,Rights to surplus assets on dissolution,"The right to a share in the amount of an asset or resource that exceeds the portion that is utilized upon the winding up of an entity."
+rights-to-profit-or-income,Rights to receive profits or income,"An economic interest in an entity. Defined as beneficial ownership rights beyond those otherwise implied by ownership structures that are granted by contract."
+rights-granted-by-contract,Rights granted by contract,"An interest that is granted by contract."
+conditional-rights-granted-by-contract,Conditional rights granted by contract, "An interest that exists only if some contractual condition is met."

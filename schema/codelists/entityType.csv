@@ -1,6 +1,6 @@
 code,title,description,technical note
-registeredEntity,Registered Entity,"Any legal entity created through an act of official registration. In most cases, registered entities will have an official issued identifier.",
-legalEntity,Legal entity,"A body with distinct legal personality, such as a government departments or international institutions, but which is not otherwise uniquely identified in some official register."
+registeredEntity,Registered Entity,"Any legal entity created through an act of official registration. In most cases, registered entities will have an official issued identifier."
+legalEntity,Legal entity,"A body with distinct legal personality, such as a government department or international institution, but which is not otherwise uniquely identified in some official register."
 arrangement,Arrangement,"An artificial entity, created by agreements, contracts or other processes."
 anonymousEntity,Anonymous entity,"An entity that has been identified, but for which no identifying information is being published."
 unknownEntity,Unknown entity,"An entity that has not been identified."

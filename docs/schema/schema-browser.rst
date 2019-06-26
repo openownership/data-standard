@@ -5,12 +5,12 @@ Schema browser
 
 .. attention:: 
     
-    This is v0.1-rc (release candidate) of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information. Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
+    This is v0.2 of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information. Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
 
     **MUST** and **SHOULD** are used in the schema to denote required and recommended elements of the Standard, as defined in `RFC2119 <https://tools.ietf.org/html/rfc2119>`_.
 
 
-The draft Beneficial Ownership Data Standard schema is defined using `JSON Schema 0.4 <http://json-schema.org/>`_. 
+The draft Beneficial Ownership Data Standard schema is defined using `JSON Schema 0.4 <http://json-schema.org/>`_.
 
 The structure of each of the schema's top level components can be explored using the viewers below. (Click on sub-components to reveal their properties.)
 
