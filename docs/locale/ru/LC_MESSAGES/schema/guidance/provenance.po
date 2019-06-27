@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Valery Gusak <valery.gusak@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,19 +21,21 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# fa65c71213194cdc8ad764940fc4beed
+# 3b1f187de5b74d9f95d9328b34e8de59
 #: ../../schema/guidance/provenance.rst:4
 msgid "Sources and annotations"
-msgstr ""
+msgstr "Источники и примечания"
 
-# 11293484b92b4cb89c044ca9c2c237a7
+# 48cc530756fc4ddfa255c154fe132976
 #: ../../schema/guidance/provenance.rst:6
 msgid ""
 "It is important to indicate clearly where data has come from, and any "
 "changes to it that have been made since it was originally collected."
 msgstr ""
+"Важно четко указать, откуда были получены данные, а также все изменения, "
+"внесенные в них с момента первоначального сбора этих данных."
 
-# c50d57db49f4447fbc0a3ffe8a8c3d05
+# 4e56253ee7af4cc39e6ee85f1b08bf69
 #: ../../schema/guidance/provenance.rst:8
 msgid ""
 "Each statement SHOULD contain information on its source, and whether or not "
@@ -38,15 +44,23 @@ msgid ""
 "have been checked through some process to verify that the information "
 "provided is accurate.)"
 msgstr ""
+"СЛЕДУЕТ обеспечить, чтобы каждая запись содержала информацию о ее источнике "
+"и о том, была ли проверена содержащаяся в ней информация или нет. (К "
+"примеру, запись может быть взята из официальных документов или личной "
+"декларации, и она могла быть или не быть проверена при помощи определенного "
+"процесса с целью удостовериться, что предоставленная информация является "
+"точной)."
 
-# 44de8d6e6d5f4aa9a0a54e85ed5ed088
+# 47eef8cc3c314c1ca2a4fabd35e4b57d
 #: ../../schema/guidance/provenance.rst:10
 msgid ""
 "The ``source`` property of each statement MAY be used to provide provenance "
 "information."
 msgstr ""
+"Свойство ``source`` (источник) каждой записи МОЖЕТ использоваться для "
+"предоставления информации об источнике."
 
-# 25775331c0164f9e92b9e659dbc397a7
+# ba4231bd487441b1b5915116557b3d2b
 #: ../../schema/guidance/provenance.rst:12
 msgid ""
 "The ``annotations`` property of each statement MAY be used to provide "
@@ -59,3 +73,13 @@ msgid ""
 "these changes SHOULD be recorded as annotations, to allow users to clearly "
 "understand the provenance of information."
 msgstr ""
+"Свойство ``annotations`` (примечания) каждой записи МОЖЕТ использоваться для"
+" предоставления дополнительной контекстной информации на уровне всей записи,"
+" подобъекта или отдельного свойства. Например, примечание может "
+"использоваться для включения структурированной информации, содержащей "
+"сведения о характере доли участия, которой владеет физическое лицо в "
+"компании. В некоторых случаях системы, осуществляющие обработку данных СДБВ,"
+" могут вносить изменения с целью очистки, улучшения или иного обновления "
+"данных, например, выверки названий компаний относительно идентификаторов. В "
+"этом случае сведения о таких изменениях СЛЕДУЕТ записывать в виде "
+"примечаний, чтобы пользователи могли ясно понимать источник информации."

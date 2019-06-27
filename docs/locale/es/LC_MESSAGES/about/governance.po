@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:16+0000\n"
+"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 84796ee839244a61a6d036b20ce2b388
+# 86f0d3eb3d5740428ef31389fdc4f2fc
 #: ../../about/governance.rst:2
 msgid "Governance"
 msgstr ""
 
-# 22f7b6938420499e869966db1ecaf0ad
+# ecd98c315ed04a1794c37fa3ebfd666e
 #: ../../about/governance.rst:6
 msgid "Data Standard Working Group - abbreviated Terms of Reference (2016)"
 msgstr ""
 
-# dc8100502d4146d58893f8d33e8ff72a
+# 70b7d652528b476fad83b76d04b91ffd
 #: ../../about/governance.rst:8
 msgid ""
 "The Beneficial Ownership Data Standard Working Group (DSWG) will drive the "
@@ -40,7 +40,7 @@ msgid ""
 "/get-involved/>`_."
 msgstr ""
 
-# 1e3c3e3a36454d28b8fb4e5319d986b8
+# dc4a7b560fc642fca234e1752e3885b7
 #: ../../about/governance.rst:10
 msgid ""
 "This working group will include stakeholders from a range of backgrounds "
@@ -53,40 +53,40 @@ msgid ""
 "taken into account."
 msgstr ""
 
-# 1add20cca58f422f966b1ca7078fb015
+# 13841c669d0843369aa1224316f12367
 #: ../../about/governance.rst:14
 msgid "Values"
 msgstr ""
 
-# c5cfc185f8554df6beddc852486bfee7
+# e8ae086e13b944c88789c13f11b28f24
 #: ../../about/governance.rst:16
 msgid ""
 "All working group members must commit to support the following shared "
 "values."
 msgstr ""
 
-# 15a5c521ca2d4db99e499e6beba3d7b3
+# 9575160962264deeaf66699f004032c6
 #: ../../about/governance.rst:18
 msgid "**Open**"
 msgstr ""
 
-# c331ec6783c04c479e5ccfc1495fbdcd
-# a6a559957ac94e5084d4495e3e67ba05
+# 9f2507b0864741a5b5e55d6a1e7418d2
+# 14ff3e4431734ec8a16d7b9de38815f8
 #: ../../about/governance.rst:20 ../../about/governance.rst:28
 msgid "We will:"
 msgstr ""
 
-# 81cf55c79a88437eaba4152c19d51d4d
+# 3fa6735683784219ac04fecbeb70ca0d
 #: ../../about/governance.rst:22
 msgid "share our views and plans, and share knowledge as widely as possible;"
 msgstr ""
 
-# c3ddee1a8f4f4a86ab95d5babbb9860c
+# cd184a603f814679bd38cdb55b43123b
 #: ../../about/governance.rst:23
 msgid "solicit and listen to views from end users and stakeholders;"
 msgstr ""
 
-# 78114bc68a5841c582a51acfba85cffe
+# d78723994704435e833389b9fe8a13c9
 #: ../../about/governance.rst:24
 msgid ""
 "make our outputs available under an open licence and abide by the project "
@@ -94,64 +94,64 @@ msgid ""
 "standard/blob/master/CONTRIBUTING.md>`_;"
 msgstr ""
 
-# cac167109cff4f0e958eb75b841e4211
+# 950a23e0b233437c99e42bc58598e145
 #: ../../about/governance.rst:26
 msgid "**Expert**"
 msgstr ""
 
-# 01b37d175af8484492454c6cefbb95da
+# 448aee7d9c3749a3a3d1b911348e3dab
 #: ../../about/governance.rst:30
 msgid "bring our expertise to the discussion as individuals;"
 msgstr ""
 
-# 32d3993d15b44ec5895258a391b23973
+# 5e3d6bd5a9fb4ac49fe77613a267ab5a
 #: ../../about/governance.rst:31
 msgid ""
 "use our expertise to synthesise the views of others in constructive and "
 "forward-thinking proposals;"
 msgstr ""
 
-# d0e784129ff04975bedaa7b2aef9ab38
+# a9f3b9daa22a4ab2b6beec1b305ffd7b
 #: ../../about/governance.rst:32
 msgid "use good judgement to respect privacy and confidentiality."
 msgstr ""
 
-# ca5c55fa7981476b987d907095ab6cb4
+# 38c621ea93004262a2c3f4794564456e
 #: ../../about/governance.rst:34
 msgid "**Collaborative**"
 msgstr ""
 
-# f471b9f88c5c4a249f0bbeec5ac06fb2
+# c0b62849132940f7be6d61dc5315d9c2
 #: ../../about/governance.rst:36
 msgid "We will"
 msgstr ""
 
-# 931f3abc1b9945f3840e0c4ba41f627a
+# f0582ab711a8401abfb07ad9ef51af7d
 #: ../../about/governance.rst:38
 msgid "support each other in discussion, in decisions, and in delivery;"
 msgstr ""
 
-# eca04907a4a1453b8f38296367e975d2
+# 21baddde13e14fed9b3aa0a52b064cb2
 #: ../../about/governance.rst:39
 msgid "operate on the basis of consensus decision making;"
 msgstr ""
 
-# 4b3b4f2f14804921848a2bd8a18e8cda
+# c59a54e304e6457aa1c7ca043a686ded
 #: ../../about/governance.rst:40
 msgid "constructively hold each other to account on our commitments;"
 msgstr ""
 
-# 3cc152bfd3ff4362840cc86c3eff0c3d
+# 81a71450a95a47e887d84aab5ff7c16d
 #: ../../about/governance.rst:41
 msgid "ensure all voices are heard and considered carefully."
 msgstr ""
 
-# 02dbfe74934d403aaffd4b11b4f202cf
+# b8ad3fce6fa64db8818eae67774249d5
 #: ../../about/governance.rst:44
 msgid "Membership, term and role"
 msgstr ""
 
-# bb9c4a3152d24140bf703d2f78d0e48e
+# 50b6c00192b54e72a26b338467d35cf1
 #: ../../about/governance.rst:46
 msgid ""
 "Membership of the working group is a voluntary responsibility. Members "

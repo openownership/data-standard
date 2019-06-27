@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,22 +17,22 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# c1d195d4386c4db498d5f64b5b8e2f15
+# 741b04d7dd5d4d5d8e993ede846f8160
 #: ../../schema/index.rst:2
 msgid "Data Schema"
 msgstr ""
 
-# 4296887d18344fd0aa4566fdfd4306d1
+# eae8dd11706844bca27e57fd439ed153
 #: ../../schema/index.rst:6
 msgid ""
-"This is v0.1 of the Beneficial Ownership Data Standard. It includes updates "
+"This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model and additional codelist information. Implementers should "
 "be aware that future changes are anticipated, before a version 1.0 release. "
 "See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more "
 "information."
 msgstr ""
 
-# 28d68e689b4e4cff905633d43f6a0b71
+# 993c599a72e74f17a7a7acb84d75a9b5
 #: ../../schema/index.rst:8
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
@@ -40,7 +40,7 @@ msgid ""
 "<https://tools.ietf.org/html/rfc2119>`_."
 msgstr ""
 
-# 6ea31ef300ac4aaf9f4bb8d437826116
+# e3b7677b3e6f48128be9f7e2697ff075
 #: ../../schema/index.rst:10
 msgid ""
 "BODS provides a common data model for encapsulating information about the "
@@ -52,7 +52,7 @@ msgid ""
 "and joint shareholdings) or by natural persons."
 msgstr ""
 
-# 68518cf09cce4187945a4ab90e7ae877
+# 116eca9b818e449686675f2a77c7b640
 #: ../../schema/index.rst:12
 msgid ""
 "The data model, as specified here in the Data Schema, is intended to "
@@ -60,7 +60,7 @@ msgid ""
 "person(s) who ultimately benefit from, or control, an entity."
 msgstr ""
 
-# fc76bd947b1e431a98c952ad2ecc2010
+# 485a1c26fcb94f26951a7bed8cbddb36
 #: ../../schema/index.rst:14
 msgid ""
 "The :doc:`schema browser <schema-browser>` provides a way of digging through"
@@ -69,7 +69,7 @@ msgid ""
 "elements and their descriptions in easy-to-reference tables."
 msgstr ""
 
-# 906e331be9b4444dbb670f4ec5cb100e
+# 61dc694c59ec4c9fbb3460920a48b1c5
 #: ../../schema/index.rst:16
 msgid ""
 "Further considerations regarding the validation, publishing, and lifecycle "
