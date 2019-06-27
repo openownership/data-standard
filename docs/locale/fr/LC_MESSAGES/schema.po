@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-23 14:33+0000\n"
-"PO-Revision-Date: 2019-03-20 16:33+0000\n"
+"POT-Creation-Date: 2019-06-18 16:05+0100\n"
+"PO-Revision-Date: 2019-06-17 10:43+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,6 +29,7 @@ msgid "The date on which this statement was made."
 msgstr ""
 
 #. /definitions/Source/title
+#. /definitions/PepStatusDetails/properties/source/title
 #. /properties/source/title
 #: schema/components.json:1 schema/entity-statement.json:1
 #: schema/ownership-or-control-statement.json:1 schema/person-statement.json:1
@@ -56,8 +57,11 @@ msgstr ""
 
 #. /definitions/Source/properties/description/title
 #. /definitions/Annotation/properties/description/title
+#. /properties/unspecifiedEntityDetails/properties/description/title
 #. /definitions/InterestedParty/properties/unspecified/properties/description/title
-#: schema/components.json:1 schema/ownership-or-control-statement.json:1
+#. /properties/unspecifiedPersonDetails/properties/description/title
+#: schema/components.json:1 schema/entity-statement.json:1
+#: schema/ownership-or-control-statement.json:1 schema/person-statement.json:1
 msgid "Description"
 msgstr ""
 
@@ -126,6 +130,7 @@ msgstr ""
 #. /definitions/Annotation/properties/createdBy/properties/name/title
 #. /definitions/Country/properties/name/title
 #. /definitions/Jurisdiction/properties/name/title
+#. /definitions/Publisher/properties/name/title
 #. /properties/alternateNames/items/title
 #: schema/components.json:1 schema/entity-statement.json:1
 msgid "Name"
@@ -206,12 +211,21 @@ msgid ""
 "For entity statements, the scheme should be a entry from the [org-"
 "id.guide](http://www.org-id.guide) codelist. For person statements, the "
 "scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is "
-"an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD."
+"an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. "
+"`scheme` or `schemeName` (or both) MUST be included in an Identifier object."
 msgstr ""
 
 #. /definitions/Identifier/properties/schemeName/title
 #: schema/components.json:1
 msgid "Scheme name"
+msgstr ""
+
+#. /definitions/Identifier/properties/schemeName/description
+#: schema/components.json:1
+msgid ""
+"The name of this scheme, where the org-id code is unknown or only an "
+"unvalidated string is provided. `scheme` or `schemeName` (or both) MUST be "
+"included in an Identifier object."
 msgstr ""
 
 #. /definitions/Identifier/properties/uri/description
@@ -263,7 +277,8 @@ msgstr ""
 #: schema/components.json:1
 msgid ""
 "The address, with each line or component of the address separated by a line-"
-"break or comma. This field may also include the postal code."
+"break or comma. Where postal codes are isolated fields in source systems, "
+"this `address` field SHOULD NOT include the postal code."
 msgstr ""
 
 #. /definitions/Address/properties/postCode/title
@@ -431,7 +446,10 @@ msgid ""
 "Where an exact percentage is available, this should be given, and maximum "
 "and minimum values set to the same as the exact percentage. Otherwise, "
 "maximum and minimum can be used to record the range into which the share of "
-"this kind of interest falls."
+"this kind of interest falls. By default the minimum is inclusive and the "
+"maximum exclusive (minimum-value ≤ share < maximum-value ). If you wish to "
+"change these defaults, use the exclusiveMinimum and exclusiveMaximum "
+"properties."
 msgstr ""
 
 #. /definitions/Interest/properties/share/properties/exact/title
@@ -491,7 +509,7 @@ msgid ""
 msgstr ""
 
 #. /definitions/Interest/properties/startDate/title
-#. /definitions/PepStatus/properties/startDate/title
+#. /definitions/PepStatusDetails/properties/startDate/title
 #: schema/components.json:1
 msgid "State date"
 msgstr ""
@@ -505,7 +523,7 @@ msgid ""
 msgstr ""
 
 #. /definitions/Interest/properties/endDate/title
-#. /definitions/PepStatus/properties/endDate/title
+#. /definitions/PepStatusDetails/properties/endDate/title
 #: schema/components.json:1
 msgid "End date"
 msgstr ""
@@ -611,6 +629,7 @@ msgid ""
 msgstr ""
 
 #. /definitions/Annotation/properties/url/title
+#. /definitions/Publisher/properties/url/title
 #: schema/components.json:1
 msgid "URL"
 msgstr ""
@@ -647,6 +666,7 @@ msgid "The ISO 2-digit code for the country."
 msgstr ""
 
 #. /definitions/Jurisdiction/title
+#. /definitions/PepStatusDetails/properties/jurisdiction/title
 #: schema/components.json:1
 msgid "Jurisdiction"
 msgstr ""
@@ -670,29 +690,53 @@ msgid ""
 "jurisdiction"
 msgstr ""
 
-#. /definitions/PepStatus/title
+#. /definitions/PepStatusDetails/title
 #: schema/components.json:1
 msgid "PEP Status"
 msgstr ""
 
-#. /definitions/PepStatus/description
+#. /definitions/PepStatusDetails/description
 #: schema/components.json:1
 msgid "A description of a politically-exposed person status."
 msgstr ""
 
-#. /definitions/PepStatus/properties/reason/title
+#. /definitions/PepStatusDetails/properties/reason/title
+#. /properties/unspecifiedEntityDetails/properties/reason/title
 #. /definitions/InterestedParty/properties/unspecified/properties/reason/title
-#: schema/components.json:1 schema/ownership-or-control-statement.json:1
+#. /properties/unspecifiedPersonDetails/properties/reason/title
+#: schema/components.json:1 schema/entity-statement.json:1
+#: schema/ownership-or-control-statement.json:1 schema/person-statement.json:1
 msgid "Reason"
 msgstr ""
 
-#. /definitions/PepStatus/properties/reason/description
+#. /definitions/PepStatusDetails/properties/reason/description
 #: schema/components.json:1
 msgid ""
 "The reason for this person being declared a politically-exposed person."
 msgstr ""
 
-#. /definitions/PepStatus/properties/startDate/description
+#. /definitions/PepStatusDetails/properties/missingInfoReason/title
+#: schema/components.json:1
+msgid "Missing information reason(s)"
+msgstr ""
+
+#. /definitions/PepStatusDetails/properties/missingInfoReason/description
+#: schema/components.json:1
+msgid ""
+"For disclosure regimes where a PEP declarations is required but not "
+"provided, this field should contain an explanation of the reason that PEP "
+"status for the person is not provided. This may be a standard descriptive "
+"phrase from the source system, or a free-text justification. This field "
+"should only be filled out where hasPepStatus is missing. Where this field is"
+" present it should be the only field except for `source`."
+msgstr ""
+
+#. /definitions/PepStatusDetails/properties/jurisdiction/description
+#: schema/components.json:1
+msgid "The jurisdiction where this person is a PEP."
+msgstr ""
+
+#. /definitions/PepStatusDetails/properties/startDate/description
 #: schema/components.json:1
 msgid ""
 "When did this PEP status begin. Please provide as precise a date as possible"
@@ -700,12 +744,89 @@ msgid ""
 "can be given as YYYY or YYYY-MM."
 msgstr ""
 
-#. /definitions/PepStatus/properties/endDate/description
+#. /definitions/PepStatusDetails/properties/endDate/description
 #: schema/components.json:1
 msgid ""
 "When did this PEP status end. Please provide as precise a date as possible "
 "in ISO 8601 format. When only the year or year and month is known, these can"
 " be given as YYYY or YYYY-MM."
+msgstr ""
+
+#. /definitions/PepStatusDetails/properties/source/description
+#: schema/components.json:1
+msgid "The source of this PEP information"
+msgstr ""
+
+#. /definitions/PublicationDetails/title
+#: schema/components.json:1
+msgid "Publication Details"
+msgstr ""
+
+#. /definitions/PublicationDetails/description
+#: schema/components.json:1
+msgid "Information concerning the publication of this statement."
+msgstr ""
+
+#. /definitions/PublicationDetails/properties/publicationDate/title
+#: schema/components.json:1
+msgid "Publication date"
+msgstr ""
+
+#. /definitions/PublicationDetails/properties/publicationDate/description
+#: schema/components.json:1
+msgid "The date on which this statement was published."
+msgstr ""
+
+#. /definitions/PublicationDetails/properties/bodsVersion/title
+#: schema/components.json:1
+msgid "BODS version"
+msgstr ""
+
+#. /definitions/PublicationDetails/properties/bodsVersion/description
+#: schema/components.json:1
+msgid ""
+"The version of the Beneficial Ownership Data Standard to which this "
+"statement conforms, expressed as major.minor. For example: 0.2 or 1.0."
+msgstr ""
+
+#. /definitions/PublicationDetails/properties/license/title
+#: schema/components.json:1
+msgid "License URL"
+msgstr ""
+
+#. /definitions/PublicationDetails/properties/license/description
+#: schema/components.json:1
+msgid ""
+"A link to the license that applies to this statement. The canonical URI of "
+"the license SHOULD be used. Publishers are encouraged to use a Public Domain"
+" Dedication or [Open Definition "
+"Conformant](http://opendefinition.org/licenses/) license."
+msgstr ""
+
+#. /definitions/PublicationDetails/properties/publisher/title
+#. /definitions/Publisher/title
+#: schema/components.json:1
+msgid "Publisher"
+msgstr ""
+
+#. /definitions/PublicationDetails/properties/publisher/description
+#: schema/components.json:1
+msgid "Details of the organisation or individual publishing this statement."
+msgstr ""
+
+#. /definitions/Publisher/description
+#: schema/components.json:1
+msgid "Details of the organisation or individual publishing a statement."
+msgstr ""
+
+#. /definitions/Publisher/properties/name/description
+#: schema/components.json:1
+msgid "The name of the publisher"
+msgstr ""
+
+#. /definitions/Publisher/properties/url/description
+#: schema/components.json:1
+msgid "The URL of the parent dataset or of the publisher's website homepage"
 msgstr ""
 
 #. /title
@@ -731,6 +852,26 @@ msgstr ""
 msgid "This should always be 'entityStatement."
 msgstr ""
 
+#. /properties/isComponent/title
+#: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
+#: schema/person-statement.json:1
+msgid "Is component"
+msgstr ""
+
+#. /properties/isComponent/description
+#: schema/entity-statement.json:1
+msgid ""
+"Does this Entity Statement represent a component of an indirect ownership-"
+"or-control relationship? Where `isComponent` is 'true': (1) the "
+"`statementID` of this Entity Statement MUST be an element in the "
+"`componentStatementIDs` array of that primary Ownership-or-control "
+"Statement, (2) this Entity Statement MUST come before that primary "
+"Ownership-or-control Statement in a BODS package or stream, (3) the "
+"replacement of this Entity Statement SHOULD be considered when replacing the"
+" primary Ownership-or-control Statement. The primary Ownership-or-control "
+"Statement MUST have a `isComponent` value of 'false'."
+msgstr ""
+
 #. /properties/entityType/description
 #: schema/entity-statement.json:1
 msgid ""
@@ -746,18 +887,31 @@ msgid ""
 "identity."
 msgstr ""
 
-#. /properties/missingInfoReason/title
-#: schema/entity-statement.json:1 schema/person-statement.json:1
-msgid "Missing information reason(s)"
+#. /properties/unspecifiedEntityDetails/title
+#: schema/entity-statement.json:1
+msgid "Unspecified entity details"
 msgstr ""
 
-#. /properties/missingInfoReason/description
+#. /properties/unspecifiedEntityDetails/description
 #: schema/entity-statement.json:1
 msgid ""
-"For EntityStatements with the type 'anonymousEntity' or 'unknownEntity' this"
-" field should contain an explanation of the reason that detailed information"
-" on the entity is not provided. This may be a standard descriptive phrase "
-"from the source system, or a free-text justification."
+"An explanation of why this entity has an `entityType` of 'anonymousEntity' "
+"or 'unknownEntity'. A `reason` MUST be specified."
+msgstr ""
+
+#. /properties/unspecifiedEntityDetails/properties/reason/description
+#: schema/entity-statement.json:1
+msgid ""
+"The reason that an entity cannot be specified. From the [unspecifiedReason "
+"codelist](#unspecifiedreason)."
+msgstr ""
+
+#. /properties/unspecifiedEntityDetails/properties/description/description
+#: schema/entity-statement.json:1
+msgid ""
+"Any supporting information about the absence of a specific entity. This "
+"field may be used to provide set phrases from a source system, or for a "
+"free-text explanation."
 msgstr ""
 
 #. /properties/name/title
@@ -852,6 +1006,18 @@ msgid ""
 " for this entity this should be included."
 msgstr ""
 
+#. /properties/publicationDetails/title
+#: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
+#: schema/person-statement.json:1
+msgid "Publication details"
+msgstr ""
+
+#. /properties/publicationDetails/description
+#: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
+#: schema/person-statement.json:1
+msgid "Information concerning the original publication of this statement."
+msgstr ""
+
 #. /properties/source/description
 #: schema/entity-statement.json:1
 msgid ""
@@ -887,6 +1053,37 @@ msgstr ""
 #. /properties/statementType/description
 #: schema/ownership-or-control-statement.json:1
 msgid "This should always be set to `ownershipOrControlStatement`."
+msgstr ""
+
+#. /properties/isComponent/description
+#: schema/ownership-or-control-statement.json:1
+msgid ""
+"Does this Ownership-or-control Statement represent a component of a wider "
+"indirect ownership-or-control relationship? Where `isComponent` is 'true': "
+"(1) the `statementID` of this secondary Ownership-or-control Statement MUST "
+"be an element in the `componentStatementIDs` array of that primary "
+"Ownership-or-control Statement, (2) this Ownership-or-control Statement MUST"
+" come before that primary Ownership-or-control Statement in a BODS package "
+"or stream, (3) the replacement of this Ownership-or-control Statement SHOULD"
+" be considered when replacing the primary Ownership-or-control Statement, "
+"and (4) the primary Ownership-or-control Statement MUST have a `isComponent`"
+" value of 'false'. Where `isComponent` is 'false', this Ownership-or-control"
+" Statement is the primary declaration of the relationship between the "
+"`subject` and the `interestedParty`."
+msgstr ""
+
+#. /properties/componentStatementIDs/title
+#: schema/ownership-or-control-statement.json:1
+msgid "Component statement IDs"
+msgstr ""
+
+#. /properties/componentStatementIDs/description
+#: schema/ownership-or-control-statement.json:1
+msgid ""
+"The identifiers of all component statements that provide detail about the "
+"indirect relationship between this Statement's `subject` and "
+"`interestedParty`. If this Ownership-or-control Statement has components, it"
+" MUST itself have a `isComponent` value of 'false'."
 msgstr ""
 
 #. /properties/subject/title
@@ -977,23 +1174,26 @@ msgstr ""
 msgid ""
 "When confirmation has been provided that no interested party exists, where "
 "ownership and control information does not need to be provided, or where "
-"details of ownership and control are unknown, information explaining this "
-"should be given using the unspecified reason and description. Where there is"
-" a natural person with ownership or control, but their name or details are "
-"not known, or cannot be disclosed for some reason, unspecified should not be"
-" used, but instead a reference to a personStatement should be provided but "
-"identifying details of the person left blank."
+"details of ownership and control are unknown, a `reason` MUST be given. "
+"Where an unknown entity is the `subject` of further "
+"ownershipOrControlStatements in the same structure, or where there is a "
+"natural person with ownership or control but their name or details are not "
+"known or cannot be disclosed for some reason, `unspecified` should not be "
+"used, but instead a reference to a `personStatement` or `entityStatement` "
+"should be provided but identifying details MAY be left blank."
 msgstr ""
 
 #. /definitions/InterestedParty/properties/unspecified/properties/reason/description
-#: schema/ownership-or-control-statement.json:1
+#. /properties/unspecifiedPersonDetails/properties/reason/description
+#: schema/ownership-or-control-statement.json:1 schema/person-statement.json:1
 msgid ""
 "The reason that an interested party cannot be specified. From the "
 "[unspecifiedReason codelist](#unspecifiedreason)."
 msgstr ""
 
 #. /definitions/InterestedParty/properties/unspecified/properties/description/description
-#: schema/ownership-or-control-statement.json:1
+#. /properties/unspecifiedPersonDetails/properties/description/description
+#: schema/ownership-or-control-statement.json:1 schema/person-statement.json:1
 msgid ""
 "Any supporting information about the absence of a confirmed beneficial "
 "owner. This field may be used to provide set phrases from a source system, "
@@ -1017,6 +1217,20 @@ msgstr ""
 msgid "This should always be 'personStatement."
 msgstr ""
 
+#. /properties/isComponent/description
+#: schema/person-statement.json:1
+msgid ""
+"Does this Person Statement represent a component of an indirect ownership-"
+"or-control relationship? Where `isComponent` is 'true': (1) the "
+"`statementID` of this Person Statement MUST be an element in the "
+"`componentStatementIDs` array of that primary Ownership-or-control "
+"Statement, (2) this Person Statement MUST come before that primary "
+"Ownership-or-control Statement in a BODS package or stream, (3) the "
+"replacement of this Person Statement SHOULD be considered when replacing the"
+" primary Ownership-or-control Statement. The primary Ownership-or-control "
+"Statement MUST have a `isComponent` value of 'false'."
+msgstr ""
+
 #. /properties/personType/title
 #: schema/person-statement.json:1
 msgid "Person type"
@@ -1030,16 +1244,21 @@ msgid ""
 "been identified, but information about them cannot be disclosed, use "
 "'anonymousPerson'. Where the beneficial owner has not been clearly "
 "identified, use 'unknownPerson'. Where the beneficial owner has been "
-"identified use knownPerson."
+"identified use knownPerson. Where a person has the type 'anonymousPerson' or"
+" 'unknownPerson' a reason for the absence of information SHOULD be provided "
+"in 'unspecifiedPersonDetails')"
 msgstr ""
 
-#. /properties/missingInfoReason/description
+#. /properties/unspecifiedPersonDetails/title
+#: schema/person-statement.json:1
+msgid "Unspecified person details"
+msgstr ""
+
+#. /properties/unspecifiedPersonDetails/description
 #: schema/person-statement.json:1
 msgid ""
-"For PersonStatements with the type 'anonymousPerson' or 'unknownPerson' this"
-" field should contain an explanation of the reason that detailed information"
-" on the person is not provided. This may be a standard descriptive phrase "
-"from the source system, or a free-text justification."
+"An explanation of why this person has a `personType` of 'anonymousPerson' or"
+" 'unknownPerson'. A `reason` MUST be specified."
 msgstr ""
 
 #. /properties/names/title
@@ -1107,12 +1326,39 @@ msgstr ""
 msgid "Place of residence"
 msgstr ""
 
-#. /properties/pepStatus/title
+#. /properties/taxResidencies/title
+#: schema/person-statement.json:1
+msgid "Tax residency"
+msgstr ""
+
+#. /properties/taxResidencies/description
+#: schema/person-statement.json:1
+msgid ""
+"An array of ISO 2-Digit country codes representing the tax residencies held "
+"by this individual."
+msgstr ""
+
+#. /properties/hasPepStatus/title
 #: schema/person-statement.json:1
 msgid "Politically Exposed Person Status"
 msgstr ""
 
-#. /properties/pepStatus/description
+#. /properties/hasPepStatus/description
+#: schema/person-statement.json:1
+msgid ""
+"Is the person described in this statement a politically exposed person? This"
+" field should not be used if PEP declarations are not expected as part of "
+"this disclosure. If a PEP declaration is expected but missing this field "
+"should not be used but the reason for the missing data declared in the "
+"pepStatusDetails field."
+msgstr ""
+
+#. /properties/pepStatusDetails/title
+#: schema/person-statement.json:1
+msgid "Politically Exposed Person Status Details"
+msgstr ""
+
+#. /properties/pepStatusDetails/description
 #: schema/person-statement.json:1
 msgid ""
 "One or more descriptions of this person's Politically-Exposed Person (PEP) "
