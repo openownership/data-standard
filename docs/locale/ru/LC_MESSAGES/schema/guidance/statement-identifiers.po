@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Valery Gusak <valery.gusak@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,55 +21,65 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# de451af9a8fb4bf783c10988b330572c
+# 73997da9c6664a609903b51d45e0aabf
 #: ../../schema/guidance/statement-identifiers.rst:4
 msgid "Statement Identifiers"
-msgstr ""
+msgstr "Идентификаторы записей"
 
-# f3332f120f544cb1b43dfa1d1f0f5ef0
+# 895be3aedcc64d8aaf8f488f7ba6cf43
 #: ../../schema/guidance/statement-identifiers.rst:6
 msgid ""
 "Each statement MUST have an entirely unique identifier. There MUST be no "
 "possibility of collision between identifiers for different statements."
 msgstr ""
+"Каждая запись ДОЛЖНА иметь совершенно уникальный идентификатор. НЕ ДОЛЖНО "
+"быть возможности конфликта между идентификаторами для разных записей."
 
-# 4a9c8be92aae4e46b6c568db82e39f61
+# 451223b6506c436a8cb90175357244ff
 #: ../../schema/guidance/statement-identifiers.rst:8
 msgid "This means that:"
-msgstr ""
+msgstr "Это означает следующее:"
 
-# d56a0cd5d8fa4596b9cfea5cc764dd10
+# 49e4f99e47634d08a22b2b7abce04d98
 #: ../../schema/guidance/statement-identifiers.rst:10
 msgid "Two **different** statements SHOULD never have the same identifier;"
 msgstr ""
+"Никогда НЕ СЛЕДУЕТ допускать, чтобы две **разных** записи имели одинаковый "
+"идентификатор;"
 
-# 0617560b1823428182ef1bac9d729978
+# d53c2c2c2b1e4fd993b8ec1d51983359
 #: ../../schema/guidance/statement-identifiers.rst:11
 msgid ""
 "Once an identifier is assigned to a statement, the identifier SHOULD NOT "
 "change."
 msgstr ""
+"После присвоения идентификатора какой-либо записи идентификатор НЕ СЛЕДУЕТ "
+"изменять."
 
-# 8710ff13e7ce4471b5a42297756163b4
+# b07d794232ca42a8a9a43ba01334656f
 #: ../../schema/guidance/statement-identifiers.rst:13
 msgid ""
 "The schema enforces a minimum statement identifier length of 32 characters, "
 "and maximum length of 64 characters."
 msgstr ""
+"В схеме минимальная длина идентификатора составляет 32 символа, а "
+"максимальная — 64 символа."
 
-# f21eb795e7d04d97890400d6dafde1d1
+# 0c14981c1af045b4a1b3ac2b0750d506
 #: ../../schema/guidance/statement-identifiers.rst:15
 msgid ""
 "Publishers MAY use one of the following strategies for creating statement "
 "identifiers."
 msgstr ""
+"Издатели МОГУТ применять одну из следующих стратегий для создания "
+"идентификаторов записей."
 
-# 1a05bf5cabfe4c219045bfe88249f78d
+# c88921ee342f4bf4ae7e0ea297c23988
 #: ../../schema/guidance/statement-identifiers.rst:20
 msgid "Strategies for identifier creation"
-msgstr ""
+msgstr "Стратегии для создания идентификаторов"
 
-# 6938903a29814062a134cb5055568442
+# 035ef4f57e254866a4b50543edf1d039
 #: ../../schema/guidance/statement-identifiers.rst:22
 msgid ""
 "Generating a `UUID "
@@ -73,8 +87,11 @@ msgid ""
 "statement, storing this in internal systems, and updating it whenever the "
 "relevant record(s) that make up a statement are updated;"
 msgstr ""
+"Генерирование `UUID <https://ru.wikipedia.org/wiki/UUID>`_ для каждой "
+"записи, его хранение во внутренних системах и его обновление при каждом "
+"обновлении соответствующего элемента(-ов), образующего запись;"
 
-# cc9fd26320184195aae128ff0d6620c4
+# 2de3e6e4a27d419795e15a1b0883d3f9
 #: ../../schema/guidance/statement-identifiers.rst:24
 msgid ""
 "Generating a `UUID "
@@ -82,23 +99,31 @@ msgid ""
 "publisher-related prefix, and appending a local record identifier, and "
 "version identifier to it;"
 msgstr ""
+"Генерирование `UUID <https://ru.wikipedia.org/wiki/UUID>`_ в виде префикса, "
+"относящегося к издателю, и прикрепление к нему локального идентификатора "
+"элемента и идентификатора версии;"
 
-# fd27d162ff67445886c4e739d952f96a
+# a6c56dc5fd4240489392abef95f120ba
 #: ../../schema/guidance/statement-identifiers.rst:26
 msgid ""
 "Using an appropriately designed hash function that generates identifiers "
 "from a normalised JSON representation of the statement (excluding the `id` "
 "field) with a low collision probability."
 msgstr ""
+"Использование должным образом спроектированной хэш-функции, генерирующей "
+"идентификаторы на основе нормализованного представления записи в формате "
+"JSON (за исключением поля `id`) с низкой вероятностью конфликта."
 
-# f7e2625f5d3e4118b3ac677d06bd1df3
+# 54b5ec792897478c9a42c6f116d63df8
 #: ../../schema/guidance/statement-identifiers.rst:28
 msgid ""
 "Using an internal identifier combined with a unique prefix to avoid "
 "collision between identifiers from different publishers"
 msgstr ""
+"Использование внутреннего идентификатора в сочетании с уникальным префиксом "
+"во избежание конфликта между идентификаторами от разных издателей"
 
-# 22c52ce79b3347b3b5e07fd61454cde0
+# 76a33bc343954645b7bbd3ff510f01b7
 #: ../../schema/guidance/statement-identifiers.rst:31
 msgid ""
 "Statement identifiers are generally for creation and internal use within "
@@ -106,3 +131,8 @@ msgid ""
 "users. This is in contrast to :ref:`entity or person identifiers <guidance-"
 "identifiers>`, which may be useful to display to users."
 msgstr ""
+"Идентификаторы записей обычно предназначены для создания и внутреннего "
+"использования внутри приложений. В большинстве случаев их не нужно "
+"показывать пользователям. Это полностью отличается от :ref:`идентификаторов "
+"субъектов или физических лиц <guidance-identifiers>`, которые может быть "
+"полезно показывать пользователям."

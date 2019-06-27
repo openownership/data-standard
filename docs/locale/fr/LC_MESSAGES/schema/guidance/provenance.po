@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# fa65c71213194cdc8ad764940fc4beed
+# 3b1f187de5b74d9f95d9328b34e8de59
 #: ../../schema/guidance/provenance.rst:4
 msgid "Sources and annotations"
 msgstr ""
 
-# 11293484b92b4cb89c044ca9c2c237a7
+# 48cc530756fc4ddfa255c154fe132976
 #: ../../schema/guidance/provenance.rst:6
 msgid ""
 "It is important to indicate clearly where data has come from, and any "
 "changes to it that have been made since it was originally collected."
 msgstr ""
 
-# c50d57db49f4447fbc0a3ffe8a8c3d05
+# 4e56253ee7af4cc39e6ee85f1b08bf69
 #: ../../schema/guidance/provenance.rst:8
 msgid ""
 "Each statement SHOULD contain information on its source, and whether or not "
@@ -39,14 +39,14 @@ msgid ""
 "provided is accurate.)"
 msgstr ""
 
-# 44de8d6e6d5f4aa9a0a54e85ed5ed088
+# 47eef8cc3c314c1ca2a4fabd35e4b57d
 #: ../../schema/guidance/provenance.rst:10
 msgid ""
 "The ``source`` property of each statement MAY be used to provide provenance "
 "information."
 msgstr ""
 
-# 25775331c0164f9e92b9e659dbc397a7
+# ba4231bd487441b1b5915116557b3d2b
 #: ../../schema/guidance/provenance.rst:12
 msgid ""
 "The ``annotations`` property of each statement MAY be used to provide "

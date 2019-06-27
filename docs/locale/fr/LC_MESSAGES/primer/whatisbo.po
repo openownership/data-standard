@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,36 +17,36 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# b89fd8bf56c74a8a82986786b0c26f96
+# 0a768b90fd6a425cbce46f3494ee77ca
 #: ../../primer/whatisbo.rst:4
 msgid "What is beneficial ownership?"
 msgstr ""
 
-# 05da653c8c454596b7f8a96758cf3a7f
+# 206d3bd379a346b7bf0ce8ba95a89926
 #: ../../primer/whatisbo.rst:6
 msgid ""
 "The concept of beneficial ownership helps us understand how companies and "
 "other legal entities are owned and controlled."
 msgstr ""
 
-# 7ee2b796f12644bebc6dfd96bcbfa077
+# 53fdb35ed6024ca4a3c1b6516ba478e6
 #: ../../primer/whatisbo.rst:13
 msgid "Companies or people can own other companies..."
 msgstr ""
 
-# 1564efb158874e7aacbebc505156d7ee
+# a125c5f16976457e88d38e910fc8a1fe
 #: ../../primer/whatisbo.rst:19
 msgid ""
 "The idea that people own companies and sometimes companies own companies is "
 "well understood."
 msgstr ""
 
-# f0acf069fde64e11a3781455aefa3b2e
+# 43cf1cf883f04c6983e895e6a7ef1be4
 #: ../../primer/whatisbo.rst:29
 msgid "...but it's people that ultimately benefit..."
 msgstr ""
 
-# 6f18051312e5481a8ed4631df8dc7e4a
+# 1f5f935cd6b74eaf9589671af3ec37e0
 #: ../../primer/whatisbo.rst:35
 msgid ""
 "Even when companies own companies, individuals almost always appear at the "
@@ -54,17 +54,17 @@ msgid ""
 "financial successes, and often share in their failures."
 msgstr ""
 
-# 5573db36f5b24a7ab73ce8ae4d6c6832
+# 20ce0f9235c344359b7a26d1e59896ff
 #: ../../primer/whatisbo.rst:43
 msgid "Here, Company 2 acts as an intermediary in a chain of ownership."
 msgstr ""
 
-# 427629d5a88643e7b161f33ad9ceed21
+# 9ba785b4ab4444d7887f7bcba6ce8b7a
 #: ../../primer/whatisbo.rst:49
 msgid "...so, we need to know who ultimately controls a company..."
 msgstr ""
 
-# 8a5a365d86264abaabaf6645ece3eb5e
+# aee8ce31e7c74cce9780990bc6184fd1
 #: ../../primer/whatisbo.rst:55
 msgid ""
 "If a person owns something, they usually have some control over it. Owning "
@@ -75,7 +75,7 @@ msgid ""
 "financial stake in the business."
 msgstr ""
 
-# fc9d68f25fda42559161be099bfcc5de
+# a75ed82bc39444b9b2bf9583babd6779
 #: ../../primer/whatisbo.rst:67
 msgid ""
 "Significant control over a company’s composition and decisions may be used "
@@ -84,19 +84,19 @@ msgid ""
 "need to know who is in control."
 msgstr ""
 
-# 66dd2d1bdafd420aa599ca90e69307a2
+# 806ceccddc4f46a9bd26927dde176ad0
 #: ../../primer/whatisbo.rst:76
 msgid "...to see the big picture."
 msgstr ""
 
-# 95eae638b1b54db8a4859cb99d503741
+# ce3d557a0346403fb98e4ef429050adf
 #: ../../primer/whatisbo.rst:82
 msgid ""
 "Beneficial ownership therefore takes in both types of involvement with a "
 "company: ownership and control."
 msgstr ""
 
-# 357fbf32619e4c3cb8a0a8cca0501bbf
+# fa1be32b523047e0a7eb63f5948e8260
 #: ../../primer/whatisbo.rst:87
 msgid ""
 "**Beneficial ownership** is the right to some share of a legal entity's "
