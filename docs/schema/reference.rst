@@ -84,7 +84,17 @@ EntityStatement
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/entity-statement.json
-   :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations
+   :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations,publicationDetails
+
+.. _schema-id:
+
+ID
+--
+
+A string of minimum length 32 and maximum length 64.
+
+.. json-value:: ../_build_schema/components.json
+   :pointer: /definitions/ID/description
 
 .. _schema-identifier:
 
@@ -155,19 +165,19 @@ OwnershipOrControlStatement
 
 
 .. jsonschema:: ../_build_schema/ownership-or-control-statement.json
-    :collapse: interests,source,annotations,interestedParty
+    :collapse: interests,source,annotations,interestedParty,publicationDetails
 
 .. _schema-pep-status:
 
-PEPStatus
----------
+PepStatusDetails
+----------------
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /definitions/PepStatusDetails/description
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/PepStatusDetails
-   :collapse: jurisdiction
+   :collapse: jurisdiction,source
 
 .. _schema-person-statement:
 
@@ -178,12 +188,12 @@ PersonStatement
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/person-statement.json
-   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails
+   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails,publicationDetails,taxResidencies
 
 .. _schema-publicationdetails:
 
 PublicationDetails
----------------
+------------------
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /definitions/PublicationDetails/description
@@ -192,13 +202,23 @@ PublicationDetails
    :pointer: /definitions/PublicationDetails
    :collapse: publisher
 
+.. _schema-publisher:
+
+Publisher
+---------
+
+.. json-value:: ../_build_schema/components.json
+   :pointer: /definitions/Publisher/description
+
+.. jsonschema:: ../_build_schema/components.json
+   :pointer: /definitions/Publisher
+
+
 
 .. _schema-replaces-statements:
 
 ReplacesStatements
 ------------------
-
-``replacesStatements``
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /definitions/ReplacesStatements/description
