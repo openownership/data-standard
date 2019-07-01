@@ -73,7 +73,7 @@ msgid ""
 "If an implementation serializes to JSON, its serializations **must** "
 "validate against this specification’s JSON Schema."
 msgstr ""
-"Если выполняются сериализации имплементации к JSON, то такие сериализации "
+"Если выполняются сериализации имплементации в JSON, то такие сериализации "
 "**должны** пройти валидацию на основе Схемы JSON данной спецификации."
 
 # b09742823619409a8caa6bfe721aee55

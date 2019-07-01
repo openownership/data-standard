@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 # e9c0b295efb7493588c833a6f8073547
-#: ../../userguides/using-ben-ownership-data.md:1
+#: ../../userguides/using-ben-ownership-data.rst:2
 msgid "Using beneficial ownership data"
 msgstr ""
 
 # aa40debc507845349cab2187fa3ebf0e
-#: ../../userguides/using-ben-ownership-data.md:4
+#: ../../userguides/using-ben-ownership-data.rst:4
 msgid ""
 "(New section. Considerations when representing conflicting statements, "
 "multiple statements relating to single real-world entities etc. Matching and"
