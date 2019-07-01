@@ -4,6 +4,6 @@ User Guides
     .. toctree::
        :maxdepth: 1
 
-       publishing-ben-ownership-data.md
-       using-ben-ownership-data.md
+       publishing-ben-ownership-data
+       using-ben-ownership-data
 

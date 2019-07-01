@@ -8,10 +8,10 @@ People new to the concept of Beneficial Ownership will want to know :doc:`what i
     .. toctree::
        :maxdepth: 1
 
-       whatisbo.rst
-       whyisbo.rst
-       whatisbodata.rst
-       whatisthebods.rst
-       whatdoesbodscover.md
+       whatisbo
+       whyisbo
+       whatisbodata
+       whatisthebods
+       whatdoesbodscover
        
 
