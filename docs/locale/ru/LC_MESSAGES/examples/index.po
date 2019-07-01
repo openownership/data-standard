@@ -79,7 +79,7 @@ msgid ""
 " ``replacesStatement`` property is required."
 msgstr ""
 "Чтобы обновить предыдущую запись, необходима новая запись о бенефициарном "
-"владении со свойством replacesStatement."
+"владении со свойством ``replacesStatement``."
 
 # 0a05d240af9d4a6c83234f3d3dec24ac
 #: ../../examples/index.rst:28
@@ -100,7 +100,7 @@ msgid ""
 "Note that only **changed statements** need to new statement identifiers."
 msgstr ""
 "Обратите внимание, что только для **измененных записей** необходимы новые "
-"индентификаторы записей."
+"идентификаторы записей."
 
 # 570e46560f664d258c98178a34383d62
 #: ../../examples/index.rst:35
@@ -110,5 +110,5 @@ msgid ""
 "field should be included in the file."
 msgstr ""
 "При предоставлении файла данных все записи о физическом лице или субъекте, "
-"полученные по ссылке из поля subject или interestedParty записи "
+"полученные по ссылке из поля ``subject`` или ``interestedParty`` записи "
 "OwnershipOrControl, необходимо включить в файл."

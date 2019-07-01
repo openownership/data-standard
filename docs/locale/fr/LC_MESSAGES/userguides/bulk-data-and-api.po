@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 # ce6cc6b9278c453484ded3c802819a5f
-#: ../../userguides/bulk-data-and-api.md:1
+#: ../../userguides/bulk-data-and-api.rst:2
 msgid "Bulk data exports and API access"
 msgstr ""
 
 # b91a51d8d59641928c3ddaaa3b634fcb
-#: ../../userguides/bulk-data-and-api.md:4
+#: ../../userguides/bulk-data-and-api.rst:4
 msgid "(New section.)"
 msgstr ""

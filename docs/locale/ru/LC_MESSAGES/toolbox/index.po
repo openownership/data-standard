@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
@@ -22,6 +22,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 # 61712eb5aed648fdbf767b9e15af16dd
-#: ../../toolbox/index.md:1
+#: ../../toolbox/index.rst:2
 msgid "Toolbox"
 msgstr "Панель элементов"

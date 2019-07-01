@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 # 6a8d2d2c661e42509a4732678824c675
-#: ../../primer/index.md:1
+#: ../../primer/index.rst:2
 msgid "Primer"
 msgstr "Базовая информация"
 
 # 6ed6fb9def46480faf352ea1ada89dd3
-#: ../../primer/index.md:4
+#: ../../primer/index.rst:4
 msgid ""
 "This Primer sets out to explain the basics of Beneficial Ownership and the "
 "basics of a data standard handling Beneficial Ownership."
@@ -36,17 +36,12 @@ msgstr ""
 "основы стандарта данных о Бенефициарном владении."
 
 # ec6183086b884b5ba1293645758e4fab
-#: ../../primer/index.md:6
+#: ../../primer/index.rst:6
 msgid ""
-"People new to the concept of Beneficial Ownership will want to know what it "
-"is and why it's important. Looking then at what data is needed to describe a"
-" Beneficial Ownership chain, we can understand the Beneficial Ownership Data"
-" Standard as a kind of template. Finally we look at the scope of the "
-"Standard and what it offers."
+"People new to the concept of Beneficial Ownership will want to know "
+":doc:`what it is <whatisbo>` and :doc:`why it's important <whyisbo>`. "
+"Looking then at :doc:`what data is needed <whatisbodata>` to describe a "
+"Beneficial Ownership chain, we can :doc:`understand the Beneficial Ownership"
+" Data Standard <whatisthebods>` as a kind of template. Finally we look at "
+"the :doc:`scope of the Standard <whatdoesbodscover>` and what it offers."
 msgstr ""
-"Те, для кого концепция Бенефициарного владения является новой, захотят "
-"узнать, что она собой представляет и почему является важной. Затем, "
-"ознакомившись с тем, какие данные необходимы для описания цепочки "
-"Бенефициарного владения, мы сможем понять Стандарт данных о бенефициарном "
-"владении как своего рода шаблон. В заключение мы рассмотрим охват Стандарта "
-"и предлагаемые им возможности."

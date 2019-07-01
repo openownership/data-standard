@@ -59,8 +59,7 @@ msgid ""
 "not yet enforce validation constraints on most fields."
 msgstr ""
 "В схеме определены **структура**, **поля** и **списки допустимых значений**,"
-" но еще не учитываются ограничения в отношении валидации по большинству "
-"полей."
+" но еще не учтены ограничения в отношении валидации по большинству полей."
 
 # 012819129c3f441c9a7bd7cc6e485146
 #: ../../schema/changelog.rst:17
@@ -91,7 +90,7 @@ msgid ""
 "objects. It takes a boolean value and indicates whether a Statement "
 "represents part of a primary indirect ownership-or-control relationship."
 msgstr ""
-"Обязательное свойство isComponent было добавлено ко всем трем объектам "
+"Обязательное свойство ``isComponent`` было добавлено ко всем трем объектам "
 "Записи. Оно принимает логическое значение и указывает на то, представляет ли"
 " Запись часть основных косвенных отношений владения или контроля."
 
@@ -102,7 +101,7 @@ msgid ""
 "Statements. It takes an array of Statement IDs, indicating which component "
 "statements provide detail about the parent Ownership-or-control Statement."
 msgstr ""
-"Свойство componentStatementIDs было добавлено к записям о владении или "
+"Свойство ``componentStatementIDs`` было добавлено к записям о владении или "
 "контроле. Оно принимает массив идентификаторов записи, указывая на то, какие"
 " записи о компонентах содержат сведения касательно родительской записи о "
 "владении или контроле."
@@ -114,29 +113,29 @@ msgid ""
 "Statement objects. It represents metadata for Statements: information about "
 "their original publisher. Sub-properties (and their sub-properties) are:"
 msgstr ""
-"Обязательное свойство publicationDetails было добавлено ко всем трем "
+"Обязательное свойство ``publicationDetails`` было добавлено ко всем трем "
 "объектам записей. Оно представляет метаданные для записей: информацию об их "
 "первоначальном издателе. Подсвойства (и их подсвойства) следующие:"
 
 # f0428a7b129949dbb2bc3ac08b3b97cf
 #: ../../schema/changelog.rst:28
 msgid "``publicationDate``\\*"
-msgstr "publicationDate\\*"
+msgstr "``publicationDate``\\*"
 
 # f7708730cb6640d6a901bc6efa45fc0c
 #: ../../schema/changelog.rst:29
 msgid "``bodsVersion``\\*"
-msgstr "bodsVersion\\*"
+msgstr "``bodsVersion``\\*"
 
 # 3900fb2ce2a242089bbbc50635b14e30
 #: ../../schema/changelog.rst:30
 msgid "``license``"
-msgstr "license"
+msgstr "``license``"
 
 # f10efbd51ee148239f0042187559c33d
 #: ../../schema/changelog.rst:31
 msgid "``publisher``\\* (``name``, ``url``)"
-msgstr "publisher\\* (name, url)"
+msgstr "``publisher``\\* (``name``, ``url``)"
 
 # ed200ea905ca4c618768b42661f14891
 #: ../../schema/changelog.rst:33
@@ -150,9 +149,9 @@ msgid ""
 "Person Statements. It is only to be used where disclosure requirements "
 "require that Politically Exposed Persons are flagged."
 msgstr ""
-"Свойство hasPepStatus (принимающее логическое значение) было добавлено к "
-"записям о физических лицах. Его следует использовать только в случаях, когда"
-" требования касательно раскрытия информации требуют отмечать Публичных "
+"Свойство ``hasPepStatus`` (принимающее логическое значение) было добавлено к"
+" записям о физических лицах. Его следует использовать только в случаях, "
+"когда требования касательно раскрытия информации требуют отмечать Публичных "
 "должностных лиц."
 
 # 55bea17bcbac4afdaf594fc7f1765619
@@ -161,8 +160,9 @@ msgid ""
 "PEP Status objects now have the additional properties ``missingInfoReason`` "
 "and ``source``."
 msgstr ""
-"Объекты статуса ПДЛ теперь имеют дополнительные свойства missingInfoReason "
-"(причина отсутствия информации) и source (источник)."
+"Объекты статуса ПДЛ теперь имеют дополнительные свойства "
+"``missingInfoReason`` (причина отсутствия информации) и ``source`` "
+"(источник)."
 
 # a62f601561fc459b80a4973da0676b48
 #: ../../schema/changelog.rst:39
@@ -186,8 +186,8 @@ msgid ""
 "``unspecifiedPersonDetails`` has been added to Person Statements (with a "
 "required ``reason`` sub-property)"
 msgstr ""
-"Свойство unspecifiedPersonDetails было добавлено к записям о физических "
-"лицах (с обязательным подсвойством reason (причина))"
+"Свойство ``unspecifiedPersonDetails`` было добавлено к записям о физических "
+"лицах (с обязательным подсвойством ``reason`` (причина))"
 
 # 1120b1fa3a1b4c6aab8b51acee8cbe18
 #: ../../schema/changelog.rst:44
@@ -195,8 +195,8 @@ msgid ""
 "``unspecifiedEntityDetails`` has been added to Entity Statements (with a "
 "required ``reason`` sub-property)"
 msgstr ""
-"Свойство unspecifiedEntityDetails было добавлено к записям о субъектах (с "
-"обязательным подсвойством reason (причина))"
+"Свойство ``unspecifiedEntityDetails`` было добавлено к записям о субъектах "
+"(с обязательным подсвойством ``reason`` (причина))"
 
 # efc6c152df064f21a704da83ba6e1a10
 #: ../../schema/changelog.rst:46
@@ -205,8 +205,9 @@ msgid ""
 "does the Ownership-or-control Statement's ``interestedParty.unspecified`` "
 "property)."
 msgstr ""
-"Подсвойство reason берется из списка допустимых значений Неуказанных причин "
-"(как и свойство interestedParty.unspecified записи о владении или контроле)."
+"Подсвойство ``reason`` берется из списка допустимых значений Неуказанных "
+"причин (как и свойство ``interestedParty.unspecified`` записи о владении или"
+" контроле)."
 
 # 8cf0096ef864458582db0b5c6239e55e
 # 6eb95dad74c248dc8430d8dc7e6475ac
@@ -220,22 +221,24 @@ msgid ""
 "The ``pepStatus`` property of Person Statements has been renamed "
 "``pepStatusDetails`` (and still references an array of PEP Status objects)."
 msgstr ""
-"Свойство pepStatus записей о физических лицах было переименовано в "
-"pepStatusDetails (и по-прежнему ссылается на массив объектов статуса ПДЛ)."
+"Свойство ``pepStatus`` записей о физических лицах было переименовано в "
+"``pepStatusDetails`` (и по-прежнему ссылается на массив объектов статуса "
+"ПДЛ)."
 
 # bb61b7805df748edb78a94dcf026762a
 #: ../../schema/changelog.rst:52
 msgid "The ``personType`` property of Person Statements is now required."
 msgstr ""
-"Свойство personType записей о физических лицах теперь является обязательным."
+"Свойство ``personType`` записей о физических лицах теперь является "
+"обязательным."
 
 # a3ad2503544e402d8e6b8faa3e38fe4a
 #: ../../schema/changelog.rst:54
 msgid ""
 "If ``Annotation.motivation`` is 'linking', ``Annotation.url`` is required."
 msgstr ""
-"Если Annotation.motivation имеет значение linking, то Annotation.url "
-"является обязательным."
+"Если ``Annotation.motivation`` имеет значение 'linking', то "
+"``Annotation.url`` является обязательным."
 
 # b424df7c579f4f0db70e4223326e633e
 #: ../../schema/changelog.rst:56
@@ -246,7 +249,8 @@ msgstr ""
 # b69f809035c045879bd55a614b5ebf84
 #: ../../schema/changelog.rst:58
 msgid "'influence-or-control' is renamed 'other-influence-or-control'"
-msgstr "influence-or-control было переименовано в other-influence-or-control"
+msgstr ""
+"'influence-or-control' было переименовано в 'other-influence-or-control'"
 
 # d2b644829e6b4022bf636c28228d166d
 #: ../../schema/changelog.rst:59
@@ -254,18 +258,18 @@ msgid ""
 "'rights-to-surplus-assets' is renamed 'rights-to-surplus-assets-on-"
 "dissolution'"
 msgstr ""
-"rights-to-surplus-assets было переименовано в rights-to-surplus-assets-on-"
-"dissolution"
+"'rights-to-surplus-assets' было переименовано в 'rights-to-surplus-assets-"
+"on-dissolution'"
 
 # 303dd6e82451492aa6b6090183d90c2e
 #: ../../schema/changelog.rst:60
 msgid "'rights-granted-by-contract' has been added"
-msgstr "rights-granted-by-contract было добавлено"
+msgstr "'rights-granted-by-contract' было добавлено"
 
 # 7a8fb42212a244dbb75f64b73726d116
 #: ../../schema/changelog.rst:61
 msgid "'conditional-rights-granted-by-contract' has been added"
-msgstr "conditional-rights-granted-by-contract было добавлено"
+msgstr "'conditional-rights-granted-by-contract' было добавлено"
 
 # f8957e5a43c3450fb208142d81a271f9
 #: ../../schema/changelog.rst:63
@@ -275,12 +279,13 @@ msgstr "В список допустимых значений типов адр�
 # 8fa6be9161fc43d284bf4e57d6206f9f
 #: ../../schema/changelog.rst:65
 msgid "'home' has been removed (since 'residence' can be used instead)"
-msgstr "home было удалено (так как вместо него можно использовать residence)"
+msgstr ""
+"'home' было удалено (так как вместо него можно использовать 'residence')"
 
 # c7d63033c74f42b9adffa479b04b0dcc
 #: ../../schema/changelog.rst:66
 msgid "'business' has been added"
-msgstr "business было добавлено"
+msgstr "'business' было добавлено"
 
 # b19b3294cf644bdeb9580fe5dde38275
 #: ../../schema/changelog.rst:68
@@ -292,12 +297,13 @@ msgstr "В список допустимых значений типов ФИО 
 msgid ""
 "'alias', 'aka', and 'nick' have all been removed. They are replaced by "
 "'alternative'"
-msgstr "alias, aka и nick были удалены. Они были заменены на alternative"
+msgstr ""
+"'alias', 'aka' и 'nick' были удалены. Они были заменены на 'alternative'"
 
 # 3997a4374a82443e97392227f650f67e
 #: ../../schema/changelog.rst:71
 msgid "'transliteration' has been added"
-msgstr "transliteration было добавлено"
+msgstr "'transliteration' было добавлено"
 
 # f1e448c135af47e38f7324a05d8e9187
 #: ../../schema/changelog.rst:73
@@ -308,7 +314,7 @@ msgstr ""
 # ce7cad37a512477ab399397488530227
 #: ../../schema/changelog.rst:75
 msgid "'information-unknown-to-publisher' has been added"
-msgstr "information-unknown-to-publisher было добавлено"
+msgstr "'information-unknown-to-publisher' было добавлено"
 
 # d5250cd8197045ccbbf2138beeabc87b
 #: ../../schema/changelog.rst:77
@@ -328,9 +334,9 @@ msgid ""
 "Statements. It has been replaced with ``unspecifiedPersonDetails`` and "
 "``unspecifiedEntityDetails`` respectively."
 msgstr ""
-"Свойство missingInfoReason было удалено из записей о физических лицах и "
-"субъектах. Оно было заменено на unspecifiedPersonDetails и "
-"unspecifiedEntityDetails соответственно."
+"Свойство ``missingInfoReason`` было удалено из записей о физических лицах и "
+"субъектах. Оно было заменено на ``unspecifiedPersonDetails`` и "
+"``unspecifiedEntityDetails`` соответственно."
 
 # 4c550d00af834e3d84f896622cffca9a
 #: ../../schema/changelog.rst:84
@@ -344,10 +350,10 @@ msgid ""
 "boolean value. Can be used to assert that an interest between a natural "
 "person and an entity makes that person a beneficial owner."
 msgstr ""
-"Свойство beneficialOwnershipOrControl было добавлено к объекту доли участия."
-" Принимает логическое значение. Может использоваться для утверждения, что "
-"при наличии доли участия между физическим лицом и субъектом такое физическое"
-" лицо является бенефициарным владельцем."
+"Свойство ``beneficialOwnershipOrControl`` было добавлено к объекту доли "
+"участия. Принимает логическое значение. Может использоваться для "
+"утверждения, что при наличии доли участия между физическим лицом и субъектом"
+" такое физическое лицо является бенефициарным владельцем."
 
 # 6583b8c6962b4317bc3955040904e6a2
 #: ../../schema/changelog.rst:89
@@ -356,7 +362,7 @@ msgid ""
 "person to be recorded as a politically exposed person (with a related "
 "reason, jurisdiction, start date and end date)."
 msgstr ""
-"Свойство pepStatus было добавлено к объекту записи о физическом лице. "
+"Свойство ``pepStatus`` было добавлено к объекту записи о физическом лице. "
 "Позволяет объявить физическое лицо публичным должностным лицом (с указанием "
 "соответствующей причины, юрисдикции, начальной даты и конечной даты)."
 
@@ -367,7 +373,7 @@ msgid ""
 "provide a way of including additional (structured) data or transforming "
 "existing data in a targeted way."
 msgstr ""
-"Свойство annotations добавлено ко всем трем типам записи. Примечания "
+"Свойство ``annotations`` добавлено ко всем трем типам записи. Примечания "
 "являются способом указания дополнительных (структурированных) данных или "
 "целенаправленного преобразования существующих данных."
 
@@ -378,9 +384,9 @@ msgid ""
 " parties.  An unspecifiedReason codelist provides options for describing why"
 " an interested party is not recorded."
 msgstr ""
-"Свойство unspecified заменяет опцию nullParty для заинтересованных сторон. "
-"Список допустимых значений unspecifiedReason обеспечивает возможности для "
-"описания того, почему не указана заинтересованная сторона."
+"Свойство ``unspecified`` заменяет опцию ``nullParty`` для заинтересованных "
+"сторон. Список допустимых значений unspecifiedReason обеспечивает "
+"возможности для описания того, почему не указана заинтересованная сторона."
 
 # 8da4466b030b46508163424f80764e50
 #: ../../schema/changelog.rst:95
@@ -415,7 +421,7 @@ msgid ""
 "group id) are no longer used to package arrays of statements. This reflects "
 "a flattening of the structure of BODS formatted data."
 msgstr ""
-"Массивы объектов statementGroup (каждый объект имеет свой собственный "
+"Массивы объектов ``statementGroup`` (каждый объект имеет свой собственный "
 "идентификатор группы записей) больше не используются для формирования "
 "массивов записей. Это отражает формирование более плоской структуры данных в"
 " формате СДБВ."
@@ -426,5 +432,5 @@ msgid ""
 "The ``nullParty`` option for interested parties. See ``unspecified`` "
 "property in the Added section above."
 msgstr ""
-"Опция nullParty для заинтересованных сторон. См. свойство unspecified в "
-"разделе «Добавлено» выше."
+"Опция ``nullParty`` для заинтересованных сторон. См. свойство "
+"``unspecified`` в разделе «Добавлено» выше."

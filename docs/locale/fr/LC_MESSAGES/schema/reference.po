@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-18 16:02+0100\n"
+"POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -107,16 +107,17 @@ msgstr ""
 # 2d84aeea26ca42a78f365a44323e6258
 # 17c90ac30fe947008fece4a1963ff77f
 # 8cee02f296d440d9b26bb320a6902bf3
-# bafca0ecc55245be8e60bcc1978bba2a
-# 57ce50efc6334409aa62db4d633fcc14
-# c358763dfe4b401781d72c8b3c462fce
-# 6a7fc5cd2641461294d3099954382c29
-# 0842793994cd444793240677811649ba
-# 20f6a4bf94c34d4bb79735c047da73b9
-# 918b35cb03b748708f24689c7a284a0e
-# f7673af45ea34bba8510a2f26dc21716
-# 037843b84b904d5a98bad38729a9683f
-# f7673af45ea34bba8510a2f26dc21716
+# 8cee02f296d440d9b26bb320a6902bf3
+# 8cee02f296d440d9b26bb320a6902bf3
+# 8cee02f296d440d9b26bb320a6902bf3
+# 8cee02f296d440d9b26bb320a6902bf3
+# 8cee02f296d440d9b26bb320a6902bf3
+# 8cee02f296d440d9b26bb320a6902bf3
+# 8cee02f296d440d9b26bb320a6902bf3
+# 8cee02f296d440d9b26bb320a6902bf3
+# 8cee02f296d440d9b26bb320a6902bf3
+# 8cee02f296d440d9b26bb320a6902bf3
+# 8cee02f296d440d9b26bb320a6902bf3
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -125,6 +126,7 @@ msgstr ""
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
+#: ../../sphinxcontrib-jsonschema:1
 msgid "Title"
 msgstr ""
 
@@ -134,16 +136,17 @@ msgstr ""
 # 54d0b0d001ad439fb02c38a8fa72cd47
 # c7a63e5bdfda4561b1281cd58c8c6f50
 # 5e16e17b1edb40bb82ec39af4b7bd5e2
-# d8c2167608724d90b20a69a2597ea006
-# 21ec01b81b974286982b069502740741
-# 56ef726f1e994298b570b9fdf6615139
-# adcd3830dbb34cfe880378e30ba4ac2b
-# 0045633f8f1c48dea3c7650ce8981493
-# 22b0d75d34e34590be2bea688df9865c
-# 7a6d915538554f4499e306a4d095c982
-# 804cc480319e403ea9aba36dc1f86eb3
-# 6038edc489d0477ab7726c6198dd54aa
-# 804cc480319e403ea9aba36dc1f86eb3
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 5e16e17b1edb40bb82ec39af4b7bd5e2
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -152,6 +155,7 @@ msgstr ""
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
+#: ../../sphinxcontrib-jsonschema:1
 msgid "Description"
 msgstr ""
 
@@ -161,16 +165,17 @@ msgstr ""
 # 4b2dba151b124195b5c8cd5ce5ceb6b8
 # 174042bd5a0c4a16b073fd962f90efa2
 # 258505e8ad89490086e78a8dbaa1b700
-# dfdb8c1f06304b25ac929aceb9e33886
-# 065e2168f21745d1bb4d3ab5a5b99c13
-# acf8f4fac64f4147be716bcdc88d66d7
-# 9a9f20ea2db34340827f954bbe38ab13
-# 9fa64d8f03ec4621a6e8d2f4e2bfa7e3
-# a2eae79297574f858f95a1339715f94b
-# e061dbe1e82c4a4a80ff800460a304b6
-# 653f88cbad9041f2865600f470aba22a
-# 36b4e7dc2d91417988c68fa03925652c
-# 653f88cbad9041f2865600f470aba22a
+# 258505e8ad89490086e78a8dbaa1b700
+# 258505e8ad89490086e78a8dbaa1b700
+# 258505e8ad89490086e78a8dbaa1b700
+# 258505e8ad89490086e78a8dbaa1b700
+# 258505e8ad89490086e78a8dbaa1b700
+# 258505e8ad89490086e78a8dbaa1b700
+# 258505e8ad89490086e78a8dbaa1b700
+# 258505e8ad89490086e78a8dbaa1b700
+# 258505e8ad89490086e78a8dbaa1b700
+# 258505e8ad89490086e78a8dbaa1b700
+# 258505e8ad89490086e78a8dbaa1b700
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -179,6 +184,7 @@ msgstr ""
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
+#: ../../sphinxcontrib-jsonschema:1
 msgid "Type"
 msgstr ""
 
@@ -188,16 +194,17 @@ msgstr ""
 # de17261befed409582c798a591b581a6
 # 4547138c450546c99cd849d3a47d641b
 # b9520b222caf452cb0f423af34e55bee
-# ec7e4ba70abe4b33a5ae78e6974b4254
-# 1e4963d3ca4d42d3a19c16b923c010b3
-# de9034aa788349b19df0bb6eccb122ff
-# 6ae31455190e4e5987a4525c4d27d91a
-# de4bed07cf7447778e1606a02d1edfb9
-# f8f80167052643a3a2c4014f33a4b62b
-# 634c5df9285947468bb26db241f1205e
-# 68950cf3813a4bfd8abda296f405a817
-# a6966f9d28bf4f3aa8e2d8a87817c106
-# 68950cf3813a4bfd8abda296f405a817
+# b9520b222caf452cb0f423af34e55bee
+# b9520b222caf452cb0f423af34e55bee
+# b9520b222caf452cb0f423af34e55bee
+# b9520b222caf452cb0f423af34e55bee
+# b9520b222caf452cb0f423af34e55bee
+# b9520b222caf452cb0f423af34e55bee
+# b9520b222caf452cb0f423af34e55bee
+# b9520b222caf452cb0f423af34e55bee
+# b9520b222caf452cb0f423af34e55bee
+# b9520b222caf452cb0f423af34e55bee
+# b9520b222caf452cb0f423af34e55bee
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -206,6 +213,7 @@ msgstr ""
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
+#: ../../sphinxcontrib-jsonschema:1
 msgid "Format"
 msgstr ""
 
@@ -215,16 +223,17 @@ msgstr ""
 # 1f6355f3041a49419fa5b1b4dc773021
 # d1b1b1ed61b148959733675f7bdbc765
 # b2beadc929644807ad805b03e62025f0
-# 43fd78fbd6de46589ebf9daf9c5933b5
-# bb26be6b07e84d1598603f55b40005d4
-# e722cd14fdc943ceb052efad09139292
-# a092a75ac65548a5bce03f28e0502e8d
-# e204b91b19b54118a878223ef3810516
-# cb84058d7edc4bb5bd0479554a4eb669
-# 1faed09bf76e4819a4985dfd2a889015
-# c07d6f0e82fa42f6be3506a319495d65
-# 30d78996728c401a9fa7f3154688e1ae
-# c07d6f0e82fa42f6be3506a319495d65
+# b2beadc929644807ad805b03e62025f0
+# b2beadc929644807ad805b03e62025f0
+# b2beadc929644807ad805b03e62025f0
+# b2beadc929644807ad805b03e62025f0
+# b2beadc929644807ad805b03e62025f0
+# b2beadc929644807ad805b03e62025f0
+# b2beadc929644807ad805b03e62025f0
+# b2beadc929644807ad805b03e62025f0
+# b2beadc929644807ad805b03e62025f0
+# b2beadc929644807ad805b03e62025f0
+# b2beadc929644807ad805b03e62025f0
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -233,6 +242,7 @@ msgstr ""
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
+#: ../../sphinxcontrib-jsonschema:1
 msgid "Required"
 msgstr ""
 
@@ -307,13 +317,28 @@ msgid ""
 " ownership or control described in an ownership or control statement."
 msgstr ""
 
-# 632310f5c7a544c684af3124e443929a
+# 128b30bf8425430ab221c8b3aa46d3ce
 #: ../../schema/reference.rst:92
+msgid "ID"
+msgstr ""
+
+# 84ac9e2f831d4603acf1dd2ebfa25fe6
+#: ../../schema/reference.rst:94
+msgid "A string of minimum length 32 and maximum length 64."
+msgstr ""
+
+# 3ee169000904453e875227535b061636
+#: ../../schema/reference.rstNone
+msgid "A persistent globally unique identifier for this statement."
+msgstr ""
+
+# 632310f5c7a544c684af3124e443929a
+#: ../../schema/reference.rst:102
 msgid "Identifier"
 msgstr ""
 
 # ad816199ef4742fa98c8eb464280cc24
-#: ../../schema/reference.rst:94
+#: ../../schema/reference.rst:104
 msgid ""
 "The Identifier object is used to connect a statement to the real-world "
 "person or entity that it refers to, using one or more existing known "
@@ -329,7 +354,7 @@ msgid ""
 msgstr ""
 
 # 3628141493514fb19309d628016931e3
-#: ../../schema/reference.rst:105
+#: ../../schema/reference.rst:115
 msgid "Interest"
 msgstr ""
 
@@ -340,7 +365,7 @@ msgid ""
 msgstr ""
 
 # 8455b06fa86c42588eba7bcfbfd03a47
-#: ../../schema/reference.rst:117
+#: ../../schema/reference.rst:127
 msgid "InterestedParty"
 msgstr ""
 
@@ -354,7 +379,7 @@ msgid ""
 msgstr ""
 
 # e152db582d2f47409d742e35d12f1be3
-#: ../../schema/reference.rst:129
+#: ../../schema/reference.rst:139
 msgid "Jurisdiction"
 msgstr ""
 
@@ -366,7 +391,7 @@ msgid ""
 msgstr ""
 
 # a7ba14d178534fecb0d346169a1a37f8
-#: ../../schema/reference.rst:140
+#: ../../schema/reference.rst:150
 msgid "Name"
 msgstr ""
 
@@ -381,7 +406,7 @@ msgid ""
 msgstr ""
 
 # 9f96e506e23e4911ba414d4eaedf2c29
-#: ../../schema/reference.rst:151
+#: ../../schema/reference.rst:161
 msgid "OwnershipOrControlStatement"
 msgstr ""
 
@@ -393,9 +418,9 @@ msgid ""
 "details of the interest and provenance information for the statement."
 msgstr ""
 
-# 1c4b449da35e4f299eb05b584cd15cd8
-#: ../../schema/reference.rst:163
-msgid "PEPStatus"
+# 7f768334ef9646b6afc3d62418da367e
+#: ../../schema/reference.rst:173
+msgid "PepStatusDetails"
 msgstr ""
 
 # c05fb0a3eb1642c7ac913b0288c58c54
@@ -404,7 +429,7 @@ msgid "A description of a politically-exposed person status."
 msgstr ""
 
 # 537c05e6d91a4ceb99860f03a1589db6
-#: ../../schema/reference.rst:175
+#: ../../schema/reference.rst:185
 msgid "PersonStatement"
 msgstr ""
 
@@ -416,7 +441,7 @@ msgid ""
 msgstr ""
 
 # 7f768334ef9646b6afc3d62418da367e
-#: ../../schema/reference.rst:186
+#: ../../schema/reference.rst:196
 msgid "PublicationDetails"
 msgstr ""
 
@@ -425,14 +450,19 @@ msgstr ""
 msgid "Information concerning the publication of this statement."
 msgstr ""
 
-# 3e365476d90e4d28a7dda7cdbbab1093
-#: ../../schema/reference.rst:199
-msgid "ReplacesStatements"
+# e977ac2673814057876d096883b6116e
+#: ../../schema/reference.rst:208
+msgid "Publisher"
 msgstr ""
 
-# 860e7333c03743c4bddc1e193e849c7b
-#: ../../schema/reference.rst:201
-msgid "``replacesStatements``"
+# 8e8200cb93874f30b1de466f78022898
+#: ../../schema/reference.rstNone
+msgid "Details of the organisation or individual publishing a statement."
+msgstr ""
+
+# 3e365476d90e4d28a7dda7cdbbab1093
+#: ../../schema/reference.rst:221
+msgid "ReplacesStatements"
 msgstr ""
 
 # 92ef1a0b20524b1c8e275b0272f93dc9
@@ -444,14 +474,14 @@ msgid ""
 msgstr ""
 
 # cc3c2d9ab13e490b96a803175b34f262
-#: ../../schema/reference.rst:206
+#: ../../schema/reference.rst:226
 msgid ""
 "See :any:`Updating statements <guidance-updating-data>` for technical "
 "guidance on working with updates to data."
 msgstr ""
 
 # 57892cb3ef73472eb845eade6637af93
-#: ../../schema/reference.rst:212
+#: ../../schema/reference.rst:232
 msgid "Share"
 msgstr ""
 
@@ -468,7 +498,7 @@ msgid ""
 msgstr ""
 
 # 9bf8c0f58baf4234bba1c7eaaa93d020
-#: ../../schema/reference.rst:224
+#: ../../schema/reference.rst:244
 msgid "Source"
 msgstr ""
 
@@ -480,19 +510,19 @@ msgid ""
 msgstr ""
 
 # de449f8e88334a33a65e80c337062173
-#: ../../schema/reference.rst:234
+#: ../../schema/reference.rst:254
 msgid ""
 "See :any:`Sources and annotations <provenance>` for a discussion of "
 "provenance modelling."
 msgstr ""
 
 # d62e79f464e44064b75ab544b54f09aa
-#: ../../schema/reference.rst:239
+#: ../../schema/reference.rst:259
 msgid "StatementDate"
 msgstr ""
 
 # 4f576e97447644a0a863fb16e984dd07
-#: ../../schema/reference.rst:241
+#: ../../schema/reference.rst:261
 msgid ""
 "Dates MUST conform with the extended format of `ISO 8601 "
 "<https://en.wikipedia.org/wiki/ISO_8601>`_. All of the following, for "
@@ -500,32 +530,32 @@ msgid ""
 msgstr ""
 
 # 4f4c8402725040e7bd23e264d569bc33
-#: ../../schema/reference.rst:243
+#: ../../schema/reference.rst:263
 msgid "A full datetime string (YYYY-MM-DDTHH:MM:SSZ)"
 msgstr ""
 
 # 30b4901b6cc74de685f81418db28aa5a
-#: ../../schema/reference.rst:244
+#: ../../schema/reference.rst:264
 msgid "A year, month and day (YYYY-MM-DD)"
 msgstr ""
 
 # dc73b66c9a9b4b10b0227e09874f75de
-#: ../../schema/reference.rst:245
+#: ../../schema/reference.rst:265
 msgid "A year and month (YYYY-MM)"
 msgstr ""
 
 # c69ceb807c7a49fd8bded89dc49e64bb
-#: ../../schema/reference.rst:246
+#: ../../schema/reference.rst:266
 msgid "A year (YYYY)"
 msgstr ""
 
 # 17625b30489e430cb1cc811cc427eb68
-#: ../../schema/reference.rst:252
+#: ../../schema/reference.rst:272
 msgid "Codelists"
 msgstr ""
 
 # ea3d7409e1c34c08a9365aac7fdd1a80
-#: ../../schema/reference.rst:255
+#: ../../schema/reference.rst:275
 msgid "AddressType"
 msgstr ""
 
@@ -724,7 +754,7 @@ msgid "A place where the entity conducts its business."
 msgstr ""
 
 # fcd65dd2fca04784a7a45e196a89e34c
-#: ../../schema/reference.rst:264
+#: ../../schema/reference.rst:284
 msgid "AnnotationMotivation"
 msgstr ""
 
@@ -817,7 +847,7 @@ msgid ""
 msgstr ""
 
 # 5f46fdc5ec0849e5bb9ad1cda47990ee
-#: ../../schema/reference.rst:273
+#: ../../schema/reference.rst:293
 msgid "EntityType"
 msgstr ""
 
@@ -905,7 +935,7 @@ msgid "An entity that has not been identified."
 msgstr ""
 
 # 6c11f3f90192449d917792d0de9af9b5
-#: ../../schema/reference.rst:282
+#: ../../schema/reference.rst:302
 msgid "InterestLevel"
 msgstr ""
 
@@ -959,7 +989,7 @@ msgid "The interest may be direct or indirect."
 msgstr ""
 
 # acf661bcb8fb46e39ac53503033add07
-#: ../../schema/reference.rst:291
+#: ../../schema/reference.rst:311
 msgid "InterestType"
 msgstr ""
 
@@ -1209,7 +1239,7 @@ msgid "\"An interest that exists only if some contractual condition is met.\""
 msgstr ""
 
 # ceaa70f9a76d4cbf82186b8c307c5b7c
-#: ../../schema/reference.rst:300
+#: ../../schema/reference.rst:320
 msgid "NameType"
 msgstr ""
 
@@ -1305,7 +1335,7 @@ msgid "\"The legal name of the person at birth.\""
 msgstr ""
 
 # ad907e4c57ab4fba957d20bb9229cb28
-#: ../../schema/reference.rst:309
+#: ../../schema/reference.rst:329
 msgid "PersonType"
 msgstr ""
 
@@ -1360,7 +1390,7 @@ msgid "The identity of this person has not been discovered or confirmed."
 msgstr ""
 
 # 51b494fad9604cd193dce7936b3e49ed
-#: ../../schema/reference.rst:318
+#: ../../schema/reference.rst:338
 msgid "SourceType"
 msgstr ""
 
@@ -1447,7 +1477,7 @@ msgid ""
 msgstr ""
 
 # 6f0de21dc6024ddbba87f97c1ed382f6
-#: ../../schema/reference.rst:327
+#: ../../schema/reference.rst:347
 msgid "StatementType"
 msgstr ""
 
@@ -1522,7 +1552,7 @@ msgid ""
 msgstr ""
 
 # 69976a7ce78e4deb8db02d8e331cfc02
-#: ../../schema/reference.rst:336
+#: ../../schema/reference.rst:356
 msgid "UnspecifiedReason"
 msgstr ""
 

@@ -66,7 +66,7 @@ msgstr ":ref:`Типы и уровни <schema-interest>` участия в ко
 # be07468c03594664aebbdb7494ea92af
 #: ../../primer/whatdoesbodscover.rst:19
 msgid ":ref:`Provenance <schema-source>` information"
-msgstr "Информацию о :ref:`происхождении <schema-source>`"
+msgstr "Информацию об :ref:`источнике <schema-source>`"
 
 # bfcb0cadcfa843cab65dfa2f9ef1e747
 #: ../../primer/whatdoesbodscover.rst:20
@@ -146,7 +146,7 @@ msgstr ""
 "владения. Вместо этого каждая запись о бенефициарном владении, выраженная "
 "при помощи Стандарта, может описывать степень владения или контроля, что "
 "позволит каждому лицу, имплементирующему стандарт, устанавливать свои "
-"собственные пороговые значения."
+"собственные пороги."
 
 # 6c3a38fc9cb3425b8cc2304038154d2f
 #: ../../primer/whatdoesbodscover.rst:46

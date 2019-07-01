@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 # dda0b2ca56674e7eb1c962c950d48502
-#: ../../about/index.md:1
+#: ../../about/index.rst:2
 msgid "About"
 msgstr "О Стандарте"
 
 # 11d2bed141ca43beb55391a3ba78231f
-#: ../../about/index.md:3
+#: ../../about/index.rst:4
 msgid ""
 "This website contains the draft specification of the Beneficial Ownership "
 "Data Standard (version 0.2) plus support for its use. The Standard provides "
@@ -39,27 +39,17 @@ msgstr ""
 "Стандартом предусмотрен структурированный шаблон для описания бенефициарного"
 " владения в виде машиночитаемых данных."
 
-# 47f03ad768754ce7af512bcddfed7846
-#: ../../about/index.md:5
-msgid "<h2>Background</h2>"
-msgstr "<h2>Справочная информация</h2>"
-
 # f84966956805405c90a00764ef990e7c
-#: ../../about/index.md:7
+#: ../../about/index.rst:13
 msgid ""
 "Money laundering, tax evasion and obscure chains of ownership are "
 "transnational problems that require a transnational solution. Civil society,"
 " government and business can all benefit from greater transparency around "
-"beneficial ownership."
+":ref:`beneficial ownership <what-is-bo>`."
 msgstr ""
-"Легализация доходов, полученных преступным путем, уклонение от налогов и "
-"неясные цепочки владения — транснациональные проблемы, требующие "
-"транснационального решения. Гражданское общество, правительство и бизнес — "
-"все могут получить выгоду от более высокого уровня прозрачности в отношении "
-"бенефициарного владения."
 
 # 9ed0b3fe19314c9b88caf9f0fc9bd84c
-#: ../../about/index.md:9
+#: ../../about/index.rst:15
 msgid ""
 "The Beneficial Ownership Data Standard enables this transparency by "
 "providing a solid conceptual and practical framework for collecting and "
@@ -73,23 +63,15 @@ msgstr ""
 "повторного использования и более высоким качеством."
 
 # 4dcb29d148bf49249a7bb6fd180f5b54
-#: ../../about/index.md:11
+#: ../../about/index.rst:17
 msgid ""
-"The Standard is being developed under the guidance of a working group co-"
-"chaired by OpenOwnership. More details about the organisation are available "
-"at www.openownership.org."
+"The Standard is being developed under the guidance of a :doc:`working group "
+"<governance>` co-chaired by OpenOwnership. More details about the "
+"organisation are available at www.openownership.org."
 msgstr ""
-"Разработка Стандарта ведется под руководством рабочей группы в "
-"сопредседательстве с OpenOwnership. Дополнительная информация об этой "
-"организации доступна по адресу www.openownership.org."
-
-# 4f7014d8cb954879b22ca7d1d7a0222a
-#: ../../about/index.md:13
-msgid "<h2>Current status of the standard</h2>"
-msgstr "<h2>Текущий статус стандарта</h2>"
 
 # b087ec01c1504133bfc0b5d7c6ebfe1c
-#: ../../about/index.md:22
+#: ../../about/index.rst:29
 msgid ""
 "This is v0.2 of the Beneficial Ownership Data Standard. The data model has "
 "been updated and additional codelist information added since v0.1."
@@ -99,37 +81,26 @@ msgstr ""
 "информация из списка допустимых значений."
 
 # 3b3ed16d8baa4b538ad941d3d612f0ec
-#: ../../about/index.md:24
+#: ../../about/index.rst:32
 msgid ""
 "Implementers should be aware that future changes are anticipated, before a "
 "version 1.0 release. However, from the v0.1 release onwards, any structural "
 "changes or major definitional changes only take place following "
-"consultation. A clear changelog is provided, and the documentation of "
-"previous versions is maintained in archive form."
+"consultation. A clear :ref:`changelog <changelog>` is provided, and the "
+"documentation of previous versions is maintained in archive form."
 msgstr ""
-"Имплементирующие лица должны понимать, что ожидаются будущие изменения до "
-"выпуска версии 1.0. Тем не менее, начиная с выпуска версии 0.1 любые "
-"структурные изменения или значительные изменения в определениях будут "
-"происходить только после консультаций. Предоставляется понятный лог "
-"изменений, при этом документирование предыдущих версий ведется в форме "
-"архива."
 
 # 1e15a5319ef04ca8afede073db0f8de9
-#: ../../about/index.md:26
+#: ../../about/index.rst:39
 msgid ""
 "The schema contains a structure, fields and codelists but does not yet "
 "enforce validation constraints on most fields."
 msgstr ""
-"Схема содержит структуру, поля и списки допустимых значений, но еще не "
-"учитывает ограничения в отношении валидации по большинству полей."
-
-# 905197c7a1c54392b478308f998b3eec
-#: ../../about/index.md:28
-msgid "<h2>Get involved</h2>"
-msgstr "<h2>Примите участие</h2>"
+"Схема содержит структуру, поля и списки допустимых значений, но в ней еще не"
+" учтены ограничения в отношении валидации по большинству полей."
 
 # 2d2c02c4d68741c4a52b1f3239dcc92c
-#: ../../about/index.md:30
+#: ../../about/index.rst:48
 msgid ""
 "All changes to the standard draft, documentation and specification take "
 "place via GitHub at https://github.com/openownership/data-standard/."
@@ -138,62 +109,46 @@ msgstr ""
 "осуществляется через GitHub по адресу https://github.com/openownership/data-"
 "standard/."
 
-# 85727a7376cb445bab9031e1323f4663
-#: ../../about/index.md:32
-msgid "Suggestions for changes can be made via the project issue tracker."
+# 2d2c02c4d68741c4a52b1f3239dcc92c
+#: ../../about/index.rst:51
+msgid ""
+"Suggestions for changes can be made via the `project issue tracker "
+"<https://github.com/openownership/data-standard/issues>`__."
 msgstr ""
-"Предложения касательно изменений можно внести при помощи системы "
-"отслеживания ошибок проекта."
 
 # 025c21a21fda4916aede2d4faa85de84
-#: ../../about/index.md:34
+#: ../../about/index.rst:54
 msgid ""
 "If you would like to be involved in the development and review of the "
-"Standard, see the Governance page."
+"Standard, see the :doc:`Governance <governance>` page."
 msgstr ""
-"Если вам хотелось бы участвовать в разработке и анализе Стандарта, см. "
-"страницу «Управление»."
-
-# 4f8bae9b14fb4372b1d522469da67177
-#: ../../about/index.md:50
-msgid "<h2>Partners and funders</h2>"
-msgstr "<h2>Партнеры и финансирующие организации</h2>"
 
 # 960272634171485e95bd4cdf5a029092
-#: ../../about/index.md:52
+#: ../../about/index.rst:72
 msgid ""
 "The initial development of the Beneficial Ownership Data Standard was funded"
 " by OpenOwnership as part of a UK Department for International Development "
 "funded project. OpenOwnership is led by a steering group of the world's "
-"leading transparency organizations including Transparency International, "
-"OpenCorporates, One, the Open Contracting Partnership, Global Witness and "
-"The B Team."
+"leading transparency organizations including `Transparency International "
+"<https://www.transparency.org/>`__, `OpenCorporates "
+"<https://opencorporates.com>`__, `One "
+"<https://www.one.org/international/>`__, the `Open Contracting Partnership "
+"<http://www.open-contracting.org>`__, `Global Witness "
+"<https://www.globalwitness.org/en-gb/>`__ and `The B Team "
+"<http://bteam.org/>`__."
 msgstr ""
-"Первоначальная разработка Стандарта данных о бенефициарном владении "
-"финансировалась OpenOwnership в рамках проекта, финансируемого Министерством"
-" Великобритании по международному развитию. Руководство OpenOwnership "
-"осуществляется руководящей группой ведущих мировых организаций из области "
-"прозрачности, включая Transparency International, OpenCorporates, One, Open "
-"Contracting Partnership, Global Witness и The B Team."
 
 # 1e2a6f2c51594139a7c2b4ac78855112
-#: ../../about/index.md:54
+#: ../../about/index.rst:83
 msgid ""
-"The specification and documentation have been developed by Open Data "
-"Services Co-operative and OpenCorporates. Read the credits for full details "
-"of the Standard's developers."
+"The specification and documentation have been developed by `Open Data "
+"Services Co-operative <http://www.opendataservices.coop>`__ and "
+"`OpenCorporates <https://opencorporates.com>`__. Read the :doc:`credits "
+"<credits>` for full details of the Standard's developers."
 msgstr ""
-"Разработкой спецификации и документации занимались Open Data Services Co-"
-"operative и OpenCorporates. Ознакомьтесь со сведениями об авторах для "
-"получения подробной информации о разработчиках Стандарта."
-
-# 4500f2cf192546b1a70aaa68b7cc55d2
-#: ../../about/index.md:57
-msgid "<h2>License and contributor agreement</h2>"
-msgstr "<h2>Лицензия и соглашение с участником</h2>"
 
 # e786969986c54ffd93c453d290aa6ab6
-#: ../../about/index.md:59
+#: ../../about/index.rst:94
 msgid ""
 "Schema contents of the OpenOwnership Register are Copyright 2016 World Wide "
 "Web Foundation on behalf of the OpenOwnership Steering Group."
@@ -202,22 +157,20 @@ msgstr ""
 " Wide Web Foundation от 2016 г. от имени Руководящей группы OpenOwnership."
 
 # 0ab9c56da15641e0b9b82d54b947e23e
-#: ../../about/index.md:61
+#: ../../about/index.rst:97
 msgid "The schema is licensed under the Apache License, Version 2.0."
 msgstr "На схему распространяется действие Лицензии Apache, версия 2.0."
 
-# 20279ce06ee149bcbba93b17b5caf599
-#: ../../about/index.md:63
-msgid "Contributors are required to accept the contributor agreement."
-msgstr "От участников требуется принять соглашение с участником."
-
-# 4729d98e687f4f21b7157bc7a19e49ba
-#: ../../about/index.md:65
-msgid "<h2>Contact</h2>"
-msgstr "<h2>Контакты</h2>"
+# eb73b7356ae64a4b9a5ebdc630d1975b
+#: ../../about/index.rst:99
+msgid ""
+"Contributors are required to accept the `contributor agreement "
+"<https://github.com/openownership/data-"
+"standard/blob/master/CONTRIBUTING.md>`__."
+msgstr ""
 
 # 8bf066aa21d245339c18e2379c5687b5
-#: ../../about/index.md:67
+#: ../../about/index.rst:108
 msgid ""
 "For more details about OpenOwnership, please email "
 "support@openownership.org."
