@@ -205,9 +205,12 @@ class JSONValue(LiteralInclude):
             title = filename
         pointed = resolve_pointer(json_obj, self.options['pointer'])
 
-        string = json.dumps(pointed, indent='    ')
-        if string.startswith('"') and string.endswith('"'):
-            string = string[1:-1]
+        if isinstance(pointed, str):
+            string = pointed
+        else:
+            string = json.dumps(pointed, indent='    ')
+            if string.startswith('"') and string.endswith('"'):
+                string = string[1:-1]
         return [nodes.paragraph(string,string)]
 
 
