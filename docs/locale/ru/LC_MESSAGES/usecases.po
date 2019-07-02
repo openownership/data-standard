@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Valery Gusak <valery.gusak@gmail.com>, 2019
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -109,6 +110,10 @@ msgid ""
 "<https://docs.google.com/document/d/1s1qqFAK3cDjTGAlCaQvPOb8KzKkssn9xu2HzWeY6amE/edit#>`__"
 " published in December 2016."
 msgstr ""
+"В основе данной страницы лежит `документ о консультациях касательно "
+"вариантов использования "
+"<https://docs.google.com/document/d/1s1qqFAK3cDjTGAlCaQvPOb8KzKkssn9xu2HzWeY6amE/edit#>`__,"
+" опубликованный в декабре 2016 года."
 
 # 546dce1c41c848b8bd235b7e42609b7e
 #: ../../usecases.rst:32
@@ -116,6 +121,8 @@ msgid ""
 "*The following cases sketch out ways in which open beneficial ownership data"
 " might be published.*"
 msgstr ""
+"*В следующих вариантах в общих чертах описаны возможные способы "
+"опубликования открытых данных о бенефициарном владении.*"
 
 # e8363e3339374638b155565a52c8a5d7
 #: ../../usecases.rst:36
@@ -195,6 +202,12 @@ msgid ""
 " of beneficial ownership data, allowing users to declare their own ownership"
 " of a company, or to report on the ownership structure of a company."
 msgstr ""
+"Например, `Who Controls It <http://alpha.whocontrolsit.com/>`__ представляла"
+" собой экспериментальную платформу (предшествовавшую платформе "
+"OpenOwnership.org), предназначенную для тестирования некоторых проблем "
+"пользовательского интерфейса при предоставлении данных о бенефициарном "
+"владении, и позволяла пользователям объявлять свое собственное владение "
+"компанией или сообщать о структуре владения компании."
 
 # bdd25ff68bc44648aaedcc581e1a57fe
 #: ../../usecases.rst:69
@@ -232,6 +245,12 @@ msgid ""
 "give control, but do give economic interests. Note that sometimes they may "
 "have *some* control, such as veto rights, e.g. over mergers or asset sales;"
 msgstr ""
+"`Облигации, привилегированные акции и другие инвестиции "
+"<http://www.investopedia.com/terms/p/preference-shares.asp>`__, не "
+"предоставляющие возможность контроля, но предоставляющие экономические доли "
+"участия. Обратите внимание, что иногда они могут иметь определенный "
+"контроль, такой как право вето, например, в отношении слияний компаний или "
+"продажи активов;"
 
 # fdae1204000148bca4c954f4fbee4f67
 #: ../../usecases.rst:85
@@ -325,6 +344,9 @@ msgid ""
 "*The following cases look at different ways in which stakeholders may wish "
 "to make use of beneficial ownership data.*"
 msgstr ""
+"*В следующих вариантах рассмотрены разные способы, посредством которых "
+"заинтересованные стороны могут пожелать воспользоваться данными о "
+"бенефициарном владении.*"
 
 # 7d1c212f22bd47f39b549bed5cf399bd
 #: ../../usecases.rst:125
@@ -371,6 +393,20 @@ msgid ""
 "call typically determines whether new partnerships or transactions meet the "
 "policy requirements of the business."
 msgstr ""
+"Информацию о владении и контроле, как правило, собирают субъекты, с которыми"
+" устанавливаются деловые отношения и которые после этого оценивают "
+"достоверность информации, полученной в результате перекрестных проверок с "
+"дополнительными данными, доступными в открытых источниках. При проведении "
+"транзакций с высокой стоимостью / высоким риском часто привлекаются третьи "
+"стороны для оказания поддержки в процессах комплексной проверки. Субъекты, с"
+" которыми устанавливаются отношения, ищут факторы риска (например, не "
+"связана ли компания с Публичными должностными лицами и не получила ли она "
+"негативной огласки в СМИ), а также для уверенности в том, что отсутствуют "
+"факторы риска (к примеру, что бенефициарный владелец связан с компанией из "
+"санкционного списка). После оценки рисков, как правило, выносится экспертное"
+" заключение, в котором определяется, соответствуют ли новые партнерства или "
+"транзакции требованиям правил соответствующего субъекта касательно ведения "
+"хозяйственной деятельности."
 
 # 526dedaae86542ab84547a5fd5ed40f4
 #: ../../usecases.rst:148
@@ -395,6 +431,11 @@ msgid ""
 "that the company is not on sanctions lists, that the ‘beneficial owners’ are"
 " not PEPs, and that they are not on debarment lists.*"
 msgstr ""
+"Пример историй о пользователях: специалист по закупкам в многостороннем "
+"банке развития должен одобрить заявку нового поставщика. Ему необходимо "
+"удостовериться, что компания не внесена в санкционные списки, что "
+"«бенефициарные владельцы» не являются ПДЛ и что они не состоят в черных "
+"списках."
 
 # d2824a0ba1d64e68a52cd2f0a541300f
 #: ../../usecases.rst:160
@@ -422,11 +463,15 @@ msgid ""
 "**Journalists** - researching stories on a particular company, individual or"
 " group of companies"
 msgstr ""
+"**Журналистов** — исследующих материалы о конкретной компании, физическом "
+"лице или группе компаний"
 
 # 304ae755108c49c5aa07e06de6298f46
 #: ../../usecases.rst:171
 msgid "**NGO anti-corruption investigation** - finding leads, following them"
 msgstr ""
+"**Расследования НПО в сфере борьбы с коррупцией** — поиск направлений для "
+"расследования и следование им"
 
 # 958590d0060146d8a9c6b02e38b382c9
 #: ../../usecases.rst:173
@@ -434,6 +479,8 @@ msgid ""
 "**Law enforcement** - looking to establish a clear evidence base, and "
 "seeking to establish proof of intent"
 msgstr ""
+"**Правоохранительные органы** — стремление установить ясную доказательную "
+"базу и установить доказательство присутствия намерения"
 
 # 8fdbbd567e424a6c9c0ed089d38fdf98
 #: ../../usecases.rst:176
@@ -442,6 +489,9 @@ msgid ""
 "example Stolen Assets, proceeds of fraud, or assets hidden in divorce "
 "settlements"
 msgstr ""
+"**Возвращение активов** — возвращение денег/активов, причитающихся клиенту, "
+"например, похищенные активы, доходы от мошенничества или активы, скрытые при"
+" разделе имущества"
 
 # c7f85db5f6cf4c188cd48488e80677f4
 #: ../../usecases.rst:180
@@ -479,6 +529,10 @@ msgid ""
 "corporate structures and direct relationships rather than indirect and "
 "ultimate relationships"
 msgstr ""
+"Расследования нарушений налогового законодательства и норм бухгалтерского "
+"учета являются аналогичными, но могут быть в большей мере сфокусированы на "
+"корпоративных структурах и прямых отношениях, чем на косвенных отношениях и "
+"отношениях конечного владения и контроля"
 
 # 460ccf373a894b28a6feb70c124e9b99
 #: ../../usecases.rst:196
@@ -487,6 +541,9 @@ msgid ""
 "looking at known associates and companies, in both the home country and "
 "other jurisdictions.*"
 msgstr ""
+"Пример историй о пользователях: *журналист расследует одного политика, "
+"включая изучение известных партнеров и компаний как в стране проживания, так"
+" и в других юрисдикциях.*"
 
 # e3fa49763fe2444b91630c8a359e93d9
 #: ../../usecases.rst:201
@@ -520,6 +577,9 @@ msgid ""
 "between beneficial ownership disclosures and other public records, to "
 "identify lies*"
 msgstr ""
+"В качестве примера историй о пользователях: *журналисты данных желают найти "
+"аномалии между раскрытой информацией о бенефициарном владении и другими "
+"публичными материалами в целях выявления лжи*"
 
 # 47015014049e45caad7913ddcf7ca1ce
 #: ../../usecases.rst:216

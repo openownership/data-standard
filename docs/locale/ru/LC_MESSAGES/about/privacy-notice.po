@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Valery Gusak <valery.gusak@gmail.com>, 2019
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,6 +34,10 @@ msgid ""
 "about how they collect and process personal data, `see their Privacy Policy "
 "<https://docs.readthedocs.io/en/latest/privacy-policy.html>`__."
 msgstr ""
+"ReadTheDocs предоставляет платформу, на которой размещаются данные "
+"документы. Для получения информации о том, как на этом ресурсе "
+"осуществляется сбор и обработка персональных данных, `см. его Политику "
+"приватности  <https://docs.readthedocs.io/en/latest/privacy-policy.html>`__."
 
 # 980616ec80e045acaa926f73b06d4245
 #: ../../about/privacy-notice.rst:9
@@ -87,6 +92,12 @@ msgid ""
 "identify yourself from our pseudonymised data, see `GDPR Article 11 <https"
 "://gdpr-info.eu/art-11-gdpr/>`__."
 msgstr ""
+"Право на доступ, исправление, удаление и ограничение обработки. Обратите "
+"внимание, что права на удаление и ограничение обработки уравновешиваются "
+"нашими законными интересами. В соответствующих случаях вы должны "
+"предоставлять информацию для вашей повторной идентификации на основе наших "
+"псевдонимизированных данных, см. `Статью 11 Общего регламента по защите "
+"данных <https://gdpr-info.eu/art-11-gdpr/>`__.."
 
 # e9615a1c50ba4900a21c2fe30f1f5fd9
 #: ../../about/privacy-notice.rst:28
@@ -99,6 +110,9 @@ msgid ""
 "Our supervisory authority is the `ICO in the UK <https://ico.org.uk/>`__. "
 "You have the right to lodge a complaint with them."
 msgstr ""
+"Нашим контролирующим органом является `Управление Комиссара по информации в "
+"Великобритании <https://ico.org.uk/>`__. Вы имеете право подать жалобу в "
+"этот орган."
 
 # 88ce8da4cbef4e0da12d1ad020eceab8
 #: ../../about/privacy-notice.rst:34
@@ -121,6 +135,12 @@ msgid ""
 "about the type of data, the purpose of the processing and legitimate "
 "interests, and the storage and retention of the data are set out below."
 msgstr ""
+"Мы опираемся на `законные интересы <https://ico.org.uk/for-organisations"
+"/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-"
+"processing/legitimate-interests/>`__ (`Общий регламент по защите данных, "
+"статья 6(1)(f) <https://gdpr-info.eu/art-6-gdpr/>`__) как законную основу "
+"для этой обработки данных. Сведения о типе данных, цели обработки и законных"
+" интересах, а также сохранении и хранении данных изложены ниже."
 
 # 1bad6f71b1b64db69d29772db303be29
 #: ../../about/privacy-notice.rst:48
@@ -129,6 +149,9 @@ msgid ""
 "analysing how the website is used, so that we can improve it. A self hosted "
 "copy of `Matomo <http://matomo.org>`__ is used for this."
 msgstr ""
+"Мы осуществляем сбор данных о ваших посещениях веб-сайта с целью анализа "
+"егоиспользования для получения возможности улучшения веб-сайта. В этих целях"
+" используется размещенная локально копия `Matomo <http://matomo.org>`__."
 
 # 1d4d8accd55740c192b0b3725de93ebb
 #: ../../about/privacy-notice.rst:52
