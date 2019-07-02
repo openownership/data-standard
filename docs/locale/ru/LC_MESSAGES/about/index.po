@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Valery Gusak <valery.gusak@gmail.com>, 2019
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,6 +48,11 @@ msgid ""
 " government and business can all benefit from greater transparency around "
 ":ref:`beneficial ownership <what-is-bo>`."
 msgstr ""
+"Легализация доходов, полученных преступным путем, уклонение от налогов и "
+"неясные цепочки владения — транснациональные проблемы, требующие "
+"транснационального решения. Гражданское общество, правительство и бизнес — "
+"все могут получить выгоду от более высокого уровня прозрачности в отношении "
+":ref:`бенефициарного владения<what-is-bo>`."
 
 # 9ed0b3fe19314c9b88caf9f0fc9bd84c
 #: ../../about/index.rst:15
@@ -69,6 +75,9 @@ msgid ""
 "<governance>` co-chaired by OpenOwnership. More details about the "
 "organisation are available at www.openownership.org."
 msgstr ""
+"Разработка Стандарта ведется под руководством :doc:`рабочей "
+"группы<governance>` в сопредседательстве с OpenOwnership. Дополнительная "
+"информация об этой организации доступна по адресу www.openownership.org.\""
 
 # b087ec01c1504133bfc0b5d7c6ebfe1c
 #: ../../about/index.rst:29
@@ -89,6 +98,12 @@ msgid ""
 "consultation. A clear :ref:`changelog <changelog>` is provided, and the "
 "documentation of previous versions is maintained in archive form."
 msgstr ""
+"Имплементирующие лица должны понимать, что ожидаются будущие изменения до "
+"выпуска версии 1.0. Тем не менее, начиная с выпуска версии 0.1 любые "
+"структурные изменения или значительные изменения в определениях будут "
+"происходить только после консультаций. Предоставляется понятный :ref:`лог "
+"изменений<changelog>`, при этом документирование предыдущих версий ведется в"
+" форме архива."
 
 # 1e15a5319ef04ca8afede073db0f8de9
 #: ../../about/index.rst:39
@@ -115,6 +130,9 @@ msgid ""
 "Suggestions for changes can be made via the `project issue tracker "
 "<https://github.com/openownership/data-standard/issues>`__."
 msgstr ""
+"Предложения касательно изменений можно внести при помощи `системы "
+"отслеживания ошибок проекта<https://github.com/openownership/data-"
+"standard/issues>`__."
 
 # 025c21a21fda4916aede2d4faa85de84
 #: ../../about/index.rst:54
@@ -122,6 +140,8 @@ msgid ""
 "If you would like to be involved in the development and review of the "
 "Standard, see the :doc:`Governance <governance>` page."
 msgstr ""
+"Если вам хотелось бы участвовать в разработке и анализе Стандарта, см. "
+":doc:`страницу «Управление»<governance>`."
 
 # 960272634171485e95bd4cdf5a029092
 #: ../../about/index.rst:72
@@ -137,6 +157,17 @@ msgid ""
 "<https://www.globalwitness.org/en-gb/>`__ and `The B Team "
 "<http://bteam.org/>`__."
 msgstr ""
+"Первоначальная разработка Стандарта данных о бенефициарном владении "
+"финансировалась OpenOwnership в рамках проекта, финансируемого Министерством"
+" Великобритании по международному развитию. Руководство OpenOwnership "
+"осуществляется руководящей группой ведущих мировых организаций из области "
+"прозрачности, включая `Transparency International "
+"<https://www.transparency.org/>`__, `OpenCorporates "
+"<https://opencorporates.com>`__, `One "
+"<https://www.one.org/international/>`__, the `Open Contracting Partnership "
+"<http://www.open-contracting.org>`__, `Global Witness "
+"<https://www.globalwitness.org/en-gb/>`__ и `The B Team "
+"<http://bteam.org/>`__."
 
 # 1e2a6f2c51594139a7c2b4ac78855112
 #: ../../about/index.rst:83
@@ -146,6 +177,11 @@ msgid ""
 "`OpenCorporates <https://opencorporates.com>`__. Read the :doc:`credits "
 "<credits>` for full details of the Standard's developers."
 msgstr ""
+"Разработкой спецификации и документации занимались `Open Data Services Co-"
+"operative <http://www.opendataservices.coop>`__ и `OpenCorporates "
+"<https://opencorporates.com>`__. Ознакомьтесь со сведениями об "
+":doc:`авторах<credits>` для получения подробной информации о разработчиках "
+"Стандарта."
 
 # e786969986c54ffd93c453d290aa6ab6
 #: ../../about/index.rst:94
@@ -168,6 +204,9 @@ msgid ""
 "<https://github.com/openownership/data-"
 "standard/blob/master/CONTRIBUTING.md>`__."
 msgstr ""
+"От участников требуется принять `соглашение с участником "
+"<https://github.com/openownership/data-"
+"standard/blob/master/CONTRIBUTING.md>`__.."
 
 # 8bf066aa21d245339c18e2379c5687b5
 #: ../../about/index.rst:108
