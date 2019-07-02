@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Valery Gusak <valery.gusak@gmail.com>, 2019
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,7 +41,7 @@ msgstr ""
 # 918552ac6daa49da8a593d09fba2e2b1
 #: ../../userguides/validating-and-verifying.rst:12
 msgid "Validation against the standard"
-msgstr ""
+msgstr "Валидация на основе стандарта"
 
 # 8d18e4044aeb4d938453af2ea279fd31
 #: ../../userguides/validating-and-verifying.rst:18
@@ -51,6 +52,12 @@ msgid ""
 " data. Any serialisations to other formats should be tested to ensure that "
 "the data is correctly represented."
 msgstr ""
+"В целях интероперабельности с данными других издателей, а также возможности "
+"применения общих средств анализа данных, выпуски в формате JSON должны "
+"пройти валидацию на основе версии схемы Стандарта данных о бенефициарном "
+"владении, используемой для выработки данных. Все сериализации в другие "
+"форматы следует тестировать с целью обеспечения правильного представления "
+"данных."
 
 # 264ad749c0c44a599ed044050a30a4ba
 #: ../../userguides/validating-and-verifying.rst:24
@@ -68,7 +75,7 @@ msgstr ""
 # e8d34ece0ca34245ab0184a76815e1e1
 #: ../../userguides/validating-and-verifying.rst:33
 msgid "Pre-validation of data during collection"
-msgstr ""
+msgstr "Предварительная валидация данных при сборе"
 
 # af38504e4a49405d9d0ba68cab56842e
 # af38504e4a49405d9d0ba68cab56842e
@@ -80,4 +87,4 @@ msgstr "(Подлежит уточнению)"
 # 8465af1ac779429dbcae3bd188d2448e
 #: ../../userguides/validating-and-verifying.rst:45
 msgid "Verifying data"
-msgstr ""
+msgstr "Верификация данных"

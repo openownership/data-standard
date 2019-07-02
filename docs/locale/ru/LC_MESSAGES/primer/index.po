@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Valery Gusak <valery.gusak@gmail.com>, 2019
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,3 +46,10 @@ msgid ""
 " Data Standard <whatisthebods>` as a kind of template. Finally we look at "
 "the :doc:`scope of the Standard <whatdoesbodscover>` and what it offers."
 msgstr ""
+"Те, для кого концепция Бенефициарного владения является новой, захотят "
+"узнать, :doc:`что она собой представляет <whatisbo>` и :doc:`почему является"
+" важной <whyisbo> `. Затем, ознакомившись с тем, :doc:`какие данные "
+"необходимы <whatisbodata>` для описания цепочки Бенефициарного владения, `мы"
+" сможем понять Стандарт данных о бенефициарном владении <whatisthebods> ` "
+"как своего рода шаблон. В заключение мы `рассмотрим охват Стандарта "
+"<whatdoesbodscover> ` и предлагаемые им возможности."
