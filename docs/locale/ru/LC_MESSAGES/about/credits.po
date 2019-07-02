@@ -60,7 +60,7 @@ msgstr ""
 "<http://www.opendataservices.coop>`_), техническую работу выполнил Джеймс "
 "Бастер (`Open Data Services Co-operative "
 "<http://www.opendataservices.coop>`_), при этом было получено содействие "
-"рабочей `группы по стандарту данных<governance.rst>`_."
+"рабочей :doc:`группы по стандарту данных <governance>`."
 
 # 51628ca7072b4f529336319cecfae3dc
 #: ../../about/credits.rst:19
