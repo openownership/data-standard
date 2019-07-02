@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Valery Gusak <valery.gusak@gmail.com>, 2019
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-01 11:07+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,6 +38,13 @@ msgid ""
 "operative <http://www.opendataservices.coop>`_) and supported by the `data "
 "standard working group <governance>`."
 msgstr ""
+"Первую бета-версию Стандарта данных о бенефициарном владении написал Тим "
+"Дейвис (`Open Data Services Co-operative "
+"<http://www.opendataservices.coop>`_) с Беном Саймондсом "
+"(`OpenCorporates<http://www.opencorporates.com>`_), Крисом Таггартом "
+"(`OpenCorporates<http://www.opencorporates.com>`_) и Джеком Лордом "
+"(`OpenData Services Co-operative <http://www.opendataservices.coop>`_) при "
+"поддержке рабочей группы по стандарту данных"
 
 # ef31e2cce3b84234a31bd3f69f7b286d
 #: ../../about/credits.rst:12
@@ -47,6 +55,12 @@ msgid ""
 "(`Open Data Services Co-operative <http://www.opendataservices.coop>`_) and "
 "input from the :doc:`data standard working group <governance>`."
 msgstr ""
+"Версию 0.1 написали Тим Дейвис и Джек Лорд с предоставлением подтверждающей "
+"документации от Кади Армстронг (`Open Data Services Co-operative "
+"<http://www.opendataservices.coop>`_), техническую работу выполнил Джеймс "
+"Бастер (`Open Data Services Co-operative "
+"<http://www.opendataservices.coop>`_), при этом было получено содействие "
+"рабочей `группы по стандарту данных<governance.rst>`_."
 
 # 51628ca7072b4f529336319cecfae3dc
 #: ../../about/credits.rst:19
@@ -58,3 +72,8 @@ msgid ""
 "<http://www.opendataservices.coop>`_) and input from the :doc:`data standard"
 " working group <governance>`."
 msgstr ""
+"\\\"Версию 0.2 написали Джек Лорд, Саймон Уайтхаус и Кади Армстронг (`Open "
+"Data Services Co-operative <http://www.opendataservices.coop>`_), "
+"техническую работу выполнили Джеймс Бастер, Ами Гай и Дэвид Разник (`Open "
+"Data Services Co-operative <http://www.opendataservices.coop>`_), также было"
+" получено содействие рабочей `группы по стандарту данных<governance.rst>`_.."
