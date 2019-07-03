@@ -44,7 +44,7 @@ msgstr ""
 "(`OpenCorporates<http://www.opencorporates.com>`_), Крисом Таггартом "
 "(`OpenCorporates<http://www.opencorporates.com>`_) и Джеком Лордом "
 "(`OpenData Services Co-operative <http://www.opendataservices.coop>`_) при "
-"поддержке :doc:`рабочей группы по стандарту данных <governance> `."
+"поддержке :doc:`группы по стандарту данных <governance>`."
 
 # ef31e2cce3b84234a31bd3f69f7b286d
 #: ../../about/credits.rst:12
