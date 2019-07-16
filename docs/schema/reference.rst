@@ -110,6 +110,7 @@ Interest
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Interest
    :collapse: share,annotations
+   :externallinks: {"share":{"url":"#share","text":"Share"}}
 
 .. _schema-interested-party:
 
