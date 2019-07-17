@@ -5,7 +5,7 @@ CommonMark==0.7.5
 -e git+https://github.com/rtfd/recommonmark.git@450909bdcf4c5eafde7c89696006530ba7cc78de#egg=recommonmark
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8d0d2bb00742b25707866b0f7a2b6c0c35948c5e#egg=sphinxcontrib_jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@fab0ff0167d32ec243d42f272e0e50766299c078#egg=sphinxcontrib_opendataservices
--e git+https://github.com/openownership/data-standard-sphinx-theme.git@3bf1c77f4b44cf9b22a785b9d641721653b7c416#egg=standard_theme
+-e git+https://github.com/openownership/data-standard-sphinx-theme.git@6ec4eb3f343c91c44c0cddccd6b247b276393aca#egg=standard_theme
 urllib3==1.24.2
 requests==2.21.0
 git+https://github.com/openownership/bods-babel.git@c391be94700cdaa50b915e23981f9058097d6bc3#egg=bods-babel
