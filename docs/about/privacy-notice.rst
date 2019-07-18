@@ -66,6 +66,13 @@ not track your visit.
 
 Matomo also has its own opt out mechanism:
 
+.. raw:: html
+
+    <!-- opt out iframe - clicking this will mean people can opt out of tracking -->
+    <iframe style="border: 0; height: 200px; width: 600px;"
+        src="https://mon.opendataservices.coop/piwik/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily="
+        ></iframe>
+
 Data processors: Open Data Services Co-operative Limited, Bytemark.
 
 The data controller (OpenOwnership) is based in the USA.
