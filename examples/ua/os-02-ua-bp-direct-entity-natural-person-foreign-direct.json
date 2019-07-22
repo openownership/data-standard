@@ -25,7 +25,7 @@
       ]
     },
     "publicationDetails": {
-       "publicationDate": "2019-06-26",
+      "publicationDate": "2019-06-26",
       "bodsVersion": "0.2",
       "publisher": {
         "name": "Міністерство Юстиції України"
@@ -48,14 +48,14 @@
     "addresses": [
       {
         "type": "service",
-        "address": "Молдова, г. Кишенев, ул. Винная 5, кв 44",
-        "country": "MD"
+        "address": "100 вулиця Прімера, Тбілісі, Грузія",
+        "country": "GE"
       }
     ],
     "nationalities": [
       {
-        "name": "Mолдова",
-        "code": "MD"
+        "name": "грузинський",
+        "code": "GE"
       }
     ],
    "source": {
@@ -70,7 +70,7 @@
       ]
     },
     "publicationDetails": {
-       "publicationDate": "2019-06-26",
+      "publicationDate": "2019-06-26",
       "bodsVersion": "0.2",
       "publisher": {
         "name": "Міністерство Юстиції України"
@@ -78,10 +78,10 @@
     }
   },
   {
-    "statementID": "5acd2ef4-4984-4495-bda4-3726868d1d40",
+    "statementID": "39464ed3-dc95-4a56-8555-955b1ddfa0d6",
     "statementType": "personStatement",
     "isComponent": false,
-    "statementDate": "2018-12-19",
+    "statementDate": "2018-12-18",
     "personType": "knownPerson",
     "names": [
       {
@@ -111,12 +111,12 @@
           "name": "Ірина Яковенко"
         },
         {
-          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
+          "name": "Компанія А"
         }
       ]
     },
     "publicationDetails": {
-       "publicationDate": "2019-06-26",
+      "publicationDate": "2019-06-26",
       "bodsVersion": "0.2",
       "publisher": {
         "name": "Міністерство Юстиції України"
@@ -165,7 +165,7 @@
     }
   },
   {
-    "statementID": "ab4af458-7655-454d-b002-0b78b1d132aa",
+    "statementID": "36a623a3-dea9-4d34-8367-ef1d815e648b",
     "statementType": "ownershipOrControlStatement",
     "isComponent": false,
     "statementDate": "2018-12-18",
@@ -173,7 +173,7 @@
       "describedByEntityStatement": "2dc4efdd-d179-4958-8372-073c69eb8274"
     },
     "interestedParty": {
-      "describedByPersonStatement": "5acd2ef4-4984-4495-bda4-3726868d1d40"
+      "describedByPersonStatement": "39464ed3-dc95-4a56-8555-955b1ddfa0d6"
     },
     "interests": [
       {
@@ -181,9 +181,18 @@
         "interestLevel": "direct",
         "beneficialOwnershipOrControl": true,
         "share": {
-          "exact": 50
+          "exact": 30
         },
-        "startDate": "2012-10-01"
+        "startDate": "2015-10-30"
+      },
+      {
+        "type": "voting-rights",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 30
+        },
+        "startDate": "2015-10-30"
       }
     ],
     "source": {
@@ -193,12 +202,12 @@
           "name": "Ірина Яковенко"
         },
         {
-          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО"
+          "name": "Компанія А"
         }
       ]
     },
     "publicationDetails": {
-       "publicationDate": "2019-06-26",
+      "publicationDate": "2019-06-26",
       "bodsVersion": "0.2",
       "publisher": {
         "name": "Міністерство Юстиції України"

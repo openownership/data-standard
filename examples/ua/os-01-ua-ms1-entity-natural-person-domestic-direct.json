@@ -5,7 +5,7 @@
     "isComponent": false,
     "statementDate": "2018-12-19",
     "entityType": "registeredEntity",
-    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО",
+    "name": "Компанія А",
     "alternateNames": [
       "ЯКОВЕНКО"
     ],
@@ -20,7 +20,7 @@
       "type": ["officialRegister"],
       "assertedBy": [
         {
-          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
+          "name": "Компанія А"
         }
       ]
     },
@@ -66,7 +66,7 @@
           "name": "Ірина Яковенко"
         },
         {
-          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
+          "name": "Компанія А"
         }
       ]
     },
@@ -91,22 +91,12 @@
     },
     "interests": [
       {
-        "type": "shareholding",
+        "type": "other-influence-or-control",
         "interestLevel": "direct",
         "beneficialOwnershipOrControl": true,
         "share": {
-          "exact": 100
-        },
-        "startDate": "2015-10-30"
-      },
-      {
-        "type": "voting-rights",
-        "interestLevel": "direct",
-        "beneficialOwnershipOrControl": true,
-        "share": {
-          "exact": 100
-        },
-        "startDate": "2015-10-30"
+          "exact": 30
+        }
       }
     ],
     "source": {
@@ -116,7 +106,7 @@
           "name": "Ірина Яковенко"
         },
         {
-          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО"
+          "name": "Компанія А"
         }
       ]
     },

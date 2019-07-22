@@ -25,7 +25,7 @@
       ]
     },
     "publicationDetails": {
-       "publicationDate": "2019-06-26",
+      "publicationDate": "2019-06-26",
       "bodsVersion": "0.2",
       "publisher": {
         "name": "Міністерство Юстиції України"
@@ -35,27 +35,19 @@
   {
     "statementID": "a187549e-c456-4969-a9e4-2c1ece1d90cc",
     "statementType": "personStatement",
+    "personType": "knownPerson",
     "isComponent": false,
     "statementDate": "2018-12-18",
-    "personType": "knownPerson",
     "names": [
       {
         "type": "individual",
         "fullName": "Дмитрий Овчаренко"
       }
     ],
-    "birthDate": "1974-10",
     "addresses": [
       {
         "type": "service",
-        "address": "Молдова, г. Кишенев, ул. Винная 5, кв 44",
-        "country": "MD"
-      }
-    ],
-    "nationalities": [
-      {
-        "name": "Mолдова",
-        "code": "MD"
+        "address": "100 вулиця Прімера, Тбілісі, Грузія"
       }
     ],
    "source": {
@@ -70,7 +62,53 @@
       ]
     },
     "publicationDetails": {
-       "publicationDate": "2019-06-26",
+      "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
+  },
+  {
+    "statementID": "5db78834-bab9-4379-94f3-aa80746c3311",
+    "statementType": "personStatement",
+    "isComponent": false,
+    "statementDate": "2018-12-18",
+    "personType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Ірина Яковенко"
+      }
+    ],
+    "nationalities": [
+      {
+        "name": "Україна",
+        "code": "UA"
+      }
+    ],
+    "birthDate": "1965-11",
+    "addresses": [
+      {
+        "type": "service",
+        "address": "1 Шевченка, Киев",
+        "postCode": "12345",
+        "country": "UA"
+      }
+    ],
+   "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2019-06-26",
       "bodsVersion": "0.2",
       "publisher": {
         "name": "Міністерство Юстиції України"
@@ -90,13 +128,12 @@
     },
     "interests": [
       {
-        "type": "shareholding",
+        "type": "other-influence-or-control",
         "interestLevel": "direct",
         "beneficialOwnershipOrControl": true,
         "share": {
           "exact": 25
-        },
-        "startDate": "2010-10-01"
+        }
       }
     ],
     "source": {
@@ -111,7 +148,47 @@
       ]
     },
     "publicationDetails": {
-       "publicationDate": "2019-06-26",
+      "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
+  },
+  {
+    "statementID": "586c9692-89d3-448f-8007-3c7cc0328216",
+    "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
+    "statementDate": "2018-12-18",
+    "subject": {
+      "describedByEntityStatement": "2dc4efdd-d179-4958-8372-073c69eb8274"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "5db78834-bab9-4379-94f3-aa80746c3311"
+    },
+    "interests": [
+      {
+        "type": "other-influence-or-control",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 30
+        }
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2019-06-26",
       "bodsVersion": "0.2",
       "publisher": {
         "name": "Міністерство Юстиції України"
