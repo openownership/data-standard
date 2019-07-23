@@ -1,10 +1,11 @@
 [
-    {
+  {
     "statementID": "891c9b38-5f92-432d-832c-0cb03c5b4745",
     "statementType": "entityStatement",
+    "isComponent": false,
     "statementDate": "2018-12-17",
     "entityType": "registeredEntity",
-    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО-АБРАГАМОВСЬКИЙ",
+    "name": "Компанія А",
     "alternateNames": [
       "ЯКОВЕНКО-АБРАГАМОВСЬКИЙ"
     ],
@@ -14,21 +15,33 @@
         "scheme": "UA-EDR",
         "id": "XE1234"
       }
-    ]
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
   },
   {
     "statementID": "73144a80-67c5-462c-8caa-70aae37e69ba",
     "statementType": "entityStatement",
+    "isComponent": true,
     "statementDate": "2018-12-17",
     "entityType": "unknownEntity",
-    "missingInfoReason": "Unknown entity, or entities, generated as part of an indirect ownership or control disclosure. See annotations for detail.",
-    "annotations": [
-      {
-        "statementPointerTarget": "/",
-        "motivation": "commenting",
-        "description": "Owned through 100% share in ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО, which owns 50% of ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО-АБРАГАМОВСЬКИЙ."
-      }
-    ],
+    "unspecifiedEntityDetails": {
+      "reason": "information-unknown-to-publisher",
+      "description": "Unknown entity, or entities, generated as part of an indirect ownership or control disclosure. See annotations for unstructured description of ownership-or-control."
+    },
     "source": {
       "type": ["officialRegister"],
       "assertedBy": [
@@ -36,16 +49,24 @@
           "name": "Ірина Яковенко"
         },
         {
-          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО-АБРАГАМОВСЬКИЙ"
+          "name": "Компанія А"
         }
       ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
     }
   },
   {
     "statementID": "9e8a9184-e53e-448b-ab0f-5411297e33a5",
     "statementType": "personStatement",
+    "personType": "knownPerson",
+    "isComponent": false,
     "statementDate": "2018-12-17",
-    "entityType": "knownPerson",
     "names": [
       {
         "type": "individual",
@@ -58,11 +79,107 @@
         "code": "UA"
       }
     ],
-    "birthDate": "1965-11"
+    "birthDate": "1965-11",
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
+  },
+  {
+    "statementID": "a4cedf1a-dc4e-415d-8a84-bf4d21aec777",
+    "statementType": "ownershipOrControlStatement",
+    "isComponent": true,
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "891c9b38-5f92-432d-832c-0cb03c5b4745"
+    },
+    "interestedParty": {
+      "describedByEntityStatement": "73144a80-67c5-462c-8caa-70aae37e69ba"
+    },
+    "interests": [
+      {
+        "interestLevel": "unknown",
+        "beneficialOwnershipOrControl": false
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
+  },
+  {
+    "statementID": "2473c337-107e-424a-867a-0aae4272a98d",
+    "statementType": "ownershipOrControlStatement",
+    "isComponent": true,
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "73144a80-67c5-462c-8caa-70aae37e69ba"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "9e8a9184-e53e-448b-ab0f-5411297e33a5"
+    },
+    "interests": [
+      {
+        "interestLevel": "unknown",
+        "beneficialOwnershipOrControl": false
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+      "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
   },
   {
     "statementID": "a6e44acf-bd46-40aa-b8a6-f534463f3292",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
+    "componentStatementIDs": [
+      "2473c337-107e-424a-867a-0aae4272a98d",
+      "a4cedf1a-dc4e-415d-8a84-bf4d21aec777",
+      "73144a80-67c5-462c-8caa-70aae37e69ba"
+    ],
     "statementDate": "2018-12-17",
     "subject": {
       "describedByEntityStatement": "891c9b38-5f92-432d-832c-0cb03c5b4745"
@@ -76,68 +193,44 @@
         "interestLevel": "indirect",
         "beneficialOwnershipOrControl": true,
         "share": {
-          "exact": 50
+          "exact": 30
+        },
+        "startDate": "2017-11-01"
+      },
+      {
+        "type": "voting-rights",
+        "interestLevel": "indirect",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 30
         },
         "startDate": "2017-11-01"
       }
     ],
-   "annotations": [
-      {
-        "statementPointerTarget": "/interests",
-        "motivation": "linking",
-        "description": "The indirect interests in this ownership-or-control statement are exercised, in whole or in part, through the ownership-or-control relationship described in the linked statement.",
-        "linkedStatementID": "a4cedf1a-dc4e-415d-8a84-bf4d21aec777"
-      }
-    ]
-  },
-  {
-    "statementID": "a4cedf1a-dc4e-415d-8a84-bf4d21aec777",
-    "statementType": "ownershipOrControlStatement",
-    "statementDate": "2018-12-17",
-    "subject": {
-      "describedByEntityStatement": "891c9b38-5f92-432d-832c-0cb03c5b4745"
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
     },
-    "interestedParty": {
-      "describedByEntityStatement": "73144a80-67c5-462c-8caa-70aae37e69ba"
-    },
-    "interests": [
-      {
-        "type": "influence-or-control",
-        "interestLevel": "unknown",
-        "beneficialOwnershipOrControl": false
-      }
-    ],
     "annotations": [
       {
         "statementPointerTarget": "/",
         "motivation": "commenting",
-        "description": "This ownership-or-control statement was made as part of the disclosure of an indirect beneficial ownership relationship."
-      }
-    ]
-  },
-  {
-    "statementID": "2473c337-107e-424a-867a-0aae4272a98d",
-    "statementType": "ownershipOrControlStatement",
-    "statementDate": "2018-12-17",
-    "subject": {
-      "describedByEntityStatement": "73144a80-67c5-462c-8caa-70aae37e69ba"
-    },
-    "interestedParty": {
-      "describedByPersonStatement": "9e8a9184-e53e-448b-ab0f-5411297e33a5"
-    },
-    "interests": [
-      {
-        "type": "influence-or-control",
-        "interestLevel": "unknown",
-        "beneficialOwnershipOrControl": false
+        "description": "Owned through 50% share in Компанія Б, which owns 60% of Компанія А."
       }
     ],
-    "annotations": [
-      {
-        "statementPointerTarget": "/",
-        "motivation": "commenting",
-        "description": "This ownership-or-control statement was made as part of the disclosure of an indirect beneficial ownership relationship."
+    "publicationDetails": {
+      "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
       }
-    ]
+    }
   }
 ]
