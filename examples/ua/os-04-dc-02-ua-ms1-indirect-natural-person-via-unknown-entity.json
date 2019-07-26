@@ -1,0 +1,224 @@
+[
+    {
+    "statementID": "891c9b38-5f92-432d-832c-0cb03c5b4745",
+    "statementType": "entityStatement",
+    "isComponent": false,
+    "statementDate": "2018-12-17",
+    "entityType": "registeredEntity",
+    "name": "Компанія А",
+    "alternateNames": [
+      "А"
+    ],
+    "identifiers": [
+      {
+        "scheme": "UA-EDR",
+        "id": "XE-OS-04-DC-02-A"
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
+  },
+  {
+    "statementID": "73144a80-67c5-462c-8caa-70aae37e69ba",
+    "statementType": "entityStatement",
+    "isComponent": true,
+    "statementDate": "2018-12-17",
+    "entityType": "unknownEntity",
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
+  },
+  {
+    "statementID": "9e8a9184-e53e-448b-ab0f-5411297e33a5",
+    "statementType": "personStatement",
+    "isComponent": false,
+    "statementDate": "2018-12-17",
+    "personType": "knownPerson",
+    "names": [
+      {
+        "type": "individual",
+        "fullName": "Ірина Яковенко"
+      }
+    ],
+    "nationalities": [
+      {
+        "name": "Україна",
+        "code": "UA"
+      }
+    ],
+    "birthDate": "1965-11",
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
+  },
+  {
+    "statementID": "a4cedf1a-dc4e-415d-8a84-bf4d21aec777",
+    "statementType": "ownershipOrControlStatement",
+    "isComponent": true,
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "891c9b38-5f92-432d-832c-0cb03c5b4745"
+    },
+    "interestedParty": {
+      "describedByEntityStatement": "73144a80-67c5-462c-8caa-70aae37e69ba"
+    },
+    "interests": [
+      {
+        "interestLevel": "unknown",
+        "beneficialOwnershipOrControl": false
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
+  },
+  {
+    "statementID": "2473c337-107e-424a-867a-0aae4272a98d",
+    "statementType": "ownershipOrControlStatement",
+    "isComponent": true,
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "73144a80-67c5-462c-8caa-70aae37e69ba"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "9e8a9184-e53e-448b-ab0f-5411297e33a5"
+    },
+    "interests": [
+      {
+        "interestLevel": "unknown",
+        "beneficialOwnershipOrControl": false
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
+  },
+  {
+    "statementID": "a6e44acf-bd46-40aa-b8a6-f534463f3292",
+    "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
+    "componentStatementIDs": [
+      "73144a80-67c5-462c-8caa-70aae37e69ba",
+      "a4cedf1a-dc4e-415d-8a84-bf4d21aec777",
+      "2473c337-107e-424a-867a-0aae4272a98d"
+    ],
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "891c9b38-5f92-432d-832c-0cb03c5b4745"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "9e8a9184-e53e-448b-ab0f-5411297e33a5"
+    },
+    "interests": [
+      {
+        "type": "shareholding",
+        "interestLevel": "indirect",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 30
+        },
+        "startDate": "2017-11-01"
+      },
+      {
+        "type": "voting-rights",
+        "interestLevel": "indirect",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 30
+        },
+        "startDate": "2017-11-01"
+      }
+    ],
+    "source": {
+      "type": ["officialRegister"],
+      "assertedBy": [
+        {
+          "name": "Ірина Яковенко"
+        },
+        {
+          "name": "Компанія А"
+        }
+      ]
+    },
+    "publicationDetails": {
+       "publicationDate": "2019-06-26",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "Міністерство Юстиції України"
+      }
+    }
+  }
+]
