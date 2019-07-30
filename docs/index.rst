@@ -7,9 +7,9 @@ This website contains the draft specification of the Beneficial Ownership Data S
 
 .. container:: frontpageboxleft
 
- .. cssclass:: h2
+   .. cssclass:: h2
 
-      For Newcomers
+     For Newcomers
 
    Get an overview of beneficial ownership and why a standardised format for data is important.
 
@@ -34,9 +34,9 @@ This website contains the draft specification of the Beneficial Ownership Data S
 
 .. container:: frontpageboxright
 
-.. cssclass:: h2
+   .. cssclass:: h2
 
-      For Developers
+     For Developers
 
    Understand how to package up and release beneficial ownership data.
 
