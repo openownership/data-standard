@@ -33,6 +33,7 @@ Address
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Address
+   :externallinks: {"type":{"url":"#addresstype","text":"codelist"}}
 
 
 .. note::
@@ -62,6 +63,7 @@ The ``annotations`` property of statements currently allows an array of these si
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Annotation
+   :externallinks: {"motivation":{"url":"#annotationmotivation","text":"codelist"}}
 
 .. _schema-country:
 
@@ -85,6 +87,7 @@ EntityStatement
 
 .. jsonschema:: ../_build_schema/entity-statement.json
    :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations,publicationDetails
+   :externallinks: {"entityType":{"url":"#entitytype","text":"codelist"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"codelist"}}
 
 .. _schema-id:
 
@@ -120,7 +123,7 @@ Interest
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Interest
    :collapse: share,annotations
-   :externallinks: {"share":{"url":"#share","text":"Share"}}
+   :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"codelist"}}
 
 .. _schema-interested-party:
 
@@ -133,6 +136,7 @@ InterestedParty
 .. jsonschema:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /properties/interestedParty
    :collapse:
+   :externallinks: {"unspecified/reason":{"url":"#unspecifiedreason","text":"codelist"}}
 
 .. _schema-jurisdiction:
 
@@ -155,6 +159,7 @@ Name
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Name
+   :externallinks: {"type":{"url":"#nametype","text":"codelist"}}
 
 .. _schema-ownership-or-control-statement:
 
@@ -179,6 +184,7 @@ PepStatusDetails
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/PepStatusDetails
    :collapse: jurisdiction,source
+   :externallinks: {"source/type":{"url":"#sourcetype","text":"codelist"}}
 
 .. _schema-person-statement:
 
@@ -190,6 +196,8 @@ PersonStatement
 
 .. jsonschema:: ../_build_schema/person-statement.json
    :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails,publicationDetails,taxResidencies
+   :externallinks: {"unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"codelist"}}
+
 
 .. _schema-publicationdetails:
 
@@ -250,6 +258,7 @@ Source
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Source
    :collapse: assertedBy
+   :externallinks: {"type":{"url":"#sourcetype","text":"codelist"}}
 
 
 See :any:`Sources and annotations <provenance>` for a discussion of provenance modelling.
