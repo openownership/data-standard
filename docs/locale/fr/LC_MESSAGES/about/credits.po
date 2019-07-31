@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:16+0000\n"
+"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,25 +17,40 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# 2ecce5a2c01b4f9487c0a3492e13f43a
-#: ../../about/credits.md:1
+# c97fc9661f07470f91d363471ffe9422
+#: ../../about/credits.rst:2
 msgid "Credits"
 msgstr ""
 
-# 675ee2e810064612befeeeeb0217a7e8
-#: ../../about/credits.md:4
+# d726eade2e994509a6de09dce8346799
+#: ../../about/credits.rst:4
 msgid ""
 "The first beta version of the Beneficial Ownership Data Standard was written"
-" by Tim Davies (Open Data Services Co-operative) with Ben Symonds "
-"(OpenCorporates), Chris Taggart (OpenCorporates) and Jack Lord (Open Data "
-"Services Co-operative) and supported by the data standard working group."
+" by Tim Davies (`Open Data Services Co-operative "
+"<http://www.opendataservices.coop>`_) with Ben Symonds (`OpenCorporates "
+"<http://www.opencorporates.com>`_), Chris Taggart (`OpenCorporates "
+"<http://www.opencorporates.com>`_) and Jack Lord (`Open Data Services Co-"
+"operative <http://www.opendataservices.coop>`_) and supported by the `data "
+"standard working group <governance>`."
 msgstr ""
 
-# 9773c6249b444e7fae24be716c29e236
-#: ../../about/credits.md:6
+# ef31e2cce3b84234a31bd3f69f7b286d
+#: ../../about/credits.rst:12
 msgid ""
 "The 0.1 version was written by Tim Davies and Jack Lord with supporting "
-"documentation from Kadie Armstrong (Open Data Services Co-operative), "
-"technical work from James Baster (Open Data Services Co-operative) and input"
-" from the data standard working group."
+"documentation from Kadie Armstrong (`Open Data Services Co-operative "
+"<http://www.opendataservices.coop>`_), technical work from James Baster "
+"(`Open Data Services Co-operative <http://www.opendataservices.coop>`_) and "
+"input from the :doc:`data standard working group <governance>`."
+msgstr ""
+
+# 51628ca7072b4f529336319cecfae3dc
+#: ../../about/credits.rst:19
+msgid ""
+"The 0.2 version was written by Jack Lord, Simon Whitehouse and Kadie "
+"Armstrong (`Open Data Services Co-operative "
+"<http://www.opendataservices.coop>`_), technical work from James Baster, Ben"
+" Webb, Amy Guy and David Raznick (`Open Data Services Co-operative "
+"<http://www.opendataservices.coop>`_) and input from the :doc:`data standard"
+" working group <governance>`."
 msgstr ""

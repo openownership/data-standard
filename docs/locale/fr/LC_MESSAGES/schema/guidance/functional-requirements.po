@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# 02a3b1c2e8104fc7b61af8586d1a7bf3
+# 043fd11312db4cdcaa5feb3f544978c6
 #: ../../schema/guidance/functional-requirements.rst:4
 msgid "Functional requirements"
 msgstr ""
 
-# 181a3c0a509049bfb784e1b7cbabc1ea
+# d0ae91e81e6f4745807f53c1b3dd3a0c
 #: ../../schema/guidance/functional-requirements.rst:6
 msgid ""
 "The Beneficial Ownership Data Standard can accommodate data from a range of "
@@ -31,41 +31,41 @@ msgid ""
 "to meet the following functional requirements:"
 msgstr ""
 
-# a2cc8e1a63f34d3fb1a6121e2b217bba
+# c1e92e32e98340749eb3dd8a24e4e179
 #: ../../schema/guidance/functional-requirements.rst:8
 msgid ""
 "Source systems should keep a full audit log with the source of data and "
 "changes made to data;"
 msgstr ""
 
-# db75427f982a40a796b4d3c79811ae08
+# a7e730e14da3487eb40936d3f250a8e4
 #: ../../schema/guidance/functional-requirements.rst:10
 msgid ""
 "Publication systems should assign a unique identifier to each statement "
 "produced;"
 msgstr ""
 
-# 26c7c5b15844427bb603cc980cd2b2c9
+# e073abfa16f64894ab5a3171d9acb848
 #: ../../schema/guidance/functional-requirements.rst:12
 msgid ""
 "Publication systems should be able to assert when one statement replaces "
 "another;"
 msgstr ""
 
-# df5083b94e6d44e68ca7133414e83537
+# a5ac9926671b45b9bd1cff9a10aff735
 #: ../../schema/guidance/functional-requirements.rst:14
 msgid ""
 "Publication systems should be able to produce statements in JSON format;"
 msgstr ""
 
-# 42e30446e02143039ed27ed6171b6365
+# a9ce76f66f184376be126ba98260e457
 #: ../../schema/guidance/functional-requirements.rst:16
 msgid ""
 "Publication systems should be able to validate statements against the JSON "
 "schema;"
 msgstr ""
 
-# 956a0d505ac149a2acf3131ddc0303ef
+# df126a2ae535426ea22ed62afaf95a3e
 #: ../../schema/guidance/functional-requirements.rst:18
 msgid "Statements should be immutable."
 msgstr ""

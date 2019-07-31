@@ -3,17 +3,13 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Amy Guy <amy.guy@opendataservices.coop>, 2019
-# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:15+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2019\n"
+"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,67 +17,67 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# 358646d7994d44f0ad7eef42067fefc8
+# 1909c9348bab4c288402c6db749a2622
 #: ../../index.rst:2
-msgid "Beneficial Ownership Data Standard (v0.1)"
-msgstr "Norme de données sur la propriété bénéficiaire (v0.1)"
+msgid "Beneficial Ownership Data Standard (v0.2)"
+msgstr ""
 
-# ed189ef2c4724bc3897f262e7f17381f
+# 574315af9ea941f8beaca5a9f7ea3392
 #: ../../index.rst:4
 msgid ""
 "This website contains the draft specification of the Beneficial Ownership "
-"Data Standard (version 0.1) plus support for its use. :doc:`Find out more "
+"Data Standard (version 0.2) plus support for its use. :doc:`Find out more "
 "<about/index>` about the standard's development and how to get involved."
 msgstr ""
 
-# 74d62091b2b74307945d3e02a54ebdc9
+# c06eec4739cc48808a41810e023aacec
 #: ../../index.rst:14
 msgid ""
 "Get an overview of beneficial ownership and why a standardised format for "
 "data is important."
 msgstr ""
 
-# c7532f08e3854f638bc2bbcc238e5507
+# 9521edb156804b6ca49db303ded103bc
 #: ../../index.rst:18
 msgid ":doc:`Visit the primer <primer/index>`"
 msgstr ""
 
-# 1bece9da67dd47969f35a32dc10bc170
+# 3c77f6adc3444ebc8ed4187531bfa229
 #: ../../index.rst:22
 msgid ":doc:`What is beneficial ownership? <primer/whatisbo>`"
 msgstr ""
 
-# 0d1ae968896b46d6be93b5a939f3a271
+# c44c42b219854637b324d733a9d9ed17
 #: ../../index.rst:26
 msgid ":doc:`What is the data standard? <primer/whatisthebods>`"
 msgstr ""
 
-# ce5d59ad177f448fb7115a00773841ce
+# 8ca17c22a0934a029993ac7cadb0dadf
 #: ../../index.rst:30
 msgid ":doc:`About the standard's development <about/index>`"
 msgstr ""
 
-# e8e307efc1eb464795c0c7aee2669ab5
+# 4d1932c39dec45c6a903b7a37b141205
 #: ../../index.rst:41
 msgid "Understand how to package up and release beneficial ownership data."
 msgstr ""
 
-# 9d2c76ce1ea14b2e8f107059688fe4d5
+# f42a36343c46485a8a46a95a90f2aa19
 #: ../../index.rst:45
 msgid ":doc:`Visit the Data Schema <schema/index>`"
 msgstr ""
 
-# 17adc96a39d64a078c0eb38b7ace399a
+# 9a41ca9030524d2db2343b4735550c0a
 #: ../../index.rst:49
 msgid ":doc:`The data model  <schema/concepts>`"
 msgstr ""
 
-# d0dc62ce96c843e5820ad6768802de76
+# e3ec394033e14a9bb25166d5c69235f5
 #: ../../index.rst:53
 msgid ":doc:`Schema browser <schema/schema-browser>`"
 msgstr ""
 
-# f53bfdca8642405599e8707f2e0f707e
+# dd93ad8056b0455da04e668eeeec4359
 #: ../../index.rst:57
 msgid ""
 ":doc:`Requirements for publication systems <schema/guidance/functional-"

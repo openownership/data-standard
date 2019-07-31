@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Valery Gusak <valery.gusak@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,92 +21,116 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 3156dc8cbbc54e8da202c57164c99c79
+# efd18c0b36164a89b4bf5f1f01e8531f
 #: ../../schema/schema-browser.rst:4
 msgid "Schema browser"
-msgstr ""
+msgstr "Браузер схемы"
 
-# 4718eef735f64baeb68dc58316a91809
+# 1fa7fd3496e448198b31a4be150474f5
 #: ../../schema/schema-browser.rst:8
 msgid ""
-"This is v0.1 of the Beneficial Ownership Data Standard. It includes updates "
+"This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model and additional codelist information. Implementers should "
 "be aware that future changes are anticipated, before a version 1.0 release. "
 "See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more "
 "information."
 msgstr ""
+"Это версия 0.2 Стандарта данных о бенефициарном владении. Она включает в "
+"себя обновления модели данных и дополнительную информацию в списке "
+"допустимых значений. Имплементирующие лица должны понимать, что ожидаются "
+"будущие изменения до выпуска версии 1.0. См. страницы :doc:`Лог изменений "
+"<changelog>` и `О стандарте <../about>`_ для получения дополнительной "
+"информации."
 
-# 112f21b3337a418aada33bb21bfe5f01
+# f1a803aadd834f9c99b6ede3c1dd9fae
 #: ../../schema/schema-browser.rst:10
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
 "recommended elements of the Standard, as defined in `RFC2119 "
 "<https://tools.ietf.org/html/rfc2119>`_."
 msgstr ""
+"**ДОЛЖЕН** и **СЛЕДУЕТ** используются в схеме для обозначения обязательных и"
+" рекомендуемых элементов Стандарта, как определено в `RFC2119 "
+"<https://tools.ietf.org/html/rfc2119>`_."
 
-# c5fe0ee318d8446fb1915dca7c31f941
+# 127d0460d9ed4f129deb1f3b51e59186
 #: ../../schema/schema-browser.rst:13
 msgid ""
 "The draft Beneficial Ownership Data Standard schema is defined using `JSON "
 "Schema 0.4 <http://json-schema.org/>`_."
 msgstr ""
+"Проект схемы Стандарта данных о бенефициарном владении определен при помощи "
+"`Схемы JSON 0.4 <http://json-schema.org/>`_."
 
-# 1b0363821138447cad94fad8bd5a639d
+# 52b78f402b4f473fade45253d3ba2ba0
 #: ../../schema/schema-browser.rst:15
 msgid ""
 "The structure of each of the schema's top level components can be explored "
 "using the viewers below. (Click on sub-components to reveal their "
 "properties.)"
 msgstr ""
+"Структуру каждого из компонентов верхнего уровня схемы можно изучить при "
+"помощи приведенных ниже средств просмотра. (Нажмите на подкомпоненты для "
+"отображения их свойств)."
 
-# 92185fc97808482b8f5424aadc205cea
+# 80397c73f714462988de7ad94cb96af1
 #: ../../schema/schema-browser.rst:17
 msgid ""
 ":ref:`Ownership-or-control statement <schema-browser-ownership-or-control>`"
 msgstr ""
+":ref:`Запись о владении или контроле <schema-browser-ownership-or-control>`"
 
-# b87905c6177146aab6a67eb8710dd1bd
+# b6245fc0a5f746b9a621a368d588fdb8
 #: ../../schema/schema-browser.rst:18
 msgid ":ref:`Entity statement <schema-browser-entity>`"
-msgstr ""
+msgstr ":ref:`Запись о субъекте <schema-browser-entity>`"
 
-# c92a36df9b55465f85a1c886a337bf81
+# 585c859ceb2b47b98688e288e637ad3e
 #: ../../schema/schema-browser.rst:19
 msgid ":ref:`Person statement <schema-browser-person>`"
-msgstr ""
+msgstr ":ref:`Запись о физическом лице <schema-browser-person>`"
 
-# edc9bb4ed2564223ad6ca5268e0ec17c
+# 52f6797e99e54ac29b50962fa413bf58
 #: ../../schema/schema-browser.rst:24
 msgid "Ownership-or-control statement"
-msgstr ""
+msgstr "Запись о владении или контроле"
 
-# 022dcb0c9ccb4f07a220624839027b2a
+# c7b7fafcad6f47cc99a4732adfed71f3
 #: ../../schema/schema-browser.rst:26
 msgid ""
 "View the `Ownership-or-control statement JSON schema <../_static/ownership-"
 "or-control-statement.json>`_ or explore it using the viewer below."
 msgstr ""
+"Просмотрите `схему JSON Записи о владении или контроле <../_static"
+"/ownership-or-control-statement.json>`_ или изучите ее при помощи "
+"приведенного ниже средства просмотра."
 
-# a36dfa020fca4fe4a1be7c27f9f128de
+# 8cc030b146d44f3fb8ae2d7d86a1d255
 #: ../../schema/schema-browser.rst:35
 msgid "Entity statement"
-msgstr ""
+msgstr "Запись о субъекте"
 
-# 01baaf5c491c4780b10230ed94ed3c15
+# 2d9b9e845ea742838358ecabadcdbc93
 #: ../../schema/schema-browser.rst:38
 msgid ""
 "View the `Entity Statement JSON schema <../_static/entity-statement.json>`_ "
 "or explore it using the viewer below."
 msgstr ""
+"Просмотрите `схему JSON Записи о субъекте <../_static/entity-"
+"statement.json>`_ или изучите ее при помощи приведенного ниже средства "
+"просмотра."
 
-# 359bf8102e5d4d13a4a8785be07c1137
+# 5fedac435e9549159f4ece797f1d4a83
 #: ../../schema/schema-browser.rst:48
 msgid "Person statement"
-msgstr ""
+msgstr "Запись о физическом лице"
 
-# 8d1d841c95424bed8c114ae933a3af7b
+# 07907455b3104a78ac83c6d9fd23af62
 #: ../../schema/schema-browser.rst:50
 msgid ""
 "View the `Person Statement JSON schema <../_static/person-statement.json>`_ "
 "or explore it using the viewer below."
 msgstr ""
+"Просмотрите `схему JSON Записи о физическом лице <../_static/person-"
+"statement.json>`_ или изучите ее при помощи приведенного ниже средства "
+"просмотра."

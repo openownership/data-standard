@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, OpenOwnership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# dacd12571b724b4ca2844c746dbbefda
+#: ../../about/privacy-notice.rst:2
+msgid "Privacy Notice"
+msgstr ""
+
+# 93ee9fdd9f0f4de1811788a2922d4bc5
+#: ../../about/privacy-notice.rst:4
+msgid ""
+"ReadTheDocs provide the platform these docs are hosted on, for information "
+"about how they collect and process personal data, `see their Privacy Policy "
+"<https://docs.readthedocs.io/en/latest/privacy-policy.html>`__."
+msgstr ""
+
+# 980616ec80e045acaa926f73b06d4245
+#: ../../about/privacy-notice.rst:9
+msgid ""
+"OpenOwnership is committed to ensuring that your privacy is protected. This "
+"privacy notice sets out how we collect and process any personal data when "
+"you use this website."
+msgstr ""
+
+# f384e2c82750470cb866df5fd98e0bdd
+#: ../../about/privacy-notice.rst:13
+msgid ""
+"We may change this notice from time to time by updating this page. This "
+"notice is effective from 24th May 2018."
+msgstr ""
+
+# 02ba13beda464c40a0c59115b7171277
+#: ../../about/privacy-notice.rst:16
+msgid ""
+"You can contact us at OpenOwnership (as the data controller) if would like a"
+" copy of the information held on you or if you believe that any information "
+"we are holding on you is incorrect or incomplete."
+msgstr ""
+
+# 1bed803e02ac4f4f9cf47c113028ae57
+#: ../../about/privacy-notice.rst:20
+msgid "You have the following rights concerning this data:"
+msgstr ""
+
+# 15d19797895545188ae3582dd93a2ac7
+#: ../../about/privacy-notice.rst:22
+msgid "Right to be informed, which is the purpose of this privacy notice."
+msgstr ""
+
+# 6ace646e807647f7bd79c74a6e85de87
+#: ../../about/privacy-notice.rst:23
+msgid ""
+"Right to Access, Rectification, Erasure, and to Restrict Processing. Note "
+"that the right to Erasure and Restrict Processing are balanced against our "
+"legitimate interests. Where relevant, you need to provide information to re-"
+"identify yourself from our pseudonymised data, see `GDPR Article 11 <https"
+"://gdpr-info.eu/art-11-gdpr/>`__."
+msgstr ""
+
+# e9615a1c50ba4900a21c2fe30f1f5fd9
+#: ../../about/privacy-notice.rst:28
+msgid "Right to object to our processing."
+msgstr ""
+
+# 4fd31a876cfa47939a867704eaebd703
+#: ../../about/privacy-notice.rst:30
+msgid ""
+"Our supervisory authority is the `ICO in the UK <https://ico.org.uk/>`__. "
+"You have the right to lodge a complaint with them."
+msgstr ""
+
+# 88ce8da4cbef4e0da12d1ad020eceab8
+#: ../../about/privacy-notice.rst:34
+msgid "We process personal data for the following purposes:"
+msgstr ""
+
+# 6731b0b60a6b448fba57daa821746939
+# a7b2f21a458c46e7a5a99fe6927fa65a
+#: ../../about/privacy-notice.rst:36 ../../about/privacy-notice.rst:46
+msgid "Understanding website visitor and traffic patterns"
+msgstr ""
+
+# c1649e074ce846ef9d9669df3dad5129
+#: ../../about/privacy-notice.rst:38
+msgid ""
+"We rely on `legitimate interests <https://ico.org.uk/for-organisations"
+"/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-"
+"processing/legitimate-interests/>`__ (`GDPR Article 6(1)(f) <https://gdpr-"
+"info.eu/art-6-gdpr/>`__) as the lawful basis for this processing. Details "
+"about the type of data, the purpose of the processing and legitimate "
+"interests, and the storage and retention of the data are set out below."
+msgstr ""
+
+# 1bad6f71b1b64db69d29772db303be29
+#: ../../about/privacy-notice.rst:48
+msgid ""
+"We collect data about your visits to the website, for the purpose of "
+"analysing how the website is used, so that we can improve it. A self hosted "
+"copy of `Matomo <http://matomo.org>`__ is used for this."
+msgstr ""
+
+# 1d4d8accd55740c192b0b3725de93ebb
+#: ../../about/privacy-notice.rst:52
+msgid "Personal data we collect:"
+msgstr ""
+
+# c445a3a279b444f1b99b30907acf2473
+#: ../../about/privacy-notice.rst:54
+msgid ""
+"Your IP address - this is pseudonymised by redacting the second half of the "
+"address"
+msgstr ""
+
+# cddfa5c06d06418e9184897091cadb69
+#: ../../about/privacy-notice.rst:56
+msgid "Referrer (what page you arrived at one of our web pages from)"
+msgstr ""
+
+# 81130c98e3ca4b73a09eb610068249b2
+#: ../../about/privacy-notice.rst:57
+msgid "Information about your device, OS and browser"
+msgstr ""
+
+# e360a319a0f54332b9afed056875ac24
+#: ../../about/privacy-notice.rst:59
+msgid ""
+"We do not use this data to personally identify individuals, but it is "
+"possible that it could be used to do so, particularly if combined with other"
+" datasets."
+msgstr ""
+
+# ec914276e04a41b592973a4f2e913d1d
+#: ../../about/privacy-notice.rst:63
+msgid ""
+"You can opt out of this processing: if you have set your web browser to \"I "
+"do not want to be tracked\" (DoNotTrack is enabled) then Matomo will not "
+"track your visit."
+msgstr ""
+
+# 8408b5cda13d49cdbc277d9e8e9f6607
+#: ../../about/privacy-notice.rst:67
+msgid "Matomo also has its own opt out mechanism:"
+msgstr ""
+
+# 0475961cfc4e426ab98aa56d69ce7c6c
+#: ../../about/privacy-notice.rst:69
+msgid "Data processors: Open Data Services Co-operative Limited, Bytemark."
+msgstr ""
+
+# 9fbfafd0000b4966a85e3823f0868dd3
+#: ../../about/privacy-notice.rst:71
+msgid "The data controller (OpenOwnership) is based in the USA."
+msgstr ""
+
+# 37ea3297d56f47b78b30a1e38551cf8f
+#: ../../about/privacy-notice.rst:73
+msgid "The data is kept indefinitely, in pseudonymised form."
+msgstr ""

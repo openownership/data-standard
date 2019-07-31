@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Valery Gusak <valery.gusak@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,125 +21,157 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# d3fe89e0b4b04990aa9d380ac371d776
+# ea3fa253a9004a5a821a29d09098542a
 #: ../../schema/concepts.rst:4
 msgid "Key concepts"
-msgstr ""
+msgstr "Основные концепции"
 
-# d9258da451fd42f3858031ea336263d3
+# 0920121040084537aa294169c69b5c32
 #: ../../schema/concepts.rst:8
 msgid ""
-"This is v0.1 of the Beneficial Ownership Data Standard. It includes updates "
+"This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model and additional codelist information. Implementers should "
 "be aware that future changes are anticipated, before a version 1.0 release. "
 "See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more "
 "information."
 msgstr ""
+"Это версия 0.2 Стандарта данных о бенефициарном владении. Она включает в "
+"себя обновления модели данных и дополнительную информацию в списке "
+"допустимых значений. Имплементирующие лица должны понимать, что ожидаются "
+"будущие изменения до выпуска версии 1.0. См. страницы :doc:`Лог изменений "
+"<changelog>` и `О стандарте <../about>`_ для получения дополнительной "
+"информации."
 
-# 7a6538442733453fb8f41334b636515a
+# 8629c617333f4e0cbcf8a486c8ce2fd0
 #: ../../schema/concepts.rst:10
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
 "recommended elements of the Standard, as defined in `RFC2119 "
 "<https://tools.ietf.org/html/rfc2119>`_."
 msgstr ""
+"**ДОЛЖЕН** и **СЛЕДУЕТ** используются в схеме для обозначения обязательных и"
+" рекомендуемых элементов Стандарта, как определено в `RFC2119 "
+"<https://tools.ietf.org/html/rfc2119>`_."
 
-# c80e12078dd04ebb9f529726d0ff8458
+# f136220c3c6d44ca96bab4e12a8c2f07
 #: ../../schema/concepts.rst:13
 msgid ""
 "The concept of a 'statement' is at the heart of the Beneficial Ownership "
 "Data Standard. BODS data consists of a collection of ordered statements "
 "describing:"
 msgstr ""
+"Концепция «записи» лежит в основе Стандарта данных о бенефициарном владении."
+" Данные СДБВ состоят из собрания упорядоченных записей, описывающих "
+"следующее:"
 
-# fa9ec16497b2471db9eab7504c3e0be8
+# 4cabe835ab2d488f85dc919f5ace21c7
 #: ../../schema/concepts.rst:15
 msgid "Ownership or control"
-msgstr ""
+msgstr "Владение или контроль"
 
-# 7b9087899b244f67915f3794e2b42e8c
+# cfa7f51dfd574e69b1fdebe4be135a1f
 #: ../../schema/concepts.rst:16
 msgid "Entities (including companies, trusts and arrangements)"
 msgstr ""
+"Субъекты (включая компании, трасты и соглашения о владении и контроле)"
 
-# 9a281f510bec48f18d741271a1cf1b04
+# eaa833015a16420984fd7cac308783e8
 #: ../../schema/concepts.rst:17
 msgid "Natural persons (who own or control entities)"
-msgstr ""
+msgstr "Физические лица (которые владеют компаниями или контролируют их)"
 
-# 11c816f9f6c94f4c8e5256a1ee229880
+# 51ff94cc0e5140598b973e59cfc7d78f
 #: ../../schema/concepts.rst:20
 msgid "Statements"
-msgstr ""
+msgstr "Записи"
 
-# 26ba7a1639704fc88a68920e1af011c0
+# edbd7ea8dc6040b9a7691bfc59fdf4a1
 #: ../../schema/concepts.rst:22
 msgid ""
 "Details of how an interested party controls or owns a company or other legal"
 " entity are wrapped in an ownership-or-control statement."
 msgstr ""
+"Сведения о том, как заинтересованная сторона контролирует или владеет "
+"компанией или юридическим лицом, оформленные в запись о владении или "
+"контроле."
 
-# 75216df61bba4954be68450f23919fba
+# 0c208539585c464f8854472c7d43d443
 #: ../../schema/concepts.rst:27
 msgid ""
 "Details of the subject of an ownership-or-control statement and its "
 "interested party are wrapped in their own statements. The ownership-or-"
 "control statement refers out to these statements, acting as a connector."
 msgstr ""
+"Сведения о предмете записи о владении или контроле и его заинтересованной "
+"стороне оформлены в отдельные записи. Запись о владении или контроле "
+"ссылается на эти записи, выступая в качестве соединителя."
 
-# b8f42c9602e248f283fcd667cd76bad8
+# ef5eb9461e5f42d58c29a6f8f46fa528
 #: ../../schema/concepts.rst:32
 msgid ""
 "Together, the statements above tell us that Roberto Lopez has some kind of "
 "controlling or ownership stake in RENCO Energy Ltd."
 msgstr ""
+"Указанные выше записи вместе говорят нам о том, что Роберто Лопес имеет "
+"определенную долю участия или контроля в RENCO Energy Ltd."
 
-# 7b4f5cabd49f41369348cd0dc6776873
+# 701ccd2e8a8c4e14ba463b5ea3b3ee08
 #: ../../schema/concepts.rst:34
 msgid ""
 "The :any:`schema reference <schema-reference>` defines in detail the fields "
 "that each statement should have, and how they should be structured."
 msgstr ""
+":any:`Справочник схемы <schema-reference>` подробно определяет поля, которые"
+" должна иметь каждая запись, и то, как они должны быть структурированы."
 
-# b2c0b0435e3d477f9bb4003668913deb
+# 8a76da4d18bf4e32a676b3f59903e532
 #: ../../schema/concepts.rst:37
 msgid "Statements as claims"
-msgstr ""
+msgstr "Записи в виде заявлений"
 
-# 59f3bcd95c20429ab1b2acd68cb70daf
+# ecc5d90e86514d8e85ca780d2d3747a9
 #: ../../schema/concepts.rst:39
 msgid ""
 "Each statement represents a claim about beneficial ownership made by a "
 "particular source at a particular point in time."
 msgstr ""
+"Каждая запись отражает заявление касательно бенефициарного владения, "
+"сделанное в определенном источнике в определенный момент времени."
 
-# b30933747cfe46a6b2cd99b25c4844e0
+# cb4a09eff09647c2a3cdff96351278ee
 #: ../../schema/concepts.rst:44
 msgid ""
 "Modelling beneficial ownership information in this way allows us to make "
 "sense of data received from multiple sources over extended periods of time. "
 "In particular, it allows:"
 msgstr ""
+"Такое моделирование информации о бенефициарном владении позволяет нам понять"
+" данные, полученные из нескольких источников за продолжительные периоды "
+"времени. В частности, оно допускает:"
 
-# 499dff6a8cd142acab932cccdd5596c6
+# e3c681ae286247ac9f1e476e26d4d49f
 #: ../../schema/concepts.rst:46
 msgid "Statements about beneficial ownership to conflict"
-msgstr ""
+msgstr "Конфликт между записями о бенефициарном владении"
 
-# 115892e2ffd94e02b85c6072a5abde48
+# 8ad85d0d68454094b1143d3779aae872
 #: ../../schema/concepts.rst:47
 msgid "Statements about beneficial ownership to overlap"
-msgstr ""
+msgstr "Наложение записей о бенефициарном владении"
 
-# 2fc606dca46b4080a86d3a0ca248c2cb
+# 447251b3a1d74ce9a701fc683c728ecf
 #: ../../schema/concepts.rst:48
 msgid ""
 "Production of historical beneficial ownership snapshots (to answer questions"
 " of 'who knew what, when?'). This is known as `bi-temporal modelling "
 "<https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_."
 msgstr ""
+"Получение моментальных снимков бенефициарного владения за прошлые периоды "
+"(для ответа на вопросы «Кто знал что, когда?»). Это известно под названием "
+"«битемпорального моделирования» "
+"<https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_."
 
-# 8895a80fd73e4930b61572bb5abc5986
+# c1da255850544badbc46ac33352ccef7
 #: ../../schema/concepts.rst:50
 msgid ""
 "When representing data conforming to BODS, users therefore need to handle "
@@ -144,43 +180,54 @@ msgid ""
 ":any:`identifying information <guidance-identifiers>` contained in "
 "``personStatements`` and ``entityStatements``."
 msgstr ""
+"Таким образом, при представлении данных, соответствующих СДБВ, пользователям"
+" необходимо обращаться с записями с надлежащей тщательностью. В конечном "
+"итоге потребители данных решают, каким записям доверять, также они принимают"
+" решения касательно верификации идентичности при помощи  "
+":any:`идентифицирующей информации <guidance-identifiers>`, содержащейся в  "
+"записях о физических лицах и записях о субъектах (``personStatements`` и "
+"``entityStatements``)."
 
-# 8f87f16187d149c1b33f4389e8f70836
+# 3e117e26fc0a4d63b75ece87e9417a60
 #: ../../schema/concepts.rst:54
 msgid "Data model overview"
-msgstr ""
+msgstr "Обзор модели данных"
 
-# ac29ca24e0e340c09f6ae54888b38b31
+# 68a5cdb95b3a416db207eff03a11c3b9
 #: ../../schema/concepts.rst:56
 msgid "Statements are specified in the data schema as JSON objects:"
-msgstr ""
+msgstr "Записи определены в схеме данных как объекты JSON:"
 
-# a95b1a0ee30d4e098ebf7a9f155a58fa
+# a6a78f5e09714d18b74f3bad1717b6e9
 #: ../../schema/concepts.rst:58
 msgid ""
 ":any:`Ownership-or-control statement <schema-ownership-or-control-"
 "statement>`"
 msgstr ""
+":any:`Запись о владении или контроле <schema-ownership-or-control-"
+"statement>`"
 
-# e04b4193a5004a45831b92b6c314ce43
+# 65734b3b3326479ba9f63b23c49f331c
 #: ../../schema/concepts.rst:59
 msgid ":any:`Entity statement <schema-entity-statement>`"
-msgstr ""
+msgstr ":any:`Запись о субъекте <schema-entity-statement>`"
 
-# 5ac737bb44864aadbe60baac2d2016ef
+# 15f57ebea7584f3ba826acba439065a5
 #: ../../schema/concepts.rst:60
 msgid ":any:`Person statement <schema-person-statement>`"
-msgstr ""
+msgstr ":any:`Запись о физическом лице <schema-person-statement>`"
 
-# 7e49388a99c54ebca82912af0d8ef5a9
+# e8105081215e45dd89e604eaae82455f
 #: ../../schema/concepts.rst:62
 msgid ""
 "Each statement has a ``statementIdentifier`` and ``statementType`` field. "
 "The ``statementIdentifier`` exists solely for the purpose of connecting "
 "statements."
 msgstr ""
+"Каждая запись имеет поле ``statementIdentifier`` и``statementType``. "
+"``statementIdentifier`` существует исключительно в целях соединения записей."
 
-# 6bd89910f43f4ef3a191b2b3da80d802
+# 7aeeec1542454407a891517b391b56c8
 #: ../../schema/concepts.rst:64
 msgid ""
 "**Entity statements** are used to describe registered legal entities that "
@@ -188,23 +235,34 @@ msgid ""
 "entities (such as trusts), and artificial entities (such as joint "
 "shareholding arrangements)."
 msgstr ""
+"**Записи о субъектах** используются для описания зарегистрированных "
+"юридических лиц, являющихся предметом законного владения (таких как "
+"компании, незарегистрированные субъекты (такие как трасты), и искусственные "
+"субъекты (такие как совместные акционерные соглашения о владении и "
+"контроле)."
 
-# ef1f826530bd4c6386700e264301981d
+# e557ce007c8b470a935a17066ce32d6a
 #: ../../schema/concepts.rst:65
 msgid ""
 "**Person statements** describe the natural persons who stand in "
 "relationships of ultimate beneficial ownership or control"
 msgstr ""
+"**Записи о физических лицах** описывают физических лиц, состоящих в "
+"отношениях конечного бенефициарного владения или контроля"
 
-# 5b7ff246a9d849948a787066decea18b
+# d7b459f0f20b4837a91f81935dfbe2c7
 #: ../../schema/concepts.rst:66
 msgid ""
 "**Ownership-or-control statements** describe the interest(s) held by one "
 "entity in another, or a person in an entity. They are connected to those "
 "entities and persons using ``statementIdentifier`` references."
 msgstr ""
+"**Записи о владении или контроле** описывают долевое участие, имеющееся у "
+"субъекта в другом субъекте или у физического лица в субъекте. Они связаны с "
+"соответствующими субъектами и физическими лицами при помощи ссылок "
+"``statementIdentifier``."
 
-# 05bb5d506b6a4e7dba69a446df4791da
+# 94761def006b479ea2ebcda5c58b73d8
 #: ../../schema/concepts.rst:68
 msgid ""
 "All statements have ``source`` and ``annotations`` properties which can "
@@ -212,47 +270,64 @@ msgid ""
 " and any verification of the information that has taken place. See "
 ":ref:`Sources and annotations <provenance>` for guidance."
 msgstr ""
+"Все записи имеют свойства ``source`` (источник) и ``annotations`` "
+"(примечания), обеспечивающие возможность получения журнала аудита, в котором"
+" описано, откуда и когда получена информация, а также выполненная "
+"верификация информации. См. :ref:`Источники и примечания <provenance>` для "
+"получения рекомендаций."
 
-# b41165eefd03459693d39940f1e02aa5
+# 1755d04977a24ca3a3d09e12fb592996
 #: ../../schema/concepts.rst:70
 msgid ""
 "``personStatements`` and ``entityStatements`` both contain a set of fields "
 "that can be used to disclose the real-world identity of the entity or "
 "individual. These include:"
 msgstr ""
+"Как ``personStatements``, так и ``entityStatements`` содержат набор полей, "
+"которые могут использоваться для раскрытия фактической идентичности субъекта"
+" или личности физического лица. Они включают в себя следующее:"
 
-# 77a196be193f47ad8d23cfd018a2349f
+# 914a15c19b844470b31a0a794d0a41c3
 #: ../../schema/concepts.rst:72
 msgid ""
 "An ``identifiers`` array that is used to provide known identifiers such as "
 "company registration for firms, or publicly shareable taxpayer identifiers "
 "for individuals."
 msgstr ""
+"Массив идентификаторов (``identifiers``), используемый для предоставления "
+"известных идентификаторов, таких как регистрация компании для фирм или "
+"доступные для публичного распространения идентификаторы налогоплательщиков "
+"для физических лиц."
 
-# 1be48c2cff9f4d8da51bf4e1ce01d935
+# 214323dd403f4b469402d716af1279fe
 #: ../../schema/concepts.rst:73
 msgid "Jurisdiction or Nationality information"
-msgstr ""
+msgstr "Информация о юрисдикции или гражданстве"
 
-# 1f283090eb844db5ad990f38e9855023
+# a99e74ba819649098dcf0911f48d6fe3
 #: ../../schema/concepts.rst:74
 msgid ""
 "Important dates (birth date, death date, founding date, dissolution date)"
 msgstr ""
+"Важные даты (дата рождения, дата смерти, дата основания, дата прекращения "
+"существования юридического лица)"
 
-# 7a2c76fb31694b6685923647487bcebb
+# 8dcd62185af140c69e28341569689582
 #: ../../schema/concepts.rst:75
 msgid "Addresses"
-msgstr ""
+msgstr "Адреса"
 
-# 9ab8790060f844ed8092edfe8b2c670c
+# fca55c8705d743368eaa8290e8496908
 #: ../../schema/concepts.rst:77
 msgid ""
 "Including such identifiers allows intelligent integration of information "
 "across disclosures, datasets and time."
 msgstr ""
+"Включение таких идентификаторов обеспечивает возможность интеллектуальной "
+"интеграции информации между разными фактами раскрытия информации, наборами "
+"данных и разным временем."
 
-# 961410063bcb417bb41aa8385ce42e3a
+# c5a76b3d0b53417ea2ca88c0d3e7381b
 #: ../../schema/concepts.rst:79
 msgid ""
 "These fields are designed to support 'strict' and 'relaxed' validation, to "
@@ -261,8 +336,14 @@ msgid ""
 "dates. Other sources should provide as much data as possible, subject to "
 "relevant policy and privacy constraints."
 msgstr ""
+"Эти поля предназначены для поддержки «строгой» и «нестрогой» валидации, "
+"чтобы учесть различные источники данных. Следует стремиться к тому, чтобы "
+"новые источники данных предоставляли данные, необходимые для строгой "
+"валидации, такие как коды стран и полные даты. Другие источники должны "
+"обеспечивать максимальное количество данных с учетом соответствующих "
+"ограничений касательно политики и конфиденциальности."
 
-# afe165a0251144979c32aa28cebac626
+# 45be3a3f4abe4ad381a78a692467fad4
 #: ../../schema/concepts.rst:81
 msgid ""
 "An ``ownershipOrControlStatement`` connects (via ``statementIdentifier`` "
@@ -270,25 +351,32 @@ msgid ""
 "``entityStatement``) and an ``interestedParty``. This interested party may "
 "be:"
 msgstr ""
+"Запись о владении или контроле (``ownershipOrControlStatement``) соединяет "
+"(посредством ссылок на идентификатор записи (``statementIdentifier``)) "
+"предмет (``subject``) записи (субъект, описанный при помощи записи о "
+"субъекте (``entityStatement``)) и заинтересованную сторону "
+"(``interestedParty``). Этой заинтересованной стороной может быть:"
 
-# 8b4a517e73ca4ca7ae6e97e0f252b535
+# 2e1c02c30d634da295dc0c954e0e974e
 #: ../../schema/concepts.rst:83
 msgid "Another entity described by an ``entityStatement``;"
-msgstr ""
+msgstr "Другой субъект, описанный в записи ``entityStatement``;"
 
-# 3cb386a1b9d84d74a0b2deda12ce6f0b
+# 9a22814fb72f4af2a494ae67564f138c
 #: ../../schema/concepts.rst:84
 msgid "A person described by a ``personStatement``; or"
-msgstr ""
+msgstr "Физическое лицо, описанное в записи ``personStatement``; или"
 
-# ed41125c64714d92b929b5ff23a2a505
+# 7f517f80347b4863ad2e2af10797b5e0
 #: ../../schema/concepts.rst:85
 msgid ""
 "An unspecified party and the reasons that no ownership or control can be "
 "specified."
 msgstr ""
+"Неуказанная сторона и причины, по которым не могут быть указаны владение или"
+" контроль."
 
-# 911d411cf5404500a02748fda8332d53
+# 0653e91d15c24cc696508dfb250edbd1
 #: ../../schema/concepts.rst:87
 msgid ""
 "The ownership-or-control statement also contains an array of ``interests``, "
@@ -296,84 +384,104 @@ msgid ""
 "<reference.html#interesttype>`_) and, where relevant, percentages indicating"
 " the size of the interest."
 msgstr ""
+"Запись о владении или контроле также содержит массив долей участия "
+"(``interests``), каждая из которых имеет тип (выбираемый из `списка "
+"допустимых значений interestType <reference.html#interesttype>`_) и в "
+"соответствующих случаях значение в процентах, указывающее размер доли "
+"участия."
 
-# 8899bef8050d4b3ab87fa66f89a3c5a4
+# 77247b4b725c4fc2a986f03b0c0363c7
 #: ../../schema/concepts.rst:89
 msgid ""
 "To explore the structure of the data model in full use the :doc:`Schema "
 "browser <schema-browser>`. Or read the :any:`Schema reference <schema-"
 "reference>` for detailed definitions of each object and field."
 msgstr ""
+"Для исследования структуры модели данных в полном объеме используйте "
+":doc:`Браузер схемы <schema-browser>`. Или ознакомьтесь со "
+":any:`Справочником схемы <schema-reference>` для получения подробных "
+"определений каждого объекта и поля."
 
-# 0f0c98b0ecdc4bd8990b61e5498a201b
+# 42dc984f4c804f75a21b74967f6a25fb
 #: ../../schema/concepts.rst:93
 msgid "Ownership or control through arrangements"
-msgstr ""
+msgstr "Владение или контроль на основе соглашений о владении и контроле"
 
-# 5720b0a2ddc24449ae19f73e0f7f7bcb
+# cbea0b5f961a4aca9005e19f00e95b84
 #: ../../schema/concepts.rst:95
 msgid "In some cases ownership or control is exercised through:"
-msgstr ""
+msgstr "В некоторых случаях владение или контроль осуществляется посредством:"
 
-# 532d4abb9a2049fb88e6cd7e18fbdcab
+# df8d20efb0b74208807589d87b1ef7ae
 #: ../../schema/concepts.rst:97
 msgid "Trusts;"
-msgstr ""
+msgstr "Трастов;"
 
-# 643c0d9df4d24f28b91ca5ff05f0d32f
+# 5cdf2c2569184f79b7ac34f74778ff75
 #: ../../schema/concepts.rst:98
 msgid "Contracts; and"
-msgstr ""
+msgstr "Договоров; а также"
 
-# 3a5ce638e78c4f32af90fd40278cdd32
+# 11ee4a44951c4dc39b706f9d54aebd63
 #: ../../schema/concepts.rst:99
 msgid "Other arrangements"
-msgstr ""
+msgstr "Других соглашений о владении и контроле."
 
-# b2e8fa5f47f3458d80779482cb410b89
+# 88b62d1730ef49aa8de527b7bb735cdb
 #: ../../schema/concepts.rst:101
 msgid ""
 "Depending on the particular jurisdiction these are covered by, they may or "
 "may not have a registered legal identity."
 msgstr ""
+"В зависимости от конкретной юрисдикции, действие которой распространяется на"
+" них, они могут иметь или не иметь зарегистрированную правосубъектность."
 
-# 906971e2613646698fa0cecff7d53404
+# 449248edc18045209a071e76e486ff92
 #: ../../schema/concepts.rst:103
 msgid ""
 "In BODS arrangements such as these are treated as a special kind of "
 "``entityStatement`` with ``entityType`` value: 'arrangement'."
 msgstr ""
+"В соглашениях СДБВ о владении или контроле, таких как эти, они "
+"рассматриваются как особый тип записи ``entityStatement``, в которой "
+"``entityType`` имеет значение «arrangement»."
 
-# b331f6b2971b4c3ba384aa164de5f49c
+# 32f4f4216dd545c896b4ef7383c2bb5f
 #: ../../schema/concepts.rst:105
 msgid ""
 "This allows control via arrangements to be modelled in two steps, describing"
 " how:"
 msgstr ""
+"Это позволяет моделировать контроль при помощи соглашений о владении и "
+"контроле в два шага с описанием того, как:"
 
-# f3a28ddb37784233b41a4a96c82fc27b
+# 17fd20c9561f436cadc0b38d31319e47
 #: ../../schema/concepts.rst:107
 msgid "Person P has an interest in Arrangement A"
 msgstr ""
+"Физическое лицо P имеет долю участия в Соглашении о владении и контроле A"
 
-# 14b0b5ece7e64c0a844eb6aa89d7aa7f
+# d5c756fe9be4496c8a103bd57fad68d9
 #: ../../schema/concepts.rst:108
 msgid "Arrangement A has an interest in Entity E"
-msgstr ""
+msgstr "Соглашение о владении и контроле A имеет долю участия в Субъекте E"
 
-# dd6d0ee33c134c969f0ce464abdc793b
+# 6d21e9e17d214b1eabd69cc5c0c62dbb
 #: ../../schema/concepts.rst:110
 msgid ""
 "For more guidance on modelling arrangements, contact the :any:`BODS Helpdesk"
 " <support>`."
 msgstr ""
+"Для получения дополнительных рекомендаций касательно моделирования "
+"соглашений о владении и контроле обратитесь в `Службу технической поддержки "
+"СДБВ <support>`."
 
-# 296a7b07f029464692c10b03c6c9327d
+# d5e5ed1579f04685bf45df33aa242dc7
 #: ../../schema/concepts.rst:113
 msgid "Direct and indirect ownership and control"
-msgstr ""
+msgstr "Прямое и косвенное владение и контроль"
 
-# 528165a0d8484ceea7790980c3805022
+# 137c9212ad7d4c10bc40985492c86cdf
 #: ../../schema/concepts.rst:115
 msgid ""
 "BODS can be used to describe both direct ownership and control (where Person"
@@ -383,13 +491,21 @@ msgid ""
 "This is indicated by use of the ``interestLevel`` property that can be set "
 "for each interest declared."
 msgstr ""
+"СДБВ может использоваться для описания как прямого владения и контроля (при "
+"котором Физическое лицо A непосредственно владеет долей в Компании B), так и"
+" косвенного владения и контроля (при котором Физическое лицо A является "
+"конечным бенефициарным владельцем B, но при котором может существовать "
+"определенное количество известных или неизвестных промежуточных компаний или"
+" соглашений о владении и контроле). Это указывается при помощи свойства "
+"``interestLevel`` (уровень участия), которое может быть задано для каждой "
+"заявленной доли участия."
 
-# 69c2e68fca164bfdbf0626ec5005eb70
+# 250463066a9847a2a5cda0403e214f1c
 #: ../../schema/concepts.rst:119
 msgid "Immutability of statements"
-msgstr ""
+msgstr "Неизменность записей"
 
-# 25febd69554d4dc1998e01263263a52a
+# 272cb6a7f11049b08c31f85790487102
 #: ../../schema/concepts.rst:121
 msgid ""
 "Published BODS statements should be treated as a write-only ledger, with new"
@@ -397,3 +513,8 @@ msgid ""
 "those new statements appended to the ledger. See :any:`Updating statements "
 "<guidance-updating-data>` for further guidance."
 msgstr ""
+"Опубликованные записи СДБВ следует воспринимать как книгу учета только для "
+"записи, в которой новые записи формируются для внесения изменений в данные, "
+"содержащиеся в более старых записях с приложением новых записей к журналу. "
+"См. :any:`Обновление записей <guidance-updating-data>` для получения "
+"дополнительных рекомендаций."

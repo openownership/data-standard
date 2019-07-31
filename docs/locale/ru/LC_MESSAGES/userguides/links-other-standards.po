@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Valery Gusak <valery.gusak@gmail.com>, 2019
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:16+0000\n"
+"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,22 +21,22 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 13559fbc608d4221915ec9c8d428ab81
-#: ../../userguides/links-other-standards.md:1
+# 8cb64182454d49b48f56f7d54e7cb8e4
+#: ../../userguides/links-other-standards.rst:2
 msgid "Links with other data standards"
-msgstr ""
+msgstr "Ссылки на другие стандарты данных"
 
-# ee738b72944d48b68cc4e89da504eb11
-#: ../../userguides/links-other-standards.md:4
+# 0c00ba34f2d0487e9c9fe1cea4ffae2c
+#: ../../userguides/links-other-standards.rst:4
 msgid "(To be added."
-msgstr ""
+msgstr "(Подлежат добавлению."
 
-# 83363042fdae4d739994e821bd2cfee3
-#: ../../userguides/links-other-standards.md:6
+# 72863c04c5ca47e29020543e6009c41d
+#: ../../userguides/links-other-standards.rst:6
 msgid "Populo"
-msgstr ""
+msgstr "Populo"
 
-# 14465fb74bd341ecb84aaab06844850a
-#: ../../userguides/links-other-standards.md:7
+# 47cedba2905f4dcca1a0537e92123e43
+#: ../../userguides/links-other-standards.rst:7
 msgid "Common reporting standard etc. )"
-msgstr ""
+msgstr "Единый стандарт отчетности и т. п.)"

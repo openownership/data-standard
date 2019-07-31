@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-31 15:20+0000\n"
-"PO-Revision-Date: 2019-01-31 16:19+0000\n"
+"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,24 +17,25 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 86f13e53db8640f19f742a0eb50e5c24
-#: ../../primer/index.md:1
+# 6a8d2d2c661e42509a4732678824c675
+#: ../../primer/index.rst:2
 msgid "Primer"
 msgstr ""
 
-# 3bc84a555f654033ac4e1ca1db7af421
-#: ../../primer/index.md:4
+# 6ed6fb9def46480faf352ea1ada89dd3
+#: ../../primer/index.rst:4
 msgid ""
 "This Primer sets out to explain the basics of Beneficial Ownership and the "
 "basics of a data standard handling Beneficial Ownership."
 msgstr ""
 
-# 7719fa32b0c049d1baf991a7d63dcfbb
-#: ../../primer/index.md:6
+# ec6183086b884b5ba1293645758e4fab
+#: ../../primer/index.rst:6
 msgid ""
-"People new to the concept of Beneficial Ownership will want to know what it "
-"is and why it's important. Looking then at what data is needed to describe a"
-" Beneficial Ownership chain, we can understand the Beneficial Ownership Data"
-" Standard as a kind of template. Finally we look at the scope of the "
-"Standard and what it offers."
+"People new to the concept of Beneficial Ownership will want to know "
+":doc:`what it is <whatisbo>` and :doc:`why it's important <whyisbo>`. "
+"Looking then at :doc:`what data is needed <whatisbodata>` to describe a "
+"Beneficial Ownership chain, we can :doc:`understand the Beneficial Ownership"
+" Data Standard <whatisthebods>` as a kind of template. Finally we look at "
+"the :doc:`scope of the Standard <whatdoesbodscover>` and what it offers."
 msgstr ""
