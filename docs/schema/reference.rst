@@ -3,9 +3,9 @@
 Schema reference
 ================
 
-.. attention::
-
-    This is v0.1 of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information. Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
+.. attention:: 
+    
+    This is v0.2 of the Beneficial Ownership Data Standard. It includes updates to the data model and additional codelist information. Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
 
     **MUST** and **SHOULD** are used in the schema to denote required and recommended elements of the Standard, as defined in `RFC2119 <https://tools.ietf.org/html/rfc2119>`_.
 
@@ -91,7 +91,7 @@ EntityStatement
 Identifier
 ----------
 
-The identifier component is used to connect a statement to the real-world person or entity that it refers to, using one or more existing known identifiers. See [Real world identifiers](identifiers.md) for technical guidance on when and how to use this component.
+The Identifier object is used to connect a statement to the real-world person or entity that it refers to, using one or more existing known identifiers. See :any:`Real world identifiers <guidance-identifiers>` for technical guidance on when and how to use this object.
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /definitions/Identifier/description
@@ -110,6 +110,7 @@ Interest
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Interest
    :collapse: share,annotations
+   :externallinks: {"share":{"url":"#share","text":"Share"}}
 
 .. _schema-interested-party:
 
@@ -163,10 +164,10 @@ PEPStatus
 ---------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/PepStatus/description
+   :pointer: /definitions/PepStatusDetails/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/PepStatus
+   :pointer: /definitions/PepStatusDetails
    :collapse: jurisdiction
 
 .. _schema-person-statement:
@@ -178,7 +179,19 @@ PersonStatement
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/person-statement.json
-   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatus
+   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails
+
+.. _schema-publicationdetails:
+
+PublicationDetails
+---------------
+
+.. json-value:: ../_build_schema/components.json
+   :pointer: /definitions/PublicationDetails/description
+
+.. jsonschema:: ../_build_schema/components.json
+   :pointer: /definitions/PublicationDetails
+   :collapse: publisher
 
 
 .. _schema-replaces-statements:

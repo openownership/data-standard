@@ -1,0 +1,67 @@
+[
+  {
+    "publicationDetails": {
+      "publicationDate": "2019-06-13",
+      "publisher": {
+        "name": "Example Register"
+      },
+      "bodsVersion": "0.2"
+    },
+    "statementID": "e9c5bedd-2627-4f16-ac0c-a1b7ebfa051d",
+    "statementType": "entityStatement",
+    "isComponent": false,
+    "statementDate": "2018-12-17",
+    "entityType": "registeredEntity",
+    "name": "Listed Company OS-17",
+    "identifiers": [
+      {
+        "scheme": "GB-COH",
+        "id": "XE000017"
+      }
+    ]
+  },
+  {
+    "publicationDetails": {
+      "publicationDate": "2019-06-13",
+      "publisher": {
+        "name": "Example Register"
+      },
+      "bodsVersion": "0.2"
+    },
+    "statementID": "4f683208-f571-40a5-8a5a-ec78c2930387",
+    "statementType": "personStatement",
+    "isComponent": false,
+    "statementDate": "2018-12-17",
+    "personType": "anonymousPerson",
+    "unspecifiedPersonDetails": {
+      "reason": "interested-party-exempt-from-disclosure",
+      "description": "super-secure-person-with-significant-control"
+    }
+  },
+  {
+    "publicationDetails": {
+      "publicationDate": "2019-06-13",
+      "publisher": {
+        "name": "Example Register"
+      },
+      "bodsVersion": "0.2"
+    },
+    "statementID": "a63852a4-ee66-44b2-870c-747692c4d393",
+    "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
+    "statementDate": "2018-12-17",
+    "subject": {
+      "describedByEntityStatement": "e9c5bedd-2627-4f16-ac0c-a1b7ebfa051d"
+    },
+    "interestedParty": {
+      "describedByPersonStatement": "4f683208-f571-40a5-8a5a-ec78c2930387"
+    },
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Company A"
+        }
+      ]
+    }
+  }
+]

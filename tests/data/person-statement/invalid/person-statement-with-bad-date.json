@@ -1,6 +1,7 @@
 {
   "statementID": "019a93f1-e470-42e9-957b-03559861b2e2",
   "statementType": "personStatement",
+  "isComponent": false,
   "statementDate": "Tuesday",
   "personType": "knownPerson",
   "nationalities": [
@@ -16,7 +17,7 @@
       "familyName": "Taggart"
     },
     {
-      "type": "aka",
+      "type": "alternative",
       "fullName": "Chris Taggart"
     }
   ],
@@ -28,5 +29,12 @@
       "country": "GB",
       "postCode": "N3 1LF"
     }
-  ]
+  ],
+  "publicationDetails": {
+    "publicationDate": "2017-11-18",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "CHRINON LTD"
+    }
+  }
 }

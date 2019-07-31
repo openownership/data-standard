@@ -1,6 +1,7 @@
 {
   "statementID": "4a0e93d8-20da-4dae-b38d-eef57490037e",
   "statementType": "ownershipOrControlStatement",
+  "isComponent": false,
   "subject": {
     "describedByEntityStatement": "309523dc-8bdc-48a6-bca5-bdd3c879db65"
   },
@@ -24,5 +25,12 @@
   ],
   "interestedParty": {
     "describedByPersonStatement": "e5027662-b2bf-4a55-8319-1e4ff1c7e6a2"
+  },
+  "publicationDetails": {
+    "publicationDate": "2017-12-01",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "XXXXXXXXX"
+    }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "statementID": "019a93f1-e470-42e9-957b-03559861b2e2",
+  "statementType": "personStatement",
+  "statementDate": "2017-11-18",
+  "isComponent": false,
+  "personType": "knownPerson",
+  "nationalities": [
+    {
+      "code": "GB"
+    }
+  ],
+  "names": [
+    {
+      "type": "individual",
+      "fullName": "Christopher Taggart",
+      "givenName": "Christopher",
+      "familyName": "Taggart"
+    },
+    {
+      "type": "alternative",
+      "fullName": "Chris Taggart"
+    }
+  ],
+  "birthDate": "1964-04",
+  "addresses": [
+    {
+      "type": "service",
+      "address": "Aston House, Cornwall Avenue, London",
+      "country": "GB",
+      "postCode": "N3 1LF"
+    }
+  ],
+  "publicationDetails": {
+    "publicationDate": "2017-11-18",
+    "bodsVersionTypo": "0.2",
+    "publisher": {
+      "name": "CHRINON LTD"
+    }
+  }
+}

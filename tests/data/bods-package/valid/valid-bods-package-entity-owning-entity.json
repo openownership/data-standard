@@ -2,6 +2,7 @@
   {
     "statementID": "ba2fcf1e-04d2-40ef-8508-d633404b43aa",
     "statementType": "entityStatement",
+    "isComponent": false,
     "statementDate": "2017-06-30",
     "entityType": "registeredEntity",
     "name": "JENEX LIMITED",
@@ -11,11 +12,19 @@
         "scheme": "GB-COH",
         "id": "03209885"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2018-05-31",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "JENEX LIMITED"
+      }
+    }
   },
   {
     "statementID": "d36e6807-020c-4fb5-a0d4-5ab9eb971514",
     "statementType": "entityStatement",
+    "isComponent": false,
     "statementDate": "2017-08-09",
     "entityType": "registeredEntity",
     "name": "MVJ LIMITED",
@@ -25,11 +34,19 @@
         "scheme": "GB-COH",
         "id": "08150312"
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2018-05-31",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "JENEX LIMITED"
+      }
+    }
   },
   {
     "statementID": "85e7cbb2-992d-4bd2-a2f7-1274b1137f6d",
     "statementType": "ownershipOrControlStatement",
+    "isComponent": false,
     "statementDate": "2016-06-30",
     "subject": {
       "describedByEntityStatement": "ba2fcf1e-04d2-40ef-8508-d633404b43aa"
@@ -46,6 +63,13 @@
           "maximum": 100
         }
       }
-    ]
+    ],
+    "publicationDetails": {
+      "publicationDate": "2018-05-31",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "JENEX LIMITED"
+      }
+    }
   }
 ]
