@@ -1,19 +1,19 @@
 [
-    {
+  {
     "statementID": "891c9b38-5f92-432d-832c-0cb03c5b4745",
     "statementType": "entityStatement",
     "statementDate": "2018-12-17",
     "isComponent": false,
     "entityType": "registeredEntity",
-    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО-АБРАГАМОВСЬКИЙ",
+    "name": "Компанія А",
     "alternateNames": [
-      "ЯКОВЕНКО-АБРАГАМОВСЬКИЙ"
+      "А"
     ],
     "foundingDate": "2015-10-30",
     "identifiers": [
       {
         "scheme": "UA-EDR",
-        "id": "XE1234"
+        "id": "XE-OS-01-A"
       }
     ],
      "publicationDetails": {
@@ -40,7 +40,7 @@
           "name": "Ірина Яковенко"
         },
         {
-          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО-АБРАГАМОВСЬКИЙ"
+          "name": "Компанія А"
         }
       ]
     },
@@ -160,7 +160,7 @@
       {
         "statementPointerTarget": "/",
         "motivation": "commenting",
-        "description": "Owned through 100% share in IRINA LTD (UK), which owns 50% of ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО-АБРАГАМОВСЬКИЙ."
+        "description": "Owned through 100% share in Компанія Б (UK), which owns 50% of Компанія А."
       }
     ],
      "publicationDetails": {

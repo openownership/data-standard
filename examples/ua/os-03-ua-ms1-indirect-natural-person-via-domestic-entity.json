@@ -7,13 +7,13 @@
     "entityType": "registeredEntity",
     "name": "Компанія А",
     "alternateNames": [
-      "ЯКОВЕНКО-АБРАГАМОВСЬКИЙ"
+      "А"
     ],
     "foundingDate": "2015-10-30",
     "identifiers": [
       {
         "scheme": "UA-EDR",
-        "id": "XE1234"
+        "id": "XE-OS-03-A"
       }
     ],
     "source": {

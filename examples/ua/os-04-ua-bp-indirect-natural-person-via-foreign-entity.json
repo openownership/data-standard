@@ -5,18 +5,18 @@
     "isComponent": false,
     "statementDate": "2018-12-17",
     "entityType": "registeredEntity",
-    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО-АБРАГАМОВСЬКИЙ",
+    "name": "Компанія А",
     "alternateNames": [
-      "ЯКОВЕНКО-АБРАГАМОВСЬКИЙ"
+      "А"
     ],
-    "foundingDate": "2015-10-30",
     "identifiers": [
       {
         "scheme": "UA-EDR",
-        "id": "XE1234"
+        "id": "XE-OS-04-A"
       }
     ],
-     "publicationDetails": {
+    "foundingDate": "2015-10-30",
+    "publicationDetails": {
       "publicationDate": "2019-06-26",
       "bodsVersion": "0.2",
       "publisher": {
@@ -35,7 +35,7 @@
     "identifiers": [
       {
         "scheme": "GB-COH",
-        "id": "XE101"
+        "id": "XE-OS-04-B"
       }
     ],
      "publicationDetails": {

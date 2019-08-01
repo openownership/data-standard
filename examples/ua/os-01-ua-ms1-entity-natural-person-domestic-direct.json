@@ -7,13 +7,13 @@
     "entityType": "registeredEntity",
     "name": "Компанія А",
     "alternateNames": [
-      "ЯКОВЕНКО"
+      "А"
     ],
     "foundingDate": "2015-10-30",
     "identifiers": [
       {
         "scheme": "UA-EDR",
-        "id": "XE9876"
+        "id": "XE-OS-01-A"
       }
     ],
     "source": {

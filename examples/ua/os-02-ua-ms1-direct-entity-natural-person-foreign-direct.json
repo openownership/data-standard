@@ -5,15 +5,15 @@
     "isComponent": false,
     "statementDate": "2018-12-19",
     "entityType": "registeredEntity",
-    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ОВЧАРЕНКО",
+    "name": "Компанія А",
     "alternateNames": [
-      "ОВЧАРЕНКО"
+      "А"
     ],
-    "foundingDate": "2010-10-01",
+    "foundingDate": "2015-10-30",
     "identifiers": [
       {
         "scheme": "UA-EDR",
-        "id": "XE2222"
+        "id": "XE-OS-02-A"
       }
     ],
     "source": {

@@ -37,6 +37,9 @@
     "isComponent": true,
     "statementDate": "2018-12-17",
     "entityType": "unknownEntity",
+    "unspecifiedEntityDetails": {
+      "reason": "unknown"
+    },
     "source": {
       "type": ["officialRegister"],
       "assertedBy": [

@@ -5,17 +5,17 @@
     "statementDate": "2018-12-19",
     "isComponent": false,
     "entityType": "registeredEntity",
-    "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ЯКОВЕНКО",
+    "name": "Компанія А",
     "alternateNames": [
-      "ЯКОВЕНКО"
+      "А"
     ],
-    "foundingDate": "2015-10-30",
     "identifiers": [
       {
         "scheme": "UA-EDR",
-        "id": "XE9876"
+        "id": "XE-OS-04-A"
       }
     ],
+    "foundingDate": "2015-10-30",
     "source": {
       "type": ["officialRegister"],
       "assertedBy": [
