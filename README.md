@@ -53,6 +53,7 @@ You also need to make sure you have `gettext` and `pybabel` installed in whateve
 ```
 $ apt-get install gettext
 $ apt-get install python-babel
+$ apt-get install itstool
 ```
 
 And you need to get a [Transifex API key](https://www.transifex.com/user/settings/api/), make sure you have access to the [BODS project on Transifex](https://www.transifex.com/OpenDataServices/bods-v01)
@@ -71,6 +72,10 @@ Run the following commands from the root directory unless otherwise specified (e
 **If you modified the codelists** also:
 
 1. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/_build/gettext/codelist.pot` to extract translatable English strings from the codelists.
+
+**If you modified an SVG diagram** also:
+
+1. Run `itstool -i svg-its-rules.xml -o docs/_build/gettext/svg.pot docs/_assets/*.svg` to extract translatable English strings from the SVGs.
 
 **If you added, deleted or renamed** files or you want to use a **different Transifex project**, run (from root, ie. `cd ../`):
 
