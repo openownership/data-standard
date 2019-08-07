@@ -64,11 +64,11 @@ Run the following commands from the root directory unless otherwise specified (e
 1. `cd docs`
 2. Run `make gettext` to extract translatable English strings from the docs.
 
-**If you modified the codelists** also:
+**If you modified the schema** also:
 
 1. Run `pybabel extract -F babel_bods_schema.cfg . -o docs/_build/gettext/schema.pot` to extract translatable English strings from the schema.
 
-**If you modified the schema** also:
+**If you modified the codelists** also:
 
 1. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/_build/gettext/codelist.pot` to extract translatable English strings from the codelists.
 
