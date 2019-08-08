@@ -101,6 +101,7 @@ Now the files are ready to be translated in Transifex.
 ```
 $ pybabel compile --use-fuzzy -d docs/locale -D schema
 $ pybabel compile --use-fuzzy -d docs/locale -D codelist
+$ pybabel compile --use-fuzzy -d docs/locale -D svg
 ```
 
 **Commit** the new or updated .po files in `docs/locale`, using a separate commit from your edits to the source (RST, JSON or CSV) files.
@@ -110,6 +111,7 @@ $ pybabel compile --use-fuzzy -d docs/locale -D codelist
 ```
 git add -f docs/locale/ru/LC_MESSAGES/schema.mo
 git add -f docs/locale/ru/LC_MESSAGES/codelist.mo
+git add -f docs/locale/ru/LC_MESSAGES/svg.mo
 ```
 
 **To build another language locally** (pass the language code you want)..
