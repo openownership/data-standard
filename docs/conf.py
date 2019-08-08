@@ -19,7 +19,6 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import os
-import subprocess
 from recommonmark.transform import AutoStructify
 from recommonmark.parser import CommonMarkParser
 
@@ -229,7 +228,7 @@ redirect_files = [
     'serialization.html',
 ]
 
-from shutil import copyfile
+from shutil import copyfile, copy2
 
 
 def copy_legacy_redirects(app, docname): # Sphinx expects two arguments
@@ -282,13 +281,8 @@ def setup(app):
     translate_schema_and_codelists(language)
 
     # This is a closure to access the `language` variable
-    def translate_svgs(app, docname):  # Sphinx expects two arguments
+    def copy_translated_svgs(app, docname):  # Sphinx expects two arguments
         docs_dir = Path(os.path.realpath(__file__)).parents[0]
-        subprocess.call([
-            'itstool',
-            '-m',
-            docs_dir / 'locale' / language / 'LC_MESSAGES' / 'svg.mo',
-            '-o',
-            docs_dir / '_build' / 'html' / '_images'
-        ] + glob(str(docs_dir / '_assets' / '*.svg')))
-    app.connect('build-finished', translate_svgs)
+        for svg_path in glob(str(Path(app.srcdir) / '_build_svgs' / language / '*')):
+            copy2(svg_path, str(Path(app.outdir) / '_images'))
+    app.connect('build-finished', copy_translated_svgs)

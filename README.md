@@ -111,7 +111,11 @@ $ pybabel compile --use-fuzzy -d docs/locale -D svg
 ```
 git add -f docs/locale/ru/LC_MESSAGES/schema.mo
 git add -f docs/locale/ru/LC_MESSAGES/codelist.mo
-git add -f docs/locale/ru/LC_MESSAGES/svg.mo
+```
+
+**Build translated SVGs** for each language using itstool, and commit these (because we can't easily install itstool on readthedocs):
+```
+itstool -m docs/locale/ru/LC_MESSAGES/svg.mo -o docs/_build_svgs/ru docs/_assets/*.svg
 ```
 
 **To build another language locally** (pass the language code you want)..
