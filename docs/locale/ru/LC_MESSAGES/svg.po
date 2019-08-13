@@ -52,7 +52,7 @@ msgstr "image/svg+xml"
 #: docs/_assets/Diag8-dataStandardTemplate.svg:63
 #: docs/_assets/Diag8-dataStandardTemplate.svg:515
 msgid "Artboard 1 copy"
-msgstr ""
+msgstr "Artboard 1 copy"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:597
@@ -64,7 +64,7 @@ msgstr "Доля участия"
 #: docs/_assets/data-schema-model-1.svg:610
 #, no-wrap
 msgid "Type:   share-holding"
-msgstr ""
+msgstr "Type: акции в собственности"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:615
@@ -91,7 +91,7 @@ msgstr "Характеристика о владение или контроль
 #: docs/_assets/data-schema-model-1.svg:683
 #, no-wrap
 msgid "Type:   voting-rights"
-msgstr ""
+msgstr "type: право голоса"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:688
@@ -108,7 +108,7 @@ msgstr ""
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:607
 msgid "interestedParty"
-msgstr ""
+msgstr "Заинтересованная сторона"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:638
@@ -149,7 +149,7 @@ msgstr ""
 #: docs/_assets/data-schema-model-2.svg:768
 #, no-wrap
 msgid "Entity statement"
-msgstr ""
+msgstr "Xарактеристика сущности"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:780
