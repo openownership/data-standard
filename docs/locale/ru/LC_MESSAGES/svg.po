@@ -70,7 +70,7 @@ msgstr "Type: акции в собственности"
 #: docs/_assets/data-schema-model-1.svg:615
 #, no-wrap
 msgid "Share: 60%"
-msgstr "Aкция: 60%"
+msgstr "Share: 60%"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:628
@@ -103,7 +103,7 @@ msgstr "Aкция: 30%"
 #: docs/_assets/data-schema-model-2.svg:590
 #, no-wrap
 msgid "person:  47bdf780-787d-4bfd-9205"
-msgstr ""
+msgstr "person: 47bdf780-787d-4bfd-9205"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:607
@@ -114,7 +114,7 @@ msgstr "Заинтересованная сторона"
 #: docs/_assets/data-schema-model-2.svg:638
 #, no-wrap
 msgid "entity:  ty4t68s3-hha4-8ks3-0d8w  "
-msgstr "сущность: ty4t68s3-hha4-8ks3-0d8w"
+msgstr "entity: ty4t68s3-hha4-8ks3-0d8w"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:655
