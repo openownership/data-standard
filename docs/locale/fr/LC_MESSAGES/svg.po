@@ -1,19 +1,15 @@
-# Translators:
-# Ben Webb <ben.webb@opendataservices.coop>, 2019
-# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-08-07 15:46+0100\n"
 "PO-Revision-Date: 2019-08-07 15:28+0000\n"
-"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
-"Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. (itstool) path: Work/format
 #: docs/_assets/data-schema-model-1.svg:23
@@ -27,7 +23,7 @@ msgstr ""
 #: docs/_assets/Diag8-dataStandardTemplate.svg:60
 #: docs/_assets/Diag9-JSONdata.svg:226
 msgid "image/svg+xml"
-msgstr "image/svg+xml"
+msgstr ""
 
 #. (itstool) path: Work/title
 #. (itstool) path: svg/title
@@ -52,32 +48,32 @@ msgstr "image/svg+xml"
 #: docs/_assets/Diag8-dataStandardTemplate.svg:63
 #: docs/_assets/Diag8-dataStandardTemplate.svg:515
 msgid "Artboard 1 copy"
-msgstr "Artboard 1 copy"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:597
 #: docs/_assets/data-schema-model-1.svg:670
 msgid "Interest"
-msgstr "Доля участия"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:610
 #, no-wrap
 msgid "Type:   share-holding"
-msgstr "Type: акции в собственности"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:615
 #, no-wrap
 msgid "Share: 60%"
-msgstr "Share: 60%"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:628
 #: docs/_assets/data-schema-model-2.svg:668
 #: docs/_assets/data-schema-model-3.svg:649
 msgid "interests"
-msgstr "Доля участия"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:640
@@ -85,118 +81,118 @@ msgstr "Доля участия"
 #: docs/_assets/data-schema-model-3.svg:620
 #, no-wrap
 msgid "Ownership-or-control statement"
-msgstr "Характеристика о владение или контроль"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:683
 #, no-wrap
 msgid "Type:   voting-rights"
-msgstr "type: право голоса"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:688
 #, no-wrap
 msgid "Share: 30%"
-msgstr "Share: 30%"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:590
 #, no-wrap
 msgid "person:  47bdf780-787d-4bfd-9205"
-msgstr "person: 47bdf780-787d-4bfd-9205"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:607
 msgid "interestedParty"
-msgstr "Заинтересованная сторона"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:638
 #, no-wrap
 msgid "entity:  ty4t68s3-hha4-8ks3-0d8w  "
-msgstr "entity: ty4t68s3-hha4-8ks3-0d8w"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:655
 msgid "subject"
-msgstr "субъект"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:711
 #, no-wrap
 msgid "Person statement"
-msgstr "Характеристика физического лица"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:723
 #, no-wrap
 msgid "statementID:  47bdf780-787d-4bfd-9205"
-msgstr "statementID: 47bdf780-787d-4bfd-9205"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:728
 #, no-wrap
 msgid "name: Roberto Lopez"
-msgstr "name: Roberto Lopez"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:733
 #, no-wrap
 msgid "birthDate: 1967-03-12"
-msgstr "birthDate: 1967-03-12"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:768
 #, no-wrap
 msgid "Entity statement"
-msgstr "Xарактеристика сущности"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:780
 #, no-wrap
 msgid "statementID:  ty4t68s3-hha4-8ks3-0d8w"
-msgstr "statementID: ty4t68s3-hha4-8ks3-0d8w"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:785
 #, no-wrap
 msgid "name: RENCO Energy Ltd"
-msgstr "name: RENCO Energy Ltd"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:790
 #, no-wrap
 msgid "foundingDate: 2016-07-07"
-msgstr "foundingDate: 2016-07-07"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:586
 #, no-wrap
 msgid "type:               selfDeclaration"
-msgstr "type: selfDeclaration"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:591
 #, no-wrap
 msgid "retrievedAt:   2018-11-07T13:55:32.734Z"
-msgstr "retrievedAt: 2018-11-07T13:55:32.734Z"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:596
 #, no-wrap
 msgid "assertedBy:   Acme Industries Ltd"
-msgstr "assertedBy: Acme Industries Ltd"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:608
 msgid "source"
-msgstr "источник"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:632
 #, no-wrap
 msgid "statementDate:   2018-07-12"
-msgstr "statementDate: 2018-07-12"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag1-simpleOwn.svg:241
@@ -215,7 +211,7 @@ msgstr ""
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:1877
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1810
 msgid "Company 1"
-msgstr "компания 1"
+msgstr ""
 
 #. (itstool) path: svg/text
 #. (itstool) path: text/tspan
@@ -232,14 +228,14 @@ msgstr ""
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:1890
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1823
 msgid "Company 2"
-msgstr "компания 2"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag1-simpleOwn.svg:576 docs/_assets/Diag2-simpleInd.svg:467
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:1549
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1581
 msgid "Company 3"
-msgstr "компания 3"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag2-simpleInd.svg:168 docs/_assets/Diag3-splitContr.svg:336
@@ -255,7 +251,7 @@ msgstr ""
 #. (itstool) path: svg/text
 #: docs/_assets/Diag2-simpleInd.svg:425
 msgid "6<_:tspan-1/>"
-msgstr "6<_:tspan-1/>"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag2-simpleInd.svg:448 docs/_assets/Diag5-sourcesData.svg:795
@@ -340,13 +336,13 @@ msgstr ""
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1287
 #, no-wrap
 msgid "i"
-msgstr "i"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:1298
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1330
 msgid "Company 4"
-msgstr "компания 4"
+msgstr ""
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:1690
@@ -410,4 +406,4 @@ msgstr ""
 #: docs/_assets/Diag9-JSONdata.svg:364
 #, no-wrap
 msgid "JSON"
-msgstr "JSON"
+msgstr ""
