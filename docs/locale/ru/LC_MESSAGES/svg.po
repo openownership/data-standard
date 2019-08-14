@@ -77,7 +77,7 @@ msgstr "Share: 60%"
 #: docs/_assets/data-schema-model-2.svg:668
 #: docs/_assets/data-schema-model-3.svg:649
 msgid "interests"
-msgstr ""
+msgstr "Доля участия"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:640
@@ -97,7 +97,7 @@ msgstr "type: право голоса"
 #: docs/_assets/data-schema-model-1.svg:688
 #, no-wrap
 msgid "Share: 30%"
-msgstr "Aкция: 30%"
+msgstr "Share: 30%"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:590
