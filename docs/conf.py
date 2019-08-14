@@ -228,7 +228,7 @@ redirect_files = [
     'serialization.html',
 ]
 
-from shutil import copyfile
+from shutil import copyfile, copy2
 
 
 def copy_legacy_redirects(app, docname): # Sphinx expects two arguments
@@ -279,3 +279,10 @@ def setup(app):
     app.connect('build-finished', copy_legacy_redirects)
     language = app.config.overrides.get('language', 'en')
     translate_schema_and_codelists(language)
+
+    # This is a closure to access the `language` variable
+    def copy_translated_svgs(app, docname):  # Sphinx expects two arguments
+        docs_dir = Path(os.path.realpath(__file__)).parents[0]
+        for svg_path in glob(str(Path(app.srcdir) / '_build_svgs' / language / '*')):
+            copy2(svg_path, str(Path(app.outdir) / '_images'))
+    app.connect('build-finished', copy_translated_svgs)

@@ -53,6 +53,7 @@ You also need to make sure you have `gettext` and `pybabel` installed in whateve
 ```
 $ apt-get install gettext
 $ apt-get install python-babel
+$ apt-get install itstool
 ```
 
 And you need to get a [Transifex API key](https://www.transifex.com/user/settings/api/), make sure you have access to the [BODS project on Transifex](https://www.transifex.com/OpenDataServices/bods-v01)
@@ -64,13 +65,17 @@ Run the following commands from the root directory unless otherwise specified (e
 1. `cd docs`
 2. Run `make gettext` to extract translatable English strings from the docs.
 
-**If you modified the codelists** also:
+**If you modified the schema** also:
 
 1. Run `pybabel extract -F babel_bods_schema.cfg . -o docs/_build/gettext/schema.pot` to extract translatable English strings from the schema.
 
-**If you modified the schema** also:
+**If you modified the codelists** also:
 
 1. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/_build/gettext/codelist.pot` to extract translatable English strings from the codelists.
+
+**If you modified an SVG diagram** also:
+
+1. Run `itstool -i svg-its-rules.xml -o docs/_build/gettext/svg.pot docs/_assets/*.svg` to extract translatable English strings from the SVGs.
 
 **If you added, deleted or renamed** files or you want to use a **different Transifex project**, run (from root, ie. `cd ../`):
 
@@ -96,6 +101,7 @@ Now the files are ready to be translated in Transifex.
 ```
 $ pybabel compile --use-fuzzy -d docs/locale -D schema
 $ pybabel compile --use-fuzzy -d docs/locale -D codelist
+$ pybabel compile --use-fuzzy -d docs/locale -D svg
 ```
 
 **Commit** the new or updated .po files in `docs/locale`, using a separate commit from your edits to the source (RST, JSON or CSV) files.
@@ -105,6 +111,11 @@ $ pybabel compile --use-fuzzy -d docs/locale -D codelist
 ```
 git add -f docs/locale/ru/LC_MESSAGES/schema.mo
 git add -f docs/locale/ru/LC_MESSAGES/codelist.mo
+```
+
+**Build translated SVGs** for each language using itstool, and commit these (because we can't easily install itstool on readthedocs):
+```
+itstool -m docs/locale/ru/LC_MESSAGES/svg.mo -o docs/_build_svgs/ru docs/_assets/*.svg
 ```
 
 **To build another language locally** (pass the language code you want)..
