@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Valery Gusak <valery.gusak@gmail.com>, 2019
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"POT-Creation-Date: 2019-08-04 17:21+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -147,7 +148,6 @@ msgstr ""
 # 8cee02f296d440d9b26bb320a6902bf3
 # 8cee02f296d440d9b26bb320a6902bf3
 # 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -156,7 +156,6 @@ msgstr ""
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
-#: ../../sphinxcontrib-jsonschema:1
 msgid "Title"
 msgstr "Заголовок"
 
@@ -176,7 +175,6 @@ msgstr "Заголовок"
 # 5e16e17b1edb40bb82ec39af4b7bd5e2
 # 5e16e17b1edb40bb82ec39af4b7bd5e2
 # 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -185,7 +183,6 @@ msgstr "Заголовок"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
-#: ../../sphinxcontrib-jsonschema:1
 msgid "Description"
 msgstr "Описание"
 
@@ -205,7 +202,6 @@ msgstr "Описание"
 # 258505e8ad89490086e78a8dbaa1b700
 # 258505e8ad89490086e78a8dbaa1b700
 # 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -214,7 +210,6 @@ msgstr "Описание"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
-#: ../../sphinxcontrib-jsonschema:1
 msgid "Type"
 msgstr "Тип"
 
@@ -234,7 +229,6 @@ msgstr "Тип"
 # b9520b222caf452cb0f423af34e55bee
 # b9520b222caf452cb0f423af34e55bee
 # b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -243,7 +237,6 @@ msgstr "Тип"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
-#: ../../sphinxcontrib-jsonschema:1
 msgid "Format"
 msgstr "Формат"
 
@@ -263,7 +256,6 @@ msgstr "Формат"
 # b2beadc929644807ad805b03e62025f0
 # b2beadc929644807ad805b03e62025f0
 # b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -272,7 +264,6 @@ msgstr "Формат"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
-#: ../../sphinxcontrib-jsonschema:1
 msgid "Required"
 msgstr "Обязательный"
 
@@ -426,7 +417,7 @@ msgstr ""
 "(interestedParty) в другом субъекте."
 
 # 8455b06fa86c42588eba7bcfbfd03a47
-#: ../../schema/reference.rst:127
+#: ../../schema/reference.rst:128
 msgid "InterestedParty"
 msgstr "InterestedParty (Заинтересованная сторона)"
 
@@ -445,7 +436,7 @@ msgstr ""
 "необходимо указать сведения о причинах."
 
 # e152db582d2f47409d742e35d12f1be3
-#: ../../schema/reference.rst:139
+#: ../../schema/reference.rst:140
 msgid "Jurisdiction"
 msgstr "Jurisdiction (Юрисдикция)"
 
@@ -461,7 +452,7 @@ msgstr ""
 "соответствии со стандартом ISO_3166-2."
 
 # a7ba14d178534fecb0d346169a1a37f8
-#: ../../schema/reference.rst:150
+#: ../../schema/reference.rst:151
 msgid "Name"
 msgstr "Name (ФИО)"
 
@@ -484,7 +475,7 @@ msgstr ""
 "vocabularies)."
 
 # 9f96e506e23e4911ba414d4eaedf2c29
-#: ../../schema/reference.rst:161
+#: ../../schema/reference.rst:162
 msgid "OwnershipOrControlStatement"
 msgstr "OwnershipOrControlStatement (Запись о владении или контроле)"
 
@@ -501,7 +492,7 @@ msgstr ""
 "записи."
 
 # 7f768334ef9646b6afc3d62418da367e
-#: ../../schema/reference.rst:173
+#: ../../schema/reference.rst:174
 msgid "PepStatusDetails"
 msgstr ""
 
@@ -511,7 +502,7 @@ msgid "A description of a politically-exposed person status."
 msgstr "Описание статуса публичного должностного лица."
 
 # 537c05e6d91a4ceb99860f03a1589db6
-#: ../../schema/reference.rst:185
+#: ../../schema/reference.rst:186
 msgid "PersonStatement"
 msgstr "PersonStatement (Запись о физическом лице)"
 
@@ -526,7 +517,7 @@ msgstr ""
 "сведений"
 
 # 7f768334ef9646b6afc3d62418da367e
-#: ../../schema/reference.rst:196
+#: ../../schema/reference.rst:197
 msgid "PublicationDetails"
 msgstr "PublicationDetails (Сведения о публикации)"
 
@@ -536,7 +527,7 @@ msgid "Information concerning the publication of this statement."
 msgstr "Информация касательно публикации данной записи."
 
 # e977ac2673814057876d096883b6116e
-#: ../../schema/reference.rst:208
+#: ../../schema/reference.rst:209
 msgid "Publisher"
 msgstr ""
 
@@ -546,7 +537,7 @@ msgid "Details of the organisation or individual publishing a statement."
 msgstr ""
 
 # 3e365476d90e4d28a7dda7cdbbab1093
-#: ../../schema/reference.rst:221
+#: ../../schema/reference.rst:222
 msgid "ReplacesStatements"
 msgstr "ReplacesStatements (Заменяет записи)"
 
@@ -562,7 +553,7 @@ msgstr ""
 "рекомендуется отмечать идентифицированные записи как уже не активные."
 
 # cc3c2d9ab13e490b96a803175b34f262
-#: ../../schema/reference.rst:226
+#: ../../schema/reference.rst:227
 msgid ""
 "See :any:`Updating statements <guidance-updating-data>` for technical "
 "guidance on working with updates to data."
@@ -571,7 +562,7 @@ msgstr ""
 "технических рекомендаций по работе с обновлениями данных."
 
 # 57892cb3ef73472eb845eade6637af93
-#: ../../schema/reference.rst:232
+#: ../../schema/reference.rst:233
 msgid "Share"
 msgstr "Share (Доля)"
 
@@ -582,21 +573,21 @@ msgid ""
 "and minimum values set to the same as the exact percentage. Otherwise, "
 "maximum and minimum can be used to record the range into which the share of "
 "this kind of interest falls. By default the minimum is inclusive and the "
-"maximum exclusive (minimum-value \\u2264 share < maximum-value ). If you "
-"wish to change these defaults, use the exclusiveMinimum and exclusiveMaximum"
-" properties."
+"maximum exclusive (minimum-value ≤ share < maximum-value ). If you wish to "
+"change these defaults, use the exclusiveMinimum and exclusiveMaximum "
+"properties."
 msgstr ""
 "Если известна точная доля в процентах, ее следует указать, при этом в "
 "качестве максимального и минимального значений указывается одна и та же "
 "точная доля в процентах. В других случаях максимум и минимум можно "
 "использовать для записи диапазона, в котором находится такая доля участия. "
 "По умолчанию минимум указывается включительно, а максимум — не включительно "
-"(минимальное значение \\u2264 доля < максимальное значение). Если вы желаете"
-" изменить эти используемые по умолчанию значения, воспользуйтесь свойствами "
+"(минимальное значение ≤ доля < максимальное значение). Если вы желаете "
+"изменить эти используемые по умолчанию значения, воспользуйтесь свойствами "
 "exclusiveMinimum и exclusiveMaximum."
 
 # 9bf8c0f58baf4234bba1c7eaaa93d020
-#: ../../schema/reference.rst:244
+#: ../../schema/reference.rst:245
 msgid "Source"
 msgstr "Source (Источник)"
 
@@ -610,7 +601,7 @@ msgstr ""
 "и для ссылки на подтверждающую информацию."
 
 # de449f8e88334a33a65e80c337062173
-#: ../../schema/reference.rst:254
+#: ../../schema/reference.rst:255
 msgid ""
 "See :any:`Sources and annotations <provenance>` for a discussion of "
 "provenance modelling."
@@ -619,12 +610,12 @@ msgstr ""
 "моделирования источника."
 
 # d62e79f464e44064b75ab544b54f09aa
-#: ../../schema/reference.rst:259
+#: ../../schema/reference.rst:260
 msgid "StatementDate"
 msgstr "StatementDate (Дата записи)"
 
 # 4f576e97447644a0a863fb16e984dd07
-#: ../../schema/reference.rst:261
+#: ../../schema/reference.rst:262
 msgid ""
 "Dates MUST conform with the extended format of `ISO 8601 "
 "<https://en.wikipedia.org/wiki/ISO_8601>`_. All of the following, for "
@@ -635,32 +626,32 @@ msgstr ""
 "ниже действительно:"
 
 # 4f4c8402725040e7bd23e264d569bc33
-#: ../../schema/reference.rst:263
+#: ../../schema/reference.rst:264
 msgid "A full datetime string (YYYY-MM-DDTHH:MM:SSZ)"
 msgstr "Полная строка даты и времени (YYYY-MM-DDTHH:MM:SSZ)"
 
 # 30b4901b6cc74de685f81418db28aa5a
-#: ../../schema/reference.rst:264
+#: ../../schema/reference.rst:265
 msgid "A year, month and day (YYYY-MM-DD)"
 msgstr "Год, месяц и день (YYYY-MM-DD)"
 
 # dc73b66c9a9b4b10b0227e09874f75de
-#: ../../schema/reference.rst:265
+#: ../../schema/reference.rst:266
 msgid "A year and month (YYYY-MM)"
 msgstr "Год и месяц (YYYY-MM)"
 
 # c69ceb807c7a49fd8bded89dc49e64bb
-#: ../../schema/reference.rst:266
+#: ../../schema/reference.rst:267
 msgid "A year (YYYY)"
 msgstr "Год (YYYY)"
 
 # 17625b30489e430cb1cc811cc427eb68
-#: ../../schema/reference.rst:272
+#: ../../schema/reference.rst:273
 msgid "Codelists"
 msgstr "Списки допустимых значений"
 
 # ea3d7409e1c34c08a9365aac7fdd1a80
-#: ../../schema/reference.rst:275
+#: ../../schema/reference.rst:276
 msgid "AddressType"
 msgstr "AddressType (Тип адреса)"
 
@@ -872,7 +863,7 @@ msgid "A place where the entity conducts its business."
 msgstr "Место, в котором субъект ведет деловую деятельность."
 
 # fcd65dd2fca04784a7a45e196a89e34c
-#: ../../schema/reference.rst:284
+#: ../../schema/reference.rst:285
 msgid "AnnotationMotivation"
 msgstr "AnnotationMotivation (Мотивация примечания)"
 
@@ -978,7 +969,7 @@ msgstr ""
 "представление может быть указано в поле transformedContent."
 
 # 5f46fdc5ec0849e5bb9ad1cda47990ee
-#: ../../schema/reference.rst:293
+#: ../../schema/reference.rst:294
 msgid "EntityType"
 msgstr "EntityType (Тип субъекта)"
 
@@ -1076,7 +1067,7 @@ msgid "An entity that has not been identified."
 msgstr "Субъект, который не был идентифицирован."
 
 # 6c11f3f90192449d917792d0de9af9b5
-#: ../../schema/reference.rst:302
+#: ../../schema/reference.rst:303
 msgid "InterestLevel"
 msgstr "InterestLevel (Уровень доли участия)"
 
@@ -1132,7 +1123,7 @@ msgid "The interest may be direct or indirect."
 msgstr "Доля участия может быть прямой или косвенной."
 
 # acf661bcb8fb46e39ac53503033add07
-#: ../../schema/reference.rst:311
+#: ../../schema/reference.rst:312
 msgid "InterestType"
 msgstr "InterestType (Тип доли участия)"
 
@@ -1419,7 +1410,7 @@ msgstr ""
 " договора»."
 
 # ceaa70f9a76d4cbf82186b8c307c5b7c
-#: ../../schema/reference.rst:320
+#: ../../schema/reference.rst:321
 msgid "NameType"
 msgstr "NameType (Тип ФИО)"
 
@@ -1523,7 +1514,7 @@ msgid "\"The legal name of the person at birth.\""
 msgstr "«Официальное ФИО соответствующего лица при рождении»."
 
 # ad907e4c57ab4fba957d20bb9229cb28
-#: ../../schema/reference.rst:329
+#: ../../schema/reference.rst:330
 msgid "PersonType"
 msgstr "PersonType (Тип физического лица)"
 
@@ -1583,7 +1574,7 @@ msgid "The identity of this person has not been discovered or confirmed."
 msgstr "Личность этого физического лица не была выяснена или подтверждена."
 
 # 51b494fad9604cd193dce7936b3e49ed
-#: ../../schema/reference.rst:338
+#: ../../schema/reference.rst:339
 msgid "SourceType"
 msgstr "SourceType (Тип источника)"
 
@@ -1679,7 +1670,7 @@ msgstr ""
 "соответствующем описании."
 
 # 6f0de21dc6024ddbba87f97c1ed382f6
-#: ../../schema/reference.rst:347
+#: ../../schema/reference.rst:348
 msgid "StatementType"
 msgstr "StatementType (Тип записи)"
 
@@ -1766,7 +1757,7 @@ msgstr ""
 " владении или контроле."
 
 # 69976a7ce78e4deb8db02d8e331cfc02
-#: ../../schema/reference.rst:356
+#: ../../schema/reference.rst:357
 msgid "UnspecifiedReason"
 msgstr "UnspecifiedReason (Неуказанная причина)"
 

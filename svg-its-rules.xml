@@ -1,0 +1,9 @@
+<!-- Based on example its-rules.xml at https://www.w3.org/TR/SVGTiny12/i18n.html#SVGi18nl10nmarkup -->
+<its:rules xmlns:its="http://www.w3.org/2005/11/its" version="1.0" 
+           xmlns:svg="http://www.w3.org/2000/svg">
+  <its:translateRule selector="//svg:*" translate="no"/>
+  <its:translateRule selector="//svg:text | //svg:tspan | //svg:textArea | 
+                               //svg:title | //svg:desc | //svg:metadata |
+                               //svg:flowPara" 
+                               translate="yes"/> 
+</its:rules> 

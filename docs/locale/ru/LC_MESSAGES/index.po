@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Valery Gusak <valery.gusak@gmail.com>, 2019
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-07-30 18:06+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,6 +38,11 @@ msgstr ""
 "бенефициарном владении (версия 0.2) и поддержку в его использовании. "
 ":doc:`Узнайте больше <about/index>` о разработке стандарта и о том, как "
 "принять участие."
+
+# 5ae11b40c7ba4436a3c2b8b2bf92f2ca
+#: ../../index.rst:12
+msgid "For Newcomers"
+msgstr ""
 
 # c06eec4739cc48808a41810e023aacec
 #: ../../index.rst:14
@@ -67,10 +73,15 @@ msgstr ":doc:`Что такое стандарт данных? <primer/whatisthe
 msgid ":doc:`About the standard's development <about/index>`"
 msgstr ":doc:`О разработке стандарта <about/index>`"
 
+# b055a691af474a878b929b4175f9f985
+#: ../../index.rst:39
+msgid "For Developers"
+msgstr ""
+
 # 4d1932c39dec45c6a903b7a37b141205
 #: ../../index.rst:41
 msgid "Understand how to package up and release beneficial ownership data."
-msgstr "Сведения об оформлении и выпуске данных о бенефициарном владении."
+msgstr "Сведения об оформлении и публикации данных о бенефициарном владении."
 
 # f42a36343c46485a8a46a95a90f2aa19
 #: ../../index.rst:45
