@@ -90,8 +90,7 @@
     },
     "Identifier": {
       "title": "Identifier",
-      "description": "An identifier that has been assigned to this person or 
-. The scheme or list from which the identifier is drawn should be declared.",
+      "description": "An identifier that has been assigned to this person or entity. The scheme or list from which the identifier is drawn should be declared.",
       "type": "object",
       "properties": {
         "id": {
