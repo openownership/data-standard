@@ -33,7 +33,7 @@ Address
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Address
-   :externallinks: {"type":{"url":"#addresstype","text":"codelist"}}
+   :externallinks: {"type":{"url":"#addresstype","text":"Codelists"}}
 
 
 .. note::
