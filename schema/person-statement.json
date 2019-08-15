@@ -50,7 +50,7 @@
       "properties": {
         "reason": {
           "title": "Reason",
-          "description": "The reason that an interested party cannot be specified. From the [unspecifiedReason codelist](#unspecifiedreason).",
+          "description": "The reason that an interested party cannot be specified. From the unspecifiedReason codelist.",
           "type": "string",
           "enum": [
             "no-beneficial-owners",

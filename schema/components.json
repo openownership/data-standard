@@ -16,7 +16,7 @@
       "properties": {
         "type": {
           "title": "Source type",
-          "description": "What type of source is this? Multiple tags can be combined. Values should come from the [source type](#sourcetype) codelist.",
+          "description": "What type of source is this? Multiple tags can be combined. Values should come from the source type codelist.",
           "type": "array",
           "items": {
             "type": "string",
@@ -90,7 +90,8 @@
     },
     "Identifier": {
       "title": "Identifier",
-      "description": "An identifier that has been assigned to this person or entity. The scheme or list from which the identifier is drawn should be declared.",
+      "description": "An identifier that has been assigned to this person or 
+. The scheme or list from which the identifier is drawn should be declared.",
       "type": "object",
       "properties": {
         "id": {
@@ -187,7 +188,7 @@
       "properties": {
         "type": {
           "title": "Type",
-          "description": "What kind of name is this? See the [nameType](#nametype) codelist.",
+          "description": "What kind of name is this? See the nameType codelist.",
           "type": "string",
           "enum": [
             "individual",
@@ -229,7 +230,7 @@
       "properties": {
         "type": {
           "title": "Type of interest",
-          "description": "A codelist value indicating the nature of the interest. See the [interestType codelist](#interesttype)",
+          "description": "A codelist value indicating the nature of the interest. See the interestType codelist",
           "type": "string",
           "enum": [
             "shareholding",
@@ -362,7 +363,7 @@
         },
         "motivation": {
           "title": "Motivation",
-          "description": "The motivation for this annotation, chosen from a codelist. See the [annotationMotivation](#annotationmotivation) codelist.",
+          "description": "The motivation for this annotation, chosen from a codelist. See the annotationMotivation codelist.",
           "type": "string",
           "enum": [
             "commenting",
