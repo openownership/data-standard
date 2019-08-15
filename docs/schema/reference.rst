@@ -87,7 +87,7 @@ EntityStatement
 
 .. jsonschema:: ../_build_schema/entity-statement.json
    :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations,publicationDetails
-   :externallinks: {"entityType":{"url":"#entitytype","text":"Codelists"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"codelist"}}
+   :externallinks: {"entityType":{"url":"#entitytype","text":"Codelists"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
 
 .. _schema-id:
 
