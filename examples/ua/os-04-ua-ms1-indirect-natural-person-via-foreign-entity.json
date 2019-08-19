@@ -147,11 +147,11 @@
     },
     "interests": [
       {
-        "type": "shareholding",
+        "type": "other-influence-or-control",
         "interestLevel": "indirect",
         "beneficialOwnershipOrControl": true,
         "share": {
-          "exact": 50
+          "exact": 30
         },
         "startDate": "2017-11-01"
       }

@@ -30,7 +30,7 @@
     "isComponent": true,
     "statementDate": "2018-12-17",
     "entityType": "registeredEntity",
-    "name": "IRINA LTD",
+    "name": "Company B",
     "foundingDate": "2015-10-30",
     "identifiers": [
       {
@@ -90,7 +90,16 @@
         "interestLevel": "direct",
         "beneficialOwnershipOrControl": false,
         "share": {
-          "exact": 50
+          "exact": 60
+        },
+        "startDate": "2017-11-01"
+      },
+      {
+        "type": "voting-rights",
+        "interestLevel": "direct",
+        "beneficialOwnershipOrControl": false,
+        "share": {
+          "exact": 60
         },
         "startDate": "2017-11-01"
       }
@@ -150,7 +159,16 @@
         "interestLevel": "indirect",
         "beneficialOwnershipOrControl": true,
         "share": {
-          "exact": 50
+          "exact": 30
+        },
+        "startDate": "2017-11-01"
+      },
+      {
+        "type": "voting-rights",
+        "interestLevel": "indirect",
+        "beneficialOwnershipOrControl": true,
+        "share": {
+          "exact": 30
         },
         "startDate": "2017-11-01"
       }
