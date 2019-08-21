@@ -30,7 +30,7 @@
     },
     "entityType": {
       "title": "Type",
-      "description": "From the [entityType codelist](#entitytype). What kind of entity is this? The 'registeredEntity' code covers any legal entity created through an act of official registration, usually resulting in an identifier being assigned to the entity. The 'legalEntity' code covers other bodies with distinct legal personality (government departments, international institutions etc.).  The 'arrangement' code covers artificial entities, described in the data model for the purpose of associating one or more natural or legal persons together in an ownership or control relationship, but without implying that the parties to this arrangement have any other form of collective legal identity.",
+      "description": "From the entityType codelist. What kind of entity is this? The 'registeredEntity' code covers any legal entity created through an act of official registration, usually resulting in an identifier being assigned to the entity. The 'legalEntity' code covers other bodies with distinct legal personality (government departments, international institutions etc.).  The 'arrangement' code covers artificial entities, described in the data model for the purpose of associating one or more natural or legal persons together in an ownership or control relationship, but without implying that the parties to this arrangement have any other form of collective legal identity.",
       "type": "string",
       "enum": [
         "registeredEntity",
@@ -50,7 +50,7 @@
       "properties": {
         "reason": {
           "title": "Reason",
-          "description": "The reason that an entity cannot be specified. From the [unspecifiedReason codelist](#unspecifiedreason).",
+          "description": "The reason that an entity cannot be specified. From the unspecifiedReason codelist.",
           "type": "string",
           "enum": [
             "no-beneficial-owners",
