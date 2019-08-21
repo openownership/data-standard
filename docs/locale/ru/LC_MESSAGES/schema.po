@@ -62,7 +62,7 @@ msgid ""
 "come from the source type codelist."
 msgstr ""
 "Какой это тип источника? Несколько тегов могут быть объединены. Значения "
-"должны поступать из списка допустимых значений типа источника."
+"должны поступать из списка допустимых значений sourceType "
 
 #. /definitions/Source/properties/description/title
 #. /definitions/Annotation/properties/description/title
