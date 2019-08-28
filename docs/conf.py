@@ -172,6 +172,7 @@ texinfo_documents = [
 # Should eventually move into there
 import os
 import json
+import subprocess
 from glob import glob
 from collections import OrderedDict
 from docutils import nodes
@@ -266,6 +267,18 @@ def translate_schema_and_codelists(language='en'):
     print("Translated schema and codelists to {}".format(language))
 
 
+def compile_schema_and_codelists():
+    # Automate compilation to MO for the schema and codelists
+    # because Sphinx doesn't automatically do this as it does for the docs files
+    # aka
+    # $ pybabel compile --use-fuzzy -d docs/locale -D schema
+    # $ pybabel compile --use-fuzzy -d docs/locale -D codelist
+    basedir = Path(os.path.realpath(__file__)).parents[1]
+    localedir = basedir / 'docs' / 'locale'
+    subprocess.run(["pybabel", "compile", "--use-fuzzy", "-d", str(localedir), "-D", "schema"])
+    subprocess.run(["pybabel", "compile", "--use-fuzzy", "-d", str(localedir), "-D", "codelist"])
+
+
 # -- Finally, Setup -------------------------------------------------------
 
 def setup(app):
@@ -278,6 +291,7 @@ def setup(app):
     app.add_transform(AutoStructify)
     app.connect('build-finished', copy_legacy_redirects)
     language = app.config.overrides.get('language', 'en')
+    compile_schema_and_codelists()
     translate_schema_and_codelists(language)
 
     # This is a closure to access the `language` variable
