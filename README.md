@@ -93,32 +93,18 @@ And then:
 
 Now the files are ready to be translated in Transifex.
 
-**To fetch new translations** when they're done, you need to:
+3. **To fetch new translations** when they're done, you need to run `tx pull -a` to fetch all, or `tx pull -l ru` to fetch a particular language.
 
-1. Run `tx pull -a` to fetch all, or `tx pull -l ru` to fetch a particular language.
-2. Compile the schema and codelist translations:
+4. **Commit** the new or updated .po files in `docs/locale`, using a separate commit from your edits to the source (RST, JSON or CSV) files.
 
-```
-$ pybabel compile --use-fuzzy -d docs/locale -D schema
-$ pybabel compile --use-fuzzy -d docs/locale -D codelist
-$ pybabel compile --use-fuzzy -d docs/locale -D svg
-```
-
-**Commit** the new or updated .po files in `docs/locale`, using a separate commit from your edits to the source (RST, JSON or CSV) files.
-
-**TEMPORARILY** also commit `schema.mo` and `codelist.mo` for each language. You'll need to force add these as usually git ignores .mo files. This is a quick fix for readthedocs, and this stage will be going away soon (see [#190](https://github.com/openownership/data-standard/issues/190)). ie (replacing `ru` for any other languages and repeating):
+5. **Build translated SVGs** for each language using itstool, and commit these (because we can't easily install itstool on readthedocs):
 
 ```
-git add -f docs/locale/ru/LC_MESSAGES/schema.mo
-git add -f docs/locale/ru/LC_MESSAGES/codelist.mo
-```
-
-**Build translated SVGs** for each language using itstool, and commit these (because we can't easily install itstool on readthedocs):
-```
+pybabel compile --use-fuzzy -d docs/locale -D svg
 itstool -m docs/locale/ru/LC_MESSAGES/svg.mo -o docs/_build_svgs/ru docs/_assets/*.svg
 ```
 
-**To build another language locally** (pass the language code you want)..
+**To build another language locally** to preview it (pass the language code you want)..
 
 ```
 $ cd docs
