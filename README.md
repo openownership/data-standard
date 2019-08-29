@@ -67,15 +67,15 @@ Run the following commands from the root directory unless otherwise specified (e
 
 **If you modified the schema** also:
 
-1. Run `pybabel extract -F babel_bods_schema.cfg . -o docs/_build/gettext/schema.pot` to extract translatable English strings from the schema.
+* Run `pybabel extract -F babel_bods_schema.cfg . -o docs/_build/gettext/schema.pot` to extract translatable English strings from the schema.
 
 **If you modified the codelists** also:
 
-1. Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/_build/gettext/codelist.pot` to extract translatable English strings from the codelists.
+* Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/_build/gettext/codelist.pot` to extract translatable English strings from the codelists.
 
 **If you modified an SVG diagram** also:
 
-1. Run `itstool -i svg-its-rules.xml -o docs/_build/gettext/svg.pot docs/_assets/*.svg` to extract translatable English strings from the SVGs.
+* Run `itstool -i svg-its-rules.xml -o docs/_build/gettext/svg.pot docs/_assets/*.svg` to extract translatable English strings from the SVGs.
 
 **If you added, deleted or renamed** files or you want to use a **different Transifex project**, run (from root, ie. `cd ../`):
 
@@ -89,15 +89,15 @@ sphinx-intl update-txconfig-resources --pot-dir docs/_build/gettext --locale-dir
 
 And then:
 
-2. Run `tx push -s` to **push to Transifex**.
+3. Run `tx push -s` to **push to Transifex**.
 
 Now the files are ready to be translated in Transifex.
 
-3. **To fetch new translations** when they're done, you need to run `tx pull -a` to fetch all, or `tx pull -l ru` to fetch a particular language.
+4. **To fetch new translations** when they're done, you need to run `tx pull -a` to fetch all, or `tx pull -l ru` to fetch a particular language.
 
-4. **Commit** the new or updated .po files in `docs/locale`, using a separate commit from your edits to the source (RST, JSON or CSV) files.
+5. **Commit** the new or updated .po files in `docs/locale`, using a separate commit from your edits to the source (RST, JSON or CSV) files.
 
-5. **Build translated SVGs** for each language using itstool, and commit these (because we can't easily install itstool on readthedocs):
+6. **Build translated SVGs** for each language using itstool, and commit these (because we can't easily install itstool on readthedocs):
 
 ```
 pybabel compile --use-fuzzy -d docs/locale -D svg
