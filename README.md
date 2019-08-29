@@ -93,25 +93,18 @@ And then:
 
 Now the files are ready to be translated in Transifex.
 
-**To fetch new translations** when they're done, you need to:
+3. **To fetch new translations** when they're done, you need to run `tx pull -a` to fetch all, or `tx pull -l ru` to fetch a particular language.
 
-1. Run `tx pull -a` to fetch all, or `tx pull -l ru` to fetch a particular language.
-2. Compile the schema and codelist translations:
+4. **Commit** the new or updated .po files in `docs/locale`, using a separate commit from your edits to the source (RST, JSON or CSV) files.
+
+5. **Build translated SVGs** for each language using itstool, and commit these (because we can't easily install itstool on readthedocs):
 
 ```
-$ pybabel compile --use-fuzzy -d docs/locale -D schema
-$ pybabel compile --use-fuzzy -d docs/locale -D codelist
-$ pybabel compile --use-fuzzy -d docs/locale -D svg
-```
-
-**Commit** the new or updated .po files in `docs/locale`, using a separate commit from your edits to the source (RST, JSON or CSV) files.
-
-**Build translated SVGs** for each language using itstool, and commit these (because we can't easily install itstool on readthedocs):
-```
+pybabel compile --use-fuzzy -d docs/locale -D svg
 itstool -m docs/locale/ru/LC_MESSAGES/svg.mo -o docs/_build_svgs/ru docs/_assets/*.svg
 ```
 
-**To build another language locally** (pass the language code you want)..
+**To build another language locally** to preview it (pass the language code you want)..
 
 ```
 $ cd docs
