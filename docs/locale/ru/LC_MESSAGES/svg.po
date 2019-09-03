@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-08-07 15:46+0100\n"
+"POT-Creation-Date: 2019-08-16 08:01+0100\n"
 "PO-Revision-Date: 2019-08-07 15:28+0000\n"
 "Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
@@ -206,7 +206,7 @@ msgstr "statementDate: 2018-07-12"
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:1275
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1307
 msgid "Person A"
-msgstr ""
+msgstr "Физическое лицо А"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag1-simpleOwn.svg:265
@@ -221,7 +221,7 @@ msgstr "компания 1"
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag1-simpleOwn.svg:500 docs/_assets/Diag1-simpleOwn.svg:563
 msgid "100% owned by"
-msgstr ""
+msgstr "100% доли в собственности"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag1-simpleOwn.svg:551 docs/_assets/Diag2-simpleInd.svg:191
@@ -245,12 +245,12 @@ msgstr "компания 3"
 #: docs/_assets/Diag2-simpleInd.svg:168 docs/_assets/Diag3-splitContr.svg:336
 #, no-wrap
 msgid "Person B"
-msgstr ""
+msgstr "Физическое лицо В"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag2-simpleInd.svg:430
 msgid "0% shares owned by"
-msgstr ""
+msgstr "0% доли в собственности / акций"
 
 #. (itstool) path: svg/text
 #: docs/_assets/Diag2-simpleInd.svg:425
@@ -261,7 +261,7 @@ msgstr "6<_:tspan-1/>"
 #: docs/_assets/Diag2-simpleInd.svg:448 docs/_assets/Diag5-sourcesData.svg:795
 #, no-wrap
 msgid "100% shares owned by"
-msgstr ""
+msgstr "100% доли в собственности / акций"
 
 #. (itstool) path: text/tspan
 #. (itstool) path: tspan/tspan
@@ -270,44 +270,44 @@ msgstr ""
 #: docs/_assets/Diag5-sourcesData.svg:507
 #, no-wrap
 msgid "60% directors appointed by"
-msgstr ""
+msgstr "60% директоров назначается"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag3-splitContr.svg:323
 #, no-wrap
 msgid "30% shares owned by"
-msgstr ""
+msgstr "30% доли в собственности / акций"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag3-splitContr.svg:349
 #: docs/_assets/Diag4b-splitContr2.svg:333
 #, no-wrap
 msgid "Person C"
-msgstr ""
+msgstr "Физическое лицо С"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag3-splitContr.svg:354
 #, no-wrap
 msgid "(Executive Director)"
-msgstr ""
+msgstr "(Исполнительный директор)"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag4b-splitContr2.svg:307
 #, no-wrap
 msgid "60% voting rights held by"
-msgstr ""
+msgstr "60% прав голоса принадлежат"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag4b-splitContr2.svg:320
 #, no-wrap
 msgid "20% shares owned by"
-msgstr ""
+msgstr "20% доли в собственности / акций"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag4-complexInvolve.svg:912
 #, no-wrap
 msgid "50% shares owned by"
-msgstr ""
+msgstr "50% доли в собственности / акций"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag5-sourcesData.svg:559
@@ -353,7 +353,7 @@ msgstr "компания 4"
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1667
 #, no-wrap
 msgid "60% directors"
-msgstr ""
+msgstr "60% директоров назначается"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:1695
@@ -367,7 +367,7 @@ msgstr ""
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1684
 #, no-wrap
 msgid "30% shares"
-msgstr ""
+msgstr "30% доли в собственности / акций"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:1712
@@ -385,26 +385,26 @@ msgstr ""
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1783
 #, no-wrap
 msgid "99% shares"
-msgstr ""
+msgstr "99% доли в собственности / акций"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:1903
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1836
 #, no-wrap
 msgid "1% shares"
-msgstr ""
+msgstr "1% доли в собственности / акций"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:1961
 #, no-wrap
 msgid "?"
-msgstr ""
+msgstr "?"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag8-dataStandardTemplate.svg:2655
 #, no-wrap
 msgid "standardised data"
-msgstr ""
+msgstr "стандартизованные данные"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/Diag9-JSONdata.svg:364

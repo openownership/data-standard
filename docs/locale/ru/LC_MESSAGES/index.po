@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-30 18:06+0100\n"
+"POT-Creation-Date: 2019-08-15 17:18+0100\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
@@ -42,7 +42,7 @@ msgstr ""
 # 5ae11b40c7ba4436a3c2b8b2bf92f2ca
 #: ../../index.rst:12
 msgid "For Newcomers"
-msgstr ""
+msgstr "для начинающих пользователей"
 
 # c06eec4739cc48808a41810e023aacec
 #: ../../index.rst:14
@@ -76,7 +76,7 @@ msgstr ":doc:`О разработке стандарта <about/index>`"
 # b055a691af474a878b929b4175f9f985
 #: ../../index.rst:39
 msgid "For Developers"
-msgstr ""
+msgstr "для разработчиков"
 
 # 4d1932c39dec45c6a903b7a37b141205
 #: ../../index.rst:41
