@@ -4,10 +4,12 @@ from collections import OrderedDict
 from jsonschema import validate, RefResolver, FormatChecker
 from jsonschema.validators import Draft4Validator
 from jsonschema.exceptions import ValidationError
+from compiletojsonschema.compiletojsonschema import CompileToJsonSchema
 
 
 this_dir = os.path.dirname(os.path.realpath(__file__))
-absolute_path_to_schema_dir = this_dir + '/../schema/'
+absolute_path_to_source_schema_dir = this_dir + '/../schema/'
+absolute_path_to_schema_dir = this_dir + '/../schema/testing/'
 resolver = RefResolver('file://' + absolute_path_to_schema_dir + '/', None)
 format_checker = FormatChecker()
 
@@ -22,6 +24,20 @@ class UnknownStatementTypeError(ValidationError):
 
 class UnrecognisedStatementID(ValidationError):
     pass
+
+
+def build_schemas_for_testing():
+    os.makedirs(absolute_path_to_schema_dir, exist_ok=True)
+    source_files = [f for f in os.listdir(absolute_path_to_source_schema_dir)
+                    if os.path.isfile(os.path.join(absolute_path_to_source_schema_dir, f))]
+    for source_file in source_files:
+        if source_file.endswith('.json'):
+            ctjs = CompileToJsonSchema(
+                os.path.join(absolute_path_to_source_schema_dir, source_file),
+                set_additional_properties_false_everywhere=True
+            )
+            with open(os.path.join(absolute_path_to_schema_dir, source_file), "w") as fp:
+                fp.write(ctjs.get_as_string())
 
 
 def schema_path_from_statement(statement):

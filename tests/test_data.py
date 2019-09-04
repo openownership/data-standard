@@ -7,7 +7,17 @@ from jsonschema import validate, ValidationError
 from bods_validate import this_dir, format_checker, absolute_path_to_schema_dir, resolver
 from bods_validate import MissingStatementTypeError, UnrecognisedStatementID
 from bods_validate import bods_validate_package, bods_validate_statement
-from bods_validate import bods_iter_errors_package, bods_iter_errors_statement
+from bods_validate import bods_iter_errors_package, bods_iter_errors_statement, build_schemas_for_testing
+
+
+have_schemas_been_built_for_testing = False
+
+
+def setup_module(module):
+    global have_schemas_been_built_for_testing
+    if not have_schemas_been_built_for_testing:
+        build_schemas_for_testing()
+        have_schemas_been_built_for_testing = True
 
 
 @pytest.mark.parametrize('json_path', [
@@ -155,13 +165,16 @@ def test_invalid_package_json(json_path, json_paths, error):
         "'entityType' is a required property",
     }),
     ('data/entity-statement/invalid/entity-statement-no-publication-details.json', {
-        "'publicationDetails' is a required property"
+        "'publicationDetails' is a required property",
+        "Additional properties are not allowed ('publicationDetailsTypo' was unexpected)"
     }),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-publication-details.json', {
-        "'publicationDetails' is a required property"
+        "'publicationDetails' is a required property",
+        "Additional properties are not allowed ('publicationDetailsTypo' was unexpected)"
     }),
     ('data/person-statement/invalid/person-statement-no-publication-details.json', {
-        "'publicationDetails' is a required property"
+        "'publicationDetails' is a required property",
+        "Additional properties are not allowed ('publicationDetailsTypo' was unexpected)"
     }),
     ('data/person-statement/invalid/person-statement-with-invalid-statement-id.json', {
         "'too-short-so-fail' is too short"
@@ -171,15 +184,19 @@ def test_invalid_package_json(json_path, json_paths, error):
     }),
     ('data/person-statement/invalid/person-statement-no-bods-version.json', {
         "'bodsVersion' is a required property",
+        "Additional properties are not allowed ('bodsVersionTypo' was unexpected)"
     }),
     ('data/person-statement/invalid/person-statement-no-publication-date.json', {
         "'publicationDate' is a required property",
+        "Additional properties are not allowed ('publicationDateTypo' was unexpected)"
     }),
     ('data/person-statement/invalid/person-statement-no-publisher-sub-prop.json', {
         "OrderedDict([('nameTypo', 'CHRINON LTD')]) is not valid under any of the given schemas",
+        "Additional properties are not allowed ('nameTypo' was unexpected)"
     }),
     ('data/person-statement/invalid/person-statement-no-publisher.json', {
         "'publisher' is a required property",
+        "Additional properties are not allowed ('publisherTypo' was unexpected)"
     }),
     ('data/person-statement/invalid/person-statement-with-bad-bods-version.json', {
         "'1' does not match '^(\\\\d+\\\\.)(\\\\d+)$'",
@@ -232,6 +249,7 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
         'data/entity-statement/invalid/entity-statement-loose-validation-without-required-fields.json',
     ], {
         "OrderedDict([('id', '00335'), ('register', 'Jebel Ali Free Zone')]) is not valid under any of the given schemas",
+        "Additional properties are not allowed ('register' was unexpected)"
     }),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-entity-statement.json', None, {
         "subject/describedByEntityStatement '1dc0e987-5c57-4a1c-b3ad-61353b66a9b7' does not match any known entities"
