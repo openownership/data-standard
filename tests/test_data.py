@@ -313,11 +313,8 @@ def test_all_examples_and_data_files_are_used():
     # Part 2 - get all files we have on disk
     files_we_have = []
     this_dir_len = len(this_dir) if this_dir.endswith('/') else len(this_dir) + 1
-    files_we_have.extend([x[this_dir_len:] for x in glob.glob(os.path.join(this_dir, "**/*.json"), recursive=True)])
+    files_we_have.extend([x[this_dir_len:] for x in glob.glob(os.path.join(this_dir, "**", "*.json"), recursive=True)])
     files_we_have.extend([x[this_dir_len:] for x in glob.glob(os.path.join(this_dir, "..", "examples", "**/*.json"), recursive=True)])
     # Part 3 - finally test, make sure all files are used
-    files_we_have_but_dont_use = []
-    for file_we_have in files_we_have:
-        if file_we_have not in files_used:
-            files_we_have_but_dont_use.append(file_we_have)
-    assert files_we_have_but_dont_use == []
+    files_we_have_but_dont_use = set(files_we_have) - set(files_used)
+    assert files_we_have_but_dont_use == set()
