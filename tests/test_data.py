@@ -1,3 +1,4 @@
+import glob
 import os
 import json
 import pytest
@@ -20,7 +21,7 @@ def setup_module(module):
         have_schemas_been_built_for_testing = True
 
 
-@pytest.mark.parametrize('json_path', [
+test_valid_statement_json_parametrize_data = [
     'data/entity-statement/valid/valid-entity-statement.json',
     'data/entity-statement/valid/valid-entity-statement-loose-validation.json',
     'data/entity-statement/valid/valid-entity-statement-with-source.json',
@@ -35,14 +36,17 @@ def setup_module(module):
     '../examples/workshop/modelling-bods-data/renco-energy-ltd-roberto-lopez.json',
     '../examples/workshop/modelling-bods-data/renco-holding-company-limited.json',
     '../examples/workshop/modelling-bods-data/roberto-lopez.json'
-])
+]
+
+
+@pytest.mark.parametrize('json_path', test_valid_statement_json_parametrize_data)
 def test_valid_statement_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
         json_data = json.load(f, object_pairs_hook=OrderedDict)
     bods_validate_statement(json_data)
 
 
-@pytest.mark.parametrize('json_path', [
+test_valid_package_json_parametrize_data = [
     'data/bods-package/valid/valid-bods-package.json',
     'data/bods-package/valid/valid-bods-package-entity-owning-entity.json',
     'data/bods-package/valid/valid-bods-package-annotations.json',
@@ -66,7 +70,10 @@ def test_valid_statement_json(json_path):
     '../examples/os-01-dr-01.json',
     '../examples/missing-data/os-01-dr-02-dc-05.json',
     '../examples/missing-data/os-17-dr-02-dc-06.json'
-])
+]
+
+
+@pytest.mark.parametrize('json_path', test_valid_package_json_parametrize_data)
 def test_valid_package_json(json_path):
     with open(os.path.join(this_dir, json_path)) as f:
         json_data = json.load(f, object_pairs_hook=OrderedDict)
@@ -82,7 +89,7 @@ def test_valid_package_json(json_path):
     validate(json_data, schema, resolver=resolver, format_checker=format_checker)
 
 
-@pytest.mark.parametrize(('json_path', 'error'), [
+test_invalid_statement_json_parametrize_data = [
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id.json', ValidationError),
     ('data/entity-statement/invalid/entity-statement-with-invalid-statement-id-no-entity-type.json', ValidationError),
     ('data/entity-statement/invalid/entity-statement-extra-field.json', ValidationError),
@@ -103,7 +110,10 @@ def test_valid_package_json(json_path):
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-publication-details.json', ValidationError),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-statement-type.json', MissingStatementTypeError),
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-url-linking-annotation.json', ValidationError),
-])
+]
+
+
+@pytest.mark.parametrize(('json_path', 'error'), test_invalid_statement_json_parametrize_data)
 def test_invalid_statement_json(json_path, error):
     with open(os.path.join(this_dir, json_path)) as f:
         json_data = json.load(f, object_pairs_hook=OrderedDict)
@@ -111,7 +121,7 @@ def test_invalid_statement_json(json_path, error):
         bods_validate_statement(json_data)
 
 
-@pytest.mark.parametrize(('json_path', 'json_paths', 'error'), [
+test_invalid_package_json_parametrize_data = [
     (None, [
         'data/entity-statement/valid/valid-entity-statement.json',
         'data/entity-statement/valid/valid-entity-statement-loose-validation.json',
@@ -124,9 +134,15 @@ def test_invalid_statement_json(json_path, error):
         'data/person-statement/valid/valid-person-statement.json',
         'data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-statement-type.json',
     ], MissingStatementTypeError),
-    ('data/bods-package/fails-secondary-validation/bods-package-missing-entity-statement.json', None, UnrecognisedStatementID),
-    ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, UnrecognisedStatementID),
-])
+    ('data/bods-package/fails-secondary-validation/bods-package-missing-entity-statement.json', None,
+     UnrecognisedStatementID),
+    (
+        'data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None,
+        UnrecognisedStatementID),
+]
+
+
+@pytest.mark.parametrize(('json_path', 'json_paths', 'error'), test_invalid_package_json_parametrize_data)
 def test_invalid_package_json(json_path, json_paths, error):
     if json_path:
         with open(os.path.join(this_dir, json_path)) as f:
@@ -151,7 +167,7 @@ def test_invalid_package_json(json_path, json_paths, error):
         validate(json_data, schema, resolver=resolver, format_checker=format_checker)
 
 
-@pytest.mark.parametrize(('json_path', 'expected_errors'), [
+test_invalid_statement_json_iter_errors_parametrize_data = [
     ('data/entity-statement/valid/valid-entity-statement.json', set()),
     ('data/entity-statement/valid/valid-entity-statement-loose-validation.json', set()),
     ('data/entity-statement/valid/valid-entity-statement-transliteration-annotations.json', set()),
@@ -219,7 +235,10 @@ def test_invalid_package_json(json_path, json_paths, error):
     ('data/ownership-or-control-statement/invalid/ownership-or-control-statement-no-statement-type.json', {
         "'statementType' is a required property",
     }),
-])
+]
+
+
+@pytest.mark.parametrize(('json_path', 'expected_errors'), test_invalid_statement_json_iter_errors_parametrize_data)
 def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     with open(os.path.join(this_dir, json_path)) as f:
         json_data = json.load(f, object_pairs_hook=OrderedDict)
@@ -227,7 +246,7 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     assert actual_errors == expected_errors
 
 
-@pytest.mark.parametrize(('json_path', 'json_paths', 'expected_errors'), [
+test_invalid_package_json_iter_errors_parametrize_data = [
     ('data/bods-package/valid/valid-bods-package.json', None, set()),
     ('data/bods-package/valid/valid-bods-package-annotations.json', None, set()),
     ('data/bods-package/valid/valid-bods-package-linking-annotations.json', None, set()),
@@ -256,11 +275,14 @@ def test_invalid_statement_json_iter_errors(json_path, expected_errors):
     }),
     ('data/bods-package/fails-secondary-validation/bods-package-missing-interested-party-entity-statement.json', None, {
         "interestedParty/describedByEntityStatement 'd36e6807-020c-4fb5-a0d4-5ab9eb971514' does not match any known entities"
-        }),
+    }),
     ('data/bods-package/fails-secondary-validation/bods-package-incorrect-ordering.json', None, {
         "interestedParty/describedByPersonStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
     }),
-])
+]
+
+
+@pytest.mark.parametrize(('json_path', 'json_paths', 'expected_errors'), test_invalid_package_json_iter_errors_parametrize_data)
 def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors):
     if json_path:
         with open(os.path.join(this_dir, json_path)) as f:
@@ -269,3 +291,30 @@ def test_invalid_package_json_iter_errors(json_path, json_paths, expected_errors
         json_data = [json.load(open(os.path.join(this_dir, json_path)), object_pairs_hook=OrderedDict) for json_path in json_paths]
     actual_errors = {e.message for e in bods_iter_errors_package(json_data)}
     assert actual_errors == expected_errors
+
+
+def test_all_examples_and_data_files_are_used():
+    # Part 1 - get all files we use in tests
+    files_used = []
+    files_used.extend(test_valid_statement_json_parametrize_data)
+    files_used.extend(test_valid_package_json_parametrize_data)
+    files_used.extend([a[0] for a in test_invalid_statement_json_parametrize_data])
+    for data in test_invalid_package_json_parametrize_data:
+        if data[0]:
+            files_used.append(data[0])
+        elif data[1]:
+            files_used.extend(data[1])
+    files_used.extend([a[0] for a in test_invalid_statement_json_iter_errors_parametrize_data])
+    for data in test_invalid_package_json_iter_errors_parametrize_data:
+        if data[0]:
+            files_used.append(data[0])
+        elif data[1]:
+            files_used.extend(data[1])
+    # Part 2 - get all files we have on disk
+    files_we_have = []
+    this_dir_len = len(this_dir) if this_dir.endswith('/') else len(this_dir) + 1
+    files_we_have.extend([x[this_dir_len:] for x in glob.glob(os.path.join(this_dir, "**", "*.json"), recursive=True)])
+    files_we_have.extend([x[this_dir_len:] for x in glob.glob(os.path.join(this_dir, "..", "examples", "**/*.json"), recursive=True)])
+    # Part 3 - finally test, make sure all files are used
+    files_we_have_but_dont_use = set(files_we_have) - set(files_used)
+    assert files_we_have_but_dont_use == set()
