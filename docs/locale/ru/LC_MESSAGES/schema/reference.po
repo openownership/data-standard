@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-04 17:21+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
 "Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 8fb296fa7f6241a586a27e333fda7a70
+# 95f3e008bd7642eebac512d54c4875b3
 #: ../../schema/reference.rst:4
 msgid "Schema reference"
 msgstr "Справочник схемы"
 
-# b4e1e7b634ff4df78290845abb8c4d3f
+# 6757792ccb6f4d59b83236ceac2108c8
 #: ../../schema/reference.rst:8
 msgid ""
 "This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
@@ -43,7 +43,7 @@ msgstr ""
 "<changelog>` и `О стандарте <../about>`_ для получения дополнительной "
 "информации."
 
-# 8d3f4d9c40be419cb0bc208bb2f26233
+# 19a8ea0d858b4e13b9cf96c83b2df949
 #: ../../schema/reference.rst:10
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
@@ -54,7 +54,7 @@ msgstr ""
 " рекомендуемых элементов Стандарта, как определено в `RFC2119 "
 "<https://tools.ietf.org/html/rfc2119>`_."
 
-# d65c8b138ecc4f9bb29c28ee5acccac4
+# fe1fa60a907d470cba6e2b213abf9c66
 #: ../../schema/reference.rst:13
 msgid ""
 "The following is an A - Z guide to the objects of the Data Standard's "
@@ -69,12 +69,12 @@ msgstr ""
 "структурированного представления касательно того, как объекты сочетаются в "
 "схеме JSON, воспользуйтесь :doc:`Браузером схемы <schema-browser>`.)"
 
-# 7ff2a83b5ad94666a6a8919056bf3287
+# 5d242be771234c6aa2cd6eb5da73f667
 #: ../../schema/reference.rst:15
 msgid "The top-level objects are :doc:`statements <concepts>`:"
 msgstr "Объектами верхнего уровня являются :doc:`записи <concepts>`:"
 
-# afdb7e624458412f89a5af7603b462f9
+# 9aa02e852c4c4607a7e4c89ab26c17c1
 #: ../../schema/reference.rst:17
 msgid ""
 ":any:`Ownership-or-control statements <schema-ownership-or-control-"
@@ -83,17 +83,17 @@ msgstr ""
 ":any:`Записи о владении или контроле <schema-ownership-or-control-"
 "statement>`"
 
-# e0a429347fb84fd983c3a06278bfad2a
+# 987a9a50322844049e5d3d69ece57416
 #: ../../schema/reference.rst:18
 msgid ":any:`Entity statements <schema-entity-statement>`"
 msgstr ":any:`Записи о субъектах <schema-entity-statement>`"
 
-# 0fad0910266c4be1bfa3926ea2c2f497
+# b878a98126e446ba95a4280f2a1780cb
 #: ../../schema/reference.rst:19
 msgid ":any:`Person statements <schema-person-statement>`"
 msgstr ":any:`Записи о физических лицах <schema-person-statement>`"
 
-# f45c6330f6a747c4bd2376d297a7efd2
+# 242adcc5bdc449bbbc30f23e4d5f022b
 #: ../../schema/reference.rst:21
 msgid ""
 "Statements are built up from a set of nested objects and properties, each of"
@@ -104,7 +104,7 @@ msgstr ""
 "имеют имя поля, заголовок и описание, определяющее то, как следует "
 "использовать объект или поле."
 
-# 6c4c30d7fd8a4cf797e90c888d81745c
+# 343fcfda804a436eac278ab1319fef74
 #: ../../schema/reference.rst:23
 msgid ""
 "BODS data MAY be published as a valid `JSON document "
@@ -115,12 +115,12 @@ msgstr ""
 "<https://tools.ietf.org/html/rfc8259>`_. См. :any:`Сериализацию <guidance-"
 "serialization>` для получения информации о дополнительных возможностях."
 
-# 17a5142b63e74ca5be4a63d0252dd6b4
+# 3642d28de41c4c4abad516fa4b93829b
 #: ../../schema/reference.rst:29
 msgid "Address"
 msgstr "Address (Адрес)"
 
-# a9e01c3064e6459186d8d7e4f542dd28
+# ad6124d4fb2247e2ae87ad5ece1d8327
 #: ../../schema/reference.rstNone
 msgid ""
 "A free text address string, providing as much address data as is relevant, "
@@ -132,22 +132,23 @@ msgstr ""
 "алгоритмов парсинга адресов. В некоторых случаях (например, Место рождения) "
 "требуется только город и страна."
 
-# 46d60d9c694a4ada995538a47dc7902f
-# 42ca72d38a1d48a9b0b1a6b17723dc0d
-# 8561668cd98e44eba3c48d7ddcd92043
-# 2d84aeea26ca42a78f365a44323e6258
-# 17c90ac30fe947008fece4a1963ff77f
-# 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
-# 8cee02f296d440d9b26bb320a6902bf3
+# 6dffe9b82f9c40b881ae8220c42da26c
+# 23ebb48dc77544d5aeca859bb6e0ed50
+# 5fdab91314c0495b80509847c3bc84db
+# 416fccbfa17b4182aa42b9ba441a297d
+# 962e1a00baa8436d93297ea6df8a0665
+# 2921d42794784ee781c56ba1f09da3ba
+# f4bbdd0565e44d279b9dc843bca7ae26
+# 1647bd118c1c478195a1e2b277475515
+# dd147e66c20a4edf8cde0b8bd2b5b3bb
+# 755f851fa0de49afad5a1784f4e4abf4
+# d65bf1087d5d4bc8984ab18c4ff6b286
+# 1b69b6655faf4fdd88aaedbf0c30b498
+# 29e21ac20ec94c6295215d412df04dbe
+# df84c9a3df5644fa826e49abb0363c95
+# fd34092759804cc49f146482a3129367
+# 9aa444e6f63946829abdd61adb8c68b9
+# 378841e4322f42bca573a25600e8117c
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -156,25 +157,27 @@ msgstr ""
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
+#: ../../sphinxcontrib-jsonschema:1
 msgid "Title"
 msgstr "Заголовок"
 
-# 13873d1556dc4120969d21e0b99c242a
-# 88ed8f19f03b4960bec41e0379e5c2ef
-# 5039ec0b86bf424f8bed2fa15604e498
-# 54d0b0d001ad439fb02c38a8fa72cd47
-# c7a63e5bdfda4561b1281cd58c8c6f50
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
-# 5e16e17b1edb40bb82ec39af4b7bd5e2
+# 2c0c7b2fbf6d4b8c8876f07b937def5c
+# 052af93cadad4c219d1c4eeafad00183
+# dcda8cfa6b9a4b0abfc2d7bac9b566f1
+# 2d4eeb4f81d1468bbdda55d33bb4fa68
+# 0da17c98947146fc957092058de9950c
+# f9a7cc1f222242a39417199065f9f320
+# e32ac2fbb49943ad8043676432e4df6b
+# a01ffedbf29d41cd818c1f87f91e666d
+# 27a1b53ef92043b2bec40c08924bc9a1
+# 2ebb181d407944a496e7d24736dbd031
+# d6b840a13844427d8ed4b206238c6a77
+# 08ac08a320524f87b40891833f0118bf
+# ac1288e2851046068ace429a1cbcb9ce
+# 494929d9193b48b4a479fc4698aa7e81
+# 966a250249e34b69926e884771201c3f
+# 66e156623dad4d8588e56535cdea0deb
+# 1001493edddc405ea5765a5b51d34579
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -183,25 +186,27 @@ msgstr "Заголовок"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
+#: ../../sphinxcontrib-jsonschema:1
 msgid "Description"
 msgstr "Описание"
 
-# 7e9056ad310e4497b611d4ff881c3311
-# baf2391ac6d646dcad5f17205194133d
-# 7e1afb185bf9461aa6775704e8eaec3c
-# 4b2dba151b124195b5c8cd5ce5ceb6b8
-# 174042bd5a0c4a16b073fd962f90efa2
-# 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
-# 258505e8ad89490086e78a8dbaa1b700
+# f82a1e6bb59e4970af4c39916f4c9b08
+# efc1ae48523341c7b8d18f01c26b91de
+# 55d94e3e3adb4b7e9c690fa721291244
+# 2a3cda8de9714d679dae249880c23cb9
+# 5308148007a54756a2d2e399e3d399cd
+# 87400d99052b4dd8a49020d0e2f1a83c
+# 2ff3d71e5fab4f3783853e2019dd1b8e
+# b00bae0036994584a1f62b0c34e1a43b
+# 81643be5a94e41c8b054f38dea6046a7
+# e988431cb82245f0aba3b6604e60da2d
+# b24857d8dcae46fe95482458d807575d
+# e084944448fd41bca4780deb07ad4d3f
+# 754eeea0899f4d71b2b78bb7c3a5c639
+# f059371773904f42ad10575cbaf2e6b9
+# 50a368c6547f41acbd5bb767decae517
+# 93a40bda95814fc18e76ab5937527df3
+# db4912c33785474a965db00ed7ffefb6
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -210,25 +215,27 @@ msgstr "Описание"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
+#: ../../sphinxcontrib-jsonschema:1
 msgid "Type"
 msgstr "Тип"
 
-# f312c1e3ce8e4d3bb8dd2bf13800876a
-# 016cb058a73c4a4abb3669b167aa4a55
-# 1753d32997954916ac94cc4e429315d1
-# de17261befed409582c798a591b581a6
-# 4547138c450546c99cd849d3a47d641b
-# b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
-# b9520b222caf452cb0f423af34e55bee
+# 69c10ed693c84afd8cb5d1b0b86d1374
+# bc8bad7ada4c40c7acdae4e261ce7d92
+# 8854a188e1f746419350fd14600c5077
+# c1a59aaa2bd4414e9d12529842d0ef31
+# 4a025592ca2d4cd5b25259fde04a82bc
+# f80f07fadc17481c9010312abd98b935
+# 9a959e34efab4dc5a5fee1247fada9a0
+# 72dd3929abc44e7fbbb5f725a8196197
+# 9cff92d88fad4f7fb47a3f369f209b27
+# fcc4937ebafe4639978a73aa54594d3d
+# 05b14463d6514a2096569bdf782529bc
+# e95ea9f5b0dc429c942106879fa8c065
+# c4452b1ec97c4dd68426bca1fa615104
+# f89c8cb7f7e14f56a68fddedb8c02667
+# 4ad9cd715d5d4a35ad02f5971b8a944d
+# 9d06d7289ffb407d9f92d8820966fd14
+# 7b919aa557d545f3a898c2e1273db320
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -237,25 +244,27 @@ msgstr "Тип"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
+#: ../../sphinxcontrib-jsonschema:1
 msgid "Format"
 msgstr "Формат"
 
-# 4550ba13545943818971acb0f02098a2
-# 6b66b0b9306649358c200aaf13d92421
-# 4d4b19b54389401699c90c6a19408b77
-# 1f6355f3041a49419fa5b1b4dc773021
-# d1b1b1ed61b148959733675f7bdbc765
-# b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
-# b2beadc929644807ad805b03e62025f0
+# c9a73dc6582f472c8f54fa389292ed04
+# 4c6debc6049c4a029dd67cbf29c60f31
+# 34fe3d54495d448996dc3a3f13f0cb6e
+# 3dbe3c3c453c469c939b9f0f36938bc2
+# 6c1bf2ab5b3e4efca153fb593c99a3b0
+# 8b0c8c5eb5f848d6a0923af1330dc704
+# 0ecb7e252c9b419481fd8ad15247dd70
+# 67876350e0a643b28e6026f65aa16a5c
+# a3ca636d536a4dccb83e18d22a41c84c
+# 0cecb31850184c0f84e96e10354222aa
+# 38e21645b78d49dfbe47e51312575566
+# 1935359af6964f13830c530432f5605f
+# d188a401ea904623b4d5bfbbeb409a80
+# 8ddb46015ae245008db3fab56eb8124c
+# ec3652c282ee422c87fc8672d3ae0029
+# f1f1c4f727554768984a63780639dcfc
+# 49fcdce6d3fa438c8886b43147237e87
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
@@ -264,11 +273,12 @@ msgstr "Формат"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
+#: ../../sphinxcontrib-jsonschema:1
 msgid "Required"
 msgstr "Обязательный"
 
-# 5f01445e343247848bd5a0ebde46ce78
-#: ../../schema/reference.rst:40
+# e7340c60e2794fc48f5aa8d72fd2881c
+#: ../../schema/reference.rst:41
 msgid ""
 "A diversity of address formats are used across data management systems, and "
 "data is often inconsistently entered across data fields in these source "
@@ -283,8 +293,8 @@ msgstr ""
 "Потребляющим системам необходимо будет выполнить парсинг адресов СДБВ перед "
 "проведением структурированного сравнения."
 
-# f583ef6499fe4bdcaa697a5b4321f853
-#: ../../schema/reference.rst:42
+# 5baae7f61fbd4fb9a3dff143c0db80f2
+#: ../../schema/reference.rst:43
 msgid ""
 "Designers of new data collection systems are encouraged to choose an "
 "appropriate structured format, with reference to established standards, and "
@@ -298,12 +308,12 @@ msgstr ""
 "сведений см. `проблему 18 <https://github.com/openownership/data-"
 "standard/issues/18>`_."
 
-# 0305dbd86d404425a7578ccc807ec119
-#: ../../schema/reference.rst:47
+# 346b0234737b40d7bc2774bb8a929e08
+#: ../../schema/reference.rst:48
 msgid "Agent"
 msgstr "Agent (Заявитель)"
 
-# 6bc87c1a110c4060a432d985d0b22fc8
+# 70bcbf76569741d287e7341f1f37c0aa
 #: ../../schema/reference.rstNone
 msgid ""
 "An individual, organisation or other responsible agent making, or "
@@ -312,13 +322,13 @@ msgstr ""
 "Физическое лицо, организация или иной ответственный заявитель, формирующий "
 "или поддерживающий соответствеющую запись или примечание."
 
-# b085d95c44b540508af3d7e7c418de6a
-#: ../../schema/reference.rst:59
+# 43f0dcea219f4e449ae56b828319fc16
+#: ../../schema/reference.rst:60
 msgid "Annotation"
 msgstr "Annotation (Примечание)"
 
-# 5b562d4c8bd648ed89ad99c36bf7d2f4
-#: ../../schema/reference.rst:61
+# 21151aa0c7e74e7bad06595a7c229bd8
+#: ../../schema/reference.rst:62
 msgid ""
 "The ``annotations`` property of statements currently allows an array of "
 "these simple annotation objects to be included. An annotation can be used to"
@@ -332,12 +342,12 @@ msgstr ""
 "для которой не существует места в других местах схемы. Для получения "
 "дополнительных рекомендаций см. :ref:`Источники и примечания <provenance>`."
 
-# 74443a75644540ab814e64806ecc80cd
-#: ../../schema/reference.rst:69
+# 2d0b8f8763f14f34912f7ffc33814dc0
+#: ../../schema/reference.rst:71
 msgid "Country"
 msgstr "Country (Страна)"
 
-# 1abdb6d90dc34941aa2d835380abb700
+# 37b0c71ec75244a3a1b54bc6c70fcc26
 #: ../../schema/reference.rstNone
 msgid ""
 "A country MUST have a name. A country SHOULD have an ISO 2-Digit county "
@@ -346,12 +356,12 @@ msgstr ""
 "Страна ДОЛЖНА иметь название. Для страны СЛЕДУЕТ указать 2-значный код "
 "страны в соответствии со стандартом ISO."
 
-# 866acd822baa4739bcd606abbd82c998
-#: ../../schema/reference.rst:81
+# 7d2c10f57ee44dcbb473c687a932d97b
+#: ../../schema/reference.rst:83
 msgid "EntityStatement"
 msgstr "EntityStatement (Запись о субъекте)"
 
-# 2e929e51201847b09188d1a5e55a64d6
+# 83f9508c9cd34637b0ba0c3356d7f982
 #: ../../schema/reference.rstNone
 msgid ""
 "A statement identifying and describing the entity that is the subject of the"
@@ -360,28 +370,28 @@ msgstr ""
 "Запись, идентифицирующая и описывающая субъект, являющийся предметом "
 "владения или контроля, описанных в записи о владении или контроле."
 
-# 128b30bf8425430ab221c8b3aa46d3ce
-#: ../../schema/reference.rst:92
+# 54bb07431de74eb2b5191414929a8455
+#: ../../schema/reference.rst:95
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
-# 84ac9e2f831d4603acf1dd2ebfa25fe6
-#: ../../schema/reference.rst:94
+# ebc4ccfa431e403a9de7a7c1d3373e3c
+#: ../../schema/reference.rst:97
 msgid "A string of minimum length 32 and maximum length 64."
-msgstr ""
+msgstr "Строка длиной 32 [знака] минимум и 64 максимум"
 
-# 3ee169000904453e875227535b061636
+# 801d3528cb0a40689a0408efdaacb3ff
 #: ../../schema/reference.rstNone
 msgid "A persistent globally unique identifier for this statement."
-msgstr ""
+msgstr "Постоянный глобальный уникальный идентификатор для данной записи"
 
-# 632310f5c7a544c684af3124e443929a
-#: ../../schema/reference.rst:102
+# 5d35c6e933b84f899eb98e3da394c42a
+#: ../../schema/reference.rst:105
 msgid "Identifier"
 msgstr "Identifier (Идентификатор)"
 
-# ad816199ef4742fa98c8eb464280cc24
-#: ../../schema/reference.rst:104
+# dc957808e7c44e24aad368bed42b554b
+#: ../../schema/reference.rst:107
 msgid ""
 "The Identifier object is used to connect a statement to the real-world "
 "person or entity that it refers to, using one or more existing known "
@@ -394,7 +404,7 @@ msgstr ""
 "идентификаторы <guidance-identifiers>` для получения технических "
 "рекомендаций касательно того, как и когда использовать данный объект."
 
-# 5018d3123b054141989547351573bfea
+# c1abc54e789140bda7d62b398b802a09
 #: ../../schema/reference.rstNone
 msgid ""
 "An identifier that has been assigned to this person or entity. The scheme or"
@@ -403,12 +413,12 @@ msgstr ""
 "Идентификатор, который был присвоен данному физическому лицу или субъекту. "
 "Следует объявить схему или список, из которых был взят идентификатор."
 
-# 3628141493514fb19309d628016931e3
-#: ../../schema/reference.rst:115
+# 5e967b325b3b44dc85403b7f03ae7bbb
+#: ../../schema/reference.rst:118
 msgid "Interest"
 msgstr "Interest (Доля участия)"
 
-# 4c65818e0ea644c3a14d5f2d8cc2a073
+# 7f4c36254b1446dea677472aac23d577
 #: ../../schema/reference.rstNone
 msgid ""
 "A description of the interest held by an interestedParty in another entity."
@@ -416,12 +426,12 @@ msgstr ""
 "Описание доли участия, которой владеет заинтересованная сторона "
 "(interestedParty) в другом субъекте."
 
-# 8455b06fa86c42588eba7bcfbfd03a47
-#: ../../schema/reference.rst:128
+# 2c3b731847aa4feaa219cfccaf28a059
+#: ../../schema/reference.rst:131
 msgid "InterestedParty"
 msgstr "InterestedParty (Заинтересованная сторона)"
 
-# 40b71a493e774b6781d87c5dd8f8acc4
+# d735a1bbc53e409b9b40e927a4f54c46
 #: ../../schema/reference.rstNone
 msgid ""
 "The interested party has some level of ownership or control over the entity "
@@ -435,12 +445,12 @@ msgstr ""
 "физическом лице, либо — если заинтересованная сторона неизвестна — "
 "необходимо указать сведения о причинах."
 
-# e152db582d2f47409d742e35d12f1be3
-#: ../../schema/reference.rst:140
+# 3cc4f440d519400faedbeb74d7c3497b
+#: ../../schema/reference.rst:144
 msgid "Jurisdiction"
 msgstr "Jurisdiction (Юрисдикция)"
 
-# 6224f9662c614e93945a2b0dc5836ca5
+# be6df77c9b584277bce17c8f856d646c
 #: ../../schema/reference.rstNone
 msgid ""
 "A jurisdiction MUST have a name. A jurisdiction SHOULD have an ISO "
@@ -451,12 +461,12 @@ msgstr ""
 "административно-территориальной единицы территории государства в "
 "соответствии со стандартом ISO_3166-2."
 
-# a7ba14d178534fecb0d346169a1a37f8
-#: ../../schema/reference.rst:151
+# 1e7decc249284a739710869cdafec894
+#: ../../schema/reference.rst:155
 msgid "Name"
 msgstr "Name (ФИО)"
 
-# 2f95488f5e0f404aac0a1eff89f27c5b
+# 39de545d2d9843fa99fd54ab6f866326
 #: ../../schema/reference.rstNone
 msgid ""
 "An name by which this individual is known. Names should be provided in "
@@ -474,12 +484,12 @@ msgstr ""
 "комиссии](https://joinup.ec.europa.eu/solution/e-government-core-"
 "vocabularies)."
 
-# 9f96e506e23e4911ba414d4eaedf2c29
-#: ../../schema/reference.rst:162
+# a7d80caff5e34ba59d5f8759aacbeb48
+#: ../../schema/reference.rst:167
 msgid "OwnershipOrControlStatement"
 msgstr "OwnershipOrControlStatement (Запись о владении или контроле)"
 
-# 0db837fb1a0f44678bd800307743adc7
+# 7c04ac1f757446f29077a4e076a46707
 #: ../../schema/reference.rstNone
 msgid ""
 "An ownership or control statement is made up of an entity, an interested "
@@ -491,22 +501,22 @@ msgstr ""
 "траст), сведениях о доле участия и информации об источнике для данной "
 "записи."
 
-# 7f768334ef9646b6afc3d62418da367e
-#: ../../schema/reference.rst:174
+# fb460caed6464ad4a56b6544abde14b7
+#: ../../schema/reference.rst:179
 msgid "PepStatusDetails"
-msgstr ""
+msgstr "PepStatusDetails"
 
-# c05fb0a3eb1642c7ac913b0288c58c54
+# baa3c00b15ba45a2954b1fa9ed941966
 #: ../../schema/reference.rstNone
 msgid "A description of a politically-exposed person status."
 msgstr "Описание статуса публичного должностного лица."
 
-# 537c05e6d91a4ceb99860f03a1589db6
-#: ../../schema/reference.rst:186
+# bc879027e5fb4c9c992f8676c2b13414
+#: ../../schema/reference.rst:192
 msgid "PersonStatement"
 msgstr "PersonStatement (Запись о физическом лице)"
 
-# 1e519a0e625f42c6961ae11f9050bace
+# c9a1b6fbd57045e6b393b1dadeebace8
 #: ../../schema/reference.rstNone
 msgid ""
 "A person statement describes the information known about a natural person at"
@@ -516,32 +526,32 @@ msgstr ""
 "физическом лице в определенный момент времени или на основе предоставленных "
 "сведений"
 
-# 7f768334ef9646b6afc3d62418da367e
-#: ../../schema/reference.rst:197
+# d0b3b2504f4749888707111ffcd21122
+#: ../../schema/reference.rst:205
 msgid "PublicationDetails"
 msgstr "PublicationDetails (Сведения о публикации)"
 
-# 3ee169000904453e875227535b061636
+# 00490889a8584ca2aa249a30e2a5e4f3
 #: ../../schema/reference.rstNone
 msgid "Information concerning the publication of this statement."
 msgstr "Информация касательно публикации данной записи."
 
-# e977ac2673814057876d096883b6116e
-#: ../../schema/reference.rst:209
+# 45f60fc00ff044069b2ef2bf1231fa9b
+#: ../../schema/reference.rst:217
 msgid "Publisher"
-msgstr ""
+msgstr "Publisher (издатель)"
 
-# 8e8200cb93874f30b1de466f78022898
+# 3b56c1212f844361a44ef276a414a3ec
 #: ../../schema/reference.rstNone
 msgid "Details of the organisation or individual publishing a statement."
-msgstr ""
+msgstr "Сведения об организации или физическом лице, публикующем запись."
 
-# 3e365476d90e4d28a7dda7cdbbab1093
-#: ../../schema/reference.rst:222
+# 4d62d53863494dea8bd370f4e31c8879
+#: ../../schema/reference.rst:230
 msgid "ReplacesStatements"
 msgstr "ReplacesStatements (Заменяет записи)"
 
-# 92ef1a0b20524b1c8e275b0272f93dc9
+# 6ae2e20a429647c890816c23ffb8d5ad
 #: ../../schema/reference.rstNone
 msgid ""
 "If this statement replaces a previous statement or statements, provide the "
@@ -552,8 +562,8 @@ msgstr ""
 "идентификатор(ы) предыдущей записи(-ей). Для ресурсоемких приложений "
 "рекомендуется отмечать идентифицированные записи как уже не активные."
 
-# cc3c2d9ab13e490b96a803175b34f262
-#: ../../schema/reference.rst:227
+# c947cd75ecdf49b08b6f7a4a470c3f6f
+#: ../../schema/reference.rst:235
 msgid ""
 "See :any:`Updating statements <guidance-updating-data>` for technical "
 "guidance on working with updates to data."
@@ -561,12 +571,12 @@ msgstr ""
 "См. :any:`Обновление записей <guidance-updating-data>` для получения "
 "технических рекомендаций по работе с обновлениями данных."
 
-# 57892cb3ef73472eb845eade6637af93
-#: ../../schema/reference.rst:233
+# 0cd888326f78432a94fd99c00600ac9e
+#: ../../schema/reference.rst:241
 msgid "Share"
 msgstr "Share (Доля)"
 
-# df61793698964bc585f73f606a5b3495
+# f6d9a1408c7c490d8fde9723c78bcac5
 #: ../../schema/reference.rstNone
 msgid ""
 "Where an exact percentage is available, this should be given, and maximum "
@@ -586,12 +596,12 @@ msgstr ""
 "изменить эти используемые по умолчанию значения, воспользуйтесь свойствами "
 "exclusiveMinimum и exclusiveMaximum."
 
-# 9bf8c0f58baf4234bba1c7eaaa93d020
-#: ../../schema/reference.rst:245
+# 105a465ff5254bf087b87419349e3684
+#: ../../schema/reference.rst:253
 msgid "Source"
 msgstr "Source (Источник)"
 
-# 68c68a0ceb85486c9955d7a9ae124141
+# cc56ed525ed94ac79413ef477baa08ab
 #: ../../schema/reference.rstNone
 msgid ""
 "The source object is used to explain where information in a statement "
@@ -600,8 +610,8 @@ msgstr ""
 "Объект source используется для объяснения происхождения информации в записи "
 "и для ссылки на подтверждающую информацию."
 
-# de449f8e88334a33a65e80c337062173
-#: ../../schema/reference.rst:255
+# c0767c38db264032815a3a3d15cb3f2e
+#: ../../schema/reference.rst:264
 msgid ""
 "See :any:`Sources and annotations <provenance>` for a discussion of "
 "provenance modelling."
@@ -609,62 +619,62 @@ msgstr ""
 "См. :any:`Источники и примечания <provenance>` для рассмотрения "
 "моделирования источника."
 
-# d62e79f464e44064b75ab544b54f09aa
-#: ../../schema/reference.rst:260
+# 1574ac1ef7464a1582e5096316eaad93
+#: ../../schema/reference.rst:269
 msgid "StatementDate"
 msgstr "StatementDate (Дата записи)"
 
-# 4f576e97447644a0a863fb16e984dd07
-#: ../../schema/reference.rst:262
+# be1e9e8fb9294a36b43ed053ae11f17e
+#: ../../schema/reference.rst:271
 msgid ""
 "Dates MUST conform with the extended format of `ISO 8601 "
 "<https://en.wikipedia.org/wiki/ISO_8601>`_. All of the following, for "
 "example, are valid:"
 msgstr ""
 "Даты ДОЛЖНЫ соответствовать расширенному формату `ISO 8601 "
-"<https://ru.wikipedia.org/wiki/ISO_8601>`_. Например, все из приведенного "
+"<https://ru.wikipedia.org/wiki/ISO_8601>`__. Например, все из приведенного "
 "ниже действительно:"
 
-# 4f4c8402725040e7bd23e264d569bc33
-#: ../../schema/reference.rst:264
+# 0bc1df50e9c14dde8366ffcca5169e1b
+#: ../../schema/reference.rst:273
 msgid "A full datetime string (YYYY-MM-DDTHH:MM:SSZ)"
 msgstr "Полная строка даты и времени (YYYY-MM-DDTHH:MM:SSZ)"
 
-# 30b4901b6cc74de685f81418db28aa5a
-#: ../../schema/reference.rst:265
+# c6012acebd7e4e05b44fa364579b7b4d
+#: ../../schema/reference.rst:274
 msgid "A year, month and day (YYYY-MM-DD)"
 msgstr "Год, месяц и день (YYYY-MM-DD)"
 
-# dc73b66c9a9b4b10b0227e09874f75de
-#: ../../schema/reference.rst:266
+# e6c5109b3d0849e881f4e55c59bd56cf
+#: ../../schema/reference.rst:275
 msgid "A year and month (YYYY-MM)"
 msgstr "Год и месяц (YYYY-MM)"
 
-# c69ceb807c7a49fd8bded89dc49e64bb
-#: ../../schema/reference.rst:267
+# a5baae60e6004c6db0b91ef17fc958c9
+#: ../../schema/reference.rst:276
 msgid "A year (YYYY)"
 msgstr "Год (YYYY)"
 
-# 17625b30489e430cb1cc811cc427eb68
-#: ../../schema/reference.rst:273
+# a16e4345c5874f8faa9374b8cdaca1b4
+#: ../../schema/reference.rst:282
 msgid "Codelists"
 msgstr "Списки допустимых значений"
 
-# ea3d7409e1c34c08a9365aac7fdd1a80
-#: ../../schema/reference.rst:276
+# faab43d51f9b4cbb96cf9d9668d7009b
+#: ../../schema/reference.rst:285
 msgid "AddressType"
 msgstr "AddressType (Тип адреса)"
 
-# 1b9398cf6c4e42f4a0dcf224f5872a08
-# 1b9398cf6c4e42f4a0dcf224f5872a08
-# 1b9398cf6c4e42f4a0dcf224f5872a08
-# 1b9398cf6c4e42f4a0dcf224f5872a08
-# 1b9398cf6c4e42f4a0dcf224f5872a08
-# 1b9398cf6c4e42f4a0dcf224f5872a08
-# 1b9398cf6c4e42f4a0dcf224f5872a08
-# 1b9398cf6c4e42f4a0dcf224f5872a08
-# 1b9398cf6c4e42f4a0dcf224f5872a08
-# 1b9398cf6c4e42f4a0dcf224f5872a08
+# a5acd7820d7b4f5a96472d546006ac9e
+# 31b1a96beb424781a1bed5db3fc90066
+# ecb18c07b3ab4972a38e400dd7b083dd
+# 015b43fc5a70400a811675afe46d4d07
+# 4e0e194511414009b5f7f25e1a6a9b78
+# 2fb5b128eea64b01b473fedb95997231
+# 04ce26692f574e489734f0400bab9583
+# a39a528ace9546a7a122ccc4a6a2ded9
+# 407cb82db5d3462baea8f3d465532f5f
+# c6d5293547504e6eb0c9e3a159fc437f
 #: ../../_build_schema/codelists/addressType.csv:1
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 #: ../../_build_schema/codelists/entityType.csv:1
@@ -678,16 +688,16 @@ msgstr "AddressType (Тип адреса)"
 msgid "code"
 msgstr "значение"
 
-# 8fe24b9230e543c6a89b7241fd5a1d5c
-# 8fe24b9230e543c6a89b7241fd5a1d5c
-# 8fe24b9230e543c6a89b7241fd5a1d5c
-# 8fe24b9230e543c6a89b7241fd5a1d5c
-# 8fe24b9230e543c6a89b7241fd5a1d5c
-# 8fe24b9230e543c6a89b7241fd5a1d5c
-# 8fe24b9230e543c6a89b7241fd5a1d5c
-# 8fe24b9230e543c6a89b7241fd5a1d5c
-# 8fe24b9230e543c6a89b7241fd5a1d5c
-# 8fe24b9230e543c6a89b7241fd5a1d5c
+# 7327eec609794f49a5eb1445c948ceda
+# d9a3f6b4ed124278b6b3bfadcea5212d
+# ae1059394cc04d13a1764f57a378b24f
+# 5e8cb5278af84e84ba2219ae59495134
+# bc0a1d9addfe4c9e94776ef9f8b288cf
+# fa425a904c564c44a251a1f2806f186f
+# 065eca07f5f648a9a5461315856d3d10
+# f2e40f701efd43399bd396b79792e5e0
+# cc7d7a7aec134ca2b5d330e5fc8d9a28
+# b06903dd2bfe445abf04fc064a8480d7
 #: ../../_build_schema/codelists/addressType.csv:1
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 #: ../../_build_schema/codelists/entityType.csv:1
@@ -701,16 +711,16 @@ msgstr "значение"
 msgid "title"
 msgstr "заголовок"
 
-# 8ed4994ff7964be9963f84fb20f0c26b
-# 8ed4994ff7964be9963f84fb20f0c26b
-# 8ed4994ff7964be9963f84fb20f0c26b
-# 8ed4994ff7964be9963f84fb20f0c26b
-# 8ed4994ff7964be9963f84fb20f0c26b
-# 8ed4994ff7964be9963f84fb20f0c26b
-# 8ed4994ff7964be9963f84fb20f0c26b
-# 8ed4994ff7964be9963f84fb20f0c26b
-# 8ed4994ff7964be9963f84fb20f0c26b
-# 8ed4994ff7964be9963f84fb20f0c26b
+# 8264d0436c3845b2b6c0d6eb38586e59
+# b5e8ee4d3da449f294a11ff8addc4448
+# ad8bd9970d894c9fa9b15b462075eee0
+# 95201963051d42289e85784b80d6138e
+# b6c25182e6544cb390de27ecd5c6b43f
+# ab9886fa7c62468f94340bcd4d2d4237
+# 16a77c4257b446938f3d5ecbcafd7af4
+# e1353f1e1ea143f39822b163c521763b
+# c93c46ceda294316ba4d3ec6480dc732
+# eef5c6f95ffc407eb615eaceba28550e
 #: ../../_build_schema/codelists/addressType.csv:1
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 #: ../../_build_schema/codelists/entityType.csv:1
@@ -724,16 +734,16 @@ msgstr "заголовок"
 msgid "description"
 msgstr "описание"
 
-# 543a044d131449ac97eb3fa4df14cd65
-# 543a044d131449ac97eb3fa4df14cd65
-# 543a044d131449ac97eb3fa4df14cd65
-# 543a044d131449ac97eb3fa4df14cd65
-# 543a044d131449ac97eb3fa4df14cd65
-# 543a044d131449ac97eb3fa4df14cd65
-# 543a044d131449ac97eb3fa4df14cd65
-# 543a044d131449ac97eb3fa4df14cd65
-# 543a044d131449ac97eb3fa4df14cd65
-# 543a044d131449ac97eb3fa4df14cd65
+# c3b3def6489140c0986d3665f1dc3367
+# 419e063f87314506a22d0af5ae06ae7f
+# 10d34dcfee4a4435b7155ad38aeab760
+# d575dfe80638416296a0c995a6980345
+# 23e8b8efcd4344e29e43ec46411128e3
+# 84e689c1beee4f31a305da1484c3d6ab
+# 4ef20cdb0f144de5ad186b3fdb89df27
+# 660cd1bef8764d5fa722fc642672e0cf
+# 3f6500d8470649eaba2d2f68b7b4b41f
+# b2b832d323ce4513b337820e0f692d4e
 #: ../../_build_schema/codelists/addressType.csv:1
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 #: ../../_build_schema/codelists/entityType.csv:1
@@ -747,17 +757,17 @@ msgstr "описание"
 msgid "technical note"
 msgstr "техническое примечание"
 
-# 39a30f8d2f3c45639dcabd8674967fa6
+# 617c449b07c5407399829920791fc02e
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "placeOfBirth"
 msgstr "placeOfBirth"
 
-# 1d2cb0022d6540d589b1fcc04a7b5458
+# e78d82d278ea40c386fa7bd7b14900bf
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "Place of birth"
 msgstr "Место рождения"
 
-# dab7729ef50a43b683bdd9807b4c9110
+# 0fd5374b2001403fa706a4551df445d3
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid ""
 "The place where a person was born. This must only be used to describe "
@@ -766,17 +776,17 @@ msgstr ""
 "Место, в котором человек родился. Следует использовать только для описания "
 "физических лиц. Необходимо указать только город и страну."
 
-# 8d149d393f8d4f9b87f701d0fad98d12
+# 17371087ea9c4fea9b6affc4bc0312c8
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "residence"
 msgstr "residence"
 
-# 9973a29c4fc64207a806104d2ac36515
+# c6d8c681d5394f9f878352af67279657
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "Residential address"
 msgstr "Адрес проживания"
 
-# 03cb709d8f9e421fb1d6a977741fecce
+# e301decd7d6845718b9281e6114addb4
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid ""
 "An address where someone lives. This must only be used for natural persons."
@@ -784,17 +794,17 @@ msgstr ""
 "Адрес, по которому человек проживает. Должен использоваться только для "
 "физических лиц."
 
-# 7b34bd2efe70454e96de7171e1b87ee1
+# d0de78491ebd4c4bb864b887b0294ef4
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "registered"
 msgstr "registered"
 
-# 3a1c65c6e4b64c4ca66ae736a5d45d1a
+# 9bac033d440e4c8f9571ad8dae881c07
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "Registered address"
 msgstr "Юридический адрес"
 
-# d05714a39a5e4e08b24feaf025fee460
+# 1c49b4ad126a47b5a24230faeb7a8d50
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid ""
 "An official address for delivering statutory mail and legal notices which "
@@ -805,17 +815,17 @@ msgstr ""
 "официальных уведомлений, которые должны передаваться в реестры компаний. "
 "Должен использоваться только для описания юридических лиц."
 
-# b585358f561a44e2ba1ae2fc38caa573
+# 4589244d703144da9f0988561b246578
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "service"
 msgstr "service"
 
-# d5e7576cb08f493986a6c887f69bb41e
+# 1ed9f791eb2541aa9b6bf9574c8dfd7f
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "Service address"
 msgstr "Адрес для доставки"
 
-# a85b10de715d4f7ea1012e5228bab58c
+# 9e573baf3d3a4638af6abbf62a55928d
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid ""
 "An address which can be used as an alternative to a residential address for "
@@ -825,19 +835,19 @@ msgstr ""
 "проживания в целях получения почты. Должен использоваться только для "
 "физических лиц."
 
-# e809f7731ffc4e929c629fac805654e1
-# e809f7731ffc4e929c629fac805654e1
+# 888140f63053463992144954ab409f04
+# 3e2553c0933c4c3cbfb7497474ec4bfb
 #: ../../_build_schema/codelists/addressType.csv:1
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "alternative"
 msgstr "alternative"
 
-# c034fa9fcffb4862a8402394b782b83f
+# 2aeb05d993dc4a16a25c600c9d1d7c3b
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "Alternative address"
 msgstr "Альтернативный адрес"
 
-# 702c8277556546e39ffa3f8df3f706c3
+# 18195461f641424ea3e2702de552746a
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid ""
 "An address provided in addition to the primary address for this entity or "
@@ -847,37 +857,37 @@ msgstr ""
 "физического лица, не являющийся ни адресом для доставки, ни юридическим "
 "адресом."
 
-# b6d243c703fd4d6da7fd9a2d973aa943
+# c974a47970464b528447088804bec5bc
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "business"
 msgstr "business"
 
-# cdce88aedbe5463e91beebe06b3fb3c7
+# 07e9a1367d6f4f178eacb15deb91befb
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "Business address"
 msgstr "Служебный адрес"
 
-# efdf38de9ba04655b4fd11982e26c912
+# ae06117ca89a412b966197522598ae0b
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "A place where the entity conducts its business."
 msgstr "Место, в котором субъект ведет деловую деятельность."
 
-# fcd65dd2fca04784a7a45e196a89e34c
-#: ../../schema/reference.rst:285
+# 58d2a019d3d74fffb64ca736329561d3
+#: ../../schema/reference.rst:294
 msgid "AnnotationMotivation"
 msgstr "AnnotationMotivation (Мотивация примечания)"
 
-# 10eb73f2c8e44f649e365c41df09a27a
+# d7620f7d0a054f06881bceafa08821d8
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "commenting"
 msgstr "commenting"
 
-# 6079e6fa36024e4db6663dd6c1ed7f45
+# 7296478898464fae972809d57749db6e
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "Commenting"
 msgstr "Комментирование"
 
-# a56eefb234f44a1994ad994a121e32c9
+# 1977c7bfa9be4041bcec76eaaf933040
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid ""
 "The description field provides contextual comments for a field, object or "
@@ -886,17 +896,17 @@ msgstr ""
 "Поле описания предусматривает контекстные комментарии для поля, объекта или "
 "записи."
 
-# 37ec1c8962b447d5a6b65935bf4511d1
+# 7166dc3c00bc457c932ea65a04845936
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "correcting"
 msgstr "correcting"
 
-# f4f2e485e2794d279f99b3af35e813b4
+# 0ef7a794a8354089949b9b824b0f710c
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "Correcting"
 msgstr "Корректировка"
 
-# 394fe867cd26445e8a33377506b5fbb5
+# 466b5eaa397b475d8655385f1a765ff6
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid ""
 "The value of this field, object or statement has been corrected, using the "
@@ -907,17 +917,17 @@ msgstr ""
 "метода в поле описания и/или относительно первоначального значения, "
 "указанного в поле описания."
 
-# b4bfb1a564a649e3a6c4bd57bade3814
+# 45becfc1154743318a8babc94969bb8d
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "identifying"
 msgstr "identifying"
 
-# ac7b8220aab144f2893792bd581a8ff7
+# 8d020a3661744cc6b8a9d8b88b2387ea
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "Identifying"
 msgstr "Идентификация"
 
-# 1628f113ce4242a285dd3ac066279303
+# 07070422716d46358fc1e18ac4a4a518
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid ""
 "The value of this field, object or statement has been augmented or processed"
@@ -928,17 +938,17 @@ msgstr ""
 "целью идентификации физических или юридических лиц при помощи метода в поле "
 "описания."
 
-# a3385afe04ec414faa8354a66a98d7d3
+# 72270c1f448549408859e07c93be61c7
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "linking"
 msgstr "linking"
 
-# e5f1d0ed8c034f87a088ad1d02c9e8d6
+# 8c4e9bce12214c68868e6eb481a0f6f9
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "Linking"
 msgstr "Создание ссылок"
 
-# 5aaac9a0e08d4764a91d8e62bdb0c389
+# 51320540ec234cd0929ce2b9c12c052f
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid ""
 "The description explains how linked material relates to the field, object or"
@@ -947,17 +957,17 @@ msgstr ""
 "В описании объясняется, как материал по ссылке относится к полю, объекту или"
 " записи. В поле url ДОЛЖЕН быть указан URL к материалу по ссылке."
 
-# ef8337d6979d40b3ba1c2483becb6abd
+# 3f6bf20f521044e4b28cd74919938733
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "transformation"
 msgstr "transformation"
 
-# d7b2eedd396140759533222b4b4033ff
+# 0f2aa38ee3bd41139c6c3d982f9b8669
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "Transformation"
 msgstr "Преобразование"
 
-# 154d4b621fcb40b4824ec2beae5820a8
+# cb70d2b5331446fca18c77dc6b24a87f
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid ""
 "The values of this field, object or statement have been changed from their "
@@ -968,22 +978,22 @@ msgstr ""
 "первоначальной формы при помощи метода в поле описания. Преобразованное "
 "представление может быть указано в поле transformedContent."
 
-# 5f46fdc5ec0849e5bb9ad1cda47990ee
-#: ../../schema/reference.rst:294
+# daafe027e6f2461990986e73856e046c
+#: ../../schema/reference.rst:303
 msgid "EntityType"
 msgstr "EntityType (Тип субъекта)"
 
-# 44f7618ae9c0484bb6b585ab1a9afbb7
+# 7f8194f4b9ef44b09689744e31e9e8b9
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "registeredEntity"
 msgstr "registeredEntity"
 
-# d0bacda5f2614b3b96cff9541e306cb5
+# 5c1ed093d4f945fab0a5148fbe6ef199
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "Registered Entity"
 msgstr "Зарегистрированное юридическое лицо"
 
-# f6a012d98b64420e8ca3fb647a9f56a1
+# 08d99750103742d0a896bf187220051f
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid ""
 "Any legal entity created through an act of official registration. In most "
@@ -993,17 +1003,17 @@ msgstr ""
 "В большинстве случаев зарегистрированные юридические лица имеют официально "
 "выданный идентификатор."
 
-# 19b252751fc04b68b6abc27133d3e20b
+# f6c19014e6dc4852ac94ca96bf7083f3
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "legalEntity"
 msgstr "legalEntity"
 
-# 3702f2a7b90b41f29569855bc6b44214
+# 74d0306192844ae8a897366417e224a6
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "Legal entity"
 msgstr "Юридическое лицо"
 
-# e2ab83eab8244430b2f91708e1cebb60
+# 4842a3ac886742879cad9829c2a0e80c
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid ""
 "A body with distinct legal personality, such as a government department or "
@@ -1014,17 +1024,17 @@ msgstr ""
 "государственное ведомство или международное учреждение, но которая не имеет "
 "иной уникальной идентификации в каком-либо официальном реестре."
 
-# 5639a0be94df47abbceb559a771707f9
+# 08f06bc43d0f41a49745c07668e8dc7a
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "arrangement"
 msgstr "arrangement"
 
-# 80e062de6c9e4a189900523555ac346b
+# 6a8770d830634e41a0142e616be4f051
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "Arrangement"
 msgstr "Соглашение о владении и контроле"
 
-# c90e00a3013a462090b5ef6fdaa41449
+# 715f4358f8d74cee89f550872669c07c
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid ""
 "An artificial entity, created by agreements, contracts or other processes."
@@ -1032,17 +1042,17 @@ msgstr ""
 "Искусственный субъект, созданный посредством соглашений, договоров или иных "
 "процессов."
 
-# aeb0f46856df45b3ae26cdb0256d9eae
+# 33cd67f2ebdf422198a28a2f8b3eac88
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "anonymousEntity"
 msgstr "anonymousEntity"
 
-# bfa4ff36821b4b30a393de621b933b7f
+# e9a10bca52874d84b77902d0efafc150
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "Anonymous entity"
 msgstr "Субъект с неустановленным владельцем"
 
-# 1e717766da7644fe82e2da2c0de74c0a
+# 702f50fbab1c4bb6b526565bf5ea55d6
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid ""
 "An entity that has been identified, but for which no identifying information"
@@ -1051,52 +1061,52 @@ msgstr ""
 "Субъект, который был идентифицирован, но для которого не публикуется "
 "идентифицирующая информация."
 
-# b9bb305e61254b33b873c4d997abf3b7
+# 2f27e22203354be6857fb202d0c9162b
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "unknownEntity"
 msgstr "unknownEntity"
 
-# 4316a17fe68c4dd38d6ee5f30b1b99bd
+# 181631015cbd41d393911e78c4496372
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "Unknown entity"
 msgstr "Неизвестный субъект"
 
-# e8de9b70b7ab4dbe9f8264ed1ad7d415
+# aeda6eaca90d444cb61b9ba7a8153351
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "An entity that has not been identified."
 msgstr "Субъект, который не был идентифицирован."
 
-# 6c11f3f90192449d917792d0de9af9b5
-#: ../../schema/reference.rst:303
+# fb869e3a3ea34373bdc17e52df1101cb
+#: ../../schema/reference.rst:312
 msgid "InterestLevel"
 msgstr "InterestLevel (Уровень доли участия)"
 
-# 656bf5f3d2904b708671f5dcc2fbf88a
+# 1f7659bac9e74f02bdded3740f04eceb
 #: ../../_build_schema/codelists/interestLevel.csv:1
 msgid "direct"
 msgstr "direct"
 
-# 1650a83223414668be21633e1e489f40
+# 9a9426f796704eaeb79527f7c6a7cfb7
 #: ../../_build_schema/codelists/interestLevel.csv:1
 msgid "Direct"
 msgstr "Прямая"
 
-# 1d20542acab040899d0aa482f550f7dc
+# 019c1697ca7845dd9e622f634ac6e808
 #: ../../_build_schema/codelists/interestLevel.csv:1
 msgid "The interest is held directly."
 msgstr "Осуществляется прямое владение долей участия."
 
-# 10474c2033424a6e808bd3b5092eb437
+# c1db1b28ac2a4150890e0b450d39f943
 #: ../../_build_schema/codelists/interestLevel.csv:1
 msgid "indirect"
 msgstr "indirect"
 
-# c1ccd4bf11e94e24a9adb48ecedf2ab1
+# ca160f0d4db74584bdd7ec39d13f32c9
 #: ../../_build_schema/codelists/interestLevel.csv:1
 msgid "Indirect"
 msgstr "Косвенная"
 
-# 5b9650e56d984e2dad0d581ac851476e
+# 55a49eb23f31451589e91389bd9debd5
 #: ../../_build_schema/codelists/interestLevel.csv:1
 msgid ""
 "The interest is held through one or more intermediate entities (including "
@@ -1105,55 +1115,55 @@ msgstr ""
 "Владение долей участия осуществляется через один или несколько промежуточных"
 " субъектов (включая соглашения о владении и контроле)."
 
-# 5de8fdc2f8a947cb9b1b22165a39d03e
-# 5de8fdc2f8a947cb9b1b22165a39d03e
+# f20681143a05487eaf26831889d3dc41
+# 7249bb5f4402459e8fc12c3e637ce3cd
 #: ../../_build_schema/codelists/interestLevel.csv:1
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "unknown"
 msgstr "unknown"
 
-# c408e1625fe34cbcb9de137c4469a936
+# 964d676ab2ee4483935c6a0ada3b2958
 #: ../../_build_schema/codelists/interestLevel.csv:1
 msgid "Unknown"
 msgstr "Неизвестная"
 
-# 3f29a516e39f443ba9af2d1f63914fbb
+# fd80ddbd457e45629bf12503131382fc
 #: ../../_build_schema/codelists/interestLevel.csv:1
 msgid "The interest may be direct or indirect."
 msgstr "Доля участия может быть прямой или косвенной."
 
-# acf661bcb8fb46e39ac53503033add07
-#: ../../schema/reference.rst:312
+# d0c9e059a503423a867f48fbc2fc69ca
+#: ../../schema/reference.rst:321
 msgid "InterestType"
 msgstr "InterestType (Тип доли участия)"
 
-# e2947588a6b3429e9cab54ba6b4bc85a
+# 24d9aaa55506433faf02622a93bd5d28
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "shareholding"
 msgstr "shareholding"
 
-# a3ce57e4ac6d4210aa9b05cc9023a208
+# 3175a73362994ebf90b52e08b5da8a3f
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Shareholding"
 msgstr "Акции в собственности"
 
-# baa92e51a15845fdb79107c4071f8cf7
+# 0b420fdfe23a45918034cdc30cb60ff9
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "An economic interest in an entity gained by holding shares."
 msgstr ""
 "Экономическая доля участия в субъекте, полученная через владение акциями."
 
-# 259fd60afcdb462091abe6a1c19c1959
+# bac4c1aec6bb4298ac7079f85b9e7db0
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "voting-rights"
 msgstr "voting-rights"
 
-# 71b1315ada9845b89c99c19c1ef0e8d7
+# 425c1bc7cc464b16b004fd51720f6e7f
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Voting rights"
 msgstr "Право голоса"
 
-# 91298e05c0ba458787311e5652e37592
+# ab726947715c4c88a39b0475dfb577ce
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "A controlling interest in an entity gained by holding shares. Defined as the"
@@ -1168,17 +1178,17 @@ msgstr ""
 " инициировании корпоративных действий и внесении существенных изменений в "
 "операционную деятельность компании."
 
-# f161902801434e8f880a39865a73ae39
+# beeee9ad02ed44a4894c3760cc5a04d9
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "appointment-of-board"
 msgstr "appointment-of-board"
 
-# 641bf4db02024a00a3b1c69e56f93e92
+# 07c6076e30724a5e82c382b7988d52b3
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Appointment of board"
 msgstr "Назначение совета директоров"
 
-# 6b88ca087e124efd8ce6f200d3739372
+# 7a2efb7dcfcf4c97aef9b98067b7f2dc
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "A controlling interest in an entity. Defined as the absolute right to "
@@ -1187,17 +1197,17 @@ msgstr ""
 "Контролирующее участие в субъекте. Определяется как абсолютное право "
 "назначать членов совета директоров."
 
-# b3248f46601a41de94cb50b8f738f781
+# 73d7aabd144343889fc8bd486f931791
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "other-influence-or-control"
 msgstr "other-influence-or-control"
 
-# 01c3a01e99b04a8d902b4f1a98ed9c5c
+# 8873471a04b54d53b21c8fd176729d4a
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Other influence or control"
 msgstr "Прочее влияние или контроль"
 
-# 36baf30b526145a79a04f9847b227b2a
+# 4715bb2bbc874146818bee9e11f0a4f8
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "\"Any influence or control in an entity that is distinct from being a "
@@ -1205,7 +1215,7 @@ msgid ""
 msgstr ""
 "«Какое-либо влияние или контроль в субъекте, отличные от присущих акционеру,"
 
-# be265e4becd8444a82b2cfed58821f69
+# b2023c4254284482918617571aafe3fd
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "having voting rights or having the absolute right to appoint to the board.\""
@@ -1213,17 +1223,17 @@ msgstr ""
 "имеющему право голоса или имеющему абсолютное право назначать совет "
 "директоров»."
 
-# 297efaee7da74b50898fe5d0558b2318
+# 319428fafa604804a330c0f7f860359d
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "senior-managing-official"
 msgstr "senior-managing-official"
 
-# 0fe49ff6ac5e4e1d819fecfd7dd21951
+# dd129a4791164c16adf9c934f58f5e57
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Senior managing official"
 msgstr "Лицо, занимающее старшую руководящую должность"
 
-# c89d64e14c7c43b087052d2dadf93bc2
+# 0ff137f5e2184666915825a08ec172f5
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "A controlling interest in an entity gained by employment. Defined as the "
@@ -1233,17 +1243,17 @@ msgstr ""
 "Определяется как физическое лицо, осуществляющее контроль над руководством "
 "субъекта."
 
-# 707e11d235714a04baf09139b05992f3
+# b9271864de2544d3be3cd3772f0f3b1e
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "settlor-of-trust"
 msgstr "settlor-of-trust"
 
-# c204829df12142d587f3236aa4680ba4
+# 0a5fa10afe21450d800310184f7c47e0
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Settlor of trust"
 msgstr "Учредитель траста"
 
-# 2e9683c6693044ca8595c7b2e78db469
+# 8fab9d930dad40c99df5837c3ae739a5
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "A controlling interest in a trust. Defined as the person who gives property "
@@ -1256,17 +1266,17 @@ msgstr ""
 "выгодоприобретателей траста. В некоторых правовых системах учредитель также "
 "именуется «доверитель» или в некоторых случаях «поручитель» или «донор»."
 
-# 14874e49293f4788aec273d1b0948fb5
+# 55a6b1096ffc4ec4ba7a4995c6b9976f
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "trustee-of-trust"
 msgstr "trustee-of-trust"
 
-# 4d90bf9212a14fda900f796639e2e630
+# 39821b0fa59d428bad7fb10b37a06cc7
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Trustee of a trust."
 msgstr "Доверительный управляющий траста."
 
-# 5ee7237390104405b9018ed696fe1146
+# 58a0e7a4062a458894c93b8bddb52b4f
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "A controlling interest in a trust. Defined as a person or firm that holds "
@@ -1276,17 +1286,17 @@ msgstr ""
 "компания, осуществляющие владение и управление имуществом или активами в "
 "интересах третьей стороны."
 
-# 0653757c02584b6da64bdf5422bc8c77
+# c41053b8b82b4dab8e0e2b8c2278ccb6
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "protector-of-trust"
 msgstr "protector-of-trust"
 
-# a72c881f8a724b6bae1adeba69451ee7
+# 4c9ebba26b2e43ec9afa3a1186eb0fb3
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Protector of a trust"
 msgstr "Попечитель траста"
 
-# 360ecdc026ba4fdfb857ac5cd5bb3036
+# 59315fa28fe54f9187972df101154853
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "A controlling interest in a trust. Defined as a person appointed under the "
@@ -1298,17 +1308,17 @@ msgstr ""
 "предоставления инструкций доверительным управляющим траста или ограничения "
 "их действий в отношении осуществляемого ими управления трастом."
 
-# 2303c116cf1e49f286bce00a190036fe
+# 744f18870df3460bbdf0b5e034afd36e
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "beneficiary-of-trust"
 msgstr "beneficiary-of-trust"
 
-# b36bb70839e748af831ce937808a7079
+# 923ef155206446a186c6790e3cfddc9f
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Beneficiary of a trust"
 msgstr "Выгодоприобретатель траста"
 
-# 153ed8edbff945b79161eb2fba64d176
+# 2d999eea1e974be693e07b2dce464fd5
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "An economic interest in a trust. Defined as a person or legal entity who "
@@ -1317,17 +1327,17 @@ msgstr ""
 "Экономическая доля участия в трасте. Определяется как физическое или "
 "юридическое лицо, получающее прибыль от владений или деятельности траста."
 
-# b5240f619fea4196921c3d6127bdd2f8
+# 5e0b6d4164264bf8a18d69ee2e574e2a
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "other-influence-or-control-of-trust"
 msgstr "other-influence-or-control-of-trust"
 
-# 54eda9d58a684567b7dd8069148feed6
+# 78eda3d56a52408aa884e175b1746275
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Other influence or control of a trust"
 msgstr "Прочее влияние или контроль над трастом"
 
-# 030dce55930a4f1bbc62bd203ba5a0c3
+# f4672b1dd9284a318f57d69887c470f1
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "Any influence or control in a trust that is distinct from being a settlor, "
@@ -1336,18 +1346,18 @@ msgstr ""
 "Какое-либо влияние или контроль в трасте, отличные от присущих учредителю, "
 "доверительному управляющему, попечителю или выгодоприобретателю траста."
 
-# 91d957437e024653a16792f1fff865e0
+# aa0c2f6b762642518cdedee6c70da289
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "rights-to-surplus-assets-on-dissolution"
 msgstr "rights-to-surplus-assets-on-dissolution"
 
-# 500d0ae9d0e0424ea24236d4712e6a6a
+# e9358a63b2f145b891c1da18bac2c024
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Rights to surplus assets on dissolution"
 msgstr ""
 "Права на профицит активов при прекращении существования юридического лица"
 
-# 7ebdf5aefefc4127a42a2d131d2de6b6
+# e956d18a92884979ab9a851ee495941c
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "The right to a share in the amount of an asset or resource that exceeds the "
@@ -1356,17 +1366,17 @@ msgstr ""
 "Право на долю в сумме актива или ресурса, превышающей часть, используемую "
 "при ликвидации субъекта."
 
-# 8aaa2f8c3fd34547b9244ed4e3be9220
+# 5b9bbb82a1684b67a12c0f99d1eda025
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "rights-to-profit-or-income"
 msgstr "rights-to-profit-or-income"
 
-# b61d17431434443ea1c53cdae247a092
+# 1625a829b08d4de9b08a12a7b277d84c
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Rights to receive profits or income"
 msgstr "Права на получение прибыли или дохода"
 
-# f3f246ebca8e4285822bdb0ebe9452ea
+# 76fdcb216cd34558a9dd229b997e6303
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid ""
 "An economic interest in an entity. Defined as beneficial ownership rights "
@@ -1377,54 +1387,54 @@ msgstr ""
 "договору права на бенефициарное владение сверх подразумеваемых на иных "
 "основаниях в рамках структур владения."
 
-# cc38af3d1f704004b8d7485177ffe1f2
+# 3aa53867810f4796b42fe821fd3de734
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "rights-granted-by-contract"
 msgstr "rights-granted-by-contract"
 
-# 6bfaea9f47b4436dbe4e9f67af57fad7
+# 799893c4992c458492473f5a4c2ec837
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Rights granted by contract"
 msgstr "Права, предоставляемые по договору"
 
-# b4ea50dc4c6b449fa006b53aab95fbed
+# caf4c60fbde3409cba44b2bd5118981c
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "An interest that is granted by contract."
 msgstr "Участие, предоставляемое по договору."
 
-# 398062d6463842d39922e89477cd624e
+# 6dc5f4a8cb6641a2a0a992cc25fd4de9
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "conditional-rights-granted-by-contract"
 msgstr "conditional-rights-granted-by-contract"
 
-# 15c62ce8622a429db26fa8c0a7752153
+# fed7abc48d0d4e5db36ec2a62f5f7db9
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "Conditional rights granted by contract"
 msgstr "Условные права, предоставляемые по договору"
 
-# ec65c4c336154585a032b8d81a28ad1e
+# 1773b97287004a6ca43ebb851e9f23c7
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "\"An interest that exists only if some contractual condition is met.\""
 msgstr ""
 "«Доля участия, существующая только в случае выполнения определенного условия"
 " договора»."
 
-# ceaa70f9a76d4cbf82186b8c307c5b7c
-#: ../../schema/reference.rst:321
+# 7318a1a83d18440490d37beeda252b31
+#: ../../schema/reference.rst:330
 msgid "NameType"
 msgstr "NameType (Тип ФИО)"
 
-# 25f11db62a9445279d026809afa81b46
+# cfcd0bad05504695b7fb6db8a579cd1a
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "individual"
 msgstr "individual"
 
-# efcb100ba9b5452c8035dae286d0cb4a
+# cb63439d910b4f3ba78595c895c8485e
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "Legal name"
 msgstr "Официальное ФИО"
 
-# 3c6b457a59ef4754b84abb3702215030
+# 4d05b81a98764eb890a8d83099563bae
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid ""
 "A name that identifies the person for legal, administrative and other "
@@ -1435,32 +1445,32 @@ msgstr ""
 "административных и иных официальных целях. Официальное ФИО физического лица "
 "обычно указано в официальных документах, выданных органами власти."
 
-# adc150cd260e4bc69b7b08ccf6f0313a
+# a220d2f0413b473aad5390e02d2ec70b
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "translation"
 msgstr "translation"
 
-# 8adce9a7b52a42adac816ba53856a4f9
+# 975dc4fc43584692a964cb75092d4771
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "Translation of name"
 msgstr "Перевод ФИО"
 
-# 8e8200cb93874f30b1de466f78022898
+# 202c362604b548e4a23180abc19b6c11
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "A translation of the person's individual name in a different language."
 msgstr "Перевод индивидуального ФИО соответствующего лица на другой язык."
 
-# fbd7ddd032914f4a81e1b23c4c40e6f0
+# 5c573fa3f7df4b71b22f47a131d79265
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "transliteration"
 msgstr "transliteration"
 
-# ae053114cfdf4489b60f8bdaac02d725
+# 3db73584cdc24b38836810b68936b47e
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "Transliteration of name"
 msgstr "Транслитерация ФИО"
 
-# 3da220156b234bcfbf81694250970ab9
+# 1217ce84e9894f389c89a0c17a135dbd
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid ""
 "\"A transliteration of the person's individual name in a different script.\""
@@ -1468,27 +1478,27 @@ msgstr ""
 "«Транслитерация индивидуального ФИО соответствующего лица при помощи другой "
 "письменности»."
 
-# d86a30eb59bb438290bfed3e545d91aa
+# 3e6bb32e29fd4311981a793704745a74
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "former"
 msgstr "former"
 
-# 19bb406272224d85ac12c66715978d0f
+# 74e197916fd2459e81738832f3ae4d0b
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "Former name"
 msgstr "Бывшее ФИО"
 
-# a26fb870be8343c59abd53cee25d5919
+# 985eb0df3e05403baaf1a8f643cf3bd4
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "A name that the person has used in the past."
 msgstr "ФИО, используемое соответствующим лицом в прошлом."
 
-# 44c7316294ad4f2088c5ffb1c012a305
+# 71d528e67ca94512b829e8805d44c1f2
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "Alternative name"
 msgstr "Альтернативное имя"
 
-# 4669180bf9b64a8ebce8f15bf5e6f06e
+# 470a5b6eb1d54a2089221d73cf1db184
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid ""
 "Another name that the person is known by. This might be an alias, a nickname"
@@ -1498,37 +1508,37 @@ msgstr ""
 "псевдоним, прозвище либо имя и/или фамилия, под которыми также известно "
 "соответствующее лицо."
 
-# e71834c2dd9c4d4795168734ad8c2337
+# 9a96af2cca8a45d68e1f68531a744dfd
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "birth"
 msgstr "birth"
 
-# 3f33172fad0b46c88d1fa1b91c2770a6
+# eb97ebffa04c488e8926f1cc5bc8c39f
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "Birth name"
 msgstr "ФИО при рождении"
 
-# 4008aa30f87e475e85d3505b31f40b49
+# 34eab6591b7c47c889710bab9c4a9818
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "\"The legal name of the person at birth.\""
 msgstr "«Официальное ФИО соответствующего лица при рождении»."
 
-# ad907e4c57ab4fba957d20bb9229cb28
-#: ../../schema/reference.rst:330
+# 4143ee49dd10414691117ed6312fcc8d
+#: ../../schema/reference.rst:339
 msgid "PersonType"
 msgstr "PersonType (Тип физического лица)"
 
-# 825151bb46314b3197336f4122e279f8
+# a4e21c71fa8b486580b7738125d9d09a
 #: ../../_build_schema/codelists/personType.csv:1
 msgid "knownPerson"
 msgstr "knownPerson"
 
-# 47952e4ad4654235b8fc11950ff7c9b1
+# 2d986108902e46d7b5f68ec65bfe05a5
 #: ../../_build_schema/codelists/personType.csv:1
 msgid "Known person"
 msgstr "Известное физическое лицо"
 
-# 368abf5a376c4dab9c2ef509a44b1e59
+# e903a10e30b84e77845e002edb74fa68
 #: ../../_build_schema/codelists/personType.csv:1
 msgid ""
 "This person has been identified, and information such as names, identifiers "
@@ -1537,17 +1547,17 @@ msgstr ""
 "Это физическое лицо было идентифицировано, и о нем может быть предоставлена "
 "такая информация, как ФИО, идентификаторы или биографические сведения."
 
-# 60828eeb2e034f16a396fd3c063f649d
+# cab519a4080645b49cd19b76de51e88b
 #: ../../_build_schema/codelists/personType.csv:1
 msgid "anonymousPerson"
 msgstr "anonymousPerson"
 
-# 793d8a5264304de89a495e69c02089fe
+# 8b4975cb965a47e0b28c80e223b97195
 #: ../../_build_schema/codelists/personType.csv:1
 msgid "Anonymous person"
 msgstr "Неустановленное физическое лицо"
 
-# 31550621b7f54244bcf98b1935f7616a
+# 76c90fed772a4919aeefb6572188037a
 #: ../../_build_schema/codelists/personType.csv:1
 msgid ""
 "This person has been identified, but identifying information is being "
@@ -1558,37 +1568,37 @@ msgstr ""
 " была предоставлена. Причина непредоставления информации должна быть указана"
 " в сопроводительном поле missingInfoReason."
 
-# 4bb942fef6164cf2ab1c1a5ad6e055ff
+# 86ca34d3169b4c0eb92c1c663968b91e
 #: ../../_build_schema/codelists/personType.csv:1
 msgid "unknownPerson"
 msgstr "unknownPerson"
 
-# 1eed1deee7144a369fd09af068265845
+# ac1770b1404a46e5b2fdb74e2dea824b
 #: ../../_build_schema/codelists/personType.csv:1
 msgid "Unknown person"
 msgstr "Неизвестное физическое лицо"
 
-# 84ca1ec961614e31970cb038d7a81fb8
+# 60ca3030302c486fbc32c8b25500b325
 #: ../../_build_schema/codelists/personType.csv:1
 msgid "The identity of this person has not been discovered or confirmed."
 msgstr "Личность этого физического лица не была выяснена или подтверждена."
 
-# 51b494fad9604cd193dce7936b3e49ed
-#: ../../schema/reference.rst:339
+# a6a6e4c24d42407593643e2ef1a3cac0
+#: ../../schema/reference.rst:348
 msgid "SourceType"
 msgstr "SourceType (Тип источника)"
 
-# 7d43a4772c8048b7aac0e0d6d4f56d4e
+# 4f0bf315b6f94498aa607352ae3b0c5b
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "selfDeclaration"
 msgstr "selfDeclaration"
 
-# f053a7e4ac6c4a37bf6e7a7e4d021d90
+# f10a642984bb4584ad5a06c32c340d2e
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "Self declaration"
 msgstr "Личная декларация"
 
-# edc83740b9474616b0cc316c6a82c499
+# b202e2a6d25a47a490b2ac41ab5f9b58
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid ""
 "The information was provided by the individual or entity referred to in this"
@@ -1597,32 +1607,32 @@ msgstr ""
 "Информация была предоставлена физическим лицом или субъектом, указанным в "
 "данной записи, или его уполномоченным представителем."
 
-# 8bb22c8ceaab40bb900b414e614039f6
+# eae9b146c9c44a06b8bb8f1c7f77c009
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "officialRegister"
 msgstr "officialRegister"
 
-# 1f62f49dfd84474d920b7609cdff4413
+# 65531ad3cb4b4a4c805764bab63a64cc
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "Official register"
 msgstr "Официальный реестр"
 
-# 00194bbf57ba4072998f4b1ceab5b445
+# d72445d78d1e4b559d6599882d2543f1
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "The information was taken from an official register."
 msgstr "Информация была взята из официального реестра."
 
-# 6aa5c697e04b4dbd90478872d0164d6f
+# 381129404b0143419f9ad074e42e17e7
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "thirdParty"
 msgstr "thirdParty"
 
-# 833540fa0d3a40229d431ab9d1f3b18e
+# e1f31d4ad31a40bbbde953ec31371b29
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "Third party"
 msgstr "Третья сторона"
 
-# 72c304be9fb4420f895a0e0d4efb233d
+# 519306b124ea4defa2717aa179106fc7
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid ""
 "The information was provided by a third party, not directly related to the "
@@ -1632,17 +1642,17 @@ msgstr ""
 " с физическим лицом, субъектом или долевым участием, описанными в данной "
 "записи."
 
-# ad0022087abd4e70976f2e9a5743c9d0
+# 4ac73bed9c4d4bc8bcf23b90a45de5f4
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "primaryResearch"
 msgstr "primaryResearch"
 
-# 05fc29ac3473487f86d366ff361ff17e
+# b4f5e0c269ce4a9897134a09d0d7d2d2
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "Primary research"
 msgstr "Первичное исследование"
 
-# d091734e6cc544b3aa6dcd668f6929a6
+# f308c2c2505d4f8e8c7ffb2aa787bf18
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid ""
 "The information was provided as a result of research into primary sources."
@@ -1650,17 +1660,17 @@ msgstr ""
 "Информация была предоставлена в результате исследования первичных "
 "источников."
 
-# e91f9103e09d4353b94c1c8c83d70022
+# 9fd14eedba03457ea849593c68b69d45
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "verified"
 msgstr "verified"
 
-# a95f5439df0e44aab1d01d8a686d125b
+# f828f4b4f790452c8bdbd833df796521
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "Verified"
 msgstr "Верифицированная"
 
-# 41f39d4eaa6b423f8d82de637dbfd7da
+# dc8d3832a77e4cc2b0e94a2f15dea9ab
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid ""
 "The information has been verified through the process documented in the "
@@ -1669,22 +1679,22 @@ msgstr ""
 "Информация была верифицирована при помощи процесса, задокументированного в "
 "соответствующем описании."
 
-# 6f0de21dc6024ddbba87f97c1ed382f6
-#: ../../schema/reference.rst:348
+# f5605362852540cc9fd41d1d146f17fc
+#: ../../schema/reference.rst:357
 msgid "StatementType"
 msgstr "StatementType (Тип записи)"
 
-# 2cebd19de942490497bf6d1e59b84df7
+# be3a19cde8614a31a40eca14ca3be55c
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid "personStatement"
 msgstr "personStatement"
 
-# 9ee9b2acbdc54759916102505acc6b9d
+# c5458c4fa0274245aeb28a8e996df5dc
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid "Person Statement"
 msgstr "Запись о физическом лице"
 
-# b14a39b8afc24acaa61b8a4153916684
+# 0e05c030a21b4445b214e54f39a92563
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid ""
 "The statement contains information known about a natural person at a "
@@ -1693,7 +1703,7 @@ msgstr ""
 "Запись содержит информацию, известную о физическом лице в определенный "
 "момент времени или на основе предоставленных сведений."
 
-# 50a57209559445abb29e0ccefb817353
+# bbc46aa2bc2348d6b49ec93c27d99c0d
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid ""
 "The parent object should be validated using the Person Statement schema."
@@ -1701,17 +1711,17 @@ msgstr ""
 "Следует обеспечить валидацию родительского объекта при помощи схемы Записи о"
 " физическом лице."
 
-# 57170e685d4f4b68ba84e1a968c8e995
+# 30dc62ef2e4d4cdcbb1e5aff42463fbd
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid "entityStatement"
 msgstr "entityStatement"
 
-# aba53d41cd3d4df5aa3b88a623a2317f
+# e3b0299a1dba4ce3ba8a09cb94d70c07
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid "Entity Statement"
 msgstr "Запись о субъекте"
 
-# 2bf265fb537146aa857a5e33507c3b86
+# 3d33da0ccb384196815a05490091bd04
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid ""
 "The statement contains information that identifies and describes an entity "
@@ -1720,7 +1730,7 @@ msgstr ""
 "Запись содержит информацию, которая идентифицирует и описывает субъект в "
 "определенный момент времени или на основе предоставленных сведений."
 
-# a1e096131a964807abf7ebe4b7e04e2c
+# da6b6b2e327f4276be3b38de63ed71c2
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid ""
 "The parent object should be validated using the Entity Statement schema."
@@ -1728,17 +1738,17 @@ msgstr ""
 "Следует обеспечить валидацию родительского объекта при помощи схемы Записи о"
 " субъекте."
 
-# 53c8a73b83f640968c757e56345c41e6
+# a443c3d7ddc84fa4af34d579a2877b6c
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid "ownershipOrControlStatement"
 msgstr "ownershipOrControlStatement"
 
-# e1eac64a33a1481195eb11604a018e45
+# 2ca5f4e25fcd4ab2a21fe162df8d875a
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid "Ownership-or-control Statement"
 msgstr "Запись о владении или контроле"
 
-# e9e15ad7554f411f8b894b7432077896
+# ec7f6a44cb294be89d44bb2a5c030489
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid ""
 "The statement contains details of the interests held by an interested party "
@@ -1747,7 +1757,7 @@ msgstr ""
 "Запись содержит сведения о долевом участии, которым владеет заинтересованная"
 " сторона в субъекте в определенный момент времени."
 
-# e950ee372695449283d8a0d47ed09ce4
+# 145ecbbed360401d8ca2882b5213a453
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid ""
 "The parent object should be validated using the Ownership-or-control "
@@ -1756,22 +1766,22 @@ msgstr ""
 "Следует обеспечить валидацию родительского объекта при помощи схемы Записи о"
 " владении или контроле."
 
-# 69976a7ce78e4deb8db02d8e331cfc02
-#: ../../schema/reference.rst:357
+# 291810c1990645138cf1e9a2042f57f6
+#: ../../schema/reference.rst:366
 msgid "UnspecifiedReason"
 msgstr "UnspecifiedReason (Неуказанная причина)"
 
-# f80cebd9fbd84137aadfe8566aa30865
+# f32a88157ffb431184098f3a7c14cbc4
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "no-beneficial-owners"
 msgstr "no-beneficial-owners"
 
-# 416236e7f37542f6938c9b773fb89658
+# 411832b461cc4544965cb62d9b27ff09
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "No beneficial owners"
 msgstr "Бенефициарные владельцы отсутствуют"
 
-# ebc111c85c414c779bb53d159a553246
+# ba54b72baabd4d6fbe729a04b1c5428f
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "There are no beneficial owners who need to disclose ownership according to "
@@ -1780,18 +1790,18 @@ msgstr ""
 "Нет бенефициарных владельцев, которым необходимо раскрыть владение согласно "
 "правилам, в соответствии с которыми произведена данная запись."
 
-# dc6ac5821f904579aef4047705ad6812
+# fb0a4b31fda6431582b5add2f57012fe
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "subject-unable-to-confirm-or-identify-beneficial-owner"
 msgstr "subject-unable-to-confirm-or-identify-beneficial-owner"
 
-# 025b2c4e86124eddb67460f83362f2e2
+# ae6be457e9c44a5a9817622fe9e44311
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "Subject unable to confirm or identify beneficial owner"
 msgstr ""
 "Субъект неспособен подтвердить или идентифицировать бенефициарного владельца"
 
-# 28919600b9214debbf7f505907310a06
+# cdd92f9e186445c98a9caa228aac9932
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "The subject of this ownership or control statement has, as the disclosing "
@@ -1802,17 +1812,17 @@ msgstr ""
 "желает или неспособен подтвердить существование и идентифицировать "
 "бенефициарного владельца."
 
-# cec921ff46ac4ea088916a78d3c1ae67
+# 78df3c846bdc4730817ea063b3c712e0
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "interested-party-has-not-provided-information"
 msgstr "interested-party-has-not-provided-information"
 
-# 32ea40bdaf3e41a0b91203f0c0cfff1d
+# ff0e6fa5905249649f82dc083d9a3803
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "Interested party has not provided information"
 msgstr "Заинтересованная сторона не предоставила информацию"
 
-# 4f96d8970c6143a7997f27ce9dc31162
+# 47fa0f780fba4348ad144e326773a7d6
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "The interested party in this ownership or control statement has not provided"
@@ -1823,17 +1833,17 @@ msgstr ""
 "предоставила достаточно информации для идентификации или подтверждения "
 "личности бенефициарного владельца."
 
-# 3dde7cdd290a4d6392136a76fdbc4527
+# 1e0778c9efc146d4a5cbaf288a1c46d7
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "subject-exempt-from-disclosure"
 msgstr "subject-exempt-from-disclosure"
 
-# 56c02a5a0b7e4a2185239d5fd91a0c9b
+# 7639842edafe49c0a7c78a6c6d0405f9
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "Subject exempt from disclosure"
 msgstr "Субъект освобожден от раскрытия информации"
 
-# fee842e340ac4b18829875af63d32b64
+# 14fa8c3f59f147c59999a79a9c1c7675
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "The subject of this ownership or control statement is not required to "
@@ -1842,17 +1852,17 @@ msgstr ""
 "От субъекта данной записи о владении или контроле не требуется раскрывать "
 "своего бенефициарного владельца (заменяет noNotifiableOwners)."
 
-# 34bd324528bf47329e0025ed8aae6510
+# 55114f79071b43b7b9bd9e30ed9829e2
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "interested-party-exempt-from-disclosure"
 msgstr "interested-party-exempt-from-disclosure"
 
-# 7d9965a0c51e47e8b3362c20f4e64d99
+# e216af25fd28453193c89c20f207f498
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "Interested party exempt from disclosure"
 msgstr "Заинтересованная сторона освобождена от раскрытия информации"
 
-# 680692f25b6b4a1683f4e0a5c9c1dacd
+# 4893d2204e064e17ade3ea22d8db1ff7
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "The interested party in this ownership or control statement is exempt from "
@@ -1861,27 +1871,27 @@ msgstr ""
 "Заинтересованная сторона в данной записи о владении или контроле освобождена"
 " от необходимости раскрытия своей идентичности."
 
-# 83526bfde0e345ccb357e696c06441a7
+# 1efd01eaa0694d6ba4528c2ec7e11afd
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "Unknown reason"
 msgstr "Неизвестная причина"
 
-# c545d7e5390a41698852d3c475bb9c25
+# 623de67e4ba741c29465ec58c6fbfb0f
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "The reason an interested party cannot be provided is not known."
 msgstr "Неизвестна причина невозможности указания заинтересованной стороны."
 
-# 50caf969ad914e0aaaf0ba09b580a68e
+# 60f6a1030c264200abaf5c9cee6f9d7a
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "information-unknown-to-publisher"
 msgstr "information-unknown-to-publisher"
 
-# 3ee169000904453e875227535b061636
+# ec93a8e7510c48088042e6cf52717afa
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "Information unknown to the publisher of the data"
 msgstr "Информация неизвестна издателю данных"
 
-# 55090bde6b3f4ea2a1c6b587f7241a5b
+# b64e1a3320134038b3258d5990334d3d
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid ""
 "A publisher does not have access to information on this person or entity. "
