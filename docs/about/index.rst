@@ -4,11 +4,10 @@ About
 This website contains the draft specification of the Beneficial Ownership Data Standard (version 0.2) plus support for its use. The Standard provides a structured template for describing beneficial ownership as machine-readable data.
 
 
-.. raw:: html
+.. cssclass:: h2
 
-    <h2>
         Background
-    </h2>
+
 
 Money laundering, tax evasion and obscure chains of ownership are transnational problems that require a transnational solution. Civil society, government and business can all benefit from greater transparency around :ref:`beneficial ownership <what-is-bo>`.
 
@@ -17,11 +16,9 @@ The Beneficial Ownership Data Standard enables this transparency by providing a 
 The Standard is being developed under the guidance of a :doc:`working group <governance>` co-chaired by OpenOwnership. More details about the organisation are available at www.openownership.org.
 
 
-.. raw:: html
+.. cssclass:: h2
 
-    <h2>
         Current status of the standard
-    </h2>
 
 .. figure:: ../_assets/timeline.png
        :alt: Timeline of standard development. 2018, Q4: release of BODS v0.1. 2019, Q2: release of BODS v0.2, Q4: release of BODS v0.3. 2020, Q1: release of BODS v1.0.
@@ -39,11 +36,9 @@ form.
 The schema contains a structure, fields and codelists but does not yet
 enforce validation constraints on most fields.
 
-.. raw:: html
+.. cssclass:: h2
 
-    <h2>
         Get involved
-    </h2>
 
 All changes to the standard draft, documentation and specification take
 place via GitHub at https://github.com/openownership/data-standard/.
@@ -63,11 +58,9 @@ Standard, see the :doc:`Governance <governance>` page.
     support
     privacy-notice
        
-.. raw:: html
+.. cssclass:: h2
 
-    <h2>
         Partners and funders
-    </h2>
 
 The initial development of the Beneficial Ownership Data Standard was
 funded by OpenOwnership as part of a UK Department for International
@@ -85,11 +78,9 @@ Services Co-operative <http://www.opendataservices.coop>`__ and
 `OpenCorporates <https://opencorporates.com>`__. Read the
 :doc:`credits <credits>` for full details of the Standard's developers.
 
-.. raw:: html
+.. cssclass:: h2
 
-    <h2>
         License and contributor agreement
-    </h2>
 
 Schema contents of the OpenOwnership Register are Copyright 2016 World
 Wide Web Foundation on behalf of the OpenOwnership Steering Group.
@@ -99,11 +90,9 @@ The schema is licensed under the Apache License, Version 2.0.
 Contributors are required to accept the `contributor
 agreement <https://github.com/openownership/data-standard/blob/master/CONTRIBUTING.md>`__.
 
-.. raw:: html
+.. cssclass:: h2
 
-    <h2>
         Contact
-    </h2>
 
 For more details about OpenOwnership, please email
 support@openownership.org.
