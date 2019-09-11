@@ -43,7 +43,7 @@ msgstr ""
 # ab8f688c172240fc85778a2c3b67febe
 #: ../../about/index.rst:9
 msgid "Background"
-msgstr ""
+msgstr "Краткая справка"
 
 # 5f98163f0eb7486188f0d9a84b81f82a
 #: ../../about/index.rst:12
@@ -87,7 +87,7 @@ msgstr ""
 # 5dfafd71de4b4ec186211a9b7b7fd881
 #: ../../about/index.rst:21
 msgid "Current status of the standard"
-msgstr ""
+msgstr "Текущий статус стандарта"
 
 # 97801094d755465f92699673b665a14f
 #: ../../about/index.rst:26
@@ -127,7 +127,7 @@ msgstr ""
 # 8e07ce6390fe4ecf97a921fd9681b184
 #: ../../about/index.rst:41
 msgid "Get involved"
-msgstr ""
+msgstr "Принять участие"
 
 # 0ea44d43df29461eba7d77a22ac02b04
 #: ../../about/index.rst:43
@@ -161,7 +161,7 @@ msgstr ""
 # 5bcd641b24884ee1b41b05fab0d9e461
 #: ../../about/index.rst:63
 msgid "Partners and funders"
-msgstr ""
+msgstr "Партнеры и спонсоры"
 
 # 29ca9f87f4fc46aeaf0f0ff14a26105c
 #: ../../about/index.rst:65
@@ -206,7 +206,7 @@ msgstr ""
 # 7181ac99734e4c38b1a0008b9c62dcff
 #: ../../about/index.rst:83
 msgid "License and contributor agreement"
-msgstr ""
+msgstr "Лицензионное и авторское соглашение"
 
 # 521acbbfa66c4fdbab4636707c460f87
 #: ../../about/index.rst:85
@@ -236,7 +236,7 @@ msgstr ""
 # d2e9d36247bb4f6a91332ff8810310e0
 #: ../../about/index.rst:95
 msgid "Contact"
-msgstr ""
+msgstr "Контактные данные"
 
 # 4e75875df4a045c4adf57ad37359447d
 #: ../../about/index.rst:97
