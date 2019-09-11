@@ -11,7 +11,7 @@
    data-name="Layer 1"
    viewBox="0 0 631.51208 345.29641"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="Diag1-simpleOwn.svg"
    width="631.51208"
    height="345.29642"
@@ -39,15 +39,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
      id="namedview215"
      showgrid="false"
      inkscape:zoom="1.7582312"
-     inkscape:cx="272.81078"
+     inkscape:cx="334.57487"
      inkscape:cy="174.76742"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-x="1987"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="Layer_1"
      inkscape:snap-text-baseline="true"
@@ -230,15 +230,14 @@
   <text
      class="cls-3"
      id="text13"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.79999924px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
-     sodipodi:linespacing="125%"
-     x="151.50873"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
+     x="128.53125"
      y="94.53315"
      inkscape:transform-center-x="-8.4183369">
     <tspan
        class="cls-4"
        id="tspan15"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.79999924px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;letter-spacing:-0.03em;writing-mode:lr-tb;text-anchor:start">Person A</tspan>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:-0.03em;writing-mode:lr-tb;text-anchor:start">Person A</tspan>
   </text>
   <path
      d="m 38.173076,33.783024 0,0 m 0,0 0,0 m 0,0 z m 0,0 z"
@@ -254,15 +253,14 @@
   <text
      class="cls-3"
      id="text31"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
-     sodipodi:linespacing="125%"
-     x="138.67509"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
+     x="116.00316"
      y="270.56497">
     <tspan
-       x="151.87506"
+       x="129.20312"
        y="270.56497"
        id="tspan35"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start">Company 1</tspan>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">Company 1</tspan>
   </text>
   <path
      class="cls-8"
@@ -494,9 +492,8 @@
   <text
      class="cls-12"
      id="text143"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080"
-     sodipodi:linespacing="125%"
-     x="151.56085"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#808080;"
+     x="129.49283"
      y="185.23112">100% owned by</text>
   <path
      class="cls-2"
@@ -540,40 +537,37 @@
   <text
      class="cls-3"
      id="text31-6"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
-     sodipodi:linespacing="125%"
-     x="469.87512"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
+     x="470.9783"
      y="92.964996">
     <tspan
-       x="483.07504"
+       x="484.17822"
        y="92.964996"
        id="tspan35-1"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start">Company 2</tspan>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr;text-anchor:start;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">Company 2</tspan>
   </text>
   <text
      class="cls-12"
      id="text173-3"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080"
-     sodipodi:linespacing="125%"
-     x="482.32578"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr;text-anchor:middle;fill:#808080;"
+     x="534.52246"
      y="187.63115">
     <tspan
        class="cls-17"
        id="tspan175-2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';text-align:start;letter-spacing:0em;writing-mode:lr-tb;text-anchor:start">100% owned by</tspan>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0em;writing-mode:lr;text-anchor:middle;">100% owned by</tspan>
   </text>
   <text
      class="cls-3"
      id="text199-1"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
-     sodipodi:linespacing="125%"
-     x="469.87512"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
+     x="470.9783"
      y="272.47299">
     <tspan
-       x="483.07504"
+       x="484.17822"
        y="272.47299"
        id="tspan203-5"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start">Company 3</tspan>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr;text-anchor:start;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">Company 3</tspan>
   </text>
   <path
      style="fill:none;fill-rule:evenodd;stroke:#88c9d3;stroke-width:1.44000006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-2-2)"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-08-07 15:46+0100\n"
+"POT-Creation-Date: 2019-09-06 13:28+0000\n"
 "PO-Revision-Date: 2019-08-07 15:28+0000\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -12,34 +12,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. (itstool) path: Work/format
-#: docs/_assets/data-schema-model-1.svg:23
-#: docs/_assets/data-schema-model-2.svg:23
-#: docs/_assets/data-schema-model-3.svg:23 docs/_assets/Diag1-simpleOwn.svg:26
-#: docs/_assets/Diag2-simpleInd.svg:23 docs/_assets/Diag3-splitContr.svg:26
-#: docs/_assets/Diag4b-splitContr2.svg:26
+#: docs/_assets/Diag1-simpleOwn.svg:26 docs/_assets/Diag2-simpleInd.svg:23
+#: docs/_assets/Diag3-splitContr.svg:26
 #: docs/_assets/Diag4-complexInvolve.svg:23
+#: docs/_assets/Diag4b-splitContr2.svg:26
 #: docs/_assets/Diag5-sourcesData.svg:51 docs/_assets/Diag6-registers.svg:59
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:60
 #: docs/_assets/Diag8-dataStandardTemplate.svg:60
-#: docs/_assets/Diag9-JSONdata.svg:226
+#: docs/_assets/Diag9-JSONdata.svg:226 docs/_assets/data-schema-model-1.svg:23
+#: docs/_assets/data-schema-model-2.svg:23
+#: docs/_assets/data-schema-model-3.svg:23
 msgid "image/svg+xml"
 msgstr ""
 
 #. (itstool) path: Work/title
 #. (itstool) path: svg/title
-#: docs/_assets/data-schema-model-1.svg:26
-#: docs/_assets/data-schema-model-1.svg:249
-#: docs/_assets/data-schema-model-2.svg:26
-#: docs/_assets/data-schema-model-2.svg:249
-#: docs/_assets/data-schema-model-3.svg:26
-#: docs/_assets/data-schema-model-3.svg:249
 #: docs/_assets/Diag1-simpleOwn.svg:29 docs/_assets/Diag1-simpleOwn.svg:216
 #: docs/_assets/Diag2-simpleInd.svg:26 docs/_assets/Diag2-simpleInd.svg:150
 #: docs/_assets/Diag3-splitContr.svg:29 docs/_assets/Diag3-splitContr.svg:206
-#: docs/_assets/Diag4b-splitContr2.svg:29
-#: docs/_assets/Diag4b-splitContr2.svg:209
 #: docs/_assets/Diag4-complexInvolve.svg:26
 #: docs/_assets/Diag4-complexInvolve.svg:222
+#: docs/_assets/Diag4b-splitContr2.svg:29
+#: docs/_assets/Diag4b-splitContr2.svg:209
 #: docs/_assets/Diag5-sourcesData.svg:54
 #: docs/_assets/Diag5-sourcesData.svg:360 docs/_assets/Diag6-registers.svg:62
 #: docs/_assets/Diag6-registers.svg:316
@@ -47,270 +41,133 @@ msgstr ""
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:479
 #: docs/_assets/Diag8-dataStandardTemplate.svg:63
 #: docs/_assets/Diag8-dataStandardTemplate.svg:515
+#: docs/_assets/data-schema-model-1.svg:26
+#: docs/_assets/data-schema-model-1.svg:249
+#: docs/_assets/data-schema-model-2.svg:26
+#: docs/_assets/data-schema-model-2.svg:249
+#: docs/_assets/data-schema-model-3.svg:26
+#: docs/_assets/data-schema-model-3.svg:249
 msgid "Artboard 1 copy"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:597
-#: docs/_assets/data-schema-model-1.svg:670
-msgid "Interest"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:610
-#, no-wrap
-msgid "Type:   share-holding"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:615
-#, no-wrap
-msgid "Share: 60%"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:628
-#: docs/_assets/data-schema-model-2.svg:668
-#: docs/_assets/data-schema-model-3.svg:649
-msgid "interests"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:640
-#: docs/_assets/data-schema-model-2.svg:619
-#: docs/_assets/data-schema-model-3.svg:620
-#, no-wrap
-msgid "Ownership-or-control statement"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:683
-#, no-wrap
-msgid "Type:   voting-rights"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:688
-#, no-wrap
-msgid "Share: 30%"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:590
-#, no-wrap
-msgid "person:  47bdf780-787d-4bfd-9205"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:607
-msgid "interestedParty"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:638
-#, no-wrap
-msgid "entity:  ty4t68s3-hha4-8ks3-0d8w  "
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:655
-msgid "subject"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:711
-#, no-wrap
-msgid "Person statement"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:723
-#, no-wrap
-msgid "statementID:  47bdf780-787d-4bfd-9205"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:728
-#, no-wrap
-msgid "name: Roberto Lopez"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:733
-#, no-wrap
-msgid "birthDate: 1967-03-12"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:768
-#, no-wrap
-msgid "Entity statement"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:780
-#, no-wrap
-msgid "statementID:  ty4t68s3-hha4-8ks3-0d8w"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:785
-#, no-wrap
-msgid "name: RENCO Energy Ltd"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:790
-#, no-wrap
-msgid "foundingDate: 2016-07-07"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-3.svg:586
-#, no-wrap
-msgid "type:               selfDeclaration"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-3.svg:591
-#, no-wrap
-msgid "retrievedAt:   2018-11-07T13:55:32.734Z"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-3.svg:596
-#, no-wrap
-msgid "assertedBy:   Acme Industries Ltd"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-3.svg:608
-msgid "source"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-3.svg:632
-#, no-wrap
-msgid "statementDate:   2018-07-12"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag1-simpleOwn.svg:241
-#: docs/_assets/Diag4-complexInvolve.svg:247
-#: docs/_assets/Diag4-complexInvolve.svg:580
-#: docs/_assets/Diag5-sourcesData.svg:410
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1275
+#: docs/_assets/Diag1-simpleOwn.svg:240
+#: docs/_assets/Diag4-complexInvolve.svg:246
+#: docs/_assets/Diag4-complexInvolve.svg:577
+#: docs/_assets/Diag5-sourcesData.svg:409
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1274
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1307
 msgid "Person A"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag1-simpleOwn.svg:265
-#: docs/_assets/Diag4-complexInvolve.svg:270
-#: docs/_assets/Diag5-sourcesData.svg:423
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1877
+#: docs/_assets/Diag1-simpleOwn.svg:263
+#: docs/_assets/Diag4-complexInvolve.svg:268
+#: docs/_assets/Diag5-sourcesData.svg:421
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1870
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1810
 msgid "Company 1"
 msgstr ""
 
 #. (itstool) path: svg/text
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag1-simpleOwn.svg:500 docs/_assets/Diag1-simpleOwn.svg:563
+#: docs/_assets/Diag1-simpleOwn.svg:497 docs/_assets/Diag1-simpleOwn.svg:558
 msgid "100% owned by"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag1-simpleOwn.svg:551 docs/_assets/Diag2-simpleInd.svg:191
-#: docs/_assets/Diag3-splitContr.svg:219
-#: docs/_assets/Diag4b-splitContr2.svg:222
-#: docs/_assets/Diag4-complexInvolve.svg:841
-#: docs/_assets/Diag5-sourcesData.svg:436
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1890
+#: docs/_assets/Diag1-simpleOwn.svg:547 docs/_assets/Diag2-simpleInd.svg:189
+#: docs/_assets/Diag3-splitContr.svg:218
+#: docs/_assets/Diag4-complexInvolve.svg:837
+#: docs/_assets/Diag4b-splitContr2.svg:221
+#: docs/_assets/Diag5-sourcesData.svg:433
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1882
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1823
 msgid "Company 2"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag1-simpleOwn.svg:576 docs/_assets/Diag2-simpleInd.svg:467
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1549
+#: docs/_assets/Diag1-simpleOwn.svg:570 docs/_assets/Diag2-simpleInd.svg:463
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1546
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1581
 msgid "Company 3"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag2-simpleInd.svg:168 docs/_assets/Diag3-splitContr.svg:336
+#: docs/_assets/Diag2-simpleInd.svg:167 docs/_assets/Diag3-splitContr.svg:332
 #, no-wrap
 msgid "Person B"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag2-simpleInd.svg:430
-msgid "0% shares owned by"
-msgstr ""
-
-#. (itstool) path: svg/text
-#: docs/_assets/Diag2-simpleInd.svg:425
-msgid "6<_:tspan-1/>"
+#: docs/_assets/Diag2-simpleInd.svg:428
+msgid "60% shares owned by"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag2-simpleInd.svg:448 docs/_assets/Diag5-sourcesData.svg:795
+#: docs/_assets/Diag2-simpleInd.svg:445 docs/_assets/Diag5-sourcesData.svg:792
 #, no-wrap
 msgid "100% shares owned by"
 msgstr ""
 
 #. (itstool) path: text/tspan
 #. (itstool) path: tspan/tspan
-#: docs/_assets/Diag3-splitContr.svg:310
-#: docs/_assets/Diag4-complexInvolve.svg:900
-#: docs/_assets/Diag5-sourcesData.svg:507
+#: docs/_assets/Diag3-splitContr.svg:308
+#: docs/_assets/Diag4-complexInvolve.svg:895
+#: docs/_assets/Diag5-sourcesData.svg:505
 #, no-wrap
 msgid "60% directors appointed by"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag3-splitContr.svg:323
+#: docs/_assets/Diag3-splitContr.svg:320
 #, no-wrap
 msgid "30% shares owned by"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag3-splitContr.svg:349
-#: docs/_assets/Diag4b-splitContr2.svg:333
+#: docs/_assets/Diag3-splitContr.svg:344
+#: docs/_assets/Diag4b-splitContr2.svg:329
 #, no-wrap
 msgid "Person C"
 msgstr ""
 
 #. (itstool) path: text/tspan
+#: docs/_assets/Diag3-splitContr.svg:349
+#, no-wrap
+msgid "(Executive "
+msgstr ""
+
+#. (itstool) path: text/tspan
 #: docs/_assets/Diag3-splitContr.svg:354
 #, no-wrap
-msgid "(Executive Director)"
+msgid "Director)"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag4b-splitContr2.svg:307
-#, no-wrap
-msgid "60% voting rights held by"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag4b-splitContr2.svg:320
-#, no-wrap
-msgid "20% shares owned by"
-msgstr ""
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag4-complexInvolve.svg:912
+#: docs/_assets/Diag4-complexInvolve.svg:906
 #, no-wrap
 msgid "50% shares owned by"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag5-sourcesData.svg:559
-#: docs/_assets/Diag5-sourcesData.svg:626
-#: docs/_assets/Diag5-sourcesData.svg:655
-#: docs/_assets/Diag5-sourcesData.svg:715
-#: docs/_assets/Diag5-sourcesData.svg:775 docs/_assets/Diag6-registers.svg:438
+#: docs/_assets/Diag4b-splitContr2.svg:305
+#, no-wrap
+msgid "60% voting rights held by"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/Diag4b-splitContr2.svg:317
+#, no-wrap
+msgid "20% shares owned by"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/Diag5-sourcesData.svg:557
+#: docs/_assets/Diag5-sourcesData.svg:624
+#: docs/_assets/Diag5-sourcesData.svg:653
+#: docs/_assets/Diag5-sourcesData.svg:713
+#: docs/_assets/Diag5-sourcesData.svg:773 docs/_assets/Diag6-registers.svg:438
 #: docs/_assets/Diag6-registers.svg:467 docs/_assets/Diag6-registers.svg:521
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:600
 #: docs/_assets/Diag7-dataStandardBlackBox.svg:629
@@ -339,36 +196,36 @@ msgid "i"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1298
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1296
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1330
 msgid "Company 4"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1690
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1686
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1667
 #, no-wrap
 msgid "60% directors"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1695
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1691
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1672
 #, no-wrap
 msgid "appointed by"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1707
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1702
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1684
 #, no-wrap
 msgid "30% shares"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1712
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1855
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1908
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1707
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1849
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1899
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1689
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1788
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1841
@@ -377,21 +234,21 @@ msgid "owned by"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1850
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1844
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1783
 #, no-wrap
 msgid "99% shares"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1903
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1894
 #: docs/_assets/Diag8-dataStandardTemplate.svg:1836
 #, no-wrap
 msgid "1% shares"
 msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1961
+#: docs/_assets/Diag7-dataStandardBlackBox.svg:1951
 #, no-wrap
 msgid "?"
 msgstr ""
@@ -406,4 +263,148 @@ msgstr ""
 #: docs/_assets/Diag9-JSONdata.svg:364
 #, no-wrap
 msgid "JSON"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-1.svg:596
+#: docs/_assets/data-schema-model-1.svg:666
+msgid "Interest"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-1.svg:608
+#, no-wrap
+msgid "Type:   share-holding"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-1.svg:613
+#, no-wrap
+msgid "Share: 60%"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-1.svg:625
+#: docs/_assets/data-schema-model-2.svg:663
+#: docs/_assets/data-schema-model-3.svg:645
+msgid "interests"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-1.svg:637
+#: docs/_assets/data-schema-model-2.svg:617
+#: docs/_assets/data-schema-model-3.svg:618
+#, no-wrap
+msgid "Ownership-or-control statement"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-1.svg:678
+#, no-wrap
+msgid "Type:   voting-rights"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-1.svg:683
+#, no-wrap
+msgid "Share: 30%"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:589
+#, no-wrap
+msgid "person:  47bdf780-787d-4bfd-9205"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:605
+msgid "interestedParty"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:635
+#, no-wrap
+msgid "entity:  ty4t68s3-hha4-8ks3-0d8w  "
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:651
+msgid "subject"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:706
+#, no-wrap
+msgid "Person statement"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:717
+#, no-wrap
+msgid "statementID:  47bdf780-787d-4bfd-9205"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:722
+#, no-wrap
+msgid "name: Roberto Lopez"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:727
+#, no-wrap
+msgid "birthDate: 1967-03-12"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:762
+#, no-wrap
+msgid "Entity statement"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:773
+#, no-wrap
+msgid "statementID:  ty4t68s3-hha4-8ks3-0d8w"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:778
+#, no-wrap
+msgid "name: RENCO Energy Ltd"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-2.svg:783
+#, no-wrap
+msgid "foundingDate: 2016-07-07"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-3.svg:585
+#, no-wrap
+msgid "type:               selfDeclaration"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-3.svg:590
+#, no-wrap
+msgid "retrievedAt:   2018-11-07T13:55:32.734Z"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-3.svg:595
+#, no-wrap
+msgid "assertedBy:   Acme Industries Ltd"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-3.svg:606
+msgid "source"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/data-schema-model-3.svg:629
+#, no-wrap
+msgid "statementDate:   2018-07-12"
 msgstr ""

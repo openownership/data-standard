@@ -11,7 +11,7 @@
    data-name="Layer 1"
    viewBox="0 0 397.11661 521.89019"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="Diag2-simpleInd.svg"
    width="397.11661"
    height="521.8902">
@@ -36,15 +36,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
      id="namedview215"
      showgrid="false"
      inkscape:zoom="1.4254587"
      inkscape:cx="52.835468"
-     inkscape:cy="206.49869"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:cy="290.68212"
+     inkscape:window-x="1987"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="Layer_1"
      inkscape:snap-text-baseline="true"
@@ -157,8 +157,7 @@
   <text
      class="cls-3"
      id="text13"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.79999924px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
-     sodipodi:linespacing="125%"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.79999924px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
      x="198.53564"
      y="93.750114"
      inkscape:transform-center-x="-8.4183475">
@@ -180,8 +179,7 @@
   <text
      class="cls-3"
      id="text31"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
-     sodipodi:linespacing="125%"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
      x="185.70201"
      y="269.78195">
     <tspan
@@ -419,16 +417,16 @@
   <text
      class="cls-12"
      id="text143"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080"
-     sodipodi:linespacing="125%"
-     x="198.58778"
-     y="184.4481">6<tspan
-   class="cls-16"
-   x="206.98779"
-   y="184.4481"
-   id="tspan145"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';text-align:start;letter-spacing:0em;writing-mode:lr-tb;text-anchor:start">0% shares owned by</tspan>
-</text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#808080"
+     x="355.71289"
+     y="184.4481">
+    <tspan
+       class="cls-16"
+       x="276.14551"
+       y="184.4481"
+       id="tspan145"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0em;writing-mode:lr-tb;text-anchor:middle">60% shares owned by</tspan>
+  </text>
   <path
      class="cls-2"
      d="M 30,33 Z"
@@ -438,14 +436,13 @@
   <text
      class="cls-12"
      id="text173"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#808080"
-     sodipodi:linespacing="125%"
-     x="198.15273"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#808080"
+     x="280.04199"
      y="364.44812">
     <tspan
        class="cls-17"
        id="tspan175"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';text-align:start;letter-spacing:0em;writing-mode:lr-tb;text-anchor:start">100% shares owned by</tspan>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0em;writing-mode:lr-tb;text-anchor:middle">100% shares owned by</tspan>
   </text>
   <path
      class="cls-2"
@@ -456,8 +453,7 @@
   <text
      class="cls-3"
      id="text199"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:125%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
-     sodipodi:linespacing="125%"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.5px;line-height:0%;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#262737"
      x="185.70201"
      y="449.28995">
     <tspan
@@ -530,7 +526,7 @@
   <flowRoot
      xml:space="preserve"
      id="flowRoot5190"
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      transform="translate(28.09305,38.490847)"><flowRegion
        id="flowRegion5192"><rect
          id="rect5194"
@@ -538,7 +534,8 @@
          height="67.294052"
          x="303.01227"
          y="158.70676" /></flowRegion><flowPara
-       id="flowPara5196" /></flowRoot>  <path
+       id="flowPara5196"
+       style="font-size:40px;line-height:1.25"> </flowPara></flowRoot>  <path
      id="path4516"
      d="m 112.68553,258.16828 0.0225,-6.97752 -17.44333,-0.0566 -0.09772,31.39838 34.88764,0.11328 0.0792,-24.42085 z m -10.5342,20.89838 -3.488273,-0.012 0.0108,-3.48828 3.489253,0.012 z m 0.0225,-6.97753 -3.488273,-0.012 0.0108,-3.48827 3.489253,0.012 z m 0.0225,-6.97752 -3.488273,-0.012 0.0108,-3.48828 3.489253,0.012 z m 0.0225,-6.97753 -3.488273,-0.012 0.0108,-3.48827 3.489253,0.012 z m 6.91011,20.95506 -3.48828,-0.0108 0.0108,-3.49218 3.48926,0.012 z m 0.0225,-6.97753 -3.48828,-0.0108 0.0108,-3.48926 3.48926,0.012 z m 0.0225,-6.97752 -3.48828,-0.0108 0.0108,-3.48926 3.48926,0.012 z m 0.0225,-6.97754 -3.48828,-0.0108 0.0118,-3.48925 3.48926,0.012 z m 17.37688,20.98925 -13.95505,-0.042 0.0108,-3.48925 3.48925,0.012 0.0108,-3.48925 -3.48827,-0.0108 0.0108,-3.48925 3.48926,0.012 0.0108,-3.48926 -3.48829,-0.0108 0.0108,-3.48925 13.95506,0.046 z m -3.4443,-13.96677 -3.48828,-0.0108 -0.012,3.48826 3.48926,0.012 z m -0.0224,6.97753 -3.48828,-0.0108 -0.012,3.48828 3.48926,0.012 z"
      inkscape:connector-curvature="0" />
