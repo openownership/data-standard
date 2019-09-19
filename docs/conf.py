@@ -24,6 +24,8 @@ from recommonmark.parser import CommonMarkParser
 
 # -- General configuration ------------------------------------------------
 
+html_context = {'bods_schema_version': '0.2'}
+
 # If your documentation needs a minimal Sphinx version, state it here.
 #
 # needs_sphinx = '1.0'
