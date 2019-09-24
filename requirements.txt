@@ -4,7 +4,7 @@ sphinx-rtd-theme==0.3.1
 -e git+https://github.com/rtfd/recommonmark.git@450909bdcf4c5eafde7c89696006530ba7cc78de#egg=recommonmark
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8d0d2bb00742b25707866b0f7a2b6c0c35948c5e#egg=sphinxcontrib_jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@fab0ff0167d32ec243d42f272e0e50766299c078#egg=sphinxcontrib_opendataservices
--e git+https://github.com/openownership/data-standard-sphinx-theme.git@44e37b3c27b2143e9e24166677cb18c066a316db#egg=standard_theme
+-e git+https://github.com/openownership/data-standard-sphinx-theme.git@d5bbf2b4f2e67866918ed8194b57b5f7bebbafae#egg=standard_theme
 ## The following requirements were added by pip freeze:
 alabaster==0.7.10
 Babel==2.6.0
