@@ -1,5 +1,12 @@
 ## Examples
 
+
+```eval_rst
+
+  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
+```
+
+
 In the [tools folder](https://github.com/openownership/data-standard/) of the schema repository a script is available to generate dummy data, or blank example data files. 
 
 The following manually constructed examples highlight key elements of how beneficial ownership statements can be constructed.

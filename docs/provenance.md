@@ -34,6 +34,13 @@
 
 ## Provenance Information
 
+
+```eval_rst
+
+  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
+```
+
+
 Provenance information can be attached through use of the ``Source`` object on a ``StatementGroup``, a ``BeneficialOwnershipStatement``, an ``EntityStatement`` or a ``PersonStatement``. 
 
 These can be thought of in a hierarchy:

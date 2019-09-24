@@ -1,6 +1,11 @@
 Beneficial Ownership Data Standard (beta)
 ==========================================
 
+```eval_rst
+
+  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
+```
+
 This site contains documentation site for the beta version of the Beneficial Ownership Data Standard, developed as part of the OpenOwnership project.
 
 This work is taking place under the auspices of the Open Ownership project. More details on the project are avaiable at [http://www.openownership.org](http://www.openownership.org)
