@@ -1,6 +1,13 @@
 Identifiers
 ===========
 
+
+```eval_rst
+
+  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
+```
+
+
 ## Statement ids
 
 Each statement must have a unique id. This id must be globally unique: such that no two statements from the same organisation, or from different organisations, could ever have the same identifier. 
