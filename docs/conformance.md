@@ -1,6 +1,12 @@
 Conformance and validation
 ===========================
 
+
+```eval_rst
+  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
+```
+
+
 ## Conformance statement
 
 * A conforming implementation **may** use only a subset of this specification’s terms.

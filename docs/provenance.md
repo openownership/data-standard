@@ -1,5 +1,11 @@
 ## Provenance Information
 
+
+```eval_rst
+  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
+```
+
+
 ```eval_rst
 .. note:: 
 
