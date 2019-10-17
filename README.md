@@ -56,7 +56,7 @@ $ apt-get install python-babel
 $ apt-get install itstool
 ```
 
-And you need to get a [Transifex API key](https://www.transifex.com/user/settings/api/), make sure you have access to the [BODS project on Transifex](https://www.transifex.com/OpenDataServices/bods-v01). There are [full instructions for setting up and configuring your local machine for the translation workflow](https://github.com/openownership/bods-dev-handbook/blob/master/translations.md) in the bods-dev-handbook.
+And you need to get a [Transifex API key](https://www.transifex.com/user/settings/api/), make sure you have access to the [BODS project on Transifex](https://www.transifex.com/OpenDataServices/bods-v01). There are [full instructions for setting up and configuring your local machine for the translation workflow](https://openownership.github.io/bods-dev-handbook/translations.html) in the bods-dev-handbook.
 
 Run the following commands from the root directory unless otherwise specified (eg. sometimes it's less complicated to run them from `docs`).
 
