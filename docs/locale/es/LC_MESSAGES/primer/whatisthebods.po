@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,12 +22,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# e64df71f20a743799f86464bb18134e9
+# fa2a7786613b4b7f80d41f698615c559
 #: ../../primer/whatisthebods.rst:2
 msgid "What is the Beneficial Ownership Data Standard?"
-msgstr ""
+msgstr "¿Qué es el Estándar de Datos sobre Beneficiarios Finales?"
 
-# b1f82a62c4734235818a3cf941d0a834
+# cb951733bece45658e77a6aa6cb27dff
 #: ../../primer/whatisthebods.rst:4
 msgid ""
 "The value from beneficial ownership data comes when we can share it easily, "
@@ -30,13 +35,17 @@ msgid ""
 "and different countries can then be combined, visualised, explored and "
 "analysed."
 msgstr ""
+"El valor de los datos de beneficiarios finales surge cuando podemos "
+"compartirlos con facilidad, sabiendo que serán debidamente comprendidos. "
+"Así, los datos de diferentes empresas y países pueden combinarse, "
+"visualizarse, investigarse y analizarse."
 
-# 4eccf4c5cd5947b4937b378e3024d1c9
+# 7f4ea6f7ea9f44539bec423e2d3d8bb3
 #: ../../primer/whatisthebods.rst:13
 msgid "To gain insights about beneficial ownership..."
-msgstr ""
+msgstr "Para adquirir conocimientos sobre los beneficiarios finales…"
 
-# d0fc15d32f6a467f8ba967fd2bee946d
+# e741be4e21ab4ccfb5effd2e7d0ef4d5
 #: ../../primer/whatisthebods.rst:19
 msgid ""
 "Bringing together data from a variety of sources can give us insights into "
@@ -44,73 +53,99 @@ msgid ""
 "common standards, combining and analysing data from different sources can be"
 " extremely difficult, expensive and time-consuming."
 msgstr ""
+"Reunir datos de diversas fuentes puede darnos una idea de las vastas o "
+"complejas estructuras de titularidad y control. Pero sin estándares comunes,"
+" combinar y analizar datos de fuentes diferentes puede resultar sumamente "
+"difícil y costoso, y requerir mucho tiempo."
 
-# 97abc954452a4ec69627a5309452079d
+# cf1c32074e1d4b2cbe9b869aef0331ee
 #: ../../primer/whatisthebods.rst:27
 msgid ""
 "When we only have scattered documents to draw upon, the bigger picture of "
 "beneficial ownership remains obscure."
 msgstr ""
+"Cuando solo contamos con documentos dispersos a los que recurrir, el "
+"panorama general de los beneficiarios finales queda poco claro."
 
-# 58581bc828c54af3a295590f2bad84dc
+# 54bcb3c1eea44bdfafe220ac951a5adb
 #: ../../primer/whatisthebods.rst:34
 msgid "...data must be shared in standardised way..."
-msgstr ""
+msgstr "…los datos deben compartirse de un modo estandarizado…"
 
-# d152e7d9e95e47f79332c01c9ddf4c03
+# af695e94e4d24a15b3bd1596f15e8bae
 #: ../../primer/whatisthebods.rst:40
 msgid ""
 "The Beneficial Ownership Data Standard (BODS) provides a structured data "
 "format, along with guidance for collecting, sharing and using data on "
 "beneficial ownership:"
 msgstr ""
+"El Estándar de Datos sobre Beneficiarios Finales (BODS) ofrece un formato de"
+" datos estructurados, junto con pautas orientadoras para reunir, compartir y"
+" utilizar datos sobre beneficiarios finales:"
 
-# 1771051bc3d84637b10eacca1cedc135
+# 6a9aa72bdea34ac78da845f8cdbdb407
 #: ../../primer/whatisthebods.rst:44
 msgid ""
 "The `data schema <../schema/index.html>`__ describes how and what data "
 "should be shared. It can also inform the design of data collection and "
 "management systems;"
 msgstr ""
+"El  `esquema de datos <../schema/index.html>`__ detalla qué datos deberían "
+"compartirse y cómo hacerlo. También puede servir de orientación para el "
+"diseño de sistemas de recopilación y gestión de datos;"
 
-# 7d60854f37bb432e9d5c034e42db8603
+# b2d8cbca8f544b76ad5f1af4e3bb5059
 #: ../../primer/whatisthebods.rst:48
 msgid ""
 "The `technical guidance <../schema/guidance/index.html>`__ provides support "
 "for publishers and users of the data."
 msgstr ""
+"La `orientación técnica <../schema/guidance/index.html>`__ brinda ayuda para"
+" los publicadores y los usuarios de los datos."
 
-# 41d31d95a2c94193826b53672b7ff967
+# cc4deb2c4403467eb2653dea8fdcaa24
 #: ../../primer/whatisthebods.rst:56
 msgid ""
 "Using BODS simplifies the sharing and use of beneficial ownership "
 "information."
 msgstr ""
+"El uso del BODS simplifica la labor de compartir y utilizar la información "
+"sobre beneficiarios finales."
 
-# 02466a5031cd4ffd8b4ce60c5931045e
+# 3af10a9ba1e04dbea6907c5a9310e36a
 #: ../../primer/whatisthebods.rst:63
 msgid "...as structured data."
-msgstr ""
+msgstr "…como datos estructurados."
 
-# d4f9b5bb0d0e476da035bd87b5a58e88
+# 69273c124bb944e597c2813f3dc764de
 #: ../../primer/whatisthebods.rst:69
 msgid ""
 "The data schema describes how data about the beneficial owners of a legal "
 "entity can be organized and exchanged. The schema is defined in a structured"
 " data format called JSON."
 msgstr ""
+"En el esquema de datos se detalla el modo en que pueden organizarse e "
+"intercambiarse los datos sobre los beneficiarios finales de una entidad "
+"jurídica. El esquema se encuentra definido en un formato de datos "
+"estructurados denominado JSON."
 
-# 963686d989ec411daa55aa0415606c0f
+# 990bdfb41ab44b38800478e8a843e74b
 #: ../../primer/whatisthebods.rst:79
 msgid ""
 "Using the popular JSON format facilitates computerised access and analysis "
 "of the data, whilst also providing human-readable data."
 msgstr ""
+"El uso del popular formato JSON facilita el acceso informatizado y el "
+"análisis de los datos, al tiempo que proporciona datos legibles por las "
+"personas."
 
-# b722d42370ea4766aa6b4f5f7f1d5e38
+# 63da5ebbb2b043f89a57c497bad88e9d
 #: ../../primer/whatisthebods.rst:84
 msgid ""
 "The **Beneficial Ownership Data Standard** describes what data should be "
 "shared and how (using a JSON schema) and provides guidance on data "
 "publishing processes and data use."
 msgstr ""
+"El **Estándar de Datos sobre Beneficiarios Finales** detalla qué datos "
+"deberían compartirse y cómo hacerlo (utilizando un esquema JSON) y ofrece "
+"orientación sobre los procesos de publicación de datos y su uso."

@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,54 +22,66 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 0a768b90fd6a425cbce46f3494ee77ca
+# a9ac0381edd146539b5dcd727dd86857
 #: ../../primer/whatisbo.rst:4
 msgid "What is beneficial ownership?"
-msgstr ""
+msgstr "¿Qué significa beneficiario final?"
 
-# 206d3bd379a346b7bf0ce8ba95a89926
+# 2ca95407630745b89dc346114f2434c9
 #: ../../primer/whatisbo.rst:6
 msgid ""
 "The concept of beneficial ownership helps us understand how companies and "
 "other legal entities are owned and controlled."
 msgstr ""
+"El concepto de beneficiario final nos ayuda a entender la titularidad y el "
+"control de las empresas y otras entidades jurídicas."
 
-# 53fdb35ed6024ca4a3c1b6516ba478e6
+# 178cdc18f37543ca88305cae75f7579a
 #: ../../primer/whatisbo.rst:13
 msgid "Companies or people can own other companies..."
 msgstr ""
+"Las empresas o los individuos pueden ser propietarios de otras empresas…"
 
-# a125c5f16976457e88d38e910fc8a1fe
+# 8def3a6a035949e2bf8f9d2e1a63c275
 #: ../../primer/whatisbo.rst:19
 msgid ""
 "The idea that people own companies and sometimes companies own companies is "
 "well understood."
 msgstr ""
+"La idea de que los individuos son propietarios de empresas y de que a veces "
+"las empresas son a su vez propietarias de otras empresas es bien sabida."
 
-# 43cf1cf883f04c6983e895e6a7ef1be4
+# 5172e9bf472e45618342074e36e4b4ed
 #: ../../primer/whatisbo.rst:29
 msgid "...but it's people that ultimately benefit..."
-msgstr ""
+msgstr "…pero son los individuos quienes se benefician en última instancia…"
 
-# 1f5f935cd6b74eaf9589671af3ec37e0
+# 82930972c81642558cb1b10558035fa4
 #: ../../primer/whatisbo.rst:35
 msgid ""
 "Even when companies own companies, individuals almost always appear at the "
 "end of the ownership chain. They ultimately benefit from companies’ "
 "financial successes, and often share in their failures."
 msgstr ""
+"Aun cuando las empresas son propietarias de otras empresas, son los "
+"individuos quienes casi siempre aparecen al final de la cadena de "
+"titularidad. Se benefician en última instancia del éxito financiero de las "
+"empresas, y con frecuencia participan de sus fracasos."
 
-# 20ce0f9235c344359b7a26d1e59896ff
+# 69f856c1c4984f5da2f960fc760d3e3c
 #: ../../primer/whatisbo.rst:43
 msgid "Here, Company 2 acts as an intermediary in a chain of ownership."
 msgstr ""
+"En este caso, la Empresa 2 actúa como intermediaria en una cadena de "
+"titularidad."
 
-# 9ba785b4ab4444d7887f7bcba6ce8b7a
+# 8622340ef03641c2980742daf59d98b8
 #: ../../primer/whatisbo.rst:49
 msgid "...so, we need to know who ultimately controls a company..."
 msgstr ""
+"…por ende, necesitamos saber quién controla en último término a una empresa."
 
-# aee8ce31e7c74cce9780990bc6184fd1
+# 3ec4515877d94a1f82baf57cfef6e17c
 #: ../../primer/whatisbo.rst:55
 msgid ""
 "If a person owns something, they usually have some control over it. Owning "
@@ -74,8 +91,15 @@ msgid ""
 "right to appoint 60% of the other board members, while having little "
 "financial stake in the business."
 msgstr ""
+"Si una persona es dueña de algo, en general tiene algún tipo de control "
+"sobre ello. Ser titular de acciones en una empresa puede conferir derechos "
+"de voto, por ejemplo. Pero la titularidad y el control a veces se encuentran"
+" separados, ya sea por las clases de acciones, contratos, convenios u otros "
+"mecanismos. Por ejemplo, un director ejecutivo podría tener el derecho de "
+"designar al 60 % de los otros miembros del órgano de administración, y al "
+"mismo tiempo tener escasa participación financiera en el negocio."
 
-# a75ed82bc39444b9b2bf9583babd6779
+# 306621deb10740cb9c051a186f406aff
 #: ../../primer/whatisbo.rst:67
 msgid ""
 "Significant control over a company’s composition and decisions may be used "
@@ -83,23 +107,33 @@ msgid ""
 "for a company may not be the ones making the decisions. In which case, we "
 "need to know who is in control."
 msgstr ""
+"El hecho de tener un control significativo sobre la composición y las "
+"decisiones de una empresa puede utilizarse para orientar en un determinado "
+"sentido los beneficios y los riesgos directos. Quienes asumen los riesgos "
+"financieros de una empresa pueden no ser aquellos que toman las decisiones. "
+"En ese caso, necesitamos saber quién ejerce el control."
 
-# 806ceccddc4f46a9bd26927dde176ad0
+# 76e18b49ac564febb63d5e8a9f8495ef
 #: ../../primer/whatisbo.rst:76
 msgid "...to see the big picture."
-msgstr ""
+msgstr "…para ver el panorama completo."
 
-# ce3d557a0346403fb98e4ef429050adf
+# f264cf5be9104fc0be94102a9b975e86
 #: ../../primer/whatisbo.rst:82
 msgid ""
 "Beneficial ownership therefore takes in both types of involvement with a "
 "company: ownership and control."
 msgstr ""
+"Por consiguiente, el concepto de beneficiario final abarca los dos tipos de "
+"intervención en una empresa: la titularidad y el control."
 
-# fa1be32b523047e0a7eb63f5948e8260
+# 1453c670345844adb8a7164ef10939bc
 #: ../../primer/whatisbo.rst:87
 msgid ""
 "**Beneficial ownership** is the right to some share of a legal entity's "
 "income or assets (ownership) or the right to direct or influence the "
 "entity's activities (control)."
 msgstr ""
+"**Beneficiario final** es aquel que tiene derecho a una parte de los "
+"ingresos o bienes de una entidad jurídica (titularidad) o el derecho de "
+"dirigir o influenciar las actividades de una entidad (control)."

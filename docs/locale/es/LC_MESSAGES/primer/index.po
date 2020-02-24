@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,19 +22,22 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 6a8d2d2c661e42509a4732678824c675
+# ff48bd13b0f2479286bd9fd7c9278677
 #: ../../primer/index.rst:2
 msgid "Primer"
-msgstr ""
+msgstr "Guía introductoria"
 
-# 6ed6fb9def46480faf352ea1ada89dd3
+# d828c949c46145ecab76d349ffbe41f6
 #: ../../primer/index.rst:4
 msgid ""
 "This Primer sets out to explain the basics of Beneficial Ownership and the "
 "basics of a data standard handling Beneficial Ownership."
 msgstr ""
+"Esta guía introductoria tiene como objetivo explicar los fundamentos básicos"
+" del concepto de beneficiarios finales y de un estándar de datos que se "
+"ocupa de los beneficiarios finales."
 
-# ec6183086b884b5ba1293645758e4fab
+# 5a18608b94e1492fac568354b341b382
 #: ../../primer/index.rst:6
 msgid ""
 "People new to the concept of Beneficial Ownership will want to know "
@@ -39,3 +47,10 @@ msgid ""
 " Data Standard <whatisthebods>` as a kind of template. Finally we look at "
 "the :doc:`scope of the Standard <whatdoesbodscover>` and what it offers."
 msgstr ""
+"Quienes desconocen el concepto de beneficiario final querrán saber :doc:`de "
+"qué se trata <whatisbo>` y :doc:`por qué es importante <whyisbo>`. Viendo "
+"entonces :doc:`los datos que se necesitan <whatisbodata>` para describir una"
+" cadena de titularidad de beneficiarios finales, podemos :doc:`entender el "
+"Estándar de Datos sobre Beneficiarios Finales <whatisthebods>` como un tipo "
+"de plantilla. Por último, veremos el :doc:`alcance del Estándar "
+"<whatdoesbodscover>` y lo que ofrece."
