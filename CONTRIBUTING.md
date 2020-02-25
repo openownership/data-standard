@@ -2,7 +2,7 @@
 
 Individual Contributor Non-Exclusive License Agreement including the Traditional Patent License 
 
-Thank you for your interest in contributing to Open Ownership Register ("We" or "Us").
+Thank you for your interest in contributing to the Beneficial Ownership Data Standard ("We" or "Us").
 
 The purpose of this contributor agreement ("Agreement") is to clarify and document the rights granted by contributors to Us. By submitting comments or code to the project you are deemed to have accepted this agreement. 
 
