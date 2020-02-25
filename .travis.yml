@@ -10,5 +10,5 @@ install:
   - "pip install -r requirements_test.txt"
   - curl -s -S --retry 3 $BASEDIR/tests/install.sh | bash -
 script:
+  - "./open-contracting_standard-maintenance-scripts_tests_script.sh"
   - "py.test"
-  - "flake8 tests"
