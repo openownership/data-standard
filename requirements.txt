@@ -5,11 +5,10 @@ CommonMark==0.7.5
 -e git+https://github.com/rtfd/recommonmark.git@450909bdcf4c5eafde7c89696006530ba7cc78de#egg=recommonmark
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8a3982bf7701420e50d69f2341213ced2b18ca54#egg=sphinxcontrib_jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@fab0ff0167d32ec243d42f272e0e50766299c078#egg=sphinxcontrib_opendataservices
--e git+https://github.com/openownership/data-standard-sphinx-theme.git@75310a59e5ca6e05b2e4971ea5ce951e5e1ac73f#egg=standard_theme
+-e git+https://github.com/openownership/data-standard-sphinx-theme.git@3611c856a18381dbbbc172f5859646bb9927c038#egg=standard_theme
 ocds-babel==0.2.1
 urllib3==1.25.8
 requests==2.23.0
-
 ## The following requirements were added by pip freeze:
 alabaster==0.7.12
 Babel==2.8.0
