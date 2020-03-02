@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,12 +22,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 80b78db363a3414b9510b3373b6e0d5d
+# 2d7a9e111baf43c382d72f94b84b75db
 #: ../../schema/guidance/identifiers.rst:4
 msgid "Real world identifiers"
-msgstr ""
+msgstr "Identificadores del mundo real"
 
-# f05ac107cb7c4004aa53363fce498b37
+# 4b6bf2b456a248fba83b2b8152ec7629
 #: ../../schema/guidance/identifiers.rst:6
 msgid ""
 "To create a link between statements, and the real-world organisations and "
@@ -30,34 +35,48 @@ msgid ""
 "information. We use a common :any:`Identifier object <schema-identifier>` "
 "with the following properties:"
 msgstr ""
+"A fin de crear un vínculo entre las declaraciones, y las personas y "
+"organizaciones del mundo real con las que se relacionan, las declaraciones "
+"pueden incluir una variedad de datos identificatorios. Utilizamos un "
+":any:`objeto Identificador <schema-identifier>` común con las siguientes "
+"propiedades:"
 
-# 4c4399dccc23400ab8133d6b8833de2d
+# f200524940444d5c836068b91c273cce
 #: ../../schema/guidance/identifiers.rst:8
 msgid ""
 "``scheme`` should be a value from a codelist of known identifier sources. "
 "Separate codelists exist for entities and persons. See below."
 msgstr ""
+"``esquema`` debería ser un valor procedente de una lista de códigos de "
+"fuentes identificadoras conocidas. Existen listas de códigos separadas para "
+"entidades y personas. Véase más abajo."
 
-# ec81c5f22f174e5fa604991e53dd7738
+# 6d1a5a4a0e334d49ac08fe9683698e74
 #: ../../schema/guidance/identifiers.rst:10
 msgid ""
 "``id`` should be the value assigned to the relevant entity or person in that"
 " scheme."
 msgstr ""
+"``identificación`` debería ser el valor asignado a la entidad o persona "
+"pertinente en ese esquema."
 
-# b4eb405b2a2f46ffb5377c8fa1820a6f
+# bc018e4aef7743e382dc5d2a050bf5cd
 #: ../../schema/guidance/identifiers.rst:12
 msgid ""
 "``uri`` may be used to provide a canonical URI for the entity or person "
 "within the scheme."
 msgstr ""
+"``uri`` puede utilizarse para proporcionar un URI canónico para la entidad o"
+" persona dentro del esquema."
 
-# 6e32acd5b4e64beeab2967878fe1c38b
+# 5ed53f96b82140cd9fcb5fe0e04a1829
 #: ../../schema/guidance/identifiers.rst:14
 msgid "``schemeName`` should be the name of the list, registry or ID system."
 msgstr ""
+"``nombreDelEsquema`` debería ser el nombre de la lista, registro o sistema "
+"de identificación."
 
-# 3443019db51c436491129b83fceaf74b
+# d6868629ebae4122bde2f28cacc4df5d
 #: ../../schema/guidance/identifiers.rst:16
 msgid ""
 "A good-quality Identifier will contain ``scheme`` and ``id`` values which "
@@ -66,47 +85,60 @@ msgid ""
 "person or entity is known to be represented. When publishing an Identifier "
 "object, a value for either ``scheme`` or ``schemeName`` MUST be present."
 msgstr ""
+"Un Identificador de buena calidad contiene valores de ``esquema`` e "
+"``identificación`` que sirven para identificar de manera única a una entidad"
+" o persona. Cuando no se dispone de ellos, se puede utilizar "
+"``nombreDelEsquema`` para referirse al sistema de inscripción en el que se "
+"sabe que la persona o entidad está representada. Cuando se publica un objeto"
+" Identificador, DEBE haber un valor ya sea para ``esquema`` o "
+"``nombreDelEsquema``."
 
-# fbd5c6ef56d34ab1b0e243b11275614a
+# 8e012cd7e4a6467e8c641685cc49a7d1
 #: ../../schema/guidance/identifiers.rst:20
 msgid "Multiple Identifiers"
-msgstr ""
+msgstr "Identificadores múltiples"
 
-# 5e6eed78f6134c70942d426525030e01
+# 4ceca580ffc342d0afa5349596668cf2
 #: ../../schema/guidance/identifiers.rst:22
 msgid ""
 "A source system might hold the following identifying information for a "
 "single company:"
 msgstr ""
+"Un sistema fuente podría contener la siguiente información identificatoria "
+"correspondiente a una misma empresa:"
 
-# 87e562e015cc48e69279bc4bcee727af
+# 72f269320873494abe8c06f0dad712b6
 #: ../../schema/guidance/identifiers.rst:24
 msgid "A registered company number; and"
-msgstr ""
+msgstr "Un número de registro de la empresa; y"
 
-# 0a7e2c73415c4928afadd994576d0e1b
+# f7c77843620342bf806de97d0ce83341
 #: ../../schema/guidance/identifiers.rst:25
 msgid "A VAT number;"
-msgstr ""
+msgstr "Un número de IVA;"
 
-# 98ea717950c246a68094fa1bf5cdd892
+# 4c412336b0fb4bd4b4ba2cbb08e075a9
 #: ../../schema/guidance/identifiers.rst:27
 msgid ""
 "In this case, two entries can be created in the Entity statement's "
 "``identifiers`` array:"
 msgstr ""
+"En este caso, se pueden crear dos entradas en el arreglo ``identificadores``"
+" de la declaración sobre la entidad:"
 
-# 17e6cc3205e34a1f9800bea912f2758a
+# aca10d1a5fe246218acf7dcc408e2c3f
 #: ../../schema/guidance/identifiers.rst:42
 msgid "Person Statements may also hold an array of Identifiers."
 msgstr ""
+"Las Declaraciones sobre Personas también pueden contener un arreglo de "
+"Identificadores."
 
-# f47494fcb64d44ec84c980d0e9c2b762
+# 13de833147e840e7b38f3c8509d4aaee
 #: ../../schema/guidance/identifiers.rst:46
 msgid "Entity Identifiers"
-msgstr ""
+msgstr "Identificadores de Entidades"
 
-# 38b72f34330f4c28baeeb9214baa5e63
+# 0abab27ba5104b9fbee16d7b17e32e51
 #: ../../schema/guidance/identifiers.rst:48
 msgid ""
 "The values for ``scheme`` within an Entity Statement Identifier should be "
@@ -114,45 +146,54 @@ msgid ""
 "contains details of hundreds of company registers and other identifier "
 "sources."
 msgstr ""
+"Los valores de ``esquema`` dentro de un Identificador de Declaración sobre "
+"Entidad deberían tomarse de la lista de códigos `http://org-id.guide <http"
+"://org-id.guide>`_. Ésta contiene detalles sobre cientos de registros de "
+"empresas y otras fuentes de identificación."
 
-# 16112e928cc649838cf4f317103ad8fd
+# dd466e85bca8483d9e56bbd721ed3e87
 #: ../../schema/guidance/identifiers.rst:50
 msgid ""
 "Where the publisher is providing an internal identifier, the publisher "
 "should either:"
-msgstr ""
+msgstr "Si proporciona un identificador interno, el publicador debería:"
 
-# 76c23e0206e0464d8773961ced419aab
+# 7e9fbd751482473a8b126c0229a2eda8
 #: ../../schema/guidance/identifiers.rst:52
 msgid ""
 "Publish their full list of internal identifiers, and register this list with"
 " the `http://org-id.guide <http://org-id.guide>`_ codelist; or"
 msgstr ""
+"Publicar su lista completa de identificadores internos y registrarla en la "
+"lista de códigos `http://org-id.guide <http://org-id.guide>`__; o bien"
 
-# 54632e6a43e044f78f7f90efc046a7e3
+# 8e705ec020b845ee8677b4cf009c0aa6
 #: ../../schema/guidance/identifiers.rst:53
 msgid "Use MISC-{Publisher_Name} as the scheme"
-msgstr ""
+msgstr "Usar MISC-{Nombre_del_publicador} como esquema"
 
-# bca849463d9f4e7fbe79cfc6d9dd334c
+# f32779d296114481823f02a8c39d8e18
 #: ../../schema/guidance/identifiers.rst:57
 msgid "Person Identifiers"
-msgstr ""
+msgstr "Identificadores de Personas"
 
-# 19cd399eb3324195af97e486b2b47a36
+# 1fe73c263b6e4dc49229bbcf23d2b0a3
 #: ../../schema/guidance/identifiers.rst:60
 msgid "System Identifiers"
-msgstr ""
+msgstr "Identificadores de Sistemas"
 
-# dc2ace8efc3a43549ad7744c900bc98d
+# fcc33ee7a81d422a84402c1e9511f8f1
 #: ../../schema/guidance/identifiers.rst:62
 msgid ""
 "If the source system has assigned a unique identifier to individual persons,"
 " and this identifier can be published, then this should be included with the"
 " scheme 'MISC-{Publisher Name}'."
 msgstr ""
+"Si el sistema fuente ha asignado un identificador único a personas "
+"individuales, y este identificador puede publicarse, entonces se lo debería "
+"incluir con el esquema \"MISC-{Nombre del Publicador}\"."
 
-# fc4e002526644812ab4cf5d4d94d054d
+# de27f7e1044445e88bee188a7618ef63
 #: ../../schema/guidance/identifiers.rst:64
 msgid ""
 "For example, a beneficial ownership reporting system may maintain a database"
@@ -161,13 +202,20 @@ msgid ""
 " statements, this identifier should be included in the published data, "
 "either in raw form, or modified to ensure a unique value."
 msgstr ""
+"Por ejemplo, un sistema de presentación de información sobre beneficiarios "
+"finales puede tener una tabla de base de datos con información de "
+"\"personas\", cada una con su identificador como clave primaria. Para que "
+"los usuarios puedan reconocer las referencias a una misma persona mencionada"
+" en declaraciones separadas, este identificador debería incluirse en los "
+"datos publicados, ya sea sin procesar, o bien modificado para garantizar un "
+"valor único."
 
-# 062ac330ccf14ac09089ad5df8c8037e
+# 2de88903983143d598c449ef266bbfdd
 #: ../../schema/guidance/identifiers.rst:68
 msgid "Shared identifiers"
-msgstr ""
+msgstr "Identificadores compartidos"
 
-# bc0a13d296bd467c9292fac29b244d1e
+# 949a75f9036742658449600ad9485d5a
 #: ../../schema/guidance/identifiers.rst:70
 msgid ""
 "If the source system has collected one or more known identification numbers "
@@ -175,20 +223,26 @@ msgid ""
 "then these should also be included in the ``PersonStatement.identifiers`` "
 "array."
 msgstr ""
+"Si el sistema fuente ha recopilado uno o más números de identificación "
+"conocidos de una persona y estos pueden publicarse sin riesgos en cuanto a "
+"su privacidad o seguridad, entonces también deberían incluirse en el arreglo"
+" ``DeclaraciónSobrePersona.identificadores``."
 
-# 02b258819fb84c4d9347bb92d411e179
+# 9dcb0929590f4147adb93872fc381a07
 #: ../../schema/guidance/identifiers.rst:72
 msgid ""
 "In such cases, the values for ``scheme`` should be based on the following "
 "pattern:"
 msgstr ""
+"En dichos casos, los valores de ``esquema`` deberían basarse en el siguiente"
+" patrón:"
 
-# 5f370011de0c4568898dce5d51b2db27
+# 786295b4c9954807b0e50079477d03a6
 #: ../../schema/guidance/identifiers.rst:74
 msgid "{JURISDICTION}-{TYPE}"
-msgstr ""
+msgstr "{JURISDICCIÓN}-{TIPO}"
 
-# fc4a39b8d2c74844bc4648f3daf6cc63
+# 97509423a9064378b1af01e75ef94f7c
 #: ../../schema/guidance/identifiers.rst:76
 msgid ""
 "Where jurisdiction is expressed using the extended ISO 3-digit country codes"
@@ -196,53 +250,69 @@ msgid ""
 "<http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_ (pages "
 "22-29)."
 msgstr ""
+"En donde la jurisdicción se expresa usando la lista ampliada de códigos de "
+"país ISO de 3 dígitos propuesta en el `Documento 9303 §5 de la OACI "
+"<https://www.icao.int/publications/Documents/9303_p3_cons_es.pdf>`_ (páginas"
+" 22-29)."
 
-# 6ec3dee2f2d44754afcdb39c93739317
+# 31743706d8454aaf934613231fb9cff2
 #: ../../schema/guidance/identifiers.rst:78
 msgid "For example, a passport number from Afghanistan would have the scheme:"
-msgstr ""
+msgstr "Por ejemplo, un número de pasaporte de Afganistán tendría el esquema:"
 
-# a2c4bb68c6ca40ba9fc88c1c8a615aeb
+# ee4c6532a25c49cfa675ad75df5466a5
 #: ../../schema/guidance/identifiers.rst:80
 msgid "> AFG-PASSPORT-{NUMBER}"
-msgstr ""
+msgstr "> AFG-PASAPORTE-{NÚMERO}"
 
-# 44c76bab80d740caa298ffe809211d9d
+# 5c57537ed26246d8bd1cd8afd113f5ab
 #: ../../schema/guidance/identifiers.rst:82
 msgid ""
 "Where the publisher is providing an internal identifier, these should use "
 "'MISC-{Publisher_Name}' as the scheme."
 msgstr ""
+"Si el publicador proporciona un identificador interno, debería utilizarse "
+"\"MISC-{Nombre_del_Publicador}\" como esquema."
 
-# 224097563234458ca729ee9b96ec8b04
+# f7d5a3e86b8b4e7e82f227dcad06c26c
 #: ../../schema/guidance/identifiers.rst:86
 msgid ""
 "When using BODS to provide open data, it is important to ensure any person "
 "identifiers are suitable for publication under national laws and data "
 "protection frameworks."
 msgstr ""
+"Cuando se utiliza el BODS para proporcionar datos abiertos, es importante "
+"asegurarse de que los identificadores de la persona sean aptos para su "
+"publicación conforme a las leyes nacionales y a los marcos de protección de "
+"datos."
 
-# 3d5d94203dc6417d8892028a9961b49c
+# cd14d6d48d5d417bac9a34ac617ab259
 #: ../../schema/guidance/identifiers.rst:88
 msgid ""
 "Most of the identifier types listed below **are not** suitable for "
 "publication as part of an open dataset."
 msgstr ""
+"La mayoría de los tipos de identificadores enumerados más abajo **no son** "
+"aptos para su publicación como parte de un conjunto de datos abiertos."
 
-# 23550bcbb14e44519ab56842fbb18ac1
+# 9bb5336a951a4ea2b1420b2a07c397ad
 #: ../../schema/guidance/identifiers.rst:91
 msgid ""
 "The following identification types are currently documented. Suggestions for"
 " new types should be made through the `issue tracker "
 "<https://github.com/openownership/data-standard/issues>`_."
 msgstr ""
+"Los siguientes tipos de identificación se encuentran actualmente "
+"documentados. Las eventuales propuestas de nuevos tipos deberían hacerse por"
+" medio de la `herramienta de seguimiento de incidencias "
+"<https://github.com/openownership/data-standard/issues>`_."
 
-# 729f61330cf94fa8ad6808c1c106b7fa
+# c7384f7bb9bc41959acc966bb508e90d
 #: ../../schema/guidance/identifiers.rst:94
 msgid "PASSPORT"
-msgstr ""
+msgstr "PASAPORTE"
 
-# e1c2576cbb8f4120bfb6d81242b2367f
+# f48d320265c741f3bb02c62db634f289
 #: ../../schema/guidance/identifiers.rst:96
 msgid ""
 "Passport numbers should follow the format of the identifier (second) line in"
@@ -250,37 +320,52 @@ msgid ""
 "<http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) "
 "including at least the document number."
 msgstr ""
+"Los números de pasaporte deberían seguir el formato de la (segunda) línea de"
+" identificación en un pasaporte legible por medios informáticos (consulte el"
+" `Apéndice B de la Parte 4 del Documento 9303 de la OACI "
+"<https://www.icao.int/publications/Documents/9303_p4_cons_es.pdf>`_) que "
+"incluya al menos el número del documento."
 
-# 82293767ad584823a3371c0be6a7d879
+# 658a87daf97745818e6d787580d42697
 #: ../../schema/guidance/identifiers.rst:98
 msgid ""
 "Parsers should be able to extract the document number from the first 9 "
 "characters, and to access any subsequent information supplied according to "
 "the ICAO format."
 msgstr ""
+"Los analizadores estructurales deberían ser capaces de extraer el número del"
+" documento de los primeros 9 caracteres y de acceder a toda información "
+"adicional suministrada de acuerdo con el formato de la OACI."
 
-# e706fe310fbb43038d8185591d936b55
+# 10d7d2c242bd48f9a421a4034c533bc0
 #: ../../schema/guidance/identifiers.rst:101
 msgid "TAXID"
-msgstr ""
+msgstr "IDENTIFICADOR TRIBUTARIO"
 
-# 625562789e524f3d9858c045ad4afc76
+# 2bf5c3f8255146bdbca742b96afc3152
 #: ../../schema/guidance/identifiers.rst:103
 msgid ""
 "Country taxpayer identification systems vary. Where specific guidance on "
 "including numbers from a particular jurisdiction is required, this may be "
 "included here in future."
 msgstr ""
+"Los sistemas de identificación de contribuyentes de cada país son "
+"diferentes. De ser necesaria orientación específica sobre la inclusión de "
+"los números de una jurisdicción determinada, puede que se la incluya aquí en"
+" el futuro."
 
-# c773d1e3b0fa4e8b83cd4fadfc41325c
+# 13b4cb1645104d6f881f9b6361286073
 #: ../../schema/guidance/identifiers.rst:106
 msgid "IDCARD"
-msgstr ""
+msgstr "TARJETA DE IDENTIDAD"
 
-# 727661b654ae41cdb4839f42dea3ccb1
+# 6f33b100b3c9404db5c01f729d20ae13
 #: ../../schema/guidance/identifiers.rst:108
 msgid ""
 "Country ID card systems vary. Where specific guidance on including numbers "
 "from a particular jurisdiction is required, this may be included here in "
 "future."
 msgstr ""
+"Los sistemas de tarjetas de identidad de cada país son diferentes. De ser "
+"necesaria orientación específica sobre la inclusión de los números de una "
+"jurisdicción determinada, puede que se la incluya aquí en el futuro."

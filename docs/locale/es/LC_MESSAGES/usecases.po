@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,103 +22,113 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# af72c825b2374695a89553f7b6466aa5
+# 720e4a2be1f14cd8aeae6b0691b57d42
 #: ../../usecases.rst:2
 msgid "Use cases"
-msgstr ""
+msgstr "Casos de uso"
 
-# ffaf75278ab845d3a760d0c04771e853
+# 5b8ff4eb63a1419a96089d787591073a
 #: ../../usecases.rst:4
 msgid ""
 "The Beneficial Ownership Data Standard beta has been designed with reference"
 " to the requirements of eight use-cases:"
 msgstr ""
+"La versión beta del Estándar de Datos sobre Beneficiarios Finales ha sido "
+"diseñada en relación con los requisitos de ocho casos de uso:"
 
-# 9e4f38e435e041b68e93966e26e59526
-# b0e1ac91f24d4598b991e43e35a4c301
+# c616cd7fc1324b7ca5aa9ae1b6eb60bd
+# 17b39870f262419ba5f58b06a06c4e53
 #: ../../usecases.rst:7 ../../usecases.rst:30
 msgid "Data supply"
-msgstr ""
+msgstr "Suministro de datos"
 
-# 8ee22dad205d4af29a1ec69cc9f10781
+# 3f0b9544e84242d9a6b7936c2283c117
 #: ../../usecases.rst:8
 msgid "Public Registers of Beneficial Ownership"
-msgstr ""
+msgstr "Registros públicos de Beneficiarios Finales"
 
-# 8909aa87acae4af8b6eaa81d43f2130f
+# 5323ecb41f534e04a91e698debd1ffb7
 #: ../../usecases.rst:9
 msgid "Self-submitted data"
-msgstr ""
+msgstr "Datos autopresentados"
 
-# 2b5445469faf46e3863d925f9a0a821d
+# dd3eefb761f042caa4d111de921545c9
 #: ../../usecases.rst:10
 msgid "Third-party submitted data"
-msgstr ""
+msgstr "Datos presentados por terceras partes"
 
-# 2e2144f7edb24626a9aff14e32a11cdc
+# fd1a8e13c509491c960fb30e398cc945
 #: ../../usecases.rst:11
 msgid "Self-published data"
-msgstr ""
+msgstr "Datos autopublicados"
 
-# b470cde113d647ba8343560d365a5dfa
-# dabcf77eb4e4415ca82b2cab70208b6f
+# 1b340f16b1f2478faf6b9bd00e0f0b67
+# d4e3f0c8e3da415eb98e3c07c39b6adc
 #: ../../usecases.rst:13 ../../usecases.rst:119
 msgid "Data use"
-msgstr ""
+msgstr "Uso de los datos"
 
-# 42164190f3cf47b18525eb503f1e52f7
+# 2c0fba590b704f02a421189333d01b1d
 #: ../../usecases.rst:14
 msgid "Procurement & onboarding screening and audit"
-msgstr ""
+msgstr "Auditorías y evaluaciones de contrataciones e incorporaciones"
 
-# 3b46ba9fed3244f7b60fb1a6b0ff3627
+# 5924d0fa056c4cceaf0c8f3d5e58844e
 #: ../../usecases.rst:15
 msgid "General investigations"
-msgstr ""
+msgstr "Investigaciones generales"
 
-# a3206fa8c8864032a4b1a45b82869b4c
+# 8de4c5201e0c4027ac6834ea42eb7b5c
 #: ../../usecases.rst:16
 msgid "Data-led investigations"
-msgstr ""
+msgstr "Investigaciones basadas en datos"
 
-# 8eb53855d12945d5bc63c0801bf8d22b
+# e030cdddac9d495f826b5fd616f7e556
 #: ../../usecases.rst:17
 msgid "Data validation"
-msgstr ""
+msgstr "Validación de datos"
 
-# ef52704266084cf69c56cf635e705bc8
+# 5fc4a5e1fdff46af8b3ea3f27ba9a7ee
 #: ../../usecases.rst:19
 msgid "These use cases are described below."
-msgstr ""
+msgstr "Más abajo se describen estos casos de uso."
 
-# bfa7fbab67da4759a25dce6cfc33d681
+# 329e315ef95f415492466b65ecc7a64c
 #: ../../usecases.rst:23
 msgid ""
 "A full analysis of how far the needs of these use cases are met will take "
 "place as part of progress towards a 1.0 Release Candidate of the standard."
 msgstr ""
+"Como parte de los avances hacia la versión 1.0 Candidata a Lanzamiento del "
+"estándar, se realizará un análisis completo de hasta qué punto se satisfacen"
+" las necesidades de estos casos de uso."
 
-# c21f06f1503142d68387b7275bed5d68
+# 49b3c8aa2e9a45268509cba541c43252
 #: ../../usecases.rst:25
 msgid ""
 "This page builds on the `use case consultation document "
 "<https://docs.google.com/document/d/1s1qqFAK3cDjTGAlCaQvPOb8KzKkssn9xu2HzWeY6amE/edit#>`__"
 " published in December 2016."
 msgstr ""
+"Esta página se sirve del `documento de consulta de casos de uso "
+"<https://docs.google.com/document/d/1s1qqFAK3cDjTGAlCaQvPOb8KzKkssn9xu2HzWeY6amE/edit#>`__"
+" publicado en diciembre de 2016."
 
-# 546dce1c41c848b8bd235b7e42609b7e
+# c9861e2adfe047b28a1df9a49c6241e0
 #: ../../usecases.rst:32
 msgid ""
 "*The following cases sketch out ways in which open beneficial ownership data"
 " might be published.*"
 msgstr ""
+"*Los siguientes casos esbozan distintas maneras en que podrían publicarse "
+"datos abiertos sobre beneficiarios finales.*"
 
-# e8363e3339374638b155565a52c8a5d7
+# b81e9c70f13245b9bc6db9e9e6b09351
 #: ../../usecases.rst:36
 msgid "S1: Public Registers of Beneficial Ownership"
-msgstr ""
+msgstr "S1: Registros Públicos de Beneficiarios Finales"
 
-# 109a32bb03214b3bb00b0de40d6ffafc
+# d6840e1d56b94f23a35adad041080001
 #: ../../usecases.rst:38
 msgid ""
 "A government or other body creating a public register of beneficial "
@@ -121,24 +136,34 @@ msgid ""
 "draw on and re-use. This may include publishing bulk data, or providing an "
 "API on the data."
 msgstr ""
+"Un gobierno u otro ente involucrado en la creación de un registro público de"
+" beneficiarios finales podría tener interés en publicar esa información como"
+" datos abiertos que otros puedan aprovechar y reutilizar. Ello podría "
+"incluir el publicar datos en bloque o proporcionar una API sobre los datos."
 
-# 56c35f7fbc214a2896d129b86717e637
+# a3a90d65dceb41789b6edeea288b816b
 #: ../../usecases.rst:43
 msgid ""
 "The data that the register should contain is likely to be determined by "
 "national legislation, and there may be existing national guidance on how to "
 "develop open data services or APIs."
 msgstr ""
+"Es probable que la legislación nacional determine los datos que debería "
+"contener el registro, y puede ser que existan pautas orientadoras nacionales"
+" sobre cómo desarrollar servicios de datos abiertos o una API."
 
-# c5c26fcb36294e8ba87febbcbdd3a7fc
+# 37c4e89b0d1e4c3d9e3b5b2def70d47a
 #: ../../usecases.rst:47
 msgid ""
 "Organisations building a register may also be interested in using the "
 "standard to help design their internal data models and data collection "
 "processes."
 msgstr ""
+"A las organizaciones involucradas en la creación de un registro también "
+"podría interesarles utilizar el estándar como ayuda para el diseño de sus "
+"procesos de recopilación de datos y sus modelos de datos internos."
 
-# 372767c972ea4d25a2999da260ccbcb8
+# 9235f0fb6ef242e486315b8a18d6d271
 #: ../../usecases.rst:51
 msgid ""
 "Possible examples of this case may include the UK Register of Persons of "
@@ -146,20 +171,28 @@ msgid ""
 "register of beneficial ownership in France, and sector-specific registers "
 "from the Extractives Industry Transparency Initiative."
 msgstr ""
+"Como posibles ejemplos de este caso, cabe citar el Registro de Personas con "
+"Control Significativo del Reino Unido, el Registro de Beneficiarios Finales "
+"de Ucrania, el registro de beneficiarios finales previsto en Francia, y los "
+"registros de sectores específicos de la Iniciativa para la Transparencia de "
+"las Industrias Extractivas."
 
-# 7269c89d713548dfa2bbd87581b7ee66
+# 3de458a46b63474a817828172169e9a8
 #: ../../usecases.rst:57
 msgid "S2: Self-submitted data"
-msgstr ""
+msgstr "S2: Datos autopresentados"
 
-# 656851d6891b4dbe8d6d6c2361d4c172
+# a21bd2cd8e4d438e882dfea4a9310874
 #: ../../usecases.rst:59
 msgid ""
 "An individual or an organisation may make use of online tools to self-report"
 " beneficial ownership information."
 msgstr ""
+"Un individuo o una organización puede utilizar herramientas en línea para "
+"declarar información sobre sí misma relativa al carácter de beneficiario "
+"final."
 
-# 3ae73a0744fb45598f1550294ba4d810
+# 599b1a5b9f8b4b17a9f9b9c8354bf45b
 #: ../../usecases.rst:62
 msgid ""
 "For example, `Who Controls It <http://alpha.whocontrolsit.com/>`__ was a "
@@ -168,29 +201,43 @@ msgid ""
 " of beneficial ownership data, allowing users to declare their own ownership"
 " of a company, or to report on the ownership structure of a company."
 msgstr ""
+"Por ejemplo, `Who Controls It <http://alpha.whocontrolsit.com/>`__ era una "
+"prueba de concepto de una plataforma sobre beneficiarios finales (precursora"
+" de OpenOwnership.org), diseñada para someter a prueba algunas cuestiones de"
+" la interfaz de usuario en la presentación de datos sobre beneficiarios "
+"finales, que permitía a los usuarios declarar su condición de propietarios "
+"de una empresa, o informar sobre la estructura de titularidad de una "
+"empresa."
 
-# bdd25ff68bc44648aaedcc581e1a57fe
+# 38464c4e0f994b37b1252b9b8b24c2c5
 #: ../../usecases.rst:69
 msgid ""
 "There are many complex cases a comprehensive system should be able to deal "
 "with, including:"
 msgstr ""
+"Hay muchos casos complejos de los que un sistema integral debería ser capaz "
+"de encargarse, entre ellos:"
 
-# c62828f42eac43068af00b75b904eb1d
+# ef0796ced98d4e1a9f7ab5811fef016a
 #: ../../usecases.rst:72
 msgid ""
 "Recording economics interests, but without control (e.g. 1% of a mining "
 "company, which may be valuable, but give little shareholder power);"
 msgstr ""
+"Registrar las participaciones económicas, pero sin control (p. ej. el 1 % de"
+" una empresa minera, que puede ser valioso, pero otorgar poco poder de "
+"accionista);"
 
-# 1d37bf95048840938396e90d9a91b197
+# c9d2d8f4a45f45b9968fb71707aea283
 #: ../../usecases.rst:76
 msgid ""
 "Mutual funds, that separate control (the fund manager) from the economic "
 "interest (the entities that put the money in);"
 msgstr ""
+"Fondos mutuos, que separan el control (el administrador del fondo) de la "
+"participación económica (las entidades que aportan el dinero);"
 
-# 438be6c96c134847845bf8a611a582f7
+# b6b8d0fbc5a147e1b22f35b746ff4fa1
 #: ../../usecases.rst:79
 msgid ""
 "`Bonds, preference shares and other investments "
@@ -198,53 +245,71 @@ msgid ""
 "give control, but do give economic interests. Note that sometimes they may "
 "have *some* control, such as veto rights, e.g. over mergers or asset sales;"
 msgstr ""
+"`Bonos, acciones preferentes y otras inversiones "
+"<http://www.investopedia.com/terms/p/preference-shares.asp>`__ que no "
+"otorgan control, pero sí participaciones económicas. Nótese que a veces "
+"pueden conllevar *algún* control, tal como derechos de veto, p. ej. sobre "
+"fusiones o ventas de activos;"
 
-# fdae1204000148bca4c954f4fbee4f67
+# 45b6c206acfc4134b7f8009fb962624b
 #: ../../usecases.rst:85
 msgid ""
 "Control via nominees, particularly when a nominee may act for a number of "
 "different parties in control of the same company;"
 msgstr ""
+"Control a través de testaferros, en particular cuando un testaferro puede "
+"representar los intereses de distintas partes que controlan una misma "
+"empresa;"
 
-# e30bea18558949dfbabe6f9979071072
+# c4395f3bdd224e5ebc213c1007d1b0bc
 #: ../../usecases.rst:88
 msgid "Contractual control limited to a particular set of circumstances."
 msgstr ""
+"Control de naturaleza contractual limitado a un conjunto específico de "
+"circunstancias."
 
-# b5550417dce7418e9a7c71b6e29e7a65
+# 473e3b17bb654192a81864fcc95a0285
 #: ../../usecases.rst:90
 msgid ""
 "The designers of systems capturing self-submitted data may want to use the "
 "standard to express the data they have already collected, and to plan the "
 "collection of other data in future."
 msgstr ""
+"Los diseñadores de sistemas que registran datos autopresentados podría tener"
+" interés en utilizar el estándar para volcar los datos que ya han reunido, y"
+" para planificar la recopilación de otros datos en el futuro."
 
-# c6526c7dc1d84b199dc0e7a360cec2b8
+# 29bb919ca3a0440ca236db4051808a31
 #: ../../usecases.rst:95
 msgid "S3: Third-party submitted data"
-msgstr ""
+msgstr "S3: Datos presentados por terceras partes"
 
-# 586c5a5c25cf4b63b51db302053c8ee7
+# ab9c1ee3f6574b0fb9b38c0f147be5ff
 #: ../../usecases.rst:97
 msgid ""
 "Researchers, journalists or corporate information services may use filings, "
 "reports and other materials to build up structured data about beneficial "
 "ownership."
 msgstr ""
+"Los investigadores, periodistas o servicios de información corporativa "
+"pueden recurrir a información presentada oficialmente, informes y demás "
+"materiales para generar datos estructurados sobre beneficiarios finales."
 
-# 65238ef3c830443a8f715f4bbb0f6a5b
+# 3a9f402845c74836bfe0a9074527afdf
 #: ../../usecases.rst:101
 msgid ""
 "They may wish to share this data for others to re-use, but with suitable "
 "caveats about the sourcing of the data."
 msgstr ""
+"Podría interesarles compartir estos datos para que otros los reutilicen, "
+"pero advirtiendo adecuadamente sobre la procedencia de los datos."
 
-# 3bf375d4161c4e669f5fc8ce93ef66df
+# c6a099d67287481490210a3bee2b2487
 #: ../../usecases.rst:105
 msgid "S4: Self-published data"
-msgstr ""
+msgstr "S4: Datos autopublicados"
 
-# 8e356dc62ee842afbcccd55a07b6ee25
+# 04cf787e7ff1489aaa9baf38cdca57c5
 #: ../../usecases.rst:107
 msgid ""
 "Companies may wish to publish structured data about their own beneficial "
@@ -254,28 +319,41 @@ msgid ""
 "systems, so would want the data to be able to be read directly into "
 "platforms like OpenOwnership."
 msgstr ""
+"Las empresas podrían tener interés en publicar datos estructurados en sus "
+"propios sitios web acerca de sus propios beneficiarios finales. Podría ser "
+"el caso que estos datos hayan sido purgados manualmente, o que provengan de "
+"sistemas de información internos. Podría interesarles hacerlo para evitar "
+"tener que encargarse del ingreso manual de la información en diferentes "
+"sistemas, por lo que preferirían que los datos pudieran ser leídos "
+"directamente en plataformas como OpenOwnership."
 
-# ce6cbadeb61146e59e9ba2683fe77fca
+# b3f77de0eee2443c8a0c7be54cf4217d
 #: ../../usecases.rst:114
 msgid ""
 "The data may be periodically updated at a single URL, or have regular "
 "releases of data published as part of an annual reporting process, each time"
 " at a new URL."
 msgstr ""
+"Los datos pueden actualizarse periódicamente en un solo URL, o bien "
+"publicarse regularmente como parte de un proceso anual de presentación de "
+"información, utilizando un nuevo URL en cada ocasión."
 
-# 013fbf2f3c514c22affca4890f9f6320
+# 35c302f6e1f042738c680e89178b52cf
 #: ../../usecases.rst:121
 msgid ""
 "*The following cases look at different ways in which stakeholders may wish "
 "to make use of beneficial ownership data.*"
 msgstr ""
+"*Los siguientes casos presentan diferentes formas en las que a las partes "
+"interesadas podría interesarles hacer uso de los datos sobre beneficiarios "
+"finales.*"
 
-# 7d1c212f22bd47f39b549bed5cf399bd
+# ac793cb1d2e2442e9523f2cf43b4b9c9
 #: ../../usecases.rst:125
 msgid "U1: Procurement & onboarding screening and audit"
-msgstr ""
+msgstr "U1: Auditorías y evaluaciones de contrataciones e incorporaciones"
 
-# 99fe18bcdf164fbda4f3b20bca122600
+# 59671f0dc1c746f4aac54c5fe2b444ed
 #: ../../usecases.rst:127
 msgid ""
 "There are a variety of cases related to onboarding, by which we mean the "
@@ -287,8 +365,18 @@ msgid ""
 "breaches, etc.), and so they need to understand about the entity being "
 "onboarded."
 msgstr ""
+"Existe una variedad de casos relacionados con la labor de incorporación, "
+"entendiendo por ello el proceso de establecer relaciones con nuevos socios: "
+"por lo general, clientes o proveedores nuevos (pero también socios de "
+"empresas conjuntas, licenciatarios, fusiones y adquisiciones, etc.). Cada "
+"una de estas nuevas relaciones expone a la entidad incorporante (p. ej. "
+"gobiernos, bancos, empresas multinacionales, etc.) a determinados riesgos "
+"(p. ej. riesgos financieros, riesgos reputacionales, riesgos relativos a la "
+"Ley sobre Prácticas Corruptas en el Extranjero (FCPA)/Ley sobre Sobornos , "
+"violaciones de sanciones, etc.), por lo cual necesitan entender la entidad "
+"que se incorpora."
 
-# 62b995ce5ff94c80a46d0518eed798bd
+# eef3dbf8a1834eaa980cc7c6cbf7cbed
 #: ../../usecases.rst:136
 msgid ""
 "Information of ownership and control is typically collected by onboarding "
@@ -303,8 +391,21 @@ msgid ""
 "call typically determines whether new partnerships or transactions meet the "
 "policy requirements of the business."
 msgstr ""
+"Las entidades incorporantes suelen recopilar información sobre la "
+"titularidad y el control, y luego evalúan la validez de la información "
+"proporcionada mediante una verificación cruzada con datos complementarios "
+"disponibles en fuentes abiertas. En las transacciones de alto valor/alto "
+"riesgo, se suele recurrir a terceros para apoyar los procesos de debida "
+"diligencia. Las entidades incorporantes buscan señales de alerta (p. ej. si "
+"la empresa está vinculada a personas expuestas políticamente o si tiene una "
+"imagen negativa en los medios de comunicación) y sentirse confiadas de que "
+"no hay señales de alerta que se les hayan pasado por alto (p. ej. que un "
+"beneficiario final esté vinculada con una empresa incluida en una lista de "
+"sanciones). Tras una evaluación de riesgos, normalmente se adopta una "
+"determinación con criterio donde se resuelve si las nuevas alianzas o "
+"transacciones cumplen o no los requisitos de la política de la empresa."
 
-# 526dedaae86542ab84547a5fd5ed40f4
+# 0f8f2e4429de4fa7865009b6662eb4ba
 #: ../../usecases.rst:148
 msgid ""
 "As part of an onboarding process, beneficial ownership information might be "
@@ -313,8 +414,13 @@ msgid ""
 "each piece of information given from a beneficial ownership dataset will be "
 "important."
 msgstr ""
+"En un proceso de incorporación, la información sobre beneficiarios finales "
+"podría integrarse junto con otros sistemas e información sobre \"Conocer al "
+"propio cliente\". En algunos casos, será importante tener acceso a pruebas "
+"documentales que respalden cada información proporcionada a partir de un "
+"conjunto de datos de beneficiarios finales."
 
-# 2de494655067452a83727c094ff25650
+# fc77f948f75244999e9c66ef6bc0272a
 #: ../../usecases.rst:154
 msgid ""
 "Example user story: *A procurement officer at a multilateral development "
@@ -322,52 +428,68 @@ msgid ""
 "that the company is not on sanctions lists, that the ‘beneficial owners’ are"
 " not PEPs, and that they are not on debarment lists.*"
 msgstr ""
+"Ejemplo de historia de un usuario: *Un encargado de contrataciones de un "
+"banco multilateral de desarrollo tiene que aprobar la solicitud de un nuevo "
+"proveedor. Debe asegurarse de que esa empresa no figure en listas de "
+"sanciones, que los \"beneficiarios finales\" no sean PEP, y que no estén en "
+"listas de sujetos inhabilitados*."
 
-# d2824a0ba1d64e68a52cd2f0a541300f
+# 900736b34ed0431382b1313823aaf464
 #: ../../usecases.rst:160
 msgid "U2: General investigations"
-msgstr ""
+msgstr "U2: Investigaciones generales"
 
-# 1fc0bb0d89fd4d12a8c31ab7db3219c0
+# 619e59c9fec84b9992bfeaea5a19e0d0
 #: ../../usecases.rst:162
 msgid ""
 "There are a number of parties that need to investigate specific companies or"
 " individuals (as opposed to doing data-led investigations/mappings)."
 msgstr ""
+"Existen diversas partes que necesitan investigar a empresas o individuos "
+"específicos (en lugar de hacer mapeos/investigaciones con base en datos)."
 
-# 3933fe74581544dbbcb7ee9ae6eb4f80
+# afca0a35e2224a17a8b512ff58521393
 #: ../../usecases.rst:166
 msgid "These include:"
-msgstr ""
+msgstr "Podemos mencionar a las siguientes:"
 
-# 7f492ce4be1849f7bf1f469e73bb8122
+# 807018c8f32c49b3b1f04388bac68fdc
 #: ../../usecases.rst:168
 msgid ""
 "**Journalists** - researching stories on a particular company, individual or"
 " group of companies"
 msgstr ""
+"**Periodistas** que investigan historias sobre una empresa, individuo o "
+"grupo de empresas en particular"
 
-# 304ae755108c49c5aa07e06de6298f46
+# 0410846930d2499289254f4938084263
 #: ../../usecases.rst:171
 msgid "**NGO anti-corruption investigation** - finding leads, following them"
 msgstr ""
+"**Investigación sobre corrupción por parte de una ONG** con el objeto de "
+"encontrar pistas y seguirlas"
 
-# 958590d0060146d8a9c6b02e38b382c9
+# 043ec7f1aad540088d4f8a2557a5cd9f
 #: ../../usecases.rst:173
 msgid ""
 "**Law enforcement** - looking to establish a clear evidence base, and "
 "seeking to establish proof of intent"
 msgstr ""
+"**Organismos de la fuerza pública**, en busca de conformar una base "
+"probatoria clara y acreditar la intencionalidad"
 
-# 8fdbbd567e424a6c9c0ed089d38fdf98
+# 137b3b24789644de90824b34d04dbb5b
 #: ../../usecases.rst:176
 msgid ""
 "**Asset recovery** - recovering money/assets that are due to a client, for "
 "example Stolen Assets, proceeds of fraud, or assets hidden in divorce "
 "settlements"
 msgstr ""
+"**Recuperación de activos**, a fin de recuperar dinero/activos que le "
+"corresponden a un cliente: por ejemplo, bienes robados, lo producido "
+"mediante acciones fraudulentas, o bienes ocultos en acuerdos de divorcio."
 
-# c7f85db5f6cf4c188cd48488e80677f4
+# 329cbfff76f2434f9bf949cb683a9ef1
 #: ../../usecases.rst:180
 msgid ""
 "In many ways the processes around such investigations are very similar, and "
@@ -381,29 +503,47 @@ msgid ""
 "possibly all they have access to or can afford; in the case of law "
 "enforcement, lying in public proves intent)."
 msgstr ""
+"En muchos sentidos, los procesos que rodean a esas investigaciones son muy "
+"similares y dependen menos de quién hace la investigación y más de los "
+"recursos de los que disponen. Por ejemplo, algunos periodistas de "
+"investigación profesionales e incluso ONG tienen acceso a conjuntos de datos"
+" propietarios, mientras que muchos agentes de la fuerza pública no; algunos "
+"abogados encargados de la recuperación de activos pueden pedir a los "
+"tribunales que expongan datos que de otro modo estarían ocultos (por "
+"ejemplo, transacciones en dólares). Sin embargo, todos buscan pistas que "
+"puedan seguir, y en particular pistas públicas (en el caso de los "
+"periodistas, o de las ONG, esto posiblemente sea lo único a lo que tengan "
+"acceso o que puedan permitirse; en el caso de los organismos de la fuerza "
+"pública, mentir en público demuestra la intencionalidad)."
 
-# 2e92830adefc486abbb238c793c80015
+# 19d2c47b3a6c4804994ec3c53948235d
 #: ../../usecases.rst:192
 msgid ""
 "Tax and accounting investigations are similar, but may be more focused on "
 "corporate structures and direct relationships rather than indirect and "
 "ultimate relationships"
 msgstr ""
+"Las investigaciones tributarias y contables son similares, pero es posible "
+"que se centren más en las estructuras societarias y las relaciones directas "
+"que en las relaciones indirectas y últimas."
 
-# 460ccf373a894b28a6feb70c124e9b99
+# 9d88fbad268d431293833dd2bd745e9b
 #: ../../usecases.rst:196
 msgid ""
 "Example user story: *A journalist is investigating a politician including "
 "looking at known associates and companies, in both the home country and "
 "other jurisdictions.*"
 msgstr ""
+"Ejemplo de historia de un usuario: *Un periodista investiga a un político, "
+"incluidos ciertos socios y empresas conocidos, tanto en el país de origen "
+"como en otras jurisdicciones.*"
 
-# e3fa49763fe2444b91630c8a359e93d9
+# 0c69e991981f48bb95ef8f04fd005bbc
 #: ../../usecases.rst:201
 msgid "U3: Data-led investigations"
-msgstr ""
+msgstr "U3: Investigaciones basadas en datos"
 
-# 8e5d61adbb864b8f90a2c7813dc48ff5
+# 2bacc4aad15c4fbebc2bbdc56449e05b
 #: ../../usecases.rst:203
 msgid ""
 "As well as targeted and general purpose investigations, where there is a "
@@ -414,21 +554,33 @@ msgid ""
 "interest mapping), as well as mapping to similar data such as shareholder "
 "data from company registers."
 msgstr ""
+"Además de las investigaciones con objetivos específicos y generales, en las "
+"que hay la investigación presenta un propósito específico o una pista que se"
+" persigue, también hay investigaciones basadas en datos, que funcionan "
+"analizando o explorando los datos en su conjunto, o combinando los datos con"
+" otros conjuntos de datos. Ejemplos de ello serían el mapeo de los datos "
+"sobre beneficiarios finales con los datos sobre contrataciones (para relevar"
+" conflictos de intereses), así como el mapeo con otros datos similares, como"
+" los datos sobre los accionistas de los registros de las empresas."
 
-# 0ee69ab003f6482fb8de73a5778f8990
+# 0d23c5ef34cf465f8f66137db90f97da
 #: ../../usecases.rst:211
 msgid ""
 "To give an example user story: *Data journalists wish to find anomalies "
 "between beneficial ownership disclosures and other public records, to "
 "identify lies*"
 msgstr ""
+"Para poner un ejemplo de la historia de un usuario: *Los periodistas "
+"especializados en datos desean encontrar anomalías entre las divulgaciones "
+"sobre beneficiarios finales y otros registros públicos, para identificar las"
+" falsedades*."
 
-# 47015014049e45caad7913ddcf7ca1ce
+# db003890dcf84ceebc3ea060cc3ce2d0
 #: ../../usecases.rst:216
 msgid "U4: Data validation"
-msgstr ""
+msgstr "U4: Validación de datos"
 
-# fe3055d0cc374bf490bf8d186555c054
+# 2f2a5c8bc65c49cbb6602379a21e8e30
 #: ../../usecases.rst:218
 msgid ""
 "Systems collecting beneficial ownership data can benefit from checking the "
@@ -436,8 +588,13 @@ msgid ""
 "have been cases where reports under the EITI templates have not matched with"
 " reports to the UK Register of Persons with Significant Control."
 msgstr ""
+"Los sistemas que recopilan datos sobre beneficiarios finales pueden sacar "
+"provecho de comparar los datos que reciben con los de otros sistemas. Se han"
+" registrado casos en los que los informes elaborados según las plantillas "
+"del EITI no han coincidido con los informes del Registro de Personas con "
+"Control Significativo del Reino Unido. "
 
-# cf3ce662c1454819b23934e96d9aaad0
+# 1fc88113f69d484e86ee968ddbf8940f
 #: ../../usecases.rst:224
 msgid ""
 "To give an example user story: *National EITI groups may wish to check "
@@ -445,3 +602,8 @@ msgid ""
 "registers where those exist, and to be able to address inaccuracies with the"
 " reporting parties. *"
 msgstr ""
+"Para poner un ejemplo de la historia de un usuario: *Los grupos nacionales "
+"del EITI podrían tener interés en corroborar la información presentada en "
+"función de los datos de los registros nacionales de beneficiarios finales, "
+"cuando los haya, y en poder abordar las inexactitudes con las partes "
+"informantes.*"

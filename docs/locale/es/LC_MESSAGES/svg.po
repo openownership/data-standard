@@ -274,7 +274,7 @@ msgstr "JSON"
 #: docs/_assets/data-schema-model-1.svg:596
 #: docs/_assets/data-schema-model-1.svg:666
 msgid "Interest"
-msgstr "Participación en el capital"
+msgstr "Participación"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:608
@@ -301,7 +301,7 @@ msgstr "participaciones"
 #: docs/_assets/data-schema-model-3.svg:618
 #, no-wrap
 msgid "Ownership-or-control statement"
-msgstr "Declaración de titularidad o control"
+msgstr "Declaración sobre titularidad o control"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:678
@@ -324,7 +324,7 @@ msgstr "persona:  47bdf780-787d-4bfd-9205"
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:605
 msgid "interestedParty"
-msgstr "parte interesada"
+msgstr "parteInteresada"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:635
@@ -341,13 +341,13 @@ msgstr "sujeto"
 #: docs/_assets/data-schema-model-2.svg:706
 #, no-wrap
 msgid "Person statement"
-msgstr "Declaración de persona"
+msgstr "Declaración sobre persona"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:717
 #, no-wrap
 msgid "statementID:  47bdf780-787d-4bfd-9205"
-msgstr "identificación de declaración: 47bdf780-787d-4bfd-9205"
+msgstr "identificaciónDeDeclaración: 47bdf780-787d-4bfd-9205"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:722
@@ -359,19 +359,19 @@ msgstr "nombre: Roberto López"
 #: docs/_assets/data-schema-model-2.svg:727
 #, no-wrap
 msgid "birthDate: 1967-03-12"
-msgstr "fecha de nacimiento: 1967-03-12"
+msgstr "fechaDeNacimiento: 1967-03-12"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:762
 #, no-wrap
 msgid "Entity statement"
-msgstr "Declaración de la entidad"
+msgstr "Declaración sobre entidad"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:773
 #, no-wrap
 msgid "statementID:  ty4t68s3-hha4-8ks3-0d8w"
-msgstr "identificación de declaración: ty4t68s3-hha4-8ks3-0d8w"
+msgstr "identificaciónDeDeclaración: ty4t68s3-hha4-8ks3-0d8w"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:778
@@ -383,7 +383,7 @@ msgstr "nombre: RENCO Energy Ltd"
 #: docs/_assets/data-schema-model-2.svg:783
 #, no-wrap
 msgid "foundingDate: 2016-07-07"
-msgstr "fecha de fundación: 2016-07-07"
+msgstr "fechaDeFundación: 2016-07-07"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:585
@@ -395,13 +395,13 @@ msgstr "tipo: autodeclaración"
 #: docs/_assets/data-schema-model-3.svg:590
 #, no-wrap
 msgid "retrievedAt:   2018-11-07T13:55:32.734Z"
-msgstr "momento de acceso: 2018-11-07T13:55:32.734Z"
+msgstr "momentoDeAcceso: 2018-11-07T13:55:32.734Z"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:595
 #, no-wrap
 msgid "assertedBy:   Acme Industries Ltd"
-msgstr "manifestada por: Acme Industries Ltd"
+msgstr "realizadaPor: Acme Industries Ltd"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:606
@@ -412,4 +412,4 @@ msgstr "fuente"
 #: docs/_assets/data-schema-model-3.svg:629
 #, no-wrap
 msgid "statementDate:   2018-07-12"
-msgstr "fecha de la declaración: 2018-07-12"
+msgstr "fechaDeLaDeclaración: 2018-07-12"

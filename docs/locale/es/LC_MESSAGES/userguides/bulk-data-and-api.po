@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,12 +22,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# ce6cc6b9278c453484ded3c802819a5f
+# 63d8c31d523a4692a565301452bee926
 #: ../../userguides/bulk-data-and-api.rst:2
 msgid "Bulk data exports and API access"
-msgstr ""
+msgstr "Exportación de datos en bloque y acceso a la API"
 
-# b91a51d8d59641928c3ddaaa3b634fcb
+# 8206307da25b4c97a13aeaec68c65c9d
 #: ../../userguides/bulk-data-and-api.rst:4
 msgid "(New section.)"
-msgstr ""
+msgstr "(Nueva sección)."

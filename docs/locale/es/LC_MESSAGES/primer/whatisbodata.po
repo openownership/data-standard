@@ -39,7 +39,7 @@ msgstr ""
 #: ../../primer/whatisbodata.rst:14
 msgid "Data relating to beneficial ownership may include:"
 msgstr ""
-"Entre los datos relacionados con los beneficiarios finales pueden incluirse "
+"Entre los datos relacionados con los beneficiarios finales pueden contarse "
 "los siguientes:"
 
 # d3fdeb8cb26e429489dcf24e6084cd81
@@ -71,7 +71,7 @@ msgstr "Información sobre entidades intermedias en una cadena de titularidad"
 #: ../../primer/whatisbodata.rst:21
 msgid "Rules of board membership"
 msgstr ""
-"Las disposiciones relativas a la condición de miembro de un órgano de "
+"Disposiciones relativas a la condición de miembro de un órgano de "
 "administración"
 
 # 92236f5c2be3494b85e043a23664903a
@@ -130,13 +130,13 @@ msgid ""
 "The same types of data will be represented differently by different "
 "publishers."
 msgstr ""
-"Los distintos publicadores plantean los mismos tipos de datos de manera "
+"Distintos publicadores plantean los mismos tipos de datos de manera "
 "diferente."
 
 # f66206e39a964da58af74079615c09a3
 #: ../../primer/whatisbodata.rst:61
 msgid "Relevant data may appear across different documents."
-msgstr "Los datos pertinentes pueden aparecer en diferentes documentos."
+msgstr "Puede haber datos pertinentes en diferentes documentos."
 
 # 7783b8da8f0f4accb4c5bceeb4787319
 #: ../../primer/whatisbodata.rst:62

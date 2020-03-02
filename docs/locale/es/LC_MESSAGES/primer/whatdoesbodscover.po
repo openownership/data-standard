@@ -62,7 +62,7 @@ msgstr ""
 # a4f5a5dc03c34a9a9ea8ddfe701d2a4a
 #: ../../primer/whatdoesbodscover.rst:18
 msgid ":ref:`Types and levels of involvement <schema-interest>` in companies"
-msgstr ":ref:`Tipos y niveles de participación <schema-interest>` en empresas"
+msgstr ":ref:`Tipos y niveles de intervención <schema-interest>` en empresas"
 
 # 62425a4ec81948f181fcf1ae1438ccf2
 #: ../../primer/whatdoesbodscover.rst:19
@@ -108,8 +108,8 @@ msgid ""
 "Competing claims about beneficial ownership to be considered alongside one "
 "another."
 msgstr ""
-"Examinar conjuntamente las afirmaciones contradictorias sobre beneficiarios "
-"finales."
+"Examinar las afirmaciones contradictorias sobre beneficiarios finales una a "
+"la par de la otra."
 
 # af2db5c2c4704f35ba91fb8b2201c4fe
 #: ../../primer/whatdoesbodscover.rst:37
@@ -128,7 +128,7 @@ msgid ""
 "systems. A set of :ref:`functional requirements <functional-requirements>` "
 "for such databases and systems is available for this purpose."
 msgstr ""
-"Aunque el BODS no es un modelo de datos para el almacenamiento de "
+"Si bien el BODS no es un modelo de datos para el almacenamiento de "
 "información sobre beneficiarios finales, puede servir de orientación para el"
 " diseño de sistemas de recopilación y almacenamiento de datos. A tal fin, se"
 " encuentra disponible un conjunto de :ref:`requisitos funcionales "
@@ -145,9 +145,10 @@ msgid ""
 msgstr ""
 "Para posibilitar el uso del Estándar en todo el mundo, en él no se definen "
 "de manera directa los umbrales para cumplir los criterios de beneficiario "
-"final. En lugar de ello, cada declaración de beneficiario final realizada "
-"mediante el Estándar puede describir el grado de titularidad o control, lo "
-"cual permite a cada implementador del estándar fijar sus propios umbrales."
+"final. En lugar de ello, cada declaración sobre beneficiarios finales "
+"realizada mediante el Estándar puede describir el grado de titularidad o "
+"control, lo cual permite a cada implementador del estándar fijar sus propios"
+" umbrales."
 
 # 36df910446da4a96922d7c641cb8980a
 #: ../../primer/whatdoesbodscover.rst:46
@@ -155,6 +156,6 @@ msgid ""
 "The Standard is well-defined yet flexible: as suited for use by national "
 "registers of beneficial ownership as by corporate researchers."
 msgstr ""
-"El Estándar es preciso, pero a la vez flexible: su uso es adecuado tanto "
-"para los registros nacionales de beneficiarios finales como para los "
+"El Estándar es preciso, pero a la vez flexible: su uso es igualmente "
+"adecuado para registros nacionales de beneficiarios finales y para "
 "investigadores corporativos."
