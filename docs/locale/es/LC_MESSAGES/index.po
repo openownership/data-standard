@@ -34,7 +34,7 @@ msgid ""
 "Data Standard (version 0.2) plus support for its use. :doc:`Find out more "
 "<about/index>` about the standard's development and how to get involved."
 msgstr ""
-"Este sitio web contiene un borrador de las especificaciones del Estándar de "
+"Este sitio web contiene un borrador de la especificación del Estándar de "
 "Datos sobre Beneficiarios Finales (versión 0.2) , además de ayuda para su "
 "uso. :doc:`Conozca más <about/index>` sobre el desarrollo del estándar y "
 "cómo participar en él."
@@ -50,8 +50,8 @@ msgid ""
 "Get an overview of beneficial ownership and why a standardised format for "
 "data is important."
 msgstr ""
-"Acceda a una reseña general sobre los beneficiarios finales y sepa por qué "
-"es importante contar con un formato estandarizado de datos."
+"Obtenga una noción general de los beneficiarios finales y sepa por qué es "
+"importante contar con un formato estandarizado de datos."
 
 # 9712a7559b4c435b98d173c8bcf97a79
 #: ../../index.rst:18
@@ -61,7 +61,7 @@ msgstr ":doc:`Consulte la guía introductoria <primer/index>`"
 # e93ac76495ea4fffa45031852ffde9b9
 #: ../../index.rst:22
 msgid ":doc:`What is beneficial ownership? <primer/whatisbo>`"
-msgstr ":doc:`¿Qué es un beneficiario final? <primer/whatisbo>`"
+msgstr ":doc:`¿Qué significa beneficiario final? <primer/whatisbo>`"
 
 # bb0c3763ad8540459c70f8007de35a0a
 #: ../../index.rst:26

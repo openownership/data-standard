@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,64 +22,76 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 0ad572af9d7647069ba0223e26db00ac
+# a312c193b8c546549e74b567c2c6b254
 #: ../../schema/conformance.rst:4
 msgid "Conformance and validation"
-msgstr ""
+msgstr "Conformidad y validación"
 
-# 701c9d0da85b4fe6b88df6c8778fb56a
+# cac861a49aba44499f573cf6ed791adc
 #: ../../schema/conformance.rst:7
 msgid "Conformance statement"
-msgstr ""
+msgstr "Declaración de conformidad"
 
-# ed4796b504964729af40fd6f597a410e
+# 9aebcb2996444835a616f04c980eb3b9
 #: ../../schema/conformance.rst:9
 msgid ""
 "A conforming implementation **may** use only a subset of this "
 "specification’s terms."
 msgstr ""
+"Una implementación conforme **puede** usar solo un subconjunto de los "
+"términos de esta especificación."
 
-# a9b9c57a72a34ac9892a0470dd7c3237
+# 40a87bd1fc6343428fec380f1e55df38
 #: ../../schema/conformance.rst:10
 msgid ""
 "It **must not** use terms from outside this specification’s terms where this"
 " specification’s terms would suffice."
 msgstr ""
+"**No debe** usar términos ajenos a los de esta especificación cuando éstos "
+"sean adecuados."
 
-# 85611a2f9270456f917af61da92f2ace
+# 7b574d5e829f4e4186a76c0e89750f00
 #: ../../schema/conformance.rst:11
 msgid ""
 "It **may** use terms from outside this specification’s terms where this "
 "specification’s terms are insufficient."
 msgstr ""
+"**Puede** usar términos ajenos a los de esta especificación éstos sean "
+"inadecuados."
 
-# 6352fa0fd1ac4805b53c1fe79f9d4a34
+# a9181e6eaf44404a9ab2df8194fc1b23
 #: ../../schema/conformance.rst:12
 msgid ""
 "Its usage of this specification’s terms **must** be consistent with the "
 "semantics of those terms."
 msgstr ""
+"Su uso de los términos de esta especificación **debe** ser congruente con la"
+" semántica de esos términos."
 
-# b6b3eb2595f8445fbf3f87d8ce0ad0c0
+# 51e5be90b3b44fac90ee150b65afa297
 #: ../../schema/conformance.rst:13
 msgid ""
 "If an implementation serializes to JSON, its serializations **must** "
 "validate against this specification’s JSON Schema."
 msgstr ""
+"Si una implementación se serializa a JSON, sus serializaciones **deben** "
+"validarse en función del Esquema JSON de esta especificación."
 
-# b09742823619409a8caa6bfe721aee55
+# d8d1aa3231d9475b9b0ba76a5b4f055e
 #: ../../schema/conformance.rst:15
 msgid ""
 "(Statement `adapted from Popolo Project specification "
 "<http://www.popoloproject.com/specs/#conformance>`_)"
 msgstr ""
+"(Declaración `adaptada de la especificación del Proyecto Popolo "
+"<http://www.popoloproject.com/specs/#conformance>`_)"
 
-# 22eba1f56ad344568fdaa262deaca9a1
+# ef2ed2cc3fda4a1daa2b05bf03a76088
 #: ../../schema/conformance.rst:18
 msgid "Extending the schema"
-msgstr ""
+msgstr "Ampliación del esquema"
 
-# ebc8e34a310e49e2993719c4cf7fd29d
+# 34169d3efcf047ef9bc5848a0a625ec6
 #: ../../schema/conformance.rst:20
 msgid ""
 "Publishers providing additional properties in their implementations are "
@@ -84,22 +101,34 @@ msgid ""
 "<https://github.com/openownership/data-"
 "standard/issues?q=is%3Aissue+label%3Aextension>`_ where possible."
 msgstr ""
+"Se alienta a los publicadores que proporcionan propiedades adicionales en "
+"sus implementaciones a `documentarlas en la herramienta de seguimiento de "
+"incidencias del proyecto <https://github.com/openownership/data-"
+"standard/issues/>`_ con la etiqueta \"ampliaciones\", y a reutilizar las "
+"`ampliaciones de otros publicadores <https://github.com/openownership/data-"
+"standard/issues?q=is%3Aissue+label%3Aextension>`_ cuando sea posible."
 
-# cc01f82b692149c0b29c715eeb7a1d30
+# 408b76dc3428436e95038aef1db19f74
 #: ../../schema/conformance.rst:23
 msgid "Validation"
-msgstr ""
+msgstr "Validación"
 
-# 4aef7b5dd60046d288fa2afcf6445be6
+# 7435fd5b48114d52af8ec2a05e3a4b3b
 #: ../../schema/conformance.rst:25
 msgid ""
 "Validation of BODS data can be carried out using the `BODS Data Review Tool "
 "<https://datareview.openownership.org/>`_."
 msgstr ""
+"La validación de los datos basados en BODS puede efectuarse mediante la "
+"`Herramienta de revisión de datos basados en BODS "
+"<https://datareview.openownership.org/>`_."
 
-# 7ccda653c8fe4406b59836a9aee74edc
+# e139be56d9ed49e2b3fd68a7f14e5619
 #: ../../schema/conformance.rst:27
 msgid ""
 "The current schema includes minimal validation requirements, and should be "
 "treated as a guide to data structure, rather than a full validation schema."
 msgstr ""
+"El esquema actual incluye requisitos mínimos de validación, y debería "
+"considerarse como una guía de la estructura de los datos, en lugar de un "
+"esquema de validación completo."

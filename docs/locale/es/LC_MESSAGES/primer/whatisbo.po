@@ -40,7 +40,7 @@ msgstr ""
 #: ../../primer/whatisbo.rst:13
 msgid "Companies or people can own other companies..."
 msgstr ""
-"Las empresas o los individuos pueden ser propietarios de otras empresas…"
+"Las empresas y los individuos pueden ser propietarios de otras empresas…"
 
 # 8def3a6a035949e2bf8f9d2e1a63c275
 #: ../../primer/whatisbo.rst:19
@@ -48,8 +48,8 @@ msgid ""
 "The idea that people own companies and sometimes companies own companies is "
 "well understood."
 msgstr ""
-"La idea de que los individuos son propietarios de empresas y de que a veces "
-"las empresas son a su vez propietarias de otras empresas es bien sabida."
+"Que los individuos son propietarios de empresas y que a veces las empresas "
+"son a su vez propietarias de otras empresas es algo bien sabido."
 
 # 5172e9bf472e45618342074e36e4b4ed
 #: ../../primer/whatisbo.rst:29
@@ -66,7 +66,7 @@ msgstr ""
 "Aun cuando las empresas son propietarias de otras empresas, son los "
 "individuos quienes casi siempre aparecen al final de la cadena de "
 "titularidad. Se benefician en última instancia del éxito financiero de las "
-"empresas, y con frecuencia participan de sus fracasos."
+"empresas, y suelen participar de sus fracasos."
 
 # 69f856c1c4984f5da2f960fc760d3e3c
 #: ../../primer/whatisbo.rst:43
@@ -94,8 +94,8 @@ msgstr ""
 "Si una persona es dueña de algo, en general tiene algún tipo de control "
 "sobre ello. Ser titular de acciones en una empresa puede conferir derechos "
 "de voto, por ejemplo. Pero la titularidad y el control a veces se encuentran"
-" separados, ya sea por las clases de acciones, contratos, convenios u otros "
-"mecanismos. Por ejemplo, un director ejecutivo podría tener el derecho de "
+" escindidos, ya sea por las clases de acciones, contratos, convenios u otros"
+" mecanismos. Por ejemplo, un director ejecutivo podría tener derecho a "
 "designar al 60 % de los otros miembros del órgano de administración, y al "
 "mismo tiempo tener escasa participación financiera en el negocio."
 
@@ -124,7 +124,7 @@ msgid ""
 "Beneficial ownership therefore takes in both types of involvement with a "
 "company: ownership and control."
 msgstr ""
-"Por consiguiente, el concepto de beneficiario final abarca los dos tipos de "
+"Por consiguiente, el concepto de beneficiario final abarca ambos tipos de "
 "intervención en una empresa: la titularidad y el control."
 
 # 1453c670345844adb8a7164ef10939bc

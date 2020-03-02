@@ -46,9 +46,9 @@ msgid ""
 "or if they both appeared in a procurement chain."
 msgstr ""
 "Una persona controla a la Empresa 1 y posee la mitad de la Empresa 2. Podría"
-" ser importante conocer este hecho si ambas empresas participan en la "
-"licitación de un mismo contrato con el Estado, o si ambas aparecen en la "
-"cadena de contrataciones."
+" ser importante conocer esta circunstancia si ambas empresas participan en "
+"la licitación de un mismo contrato con el Estado, o si ambas aparecen en una"
+" cadena de contrataciones."
 
 # 335b26088e7d4fd4aa7c78d07f595249
 #: ../../primer/whyisbo.rst:16
@@ -56,7 +56,7 @@ msgid ""
 "It might be equally important to see that a person's control over a company "
 "is greater than one might expect given their financial stake in it."
 msgstr ""
-"Por otra parte, podría ser igualmente importante a los efectos de comprobar "
+"Por otra parte, podría ser igualmente importante a los efectos de observar "
 "que el control de una persona sobre una empresa es mayor de lo que se podría"
 " suponer dada su participación financiera en ella."
 

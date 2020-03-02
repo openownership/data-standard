@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,53 +22,69 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# dacd12571b724b4ca2844c746dbbefda
+# 371cd19c7b7946df9bbf54b579da8e97
 #: ../../about/privacy-notice.rst:2
 msgid "Privacy Notice"
-msgstr ""
+msgstr "Aviso sobre privacidad"
 
-# 93ee9fdd9f0f4de1811788a2922d4bc5
+# 28945c0756c241948d4b781439ef212a
 #: ../../about/privacy-notice.rst:4
 msgid ""
 "ReadTheDocs provide the platform these docs are hosted on, for information "
 "about how they collect and process personal data, `see their Privacy Policy "
 "<https://docs.readthedocs.io/en/latest/privacy-policy.html>`__."
 msgstr ""
+"ReadTheDocs proporciona la plataforma en la que se alojan estos documentos. "
+"Para obtener información sobre cómo recopila y procesa los datos personales,"
+" `consulte su Política de Privacidad <https://docs.readthedocs.io/en/latest"
+"/privacy-policy.html>`__."
 
-# 980616ec80e045acaa926f73b06d4245
+# 86977b1a499d4b518316799534896472
 #: ../../about/privacy-notice.rst:9
 msgid ""
 "OpenOwnership is committed to ensuring that your privacy is protected. This "
 "privacy notice sets out how we collect and process any personal data when "
 "you use this website."
 msgstr ""
+"OpenOwnership se encuentra comprometido a garantizar que su privacidad sea "
+"protegida. Este aviso sobre privacidad explica cómo recopilamos y procesamos"
+" los datos personales cuando utiliza este sitio web."
 
-# f384e2c82750470cb866df5fd98e0bdd
+# 2db551e0cfad45eaa240d038fc53375a
 #: ../../about/privacy-notice.rst:13
 msgid ""
 "We may change this notice from time to time by updating this page. This "
 "notice is effective from 24th May 2018."
 msgstr ""
+"Es posible que ocasionalmente modifiquemos este aviso mediante una "
+"actualización de esta página. El presente aviso tiene vigencia desde el 24 "
+"de mayo de 2018."
 
-# 02ba13beda464c40a0c59115b7171277
+# 8291fc2394024ce494aca60b905031fa
 #: ../../about/privacy-notice.rst:16
 msgid ""
 "You can contact us at OpenOwnership (as the data controller) if would like a"
 " copy of the information held on you or if you believe that any information "
 "we are holding on you is incorrect or incomplete."
 msgstr ""
+"Puede comunicarse con nosotros a OpenOwnership (en su carácter de "
+"responsable de los datos) si desea una copia de la información que poseemos "
+"sobre usted o si cree que tenemos información sobre usted que es incorrecta "
+"o incompleta."
 
-# 1bed803e02ac4f4f9cf47c113028ae57
+# f7f323e1fa59440f8b62327047760cca
 #: ../../about/privacy-notice.rst:20
 msgid "You have the following rights concerning this data:"
-msgstr ""
+msgstr "Usted goza de los siguientes derechos con respecto a estos datos:"
 
-# 15d19797895545188ae3582dd93a2ac7
+# c516016289e24b5ea43075976ca6ffa8
 #: ../../about/privacy-notice.rst:22
 msgid "Right to be informed, which is the purpose of this privacy notice."
 msgstr ""
+"El derecho a ser informado, que es el propósito de este aviso sobre "
+"privacidad."
 
-# 6ace646e807647f7bd79c74a6e85de87
+# efab24954a13437e8bcba5e0554082e8
 #: ../../about/privacy-notice.rst:23
 msgid ""
 "Right to Access, Rectification, Erasure, and to Restrict Processing. Note "
@@ -72,31 +93,42 @@ msgid ""
 "identify yourself from our pseudonymised data, see `GDPR Article 11 <https"
 "://gdpr-info.eu/art-11-gdpr/>`__."
 msgstr ""
+"El derecho de acceso, rectificación, supresión y restricción del "
+"procesamiento de datos. Tenga en cuenta que los derechos de supresión y "
+"restricción del procesamiento de datos se sopesan en función de nuestros "
+"legítimos intereses. Cuando sea pertinente, debe brindar información para "
+"ser reidentificado a partir de nuestros datos seudonimizados. Véase el "
+"`Artículo 11 del Reglamento General de Protección de Datos (GDPR por sus "
+"siglas en inglés) <https://gdpr-info.eu/art-11-gdpr/>`__."
 
-# e9615a1c50ba4900a21c2fe30f1f5fd9
+# 59112fcdc4d545ae922f824d2fafd0b2
 #: ../../about/privacy-notice.rst:28
 msgid "Right to object to our processing."
-msgstr ""
+msgstr "El derecho a objetar nuestro procesamiento."
 
-# 4fd31a876cfa47939a867704eaebd703
+# 0c2c4c8338f349dea9ff75d6296a84c7
 #: ../../about/privacy-notice.rst:30
 msgid ""
 "Our supervisory authority is the `ICO in the UK <https://ico.org.uk/>`__. "
 "You have the right to lodge a complaint with them."
 msgstr ""
+"Nuestra autoridad supervisora en el Reino Unido es ICO "
+"<https://ico.org.uk/>`__. Usted tiene derecho a presentar una denuncia ante "
+"ellos."
 
-# 88ce8da4cbef4e0da12d1ad020eceab8
+# 7f10a7c4091c4ba4a8331475fac677cd
 #: ../../about/privacy-notice.rst:34
 msgid "We process personal data for the following purposes:"
-msgstr ""
+msgstr "Procesamos sus datos personales con los siguientes propósitos:"
 
-# 6731b0b60a6b448fba57daa821746939
-# a7b2f21a458c46e7a5a99fe6927fa65a
+# a68fc4ea242c4e2daab28a9ba5a2eb9d
+# 95a08c216b0a4f3aaea8b944b51c1777
 #: ../../about/privacy-notice.rst:36 ../../about/privacy-notice.rst:46
 msgid "Understanding website visitor and traffic patterns"
 msgstr ""
+"Entender los patrones relativos al tráfico y los visitantes del sitio web."
 
-# c1649e074ce846ef9d9669df3dad5129
+# 94e3d398cc50467ba788e0d4dd16cebd
 #: ../../about/privacy-notice.rst:38
 msgid ""
 "We rely on `legitimate interests <https://ico.org.uk/for-organisations"
@@ -106,69 +138,93 @@ msgid ""
 "about the type of data, the purpose of the processing and legitimate "
 "interests, and the storage and retention of the data are set out below."
 msgstr ""
+"El fundamento legal de este procesamiento se basa en nuestros `intereses "
+"legítimos <https://ico.org.uk/for-organisations/guide-to-the-general-data-"
+"protection-regulation-gdpr/lawful-basis-for-processing/legitimate-"
+"interests/>`__ (`Artículo 6 GDPR (1)(f) <https://gdpr-"
+"info.eu/art-6-gdpr/>`__). A continuación presentamos más precisiones sobre "
+"el tipo de datos, el propósito del procesamiento y los intereses legítimos, "
+"y el almacenamiento y la retención de los datos."
 
-# 1bad6f71b1b64db69d29772db303be29
+# 8d16ed6dbd28447391b8341759663f27
 #: ../../about/privacy-notice.rst:48
 msgid ""
 "We collect data about your visits to the website, for the purpose of "
 "analysing how the website is used, so that we can improve it. A self hosted "
 "copy of `Matomo <http://matomo.org>`__ is used for this."
 msgstr ""
+"Recopilamos datos sobre sus visitas al sitio web con el propósito de "
+"analizar cómo se lo utiliza, a fin de poder mejorarlo. Para ello se utiliza "
+"una copia con alojamiento propio de `Matomo <http://matomo.org>`__."
 
-# 1d4d8accd55740c192b0b3725de93ebb
+# a526269a987049ec9fa2d19e2239e043
 #: ../../about/privacy-notice.rst:52
 msgid "Personal data we collect:"
-msgstr ""
+msgstr "Recopilamos los siguientes datos personales:"
 
-# c445a3a279b444f1b99b30907acf2473
+# 68de6c6235554a56baab4f44f5ecba5b
 #: ../../about/privacy-notice.rst:54
 msgid ""
 "Your IP address - this is pseudonymised by redacting the second half of the "
 "address"
 msgstr ""
+"Su dirección IP, la cual es seudonimizada ocultando la segunda mitad de la "
+"dirección."
 
-# cddfa5c06d06418e9184897091cadb69
+# a00feb1e5629454cb3644a4ffcdccfde
 #: ../../about/privacy-notice.rst:56
 msgid "Referrer (what page you arrived at one of our web pages from)"
-msgstr ""
+msgstr "Referente (la página web desde la cual llegó hasta nuestro sitio)"
 
-# 81130c98e3ca4b73a09eb610068249b2
+# 92e8cb0813dc4744b23fd249738310fb
 #: ../../about/privacy-notice.rst:57
 msgid "Information about your device, OS and browser"
-msgstr ""
+msgstr "Información sobre su dispositivo, sistema operativo y navegador"
 
-# e360a319a0f54332b9afed056875ac24
+# 6a3eb9fe4c654c91843e8d75e2a4a9b9
 #: ../../about/privacy-notice.rst:59
 msgid ""
 "We do not use this data to personally identify individuals, but it is "
 "possible that it could be used to do so, particularly if combined with other"
 " datasets."
 msgstr ""
+"No utilizamos estos datos para identificar de manera personal a los "
+"individuos, pero podría ocurrir que se los use para ello, en particular si "
+"se combinan con otros conjuntos de datos."
 
-# ec914276e04a41b592973a4f2e913d1d
+# 0ccad28f74c842e6905a3e8f02b21ad2
 #: ../../about/privacy-notice.rst:63
 msgid ""
 "You can opt out of this processing: if you have set your web browser to \"I "
 "do not want to be tracked\" (DoNotTrack is enabled) then Matomo will not "
 "track your visit."
 msgstr ""
+"Puede decidir no participar en este procesamiento: si ha configurado su "
+"navegador de Internet para \"Enviar una solicitud de no seguimiento con su "
+"tráfico de navegación\" (se activa noRealizarSeguimiento) entonces Matomo no"
+" rastreará su visita."
 
-# 8408b5cda13d49cdbc277d9e8e9f6607
+# 9ecadae1f45947d7a93ffb84af07286a
 #: ../../about/privacy-notice.rst:67
 msgid "Matomo also has its own opt out mechanism:"
 msgstr ""
+"Matomo también tiene su propio mecanismo para no participar de dicho "
+"procesamiento."
 
-# 0475961cfc4e426ab98aa56d69ce7c6c
-#: ../../about/privacy-notice.rst:69
+# ba5ad71770ec42509900c8ef9e06b8c3
+#: ../../about/privacy-notice.rst:76
 msgid "Data processors: Open Data Services Co-operative Limited, Bytemark."
 msgstr ""
+"Procesadores de datos: Open Data Services Co-operative Limited, Bytemark."
 
-# 9fbfafd0000b4966a85e3823f0868dd3
-#: ../../about/privacy-notice.rst:71
+# b304c3b617ea4f6484ec8110b3dc6d97
+#: ../../about/privacy-notice.rst:78
 msgid "The data controller (OpenOwnership) is based in the USA."
 msgstr ""
+"El responsable de los datos (OpenOwnership) tiene su sede en los Estados "
+"Unidos."
 
-# 37ea3297d56f47b78b30a1e38551cf8f
-#: ../../about/privacy-notice.rst:73
+# 5ef398f04a964c50878334c1b247f6a3
+#: ../../about/privacy-notice.rst:80
 msgid "The data is kept indefinitely, in pseudonymised form."
-msgstr ""
+msgstr "Los datos se conservan indefinidamente, en forma seudonimizada."
