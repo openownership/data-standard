@@ -1,5 +1,5 @@
 [
-    {
+  {
     "statementID": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
     "statementType": "entityStatement",
     "isComponent": false,
@@ -14,11 +14,11 @@
       }
     ],
     "publicationDetails": {
-        "publicationDate": "2018-11-18",
-        "bodsVersion": "0.2",
-        "publisher": {
-            "name": "CHRINON LTD"
-        }
+      "publicationDate": "2018-11-18",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
     }
   },
   {
@@ -54,11 +54,11 @@
       }
     ],
     "publicationDetails": {
-        "publicationDate": "2018-11-18",
-        "bodsVersion": "0.2",
-        "publisher": {
-            "name": "CHRINON LTD"
-        }
+      "publicationDate": "2018-11-18",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
     }
   },
   {
@@ -76,7 +76,7 @@
       {
         "type": "shareholding",
         "interestLevel": "direct",
-        "beneficialOwnershipOrControl":true,
+        "beneficialOwnershipOrControl": true,
         "startDate": "2016-04-06",
         "share": {
           "exact": 50,
@@ -89,11 +89,11 @@
       "fbfd0547-d0c6-4a00-b559-5c5e91c34f5c"
     ],
     "publicationDetails": {
-        "publicationDate": "2018-11-18",
-        "bodsVersion": "0.2",
-        "publisher": {
-            "name": "CHRINON LTD"
-        }
+      "publicationDate": "2018-11-18",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
     }
   },
   {
@@ -114,7 +114,7 @@
       {
         "type": "shareholding",
         "interestLevel": "direct",
-        "beneficialOwnershipOrControl":true,
+        "beneficialOwnershipOrControl": true,
         "startDate": "2016-04-06",
         "share": {
           "exact": 50,
@@ -127,11 +127,11 @@
       "fbfd0547-d0c6-4a00-b559-5c5e91c34f5c"
     ],
     "publicationDetails": {
-        "publicationDate": "2018-11-18",
-        "bodsVersion": "0.2",
-        "publisher": {
-            "name": "CHRINON LTD"
-        }
+      "publicationDate": "2018-11-18",
+      "bodsVersion": "0.2",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
     }
   }
 ]

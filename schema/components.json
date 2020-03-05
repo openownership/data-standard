@@ -79,13 +79,13 @@
     "ReplacesStatements": {
       "title": "Replaces statement(s)",
       "description": "If this statement replaces a previous statement or statements, provide the identifier(s) for the previous statement(s) here. Consuming applications are advised to mark the identified statements as no longer active.",
-      "type":"array",
-      "items":{
-        "title":"Statement identifier",
-        "description":"The identifier of a statement that is no longer active.",
+      "type": "array",
+      "items": {
+        "title": "Statement identifier",
+        "description": "The identifier of a statement that is no longer active.",
         "type": "string",
-        "minLength":32,
-        "maxLength":64
+        "minLength": 32,
+        "maxLength": 64
       }
     },
     "Identifier": {
@@ -262,10 +262,10 @@
           "codelist": "interestLevel.csv",
           "openCodelist": false
         },
-        "beneficialOwnershipOrControl":{
-          "title":"Beneficial ownership or control",
-          "description":"Does this statement assert this as a beneficial ownership or control interest? A beneficial ownership or control interest is always between a natural person and some entity, and exists where the person ultimately benefits from, or has a degree of control over, the entity. There may be cases where a person has an interest in an entity, but where there are arrangements or other conditions that mean this interest does not constitute beneficial ownership or control.",
-          "type":"boolean"
+        "beneficialOwnershipOrControl": {
+          "title": "Beneficial ownership or control",
+          "description": "Does this statement assert this as a beneficial ownership or control interest? A beneficial ownership or control interest is always between a natural person and some entity, and exists where the person ultimately benefits from, or has a degree of control over, the entity. There may be cases where a person has an interest in an entity, but where there are arrangements or other conditions that mean this interest does not constitute beneficial ownership or control.",
+          "type": "boolean"
         },
         "details": {
           "title": "Details",
@@ -564,7 +564,7 @@
             "url"
           ]
         }
-       ]
+      ]
     }
   }
 }

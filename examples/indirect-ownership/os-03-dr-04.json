@@ -42,14 +42,14 @@
     ]
   },
   {
-   "publicationDetails": {
+    "publicationDetails": {
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.2",
       "publisher": {
         "name": "XXXXXXXXX"
       }
     },
-   "statementID": "6b9cfb52-505a-49cb-ab02-cc856a4e5c66",
+    "statementID": "6b9cfb52-505a-49cb-ab02-cc856a4e5c66",
     "statementType": "personStatement",
     "statementDate": "2018-12-17",
     "isComponent": false,
