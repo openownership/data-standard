@@ -19,8 +19,24 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import os
+from shutil import copyfile, copy2
 from recommonmark.transform import AutoStructify
 from recommonmark.parser import CommonMarkParser
+
+import json
+import subprocess
+from glob import glob
+from collections import OrderedDict
+from docutils import nodes
+from docutils.parsers.rst import directives
+from jsonpointer import resolve_pointer
+from pathlib import Path
+from sphinx.directives.code import LiteralInclude
+
+from bods_babel.translate import translate
+
+import oods.pygments
+import oods.sphinxtheme
 
 # -- General configuration ------------------------------------------------
 
@@ -33,7 +49,7 @@ html_context = {'bods_schema_version': '0.2'}
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinxcontrib.jsonschema','sphinxcontrib.opendataservices']
+extensions = ['sphinxcontrib.jsonschema', 'sphinxcontrib.opendataservices']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -76,7 +92,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_static/docson']
 
 # The name of the Pygments (syntax highlighting) style to use.
 
-import oods.pygments
 oods.pygments.pygments_monkeypatch_style("oods", oods.pygments.OODSStyle)
 pygments_style = 'oods'
 
@@ -90,7 +105,6 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
-import oods.sphinxtheme
 html_theme = 'sphinxtheme'
 html_theme_path = [oods.sphinxtheme.get_html_theme_path()]
 
@@ -122,21 +136,21 @@ gettext_uuid = True
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-     # The paper size ('letterpaper' or 'a4paper').
-     #
-     # 'papersize': 'letterpaper',
+    # The paper size ('letterpaper' or 'a4paper').
+    #
+    # 'papersize': 'letterpaper',
 
-     # The font size ('10pt', '11pt' or '12pt').
-     #
-     # 'pointsize': '10pt',
+    # The font size ('10pt', '11pt' or '12pt').
+    #
+    # 'pointsize': '10pt',
 
-     # Additional stuff for the LaTeX preamble.
-     #
-     # 'preamble': '',
+    # Additional stuff for the LaTeX preamble.
+    #
+    # 'preamble': '',
 
-     # Latex figure (float) alignment
-     #
-     # 'figure_align': 'htbp',
+    # Latex figure (float) alignment
+    #
+    # 'figure_align': 'htbp',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -172,19 +186,6 @@ texinfo_documents = [
 
 # Adapted from https://github.com/OpenDataServices/sphinxcontrib-opendataservices/blob/master/sphinxcontrib/opendataservices.py#L50
 # Should eventually move into there
-import os
-import json
-import subprocess
-from glob import glob
-from collections import OrderedDict
-from docutils import nodes
-from docutils.parsers.rst import directives, Directive
-from jsonpointer import resolve_pointer
-from pathlib import Path
-from sphinx.directives.code import LiteralInclude
-
-from bods_babel.translate import translate
-
 class JSONValue(LiteralInclude):
     option_spec = {
         'pointer': directives.unchanged,
@@ -201,11 +202,6 @@ class JSONValue(LiteralInclude):
 
         with open(abspath) as fp:
             json_obj = json.load(fp, object_pairs_hook=OrderedDict)
-        filename = str(self.arguments[0]).split("/")[-1].replace(".json", "")
-        try:
-            title = self.options['title']
-        except KeyError as e:
-            title = filename
         pointed = resolve_pointer(json_obj, self.options['pointer'])
 
         if isinstance(pointed, str):
@@ -214,7 +210,7 @@ class JSONValue(LiteralInclude):
             string = json.dumps(pointed, indent='    ')
             if string.startswith('"') and string.endswith('"'):
                 string = string[1:-1]
-        return [nodes.paragraph(string,string)]
+        return [nodes.paragraph(string, string)]
 
 
 # -- Legacy Redirects -------------------------------------------------------
@@ -231,16 +227,15 @@ redirect_files = [
     'serialization.html',
 ]
 
-from shutil import copyfile, copy2
 
-
-def copy_legacy_redirects(app, docname): # Sphinx expects two arguments
+def copy_legacy_redirects(app, docname):  # Sphinx expects two arguments
     if app.builder.name == 'html' or app.builder.name == 'readthedocs':
         for html_src_path in redirect_files:
             target_path = app.outdir + '/' + html_src_path
             src_path = app.srcdir + '/' + html_src_path
             if os.path.isfile(src_path):
                 copyfile(src_path, target_path)
+
 
 def translate_schema_and_codelists(language='en'):
     # The root of the repository.
@@ -298,7 +293,6 @@ def setup(app):
 
     # This is a closure to access the `language` variable
     def copy_translated_svgs(app, docname):  # Sphinx expects two arguments
-        docs_dir = Path(os.path.realpath(__file__)).parents[0]
         for svg_path in glob(str(Path(app.srcdir) / '_build_svgs' / language / '*')):
             copy2(svg_path, str(Path(app.outdir) / '_images'))
     app.connect('build-finished', copy_translated_svgs)
