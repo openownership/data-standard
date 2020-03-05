@@ -46,13 +46,12 @@ Understanding website visitor and traffic patterns
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We collect data about your visits to the website, for the purpose of
-analysing how the website is used, so that we can improve it. A self
-hosted copy of `Matomo <http://matomo.org>`__ is used for this.
+analysing how the website is used, so that we can improve it. 
+`Google Analytics <https://analytics.google.com>`__ is used for this.
 
 Personal data we collect:
 
--  Your IP address - this is pseudonymised by redacting the second half
-   of the address
+-  Your IP address
 -  Referrer (what page you arrived at one of our web pages from)
 -  Information about your device, OS and browser
 
@@ -60,20 +59,10 @@ We do not use this data to personally identify individuals, but it is
 possible that it could be used to do so, particularly if combined with
 other datasets.
 
-You can opt out of this processing: if you have set your web browser to
-"I do not want to be tracked" (DoNotTrack is enabled) then Matomo will
-not track your visit.
+In addition, Google Analytics may use cookies to track your usage of our
+website.
 
-Matomo also has its own opt out mechanism:
-
-.. raw:: html
-
-    <!-- opt out iframe - clicking this will mean people can opt out of tracking -->
-    <iframe style="border: 0; height: 200px; width: 600px;"
-        src="https://mon.opendataservices.coop/piwik/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily="
-        ></iframe>
-
-Data processors: Open Data Services Co-operative Limited, Bytemark.
+Data processors: Open Data Services Co-operative Limited, Bytemark, Google.
 
 The data controller (OpenOwnership) is based in the USA.
 
