@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,56 +22,66 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 352bffb6ec5e4476bab871e5ee4a8fa7
+# dc1570fdaf9d4ad6bb6d07c060f1f8e7
 #: ../../examples/index.rst:2
 msgid "Examples"
-msgstr ""
+msgstr "Ejemplos"
 
-# 109ae6eb810a4696a74f3cce9c03dc7c
+# 7cac8e0d3abb4a8290f520fe86729556
 #: ../../examples/index.rst:4
 msgid ""
 "The following examples highlight key elements of how ownership and control "
 "information is built up through the use of statements."
 msgstr ""
+"Los siguientes ejemplos destacan los elementos clave de cómo se desarrolla "
+"la información sobre titularidad y control mediante el uso de declaraciones."
 
-# 002a594d9e624878bb2c4c0144864ef8
+# c3c37987c10243638237a50d6a8eb4e1
 #: ../../examples/index.rst:7
 msgid "A single direct owner"
-msgstr ""
+msgstr "Un único propietario directo"
 
-# 47870d596195426f8019fd40ab65fd16
+# 0b600477b9a14d6384727654b6f69bfc
 #: ../../examples/index.rst:9
 msgid ""
 "The example below presents three statements (Entity, Person and "
 "OwnershipOrControl) that describe the 100% beneficial ownership of Chrinon "
 "Ltd by Chris Taggart."
 msgstr ""
+"En el ejemplo de más abajo, se presentan tres declaraciones (sobre Entidad, "
+"sobre Persona y sobre Titularidad o Control) que explican la condición de "
+"beneficiario final en un 100 % de Chris Taggart en Chrinon Ltd."
 
-# ffeab5fcfea445b0a26e76ff8047d933
+# 47e89534876948c99526f588340a71e2
 #: ../../examples/index.rst:15
 msgid "Joint ownership"
-msgstr ""
+msgstr "Titularidad conjunta"
 
-# 969269061a084ce2be888502b71ca27e
+# a087894e62ed42789aa2d882671cf568
 #: ../../examples/index.rst:17
 msgid ""
 "To model joint ownership, an artificial 'arrangement', owned by the two "
 "parties responsible for it, should be included within a chain of ownership."
 msgstr ""
+"Para representar una titularidad conjunta, se debería incluir en una cadena "
+"de titularidad una \"estructura jurídica\" artificial que sea propiedad de "
+"sus dos partes responsables."
 
-# 4628124191be40abbfc980779a8a4484
+# 683a0c766d804e3b95b8f038f4816372
 #: ../../examples/index.rst:24
 msgid "Updating ownership"
-msgstr ""
+msgstr "Actualización de la titularidad"
 
-# 8fc9d08476fc46599ca3e653151717d5
+# a1475a43d0e64e899f4ef6f186fb5158
 #: ../../examples/index.rst:26
 msgid ""
 "To update a previous statement, a new beneficial ownership statement, with a"
 " ``replacesStatement`` property is required."
 msgstr ""
+"Para actualizar una declaración anterior, se necesita una nueva declaración "
+"sobre beneficiarios finales con la propiedad ``reemplazaDeclaración``."
 
-# 0a05d240af9d4a6c83234f3d3dec24ac
+# 7a098c202a3f4e7e833fa3b6940eb778
 #: ../../examples/index.rst:28
 msgid ""
 "In the (fictional) example below, the previous statement that Chris Taggart "
@@ -74,17 +89,28 @@ msgid ""
 " ownership. A separate statement declares that the owner of the other 50% "
 "has not yet been identified."
 msgstr ""
+"En el ejemplo (ficticio) de más abajo, la anterior declaración según la cual"
+" Chris Taggart goza del 100 % de la titularidad de Chrinon Ltd se sustituye "
+"por una nueva declaración que señala un 50 % de la titularidad. En una "
+"declaración aparte se indica que el propietario del otro 50 % aún no ha sido"
+" identificado."
 
-# 11eb6f6f53ed4ed0b1fada6c0c0bbfe3
+# e51daf4bfede4ac687325ec5ff77f98a
 #: ../../examples/index.rst:30
 msgid ""
 "Note that only **changed statements** need to new statement identifiers."
 msgstr ""
+"Nótese que solo las **declaraciones modificadas** necesitan nuevos "
+"identificadores de declaración."
 
-# 570e46560f664d258c98178a34383d62
+# 0ec83b6f48d1412b91dedd35c2e097e4
 #: ../../examples/index.rst:35
 msgid ""
 "When a data file is provided, all the person or entity statements referenced"
 " from an ownershipOrControl statement ``subject`` or ``interestedParty`` "
 "field should be included in the file."
 msgstr ""
+"Cuando se aporta un archivo de datos, en él deberían incluirse todas las "
+"declaraciones sobre personas o entidades a las que se hace referencia en los"
+" campos ``sujeto`` o ``parteInteresada`` de una declaración sobre "
+"titularidad o control."

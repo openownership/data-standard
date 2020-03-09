@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,19 +22,22 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 3b1f187de5b74d9f95d9328b34e8de59
+# 6ab4434b6ffd471692d885d7cce16a83
 #: ../../schema/guidance/provenance.rst:4
 msgid "Sources and annotations"
-msgstr ""
+msgstr "Fuentes y notas"
 
-# 48cc530756fc4ddfa255c154fe132976
+# 9d229f6a865f41bb92773166ddb205e6
 #: ../../schema/guidance/provenance.rst:6
 msgid ""
 "It is important to indicate clearly where data has come from, and any "
 "changes to it that have been made since it was originally collected."
 msgstr ""
+"Es importante indicar con claridad de dónde proceden los datos, y todo "
+"cambio que se haya aplicado a ellos desde que se recopilaron por primera "
+"vez."
 
-# 4e56253ee7af4cc39e6ee85f1b08bf69
+# ec799df710c44056831d59ff979aad24
 #: ../../schema/guidance/provenance.rst:8
 msgid ""
 "Each statement SHOULD contain information on its source, and whether or not "
@@ -38,15 +46,22 @@ msgid ""
 "have been checked through some process to verify that the information "
 "provided is accurate.)"
 msgstr ""
+"Cada declaración DEBERÍA incluir información sobre su fuente, e indicar si "
+"los datos que contiene han sido verificados o no. (Por ejemplo, una "
+"declaración puede haberse tomado de registros oficiales, o ser una "
+"autodeclaración, y puede o no haber sido chequeada mediante algún proceso "
+"para verificar que la información proporcionada sea precisa.)"
 
-# 47eef8cc3c314c1ca2a4fabd35e4b57d
+# 027ad352f17d4d0e8c633d8378465f54
 #: ../../schema/guidance/provenance.rst:10
 msgid ""
 "The ``source`` property of each statement MAY be used to provide provenance "
 "information."
 msgstr ""
+"La propiedad ``fuente`` de cada declaración PUEDE utilizarse para brindar "
+"información sobre su procedencia."
 
-# ba4231bd487441b1b5915116557b3d2b
+# 02a776d2d7c949219712775f4f65b0ec
 #: ../../schema/guidance/provenance.rst:12
 msgid ""
 "The ``annotations`` property of each statement MAY be used to provide "
@@ -59,3 +74,14 @@ msgid ""
 "these changes SHOULD be recorded as annotations, to allow users to clearly "
 "understand the provenance of information."
 msgstr ""
+"La propiedad ``nota`` de cada declaración PUEDE utilizarse para brindar "
+"información contextual adicional a nivel de una declaración completa, un "
+"subobjeto o una propiedad individual. Por ejemplo, podría utilizarse una "
+"nota para incluir información estructurada que detalle la naturaleza de la "
+"participación que una persona física tiene en una empresa. En algunos casos,"
+" los sistemas que procesan datos basados en BODS pueden realizar cambios "
+"para limpiar, mejorar o actualizar de algún otro modo los datos, p. ej. "
+"conciliar los nombres de las empresas con los identificadores. En este caso,"
+" los detalles de dichos cambios DEBERÍAN registrarse como notas, a fin de "
+"posibilitar que los usuarios comprendan claramente la procedencia de la "
+"información."

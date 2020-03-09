@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,25 +22,28 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 750faa08531d40a78ab3779011c4d630
+# 194a0ab17b1a4f35a9d08119339a8c7c
 #: ../../userguides/validating-and-verifying.rst:2
 msgid "Validating and verifying data"
-msgstr ""
+msgstr "Validación y verificación de datos"
 
-# 706b97450bd44f2aaf0b43863e3bb4e8
+# e472d4a27ff84bdbad3bb285fc98f714
 #: ../../userguides/validating-and-verifying.rst:4
 msgid ""
 "In order to be useful, the data that is published will need to be validated."
 " There are two areas of validation that can be planned for in the producing "
 "data phase."
 msgstr ""
+"Para que sean útiles, los datos que se publiquen deben validarse. Existen "
+"dos áreas de validación que pueden planificarse en la fase de producción de "
+"datos."
 
-# 918552ac6daa49da8a593d09fba2e2b1
+# 34e30156337845eb989cc0ecea28e826
 #: ../../userguides/validating-and-verifying.rst:12
 msgid "Validation against the standard"
-msgstr ""
+msgstr "Validación en función del estándar"
 
-# 8d18e4044aeb4d938453af2ea279fd31
+# da5f5d78e5594904ac48397a33579061
 #: ../../userguides/validating-and-verifying.rst:18
 msgid ""
 "For interoperability with other publishers data, and to allow for common "
@@ -44,8 +52,15 @@ msgid ""
 " data. Any serialisations to other formats should be tested to ensure that "
 "the data is correctly represented."
 msgstr ""
+"Para posibilitar la interoperabilidad con los datos de otros publicadores, y"
+" a fin de permitir el uso de herramientas de análisis de datos comunes, las "
+"publicaciones en formato JSON deberían validarse en función de la versión "
+"del esquema del Estándar de Datos sobre Beneficiarios Finales utilizado para"
+" producir los datos. Toda serialización a otros formatos debería ser "
+"someterse a prueba a fin de garantizar que los datos estén correctamente "
+"representados."
 
-# 264ad749c0c44a599ed044050a30a4ba
+# e0fd82be0bcb4521a650cd2d35d48fdc
 #: ../../userguides/validating-and-verifying.rst:24
 msgid ""
 "For now, generic JSON schema validation tools should be used to test for "
@@ -53,20 +68,24 @@ msgid ""
 "to test the correctness of JSON outputs and serialisation to flat file "
 "formats."
 msgstr ""
+"Por el momento, deberían utilizarse herramientas genéricas de validación de "
+"esquemas JSON para someter a prueba la exactitud. En el futuro, se dispondrá"
+" de herramientas de validación a medida para someter a prueba la exactitud "
+"de lo generado en JSON y la serialización a formatos de archivo plano."
 
-# e8d34ece0ca34245ab0184a76815e1e1
+# 5dbc6e23dcbb43b0afbb878d360dbcca
 #: ../../userguides/validating-and-verifying.rst:33
 msgid "Pre-validation of data during collection"
-msgstr ""
+msgstr "Prevalidación de los datos durante la recopilación"
 
-# af38504e4a49405d9d0ba68cab56842e
-# af38504e4a49405d9d0ba68cab56842e
+# 9c39a5a221d2462797305f92ab0a664b
+# d55d344d24394c7c80fcc0bf4a81c295
 #: ../../userguides/validating-and-verifying.rst:39
 #: ../../userguides/validating-and-verifying.rst:51
 msgid "(TBC)"
-msgstr ""
+msgstr "(pendiente de confirmación)"
 
-# 8465af1ac779429dbcae3bd188d2448e
+# 701036070f4143e8be60c5f568b2a3d0
 #: ../../userguides/validating-and-verifying.rst:45
 msgid "Verifying data"
-msgstr ""
+msgstr "Verificación de los datos"
