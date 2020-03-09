@@ -1,14 +1,14 @@
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020
 # Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-09-07 08:06+0000\n"
 "PO-Revision-Date: 2019-08-07 15:28+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -280,13 +280,13 @@ msgstr "Participación"
 #: docs/_assets/data-schema-model-1.svg:608
 #, no-wrap
 msgid "Type:   share-holding"
-msgstr "Tipo: participación accionaria"
+msgstr "Type: share-holding"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:613
 #, no-wrap
 msgid "Share: 60%"
-msgstr "Porcentaje: 60 %"
+msgstr "Share: 60 %"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:625
@@ -307,19 +307,19 @@ msgstr "Declaración sobre titularidad o control"
 #: docs/_assets/data-schema-model-1.svg:678
 #, no-wrap
 msgid "Type:   voting-rights"
-msgstr "Tipo: derechos de voto"
+msgstr "Type: voting-rights"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-1.svg:683
 #, no-wrap
 msgid "Share: 30%"
-msgstr "Porcentaje: 30 %"
+msgstr "Share: 30 %"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:589
 #, no-wrap
 msgid "person:  47bdf780-787d-4bfd-9205"
-msgstr "persona:  47bdf780-787d-4bfd-9205"
+msgstr "person:  47bdf780-787d-4bfd-9205"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:605
@@ -330,7 +330,7 @@ msgstr "parteInteresada"
 #: docs/_assets/data-schema-model-2.svg:635
 #, no-wrap
 msgid "entity:  ty4t68s3-hha4-8ks3-0d8w  "
-msgstr "entidad:  ty4t68s3-hha4-8ks3-0d8w  "
+msgstr "entity:  ty4t68s3-hha4-8ks3-0d8w  "
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:651
@@ -347,19 +347,19 @@ msgstr "Declaración sobre persona"
 #: docs/_assets/data-schema-model-2.svg:717
 #, no-wrap
 msgid "statementID:  47bdf780-787d-4bfd-9205"
-msgstr "identificaciónDeDeclaración: 47bdf780-787d-4bfd-9205"
+msgstr "statementID: 47bdf780-787d-4bfd-9205"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:722
 #, no-wrap
 msgid "name: Roberto Lopez"
-msgstr "nombre: Roberto López"
+msgstr "name: Roberto López"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:727
 #, no-wrap
 msgid "birthDate: 1967-03-12"
-msgstr "fechaDeNacimiento: 1967-03-12"
+msgstr "birthDate: 1967-03-12"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:762
@@ -371,37 +371,37 @@ msgstr "Declaración sobre entidad"
 #: docs/_assets/data-schema-model-2.svg:773
 #, no-wrap
 msgid "statementID:  ty4t68s3-hha4-8ks3-0d8w"
-msgstr "identificaciónDeDeclaración: ty4t68s3-hha4-8ks3-0d8w"
+msgstr "statementID: ty4t68s3-hha4-8ks3-0d8w"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:778
 #, no-wrap
 msgid "name: RENCO Energy Ltd"
-msgstr "nombre: RENCO Energy Ltd"
+msgstr "name: RENCO Energy Ltd"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:783
 #, no-wrap
 msgid "foundingDate: 2016-07-07"
-msgstr "fechaDeFundación: 2016-07-07"
+msgstr "foundingDate: 2016-07-07"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:585
 #, no-wrap
 msgid "type:               selfDeclaration"
-msgstr "tipo: autodeclaración"
+msgstr "type: selfDeclaration"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:590
 #, no-wrap
 msgid "retrievedAt:   2018-11-07T13:55:32.734Z"
-msgstr "momentoDeAcceso: 2018-11-07T13:55:32.734Z"
+msgstr "retrievedAt: 2018-11-07T13:55:32.734Z"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:595
 #, no-wrap
 msgid "assertedBy:   Acme Industries Ltd"
-msgstr "realizadaPor: Acme Industries Ltd"
+msgstr "assertedBy: Acme Industries Ltd"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-3.svg:606
@@ -412,4 +412,4 @@ msgstr "fuente"
 #: docs/_assets/data-schema-model-3.svg:629
 #, no-wrap
 msgid "statementDate:   2018-07-12"
-msgstr "fechaDeLaDeclaración: 2018-07-12"
+msgstr "statementDate: 2018-07-12"
