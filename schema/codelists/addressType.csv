@@ -1,7 +1,7 @@
 code,title,description,technical note
-placeOfBirth,Place of birth,The place where a person was born. This must only be used to describe natural persons. Only a town and country are required.
-residence,Residential address,An address where someone lives. This must only be used for natural persons.
-registered,Registered address,An official address for delivering statutory mail and legal notices which must be provided to company registers. This must only be used to describe entities.
-service,Service address,An address which can be used as an alternative to a residential address for the purpose of receiving post. This must only be used for natural persons.
-alternative,Alternative address,An address provided in addition to the primary address for this entity or person that is neither a service nor a registered address.
-business, Business address,A place where the entity conducts its business.
+placeOfBirth,Place of birth,The place where a person was born. This must only be used to describe natural persons. Only a town and country are required.,
+residence,Residential address,An address where someone lives. This must only be used for natural persons.,
+registered,Registered address,An official address for delivering statutory mail and legal notices which must be provided to company registers. This must only be used to describe entities.,
+service,Service address,An address which can be used as an alternative to a residential address for the purpose of receiving post. This must only be used for natural persons.,
+alternative,Alternative address,An address provided in addition to the primary address for this entity or person that is neither a service nor a registered address.,
+business,Business address,A place where the entity conducts its business.,

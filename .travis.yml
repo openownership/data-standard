@@ -2,8 +2,13 @@ sudo: false
 language: python
 python: 
   - "3.5"
+env:
+  global:
+    # Pinned to a commit on the master branch
+    - BASEDIR="https://raw.githubusercontent.com/open-contracting/standard-maintenance-scripts/c3b4fc9499852baed9fc0160638162aa0e61381f"
 install: 
   - "pip install -r requirements_test.txt"
+  - curl -s -S --retry 3 $BASEDIR/tests/install.sh | bash -
 script:
+  - "./open-contracting_standard-maintenance-scripts_tests_script.sh"
   - "py.test"
-  - "flake8 tests"

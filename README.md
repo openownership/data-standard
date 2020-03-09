@@ -1,27 +1,21 @@
-Beneficial Ownership Data Standard
-==================================
+Beneficial Ownership Data Standard (BODS)
+========================================
 
-This repository contains work in progress for the development of a data specification and standard for publication and consumption of data about Beneficial Ownership.
+[![Documentation Status](https://readthedocs.org/projects/beneficial-ownership-data-standard/badge/?version=latest)](http://standard.openownership.org/en/latest/?badge=latest)
 
-You can find the latest draft of the schema and documentation for review at [http://standard.openownership.org/](http://standard.openownership.org/)
+The Beneficial Ownership Data Standard provides a specification for modelling and publishing information on the beneficial ownership and control of companies. 
 
-You can share feedback on the standard through this project's issue tracker.
+It has been created by [OpenOwnership](http://www.openownership.org), and is provided under an open license for re-use. 
 
-## About
+You can find the latest version of the schema and documentation for review at [http://standard.openownership.org/](http://standard.openownership.org/)
 
-This work is taking place under the auspices of the Open Ownership project. More details on the project are available at http://www.openownership.org
+We welcome feedback on the standard through this project's issue tracker.
 
-The work will be guided by the Data Standard Working Group, and initial phases will take place between December 2016 and March 2017.
+## Contact
 
-### Contact
+Please direct any correspondence to [support@openownership.org](mailto:support@openownership.org)
 
-For more details about the Open Ownership project, please contact the project coordinator, [Zosia Sztykowski](mailto:zosia@openownership.org)
-
-### Partners and funders
-
-The initial development of the Beneficial Ownership Data Standard is funded through support for the Open Ownership project from the UK Department for International Development. Open Ownership is a project of [Transparency International](https://www.transparency.org/), [One](https://www.one.org/international/), the [Open Contracting Partnership](http://www.open-contracting.org), the [World Wide Web Foundation](http://www.webfoundation.org), [Global Witness](https://www.globalwitness.org/en-gb/) and [The B Team](http://bteam.org/)
-
-## Technical documentation
+# Technical documentation
 
 ### Dependencies
 
