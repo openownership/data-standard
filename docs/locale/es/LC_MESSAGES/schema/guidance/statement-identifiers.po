@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,55 +22,67 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 73997da9c6664a609903b51d45e0aabf
+# b6196d3af190474cbfdf4d58d6de2286
 #: ../../schema/guidance/statement-identifiers.rst:4
 msgid "Statement Identifiers"
-msgstr ""
+msgstr "Identificadores de declaraciones"
 
-# 895be3aedcc64d8aaf8f488f7ba6cf43
+# cc5b64fc3f4f406aab568f1244e4177e
 #: ../../schema/guidance/statement-identifiers.rst:6
 msgid ""
 "Each statement MUST have an entirely unique identifier. There MUST be no "
 "possibility of collision between identifiers for different statements."
 msgstr ""
+"Cada declaración DEBE tener un identificador totalmente único. No DEBE "
+"existir ninguna posibilidad de conflicto entre los identificadores de "
+"diferentes declaraciones."
 
-# 451223b6506c436a8cb90175357244ff
+# 145cf43471e847faa0177b7db5792901
 #: ../../schema/guidance/statement-identifiers.rst:8
 msgid "This means that:"
-msgstr ""
+msgstr "Esto implica que:"
 
-# 49e4f99e47634d08a22b2b7abce04d98
+# 90780689e3e349c4b665e343af283ca2
 #: ../../schema/guidance/statement-identifiers.rst:10
 msgid "Two **different** statements SHOULD never have the same identifier;"
 msgstr ""
+"Dos declaraciones **diferentes** no DEBERÍAN tener nunca el mismo "
+"identificador;"
 
-# d53c2c2c2b1e4fd993b8ec1d51983359
+# 7814e03f6416477489a5fb5423157cbc
 #: ../../schema/guidance/statement-identifiers.rst:11
 msgid ""
 "Once an identifier is assigned to a statement, the identifier SHOULD NOT "
 "change."
 msgstr ""
+"Una vez asignado un identificador a una declaración, el identificador NO "
+"DEBERÍA cambiar."
 
-# b07d794232ca42a8a9a43ba01334656f
+# 6dbf3b5fa9f646dfa671bd63c50baea2
 #: ../../schema/guidance/statement-identifiers.rst:13
 msgid ""
 "The schema enforces a minimum statement identifier length of 32 characters, "
 "and maximum length of 64 characters."
 msgstr ""
+"El esquema impone una longitud mínima de 32 caracteres para los "
+"identificadores de las declaraciones, y una longitud máxima de 64 "
+"caracteres."
 
-# 0c14981c1af045b4a1b3ac2b0750d506
+# 9e522b8dc76c434bab0e72e211742530
 #: ../../schema/guidance/statement-identifiers.rst:15
 msgid ""
 "Publishers MAY use one of the following strategies for creating statement "
 "identifiers."
 msgstr ""
+"Los publicadores PUEDEN utilizar una de las siguientes estrategias para "
+"generar identificadores de declaraciones."
 
-# c88921ee342f4bf4ae7e0ea297c23988
+# c15440ee6a024fcf85500f0cb433603d
 #: ../../schema/guidance/statement-identifiers.rst:20
 msgid "Strategies for identifier creation"
-msgstr ""
+msgstr "Estrategias para la generación de identificadores"
 
-# 035ef4f57e254866a4b50543edf1d039
+# c008c61c4a0c4da8a3f5d1bc203385cc
 #: ../../schema/guidance/statement-identifiers.rst:22
 msgid ""
 "Generating a `UUID "
@@ -73,8 +90,13 @@ msgid ""
 "statement, storing this in internal systems, and updating it whenever the "
 "relevant record(s) that make up a statement are updated;"
 msgstr ""
+"Generar un `identificador único universal (UUID por sus siglas en "
+"inglés)<https://es.wikipedia.org/wiki/Identificador_%C3%BAnico_universal>`_ "
+"para cada declaracíón, almacenarlo en los sistemas internos, y actualizarlo "
+"cada vez que los registros pertinentes que componen una declaración se "
+"actualicen;"
 
-# 2de3e6e4a27d419795e15a1b0883d3f9
+# 8213f8dd424a40d5b309246d7fa3e646
 #: ../../schema/guidance/statement-identifiers.rst:24
 msgid ""
 "Generating a `UUID "
@@ -82,23 +104,34 @@ msgid ""
 "publisher-related prefix, and appending a local record identifier, and "
 "version identifier to it;"
 msgstr ""
+"Generar un `identificador único universal "
+"<https://es.wikipedia.org/wiki/Identificador_%C3%BAnico_universal>`_ como "
+"prefijo relacionado con el publicador, y anexarle un identificador de "
+"registro local y un identificador de versión;"
 
-# a6c56dc5fd4240489392abef95f120ba
+# 2bc72b7e45f3433da1931a2e54af516b
 #: ../../schema/guidance/statement-identifiers.rst:26
 msgid ""
 "Using an appropriately designed hash function that generates identifiers "
 "from a normalised JSON representation of the statement (excluding the `id` "
 "field) with a low collision probability."
 msgstr ""
+"Utilizar una función hash diseñada de forma apropiada que genere "
+"identificadores a partir de una representación JSON normalizada de la "
+"declaración (excluyendo el campo `identificación`) con una baja probabilidad"
+" de conflicto."
 
-# 54b5ec792897478c9a42c6f116d63df8
+# 62987358d6ef48f280108c970f85c483
 #: ../../schema/guidance/statement-identifiers.rst:28
 msgid ""
 "Using an internal identifier combined with a unique prefix to avoid "
 "collision between identifiers from different publishers"
 msgstr ""
+"Utilizar un identificador interno en combinación con un prefijo único para "
+"evitar eventuales conflictos entre identificadores de diferentes "
+"publicadores."
 
-# 76a33bc343954645b7bbd3ff510f01b7
+# 278b245b50b94f1e825dda9e67a13f5e
 #: ../../schema/guidance/statement-identifiers.rst:31
 msgid ""
 "Statement identifiers are generally for creation and internal use within "
@@ -106,3 +139,8 @@ msgid ""
 "users. This is in contrast to :ref:`entity or person identifiers <guidance-"
 "identifiers>`, which may be useful to display to users."
 msgstr ""
+"Los identificadores de declaraciones normalmente están pensados para ser "
+"creados y utilizarse de manera interna dentro de los programas. En la "
+"mayoría de los casos no es necesario que los usuarios los vean. Por el "
+"contrario, sí puede resultar útil que los usuarios vean los "
+":ref:`identificadores de entidades o personas <guidance-identifiers>`."

@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,15 +21,18 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# e9c0b295efb7493588c833a6f8073547
+# 25e776ce65ee4acc8378f83514c68dd7
 #: ../../userguides/using-ben-ownership-data.rst:2
 msgid "Using beneficial ownership data"
-msgstr ""
+msgstr "Uso de los datos sobre beneficiarios finales"
 
-# aa40debc507845349cab2187fa3ebf0e
+# 85bde52535a44956b2f018112fc7fdd0
 #: ../../userguides/using-ben-ownership-data.rst:4
 msgid ""
 "(New section. Considerations when representing conflicting statements, "
 "multiple statements relating to single real-world entities etc. Matching and"
 " deduplication.)"
 msgstr ""
+"(Nueva sección. Aspectos a considerar cuando se expresan declaraciones "
+"contradictorias, declaraciones múltiples relativas a una misma entidad del "
+"mundo real, etc. Coincidencia y Desduplicación)."

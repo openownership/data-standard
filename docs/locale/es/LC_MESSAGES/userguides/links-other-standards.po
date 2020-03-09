@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:07+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,22 +22,22 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 8cb64182454d49b48f56f7d54e7cb8e4
+# b78ee4012d4a4d8b8d75b2055ef129f0
 #: ../../userguides/links-other-standards.rst:2
 msgid "Links with other data standards"
-msgstr ""
+msgstr "Vínculos con otros estándares de datos"
 
-# 0c00ba34f2d0487e9c9fe1cea4ffae2c
+# 414837fdb84841e988f18623b147a40f
 #: ../../userguides/links-other-standards.rst:4
 msgid "(To be added."
-msgstr ""
+msgstr "(Próximo a añadirse."
 
-# 72863c04c5ca47e29020543e6009c41d
+# d35b212b0c9f4547a8d9ad1bbb91d10e
 #: ../../userguides/links-other-standards.rst:6
 msgid "Populo"
-msgstr ""
+msgstr "Populo"
 
-# 47cedba2905f4dcca1a0537e92123e43
+# db0d1e54491c44c29293fd82729fead4
 #: ../../userguides/links-other-standards.rst:7
 msgid "Common reporting standard etc. )"
-msgstr ""
+msgstr "Estándar común de presentación de información, etc. )"

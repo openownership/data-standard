@@ -4,7 +4,7 @@ formats:
 requirements_file: requirements.txt
 
 build:
-    image: 2.0
+    image: latest
 
 python:
    version: 3.5
