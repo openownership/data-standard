@@ -33,7 +33,7 @@ from jsonpointer import resolve_pointer
 from pathlib import Path
 from sphinx.directives.code import LiteralInclude
 
-from bods_babel.translate import translate
+from ocds_babel.translate import translate
 
 import oods.pygments
 import oods.sphinxtheme
@@ -259,7 +259,8 @@ def translate_schema_and_codelists(language='en'):
         (glob(str(schema_source_dir / '*.json')), str(schema_target_dir), schema_domain),
         # The glob patterns in `babel_bods_codelist.cfg` should match these.
         (glob(str(codelist_source_dir / '*.csv')), str(codelist_target_dir), codelist_domain),
-    ], str(localedir), language, version=os.environ.get('TRAVIS_BRANCH', 'latest'))
+    ], str(localedir), language, version=os.environ.get('TRAVIS_BRANCH', 'latest'),
+        headers='title,description,technical note')
 
     print("Translated schema and codelists to {}".format(language))
 

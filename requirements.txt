@@ -1,35 +1,36 @@
-sphinx-intl==0.9.11
-transifex-client==0.13.6
-sphinx-rtd-theme==0.4.2
+sphinx-intl==2.0.0
+transifex-client==0.13.7
+sphinx-rtd-theme==0.4.3
 CommonMark==0.7.5
 -e git+https://github.com/rtfd/recommonmark.git@450909bdcf4c5eafde7c89696006530ba7cc78de#egg=recommonmark
 -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8a3982bf7701420e50d69f2341213ced2b18ca54#egg=sphinxcontrib_jsonschema
 -e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@fab0ff0167d32ec243d42f272e0e50766299c078#egg=sphinxcontrib_opendataservices
--e git+https://github.com/openownership/data-standard-sphinx-theme.git@3e2ba3f46bce109fb416cff877578c7c7b3b9627#egg=standard_theme
-urllib3==1.24.2
-requests==2.21.0
-git+https://github.com/openownership/bods-babel.git@c391be94700cdaa50b915e23981f9058097d6bc3#egg=bods-babel
+-e git+https://github.com/openownership/data-standard-sphinx-theme.git@75310a59e5ca6e05b2e4971ea5ce951e5e1ac73f#egg=standard_theme
+ocds-babel==0.2.1
+urllib3==1.25.8
+requests==2.23.0
+
 ## The following requirements were added by pip freeze:
 alabaster==0.7.12
-Babel==2.6.0
-certifi==2018.11.29
+Babel==2.8.0
+certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
-docutils==0.14
-future==0.17.1
-idna==2.8
-imagesize==1.1.0
-Jinja2==2.10.1
+docutils==0.16
+future==0.18.2
+idna==2.9
+imagesize==1.2.0
+Jinja2==2.11.1
 jsonpointer==2.0
 jsonref==0.2
-MarkupSafe==1.1.0
-packaging==19.0
-Pygments==2.3.1
-pyparsing==2.3.1
+MarkupSafe==1.1.1
+packaging==20.3
+Pygments==2.5.2
+pyparsing==2.4.6
 python-slugify==1.2.6
-pytz==2018.9
-six==1.12.0
-snowballstemmer==1.2.1
+pytz==2019.3
+six==1.14.0
+snowballstemmer==2.0.0
 Sphinx==1.7.5
-sphinxcontrib-websupport==1.1.0
-Unidecode==1.0.23
+sphinxcontrib-websupport==1.2.0
+Unidecode==1.1.1
