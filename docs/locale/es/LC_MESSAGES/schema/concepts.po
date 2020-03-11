@@ -6,6 +6,7 @@
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
 # Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -187,8 +188,8 @@ msgstr ""
 " manejar las declaraciones con el debido cuidado. En última instancia, "
 "depende de los utilizadores de datos decidir en qué declaraciones confiar, y"
 " verificar las identidades utilizando la :any:`información identificatoria "
-"<guidance-identifiers>` contenida en las ``declaracionesSobrePersonas`` y "
-"``declaracionesSobreEntidades``."
+"<guidance-identifiers>` contenida en las ``personStatements`` y "
+"``entityStatements``."
 
 # eec0d31cca1e4c37bd715db0314feb91
 #: ../../schema/concepts.rst:54
@@ -227,9 +228,9 @@ msgid ""
 "The ``statementIdentifier`` exists solely for the purpose of connecting "
 "statements."
 msgstr ""
-"Cada declaración posee los campos ```identificadorDeDeclaración``` y "
-"``tipoDeDeclaración``. ``identificadorDeDeclaración`` existe solamente para "
-"conectar las declaraciones."
+"Cada declaración posee los campos ``statementIdentifier``` y "
+"``statementType``. ``statementIdentifier`` existe solamente para conectar "
+"las declaraciones."
 
 # 005a4f7b937d440291c64954537af4e5
 #: ../../schema/concepts.rst:64
@@ -265,7 +266,7 @@ msgstr ""
 "Las **declaraciones sobre titularidad o control** describen la(s) "
 "participación(es) que una entidad posee en otra, o que una persona posee en "
 "una entidad. Se vinculan a esas entidades y personas mediante referencias de"
-" ``identificadorDeDeclaración``."
+" ``statementIdentifier``."
 
 # 62f52a2c9c9e42cc941e5a4ecf883de6
 #: ../../schema/concepts.rst:68
@@ -275,9 +276,9 @@ msgid ""
 " and any verification of the information that has taken place. See "
 ":ref:`Sources and annotations <provenance>` for guidance."
 msgstr ""
-"Todas las declaraciones poseen las propiedades ``fuente`` y ``notas`,` que "
-"pueden facilitar un rastro de auditoría que indique dónde y cuándo se obtuvo"
-" la información, y toda verificación de la información que se haya "
+"Todas las declaraciones poseen las propiedades ``source`` y ``annotations`,`"
+" que pueden facilitar un rastro de auditoría que indique dónde y cuándo se "
+"obtuvo la información, y toda verificación de la información que se haya "
 "realizado. Consulte :ref:`Fuentes y notas<provenance>` para obtener "
 "orientación."
 
@@ -288,10 +289,9 @@ msgid ""
 "that can be used to disclose the real-world identity of the entity or "
 "individual. These include:"
 msgstr ""
-"Tanto las ``declaracionesSobrePersonas`` como las "
-"``declaracionesSobreEntidades`` contienen un conjunto de campos que pueden "
-"utilizarse para divulgar la identidad en el mundo real de la entidad o del "
-"individuo. Estos incluyen:"
+"Tanto las ``personStatements`` como las ``entityStatements`` contienen un "
+"conjunto de campos que pueden utilizarse para divulgar la identidad en el "
+"mundo real de la entidad o del individuo. Estos incluyen:"
 
 # 202a0a7708e64147b5fd21f0c0aa5a77
 #: ../../schema/concepts.rst:72
@@ -300,7 +300,7 @@ msgid ""
 "company registration for firms, or publicly shareable taxpayer identifiers "
 "for individuals."
 msgstr ""
-"Un arreglo de ``identificadores`` que se utiliza para proporcionar "
+"Un arreglo de ``identifiers`` que se utiliza para proporcionar "
 "identificadores conocidos, como la inscripción de las empresas en el caso de"
 " compañías, o identificadores de contribuyentes compartibles públicamente en"
 " el caso de individuos."
@@ -355,20 +355,20 @@ msgid ""
 "``entityStatement``) and an ``interestedParty``. This interested party may "
 "be:"
 msgstr ""
-"Una ``declaraciónSobreTitularidadOControl`` vincula (mediante referencias de"
-" ``identificadorDeDeclaración``) al ``sujeto`` de la declaración (la entidad"
-" descripta en la ``declaraciónSobreEntidad``) y a una ``parteInteresada``. "
-"Esta parte interesada puede ser:"
+"Una ``ownershipOrControlStatement`` vincula (mediante referencias de "
+"``statementIdentifier``) al ``subject`` de la declaración (la entidad "
+"descripta en la ``entityStatement``) y a una ``interestedParty``. Esta parte"
+" interesada puede ser:"
 
 # a0287c9a8bbe49048741a4faba2bf5f1
 #: ../../schema/concepts.rst:83
 msgid "Another entity described by an ``entityStatement``;"
-msgstr "Otra entidad descripta en una ``declaraciónSobreEntidad``;"
+msgstr "Otra entidad descripta en una ``entityStatement``;"
 
 # 6d488de17f68444db62c9efbe311d677
 #: ../../schema/concepts.rst:84
 msgid "A person described by a ``personStatement``; or"
-msgstr "Una persona descripta en una ``declaraciónSobrePersona``; o"
+msgstr "Una persona descripta en una ``personStatement``; o"
 
 # c6abac1d591f4527b44bc71b363cec73
 #: ../../schema/concepts.rst:85
@@ -388,9 +388,9 @@ msgid ""
 " the size of the interest."
 msgstr ""
 "La declaración sobre titularidad o control también contiene un arreglo de "
-"``participaciones``, cada una con un respectivo tipo (seleccionado de la "
-"`lista de códigos tipoDeParticipación <reference.html#interesttype>`_) y, "
-"cuando es pertinente, porcentajes que indican el tamaño de la participación."
+"``interests``, cada una con un respectivo tipo (seleccionado de la `lista de"
+" códigos tipoDeParticipación <reference.html#interesttype>`_) y, cuando es "
+"pertinente, porcentajes que indican el tamaño de la participación."
 
 # fead8340e0b942bbb0e8ab85c9a71b40
 #: ../../schema/concepts.rst:89
@@ -445,8 +445,8 @@ msgid ""
 "``entityStatement`` with ``entityType`` value: 'arrangement'."
 msgstr ""
 "En el BODS, las estructuras jurídicas como estas son tratadas como un tipo "
-"especial de ``declaraciónSobreEntidad`` en la cual ``tipoDeEntidad`` tiene "
-"el valor: \"estructura jurídica\"."
+"especial de ``entityStatement`` en la cual ``entityType`` tiene el valor: "
+"\"arrangement\"."
 
 # e696baa347ea496e91d0da15bd8a05e2
 #: ../../schema/concepts.rst:105
@@ -497,7 +497,7 @@ msgstr ""
 "la Persona A es la beneficiaria final en última instancia de B, pero puede "
 "haber cualquier cantidad de empresas o estructuras jurídicas intermedias "
 "conocidas o desconocidas). Esta circunstancia se indica mediante el uso de "
-"la propiedad ``nivelDeParticipación``, que puede configurarse para cada "
+"la propiedad ``interestLevel``, que puede configurarse para cada "
 "participación declarada."
 
 # 50928c8c33c340aab68b7ecd756a4393
