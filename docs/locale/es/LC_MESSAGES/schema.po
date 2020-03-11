@@ -6,6 +6,7 @@
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
 # Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-09-06 12:21+0000\n"
 "PO-Revision-Date: 2019-06-17 10:43+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,7 +64,7 @@ msgid ""
 "come from the source type codelist."
 msgstr ""
 "¿De qué tipo de fuente se trata? Se pueden combinar varias etiquetas. Los "
-"valores deberían proceder de la lista de códigos del tipo de fuente."
+"valores deberían proceder de la lista de códigos del sourceType."
 
 #. /definitions/Source/properties/description/title
 #. /definitions/Annotation/properties/description/title
@@ -252,10 +253,10 @@ msgstr ""
 "En el caso de las declaraciones sobre entidades, el esquema debería ser una "
 "entrada de la lista de códigos [org-id.guide](http://www.org-id.guide). Para"
 " declaraciones sobre personas, el esquema debería tener el patrón "
-"{JURISDICCIÓN}-{TIPO}, donde JURISDICCIÓN es un código ISO de país de 3 "
-"dígitos y TIPO se refiere a PASAPORTE, IDENTIFICADOR TRIBUTARIO o TARJETA DE"
-" IDENTIDAD. En el objeto Identificador se DEBE incluir `esquema` o "
-"`nombreDelEsquema`  (o ambos)."
+"{JURISDICTION}-{TYPE}, donde JURISDICTION (JURISDICCIÓN) es un código ISO de"
+" país de 3 dígitos y TYPE (TIPO) se refiere a PASSPORT (PASAPORTE), TAXID "
+"(IDENTIFICADOR TRIBUTARIO)  o IDCARD (TARJETA DE IDENTIDAD). En el objeto "
+"Identifier se DEBE incluir `scheme` o `schemeName`  (o ambos)."
 
 #. /definitions/Identifier/properties/schemeName/title
 #: schema/components.json:1
@@ -270,8 +271,8 @@ msgid ""
 "included in an Identifier object."
 msgstr ""
 "El nombre del esquema, cuando se desconoce el código org-id o solo se "
-"dispone de una cadena de caracteres no validada. En el objeto Identificador "
-"se DEBE incluir `esquema` o `nombreDelEsquema` (o ambos)."
+"dispone de una cadena de caracteres no validada. En el objeto Identifier se "
+"DEBE incluir `scheme` o `schemeName` (o ambos)."
 
 #. /definitions/Identifier/properties/uri/description
 #: schema/components.json:1
@@ -280,9 +281,9 @@ msgid ""
 "URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be "
 "included"
 msgstr ""
-"Cuando este identificador tiene un [URI canónico] "
-"(https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme) se lo "
-"puede incluir."
+"Cuando este identificador tiene un [URI "
+"canónico](https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme) "
+"se lo puede incluir."
 
 #. /definitions/ID/title
 #: schema/components.json:1
@@ -326,7 +327,7 @@ msgstr "Tipo"
 msgid "What type of address is this? See the addressType codelist."
 msgstr ""
 "¿De qué tipo de domicilio se trata? Consulte la lista de códigos "
-"tipoDeDomicilio."
+"addressType."
 
 #. /definitions/Address/properties/address/description
 #: schema/components.json:1
@@ -337,7 +338,7 @@ msgid ""
 msgstr ""
 "El domicilio, con cada una de sus líneas o componentes separados por un "
 "salto de línea o una coma. Cuando los códigos postales son campos aislados "
-"en los sistemas fuente, el campo `domicilio` NO DEBERÍA incluir el código "
+"en los sistemas fuente, el campo `address` NO DEBERÍA incluir el código "
 "postal."
 
 #. /definitions/Address/properties/postCode/title
@@ -372,15 +373,16 @@ msgid ""
 msgstr ""
 "Nombre por el que se conoce a este individuo. Los nombres deberían indicarse"
 " en nombreCompleto y pueden desglosarse facultativamente en los campos "
-"Apellido, nombreDePila y nombrePatronímico, según las definiciones de [EC "
-"ISA Core Person Vocabulary](https://joinup.ec.europa.eu/solution/e"
-"-government-core-vocabularies)."
+"familyName (Apellido), givenName (nombreDePila) y patronymicName "
+"(nombrePatronímico), según las definiciones de [EC ISA Core Person "
+"Vocabulary](https://joinup.ec.europa.eu/solution/e-government-core-"
+"vocabularies)."
 
 #. /definitions/Name/properties/type/description
 #: schema/components.json:1
 msgid "What kind of name is this? See the nameType codelist."
 msgstr ""
-"¿De qué tipo de nombre se trata? Consulte la lista de códigos tipoDeNombre."
+"¿De qué tipo de nombre se trata? Consulte la lista de códigos nameType."
 
 #. /definitions/Name/properties/fullName/title
 #: schema/components.json:1
@@ -464,7 +466,7 @@ msgstr "Participación"
 msgid ""
 "A description of the interest held by an interestedParty in another entity."
 msgstr ""
-"Descripción de la participación de una parteInteresada en otra entidad."
+"Descripción de la participación de una interestedParty en otra entidad."
 
 #. /definitions/Interest/properties/type/title
 #: schema/components.json:1
@@ -478,7 +480,7 @@ msgid ""
 " codelist"
 msgstr ""
 "Valor de la lista de códigos que indica la naturaleza de la participación. "
-"Véase la lista de códigos tipoDeParticipación"
+"Véase la lista de códigos interestType"
 
 #. /definitions/Interest/properties/interestLevel/title
 #: schema/components.json:1
@@ -554,7 +556,7 @@ msgstr ""
 "rango en el que se sitúa la porción de este tipo de participación. Por "
 "defecto, el mínimo es incluyente y el máximo, excluyente (valor mínimo ≤ "
 "porción ≤ valor máximo). Si desea modificar esta configuración "
-"predeterminada, utilice las propiedades mínimoExcluyente y máximoExcluyente."
+"predeterminada, utilice las propiedades exclusiveMinimum y exclusiveMaximum."
 
 #. /definitions/Interest/properties/share/properties/exact/title
 #: schema/components.json:1
@@ -601,7 +603,7 @@ msgid ""
 "minimum value given. E.g. if minimum is 25, the share is at least 25.1, and "
 "not simply 25."
 msgstr ""
-"Si mínimoExcluyente es verdadero, entonces la porción es por lo menos mayor "
+"Si exclusiveMinimum es verdadero, entonces la porción es por lo menos mayor "
 "que el valor mínimo dado. Por ejemplo, si el mínimo es 25, la porción es de "
 "al menos 25,1, y no simplemente 25."
 
@@ -617,7 +619,7 @@ msgid ""
 "maximum value given. E.g. if maximum is 50, the share is less than 49.999, "
 "and not simply 50."
 msgstr ""
-"Si máximoExcluyente es verdadero, entonces la porción es al menos menor que "
+"Si exclusiveMaximum es verdadero, entonces la porción es al menos menor que "
 "el valor máximo dado. Por ejemplo, si el máximo es 50, la porción es "
 "inferior a 49,999 y no simplemente 50."
 
@@ -740,7 +742,7 @@ msgid ""
 "annotationMotivation codelist."
 msgstr ""
 "El motivo que dio lugar a la nota, elegido de una lista de códigos. Consulte"
-" la lista de códigos motivoDeLaNota."
+" la lista de códigos annotationMotivation."
 
 #. /definitions/Annotation/properties/description/description
 #: schema/components.json:1
@@ -884,8 +886,8 @@ msgstr ""
 " el cual no se proporciona la condición de PEP de la persona. Puede tratarse"
 " de una frase descriptiva estándar del sistema de origen o de una "
 "justificación en texto libre. Este campo solo debería completarse cuando "
-"falta revisteCondiciónPEP. Cuando este campo está presente, debería ser el "
-"único, con la excepción de `fuente`."
+"falta hasPEPStatus. Cuando este campo está presente, debería ser el único, "
+"con la excepción de `source`."
 
 #. /definitions/PepStatusDetails/properties/jurisdiction/description
 #: schema/components.json:1
@@ -969,7 +971,7 @@ msgstr ""
 "Enlace a la licencia que se aplica a esta declaración. DEBERÍA usarse e URI "
 "canónico de la licencia. Se alienta a los publicadores a utilizar una "
 "licencia de Dedicación a Dominio Público o de [Conformidad con la Definición"
-" de Abierto] (http://opendefinition.org/od/2.1/es/)."
+" de Abierto](http://opendefinition.org/od/2.1/es/)."
 
 #. /definitions/PublicationDetails/properties/publisher/title
 #. /definitions/Publisher/title
@@ -1025,7 +1027,7 @@ msgstr "Tipo de declaración"
 #. /properties/statementType/description
 #: schema/entity-statement.json:1
 msgid "This should always be 'entityStatement."
-msgstr "Debería ser siempre 'declaraciónSobreEntidad."
+msgstr "Debería ser siempre 'entityStatement'."
 
 #. /properties/isComponent/title
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
@@ -1047,15 +1049,15 @@ msgid ""
 "Statement MUST have a `isComponent` value of 'false'."
 msgstr ""
 "¿Esta Declaración sobre Entidad representa un componente de una relación de "
-"titularidad o control indirecta? Cuando `esComponente` es \"verdadero\": (1)"
-" la `identificaciónDeDeclaración` de esta Declaración sobre Entidad DEBE ser"
-" un elemento en el arreglo `identificacionesDeDeclaracionesComponentes` de "
-"esa Declaración sobre Titularidad o Control primaria, (2) esta Declaración "
-"sobre Entidad DEBE preceder a la Declaración sobre Titularidad o Control "
-"primaria en un paquete o flujo del BODS, (3) se DEBERÍA contemplar el "
-"reemplazo de esta Declaración sobre Entidad cuando se reemplace la "
-"Declaración sobre Titularidad o Control primaria. El valor de `esComponente`"
-" en la Declaración sobre Titularidad o Control primaria DEBE ser \"falso\"."
+"titularidad o control indirecta? Cuando `isComponent` es \"true\": (1) la "
+"`statementID` de esta Declaración sobre Entidad DEBE ser un elemento en el "
+"arreglo `componentStatementIDs` de esa Declaración sobre Titularidad o "
+"Control primaria, (2) esta Declaración sobre Entidad DEBE preceder a la "
+"Declaración sobre Titularidad o Control primaria en un paquete o flujo del "
+"BODS, (3) se DEBERÍA contemplar el reemplazo de esta Declaración sobre "
+"Entidad cuando se reemplace la Declaración sobre Titularidad o Control "
+"primaria. El valor de `isComponent` en la Declaración sobre Titularidad o "
+"Control primaria DEBE ser \"false\"."
 
 #. /properties/entityType/description
 #: schema/entity-statement.json:1
@@ -1071,17 +1073,16 @@ msgid ""
 "parties to this arrangement have any other form of collective legal "
 "identity."
 msgstr ""
-"De la lista de códigos tipoDeEntidad. ¿De qué tipo de entidad se trata? El "
-"código \"entidadInscripta\" comprende toda entidad jurídica creada mediante "
+"De la lista de códigos entityType. ¿De qué tipo de entidad se trata? El "
+"código \"registeredEntity\" comprende toda entidad jurídica creada mediante "
 "un acto de inscripción oficial, que por lo general da lugar a la asignación "
-"de un identificador a la entidad. El código \"entidadJurídica\" comprende "
-"otros organismos con personalidad jurídica propia (departamentos "
-"gubernamentales, instituciones internacionales, etc.). El código "
-"\"estructuraJurídica\" comprende entidades artificiales, descriptas en el "
-"modelo de datos con el propósito de asociar a una o más personas físicas o "
-"sujetos de derecho en una relación de titularidad o control, pero sin que "
-"ello implique que las partes de esta estructura jurídica tengan otra forma "
-"de identidad jurídica colectiva."
+"de un identificador a la entidad. El código \"legalEntity\" comprende otros "
+"organismos con personalidad jurídica propia (departamentos gubernamentales, "
+"instituciones internacionales, etc.). El código \"arrangement\" comprende "
+"entidades artificiales, descriptas en el modelo de datos con el propósito de"
+" asociar a una o más personas físicas o sujetos de derecho en una relación "
+"de titularidad o control, pero sin que ello implique que las partes de esta "
+"estructura jurídica tengan otra forma de identidad jurídica colectiva."
 
 #. /properties/unspecifiedEntityDetails/title
 #: schema/entity-statement.json:1
@@ -1094,8 +1095,8 @@ msgid ""
 "An explanation of why this entity has an `entityType` of 'anonymousEntity' "
 "or 'unknownEntity'. A `reason` MUST be specified."
 msgstr ""
-"Explicación de por qué el `tipoDeEntidad` es \"entidadAnónima\" o "
-"\"entidadDesconocida\". Se DEBE especificar un `motivo`."
+"Explicación de por qué el `entityType` es \"anonymousEntity\" o "
+"\"unknownEntity\". Se DEBE especificar un `reason`."
 
 #. /properties/unspecifiedEntityDetails/properties/reason/description
 #: schema/entity-statement.json:1
@@ -1104,7 +1105,7 @@ msgid ""
 "codelist."
 msgstr ""
 "El motivo por el cual no se puede especificar una entidad. De la lista de "
-"códigos motivoNoEspecificado."
+"códigos unspecifiedReason."
 
 #. /properties/unspecifiedEntityDetails/properties/description/description
 #: schema/entity-statement.json:1
@@ -1218,9 +1219,9 @@ msgid ""
 "URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available"
 " for this entity this should be included."
 msgstr ""
-"Cuando se dispone de un [URI persistente] "
-"(https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme) de la "
-"entidad, se lo debería incluir."
+"Cuando se dispone de un [URI "
+"persistente](https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme)"
+" de la entidad, se lo debería incluir."
 
 #. /properties/publicationDetails/title
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
@@ -1275,9 +1276,7 @@ msgstr ""
 #. /properties/statementType/description
 #: schema/ownership-or-control-statement.json:1
 msgid "This should always be set to `ownershipOrControlStatement`."
-msgstr ""
-"Esto siempre debería configurarse como "
-"`declaraciónSobreTitularidadOControl`."
+msgstr "Esto siempre debería configurarse como `ownershipOrControlStatement`."
 
 #. /properties/isComponent/description
 #: schema/ownership-or-control-statement.json:1
@@ -1297,18 +1296,17 @@ msgid ""
 msgstr ""
 "¿Esta Declaración sobre Titularidad o Control representa un componente de "
 "una relación de titularidad o control indirecta más amplia? Cuando "
-"`esComponente` es \"verdadero\": (1) la `identificaciónDeDeclaración` de "
-"esta Declaración sobre Titularidad o Control secundaria DEBE ser un elemento"
-" en el arreglo  `identificacionesDeDeclaracionesComponentes` de esa "
-"Declaración sobre Titularidad o Control primaria, (2) esta Declaración sobre"
-" Titularidad o Control DEBE preceder a la Declaración sobre Titularidad o "
-"Control primaria en un paquete o flujo del BODS, (3) se  DEBERÍA contemplar "
-"el reemplazo de esta Declaración sobe Titularidad o Control cuando se "
-"reemplace la Declaración sobre Titularidad o Control primaria, y (4) el "
-"valor de `esComponente` en la Declaración sobre Titularidad o Control "
-"primaria DEBE ser \"falso\". Cuando `esComponente` es \"falso\", esta "
-"Declaración sobre Titularidad o Control es la declaración primaria de la "
-"relación entre el `sujeto` y la `parteInteresada`."
+"`isComponent` es \"true\": (1) la `statementID` de esta Declaración sobre "
+"Titularidad o Control secundaria DEBE ser un elemento en el arreglo  "
+"`componentStatementIDs` de esa Declaración sobre Titularidad o Control "
+"primaria, (2) esta Declaración sobre Titularidad o Control DEBE preceder a "
+"la Declaración sobre Titularidad o Control primaria en un paquete o flujo "
+"del BODS, (3) se  DEBERÍA contemplar el reemplazo de esta Declaración sobe "
+"Titularidad o Control cuando se reemplace la Declaración sobre Titularidad o"
+" Control primaria, y (4) el valor de `esComponente` en la Declaración sobre "
+"Titularidad o Control primaria DEBE ser \"false\". Cuando `isComponent` es "
+"\"false\", esta Declaración sobre Titularidad o Control es la declaración "
+"primaria de la relación entre el `subject` y la `interestedParty`."
 
 #. /properties/componentStatementIDs/title
 #: schema/ownership-or-control-statement.json:1
@@ -1324,10 +1322,10 @@ msgid ""
 " MUST itself have a `isComponent` value of 'false'."
 msgstr ""
 "Los identificadores de todas las declaraciones componentes que brindan "
-"detalles sobre la relación indirecta entre el `sujeto` y la "
-"`parteInteresada` de esta Declaración. Si la Declaración sobre Titularidad o"
-" Control posee componentes, el valor de `esComponente` de dicha declaración "
-"en sí misma DEBE ser 'falso'."
+"detalles sobre la relación indirecta entre el `subject` y la "
+"`InterestedParty` de esta Declaración. Si la Declaración sobre Titularidad o"
+" Control posee componentes, el valor de `isComponent` de dicha declaración "
+"en sí misma DEBE ser 'false'."
 
 #. /properties/subject/title
 #: schema/ownership-or-control-statement.json:1
@@ -1365,7 +1363,7 @@ msgid ""
 "A description of the interests held by the interestedParty covered by this "
 "statement in the entity covered by this statement."
 msgstr ""
-"Descripción de las participaciones que la parteInteresada comprendida en la "
+"Descripción de las participaciones que la interestedParty comprendida en la "
 "declaración posee en la entidad comprendida en la declaración."
 
 #. /properties/source/description
@@ -1407,10 +1405,10 @@ msgid ""
 msgstr ""
 "Referencia a una declaración que describe una entidad inscripta, un "
 "fideicomiso o una estructura jurídica que goza de titularidad o control "
-"sobre el sujeto de esta declaración. Debería utilizarse una "
-"declaraciónSobreEntidad cuando las participaciones directas a describirse "
-"representan un control o una titularidad conocidos que corresponden a "
-"alguien que no es una persona física."
+"sobre el sujeto de esta declaración. Debería utilizarse una entityStatement "
+"cuando las participaciones directas a describirse representan un control o "
+"una titularidad conocidos que corresponden a alguien que no es una persona "
+"física."
 
 #. /definitions/InterestedParty/properties/describedByPersonStatement/title
 #: schema/ownership-or-control-statement.json:1
@@ -1448,13 +1446,13 @@ msgstr ""
 "Cuando se haya confirmado que no existe ninguna parte interesada, en caso de"
 " no ser necesario brindar información sobre la titularidad y el control, o "
 "de que se desconozcan detalles sobre la titularidad y el control, se DEBE "
-"dar un `motivo`. Cuando una entidad desconocida sea el `sujeto` de otras "
-"declaracionesSobreTitularidadOControl en la misma estructura, o cuando haya "
-"una persona física que goza de titularidad o control, pero cuyo nombre o "
+"dar un `reason`. Cuando una entidad desconocida sea el `subject` de otras "
+"ownershipOrControlStatements en la misma estructura, o cuando haya una "
+"persona física que goza de titularidad o control, pero cuyo nombre o "
 "detalles no se conocen o no pueden divulgarse por algún motivo, no debería "
-"utilizarse  `sinEspecificar` sino que debería hacerse referencia a una "
-"`declaraciónSobrePersona` o `declaraciónSobreEntidad`, no obstante lo cual "
-"los detalles identificatorios PUEDEN dejarse en blanco."
+"utilizarse  `unspecified` sino que debería hacerse referencia a una "
+"`personStatement` o `entityStatement`, no obstante lo cual los detalles "
+"identificatorios PUEDEN dejarse en blanco."
 
 #. /definitions/InterestedParty/properties/unspecified/properties/reason/description
 #. /properties/unspecifiedPersonDetails/properties/reason/description
@@ -1464,7 +1462,7 @@ msgid ""
 "unspecifiedReason codelist."
 msgstr ""
 "Motivo por el cual no se puede especificar una parte interesada. De la lista"
-" de códigos motivoNoEspecificado."
+" de códigos unspecifiedReason."
 
 #. /definitions/InterestedParty/properties/unspecified/properties/description/description
 #. /properties/unspecifiedPersonDetails/properties/description/description
@@ -1496,7 +1494,7 @@ msgstr ""
 #. /properties/statementType/description
 #: schema/person-statement.json:1
 msgid "This should always be 'personStatement."
-msgstr "Debería ser siempre 'declaraciónSobrePersona'."
+msgstr "Debería ser siempre 'personStatement'."
 
 #. /properties/isComponent/description
 #: schema/person-statement.json:1
@@ -1512,15 +1510,15 @@ msgid ""
 "Statement MUST have a `isComponent` value of 'false'."
 msgstr ""
 "¿Esta Declaración sobre Persona representa un componente de una relación de "
-"titularidad o control indirecta? Cuando `esComponente` es \"verdadero\": (1)"
-" la `identificaciónDeDeclaración` de esta Declaración sobre Persona DEBE ser"
-" un elemento en el arreglo `identificacionesDeDeclaracionesComponentes` de "
-"esa Declaración sobre Titularidad o Control primaria, (2) esta Declaración "
-"sobre Persona DEBE preceder a la Declaración de Titularidad o Control "
-"primaria en un paquete o flujo del BODS, (3) se DEBERÍA contemplar el "
-"reemplazo de esta Declaración sobre Persona cuando se reemplace la "
-"Declaración sobre Titularidad o Control primaria. El valor de `esComponente`"
-" en la Declaración sobre Titularidad o Control primaria DEBE ser \"falso\"."
+"titularidad o control indirecta? Cuando `isComponent` es \"true\": (1) la "
+"`statementID` de esta Declaración sobre Persona DEBE ser un elemento en el "
+"arreglo `componentStatementIDs` de esa Declaración sobre Titularidad o "
+"Control primaria, (2) esta Declaración sobre Persona DEBE preceder a la "
+"Declaración de Titularidad o Control primaria en un paquete o flujo del "
+"BODS, (3) se DEBERÍA contemplar el reemplazo de esta Declaración sobre "
+"Persona cuando se reemplace la Declaración sobre Titularidad o Control "
+"primaria. El valor de `isComponent` en la Declaración sobre Titularidad o "
+"Control primaria DEBE ser \"false\"."
 
 #. /properties/personType/title
 #: schema/person-statement.json:1
@@ -1539,15 +1537,15 @@ msgid ""
 "'unknownPerson' a reason for the absence of information SHOULD be provided "
 "in 'unspecifiedPersonDetails')"
 msgstr ""
-"Use la lista de códigos tipoDePersona. El beneficiario final en última "
+"Use la lista de códigos personType. El beneficiario final en última "
 "instancia de una entidad jurídica es siempre una persona física. Cuando se "
 "haya identificado al beneficiario final, pero no se pueda divulgar "
-"información sobre él, use \"personaAnónima\". Cuando no se haya identificado"
-" claramente al beneficiario final, use \"personaDesconocida\". Cuando se "
-"haya identificado al beneficiario final, use \"personaConocida\". Cuando a "
-"una persona se le atribuye el tipo \"personaAnónima\" o "
-"\"personaDesconocida\", el motivo de la ausencia de información DEBERÍA "
-"indicarse en \"detallesDePersonaNoEspecificados\"."
+"información sobre él, use \"anonymousPerson\". Cuando no se haya "
+"identificado claramente al beneficiario final, use \"unknownPerson\". Cuando"
+" se haya identificado al beneficiario final, use \"knownPerson\". Cuando a "
+"una persona se le atribuye el tipo \"anonymousPerson\" o \"unknownPerson\", "
+"el motivo de la ausencia de información DEBERÍA indicarse en "
+"\"unspecifiedPersonDetails\"."
 
 #. /properties/unspecifiedPersonDetails/title
 #: schema/person-statement.json:1
@@ -1560,8 +1558,8 @@ msgid ""
 "An explanation of why this person has a `personType` of 'anonymousPerson' or"
 " 'unknownPerson'. A `reason` MUST be specified."
 msgstr ""
-"Explicación de por qué el `tipoDePersona` es \"personaAnónima\" o "
-"\"personaDesconocida\". Se DEBE especificar un `motivo`."
+"Explicación de por qué el `personType` es \"anonymousPerson\" o "
+"\"unknownPerson\". Se DEBE especificar un `reason`."
 
 #. /properties/names/title
 #: schema/person-statement.json:1
@@ -1671,7 +1669,7 @@ msgstr ""
 "declaraciones de PEP formen parte de esta divulgación. Si se espera una "
 "declaración de PEP pero no se la proporciona, este campo no debería "
 "utilizarse, pero debería declararse el motivo de la falta de datos en el "
-"campo detallesDeCondiciónPEP."
+"campo PEPStatusDetails."
 
 #. /properties/pepStatusDetails/title
 #: schema/person-statement.json:1
