@@ -6,6 +6,7 @@
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
 # Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -119,7 +120,7 @@ msgstr ""
 # 3642d28de41c4c4abad516fa4b93829b
 #: ../../schema/reference.rst:29
 msgid "Address"
-msgstr "Domicilio"
+msgstr "Address (Domicilio)"
 
 # ad6124d4fb2247e2ae87ad5ece1d8327
 #: ../../schema/reference.rstNone
@@ -314,7 +315,7 @@ msgstr ""
 # 346b0234737b40d7bc2774bb8a929e08
 #: ../../schema/reference.rst:48
 msgid "Agent"
-msgstr "Agente"
+msgstr "Agent (Agente)"
 
 # 70bcbf76569741d287e7341f1f37c0aa
 #: ../../schema/reference.rstNone
@@ -328,7 +329,7 @@ msgstr ""
 # 43f0dcea219f4e449ae56b828319fc16
 #: ../../schema/reference.rst:60
 msgid "Annotation"
-msgstr "Nota"
+msgstr "Annotation (Nota)"
 
 # 21151aa0c7e74e7bad06595a7c229bd8
 #: ../../schema/reference.rst:62
@@ -339,16 +340,16 @@ msgid ""
 " elsewhere in the schema. See :ref:`Sources and annotations <provenance>` "
 "for further guidance."
 msgstr ""
-"La propiedad ``notas`` de las declaraciones actualmente permite incluir un "
-"arreglo de estos objetos de nota simples. Una nota puede utilizarse para "
-"guardar información (estructurada o no) para la cual no existe ningún otro "
+"La propiedad ``annotation`` de las declaraciones actualmente permite incluir"
+" un arreglo de estos objetos de nota simples. Una nota puede utilizarse para"
+" guardar información (estructurada o no) para la cual no existe ningún otro "
 "lugar en el esquema. Consulte :ref:`Fuentes y notas <provenance>` para "
 "obtener mayor orientación al respecto."
 
 # 2d0b8f8763f14f34912f7ffc33814dc0
 #: ../../schema/reference.rst:71
 msgid "Country"
-msgstr "País"
+msgstr "Country (País)"
 
 # 37b0c71ec75244a3a1b54bc6c70fcc26
 #: ../../schema/reference.rstNone
@@ -362,7 +363,7 @@ msgstr ""
 # 7d2c10f57ee44dcbb473c687a932d97b
 #: ../../schema/reference.rst:83
 msgid "EntityStatement"
-msgstr "DeclaraciónSobreEntidad"
+msgstr "EntityStatement (DeclaraciónSobreEntidad)"
 
 # 83f9508c9cd34637b0ba0c3356d7f982
 #: ../../schema/reference.rstNone
@@ -377,7 +378,7 @@ msgstr ""
 # 54bb07431de74eb2b5191414929a8455
 #: ../../schema/reference.rst:95
 msgid "ID"
-msgstr "Identificación"
+msgstr "ID (Identificación)"
 
 # ebc4ccfa431e403a9de7a7c1d3373e3c
 #: ../../schema/reference.rst:97
@@ -393,7 +394,7 @@ msgstr ""
 # 5d35c6e933b84f899eb98e3da394c42a
 #: ../../schema/reference.rst:105
 msgid "Identifier"
-msgstr "Identificador"
+msgstr "Identifier (Identificador)"
 
 # dc957808e7c44e24aad368bed42b554b
 #: ../../schema/reference.rst:107
@@ -421,19 +422,19 @@ msgstr ""
 # 5e967b325b3b44dc85403b7f03ae7bbb
 #: ../../schema/reference.rst:118
 msgid "Interest"
-msgstr "Participación"
+msgstr "Interest (Participación)"
 
 # 7f4c36254b1446dea677472aac23d577
 #: ../../schema/reference.rstNone
 msgid ""
 "A description of the interest held by an interestedParty in another entity."
 msgstr ""
-"Descripción de la participación de una parteInteresada en otra entidad."
+"Descripción de la participación de una interestedParty en otra entidad."
 
 # 2c3b731847aa4feaa219cfccaf28a059
 #: ../../schema/reference.rst:131
 msgid "InterestedParty"
-msgstr "parteInteresada"
+msgstr "InterestedParty (ParteInteresada)"
 
 # d735a1bbc53e409b9b40e927a4f54c46
 #: ../../schema/reference.rstNone
@@ -452,7 +453,7 @@ msgstr ""
 # 3cc4f440d519400faedbeb74d7c3497b
 #: ../../schema/reference.rst:144
 msgid "Jurisdiction"
-msgstr "Jurisdicción"
+msgstr "Jurisdiction (Jurisdicción)"
 
 # be6df77c9b584277bce17c8f856d646c
 #: ../../schema/reference.rstNone
@@ -467,7 +468,7 @@ msgstr ""
 # 1e7decc249284a739710869cdafec894
 #: ../../schema/reference.rst:155
 msgid "Name"
-msgstr "Nombre"
+msgstr "Name (Nombre)"
 
 # 39de545d2d9843fa99fd54ab6f866326
 #: ../../schema/reference.rstNone
@@ -480,14 +481,15 @@ msgid ""
 msgstr ""
 "Nombre por el que se conoce a este individuo. Los nombres deberían indicarse"
 " en nombreCompleto y pueden desglosarse facultativamente en los campos "
-"Apellido, nombreDePila y nombrePatronímico, según las definiciones de [EC "
-"ISA Core Person Vocabulary](https://joinup.ec.europa.eu/solution/e"
-"-government-core-vocabularies)."
+"familyName (Apellido), givenName (nombreDePila) y patronymicName "
+"(nombrePatronímico), según las definiciones de [EC ISA Core Person "
+"Vocabulary](https://joinup.ec.europa.eu/solution/e-government-core-"
+"vocabularies)."
 
 # a7d80caff5e34ba59d5f8759aacbeb48
 #: ../../schema/reference.rst:167
 msgid "OwnershipOrControlStatement"
-msgstr "declaraciónSobreTitularidadOControl"
+msgstr "OwnershipOrControlStatement (DeclaraciónSobreTitularidadOControl)"
 
 # 7c04ac1f757446f29077a4e076a46707
 #: ../../schema/reference.rstNone
@@ -504,7 +506,7 @@ msgstr ""
 # fb460caed6464ad4a56b6544abde14b7
 #: ../../schema/reference.rst:179
 msgid "PepStatusDetails"
-msgstr "detallesDeCondiciónPEP"
+msgstr "PEPStatusDetails (detallesDeCondiciónPEP)"
 
 # baa3c00b15ba45a2954b1fa9ed941966
 #: ../../schema/reference.rstNone
@@ -516,7 +518,7 @@ msgstr ""
 # bc879027e5fb4c9c992f8676c2b13414
 #: ../../schema/reference.rst:192
 msgid "PersonStatement"
-msgstr "declaraciónSobrePersona"
+msgstr "PersonStatement (DeclaraciónSobrePersona)"
 
 # c9a1b6fbd57045e6b393b1dadeebace8
 #: ../../schema/reference.rstNone
@@ -531,7 +533,7 @@ msgstr ""
 # d0b3b2504f4749888707111ffcd21122
 #: ../../schema/reference.rst:205
 msgid "PublicationDetails"
-msgstr "DetallesDeLaPublicación"
+msgstr "PublicationDetails (DetallesDeLaPublicación)"
 
 # 00490889a8584ca2aa249a30e2a5e4f3
 #: ../../schema/reference.rstNone
@@ -541,7 +543,7 @@ msgstr "Información acerca de la publicación de esta declaración."
 # 45f60fc00ff044069b2ef2bf1231fa9b
 #: ../../schema/reference.rst:217
 msgid "Publisher"
-msgstr "Publicador"
+msgstr "Publisher (Publicador)"
 
 # 3b56c1212f844361a44ef276a414a3ec
 #: ../../schema/reference.rstNone
@@ -552,7 +554,7 @@ msgstr ""
 # 4d62d53863494dea8bd370f4e31c8879
 #: ../../schema/reference.rst:230
 msgid "ReplacesStatements"
-msgstr "ReemplazaDeclaraciones"
+msgstr "ReplacesStatements (ReemplazaDeclaraciones)"
 
 # 6ae2e20a429647c890816c23ffb8d5ad
 #: ../../schema/reference.rstNone
@@ -579,7 +581,7 @@ msgstr ""
 # 0cd888326f78432a94fd99c00600ac9e
 #: ../../schema/reference.rst:241
 msgid "Share"
-msgstr "Porción"
+msgstr "Share (Porción)"
 
 # f6d9a1408c7c490d8fde9723c78bcac5
 #: ../../schema/reference.rstNone
@@ -598,12 +600,12 @@ msgstr ""
 "rango en el que se sitúa la porción de este tipo de participación. Por "
 "defecto, el mínimo es incluyente y el máximo, excluyente (valor mínimo ≤ "
 "porción ≤ valor máximo). Si desea modificar esta configuración "
-"predeterminada, utilice las propiedades mínimoExcluyente y máximoExcluyente."
+"predeterminada, utilice las propiedades exclusiveMinimum y exclusiveMaximum."
 
 # 105a465ff5254bf087b87419349e3684
 #: ../../schema/reference.rst:253
 msgid "Source"
-msgstr "Fuente"
+msgstr "Source (Fuente)"
 
 # cc56ed525ed94ac79413ef477baa08ab
 #: ../../schema/reference.rstNone
@@ -627,7 +629,7 @@ msgstr ""
 # 1574ac1ef7464a1582e5096316eaad93
 #: ../../schema/reference.rst:269
 msgid "StatementDate"
-msgstr "FechaDeLaDeclaración"
+msgstr "StatementDate (FechaDeLaDeclaración)"
 
 # be1e9e8fb9294a36b43ed053ae11f17e
 #: ../../schema/reference.rst:271
@@ -668,7 +670,7 @@ msgstr "Listas de códigos"
 # faab43d51f9b4cbb96cf9d9668d7009b
 #: ../../schema/reference.rst:285
 msgid "AddressType"
-msgstr "TipoDeDomicilio"
+msgstr "AddressType (TipoDeDomicilio)"
 
 # a5acd7820d7b4f5a96472d546006ac9e
 # 31b1a96beb424781a1bed5db3fc90066
@@ -765,7 +767,7 @@ msgstr "nota técnica"
 # 617c449b07c5407399829920791fc02e
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "placeOfBirth"
-msgstr "lugarDeNacimiento"
+msgstr "placeOfBirth"
 
 # e78d82d278ea40c386fa7bd7b14900bf
 #: ../../_build_schema/codelists/addressType.csv:1
@@ -784,7 +786,7 @@ msgstr ""
 # 17371087ea9c4fea9b6affc4bc0312c8
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "residence"
-msgstr "residencia"
+msgstr "residence"
 
 # c6d8c681d5394f9f878352af67279657
 #: ../../_build_schema/codelists/addressType.csv:1
@@ -801,7 +803,7 @@ msgstr ""
 # d0de78491ebd4c4bb864b887b0294ef4
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "registered"
-msgstr "inscripto"
+msgstr "registered"
 
 # 9bac033d440e4c8f9571ad8dae881c07
 #: ../../_build_schema/codelists/addressType.csv:1
@@ -822,7 +824,7 @@ msgstr ""
 # 4589244d703144da9f0988561b246578
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "service"
-msgstr "de contacto"
+msgstr "service"
 
 # 1ed9f791eb2541aa9b6bf9574c8dfd7f
 #: ../../_build_schema/codelists/addressType.csv:1
@@ -844,7 +846,7 @@ msgstr ""
 #: ../../_build_schema/codelists/addressType.csv:1
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "alternative"
-msgstr "alternativo"
+msgstr "alternative"
 
 # 2aeb05d993dc4a16a25c600c9d1d7c3b
 #: ../../_build_schema/codelists/addressType.csv:1
@@ -863,7 +865,7 @@ msgstr ""
 # c974a47970464b528447088804bec5bc
 #: ../../_build_schema/codelists/addressType.csv:1
 msgid "business"
-msgstr "comercial"
+msgstr "business"
 
 # 07e9a1367d6f4f178eacb15deb91befb
 #: ../../_build_schema/codelists/addressType.csv:1
@@ -878,12 +880,12 @@ msgstr "Lugar en donde la entidad realiza sus actividades."
 # 58d2a019d3d74fffb64ca736329561d3
 #: ../../schema/reference.rst:294
 msgid "AnnotationMotivation"
-msgstr "MotivoDeLaNota"
+msgstr "AnnotationMotivation (MotivoDeLaNota)"
 
 # d7620f7d0a054f06881bceafa08821d8
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "commenting"
-msgstr "comentarios"
+msgstr "commenting"
 
 # 7296478898464fae972809d57749db6e
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
@@ -902,7 +904,7 @@ msgstr ""
 # 7166dc3c00bc457c932ea65a04845936
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "correcting"
-msgstr "correcciones"
+msgstr "correcting"
 
 # 0ef7a794a8354089949b9b824b0f710c
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
@@ -923,7 +925,7 @@ msgstr ""
 # 45becfc1154743318a8babc94969bb8d
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "identifying"
-msgstr "identificación"
+msgstr "identifying"
 
 # 8d020a3661744cc6b8a9d8b88b2387ea
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
@@ -944,7 +946,7 @@ msgstr ""
 # 72270c1f448549408859e07c93be61c7
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "linking"
-msgstr "vinculación"
+msgstr "linking"
 
 # 8c4e9bce12214c68868e6eb481a0f6f9
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
@@ -964,7 +966,7 @@ msgstr ""
 # 3f6bf20f521044e4b28cd74919938733
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
 msgid "transformation"
-msgstr "transformación"
+msgstr "transformation"
 
 # 0f2aa38ee3bd41139c6c3d982f9b8669
 #: ../../_build_schema/codelists/annotationMotivation.csv:1
@@ -986,12 +988,12 @@ msgstr ""
 # daafe027e6f2461990986e73856e046c
 #: ../../schema/reference.rst:303
 msgid "EntityType"
-msgstr "tipoDeEntidad"
+msgstr "EntityType (TipoDeEntidad)"
 
 # 7f8194f4b9ef44b09689744e31e9e8b9
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "registeredEntity"
-msgstr "entidadInscripta"
+msgstr "registeredEntity"
 
 # 5c1ed093d4f945fab0a5148fbe6ef199
 #: ../../_build_schema/codelists/entityType.csv:1
@@ -1011,7 +1013,7 @@ msgstr ""
 # f6c19014e6dc4852ac94ca96bf7083f3
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "legalEntity"
-msgstr "entidadJurídica"
+msgstr "legalEntity"
 
 # 74d0306192844ae8a897366417e224a6
 #: ../../_build_schema/codelists/entityType.csv:1
@@ -1032,7 +1034,7 @@ msgstr ""
 # 08f06bc43d0f41a49745c07668e8dc7a
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "arrangement"
-msgstr "estructuraJurídica"
+msgstr "arrangement"
 
 # 6a8770d830634e41a0142e616be4f051
 #: ../../_build_schema/codelists/entityType.csv:1
@@ -1048,7 +1050,7 @@ msgstr "Entidad artificial creada por convenios, contratos u otros procesos."
 # 33cd67f2ebdf422198a28a2f8b3eac88
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "anonymousEntity"
-msgstr "entidadAnónima"
+msgstr "anonymousEntity"
 
 # e9a10bca52874d84b77902d0efafc150
 #: ../../_build_schema/codelists/entityType.csv:1
@@ -1067,7 +1069,7 @@ msgstr ""
 # 2f27e22203354be6857fb202d0c9162b
 #: ../../_build_schema/codelists/entityType.csv:1
 msgid "unknownEntity"
-msgstr "entidadDesconocida"
+msgstr "unknownEntity"
 
 # 181631015cbd41d393911e78c4496372
 #: ../../_build_schema/codelists/entityType.csv:1
@@ -1082,12 +1084,12 @@ msgstr "Entidad que no ha sido identificada."
 # fb869e3a3ea34373bdc17e52df1101cb
 #: ../../schema/reference.rst:312
 msgid "InterestLevel"
-msgstr "nivelDeParticipación"
+msgstr "InterestLevel (NivelDeParticipación)"
 
 # 1f7659bac9e74f02bdded3740f04eceb
 #: ../../_build_schema/codelists/interestLevel.csv:1
 msgid "direct"
-msgstr "directa"
+msgstr "direct"
 
 # 9a9426f796704eaeb79527f7c6a7cfb7
 #: ../../_build_schema/codelists/interestLevel.csv:1
@@ -1102,7 +1104,7 @@ msgstr "La participación se ejerce de forma directa."
 # c1db1b28ac2a4150890e0b450d39f943
 #: ../../_build_schema/codelists/interestLevel.csv:1
 msgid "indirect"
-msgstr "indirecta"
+msgstr "indirect"
 
 # ca160f0d4db74584bdd7ec39d13f32c9
 #: ../../_build_schema/codelists/interestLevel.csv:1
@@ -1123,7 +1125,7 @@ msgstr ""
 #: ../../_build_schema/codelists/interestLevel.csv:1
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "unknown"
-msgstr "desconocida"
+msgstr "unknown"
 
 # 964d676ab2ee4483935c6a0ada3b2958
 #: ../../_build_schema/codelists/interestLevel.csv:1
@@ -1138,12 +1140,12 @@ msgstr "La participación puede ser directa o indirecta."
 # d0c9e059a503423a867f48fbc2fc69ca
 #: ../../schema/reference.rst:321
 msgid "InterestType"
-msgstr "tipoDeParticipación"
+msgstr "InterestType (TipoDeParticipación)"
 
 # 24d9aaa55506433faf02622a93bd5d28
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "shareholding"
-msgstr "participaciónAccionaria"
+msgstr "shareholding"
 
 # 3175a73362994ebf90b52e08b5da8a3f
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1160,7 +1162,7 @@ msgstr ""
 # bac4c1aec6bb4298ac7079f85b9e7db0
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "voting-rights"
-msgstr "derechosDeVoto"
+msgstr "voting-rights"
 
 # 425c1bc7cc464b16b004fd51720f6e7f
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1185,7 +1187,7 @@ msgstr ""
 # beeee9ad02ed44a4894c3760cc5a04d9
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "appointment-of-board"
-msgstr "Designación-del-órgano-de-administración"
+msgstr "appointment-of-board"
 
 # 07c6076e30724a5e82c382b7988d52b3
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1204,7 +1206,7 @@ msgstr ""
 # 73d7aabd144343889fc8bd486f931791
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "other-influence-or-control"
-msgstr "otro-tipo-de-influencia-o-control"
+msgstr "other-influence-or-control"
 
 # 8873471a04b54d53b21c8fd176729d4a
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1231,7 +1233,7 @@ msgstr ""
 # 319428fafa604804a330c0f7f860359d
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "senior-managing-official"
-msgstr "gerente-de-alto-rango"
+msgstr "senior-managing-official"
 
 # dd129a4791164c16adf9c934f58f5e57
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1250,7 +1252,7 @@ msgstr ""
 # b9271864de2544d3be3cd3772f0f3b1e
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "settlor-of-trust"
-msgstr "fideicomitente-de-un-fideicomiso"
+msgstr "settlor-of-trust"
 
 # 0a5fa10afe21450d800310184f7c47e0
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1273,7 +1275,7 @@ msgstr ""
 # 55a6b1096ffc4ec4ba7a4995c6b9976f
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "trustee-of-trust"
-msgstr "fiduciario-de-un-fideicomiso"
+msgstr "trustee-of-trust"
 
 # 39821b0fa59d428bad7fb10b37a06cc7
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1293,7 +1295,7 @@ msgstr ""
 # c41053b8b82b4dab8e0e2b8c2278ccb6
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "protector-of-trust"
-msgstr "tutor-de-un-fideicomiso"
+msgstr "protector-of-trust"
 
 # 4c9ebba26b2e43ec9afa3a1186eb0fb3
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1315,7 +1317,7 @@ msgstr ""
 # 744f18870df3460bbdf0b5e034afd36e
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "beneficiary-of-trust"
-msgstr "beneficiario-de-un-fideicomiso"
+msgstr "beneficiary-of-trust"
 
 # 923ef155206446a186c6790e3cfddc9f
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1335,7 +1337,7 @@ msgstr ""
 # 5e0b6d4164264bf8a18d69ee2e574e2a
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "other-influence-or-control-of-trust"
-msgstr "otro-tipo-de-influencia-o-control-sobre-un-fideicomiso"
+msgstr "other-influence-or-control-of-trust"
 
 # 78eda3d56a52408aa884e175b1746275
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1354,7 +1356,7 @@ msgstr ""
 # aa0c2f6b762642518cdedee6c70da289
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "rights-to-surplus-assets-on-dissolution"
-msgstr "derechos-sobre-activos-remanentes-en-caso-de-disolución"
+msgstr "rights-to-surplus-assets-on-dissolution"
 
 # e9358a63b2f145b891c1da18bac2c024
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1373,7 +1375,7 @@ msgstr ""
 # 5b9bbb82a1684b67a12c0f99d1eda025
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "rights-to-profit-or-income"
-msgstr "derechos-a-percibir-ganancias-o-ingresos"
+msgstr "rights-to-profit-or-income"
 
 # 1625a829b08d4de9b08a12a7b277d84c
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1394,7 +1396,7 @@ msgstr ""
 # 3aa53867810f4796b42fe821fd3de734
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "rights-granted-by-contract"
-msgstr "derechos-otorgados-por-contrato"
+msgstr "rights-granted-by-contract"
 
 # 799893c4992c458492473f5a4c2ec837
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1409,7 +1411,7 @@ msgstr "Participación que se otorga por contrato."
 # 6dc5f4a8cb6641a2a0a992cc25fd4de9
 #: ../../_build_schema/codelists/interestType.csv:1
 msgid "conditional-rights-granted-by-contract"
-msgstr "derechos-condicionales-otorgados-por-contrato"
+msgstr "conditional-rights-granted-by-contract"
 
 # fed7abc48d0d4e5db36ec2a62f5f7db9
 #: ../../_build_schema/codelists/interestType.csv:1
@@ -1425,7 +1427,7 @@ msgstr ""
 # 7318a1a83d18440490d37beeda252b31
 #: ../../schema/reference.rst:330
 msgid "NameType"
-msgstr "tipoDeNombre"
+msgstr "NameType (TipoDeNombre)"
 
 # cfcd0bad05504695b7fb6db8a579cd1a
 #: ../../_build_schema/codelists/nameType.csv:1
@@ -1451,7 +1453,7 @@ msgstr ""
 # a220d2f0413b473aad5390e02d2ec70b
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "translation"
-msgstr "traducción"
+msgstr "translation"
 
 # 975dc4fc43584692a964cb75092d4771
 #: ../../_build_schema/codelists/nameType.csv:1
@@ -1467,7 +1469,7 @@ msgstr ""
 # 5c573fa3f7df4b71b22f47a131d79265
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "transliteration"
-msgstr "transliteración"
+msgstr "transliteration"
 
 # 3db73584cdc24b38836810b68936b47e
 #: ../../_build_schema/codelists/nameType.csv:1
@@ -1485,7 +1487,7 @@ msgstr ""
 # 3e6bb32e29fd4311981a793704745a74
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "former"
-msgstr "anterior"
+msgstr "former"
 
 # 74e197916fd2459e81738832f3ae4d0b
 #: ../../_build_schema/codelists/nameType.csv:1
@@ -1514,7 +1516,7 @@ msgstr ""
 # 9a96af2cca8a45d68e1f68531a744dfd
 #: ../../_build_schema/codelists/nameType.csv:1
 msgid "birth"
-msgstr "nacimiento"
+msgstr "birth"
 
 # eb97ebffa04c488e8926f1cc5bc8c39f
 #: ../../_build_schema/codelists/nameType.csv:1
@@ -1529,12 +1531,12 @@ msgstr "\"El nombre legal de la persona al nacer\"."
 # 4143ee49dd10414691117ed6312fcc8d
 #: ../../schema/reference.rst:339
 msgid "PersonType"
-msgstr "tipoDePersona"
+msgstr "PersonType (TipoDePersona)"
 
 # a4e21c71fa8b486580b7738125d9d09a
 #: ../../_build_schema/codelists/personType.csv:1
 msgid "knownPerson"
-msgstr "personaConocida"
+msgstr "knownPerson"
 
 # 2d986108902e46d7b5f68ec65bfe05a5
 #: ../../_build_schema/codelists/personType.csv:1
@@ -1553,7 +1555,7 @@ msgstr ""
 # cab519a4080645b49cd19b76de51e88b
 #: ../../_build_schema/codelists/personType.csv:1
 msgid "anonymousPerson"
-msgstr "personaAnónima"
+msgstr "anonymousPerson"
 
 # 8b4975cb965a47e0b28c80e223b97195
 #: ../../_build_schema/codelists/personType.csv:1
@@ -1569,12 +1571,12 @@ msgid ""
 msgstr ""
 "La persona ha sido identificada, pero se mantiene reservada la información "
 "identificatoria. Se debería indicar el motivo de la no divulgación en el "
-"campo complementario `motivoDeInformaciónFaltante`."
+"campo complementario `missingInfoReason`."
 
 # 86ca34d3169b4c0eb92c1c663968b91e
 #: ../../_build_schema/codelists/personType.csv:1
 msgid "unknownPerson"
-msgstr "personaDesconocida"
+msgstr "unknownPerson"
 
 # ac1770b1404a46e5b2fdb74e2dea824b
 #: ../../_build_schema/codelists/personType.csv:1
@@ -1589,12 +1591,12 @@ msgstr "La identidad de esta persona no ha sido descubierta ni confirmada."
 # a6a6e4c24d42407593643e2ef1a3cac0
 #: ../../schema/reference.rst:348
 msgid "SourceType"
-msgstr "tipoDeFuente"
+msgstr "SourceType (TipoDeFuente)"
 
 # 4f0bf315b6f94498aa607352ae3b0c5b
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "selfDeclaration"
-msgstr "autoDeclaración"
+msgstr "selfDeclaration"
 
 # f10a642984bb4584ad5a06c32c340d2e
 #: ../../_build_schema/codelists/sourceType.csv:1
@@ -1613,7 +1615,7 @@ msgstr ""
 # eae9b146c9c44a06b8bb8f1c7f77c009
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "officialRegister"
-msgstr "registroOficial"
+msgstr "officialRegister"
 
 # 65531ad3cb4b4a4c805764bab63a64cc
 #: ../../_build_schema/codelists/sourceType.csv:1
@@ -1628,7 +1630,7 @@ msgstr "La información fue recogida de un registro oficial."
 # 381129404b0143419f9ad074e42e17e7
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "thirdParty"
-msgstr "terceraParte"
+msgstr "thirdParty"
 
 # e1f31d4ad31a40bbbde953ec31371b29
 #: ../../_build_schema/codelists/sourceType.csv:1
@@ -1647,7 +1649,7 @@ msgstr ""
 # 4ac73bed9c4d4bc8bcf23b90a45de5f4
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "primaryResearch"
-msgstr "investigaciónPrimaria"
+msgstr "primaryResearch "
 
 # b4f5e0c269ce4a9897134a09d0d7d2d2
 #: ../../_build_schema/codelists/sourceType.csv:1
@@ -1665,7 +1667,7 @@ msgstr ""
 # 9fd14eedba03457ea849593c68b69d45
 #: ../../_build_schema/codelists/sourceType.csv:1
 msgid "verified"
-msgstr "verificada"
+msgstr "verified"
 
 # f828f4b4f790452c8bdbd833df796521
 #: ../../_build_schema/codelists/sourceType.csv:1
@@ -1684,12 +1686,12 @@ msgstr ""
 # f5605362852540cc9fd41d1d146f17fc
 #: ../../schema/reference.rst:357
 msgid "StatementType"
-msgstr "tipoDeDeclaración"
+msgstr "StatementType (TipoDeDeclaración)"
 
 # be3a19cde8614a31a40eca14ca3be55c
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid "personStatement"
-msgstr "declaraciónSobrePersona"
+msgstr "personStatement"
 
 # c5458c4fa0274245aeb28a8e996df5dc
 #: ../../_build_schema/codelists/statementType.csv:1
@@ -1717,7 +1719,7 @@ msgstr ""
 # 30dc62ef2e4d4cdcbb1e5aff42463fbd
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid "entityStatement"
-msgstr "declaraciónSobreEntidad"
+msgstr "entityStatement"
 
 # e3b0299a1dba4ce3ba8a09cb94d70c07
 #: ../../_build_schema/codelists/statementType.csv:1
@@ -1745,7 +1747,7 @@ msgstr ""
 # a443c3d7ddc84fa4af34d579a2877b6c
 #: ../../_build_schema/codelists/statementType.csv:1
 msgid "ownershipOrControlStatement"
-msgstr "declaraciónSobreTitularidadOControl"
+msgstr "ownershipOrControlStatement"
 
 # 2ca5f4e25fcd4ab2a21fe162df8d875a
 #: ../../_build_schema/codelists/statementType.csv:1
@@ -1773,12 +1775,12 @@ msgstr ""
 # 291810c1990645138cf1e9a2042f57f6
 #: ../../schema/reference.rst:366
 msgid "UnspecifiedReason"
-msgstr "MotivoNoEspecificado"
+msgstr "UnspecifiedReason"
 
 # f32a88157ffb431184098f3a7c14cbc4
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "no-beneficial-owners"
-msgstr "sin-beneficiarios-finales"
+msgstr "no-beneficial-owners"
 
 # 411832b461cc4544965cb62d9b27ff09
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
@@ -1797,7 +1799,7 @@ msgstr ""
 # fb0a4b31fda6431582b5add2f57012fe
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "subject-unable-to-confirm-or-identify-beneficial-owner"
-msgstr "sujeto-incapaz-de-confirmar-o-identificar-al-beneficiario-final"
+msgstr "subject-unable-to-confirm-or-identify-beneficial-owner"
 
 # ae6be457e9c44a5a9817622fe9e44311
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
@@ -1818,7 +1820,7 @@ msgstr ""
 # 78df3c846bdc4730817ea063b3c712e0
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "interested-party-has-not-provided-information"
-msgstr "la-parte-interesada-no-ha-proporcionado-información"
+msgstr "interested-party-has-not-provided-information"
 
 # ff0e6fa5905249649f82dc083d9a3803
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
@@ -1839,7 +1841,7 @@ msgstr ""
 # 1e0778c9efc146d4a5cbaf288a1c46d7
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "subject-exempt-from-disclosure"
-msgstr "sujeto-exento-de-divulgación"
+msgstr "subject-exempt-from-disclosure"
 
 # 7639842edafe49c0a7c78a6c6d0405f9
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
@@ -1859,7 +1861,7 @@ msgstr ""
 # 55114f79071b43b7b9bd9e30ed9829e2
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "interested-party-exempt-from-disclosure"
-msgstr "parte-interesada-exenta-de-divulgación"
+msgstr "interested-party-exempt-from-disclosure"
 
 # e216af25fd28453193c89c20f207f498
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
@@ -1878,7 +1880,7 @@ msgstr ""
 # 1efd01eaa0694d6ba4528c2ec7e11afd
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "Unknown reason"
-msgstr "Motivo desconocido"
+msgstr "Unknown reason"
 
 # 623de67e4ba741c29465ec58c6fbfb0f
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
@@ -1889,7 +1891,7 @@ msgstr ""
 # 60f6a1030c264200abaf5c9cee6f9d7a
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
 msgid "information-unknown-to-publisher"
-msgstr "información-desconocida-por-el-publicador"
+msgstr "information-unknown-to-publisher"
 
 # ec93a8e7510c48088042e6cf52717afa
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1
