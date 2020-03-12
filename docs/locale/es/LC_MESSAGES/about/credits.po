@@ -5,7 +5,6 @@
 # 
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
 # Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020
 # 
 #, fuzzy
@@ -58,8 +57,8 @@ msgid ""
 msgstr ""
 "La versión 0.1 fue desarrollada por Tim Davies y Jack Lord utilizando "
 "documentación de apoyo de Kadie Armstrong (`Open Data Services Co-operative "
-"<http://www.opendataservices.coop>`_), el trabajo técnico de James Baster "
-"(`Open Data Services Co-operative <http://www.opendataservices.coop>`_) y "
+"<http://www.opendataservices.coop>`__), el trabajo técnico de James Baster "
+"(`Open Data Services Co-operative <http://www.opendataservices.coop>`__) y "
 "aportes del :doc:`grupo de trabajo sobre estándares de datos <governance>`."
 
 # 551c9e80eb6045e5959e8d2af1c5b970
@@ -74,7 +73,7 @@ msgid ""
 msgstr ""
 "La versión 0.2 fue desarrollada por Jack Lord, Simon Whitehouse y Kadie "
 "Armstrong (`Open Data Services Co-operative "
-"<http://www.opendataservices.coop>`_), utilizando el trabajo técnico de "
+"<http://www.opendataservices.coop>`__), utilizando el trabajo técnico de "
 "James Baster, Ben Webb, Amy Guy y David Raznick (`Open Data Services Co-"
-"operative <http://www.opendataservices.coop>`_) y con aportes del "
+"operative <http://www.opendataservices.coop>`__) y con aportes del "
 ":doc:`grupo de trabajo sobre estándares de datos <governance>`."
