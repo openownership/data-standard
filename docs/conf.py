@@ -24,6 +24,8 @@ from recommonmark.parser import CommonMarkParser
 
 # -- General configuration ------------------------------------------------
 
+html_context = {'bods_schema_version': '0.1'}
+
 # If your documentation needs a minimal Sphinx version, state it here.
 #
 # needs_sphinx = '1.0'
@@ -197,7 +199,7 @@ class JSONValue(LiteralInclude):
         except KeyError as e:
             title = filename
         pointed = resolve_pointer(json_obj, self.options['pointer'])
-     
+
         string = json.dumps(pointed, indent='    ')
         if string.startswith('"') and string.endswith('"'):
             string = string[1:-1]
