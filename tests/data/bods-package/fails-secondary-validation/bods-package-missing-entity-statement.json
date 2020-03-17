@@ -10,16 +10,16 @@
         "code": "GB"
       }
     ],
-    "names":[
+    "names": [
       {
-        "type":"individual",
-        "fullName":"Christopher Taggart",
-        "givenName":"Christopher",
-        "familyName":"Taggart"
+        "type": "individual",
+        "fullName": "Christopher Taggart",
+        "givenName": "Christopher",
+        "familyName": "Taggart"
       },
       {
-        "type":"alternative",
-        "fullName":"Chris Taggart"
+        "type": "alternative",
+        "fullName": "Chris Taggart"
       }
     ],
     "birthDate": "1964-04",

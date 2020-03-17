@@ -16,12 +16,14 @@
     "code": "GB"
   },
   "source": {
-    "type": ["officialRegister"],
+    "type": [
+      "officialRegister"
+    ],
     "description": "Companies House, United Kingdom",
     "url": "https://beta.companieshouse.gov.uk/company/09506232",
     "assertedBy": [
       {
-      "name": "OPEN DATA SERVICES CO-OPERATIVE LIMITED"
+        "name": "OPEN DATA SERVICES CO-OPERATIVE LIMITED"
       }
     ],
     "retrievedAt": "2018-11-14"

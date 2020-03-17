@@ -43,9 +43,9 @@
       "describedByEntityStatement": "60bb3996-b434-4377-930b-39972c65b400"
     },
     "interestedParty": {
-          "unspecified": {
-            "reason": "subject-exempt-from-disclosure",
-            "description": "Exempt from disclosure as a company listed on a recognised stock exchange"
+      "unspecified": {
+        "reason": "subject-exempt-from-disclosure",
+        "description": "Exempt from disclosure as a company listed on a recognised stock exchange"
       }
     },
     "source": {
