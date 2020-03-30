@@ -6,6 +6,7 @@
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
 # Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Peter Low <peter@openownership.org>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Peter Low <peter@openownership.org>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,8 +58,8 @@ msgid ""
 "``id`` should be the value assigned to the relevant entity or person in that"
 " scheme."
 msgstr ""
-"``identificación`` debería ser el valor asignado a la entidad o persona "
-"pertinente en ese esquema."
+"``id`` debería ser el valor asignado a la entidad o persona pertinente en "
+"ese esquema."
 
 # bc018e4aef7743e382dc5d2a050bf5cd
 #: ../../schema/guidance/identifiers.rst:12
@@ -73,8 +74,8 @@ msgstr ""
 #: ../../schema/guidance/identifiers.rst:14
 msgid "``schemeName`` should be the name of the list, registry or ID system."
 msgstr ""
-"``nombreDelEsquema`` debería ser el nombre de la lista, registro o sistema "
-"de identificación."
+"``schemeName`` debería ser el nombre de la lista, registro o sistema de "
+"identificación."
 
 # d6868629ebae4122bde2f28cacc4df5d
 #: ../../schema/guidance/identifiers.rst:16
@@ -85,13 +86,12 @@ msgid ""
 "person or entity is known to be represented. When publishing an Identifier "
 "object, a value for either ``scheme`` or ``schemeName`` MUST be present."
 msgstr ""
-"Un Identificador de buena calidad contiene valores de ``esquema`` e "
-"``identificación`` que sirven para identificar de manera única a una entidad"
-" o persona. Cuando no se dispone de ellos, se puede utilizar "
-"``nombreDelEsquema`` para referirse al sistema de inscripción en el que se "
-"sabe que la persona o entidad está representada. Cuando se publica un objeto"
-" Identificador, DEBE haber un valor ya sea para ``esquema`` o "
-"``nombreDelEsquema``."
+"Un Identificador de buena calidad contiene valores de ``scheme`` e ``id`` "
+"que sirven para identificar de manera única a una entidad o persona. Cuando "
+"no se dispone de ellos, se puede utilizar ``schemeName`` para referirse al "
+"sistema de inscripción en el que se sabe que la persona o entidad está "
+"representada. Cuando se publica un objeto Identificador, DEBE haber un valor"
+" ya sea para ``scheme`` o ``schemeName``."
 
 # 8e012cd7e4a6467e8c641685cc49a7d1
 #: ../../schema/guidance/identifiers.rst:20
@@ -146,7 +146,7 @@ msgid ""
 "contains details of hundreds of company registers and other identifier "
 "sources."
 msgstr ""
-"Los valores de ``esquema`` dentro de un Identificador de Declaración sobre "
+"Los valores de ``scheme`` dentro de un Identificador de Declaración sobre "
 "Entidad deberían tomarse de la lista de códigos `http://org-id.guide <http"
 "://org-id.guide>`_. Ésta contiene detalles sobre cientos de registros de "
 "empresas y otras fuentes de identificación."
@@ -226,7 +226,7 @@ msgstr ""
 "Si el sistema fuente ha recopilado uno o más números de identificación "
 "conocidos de una persona y estos pueden publicarse sin riesgos en cuanto a "
 "su privacidad o seguridad, entonces también deberían incluirse en el arreglo"
-" ``DeclaraciónSobrePersona.identificadores``."
+" ``PersonStatement.identifiers``."
 
 # 9dcb0929590f4147adb93872fc381a07
 #: ../../schema/guidance/identifiers.rst:72
@@ -234,8 +234,8 @@ msgid ""
 "In such cases, the values for ``scheme`` should be based on the following "
 "pattern:"
 msgstr ""
-"En dichos casos, los valores de ``esquema`` deberían basarse en el siguiente"
-" patrón:"
+"En dichos casos, los valores de ``scheme`` deberían basarse en el siguiente "
+"patrón:"
 
 # 786295b4c9954807b0e50079477d03a6
 #: ../../schema/guidance/identifiers.rst:74

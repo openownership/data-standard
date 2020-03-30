@@ -6,6 +6,7 @@
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
 # Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Peter Low <peter@openownership.org>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Peter Low <peter@openownership.org>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,8 +50,8 @@ msgid ""
 "Ltd by Chris Taggart."
 msgstr ""
 "En el ejemplo de más abajo, se presentan tres declaraciones (sobre Entidad, "
-"sobre Persona y sobre Titularidad o Control) que explican la condición de "
-"beneficiario final en un 100 % de Chris Taggart en Chrinon Ltd."
+"sobre Persona y sobre Titularidad o Control) que explican la situación de "
+"Chris Taggart, beneficiario final en un 100 % de Chrinon Ltd."
 
 # 47e89534876948c99526f588340a71e2
 #: ../../examples/index.rst:15
@@ -79,7 +80,7 @@ msgid ""
 " ``replacesStatement`` property is required."
 msgstr ""
 "Para actualizar una declaración anterior, se necesita una nueva declaración "
-"sobre beneficiarios finales con la propiedad ``reemplazaDeclaración``."
+"sobre beneficiarios finales con la propiedad ``replacesStatement``."
 
 # 7a098c202a3f4e7e833fa3b6940eb778
 #: ../../examples/index.rst:28
@@ -112,5 +113,5 @@ msgid ""
 msgstr ""
 "Cuando se aporta un archivo de datos, en él deberían incluirse todas las "
 "declaraciones sobre personas o entidades a las que se hace referencia en los"
-" campos ``sujeto`` o ``parteInteresada`` de una declaración sobre "
+" campos ``subject`` o ``interestedParty`` de una declaración sobre "
 "titularidad o control."

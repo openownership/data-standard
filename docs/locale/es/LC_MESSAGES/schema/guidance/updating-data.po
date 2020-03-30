@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Peter Low <peter@openownership.org>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Peter Low <peter@openownership.org>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,10 +38,9 @@ msgid ""
 msgstr ""
 "Las declaraciones DEBEN tratarse como inalterables: una vez que se publica "
 "una declaración, ésta NO DEBE volver a publicarse con la misma "
-"``identificaciónDeDeclaración`` y diferentes valores de propiedades. La "
-"propiedad ``reemplazaDeclaraciones`` puede usarse para indicar que una "
-"declaración debería considerarse como un reemplazo de una o más "
-"declaraciones anteriores."
+"``statementID`` y diferentes valores de propiedades. La propiedad "
+"``replacesStatements`` puede usarse para indicar que una declaración debería"
+" considerarse como un reemplazo de una o más declaraciones anteriores."
 
 # ed2fca3e6c80471b81d3d4f41ef59ecd
 #: ../../schema/guidance/updating-data.rst:8
@@ -51,7 +50,6 @@ msgid ""
 "property used to reference the old, out-of-date statement."
 msgstr ""
 "Por lo tanto, si un valor en particular necesita ser actualizado, DEBE "
-"publicarse una nueva declaración con una nueva "
-"``identificaciónDeDeclaración`` y utilizarse la propiedad "
-"``reemplazaDeclaraciones`` para referirse a la antigua declaración "
+"publicarse una nueva declaración con una nueva ``statementID`` y utilizarse "
+"la propiedad ``replacesStatement`` para referirse a la antigua declaración "
 "desactualizada."
