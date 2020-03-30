@@ -7,6 +7,7 @@
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
 # Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
 # Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020
+# Peter Low <peter@openownership.org>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020\n"
+"Last-Translator: Peter Low <peter@openownership.org>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -480,8 +481,8 @@ msgid ""
 "vocabularies) definitions."
 msgstr ""
 "Nombre por el que se conoce a este individuo. Los nombres deberían indicarse"
-" en nombreCompleto y pueden desglosarse facultativamente en los campos "
-"familyName (Apellido), givenName (nombreDePila) y patronymicName "
+" en fullName (nombreCompleto) y pueden desglosarse facultativamente en los "
+"campos familyName (Apellido), givenName (nombreDePila) y patronymicName "
 "(nombrePatronímico), según las definiciones de [EC ISA Core Person "
 "Vocabulary](https://joinup.ec.europa.eu/solution/e-government-core-"
 "vocabularies)."
@@ -983,7 +984,7 @@ msgstr ""
 "Los valores de este campo, objeto o declaración han sido modificados "
 "respecto de su forma original utilizando el método señalado en el campo de "
 "descripción. La manifestación transformada puede incluirse en el campo "
-"contenidoTransformado."
+"transformedContent."
 
 # daafe027e6f2461990986e73856e046c
 #: ../../schema/reference.rst:303
@@ -1855,8 +1856,8 @@ msgid ""
 "disclose its beneficial owner. (Replaces noNotifiableOwners.)"
 msgstr ""
 "El sujeto de esta declaración sobre titularidad o control no está obligado a"
-" divulgar su beneficiario final. (Reemplaza a "
-"sinPropietariosQueDebanNotificarse)."
+" divulgar su beneficiario final. Reemplaza a noNotifiableOwners "
+"(sinPropietariosQueDebanNotificarse)."
 
 # 55114f79071b43b7b9bd9e30ed9829e2
 #: ../../_build_schema/codelists/unspecifiedReason.csv:1

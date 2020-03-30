@@ -6,6 +6,7 @@
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
 # Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Peter Low <peter@openownership.org>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Peter Low <peter@openownership.org>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -92,7 +93,7 @@ msgid ""
 "objects. It takes a boolean value and indicates whether a Statement "
 "represents part of a primary indirect ownership-or-control relationship."
 msgstr ""
-"Se agregó la propiedad requerida ``esComponente`` en los tres objetos de "
+"Se agregó la propiedad requerida ``isComponent`` en los tres objetos de "
 "Declaraciones. Ésta toma un valor booleano e indica si una declaración "
 "representa parte de una relación primaria indirecta de titularidad o control"
 " ."
@@ -104,11 +105,10 @@ msgid ""
 "Statements. It takes an array of Statement IDs, indicating which component "
 "statements provide detail about the parent Ownership-or-control Statement."
 msgstr ""
-"Se agregó la propiedad ``identificacionesDeDeclaracionesComponentes`` a las "
-"Declaraciones sobre Titularidad o Control. Ésta toma un arreglo de "
-"Identificaciones de Declaraciones, e indica cuáles son las declaraciones "
-"componentes que brindan detalles acerca de la Declaración sobre Titularidad "
-"o Control principal."
+"Se agregó la propiedad ``componentStatementIDs`` a las Declaraciones sobre "
+"Titularidad o Control. Ésta toma un arreglo de Identificaciones de "
+"Declaraciones, e indica cuáles son las declaraciones componentes que brindan"
+" detalles acerca de la Declaración sobre Titularidad o Control principal."
 
 # c3ee4c8397e948af8a01cd9ef9105c74
 #: ../../schema/changelog.rst:26
@@ -117,35 +117,35 @@ msgid ""
 "Statement objects. It represents metadata for Statements: information about "
 "their original publisher. Sub-properties (and their sub-properties) are:"
 msgstr ""
-"Se agregó la propiedad requerida ``detallesDeLaPublicación`` en los tres "
-"objetos de Declaraciones. Ésta señala metadatos de las Declaraciones: "
-"información sobre su publicador original. Las subpropiedades (y sus "
-"respectivas subpropiedades) son:"
+"Se agregó la propiedad requerida ``publicationDetails`` en los tres objetos "
+"de Declaraciones. Ésta señala metadatos de las Declaraciones: información "
+"sobre su publicador original. Las subpropiedades (y sus respectivas "
+"subpropiedades) son:"
 
 # 1b29ccd569074e2a86f851a366629801
 #: ../../schema/changelog.rst:28
 msgid "``publicationDate``\\*"
-msgstr "``fechaDePublicación``\\*"
+msgstr "``publicationDate``\\*"
 
 # f18a05746d644829a87ae9d6c1e6a0ab
 #: ../../schema/changelog.rst:29
 msgid "``bodsVersion``\\*"
-msgstr "``versiónBods``\\*"
+msgstr "``bodsVersion``\\*"
 
 # 21e30b0f202944fc98627fe19d81f08f
 #: ../../schema/changelog.rst:30
 msgid "``license``"
-msgstr "``licencia``"
+msgstr "``license``"
 
 # 5e87f90607f04e9085045f17951d7a6b
 #: ../../schema/changelog.rst:31
 msgid "``publisher``\\* (``name``, ``url``)"
-msgstr "``publicador``\\* (``nombre``, ``url``)"
+msgstr "``publisher``\\* (``name``, ``url``)"
 
 # 8a771f70c79a452aa993c4ad2da9e852
 #: ../../schema/changelog.rst:33
 msgid "\\* required"
-msgstr "\\* requerido"
+msgstr "\\* required"
 
 # 3c1514d7183b4bc0b48354bf2ceafd40
 #: ../../schema/changelog.rst:35
@@ -154,10 +154,9 @@ msgid ""
 "Person Statements. It is only to be used where disclosure requirements "
 "require that Politically Exposed Persons are flagged."
 msgstr ""
-"Se agregó la propiedad ``revisteCondiciónPEP`` (que toma un valor booleano) "
-"a las Declaraciones sobre Personas. Solo debe utilizarse cuando los "
-"requisitos de divulgación exigen que se marque a las Personas Expuestas "
-"Políticamente."
+"Se agregó la propiedad ``hasPepStatus`` (que toma un valor booleano) a las "
+"Declaraciones sobre Personas. Solo debe utilizarse cuando los requisitos de "
+"divulgación exigen que se marque a las Personas Expuestas Políticamente."
 
 # 0d98f960f0f246758ec83c7a14b14bef
 #: ../../schema/changelog.rst:37
@@ -166,7 +165,7 @@ msgid ""
 "and ``source``."
 msgstr ""
 "Los objetos Condición PEP ahora tiene las propiedades adicionales "
-"``motivoDeInformaciónFaltante`` y ``fuente``."
+"``missingInfoReason`` y ``source``."
 
 # 3de5ed83aca640e59cce420b3bc388bb
 #: ../../schema/changelog.rst:39
@@ -174,7 +173,7 @@ msgid ""
 "A ``taxResidencies`` property has been added to Person Statements. It takes "
 "an array of Country objects."
 msgstr ""
-"Se agregó la propiedad ``residenciasFiscales`` a las Declaraciones sobre "
+"Se agregó la propiedad ``taxResidencies`` a las Declaraciones sobre "
 "Personas. Ésta toma un arreglo de objetos País."
 
 # f87047738ee64b13bce54b0daf23283d
@@ -190,8 +189,8 @@ msgid ""
 "``unspecifiedPersonDetails`` has been added to Person Statements (with a "
 "required ``reason`` sub-property)"
 msgstr ""
-"Se agregó ``detallesDePersonaNoEspecificados`` a las Declaraciones sobre "
-"Personas (junto con ``motivo`` como subpropiedad requerida`)"
+"Se agregó ``unspecifiedPersonDetails`` a las Declaraciones sobre Personas "
+"(junto con ``reason`` como subpropiedad requerida`)"
 
 # 65e7150ab6e44795ab39438fb47dbbcf
 #: ../../schema/changelog.rst:44
@@ -199,8 +198,8 @@ msgid ""
 "``unspecifiedEntityDetails`` has been added to Entity Statements (with a "
 "required ``reason`` sub-property)"
 msgstr ""
-"Se agregó ``detallesDeEntidadNoEspecificados`` a las Declaraciones sobre "
-"Entidades (junto con ``motivo`` como subpropiedad requerida)"
+"Se agregó ``unspecifiedEntityDetails`` a las Declaraciones sobre Entidades "
+"(junto con ``reason`` como subpropiedad requerida)"
 
 # 07b5b62092624fa985a371b390db2765
 #: ../../schema/changelog.rst:46
@@ -209,9 +208,9 @@ msgid ""
 "does the Ownership-or-control Statement's ``interestedParty.unspecified`` "
 "property)."
 msgstr ""
-"La subpropiedad ``motivo`` se sirve de la lista de códigos Motivo No "
-"Especificado (al igual que la propiedad ``parteInteresada.sinespecificar`` "
-"de las Declaraciones sobre Titularidad o Control)."
+"La subpropiedad ``reason`` se sirve de la lista de códigos Motivo No "
+"Especificado (al igual que la propiedad ``interestedParty.unspecified`` de "
+"las Declaraciones sobre Titularidad o Control)."
 
 # f3d69f28a5b64f2e85137085e535394d
 # ac09b132a58c49208fee90040f83ee7e
@@ -225,22 +224,24 @@ msgid ""
 "The ``pepStatus`` property of Person Statements has been renamed "
 "``pepStatusDetails`` (and still references an array of PEP Status objects)."
 msgstr ""
-"La propiedad ``condiciónPEP`` de las Declaraciones sobre Personas cambió su "
-"denominación a ``detallesDeCondiciónPEP`` (y sigue haciendo referencia a un "
+"La propiedad ``pepStatus`` de las Declaraciones sobre Personas cambió su "
+"denominación a ``pepStatusDetails`` (y sigue haciendo referencia a un "
 "arreglo de objetos Condición PEP)."
 
 # de2ec1d673ad4a059cf7ba352379cc2f
 #: ../../schema/changelog.rst:52
 msgid "The ``personType`` property of Person Statements is now required."
 msgstr ""
-"La propiedad ``tipoDePersona`` de las Declaraciones sobre Personas ahora es "
-"un requisito."
+"La propiedad ``personType`` de las Declaraciones sobre Personas ahora es un "
+"requisito."
 
 # e1f23359f9b34b6f8d05c6d81ec02fbb
 #: ../../schema/changelog.rst:54
 msgid ""
 "If ``Annotation.motivation`` is 'linking', ``Annotation.url`` is required."
-msgstr "Si ``Nota.motivo`` es \"vinculación\", entonces se exige ``Nota.url``."
+msgstr ""
+"Si ``Annotation.motivation`` es \"linking\", entonces se exige "
+"``Annotation.url``."
 
 # 0e3b49f4a6a44706994a6be13e1392fd
 #: ../../schema/changelog.rst:56
@@ -251,8 +252,8 @@ msgstr "La lista de códigos Tipo de Participación se ha modificado:"
 #: ../../schema/changelog.rst:58
 msgid "'influence-or-control' is renamed 'other-influence-or-control'"
 msgstr ""
-"\"influencia-o-control\" cambió su denominación a \"otro-tipo-de-"
-"influencia-o-control\""
+"\"influence-or-control\" cambió su denominación a \"other-influence-or-"
+"control\""
 
 # b9178557c1624e8db05cac875c5e822d
 #: ../../schema/changelog.rst:59
@@ -260,18 +261,18 @@ msgid ""
 "'rights-to-surplus-assets' is renamed 'rights-to-surplus-assets-on-"
 "dissolution'"
 msgstr ""
-"\"derechos-sobre-activos-remanentes\" cambió su denominación a \"derechos-"
-"sobre-activos-remanentes-en-caso-de-disolución\""
+"\"rights-to-surplus-assets\" cambió su denominación a \"rights-to-surplus-"
+"assets-on-dissolution\""
 
 # a21ce0a9b5c7480bbd1e6d112085fbac
 #: ../../schema/changelog.rst:60
 msgid "'rights-granted-by-contract' has been added"
-msgstr "Se agregó \"derechos-otorgados-por-contrato\""
+msgstr "Se agregó \"rights-granted-by-contract\""
 
 # 0c93a93507414639992e8d3513eb5683
 #: ../../schema/changelog.rst:61
 msgid "'conditional-rights-granted-by-contract' has been added"
-msgstr "Se agregó \"derechos-condicionales-otorgados-por-contrato\""
+msgstr "Se agregó \"conditional-rights-granted-by-contract\""
 
 # e9f264c00661486d88600ae94f6dfee7
 #: ../../schema/changelog.rst:63
@@ -335,10 +336,10 @@ msgid ""
 "Statements. It has been replaced with ``unspecifiedPersonDetails`` and "
 "``unspecifiedEntityDetails`` respectively."
 msgstr ""
-"Se eliminó la propiedad ``motivoDeInformaciónFaltante`` de las Declaraciones"
-" sobre Personas y las Declaraciones sobre Entidades. Se la reemplazó por "
-"``detallesDePersonaNoEspecificados`` y ``detallesDeEntidadNoEspecificados``,"
-" respectivamente."
+"Se eliminó la propiedad ``missingInfoReason`` de las Declaraciones sobre "
+"Personas y las Declaraciones sobre Entidades. Se la reemplazó por "
+"``unspecifiedPersonDetails`` y ``unspecifiedEntityDetails``, "
+"respectivamente."
 
 # dcb2d404341c4a39b06950454eb21470
 #: ../../schema/changelog.rst:84
@@ -352,7 +353,7 @@ msgid ""
 "boolean value. Can be used to assert that an interest between a natural "
 "person and an entity makes that person a beneficial owner."
 msgstr ""
-"Se agregó la propiedad ``beneficiarioFinalOControlante`` al objeto "
+"Se agregó la propiedad ``beneficialOwnershipOrControl`` al objeto "
 "Participación. Ésta toma un valor booleano. Puede utilizarse para afirmar "
 "que una relación de participación entre una persona física y una entidad "
 "convierte a esa persona en un beneficiario final."
@@ -364,8 +365,8 @@ msgid ""
 "person to be recorded as a politically exposed person (with a related "
 "reason, jurisdiction, start date and end date)."
 msgstr ""
-"Se agregó la propiedad ``condiciónPEP`` al objeto Declaración sobre Persona."
-" Permite registrar a una persona física como persona expuesta políticamente "
+"Se agregó la propiedad ``pepStatus`` al objeto Declaración sobre Persona. "
+"Permite registrar a una persona física como persona expuesta políticamente "
 "(con un respectivo motivo, jurisdicción, fecha de inicio y fecha de "
 "finalización)."
 
@@ -376,8 +377,8 @@ msgid ""
 "provide a way of including additional (structured) data or transforming "
 "existing data in a targeted way."
 msgstr ""
-"Se agregó la propiedad ``notas`` a los tres tipos de declaración. Las notas "
-"constituyen un modo de incluir datos (estructurados) adicionales o de "
+"Se agregó la propiedad ``annotations`` a los tres tipos de declaración. Las "
+"notas constituyen un modo de incluir datos (estructurados) adicionales o de "
 "transformar los datos existentes de manera orientada."
 
 # d2ec42f0b10d4c7db007d7d25c58bf14
@@ -387,16 +388,16 @@ msgid ""
 " parties.  An unspecifiedReason codelist provides options for describing why"
 " an interested party is not recorded."
 msgstr ""
-"La propiedad ``sinEspecificar`` sustituye a la opción ``parteValorNulo`` "
-"para las partes interesadas. La lista de códigos motivoNoEspecificado ofrece"
-" opciones para describir por qué no se registra a una parte interesada."
+"La propiedad ``unspecified`` sustituye a la opción ``nullParty`` para las "
+"partes interesadas. La lista de códigos unspecifiedReason ofrece opciones "
+"para describir por qué no se registra a una parte interesada."
 
 # 9067d0dfc4c944bbb86b155f2df72548
 #: ../../schema/changelog.rst:95
 msgid ""
 "The interestType codelist has been extended to include interests in trusts."
 msgstr ""
-"La lista de códigos tipoDeParticipación se amplió a los efectos de incluir "
+"La lista de códigos interestType se amplió a los efectos de incluir "
 "participaciones en fideicomisos."
 
 # 3f47d36106554e89968bd5ee4612ae6f
@@ -414,9 +415,8 @@ msgid ""
 "'Beneficial ownership statements' have been renamed 'Ownership-or-control "
 "statements' to reflect the scope of their use."
 msgstr ""
-"\"Declaraciones sobre beneficiarios finales\" cambió su denominación a "
-"\"declaraciones sobre titularidad o control\" a fin de reflejar el alcance "
-"de su uso."
+"\"Beneficial ownership statements\" cambió su denominación a \"Ownership-or-"
+"control statements\" a fin de reflejar el alcance de su uso."
 
 # 0f95653077ec4f0eaa9dd532a5326f77
 #: ../../schema/changelog.rst:101
@@ -425,10 +425,10 @@ msgid ""
 "group id) are no longer used to package arrays of statements. This reflects "
 "a flattening of the structure of BODS formatted data."
 msgstr ""
-"Ya no se utilizan arreglos de objetos ``grupoDeDeclaraciones`` (cada objeto "
-"con su propia identificación de grupo de declaraciones) para empaquetar "
-"arreglos de declaraciones. Esto refleja el aplanamiento de la estructura de "
-"datos en formato BODS. "
+"Ya no se utilizan arreglos de objetos ``statementGroup`` (cada objeto con su"
+" propia identificación de grupo de declaraciones) para empaquetar arreglos "
+"de declaraciones. Esto refleja el aplanamiento de la estructura de datos en "
+"formato BODS. "
 
 # f12b2ad96c1641429ecefc7786ce841e
 #: ../../schema/changelog.rst:102
@@ -436,6 +436,5 @@ msgid ""
 "The ``nullParty`` option for interested parties. See ``unspecified`` "
 "property in the Added section above."
 msgstr ""
-"La opción ``parteValorNulo`` para las partes interesadas. Consulte la "
-"propiedad ``sinEspecificar`` en la sección de más arriba que describe qué se"
-" agregó."
+"La opción ``nullParty`` para las partes interesadas. Consulte la propiedad "
+"``unspecified`` en la sección de más arriba que describe qué se agregó."

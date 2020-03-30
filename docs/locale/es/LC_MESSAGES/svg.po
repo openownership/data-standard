@@ -2,13 +2,14 @@
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
 # Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
 # Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020
+# Peter Low <peter@openownership.org>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-09-07 08:06+0000\n"
 "PO-Revision-Date: 2019-08-07 15:28+0000\n"
-"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020\n"
+"Last-Translator: Peter Low <peter@openownership.org>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -324,7 +325,7 @@ msgstr "person:  47bdf780-787d-4bfd-9205"
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:605
 msgid "interestedParty"
-msgstr "parteInteresada"
+msgstr "interestedParty"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/data-schema-model-2.svg:635

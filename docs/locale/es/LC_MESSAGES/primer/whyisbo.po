@@ -6,6 +6,7 @@
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
 # Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Peter Low <peter@openownership.org>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Peter Low <peter@openownership.org>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,7 +37,7 @@ msgid ""
 msgstr ""
 "Los individuos pueden tener intervención en muchas empresas y de diferentes "
 "maneras. Si restringimos la interpretación de su intervención solamente a la"
-" titularidad, estaríamos dejando de lado casos como los siguientes."
+" titularidad, estaríamos dejando de lado casos como los siguientes:"
 
 # 20c0fafb17cf4969b50aea9386b29581
 #: ../../primer/whyisbo.rst:12
