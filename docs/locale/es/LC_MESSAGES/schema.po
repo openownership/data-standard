@@ -3,13 +3,19 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-08-20 08:23+0100\n"
+"POT-Creation-Date: 2019-09-06 12:21+0000\n"
 "PO-Revision-Date: 2019-06-17 10:43+0000\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,12 +27,12 @@ msgstr ""
 #. /definitions/StatementDate/title
 #: schema/components.json:1
 msgid "Statement date"
-msgstr ""
+msgstr "Fecha de la declaración"
 
 #. /definitions/StatementDate/description
 #: schema/components.json:1
 msgid "The date on which this statement was made."
-msgstr ""
+msgstr "Fecha en la que se realizó esta declaración."
 
 #. /definitions/Source/title
 #. /definitions/PepStatusDetails/properties/source/title
@@ -34,7 +40,7 @@ msgstr ""
 #: schema/components.json:1 schema/entity-statement.json:1
 #: schema/ownership-or-control-statement.json:1 schema/person-statement.json:1
 msgid "Source"
-msgstr ""
+msgstr "Fuente"
 
 #. /definitions/Source/description
 #: schema/components.json:1
@@ -42,11 +48,14 @@ msgid ""
 "The source object is used to explain where information in a statement "
 "originated from, and to link to supporting information."
 msgstr ""
+"El objeto fuente se utiliza para explicar dónde se originó la información de"
+" una declaración y para establecer un vínculo con la información de "
+"respaldo."
 
 #. /definitions/Source/properties/type/title
 #: schema/components.json:1
 msgid "Source type"
-msgstr ""
+msgstr "Tipo de fuente"
 
 #. /definitions/Source/properties/type/description
 #: schema/components.json:1
@@ -54,6 +63,8 @@ msgid ""
 "What type of source is this? Multiple tags can be combined. Values should "
 "come from the source type codelist."
 msgstr ""
+"¿De qué tipo de fuente se trata? Se pueden combinar varias etiquetas. Los "
+"valores deberían proceder de la lista de códigos del sourceType."
 
 #. /definitions/Source/properties/description/title
 #. /definitions/Annotation/properties/description/title
@@ -63,7 +74,7 @@ msgstr ""
 #: schema/components.json:1 schema/entity-statement.json:1
 #: schema/ownership-or-control-statement.json:1 schema/person-statement.json:1
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #. /definitions/Source/properties/description/description
 #: schema/components.json:1
@@ -71,11 +82,13 @@ msgid ""
 "Where required, additional free-text information about the source of this "
 "statement can be provided here."
 msgstr ""
+"De ser necesario, puede incluirse aquí información adicional como texto "
+"libre sobre la fuente de esta declaración."
 
 #. /definitions/Source/properties/url/title
 #: schema/components.json:1
 msgid "Source URL"
-msgstr ""
+msgstr "URL de la fuente"
 
 #. /definitions/Source/properties/url/description
 #: schema/components.json:1
@@ -84,11 +97,15 @@ msgid ""
 "readable web page is available that provides additional information on how "
 "this statement was sourced, provide the URL."
 msgstr ""
+"Si la información se extrajo de una URL externa, o si se dispone de una "
+"página web legible por medios informáticos o por seres humanos que provea "
+"información adicional sobre la fuente de la cual se obtuvo esta declaración,"
+" indique el URL."
 
 #. /definitions/Source/properties/retrievedAt/title
 #: schema/components.json:1
 msgid "Retrieved at"
-msgstr ""
+msgstr "Momento del acceso"
 
 #. /definitions/Source/properties/retrievedAt/description
 #: schema/components.json:1
@@ -97,11 +114,14 @@ msgid ""
 "timestamp indicating when this took place. The statement's own date should "
 "be set based on the source information."
 msgstr ""
+"Si la declaración se importó de algún sistema externo, incluya una marca de "
+"tiempo que indique cuándo ocurrió esto. La fecha de la declaración en sí "
+"debería fijarse en función de la información de la fuente."
 
 #. /definitions/Source/properties/assertedBy/title
 #: schema/components.json:1
 msgid "Asserted by"
-msgstr ""
+msgstr "Realizada por"
 
 #. /definitions/Source/properties/assertedBy/description
 #: schema/components.json:1
@@ -112,11 +132,17 @@ msgid ""
 "description of some other party. If this statement has been verified, this "
 "may also include the name of the organisation providing verification."
 msgstr ""
+"¿Quién hace la declaración? Puede ser el nombre de la persona u organización"
+" que realiza una autodeclaración (en tal caso, asegúrese de que el campo del"
+" nombre coincida con el campo del nombre de la organización o persona), o el"
+" nombre o descripción de alguna otra parte. Si la declaración ha sido "
+"verificada, también puede incluirse el nombre de la organización encargada "
+"de la verificación."
 
 #. /definitions/Agent/title
 #: schema/components.json:1
 msgid "Agent"
-msgstr ""
+msgstr "Agente"
 
 #. /definitions/Agent/description
 #: schema/components.json:1
@@ -124,6 +150,8 @@ msgid ""
 "An individual, organisation or other responsible agent making, or "
 "supporting, a given statement or annotation."
 msgstr ""
+"Individuo, organización u otro agente responsable que realiza o respalda una"
+" determinada declaración o nota."
 
 #. /definitions/Agent/properties/name/title
 #. /definitions/Name/title
@@ -134,12 +162,12 @@ msgstr ""
 #. /properties/alternateNames/items/title
 #: schema/components.json:1 schema/entity-statement.json:1
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #. /definitions/Agent/properties/name/description
 #: schema/components.json:1
 msgid "The name of the agent"
-msgstr ""
+msgstr "Nombre del agente."
 
 #. /definitions/Agent/properties/uri/title
 #. /definitions/Identifier/properties/uri/title
@@ -147,17 +175,17 @@ msgstr ""
 #. /properties/uri/title
 #: schema/components.json:1 schema/entity-statement.json:1
 msgid "URI"
-msgstr ""
+msgstr "URI"
 
 #. /definitions/Agent/properties/uri/description
 #: schema/components.json:1
 msgid "An optional URI to identify the agent."
-msgstr ""
+msgstr "Una URI opcional para identificar al agente."
 
 #. /definitions/ReplacesStatements/title
 #: schema/components.json:1
 msgid "Replaces statement(s)"
-msgstr ""
+msgstr "Reemplaza declaración(es)"
 
 #. /definitions/ReplacesStatements/description
 #: schema/components.json:1
@@ -166,21 +194,25 @@ msgid ""
 "identifier(s) for the previous statement(s) here. Consuming applications are"
 " advised to mark the identified statements as no longer active."
 msgstr ""
+"Si esta declaración reemplaza una o más declaraciones anteriores, indique "
+"aquí el/los identificador(es) de la(s) declaración(es). Se recomienda que "
+"los programas utilizadores marquen como inactivas las declaraciones "
+"identificadas."
 
 #. /definitions/ReplacesStatements/items/title
 #: schema/components.json:1
 msgid "Statement identifier"
-msgstr ""
+msgstr "Identificador de declaración"
 
 #. /definitions/ReplacesStatements/items/description
 #: schema/components.json:1
 msgid "The identifier of a statement that is no longer active."
-msgstr ""
+msgstr "El identificador de una declaración que ya no se encuentra activa."
 
 #. /definitions/Identifier/title
 #: schema/components.json:1
 msgid "Identifier"
-msgstr ""
+msgstr "Identificador"
 
 #. /definitions/Identifier/description
 #: schema/components.json:1
@@ -188,22 +220,26 @@ msgid ""
 "An identifier that has been assigned to this person or entity. The scheme or"
 " list from which the identifier is drawn should be declared."
 msgstr ""
+"Identificador que se ha asignado a esta persona o entidad. Debería "
+"consignarse el esquema o lista de la que se toma el identificador."
 
 #. /definitions/Identifier/properties/id/title
 #: schema/components.json:1
 msgid "ID"
-msgstr ""
+msgstr "Identificación"
 
 #. /definitions/Identifier/properties/id/description
 #: schema/components.json:1
 msgid ""
 "The identifier for this person or entity as provided in the declared scheme."
 msgstr ""
+"El identificador de esta persona o entidad según lo indicado en el esquema "
+"declarado."
 
 #. /definitions/Identifier/properties/scheme/title
 #: schema/components.json:1
 msgid "Scheme"
-msgstr ""
+msgstr "Esquema"
 
 #. /definitions/Identifier/properties/scheme/description
 #: schema/components.json:1
@@ -214,11 +250,18 @@ msgid ""
 "an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. "
 "`scheme` or `schemeName` (or both) MUST be included in an Identifier object."
 msgstr ""
+"En el caso de las declaraciones sobre entidades, el esquema debería ser una "
+"entrada de la lista de códigos [org-id.guide](http://www.org-id.guide). Para"
+" declaraciones sobre personas, el esquema debería tener el patrón "
+"{JURISDICTION}-{TYPE}, donde JURISDICTION (JURISDICCIÓN) es un código ISO de"
+" país de 3 dígitos y TYPE (TIPO) se refiere a PASSPORT (PASAPORTE), TAXID "
+"(IDENTIFICADOR TRIBUTARIO)  o IDCARD (TARJETA DE IDENTIDAD). En el objeto "
+"Identifier se DEBE incluir `scheme` o `schemeName`  (o ambos)."
 
 #. /definitions/Identifier/properties/schemeName/title
 #: schema/components.json:1
 msgid "Scheme name"
-msgstr ""
+msgstr "Nombre del esquema"
 
 #. /definitions/Identifier/properties/schemeName/description
 #: schema/components.json:1
@@ -227,6 +270,9 @@ msgid ""
 "unvalidated string is provided. `scheme` or `schemeName` (or both) MUST be "
 "included in an Identifier object."
 msgstr ""
+"El nombre del esquema, cuando se desconoce el código org-id o solo se "
+"dispone de una cadena de caracteres no validada. En el objeto Identifier se "
+"DEBE incluir `scheme` o `schemeName` (o ambos)."
 
 #. /definitions/Identifier/properties/uri/description
 #: schema/components.json:1
@@ -235,22 +281,26 @@ msgid ""
 "URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be "
 "included"
 msgstr ""
+"Cuando este identificador tiene un [URI "
+"canónico](https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme) "
+"se lo puede incluir."
 
 #. /definitions/ID/title
 #: schema/components.json:1
 msgid "Statement Identifier"
-msgstr ""
+msgstr "Identificador de declaración"
 
 #. /definitions/ID/description
 #: schema/components.json:1
 msgid "A persistent globally unique identifier for this statement."
 msgstr ""
+"Identificador único global persistente correspondiente a esta declaración."
 
 #. /definitions/Address/title
 #. /definitions/Address/properties/address/title
 #: schema/components.json:1
 msgid "Address"
-msgstr ""
+msgstr "Domicilio"
 
 #. /definitions/Address/description
 #: schema/components.json:1
@@ -259,18 +309,25 @@ msgid ""
 "suitable for processing using address parsing algorithms. For some uses (for"
 " example, Place of Birth) only a town and country are required."
 msgstr ""
+"Cadena de texto libre correspondiente a un domicilio, que contiene tantos "
+"datos sobre la dirección como sea pertinente, y que puede ser procesada "
+"mediante algoritmos de análisis estructural de domicilios. Para algunos usos"
+" (por ejemplo, el lugar de nacimiento), solo se requiere una ciudad y un "
+"país."
 
 #. /definitions/Address/properties/type/title
 #. /definitions/Name/properties/type/title
 #. /properties/entityType/title
 #: schema/components.json:1 schema/entity-statement.json:1
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #. /definitions/Address/properties/type/description
 #: schema/components.json:1
 msgid "What type of address is this? See the addressType codelist."
 msgstr ""
+"¿De qué tipo de domicilio se trata? Consulte la lista de códigos "
+"addressType."
 
 #. /definitions/Address/properties/address/description
 #: schema/components.json:1
@@ -279,27 +336,31 @@ msgid ""
 "break or comma. Where postal codes are isolated fields in source systems, "
 "this `address` field SHOULD NOT include the postal code."
 msgstr ""
+"El domicilio, con cada una de sus líneas o componentes separados por un "
+"salto de línea o una coma. Cuando los códigos postales son campos aislados "
+"en los sistemas fuente, el campo `address` NO DEBERÍA incluir el código "
+"postal."
 
 #. /definitions/Address/properties/postCode/title
 #: schema/components.json:1
 msgid "Postcode"
-msgstr ""
+msgstr "Código postal"
 
 #. /definitions/Address/properties/postCode/description
 #: schema/components.json:1
 msgid "The postal code for this address."
-msgstr ""
+msgstr "El código postal correspondiente a este domicilio."
 
 #. /definitions/Address/properties/country/title
 #. /definitions/Country/title
 #: schema/components.json:1
 msgid "Country"
-msgstr ""
+msgstr "País"
 
 #. /definitions/Address/properties/country/description
 #: schema/components.json:1
 msgid "The ISO 2-Digit county code for this address."
-msgstr ""
+msgstr "El código de país ISO de 2 dígitos correspondiente a este domicilio."
 
 #. /definitions/Name/description
 #: schema/components.json:1
@@ -310,26 +371,34 @@ msgid ""
 "Vocabulary](https://joinup.ec.europa.eu/solution/e-government-core-"
 "vocabularies) definitions."
 msgstr ""
+"Nombre por el que se conoce a este individuo. Los nombres deberían indicarse"
+" en nombreCompleto y pueden desglosarse facultativamente en los campos "
+"familyName (Apellido), givenName (nombreDePila) y patronymicName "
+"(nombrePatronímico), según las definiciones de [EC ISA Core Person "
+"Vocabulary](https://joinup.ec.europa.eu/solution/e-government-core-"
+"vocabularies)."
 
 #. /definitions/Name/properties/type/description
 #: schema/components.json:1
 msgid "What kind of name is this? See the nameType codelist."
 msgstr ""
+"¿De qué tipo de nombre se trata? Consulte la lista de códigos nameType."
 
 #. /definitions/Name/properties/fullName/title
 #: schema/components.json:1
 msgid "Full name"
-msgstr ""
+msgstr "Nombre completo"
 
 #. /definitions/Name/properties/fullName/description
 #: schema/components.json:1
 msgid "The full name contains the complete name of a person as one string."
 msgstr ""
+"Contiene el nombre entero de una persona en una sola cadena de caracteres."
 
 #. /definitions/Name/properties/familyName/title
 #: schema/components.json:1
 msgid "Family name"
-msgstr ""
+msgstr "Apellido"
 
 #. /definitions/Name/properties/familyName/description
 #: schema/components.json:1
@@ -341,11 +410,17 @@ msgid ""
 "Name field so that, for example, Miguel de Cervantes Saavedra's Family Name "
 "would be recorded as 'Cervantes Saavedra.'"
 msgstr ""
+"Los miembros de una familia suelen compartir el mismo apellido. Este "
+"atributo también lleva prefijos o sufijos que forman parte del Apellido, p. "
+"ej. \"de Boer\", \"van de Putte\", \"von und zu Orlow\". Los apellidos "
+"compuestos, muy frecuentes en los países hispanos, se registran en el campo "
+"único Apellido; así, por ejemplo, el apellido de Miguel de Cervantes "
+"Saavedra se registraría como \"Cervantes Saavedra\"."
 
 #. /definitions/Name/properties/givenName/title
 #: schema/components.json:1
 msgid "Given names"
-msgstr ""
+msgstr "Nombres de pila"
 
 #. /definitions/Name/properties/givenName/description
 #: schema/components.json:1
@@ -356,11 +431,17 @@ msgid ""
 "formal process. All given names are ordered in one field so that, for "
 "example, the given name for Johann Sebastian Bach is 'Johann Sebastian.'"
 msgstr ""
+"Se entiende por nombre de pila, o nombre de pila compuesto, al denominador o"
+" denominadores que identifica(n) a un individuo dentro de una familia. "
+"Vienen dados a la persona al momento de su nacimiento por sus padres, o "
+"pueden ser reconocidos legalmente como \"nombres de pila\" a través de un "
+"proceso formal. Todos los nombres de pila se ordenan en un campo; así, por "
+"ejemplo, el nombre de pila de Johann Sebastian Bach es \"Johann Sebastian\"."
 
 #. /definitions/Name/properties/patronymicName/title
 #: schema/components.json:1
 msgid "Patronymic Name"
-msgstr ""
+msgstr "Nombre patronímico"
 
 #. /definitions/Name/properties/patronymicName/description
 #: schema/components.json:1
@@ -370,22 +451,27 @@ msgid ""
 " example. In Bulgaria and Russia, patronymic names are in every day usage, "
 "for example, the 'Sergeyevich' in 'Mikhail Sergeyevich Gorbachev'"
 msgstr ""
+"Los nombres patronímicos son importantes en algunos países. Islandia no "
+"tiene el mismo concepto de apellido que muchos otros países europeos, por "
+"ejemplo. En Bulgaria y Rusia, los nombres patronímicos son de uso cotidiano,"
+" por ejemplo, el \"Sergeyevich\" en \"Mikhail Sergeyevich Gorbachev\""
 
 #. /definitions/Interest/title
 #: schema/components.json:1
 msgid "Interest"
-msgstr ""
+msgstr "Participación"
 
 #. /definitions/Interest/description
 #: schema/components.json:1
 msgid ""
 "A description of the interest held by an interestedParty in another entity."
 msgstr ""
+"Descripción de la participación de una interestedParty en otra entidad."
 
 #. /definitions/Interest/properties/type/title
 #: schema/components.json:1
 msgid "Type of interest"
-msgstr ""
+msgstr "Tipo de participación"
 
 #. /definitions/Interest/properties/type/description
 #: schema/components.json:1
@@ -393,21 +479,23 @@ msgid ""
 "A codelist value indicating the nature of the interest. See the interestType"
 " codelist"
 msgstr ""
+"Valor de la lista de códigos que indica la naturaleza de la participación. "
+"Véase la lista de códigos interestType"
 
 #. /definitions/Interest/properties/interestLevel/title
 #: schema/components.json:1
 msgid "Interest level"
-msgstr ""
+msgstr "Nivel de participación"
 
 #. /definitions/Interest/properties/interestLevel/description
 #: schema/components.json:1
 msgid "Is this interest held directly or indirectly?"
-msgstr ""
+msgstr "¿La participación se ejerce de manera directa o indirecta?"
 
 #. /definitions/Interest/properties/beneficialOwnershipOrControl/title
 #: schema/components.json:1
 msgid "Beneficial ownership or control"
-msgstr ""
+msgstr "Beneficiario final o controlante"
 
 #. /definitions/Interest/properties/beneficialOwnershipOrControl/description
 #: schema/components.json:1
@@ -420,11 +508,20 @@ msgid ""
 "arrangements or other conditions that mean this interest does not constitute"
 " beneficial ownership or control."
 msgstr ""
+"¿La declaración afirma que se trata de una participación que supone el "
+"carácter de beneficiario final o controlante? Una participación que supone "
+"el carácter de beneficiario final o controlante siempre se da entre una "
+"persona física y una entidad, y existe cuando la persona se beneficia en "
+"última instancia de la entidad o tiene cierto grado de control sobre ella. "
+"Puede ocurrir que una persona tenga cierta participación en una entidad, "
+"pero que existan estructuras jurídicas u otras condiciones que impliquen que"
+" esa participación no supone el carácter de beneficiario final o "
+"controlante."
 
 #. /definitions/Interest/properties/details/title
 #: schema/components.json:1
 msgid "Details"
-msgstr ""
+msgstr "Detalles"
 
 #. /definitions/Interest/properties/details/description
 #: schema/components.json:1
@@ -433,11 +530,14 @@ msgid ""
 "interest, or any further semi-structured or unstructured information to "
 "clarify the nature of the interest held."
 msgstr ""
+"Este campo puede utilizarse para indicar la denominación local que se da a "
+"este tipo de participación, o cualquier otra información semiestructurada o "
+"no estructurada que aclare la naturaleza de la participación que se tiene."
 
 #. /definitions/Interest/properties/share/title
 #: schema/components.json:1
 msgid "Percentage share"
-msgstr ""
+msgstr "Porción porcentual"
 
 #. /definitions/Interest/properties/share/description
 #: schema/components.json:1
@@ -450,41 +550,51 @@ msgid ""
 "change these defaults, use the exclusiveMinimum and exclusiveMaximum "
 "properties."
 msgstr ""
+"Cuando se dispone de un porcentaje exacto, se lo debería especificar, y se "
+"deberían establecer valores máximos y mínimos iguales al porcentaje exacto. "
+"De no ser así, el máximo y el mínimo pueden utilizarse para registrar el "
+"rango en el que se sitúa la porción de este tipo de participación. Por "
+"defecto, el mínimo es incluyente y el máximo, excluyente (valor mínimo ≤ "
+"porción ≤ valor máximo). Si desea modificar esta configuración "
+"predeterminada, utilice las propiedades exclusiveMinimum y exclusiveMaximum."
 
 #. /definitions/Interest/properties/share/properties/exact/title
 #: schema/components.json:1
 msgid "Exact share"
-msgstr ""
+msgstr "Porción exacta"
 
 #. /definitions/Interest/properties/share/properties/exact/description
 #: schema/components.json:1
 msgid "The exact share of this interest held (where available)."
 msgstr ""
+"La porción exacta de la participación que se tiene (si se dispone de ella)."
 
 #. /definitions/Interest/properties/share/properties/maximum/title
 #: schema/components.json:1
 msgid "Maximum share"
-msgstr ""
+msgstr "Porción máxima"
 
 #. /definitions/Interest/properties/share/properties/maximum/description
 #: schema/components.json:1
 msgid "The upper bound of the share of this interest known to be held."
 msgstr ""
+"El límite superior de la porción de participación que se sabe que se tiene."
 
 #. /definitions/Interest/properties/share/properties/minimum/title
 #: schema/components.json:1
 msgid "Minimum share"
-msgstr ""
+msgstr "Porción mínima"
 
 #. /definitions/Interest/properties/share/properties/minimum/description
 #: schema/components.json:1
 msgid "The lower bound of the share of this interest known to be held."
 msgstr ""
+"El límite inferior de la porción de participación que se sabe que se tiene."
 
 #. /definitions/Interest/properties/share/properties/exclusiveMinimum/title
 #: schema/components.json:1
 msgid "Exclusive minimum"
-msgstr ""
+msgstr "Mínimo excluyente"
 
 #. /definitions/Interest/properties/share/properties/exclusiveMinimum/description
 #: schema/components.json:1
@@ -493,11 +603,14 @@ msgid ""
 "minimum value given. E.g. if minimum is 25, the share is at least 25.1, and "
 "not simply 25."
 msgstr ""
+"Si exclusiveMinimum es verdadero, entonces la porción es por lo menos mayor "
+"que el valor mínimo dado. Por ejemplo, si el mínimo es 25, la porción es de "
+"al menos 25,1, y no simplemente 25."
 
 #. /definitions/Interest/properties/share/properties/exclusiveMaximum/title
 #: schema/components.json:1
 msgid "Exclusive maximum"
-msgstr ""
+msgstr "Máximo excluyente"
 
 #. /definitions/Interest/properties/share/properties/exclusiveMaximum/description
 #: schema/components.json:1
@@ -506,12 +619,15 @@ msgid ""
 "maximum value given. E.g. if maximum is 50, the share is less than 49.999, "
 "and not simply 50."
 msgstr ""
+"Si exclusiveMaximum es verdadero, entonces la porción es al menos menor que "
+"el valor máximo dado. Por ejemplo, si el máximo es 50, la porción es "
+"inferior a 49,999 y no simplemente 50."
 
 #. /definitions/Interest/properties/startDate/title
 #. /definitions/PepStatusDetails/properties/startDate/title
 #: schema/components.json:1
 msgid "State date"
-msgstr ""
+msgstr "Fecha de inicio"
 
 #. /definitions/Interest/properties/startDate/description
 #: schema/components.json:1
@@ -520,12 +636,15 @@ msgid ""
 "possible in ISO 8601 format. When only the year or year and month is known, "
 "these can be given as YYYY or YYYY-MM."
 msgstr ""
+"Cuándo surgió por primera vez la participación. Indique una fecha lo más "
+"precisa posible en el formato ISO 8601. Cuando solo se conoce el año, o el "
+"año y el mes, puede usarse el formato AAAA o AAAA-MM."
 
 #. /definitions/Interest/properties/endDate/title
 #. /definitions/PepStatusDetails/properties/endDate/title
 #: schema/components.json:1
 msgid "End date"
-msgstr ""
+msgstr "Fecha de finalización"
 
 #. /definitions/Interest/properties/endDate/description
 #: schema/components.json:1
@@ -534,11 +653,14 @@ msgid ""
 "in ISO 8601 format. When only the year or year and month is known, these can"
 " be given as YYYY or YYYY-MM."
 msgstr ""
+"Cuándo dejó de existir la participación. Indique una fecha lo más precisa "
+"posible en el formato ISO 8601. Cuando solo se conoce el año, o el año y el "
+"mes, puede usarse el formato AAAA o AAAA-MM."
 
 #. /definitions/Annotation/title
 #: schema/components.json:1
 msgid "Annotation"
-msgstr ""
+msgstr "Nota"
 
 #. /definitions/Annotation/description
 #: schema/components.json:1
@@ -549,11 +671,16 @@ msgid ""
 "properties can be included on the annotation object to provide structured "
 "data where required."
 msgstr ""
+"Las notas ofrecen información adicional sobre los datos de titularidad o "
+"control que se aportan. Pueden manifestarse como texto libre y referirse a "
+"toda una declaración, a un objeto o a un solo campo. El objeto nota puede "
+"incluir propiedades adicionales ampliadas a fin de proporcionar datos "
+"estructurados cuando sea necesario."
 
 #. /definitions/Annotation/properties/statementPointerTarget/title
 #: schema/components.json:1
 msgid "Statement Fragment Pointer"
-msgstr ""
+msgstr "Indicador de fragmento de declaración"
 
 #. /definitions/Annotation/properties/statementPointerTarget/description
 #: schema/components.json:1
@@ -563,32 +690,36 @@ msgid ""
 "starting from the root of the statement. A value of '/' indicates that the "
 "annotation applies to the whole statement."
 msgstr ""
+"Se trata de un [Indicador JSON RFC6901](https://tools.ietf.org/html/rfc6901)"
+" que describe el fragmento meta de la declaración al que se aplica la nota, "
+"empezando desde la raíz de la declaración. Un valor \"/\" indica que la nota"
+" se refiere a toda la declaración."
 
 #. /definitions/Annotation/properties/creationDate/title
 #: schema/components.json:1
 msgid "Creation Date"
-msgstr ""
+msgstr "Fecha de creación"
 
 #. /definitions/Annotation/properties/creationDate/description
 #: schema/components.json:1
 msgid "The date this annotation was created."
-msgstr ""
+msgstr "Fecha de creación de la nota."
 
 #. /definitions/Annotation/properties/createdBy/title
 #: schema/components.json:1
 msgid "Created By"
-msgstr ""
+msgstr "Autor de la nota"
 
 #. /definitions/Annotation/properties/createdBy/description
 #: schema/components.json:1
 msgid "The person, organisation or agent that created this annotation."
-msgstr ""
+msgstr "La persona, organización o agente que creó la nota."
 
 #. /definitions/Annotation/properties/createdBy/properties/name/description
 #: schema/components.json:1
 msgid ""
 "The name of the person, organisation or agent that created this annotation."
-msgstr ""
+msgstr "Nombre de la persona, organización o agente que creó la nota."
 
 #. /definitions/Annotation/properties/createdBy/properties/uri/description
 #: schema/components.json:1
@@ -596,11 +727,13 @@ msgid ""
 "An optional URI to identify person, organisation or agent that created this "
 "annotation."
 msgstr ""
+"Un URI opcional que identifique a la persona, organización o agente que creó"
+" la nota."
 
 #. /definitions/Annotation/properties/motivation/title
 #: schema/components.json:1
 msgid "Motivation"
-msgstr ""
+msgstr "Motivo"
 
 #. /definitions/Annotation/properties/motivation/description
 #: schema/components.json:1
@@ -608,16 +741,19 @@ msgid ""
 "The motivation for this annotation, chosen from a codelist. See the "
 "annotationMotivation codelist."
 msgstr ""
+"El motivo que dio lugar a la nota, elegido de una lista de códigos. Consulte"
+" la lista de códigos annotationMotivation."
 
 #. /definitions/Annotation/properties/description/description
 #: schema/components.json:1
 msgid "A free-text description to annotate this statement or field."
 msgstr ""
+"Descripción en texto libre para agregar notas a esta declaración o campo."
 
 #. /definitions/Annotation/properties/transformedContent/title
 #: schema/components.json:1
 msgid "Transformed content"
-msgstr ""
+msgstr "Contenido transformado"
 
 #. /definitions/Annotation/properties/transformedContent/description
 #: schema/components.json:1
@@ -626,12 +762,15 @@ msgid ""
 "description field has been applied. This field SHOULD only be used when the "
 "motivation is transformation."
 msgstr ""
+"Manifestación del destino de la nota luego de aplicada la transformación en "
+"el campo de descripción. Este campo solo DEBERÍA utilizarse cuando el motivo"
+" es la transformación."
 
 #. /definitions/Annotation/properties/url/title
 #. /definitions/Publisher/properties/url/title
 #: schema/components.json:1
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #. /definitions/Annotation/properties/url/description
 #: schema/components.json:1
@@ -640,6 +779,9 @@ msgid ""
 "statement. The content of the resource, or the relationship to the "
 "statement, MAY be described in the description field."
 msgstr ""
+"Recurso vinculado que aporta notas, brinda contexto o amplía la declaración."
+" El contenido del recurso, o su relación con la declaración, PUEDE "
+"describirse en el campo de descripción."
 
 #. /definitions/Country/description
 #: schema/components.json:1
@@ -647,28 +789,30 @@ msgid ""
 "A country MUST have a name. A country SHOULD have an ISO 2-Digit county "
 "code."
 msgstr ""
+"Un país DEBE tener un nombre. Un país DEBERÍA tener un código de país ISO de"
+" 2 dígitos."
 
 #. /definitions/Country/properties/name/description
 #: schema/components.json:1
 msgid "The name of the country"
-msgstr ""
+msgstr "El nombre del país"
 
 #. /definitions/Country/properties/code/title
 #. /definitions/Jurisdiction/properties/code/title
 #: schema/components.json:1
 msgid "Country code"
-msgstr ""
+msgstr "Código de país"
 
 #. /definitions/Country/properties/code/description
 #: schema/components.json:1
 msgid "The ISO 2-digit code for the country."
-msgstr ""
+msgstr "El código ISO de 2 dígitos correspondiente al país."
 
 #. /definitions/Jurisdiction/title
 #. /definitions/PepStatusDetails/properties/jurisdiction/title
 #: schema/components.json:1
 msgid "Jurisdiction"
-msgstr ""
+msgstr "Jurisdicción"
 
 #. /definitions/Jurisdiction/description
 #: schema/components.json:1
@@ -676,11 +820,14 @@ msgid ""
 "A jurisdiction MUST have a name. A jurisdiction SHOULD have an ISO "
 "ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code."
 msgstr ""
+"Una jurisdicción DEBE tener un nombre. Una jurisdicción DEBERÍA tener un "
+"código de país de 2 dígitos ISO_3166-2, o un código de subdivisión "
+"ISO_3166-2."
 
 #. /definitions/Jurisdiction/properties/name/description
 #: schema/components.json:1
 msgid "The name of the jurisdiction"
-msgstr ""
+msgstr "Nombre de la jurisdicción"
 
 #. /definitions/Jurisdiction/properties/code/description
 #: schema/components.json:1
@@ -688,16 +835,20 @@ msgid ""
 "The ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code of the "
 "jurisdiction"
 msgstr ""
+"El código de país de 2 dígitos ISO_3166-2, o el código de subdivisión "
+"ISO_3166-2 de la jurisdicción."
 
 #. /definitions/PepStatusDetails/title
 #: schema/components.json:1
 msgid "PEP Status"
-msgstr ""
+msgstr "Condición de PEP"
 
 #. /definitions/PepStatusDetails/description
 #: schema/components.json:1
 msgid "A description of a politically-exposed person status."
 msgstr ""
+"Descripción de la condición de persona expuesta políticamente de un "
+"individuo."
 
 #. /definitions/PepStatusDetails/properties/reason/title
 #. /properties/unspecifiedEntityDetails/properties/reason/title
@@ -706,18 +857,19 @@ msgstr ""
 #: schema/components.json:1 schema/entity-statement.json:1
 #: schema/ownership-or-control-statement.json:1 schema/person-statement.json:1
 msgid "Reason"
-msgstr ""
+msgstr "Motivo"
 
 #. /definitions/PepStatusDetails/properties/reason/description
 #: schema/components.json:1
 msgid ""
 "The reason for this person being declared a politically-exposed person."
 msgstr ""
+"Motivo por el cual se declaró a esta persona como políticamente expuesta."
 
 #. /definitions/PepStatusDetails/properties/missingInfoReason/title
 #: schema/components.json:1
 msgid "Missing information reason(s)"
-msgstr ""
+msgstr "Motivo(s) de la falta de información"
 
 #. /definitions/PepStatusDetails/properties/missingInfoReason/description
 #: schema/components.json:1
@@ -729,11 +881,18 @@ msgid ""
 "should only be filled out where hasPepStatus is missing. Where this field is"
 " present it should be the only field except for `source`."
 msgstr ""
+"En el caso de los regímenes de divulgación donde se requiere una declaración"
+" de PEP pero no se la proporciona, este campo debería explicar el motivo por"
+" el cual no se proporciona la condición de PEP de la persona. Puede tratarse"
+" de una frase descriptiva estándar del sistema de origen o de una "
+"justificación en texto libre. Este campo solo debería completarse cuando "
+"falta hasPEPStatus. Cuando este campo está presente, debería ser el único, "
+"con la excepción de `source`."
 
 #. /definitions/PepStatusDetails/properties/jurisdiction/description
 #: schema/components.json:1
 msgid "The jurisdiction where this person is a PEP."
-msgstr ""
+msgstr "La jurisdicción en la cual la persona reviste la condición de PEP."
 
 #. /definitions/PepStatusDetails/properties/startDate/description
 #: schema/components.json:1
@@ -742,6 +901,9 @@ msgid ""
 " in ISO 8601 format. When only the year or year and month is known, these "
 "can be given as YYYY or YYYY-MM."
 msgstr ""
+"Cuándo surgió su condición de PEP. Indique una fecha lo más precisa posible "
+"en el formato ISO 8601. Cuando solo se conoce el año, o el año y el mes, "
+"puede usarse el formato AAAA o AAAA-MM."
 
 #. /definitions/PepStatusDetails/properties/endDate/description
 #: schema/components.json:1
@@ -750,36 +912,39 @@ msgid ""
 "in ISO 8601 format. When only the year or year and month is known, these can"
 " be given as YYYY or YYYY-MM."
 msgstr ""
+"Cuándo cesó su condición de PEP. Indique una fecha lo más precisa posible en"
+" el formato ISO 8601. Cuando solo se conoce el año, o el año y el mes, puede"
+" usarse el formato AAAA o AAAA-MM."
 
 #. /definitions/PepStatusDetails/properties/source/description
 #: schema/components.json:1
 msgid "The source of this PEP information"
-msgstr ""
+msgstr "Fuente de la información sobre la PEP"
 
 #. /definitions/PublicationDetails/title
 #: schema/components.json:1
 msgid "Publication Details"
-msgstr ""
+msgstr "Detalles de la publicación"
 
 #. /definitions/PublicationDetails/description
 #: schema/components.json:1
 msgid "Information concerning the publication of this statement."
-msgstr ""
+msgstr "Información acerca de la publicación de esta declaración."
 
 #. /definitions/PublicationDetails/properties/publicationDate/title
 #: schema/components.json:1
 msgid "Publication date"
-msgstr ""
+msgstr "Fecha de publicación"
 
 #. /definitions/PublicationDetails/properties/publicationDate/description
 #: schema/components.json:1
 msgid "The date on which this statement was published."
-msgstr ""
+msgstr "Fecha en que se publicó esta declaración."
 
 #. /definitions/PublicationDetails/properties/bodsVersion/title
 #: schema/components.json:1
 msgid "BODS version"
-msgstr ""
+msgstr "Versión del BODS"
 
 #. /definitions/PublicationDetails/properties/bodsVersion/description
 #: schema/components.json:1
@@ -787,11 +952,13 @@ msgid ""
 "The version of the Beneficial Ownership Data Standard to which this "
 "statement conforms, expressed as major.minor. For example: 0.2 or 1.0."
 msgstr ""
+"Versión del Estándar de Datos sobre Beneficiarios Finales a la que se ajusta"
+" esta declaración, expresada como mayor.menor. Por ejemplo: 0.2 o 1.0."
 
 #. /definitions/PublicationDetails/properties/license/title
 #: schema/components.json:1
 msgid "License URL"
-msgstr ""
+msgstr "URL de la licencia"
 
 #. /definitions/PublicationDetails/properties/license/description
 #: schema/components.json:1
@@ -801,37 +968,45 @@ msgid ""
 " Dedication or [Open Definition "
 "Conformant](http://opendefinition.org/licenses/) license."
 msgstr ""
+"Enlace a la licencia que se aplica a esta declaración. DEBERÍA usarse e URI "
+"canónico de la licencia. Se alienta a los publicadores a utilizar una "
+"licencia de Dedicación a Dominio Público o de [Conformidad con la Definición"
+" de Abierto](http://opendefinition.org/od/2.1/es/)."
 
 #. /definitions/PublicationDetails/properties/publisher/title
 #. /definitions/Publisher/title
 #: schema/components.json:1
 msgid "Publisher"
-msgstr ""
+msgstr "Publicador"
 
 #. /definitions/PublicationDetails/properties/publisher/description
 #: schema/components.json:1
 msgid "Details of the organisation or individual publishing this statement."
 msgstr ""
+"Detalles sobre la organización o individuo que publica esta declaración."
 
 #. /definitions/Publisher/description
 #: schema/components.json:1
 msgid "Details of the organisation or individual publishing a statement."
 msgstr ""
+"Detalles sobre la organización o individuo que publica una declaración."
 
 #. /definitions/Publisher/properties/name/description
 #: schema/components.json:1
 msgid "The name of the publisher"
-msgstr ""
+msgstr "Nombre del publicador"
 
 #. /definitions/Publisher/properties/url/description
 #: schema/components.json:1
 msgid "The URL of the parent dataset or of the publisher's website homepage"
 msgstr ""
+"El URL del conjunto de datos primario o de la página principal del sitio web"
+" del publicador."
 
 #. /title
 #: schema/entity-statement.json:1
 msgid "Entity statement"
-msgstr ""
+msgstr "Declaración sobre entidad"
 
 #. /description
 #: schema/entity-statement.json:1
@@ -839,23 +1014,26 @@ msgid ""
 "A statement identifying and describing the entity that is the subject of the"
 " ownership or control described in an ownership or control statement."
 msgstr ""
+"Declaración en la que se identifica y describe la entidad que es el sujeto "
+"en la relación de titularidad o control que se menciona en una declaración "
+"sobre titularidad o control."
 
 #. /properties/statementType/title
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
 #: schema/person-statement.json:1
 msgid "Statement type"
-msgstr ""
+msgstr "Tipo de declaración"
 
 #. /properties/statementType/description
 #: schema/entity-statement.json:1
 msgid "This should always be 'entityStatement."
-msgstr ""
+msgstr "Debería ser siempre 'entityStatement'."
 
 #. /properties/isComponent/title
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
 #: schema/person-statement.json:1
 msgid "Is component"
-msgstr ""
+msgstr "Es componente"
 
 #. /properties/isComponent/description
 #: schema/entity-statement.json:1
@@ -870,6 +1048,16 @@ msgid ""
 " primary Ownership-or-control Statement. The primary Ownership-or-control "
 "Statement MUST have a `isComponent` value of 'false'."
 msgstr ""
+"¿Esta Declaración sobre Entidad representa un componente de una relación de "
+"titularidad o control indirecta? Cuando `isComponent` es \"true\": (1) la "
+"`statementID` de esta Declaración sobre Entidad DEBE ser un elemento en el "
+"arreglo `componentStatementIDs` de esa Declaración sobre Titularidad o "
+"Control primaria, (2) esta Declaración sobre Entidad DEBE preceder a la "
+"Declaración sobre Titularidad o Control primaria en un paquete o flujo del "
+"BODS, (3) se DEBERÍA contemplar el reemplazo de esta Declaración sobre "
+"Entidad cuando se reemplace la Declaración sobre Titularidad o Control "
+"primaria. El valor de `isComponent` en la Declaración sobre Titularidad o "
+"Control primaria DEBE ser \"false\"."
 
 #. /properties/entityType/description
 #: schema/entity-statement.json:1
@@ -885,11 +1073,21 @@ msgid ""
 "parties to this arrangement have any other form of collective legal "
 "identity."
 msgstr ""
+"De la lista de códigos entityType. ¿De qué tipo de entidad se trata? El "
+"código \"registeredEntity\" comprende toda entidad jurídica creada mediante "
+"un acto de inscripción oficial, que por lo general da lugar a la asignación "
+"de un identificador a la entidad. El código \"legalEntity\" comprende otros "
+"organismos con personalidad jurídica propia (departamentos gubernamentales, "
+"instituciones internacionales, etc.). El código \"arrangement\" comprende "
+"entidades artificiales, descriptas en el modelo de datos con el propósito de"
+" asociar a una o más personas físicas o sujetos de derecho en una relación "
+"de titularidad o control, pero sin que ello implique que las partes de esta "
+"estructura jurídica tengan otra forma de identidad jurídica colectiva."
 
 #. /properties/unspecifiedEntityDetails/title
 #: schema/entity-statement.json:1
 msgid "Unspecified entity details"
-msgstr ""
+msgstr "Detalles de entidad no especificados"
 
 #. /properties/unspecifiedEntityDetails/description
 #: schema/entity-statement.json:1
@@ -897,6 +1095,8 @@ msgid ""
 "An explanation of why this entity has an `entityType` of 'anonymousEntity' "
 "or 'unknownEntity'. A `reason` MUST be specified."
 msgstr ""
+"Explicación de por qué el `entityType` es \"anonymousEntity\" o "
+"\"unknownEntity\". Se DEBE especificar un `reason`."
 
 #. /properties/unspecifiedEntityDetails/properties/reason/description
 #: schema/entity-statement.json:1
@@ -904,6 +1104,8 @@ msgid ""
 "The reason that an entity cannot be specified. From the unspecifiedReason "
 "codelist."
 msgstr ""
+"El motivo por el cual no se puede especificar una entidad. De la lista de "
+"códigos unspecifiedReason."
 
 #. /properties/unspecifiedEntityDetails/properties/description/description
 #: schema/entity-statement.json:1
@@ -912,46 +1114,50 @@ msgid ""
 "field may be used to provide set phrases from a source system, or for a "
 "free-text explanation."
 msgstr ""
+"Toda información de respaldo sobre la ausencia de una entidad específica. "
+"Este campo puede utilizarse para proporcionar frases preestablecidas de un "
+"sistema fuente, o una explicación en texto libre."
 
 #. /properties/name/title
 #: schema/entity-statement.json:1
 msgid "Entity name"
-msgstr ""
+msgstr "Nombre de la entidad"
 
 #. /properties/name/description
 #: schema/entity-statement.json:1
 msgid "The declared name of this entity."
-msgstr ""
+msgstr "El nombre declarado de la entidad."
 
 #. /properties/alternateNames/title
 #: schema/entity-statement.json:1
 msgid "Alternative names"
-msgstr ""
+msgstr "Nombres alternativos"
 
 #. /properties/alternateNames/description
 #: schema/entity-statement.json:1
 msgid "An array of other names this entity is known by."
-msgstr ""
+msgstr "Arreglo de otros nombres con los que se conoce a esta entidad."
 
 #. /properties/alternateNames/items/description
 #: schema/entity-statement.json:1
 msgid "A name this entity is known by."
-msgstr ""
+msgstr "Nombre con el que se conoce a la entidad."
 
 #. /properties/incorporatedInJurisdiction/title
 #: schema/entity-statement.json:1
 msgid "Incorporated In Jurisdiction"
-msgstr ""
+msgstr "Constituida en la jurisdicción"
 
 #. /properties/incorporatedInJurisdiction/description
 #: schema/entity-statement.json:1
 msgid "Details on where this legal entity is incorporated"
 msgstr ""
+"Detalles sobre el lugar en que se encuentra constituida la entidad jurídica."
 
 #. /properties/identifiers/title
 #: schema/entity-statement.json:1 schema/person-statement.json:1
 msgid "Identifiers"
-msgstr ""
+msgstr "Identificadores"
 
 #. /properties/identifiers/description
 #: schema/entity-statement.json:1
@@ -959,11 +1165,13 @@ msgid ""
 "One or more official identifiers for this entity. Where available, official "
 "registration numbers should be provided."
 msgstr ""
+"Uno o más identificadores oficiales de la entidad. De encontrarse "
+"disponibles, deberían indicarse los números de inscripción oficiales."
 
 #. /properties/foundingDate/title
 #: schema/entity-statement.json:1
 msgid "Founding date"
-msgstr ""
+msgstr "Fecha de fundación"
 
 #. /properties/foundingDate/description
 #: schema/entity-statement.json:1
@@ -972,11 +1180,14 @@ msgid ""
 "precise a date as possible in ISO 8601 format. When only the year or year "
 "and month is known, these can be given as YYYY or YYYY-MM."
 msgstr ""
+"Cuándo se fundó, creó o inscribió la entidad. Indique una fecha lo más "
+"precisa posible en el formato ISO 8601. Cuando solo se conoce el año, o el "
+"año y el mes, puede usarse el formato AAAA o AAAA-MM."
 
 #. /properties/dissolutionDate/title
 #: schema/entity-statement.json:1
 msgid "Dissolution date"
-msgstr ""
+msgstr "Fecha de disolución"
 
 #. /properties/dissolutionDate/description
 #: schema/entity-statement.json:1
@@ -986,16 +1197,20 @@ msgid ""
 " format. When only the year or year and month is known, these can be given "
 "as YYYY or YYYY-MM."
 msgstr ""
+"Si la entidad ya no está activa, señale la fecha en que cesó sus actividades"
+" o se disolvió. Indique una fecha lo más precisa posible en el formato ISO "
+"8601. Cuando solo se conoce el año, o el año y el mes, puede usarse el "
+"formato AAAA o AAAA-MM."
 
 #. /properties/addresses/title
 #: schema/entity-statement.json:1 schema/person-statement.json:1
 msgid "Addresses"
-msgstr ""
+msgstr "Domicilios"
 
 #. /properties/addresses/description
 #: schema/entity-statement.json:1 schema/person-statement.json:1
 msgid "One or more addresses for this entity."
-msgstr ""
+msgstr "Uno o más domicilios de la entidad."
 
 #. /properties/uri/description
 #: schema/entity-statement.json:1
@@ -1004,18 +1219,21 @@ msgid ""
 "URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available"
 " for this entity this should be included."
 msgstr ""
+"Cuando se dispone de un [URI "
+"persistente](https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme)"
+" de la entidad, se lo debería incluir."
 
 #. /properties/publicationDetails/title
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
 #: schema/person-statement.json:1
 msgid "Publication details"
-msgstr ""
+msgstr "Detalles de la publicación"
 
 #. /properties/publicationDetails/description
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
 #: schema/person-statement.json:1
 msgid "Information concerning the original publication of this statement."
-msgstr ""
+msgstr "Información acerca de la publicación original de la declaración."
 
 #. /properties/source/description
 #: schema/entity-statement.json:1
@@ -1023,23 +1241,25 @@ msgid ""
 "The source of information about this entity, or of information that supports"
 " an anonymous or unknown entity statement."
 msgstr ""
+"Fuente de la información referente a esta entidad, o de la información que "
+"respalda una declaración de entidad anónima o desconocida."
 
 #. /properties/annotations/title
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
 #: schema/person-statement.json:1
 msgid "Annotations"
-msgstr ""
+msgstr "Notas"
 
 #. /properties/annotations/description
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
 #: schema/person-statement.json:1
 msgid "Annotations about this statement or parts of this statement"
-msgstr ""
+msgstr "Notas sobre esta declaración o partes de ella."
 
 #. /title
 #: schema/ownership-or-control-statement.json:1
 msgid "Ownership or control Statement"
-msgstr ""
+msgstr "Declaración sobre Titularidad o Control"
 
 #. /description
 #: schema/ownership-or-control-statement.json:1
@@ -1048,11 +1268,15 @@ msgid ""
 "party (a reference to an entity, natural person, arrangement or trust), "
 "details of the interest and provenance information for the statement."
 msgstr ""
+"Una declaración sobre titularidad o control se compone de una entidad, una "
+"parte interesada (en referencia a una entidad, persona física, estructura "
+"jurídica o fideicomiso), detalles sobre la participación e información sobre"
+" la procedencia de la declaración."
 
 #. /properties/statementType/description
 #: schema/ownership-or-control-statement.json:1
 msgid "This should always be set to `ownershipOrControlStatement`."
-msgstr ""
+msgstr "Esto siempre debería configurarse como `ownershipOrControlStatement`."
 
 #. /properties/isComponent/description
 #: schema/ownership-or-control-statement.json:1
@@ -1070,11 +1294,24 @@ msgid ""
 " Statement is the primary declaration of the relationship between the "
 "`subject` and the `interestedParty`."
 msgstr ""
+"¿Esta Declaración sobre Titularidad o Control representa un componente de "
+"una relación de titularidad o control indirecta más amplia? Cuando "
+"`isComponent` es \"true\": (1) la `statementID` de esta Declaración sobre "
+"Titularidad o Control secundaria DEBE ser un elemento en el arreglo  "
+"`componentStatementIDs` de esa Declaración sobre Titularidad o Control "
+"primaria, (2) esta Declaración sobre Titularidad o Control DEBE preceder a "
+"la Declaración sobre Titularidad o Control primaria en un paquete o flujo "
+"del BODS, (3) se  DEBERÍA contemplar el reemplazo de esta Declaración sobe "
+"Titularidad o Control cuando se reemplace la Declaración sobre Titularidad o"
+" Control primaria, y (4) el valor de `esComponente` en la Declaración sobre "
+"Titularidad o Control primaria DEBE ser \"false\". Cuando `isComponent` es "
+"\"false\", esta Declaración sobre Titularidad o Control es la declaración "
+"primaria de la relación entre el `subject` y la `interestedParty`."
 
 #. /properties/componentStatementIDs/title
 #: schema/ownership-or-control-statement.json:1
 msgid "Component statement IDs"
-msgstr ""
+msgstr "Identificaciones de declaraciones componentes"
 
 #. /properties/componentStatementIDs/description
 #: schema/ownership-or-control-statement.json:1
@@ -1084,22 +1321,27 @@ msgid ""
 "`interestedParty`. If this Ownership-or-control Statement has components, it"
 " MUST itself have a `isComponent` value of 'false'."
 msgstr ""
+"Los identificadores de todas las declaraciones componentes que brindan "
+"detalles sobre la relación indirecta entre el `subject` y la "
+"`InterestedParty` de esta Declaración. Si la Declaración sobre Titularidad o"
+" Control posee componentes, el valor de `isComponent` de dicha declaración "
+"en sí misma DEBE ser 'false'."
 
 #. /properties/subject/title
 #: schema/ownership-or-control-statement.json:1
 msgid "Subject"
-msgstr ""
+msgstr "Sujeto"
 
 #. /properties/subject/description
 #: schema/ownership-or-control-statement.json:1
 msgid "The subject of an ownership or control relationship."
-msgstr ""
+msgstr "El sujeto de una relación de titularidad o control."
 
 #. /properties/subject/properties/describedByEntityStatement/title
 #. /definitions/InterestedParty/properties/describedByEntityStatement/title
 #: schema/ownership-or-control-statement.json:1
 msgid "Described by entity statement"
-msgstr ""
+msgstr "Descripto por una declaración sobre entidad."
 
 #. /properties/subject/properties/describedByEntityStatement/description
 #: schema/ownership-or-control-statement.json:1
@@ -1107,11 +1349,13 @@ msgid ""
 "Provide the identifier of the statement which describes the entity that the "
 "subject of an ownership or control interest."
 msgstr ""
+"Proporciona el identificador de la declaración que describe la entidad que "
+"es el sujeto de la participación que otorga titularidad o control."
 
 #. /properties/interests/title
 #: schema/ownership-or-control-statement.json:1
 msgid "Interests"
-msgstr ""
+msgstr "Participaciones"
 
 #. /properties/interests/description
 #: schema/ownership-or-control-statement.json:1
@@ -1119,6 +1363,8 @@ msgid ""
 "A description of the interests held by the interestedParty covered by this "
 "statement in the entity covered by this statement."
 msgstr ""
+"Descripción de las participaciones que la interestedParty comprendida en la "
+"declaración posee en la entidad comprendida en la declaración."
 
 #. /properties/source/description
 #: schema/ownership-or-control-statement.json:1
@@ -1126,11 +1372,13 @@ msgid ""
 "The source of the information that links the entity and the interested "
 "party, or that supports a null statement."
 msgstr ""
+"Fuente de la información que vincula a la entidad y a la parte interesada, o"
+" que respalda una declaración con valor nulo."
 
 #. /definitions/InterestedParty/title
 #: schema/ownership-or-control-statement.json:1
 msgid "Interested party"
-msgstr ""
+msgstr "Parte interesada"
 
 #. /definitions/InterestedParty/description
 #: schema/ownership-or-control-statement.json:1
@@ -1140,6 +1388,11 @@ msgid ""
 "with reference to either an entity statement or person statement, or, where "
 "the interested party is unknown, details of why."
 msgstr ""
+"La parte interesada posee cierto grado de titularidad o control sobre la "
+"entidad a la que se hace referencia en esta declaración sobre titularidad o "
+"control. Esto debería describirse haciendo referencia a una declaración "
+"sobre entidad o declaración sobre persona, o, si no se conoce la parte "
+"interesada, a los detalles del porqué."
 
 #. /definitions/InterestedParty/properties/describedByEntityStatement/description
 #: schema/ownership-or-control-statement.json:1
@@ -1150,11 +1403,17 @@ msgid ""
 "be described represents known control or ownership by anyone other than a "
 "natural person."
 msgstr ""
+"Referencia a una declaración que describe una entidad inscripta, un "
+"fideicomiso o una estructura jurídica que goza de titularidad o control "
+"sobre el sujeto de esta declaración. Debería utilizarse una entityStatement "
+"cuando las participaciones directas a describirse representan un control o "
+"una titularidad conocidos que corresponden a alguien que no es una persona "
+"física."
 
 #. /definitions/InterestedParty/properties/describedByPersonStatement/title
 #: schema/ownership-or-control-statement.json:1
 msgid "Described by person statement"
-msgstr ""
+msgstr "Descripto por una declaración sobre persona"
 
 #. /definitions/InterestedParty/properties/describedByPersonStatement/description
 #: schema/ownership-or-control-statement.json:1
@@ -1162,11 +1421,14 @@ msgid ""
 "A reference to a statement describing a natural person who has an ownership "
 "or control interest in the subject of this statement."
 msgstr ""
+"Referencia a una declaración que describe a una persona física que goza de "
+"una participación que otorga titularidad o control sobre el sujeto de esta "
+"declaración."
 
 #. /definitions/InterestedParty/properties/unspecified/title
 #: schema/ownership-or-control-statement.json:1
 msgid "Unspecified or unknown ownership and control"
-msgstr ""
+msgstr "Titularidad y control no especificados o desconocidos"
 
 #. /definitions/InterestedParty/properties/unspecified/description
 #: schema/ownership-or-control-statement.json:1
@@ -1181,6 +1443,16 @@ msgid ""
 "used, but instead a reference to a `personStatement` or `entityStatement` "
 "should be provided but identifying details MAY be left blank."
 msgstr ""
+"Cuando se haya confirmado que no existe ninguna parte interesada, en caso de"
+" no ser necesario brindar información sobre la titularidad y el control, o "
+"de que se desconozcan detalles sobre la titularidad y el control, se DEBE "
+"dar un `reason`. Cuando una entidad desconocida sea el `subject` de otras "
+"ownershipOrControlStatements en la misma estructura, o cuando haya una "
+"persona física que goza de titularidad o control, pero cuyo nombre o "
+"detalles no se conocen o no pueden divulgarse por algún motivo, no debería "
+"utilizarse  `unspecified` sino que debería hacerse referencia a una "
+"`personStatement` o `entityStatement`, no obstante lo cual los detalles "
+"identificatorios PUEDEN dejarse en blanco."
 
 #. /definitions/InterestedParty/properties/unspecified/properties/reason/description
 #. /properties/unspecifiedPersonDetails/properties/reason/description
@@ -1189,6 +1461,8 @@ msgid ""
 "The reason that an interested party cannot be specified. From the "
 "unspecifiedReason codelist."
 msgstr ""
+"Motivo por el cual no se puede especificar una parte interesada. De la lista"
+" de códigos unspecifiedReason."
 
 #. /definitions/InterestedParty/properties/unspecified/properties/description/description
 #. /properties/unspecifiedPersonDetails/properties/description/description
@@ -1198,11 +1472,14 @@ msgid ""
 "owner. This field may be used to provide set phrases from a source system, "
 "or for a free-text explanation."
 msgstr ""
+"Toda información de respaldo sobre la ausencia de un beneficiario final "
+"confirmado. Este campo puede utilizarse para proporcionar frases "
+"preestablecidas de un sistema fuente o una explicación en texto libre."
 
 #. /title
 #: schema/person-statement.json:1
 msgid "Person statement"
-msgstr ""
+msgstr "Declaración sobre persona"
 
 #. /description
 #: schema/person-statement.json:1
@@ -1210,11 +1487,14 @@ msgid ""
 "A person statement describes the information known about a natural person at"
 " a particular point in time, or from a given submission of information"
 msgstr ""
+"Una declaración sobre persona describe información que se conoce sobre una "
+"persona física en un determinado momento, o que surge de una presentación de"
+" información en particular."
 
 #. /properties/statementType/description
 #: schema/person-statement.json:1
 msgid "This should always be 'personStatement."
-msgstr ""
+msgstr "Debería ser siempre 'personStatement'."
 
 #. /properties/isComponent/description
 #: schema/person-statement.json:1
@@ -1229,11 +1509,21 @@ msgid ""
 " primary Ownership-or-control Statement. The primary Ownership-or-control "
 "Statement MUST have a `isComponent` value of 'false'."
 msgstr ""
+"¿Esta Declaración sobre Persona representa un componente de una relación de "
+"titularidad o control indirecta? Cuando `isComponent` es \"true\": (1) la "
+"`statementID` de esta Declaración sobre Persona DEBE ser un elemento en el "
+"arreglo `componentStatementIDs` de esa Declaración sobre Titularidad o "
+"Control primaria, (2) esta Declaración sobre Persona DEBE preceder a la "
+"Declaración de Titularidad o Control primaria en un paquete o flujo del "
+"BODS, (3) se DEBERÍA contemplar el reemplazo de esta Declaración sobre "
+"Persona cuando se reemplace la Declaración sobre Titularidad o Control "
+"primaria. El valor de `isComponent` en la Declaración sobre Titularidad o "
+"Control primaria DEBE ser \"false\"."
 
 #. /properties/personType/title
 #: schema/person-statement.json:1
 msgid "Person type"
-msgstr ""
+msgstr "Tipo de persona"
 
 #. /properties/personType/description
 #: schema/person-statement.json:1
@@ -1247,11 +1537,20 @@ msgid ""
 "'unknownPerson' a reason for the absence of information SHOULD be provided "
 "in 'unspecifiedPersonDetails')"
 msgstr ""
+"Use la lista de códigos personType. El beneficiario final en última "
+"instancia de una entidad jurídica es siempre una persona física. Cuando se "
+"haya identificado al beneficiario final, pero no se pueda divulgar "
+"información sobre él, use \"anonymousPerson\". Cuando no se haya "
+"identificado claramente al beneficiario final, use \"unknownPerson\". Cuando"
+" se haya identificado al beneficiario final, use \"knownPerson\". Cuando a "
+"una persona se le atribuye el tipo \"anonymousPerson\" o \"unknownPerson\", "
+"el motivo de la ausencia de información DEBERÍA indicarse en "
+"\"unspecifiedPersonDetails\"."
 
 #. /properties/unspecifiedPersonDetails/title
 #: schema/person-statement.json:1
 msgid "Unspecified person details"
-msgstr ""
+msgstr "Detalles de persona no especificados"
 
 #. /properties/unspecifiedPersonDetails/description
 #: schema/person-statement.json:1
@@ -1259,16 +1558,18 @@ msgid ""
 "An explanation of why this person has a `personType` of 'anonymousPerson' or"
 " 'unknownPerson'. A `reason` MUST be specified."
 msgstr ""
+"Explicación de por qué el `personType` es \"anonymousPerson\" o "
+"\"unknownPerson\". Se DEBE especificar un `reason`."
 
 #. /properties/names/title
 #: schema/person-statement.json:1
 msgid "Names"
-msgstr ""
+msgstr "Nombres"
 
 #. /properties/names/description
 #: schema/person-statement.json:1
 msgid "One or more known names for this individual."
-msgstr ""
+msgstr "Uno o más nombres conocidos de este individuo."
 
 #. /properties/identifiers/description
 #: schema/person-statement.json:1
@@ -1276,11 +1577,13 @@ msgid ""
 "One or more official identifiers for this perrson. Where available, official"
 " registration numbers should be provided."
 msgstr ""
+"Uno o más identificadores oficiales de esta persona. De encontrarse "
+"disponibles, deberían indicarse los números de inscripción oficiales."
 
 #. /properties/nationalities/title
 #: schema/person-statement.json:1
 msgid "Nationality"
-msgstr ""
+msgstr "Nacionalidad"
 
 #. /properties/nationalities/description
 #: schema/person-statement.json:1
@@ -1288,16 +1591,18 @@ msgid ""
 "An array of ISO 2-Digit country codes representing nationalities held by "
 "this individual."
 msgstr ""
+"Arreglo de códigos de país ISO de 2 dígitos que representan las "
+"nacionalidades del individuo."
 
 #. /properties/placeOfBirth/title
 #: schema/person-statement.json:1
 msgid "Place of birth"
-msgstr ""
+msgstr "Lugar de nacimiento"
 
 #. /properties/birthDate/title
 #: schema/person-statement.json:1
 msgid "Date of birth"
-msgstr ""
+msgstr "Fecha de nacimiento"
 
 #. /properties/birthDate/description
 #: schema/person-statement.json:1
@@ -1306,11 +1611,14 @@ msgid ""
 "possible in ISO 8601 format. When only the year or year and month is known, "
 "these can be given as YYYY or YYYY-MM."
 msgstr ""
+"Fecha de nacimiento del individuo. Indique una fecha lo más precisa posible "
+"en el formato ISO 8601. Cuando solo se conoce el año, o el año y el mes, "
+"puede usarse el formato AAAA o AAAA-MM."
 
 #. /properties/deathDate/title
 #: schema/person-statement.json:1
 msgid "Death date"
-msgstr ""
+msgstr "Fecha de defunción"
 
 #. /properties/deathDate/description
 #: schema/person-statement.json:1
@@ -1319,16 +1627,19 @@ msgid ""
 "provide as precise a date as possible in ISO 8601 format. When only the year"
 " or year and month is known, these can be given as YYYY or YYYY-MM."
 msgstr ""
+"Si el individuo ya no está vivo, proporcione la fecha de defunción. Indique "
+"una fecha lo más precisa posible en el formato ISO 8601. Cuando solo se "
+"conoce el año, o el año y el mes, puede usarse el formato AAAA o AAAA-MM."
 
 #. /properties/placeOfResidence/title
 #: schema/person-statement.json:1
 msgid "Place of residence"
-msgstr ""
+msgstr "Lugar de residencia"
 
 #. /properties/taxResidencies/title
 #: schema/person-statement.json:1
 msgid "Tax residency"
-msgstr ""
+msgstr "Residencia fiscal"
 
 #. /properties/taxResidencies/description
 #: schema/person-statement.json:1
@@ -1336,11 +1647,13 @@ msgid ""
 "An array of ISO 2-Digit country codes representing the tax residencies held "
 "by this individual."
 msgstr ""
+"Arreglo de códigos de país ISO de 2 dígitos que representan las residencias "
+"fiscales del individuo."
 
 #. /properties/hasPepStatus/title
 #: schema/person-statement.json:1
 msgid "Politically Exposed Person Status"
-msgstr ""
+msgstr "Condición de Persona Expuesta Políticamente"
 
 #. /properties/hasPepStatus/description
 #: schema/person-statement.json:1
@@ -1351,11 +1664,17 @@ msgid ""
 "should not be used but the reason for the missing data declared in the "
 "pepStatusDetails field."
 msgstr ""
+"¿La persona descripta en esta declaración es una persona expuesta "
+"políticamente? Este campo no debería utilizarse si no se espera que las "
+"declaraciones de PEP formen parte de esta divulgación. Si se espera una "
+"declaración de PEP pero no se la proporciona, este campo no debería "
+"utilizarse, pero debería declararse el motivo de la falta de datos en el "
+"campo PEPStatusDetails."
 
 #. /properties/pepStatusDetails/title
 #: schema/person-statement.json:1
 msgid "Politically Exposed Person Status Details"
-msgstr ""
+msgstr "Detalles de la condición de Persona Expuesta Políticamente"
 
 #. /properties/pepStatusDetails/description
 #: schema/person-statement.json:1
@@ -1363,6 +1682,8 @@ msgid ""
 "One or more descriptions of this person's Politically-Exposed Person (PEP) "
 "status."
 msgstr ""
+"Una o más descripciones de la condición de Persona Expuesta Políticamente "
+"(PEP) del individuo."
 
 #. /properties/source/description
 #: schema/person-statement.json:1
@@ -1370,3 +1691,5 @@ msgid ""
 "The source of information about this person, or of information that supports"
 " an unknown or anonymous person statement."
 msgstr ""
+"Fuente de la información referente a esta persona, o de la información que "
+"respalda una declaración de persona anónima o desconocida."

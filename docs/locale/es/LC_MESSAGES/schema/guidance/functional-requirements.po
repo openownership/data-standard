@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,12 +22,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 043fd11312db4cdcaa5feb3f544978c6
+# b3341e8baec54ba68c1a65d11df47119
 #: ../../schema/guidance/functional-requirements.rst:4
 msgid "Functional requirements"
-msgstr ""
+msgstr "Requisitos funcionales"
 
-# d0ae91e81e6f4745807f53c1b3dd3a0c
+# 8ec6bc642241490188d613a4159c66fc
 #: ../../schema/guidance/functional-requirements.rst:6
 msgid ""
 "The Beneficial Ownership Data Standard can accommodate data from a range of "
@@ -30,42 +35,57 @@ msgid ""
 " of high quality and that it can be shared efficiently. They therefore need "
 "to meet the following functional requirements:"
 msgstr ""
+"El Estándar de Datos sobre Beneficiarios Finales puede utilizarse con datos "
+"de una variedad de fuentes. Los sistemas de recopilación y publicación deben"
+" garantizar que los datos sean de elevada calidad y que puedan compartirse "
+"de manera eficiente. En consecuencia, deben cumplir los siguientes "
+"requisitos funcionales:"
 
-# c1e92e32e98340749eb3dd8a24e4e179
+# 8fa0e9cc395f48268d82efa65fdf5664
 #: ../../schema/guidance/functional-requirements.rst:8
 msgid ""
 "Source systems should keep a full audit log with the source of data and "
 "changes made to data;"
 msgstr ""
+"Los sistemas fuente deberían mantener un registro de auditoría completo con "
+"la fuente de los datos y los cambios realizados a éstos;"
 
-# a7e730e14da3487eb40936d3f250a8e4
+# bad6ff4b767b435ca1366101bd7ecf1f
 #: ../../schema/guidance/functional-requirements.rst:10
 msgid ""
 "Publication systems should assign a unique identifier to each statement "
 "produced;"
 msgstr ""
+"Los sistemas de publicación deberían asignar un identificador único a cada "
+"declaración formulada;"
 
-# e073abfa16f64894ab5a3171d9acb848
+# 3c6472c84e27447fa0d745066e5d90cf
 #: ../../schema/guidance/functional-requirements.rst:12
 msgid ""
 "Publication systems should be able to assert when one statement replaces "
 "another;"
 msgstr ""
+"Los sistemas de publicación deberían ser capaces de señalar la ocasión en "
+"que una declaración sustituye a otra;"
 
-# a5ac9926671b45b9bd1cff9a10aff735
+# 8a09fd3673ba457ca4643f3ecb38b560
 #: ../../schema/guidance/functional-requirements.rst:14
 msgid ""
 "Publication systems should be able to produce statements in JSON format;"
 msgstr ""
+"Los sistemas de publicación deberían ser capaces de generar declaraciones en"
+" formato JSON;"
 
-# a9ce76f66f184376be126ba98260e457
+# b7010f6e09dd48b88bda25d57d330112
 #: ../../schema/guidance/functional-requirements.rst:16
 msgid ""
 "Publication systems should be able to validate statements against the JSON "
 "schema;"
 msgstr ""
+"Los sistemas de publicación deberían ser capaces de validar declaraciones en"
+" función del esquema JSON;"
 
-# df126a2ae535426ea22ed62afaf95a3e
+# 14222f89f8fa45bd8580a8fc7cddb8dd
 #: ../../schema/guidance/functional-requirements.rst:18
 msgid "Statements should be immutable."
-msgstr ""
+msgstr "Las declaraciones deberían ser inalterables."

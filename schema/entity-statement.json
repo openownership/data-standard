@@ -85,10 +85,10 @@
       "title": "Alternative names",
       "description": "An array of other names this entity is known by.",
       "type": "array",
-      "items":{
-        "type":"string",
-        "title":"Name",
-        "description":"A name this entity is known by."
+      "items": {
+        "type": "string",
+        "title": "Name",
+        "description": "A name this entity is known by."
       },
       "propertyOrder": 7
     },
@@ -145,13 +145,13 @@
       "title": "Publication details",
       "description": "Information concerning the original publication of this statement.",
       "$ref": "components.json#/definitions/PublicationDetails",
-      "propertyOrder":85
+      "propertyOrder": 85
     },
     "source": {
       "title": "Source",
       "description": "The source of information about this entity, or of information that supports an anonymous or unknown entity statement.",
       "$ref": "components.json#/definitions/Source",
-      "propertyOrder":89
+      "propertyOrder": 89
     },
     "annotations": {
       "title": "Annotations",

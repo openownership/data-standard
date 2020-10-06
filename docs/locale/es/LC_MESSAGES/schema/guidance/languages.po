@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,33 +22,41 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# c659db4123584ee99640fd60bb2d6e42
+# 6ef298cfee6e41389d78fa47da0048bc
 #: ../../schema/guidance/languages.rst:2
 msgid "Languages and transliteration"
-msgstr ""
+msgstr "Idiomas y transliteración"
 
-# 03716f7abc264d3c93399927e258bb0f
+# cb5e4e986de54f78a5534369b21f5cd5
 #: ../../schema/guidance/languages.rst:4
 msgid ""
 "There may be times when beneficial ownership information needs to be "
 "provided in different languages."
 msgstr ""
+"Puede haber casos en que sea necesario proporcionar información sobre "
+"beneficiarios finales en diferentes idiomas."
 
-# 565608e0cbc34b438fb0acbabad70d03
+# 1c3d975e730c44aa95baa13fc14c59ae
 #: ../../schema/guidance/languages.rst:6
 msgid ""
 "For people's names, use an entry in the ``names`` array with a ``type`` of "
 "'translation'"
 msgstr ""
+"Para los nombres de personas, utilice una entrada en el arreglo ``nombres`` "
+"con un ``tipo`` consistente en \"traducción\""
 
-# 75640900f1de44bda2885594f6f5f391
+# 5ba287331d454476af90646837228017
 #: ../../schema/guidance/languages.rst:7
 msgid "For entity names, use an entry in the ``alternativeNames`` array"
 msgstr ""
+"Para los nombres de entidades, utilice una entrada en el arreglo "
+"``nombresAlternativos``"
 
-# b1936e2fe9f74ad68c4b772a7a0175c2
+# 4ed0b51ab480434eaac16a9b6a918630
 #: ../../schema/guidance/languages.rst:9
 msgid ""
 "For other fields, an ``annotations`` object can be used to indicate that a "
 "particular field has a translation or transliteration."
 msgstr ""
+"Para otros campos, se puede utilizar un objeto ``notas`` para indicar que un"
+" determinado campo cuenta con una traducción o transliteración."

@@ -82,8 +82,8 @@ Services Co-operative <http://www.opendataservices.coop>`__ and
 
         License and contributor agreement
 
-Schema contents of the OpenOwnership Register are Copyright 2016 World
-Wide Web Foundation on behalf of the OpenOwnership Steering Group.
+Schema contents of the Beneficial Ownership Data Standard are 
+Copyright (C) 2016-2020 OpenOwnership.
 
 The schema is licensed under the Apache License, Version 2.0.
 

@@ -30,7 +30,10 @@
     }
   ],
   "source": {
-    "type": ["officialRegister", "thirdParty"],
+    "type": [
+      "officialRegister",
+      "thirdParty"
+    ],
     "description": "Open Ownership Register, using data from the Ukraine United State Register and OpenCorporates",
     "url": "https://register.openownership.org/entities/5a7b038b9dfc3fae18417a58?transliterated=true"
   },

@@ -2,7 +2,8 @@
 
 ### Schema
 
-Schema contents of the Open Ownership Register are Copyright 2016 World Wide Web Foundation on behalf of the Open Ownership Register Steering Group.
+Schema contents of the Beneficial Ownership Data Standard are Copyright (C)
+2016-2020 OpenOwnership.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,7 +19,7 @@ limitations under the License.
 
 ### Documentation
 
-Documentation is Copyright (C) 2016 World Wide Web Foundation, on behalf of the Open Ownership Register project team. 
+Documentation is Copyright (C) 2016-2020 OpenOwnership.
 
 Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3
@@ -236,4 +237,3 @@ Each version of the License is given a distinguishing version number. If the Doc
 An MMC is "eligible for relicensing" if it is licensed under this License, and if all works that were first published under this License somewhere other than this MMC, and subsequently incorporated in whole or in part into the MMC, (1) had no cover texts or invariant sections, and (2) were thus incorporated prior to November 1, 2008.
 
 The operator of an MMC Site may republish an MMC contained in the site under CC-BY-SA on the same site at any time before August 1, 2009, provided the MMC is eligible for relicensing.
-

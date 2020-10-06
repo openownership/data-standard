@@ -3,13 +3,18 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2019-09-06 12:18+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,38 +22,51 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# e0a57727f3d3402fae883d87a7b18eea
+# ec861ac13bca45eab8568eface5824b0
 #: ../../primer/whyisbo.rst:2
 msgid "Why beneficial ownership is a useful concept"
-msgstr ""
+msgstr "Por qué es útil el concepto de beneficiario final"
 
-# 0048e60c9002486caa21323997ee40d0
+# faff99dd0cf84d3a8a9c037b96a35b40
 #: ../../primer/whyisbo.rst:4
 msgid ""
 "People can be involved in a number of companies and in different ways. By "
 "limiting our understanding of people's involvement to ownership only, we "
 "would miss instances like below."
 msgstr ""
+"Los individuos pueden tener intervención en muchas empresas y de diferentes "
+"maneras. Si restringimos la interpretación de su intervención solamente a la"
+" titularidad, estaríamos dejando de lado casos como los siguientes."
 
-# 9f41109e9813480b9b21b2f0829e8092
+# 20c0fafb17cf4969b50aea9386b29581
 #: ../../primer/whyisbo.rst:12
 msgid ""
 "The person both controls Company 1 and owns half of Company 2. This could be"
 " important to know if both companies bid for the same government contract, "
 "or if they both appeared in a procurement chain."
 msgstr ""
+"Una persona controla a la Empresa 1 y posee la mitad de la Empresa 2. Podría"
+" ser importante conocer esta circunstancia si ambas empresas participan en "
+"la licitación de un mismo contrato con el Estado, o si ambas aparecen en una"
+" cadena de contrataciones."
 
-# c93cf2e4f017422ea53daf2aa7ca7c1a
+# 335b26088e7d4fd4aa7c78d07f595249
 #: ../../primer/whyisbo.rst:16
 msgid ""
 "It might be equally important to see that a person's control over a company "
 "is greater than one might expect given their financial stake in it."
 msgstr ""
+"Por otra parte, podría ser igualmente importante a los efectos de observar "
+"que el control de una persona sobre una empresa es mayor de lo que se podría"
+" suponer dada su participación financiera en ella."
 
-# 9aa0ef83c5fc4064a3269d264355d1cd
+# aa20dfdb51fd40c1b7bbb73368191809
 #: ../../primer/whyisbo.rst:27
 msgid ""
 "Uniting ownership and control under the banner of beneficial ownership "
 "allows us to represent the complex reality of corporate structures, and the "
 "multiple corporate interests a person might have."
 msgstr ""
+"Unir la titularidad y el control dentro del concepto de beneficiario final "
+"nos permite representar la compleja realidad de las estructuras societarias "
+"y las múltiples participaciones societarias que una persona puede tener."

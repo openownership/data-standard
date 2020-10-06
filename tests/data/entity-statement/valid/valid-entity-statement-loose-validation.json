@@ -1,24 +1,24 @@
-  {
-    "statementID":"1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
-    "statementType":"entityStatement",
-    "isComponent": false,
-    "statementDate":"2016-06-30",
-    "entityType":"registeredEntity",
-    "name":"Ibrakom Fzco",
-    "incorporatedInJurisdiction":{
-       "name":"UAE"
-    },
-    "identifiers":[
-      {
-        "id":"00335",
-        "schemeName":"Jebel Ali Free Zone"
-      }
-    ],
-    "publicationDetails": {
-        "publicationDate": "2016-07-01",
-        "bodsVersion": "0.2",
-        "publisher": {
-            "name": "Ibrakom Fzco"
-        }
+{
+  "statementID": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
+  "statementType": "entityStatement",
+  "isComponent": false,
+  "statementDate": "2016-06-30",
+  "entityType": "registeredEntity",
+  "name": "Ibrakom Fzco",
+  "incorporatedInJurisdiction": {
+    "name": "UAE"
+  },
+  "identifiers": [
+    {
+      "id": "00335",
+      "schemeName": "Jebel Ali Free Zone"
+    }
+  ],
+  "publicationDetails": {
+    "publicationDate": "2016-07-01",
+    "bodsVersion": "0.2",
+    "publisher": {
+      "name": "Ibrakom Fzco"
     }
   }
+}

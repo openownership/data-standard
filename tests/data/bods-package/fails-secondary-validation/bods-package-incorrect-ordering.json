@@ -1,16 +1,16 @@
 [
   {
-    "statementID":"1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
-    "statementType":"entityStatement",
+    "statementID": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
+    "statementType": "entityStatement",
     "isComponent": false,
-    "statementDate":"2017-11-18",
-    "entityType":"registeredEntity",
-    "name":"CHRINON LTD",
-    "foundingDate":"2010-11-18",
-    "identifiers":[
+    "statementDate": "2017-11-18",
+    "entityType": "registeredEntity",
+    "name": "CHRINON LTD",
+    "foundingDate": "2010-11-18",
+    "identifiers": [
       {
-        "scheme":"GB-COH",
-        "id":"07444723"
+        "scheme": "GB-COH",
+        "id": "07444723"
       }
     ],
     "publicationDetails": {
@@ -22,23 +22,23 @@
     }
   },
   {
-    "statementID":"fbfd0547-d0c6-4a00-b559-5c5e91c34f5c",
-    "statementType":"ownershipOrControlStatement",
+    "statementID": "fbfd0547-d0c6-4a00-b559-5c5e91c34f5c",
+    "statementType": "ownershipOrControlStatement",
     "isComponent": false,
-    "statementDate":"2017-11-18",
-    "subject":{
-        "describedByEntityStatement":"1dc0e987-5c57-4a1c-b3ad-61353b66a9b7"
+    "statementDate": "2017-11-18",
+    "subject": {
+      "describedByEntityStatement": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7"
     },
-    "interestedParty":{
-        "describedByPersonStatement":"019a93f1-e470-42e9-957b-03559861b2e2"
+    "interestedParty": {
+      "describedByPersonStatement": "019a93f1-e470-42e9-957b-03559861b2e2"
     },
-    "interests":[
+    "interests": [
       {
-        "type":"shareholding",
-        "interestLevel":"direct",
-        "startDate":"2016-04-06",
-        "share":{
-          "exact":100
+        "type": "shareholding",
+        "interestLevel": "direct",
+        "startDate": "2016-04-06",
+        "share": {
+          "exact": 100
         }
       }
     ],
@@ -50,36 +50,36 @@
       }
     }
   },
-    {
-    "statementID":"019a93f1-e470-42e9-957b-03559861b2e2",
-    "statementType":"personStatement",
-    "statementDate":"2017-11-18",
+  {
+    "statementID": "019a93f1-e470-42e9-957b-03559861b2e2",
+    "statementType": "personStatement",
+    "statementDate": "2017-11-18",
     "isComponent": false,
-    "personType":"knownPerson",
-    "nationalities":[
+    "personType": "knownPerson",
+    "nationalities": [
       {
         "code": "GB"
       }
     ],
-    "names":[
+    "names": [
       {
-        "type":"individual",
-        "fullName":"Christopher Taggart",
-        "givenName":"Christopher",
-        "familyName":"Taggart"
+        "type": "individual",
+        "fullName": "Christopher Taggart",
+        "givenName": "Christopher",
+        "familyName": "Taggart"
       },
       {
-        "type":"alternative",
-        "fullName":"Chris Taggart"
+        "type": "alternative",
+        "fullName": "Chris Taggart"
       }
     ],
-    "birthDate":"1964-04",
-    "addresses":[
+    "birthDate": "1964-04",
+    "addresses": [
       {
-        "type":"service",
-        "address":"Aston House, Cornwall Avenue, London",
-        "country":"GB",
-        "postCode":"N3 1LF"
+        "type": "service",
+        "address": "Aston House, Cornwall Avenue, London",
+        "country": "GB",
+        "postCode": "N3 1LF"
       }
     ],
     "publicationDetails": {
