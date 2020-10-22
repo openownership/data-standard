@@ -9,6 +9,14 @@ env:
 install: 
   - "pip install -r requirements_test.txt"
   - curl -s -S --retry 3 $BASEDIR/tests/install.sh | bash -
+  # The metaschema has been removed from the open-contracting repo, so update
+  # the url.
+  # We monkeypatch this because its easier than creating 2 new branches for
+  # standard-maintenance-scripts and jscc, based on the old commits we're
+  # using.
+  # (Eventually we should update to the latest versions, but there's some work
+  # due to incompatibilities.)
+  - sed -i 's|open-contracting/standard/1.1/standard/schema|open-contracting/standard/1__1__4/standard/schema|' $VIRTUAL_ENV/src/jscc/jscc/testing/json.py
 script:
   - "./open-contracting_standard-maintenance-scripts_tests_script.sh"
   - "py.test"

@@ -3,7 +3,7 @@
 Serialization
 =============
 
-The canonical serialization of BODS data is as a `JSON document <https://tools.ietf.org/html/rfc8259>`_. A JSON BODS file SHOULD consists of a series of ordered statement objects within a top-level array. JSON Lines MAY also be used when creating large files.
+The canonical serialization of BODS data is as a `JSON document <https://tools.ietf.org/html/rfc8259>`_. A JSON BODS file SHOULD consist of a series of ordered statement objects within a top-level array. JSON Lines MAY also be used when creating large files.
 
 Each of the :ref:`entityStatements <schema-entity-statement>` or :ref:`personStatements <schema-person-statement>` referenced by a particular :ref:`ownershipOrControlStatement <schema-ownership-or-control-statement>`  MUST appear before that particular ownership-or-control statement in the ordered array. 
 
