@@ -43,4 +43,4 @@ In order to enable worldwide use of the Standard, it does not directly define th
 
 .. highlights:: 
     
-    The Standard is well-defined yet flexible: as suited for use by national registers of beneficial ownership as by corporate researchers.
+    The Standard is well-defined yet flexible. National registers of beneficial ownership can use it; so can people researching or describing corporate structures.
