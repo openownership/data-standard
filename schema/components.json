@@ -207,7 +207,7 @@
         },
         "familyName": {
           "title": "Family name",
-          "description": "A family name is usually shared by members of a family. This attribute also carries prefixes or suffixes which are part of the Family Name, e.g. 'de Boer', 'van de Putte', 'von und zu Orlow'. Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single Family Name field so that, for example, Miguel de Cervantes Saavedra's Family Name would be recorded as 'Cervantes Saavedra.'",
+          "description": "A family name is usually shared by members of a family. This property also carries prefixes or suffixes which are part of the Family Name, e.g. 'de Boer', 'van de Putte', 'von und zu Orlow'. Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single Family Name field so that, for example, Miguel de Cervantes Saavedra's Family Name would be recorded as 'Cervantes Saavedra.'",
           "type": "string"
         },
         "givenName": {

@@ -3,7 +3,7 @@
 Real world identifiers
 =============================
 
-To create a link between statements, and the real-world organisations and people they relate to, statements may include a range of identifying information. We use a common :any:`Identifier object <schema-identifier>` with the following properties:
+To create a link between statements, and the real-world organisations and people they relate to, we use the :any:`Identifier object <schema-identifier>` with the following properties:
 
 * ``scheme`` should be a value from a codelist of known identifier sources. Separate codelists exist for entities and persons. See below.
 
