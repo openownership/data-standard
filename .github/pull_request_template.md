@@ -11,7 +11,9 @@
 - [ ] I've notified the translation coordinator of any new strings that will need
       translating. See: https://openownership.github.io/bods-dev-handbook/translations.html
 
-## Releasing
+## Documentation & Release
 
 - [ ] I've thought about how and when this needs to be released. See:
-      https://openownership.github.io/bods-dev-handbook/standard_releases.html
+      https://openownership.github.io/bods-dev-handbook/standard_releases.html      
+- [ ] I've updated the changelog, if necessary.
+- [ ] I've added or edited any related documentation. 
