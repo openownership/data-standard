@@ -24,4 +24,4 @@ it.
 
 .. highlights::
 
-   Uniting ownership and control under the banner of beneficial ownership allows us to represent the complex reality of corporate structures, and the multiple corporate interests a person might have.
+   Uniting ownership and control under the banner of beneficial ownership allows us to represent the complex reality of corporate structures, and the multiple interests a person might have in a company.
