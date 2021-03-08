@@ -37,7 +37,9 @@ def build_schemas_for_testing():
                 set_additional_properties_false_everywhere=True
             )
             with open(os.path.join(absolute_path_to_schema_dir, source_file), "w") as fp:
-                fp.write(ctjs.get_as_string())
+                created_json = json.loads(ctjs.get_as_string())
+                # write with correct indentation
+                fp.write(json.dumps(created_json, ensure_ascii=False, indent=2, separators=(',', ': ')) + '\n')
 
 
 def schema_path_from_statement(statement):
