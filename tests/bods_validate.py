@@ -34,7 +34,8 @@ def build_schemas_for_testing():
         if source_file.endswith('.json'):
             ctjs = CompileToJsonSchema(
                 os.path.join(absolute_path_to_source_schema_dir, source_file),
-                set_additional_properties_false_everywhere=True
+                set_additional_properties_false_everywhere=True,
+                codelist_base_directory=absolute_path_to_source_schema_dir + '/codelists/'
             )
             with open(os.path.join(absolute_path_to_schema_dir, source_file), "w") as fp:
                 created_json = json.loads(ctjs.get_as_string())
