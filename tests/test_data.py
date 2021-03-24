@@ -104,6 +104,8 @@ test_valid_package_json_parametrize_data = [
     "os-01-dr-01.json",
     "os-01-dr-02-dc-05.json",
     "os-17-dr-02-dc-06.json",
+    "valid-entity-statement-plc.json",
+    "valid-entity-statement-plc-no-securitiesListings-provided.json",
 ]
 
 test_valid_package_json_parametrize_data = get_full_paths(test_valid_package_json_parametrize_data)
@@ -394,6 +396,20 @@ test_invalid_package_json_iter_errors_parametrize_data = [
             "interestedParty/describedByPersonStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
         },
     ),
+    ("invalid-entity-statement-no-securitiesListings.json", None, {"'securitiesListings' is a required property"}),
+    (
+        "invalid-entity-statement-plc-invalid-idScheme.json",
+        None,
+        {"'local' is not one of ['isin', 'figi', 'cusip', 'cins']"},
+    ),
+    ("invalid-entity-statement-plc-no-security.json", None, {"'security' is a required property"}),
+    (
+        "invalid-entity-statement-plc-no-stockExchangeJurisdiction.json",
+        None,
+        {"'stockExchangeJurisdiction' is a required property"},
+    ),
+    ("invalid-entity-statement-plc-no-stockExchangeName.json", None, {"'stockExchangeName' is a required property"}),
+    ("invalid-entity-statement-plc-no-ticker.json", None, {"'ticker' is a required property"}),
 ]
 
 test_invalid_package_json_iter_errors_parametrize_data = get_full_paths(

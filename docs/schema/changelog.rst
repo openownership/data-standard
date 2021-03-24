@@ -15,6 +15,10 @@ ChangeLog
 [Unreleased] - 2021-03-30
 =========================
 
+Added
+-----
+- Support for describing the traded securities and status of a publicly listed company (PLC): a new ``publicListing`` object has been added to Entity Statements.
+
 Changed
 -------
 - The ``interestType`` and ``unspecifiedReason`` codelist codes have been changed from using hyphens to camelCase.
