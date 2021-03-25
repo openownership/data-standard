@@ -33,7 +33,7 @@ from jsonpointer import resolve_pointer
 from pathlib import Path
 from sphinx.directives.code import LiteralInclude
 
-from ocds_babel.translate import translate
+import ocds_babel.translate as translate
 
 import oods.pygments
 import oods.sphinxtheme
@@ -254,7 +254,14 @@ def translate_schema_and_codelists(language='en'):
     schema_target_dir = build_dir
     codelist_target_dir = build_dir / 'codelists'
 
-    translate([
+    def _json_dumps(data):
+        return json.dumps(data, ensure_ascii=False, indent=2, separators=(',', ': ')) + '\n'
+
+    # This is a slight monkey patch on translate to make sure translated schemas follow
+    # same indentation as core schemas
+    translate._json_dumps = _json_dumps
+
+    translate.translate([
         # The glob patterns in `babel_bods_schema.cfg` should match these filenames.
         (glob(str(schema_source_dir / '*.json')), str(schema_target_dir), schema_domain),
         # The glob patterns in `babel_bods_codelist.cfg` should match these.
