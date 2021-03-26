@@ -15,7 +15,9 @@
       "type": "string",
       "enum": [
         "ownershipOrControlStatement"
-      ]
+      ],
+      "openCodelist": false,
+      "codelist": "statementType.csv"
     },
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate"

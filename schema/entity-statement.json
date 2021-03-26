@@ -17,7 +17,9 @@
       "enum": [
         "entityStatement"
       ],
-      "propertyOrder": 2
+      "propertyOrder": 2,
+      "openCodelist": false,
+      "codelist": "statementType.csv"
     },
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate",
