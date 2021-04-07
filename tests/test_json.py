@@ -95,6 +95,8 @@ def test_codelists_used():
 
 
 def validate_json_schema(path, name, data, schema):
+    if name == "codelist-schema.json":
+        return
     errors = 0
     errors += validate_schema(path, data, schema)
     errors += validate_items_type(path, data)
