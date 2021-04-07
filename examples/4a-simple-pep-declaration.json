@@ -30,7 +30,9 @@
         "fullName": "Michael Hubbard"
       }
     ],
-    "hasPepStatus": true,
+    "politicalExposure": {
+      "status": "isPep"
+    },
     "publicationDetails": {
       "publicationDate": "2019-06-07",
       "bodsVersion": "0.2",

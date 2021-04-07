@@ -32,26 +32,28 @@
         "fullName": "Michael Hubbard"
       }
     ],
-    "hasPepStatus": true,
-    "pepStatusDetails": [
-      {
-        "jurisdiction": {
-          "code": "gb"
-        },
-        "reason": "Member of Parliament",
-        "startDate": "2017-10-15",
-        "source": {
-          "type": [
-            "selfDeclaration"
-          ],
-          "assertedBy": [
-            {
-              "name": "Michael Hubbard"
-            }
-          ]
+    "politicalExposure": {
+      "status": "isPep",
+      "details": [
+        {
+          "jurisdiction": {
+            "code": "gb"
+          },
+          "reason": "Member of Parliament",
+          "startDate": "2017-10-15",
+          "source": {
+            "type": [
+              "selfDeclaration"
+            ],
+            "assertedBy": [
+              {
+                "name": "Michael Hubbard"
+              }
+            ]
+          }
         }
-      }
-    ],
+      ]
+    },
     "publicationDetails": {
       "publicationDate": "2019-06-07",
       "bodsVersion": "0.2",
