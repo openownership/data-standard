@@ -106,7 +106,7 @@
     },
     "interestedParty": {
       "unspecified": {
-        "reason": "interested-party-has-not-provided-information",
+        "reason": "interestedPartyHasNotProvidedInformation",
         "description": "The new owner of shares has been contacted to ask them to confirm the ultimate beneficial owner."
       }
     },

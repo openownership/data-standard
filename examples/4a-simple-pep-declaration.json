@@ -62,7 +62,7 @@
         "beneficialOwnershipOrControl": true
       },
       {
-        "type": "voting-rights",
+        "type": "votingRights",
         "interestLevel": "direct",
         "share": {
           "minimum": 25,
