@@ -34,7 +34,7 @@
     "statementDate": "2018-12-17",
     "personType": "anonymousPerson",
     "unspecifiedPersonDetails": {
-      "reason": "interested-party-exempt-from-disclosure",
+      "reason": "interestedPartyExemptFromDisclosure",
       "description": "super-secure-person-with-significant-control"
     }
   },

@@ -12,6 +12,13 @@ ChangeLog
 
     The schema specifies a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields. 
 
+[Unreleased] - 2021-03-30
+=========================
+
+Changed
+-------
+- The ``interestType`` and ``unspecifiedReason`` codelist codes have been changed from using hyphens to camelCase.
+
 
 [0.2] - 2019-06-30
 ==================

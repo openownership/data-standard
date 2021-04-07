@@ -17,7 +17,9 @@
       "enum": [
         "entityStatement"
       ],
-      "propertyOrder": 2
+      "propertyOrder": 2,
+      "openCodelist": false,
+      "codelist": "statementType.csv"
     },
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate",
@@ -53,13 +55,13 @@
           "description": "The reason that an entity cannot be specified. From the unspecifiedReason codelist.",
           "type": "string",
           "enum": [
-            "no-beneficial-owners",
-            "subject-unable-to-confirm-or-identify-beneficial-owner",
-            "interested-party-has-not-provided-information",
-            "subject-exempt-from-disclosure",
-            "interested-party-exempt-from-disclosure",
-            "information-unknown-to-publisher",
-            "unknown"
+            "noBeneficialOwners",
+            "subjectUnableToConfirmOrIdentifyBeneficialOwner",
+            "interestedPartyHasNotProvidedInformation",
+            "subjectExemptFromDisclosure",
+            "interestedPartyExemptFromDisclosure",
+            "unknown",
+            "informationUnknownToPublisher"
           ],
           "codelist": "unspecifiedReason.csv",
           "openCodelist": false

@@ -15,7 +15,7 @@
       "startDate": "2016-07-07"
     },
     {
-      "type": "voting-rights",
+      "type": "votingRights",
       "interestLevel": "direct",
       "share": {
         "exact": 25

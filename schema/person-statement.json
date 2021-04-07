@@ -53,13 +53,13 @@
           "description": "The reason that an interested party cannot be specified. From the unspecifiedReason codelist.",
           "type": "string",
           "enum": [
-            "no-beneficial-owners",
-            "subject-unable-to-confirm-or-identify-beneficial-owner",
-            "interested-party-has-not-provided-information",
-            "subject-exempt-from-disclosure",
-            "interested-party-exempt-from-disclosure",
+            "noBeneficialOwners",
+            "subjectUnableToConfirmOrIdentifyBeneficialOwner",
+            "interestedPartyHasNotProvidedInformation",
+            "subjectExemptFromDisclosure",
+            "interestedPartyExemptFromDisclosure",
             "unknown",
-            "information-unknown-to-publisher"
+            "informationUnknownToPublisher"
           ],
           "codelist": "unspecifiedReason.csv",
           "openCodelist": false
