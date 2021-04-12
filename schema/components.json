@@ -474,7 +474,7 @@
         },
         "missingInfoReason": {
           "title": "Missing information reason(s)",
-          "description": "For disclosure regimes where a PEP declarations is required but not provided, this field should contain an explanation of the reason that PEP status for the person is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification. This field should only be filled out where hasPepStatus is missing. Where this field is present it should be the only field except for `source`.",
+          "description": "An explanation of the reason that PEP status for the person is not provided (i.e. `politicalExposure.status` is 'unknown'). This may be a standard descriptive phrase from the source system, or a free-text justification. Where this field is present it should be the only field except for `source`.",
           "type": "string"
         },
         "jurisdiction": {
