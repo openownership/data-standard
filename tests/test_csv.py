@@ -72,7 +72,7 @@ def test_valid():
 
         # Column 4 (technical note) can be empty, but check the others
         for col_index, column in enumerate(columns, 1):
-            if col_index is not 4 and not any(column) and codelist:
+            if col_index != 4 and not any(column) and codelist:
                 errors += 1
                 warnings.warn("ERROR: {} has empty column {}".format(path, col_index))
 
