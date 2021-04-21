@@ -26,4 +26,4 @@ jobs:
     - name: flake8
       run: flake8 --exclude=src --max-line-length=119
     - name: pytest
-      run: pytest
+      run: pytest tests
