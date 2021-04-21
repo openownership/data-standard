@@ -4,6 +4,7 @@ attrs
 flake8
 jsonschema
 mccabe
+pip-tools
 pluggy
 py
 pycodestyle
