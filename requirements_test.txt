@@ -33,7 +33,9 @@ certifi==2020.12.5
 chardet==4.0.0
     # via requests
 click==7.1.2
-    # via sphinx-intl
+    # via
+    #   pip-tools
+    #   sphinx-intl
 commonmark==0.7.5
     # via
     #   -r requirements.in
@@ -59,6 +61,7 @@ importlib-metadata==4.0.1
     # via
     #   flake8
     #   jsonschema
+    #   pep517
     #   pluggy
     #   pytest
 iniconfig==1.1.1
@@ -97,6 +100,10 @@ packaging==20.9
     # via
     #   pytest
     #   sphinx
+pep517==0.10.0
+    # via pip-tools
+pip-tools==6.1.0
+    # via -r requirements_test.in
 pluggy==0.13.1
     # via
     #   -r requirements_test.in
@@ -173,7 +180,9 @@ strict-rfc3339==0.7
 text-unidecode==1.3
     # via python-slugify
 toml==0.10.2
-    # via pytest
+    # via
+    #   pep517
+    #   pytest
 transifex-client==0.14.2
     # via -r requirements.in
 typing-extensions==3.7.4.3
@@ -186,7 +195,10 @@ urllib3==1.26.4
     #   requests
     #   transifex-client
 zipp==3.4.1
-    # via importlib-metadata
+    # via
+    #   importlib-metadata
+    #   pep517
 
 # The following packages are considered to be unsafe in a requirements file:
+# pip
 # setuptools
