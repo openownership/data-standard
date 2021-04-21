@@ -1,0 +1,20 @@
+-r requirements.in
+
+attrs
+flake8
+jsonschema
+mccabe
+pluggy
+py
+pycodestyle
+pyflakes
+pytest
+six
+json-merge-patch
+jscc
+
+# Libraries required for jsonschema format checking
+# See table at bottom of https://python-jsonschema.readthedocs.io/en/latest/validate/#validating-formats
+rfc3987
+strict-rfc3339
+-e git+https://github.com/OpenDataServices/compile-to-json-schema.git@v0.3.0#egg=compiletojsonschema
