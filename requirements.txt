@@ -108,7 +108,7 @@ transifex-client==0.14.2
     # via -r requirements.in
 typing-extensions==3.7.4.3
     # via gitpython
-urllib3==1.26.4
+urllib3==1.26.5
     # via
     #   -r requirements.in
     #   requests

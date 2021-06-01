@@ -57,13 +57,6 @@ idna==2.10
     # via requests
 imagesize==1.2.0
     # via sphinx
-importlib-metadata==4.0.1
-    # via
-    #   flake8
-    #   jsonschema
-    #   pep517
-    #   pluggy
-    #   pytest
 iniconfig==1.1.1
     # via pytest
 jinja2==2.11.3
@@ -186,18 +179,12 @@ toml==0.10.2
 transifex-client==0.14.2
     # via -r requirements.in
 typing-extensions==3.7.4.3
-    # via
-    #   gitpython
-    #   importlib-metadata
-urllib3==1.26.4
+    # via gitpython
+urllib3==1.26.5
     # via
     #   -r requirements.in
     #   requests
     #   transifex-client
-zipp==3.4.1
-    # via
-    #   importlib-metadata
-    #   pep517
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
