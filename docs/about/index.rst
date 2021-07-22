@@ -13,18 +13,15 @@ Money laundering, tax evasion and obscure chains of ownership are transnational 
 
 The Beneficial Ownership Data Standard enables this transparency by providing a solid conceptual and practical framework for collecting and publishing beneficial ownership data, resulting in data that is interoperable, more easily reused, and of higher quality.
 
-The Standard is being developed under the guidance of a :doc:`working group <governance>` co-chaired by OpenOwnership. More details about the organisation are available at www.openownership.org.
+The Standard is being developed under the guidance of a :doc:`working group <governance>` co-chaired by Open Ownership. More details about the organisation are available at `openownership.org <https://www.openownership.org>`__.
 
 
 .. cssclass:: h2
 
         Current status of the standard
 
-.. figure:: ../_assets/timeline.png
-       :alt: Timeline of standard development. 2018, Q4: release of BODS v0.1. 2019, Q2: release of BODS v0.2, Q4: release of BODS v0.3. 2020, Q1: release of BODS v1.0.
-
 This is v0.2 of the Beneficial Ownership Data Standard. The data model
-has been updated and additional codelist information added since v0.1.
+has been updated and additional codelist information added since v0.1. Work is ongoing towards a release of v0.3.
 
 Implementers should be aware that future changes are anticipated, before
 a version 1.0 release. However, from the v0.1 release onwards, any
@@ -41,7 +38,7 @@ enforce validation constraints on most fields.
         Get involved
 
 All changes to the standard draft, documentation and specification take
-place via GitHub at https://github.com/openownership/data-standard/.
+place via GitHub at https://github.com/openownership/data-standard.
 
 Suggestions for changes can be made via the `project issue
 tracker <https://github.com/openownership/data-standard/issues>`__.
@@ -64,8 +61,8 @@ Standard, see the :doc:`Governance <governance>` page.
 
 The initial development of the Beneficial Ownership Data Standard was
 funded by OpenOwnership as part of a UK Department for International
-Development funded project. OpenOwnership is led by a steering group of
-the world's leading transparency organizations including `Transparency
+Development funded project. Open Ownership is led by a steering group of
+the world's leading transparency organisations including `Transparency
 International <https://www.transparency.org/>`__,
 `OpenCorporates <https://opencorporates.com>`__,
 `One <https://www.one.org/international/>`__, the `Open Contracting
@@ -83,7 +80,7 @@ Services Co-operative <http://www.opendataservices.coop>`__ and
         License and contributor agreement
 
 Schema contents of the Beneficial Ownership Data Standard are 
-Copyright (C) 2016-2020 OpenOwnership.
+Copyright (C) 2016-2021 OpenOwnership.
 
 The schema is licensed under the Apache License, Version 2.0.
 
@@ -94,5 +91,5 @@ agreement <https://github.com/openownership/data-standard/blob/master/CONTRIBUTI
 
         Contact
 
-For more details about OpenOwnership, please email
+For more details about Open Ownership, please email
 support@openownership.org.
