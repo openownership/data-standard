@@ -21,7 +21,7 @@ The Standard is being developed under the guidance of a :doc:`working group <gov
         Current status of the standard
 
 This is v0.2 of the Beneficial Ownership Data Standard. The data model
-has been updated and additional codelist information added since v0.1. Work is ongoing towards a release of v0.3.
+has been updated and additional codelist information added since v0.1.
 
 Implementers should be aware that future changes are anticipated, before
 a version 1.0 release. However, from the v0.1 release onwards, any
@@ -60,7 +60,7 @@ Standard, see the :doc:`Governance <governance>` page.
         Partners and funders
 
 The initial development of the Beneficial Ownership Data Standard was
-funded by OpenOwnership as part of a UK Department for International
+funded by Open Ownership as part of a UK Department for International
 Development funded project. Open Ownership is led by a steering group of
 the world's leading transparency organisations including `Transparency
 International <https://www.transparency.org/>`__,
@@ -80,7 +80,7 @@ Services Co-operative <http://www.opendataservices.coop>`__ and
         License and contributor agreement
 
 Schema contents of the Beneficial Ownership Data Standard are 
-Copyright (C) 2016-2021 OpenOwnership.
+Copyright (C) 2016-2021 Open Ownership.
 
 The schema is licensed under the Apache License, Version 2.0.
 
