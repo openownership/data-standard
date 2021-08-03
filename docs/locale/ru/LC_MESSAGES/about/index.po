@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2017, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -81,7 +81,7 @@ msgid ""
 "organisation are available at www.openownership.org."
 msgstr ""
 "Разработка Стандарта ведется под руководством :doc:`рабочей "
-"группы<governance>` в сопредседательстве с OpenOwnership. Дополнительная "
+"группы<governance>` в сопредседательстве с Open Ownership. Дополнительная "
 "информация об этой организации доступна по адресу www.openownership.org.\""
 
 # 5dfafd71de4b4ec186211a9b7b7fd881
@@ -214,8 +214,8 @@ msgid ""
 "Schema contents of the Open Ownership Register are Copyright 2016 World Wide "
 "Web Foundation on behalf of the Open Ownership Steering Group."
 msgstr ""
-"Содержимое схемы Реестра OpenOwnership защищено авторским правом фонда World"
-" Wide Web Foundation от 2016 г. от имени Руководящей группы OpenOwnership."
+"Содержимое схемы Реестра Open Ownership защищено авторским правом фонда World"
+" Wide Web Foundation от 2016 г. от имени Руководящей группы Open Ownership."
 
 # 797c833096a145baa2ac6c61ae2ab2c2
 #: ../../about/index.rst:88
@@ -244,5 +244,5 @@ msgid ""
 "For more details about Open Ownership, please email "
 "support@openownership.org."
 msgstr ""
-"Для получения дополнительной информации об OpenOwnership просим обращаться "
+"Для получения дополнительной информации об Open Ownership просим обращаться "
 "по адресу support@openownership.org."
