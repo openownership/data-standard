@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2017, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -244,5 +244,5 @@ msgid ""
 "For more details about Open Ownership, please email "
 "support@openownership.org."
 msgstr ""
-"Para saber más sobre OpenOwnership, puede enviar un correo electrónico a "
+"Para saber más sobre Open Ownership, puede enviar un correo electrónico a "
 "support@openownership.org."
