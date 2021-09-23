@@ -1,7 +1,6 @@
 ---
 name: Feature development ticket
-about: This ticket helps track progress towards developing a particular feature in
-  the Beneficial Ownership Data Standard (BODS) where changes or revisions to the standard may be required.
+about: This ticket helps track progress towards developing a particular feature in the Beneficial Ownership Data Standard (BODS) where changes or revisions to the standard may be required.
 title: 'Feature: [feature name]'
 labels: ''
 assignees: ''
