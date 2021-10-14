@@ -134,7 +134,7 @@
     },
     "uri": {
       "title": "URI",
-      "description": "Where a [persistent URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available for this entity this should be included.",
+      "description": "Where a persistent URI (https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available for this entity this should be included.",
       "type": "string",
       "format": "uri",
       "propertyOrder": 21
