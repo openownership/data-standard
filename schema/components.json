@@ -100,7 +100,7 @@
         },
         "scheme": {
           "title": "Scheme",
-          "description": "For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
+          "description": "For entity statements, the scheme should be a entry from the org-id.guide (https://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
           "type": "string"
         },
         "schemeName": {
@@ -110,7 +110,7 @@
         },
         "uri": {
           "title": "URI",
-          "description": "Where this identifier has a [canonical URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be included",
+          "description": "Where this identifier has a canonical URI (https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be included",
           "type": "string",
           "format": "uri"
         }
@@ -182,7 +182,7 @@
     },
     "Name": {
       "title": "Name",
-      "description": "An name by which this individual is known. Names should be provided in fullName, and may optionally be broken down in the familyName, givenName and patronymicName fields, based on the [EC ISA Core Person Vocabulary](https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
+      "description": "An name by which this individual is known. Names should be provided in fullName, and may optionally be broken down in the familyName, givenName and patronymicName fields, based on the EC ISA Core Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
       "type": "object",
       "properties": {
         "type": {
@@ -333,7 +333,7 @@
       "properties": {
         "statementPointerTarget": {
           "title": "Statement Fragment Pointer",
-          "description": "An [RFC6901 JSON Pointer](https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this annotation applies to, starting from the root of the statement. A value of '/' indicates that the annotation applies to the whole statement.",
+          "description": "An RFC6901 JSON Pointer (https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this annotation applies to, starting from the root of the statement. A value of '/' indicates that the annotation applies to the whole statement.",
           "type": "string"
         },
         "creationDate": {
@@ -520,7 +520,7 @@
         },
         "license": {
           "title": "License URL",
-          "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or [Open Definition Conformant](http://opendefinition.org/licenses/) license.",
+          "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or Open Definition Conformant (http://opendefinition.org/licenses/) license.",
           "type": "string",
           "format": "uri"
         },
