@@ -333,7 +333,7 @@
       "properties": {
         "statementPointerTarget": {
           "title": "Statement Fragment Pointer",
-          "description": "An RFC6901 JSON Pointer (https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this annotation applies to, starting from the root of the statement. A value of '/' indicates that the annotation applies to the whole statement.",
+          "description": "An RFC6901 JSON Pointer (https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this annotation applies to, starting from the root of the statement. A value of '/' indicates that the annotation applies to the whole statement. This field is REQUIRED.",
           "type": "string"
         },
         "creationDate": {
@@ -362,7 +362,7 @@
         },
         "motivation": {
           "title": "Motivation",
-          "description": "The motivation for this annotation, chosen from a codelist. See the annotationMotivation codelist.",
+          "description": "The motivation for this annotation, chosen from a codelist. See the annotationMotivation codelist. This field is REQUIRED.",
           "type": "string",
           "enum": [
             "commenting",
@@ -386,7 +386,7 @@
         },
         "url": {
           "title": "URL",
-          "description": "A linked resource that annotates, provides context for or enhances this statement. The content of the resource, or the relationship to the statement, MAY be described in the `description` field.",
+          "description": "A linked resource that annotates, provides context for or enhances this statement. The content of the resource, or the relationship to the statement, MAY be described in the `description` field. This field is REQUIRED if the value of `motivation` is 'linking'.",
           "type": "string",
           "format": "uri"
         }
