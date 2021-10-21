@@ -391,6 +391,10 @@
           "format": "uri"
         }
       },
+      "required": [
+        "statementPointerTarget",
+        "motivation"
+      ],
       "anyOf": [
         {
           "properties": {
@@ -416,11 +420,7 @@
                 "transformation"
               ]
             }
-          },
-          "required": [
-            "statementPointerTarget",
-            "motivation"
-          ]
+          }
         }
       ]
     },
