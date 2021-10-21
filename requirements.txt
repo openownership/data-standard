@@ -17,7 +17,7 @@
     # via -r requirements.in
 alabaster==0.7.12
     # via sphinx
-babel==2.9.0
+babel==2.9.1
     # via
     #   sphinx
     #   sphinx-intl
@@ -28,12 +28,9 @@ chardet==4.0.0
 click==7.1.2
     # via sphinx-intl
 commonmark==0.7.5
-    # via
-    #   -r requirements.in
-    #   recommonmark
+    # via -r requirements.in
 docutils==0.16
     # via
-    #   recommonmark
     #   sphinx
     #   sphinx-rtd-theme
 future==0.18.2
@@ -83,21 +80,20 @@ smmap==4.0.0
     # via gitdb
 snowballstemmer==2.1.0
     # via sphinx
+sphinx==1.7.5
+    # via
+    #   -r requirements.in
+    #   sphinx-intl
+    #   sphinx-rtd-theme
+    #   sphinxcontrib-jsonschema
+    #   sphinxcontrib-opendataservices
+    #   standard-theme
 sphinx-intl==2.0.1
     # via
     #   -r requirements.in
     #   standard-theme
 sphinx-rtd-theme==0.5.2
     # via -r requirements.in
-sphinx==1.7.5
-    # via
-    #   -r requirements.in
-    #   recommonmark
-    #   sphinx-intl
-    #   sphinx-rtd-theme
-    #   sphinxcontrib-jsonschema
-    #   sphinxcontrib-opendataservices
-    #   standard-theme
 sphinxcontrib-serializinghtml==1.1.4
     # via sphinxcontrib-websupport
 sphinxcontrib-websupport==1.2.4
