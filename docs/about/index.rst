@@ -66,12 +66,12 @@ the world's leading transparency organizations including `Transparency
 International <https://www.transparency.org/>`__,
 `OpenCorporates <https://opencorporates.com>`__,
 `One <https://www.one.org/international/>`__, the `Open Contracting
-Partnership <http://www.open-contracting.org>`__, `Global
+Partnership <https://www.open-contracting.org>`__, `Global
 Witness <https://www.globalwitness.org/en-gb/>`__ and `The B
 Team <http://bteam.org/>`__.
 
 The specification and documentation have been developed by `Open Data
-Services Co-operative <http://www.opendataservices.coop>`__ and
+Services Co-operative <https://www.opendataservices.coop>`__ and
 `OpenCorporates <https://opencorporates.com>`__. Read the
 :doc:`credits <credits>` for full details of the Standard's developers.
 
