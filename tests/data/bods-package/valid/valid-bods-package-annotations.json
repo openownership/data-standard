@@ -91,7 +91,6 @@
     },
     "annotations": [
       {
-        "statementPointerTarget": "/interestedParty",
         "motivation": "identifying",
         "description": "Company number missing from benenficial ownership statement. Manually reconciled against official register.",
         "createdBy": {
