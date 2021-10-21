@@ -12,6 +12,12 @@ ChangeLog
 
     The schema specifies a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields. 
 
+[Unreleased] - 2021-10-21
+
+Changed
+-------
+- Required fields `statementPointerTarget` and `motivation` are moved from inside the `anyOf` statement to the top level, as they apply to all motivation types.
+
 [Unreleased] - 2021-03-30
 =========================
 
