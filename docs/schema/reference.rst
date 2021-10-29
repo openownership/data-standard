@@ -325,13 +325,13 @@ EntityType
    :file: ../_build_schema/codelists/entityType.csv
 
 
-InterestLevel
+DirectOrIndirect
 +++++++++++++
 
 .. csv-table::
    :header-rows: 1
    :class: codelist-table
-   :file: ../_build_schema/codelists/interestLevel.csv
+   :file: ../_build_schema/codelists/directOrIndirect.csv
 
 
 InterestType

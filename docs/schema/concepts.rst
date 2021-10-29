@@ -112,7 +112,7 @@ For more guidance on modelling arrangements, contact the :any:`BODS Helpdesk <su
 Direct and indirect ownership and control
 -----------------------------------------
 
-BODS can be used to describe both direct ownership and control (where Person A has a direct share in Company B), or indirect ownership and control (Where Person A is an ultimate beneficial owner of B, but where there may be any number of known or unknown intermediate companies or arrangements). This is indicated by use of the ``interestLevel`` property that can be set for each interest declared. 
+BODS can be used to describe both direct ownership and control (where Person A has a direct share in Company B), or indirect ownership and control (Where Person A is an ultimate beneficial owner of B, but where there may be any number of known or unknown intermediate companies or arrangements). This is indicated by use of the ``directOrIndirect`` property that can be set for each interest declared. 
 
 
 Immutability of statements

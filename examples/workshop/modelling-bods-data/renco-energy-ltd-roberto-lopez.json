@@ -8,7 +8,7 @@
   "interests": [
     {
       "type": "shareholding",
-      "interestLevel": "direct",
+      "directOrIndirect": "direct",
       "share": {
         "exact": 25
       },
@@ -16,7 +16,7 @@
     },
     {
       "type": "votingRights",
-      "interestLevel": "direct",
+      "directOrIndirect": "direct",
       "share": {
         "exact": 25
       },
