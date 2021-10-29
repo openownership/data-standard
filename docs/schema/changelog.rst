@@ -12,14 +12,8 @@ ChangeLog
 
     The schema specifies a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields. 
 
-[Unreleased] - 2021-10-21
-
-Changed
--------
-- Required fields `statementPointerTarget` and `motivation` are moved from inside the `anyOf` statement to the top level, as they apply to all motivation types.
-
-[Unreleased] - 2021-03-30
-=========================
+[Unreleased]
+============
 
 Added
 -----
@@ -29,6 +23,7 @@ Changed
 -------
 - The ``interestType`` and ``unspecifiedReason`` codelist codes have been changed from using hyphens to camelCase.
 - ``hasPepStatus`` and ``pepDetails`` are replaced with ``politicalExposure`` object  that contains ``status`` and ``details`` properties.
+- Required fields `statementPointerTarget` and `motivation` are moved from inside the `anyOf` statement to the top level, as they apply to all motivation types.
 
 
 [0.2] - 2019-06-30
