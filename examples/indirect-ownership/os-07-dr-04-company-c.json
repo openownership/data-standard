@@ -61,7 +61,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "beneficialOwnershipOrControl": true,
         "share": {
           "exact": 100,

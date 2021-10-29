@@ -250,16 +250,16 @@
           "codelist": "interestType.csv",
           "openCodelist": false
         },
-        "interestLevel": {
+        "directOrIndirect": {
           "title": "Interest level",
-          "description": "Is this interest held directly or indirectly?",
+          "description": "How directly the interest is exercised by the interested party. The value MUST be 'indirect' if intermediary entities or agents are known to exist, and MUST be 'direct' if such intermediaries do not exist. Otherwise the value MUST be 'unknown'.",
           "type": "string",
           "enum": [
             "direct",
             "indirect",
             "unknown"
           ],
-          "codelist": "interestLevel.csv",
+          "codelist": "directOrIndirect.csv",
           "openCodelist": false
         },
         "beneficialOwnershipOrControl": {

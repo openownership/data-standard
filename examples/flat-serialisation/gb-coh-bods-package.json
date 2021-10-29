@@ -76,7 +76,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "startDate": "2016-04-06",
         "share": {
           "exact": 100

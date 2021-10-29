@@ -10,7 +10,7 @@ ChangeLog
 
     Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this v0.2 release onwards, any structural changes, or major definitional changes will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form.
 
-    The schema specifies a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields. 
+    The schema specifies a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields.
 
 [Unreleased]
 ============
@@ -35,6 +35,7 @@ Changed
 - Annotations changes from a ``anyOf`` to a ``oneOf``. This is technically correct and also is needed to improve validation messages.
 - Descriptions of ``statementType``.
 - Do not reference codelists in ``statementType`` - fixes issues caused by the way we use this field to select which subschema to use for validation. This should have no change for anyone using the compiled schema but may affect anyone using the files in ``schema/`` directly.
+- `interestLevel` renamed to `directOrIndirect`.
 
 
 [0.2] - 2019-06-30

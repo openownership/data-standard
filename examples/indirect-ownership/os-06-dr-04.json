@@ -110,7 +110,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "beneficialOwnershipOrControl": false,
         "share": {
           "exact": 40,
@@ -149,7 +149,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "beneficialOwnershipOrControl": false,
         "share": {
           "exact": 20,
@@ -187,7 +187,7 @@
     },
     "interests": [
       {
-        "interestLevel": "unknown",
+        "directOrIndirect": "unknown",
         "beneficialOwnershipOrControl": true
       }
     ],
@@ -219,7 +219,7 @@
     },
     "interests": [
       {
-        "interestLevel": "unknown",
+        "directOrIndirect": "unknown",
         "beneficialOwnershipOrControl": true
       }
     ],
@@ -260,7 +260,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "indirect",
+        "directOrIndirect": "indirect",
         "beneficialOwnershipOrControl": true,
         "share": {
           "exact": 60,
