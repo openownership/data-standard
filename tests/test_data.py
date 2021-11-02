@@ -439,6 +439,7 @@ def test_all_examples_and_data_files_are_used():
     files_used.extend(test_valid_statement_json_parametrize_data)
     files_used.extend(test_valid_package_json_parametrize_data)
     files_used.extend([a[0] for a in test_invalid_statement_json_parametrize_data])
+    files_used.append('schema/meta-schema.json')
     for data in test_invalid_package_json_parametrize_data:
         if data[0]:
             files_used.append(data[0])

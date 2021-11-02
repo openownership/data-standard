@@ -1,4 +1,4 @@
-from bods_validate import absolute_path_to_source_schema_dir
+from bods_validate import absolute_path_to_source_schema_dir, this_dir
 
 from warnings import warn
 from collections import Counter
@@ -7,9 +7,10 @@ from jscc.testing.util import warn_and_assert
 from jscc.testing.filesystem import walk_json_data, walk_csv_data
 from jscc.schema import is_json_schema
 from jscc.testing.checks import validate_items_type, validate_letter_case, validate_schema
-from jscc.testing.util import http_get
 
 import pytest
+import os
+import json
 
 
 def test_empty():
@@ -32,15 +33,9 @@ def test_invalid_json():
     )
 
 
-schemas = [(path, name, data) for path, name, _, data in walk_json_data() if is_json_schema(data)]
-metaschema = http_get("https://standard.open-contracting.org/schema/1__1__4/meta-schema.json").json()
-
-metaschema["properties"]["version"] = {
-    "type": "string",
-}
-metaschema["properties"]["propertyOrder"] = {
-    "type": "integer",
-}
+schemas = [(path, name, data) for path, name, _, data in walk_json_data() if is_json_schema(data) and not path.endswith('tests/schema/meta-schema.json')]
+with open(os.path.join(this_dir, 'schema', 'meta-schema.json')) as fp:
+    metaschema = json.load(fp)
 
 
 @pytest.mark.parametrize("path,name,data", schemas)
