@@ -395,7 +395,8 @@
         "statementPointerTarget",
         "motivation"
       ],
-      "anyOf": [
+      "oneOfEnumSelectorField": "motivation",
+      "oneOf": [
         {
           "properties": {
             "motivation": {

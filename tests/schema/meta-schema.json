@@ -252,6 +252,9 @@
     },
     "propertyOrder": {
       "type": "integer"
+    },
+    "oneOfEnumSelectorField": {
+      "type": "string"
     }
   },
   "dependencies": {
