@@ -386,11 +386,15 @@
         },
         "url": {
           "title": "URL",
-          "description": "A linked resource that annotates, provides context for or enhances this statement. The content of the resource, or the relationship to the statement, MAY be described in the `description` field.",
+          "description": "A linked resource that annotates, provides context for or enhances this statement. The content of the resource, or the relationship to the statement, MAY be described in the `description` field. This field is REQUIRED if the value of `motivation` is 'linking'.",
           "type": "string",
           "format": "uri"
         }
       },
+      "required": [
+        "statementPointerTarget",
+        "motivation"
+      ],
       "anyOf": [
         {
           "properties": {
@@ -416,11 +420,7 @@
                 "transformation"
               ]
             }
-          },
-          "required": [
-            "statementPointerTarget",
-            "motivation"
-          ]
+          }
         }
       ]
     },
