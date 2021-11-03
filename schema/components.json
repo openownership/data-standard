@@ -173,7 +173,7 @@
         },
         "country": {
           "title": "Country",
-          "description": "The ISO 2-Digit county code for this address.",
+          "description": "The 2-letter country code (ISO 3166-1) for this address.",
           "type": "string",
           "minLength": 2,
           "maxLength": 2
@@ -426,7 +426,7 @@
     },
     "Country": {
       "title": "Country",
-      "description": "A country MUST have a name. A country SHOULD have an ISO 2-Digit county code.",
+      "description": "A country MUST have a name. A country SHOULD have a 2-letter country code (ISO 3166-1)",
       "type": "object",
       "properties": {
         "name": {
@@ -436,16 +436,19 @@
         },
         "code": {
           "title": "Country code",
-          "description": "The ISO 2-digit code for the country.",
+          "description": "The 2-letter country code (ISO 3166-1) for this country.",
           "type": "string",
           "maxLength": 2,
           "minLength": 2
         }
-      }
+      },
+      "required": [
+        "name"
+      ]
     },
     "Jurisdiction": {
       "title": "Jurisdiction",
-      "description": "A jurisdiction MUST have a name. A jurisdiction SHOULD have an ISO ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code.",
+      "description": "A jurisdiction MUST have a name. A jurisdiction SHOULD have the 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the jurisdiction.",
       "type": "object",
       "properties": {
         "name": {
@@ -454,13 +457,16 @@
           "type": "string"
         },
         "code": {
-          "title": "Country code",
-          "description": "The ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code of the jurisdiction",
+          "title": "Country or subdivision code",
+          "description": "The 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the jurisdiction.",
           "type": "string",
           "maxLength": 6,
           "minLength": 2
         }
-      }
+      },
+      "required": [
+        "name"
+      ]
     },
     "PepStatusDetails": {
       "title": "PEP Status",
@@ -625,7 +631,9 @@
         "stockExchangeJurisdiction": {
           "type": "string",
           "title": "Stock exchange jurisdiction",
-          "description": "The 2-Digit country code (ISO 3166-2) of the jurisdiction under which the exchange, market or trading platform is regulated."
+          "description": "The 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the jurisdiction under which the exchange, market or trading platform is regulated.",
+          "maxLength": 6,
+          "minLength": 2
         },
         "stockExchangeName": {
           "type": "string",
