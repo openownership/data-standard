@@ -21,6 +21,7 @@ Added
 - ``Country.name`` is now a required field (previously it was defined as "MUST" in the description).
 - ``Jurisdiction.name`` is now a required field (previously it was defined as "MUST" in the description).
 - ``SecuritiesListing.stockExchangeJurisdiction`` has minimum and maximum lengths to match the two lists that values could be from.
+- Annotations have ``oneOfEnumSelectorField`` added to provide hints to validation code which will produce better error messages.
 
 Changed
 -------
@@ -31,6 +32,7 @@ Changed
 - Clarified ``Country.code`` is from the ISO 3166-1 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
 - Clarified ``Jurisdiction.code`` is from the ISO 3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
 - Clarified ``SecuritiesListing.stockExchangeJurisdiction`` is from the ISO 3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
+- Annotations changes from a ``anyOf`` to a ``oneOf``. This is technically correct and also is needed to improve validation messages.
 
 
 [0.2] - 2019-06-30
