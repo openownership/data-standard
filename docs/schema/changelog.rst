@@ -18,12 +18,19 @@ ChangeLog
 Added
 -----
 - Support for describing the traded securities and status of a publicly listed company (PLC): a new ``publicListing`` object has been added to Entity Statements.
+- ``Country.name`` is now a required field (previously it was defined as "MUST" in the description).
+- ``Jurisdiction.name`` is now a required field (previously it was defined as "MUST" in the description).
+- ``SecuritiesListing.stockExchangeJurisdiction`` has minimum and maximum lengths to match the two lists that values could be from.
 
 Changed
 -------
 - The ``interestType`` and ``unspecifiedReason`` codelist codes have been changed from using hyphens to camelCase.
 - ``hasPepStatus`` and ``pepDetails`` are replaced with ``politicalExposure`` object  that contains ``status`` and ``details`` properties.
 - Required fields `statementPointerTarget` and `motivation` are moved from inside the `anyOf` statement to the top level, as they apply to all motivation types.
+- Clarified ``Address.country`` is from the ISO 3166-1 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
+- Clarified ``Country.code`` is from the ISO 3166-1 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
+- Clarified ``Jurisdiction.code`` is from the ISO 3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
+- Clarified ``SecuritiesListing.stockExchangeJurisdiction`` is from the ISO 3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
 
 
 [0.2] - 2019-06-30

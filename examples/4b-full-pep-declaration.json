@@ -37,7 +37,8 @@
       "details": [
         {
           "jurisdiction": {
-            "code": "gb"
+            "code": "gb",
+            "name": "United Kingdom of Great Britain and Northern Ireland (the)"
           },
           "reason": "Member of Parliament",
           "startDate": "2017-10-15",

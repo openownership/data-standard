@@ -6,7 +6,8 @@
   "personType": "knownPerson",
   "nationalities": [
     {
-      "code": "GB"
+      "code": "GB",
+      "name": "United Kingdom of Great Britain and Northern Ireland (the)"
     }
   ],
   "names": [
