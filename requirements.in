@@ -1,11 +1,9 @@
-sphinx==1.7.5
+sphinx>=4.2,<4.3
 sphinx-intl
 transifex-client
 sphinx_rtd_theme
-CommonMark==0.7.5 # Higher versions rename the package which mean we need code changes before we can upgrade, see https://github.com/rtfd/CommonMark-py/blob/master/CHANGELOG.md#080-2018-09-03
--e git+https://github.com/rtfd/recommonmark.git@450909bdcf4c5eafde7c89696006530ba7cc78de#egg=recommonmark
--e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8a3982bf7701420e50d69f2341213ced2b18ca54#egg=sphinxcontrib-jsonschema
--e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@fab0ff0167d32ec243d42f272e0e50766299c078#egg=sphinxcontrib-opendataservices
+sphinxcontrib-opendataservices-jsonschema
+sphinxcontrib-opendataservices
 -e git+https://github.com/openownership/data-standard-sphinx-theme.git@master#egg=standard_theme
 ocds-babel
 urllib3>=1.23

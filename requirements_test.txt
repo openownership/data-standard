@@ -4,17 +4,6 @@
 #
 #    pip-compile requirements_test.in
 #
--e git+https://github.com/OpenDataServices/compile-to-json-schema.git@v0.3.0#egg=compiletojsonschema
-    # via -r requirements_test.in
--e git+https://github.com/rtfd/recommonmark.git@450909bdcf4c5eafde7c89696006530ba7cc78de#egg=recommonmark
-    # via
-    #   -r requirements.in
-    #   sphinxcontrib-jsonschema
-    #   sphinxcontrib-opendataservices
--e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8a3982bf7701420e50d69f2341213ced2b18ca54#egg=sphinxcontrib-jsonschema
-    # via -r requirements.in
--e git+https://github.com/OpenDataServices/sphinxcontrib-opendataservices.git@fab0ff0167d32ec243d42f272e0e50766299c078#egg=sphinxcontrib-opendataservices
-    # via -r requirements.in
 -e git+https://github.com/openownership/data-standard-sphinx-theme.git@master#egg=standard_theme
     # via -r requirements.in
 alabaster==0.7.12
@@ -23,6 +12,7 @@ attrs==20.3.0
     # via
     #   -r requirements_test.in
     #   jsonschema
+    #   markdown-it-py
     #   pytest
 babel==2.9.0
     # via
@@ -36,19 +26,17 @@ click==7.1.2
     # via
     #   pip-tools
     #   sphinx-intl
-commonmark==0.7.5
-    # via
-    #   -r requirements.in
-    #   recommonmark
+compiletojsonschema==0.3.0
+    # via -r requirements_test.in
 docutils==0.16
     # via
-    #   recommonmark
+    #   myst-parser
     #   sphinx
     #   sphinx-rtd-theme
+    #   sphinxcontrib-opendataservices
+    #   sphinxcontrib-opendataservices-jsonschema
 flake8==3.9.1
     # via -r requirements_test.in
-future==0.18.2
-    # via commonmark
 gitdb==4.0.7
     # via gitpython
 gitpython==3.1.15
@@ -67,7 +55,9 @@ importlib-metadata==4.0.1
 iniconfig==1.1.1
     # via pytest
 jinja2==2.11.3
-    # via sphinx
+    # via
+    #   myst-parser
+    #   sphinx
 jscc==0.0.5
     # via -r requirements_test.in
 json-merge-patch==0.2
@@ -76,24 +66,34 @@ json-merge-patch==0.2
     #   jscc
 jsonpointer==2.1
     # via
-    #   sphinxcontrib-jsonschema
     #   sphinxcontrib-opendataservices
+    #   sphinxcontrib-opendataservices-jsonschema
 jsonref==0.2
     # via
     #   compiletojsonschema
     #   jscc
-    #   sphinxcontrib-jsonschema
+    #   sphinxcontrib-opendataservices-jsonschema
 jsonschema==3.2.0
     # via
     #   -r requirements_test.in
     #   compiletojsonschema
     #   jscc
+markdown-it-py==1.1.0
+    # via
+    #   mdit-py-plugins
+    #   myst-parser
 markupsafe==1.1.1
     # via jinja2
 mccabe==0.6.1
     # via
     #   -r requirements_test.in
     #   flake8
+mdit-py-plugins==0.2.8
+    # via myst-parser
+myst-parser==0.15.2
+    # via
+    #   sphinxcontrib-opendataservices
+    #   sphinxcontrib-opendataservices-jsonschema
 ocds-babel==0.3.2
     # via -r requirements.in
 packaging==20.9
@@ -134,6 +134,8 @@ python-slugify==4.0.1
     # via transifex-client
 pytz==2021.1
     # via babel
+pyyaml==6.0
+    # via myst-parser
 requests==2.25.1
     # via
     #   -r requirements.in
@@ -148,7 +150,6 @@ six==1.15.0
     # via
     #   -r requirements_test.in
     #   jsonschema
-    #   sphinx
     #   transifex-client
 smmap==4.0.0
     # via gitdb
@@ -160,18 +161,31 @@ sphinx-intl==2.0.1
     #   standard-theme
 sphinx-rtd-theme==0.5.2
     # via -r requirements.in
-sphinx==1.7.5
+sphinx==4.2.0
     # via
     #   -r requirements.in
-    #   recommonmark
+    #   myst-parser
     #   sphinx-intl
     #   sphinx-rtd-theme
-    #   sphinxcontrib-jsonschema
     #   sphinxcontrib-opendataservices
     #   standard-theme
-sphinxcontrib-serializinghtml==1.1.4
-    # via sphinxcontrib-websupport
-sphinxcontrib-websupport==1.2.4
+sphinxcontrib-applehelp==1.0.2
+    # via sphinx
+sphinxcontrib-devhelp==1.0.2
+    # via sphinx
+sphinxcontrib-htmlhelp==2.0.0
+    # via sphinx
+sphinxcontrib-jsmath==1.0.1
+    # via sphinx
+sphinxcontrib-opendataservices-jsonschema==0.4.0
+    # via
+    #   -r requirements.in
+    #   sphinxcontrib-opendataservices
+sphinxcontrib-opendataservices==0.2.0
+    # via -r requirements.in
+sphinxcontrib-qthelp==1.0.3
+    # via sphinx
+sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 strict-rfc3339==0.7
     # via
@@ -189,6 +203,7 @@ typing-extensions==3.7.4.3
     # via
     #   gitpython
     #   importlib-metadata
+    #   markdown-it-py
 urllib3==1.26.4
     # via
     #   -r requirements.in

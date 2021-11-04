@@ -34,6 +34,7 @@ Address
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Address
    :externallinks: {"type":{"url":"#addresstype","text":"Codelists"}}
+   :allowexternalrefs:
 
 
 .. note::
@@ -53,6 +54,7 @@ Agent
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Agent
    :collapse:
+   :allowexternalrefs:
 
 .. _schema-annotation:
 
@@ -64,6 +66,7 @@ The ``annotations`` property of statements currently allows an array of these si
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Annotation
    :externallinks: {"motivation":{"url":"#annotationmotivation","text":"Codelists"}}
+   :allowexternalrefs:
 
 .. _schema-country:
 
@@ -75,6 +78,7 @@ Country
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Country
+   :allowexternalrefs:
 
 
 .. _schema-entity-statement:
@@ -88,6 +92,7 @@ EntityStatement
 .. jsonschema:: ../_build_schema/entity-statement.json
    :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations,publicationDetails
    :externallinks: {"entityType":{"url":"#entitytype","text":"Codelists"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
+   :allowexternalrefs:
 
 .. _schema-id:
 
@@ -111,6 +116,7 @@ The Identifier object is used to connect a statement to the real-world person or
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Identifier
+   :allowexternalrefs:
 
 .. _schema-interest:
 
@@ -124,6 +130,7 @@ Interest
    :pointer: /definitions/Interest
    :collapse: share,annotations
    :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"Codelists"}}
+   :allowexternalrefs:
 
 .. _schema-interested-party:
 
@@ -137,6 +144,7 @@ InterestedParty
    :pointer: /properties/interestedParty
    :collapse:
    :externallinks: {"unspecified/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
+   :allowexternalrefs:
 
 .. _schema-jurisdiction:
 
@@ -148,6 +156,7 @@ Jurisdiction
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Jurisdiction
+   :allowexternalrefs:
 
 .. _schema-name:
 
@@ -160,6 +169,7 @@ Name
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Name
    :externallinks: {"type":{"url":"#nametype","text":"Codelists"}}
+   :allowexternalrefs:
 
 .. _schema-ownership-or-control-statement:
 
@@ -172,6 +182,7 @@ OwnershipOrControlStatement
 
 .. jsonschema:: ../_build_schema/ownership-or-control-statement.json
     :collapse: interests,source,annotations,interestedParty,publicationDetails
+    :allowexternalrefs:
 
 .. _schema-pep-status:
 
@@ -185,6 +196,7 @@ PepStatusDetails
    :pointer: /definitions/PepStatusDetails
    :collapse: jurisdiction,source
    :externallinks: {"source/type":{"url":"#sourcetype","text":"Codelists"}}
+   :allowexternalrefs:
 
 .. _schema-person-statement:
 
@@ -197,6 +209,7 @@ PersonStatement
 .. jsonschema:: ../_build_schema/person-statement.json
    :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails,publicationDetails,taxResidencies
    :externallinks: {"unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
+   :allowexternalrefs:
 
 
 .. _schema-publicationdetails:
@@ -210,6 +223,7 @@ PublicationDetails
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/PublicationDetails
    :collapse: publisher
+   :allowexternalrefs:
 
 .. _schema-publisher:
 
@@ -221,6 +235,7 @@ Publisher
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Publisher
+   :allowexternalrefs:
 
 
 
@@ -245,6 +260,7 @@ Share
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Interest/properties/share
+   :allowexternalrefs:
 
 
 .. _schema-source:
@@ -259,6 +275,7 @@ Source
    :pointer: /definitions/Source
    :collapse: assertedBy
    :externallinks: {"type":{"url":"#sourcetype","text":"Codelists"}}
+   :allowexternalrefs:
 
 
 See :any:`Sources and annotations <provenance>` for a discussion of provenance modelling.
