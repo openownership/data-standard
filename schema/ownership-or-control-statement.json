@@ -11,7 +11,7 @@
     },
     "statementType": {
       "title": "Statement type",
-      "description": "This should always be set to `ownershipOrControlStatement`.",
+      "description": "This MUST be 'ownershipOrControlStatement'.",
       "type": "string",
       "enum": [
         "ownershipOrControlStatement"

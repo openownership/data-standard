@@ -12,7 +12,7 @@
     },
     "statementType": {
       "title": "Statement type",
-      "description": " This should always be 'entityStatement.",
+      "description": "This MUST be 'entityStatement'.",
       "type": "string",
       "enum": [
         "entityStatement"
