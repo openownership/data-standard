@@ -12,7 +12,7 @@
     },
     "statementType": {
       "title": "Statement type",
-      "description": "This should always be 'personStatement.",
+      "description": "This MUST be 'personStatement'.",
       "type": "string",
       "enum": [
         "personStatement"

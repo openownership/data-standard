@@ -33,6 +33,7 @@ Changed
 - Clarified ``Jurisdiction.code`` is from the ISO 3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
 - Clarified ``SecuritiesListing.stockExchangeJurisdiction`` is from the ISO 3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
 - Annotations changes from a ``anyOf`` to a ``oneOf``. This is technically correct and also is needed to improve validation messages.
+- Descriptions of ``statementType``.
 
 
 [0.2] - 2019-06-30
