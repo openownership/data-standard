@@ -87,6 +87,12 @@ def test_codelists_used():
     unused_codelists = [codelist for codelist in codelist_files if codelist not in codelists]
     missing_codelists = [codelist for codelist in codelists if codelist not in codelist_files]
 
+    # because of how we use subschemas and how we use the statementType field to select which subschema to use,
+    # we can't reference the statementType.csv directly from the schema. But it is used in building the docs.
+    # So the file should be on disk, but we will falsely see it as unused in this test.
+    # See https://github.com/openownership/data-standard/issues/375
+    unused_codelists.remove('statementType.csv')
+
     assert len(unused_codelists) == 0, "Codelist files found not in schema: {}".format(unused_codelists)
     assert len(missing_codelists) == 0, "Codelists in schema missing CSVs: {}".format(missing_codelists)
 
