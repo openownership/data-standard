@@ -20,8 +20,6 @@
 # sys.path.insert(0, os.path.abspath('.'))
 import os
 from shutil import copyfile, copy2
-from recommonmark.transform import AutoStructify
-from recommonmark.parser import CommonMarkParser
 
 import json
 import subprocess
@@ -59,10 +57,9 @@ templates_path = ['_templates']
 #
 # source_suffix = ['.rst', '.md']
 source_parsers = {
-    '.md': CommonMarkParser,
     }
 
-source_suffix = ['.rst', '.md']
+source_suffix = ['.rst']
 
 # The encoding of source files.
 #
@@ -118,6 +115,10 @@ html_theme_path = [oods.sphinxtheme.get_html_theme_path()]
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static', '_build_schema']
+
+html_css_files = [
+    "theme_overrides.css"
+]
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'BODS'
@@ -288,12 +289,6 @@ def compile_schema_and_codelists():
 
 def setup(app):
     app.add_directive('json-value', JSONValue)
-    app.add_config_value('recommonmark_config', {
-        #'url_resolver': lambda url: github_doc_root + url,
-        'auto_toc_tree_section': 'Contents',
-        'enable_eval_rst': True
-        }, True)
-    app.add_transform(AutoStructify)
     app.connect('build-finished', copy_legacy_redirects)
     language = app.config.overrides.get('language', 'en')
     compile_schema_and_codelists()

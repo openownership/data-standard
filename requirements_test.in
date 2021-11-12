@@ -18,4 +18,5 @@ jscc
 # See table at bottom of https://python-jsonschema.readthedocs.io/en/latest/validate/#validating-formats
 rfc3987
 strict-rfc3339
--e git+https://github.com/OpenDataServices/compile-to-json-schema.git@v0.3.0#egg=compiletojsonschema
+compiletojsonschema==0.3.0
+

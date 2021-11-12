@@ -1,31 +1,10 @@
-/* override table width restrictions */
-.wy-table-responsive table td, .wy-table-responsive table th {
-    white-space: normal !important;
+
+/** A newer version of docutils aligns center by default. We want the old behavior of left align. **/
+body .align-default {
+    text-align: left !important;
 }
 
-.wy-table-responsive {
-    margin-bottom: 24px;
-    max-width: 100%;
-    overflow: visible !important;
-}
-
-
-.wy-table-responsive th:nth-of-type(1) {
-    width:10%;
-}
-
-.wy-table-responsive th:nth-of-type(2) {
-    width:10%;
-}
-
-.wy-table-responsive th:nth-of-type(3) {
-    width:60%;
-}
-
-.wy-table-responsive th:nth-of-type(4) {
-    width:10%;
-}
-
-.wy-table-responsive th:nth-of-type(5) {
-    width:10%;
+body table.align-default {
+    margin-left: 0 !important;
+    margin-right: auto !important;
 }
