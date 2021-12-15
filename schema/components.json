@@ -252,7 +252,7 @@
         },
         "directOrIndirect": {
           "title": "Interest level",
-          "description": "How directly the interest is exercised by the interested party. The value MUST be 'indirect' if intermediary entities or agents are known to exist, and MUST be 'direct' if such intermediaries do not exist. Otherwise the value MUST be 'unknown'.",
+          "description": "How directly the interest is exercised by the interested party. The value MUST be 'indirect' if intermediate entities or agents are known to exist, and MUST be 'direct' if such intermediaries are known not to exist. Otherwise the value MUST be 'unknown'.",
           "type": "string",
           "enum": [
             "direct",
