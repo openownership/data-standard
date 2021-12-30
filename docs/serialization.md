@@ -1,13 +1,6 @@
 Serialization
 =============
 
-
-```eval_rst
-
-  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
-```
-
-
 The beta specification does not contain detailed information on serialization. 
 
 However, the specification, defined by a JSON Schema, is designed to support:
