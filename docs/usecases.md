@@ -1,13 +1,6 @@
 Use cases
 =========
 
-
-```eval_rst
-
-  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
-```
-
-
 The Beneficial Ownership Data Standard beta has been designed with reference to the requirements of eight use-cases:
 
 * Data supply

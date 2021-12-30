@@ -1,13 +1,6 @@
 Overview
 ========
 
-
-```eval_rst
-
-  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
-```
-
-
 The beneficial ownership data standard will be made up of two parts:
 
 * A data schema that sets out how beneficial ownership data MUST or SHOULD be formatted for interoperability, and that describes the fields of data that systems MUST or SHOULD provide. 

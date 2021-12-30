@@ -1,13 +1,6 @@
 Governance 
 ==========
 
-
-```eval_rst
-
-  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
-```
-
-
 ## Get involved
 
 All changes to the standard draft, documentation and specification take place via GitHub at [https://github.com/openownership/data-standard/](https://github.com/openownership/data-standard/).
