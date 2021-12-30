@@ -1,13 +1,6 @@
 Beneficial Ownership Data Standard (alpha)
 ==========================================
 
-
-```eval_rst
-
-  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
-```
-
-
 This is a stub documentation site for the alpha version of the Beneficial Ownership Data Standard. 
 
 ## About
