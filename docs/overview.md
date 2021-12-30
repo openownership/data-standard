@@ -1,13 +1,6 @@
 Overview (stub)
 ========
 
-
-```eval_rst
-
-  .. warning:: This is an old version of the data standard. `See latest version <https://standard.openownership.org/en/latest/>`_.
-```
-
-
 The standard can be used to guide:
 
 * Data collection
