@@ -176,6 +176,8 @@ Name
 OwnershipOrControlStatement
 ---------------------------
 
+If a person is a beneficial owner of an entity - whether directly or indirectly - and the person or entity is required to declare this beneficial ownership, there MUST be an Ownership-or-control Statement connecting the two which represents the beneficial ownership relationship. See :ref:`representing-bo` for detailed requirements.
+
 .. json-value:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /description
 
