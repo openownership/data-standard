@@ -43,7 +43,7 @@ If a person is a beneficial owner of an entity, E, whether directly or indirectl
    d. the ``interests`` which make the person meet the criteria for their being declared a beneficial owner MUST be included in this primary Ownership-or-Control Statement if known; and
    e. the ``interests`` in (d) MUST have ``beneficialOwnershipOrControl`` set to 'true'.
 
-2. If beneficial ownership is known to be exercised indirectly, via intermediary entities or arrangements then the ``interestLevel`` MUST be ‘indirect’. If it is known to be exercised directly then ``interestLevel`` MUST be ‘direct’. Otherwise ``interestLevel`` MUST be ‘unknown’.
+2. If beneficial ownership is known to be exercised indirectly, via intermediary entities or arrangements then the ``directOrIndirect`` MUST be ‘indirect’. If it is known to be exercised directly then ``directOrIndirect`` MUST be ‘direct’. Otherwise ``directOrIndirect`` MUST be ‘unknown’.
 
 Representing intermediaries
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
