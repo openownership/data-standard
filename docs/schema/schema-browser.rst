@@ -10,7 +10,7 @@ Schema browser
     **MUST** and **SHOULD** are used in the schema to denote required and recommended elements of the Standard, as defined in `RFC2119 <https://tools.ietf.org/html/rfc2119>`_.
 
 
-The draft Beneficial Ownership Data Standard schema is defined using `JSON Schema 0.4 <http://json-schema.org/>`_.
+The draft Beneficial Ownership Data Standard schema is defined using `JSON Schema 0.4 <https://json-schema.org/>`_.
 
 The structure of each of the schema's top level components can be explored using the viewers below. (Click on sub-components to reveal their properties.)
 

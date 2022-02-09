@@ -32,26 +32,29 @@
         "fullName": "Michael Hubbard"
       }
     ],
-    "hasPepStatus": true,
-    "pepStatusDetails": [
-      {
-        "jurisdiction": {
-          "code": "gb"
-        },
-        "reason": "Member of Parliament",
-        "startDate": "2017-10-15",
-        "source": {
-          "type": [
-            "selfDeclaration"
-          ],
-          "assertedBy": [
-            {
-              "name": "Michael Hubbard"
-            }
-          ]
+    "politicalExposure": {
+      "status": "isPep",
+      "details": [
+        {
+          "jurisdiction": {
+            "code": "gb",
+            "name": "United Kingdom of Great Britain and Northern Ireland (the)"
+          },
+          "reason": "Member of Parliament",
+          "startDate": "2017-10-15",
+          "source": {
+            "type": [
+              "selfDeclaration"
+            ],
+            "assertedBy": [
+              {
+                "name": "Michael Hubbard"
+              }
+            ]
+          }
         }
-      }
-    ],
+      ]
+    },
     "publicationDetails": {
       "publicationDate": "2019-06-07",
       "bodsVersion": "0.2",
@@ -75,7 +78,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "share": {
           "minimum": 25,
           "maximum": 50
@@ -84,8 +87,8 @@
         "beneficialOwnershipOrControl": true
       },
       {
-        "type": "voting-rights",
-        "interestLevel": "direct",
+        "type": "votingRights",
+        "directOrIndirect": "direct",
         "share": {
           "minimum": 25,
           "maximum": 50

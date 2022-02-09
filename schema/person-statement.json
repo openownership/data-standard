@@ -12,14 +12,12 @@
     },
     "statementType": {
       "title": "Statement type",
-      "description": "This should always be 'personStatement.",
+      "description": "This MUST be 'personStatement'.",
       "type": "string",
       "enum": [
         "personStatement"
       ],
-      "propertyOrder": 2,
-      "openCodelist": false,
-      "codelist": "statementType.csv"
+      "propertyOrder": 2
     },
     "statementDate": {
       "$ref": "components.json#/definitions/StatementDate",
@@ -53,13 +51,13 @@
           "description": "The reason that an interested party cannot be specified. From the unspecifiedReason codelist.",
           "type": "string",
           "enum": [
-            "no-beneficial-owners",
-            "subject-unable-to-confirm-or-identify-beneficial-owner",
-            "interested-party-has-not-provided-information",
-            "subject-exempt-from-disclosure",
-            "interested-party-exempt-from-disclosure",
+            "noBeneficialOwners",
+            "subjectUnableToConfirmOrIdentifyBeneficialOwner",
+            "interestedPartyHasNotProvidedInformation",
+            "subjectExemptFromDisclosure",
+            "interestedPartyExemptFromDisclosure",
             "unknown",
-            "information-unknown-to-publisher"
+            "informationUnknownToPublisher"
           ],
           "codelist": "unspecifiedReason.csv",
           "openCodelist": false
@@ -144,21 +142,6 @@
       },
       "propertyOrder": 60
     },
-    "hasPepStatus": {
-      "title": "Politically Exposed Person Status",
-      "description": "Is the person described in this statement a politically exposed person? This field should not be used if PEP declarations are not expected as part of this disclosure. If a PEP declaration is expected but missing this field should not be used but the reason for the missing data declared in the pepStatusDetails field.",
-      "type": "boolean",
-      "propertyOrder": 79
-    },
-    "pepStatusDetails": {
-      "title": "Politically Exposed Person Status Details",
-      "description": "One or more descriptions of this person's Politically-Exposed Person (PEP) status.",
-      "type": "array",
-      "items": {
-        "$ref": "components.json#/definitions/PepStatusDetails"
-      },
-      "propertyOrder": 80
-    },
     "publicationDetails": {
       "title": "Publication details",
       "description": "Information concerning the original publication of this statement.",
@@ -182,6 +165,33 @@
     },
     "replacesStatements": {
       "$ref": "components.json#/definitions/ReplacesStatements"
+    },
+    "politicalExposure": {
+      "type": "object",
+      "title": "Political Exposure",
+      "description": "Information about whether, and how, the person described by this statement is politically exposed. Use this property only if politically exposed person (PEP) declarations are expected as part of beneficial ownership declarations.",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "This value is 'isPep' or 'isNotPep' according to whether the person described by this statement has the status of politically exposed person (PEP). An 'unknown' value means a PEP status declaration is expected but missing; the reason for the missing data SHOULD be supplied in the details array.",
+          "enum": [
+            "isPep",
+            "isNotPep",
+            "unknown"
+          ]
+        },
+        "details": {
+          "type": "array",
+          "title": "Politically Exposed Person Details",
+          "description": "One or more descriptions of this person's Politically Exposed Person (PEP) status.",
+          "items": {
+            "$ref": "components.json#/definitions/PepStatusDetails"
+          }
+        }
+      }
     }
   },
   "required": [

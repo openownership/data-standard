@@ -39,6 +39,17 @@ def build_schemas_for_testing():
             )
             with open(os.path.join(absolute_path_to_schema_dir, source_file), "w") as fp:
                 created_json = json.loads(ctjs.get_as_string())
+                # The items in the annotations objects must not have additionalProperties set
+                # They factor out common elements of the oneOf bits as allowed in
+                #   https://json-schema.org/understanding-json-schema/reference/combining.html#factoring-schemas
+                # But additionalProperties is applied to the oneOf schema only, not the full item and that causes issues
+                if source_file.endswith('entity-statement.json') or source_file.endswith('ownership-or-control-statement.json') or source_file.endswith('person-statement.json'):
+                    for j in range(0, 2):
+                        created_json['properties']['annotations']['items']['oneOf'][j]['additionalProperties'] = True
+                if source_file.endswith('bods-package.json'):
+                    for i in range(0, 3):
+                        for j in range(0, 2):
+                            created_json['items']['oneOf'][i]['properties']['annotations']['items']['oneOf'][j]['additionalProperties'] = True
                 # write with correct indentation
                 fp.write(json.dumps(created_json, ensure_ascii=False, indent=2, separators=(',', ': ')) + '\n')
 

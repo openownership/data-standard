@@ -1,13 +1,13 @@
 Beneficial Ownership Data Standard (BODS)
 ========================================
 
-[![Documentation Status](https://readthedocs.org/projects/beneficial-ownership-data-standard/badge/?version=latest)](http://standard.openownership.org/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/beneficial-ownership-data-standard/badge/?version=latest)](https://standard.openownership.org/en/latest/?badge=latest)
 
 The Beneficial Ownership Data Standard provides a specification for modelling and publishing information on the beneficial ownership and control of companies. 
 
-It has been created by [OpenOwnership](http://www.openownership.org), and is provided under an open license for re-use. 
+It has been created by [OpenOwnership](https://www.openownership.org), and is provided under an open license for re-use. 
 
-You can find the latest version of the schema and documentation for review at [http://standard.openownership.org/](http://standard.openownership.org/)
+You can find the latest version of the schema and documentation for review at [https://standard.openownership.org/](https://standard.openownership.org/)
 
 We welcome feedback on the standard through this project's issue tracker.
 

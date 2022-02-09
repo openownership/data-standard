@@ -57,7 +57,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "share": {
           "minimum": 75,
           "maximum": 100

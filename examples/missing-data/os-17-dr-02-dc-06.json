@@ -44,7 +44,7 @@
     },
     "interestedParty": {
       "unspecified": {
-        "reason": "subject-exempt-from-disclosure",
+        "reason": "subjectExemptFromDisclosure",
         "description": "Exempt from disclosure as a company listed on a recognised stock exchange"
       }
     },

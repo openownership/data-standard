@@ -31,15 +31,18 @@
     "personType": "knownPerson",
     "nationalities": [
       {
-        "code": "GB"
+        "code": "GB",
+        "name": "United Kingdom of Great Britain and Northern Ireland (the)"
       }
     ],
     "taxResidencies": [
       {
-        "code": "GB"
+        "code": "GB",
+        "name": "United Kingdom of Great Britain and Northern Ireland (the)"
       },
       {
-        "code": "UA"
+        "code": "UA",
+        "name": "Ukraine"
       }
     ],
     "names": [
@@ -83,7 +86,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "beneficialOwnershipOrControl": true,
         "startDate": "2016-04-06",
         "share": {

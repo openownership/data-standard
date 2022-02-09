@@ -30,7 +30,9 @@
         "fullName": "Michael Hubbard"
       }
     ],
-    "hasPepStatus": true,
+    "politicalExposure": {
+      "status": "isPep"
+    },
     "publicationDetails": {
       "publicationDate": "2019-06-07",
       "bodsVersion": "0.2",
@@ -53,7 +55,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "share": {
           "minimum": 25,
           "maximum": 50
@@ -62,8 +64,8 @@
         "beneficialOwnershipOrControl": true
       },
       {
-        "type": "voting-rights",
-        "interestLevel": "direct",
+        "type": "votingRights",
+        "directOrIndirect": "direct",
         "share": {
           "minimum": 25,
           "maximum": 50

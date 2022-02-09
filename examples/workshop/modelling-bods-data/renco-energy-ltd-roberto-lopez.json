@@ -8,15 +8,15 @@
   "interests": [
     {
       "type": "shareholding",
-      "interestLevel": "direct",
+      "directOrIndirect": "direct",
       "share": {
         "exact": 25
       },
       "startDate": "2016-07-07"
     },
     {
-      "type": "voting-rights",
-      "interestLevel": "direct",
+      "type": "votingRights",
+      "directOrIndirect": "direct",
       "share": {
         "exact": 25
       },

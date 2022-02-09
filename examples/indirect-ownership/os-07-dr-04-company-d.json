@@ -30,7 +30,7 @@
     },
     "interestedParty": {
       "unspecified": {
-        "reason": "no-beneficial-owners"
+        "reason": "noBeneficialOwners"
       }
     },
     "source": {

@@ -10,7 +10,32 @@ ChangeLog
 
     Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this v0.2 release onwards, any structural changes, or major definitional changes will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form.
 
-    The schema specifies a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields. 
+    The schema specifies a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields.
+
+[Unreleased]
+============
+
+Added
+-----
+- Support for describing the traded securities and status of a publicly listed company (PLC): a new ``publicListing`` object has been added to Entity Statements.
+- ``Country.name`` is now a required field (previously it was defined as "MUST" in the description).
+- ``Jurisdiction.name`` is now a required field (previously it was defined as "MUST" in the description).
+- ``SecuritiesListing.stockExchangeJurisdiction`` has minimum and maximum lengths to match the two lists that values could be from.
+- Annotations have ``oneOfEnumSelectorField`` added to provide hints to validation code which will produce better error messages.
+
+Changed
+-------
+- The ``interestType`` and ``unspecifiedReason`` codelist codes have been changed from using hyphens to camelCase.
+- ``hasPepStatus`` and ``pepDetails`` are replaced with ``politicalExposure`` object  that contains ``status`` and ``details`` properties.
+- Required fields `statementPointerTarget` and `motivation` are moved from inside the `anyOf` statement to the top level, as they apply to all motivation types.
+- Clarified ``Address.country`` is from the ISO 3166-1 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
+- Clarified ``Country.code`` is from the ISO 3166-1 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
+- Clarified ``Jurisdiction.code`` is from the ISO 3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
+- Clarified ``SecuritiesListing.stockExchangeJurisdiction`` is from the ISO 3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
+- Annotations changes from a ``anyOf`` to a ``oneOf``. This is technically correct and also is needed to improve validation messages.
+- Descriptions of ``statementType``.
+- Do not reference codelists in ``statementType`` - fixes issues caused by the way we use this field to select which subschema to use for validation. This should have no change for anyone using the compiled schema but may affect anyone using the files in ``schema/`` directly.
+- `interestLevel` renamed to `directOrIndirect`.
 
 
 [0.2] - 2019-06-30

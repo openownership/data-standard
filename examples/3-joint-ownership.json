@@ -22,7 +22,8 @@
       }
     ],
     "incorporatedInJurisdiction": {
-      "code": "GB"
+      "code": "GB",
+      "name": "United Kingdom of Great Britain and Northern Ireland (the)"
     },
     "publicationDetails": {
       "publicationDate": "2018-11-18",
@@ -61,7 +62,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "beneficialOwnershipOrControl": false,
         "startDate": "2018-01-01",
         "share": {
@@ -129,7 +130,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "beneficialOwnershipOrControl": true,
         "startDate": "2018-01-01",
         "share": {
@@ -159,7 +160,7 @@
     "interests": [
       {
         "type": "shareholding",
-        "interestLevel": "direct",
+        "directOrIndirect": "direct",
         "beneficialOwnershipOrControl": true,
         "startDate": "2018-01-01",
         "share": {

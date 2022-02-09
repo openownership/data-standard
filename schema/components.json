@@ -100,7 +100,7 @@
         },
         "scheme": {
           "title": "Scheme",
-          "description": "For entity statements, the scheme should be a entry from the [org-id.guide](http://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
+          "description": "For entity statements, the scheme should be a entry from the org-id.guide (https://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
           "type": "string"
         },
         "schemeName": {
@@ -110,7 +110,7 @@
         },
         "uri": {
           "title": "URI",
-          "description": "Where this identifier has a [canonical URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be included",
+          "description": "Where this identifier has a canonical URI (https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be included",
           "type": "string",
           "format": "uri"
         }
@@ -173,7 +173,7 @@
         },
         "country": {
           "title": "Country",
-          "description": "The ISO 2-Digit county code for this address.",
+          "description": "The 2-letter country code (ISO 3166-1) for this address.",
           "type": "string",
           "minLength": 2,
           "maxLength": 2
@@ -182,7 +182,7 @@
     },
     "Name": {
       "title": "Name",
-      "description": "An name by which this individual is known. Names should be provided in fullName, and may optionally be broken down in the familyName, givenName and patronymicName fields, based on the [EC ISA Core Person Vocabulary](https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
+      "description": "An name by which this individual is known. Names should be provided in `fullName`, and may optionally be broken down in the `familyName`, `givenName` and `patronymicName` fields, based on the EC ISA Core Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
       "type": "object",
       "properties": {
         "type": {
@@ -212,12 +212,12 @@
         },
         "givenName": {
           "title": "Given names",
-          "description": "A given name, or multiple given names, are the denominator(s) that identify an individual within a family. These are given to a person by his or her parents at birth or may be legally recognised as 'given names' through a formal process. All given names are ordered in one field so that, for example, the given name for Johann Sebastian Bach is 'Johann Sebastian.'",
+          "description": "A given name, or multiple given names, are the denominator(s) that identify an individual within a family. These are given to a person by his or her parents at birth or may be legally recognised as 'given names' through a formal process. All given names are ordered in one field so that, for example, the given name for Johann Sebastian Bach is 'Johann Sebastian'.",
           "type": "string"
         },
         "patronymicName": {
           "title": "Patronymic Name",
-          "description": "Patronymic names are important in some countries. Iceland does not have a concept of family name in the way that many other European countries do, for example. In Bulgaria and Russia, patronymic names are in every day usage, for example, the 'Sergeyevich' in 'Mikhail Sergeyevich Gorbachev'",
+          "description": "Patronymic names are important in some countries. Iceland does not have a concept of family name in the way that many other European countries do, for example. In Bulgaria and Russia, patronymic names are in every day usage, for example, the 'Sergeyevich' in 'Mikhail Sergeyevich Gorbachev'.",
           "type": "string"
         }
       }
@@ -233,33 +233,33 @@
           "type": "string",
           "enum": [
             "shareholding",
-            "voting-rights",
-            "appointment-of-board",
-            "other-influence-or-control",
-            "senior-managing-official",
-            "settlor-of-trust",
-            "trustee-of-trust",
-            "protector-of-trust",
-            "beneficiary-of-trust",
-            "other-influence-or-control-of-trust",
-            "rights-to-surplus-assets-on-dissolution",
-            "rights-to-profit-or-income",
-            "rights-granted-by-contract",
-            "conditional-rights-granted-by-contract"
+            "votingRights",
+            "appointmentOfBoard",
+            "otherInfluenceOrControl",
+            "seniorManagingOfficial",
+            "settlorOfTrust",
+            "trusteeOfTrust",
+            "protectorOfTrust",
+            "beneficiaryOfTrust",
+            "otherInfluenceOrControlOfTrust",
+            "rightsToSurplusAssetsOnDissolution",
+            "rightsToProfitOrIncome",
+            "rightsGrantedByContract",
+            "conditionalRightsGrantedByContract"
           ],
           "codelist": "interestType.csv",
           "openCodelist": false
         },
-        "interestLevel": {
+        "directOrIndirect": {
           "title": "Interest level",
-          "description": "Is this interest held directly or indirectly?",
+          "description": "How directly the interest is exercised by the interested party. The value MUST be 'indirect' if intermediate entities or agents are known to exist, and MUST be 'direct' if such intermediaries are known not to exist. Otherwise the value MUST be 'unknown'.",
           "type": "string",
           "enum": [
             "direct",
             "indirect",
             "unknown"
           ],
-          "codelist": "interestLevel.csv",
+          "codelist": "directOrIndirect.csv",
           "openCodelist": false
         },
         "beneficialOwnershipOrControl": {
@@ -274,7 +274,7 @@
         },
         "share": {
           "title": "Percentage share",
-          "description": "Where an exact percentage is available, this should be given, and maximum and minimum values set to the same as the exact percentage. Otherwise, maximum and minimum can be used to record the range into which the share of this kind of interest falls. By default the minimum is inclusive and the maximum exclusive (minimum-value ≤ share < maximum-value ). If you wish to change these defaults, use the exclusiveMinimum and exclusiveMaximum properties.",
+          "description": "Where an exact percentage is available, this should be given, and `maximum` and `minimum` values set to the same as the exact percentage. Otherwise, `maximum` and `minimum` can be used to record the range into which the share of this kind of interest falls. By default the `minimum` is inclusive and the `maximum` exclusive (minimum-value ≤ share < maximum-value). If you wish to change these defaults, use the `exclusiveMinimum` and `exclusiveMaximum` properties.",
           "type": "object",
           "properties": {
             "exact": {
@@ -300,13 +300,13 @@
             },
             "exclusiveMinimum": {
               "title": "Exclusive minimum",
-              "description": "If exclusiveMinimum is true, then the share is at least greater than the minimum value given. E.g. if minimum is 25, the share is at least 25.1, and not simply 25.",
+              "description": "If `exclusiveMinimum` is true, then the share is at least greater than the `minimum` value given. E.g. if `minimum` is '25', the share is at least 25.1, and not simply 25.",
               "type": "boolean",
               "default": false
             },
             "exclusiveMaximum": {
               "title": "Exclusive maximum",
-              "description": "If exclusiveMaximum is true, then the share is at least less than the maximum value given. E.g. if maximum is 50, the share is less than 49.999, and not simply 50.",
+              "description": "If `exclusiveMaximum` is true, then the share is at least less than the `maximum` value given. E.g. if `maximum` is '50', the share is less than 49.999, and not simply 50.",
               "type": "boolean",
               "default": true
             }
@@ -333,7 +333,7 @@
       "properties": {
         "statementPointerTarget": {
           "title": "Statement Fragment Pointer",
-          "description": "An [RFC6901 JSON Pointer](https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this annotation applies to, starting from the root of the statement. A value of '/' indicates that the annotation applies to the whole statement.",
+          "description": "An RFC6901 JSON Pointer (https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this annotation applies to, starting from the root of the statement. A value of '/' indicates that the annotation applies to the whole statement.",
           "type": "string"
         },
         "creationDate": {
@@ -386,12 +386,17 @@
         },
         "url": {
           "title": "URL",
-          "description": "A linked resource that annotates, provides context for or enhances this statement. The content of the resource, or the relationship to the statement, MAY be described in the description field.",
+          "description": "A linked resource that annotates, provides context for or enhances this statement. The content of the resource, or the relationship to the statement, MAY be described in the `description` field. This field is REQUIRED if the value of `motivation` is 'linking'.",
           "type": "string",
           "format": "uri"
         }
       },
-      "anyOf": [
+      "required": [
+        "statementPointerTarget",
+        "motivation"
+      ],
+      "oneOfEnumSelectorField": "motivation",
+      "oneOf": [
         {
           "properties": {
             "motivation": {
@@ -416,17 +421,13 @@
                 "transformation"
               ]
             }
-          },
-          "required": [
-            "statementPointerTarget",
-            "motivation"
-          ]
+          }
         }
       ]
     },
     "Country": {
       "title": "Country",
-      "description": "A country MUST have a name. A country SHOULD have an ISO 2-Digit county code.",
+      "description": "A country MUST have a name. A country SHOULD have a 2-letter country code (ISO 3166-1)",
       "type": "object",
       "properties": {
         "name": {
@@ -436,16 +437,19 @@
         },
         "code": {
           "title": "Country code",
-          "description": "The ISO 2-digit code for the country.",
+          "description": "The 2-letter country code (ISO 3166-1) for this country.",
           "type": "string",
           "maxLength": 2,
           "minLength": 2
         }
-      }
+      },
+      "required": [
+        "name"
+      ]
     },
     "Jurisdiction": {
       "title": "Jurisdiction",
-      "description": "A jurisdiction MUST have a name. A jurisdiction SHOULD have an ISO ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code.",
+      "description": "A jurisdiction MUST have a name. A jurisdiction SHOULD have the 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the jurisdiction.",
       "type": "object",
       "properties": {
         "name": {
@@ -454,13 +458,16 @@
           "type": "string"
         },
         "code": {
-          "title": "Country code",
-          "description": "The ISO_3166-2 2-Digit country code, or ISO_3166-2 sub-division code of the jurisdiction",
+          "title": "Country or subdivision code",
+          "description": "The 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the jurisdiction.",
           "type": "string",
           "maxLength": 6,
           "minLength": 2
         }
-      }
+      },
+      "required": [
+        "name"
+      ]
     },
     "PepStatusDetails": {
       "title": "PEP Status",
@@ -474,7 +481,7 @@
         },
         "missingInfoReason": {
           "title": "Missing information reason(s)",
-          "description": "For disclosure regimes where a PEP declarations is required but not provided, this field should contain an explanation of the reason that PEP status for the person is not provided. This may be a standard descriptive phrase from the source system, or a free-text justification. This field should only be filled out where hasPepStatus is missing. Where this field is present it should be the only field except for `source`.",
+          "description": "An explanation of the reason that PEP status for the person is not provided (i.e. `politicalExposure.status` is 'unknown'). This may be a standard descriptive phrase from the source system, or a free-text justification. Where this field is present it should be the only field except for `source`.",
           "type": "string"
         },
         "jurisdiction": {
@@ -520,7 +527,7 @@
         },
         "license": {
           "title": "License URL",
-          "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or [Open Definition Conformant](http://opendefinition.org/licenses/) license.",
+          "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or Open Definition Conformant (http://opendefinition.org/licenses/) license.",
           "type": "string",
           "format": "uri"
         },
@@ -565,6 +572,108 @@
           ]
         }
       ]
+    },
+    "PublicListing": {
+      "type": "object",
+      "title": "Public listing",
+      "description": "Details of a publicly listed company, its securities (shares and other tradable financial instruments related to the entity), and related regulatory filings.",
+      "required": [
+        "securitiesListings",
+        "hasPublicListing"
+      ],
+      "minProperties": 1,
+      "properties": {
+        "hasPublicListing": {
+          "type": "boolean",
+          "title": "Has public listing",
+          "description": "This value MUST be true if the entity is known to be a publicly listed company."
+        },
+        "companyFilingsURLs": {
+          "type": "array",
+          "title": "Company filings URLs",
+          "description": "URL or URLs where regulatory filings related to major holdings can be retrieved. URLs may point to pages maintained by regulatory bodies, stock exchanges or by the company itself.",
+          "items": {
+            "type": "string"
+          },
+          "format": "uri"
+        },
+        "securitiesListings": {
+          "type": "array",
+          "title": "Securities listings",
+          "description": "Details of the entity's securities and the public exchanges and markets on which they are traded. All equity securities SHOULD BE listed here, plus any other securities from which beneficial ownership might be derived. Where a security is traded on more than one market, there SHOULD BE an entry for each market (or market segment).",
+          "items": {
+            "title": "Securities listing",
+            "description": "Details of a security and the market on which it is traded.",
+            "$ref": "#/definitions/SecuritiesListing"
+          }
+        }
+      }
+    },
+    "SecuritiesListing": {
+      "type": "object",
+      "title": "Securities listing",
+      "description": "Details of a security and the market on which it is traded.",
+      "required": [
+        "stockExchangeJurisdiction",
+        "security",
+        "stockExchangeName"
+      ],
+      "properties": {
+        "marketIdentifierCode": {
+          "type": "string",
+          "title": "Market Identifier Code (MIC)",
+          "description": "The Market Identifier Code (MIC) of the market on which the security is traded. Where the security is traded on a segment of an exchange, this is the MIC of the segment. Where it is traded on the main exchange, this is the MIC of the main exchange and MUST match the `operatingMarketIdentifierCode`. MICs are allocated and managed under ISO standard 10383."
+        },
+        "operatingMarketIdentifierCode": {
+          "type": "string",
+          "title": "Operating Market Identifier Code (Operating MIC)",
+          "description": "The Market Identifier Code (MIC) of the main exchange or trading platform handling trades in this security. Where the security is traded on a segment of an exchange, this is the MIC of the parent exchange or trading platform. Where it is traded on the main exchange, this is the MIC of that main exchange and MUST match the `marketIdentifierCode`. MICs are allocated and managed under ISO standard 10383."
+        },
+        "stockExchangeJurisdiction": {
+          "type": "string",
+          "title": "Stock exchange jurisdiction",
+          "description": "The 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the jurisdiction under which the exchange, market or trading platform is regulated.",
+          "maxLength": 6,
+          "minLength": 2
+        },
+        "stockExchangeName": {
+          "type": "string",
+          "title": "Stock exchange name",
+          "description": "The name of the exchange, market or trading platform on which the security is traded. If the security is traded on a segment of the exchange, then the name SHOULD include both elements. For example, 'London Stock Exchange - MTF'."
+        },
+        "security": {
+          "type": "object",
+          "title": "Security",
+          "description": "Identifying information of the stock or other security.",
+          "required": [
+            "ticker"
+          ],
+          "properties": {
+            "idScheme": {
+              "type": "string",
+              "title": "Identifier scheme",
+              "description": "The scheme under which the security has been issued a unique, persistent identifier. For accepted schemas, see the securitiesIdentifierSchemes codelist.",
+              "enum": [
+                "isin",
+                "figi",
+                "cusip",
+                "cins"
+              ],
+              "codelist": "securitiesIdentifierSchemes.csv"
+            },
+            "id": {
+              "type": "string",
+              "title": "Identifier",
+              "description": "The unique identifier of the security as issued under the `idScheme`."
+            },
+            "ticker": {
+              "type": "string",
+              "title": "Stock ticker",
+              "description": "The stock ticker identifying this security on the named stock exchange."
+            }
+          }
+        }
+      }
     }
   }
 }

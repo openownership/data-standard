@@ -12,7 +12,7 @@
     },
     "statementType": {
       "title": "Statement type",
-      "description": " This should always be 'entityStatement.",
+      "description": "This MUST be 'entityStatement'.",
       "type": "string",
       "enum": [
         "entityStatement"
@@ -53,13 +53,13 @@
           "description": "The reason that an entity cannot be specified. From the unspecifiedReason codelist.",
           "type": "string",
           "enum": [
-            "no-beneficial-owners",
-            "subject-unable-to-confirm-or-identify-beneficial-owner",
-            "interested-party-has-not-provided-information",
-            "subject-exempt-from-disclosure",
-            "interested-party-exempt-from-disclosure",
-            "information-unknown-to-publisher",
-            "unknown"
+            "noBeneficialOwners",
+            "subjectUnableToConfirmOrIdentifyBeneficialOwner",
+            "interestedPartyHasNotProvidedInformation",
+            "subjectExemptFromDisclosure",
+            "interestedPartyExemptFromDisclosure",
+            "unknown",
+            "informationUnknownToPublisher"
           ],
           "codelist": "unspecifiedReason.csv",
           "openCodelist": false
@@ -132,7 +132,7 @@
     },
     "uri": {
       "title": "URI",
-      "description": "Where a [persistent URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available for this entity this should be included.",
+      "description": "Where a persistent URI (https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available for this entity this should be included.",
       "type": "string",
       "format": "uri",
       "propertyOrder": 21
@@ -161,6 +161,11 @@
         "$ref": "components.json#/definitions/Annotation"
       },
       "propertyOrder": 90
+    },
+    "publicListing": {
+      "title": "Public listing",
+      "description": "Details of a publicly listed company, its securities (shares and other tradable financial instruments related to the entity), and related regulatory filings.",
+      "$ref": "components.json#/definitions/PublicListing"
     }
   },
   "required": [
