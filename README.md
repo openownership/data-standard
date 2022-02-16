@@ -28,9 +28,46 @@ git submodule init
 git submodule update
 ```
 
-### Build the docs locally
+### Build & test the docs locally
 
-Please see https://github.com/openownership/data-standard-sphinx-theme
+(Note if you need to change the theme you must instead use https://github.com/openownership/data-standard-sphinx-theme . If you only need to change the content, read on).
+
+Clone this repository and change to the directory of this repository.
+
+Create a Python Virtual Environment. It should be python3.8 to match our build server.
+
+    python3 -m virtualenv -p python3.8 .ve
+
+(If you don't have python3.8 installed [see here](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa).)
+
+Activate the virtual environment:
+
+    source .ve/bin/activate
+
+Install Python libraries:
+
+    pip install -r requirements_test.txt
+
+To actually build the docs:
+
+    sphinx-build  docs/ _build
+
+To see the docs, open a new terminal window and run a development webserver:
+
+    cd _build
+    python3 -m http.server
+
+Leave this command running, and you can now go to http://127.0.0.1:8000/ to see the docs.
+
+Edit source files as needed.  Return to your original window and rerun the build command above. Reload in web browser. Repeat!
+
+To run the tests:
+
+    pytest tests
+
+To build another language, instead use this build command:
+
+    sphinx-build  -D language=ru  docs/ _build
 
 ### Translation
 
@@ -96,11 +133,4 @@ Now the files are ready to be translated in Transifex.
 ```
 pybabel compile --use-fuzzy -d docs/locale -D svg
 itstool -m docs/locale/ru/LC_MESSAGES/svg.mo -o docs/_build_svgs/ru docs/_assets/*.svg
-```
-
-**To build another language locally** to preview it (pass the language code you want)..
-
-```
-$ cd docs
-$ sphinx-build -b html -D language=ru . _build/html/ru
 ```
