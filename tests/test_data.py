@@ -58,6 +58,7 @@ test_valid_statement_json_parametrize_data = [
     "valid-entity-statement-loose-validation.json",
     "valid-entity-statement-with-source.json",
     "valid-person-statement.json",
+    "valid-entity-statement-stateBody.json",
     "valid-ownership-or-control-statement.json",
     "gb-coh-entity-statement.json",
     "gb-coh-person-statement.json",
