@@ -79,7 +79,7 @@ To run the steps in the translation workflow, you need to install this repo and 
 $ pip install -r requirements.txt
 ```
 
-You also need to make sure you have `gettext` and `pybabel` installed in whatever environment you're running this in:
+You also need to make sure you have `gettext`, `pybabel` and (for SVGs) `itstool` installed in whatever environment you're running this in:
 
 ```
 $ apt-get install gettext
@@ -91,10 +91,12 @@ And you need to get a [Transifex API key](https://www.transifex.com/user/setting
 
 Run the following commands from the root directory unless otherwise specified (eg. sometimes it's less complicated to run them from `docs`).
 
+0. *Before you start*, run `tx-pull -a` to make sure you have the most up to date translations in your local environment.
+
 **When you change text in the docs** you need to do the following so that they can be translated:
 
 1. `cd docs`
-2. Run `make gettext` to extract translatable English strings from the docs.
+2. Run `make gettext` to extract translatable English strings from the docs. (This generates `.pot` files into `docs/_build/gettext/`.)
 
 **If you modified the schema** also:
 
@@ -103,6 +105,7 @@ Run the following commands from the root directory unless otherwise specified (e
 **If you modified the codelists** also:
 
 * Run `pybabel extract -F babel_bods_codelist.cfg . -o docs/_build/gettext/codelist.pot` to extract translatable English strings from the codelists.
+* If you change (add, remove, rename) a column heading in a codelist CSV, you must also edit the `babel_bods_codelist.cfg` file to match.
 
 **If you modified an SVG diagram** also:
 
@@ -113,10 +116,10 @@ Run the following commands from the root directory unless otherwise specified (e
 ```
 rm -f .tx/config
 sphinx-intl create-txconfig
-sphinx-intl update-txconfig-resources --pot-dir docs/_build/gettext --locale-dir docs/locale --transifex-project-name bods-v01
+sphinx-intl update-txconfig-resources --pot-dir docs/_build/gettext --locale-dir docs/locale --transifex-project-name bods-test
 ```
 
-(Replacing `bods-v01` with a different Transifex project name if necessary.)
+(Replacing `bods-test` with a different Transifex project name.)
 
 And then:
 
