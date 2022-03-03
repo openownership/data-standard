@@ -11,7 +11,7 @@ Representing beneficial ownership
 Overview
 ------------------------
 
-Beneficial owners can exercise ownership-or-control *directly* in an entity (expected to be a company) or *indirectly*, via intermediary entities (such or arrangements or other companies). It must be clear in a BODS dataset which people are declared as beneficial owners of which companies (and which entities are intermediaries). And it must be clear what overall control or ownership beneficial owners have (regardless whether it is direct or indirect).
+Beneficial owners can exercise ownership-or-control *directly* in an entity (expected to be a company) or *indirectly*, via intermediary entities (such as arrangements or other companies). It must be clear in a BODS dataset which people are declared as beneficial owners of which companies (and which entities are intermediaries). And it must be clear what overall control or ownership beneficial owners have (regardless of whether it is direct or indirect).
 
 .. figure:: ../../_assets/RepresentingChainsBODS-RealWorld.svg
    :alt: Person 1 indirectly holds a 15 percent shareholding in Company E, via an intermediary: Company A. Person 2 directly holds 32 precent of Company E's shares.
@@ -30,8 +30,8 @@ In BODS, the following properties are used to represent such information disclos
 Requirements
 ------------------------
 
-Representing beneficial ownership
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The beneficial ownership relationship
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If a person is a beneficial owner of an entity, entity X, whether directly or indirectly, and one of them is required to declare this beneficial ownership:
 
@@ -45,8 +45,8 @@ If a person is a beneficial owner of an entity, entity X, whether directly or in
 
 2. If beneficial ownership is known to be exercised indirectly, via intermediary entities then ``directOrIndirect`` MUST be ‘indirect’. If it is known to be exercised directly then ``directOrIndirect`` MUST be ‘direct’. Otherwise ``directOrIndirect`` MUST be ‘unknown’.
 
-Representing intermediaries
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Intermediaries
+^^^^^^^^^^^^^^
 
 Where beneficial ownership is known to be exercised indirectly, via known intermediary entities, this SHOULD be represented in addition to the above. In particular:
 
