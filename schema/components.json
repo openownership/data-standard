@@ -246,7 +246,9 @@
             "rightsGrantedByContract",
             "conditionalRightsGrantedByContract",
             "controlViaCompanyRulesOrArticles",
-            "controlByLegalFramework"
+            "controlByLegalFramework",
+            "boardMember",
+            "boardChair"
           ],
           "codelist": "interestType.csv",
           "openCodelist": false

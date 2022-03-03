@@ -14,3 +14,5 @@ rightsGrantedByContract,Rights granted by contract,An interest that is granted b
 conditionalRightsGrantedByContract,Conditional rights granted by contract,An interest that exists only if some contractual condition is met.,
 controlViaCompanyRulesOrArticles,Control via company rules or articles,Control of an entity gained through a provision in company articles or by shareholder agreement.,
 controlByLegalFramework,Control by legal framework,"Control of an entity gained through a legal framework, such as a combination of legislation (primary and secondary). This type of interest is created by governments and legislators in order to establish and guide agencies and entities linked to the state.",
+boardMember,Board member,One of a group of people constituted as the strategic decision-making body of an organization.,
+boardChair,Board chair,"The person holding the most power and authority on the board of directors. They also provide leadership to the firm's officers and executives, and ensure that the firm's duties to shareholders are being fulfilled by acting as a link between the board and upper management.",
