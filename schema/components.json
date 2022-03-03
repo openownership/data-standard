@@ -244,7 +244,9 @@
             "rightsToSurplusAssetsOnDissolution",
             "rightsToProfitOrIncome",
             "rightsGrantedByContract",
-            "conditionalRightsGrantedByContract"
+            "conditionalRightsGrantedByContract",
+            "controlViaCompanyRulesOrArticles",
+            "controlByLegalFramework"
           ],
           "codelist": "interestType.csv",
           "openCodelist": false
