@@ -303,7 +303,7 @@ Codelists
 AddressType
 +++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/addressType.csv
@@ -312,7 +312,7 @@ AddressType
 AnnotationMotivation
 ++++++++++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/annotationMotivation.csv
@@ -321,7 +321,7 @@ AnnotationMotivation
 EntityType
 ++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/entityType.csv
@@ -330,7 +330,7 @@ EntityType
 DirectOrIndirect
 ++++++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/directOrIndirect.csv
@@ -339,7 +339,7 @@ DirectOrIndirect
 InterestType
 ++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/interestType.csv
@@ -348,7 +348,7 @@ InterestType
 NameType
 ++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/nameType.csv
@@ -357,7 +357,7 @@ NameType
 PersonType
 ++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/personType.csv
@@ -366,7 +366,7 @@ PersonType
 SourceType
 ++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/sourceType.csv
@@ -375,7 +375,7 @@ SourceType
 StatementType
 +++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/statementType.csv
@@ -384,7 +384,7 @@ StatementType
 UnspecifiedReason
 +++++++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/unspecifiedReason.csv
