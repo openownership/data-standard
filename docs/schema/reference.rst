@@ -128,7 +128,7 @@ Interest
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Interest
-   :collapse: share,annotations
+   :collapse: share
    :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"Codelists"}}
    :allowexternalrefs:
 
@@ -176,6 +176,8 @@ Name
 OwnershipOrControlStatement
 ---------------------------
 
+If a person is a beneficial owner of an entity - whether directly or indirectly - and the person or entity is required to declare this beneficial ownership, there MUST be an Ownership-or-control Statement connecting the two which represents the beneficial ownership relationship. See :ref:`representing-bo` for detailed requirements.
+
 .. json-value:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /description
 
@@ -207,7 +209,7 @@ PersonStatement
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/person-statement.json
-   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails,publicationDetails,taxResidencies
+   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,politicalExposure/details,publicationDetails,taxResidencies
    :externallinks: {"unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
    :allowexternalrefs:
 
