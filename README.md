@@ -17,7 +17,9 @@ Please direct any correspondence to [support@openownership.org](mailto:support@o
 
 # Technical documentation
 
-### Dependencies
+### Installation & setup
+
+First, clone this repository so that you can work locally on your machine.
 
 The frontend uses **docson** JavaScript library to visualise the JSON schema. BODS uses [a specific patched fork of docson](https://github.com/OpenDataServices/docson/tree/master-bods) (which is different from the patched fork used by other standards). This is included in the `data-standard` repo rather than as part of the [Sphinx theme](https://github.com/openownership/data-standard-sphinx-theme) because it is necessary regardless of which theme is used to build the docs. See [data-standard-sphinx-theme#36](https://github.com/openownership/data-standard-sphinx-theme/issues/36) for the particulars of the patches. The situation with the various branches and patches of docson is in need of serious improvement.
 
@@ -28,11 +30,7 @@ git submodule init
 git submodule update
 ```
 
-### Build & test the docs locally
-
-(Note if you need to change the theme you must instead use https://github.com/openownership/data-standard-sphinx-theme . If you only need to change the content, read on).
-
-Clone this repository and change to the directory of this repository.
+Change to the directory of the repository.
 
 Create a Python Virtual Environment. It should be python3.8 to match our build server.
 
@@ -48,6 +46,15 @@ Install Python libraries:
 
     pip install -r requirements_test.txt
 
+
+### Building the documentation locally
+
+(Note if you need to change the theme you must instead use https://github.com/openownership/data-standard-sphinx-theme . If you only need to change the content, read on).
+
+Once you have followed the installation and setup instructions above, you just need to change directory to that of your local repository and activate the virtual environement:
+
+    source .ve/bin/activate
+
 To actually build the docs:
 
     sphinx-build  docs/ _build
@@ -59,25 +66,27 @@ To see the docs, open a new terminal window and run a development webserver:
 
 Leave this command running, and you can now go to http://127.0.0.1:8000/ to see the docs.
 
-Edit source files as needed.  Return to your original window and rerun the build command above. Reload in web browser. Repeat!
-
-To run the tests:
-
-    pytest tests
+Edit source files as needed. Return to your original window and rerun the build command above. Reload in web browser. Repeat!
 
 To build another language, instead use this build command:
 
     sphinx-build  -D language=ru  docs/ _build
 
-### Translation
+### Running schema and json tests
+
+Once you have followed the installation and setup instructions above, you just need to change directory to that of your local repository and activate the virtual environement:
+
+    source .ve/bin/activate
+    
+To run the tests:
+
+    pytest tests
+
+### Managing the translation workflow
 
 Translation consists of generating strings to be translated from the English docs, pushing them to Transifex, fetching translations back from Transifex, and then you can build the docs in the other languages you need.
 
-To run the steps in the translation workflow, you need to install this repo and its dependencies in your local environment.
-
-```
-$ pip install -r requirements.txt
-```
+To run the steps in the translation workflow, ensure that you have followed the installation and setup instructions above.
 
 You also need to make sure you have `gettext`, `pybabel` and (for SVGs) `itstool` installed in whatever environment you're running this in:
 

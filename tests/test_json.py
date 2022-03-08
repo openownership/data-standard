@@ -33,7 +33,7 @@ def test_invalid_json():
     )
 
 
-schemas = [(path, name, data) for path, name, _, data in walk_json_data() if is_json_schema(data) and not path.endswith('tests/schema/meta-schema.json')]
+schemas = [(path, name, data) for path, name, _, data in walk_json_data(top=absolute_path_to_source_schema_dir) if is_json_schema(data) and not path.endswith('tests/schema/meta-schema.json')]
 with open(os.path.join(this_dir, 'schema', 'meta-schema.json')) as fp:
     metaschema = json.load(fp)
 
