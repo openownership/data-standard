@@ -248,7 +248,9 @@
             "controlViaCompanyRulesOrArticles",
             "controlByLegalFramework",
             "boardMember",
-            "boardChair"
+            "boardChair",
+            "unknownInterest",
+            "unpublishedInterest"
           ],
           "codelist": "interestType.csv",
           "openCodelist": false

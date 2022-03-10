@@ -16,3 +16,5 @@ controlViaCompanyRulesOrArticles,Control via company rules or articles,Control o
 controlByLegalFramework,Control by legal framework,"Control of an entity gained through a legal framework, such as a combination of legislation (primary and secondary). This type of interest is created by governments and legislators in order to establish and guide agencies and entities linked to the state.",
 boardMember,Board member,One of a group of people constituted as the strategic decision-making body of an organization.,
 boardChair,Board chair,"The person holding the most power and authority on the board of directors. They also provide leadership to the firm's officers and executives, and ensure that the firm's duties to shareholders are being fulfilled by acting as a link between the board and upper management.",
+unknownInterest,Unknown interest,"The interestedParty is known to have an interest in the subject of this Ownership-or-control Statement, but the nature of the interest is unknown.",
+unpublishedInterest,Unpublished interest,The nature of this interest is known but is not published.,
