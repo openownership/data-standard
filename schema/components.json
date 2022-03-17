@@ -250,7 +250,9 @@
             "boardMember",
             "boardChair",
             "unknownInterest",
-            "unpublishedInterest"
+            "unpublishedInterest",
+            "enjoymentAndUseOfAssets",
+            "rightToProfitOrIncomeFromAssets"
           ],
           "codelist": "interestType.csv",
           "openCodelist": false
