@@ -1,7 +1,15 @@
 Examples
 ========
 
-The following examples highlight key elements of how ownership and control information is built up through the use of statements.
+The examples below highlight key elements of how ownership and control information is built up through the use of statements.
+
+You can also find examples of valid BODS JSON files in the standard repository:
+
+- Example data (`v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/examples>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/examples>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/examples>`__ )
+- Test data (`v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/tests/data/entity-statement/valid>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/tests/data/entity-statement/valid>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/tests/data/entity-statement/valid>`__ )
+
+For a visual rendering of these examples, use the `BODS Visualiser <https://www.openownership.org/visualisation/visualisation-tool/>`_.
+
 
 A single direct owner
 ---------------------
