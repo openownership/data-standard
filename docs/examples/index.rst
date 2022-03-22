@@ -35,7 +35,7 @@ To update a previous statement, a new beneficial ownership statement, with a ``r
 
 In the (fictional) example below, the previous statement that Chris Taggart has 100% ownership of Chrinon Ltd is replaced by a new statement showing 50% ownership. A separate statement declares that the owner of the other 50% has not yet been identified.
 
-Note that only **changed statements** need to new statement identifiers. 
+Note that only **changed statements** need to have new statement identifiers. 
 
 .. literalinclude:: ../../examples/2-single-update.json
     :language: json
