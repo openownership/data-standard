@@ -17,6 +17,7 @@ ChangeLog
 
 Added
 -----
+- Technical guidance (normative) on 'Representing beneficial ownership': providing detailed requirements for the use of ``beneficialOwnershipOrControl``, ``directOrIndirect``, ``componentStatementIDs``, and ``isComponent``.
 - Support for describing the traded securities and status of a publicly listed company (PLC): a new ``publicListing`` object has been added to Entity Statements.
 - ``Country.name`` is now a required field (previously it was defined as "MUST" in the description).
 - ``Jurisdiction.name`` is now a required field (previously it was defined as "MUST" in the description).

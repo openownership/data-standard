@@ -128,7 +128,7 @@ Interest
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Interest
-   :collapse: share,annotations
+   :collapse: share
    :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"Codelists"}}
    :allowexternalrefs:
 
@@ -176,6 +176,8 @@ Name
 OwnershipOrControlStatement
 ---------------------------
 
+If a person is a beneficial owner of an entity - whether directly or indirectly - and the person or entity is required to declare this beneficial ownership, there MUST be an Ownership-or-control Statement connecting the two which represents the beneficial ownership relationship. See :ref:`representing-bo` for detailed requirements.
+
 .. json-value:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /description
 
@@ -207,7 +209,7 @@ PersonStatement
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/person-statement.json
-   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails,publicationDetails,taxResidencies
+   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,politicalExposure/details,publicationDetails,taxResidencies
    :externallinks: {"unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
    :allowexternalrefs:
 
@@ -301,7 +303,7 @@ Codelists
 AddressType
 +++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/addressType.csv
@@ -310,7 +312,7 @@ AddressType
 AnnotationMotivation
 ++++++++++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/annotationMotivation.csv
@@ -319,16 +321,16 @@ AnnotationMotivation
 EntityType
 ++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/entityType.csv
 
 
 DirectOrIndirect
-+++++++++++++
+++++++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/directOrIndirect.csv
@@ -337,7 +339,7 @@ DirectOrIndirect
 InterestType
 ++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/interestType.csv
@@ -346,7 +348,7 @@ InterestType
 NameType
 ++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/nameType.csv
@@ -355,7 +357,7 @@ NameType
 PersonType
 ++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/personType.csv
@@ -364,7 +366,7 @@ PersonType
 SourceType
 ++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/sourceType.csv
@@ -373,7 +375,7 @@ SourceType
 StatementType
 +++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/statementType.csv
@@ -382,7 +384,7 @@ StatementType
 UnspecifiedReason
 +++++++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/unspecifiedReason.csv
