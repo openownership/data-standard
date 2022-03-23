@@ -11,7 +11,7 @@ You can find the latest version of the schema and documentation at [https://stan
 
 BODS has been created by [Open Ownership](https://www.openownership.org) in partnership with the [Open Data Services Co-operative](https://opendataservices.coop/), and is provided under an open license for re-use. 
 
-An [open data standard working group](https://standard.openownership.org/en/latest/about/governance.html) of data experts, beneficial ownership specialists and other interested parties also provides advice and help guide the development of BODS.
+An [open data standard working group](https://standard.openownership.org/en/latest/about/governance.html) of data experts, beneficial ownership specialists and other interested parties also provides advice and helps guide the development of BODS.
 
 The working group is co-chaired by Open Ownership and Open Data Services Co-operative - and anyone can apply to join the group by [filling out this form](https://docs.google.com/forms/d/e/1FAIpQLSdRSmSUxyyv2t1k3vWXZ_3EhTW_f603MeGxgyjKnbNNE9vvbQ/viewform). Virtual group meetings are held quarterly and communication is coordinated through a [Google group](https://groups.google.com/a/openownership.org/g/data-standard-wg?pli=1).
 
@@ -19,7 +19,7 @@ All changes to the BODS schema and documentation take place this GitHub repo. A 
 
 Features currently on the tracker are those adopted for development by the Open Ownership and Open Data Services Co-operative teams following work with implementers of beneficial ownership reforms and in consultation with the Data Standard Working Group. 
 
-However anyone can submit a [feature request ticket](https://github.com/openownership/data-standard/issues/new?assignees=&labels=feature+request&template=feature_request.md&title=%5BFeature+request%5D), input to a feature development ticket, or make an [implementation proposal](https://github.com/openownership/data-standard/issues/new?assignees=&labels=&template=implementation-proposal-template.md&title=Implementation+proposal%3A+%5BFEATURE+NAME%5D+no.X). The data standard support team at Open Ownership will consider and reply to any submitted feature requests within a month from submission.
+However, anyone can submit a [feature request ticket](https://github.com/openownership/data-standard/issues/new?assignees=&labels=feature+request&template=feature_request.md&title=%5BFeature+request%5D), contribute to a feature development ticket, or make an [implementation proposal](https://github.com/openownership/data-standard/issues/new?assignees=&labels=&template=implementation-proposal-template.md&title=Implementation+proposal%3A+%5BFEATURE+NAME%5D+no.X). The data standard support team at Open Ownership will consider and reply to any submitted feature requests within a month from submission.
 
 See the [project issue tracker](https://github.com/openownership/data-standard/issues) for a list of feature requests and issues.
 
