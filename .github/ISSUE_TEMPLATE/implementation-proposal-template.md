@@ -1,6 +1,6 @@
 ---
 name: Implementation proposal template
-about: This ticket proposes a way to implementing a feature in BODS. In most cases,
+about: This ticket proposes a way to implement a feature in BODS. In most cases,
   a proposal should be made only after the problem it tries to solve is described
   in a 'feature development ticket'.
 title: 'Implementation proposal: [FEATURE NAME] no.X'
