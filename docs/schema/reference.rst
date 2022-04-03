@@ -33,7 +33,7 @@ Address
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Address
-   :externallinks: {"type":{"url":"#addresstype","text":"Codelists"}}
+   :externallinks: {"type":{"url":"#addresstype","text":"AddressType"}}
    :allowexternalrefs:
 
 
@@ -65,7 +65,7 @@ The ``annotations`` property of statements currently allows an array of these si
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Annotation
-   :externallinks: {"motivation":{"url":"#annotationmotivation","text":"Codelists"}}
+   :externallinks: {"motivation":{"url":"#annotationmotivation","text":"AnnotationMotivation"}}
    :allowexternalrefs:
 
 .. _schema-country:
@@ -91,7 +91,7 @@ EntityStatement
 
 .. jsonschema:: ../_build_schema/entity-statement.json
    :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations,publicationDetails,publicListing
-   :externallinks: {"entityType":{"url":"#entitytype","text":"Codelists"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
+   :externallinks: {"entityType":{"url":"#entitytype","text":"EntityType"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
    :allowexternalrefs:
 
 .. _schema-id:
@@ -129,7 +129,7 @@ Interest
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Interest
    :collapse: share
-   :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"Codelists"}}
+   :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"InterestType"}}
    :allowexternalrefs:
 
 .. _schema-interested-party:
@@ -143,7 +143,7 @@ InterestedParty
 .. jsonschema:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /properties/interestedParty
    :collapse:
-   :externallinks: {"unspecified/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
+   :externallinks: {"unspecified/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
    :allowexternalrefs:
 
 .. _schema-jurisdiction:
@@ -168,7 +168,7 @@ Name
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Name
-   :externallinks: {"type":{"url":"#nametype","text":"Codelists"}}
+   :externallinks: {"type":{"url":"#nametype","text":"NameType"}}
    :allowexternalrefs:
 
 .. _schema-ownership-or-control-statement:
@@ -197,7 +197,7 @@ PepStatusDetails
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/PepStatusDetails
    :collapse: jurisdiction,source
-   :externallinks: {"source/type":{"url":"#sourcetype","text":"Codelists"}}
+   :externallinks: {"source/type":{"url":"#sourcetype","text":"SourceType"}}
    :allowexternalrefs:
 
 .. _schema-person-statement:
@@ -210,7 +210,7 @@ PersonStatement
 
 .. jsonschema:: ../_build_schema/person-statement.json
    :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,politicalExposure/details,publicationDetails,taxResidencies
-   :externallinks: {"unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
+   :externallinks: {"unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
    :allowexternalrefs:
 
 
@@ -278,7 +278,7 @@ See :any:`Real world identifiers <guidance-identifiers-other>` for technical gui
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/SecuritiesListing
-   :externallinks: {"security/idScheme":{"url":"#securitiesidentifierschemes","text":"Codelists"}}
+   :externallinks: {"security/idScheme":{"url":"#securitiesidentifierschemes","text":"SecuritiesIdentifierSchemes"}}
    :allowexternalrefs:
 
 .. _schema-share:
@@ -305,7 +305,7 @@ Source
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Source
    :collapse: assertedBy
-   :externallinks: {"type":{"url":"#sourcetype","text":"Codelists"}}
+   :externallinks: {"type":{"url":"#sourcetype","text":"SourceType"}}
    :allowexternalrefs:
 
 
