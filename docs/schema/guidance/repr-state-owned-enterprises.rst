@@ -17,7 +17,7 @@ In particular, the following properties and values SHOULD be used to represent i
 
 * ``entityType`` SHOULD be set to 'state' or 'stateBody', and ``jurisdiction`` SHOULD be used to represent the particular state.
 * ``entitySubtype`` SHOULD be used to refine the category of a given state body (as a 'government department', 'state agency' or 'other').
-* ``formedByStatute`` SHOULD be used to give details of the legislation under which an enterprise was formed.
+* ``formedByStatute`` MAY be used to supply details of a law, where an entity has been formed as a result of specific legislation.
 
 For more details about these properties see :ref:`schema-entity-statement`.
 
@@ -26,6 +26,9 @@ A number of scenarios are outlined below. We show how the these properties and o
 
 Example scenarios
 ------------------------
+
+These examples show how statements might be connected to represent the involvement of a state with an enterprise. Only those property:value pairs that are particularly relevant to the scenario are shown in the statement blocks. Complete data would also show, for instance, the particular types of interests held by the state; such as an 80% shareholding. 
+
 
 Scenario 1
 ^^^^^^^^^^
