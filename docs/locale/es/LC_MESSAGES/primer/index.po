@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +21,11 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# ff48bd13b0f2479286bd9fd7c9278677
-#: ../../primer/index.rst:2
+#: ../../primer/index.rst:2 b4de10c2aaaf4c0587001029f44e5cb9
 msgid "Primer"
 msgstr "Guía introductoria"
 
-# d828c949c46145ecab76d349ffbe41f6
-#: ../../primer/index.rst:4
+#: ../../primer/index.rst:4 75dd4a06d1b041cf93139818bb8df9ac
 msgid ""
 "This Primer sets out to explain the basics of Beneficial Ownership and the "
 "basics of a data standard handling Beneficial Ownership."
@@ -37,8 +34,7 @@ msgstr ""
 " del concepto de beneficiarios finales y de un estándar de datos que se "
 "ocupa de los beneficiarios finales."
 
-# 5a18608b94e1492fac568354b341b382
-#: ../../primer/index.rst:6
+#: ../../primer/index.rst:6 9456a5fd3d8541b487006614e7a0640c
 msgid ""
 "People new to the concept of Beneficial Ownership will want to know "
 ":doc:`what it is <whatisbo>` and :doc:`why it's important <whyisbo>`. "

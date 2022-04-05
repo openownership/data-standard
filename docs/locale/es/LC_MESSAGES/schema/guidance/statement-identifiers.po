@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:57+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +21,13 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# b6196d3af190474cbfdf4d58d6de2286
 #: ../../schema/guidance/statement-identifiers.rst:4
+#: cbd05307cde34839a640935cb0d4d68b
 msgid "Statement Identifiers"
 msgstr "Identificadores de declaraciones"
 
-# cc5b64fc3f4f406aab568f1244e4177e
 #: ../../schema/guidance/statement-identifiers.rst:6
+#: cc6321485df04694a402bced157c06fd
 msgid ""
 "Each statement MUST have an entirely unique identifier. There MUST be no "
 "possibility of collision between identifiers for different statements."
@@ -37,20 +36,20 @@ msgstr ""
 "existir ninguna posibilidad de conflicto entre los identificadores de "
 "diferentes declaraciones."
 
-# 145cf43471e847faa0177b7db5792901
 #: ../../schema/guidance/statement-identifiers.rst:8
+#: 29390aac60be4cdba62836075b4309b3
 msgid "This means that:"
 msgstr "Esto implica que:"
 
-# 90780689e3e349c4b665e343af283ca2
 #: ../../schema/guidance/statement-identifiers.rst:10
+#: 4310636af6ed469c9fd6a2d5c03326b7
 msgid "Two **different** statements SHOULD never have the same identifier;"
 msgstr ""
 "Dos declaraciones **diferentes** no DEBERÍAN tener nunca el mismo "
 "identificador;"
 
-# 7814e03f6416477489a5fb5423157cbc
 #: ../../schema/guidance/statement-identifiers.rst:11
+#: f779e8f02dff4614ba10ca245ef981db
 msgid ""
 "Once an identifier is assigned to a statement, the identifier SHOULD NOT "
 "change."
@@ -58,8 +57,8 @@ msgstr ""
 "Una vez asignado un identificador a una declaración, el identificador NO "
 "DEBERÍA cambiar."
 
-# 6dbf3b5fa9f646dfa671bd63c50baea2
 #: ../../schema/guidance/statement-identifiers.rst:13
+#: b5dd2c6ecf7c4cc88a3226b6f01af4da
 msgid ""
 "The schema enforces a minimum statement identifier length of 32 characters, "
 "and maximum length of 64 characters."
@@ -68,8 +67,8 @@ msgstr ""
 "identificadores de las declaraciones, y una longitud máxima de 64 "
 "caracteres."
 
-# 9e522b8dc76c434bab0e72e211742530
 #: ../../schema/guidance/statement-identifiers.rst:15
+#: 12280145d90e434d91b2a22d40b4e576
 msgid ""
 "Publishers MAY use one of the following strategies for creating statement "
 "identifiers."
@@ -77,13 +76,13 @@ msgstr ""
 "Los publicadores PUEDEN utilizar una de las siguientes estrategias para "
 "generar identificadores de declaraciones."
 
-# c15440ee6a024fcf85500f0cb433603d
 #: ../../schema/guidance/statement-identifiers.rst:20
+#: 8af36ef1511d459e941024c62f1d1a7d
 msgid "Strategies for identifier creation"
 msgstr "Estrategias para la generación de identificadores"
 
-# c008c61c4a0c4da8a3f5d1bc203385cc
 #: ../../schema/guidance/statement-identifiers.rst:22
+#: 11fe0ae419bd4b33886cf2a31bebde1f
 msgid ""
 "Generating a `UUID "
 "<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ for each "
@@ -96,8 +95,8 @@ msgstr ""
 "cada vez que los registros pertinentes que componen una declaración se "
 "actualicen;"
 
-# 8213f8dd424a40d5b309246d7fa3e646
 #: ../../schema/guidance/statement-identifiers.rst:24
+#: eda426a884fd4ae9ba0209e76818f291
 msgid ""
 "Generating a `UUID "
 "<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ as a "
@@ -109,8 +108,8 @@ msgstr ""
 "prefijo relacionado con el publicador, y anexarle un identificador de "
 "registro local y un identificador de versión;"
 
-# 2bc72b7e45f3433da1931a2e54af516b
 #: ../../schema/guidance/statement-identifiers.rst:26
+#: b03ea41a1fcf4f9baafc3958c125faeb
 msgid ""
 "Using an appropriately designed hash function that generates identifiers "
 "from a normalised JSON representation of the statement (excluding the `id` "
@@ -121,8 +120,8 @@ msgstr ""
 "declaración (excluyendo el campo `identificación`) con una baja probabilidad"
 " de conflicto."
 
-# 62987358d6ef48f280108c970f85c483
 #: ../../schema/guidance/statement-identifiers.rst:28
+#: 3ddad599f80c4a7ab67e908e03e65074
 msgid ""
 "Using an internal identifier combined with a unique prefix to avoid "
 "collision between identifiers from different publishers"
@@ -131,8 +130,8 @@ msgstr ""
 "evitar eventuales conflictos entre identificadores de diferentes "
 "publicadores."
 
-# 278b245b50b94f1e825dda9e67a13f5e
 #: ../../schema/guidance/statement-identifiers.rst:31
+#: e3e06d0de17f4db0898ac07ed4c73064
 msgid ""
 "Statement identifiers are generally for creation and internal use within "
 "applications. In most circumstances they do not need to be displayed to "

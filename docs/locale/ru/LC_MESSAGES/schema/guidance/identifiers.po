@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Valery Gusak <valery.gusak@gmail.com>, 2019
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"POT-Creation-Date: 2022-04-05 17:16+0000\n"
+"PO-Revision-Date: 2022-04-05 16:57+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,13 +21,15 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 80b78db363a3414b9510b3373b6e0d5d
-#: ../../schema/guidance/identifiers.rst:4
+#: ../../schema/guidance/identifiers.rst:4 f0e4ded4780345c9ac92e0e16e9395c0
 msgid "Real world identifiers"
 msgstr "Общие идентификаторы"
 
-# f05ac107cb7c4004aa53363fce498b37
-#: ../../schema/guidance/identifiers.rst:6
+#: ../../schema/guidance/identifiers.rst:7 da14087aa74f4f8d883b781a1e8b30e0
+msgid "Overview"
+msgstr ""
+
+#: ../../schema/guidance/identifiers.rst:9 35ada16a2d4c45a7a5a5032316aa5786
 msgid ""
 "To create a link between statements, and the real-world organisations and "
 "people they relate to, statements may include a range of identifying "
@@ -39,8 +41,7 @@ msgstr ""
 "идентифицирующую информацию. Мы используем общий :any:`объект Identifier "
 "<schema-identifier>` со следующими свойствами:"
 
-# 4c4399dccc23400ab8133d6b8833de2d
-#: ../../schema/guidance/identifiers.rst:8
+#: ../../schema/guidance/identifiers.rst:11 d058aa992c434bfab6d7396439dbc41e
 msgid ""
 "``scheme`` should be a value from a codelist of known identifier sources. "
 "Separate codelists exist for entities and persons. See below."
@@ -49,8 +50,7 @@ msgstr ""
 "значений известных источников идентификаторов. Для субъектов и физических "
 "лиц существуют отдельные списки допустимых значений. См. ниже."
 
-# ec81c5f22f174e5fa604991e53dd7738
-#: ../../schema/guidance/identifiers.rst:10
+#: ../../schema/guidance/identifiers.rst:13 c93eede3d7464637af7ca9b9c7047fef
 msgid ""
 "``id`` should be the value assigned to the relevant entity or person in that"
 " scheme."
@@ -58,8 +58,7 @@ msgstr ""
 "``id`` должен иметь значение, присвоенное соответствующему субъекту или "
 "физическому лицу в такой схеме."
 
-# b4eb405b2a2f46ffb5377c8fa1820a6f
-#: ../../schema/guidance/identifiers.rst:12
+#: ../../schema/guidance/identifiers.rst:15 23f07f142f6c4c55a00f552761edccf1
 msgid ""
 "``uri`` may be used to provide a canonical URI for the entity or person "
 "within the scheme."
@@ -67,15 +66,13 @@ msgstr ""
 "``uri`` может использоваться для указания общепринятого URI для субъекта или"
 " физического лица в схеме."
 
-# 6e32acd5b4e64beeab2967878fe1c38b
-#: ../../schema/guidance/identifiers.rst:14
+#: ../../schema/guidance/identifiers.rst:17 fc0a63c4a451460a94f26d8b53ec634e
 msgid "``schemeName`` should be the name of the list, registry or ID system."
 msgstr ""
 "``schemeName`` должно быть названием списка, реестра или системы "
 "идентификации."
 
-# 3443019db51c436491129b83fceaf74b
-#: ../../schema/guidance/identifiers.rst:16
+#: ../../schema/guidance/identifiers.rst:19 f44290ccf1b54b4fa9c050bf01883774
 msgid ""
 "A good-quality Identifier will contain ``scheme`` and ``id`` values which "
 "will uniquely identify an entity or person. Where these are not available, "
@@ -90,51 +87,23 @@ msgstr ""
 "или субъект. При опубликовании Идентификатора объекта ДОЛЖНО присутствовать "
 "значение либо для ``scheme``, либо для ``schemeName``."
 
-# fbd5c6ef56d34ab1b0e243b11275614a
-#: ../../schema/guidance/identifiers.rst:20
-msgid "Multiple Identifiers"
-msgstr "Несколько идентификаторов"
-
-# 5e6eed78f6134c70942d426525030e01
-#: ../../schema/guidance/identifiers.rst:22
-msgid ""
-"A source system might hold the following identifying information for a "
-"single company:"
+#: ../../schema/guidance/identifiers.rst:22 8faa520f786b4595a0487df39a200958
+msgid "Other identifiable objects"
 msgstr ""
-"В исходной системе может храниться следующая идентифицирующая информация по "
-"отдельной компании:"
 
-# 87e562e015cc48e69279bc4bcee727af
-#: ../../schema/guidance/identifiers.rst:24
-msgid "A registered company number; and"
-msgstr "Номер зарегистрированной компании; а также"
-
-# 0a7e2c73415c4928afadd994576d0e1b
-#: ../../schema/guidance/identifiers.rst:25
-msgid "A VAT number;"
-msgstr "Номер плательщика НДС;"
-
-# 98ea717950c246a68094fa1bf5cdd892
-#: ../../schema/guidance/identifiers.rst:27
+#: ../../schema/guidance/identifiers.rst:24 0b83aca76ba94544a54e636555c780a1
 msgid ""
-"In this case, two entries can be created in the Entity statement's "
-"``identifiers`` array:"
+"Links to identifiable objects, artefacts and institutions are also made "
+"elsewhere in the schema. For example, tradable company securities can be "
+"referenced with an identifier. More information on such elements of the "
+"schema is provided below."
 msgstr ""
-"В данном случае в массиве ``identifiers`` записи о субъекте можно создать "
-"два элемента:"
 
-# 17e6cc3205e34a1f9800bea912f2758a
-#: ../../schema/guidance/identifiers.rst:42
-msgid "Person Statements may also hold an array of Identifiers."
-msgstr "Записи о физических лицах также могут иметь массив Идентификаторов."
-
-# f47494fcb64d44ec84c980d0e9c2b762
-#: ../../schema/guidance/identifiers.rst:46
+#: ../../schema/guidance/identifiers.rst:28 9213da5b5b234703ad4f241d6184af9d
 msgid "Entity Identifiers"
 msgstr "Идентификаторы субъектов"
 
-# 38b72f34330f4c28baeeb9214baa5e63
-#: ../../schema/guidance/identifiers.rst:48
+#: ../../schema/guidance/identifiers.rst:30 9bda8310231d4dc1a483de155d484f14
 msgid ""
 "The values for ``scheme`` within an Entity Statement Identifier should be "
 "drawn from the `http://org-id.guide <http://org-id.guide>`_ codelist. This "
@@ -146,8 +115,7 @@ msgstr ""
 " Он содержит сведения о сотнях реестров компаний и других источниках "
 "идентификаторов."
 
-# 16112e928cc649838cf4f317103ad8fd
-#: ../../schema/guidance/identifiers.rst:50
+#: ../../schema/guidance/identifiers.rst:32 c101c7d3da4f4fdcbfe9b75624c1f3de
 msgid ""
 "Where the publisher is providing an internal identifier, the publisher "
 "should either:"
@@ -155,8 +123,7 @@ msgstr ""
 "В случае если издатель указывает внутренний идентификатор, то издателю "
 "следует либо:"
 
-# 76c23e0206e0464d8773961ced419aab
-#: ../../schema/guidance/identifiers.rst:52
+#: ../../schema/guidance/identifiers.rst:34 cce528bbddad45c7acf3f8d66f9e9d82
 msgid ""
 "Publish their full list of internal identifiers, and register this list with"
 " the `http://org-id.guide <http://org-id.guide>`_ codelist; or"
@@ -165,23 +132,19 @@ msgstr ""
 "зарегистрировать этот список в списке допустимых значений `http://org-"
 "id.guide <http://org-id.guide>`_; либо"
 
-# 54632e6a43e044f78f7f90efc046a7e3
-#: ../../schema/guidance/identifiers.rst:53
+#: ../../schema/guidance/identifiers.rst:35 f8af427db5e24b6db169da1b2c11c68d
 msgid "Use MISC-{Publisher_Name} as the scheme"
 msgstr "Использовать MISC-{Publisher_Name} в качестве схемы"
 
-# bca849463d9f4e7fbe79cfc6d9dd334c
-#: ../../schema/guidance/identifiers.rst:57
+#: ../../schema/guidance/identifiers.rst:39 8fea26e1a5ed4aa1b5b5d11ddfe45726
 msgid "Person Identifiers"
 msgstr "Идентификаторы физических лиц"
 
-# 19cd399eb3324195af97e486b2b47a36
-#: ../../schema/guidance/identifiers.rst:60
+#: ../../schema/guidance/identifiers.rst:42 2694f23a12384e41b8021656a314e73e
 msgid "System Identifiers"
 msgstr "Идентификаторы систем"
 
-# dc2ace8efc3a43549ad7744c900bc98d
-#: ../../schema/guidance/identifiers.rst:62
+#: ../../schema/guidance/identifiers.rst:44 285794e087634c4c88d767f160696a58
 msgid ""
 "If the source system has assigned a unique identifier to individual persons,"
 " and this identifier can be published, then this should be included with the"
@@ -191,8 +154,7 @@ msgstr ""
 "физическим лицам и этот идентификатор может быть опубликован, то он должен "
 "быть включен в 'MISC-{Publisher Name}' схемы."
 
-# fc4e002526644812ab4cf5d4d94d054d
-#: ../../schema/guidance/identifiers.rst:64
+#: ../../schema/guidance/identifiers.rst:46 1858f3fa23de46b49156526925161651
 msgid ""
 "For example, a beneficial ownership reporting system may maintain a database"
 " table of 'person' records, each with its identifier as a primary key. So "
@@ -208,13 +170,11 @@ msgstr ""
 "необработанном виде, либо в измененном виде для обеспечения уникального "
 "значения."
 
-# 062ac330ccf14ac09089ad5df8c8037e
-#: ../../schema/guidance/identifiers.rst:68
+#: ../../schema/guidance/identifiers.rst:50 344504bfac2f4f68abc00a2bc4741a38
 msgid "Shared identifiers"
 msgstr "Общие идентификаторы"
 
-# bc0a13d296bd467c9292fac29b244d1e
-#: ../../schema/guidance/identifiers.rst:70
+#: ../../schema/guidance/identifiers.rst:52 625abed8664a47d9a640b9261ee2e369
 msgid ""
 "If the source system has collected one or more known identification numbers "
 "for a person, and these can be published without privacy or security risks, "
@@ -226,8 +186,7 @@ msgstr ""
 "опубликованы без рисков, связанных с конфиденциальностью или безопасностью, "
 "то их также следует включить в массив ``PersonStatement.identifiers``."
 
-# 02b258819fb84c4d9347bb92d411e179
-#: ../../schema/guidance/identifiers.rst:72
+#: ../../schema/guidance/identifiers.rst:54 d47d3f16d37348b09f49e3ebb843ff83
 msgid ""
 "In such cases, the values for ``scheme`` should be based on the following "
 "pattern:"
@@ -235,13 +194,11 @@ msgstr ""
 "В таких случаях в основе значений для ``scheme`` должна лежать следующая "
 "структура:"
 
-# 5f370011de0c4568898dce5d51b2db27
-#: ../../schema/guidance/identifiers.rst:74
+#: ../../schema/guidance/identifiers.rst:56 d223b692b67b411f88d4d17b129bed38
 msgid "{JURISDICTION}-{TYPE}"
 msgstr "{JURISDICTION}-{TYPE}"
 
-# fc4a39b8d2c74844bc4648f3daf6cc63
-#: ../../schema/guidance/identifiers.rst:76
+#: ../../schema/guidance/identifiers.rst:58 e9432d893de14008a192d2b762bf32c6
 msgid ""
 "Where jurisdiction is expressed using the extended ISO 3-digit country codes"
 " list proposed by in `ICAO Document 9303 §5 "
@@ -254,18 +211,15 @@ msgstr ""
 "<http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_ (стр. "
 "22-29)."
 
-# 6ec3dee2f2d44754afcdb39c93739317
-#: ../../schema/guidance/identifiers.rst:78
+#: ../../schema/guidance/identifiers.rst:60 45aebc97f01d4c1abc619a24383328b6
 msgid "For example, a passport number from Afghanistan would have the scheme:"
 msgstr "Например, номер паспорта Афганистана имел бы такую схему:"
 
-# a2c4bb68c6ca40ba9fc88c1c8a615aeb
-#: ../../schema/guidance/identifiers.rst:80
+#: ../../schema/guidance/identifiers.rst:62 6707eb3ad338443aadd71ec6d152fe5e
 msgid "> AFG-PASSPORT-{NUMBER}"
 msgstr "> AFG-PASSPORT-{NUMBER}"
 
-# 44c76bab80d740caa298ffe809211d9d
-#: ../../schema/guidance/identifiers.rst:82
+#: ../../schema/guidance/identifiers.rst:64 af1472976b84428bbd3f9db13aa0ce43
 msgid ""
 "Where the publisher is providing an internal identifier, these should use "
 "'MISC-{Publisher_Name}' as the scheme."
@@ -273,8 +227,7 @@ msgstr ""
 "В случае если издатель указывает внутренний идентификатор, в нем в качестве "
 "схемы следует использовать 'MISC-{Publisher_Name}'."
 
-# 224097563234458ca729ee9b96ec8b04
-#: ../../schema/guidance/identifiers.rst:86
+#: ../../schema/guidance/identifiers.rst:68 a5e197784c244799933e2d32e931090b
 msgid ""
 "When using BODS to provide open data, it is important to ensure any person "
 "identifiers are suitable for publication under national laws and data "
@@ -285,8 +238,7 @@ msgstr ""
 "опубликования в соответствии с национальным законодательством и нормами по "
 "защите данных."
 
-# 3d5d94203dc6417d8892028a9961b49c
-#: ../../schema/guidance/identifiers.rst:88
+#: ../../schema/guidance/identifiers.rst:70 405773b48cf64b2087cad9c12518dbbf
 msgid ""
 "Most of the identifier types listed below **are not** suitable for "
 "publication as part of an open dataset."
@@ -294,8 +246,7 @@ msgstr ""
 "Большинство перечисленных ниже типов идентификаторов **не являются** "
 "пригодными для опубликования в рамках набора открытых данных."
 
-# 23550bcbb14e44519ab56842fbb18ac1
-#: ../../schema/guidance/identifiers.rst:91
+#: ../../schema/guidance/identifiers.rst:73 a9c0097b679e4bbd89f3e94934bbe6f9
 msgid ""
 "The following identification types are currently documented. Suggestions for"
 " new types should be made through the `issue tracker "
@@ -306,13 +257,11 @@ msgstr ""
 " `системы отслеживания ошибок <https://github.com/openownership/data-"
 "standard/issues>`_."
 
-# 729f61330cf94fa8ad6808c1c106b7fa
-#: ../../schema/guidance/identifiers.rst:94
+#: ../../schema/guidance/identifiers.rst:76 5115451d8012451788a5336fcfbf71bc
 msgid "PASSPORT"
 msgstr "ПАСПОРТ"
 
-# e1c2576cbb8f4120bfb6d81242b2367f
-#: ../../schema/guidance/identifiers.rst:96
+#: ../../schema/guidance/identifiers.rst:78 9840c15b311c40d6b9d00ecb11206ed3
 msgid ""
 "Passport numbers should follow the format of the identifier (second) line in"
 " a machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 "
@@ -324,8 +273,7 @@ msgstr ""
 "<http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_), включая"
 " как минимум номер документа."
 
-# 82293767ad584823a3371c0be6a7d879
-#: ../../schema/guidance/identifiers.rst:98
+#: ../../schema/guidance/identifiers.rst:80 cbea088fc03d4df88e98cc70f8d07f85
 msgid ""
 "Parsers should be able to extract the document number from the first 9 "
 "characters, and to access any subsequent information supplied according to "
@@ -335,13 +283,11 @@ msgstr ""
 "символов, а также получать доступ к последующей информации, предоставляемой "
 "в соответствии с форматом ИКАО."
 
-# e706fe310fbb43038d8185591d936b55
-#: ../../schema/guidance/identifiers.rst:101
+#: ../../schema/guidance/identifiers.rst:83 072548f90020442eaaf7f75363726889
 msgid "TAXID"
 msgstr "ИНН"
 
-# 625562789e524f3d9858c045ad4afc76
-#: ../../schema/guidance/identifiers.rst:103
+#: ../../schema/guidance/identifiers.rst:85 a1da376f85bc4d98a65e0bfeb645621c
 msgid ""
 "Country taxpayer identification systems vary. Where specific guidance on "
 "including numbers from a particular jurisdiction is required, this may be "
@@ -352,13 +298,11 @@ msgstr ""
 "значений из определенной юрисдикции, они могут быть приведены здесь в "
 "будущем."
 
-# c773d1e3b0fa4e8b83cd4fadfc41325c
-#: ../../schema/guidance/identifiers.rst:106
+#: ../../schema/guidance/identifiers.rst:88 c0310d50ff30481ca0569a73051d3a8b
 msgid "IDCARD"
 msgstr "ИДЕНТИФИКАЦИОННАЯ КАРТА"
 
-# 727661b654ae41cdb4839f42dea3ccb1
-#: ../../schema/guidance/identifiers.rst:108
+#: ../../schema/guidance/identifiers.rst:90 771be235d2ff4a73895ea721f36a12e6
 msgid ""
 "Country ID card systems vary. Where specific guidance on including numbers "
 "from a particular jurisdiction is required, this may be included here in "
@@ -367,3 +311,102 @@ msgstr ""
 "В странах существуют различные системы идентификационных карт. В случае если"
 " потребуются особые указания касательно включения числовых значений из "
 "определенной юрисдикции, они могут быть приведены здесь в будущем."
+
+#: ../../schema/guidance/identifiers.rst:94 d95bbd06931d460bbf33de2ee33b1362
+msgid "Multiple Identifiers for entities or people"
+msgstr ""
+
+#: ../../schema/guidance/identifiers.rst:96 7e8d523066d34c94a41f610b7f153f9c
+msgid ""
+"A source system might hold the following identifying information for a "
+"single company:"
+msgstr ""
+"В исходной системе может храниться следующая идентифицирующая информация по "
+"отдельной компании:"
+
+#: ../../schema/guidance/identifiers.rst:98 42feda3a4f6a45ebb59fc257969c2505
+msgid "A registered company number; and"
+msgstr "Номер зарегистрированной компании; а также"
+
+#: ../../schema/guidance/identifiers.rst:99 de7cdcdedb374656a5c847580e190ca7
+msgid "A VAT number;"
+msgstr "Номер плательщика НДС;"
+
+#: ../../schema/guidance/identifiers.rst:101 b71cb2f0ab954baea4b44f07302de904
+msgid ""
+"In this case, two entries can be created in the Entity statement's "
+"``identifiers`` array:"
+msgstr ""
+"В данном случае в массиве ``identifiers`` записи о субъекте можно создать "
+"два элемента:"
+
+#: ../../schema/guidance/identifiers.rst:116 debe6489546a43dd90a3d73b9164896a
+msgid "Person Statements may also hold an array of Identifiers."
+msgstr "Записи о физических лицах также могут иметь массив Идентификаторов."
+
+#: ../../schema/guidance/identifiers.rst:121 344504bfac2f4f68abc00a2bc4741a38
+msgid "Other identifiers"
+msgstr ""
+
+#: ../../schema/guidance/identifiers.rst:124 72a945d8c93640989f8ee51c70db5055
+msgid "Market Identifier Codes (MICs)"
+msgstr ""
+
+#: ../../schema/guidance/identifiers.rst:126 5c28e71c19a44921ae20c35c839d7d4c
+msgid ""
+"See this `company information published as BODS JSON "
+"<https://github.com/openownership/data-"
+"standard/blob/master/tests/data/entity-statement/valid/valid-entity-"
+"statement-plc.json>`_ for an example of a valid use of MICs."
+msgstr ""
+
+#: ../../schema/guidance/identifiers.rst:128 797cf539a1d94bd993a2bf521e344af5
+msgid ""
+"When a company is listed, a ``publicListing`` object can be published within"
+" the Entity Statement, containing information about its securities and where"
+" they are traded. An array of ``securitiesListings`` MAY be built and, for "
+"each security and market on which it is traded, the identifier for the "
+"market MAY be published."
+msgstr ""
+
+#: ../../schema/guidance/identifiers.rst:130 c79a20cacfdf45dfa7fba666670e1a54
+msgid ""
+"Two properties SHOULD be used to accurately identify where a security is "
+"traded: the ``operatingMarketIdentifierCode`` of the operating market plus a"
+" ``marketIdentifierCode``. The ``marketIdentifierCode`` will be the same as "
+"the ``operatingMarketIdentifierCode`` if the security is traded on a main "
+"exchange. However the ``marketIdentifierCode`` will differ where a security "
+"is traded on a segment of an exchange."
+msgstr ""
+
+#: ../../schema/guidance/identifiers.rst:132 a385e10c29e5439594250b7943ab8749
+msgid ""
+"MICs are standardised, issued and maintained by SWIFT as `ISO 10383 "
+"<https://www.iso20022.org/market-identifier-codes>`_. The specification of "
+"``operatingMarketIdentifierCode`` and ``marketIdentifierCode`` is part of "
+"the ISO standard."
+msgstr ""
+
+#: ../../schema/guidance/identifiers.rst:135 eb3c3c55f3f64cd2b69b9bc56ad84bbc
+msgid "Tradable security identifiers"
+msgstr ""
+
+#: ../../schema/guidance/identifiers.rst:137 556f638a4480403f8d092a918cb650e4
+msgid ""
+"See this `company information published as BODS JSON "
+"<https://github.com/openownership/data-"
+"standard/blob/master/tests/data/entity-statement/valid/valid-entity-"
+"statement-plc.json>`_ for an example use of securities identifiers."
+msgstr ""
+
+#: ../../schema/guidance/identifiers.rst:139 270cd13110ad4f81b8ec8cfae1c05ed6
+msgid ""
+"Where a ``securitiesListing`` is supplied (see above), it MUST include a "
+"``ticker`` value. This will allow trades of that security to be tracked on "
+"the identified market. However, securities can be traded on several "
+"exchanges and therefore a globally unique identifier for the security SHOULD"
+" also be supplied where possible. Supported identifier schemes for "
+"securities are listed on the :any:`schema reference page <schema-"
+"codelists>`. The identifier scheme and the security’s ID under that scheme "
+"should be published as ``idScheme`` and ``id`` respectively."
+msgstr ""

@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:57+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,27 +21,19 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 655947ec177244ecb588134eac12e5c4
-#: ../../schema/guidance/serialization.rst:4
+#: ../../schema/guidance/serialization.rst:4 d1f1d861cd734c9aaa5ed865607c2a4a
 msgid "Serialization"
 msgstr "Serialización"
 
-# b604f371857a4fe9a67a6107a9e2dfa6
-#: ../../schema/guidance/serialization.rst:6
+#: ../../schema/guidance/serialization.rst:6 8321f81eebd94847ade9604639faf0c8
 msgid ""
 "The canonical serialization of BODS data is as a `JSON document "
-"<https://tools.ietf.org/html/rfc8259>`_. A JSON BODS file SHOULD consists of"
-" a series of ordered statement objects within a top-level array. JSON Lines "
+"<https://tools.ietf.org/html/rfc8259>`_. A JSON BODS file SHOULD consist of "
+"a series of ordered statement objects within a top-level array. JSON Lines "
 "MAY also be used when creating large files."
 msgstr ""
-"La serialización canónica de los datos basados en BODS se da como un "
-"`documento JSON <https://tools.ietf.org/html/rfc8259>`_. Un archivo JSON "
-"BODS DEBERÍA consistir en una serie de objetos de declaración ordenados "
-"dentro de un arreglo de nivel superior. También puede utilizarse JSON Lines "
-"cuando se crean archivos grandes."
 
-# 87927d5ea2d64705a00825c0ac49f02f
-#: ../../schema/guidance/serialization.rst:8
+#: ../../schema/guidance/serialization.rst:8 4bc6afbad8bb4f3582429c859992e96f
 msgid ""
 "Each of the :ref:`entityStatements <schema-entity-statement>` or "
 ":ref:`personStatements <schema-person-statement>` referenced by a particular"
@@ -56,8 +47,7 @@ msgstr ""
 " <schema-ownership-or-control-statement>` DEBE aparecer antes de esa "
 "declaración sobre titularidad o control en el arreglo ordenado."
 
-# b6ad419a547047b0958af11729ea03f8
-#: ../../schema/guidance/serialization.rst:10
+#: ../../schema/guidance/serialization.rst:10 b03c2edd19324f14a3b3c836f855858b
 msgid ""
 "BODS data MAY also be serialized in tabular form, with each row representing"
 " a statement. Columns SHOULD represent statement fields and column titles "
@@ -69,82 +59,66 @@ msgstr ""
 "DEBERÍAN utilizar el correspondiente Indicador JSON de la raíz de la "
 "declaración."
 
-# ec120e95302e401a9ddec572bd9178c3
-#: ../../schema/guidance/serialization.rst:12
+#: ../../schema/guidance/serialization.rst:12 77d6e57510d740d492839870513b8eca
 msgid "For example, the extract:"
 msgstr "Por ejemplo, el fragmento:"
 
-# c0b00b34bf0943f49fcd2e65f0c6f9b5
-#: ../../schema/guidance/serialization.rst:43
+#: ../../schema/guidance/serialization.rst:43 77d6c64210f94824865cd7c48545eb56
 msgid "may be serialized in a table as:"
 msgstr "puede serializarse en una tabla como:"
 
-# e4e5d853b2784e5bb1ca1b5cb991f485
-#: ../../schema/guidance/serialization.rst:48
+#: ../../schema/guidance/serialization.rst:48 eaffa44415584c86ac5f9a9a1bbaa24b
 msgid "statementID"
 msgstr "identificaciónDeDeclaración"
 
-# b95ed1ca270e426e8c7d8d11983bff6b
-#: ../../schema/guidance/serialization.rst:49
+#: ../../schema/guidance/serialization.rst:49 9cc8dba9a0d54bffa377114f489fc98a
 msgid "statementType"
 msgstr "tipoDeDeclaración"
 
-# 175ee0b3c318488bb53a95b86269367b
-#: ../../schema/guidance/serialization.rst:50
+#: ../../schema/guidance/serialization.rst:50 bd9babbc42ce45de939a59f52477085b
 msgid "identifiers/0/scheme"
 msgstr "identificadores/0/esquema"
 
-# 8b85ff9004ea4f9791f878ebba7f40b4
-#: ../../schema/guidance/serialization.rst:51
+#: ../../schema/guidance/serialization.rst:51 2229ab3b6d844071a09eef9fc3e4214a
 msgid "identifiers/0/id"
 msgstr "identificadores/0/identificación"
 
-# 824e3340cac445d3bb505f315f44bb0e
-#: ../../schema/guidance/serialization.rst:52
+#: ../../schema/guidance/serialization.rst:52 ea83cfd3f7ad4dfb95427ea78632259c
 msgid "e3c07f34-1810-4eed-b845-4d9f4d97f9d5"
 msgstr "e3c07f34-1810-4eed-b845-4d9f4d97f9d5"
 
-# b71d72fc25f5403fa544a897026be01a
-#: ../../schema/guidance/serialization.rst:53
+#: ../../schema/guidance/serialization.rst:53 9870dfb1feb44f36bbd772de59364fff
 msgid "entityStatement"
 msgstr "declaraciónSobreEntidad"
 
-# 1716ad5501354a2d988f53c571c2a059
-#: ../../schema/guidance/serialization.rst:54
+#: ../../schema/guidance/serialization.rst:54 0d686196a0cc4d989334e5bb9f4323e3
 msgid "GB-COH"
 msgstr "GB-COH"
 
-# 01257add927e410eb1a4fc9b2c6d9189
-#: ../../schema/guidance/serialization.rst:55
+#: ../../schema/guidance/serialization.rst:55 fbce5412c9a549c6b6d37e1789007867
 msgid "07444723"
 msgstr "07444723"
 
-# fece5973bd7342e8932ac83a2eaf0dc4
-#: ../../schema/guidance/serialization.rst:56
+#: ../../schema/guidance/serialization.rst:56 e1fd73b49d7544828f76531050192e42
 msgid "a2b485be-e3b6-4fd7-8a6a-930e46cf9957"
 msgstr "a2b485be-e3b6-4fd7-8a6a-930e46cf9957"
 
-# 28105673ddfd437582887fe883a843fb
-#: ../../schema/guidance/serialization.rst:57
+#: ../../schema/guidance/serialization.rst:57 66a548c22dfe48138b1c3ad3cf8b16ad
 msgid "personStatement"
 msgstr "declaraciónSobrePersona"
 
-# b2911098e42344bfb37be38452affb8b
-#: ../../schema/guidance/serialization.rst:58
+#: ../../schema/guidance/serialization.rst:58 8c7c9ea23acb4128b5cd8233e1a905ad
 msgid "MX-RFC"
 msgstr "MX-RFC"
 
-# d4a2bdc3ab4d4f4faa68aa4a0fb746ea
-#: ../../schema/guidance/serialization.rst:59
+#: ../../schema/guidance/serialization.rst:59 8a57abfc115748efa78cb80eda15906d
 msgid "ABC680524P-76"
 msgstr "ABC680524P-76"
 
-# fd7ff244790143c0a22259341999d93d
-#: ../../schema/guidance/serialization.rst:61
+#: ../../schema/guidance/serialization.rst:61 c64ca721281749acb1f1199bd7dca492
 msgid "34b479f2-1681-4064-ab51-1e703fbafa"
 msgstr "34b479f2-1681-4064-ab51-1e703fbafa"
 
-# 48b972c92e6d48bfbed555c8bd34560d
-#: ../../schema/guidance/serialization.rst:62
+#: ../../schema/guidance/serialization.rst:62 3707a34719c243ff994d8413a4259a5a
 msgid "ownershipOrControlStatement"
 msgstr "declaraciónSobreTitularidadOControl"

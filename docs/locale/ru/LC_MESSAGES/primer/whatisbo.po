@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Valery Gusak <valery.gusak@gmail.com>, 2019
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,13 +21,11 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 0a768b90fd6a425cbce46f3494ee77ca
-#: ../../primer/whatisbo.rst:4
+#: ../../primer/whatisbo.rst:4 b5d0a469f9b841d6812f573a2c3c0fd1
 msgid "What is beneficial ownership?"
 msgstr "Что такое бенефициарное владение?"
 
-# 206d3bd379a346b7bf0ce8ba95a89926
-#: ../../primer/whatisbo.rst:6
+#: ../../primer/whatisbo.rst:6 6ce83d7d5a794513bed51853f66a5208
 msgid ""
 "The concept of beneficial ownership helps us understand how companies and "
 "other legal entities are owned and controlled."
@@ -35,13 +33,11 @@ msgstr ""
 "Концепция бенефициарного владения помогает нам понять, как осуществляется "
 "владение и контроль в отношении компаний и других юридических лиц."
 
-# 53fdb35ed6024ca4a3c1b6516ba478e6
-#: ../../primer/whatisbo.rst:13
+#: ../../primer/whatisbo.rst:13 b3ec24a7380e4ae29a6f748a112ff35f
 msgid "Companies or people can own other companies..."
 msgstr "Компаниями могут владеть физические лица или другие компании..."
 
-# a125c5f16976457e88d38e910fc8a1fe
-#: ../../primer/whatisbo.rst:19
+#: ../../primer/whatisbo.rst:19 22f1f73ebbb74819b4c9ddd20a327306
 msgid ""
 "The idea that people own companies and sometimes companies own companies is "
 "well understood."
@@ -49,13 +45,15 @@ msgstr ""
 "Вполне понятна мысль о том, что физические лица владеют компаниями, а иногда"
 " компании владеют компаниями."
 
-# 43cf1cf883f04c6983e895e6a7ef1be4
-#: ../../primer/whatisbo.rst:29
+#: ../../primer/whatisbo.rstNone 972dc28255ee45c9940168d59abb857f
+msgid "Person A owns 100% of Company 1"
+msgstr ""
+
+#: ../../primer/whatisbo.rst:29 f79dda5de9c14940ad9c0b59ab599134
 msgid "...but it's people that ultimately benefit..."
 msgstr "...но выгоду в итоге получают физические лица..."
 
-# 1f5f935cd6b74eaf9589671af3ec37e0
-#: ../../primer/whatisbo.rst:35
+#: ../../primer/whatisbo.rst:35 bcd00f0d9a9246cc9381307615e0d594
 msgid ""
 "Even when companies own companies, individuals almost always appear at the "
 "end of the ownership chain. They ultimately benefit from companies’ "
@@ -65,20 +63,23 @@ msgstr ""
 "всегда стоят физические лица. Они получают конечную выгоду от финансовых "
 "успехов компаний и часто разделяют их неудачи."
 
-# 20ce0f9235c344359b7a26d1e59896ff
-#: ../../primer/whatisbo.rst:43
+#: ../../primer/whatisbo.rstNone 2076d0efd7964e2c8632500099394c46
+msgid ""
+"Company 2 owns 100% of Company 3's shares. And Person B owns\n"
+"30% of Company 2's shares"
+msgstr ""
+
+#: ../../primer/whatisbo.rst:43 999f26b57dfd4d788cc7c51a252ab69e
 msgid "Here, Company 2 acts as an intermediary in a chain of ownership."
 msgstr "Здесь Компания 2 выступает в качестве посредника в цепочке владения."
 
-# 9ba785b4ab4444d7887f7bcba6ce8b7a
-#: ../../primer/whatisbo.rst:49
+#: ../../primer/whatisbo.rst:49 2562793448a54392b9f50f5826bd6a3c
 msgid "...so, we need to know who ultimately controls a company..."
 msgstr ""
 "...таким образом, нам необходимо знать, кто в конечном итоге контролирует "
 "компанию..."
 
-# aee8ce31e7c74cce9780990bc6184fd1
-#: ../../primer/whatisbo.rst:55
+#: ../../primer/whatisbo.rst:55 0a72ec1cfd5e47429b1675b160c01dc0
 msgid ""
 "If a person owns something, they usually have some control over it. Owning "
 "shares in a company may confer voting rights, for example. But ownership and"
@@ -94,8 +95,14 @@ msgstr ""
 "иметь право назначать 60% других членов совета директоров, имея при этом "
 "лишь небольшую финансовую долю в бизнесе."
 
-# a75ed82bc39444b9b2bf9583babd6779
-#: ../../primer/whatisbo.rst:67
+#: ../../primer/whatisbo.rstNone 2846cff24ec1410c9c56d9714f78cc2e
+msgid ""
+"Person B owns 30% of Company 2's shares. And Person C (an\n"
+"executive director) has the right to appoint 60% of Company 2's board\n"
+"members"
+msgstr ""
+
+#: ../../primer/whatisbo.rst:67 ab53c8eff2424e71865df9d3f6b2609d
 msgid ""
 "Significant control over a company’s composition and decisions may be used "
 "to steer benefits and direct risks. Those people taking the financial risks "
@@ -107,13 +114,11 @@ msgstr ""
 "компании, могут быть не теми, кто принимает решения. В таком случае нам "
 "необходимо знать, кто осуществляет контроль."
 
-# 806ceccddc4f46a9bd26927dde176ad0
-#: ../../primer/whatisbo.rst:76
+#: ../../primer/whatisbo.rst:76 fe42b981f361476ea3aeec111bbd8ca2
 msgid "...to see the big picture."
 msgstr "...чтобы увидеть полную картину."
 
-# ce3d557a0346403fb98e4ef429050adf
-#: ../../primer/whatisbo.rst:82
+#: ../../primer/whatisbo.rst:82 64531193e269479cbefa4ffc99954563
 msgid ""
 "Beneficial ownership therefore takes in both types of involvement with a "
 "company: ownership and control."
@@ -121,8 +126,7 @@ msgstr ""
 "Поэтому бенефициарное владение учитывает оба типа участия в компании: "
 "владение и контроль."
 
-# fa1be32b523047e0a7eb63f5948e8260
-#: ../../primer/whatisbo.rst:87
+#: ../../primer/whatisbo.rst:87 fc4c954d98a04f1986c3afc0029a2e9f
 msgid ""
 "**Beneficial ownership** is the right to some share of a legal entity's "
 "income or assets (ownership) or the right to direct or influence the "

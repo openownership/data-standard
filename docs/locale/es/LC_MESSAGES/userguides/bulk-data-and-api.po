@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:57+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,12 +21,10 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 63d8c31d523a4692a565301452bee926
-#: ../../userguides/bulk-data-and-api.rst:2
+#: ../../userguides/bulk-data-and-api.rst:2 4da3143f626f423abd8ed77af87ee412
 msgid "Bulk data exports and API access"
 msgstr "Exportación de datos en bloque y acceso a la API"
 
-# 8206307da25b4c97a13aeaec68c65c9d
-#: ../../userguides/bulk-data-and-api.rst:4
+#: ../../userguides/bulk-data-and-api.rst:4 eeb2fbc795af448ba727c3eff1df31c3
 msgid "(New section.)"
 msgstr "(Nueva sección)."
