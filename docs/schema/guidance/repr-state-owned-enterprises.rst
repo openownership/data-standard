@@ -27,7 +27,7 @@ A number of scenarios are outlined below. We show how the these properties and o
 Example scenarios
 ------------------------
 
-These examples show how statements might be connected to represent the involvement of a state with an enterprise. Only those property:value pairs that are particularly relevant to the scenario are shown in the statement blocks. Complete data would also show, for instance, the particular types of interests held by the state; such as an 80% shareholding. 
+These examples show how statements might be connected to represent the involvement of a state with an enterprise. Only those property:value pairs that are particularly relevant to the scenario are shown in the statement blocks. Complete data would also show, for instance, the particular types of interests held by the state, such as an 80% shareholding. 
 
 
 Scenario 1
