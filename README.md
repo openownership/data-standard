@@ -156,5 +156,10 @@ Now the files are ready to be translated in Transifex.
 
 ```
 pybabel compile --use-fuzzy -d docs/locale -D svg
-itstool -m docs/locale/ru/LC_MESSAGES/svg.mo -o docs/_build_svgs/ru docs/_assets/*.svg
+```
+
+Replacing <LANG> with language code, eg, `ru` (run this once per language):
+
+```
+itstool -m docs/locale/<LANG>/LC_MESSAGES/svg.mo -o docs/_build_svgs/<LANG> docs/_assets/*.svg
 ```
