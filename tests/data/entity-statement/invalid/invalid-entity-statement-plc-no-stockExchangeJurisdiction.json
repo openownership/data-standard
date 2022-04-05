@@ -12,7 +12,7 @@
         "scheme": "XI-LEI"
       }
     ],
-    "incorporatedInJurisdiction": {
+    "jurisdiction": {
       "code": "GB",
       "name": "United Kingdom of Great Britain and Northern Ireland (the)"
     },

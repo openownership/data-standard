@@ -37,7 +37,9 @@
         "legalEntity",
         "arrangement",
         "anonymousEntity",
-        "unknownEntity"
+        "unknownEntity",
+        "state",
+        "stateBody"
       ],
       "codelist": "entityType.csv",
       "openCodelist": false,
@@ -73,13 +75,13 @@
       "required": [
         "reason"
       ],
-      "propertyOrder": 5
+      "propertyOrder": 8
     },
     "name": {
       "title": "Entity name",
       "description": "The declared name of this entity.",
       "type": "string",
-      "propertyOrder": 6
+      "propertyOrder": 10
     },
     "alternateNames": {
       "title": "Alternative names",
@@ -90,13 +92,13 @@
         "title": "Name",
         "description": "A name this entity is known by."
       },
-      "propertyOrder": 7
+      "propertyOrder": 12
     },
-    "incorporatedInJurisdiction": {
-      "title": "Incorporated In Jurisdiction",
-      "description": "Details on where this legal entity is incorporated",
+    "jurisdiction": {
+      "title": "Jurisdiction",
+      "description": "The jurisdiction in which this entity was registered (for legal and registered entities, and arrangements). Or the state's jurisdiction (for states and state bodies).",
       "$ref": "components.json#/definitions/Jurisdiction",
-      "propertyOrder": 10
+      "propertyOrder": 15
     },
     "identifiers": {
       "title": "Identifiers",
@@ -166,6 +168,53 @@
       "title": "Public listing",
       "description": "Details of a publicly listed company, its securities (shares and other tradable financial instruments related to the entity), and related regulatory filings.",
       "$ref": "components.json#/definitions/PublicListing"
+    },
+    "entitySubtype": {
+      "type": "object",
+      "title": "Subtype",
+      "description": "Further information about the type of entity described in the statement.",
+      "required": [
+        "generalCategory"
+      ],
+      "properties": {
+        "generalCategory": {
+          "type": "string",
+          "title": "General category",
+          "description": "The general category into which the entity fits. The category classification MUST align with the `entityType` classification.",
+          "codelist": "entitySubtypeCategory.csv",
+          "enum": [
+            "stateBody-governmentDepartment",
+            "stateBody-stateAgency",
+            "stateBody-other"
+          ],
+          "openCodelist": false
+        },
+        "localTerm": {
+          "type": "string",
+          "title": "Local term",
+          "description": "The local term for the category of entity. For example, in Finland 'ministeriö' for a government department."
+        }
+      },
+      "propertyOrder": 5
+    },
+    "formedByStatute": {
+      "type": "object",
+      "title": "Formed by statute",
+      "description": "The law which mandated the formation of the entity described in the statement, where applicable. This information SHOULD be provided where a state has created an agency or other entity with specific legislation. ",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Statute name",
+          "description": "The name of the law. "
+        },
+        "date": {
+          "type": "string",
+          "title": "Date",
+          "description": "The date on which the law was passed. The date SHOULD be in the form YYYY-MM-DD. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
+          "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+        }
+      },
+      "propertyOrder": 18
     }
   },
   "required": [

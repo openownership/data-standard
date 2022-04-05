@@ -1,0 +1,32 @@
+{
+  "alternateNames": [
+    "Finansministeriet"
+  ],
+  "entitySubtype": {
+    "localTerm": "ministeriö"
+  },
+  "entityType": "stateBody",
+  "isComponent": true,
+  "jurisdiction": {
+    "code": "FI",
+    "name": "Finland"
+  },
+  "name": "Valtiovarainministeriö",
+  "publicationDetails": {
+    "bodsVersion": "0.3",
+    "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
+    "publicationDate": "2022-04-01",
+    "publisher": {
+      "name": "X Register",
+      "url": "http://www.register.example"
+    }
+  },
+  "source": {
+    "type": [
+      "primaryResearch"
+    ]
+  },
+  "statementDate": "2022-02-14",
+  "statementID": "xregi-es-00001461827397290944606",
+  "statementType": "entityStatement"
+}

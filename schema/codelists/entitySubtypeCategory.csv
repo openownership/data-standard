@@ -1,0 +1,4 @@
+code,title,description,technical note
+stateBody-governmentDepartment,State body > Government department,"An element of government with executive responsibilities. Terms often used to designate such a body: ministry, department, bureau or office.",
+stateBody-stateAgency,State body > State Agency,A body overseeing or administering elements of public policy. State agencies may have responsiblities which are devolved from government departments or from the state's legislative body.,
+stateBody-other,State body > Other,A type of state body unlike a government department or state agency.,
