@@ -244,7 +244,15 @@
             "rightsToSurplusAssetsOnDissolution",
             "rightsToProfitOrIncome",
             "rightsGrantedByContract",
-            "conditionalRightsGrantedByContract"
+            "conditionalRightsGrantedByContract",
+            "controlViaCompanyRulesOrArticles",
+            "controlByLegalFramework",
+            "boardMember",
+            "boardChair",
+            "unknownInterest",
+            "unpublishedInterest",
+            "enjoymentAndUseOfAssets",
+            "rightToProfitOrIncomeFromAssets"
           ],
           "codelist": "interestType.csv",
           "openCodelist": false
