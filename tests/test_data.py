@@ -58,6 +58,7 @@ test_valid_statement_json_parametrize_data = [
     "valid-entity-statement-loose-validation.json",
     "valid-entity-statement-with-source.json",
     "valid-person-statement.json",
+    "valid-entity-statement-stateBody.json",
     "valid-ownership-or-control-statement.json",
     "gb-coh-entity-statement.json",
     "gb-coh-person-statement.json",
@@ -106,6 +107,7 @@ test_valid_package_json_parametrize_data = [
     "os-17-dr-02-dc-06.json",
     "valid-entity-statement-plc.json",
     "valid-entity-statement-plc-no-securitiesListings-provided.json",
+    "valid-bods-package-fi-soe.json"
 ]
 
 test_valid_package_json_parametrize_data = get_full_paths(test_valid_package_json_parametrize_data)
@@ -133,6 +135,7 @@ test_invalid_statement_json_parametrize_data = [
     ("entity-statement-extra-field.json", ValidationError),
     ("entity-statement-invalid-date-in-source.json", ValidationError),
     ("entity-statement-no-publication-details.json", ValidationError),
+    ("invalid-entity-statement-stateBody-no-entitySubtype-category.json", ValidationError),
     ("person-statement-with-invalid-statement-id.json", ValidationError),
     ("person-statement-with-bad-date.json", ValidationError),
     ("person-statement-no-publication-details.json", ValidationError),
@@ -324,6 +327,12 @@ test_invalid_statement_json_iter_errors_parametrize_data = [
         "ownership-or-control-statement-no-statement-type.json",
         {
             "'statementType' is a required property",
+        },
+    ),
+    (
+        "invalid-entity-statement-stateBody-no-entitySubtype-category.json",
+        {
+            "'generalCategory' is a required property",
         },
     ),
 ]
