@@ -90,7 +90,7 @@ EntityStatement
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/entity-statement.json
-   :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations,publicationDetails
+   :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations,publicationDetails,publicListing
    :externallinks: {"entityType":{"url":"#entitytype","text":"Codelists"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
    :allowexternalrefs:
 
@@ -128,7 +128,7 @@ Interest
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /definitions/Interest
-   :collapse: share,annotations
+   :collapse: share
    :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"Codelists"}}
    :allowexternalrefs:
 
@@ -176,6 +176,8 @@ Name
 OwnershipOrControlStatement
 ---------------------------
 
+If a person is a beneficial owner of an entity - whether directly or indirectly - and the person or entity is required to declare this beneficial ownership, there MUST be an Ownership-or-control Statement connecting the two which represents the beneficial ownership relationship. See :ref:`representing-bo` for detailed requirements.
+
 .. json-value:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /description
 
@@ -207,10 +209,23 @@ PersonStatement
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/person-statement.json
-   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,pepStatusDetails,publicationDetails,taxResidencies
+   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,politicalExposure/details,publicationDetails,taxResidencies
    :externallinks: {"unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"Codelists"}}
    :allowexternalrefs:
 
+
+.. _schema-public-listing:
+
+PublicListing
+---------------
+
+.. json-value:: ../_build_schema/components.json
+   :pointer: /definitions/PublicListing/description
+
+.. jsonschema:: ../_build_schema/components.json
+   :pointer: /definitions/PublicListing
+   :collapse: securitiesListings
+   :allowexternalrefs:
 
 .. _schema-publicationdetails:
 
@@ -249,6 +264,22 @@ ReplacesStatements
 
 See :any:`Updating statements <guidance-updating-data>` for technical guidance on working with updates to data.
 
+
+.. _schema-securities-listing:
+
+SecuritiesListing
+-----------------
+
+.. json-value:: ../_build_schema/components.json
+   :pointer: /definitions/SecuritiesListing/description
+
+See :any:`Real world identifiers <guidance-identifiers-other>` for technical guidance on representing securities listings.
+
+
+.. jsonschema:: ../_build_schema/components.json
+   :pointer: /definitions/SecuritiesListing
+   :externallinks: {"security/idScheme":{"url":"#securitiesidentifierschemes","text":"Codelists"}}
+   :allowexternalrefs:
 
 .. _schema-share:
 
@@ -301,7 +332,7 @@ Codelists
 AddressType
 +++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/addressType.csv
@@ -310,7 +341,7 @@ AddressType
 AnnotationMotivation
 ++++++++++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/annotationMotivation.csv
@@ -319,16 +350,16 @@ AnnotationMotivation
 EntityType
 ++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/entityType.csv
 
 
 DirectOrIndirect
-+++++++++++++
+++++++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/directOrIndirect.csv
@@ -337,7 +368,7 @@ DirectOrIndirect
 InterestType
 ++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/interestType.csv
@@ -346,7 +377,7 @@ InterestType
 NameType
 ++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/nameType.csv
@@ -355,16 +386,25 @@ NameType
 PersonType
 ++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/personType.csv
 
 
+SecuritiesIdentifierSchemes
++++++++++++++++++++++++++++
+
+.. csv-table-no-translate::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../_build_schema/codelists/securitiesIdentifierSchemes.csv
+
+
 SourceType
 ++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/sourceType.csv
@@ -373,7 +413,7 @@ SourceType
 StatementType
 +++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/statementType.csv
@@ -382,7 +422,7 @@ StatementType
 UnspecifiedReason
 +++++++++++++++++
 
-.. csv-table::
+.. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
    :file: ../_build_schema/codelists/unspecifiedReason.csv

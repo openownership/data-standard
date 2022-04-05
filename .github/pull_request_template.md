@@ -8,6 +8,7 @@
 
 ## Translations
 
+- [ ] New or edited strings appearing as a result of this PR will be picked up for translation
 - [ ] I've notified the translation coordinator of any new strings that will need
       translating. See: https://openownership.github.io/bods-dev-handbook/translations.html
 

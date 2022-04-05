@@ -1,7 +1,15 @@
 Examples
 ========
 
-The following examples highlight key elements of how ownership and control information is built up through the use of statements.
+The examples below highlight key elements of how ownership and control information is built up through the use of statements.
+
+You can also find examples of valid BODS JSON files in the standard repository:
+
+- Example data (`v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/examples>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/examples>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/examples>`__ )
+- Test data (`v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/tests/data/entity-statement/valid>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/tests/data/entity-statement/valid>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/tests/data/entity-statement/valid>`__ )
+
+For a visual rendering of these examples, use the `BODS Visualiser <https://www.openownership.org/visualisation/visualisation-tool/>`_.
+
 
 A single direct owner
 ---------------------
@@ -27,7 +35,7 @@ To update a previous statement, a new beneficial ownership statement, with a ``r
 
 In the (fictional) example below, the previous statement that Chris Taggart has 100% ownership of Chrinon Ltd is replaced by a new statement showing 50% ownership. A separate statement declares that the owner of the other 50% has not yet been identified.
 
-Note that only **changed statements** need to new statement identifiers. 
+Note that only **changed statements** need to have new statement identifiers. 
 
 .. literalinclude:: ../../examples/2-single-update.json
     :language: json

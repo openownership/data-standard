@@ -17,6 +17,7 @@ ChangeLog
 
 Added
 -----
+- Technical guidance (normative) on 'Representing beneficial ownership': providing detailed requirements for the use of ``beneficialOwnershipOrControl``, ``directOrIndirect``, ``componentStatementIDs``, and ``isComponent``.
 - Support for describing the traded securities and status of a publicly listed company (PLC): a new ``publicListing`` object has been added to Entity Statements.
 - Support for representing state-owned enterprises (SOEs):
 
@@ -45,7 +46,9 @@ Changed
 - Annotations changes from a ``anyOf`` to a ``oneOf``. This is technically correct and also is needed to improve validation messages.
 - Descriptions of ``statementType``.
 - Do not reference codelists in ``statementType`` - fixes issues caused by the way we use this field to select which subschema to use for validation. This should have no change for anyone using the compiled schema but may affect anyone using the files in ``schema/`` directly.
-- ``interestLevel`` renamed to ``directOrIndirect``.
+- `interestLevel` renamed to `directOrIndirect`.
+- The ``interestType`` codelist codes have had `OfTrust` removed so they refer to any type of legal arrangement. Their descriptions have been edited to reflect these changes. `beneficiaryOfTrust` has been changed to `beneficiaryOfLegalArrangement` to avoid ambiguity and `otherInfluenceOrControlOfTrust` has been removed.
+- The ``interestType`` codelist has had the following new codes added: `controlViaCompanyRulesOrArticles`, `controlByLegalFramework`, `boardMember`, `boardChair`, `unknownInterest`, `unpublishedInterest`, `enjoymentAndUseOfAssets`, `rightToProfitOrIncomeFromAssets`.
 
 
 [0.2] - 2019-06-30
