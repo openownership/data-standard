@@ -98,6 +98,8 @@ To run the tests:
 
 Translation consists of generating strings to be translated from the English docs, pushing them to Transifex, fetching translations back from Transifex, and then you can build the docs in the other languages you need.
 
+If you are working on a development branch, you **should not** push source file changes to Transifex. Instead, wait until your changes have been merged into the main branch. **Source files should only ever be pushed to Transifex from the main branch** (currently `master`) to ensure conflicts do not occur in Transifex between multiple people working on different branches simultaneously.
+
 To run the steps in the translation workflow, ensure that you have followed the installation and setup instructions above.
 
 You also need to make sure you have `gettext`, `pybabel` and (for SVGs) `itstool` installed in whatever environment you're running this in:
@@ -116,8 +118,7 @@ Run the following commands from the root directory unless otherwise specified (e
 
 **When you change text in the docs** you need to do the following so that they can be translated:
 
-1. `cd docs`
-2. Run `make gettext` to extract translatable English strings from the docs. (This generates `.pot` files into `docs/_build/gettext/`.)
+* From the `docs` directory, run `make gettext` to extract translatable English strings from the docs. (This generates `.pot` files into `docs/_build/gettext/`.)
 
 **If you modified the schema** also:
 
@@ -150,7 +151,7 @@ Now the files are ready to be translated in Transifex.
 
 4. **To fetch new translations** when they're done, you need to run `tx pull -a` to fetch all, or `tx pull -l ru` to fetch a particular language.
 
-5. **Commit** the new or updated .po files in `docs/locale`, using a separate commit from your edits to the source (RST, JSON or CSV) files.
+5. If you are still on the main branch, check out a new development branch from which you will make a PR with the updated translations. **Commit** the new or updated .po files in `docs/locale`.
 
 6. **Build translated SVGs** for each language using itstool, and commit these (because we can't easily install itstool on readthedocs):
 
@@ -163,3 +164,5 @@ Replacing <LANG> with language code, eg, `ru` (run this once per language):
 ```
 itstool -m docs/locale/<LANG>/LC_MESSAGES/svg.mo -o docs/_build_svgs/<LANG> docs/_assets/*.svg
 ```
+
+7. **Make a PR** with the new translation files and SVGs (if applicable).
