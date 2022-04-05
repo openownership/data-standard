@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +21,11 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 0efb5c0ef0824a6eb4ee60a82a4fb8ce
-#: ../../index.rst:2
+#: ../../index.rst:2 783fa39acab04a9d860b0c76d94f8fd9
 msgid "Beneficial Ownership Data Standard (v0.2)"
 msgstr "Estándar de Datos sobre Beneficiarios Finales (vers. 0.2)"
 
-# 7c7d3bf66b5843b6b2202a73f61a33a6
-#: ../../index.rst:4
+#: ../../index.rst:4 f2500111e3f04509a8914c1c44cbbbe8
 msgid ""
 "This website contains the draft specification of the Beneficial Ownership "
 "Data Standard (version 0.2) plus support for its use. :doc:`Find out more "
@@ -39,13 +36,11 @@ msgstr ""
 "uso. :doc:`Conozca más <about/index>` sobre el desarrollo del estándar y "
 "cómo participar en él."
 
-# 61e5cded2c134e3fb692e87895dee5e8
-#: ../../index.rst:12
+#: ../../index.rst:12 e299aaf465c54e3ea6504f9230c80794
 msgid "For Newcomers"
 msgstr "Para nuevos usuarios"
 
-# cf3ec7fba0d54f7797d13fd69831f99f
-#: ../../index.rst:14
+#: ../../index.rst:14 cd05babe6163470d80f65c72d73c2a52
 msgid ""
 "Get an overview of beneficial ownership and why a standardised format for "
 "data is important."
@@ -53,57 +48,47 @@ msgstr ""
 "Obtenga una noción general de los beneficiarios finales y sepa por qué es "
 "importante contar con un formato estandarizado de datos."
 
-# 9712a7559b4c435b98d173c8bcf97a79
-#: ../../index.rst:18
+#: ../../index.rst:18 01f42315b8bb499aae6b1a1489efd23e
 msgid ":doc:`Visit the primer <primer/index>`"
 msgstr ":doc:`Consulte la guía introductoria <primer/index>`"
 
-# e93ac76495ea4fffa45031852ffde9b9
-#: ../../index.rst:22
+#: ../../index.rst:22 6c7cfd820b514874a29f7f906a7c320b
 msgid ":doc:`What is beneficial ownership? <primer/whatisbo>`"
 msgstr ":doc:`¿Qué significa beneficiario final? <primer/whatisbo>`"
 
-# bb0c3763ad8540459c70f8007de35a0a
-#: ../../index.rst:26
+#: ../../index.rst:26 69deb2048b7d47b5839c19b72e073927
 msgid ":doc:`What is the data standard? <primer/whatisthebods>`"
 msgstr ":doc:`¿Qué es el estándar de datos? <primer/whatisthebods>`"
 
-# 828327919c8f4ed299cfe275c7731412
-#: ../../index.rst:30
+#: ../../index.rst:30 91142b32be2b4c458fdcfead566be603
 msgid ":doc:`About the standard's development <about/index>`"
 msgstr ":doc:`Acerca del desarrollo del estándar <about/index>`"
 
-# b93e81f9bfe64b679cddf14f8b0285a5
-#: ../../index.rst:39
+#: ../../index.rst:39 de66fd2b8d33459bb02715edba785d1b
 msgid "For Developers"
 msgstr "Para desarrolladores"
 
-# fcb9b6797f0247b1b661d4e6407a9fd3
-#: ../../index.rst:41
+#: ../../index.rst:41 22b691658ccd4918b510117b7f570989
 msgid "Understand how to package up and release beneficial ownership data."
 msgstr ""
 "Comprenda cómo empaquetar y publicar datos sobre beneficiarios finales."
 
-# 0abf329c23044bfab16ec996f508a1a9
-#: ../../index.rst:45
+#: ../../index.rst:45 c70cf763a77e4bdd9598bcee4cd55650
 msgid ":doc:`Visit the Data Schema <schema/index>`"
 msgstr ":doc:`Consulte el esquema de datos <schema/index>`"
 
-# 398d0a106a194b6185296e8a677a63ff
-#: ../../index.rst:49
+#: ../../index.rst:49 8da4aeb4aecd42e384754d8cc628e16c
 msgid ":doc:`The data model  <schema/concepts>`"
 msgstr ":doc:`El modelo de datos  <schema/concepts>`"
 
-# ee461ee5a41c4c5a999e5c51e9fe45ba
-#: ../../index.rst:53
+#: ../../index.rst:53 7e6026178c28438eac6f246a67b7a6a0
 msgid ":doc:`Schema browser <schema/schema-browser>`"
 msgstr ":doc:`Navegador del esquema <schema/schema-browser>`"
 
-# b25d8703268a4ab390b68f73d0ea798d
-#: ../../index.rst:57
+#: ../../index.rst:57 536c72178a21441f9b3a1db21d0417f8
 msgid ""
 ":doc:`Requirements for publication systems <schema/guidance/functional-"
 "requirements>`"
 msgstr ""
-":doc:`Requisitos para los sistemas de publicación <schema/guidance"
-"/functional-requirements>`"
+":doc:`Requisitos para los sistemas de publicación "
+"<schema/guidance/functional-requirements>`"

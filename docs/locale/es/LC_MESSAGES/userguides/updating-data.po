@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:57+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,13 +21,11 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 3dd15d2816a643e2b4f3acebc10f6c7f
-#: ../../userguides/updating-data.rst:2
+#: ../../userguides/updating-data.rst:2 750199e747984e69ac037d09827f3184
 msgid "Updating data"
 msgstr "Actualización de datos"
 
-# 337c09a3d8744a47bb916b302dde15d6
-#: ../../userguides/updating-data.rst:4
+#: ../../userguides/updating-data.rst:4 7f7423f86ffd4cd09a07de7c49f1f103
 msgid ""
 "(New section. Info on best practice in updating, correcting, ‘deleting’ and "
 "republishing data. replacesStatement etc.)"

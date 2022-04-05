@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Valery Gusak <valery.gusak@gmail.com>, 2019
-# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:07+0100\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +21,11 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# af72c825b2374695a89553f7b6466aa5
-#: ../../usecases.rst:2
+#: ../../usecases.rst:2 27225bd080e14905b80857caf5de62f4
 msgid "Use cases"
 msgstr "Варианты использования"
 
-# ffaf75278ab845d3a760d0c04771e853
-#: ../../usecases.rst:4
+#: ../../usecases.rst:4 a56b704e4fe741168db0785f110e2e2f
 msgid ""
 "The Beneficial Ownership Data Standard beta has been designed with reference"
 " to the requirements of eight use-cases:"
@@ -36,65 +33,53 @@ msgstr ""
 "Бета-версия Стандарта данных о бенефициарном владении была разработана в "
 "отношении требований для восьми вариантов использования:"
 
-# 9e4f38e435e041b68e93966e26e59526
-# b0e1ac91f24d4598b991e43e35a4c301
-#: ../../usecases.rst:7 ../../usecases.rst:30
+#: ../../usecases.rst:7 ../../usecases.rst:30 b9ba23e9acfc4642befca4181ac1b5a7
+#: b62d5e3839c1477a88ccbe3de36f3bb6
 msgid "Data supply"
 msgstr "Предоставление данных"
 
-# 8ee22dad205d4af29a1ec69cc9f10781
-#: ../../usecases.rst:8
+#: ../../usecases.rst:8 b40c377295d34ff697280f7e25fe7639
 msgid "Public Registers of Beneficial Ownership"
 msgstr "Публичные реестры бенефициарного владения"
 
-# 8909aa87acae4af8b6eaa81d43f2130f
-#: ../../usecases.rst:9
+#: ../../usecases.rst:9 1c0d95cd14304fd993e8d00277b88549
 msgid "Self-submitted data"
 msgstr "Данные, предоставляемые самостоятельно"
 
-# 2b5445469faf46e3863d925f9a0a821d
-#: ../../usecases.rst:10
+#: ../../usecases.rst:10 4c5c480b2fa14a51ae5ac3d79772be53
 msgid "Third-party submitted data"
 msgstr "Данные, предоставляемые третьими сторонами"
 
-# 2e2144f7edb24626a9aff14e32a11cdc
-#: ../../usecases.rst:11
+#: ../../usecases.rst:11 9c6bfe202c6946d3ab74fa187d042a8a
 msgid "Self-published data"
 msgstr "Данные, публикуемые самостоятельно"
 
-# b470cde113d647ba8343560d365a5dfa
-# dabcf77eb4e4415ca82b2cab70208b6f
 #: ../../usecases.rst:13 ../../usecases.rst:119
+#: 41b6d6bd02734517a0bb0deb381a728c dba7626ba3a24e16aa745adc82a77c08
 msgid "Data use"
 msgstr "Использование данных"
 
-# 42164190f3cf47b18525eb503f1e52f7
-#: ../../usecases.rst:14
+#: ../../usecases.rst:14 e94e2a1f86804934b37eef6a80908613
 msgid "Procurement & onboarding screening and audit"
 msgstr "Закупки, отбор партнеров при установлении деловых отношений и аудит"
 
-# 3b46ba9fed3244f7b60fb1a6b0ff3627
-#: ../../usecases.rst:15
+#: ../../usecases.rst:15 86abce3f8c2f4aa19d7eca14f8109897
 msgid "General investigations"
 msgstr "Общие расследования"
 
-# a3206fa8c8864032a4b1a45b82869b4c
-#: ../../usecases.rst:16
+#: ../../usecases.rst:16 0d8721d7a30941438104b11bbd4dcc75
 msgid "Data-led investigations"
 msgstr "Расследования на основе данных"
 
-# 8eb53855d12945d5bc63c0801bf8d22b
-#: ../../usecases.rst:17
+#: ../../usecases.rst:17 2b6945d62410429c85663840c374bc3f
 msgid "Data validation"
 msgstr "Валидация данных"
 
-# ef52704266084cf69c56cf635e705bc8
-#: ../../usecases.rst:19
+#: ../../usecases.rst:19 3455c50ca890449fb43c2f95a8529301
 msgid "These use cases are described below."
 msgstr "Эти варианты использования описаны ниже."
 
-# bfa7fbab67da4759a25dce6cfc33d681
-#: ../../usecases.rst:23
+#: ../../usecases.rst:23 acf4d247beda4e868ceeea460e1dcc49
 msgid ""
 "A full analysis of how far the needs of these use cases are met will take "
 "place as part of progress towards a 1.0 Release Candidate of the standard."
@@ -103,8 +88,7 @@ msgstr ""
 "вариантов использования будет проведен по мере приближения к завершению "
 "подготовки версии стандарта, претендующей на статус версии 1.0."
 
-# c21f06f1503142d68387b7275bed5d68
-#: ../../usecases.rst:25
+#: ../../usecases.rst:25 7071f9539cd94c938c4382b751688b7f
 msgid ""
 "This page builds on the `use case consultation document "
 "<https://docs.google.com/document/d/1s1qqFAK3cDjTGAlCaQvPOb8KzKkssn9xu2HzWeY6amE/edit#>`__"
@@ -115,8 +99,7 @@ msgstr ""
 "<https://docs.google.com/document/d/1s1qqFAK3cDjTGAlCaQvPOb8KzKkssn9xu2HzWeY6amE/edit#>`__,"
 " опубликованный в декабре 2016 года."
 
-# 546dce1c41c848b8bd235b7e42609b7e
-#: ../../usecases.rst:32
+#: ../../usecases.rst:32 ef412eb9d4c748b3a1d17c500cab908b
 msgid ""
 "*The following cases sketch out ways in which open beneficial ownership data"
 " might be published.*"
@@ -124,13 +107,11 @@ msgstr ""
 "*В следующих вариантах в общих чертах описаны возможные способы "
 "опубликования открытых данных о бенефициарном владении.*"
 
-# e8363e3339374638b155565a52c8a5d7
-#: ../../usecases.rst:36
+#: ../../usecases.rst:36 6be575f02b17478c82559995f49dda63
 msgid "S1: Public Registers of Beneficial Ownership"
 msgstr "S1: Публичные реестры бенефициарного владения"
 
-# 109a32bb03214b3bb00b0de40d6ffafc
-#: ../../usecases.rst:38
+#: ../../usecases.rst:38 15a9f6ec31684dd0b41aa3a30212849a
 msgid ""
 "A government or other body creating a public register of beneficial "
 "ownership may want to publish that information as open data that others can "
@@ -143,8 +124,7 @@ msgstr ""
 "может включать в себя опубликование больших массивов данных или "
 "предоставление API для данных."
 
-# 56c35f7fbc214a2896d129b86717e637
-#: ../../usecases.rst:43
+#: ../../usecases.rst:43 b60c349c38d1456c9c12f820104209c6
 msgid ""
 "The data that the register should contain is likely to be determined by "
 "national legislation, and there may be existing national guidance on how to "
@@ -154,8 +134,7 @@ msgstr ""
 "национальным законодательством, также могут существовать национальные нормы "
 "касательно разработки сервисов открытых данных или API."
 
-# c5c26fcb36294e8ba87febbcbdd3a7fc
-#: ../../usecases.rst:47
+#: ../../usecases.rst:47 21cc5f71375b4fa2892d693802aed214
 msgid ""
 "Organisations building a register may also be interested in using the "
 "standard to help design their internal data models and data collection "
@@ -165,8 +144,7 @@ msgstr ""
 "использовании стандарта для помощи в разработке своих внутренних моделей "
 "данных и процессов сбора данных."
 
-# 372767c972ea4d25a2999da260ccbcb8
-#: ../../usecases.rst:51
+#: ../../usecases.rst:51 af4bbbc1a53e4c44aa5d25a0298d3dac
 msgid ""
 "Possible examples of this case may include the UK Register of Persons of "
 "Significant Control, the Ukraine Beneficial Ownership Register, the planned "
@@ -179,13 +157,11 @@ msgstr ""
 "Франции и отраслевые реестры от Инициативы Прозрачности в Добывающих "
 "Отраслях."
 
-# 7269c89d713548dfa2bbd87581b7ee66
-#: ../../usecases.rst:57
+#: ../../usecases.rst:57 2b88a747cdbe4950ad0faea312229f70
 msgid "S2: Self-submitted data"
 msgstr "S2: Данные, предоставляемые самостоятельно"
 
-# 656851d6891b4dbe8d6d6c2361d4c172
-#: ../../usecases.rst:59
+#: ../../usecases.rst:59 77a76d6136234675a85aa3ffa5f42087
 msgid ""
 "An individual or an organisation may make use of online tools to self-report"
 " beneficial ownership information."
@@ -193,8 +169,7 @@ msgstr ""
 "Физическое лицо или организация могут использовать онлайн-средства для "
 "самостоятельного предоставления информации о бенефициарном владении."
 
-# 3ae73a0744fb45598f1550294ba4d810
-#: ../../usecases.rst:62
+#: ../../usecases.rst:62 207f84c17f5145ba97efc8f36c6ca25b
 msgid ""
 "For example, `Who Controls It <http://alpha.whocontrolsit.com/>`__ was a "
 "proof-of-concept Beneficial Ownership platform (a precursor to "
@@ -209,8 +184,7 @@ msgstr ""
 "владении, и позволяла пользователям объявлять свое собственное владение "
 "компанией или сообщать о структуре владения компании."
 
-# bdd25ff68bc44648aaedcc581e1a57fe
-#: ../../usecases.rst:69
+#: ../../usecases.rst:69 10492e258ecd43968fd7948d9735b98a
 msgid ""
 "There are many complex cases a comprehensive system should be able to deal "
 "with, including:"
@@ -218,8 +192,7 @@ msgstr ""
 "Существует много сложных случаев, которые система должна иметь возможность "
 "обрабатывать, в том числе:"
 
-# c62828f42eac43068af00b75b904eb1d
-#: ../../usecases.rst:72
+#: ../../usecases.rst:72 7b857ce234f34c5197f9dc46dfa01c1e
 msgid ""
 "Recording economics interests, but without control (e.g. 1% of a mining "
 "company, which may be valuable, but give little shareholder power);"
@@ -228,8 +201,7 @@ msgstr ""
 "горнодобывающей компании, что может быть ценным, но предоставлять мало "
 "акционерных полномочий);"
 
-# 1d37bf95048840938396e90d9a91b197
-#: ../../usecases.rst:76
+#: ../../usecases.rst:76 14d9df71918c4801b58b11c0e0836e5b
 msgid ""
 "Mutual funds, that separate control (the fund manager) from the economic "
 "interest (the entities that put the money in);"
@@ -237,8 +209,7 @@ msgstr ""
 "Взаимные фонды, отделяющие контроль (руководитель фонда) от экономической "
 "доли участия (субъекты, вкладывающие деньги);"
 
-# 438be6c96c134847845bf8a611a582f7
-#: ../../usecases.rst:79
+#: ../../usecases.rst:79 7a9c67041b814691815368a85f3577a0
 msgid ""
 "`Bonds, preference shares and other investments "
 "<http://www.investopedia.com/terms/p/preference-shares.asp>`__ that don’t "
@@ -252,8 +223,7 @@ msgstr ""
 "контроль, такой как право вето, например, в отношении слияний компаний или "
 "продажи активов;"
 
-# fdae1204000148bca4c954f4fbee4f67
-#: ../../usecases.rst:85
+#: ../../usecases.rst:85 cf13c099609b4f4ebb8b75e03d4af872
 msgid ""
 "Control via nominees, particularly when a nominee may act for a number of "
 "different parties in control of the same company;"
@@ -262,14 +232,12 @@ msgstr ""
 "имеет право представлять несколько разных сторон, контролирующих одну и ту "
 "же компанию;"
 
-# e30bea18558949dfbabe6f9979071072
-#: ../../usecases.rst:88
+#: ../../usecases.rst:88 314571d31b8445f0a986f5d1bcb4034b
 msgid "Contractual control limited to a particular set of circumstances."
 msgstr ""
 "Контроль на основе договора ограничен определенным набором обстоятельств."
 
-# b5550417dce7418e9a7c71b6e29e7a65
-#: ../../usecases.rst:90
+#: ../../usecases.rst:90 249ddcae973a4c7e9f3d0b69f917a8a5
 msgid ""
 "The designers of systems capturing self-submitted data may want to use the "
 "standard to express the data they have already collected, and to plan the "
@@ -279,13 +247,11 @@ msgstr ""
 "возможно, пожелают использовать стандарт для представления уже собранных ими"
 " данных и для планирования сбора других данных в будущем."
 
-# c6526c7dc1d84b199dc0e7a360cec2b8
-#: ../../usecases.rst:95
+#: ../../usecases.rst:95 207d3b2ec45445e48272042b9540644a
 msgid "S3: Third-party submitted data"
 msgstr "S3: Данные, предоставляемые третьими сторонами"
 
-# 586c5a5c25cf4b63b51db302053c8ee7
-#: ../../usecases.rst:97
+#: ../../usecases.rst:97 c3cfe3a458624f408b2cc3eae6be28e8
 msgid ""
 "Researchers, journalists or corporate information services may use filings, "
 "reports and other materials to build up structured data about beneficial "
@@ -295,8 +261,7 @@ msgstr ""
 "использовать представляемые документы, отчеты и другие материалы для "
 "формирования структурированных данных о бенефициарном владении."
 
-# 65238ef3c830443a8f715f4bbb0f6a5b
-#: ../../usecases.rst:101
+#: ../../usecases.rst:101 10bbfc8cc6bb4e8fbe96352a11a29d9d
 msgid ""
 "They may wish to share this data for others to re-use, but with suitable "
 "caveats about the sourcing of the data."
@@ -305,13 +270,11 @@ msgstr ""
 "использования другими, но с соответствующими предупреждениями касательно "
 "источника данных."
 
-# 3bf375d4161c4e669f5fc8ce93ef66df
-#: ../../usecases.rst:105
+#: ../../usecases.rst:105 ce85650ca16f4b85b96f1f2c4ca9b59c
 msgid "S4: Self-published data"
 msgstr "S4: Данные, публикуемые самостоятельно"
 
-# 8e356dc62ee842afbcccd55a07b6ee25
-#: ../../usecases.rst:107
+#: ../../usecases.rst:107 1a7a2e1cbdde4c39b64788fbe0088075
 msgid ""
 "Companies may wish to publish structured data about their own beneficial "
 "ownership on their own websites. This data could be manually curated, or "
@@ -327,8 +290,7 @@ msgstr ""
 "разные cистемы и чтобы данные можно было непосредственно передать в такие "
 "платформы, как OpenOwnership."
 
-# ce6cbadeb61146e59e9ba2683fe77fca
-#: ../../usecases.rst:114
+#: ../../usecases.rst:114 347a41e9f42d4439b5336896d02ba226
 msgid ""
 "The data may be periodically updated at a single URL, or have regular "
 "releases of data published as part of an annual reporting process, each time"
@@ -338,8 +300,7 @@ msgstr ""
 "выпуски данных могут публиковаться в рамках процесса годовой отчетности, "
 "каждый раз на новом URL."
 
-# 013fbf2f3c514c22affca4890f9f6320
-#: ../../usecases.rst:121
+#: ../../usecases.rst:121 dafa306b18b2494899c7c029e1240743
 msgid ""
 "*The following cases look at different ways in which stakeholders may wish "
 "to make use of beneficial ownership data.*"
@@ -348,14 +309,12 @@ msgstr ""
 "заинтересованные стороны могут пожелать воспользоваться данными о "
 "бенефициарном владении.*"
 
-# 7d1c212f22bd47f39b549bed5cf399bd
-#: ../../usecases.rst:125
+#: ../../usecases.rst:125 fb3233e1947b44918461a5add4d42640
 msgid "U1: Procurement & onboarding screening and audit"
 msgstr ""
 "U1: Закупки, отбор партнеров при установлении деловых отношений и аудит"
 
-# 99fe18bcdf164fbda4f3b20bca122600
-#: ../../usecases.rst:127
+#: ../../usecases.rst:127 f9df92f7a4c042f488ea7f6c2f55fb5b
 msgid ""
 "There are a variety of cases related to onboarding, by which we mean the "
 "process of establishing relationships with new partners: typically new "
@@ -378,8 +337,7 @@ msgstr ""
 "необходимо иметь понимание касательно субъекта, с которым устанавливаются "
 "деловые отношения."
 
-# 62b995ce5ff94c80a46d0518eed798bd
-#: ../../usecases.rst:136
+#: ../../usecases.rst:136 d0ae8a2a6efc4f23b05e0ff9fddbc7c9
 msgid ""
 "Information of ownership and control is typically collected by onboarding "
 "entities who then assess the validity of information provided by cross "
@@ -408,8 +366,7 @@ msgstr ""
 "транзакции требованиям правил соответствующего субъекта касательно ведения "
 "хозяйственной деятельности."
 
-# 526dedaae86542ab84547a5fd5ed40f4
-#: ../../usecases.rst:148
+#: ../../usecases.rst:148 d600383dc25d439a8a68b549d4054fcd
 msgid ""
 "As part of an onboarding process, beneficial ownership information might be "
 "integrated alongside other ‘Know Your Customer/Client’ information and "
@@ -423,8 +380,7 @@ msgstr ""
 "важен доступ к документальным подтверждениям каждого информационного "
 "материала, полученного из набора данных о бенефициарном владении."
 
-# 2de494655067452a83727c094ff25650
-#: ../../usecases.rst:154
+#: ../../usecases.rst:154 00dec630af2c4c2c8151ec6ef88258a4
 msgid ""
 "Example user story: *A procurement officer at a multilateral development "
 "bank has to approve the application of a new supplier. They need to ensure "
@@ -437,13 +393,11 @@ msgstr ""
 "«бенефициарные владельцы» не являются ПДЛ и что они не состоят в черных "
 "списках."
 
-# d2824a0ba1d64e68a52cd2f0a541300f
-#: ../../usecases.rst:160
+#: ../../usecases.rst:160 1e309b825def43ffa43af6903d4b94f4
 msgid "U2: General investigations"
 msgstr "U2: Общие расследования"
 
-# 1fc0bb0d89fd4d12a8c31ab7db3219c0
-#: ../../usecases.rst:162
+#: ../../usecases.rst:162 920a70461acb4e25a29cbb4c83493b72
 msgid ""
 "There are a number of parties that need to investigate specific companies or"
 " individuals (as opposed to doing data-led investigations/mappings)."
@@ -452,13 +406,11 @@ msgstr ""
 "конкретных физических лиц (в отличие от проведения "
 "расследований/сопоставлений на основе данных)."
 
-# 3933fe74581544dbbcb7ee9ae6eb4f80
-#: ../../usecases.rst:166
+#: ../../usecases.rst:166 53a988155067436eb6c09488c47ab09c
 msgid "These include:"
 msgstr "Они включают в себя:"
 
-# 7f492ce4be1849f7bf1f469e73bb8122
-#: ../../usecases.rst:168
+#: ../../usecases.rst:168 4bd8a049031d46bfb8dacc2792eabcb7
 msgid ""
 "**Journalists** - researching stories on a particular company, individual or"
 " group of companies"
@@ -466,15 +418,13 @@ msgstr ""
 "**Журналистов** — исследующих материалы о конкретной компании, физическом "
 "лице или группе компаний"
 
-# 304ae755108c49c5aa07e06de6298f46
-#: ../../usecases.rst:171
+#: ../../usecases.rst:171 8239d6d543bf4b9789e6dcc9a9376ad5
 msgid "**NGO anti-corruption investigation** - finding leads, following them"
 msgstr ""
 "**Расследования НПО в сфере борьбы с коррупцией** — поиск направлений для "
 "расследования и следование им"
 
-# 958590d0060146d8a9c6b02e38b382c9
-#: ../../usecases.rst:173
+#: ../../usecases.rst:173 76a8bd30564948cca6e3ae8e595f69d4
 msgid ""
 "**Law enforcement** - looking to establish a clear evidence base, and "
 "seeking to establish proof of intent"
@@ -482,8 +432,7 @@ msgstr ""
 "**Правоохранительные органы** — стремление установить ясную доказательную "
 "базу и установить доказательство присутствия намерения"
 
-# 8fdbbd567e424a6c9c0ed089d38fdf98
-#: ../../usecases.rst:176
+#: ../../usecases.rst:176 d429264d258748eb8312ffc088adb7a7
 msgid ""
 "**Asset recovery** - recovering money/assets that are due to a client, for "
 "example Stolen Assets, proceeds of fraud, or assets hidden in divorce "
@@ -493,8 +442,7 @@ msgstr ""
 "например, похищенные активы, доходы от мошенничества или активы, скрытые при"
 " разделе имущества"
 
-# c7f85db5f6cf4c188cd48488e80677f4
-#: ../../usecases.rst:180
+#: ../../usecases.rst:180 83f8b20fef7b414dabd019aa3129da10
 msgid ""
 "In many ways the processes around such investigations are very similar, and "
 "are less dependent on on who is doing the investigation, and more about the "
@@ -522,8 +470,7 @@ msgstr ""
 "средства; в случае с правоохранительными органами публичная ложь является "
 "доказательством присутствия намерения)."
 
-# 2e92830adefc486abbb238c793c80015
-#: ../../usecases.rst:192
+#: ../../usecases.rst:192 8f903fb157f741f7b36513327d175b12
 msgid ""
 "Tax and accounting investigations are similar, but may be more focused on "
 "corporate structures and direct relationships rather than indirect and "
@@ -534,8 +481,7 @@ msgstr ""
 "корпоративных структурах и прямых отношениях, чем на косвенных отношениях и "
 "отношениях конечного владения и контроля"
 
-# 460ccf373a894b28a6feb70c124e9b99
-#: ../../usecases.rst:196
+#: ../../usecases.rst:196 4577b9988bfb485bad35036cc79622b3
 msgid ""
 "Example user story: *A journalist is investigating a politician including "
 "looking at known associates and companies, in both the home country and "
@@ -545,13 +491,11 @@ msgstr ""
 "включая изучение известных партнеров и компаний как в стране проживания, так"
 " и в других юрисдикциях.*"
 
-# e3fa49763fe2444b91630c8a359e93d9
-#: ../../usecases.rst:201
+#: ../../usecases.rst:201 753f54894f974c78bc162407e12e915e
 msgid "U3: Data-led investigations"
 msgstr "U3: Расследования на основе данных"
 
-# 8e5d61adbb864b8f90a2c7813dc48ff5
-#: ../../usecases.rst:203
+#: ../../usecases.rst:203 68eadd5271774b12b7aeea263076da3c
 msgid ""
 "As well as targeted and general purpose investigations, where there is a "
 "specific target for the investigation or a lead that is being pursued, there"
@@ -570,8 +514,7 @@ msgstr ""
 "интересов), а также сопоставление с аналогичными данными, такими как данные "
 "об акционерах из реестров компаний."
 
-# 0ee69ab003f6482fb8de73a5778f8990
-#: ../../usecases.rst:211
+#: ../../usecases.rst:211 46b4cd6d533f4eaa9586b8a8ddbcd577
 msgid ""
 "To give an example user story: *Data journalists wish to find anomalies "
 "between beneficial ownership disclosures and other public records, to "
@@ -581,13 +524,11 @@ msgstr ""
 "аномалии между раскрытой информацией о бенефициарном владении и другими "
 "публичными материалами в целях выявления лжи*"
 
-# 47015014049e45caad7913ddcf7ca1ce
-#: ../../usecases.rst:216
+#: ../../usecases.rst:216 ab387d945cd04611856629f4f8d587a2
 msgid "U4: Data validation"
 msgstr "U4: Валидация данных"
 
-# fe3055d0cc374bf490bf8d186555c054
-#: ../../usecases.rst:218
+#: ../../usecases.rst:218 bf032f1c534e480880e5084635a40be9
 msgid ""
 "Systems collecting beneficial ownership data can benefit from checking the "
 "data they receive against data from other systems. In existing work, there "
@@ -600,8 +541,7 @@ msgstr ""
 "шаблонов ИПДО не соответствовали отчетам, поданным в действующий в "
 "Великобритании Реестр лиц, осуществляющих значительный контроль."
 
-# cf3ce662c1454819b23934e96d9aaad0
-#: ../../usecases.rst:224
+#: ../../usecases.rst:224 7b602659476a43828a2e851b0d761e7e
 msgid ""
 "To give an example user story: *National EITI groups may wish to check "
 "reported information against data from national beneficial ownership "

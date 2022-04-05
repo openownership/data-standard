@@ -1,56 +1,68 @@
 # Translations template for PROJECT.
-# Copyright (C) 2019 ORGANIZATION
+# Copyright (C) 2022 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 # 
 # Translators:
-# Valery Gusak <valery.gusak@gmail.com>, 2019
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-06-18 16:06+0100\n"
-"PO-Revision-Date: 2019-06-17 11:01+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"POT-Creation-Date: 2022-04-05 17:18+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.9.1\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: schema/codelists/addressType.csv schema/codelists/annotationMotivation.csv
-#: schema/codelists/entityType.csv schema/codelists/interestLevel.csv
+#: schema/codelists/directOrIndirect.csv
+#: schema/codelists/entitySubtypeCategory.csv schema/codelists/entityType.csv
 #: schema/codelists/interestType.csv schema/codelists/nameType.csv
-#: schema/codelists/personType.csv schema/codelists/sourceType.csv
-#: schema/codelists/statementType.csv schema/codelists/unspecifiedReason.csv
+#: schema/codelists/personType.csv
+#: schema/codelists/securitiesIdentifierSchemes.csv
+#: schema/codelists/sourceType.csv schema/codelists/statementType.csv
+#: schema/codelists/unspecifiedReason.csv
 msgid "code"
 msgstr "значение"
 
 #: schema/codelists/addressType.csv schema/codelists/annotationMotivation.csv
-#: schema/codelists/entityType.csv schema/codelists/interestLevel.csv
+#: schema/codelists/directOrIndirect.csv
+#: schema/codelists/entitySubtypeCategory.csv schema/codelists/entityType.csv
 #: schema/codelists/interestType.csv schema/codelists/nameType.csv
-#: schema/codelists/personType.csv schema/codelists/sourceType.csv
-#: schema/codelists/statementType.csv schema/codelists/unspecifiedReason.csv
+#: schema/codelists/personType.csv
+#: schema/codelists/securitiesIdentifierSchemes.csv
+#: schema/codelists/sourceType.csv schema/codelists/statementType.csv
+#: schema/codelists/unspecifiedReason.csv
 msgid "title"
 msgstr "заголовок"
 
 #: schema/codelists/addressType.csv schema/codelists/annotationMotivation.csv
-#: schema/codelists/entityType.csv schema/codelists/interestLevel.csv
+#: schema/codelists/directOrIndirect.csv
+#: schema/codelists/entitySubtypeCategory.csv schema/codelists/entityType.csv
 #: schema/codelists/interestType.csv schema/codelists/nameType.csv
-#: schema/codelists/personType.csv schema/codelists/sourceType.csv
-#: schema/codelists/statementType.csv schema/codelists/unspecifiedReason.csv
+#: schema/codelists/personType.csv
+#: schema/codelists/securitiesIdentifierSchemes.csv
+#: schema/codelists/sourceType.csv schema/codelists/statementType.csv
+#: schema/codelists/unspecifiedReason.csv
 msgid "description"
 msgstr "описание"
 
 #: schema/codelists/addressType.csv schema/codelists/annotationMotivation.csv
-#: schema/codelists/entityType.csv schema/codelists/interestLevel.csv
+#: schema/codelists/directOrIndirect.csv
+#: schema/codelists/entitySubtypeCategory.csv schema/codelists/entityType.csv
 #: schema/codelists/interestType.csv schema/codelists/nameType.csv
-#: schema/codelists/personType.csv schema/codelists/sourceType.csv
-#: schema/codelists/statementType.csv schema/codelists/unspecifiedReason.csv
+#: schema/codelists/personType.csv
+#: schema/codelists/securitiesIdentifierSchemes.csv
+#: schema/codelists/sourceType.csv schema/codelists/statementType.csv
+#: schema/codelists/unspecifiedReason.csv
 msgid "technical note"
 msgstr "техническое примечание"
 
@@ -214,6 +226,75 @@ msgstr ""
 "представление может быть указано в поле transformedContent."
 
 #. title
+#: schema/codelists/directOrIndirect.csv:1
+msgid "Direct"
+msgstr "Прямая"
+
+#. description
+#: schema/codelists/directOrIndirect.csv:1
+msgid "The interest is held directly."
+msgstr "Осуществляется прямое владение долей участия."
+
+#. title
+#: schema/codelists/directOrIndirect.csv:2
+msgid "Indirect"
+msgstr "Косвенная"
+
+#. description
+#: schema/codelists/directOrIndirect.csv:2
+msgid ""
+"The interest is held through one or more intermediate entities (including "
+"arrangements)."
+msgstr ""
+"Владение долей участия осуществляется через один или несколько промежуточных"
+" субъектов (включая соглашения о владении и контроле)."
+
+#. title
+#: schema/codelists/directOrIndirect.csv:3
+msgid "Unknown"
+msgstr "Неизвестная"
+
+#. description
+#: schema/codelists/directOrIndirect.csv:3
+msgid "The interest may be direct or indirect."
+msgstr "Доля участия может быть прямой или косвенной."
+
+#. title
+#: schema/codelists/entitySubtypeCategory.csv:1
+msgid "State body > Government department"
+msgstr ""
+
+#. description
+#: schema/codelists/entitySubtypeCategory.csv:1
+msgid ""
+"An element of government with executive responsibilities. Terms often used "
+"to designate such a body: ministry, department, bureau or office."
+msgstr ""
+
+#. title
+#: schema/codelists/entitySubtypeCategory.csv:2
+msgid "State body > State Agency"
+msgstr ""
+
+#. description
+#: schema/codelists/entitySubtypeCategory.csv:2
+msgid ""
+"A body overseeing or administering elements of public policy. State agencies"
+" may have responsiblities which are devolved from government departments or "
+"from the state's legislative body."
+msgstr ""
+
+#. title
+#: schema/codelists/entitySubtypeCategory.csv:3
+msgid "State body > Other"
+msgstr ""
+
+#. description
+#: schema/codelists/entitySubtypeCategory.csv:3
+msgid "A type of state body unlike a government department or state agency."
+msgstr ""
+
+#. title
 #: schema/codelists/entityType.csv:1
 msgid "Registered Entity"
 msgstr "Зарегистрированное юридическое лицо"
@@ -236,13 +317,10 @@ msgstr "Юридическое лицо"
 #. description
 #: schema/codelists/entityType.csv:2
 msgid ""
-"A body with distinct legal personality, such as a government department or "
-"international institution, but which is not otherwise uniquely identified in"
+"A body with distinct legal personality, such as an international institution"
+" or statutory corporation, but which is not otherwise uniquely identified in"
 " some official register."
 msgstr ""
-"Организация, имеющая явно выраженный статус юридического лица, такая как "
-"государственное ведомство или международное учреждение, но которая не имеет "
-"иной уникальной идентификации в каком-либо официальном реестре."
 
 #. title
 #: schema/codelists/entityType.csv:3
@@ -282,38 +360,25 @@ msgid "An entity that has not been identified."
 msgstr "Субъект, который не был идентифицирован."
 
 #. title
-#: schema/codelists/interestLevel.csv:1
-msgid "Direct"
-msgstr "Прямая"
-
-#. description
-#: schema/codelists/interestLevel.csv:1
-msgid "The interest is held directly."
-msgstr "Осуществляется прямое владение долей участия."
-
-#. title
-#: schema/codelists/interestLevel.csv:2
-msgid "Indirect"
-msgstr "Косвенная"
-
-#. description
-#: schema/codelists/interestLevel.csv:2
-msgid ""
-"The interest is held through one or more intermediate entities (including "
-"arrangements)."
+#: schema/codelists/entityType.csv:6
+msgid "State"
 msgstr ""
-"Владение долей участия осуществляется через один или несколько промежуточных"
-" субъектов (включая соглашения о владении и контроле)."
-
-#. title
-#: schema/codelists/interestLevel.csv:3
-msgid "Unknown"
-msgstr "Неизвестная"
 
 #. description
-#: schema/codelists/interestLevel.csv:3
-msgid "The interest may be direct or indirect."
-msgstr "Доля участия может быть прямой или косвенной."
+#: schema/codelists/entityType.csv:6
+msgid ""
+"A country, nation or community with legal sovereignty within a territory."
+msgstr ""
+
+#. title
+#: schema/codelists/entityType.csv:7
+msgid "State body"
+msgstr ""
+
+#. description
+#: schema/codelists/entityType.csv:7
+msgid "A core administrative or legislative unit within a state's apparatus."
+msgstr ""
 
 #. title
 #: schema/codelists/interestType.csv:1
@@ -368,18 +433,10 @@ msgstr "Прочее влияние или контроль"
 #. description
 #: schema/codelists/interestType.csv:4
 msgid ""
-"\"Any influence or control in an entity that is distinct from being a "
-"shareholder"
+"Any influence or control in an entity that is distinct from being a "
+"shareholder, having voting rights or having the absolute right to appoint to"
+" the board."
 msgstr ""
-"«Какое-либо влияние или контроль в субъекте, отличные от присущих акционеру,"
-
-#. technical note
-#: schema/codelists/interestType.csv:4
-msgid ""
-"having voting rights or having the absolute right to appoint to the board.\""
-msgstr ""
-"имеющему право голоса или имеющему абсолютное право назначать совет "
-"директоров»."
 
 #. title
 #: schema/codelists/interestType.csv:5
@@ -398,90 +455,68 @@ msgstr ""
 
 #. title
 #: schema/codelists/interestType.csv:6
-msgid "Settlor of trust"
-msgstr "Учредитель траста"
+msgid "Settlor"
+msgstr ""
 
 #. description
 #: schema/codelists/interestType.csv:6
 msgid ""
-"A controlling interest in a trust. Defined as the person who gives property "
-"into trust for the benefit of beneficiaries. In some legal systems, a "
-"settlor is also referred to as a trustor, or occasionally, a grantor or "
-"donor."
+"A settlor is a person who, either actually or by operation of law, creates a"
+" trust. A settlor of a trust is sometimes also known by other names such as "
+"a trustor, a grantor or a donor. Also to be used for a person with a "
+"settlor-equivalent role in any legal arrangement that is similar to a trust."
 msgstr ""
-"Контролирующее участие в трасте. Определяется как физическое лицо, "
-"предоставляющее имущество в доверительную собственность в пользу "
-"выгодоприобретателей траста. В некоторых правовых системах учредитель также "
-"именуется «доверитель» или в некоторых случаях «поручитель» или «донор»."
 
 #. title
 #: schema/codelists/interestType.csv:7
-msgid "Trustee of a trust."
-msgstr "Доверительный управляющий траста."
+msgid "Trustee"
+msgstr ""
 
 #. description
 #: schema/codelists/interestType.csv:7
 msgid ""
-"A controlling interest in a trust. Defined as a person or firm that holds "
-"and administers property or assets for the benefit of a third party."
+"A trustee is a person who administers the trust for the benefit of a third "
+"party and in whom the legal title of the trust property is vested either by "
+"declaration of the settlor or by operation of law. Also to be used for a "
+"person with a trustee-equivalent role in any legal arrangement that is "
+"similar to a trust."
 msgstr ""
-"Контролирующее участие в трасте. Определяется как физическое лицо или "
-"компания, осуществляющие владение и управление имуществом или активами в "
-"интересах третьей стороны."
 
 #. title
 #: schema/codelists/interestType.csv:8
-msgid "Protector of a trust"
-msgstr "Попечитель траста"
+msgid "Protector"
+msgstr ""
 
 #. description
 #: schema/codelists/interestType.csv:8
 msgid ""
-"A controlling interest in a trust. Defined as a person appointed under the "
-"trust instrument to direct or restrain the trustees in relation to their "
-"administration of the trust."
+"A protector is a person appointed to protect the interests or wishes of the "
+"settlor, providing influence and guidance to the trustee who administers the"
+" trust. Also to be used for a person with a protector-equivalent role in any"
+" legal arrangement that is similar to a trust."
 msgstr ""
-"Контролирующее участие в трасте. Определяется как физическое лицо, "
-"назначенное в соответствии с актом об учреждении траста с целью "
-"предоставления инструкций доверительным управляющим траста или ограничения "
-"их действий в отношении осуществляемого ими управления трастом."
 
 #. title
 #: schema/codelists/interestType.csv:9
-msgid "Beneficiary of a trust"
-msgstr "Выгодоприобретатель траста"
+msgid "Beneficiary of a legal arrangement"
+msgstr ""
 
 #. description
 #: schema/codelists/interestType.csv:9
 msgid ""
-"An economic interest in a trust. Defined as a person or legal entity who "
-"profits from a trust's holdings or activities."
+"An economic interest in a trust or other legal arrangement. Defined as a "
+"person or legal entity who benefits from a trust or other legal "
+"arrangement's holdings or activities."
 msgstr ""
-"Экономическая доля участия в трасте. Определяется как физическое или "
-"юридическое лицо, получающее прибыль от владений или деятельности траста."
 
 #. title
 #: schema/codelists/interestType.csv:10
-msgid "Other influence or control of a trust"
-msgstr "Прочее влияние или контроль над трастом"
-
-#. description
-#: schema/codelists/interestType.csv:10
-msgid ""
-"Any influence or control in a trust that is distinct from being a settlor, "
-"trustee, protector or beneficiary."
-msgstr ""
-"Какое-либо влияние или контроль в трасте, отличные от присущих учредителю, "
-"доверительному управляющему, попечителю или выгодоприобретателю траста."
-
-#. title
-#: schema/codelists/interestType.csv:11
 msgid "Rights to surplus assets on dissolution"
 msgstr ""
 "Права на профицит активов при прекращении существования юридического лица"
 
 #. description
-#: schema/codelists/interestType.csv:11
+#: schema/codelists/interestType.csv:10
 msgid ""
 "The right to a share in the amount of an asset or resource that exceeds the "
 "portion that is utilized upon the winding up of an entity."
@@ -490,12 +525,12 @@ msgstr ""
 "при ликвидации субъекта."
 
 #. title
-#: schema/codelists/interestType.csv:12
+#: schema/codelists/interestType.csv:11
 msgid "Rights to receive profits or income"
 msgstr "Права на получение прибыли или дохода"
 
 #. description
-#: schema/codelists/interestType.csv:12
+#: schema/codelists/interestType.csv:11
 msgid ""
 "An economic interest in an entity. Defined as beneficial ownership rights "
 "beyond those otherwise implied by ownership structures that are granted by "
@@ -506,26 +541,122 @@ msgstr ""
 "основаниях в   рамках структур владения."
 
 #. title
-#: schema/codelists/interestType.csv:13
+#: schema/codelists/interestType.csv:12
 msgid "Rights granted by contract"
 msgstr "Права, предоставляемые по договору"
 
 #. description
-#: schema/codelists/interestType.csv:13
+#: schema/codelists/interestType.csv:12
 msgid "An interest that is granted by contract."
 msgstr "Участие, предоставляемое по договору."
 
 #. title
-#: schema/codelists/interestType.csv:14
+#: schema/codelists/interestType.csv:13
 msgid "Conditional rights granted by contract"
 msgstr "Условные права, предоставляемые по договору"
 
 #. description
-#: schema/codelists/interestType.csv:14
-msgid "\"An interest that exists only if some contractual condition is met.\""
+#: schema/codelists/interestType.csv:13
+msgid "An interest that exists only if some contractual condition is met."
 msgstr ""
-"«Доля участия, существующая только в случае выполнения определенного условия"
-" договора»."
+
+#. title
+#: schema/codelists/interestType.csv:14
+msgid "Control via company rules or articles"
+msgstr ""
+
+#. description
+#: schema/codelists/interestType.csv:14
+msgid ""
+"Control of an entity gained through a provision in company articles or by "
+"shareholder agreement."
+msgstr ""
+
+#. title
+#: schema/codelists/interestType.csv:15
+msgid "Control by legal framework"
+msgstr ""
+
+#. description
+#: schema/codelists/interestType.csv:15
+msgid ""
+"Control of an entity gained through a legal framework, such as a combination"
+" of legislation (primary and secondary). This type of interest is created by"
+" governments and legislators in order to establish and guide agencies and "
+"entities linked to the state."
+msgstr ""
+
+#. title
+#: schema/codelists/interestType.csv:16
+msgid "Board member"
+msgstr ""
+
+#. description
+#: schema/codelists/interestType.csv:16
+msgid ""
+"One of a group of people constituted as the strategic decision-making body "
+"of an organization."
+msgstr ""
+
+#. title
+#: schema/codelists/interestType.csv:17
+msgid "Board chair"
+msgstr ""
+
+#. description
+#: schema/codelists/interestType.csv:17
+msgid ""
+"The person holding the most power and authority on the board of directors. "
+"They also provide leadership to the firm's officers and executives, and "
+"ensure that the firm's duties to shareholders are being fulfilled by acting "
+"as a link between the board and upper management."
+msgstr ""
+
+#. title
+#: schema/codelists/interestType.csv:18
+msgid "Unknown interest"
+msgstr ""
+
+#. description
+#: schema/codelists/interestType.csv:18
+msgid ""
+"The interestedParty is known to have an interest in the subject of this "
+"Ownership-or-control Statement, but the nature of the interest is unknown."
+msgstr ""
+
+#. title
+#: schema/codelists/interestType.csv:19
+msgid "Unpublished interest"
+msgstr ""
+
+#. description
+#: schema/codelists/interestType.csv:19
+msgid "The nature of this interest is known but is not published."
+msgstr ""
+
+#. title
+#: schema/codelists/interestType.csv:20
+msgid "Enjoyment and use of assets"
+msgstr ""
+
+#. description
+#: schema/codelists/interestType.csv:20
+msgid ""
+"A controlling interest in an asset owned by an entity. Defined as the right "
+"to make use of assets belonging to an entity."
+msgstr ""
+
+#. title
+#: schema/codelists/interestType.csv:21
+msgid "Right to profit or income from assets"
+msgstr ""
+
+#. description
+#: schema/codelists/interestType.csv:21
+msgid ""
+"An economic interest in an asset owned by an entity. Defined as the right to"
+" derive profits and/or income from assets belonging to an entity."
+msgstr ""
 
 #. title
 #: schema/codelists/nameType.csv:1
@@ -561,10 +692,8 @@ msgstr "Транслитерация ФИО"
 #. description
 #: schema/codelists/nameType.csv:3
 msgid ""
-"\"A transliteration of the person's individual name in a different script.\""
+"A transliteration of the person's individual name in a different script."
 msgstr ""
-"«Транслитерация индивидуального ФИО соответствующего лица при помощи другой "
-"письменности»."
 
 #. title
 #: schema/codelists/nameType.csv:4
@@ -598,8 +727,8 @@ msgstr "ФИО при рождении"
 
 #. description
 #: schema/codelists/nameType.csv:6
-msgid "\"The legal name of the person at birth.\""
-msgstr "«Официальное ФИО соответствующего лица при рождении»."
+msgid "The legal name of the person at birth."
+msgstr ""
 
 #. title
 #: schema/codelists/personType.csv:1
@@ -640,6 +769,60 @@ msgstr "Неизвестное физическое лицо"
 #: schema/codelists/personType.csv:3
 msgid "The identity of this person has not been discovered or confirmed."
 msgstr "Личность этого физического лица не была выяснена или подтверждена."
+
+#. title
+#: schema/codelists/securitiesIdentifierSchemes.csv:1
+msgid "International Securities Identification Number (ISIN)"
+msgstr ""
+
+#. description
+#: schema/codelists/securitiesIdentifierSchemes.csv:1
+msgid ""
+"Scheme for unique identification of securities internationally. Securities "
+"are issued 12-character identifiers. Full details of the scheme are "
+"specified by ISO 6166."
+msgstr ""
+
+#. title
+#: schema/codelists/securitiesIdentifierSchemes.csv:2
+msgid "Financial Instrument Global identifier (FIGI)"
+msgstr ""
+
+#. description
+#: schema/codelists/securitiesIdentifierSchemes.csv:2
+msgid ""
+"Scheme for unique identification of securities internationally. Securities "
+"are issued 12-character identifiers. Full details of the scheme are "
+"specified as an Object Management Group standard: "
+"https://www.omg.org/spec/FIGI/."
+msgstr ""
+
+#. title
+#: schema/codelists/securitiesIdentifierSchemes.csv:3
+msgid ""
+"Committee on Uniform Securities Identification Procedures (CUSIP) Number"
+msgstr ""
+
+#. description
+#: schema/codelists/securitiesIdentifierSchemes.csv:3
+msgid ""
+"Scheme for unique identification of securites in North America. Securities "
+"are issued 9-character identifiers. The scheme is managed by the American "
+"Bankers Association and specified as ANSI X9.6."
+msgstr ""
+
+#. title
+#: schema/codelists/securitiesIdentifierSchemes.csv:4
+msgid "CUSIP International Numbering System (CINS)"
+msgstr ""
+
+#. description
+#: schema/codelists/securitiesIdentifierSchemes.csv:4
+msgid ""
+"Scheme for unique identification of securites issued outside North America. "
+"Securities are issued 9-character identifiers. The scheme is managed by the "
+"American Bankers Association and specified as ANSI X9.6."
+msgstr ""
 
 #. title
 #: schema/codelists/sourceType.csv:1
