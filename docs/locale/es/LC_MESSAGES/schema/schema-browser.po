@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
+"POT-Creation-Date: 2022-04-06 11:47+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 014d4b8ece894864a536b5061149c585
+# 923cf157a50f4681b94596c47c7ede90
 #: ../../schema/schema-browser.rst:4
 msgid "Schema browser"
 msgstr "Navegador del esquema"
 
-# 26661ac7582343c4b95634faf11e866b
+# 3ccced084f1c46388fcd648156a6b5ce
 #: ../../schema/schema-browser.rst:8
 msgid ""
 "This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
@@ -43,7 +43,7 @@ msgstr ""
 ":doc:`Registro de modificaciones <changelog>` y `De qué se trata "
 "<../about>`_ para obtener más información."
 
-# c957653c402d4f42afeaba2c6ef13e6b
+# a9a29c9385e3423db01cee526a2953e7
 #: ../../schema/schema-browser.rst:10
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
@@ -54,7 +54,7 @@ msgstr ""
 "requeridos y recomendados del Estándar, conforme a lo definido en `RFC2119 "
 "<https://tools.ietf.org/html/rfc2119>`_."
 
-# f24ad5988d134e368eb5a2c838b82113
+# 24a21d42582941fa8a7df3a6ddcb5151
 #: ../../schema/schema-browser.rst:13
 msgid ""
 "The draft Beneficial Ownership Data Standard schema is defined using `JSON "
@@ -63,7 +63,7 @@ msgstr ""
 "El borrador del esquema del Estándar de Datos sobre Beneficiarios Finales "
 "utiliza el `Esquema JSON 0.4 <http://json-schema.org/>`_."
 
-# 7c5d4ed37a244ceab8c2fb7ab99235f6
+# 826525a770ff46d38da74f05d08d2e18
 #: ../../schema/schema-browser.rst:15
 msgid ""
 "The structure of each of the schema's top level components can be explored "
@@ -74,7 +74,7 @@ msgstr ""
 "puede explorarse utilizando los visores incluidos más abajo. (Haga clic en "
 "los subcomponentes para revelar sus propiedades)."
 
-# dcba07700384438bbb2e406711cf632d
+# 8cf52898669a46eeb097539298568a3c
 #: ../../schema/schema-browser.rst:17
 msgid ""
 ":ref:`Ownership-or-control statement <schema-browser-ownership-or-control>`"
@@ -82,37 +82,37 @@ msgstr ""
 ":ref:`Declaración sobre titularidad o control <schema-browser-ownership-or-"
 "control>`"
 
-# be37f396b2ca458e8dc76acda4ac45a8
+# 1a72c5e2d7c640459d2bfcfd5ae1dd21
 #: ../../schema/schema-browser.rst:18
 msgid ":ref:`Entity statement <schema-browser-entity>`"
 msgstr ":ref:`Declaración sobre entidad <schema-browser-entity>`"
 
-# 629b1ac0732843ae900873a929bbdd66
+# d068ddb7759e4a679850c9cead9d1548
 #: ../../schema/schema-browser.rst:19
 msgid ":ref:`Person statement <schema-browser-person>`"
 msgstr ":ref:`Declaración sobre persona <schema-browser-person>`"
 
-# 0a339a21fa654c2986b036e6352164e5
+# 652c6ba237484f5198c52b886aa70e84
 #: ../../schema/schema-browser.rst:24
 msgid "Ownership-or-control statement"
 msgstr "Declaración sobre titularidad o control"
 
-# 6aa7127396ea480ab2d337aa75bd5db2
+# c9d88cdddcba4b62a6cc051f1be958ad
 #: ../../schema/schema-browser.rst:26
 msgid ""
 "View the `Ownership-or-control statement JSON schema <../_static/ownership-"
 "or-control-statement.json>`_ or explore it using the viewer below."
 msgstr ""
-"Vea el `esquema JSON de declaración sobre titularidad o control <../_static"
-"/ownership-or-control-statement.json>`_ o explórelo usando el visor incluido"
-" más abajo."
+"Vea el `esquema JSON de declaración sobre titularidad o control "
+"<../_static/ownership-or-control-statement.json>`_ o explórelo usando el "
+"visor incluido más abajo."
 
-# 930477e80aa0471f88d515304f6063e4
+# 98577d57688748c588f6ca798cf7e1ac
 #: ../../schema/schema-browser.rst:35
 msgid "Entity statement"
 msgstr "Declaración sobre entidad"
 
-# 1cd08bc801df47c68655f9bdbb35c807
+# 6ee46bd82af242f799535aee826b20fd
 #: ../../schema/schema-browser.rst:38
 msgid ""
 "View the `Entity Statement JSON schema <../_static/entity-statement.json>`_ "
@@ -121,12 +121,12 @@ msgstr ""
 "Vea el `esquema JSON de Declaración sobre Entidad <../_static/entity-"
 "statement.json>`_ o explórelo usando el visor incluido más abajo."
 
-# 5be87846dbef4eefba561af52d1c95d4
+# 26d991bb04e74dcd8202524051fd91c7
 #: ../../schema/schema-browser.rst:48
 msgid "Person statement"
 msgstr "Declaración sobre persona"
 
-# 63515fef7995401d9ed667ff2e919c4b
+# 61781b129d264aae9f39f4d293473075
 #: ../../schema/schema-browser.rst:50
 msgid ""
 "View the `Person Statement JSON schema <../_static/person-statement.json>`_ "

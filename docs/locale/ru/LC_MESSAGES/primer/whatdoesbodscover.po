@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Valery Gusak <valery.gusak@gmail.com>, 2019
+# Valery Gusak <valery.gusak@gmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
+"POT-Creation-Date: 2022-04-06 11:47+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,17 +21,17 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# d0dd8f74e62d4a4a9625dd2a680b10ac
+# 739310eabeb442f78f6cdac2dc67d37f
 #: ../../primer/whatdoesbodscover.rst:2
 msgid "What does the Data Standard cover?"
 msgstr "Что включает в себя Стандарт данных?"
 
-# 740c1185dcc64bf2bc814c4216ba453d
+# 3c20ecae1af1461e91e6f67cb054c73c
 #: ../../primer/whatdoesbodscover.rst:8
 msgid "A broad, flexible range of fields and options..."
 msgstr "Обширный, гибкий набор полей и опций..."
 
-# 587e1be03796499da22a3ed29035b5e8
+# 9e853c9b866f47a4ac0ffe708e54abba
 #: ../../primer/whatdoesbodscover.rst:14
 msgid ""
 "The Beneficial Ownership Data Standard (BODS) allows publishers to provide "
@@ -40,7 +40,7 @@ msgstr ""
 "Стандарт данных о бенефициарном владении (СДБВ) позволяет издателям "
 "формировать записи, которые описывают:"
 
-# 8413886fcd4a4d72ad185ec238ddaaec
+# c602716d0c8b46f5a9ee5af20122066f
 #: ../../primer/whatdoesbodscover.rst:16
 msgid ""
 ":ref:`Identifiers <schema-identifier>` and :ref:`details <schema-person-"
@@ -49,7 +49,7 @@ msgstr ""
 ":ref:`Идентификаторы <schema-identifier>` и :ref:`сведения <schema-person-"
 "statement>` касательно физических лиц"
 
-# 91e94f6da0e140189bd973dbf9d315f1
+# ff1325a9ff4e439999a2a5daafa83f3e
 #: ../../primer/whatdoesbodscover.rst:17
 msgid ""
 ":ref:`Identifiers <schema-identifier>` and :ref:`details <schema-entity-"
@@ -58,22 +58,22 @@ msgstr ""
 ":ref:`Идентификаторы <schema-identifier>` и :ref:`сведения <schema-entity-"
 "statement>` касательно компаний"
 
-# 5f5e0460d3e74a1089a435464a7bbaaa
+# 2ea3f53a54744e709bb35555f46e7869
 #: ../../primer/whatdoesbodscover.rst:18
 msgid ":ref:`Types and levels of involvement <schema-interest>` in companies"
 msgstr ":ref:`Типы и уровни <schema-interest>` участия в компаниях"
 
-# be07468c03594664aebbdb7494ea92af
+# 314990607d994e3b9b906dfdb583a659
 #: ../../primer/whatdoesbodscover.rst:19
 msgid ":ref:`Provenance <schema-source>` information"
 msgstr "Информацию об :ref:`источнике <schema-source>`"
 
-# bfcb0cadcfa843cab65dfa2f9ef1e747
+# fba37641d91547bf84a6d749081e9c93
 #: ../../primer/whatdoesbodscover.rst:20
 msgid "Historical, as well as current, information"
 msgstr "Как информацию за прошлые периоды, так и актуальную информацию"
 
-# 12b898ee60b742fc961da447e5c21973
+# 80fb2d30b6f1456a8dc843cbc9188f28
 #: ../../primer/whatdoesbodscover.rst:21
 msgid ""
 ":ref:`Placeholders <schema-interested-party>`, when information must be "
@@ -82,24 +82,24 @@ msgstr ""
 ":ref:`Заполнители <schema-interested-party>`, когда информацию необходимо "
 "скрыть"
 
-# 232130fab31a420da00b9f20624280ff
+# 042c7b92a94d46c286af737cbff16afc
 #: ../../primer/whatdoesbodscover.rst:27
 msgid "... meets the diverse needs of publishers and data users."
 msgstr ""
 "... удовлетворяет различные потребности издателей и пользователей данных."
 
-# 6e348abf818d49fda6c72c9c9f4110e4
+# 0f9181e837ce4d009a8a2203ef36b356
 #: ../../primer/whatdoesbodscover.rst:33
 msgid "The :ref:`design <key-concepts>` of the standard allows:"
 msgstr ":ref:`Структура <key-concepts>` стандарта обеспечивает возможность:"
 
-# cd9f124d10ab4c0eb07a3b5fcc2b510b
+# da6ce0dde55849128f017bd4724290de
 #: ../../primer/whatdoesbodscover.rst:35
 msgid "Changes to beneficial ownership information to be tracked over time."
 msgstr ""
 "Отслеживать во времени изменения в информации о бенефициарном владении."
 
-# 8622e140295e4b808e6dcce6f905e3e9
+# b35cb6c2b8f94835827eb129d559ea3e
 #: ../../primer/whatdoesbodscover.rst:36
 msgid ""
 "Competing claims about beneficial ownership to be considered alongside one "
@@ -108,7 +108,7 @@ msgstr ""
 "Параллельно рассматривать конфликтующие претензии касательно бенефициарного "
 "владения."
 
-# 609dc00e099c49b9885963948531b5b2
+# 8f27f62563684295b334dd138e09ec91
 #: ../../primer/whatdoesbodscover.rst:37
 msgid ""
 "Publishers to use the definitions of beneficial ownership provided by the "
@@ -118,7 +118,7 @@ msgstr ""
 "предусмотренные соответствующим законом или нормативной базой, на основе "
 "которых они осуществляют деятельность."
 
-# ff5dde0eea084cb4994b9f9491fa1120
+# 25f0585450ee458ebb99dfb47bf35ee9
 #: ../../primer/whatdoesbodscover.rst:40
 msgid ""
 "Although BODS is not a data model for the storage of beneficial ownership "
@@ -132,7 +132,7 @@ msgstr ""
 ":ref:`функциональных требований <functional-requirements>` для таких баз "
 "данных и систем."
 
-# 4a14b48157d247cea17a74ff6f9b2f00
+# ad783263cdff42fb883fe64c2ad71f67
 #: ../../primer/whatdoesbodscover.rst:42
 msgid ""
 "In order to enable worldwide use of the Standard, it does not directly "
@@ -148,7 +148,7 @@ msgstr ""
 "позволит каждому лицу, имплементирующему стандарт, устанавливать свои "
 "собственные пороги."
 
-# 6c3a38fc9cb3425b8cc2304038154d2f
+# f92e5ca04f0849618f62c98410c3471a
 #: ../../primer/whatdoesbodscover.rst:46
 msgid ""
 "The Standard is well-defined yet flexible: as suited for use by national "

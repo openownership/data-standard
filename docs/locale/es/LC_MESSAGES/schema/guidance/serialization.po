@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
 # Peter Low <peter@openownership.org>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
+"POT-Creation-Date: 2022-04-06 11:47+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Peter Low <peter@openownership.org>, 2020\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,12 +23,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 655947ec177244ecb588134eac12e5c4
+# 620e3f4ae7f74b1dbb9b5a9b3d390143
 #: ../../schema/guidance/serialization.rst:4
 msgid "Serialization"
 msgstr "Serialización"
 
-# b604f371857a4fe9a67a6107a9e2dfa6
+# de1673f19bc14cb494a65fc61b25c078
 #: ../../schema/guidance/serialization.rst:6
 msgid ""
 "The canonical serialization of BODS data is as a `JSON document "
@@ -42,7 +42,7 @@ msgstr ""
 "dentro de un arreglo de nivel superior. También puede utilizarse JSON Lines "
 "cuando se crean archivos grandes."
 
-# 87927d5ea2d64705a00825c0ac49f02f
+# a846a551f26346b6be1980842b3bf9a4
 #: ../../schema/guidance/serialization.rst:8
 msgid ""
 "Each of the :ref:`entityStatements <schema-entity-statement>` or "
@@ -57,7 +57,7 @@ msgstr ""
 "ownership-or-control-statement>` DEBE aparecer antes de esa declaración "
 "sobre titularidad o control en el arreglo ordenado."
 
-# b6ad419a547047b0958af11729ea03f8
+# 54bd8cda9cdf4be697eae7ef6a35fa9d
 #: ../../schema/guidance/serialization.rst:10
 msgid ""
 "BODS data MAY also be serialized in tabular form, with each row representing"
@@ -70,82 +70,82 @@ msgstr ""
 "DEBERÍAN utilizar el correspondiente Indicador JSON de la raíz de la "
 "declaración."
 
-# ec120e95302e401a9ddec572bd9178c3
+# 1c3eb77727714766acbb8e6b4c5d31ff
 #: ../../schema/guidance/serialization.rst:12
 msgid "For example, the extract:"
 msgstr "Por ejemplo, el fragmento:"
 
-# c0b00b34bf0943f49fcd2e65f0c6f9b5
+# b2547564ed4a49eebaaab79596209e47
 #: ../../schema/guidance/serialization.rst:43
 msgid "may be serialized in a table as:"
 msgstr "puede serializarse en una tabla como:"
 
-# e4e5d853b2784e5bb1ca1b5cb991f485
+# 2f0705ad62564c1fa88ae613cde16109
 #: ../../schema/guidance/serialization.rst:48
 msgid "statementID"
 msgstr "statementID"
 
-# b95ed1ca270e426e8c7d8d11983bff6b
+# 4286301e33db4db3bba42ddf2731594a
 #: ../../schema/guidance/serialization.rst:49
 msgid "statementType"
 msgstr "statementType"
 
-# 175ee0b3c318488bb53a95b86269367b
+# 991f240aa3014a52beea7a3c791b9e61
 #: ../../schema/guidance/serialization.rst:50
 msgid "identifiers/0/scheme"
 msgstr "identifiers/0/scheme"
 
-# 8b85ff9004ea4f9791f878ebba7f40b4
+# 47ac8004af6845b8bd9a9a892e7a795c
 #: ../../schema/guidance/serialization.rst:51
 msgid "identifiers/0/id"
 msgstr "identifiers/0/id"
 
-# 824e3340cac445d3bb505f315f44bb0e
+# c1ebae9ad6de4889a010032654f5c75e
 #: ../../schema/guidance/serialization.rst:52
 msgid "e3c07f34-1810-4eed-b845-4d9f4d97f9d5"
 msgstr "e3c07f34-1810-4eed-b845-4d9f4d97f9d5"
 
-# b71d72fc25f5403fa544a897026be01a
+# ffd4821b616c4ee2912231f9862d28ad
 #: ../../schema/guidance/serialization.rst:53
 msgid "entityStatement"
 msgstr "entityStatement"
 
-# 1716ad5501354a2d988f53c571c2a059
+# ce3140e93e5a4c619ad1e794ca6e8371
 #: ../../schema/guidance/serialization.rst:54
 msgid "GB-COH"
 msgstr "GB-COH"
 
-# 01257add927e410eb1a4fc9b2c6d9189
+# 762e8851331c4bf583afbb4dffb3a2fd
 #: ../../schema/guidance/serialization.rst:55
 msgid "07444723"
 msgstr "07444723"
 
-# fece5973bd7342e8932ac83a2eaf0dc4
+# fbf8c7c3617c4ec9840419076eb23bd9
 #: ../../schema/guidance/serialization.rst:56
 msgid "a2b485be-e3b6-4fd7-8a6a-930e46cf9957"
 msgstr "a2b485be-e3b6-4fd7-8a6a-930e46cf9957"
 
-# 28105673ddfd437582887fe883a843fb
+# 703c4079929e4a798cf0e84fa6d8f798
 #: ../../schema/guidance/serialization.rst:57
 msgid "personStatement"
 msgstr "personStatement"
 
-# b2911098e42344bfb37be38452affb8b
+# a4a464548a5e4dd4a82fcfd5f44ecd38
 #: ../../schema/guidance/serialization.rst:58
 msgid "MX-RFC"
 msgstr "MX-RFC"
 
-# d4a2bdc3ab4d4f4faa68aa4a0fb746ea
+# c87e1556ed9a47aa9c445013f867ce8f
 #: ../../schema/guidance/serialization.rst:59
 msgid "ABC680524P-76"
 msgstr "ABC680524P-76"
 
-# fd7ff244790143c0a22259341999d93d
+# 95e00eee4ab7442e9dc5fd31f642452e
 #: ../../schema/guidance/serialization.rst:61
 msgid "34b479f2-1681-4064-ab51-1e703fbafa"
 msgstr "34b479f2-1681-4064-ab51-1e703fbafa"
 
-# 48b972c92e6d48bfbed555c8bd34560d
+# 2635a4010b7d4120a550f0d1d989c49b
 #: ../../schema/guidance/serialization.rst:62
 msgid "ownershipOrControlStatement"
 msgstr "ownershipOrControlStatement"

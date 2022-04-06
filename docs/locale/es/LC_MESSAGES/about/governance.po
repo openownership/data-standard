@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
+"POT-Creation-Date: 2022-04-06 11:47+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,19 +22,19 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 975872dd2ca94af28dff92220ce24aee
+# a07488dd165b40aa80a3050840257f6c
 #: ../../about/governance.rst:2
 msgid "Governance"
 msgstr "Gobernanza"
 
-# 62a10df60dc3445e86ea3e3dad8b0962
+# 61da35b8f1b04b0ea8c9220d129aaaf7
 #: ../../about/governance.rst:6
 msgid "Data Standard Working Group - abbreviated Terms of Reference (2016)"
 msgstr ""
 "Grupo de Trabajo sobre Estándares de Datos - versión abreviada de los "
 "Términos de Referencia (2016)"
 
-# c06334b2389b49b28dfde65f0f7a95ea
+# 45065551a45d4fbcb24f1afea17e3626
 #: ../../about/governance.rst:8
 msgid ""
 "The Beneficial Ownership Data Standard Working Group (DSWG) will drive the "
@@ -43,8 +43,8 @@ msgid ""
 "beneficial ownership data, including (but not limited to) by `the "
 "OpenOwnership Register <http://openownership.org/>`_ being created by civil "
 "society around the world.  OpenOwnership is also `creating private sector, "
-"public sector and civil society working groups <http://openownership.org"
-"/get-involved/>`_."
+"public sector and civil society working groups "
+"<http://openownership.org/get-involved/>`_."
 msgstr ""
 "El Grupo de Trabajo sobre Estándares de Datos sobre Beneficiarios Finales "
 "(DSWG por sus siglas en inglés) impulsará el desarrollo inicial de un "
@@ -56,7 +56,7 @@ msgstr ""
 "está `creando grupos de trabajo en el sector privado, el sector público y la"
 " sociedad civil <http://openownership.org/get-involved/>`_."
 
-# 627be3faae804efa9ab9023589e78fa3
+# 443ef015c09a4ea1b4574945d211c436
 #: ../../about/governance.rst:10
 msgid ""
 "This working group will include stakeholders from a range of backgrounds "
@@ -77,12 +77,12 @@ msgstr ""
 " garantizar que se tengan en cuenta los requisitos, las necesidades de los "
 "usuarios y las cuestiones técnicas pertinentes. "
 
-# fd55f1a9ab794f43a936e051aa460eaa
+# b771ff4559184a3290993a4251584982
 #: ../../about/governance.rst:14
 msgid "Values"
 msgstr "Valores"
 
-# c685b2de47a04ae3bd466ddb5fe15ac9
+# c0c91f68b78e444aa50b9ba44dc2e13f
 #: ../../about/governance.rst:16
 msgid ""
 "All working group members must commit to support the following shared "
@@ -91,32 +91,32 @@ msgstr ""
 "Todos los miembros del grupo de trabajo deben comprometerse a apoyar los "
 "siguientes valores compartidos."
 
-# 75718ff933c84640b0bfd65daaeedcb0
+# b9968b4a8b74414fb0c8d136d994b56e
 #: ../../about/governance.rst:18
 msgid "**Open**"
 msgstr "**Apertura**"
 
-# a832ba46e6fc4fcd983dc89c8b083901
-# 8e7aa0ea8c1c45acb99f0fe77b98b4bd
+# 6bdb1e8fbdbe4698b3a06926c2f24074
+# fd599c3760874cf49d1c3b7b04b741fe
 #: ../../about/governance.rst:20 ../../about/governance.rst:28
 msgid "We will:"
 msgstr "Nos aseguraremos de:"
 
-# 38510693c5ad44d38dd75d29baaca73c
+# e19e48a8639c48fab626f19b472c2c53
 #: ../../about/governance.rst:22
 msgid "share our views and plans, and share knowledge as widely as possible;"
 msgstr ""
 "comunicar nuestras perspectivas y planes, y compartir conocimientos de la "
 "forma más amplia posible;"
 
-# 6734d6a2e945429c8a6873f6ef673cba
+# eecfa98d3c39485da50fa4c373362016
 #: ../../about/governance.rst:23
 msgid "solicit and listen to views from end users and stakeholders;"
 msgstr ""
 "procurar y escuchar las opiniones de los usuarios finales y las partes "
 "interesadas;"
 
-# f0364f029a414e3792db37dbeac35d5b
+# e9e8b4bbfb2b4ad59f8c8eb8d9673b63
 #: ../../about/governance.rst:24
 msgid ""
 "make our outputs available under an open licence and abide by the project "
@@ -127,17 +127,17 @@ msgstr ""
 " con `el convenio de contribución  <https://github.com/openownership/data-"
 "standard/blob/master/CONTRIBUTING.md>`_ del proyecto."
 
-# 5b6f3203f7a04ce882f064c1f918be80
+# 85c9b27bde3346958a7562f5d44d48fb
 #: ../../about/governance.rst:26
 msgid "**Expert**"
 msgstr "**Pericia**"
 
-# 96a3d695547f42849af101450fa90978
+# 10d2e5da0a6a49beb3d1329359709259
 #: ../../about/governance.rst:30
 msgid "bring our expertise to the discussion as individuals;"
 msgstr "aportar nuestra pericia al debate como individuos;"
 
-# 44ce0326612548d28ad135c0c1afa8c6
+# 5c90f3aaa0b343b18a2b157cdcdf02b2
 #: ../../about/governance.rst:31
 msgid ""
 "use our expertise to synthesise the views of others in constructive and "
@@ -146,53 +146,53 @@ msgstr ""
 "utilizar nuestra pericia para resumir los puntos de vista de los demás en "
 "propuestas constructivas y con visión de futuro;"
 
-# 68e482e05d7f4d658526d83e245c0263
+# 85fa34be82504e2694fa2f68e28ec478
 #: ../../about/governance.rst:32
 msgid "use good judgement to respect privacy and confidentiality."
 msgstr ""
 "proceder con buen juicio a fin de respetar la privacidad y la "
 "confidencialidad."
 
-# 1e8210d7fd6d473d9a2072f52e61af63
+# 83f8cd39a4b24f47ad969ef4a3a36d3f
 #: ../../about/governance.rst:34
 msgid "**Collaborative**"
 msgstr "**Colaboración**"
 
-# 94c5fba8931e4d9ba86a4670b9038272
+# 55afcef5262b408fafcb590b614bbaf8
 #: ../../about/governance.rst:36
 msgid "We will"
 msgstr "Nos aseguraremos de:"
 
-# 95ac0b227d7c4e86aa2e0db86d592fe1
+# f5bed92b0e0344ce9e956a19c0198ee6
 #: ../../about/governance.rst:38
 msgid "support each other in discussion, in decisions, and in delivery;"
 msgstr ""
 "apoyarnos mutuamente en los debates, en las decisiones y en la ejecución;"
 
-# 99d65390c8c0481b909347848cbae7cf
+# f61b32fb7d7d4e03ac9a793e0630700f
 #: ../../about/governance.rst:39
 msgid "operate on the basis of consensus decision making;"
 msgstr "actuar sobre la base de la toma de decisiones por consenso;"
 
-# 2473447aa52a4da7879e5b1e15c7bb53
+# 95e79e6a35834f81870e0b1da1dbe73b
 #: ../../about/governance.rst:40
 msgid "constructively hold each other to account on our commitments;"
 msgstr ""
 "exigirnos los unos a los otros rendiciones de cuentas sobre nuestros "
 "compromisos de manera constructiva;"
 
-# 260ff4f2ee2a4ddf933ebd609d610990
+# 210fe806392c43eeac3c8c3a4ee94840
 #: ../../about/governance.rst:41
 msgid "ensure all voices are heard and considered carefully."
 msgstr ""
 "garantizar que todas las voces sean escuchadas y consideradas atentamente."
 
-# 4bc67143783b4a41a98547c063c7b73d
+# 2feef408391145b8b22993ccd1c2702b
 #: ../../about/governance.rst:44
 msgid "Membership, term and role"
 msgstr "Condición de miembro, duración del mandato y roles"
 
-# a694c0e71012457ab16d181668f4a887
+# b793e9abaf60423b9552b8f2bdb13e51
 #: ../../about/governance.rst:46
 msgid ""
 "Membership of the working group is a voluntary responsibility. Members "

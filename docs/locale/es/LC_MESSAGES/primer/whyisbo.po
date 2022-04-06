@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
 # Peter Low <peter@openownership.org>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
+"POT-Creation-Date: 2022-04-06 11:47+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Peter Low <peter@openownership.org>, 2020\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,12 +23,12 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# ec861ac13bca45eab8568eface5824b0
+# 8bfa7f549fe2437e873fee2a861c372a
 #: ../../primer/whyisbo.rst:2
 msgid "Why beneficial ownership is a useful concept"
 msgstr "Por qué es útil el concepto de beneficiario final"
 
-# faff99dd0cf84d3a8a9c037b96a35b40
+# 1e0edb39efc14dd0a0f7f7b780df0d8d
 #: ../../primer/whyisbo.rst:4
 msgid ""
 "People can be involved in a number of companies and in different ways. By "
@@ -39,7 +39,7 @@ msgstr ""
 "maneras. Si restringimos la interpretación de su intervención solamente a la"
 " titularidad, estaríamos dejando de lado casos como los siguientes:"
 
-# 20c0fafb17cf4969b50aea9386b29581
+# 8ecc960962ce4205a31381feef458b91
 #: ../../primer/whyisbo.rst:12
 msgid ""
 "The person both controls Company 1 and owns half of Company 2. This could be"
@@ -51,7 +51,7 @@ msgstr ""
 "la licitación de un mismo contrato con el Estado, o si ambas aparecen en una"
 " cadena de contrataciones."
 
-# 335b26088e7d4fd4aa7c78d07f595249
+# a9463c6b7a5246569f47e0abd00a3abe
 #: ../../primer/whyisbo.rst:16
 msgid ""
 "It might be equally important to see that a person's control over a company "
@@ -61,7 +61,7 @@ msgstr ""
 "que el control de una persona sobre una empresa es mayor de lo que se podría"
 " suponer dada su participación financiera en ella."
 
-# aa20dfdb51fd40c1b7bbb73368191809
+# 2705825eb1534abbb68421f7634c02ac
 #: ../../primer/whyisbo.rst:27
 msgid ""
 "Uniting ownership and control under the banner of beneficial ownership "

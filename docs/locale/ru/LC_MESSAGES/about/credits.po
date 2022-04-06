@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Valery Gusak <valery.gusak@gmail.com>, 2019
-# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-20 08:14+0100\n"
+"POT-Creation-Date: 2022-04-06 11:47+0000\n"
 "PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2019\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# c97fc9661f07470f91d363471ffe9422
+# 7b3247c45e274043b297ba5810d64f99
 #: ../../about/credits.rst:2
 msgid "Credits"
 msgstr "Сведения об авторах"
 
-# d726eade2e994509a6de09dce8346799
+# e290501846ca4a209b93a418f51e9f9b
 #: ../../about/credits.rst:4
 msgid ""
 "The first beta version of the Beneficial Ownership Data Standard was written"
@@ -46,7 +46,7 @@ msgstr ""
 "operative <http://www.opendataservices.coop>`__) при поддержке :doc:`группы "
 "по стандарту данных <governance>`."
 
-# ef31e2cce3b84234a31bd3f69f7b286d
+# 4bf2795d4ba640d08f5b4d28ae0ae4c9
 #: ../../about/credits.rst:12
 msgid ""
 "The 0.1 version was written by Tim Davies and Jack Lord with supporting "
@@ -62,7 +62,7 @@ msgstr ""
 "<http://www.opendataservices.coop>`__), при этом было получено содействие "
 "рабочей :doc:`группы по стандарту данных <governance>`."
 
-# 51628ca7072b4f529336319cecfae3dc
+# e739e64e46cb49629b1cb7e80cfbc2dc
 #: ../../about/credits.rst:19
 msgid ""
 "The 0.2 version was written by Jack Lord, Simon Whitehouse and Kadie "
