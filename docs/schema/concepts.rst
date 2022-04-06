@@ -109,7 +109,7 @@ This allows control via arrangements to be modelled in two steps, describing how
 * Person P has an interest in Arrangement A
 * Arrangement A has an interest in Entity E
 
-For more guidance on modelling arrangements, contact the :any:`BODS Helpdesk <support>`.
+For more guidance on modelling arrangements, contact the :any:`BODS Helpdesk <Contact>`.
 
 Direct and indirect ownership and control
 -----------------------------------------
