@@ -92,7 +92,7 @@ EntityStatement
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/entity-statement.json
-   :collapse: identifiers,addresses,source,incorporatedInJurisdiction,annotations,publicationDetails,publicListing
+   :collapse: identifiers,addresses,source,jurisdiction,annotations,publicationDetails,publicListing
    :externallinks: {"entityType":{"url":"#entitytype","text":"EntityType"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
    :allowexternalrefs:
 
