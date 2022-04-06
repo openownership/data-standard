@@ -6,10 +6,8 @@ This website contains the specification of `version 0.3 of the Beneficial Owners
 
 BODS is an open standard providing guidance and a structured template for collecting, sharing and using high-quality, machine-readable data on beneficial ownership.
 
-.. cssclass:: h2
-
-        Background
-
+Background
+++++++++++
 
 The utility of beneficial ownership data is enhanced when the data is available in a `structured format <https://www.openownership.org/en/principles/structured-data/>`__. This allows the data to be easily analysed and linked with other datasets, enhancing the data’s ability to expose transnational networks of illicit financial flows and support effective and timely due diligence.
 
@@ -21,9 +19,8 @@ An open :doc:`data standard working group <governance>` of data experts, benefic
 
 The working group is co-chaired by Open Ownership and Open Data Services - and anyone can apply to join the group by `filling out this form <https://docs.google.com/forms/d/e/1FAIpQLSdRSmSUxyyv2t1k3vWXZ_3EhTW_f603MeGxgyjKnbNNE9vvbQ/viewform>`__. Virtual group meetings are held quarterly and communication is coordinated through a :doc:`Google group <governance>`.
 
-.. cssclass:: h2
-
-        Current status of the standard
+Current status of the standard
+++++++++++++++++++++++++++++++
 
 This is v0.3 of the Beneficial Ownership Data Standard. A :ref:`changelog <changelog>` is provided, and the documentation of previous versions is maintained in archive form.
 
@@ -31,9 +28,8 @@ Implementers should be aware that future changes are anticipated before a versio
 
 The `schema <https://standard.openownership.org/en/latest/schema/index.html>`__ contains a structure, fields and codelists but does not yet enforce validation constraints on most fields.
 
-.. cssclass:: h2
-
-        Get involved
+Get involved
+++++++++++++
 
 All changes to the standard draft, documentation and specification take
 place via GitHub at https://github.com/openownership/data-standard/.
@@ -55,10 +51,9 @@ If you would like to be involved in the development and review of the Standard, 
     governance
     credits
     privacy-notice
-       
-.. cssclass:: h2
 
-        Partners and funders
+Partners and funders
+++++++++++++++++++++
 
 The initial development of BODS was funded by Open Ownership as part of a `UK Department for International Development (DfID) <https://www.gov.uk/government/organisations/department-for-international-development>`__ funded project and its development continues to be funded by the `UK Foreign, Commonwealth and Development Office <https://www.gov.uk/government/organisations/foreign-commonwealth-development-office>`__ which replaced DfID.
 
@@ -69,18 +64,18 @@ In order to focus on its mission, Open Ownership is fiscally sponsored by `Globa
 The specification and documentation of BODS have been developed by Open Ownership, Open Data Services and `OpenCorporates <https://opencorporates.com/>`__. Read the
 :doc:`credits <credits>` for full details of the people who have helped develop BODS.
 
-.. cssclass:: h2
-
-        License and contributor agreement
+License and contributor agreement
++++++++++++++++++++++++++++++++++
 
 Schema content of the Open Ownership Register is published under the `GNU Affero General Public License v3.0 <https://github.com/openownership/register/blob/master/LICENSE>`__.
 
 The BODS schema is licensed under the `Apache License, Version 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`__. Stakeholders can use the software for any purpose, to distribute it, to modify it, and to distribute modified versions of the software. Contributors are required to accept the `contributor
 agreement <https://github.com/openownership/data-standard/blob/master/CONTRIBUTING.md>`__.
 
-.. cssclass:: h2
+.. _Contact:
 
-        Contact
+Contact
++++++++
 
 To connect with the data standard support team at Open Ownership, please email
 support@openownership.org.
