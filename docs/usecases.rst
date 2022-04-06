@@ -224,4 +224,4 @@ Control.
 To give an example user story: *National EITI groups may wish to check
 reported information against data from national beneficial ownership
 registers where those exist, and to be able to address inaccuracies with
-the reporting parties. *
+the reporting parties.*
