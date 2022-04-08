@@ -1,4 +1,0 @@
-Licensing considerations
-========================
-
-(TBC)
