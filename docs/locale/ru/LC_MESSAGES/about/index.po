@@ -147,7 +147,7 @@ msgid ""
 "<https://github.com/openownership/data-standard/issues>`__."
 msgstr ""
 "Предложения касательно изменений можно внести при помощи `системы "
-"отслеживания ошибок проекта<https://github.com/openownership/data-"
+"отслеживания ошибок проекта <https://github.com/openownership/data-"
 "standard/issues>`__."
 
 # 62b57b9bb6e04e7caaec90c1375edc3b
