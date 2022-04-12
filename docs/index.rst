@@ -1,4 +1,4 @@
-Beneficial Ownership Data Standard (v0.2)
+Beneficial Ownership Data Standard (v0.3)
 ============================================
 
 This website contains the draft specification of the Beneficial Ownership Data Standard (version 0.2) plus support for its use. :doc:`Find out more <about/index>` about the standard's development and how to get involved.
