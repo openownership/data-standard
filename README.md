@@ -106,7 +106,7 @@ You also need to make sure you have `gettext`, `pybabel` and (for SVGs) `itstool
 
 ```
 $ apt-get install gettext
-$ apt-get install python-babel
+$ apt-get install python3-babel
 $ apt-get install itstool
 ```
 
