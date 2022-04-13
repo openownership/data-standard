@@ -4,18 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
-# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,13 +21,11 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 87b8cb58b7494c79817d9e81096027d0
-#: ../../schema/concepts.rst:4
+#: ../../schema/concepts.rst:4 6c69dd68c19649b3b9b245371b46acbf
 msgid "Key concepts"
 msgstr "Conceptos clave"
 
-# e71ad0e1f3b64333838858ed48986bbe
-#: ../../schema/concepts.rst:8
+#: ../../schema/concepts.rst:8 f6bc496039a943f7bf64db1434ef9bb6
 msgid ""
 "This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model and additional codelist information. Implementers should "
@@ -44,8 +40,7 @@ msgstr ""
 ":doc:`Registro de modificaciones <changelog>` y `De qué se trata "
 "<../about>`_ para obtener más información."
 
-# e339e97308c34e84be25ac7a5201bb1c
-#: ../../schema/concepts.rst:10
+#: ../../schema/concepts.rst:10 a5c68c0cdc1342e7bb0f28640fe592ec
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
 "recommended elements of the Standard, as defined in `RFC2119 "
@@ -55,8 +50,7 @@ msgstr ""
 "requeridos y recomendados del Estándar, conforme a lo definido en `RFC2119 "
 "<https://tools.ietf.org/html/rfc2119>`_."
 
-# 39aefe6717ae4d3a83fa4023c1653a76
-#: ../../schema/concepts.rst:13
+#: ../../schema/concepts.rst:13 a5dcfba468a54fea87223067a2328e0f
 msgid ""
 "The concept of a 'statement' is at the heart of the Beneficial Ownership "
 "Data Standard. BODS data consists of a collection of ordered statements "
@@ -66,29 +60,24 @@ msgstr ""
 "sobre Beneficiarios Finales. Los datos basados en BODS consisten en un "
 "conjunto de declaraciones ordenadas que describen lo siguiente:"
 
-# 6af55ab0c5fa4ba8aed4761f2d3778d8
-#: ../../schema/concepts.rst:15
+#: ../../schema/concepts.rst:15 662035a60ab045af8a14245f59961e86
 msgid "Ownership or control"
 msgstr "Titularidad o control"
 
-# 555106a99a0e42b8857e2520cf30beeb
-#: ../../schema/concepts.rst:16
+#: ../../schema/concepts.rst:16 ef37cec65adb4ae593ce093e923735ad
 msgid "Entities (including companies, trusts and arrangements)"
 msgstr ""
 "Entidades (incluidas las empresas, fideicomisos y estructuras jurídicas)"
 
-# 4cca36b1ab3849eaae196a927aceab20
-#: ../../schema/concepts.rst:17
+#: ../../schema/concepts.rst:17 e1c3e12f5b664a40a9bf469d6ae57fff
 msgid "Natural persons (who own or control entities)"
 msgstr "Personas físicas (que poseen o controlan entidades)"
 
-# 866aebe4bc5b47dd88caaa7c19e4ae82
-#: ../../schema/concepts.rst:20
+#: ../../schema/concepts.rst:20 f323fef625534f8aae6aba238c0a0eec
 msgid "Statements"
 msgstr "Declaraciones"
 
-# ce3547102ea44291875798ac5738549a
-#: ../../schema/concepts.rst:22
+#: ../../schema/concepts.rst:22 1315851b2716402e986e8f1f7efb09a2
 msgid ""
 "Details of how an interested party controls or owns a company or other legal"
 " entity are wrapped in an ownership-or-control statement."
@@ -97,8 +86,13 @@ msgstr ""
 "empresa u otra entidad jurídica se encuentran en una declaración sobre "
 "titularidad o control."
 
-# 7594ef8e4adc4662b8fb7606b3bceebe
-#: ../../schema/concepts.rst:27
+#: ../../schema/concepts.rstNone c071eb3864fd40b5900a1bde593572b4
+msgid ""
+"An ownership-or-control statement block containing two 'interests': one a "
+"60% share-holding interest, the other a 30% voting-rights interest"
+msgstr ""
+
+#: ../../schema/concepts.rst:27 0f88593313454d6695df7929eaba0e71
 msgid ""
 "Details of the subject of an ownership-or-control statement and its "
 "interested party are wrapped in their own statements. The ownership-or-"
@@ -109,8 +103,13 @@ msgstr ""
 " declaración sobre titularidad o control hace referencia a estas "
 "declaraciones, actuando como enlace."
 
-# 0f53d31feb384ac094fad46bfb74559f
-#: ../../schema/concepts.rst:32
+#: ../../schema/concepts.rstNone bb7b6453f7b2469fb5d8a0f6137424b0
+msgid ""
+"A person statement linked to an ownership-or-control statement linked to an "
+"entity statement."
+msgstr ""
+
+#: ../../schema/concepts.rst:32 e3b33aff15d04b96b69ef7fad28bbefd
 msgid ""
 "Together, the statements above tell us that Roberto Lopez has some kind of "
 "controlling or ownership stake in RENCO Energy Ltd."
@@ -118,8 +117,7 @@ msgstr ""
 "Conjuntamente, las declaraciones anteriores nos indican que Roberto López "
 "goza de algún tipo de control o titularidad en RENCO Energy Ltd."
 
-# 2b8a77fee32e429eab17c7fb3c73e6d8
-#: ../../schema/concepts.rst:34
+#: ../../schema/concepts.rst:34 29b08d334e044eb0b259e58f1a675a1e
 msgid ""
 "The :any:`schema reference <schema-reference>` defines in detail the fields "
 "that each statement should have, and how they should be structured."
@@ -128,13 +126,11 @@ msgstr ""
 " campos que debería contener cada declaración, y cómo deberían "
 "estructurarse."
 
-# 0b5d101fc4054baaa9a36cd90444b939
-#: ../../schema/concepts.rst:37
+#: ../../schema/concepts.rst:37 741efdf2f1b54bdab5e74bbb480d98cc
 msgid "Statements as claims"
 msgstr "Las declaraciones como afirmaciones"
 
-# f5039a2151fc44fe9391e9e7137399c6
-#: ../../schema/concepts.rst:39
+#: ../../schema/concepts.rst:39 85b8f43d6b6c47a7aab9163ebbf42dcf
 msgid ""
 "Each statement represents a claim about beneficial ownership made by a "
 "particular source at a particular point in time."
@@ -142,8 +138,15 @@ msgstr ""
 "Cada declaración representa una afirmación sobre el carácter de beneficiario"
 " final realizada por una determinada fuente en un momento en particular."
 
-# acd6949c522044cbbd8b68ddaafe6d2b
-#: ../../schema/concepts.rst:44
+#: ../../schema/concepts.rstNone 32ea1ed5412a43d3a13981be13c6b204
+msgid ""
+"An ownership-or-control statement block containing a source block with type-"
+"selfDeclaration, retrievedAt date of 2018-11-07T13:55:32.734Z and assertedBy"
+" value of Acme Industries Ltd. Statement also has statementDate of "
+"2018-07-12"
+msgstr ""
+
+#: ../../schema/concepts.rst:44 0b9b1dee98b14b66a1e2f301aa91a70c
 msgid ""
 "Modelling beneficial ownership information in this way allows us to make "
 "sense of data received from multiple sources over extended periods of time. "
@@ -153,18 +156,15 @@ msgstr ""
 "manera nos permite darle sentido los datos recibidos de múltiples fuentes a "
 "lo largo de períodos de tiempo prolongados. En particular, permite:"
 
-# c7fdc3d590c84434b8c223e580c7d521
-#: ../../schema/concepts.rst:46
+#: ../../schema/concepts.rst:46 fd486d9bbcf941d9af69dbedd4fe3353
 msgid "Statements about beneficial ownership to conflict"
 msgstr "Que las declaraciones sobre beneficiarios finales se contradigan"
 
-# b9d2bdd71c1b41d5b07d738f0a1abe30
-#: ../../schema/concepts.rst:47
+#: ../../schema/concepts.rst:47 68b5f99a46b54e0ab0d963030402e30e
 msgid "Statements about beneficial ownership to overlap"
 msgstr "Que las declaraciones sobre beneficiarios finales se superpongan"
 
-# 8623f648b1704cc1b7e0051b40ed323d
-#: ../../schema/concepts.rst:48
+#: ../../schema/concepts.rst:48 e855525f5a7448999ee2ca6d29257931
 msgid ""
 "Production of historical beneficial ownership snapshots (to answer questions"
 " of 'who knew what, when?'). This is known as `bi-temporal modelling "
@@ -175,8 +175,7 @@ msgstr ""
 "momento?\"). Es lo que se conoce como `modelación bitemporal "
 "<https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_. "
 
-# 6cd9a4be24d9497da339d105541e7d5c
-#: ../../schema/concepts.rst:50
+#: ../../schema/concepts.rst:50 cfd1ba9210794c63ae17a8e9c555a15a
 msgid ""
 "When representing data conforming to BODS, users therefore need to handle "
 "statements with due care. Ultimately it is up to data consumers to decide "
@@ -191,19 +190,16 @@ msgstr ""
 "<guidance-identifiers>` contenida en las ``personStatements`` y "
 "``entityStatements``."
 
-# eec0d31cca1e4c37bd715db0314feb91
-#: ../../schema/concepts.rst:54
+#: ../../schema/concepts.rst:54 b6f71d053dab48c784496bc1bebd2407
 msgid "Data model overview"
 msgstr "Reseña general del modelo de datos"
 
-# 62f16f8475ed49c9af01ddad06f8bd41
-#: ../../schema/concepts.rst:56
+#: ../../schema/concepts.rst:56 ab0460410829426f8c51997a40ea87d5
 msgid "Statements are specified in the data schema as JSON objects:"
 msgstr ""
 "Las declaraciones se especifican en el esquema de datos como objetos JSON:"
 
-# ad5d25e584d041c8812c48b871607ac4
-#: ../../schema/concepts.rst:58
+#: ../../schema/concepts.rst:58 d303bc19444443be8b9ff89657949062
 msgid ""
 ":any:`Ownership-or-control statement <schema-ownership-or-control-"
 "statement>`"
@@ -211,18 +207,15 @@ msgstr ""
 ":any:`Declaración sobre titularidad o control <schema-ownership-or-control-"
 "statement>`"
 
-# 8440aa518ff44fc7b8f8de6262fd5aa0
-#: ../../schema/concepts.rst:59
+#: ../../schema/concepts.rst:59 75217021186c4f52a8a0df8737607cc3
 msgid ":any:`Entity statement <schema-entity-statement>`"
 msgstr ":any:`Declaración sobre entidad <schema-entity-statement>`"
 
-# 27e723c0f3b7417abfa09d63084bb8c3
-#: ../../schema/concepts.rst:60
+#: ../../schema/concepts.rst:60 d322be05e2e64f6f80be42f404eaaaea
 msgid ":any:`Person statement <schema-person-statement>`"
 msgstr ":any:`Declaración sobre persona <schema-person-statement>`"
 
-# e6d44b8bb8fb4162babaa7b29881c8f2
-#: ../../schema/concepts.rst:62
+#: ../../schema/concepts.rst:62 0ec9c5450682484482ed9b5944917cec
 msgid ""
 "Each statement has a ``statementIdentifier`` and ``statementType`` field. "
 "The ``statementIdentifier`` exists solely for the purpose of connecting "
@@ -232,8 +225,7 @@ msgstr ""
 "``statementType``. ``statementIdentifier`` existe solamente para conectar "
 "las declaraciones."
 
-# 005a4f7b937d440291c64954537af4e5
-#: ../../schema/concepts.rst:64
+#: ../../schema/concepts.rst:64 f938fe2deaa341339b2260bb0d6a347d
 msgid ""
 "**Entity statements** are used to describe registered legal entities that "
 "are the subject of legal ownership (such as companies, non-registered "
@@ -246,8 +238,7 @@ msgstr ""
 "fideicomisos) y entidades artificiales (como las estructuras jurídicas de "
 "participación accionaria conjunta)."
 
-# a1430ace96834aa9b004eef898b282e6
-#: ../../schema/concepts.rst:65
+#: ../../schema/concepts.rst:65 c7b4bde975ca4aac87add8cf58986ef5
 msgid ""
 "**Person statements** describe the natural persons who stand in "
 "relationships of ultimate beneficial ownership or control"
@@ -256,8 +247,7 @@ msgstr ""
 "intervienen en relaciones que suponen el carácter de beneficiario final o "
 "controlante en última instancia."
 
-# 65581bb11e7449eca657d1cc11c7e518
-#: ../../schema/concepts.rst:66
+#: ../../schema/concepts.rst:66 69d4e37e7262453abed1536a4fd1f393
 msgid ""
 "**Ownership-or-control statements** describe the interest(s) held by one "
 "entity in another, or a person in an entity. They are connected to those "
@@ -268,8 +258,7 @@ msgstr ""
 "una entidad. Se vinculan a esas entidades y personas mediante referencias de"
 " ``statementIdentifier``."
 
-# 62f52a2c9c9e42cc941e5a4ecf883de6
-#: ../../schema/concepts.rst:68
+#: ../../schema/concepts.rst:68 1e6c53402f7942568ea4fff67c4cf8b7
 msgid ""
 "All statements have ``source`` and ``annotations`` properties which can "
 "provide an audit trail describing where information was obtained from, when,"
@@ -282,8 +271,7 @@ msgstr ""
 "realizado. Consulte :ref:`Fuentes y notas<provenance>` para obtener "
 "orientación."
 
-# 9a9b061004d34d139236b799d358a2b5
-#: ../../schema/concepts.rst:70
+#: ../../schema/concepts.rst:70 62548bc660d64a788111cd63409013f0
 msgid ""
 "``personStatements`` and ``entityStatements`` both contain a set of fields "
 "that can be used to disclose the real-world identity of the entity or "
@@ -293,8 +281,7 @@ msgstr ""
 "conjunto de campos que pueden utilizarse para divulgar la identidad en el "
 "mundo real de la entidad o del individuo. Estos incluyen:"
 
-# 202a0a7708e64147b5fd21f0c0aa5a77
-#: ../../schema/concepts.rst:72
+#: ../../schema/concepts.rst:72 4d488f9a28b944c6ab9cb30f84e31b48
 msgid ""
 "An ``identifiers`` array that is used to provide known identifiers such as "
 "company registration for firms, or publicly shareable taxpayer identifiers "
@@ -305,24 +292,20 @@ msgstr ""
 " compañías, o identificadores de contribuyentes compartibles públicamente en"
 " el caso de individuos."
 
-# 6157e9aa138a46fcbc3ae2d82a6b4614
-#: ../../schema/concepts.rst:73
+#: ../../schema/concepts.rst:73 a79e127686414bdd8ed19c4dcae091f3
 msgid "Jurisdiction or Nationality information"
 msgstr "Información sobre la jurisdicción o nacionalidad"
 
-# 5d40df2f20254d32b2403d4f0b08a60b
-#: ../../schema/concepts.rst:74
+#: ../../schema/concepts.rst:74 ec9b722744ff42fb8c58e0f08dc31859
 msgid ""
 "Important dates (birth date, death date, founding date, dissolution date)"
 msgstr "Fechas importantes (de nacimiento, defunción, fundación o disolución)"
 
-# 1cd51cf1db0548819ef8511a2cae9a44
-#: ../../schema/concepts.rst:75
+#: ../../schema/concepts.rst:75 065008ea20a9425d9616e2f738bca511
 msgid "Addresses"
 msgstr "Domicilios"
 
-# 881fbbc4d9fc4c00a9e09278030c3619
-#: ../../schema/concepts.rst:77
+#: ../../schema/concepts.rst:77 a889b018090c4c3f8ca802fd3ecd8a00
 msgid ""
 "Including such identifiers allows intelligent integration of information "
 "across disclosures, datasets and time."
@@ -331,8 +314,7 @@ msgstr ""
 "la información a través de las divulgaciones, los conjuntos de datos y el "
 "tiempo."
 
-# fc493b12c8a043c29b24cfdb530f6ab1
-#: ../../schema/concepts.rst:79
+#: ../../schema/concepts.rst:79 ed47a663c5c94d2cabff3a0ce27fa444
 msgid ""
 "These fields are designed to support 'strict' and 'relaxed' validation, to "
 "accommodate different data sources. New data sources should seek to provide "
@@ -347,8 +329,7 @@ msgstr ""
 "Otras fuentes deberían brindar la mayor cantidad de datos posible, con "
 "sujeción a las políticas vigentes y las limitaciones de privacidad."
 
-# 072454d59c7b4fc496595d4034947355
-#: ../../schema/concepts.rst:81
+#: ../../schema/concepts.rst:81 4085e0c27c014219a249dc27edc68d83
 msgid ""
 "An ``ownershipOrControlStatement`` connects (via ``statementIdentifier`` "
 "references) the ``subject`` of the statement (an entity described by an "
@@ -360,18 +341,15 @@ msgstr ""
 "descripta en la ``entityStatement``) y a una ``interestedParty``. Esta parte"
 " interesada puede ser:"
 
-# a0287c9a8bbe49048741a4faba2bf5f1
-#: ../../schema/concepts.rst:83
+#: ../../schema/concepts.rst:83 3fc36dca390f43f39f6603f6f0de3e1b
 msgid "Another entity described by an ``entityStatement``;"
 msgstr "Otra entidad descripta en una ``entityStatement``;"
 
-# 6d488de17f68444db62c9efbe311d677
-#: ../../schema/concepts.rst:84
+#: ../../schema/concepts.rst:84 876f1501fc53402e81363c688d3d6ca0
 msgid "A person described by a ``personStatement``; or"
 msgstr "Una persona descripta en una ``personStatement``; o"
 
-# c6abac1d591f4527b44bc71b363cec73
-#: ../../schema/concepts.rst:85
+#: ../../schema/concepts.rst:85 3edb028dd5784a48815dc7821d8bdc65
 msgid ""
 "An unspecified party and the reasons that no ownership or control can be "
 "specified."
@@ -379,8 +357,7 @@ msgstr ""
 "Una parte no especificada y los motivos por los que no se puede especificar "
 "la titularidad o el control."
 
-# ef51a15686c945729b2b60228a0af540
-#: ../../schema/concepts.rst:87
+#: ../../schema/concepts.rst:87 b0550137f5f84a5c90e543b6ba157769
 msgid ""
 "The ownership-or-control statement also contains an array of ``interests``, "
 "each with a type (selected from the `interestType codelist "
@@ -392,8 +369,7 @@ msgstr ""
 " códigos tipoDeParticipación <reference.html#interesttype>`_) y, cuando es "
 "pertinente, porcentajes que indican el tamaño de la participación."
 
-# fead8340e0b942bbb0e8ab85c9a71b40
-#: ../../schema/concepts.rst:89
+#: ../../schema/concepts.rst:89 f19cf0c817d84aa49424b9b6a7a4b840
 msgid ""
 "To explore the structure of the data model in full use the :doc:`Schema "
 "browser <schema-browser>`. Or read the :any:`Schema reference <schema-"
@@ -404,33 +380,27 @@ msgstr ""
 ":any:`Referencias del esquema <schema-reference>`  para obtener definiciones"
 " detalladas de cada objeto y campo."
 
-# 91a51ed66da241a193b42313f8f968eb
-#: ../../schema/concepts.rst:93
+#: ../../schema/concepts.rst:93 1c3a9c09ac414a8db6ab185c39da0912
 msgid "Ownership or control through arrangements"
 msgstr "Titularidad o control a través de estructuras jurídicas"
 
-# 23713cf4a8874fa082a173ae444db299
-#: ../../schema/concepts.rst:95
+#: ../../schema/concepts.rst:95 fd3ae9754a244707a8b3cdec7a8216ab
 msgid "In some cases ownership or control is exercised through:"
 msgstr "En algunos casos, la titularidad o el control se ejerce por medio de:"
 
-# 4338f7a8ec014204856087cdd81ca37c
-#: ../../schema/concepts.rst:97
+#: ../../schema/concepts.rst:97 0328c5df9381480faefd462ce20dc4f5
 msgid "Trusts;"
 msgstr "Fideicomisos;"
 
-# e7b0a66d656e43bab43bfec80906c216
-#: ../../schema/concepts.rst:98
+#: ../../schema/concepts.rst:98 1dd5fe5cc566416594c0aabbef2f4cf6
 msgid "Contracts; and"
 msgstr "Contratos; y"
 
-# 8cdbeecaf38d4823b1696b1945ebcacf
-#: ../../schema/concepts.rst:99
+#: ../../schema/concepts.rst:99 98541e62358d4aec83b03efdf74e53a0
 msgid "Other arrangements"
 msgstr "Otras estructuras jurídicas"
 
-# a6d3d2377f5f4f238c6543729e1dab03
-#: ../../schema/concepts.rst:101
+#: ../../schema/concepts.rst:101 702825f3d5c543118f2288eb41645845
 msgid ""
 "Depending on the particular jurisdiction these are covered by, they may or "
 "may not have a registered legal identity."
@@ -438,8 +408,7 @@ msgstr ""
 "Según la jurisdicción particular en la que estén comprendidas, pueden tener "
 "o no una identidad jurídica inscripta."
 
-# 2e26a453cebe4c81a3576cdd97a49dd4
-#: ../../schema/concepts.rst:103
+#: ../../schema/concepts.rst:103 3f7b05ff5f8a47959d6d145e645cc26d
 msgid ""
 "In BODS arrangements such as these are treated as a special kind of "
 "``entityStatement`` with ``entityType`` value: 'arrangement'."
@@ -448,8 +417,7 @@ msgstr ""
 "especial de ``entityStatement`` en la cual ``entityType`` tiene el valor: "
 "\"arrangement\"."
 
-# e696baa347ea496e91d0da15bd8a05e2
-#: ../../schema/concepts.rst:105
+#: ../../schema/concepts.rst:105 9b9103f35b02448d846e43459527d5f6
 msgid ""
 "This allows control via arrangements to be modelled in two steps, describing"
 " how:"
@@ -457,18 +425,15 @@ msgstr ""
 "Esto permite modelar en dos pasos el control ejercido a través de "
 "estructuras jurídicas, describiendo cómo:"
 
-# 911a4a8e0499412b8dd5760434e948be
-#: ../../schema/concepts.rst:107
+#: ../../schema/concepts.rst:107 a731e6f07ff645829f58f1af28aad541
 msgid "Person P has an interest in Arrangement A"
 msgstr "La Persona P posee una participación en la Estructura Jurídica A"
 
-# 699bc06be11f4d7496d22bad8ffe1483
-#: ../../schema/concepts.rst:108
+#: ../../schema/concepts.rst:108 84e80d324fca447db3bef3017c75a1d2
 msgid "Arrangement A has an interest in Entity E"
 msgstr "La Estructura Jurídica A posee una participación en la Entidad E"
 
-# 9f0f9212039348f29192d8b2e884e45f
-#: ../../schema/concepts.rst:110
+#: ../../schema/concepts.rst:110 17639a558c5b4848b996546d3c737379
 msgid ""
 "For more guidance on modelling arrangements, contact the :any:`BODS Helpdesk"
 " <support>`."
@@ -476,37 +441,25 @@ msgstr ""
 "Para obtener más orientación acerca de la modelización de estructuras "
 "jurídicas, comuníquese con la :any:`Asistencia Técnica del BODS <support>`."
 
-# 7e3b64bf34c34ddd9cf8c9392b08faa4
-#: ../../schema/concepts.rst:113
+#: ../../schema/concepts.rst:113 2b0ff49dae0442e5a295f2f67981f797
 msgid "Direct and indirect ownership and control"
 msgstr "Titularidad y control directo e indirecto"
 
-# f3f3e42162e8423182b2ef9a0af6a762
-#: ../../schema/concepts.rst:115
+#: ../../schema/concepts.rst:115 8fc56444f7f643d5a9cb9ce1ef998b77
 msgid ""
 "BODS can be used to describe both direct ownership and control (where Person"
 " A has a direct share in Company B), or indirect ownership and control "
 "(Where Person A is an ultimate beneficial owner of B, but where there may be"
 " any number of known or unknown intermediate companies or arrangements). "
-"This is indicated by use of the ``interestLevel`` property that can be set "
-"for each interest declared."
+"This is indicated by use of the ``directOrIndirect`` property that can be "
+"set for each interest declared."
 msgstr ""
-"El BODS puede utilizarse para describir tanto la titularidad y el control de"
-" carácter directo (cuando la persona A tiene un porcentaje directo en la "
-"Empresa B), como la titularidad y el control de carácter indirecto (cuando "
-"la Persona A es la beneficiaria final en última instancia de B, pero puede "
-"haber cualquier cantidad de empresas o estructuras jurídicas intermedias "
-"conocidas o desconocidas). Esta circunstancia se indica mediante el uso de "
-"la propiedad ``interestLevel``, que puede configurarse para cada "
-"participación declarada."
 
-# 50928c8c33c340aab68b7ecd756a4393
-#: ../../schema/concepts.rst:119
+#: ../../schema/concepts.rst:119 a24dad854e854e3ba2b31eca31a990f8
 msgid "Immutability of statements"
 msgstr "Inalterabilidad de las declaraciones"
 
-# ea50ee5a4aa140cd8f8dcf662f8c9199
-#: ../../schema/concepts.rst:121
+#: ../../schema/concepts.rst:121 d8305cd75e1746b99852b76ce875b955
 msgid ""
 "Published BODS statements should be treated as a write-only ledger, with new"
 " statements being issued to amend data contained in older statements and "

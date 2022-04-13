@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +21,11 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# ec861ac13bca45eab8568eface5824b0
-#: ../../primer/whyisbo.rst:2
+#: ../../primer/whyisbo.rst:2 089b02dedf60486ab58933507381b11c
 msgid "Why beneficial ownership is a useful concept"
 msgstr "Por qué es útil el concepto de beneficiario final"
 
-# faff99dd0cf84d3a8a9c037b96a35b40
-#: ../../primer/whyisbo.rst:4
+#: ../../primer/whyisbo.rst:4 e028e2c0334c49ae82364758984a1dd1
 msgid ""
 "People can be involved in a number of companies and in different ways. By "
 "limiting our understanding of people's involvement to ownership only, we "
@@ -38,8 +35,13 @@ msgstr ""
 "maneras. Si restringimos la interpretación de su intervención solamente a la"
 " titularidad, estaríamos dejando de lado casos como los siguientes."
 
-# 20c0fafb17cf4969b50aea9386b29581
-#: ../../primer/whyisbo.rst:12
+#: ../../primer/whyisbo.rstNone dff95da78e854b8283de8723c73119d6
+msgid ""
+"Person A controls 60% of Company 2. And Person A owns 50% of\n"
+"Company 3"
+msgstr ""
+
+#: ../../primer/whyisbo.rst:12 4ce5a52c0b8f4589a8211e6d8ed4b06c
 msgid ""
 "The person both controls Company 1 and owns half of Company 2. This could be"
 " important to know if both companies bid for the same government contract, "
@@ -50,8 +52,7 @@ msgstr ""
 "la licitación de un mismo contrato con el Estado, o si ambas aparecen en una"
 " cadena de contrataciones."
 
-# 335b26088e7d4fd4aa7c78d07f595249
-#: ../../primer/whyisbo.rst:16
+#: ../../primer/whyisbo.rst:16 06310619076f4732bc86054af3eeb4c8
 msgid ""
 "It might be equally important to see that a person's control over a company "
 "is greater than one might expect given their financial stake in it."
@@ -60,13 +61,15 @@ msgstr ""
 "que el control de una persona sobre una empresa es mayor de lo que se podría"
 " suponer dada su participación financiera en ella."
 
-# aa20dfdb51fd40c1b7bbb73368191809
-#: ../../primer/whyisbo.rst:27
+#: ../../primer/whyisbo.rstNone bd8e0310d7374212b2f9deaa9b007e18
+msgid ""
+"Person C controls 60% of votes in Company 2 while owning only\n"
+"20% of its stock."
+msgstr ""
+
+#: ../../primer/whyisbo.rst:27 f676f3c3fbf8485bac0798f125638fa2
 msgid ""
 "Uniting ownership and control under the banner of beneficial ownership "
 "allows us to represent the complex reality of corporate structures, and the "
-"multiple corporate interests a person might have."
+"multiple interests a person might have in a company."
 msgstr ""
-"Unir la titularidad y el control dentro del concepto de beneficiario final "
-"nos permite representar la compleja realidad de las estructuras societarias "
-"y las múltiples participaciones societarias que una persona puede tener."

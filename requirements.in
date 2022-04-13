@@ -1,6 +1,5 @@
 sphinx>=4.2,<4.3
-sphinx-intl
-transifex-client
+sphinx-intl[transifex]
 sphinx_rtd_theme
 sphinxcontrib-opendataservices-jsonschema
 sphinxcontrib-opendataservices

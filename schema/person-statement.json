@@ -168,7 +168,7 @@
     },
     "politicalExposure": {
       "type": "object",
-      "title": "Political Exposure",
+      "title": "Political exposure",
       "description": "Information about whether, and how, the person described by this statement is politically exposed. Use this property only if politically exposed person (PEP) declarations are expected as part of beneficial ownership declarations.",
       "required": [
         "status"
@@ -176,6 +176,7 @@
       "properties": {
         "status": {
           "type": "string",
+          "title": "Politically exposed person (PEP) status",
           "description": "This value is 'isPep' or 'isNotPep' according to whether the person described by this statement has the status of politically exposed person (PEP). An 'unknown' value means a PEP status declaration is expected but missing; the reason for the missing data SHOULD be supplied in the details array.",
           "enum": [
             "isPep",
@@ -185,7 +186,7 @@
         },
         "details": {
           "type": "array",
-          "title": "Politically Exposed Person Details",
+          "title": "Politically exposed person (PEP) details",
           "description": "One or more descriptions of this person's Politically Exposed Person (PEP) status.",
           "items": {
             "$ref": "components.json#/definitions/PepStatusDetails"
