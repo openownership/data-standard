@@ -93,7 +93,7 @@ EntityStatement
 
 .. jsonschema:: ../_build_schema/entity-statement.json
    :collapse: identifiers,addresses,source,jurisdiction,annotations,publicationDetails,publicListing
-   :externallinks: {"entityType":{"url":"#entitytype","text":"EntityType"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
+   :externallinks: {"entityType":{"url":"#entitytype","text":"EntityType"},"entitySubtype/generalCategory":{"url":"#entitysubtypecategory","text":"EntitySubtypeCategory"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
    :allowexternalrefs:
 
 .. _schema-id:
@@ -349,6 +349,15 @@ AnnotationMotivation
    :file: ../_build_schema/codelists/annotationMotivation.csv
 
 
+DirectOrIndirect
+++++++++++++++++
+
+.. csv-table-no-translate::
+   :header-rows: 1
+   :class: codelist-table
+   :file: ../_build_schema/codelists/directOrIndirect.csv
+
+
 EntityType
 ++++++++++
 
@@ -358,13 +367,15 @@ EntityType
    :file: ../_build_schema/codelists/entityType.csv
 
 
-DirectOrIndirect
-++++++++++++++++
+
+EntitySubtypeCategory
++++++++++++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
-   :file: ../_build_schema/codelists/directOrIndirect.csv
+   :file: ../_build_schema/codelists/entitySubtypeCategory.csv
+
 
 
 InterestType
