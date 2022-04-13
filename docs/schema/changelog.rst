@@ -8,47 +8,64 @@ ChangeLog
    
     This is v0.3 of the Beneficial Ownership Data Standard. It includes updates to the data model and codelists as well as additional technical guidance.
     
-    Implementers should be aware that future changes are anticipated, before a version 1.0 release. However, from this v0.2 release onwards, any structural changes, or major definitional changes will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form.
+    Implementers should be aware that future changes are anticipated, before a version 1.0 release. However any structural changes, or major definitional changes, will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form.
 
     The schema specifies a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields.
 
-[Unreleased]
-============
+[0.3] - 2022-04-15
+==================
 
 Added
 -----
 - Technical guidance (normative) on 'Representing beneficial ownership': providing detailed requirements for the use of ``beneficialOwnershipOrControl``, ``directOrIndirect``, ``componentStatementIDs``, and ``isComponent``.
+
 - Support for describing the traded securities and status of a publicly listed company (PLC): a new ``publicListing`` object has been added to Entity Statements.
+
 - Support for representing state-owned enterprises (SOEs):
 
   - New codes 'state' and 'stateBody' added to the ``entityType`` codelist.
   - New ``entitySubtype`` property added to Entity Statements. Its value is an object with properties ``generalCategory`` (codelist, see below) and ``localTerm`` (string).
-  - New ``entitySubtypeCategory`` codelist add. Currently only populated with codes related to state bodies.
+  - New ``entitySubtypeCategory``. Currently only populated with codes related to state bodies.
   - New ``formedByStatute`` property added to Entity Statements. Its value is an object with properties ``name`` and ``date``.
-  - Changes, listed below, to accommodate representation of states and state bodies. 
+  - Changes (below) to accommodate representation of states and state bodies. 
 
-- ``Country.name`` is now a required field (previously it was defined as "MUST" in the description).
-- ``Jurisdiction.name`` is now a required field (previously it was defined as "MUST" in the description).
-- ``SecuritiesListing.stockExchangeJurisdiction`` has minimum and maximum lengths to match the two lists that values could be from.
-- Annotations have ``oneOfEnumSelectorField`` added to provide hints to validation code which will produce better error messages.
+- Technical guidance (normative) on 'Representing state-owned enterprises': providing modelling requirements.
+
+- The ``interestType`` codelist has had the following new codes added: 'controlViaCompanyRulesOrArticles', 'controlByLegalFramework', 'boardMember', 'boardChair', 'unknownInterest', 'unpublishedInterest', 'enjoymentAndUseOfAssets', 'rightToProfitOrIncomeFromAssets'.
+
 
 Changed
 -------
 - The ``interestType`` and ``unspecifiedReason`` codelist codes have been changed from using hyphens to camelCase.
-- ``hasPepStatus`` and ``pepDetails`` are replaced with ``politicalExposure`` object  that contains ``status`` and ``details`` properties.
+
+- In the Person Statement, ``hasPepStatus`` and ``pepDetails`` have been wrapped in a ``PoliticalExposure`` object and renamed ``status`` and ``details``.
+
 - ``incorporatedInJurisdiction`` property in Entity Statements renamed to ``jurisdiction`` and description updated.
+
+- ``Jurisdiction.name`` is now a required field (previously it was defined as "MUST" in the description).
+
+- ``Country.name`` is now a required field (previously it was defined as "MUST" in the description).
+
 - 'legalEntity' description in the ``entityType`` codelist updated to remove coverage of government departments (which now fall under 'stateBody').
-- Required fields `statementPointerTarget` and `motivation` are moved from inside the `anyOf` statement to the top level, as they apply to all motivation types.
-- Clarified ``Address.country`` is from the ISO 3166-1 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
-- Clarified ``Country.code`` is from the ISO 3166-1 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
-- Clarified ``Jurisdiction.code`` is from the ISO 3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
-- Clarified ``SecuritiesListing.stockExchangeJurisdiction`` is from the ISO 3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was meant and used "digit" when it meant "letter").
-- Annotations changes from a ``anyOf`` to a ``oneOf``. This is technically correct and also is needed to improve validation messages.
-- Descriptions of ``statementType``.
-- Do not reference codelists in ``statementType`` - fixes issues caused by the way we use this field to select which subschema to use for validation. This should have no change for anyone using the compiled schema but may affect anyone using the files in ``schema/`` directly.
-- `interestLevel` renamed to `directOrIndirect`.
-- The ``interestType`` codelist codes have had `OfTrust` removed so they refer to any type of legal arrangement. Their descriptions have been edited to reflect these changes. `beneficiaryOfTrust` has been changed to `beneficiaryOfLegalArrangement` to avoid ambiguity and `otherInfluenceOrControlOfTrust` has been removed.
-- The ``interestType`` codelist has had the following new codes added: `controlViaCompanyRulesOrArticles`, `controlByLegalFramework`, `boardMember`, `boardChair`, `unknownInterest`, `unpublishedInterest`, `enjoymentAndUseOfAssets`, `rightToProfitOrIncomeFromAssets`.
+
+- Clarified ``Address.country`` is from the ISO 3166-1 list.
+
+- Clarified ``Country.code`` is from the ISO 3166-1 list.
+
+- Clarified ``Jurisdiction.code`` is from the ISO 3166-1 or ISO 3166-2 list.
+
+- Clarified required values for ``statementType``.
+
+- ``interestLevel`` renamed to ``directOrIndirect``.
+
+- The ``interestType`` codelist codes have had 'OfTrust' removed so they refer to any type of legal arrangement. Their descriptions have been edited to reflect these changes. 'beneficiaryOfTrust' has been changed to 'beneficiaryOfLegalArrangement' to avoid ambiguity and 'otherInfluenceOrControlOfTrust' has been removed.
+
+
+Alterations to schema structure and logic
+-----------------------------------------
+- ``Annotation`` object refactored.
+
+- Removed reference to codelist in ``statementType``. This fixes issues caused by the way we use this field to select which subschema to use for validation. This should not impact anyone using the compiled schema, but may affect those using the files in the 'schema' directory directly.
 
 
 [0.2] - 2019-06-30
