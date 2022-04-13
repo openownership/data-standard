@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Valery Gusak <valery.gusak@gmail.com>, 2019
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:57+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,13 +21,13 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 043fd11312db4cdcaa5feb3f544978c6
 #: ../../schema/guidance/functional-requirements.rst:4
+#: 7f0f464371e04e0780ed73192a7088fb
 msgid "Functional requirements"
 msgstr "Функциональные требования"
 
-# d0ae91e81e6f4745807f53c1b3dd3a0c
 #: ../../schema/guidance/functional-requirements.rst:6
+#: 0bf5f717a52447619acdb10c43a650dd
 msgid ""
 "The Beneficial Ownership Data Standard can accommodate data from a range of "
 "sources. Collection and publication systems need to ensure that this data is"
@@ -39,8 +39,8 @@ msgstr ""
 "высокое качество этих данных и возможность эффективного доступа к ним. "
 "Поэтому они должны соответствовать следующим функциональным требованиям:"
 
-# c1e92e32e98340749eb3dd8a24e4e179
 #: ../../schema/guidance/functional-requirements.rst:8
+#: eff16f6095a742f99888cbdebe9141d1
 msgid ""
 "Source systems should keep a full audit log with the source of data and "
 "changes made to data;"
@@ -48,8 +48,8 @@ msgstr ""
 "В исходных системах должно обеспечиваться ведение полного журнала аудита с "
 "указанием источника данных и изменений, вносимых в данные;"
 
-# a7e730e14da3487eb40936d3f250a8e4
 #: ../../schema/guidance/functional-requirements.rst:10
+#: 3688d1977034468db4e63d28db7051b6
 msgid ""
 "Publication systems should assign a unique identifier to each statement "
 "produced;"
@@ -57,8 +57,8 @@ msgstr ""
 "В системах опубликования каждой созданной записи должен присваиваться "
 "уникальный идентификатор;"
 
-# e073abfa16f64894ab5a3171d9acb848
 #: ../../schema/guidance/functional-requirements.rst:12
+#: 43afc410362c411bb7ed31a10c65f238
 msgid ""
 "Publication systems should be able to assert when one statement replaces "
 "another;"
@@ -66,16 +66,16 @@ msgstr ""
 "Системы опубликования должны обеспечивать возможность декларирования замены "
 "одной записи на другую;"
 
-# a5ac9926671b45b9bd1cff9a10aff735
 #: ../../schema/guidance/functional-requirements.rst:14
+#: bff79ce446d24d6787109edefd2b1062
 msgid ""
 "Publication systems should be able to produce statements in JSON format;"
 msgstr ""
 "Системы опубликования должны обеспечивать возможность создания записей в "
 "формате JSON;"
 
-# a9ce76f66f184376be126ba98260e457
 #: ../../schema/guidance/functional-requirements.rst:16
+#: 7d4b75051fd54fb4b2b8a44f057f9497
 msgid ""
 "Publication systems should be able to validate statements against the JSON "
 "schema;"
@@ -83,7 +83,7 @@ msgstr ""
 "Системы опубликования должны обеспечивать возможность валидации записей на "
 "основе схемы JSON;"
 
-# df126a2ae535426ea22ed62afaf95a3e
 #: ../../schema/guidance/functional-requirements.rst:18
+#: b3893bc0fcb4497ba662840133b820dc
 msgid "Statements should be immutable."
 msgstr "Записи должны быть неизменными."

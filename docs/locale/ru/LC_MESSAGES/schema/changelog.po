@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Valery Gusak <valery.gusak@gmail.com>, 2019
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"POT-Creation-Date: 2022-04-05 17:16+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,13 +21,11 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# 48b70136b5e5432dbda4dfc028236aca
-#: ../../schema/changelog.rst:5
+#: ../../schema/changelog.rst:5 490f701c647346968d193587aeed41bd
 msgid "ChangeLog"
 msgstr "Лог изменений"
 
-# 3a45eae98201491190fe5254792c28b1
-#: ../../schema/changelog.rst:9
+#: ../../schema/changelog.rst:9 96d150347da0473fb7636690982e3e14
 msgid ""
 "This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model and additional codelist information."
@@ -36,8 +34,7 @@ msgstr ""
 "себя обновления модели данных и дополнительную информацию в списке "
 "допустимых значений."
 
-# b7159c0b88c94dbe8c35ce1d713839dc
-#: ../../schema/changelog.rst:11
+#: ../../schema/changelog.rst:11 5863d44dd10549dc802f656b41d83c63
 msgid ""
 "Implementers should be aware that future changes are anticipated, before a "
 "version 1.0 release. However, from this v0.2 release onwards, any structural"
@@ -52,8 +49,7 @@ msgstr ""
 "изменений, при этом документирование предыдущих версий ведется в форме "
 "архива."
 
-# 9930919161fe4d228bb287417d758598
-#: ../../schema/changelog.rst:13
+#: ../../schema/changelog.rst:13 6f9989b633ab400fa558e2016cb21a05
 msgid ""
 "The schema specifies a **structure**, **fields** and **codelists** but does "
 "not yet enforce validation constraints on most fields."
@@ -61,19 +57,198 @@ msgstr ""
 "В схеме определены **структура**, **поля** и **списки допустимых значений**,"
 " но еще не учтены ограничения в отношении валидации по большинству полей."
 
-# 012819129c3f441c9a7bd7cc6e485146
-#: ../../schema/changelog.rst:17
-msgid "[0.2] - 2019-06-30"
-msgstr "[0.2] - 30.06.2019 г."
+#: ../../schema/changelog.rst:16 993f377d24754071a7cce2f2f05fbbbd
+msgid "[Unreleased]"
+msgstr ""
 
-# c49a79fd65a24989a5612347efa126ef
-# 0ea9db7b735c462ba86fa71afffefdc9
-#: ../../schema/changelog.rst:20 ../../schema/changelog.rst:87
+#: ../../schema/changelog.rst:19 ../../schema/changelog.rst:58
+#: ../../schema/changelog.rst:125 115ee89f67f64218b93dc47e34d0a379
+#: a3be129b31d2479bbc45444685c67496 a3be129b31d2479bbc45444685c67496
 msgid "Added"
 msgstr "Добавлено"
 
-# 9d1966f7dc2441539ad01bcaeb0c9fa5
-#: ../../schema/changelog.rst:21
+#: ../../schema/changelog.rst:20 267434856b414a68bd38797d3a37a7da
+msgid ""
+"Technical guidance (normative) on 'Representing beneficial ownership': "
+"providing detailed requirements for the use of "
+"``beneficialOwnershipOrControl``, ``directOrIndirect``, "
+"``componentStatementIDs``, and ``isComponent``."
+msgstr ""
+
+#: ../../schema/changelog.rst:21 72593b002e634a9aa66f63b9fd224575
+msgid ""
+"Support for describing the traded securities and status of a publicly listed"
+" company (PLC): a new ``publicListing`` object has been added to Entity "
+"Statements."
+msgstr ""
+
+#: ../../schema/changelog.rst:22 a4ad5173ce2249cb8930e3ecf766c03c
+msgid "Support for representing state-owned enterprises (SOEs):"
+msgstr ""
+
+#: ../../schema/changelog.rst:24 7256d5a063e04d68ae81e22e2b55e19d
+msgid ""
+"New codes 'state' and 'stateBody' added to the ``entityType`` codelist."
+msgstr ""
+
+#: ../../schema/changelog.rst:25 19109f52a9404955b3bd4a3bf13fa6c9
+msgid ""
+"New ``entitySubtype`` property added to Entity Statements. Its value is an "
+"object with properties ``generalCategory`` (codelist, see below) and "
+"``localTerm`` (string)."
+msgstr ""
+
+#: ../../schema/changelog.rst:26 fb7c999aa4294d34a9ea9df4dbd1b3a6
+msgid ""
+"New ``entitySubtypeCategory`` codelist add. Currently only populated with "
+"codes related to state bodies."
+msgstr ""
+
+#: ../../schema/changelog.rst:27 e992a33e39ef4a3d896ebf18d1e07e69
+msgid ""
+"New ``formedByStatute`` property added to Entity Statements. Its value is an"
+" object with properties ``name`` and ``date``."
+msgstr ""
+
+#: ../../schema/changelog.rst:28 306a485026bf4ff2ae208d381d872255
+msgid ""
+"Changes, listed below, to accommodate representation of states and state "
+"bodies."
+msgstr ""
+
+#: ../../schema/changelog.rst:30 75f3a33a46a340438d22532d1fe143ae
+msgid ""
+"``Country.name`` is now a required field (previously it was defined as "
+"\"MUST\" in the description)."
+msgstr ""
+
+#: ../../schema/changelog.rst:31 86939e88830b40ecbbd950a2b2f5d5eb
+msgid ""
+"``Jurisdiction.name`` is now a required field (previously it was defined as "
+"\"MUST\" in the description)."
+msgstr ""
+
+#: ../../schema/changelog.rst:32 53121a5729a041d6a5947bd4ac808821
+msgid ""
+"``SecuritiesListing.stockExchangeJurisdiction`` has minimum and maximum "
+"lengths to match the two lists that values could be from."
+msgstr ""
+
+#: ../../schema/changelog.rst:33 ea2ab916460b4948a3153f95c540dd2d
+msgid ""
+"Annotations have ``oneOfEnumSelectorField`` added to provide hints to "
+"validation code which will produce better error messages."
+msgstr ""
+
+#: ../../schema/changelog.rst:36 ../../schema/changelog.rst:87
+#: ../../schema/changelog.rst:132 d59ad26258824d72a6b4fae8414b8ee4
+#: d59ad26258824d72a6b4fae8414b8ee4 d59ad26258824d72a6b4fae8414b8ee4
+msgid "Changed"
+msgstr "Измененные"
+
+#: ../../schema/changelog.rst:37 504e9c8179f84a9b87040429bb6564bc
+msgid ""
+"The ``interestType`` and ``unspecifiedReason`` codelist codes have been "
+"changed from using hyphens to camelCase."
+msgstr ""
+
+#: ../../schema/changelog.rst:38 ad464ef633d84a628c33519bed0c721a
+msgid ""
+"``hasPepStatus`` and ``pepDetails`` are replaced with ``politicalExposure`` "
+"object  that contains ``status`` and ``details`` properties."
+msgstr ""
+
+#: ../../schema/changelog.rst:39 e992a33e39ef4a3d896ebf18d1e07e69
+msgid ""
+"``incorporatedInJurisdiction`` property in Entity Statements renamed to "
+"``jurisdiction`` and description updated."
+msgstr ""
+
+#: ../../schema/changelog.rst:40 88e7ec012d8e4c689265bacbff16b5ad
+msgid ""
+"'legalEntity' description in the ``entityType`` codelist updated to remove "
+"coverage of government departments (which now fall under 'stateBody')."
+msgstr ""
+
+#: ../../schema/changelog.rst:41 f76409bf720a4edbb5dc16b687cf54cc
+msgid ""
+"Required fields `statementPointerTarget` and `motivation` are moved from "
+"inside the `anyOf` statement to the top level, as they apply to all "
+"motivation types."
+msgstr ""
+
+#: ../../schema/changelog.rst:42 8cc797867e394205bb1e135cd5371161
+msgid ""
+"Clarified ``Address.country`` is from the ISO 3166-1 list (previously it was"
+" unclear which ISO list was meant and used \"digit\" when it meant "
+"\"letter\")."
+msgstr ""
+
+#: ../../schema/changelog.rst:43 a70e20443fcb4368a0b403b129fc2ea9
+msgid ""
+"Clarified ``Country.code`` is from the ISO 3166-1 list (previously it was "
+"unclear which ISO list was meant and used \"digit\" when it meant "
+"\"letter\")."
+msgstr ""
+
+#: ../../schema/changelog.rst:44 528b17b7d15c43da89821c47c3541a82
+msgid ""
+"Clarified ``Jurisdiction.code`` is from the ISO 3166-1 or ISO 3166-2 list "
+"(previously it was unclear which ISO list was meant and used \"digit\" when "
+"it meant \"letter\")."
+msgstr ""
+
+#: ../../schema/changelog.rst:45 f8ec8aff063b4f009b2e348ca3395c7d
+msgid ""
+"Clarified ``SecuritiesListing.stockExchangeJurisdiction`` is from the ISO "
+"3166-1 or ISO 3166-2 list (previously it was unclear which ISO list was "
+"meant and used \"digit\" when it meant \"letter\")."
+msgstr ""
+
+#: ../../schema/changelog.rst:46 e1ed0c1be5694176b258cf108922f3b4
+msgid ""
+"Annotations changes from a ``anyOf`` to a ``oneOf``. This is technically "
+"correct and also is needed to improve validation messages."
+msgstr ""
+
+#: ../../schema/changelog.rst:47 5d539b614c764548a5574f1856d6bd24
+msgid "Descriptions of ``statementType``."
+msgstr ""
+
+#: ../../schema/changelog.rst:48 89162348bc6141d49cb33b83b73ef513
+msgid ""
+"Do not reference codelists in ``statementType`` - fixes issues caused by the"
+" way we use this field to select which subschema to use for validation. This"
+" should have no change for anyone using the compiled schema but may affect "
+"anyone using the files in ``schema/`` directly."
+msgstr ""
+
+#: ../../schema/changelog.rst:49 cff8356f7d7c43219eb67cc05f66fc35
+msgid "`interestLevel` renamed to `directOrIndirect`."
+msgstr ""
+
+#: ../../schema/changelog.rst:50 584e9e6ad7274bc680a41b5c8e6a5618
+msgid ""
+"The ``interestType`` codelist codes have had `OfTrust` removed so they refer"
+" to any type of legal arrangement. Their descriptions have been edited to "
+"reflect these changes. `beneficiaryOfTrust` has been changed to "
+"`beneficiaryOfLegalArrangement` to avoid ambiguity and "
+"`otherInfluenceOrControlOfTrust` has been removed."
+msgstr ""
+
+#: ../../schema/changelog.rst:51 5f5de1eb9c3c453cb1a533c165497acb
+msgid ""
+"The ``interestType`` codelist has had the following new codes added: "
+"`controlViaCompanyRulesOrArticles`, `controlByLegalFramework`, "
+"`boardMember`, `boardChair`, `unknownInterest`, `unpublishedInterest`, "
+"`enjoymentAndUseOfAssets`, `rightToProfitOrIncomeFromAssets`."
+msgstr ""
+
+#: ../../schema/changelog.rst:55 bd9761c4b25640ff86b48b32aa34c422
+msgid "[0.2] - 2019-06-30"
+msgstr "[0.2] - 30.06.2019 г."
+
+#: ../../schema/changelog.rst:59 1988777399bb49ea852d29d9d28a91e2
 msgid ""
 "Support for representing details of indirect beneficial ownership "
 "relationships (where a beneficial owner owns or controls an entity through "
@@ -83,8 +258,7 @@ msgstr ""
 "бенефициарного владения (при котором бенефициарный владелец владеет "
 "субъектом или контролирует субъект через посредников):"
 
-# 7338ab3cc9204f7c9d594e51e42351cf
-#: ../../schema/changelog.rst:23
+#: ../../schema/changelog.rst:61 ce85e1a9713144a298f39bb3626d140f
 msgid ""
 "A required ``isComponent`` property has been added to all three Statement "
 "objects. It takes a boolean value and indicates whether a Statement "
@@ -94,8 +268,7 @@ msgstr ""
 "Записи. Оно принимает логическое значение и указывает на то, представляет ли"
 " Запись часть основных косвенных отношений владения или контроля."
 
-# d091ba174c7341459a1bdbba99a446ed
-#: ../../schema/changelog.rst:24
+#: ../../schema/changelog.rst:62 40edf20ae9684ef09502f4f5c8f30670
 msgid ""
 "A ``componentStatementIDs`` property has been added to Ownership-or-control "
 "Statements. It takes an array of Statement IDs, indicating which component "
@@ -106,8 +279,7 @@ msgstr ""
 " записи о компонентах содержат сведения касательно родительской записи о "
 "владении или контроле."
 
-# 6ec3c00abb024aa1b4c509b98e764ecb
-#: ../../schema/changelog.rst:26
+#: ../../schema/changelog.rst:64 458f1a33f88743b2b569631a02cc010b
 msgid ""
 "A required ``publicationDetails`` property has been added to all three "
 "Statement objects. It represents metadata for Statements: information about "
@@ -117,33 +289,27 @@ msgstr ""
 "объектам записей. Оно представляет метаданные для записей: информацию об их "
 "первоначальном издателе. Подсвойства (и их подсвойства) следующие:"
 
-# f0428a7b129949dbb2bc3ac08b3b97cf
-#: ../../schema/changelog.rst:28
+#: ../../schema/changelog.rst:66 fb2d80808c5d49d4a6adbf3fddcebd8c
 msgid "``publicationDate``\\*"
 msgstr "``publicationDate``\\*"
 
-# f7708730cb6640d6a901bc6efa45fc0c
-#: ../../schema/changelog.rst:29
+#: ../../schema/changelog.rst:67 bc8c8f28a72c43c7ab3a528d99219908
 msgid "``bodsVersion``\\*"
 msgstr "``bodsVersion``\\*"
 
-# 3900fb2ce2a242089bbbc50635b14e30
-#: ../../schema/changelog.rst:30
+#: ../../schema/changelog.rst:68 fe10125b7c8d4d0d89141b47abd73336
 msgid "``license``"
 msgstr "``license``"
 
-# f10efbd51ee148239f0042187559c33d
-#: ../../schema/changelog.rst:31
+#: ../../schema/changelog.rst:69 ae427019ff024d48b9348646ccd81016
 msgid "``publisher``\\* (``name``, ``url``)"
 msgstr "``publisher``\\* (``name``, ``url``)"
 
-# ed200ea905ca4c618768b42661f14891
-#: ../../schema/changelog.rst:33
+#: ../../schema/changelog.rst:71 5c6a5c127d0b4e0a82dbc14d459ae2ca
 msgid "\\* required"
 msgstr "\\* обязательные"
 
-# 06189e3c1d3944129fa997072a15ab79
-#: ../../schema/changelog.rst:35
+#: ../../schema/changelog.rst:73 4128595ea2924385a32e1d22447a5f09
 msgid ""
 "A ``hasPepStatus`` property (taking a boolean value) has been added to "
 "Person Statements. It is only to be used where disclosure requirements "
@@ -154,8 +320,7 @@ msgstr ""
 "когда требования касательно раскрытия информации требуют отмечать Публичных "
 "должностных лиц."
 
-# 55bea17bcbac4afdaf594fc7f1765619
-#: ../../schema/changelog.rst:37
+#: ../../schema/changelog.rst:75 2d04c9c0a1814656addd968bf5c4008b
 msgid ""
 "PEP Status objects now have the additional properties ``missingInfoReason`` "
 "and ``source``."
@@ -164,8 +329,7 @@ msgstr ""
 "``missingInfoReason`` (причина отсутствия информации) и ``source`` "
 "(источник)."
 
-# a62f601561fc459b80a4973da0676b48
-#: ../../schema/changelog.rst:39
+#: ../../schema/changelog.rst:77 ea1a86919557415eb28f6df7765543fc
 msgid ""
 "A ``taxResidencies`` property has been added to Person Statements. It takes "
 "an array of Country objects."
@@ -173,15 +337,13 @@ msgstr ""
 "Свойство taxResidencies было добавлено к записям о физических лицах. Оно "
 "принимает массив объектов стран (Country)."
 
-# 39d8626a9d564cf3b092f3c279740d82
-#: ../../schema/changelog.rst:41
+#: ../../schema/changelog.rst:79 a4ad5173ce2249cb8930e3ecf766c03c
 msgid "Support for more structured accounts of missing and anonymised data:"
 msgstr ""
 "Поддержка более структурированного представления отсутствующих или анонимных"
 " данных:"
 
-# 51c6199bd0e64c27b6b56906d0bd583f
-#: ../../schema/changelog.rst:43
+#: ../../schema/changelog.rst:81 ee90928330044548beccb7c76e7528c4
 msgid ""
 "``unspecifiedPersonDetails`` has been added to Person Statements (with a "
 "required ``reason`` sub-property)"
@@ -189,8 +351,7 @@ msgstr ""
 "Свойство ``unspecifiedPersonDetails`` было добавлено к записям о физических "
 "лицах (с обязательным подсвойством ``reason`` (причина))"
 
-# 1120b1fa3a1b4c6aab8b51acee8cbe18
-#: ../../schema/changelog.rst:44
+#: ../../schema/changelog.rst:82 7f83cafeab4b40beafecfc7db48fcff2
 msgid ""
 "``unspecifiedEntityDetails`` has been added to Entity Statements (with a "
 "required ``reason`` sub-property)"
@@ -198,8 +359,7 @@ msgstr ""
 "Свойство ``unspecifiedEntityDetails`` было добавлено к записям о субъектах "
 "(с обязательным подсвойством ``reason`` (причина))"
 
-# efc6c152df064f21a704da83ba6e1a10
-#: ../../schema/changelog.rst:46
+#: ../../schema/changelog.rst:84 976ecbdfdeb547309ba2e316ec26ad54
 msgid ""
 "The ``reason`` sub-property draws on the Unspecified Reason codelist (as "
 "does the Ownership-or-control Statement's ``interestedParty.unspecified`` "
@@ -209,14 +369,7 @@ msgstr ""
 "причин (как и свойство ``interestedParty.unspecified`` записи о владении или"
 " контроле)."
 
-# 8cf0096ef864458582db0b5c6239e55e
-# 6eb95dad74c248dc8430d8dc7e6475ac
-#: ../../schema/changelog.rst:49 ../../schema/changelog.rst:94
-msgid "Changed"
-msgstr "Измененные"
-
-# bddd6b9efb384779be058ae26fa5327f
-#: ../../schema/changelog.rst:50
+#: ../../schema/changelog.rst:88 3064950ab75449e5abfc95a9e11c499d
 msgid ""
 "The ``pepStatus`` property of Person Statements has been renamed "
 "``pepStatusDetails`` (and still references an array of PEP Status objects)."
@@ -225,35 +378,30 @@ msgstr ""
 "``pepStatusDetails`` (и по-прежнему ссылается на массив объектов статуса "
 "ПДЛ)."
 
-# bb61b7805df748edb78a94dcf026762a
-#: ../../schema/changelog.rst:52
+#: ../../schema/changelog.rst:90 d923902196b74b988e89a8c953c3fbea
 msgid "The ``personType`` property of Person Statements is now required."
 msgstr ""
 "Свойство ``personType`` записей о физических лицах теперь является "
 "обязательным."
 
-# a3ad2503544e402d8e6b8faa3e38fe4a
-#: ../../schema/changelog.rst:54
+#: ../../schema/changelog.rst:92 980cad263bd24e59a1aca9c15d5be686
 msgid ""
 "If ``Annotation.motivation`` is 'linking', ``Annotation.url`` is required."
 msgstr ""
 "Если ``Annotation.motivation`` имеет значение 'linking', то "
 "``Annotation.url`` является обязательным."
 
-# b424df7c579f4f0db70e4223326e633e
-#: ../../schema/changelog.rst:56
+#: ../../schema/changelog.rst:94 6ca7f7c4ec434053a4de557d14e2a0d7
 msgid "The Interest Type codelist has been amended:"
 msgstr ""
 "В список допустимых значений типов долевого участия были внесены изменения:"
 
-# b69f809035c045879bd55a614b5ebf84
-#: ../../schema/changelog.rst:58
+#: ../../schema/changelog.rst:96 14e7eeaf027747fda46ec59b62301134
 msgid "'influence-or-control' is renamed 'other-influence-or-control'"
 msgstr ""
 "'influence-or-control' было переименовано в 'other-influence-or-control'"
 
-# d2b644829e6b4022bf636c28228d166d
-#: ../../schema/changelog.rst:59
+#: ../../schema/changelog.rst:97 3deaf697f2a0460da233508d6f9fc3dc
 msgid ""
 "'rights-to-surplus-assets' is renamed 'rights-to-surplus-assets-on-"
 "dissolution'"
@@ -261,74 +409,61 @@ msgstr ""
 "'rights-to-surplus-assets' было переименовано в 'rights-to-surplus-assets-"
 "on-dissolution'"
 
-# 303dd6e82451492aa6b6090183d90c2e
-#: ../../schema/changelog.rst:60
+#: ../../schema/changelog.rst:98 e432c5694bb74a8e8d50ac23c46c9273
 msgid "'rights-granted-by-contract' has been added"
 msgstr "'rights-granted-by-contract' было добавлено"
 
-# 7a8fb42212a244dbb75f64b73726d116
-#: ../../schema/changelog.rst:61
+#: ../../schema/changelog.rst:99 70aa37c35ff84170b6c0392e9ac80810
 msgid "'conditional-rights-granted-by-contract' has been added"
 msgstr "'conditional-rights-granted-by-contract' было добавлено"
 
-# f8957e5a43c3450fb208142d81a271f9
-#: ../../schema/changelog.rst:63
+#: ../../schema/changelog.rst:101 26c7e1a0349444058512161f64c5bb79
 msgid "The Address Type codelist has been amended:"
 msgstr "В список допустимых значений типов адресов были внесены изменения:"
 
-# 8fa6be9161fc43d284bf4e57d6206f9f
-#: ../../schema/changelog.rst:65
+#: ../../schema/changelog.rst:103 80aa2c1fc8e64da289680f3bad662be3
 msgid "'home' has been removed (since 'residence' can be used instead)"
 msgstr ""
 "'home' было удалено (так как вместо него можно использовать 'residence')"
 
-# c7d63033c74f42b9adffa479b04b0dcc
-#: ../../schema/changelog.rst:66
+#: ../../schema/changelog.rst:104 da5f3a3a1daa4a859302fabbce820b93
 msgid "'business' has been added"
 msgstr "'business' было добавлено"
 
-# b19b3294cf644bdeb9580fe5dde38275
-#: ../../schema/changelog.rst:68
+#: ../../schema/changelog.rst:106 f1face633421482ca5e1bd524726c18a
 msgid "The Name Type codelist has been amended:"
 msgstr "В список допустимых значений типов ФИО были внесены изменения:"
 
-# c8bfe3e53b3c40a89be482c1c6e72a63
-#: ../../schema/changelog.rst:70
+#: ../../schema/changelog.rst:108 9f41586572eb4de3a08254c9e1a41029
 msgid ""
 "'alias', 'aka', and 'nick' have all been removed. They are replaced by "
 "'alternative'"
 msgstr ""
 "'alias', 'aka' и 'nick' были удалены. Они были заменены на 'alternative'"
 
-# 3997a4374a82443e97392227f650f67e
-#: ../../schema/changelog.rst:71
+#: ../../schema/changelog.rst:109 3262021d2b4d4a94925855794fd01b5d
 msgid "'transliteration' has been added"
 msgstr "'transliteration' было добавлено"
 
-# f1e448c135af47e38f7324a05d8e9187
-#: ../../schema/changelog.rst:73
+#: ../../schema/changelog.rst:111 b2c6177be60f4eb7ada011505f2211cf
 msgid "The Unspecified Reason codelist has been amended:"
 msgstr ""
 "В список допустимых значений неуказанных причин были внесены изменения:"
 
-# ce7cad37a512477ab399397488530227
-#: ../../schema/changelog.rst:75
+#: ../../schema/changelog.rst:113 9f504374d19749dda891e258b390b122
 msgid "'information-unknown-to-publisher' has been added"
 msgstr "'information-unknown-to-publisher' было добавлено"
 
-# d5250cd8197045ccbbf2138beeabc87b
-#: ../../schema/changelog.rst:77
+#: ../../schema/changelog.rst:115 a84a1fff4faf409eba98604af34fa559
 msgid "All codelist codes now have descriptions."
 msgstr "Значения из списка допустимых значений теперь имеют описания."
 
-# cd0a8c8d9cfc400aa3b8a3f99aed7b2c
-# c59bb93af93d46cc8a5c6e4081352a85
-#: ../../schema/changelog.rst:80 ../../schema/changelog.rst:100
+#: ../../schema/changelog.rst:118 ../../schema/changelog.rst:138
+#: eb603f5c4d7e4f878d48f9a0221f379a eb603f5c4d7e4f878d48f9a0221f379a
 msgid "Removed"
 msgstr "Удалено"
 
-# cfba9c9bc640455085fae900a7f168cf
-#: ../../schema/changelog.rst:81
+#: ../../schema/changelog.rst:119 e992a33e39ef4a3d896ebf18d1e07e69
 msgid ""
 "The ``missingInfoReason`` property has been removed from Person and Entity "
 "Statements. It has been replaced with ``unspecifiedPersonDetails`` and "
@@ -338,13 +473,11 @@ msgstr ""
 "субъектах. Оно было заменено на ``unspecifiedPersonDetails`` и "
 "``unspecifiedEntityDetails`` соответственно."
 
-# 4c550d00af834e3d84f896622cffca9a
-#: ../../schema/changelog.rst:84
+#: ../../schema/changelog.rst:122 cbe2c3d68a3a497cbff0e65cf95bc799
 msgid "[0.1] - 2018-12-12"
 msgstr "[0.1] - 12.12.2018 г."
 
-# 954075a0f6d547d8930648dc3cc8bdaf
-#: ../../schema/changelog.rst:88
+#: ../../schema/changelog.rst:126 cc6966c1b5744d24a2d162c0c743ae0c
 msgid ""
 "``beneficialOwnershipOrControl`` property added to Interest object. Takes a "
 "boolean value. Can be used to assert that an interest between a natural "
@@ -355,8 +488,7 @@ msgstr ""
 "утверждения, что при наличии доли участия между физическим лицом и субъектом"
 " такое физическое лицо является бенефициарным владельцем."
 
-# 6583b8c6962b4317bc3955040904e6a2
-#: ../../schema/changelog.rst:89
+#: ../../schema/changelog.rst:127 ab40ffc1987944ed9374afb40c2d1f1d
 msgid ""
 "``pepStatus`` property added to Person Statement object. Allows a natural "
 "person to be recorded as a politically exposed person (with a related "
@@ -366,8 +498,7 @@ msgstr ""
 "Позволяет объявить физическое лицо публичным должностным лицом (с указанием "
 "соответствующей причины, юрисдикции, начальной даты и конечной даты)."
 
-# 5cdedd4e3e9242228665130b485dce3f
-#: ../../schema/changelog.rst:90
+#: ../../schema/changelog.rst:128 d1bd6cd61b3d4f4dbdf96e2db78d390c
 msgid ""
 "``annotations`` property added to all three types of statement. Annotations "
 "provide a way of including additional (structured) data or transforming "
@@ -377,8 +508,7 @@ msgstr ""
 "являются способом указания дополнительных (структурированных) данных или "
 "целенаправленного преобразования существующих данных."
 
-# 87dd3f497234410cad1a313d45909438
-#: ../../schema/changelog.rst:91
+#: ../../schema/changelog.rst:129 17f61524a22a4f58ba047327ed02992b
 msgid ""
 "An ``unspecified`` property replaces the ``nullParty`` option for interested"
 " parties.  An unspecifiedReason codelist provides options for describing why"
@@ -388,16 +518,14 @@ msgstr ""
 "сторон. Список допустимых значений unspecifiedReason обеспечивает "
 "возможности для описания того, почему не указана заинтересованная сторона."
 
-# 8da4466b030b46508163424f80764e50
-#: ../../schema/changelog.rst:95
+#: ../../schema/changelog.rst:133 0dfb69c465e34e5b983b7af5d0d37de8
 msgid ""
 "The interestType codelist has been extended to include interests in trusts."
 msgstr ""
 "Список допустимых значений interestType был расширен и включает в себя "
 "долевое участие в трастах."
 
-# 7eb56d387e464413825ba3f29fbd9f6e
-#: ../../schema/changelog.rst:96
+#: ../../schema/changelog.rst:134 f47ce3b47ab944af970f031c85652028
 msgid ""
 "The structure of BODS-formatted data has been flattened, to remove "
 "extraneous nesting and facilitate serialization using JSON Lines."
@@ -405,8 +533,7 @@ msgstr ""
 "Структура данных в формате СДБВ стала более плоской, чтобы исключить "
 "посторонние вложения и упростить сериализацию при помощи Линий JSON."
 
-# 29bdb022d3de4df6a9224603ab885943
-#: ../../schema/changelog.rst:97
+#: ../../schema/changelog.rst:135 bad96f1aa156484195507ff6cbcf7f61
 msgid ""
 "'Beneficial ownership statements' have been renamed 'Ownership-or-control "
 "statements' to reflect the scope of their use."
@@ -414,8 +541,7 @@ msgstr ""
 "«Записи о бенефициарном владении» были переименованы в «Записи о владении "
 "или контроле» для отражения охвата их использования."
 
-# cb6f25d2b97e492690183d73ab3d32ca
-#: ../../schema/changelog.rst:101
+#: ../../schema/changelog.rst:139 b89504568630408cba62b881fc05157c
 msgid ""
 "Arrays of ``statementGroup`` objects (each object with its own statement "
 "group id) are no longer used to package arrays of statements. This reflects "
@@ -426,8 +552,7 @@ msgstr ""
 "массивов записей. Это отражает формирование более плоской структуры данных в"
 " формате СДБВ."
 
-# e4c04f6222c041d28e2e874322f9a81d
-#: ../../schema/changelog.rst:102
+#: ../../schema/changelog.rst:140 2190562987984a5f8a821ebdbf66fdc7
 msgid ""
 "The ``nullParty`` option for interested parties. See ``unspecified`` "
 "property in the Added section above."

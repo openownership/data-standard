@@ -29,14 +29,7 @@ msgstr "Créditos"
 
 # d64ad106e731468aa959c580aae95c79
 #: ../../about/credits.rst:4
-msgid ""
-"The first beta version of the Beneficial Ownership Data Standard was written"
-" by Tim Davies (`Open Data Services Co-operative "
-"<http://www.opendataservices.coop>`_) with Ben Symonds (`OpenCorporates "
-"<http://www.opencorporates.com>`_), Chris Taggart (`OpenCorporates "
-"<http://www.opencorporates.com>`_) and Jack Lord (`Open Data Services Co-"
-"operative <http://www.opendataservices.coop>`_) and supported by the "
-":doc:`data standard working group <governance>`."
+msgid "The first beta version of the Beneficial Ownership Data Standard was written by Tim Davies (`Open Data Services <https://www.opendataservices.coop>`_) with Ben Symonds (`OpenCorporates <https://www.opencorporates.com>`_), Chris Taggart (`OpenCorporates <https://www.opencorporates.com>`_) and Jack Lord (`Open Data Services <https://www.opendataservices.coop>`_) and input from the :doc:`data standard working group <governance>`."
 msgstr ""
 "La primera versión beta del Estándar de Datos sobre Beneficiarios Finales "
 "fue desarrollada por Tim Davies (`Open Data Services Co-operative "
@@ -48,12 +41,7 @@ msgstr ""
 
 # f1105f4b0a7e40cd8326f0f70432d38e
 #: ../../about/credits.rst:12
-msgid ""
-"The 0.1 version was written by Tim Davies and Jack Lord with supporting "
-"documentation from Kadie Armstrong (`Open Data Services Co-operative "
-"<http://www.opendataservices.coop>`_), technical work from James Baster "
-"(`Open Data Services Co-operative <http://www.opendataservices.coop>`_) and "
-"input from the :doc:`data standard working group <governance>`."
+msgid "The 0.1 version was written by Tim Davies and Jack Lord with supporting documentation from Kadie Armstrong (`Open Data Services <https://www.opendataservices.coop>`__), technical work from James Baster (`Open Data Services <https://www.opendataservices.coop>`_) and input from the :doc:`data standard working group <governance>`."
 msgstr ""
 "La versión 0.1 fue desarrollada por Tim Davies y Jack Lord utilizando "
 "documentación de apoyo de Kadie Armstrong (`Open Data Services Co-operative "
@@ -63,13 +51,7 @@ msgstr ""
 
 # 551c9e80eb6045e5959e8d2af1c5b970
 #: ../../about/credits.rst:19
-msgid ""
-"The 0.2 version was written by Jack Lord, Simon Whitehouse and Kadie "
-"Armstrong (`Open Data Services Co-operative "
-"<http://www.opendataservices.coop>`_), technical work from James Baster, Ben"
-" Webb, Amy Guy and David Raznick (`Open Data Services Co-operative "
-"<http://www.opendataservices.coop>`_) and input from the :doc:`data standard"
-" working group <governance>`."
+msgid "The 0.2 version was written by Jack Lord, Simon Whitehouse and Kadie Armstrong (`Open Data Services <https://www.opendataservices.coop>`_), with technical work from James Baster, Ben Webb, Amy Guy and David Raznick (`Open Data Services <https://www.opendataservices.coop>`_) and input from the :doc:`data standard working group <governance>`."
 msgstr ""
 "La versión 0.2 fue desarrollada por Jack Lord, Simon Whitehouse y Kadie "
 "Armstrong (`Open Data Services Co-operative "

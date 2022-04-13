@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Valery Gusak <valery.gusak@gmail.com>, 2019
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:57+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,13 +21,11 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# c659db4123584ee99640fd60bb2d6e42
-#: ../../schema/guidance/languages.rst:2
+#: ../../schema/guidance/languages.rst:2 d2445a650445407da668772522c0c995
 msgid "Languages and transliteration"
 msgstr "Языки и транслитерация"
 
-# 03716f7abc264d3c93399927e258bb0f
-#: ../../schema/guidance/languages.rst:4
+#: ../../schema/guidance/languages.rst:4 de66c6b04b4e4cf8b5f8a13358095a78
 msgid ""
 "There may be times when beneficial ownership information needs to be "
 "provided in different languages."
@@ -35,8 +33,7 @@ msgstr ""
 "Могут возникнуть случаи, когда информацию о бенефициарном владении "
 "необходимо будет предоставить на других языках."
 
-# 565608e0cbc34b438fb0acbabad70d03
-#: ../../schema/guidance/languages.rst:6
+#: ../../schema/guidance/languages.rst:6 cf46530c55c34c94a1eb7dee4e344e86
 msgid ""
 "For people's names, use an entry in the ``names`` array with a ``type`` of "
 "'translation'"
@@ -44,14 +41,12 @@ msgstr ""
 "Для ФИО физических лиц используйте элемент в массиве ``names`` с типом "
 "(``type``) «translation»"
 
-# 75640900f1de44bda2885594f6f5f391
-#: ../../schema/guidance/languages.rst:7
+#: ../../schema/guidance/languages.rst:7 f3cc9ddf20ad4adaa873bea2abf93a59
 msgid "For entity names, use an entry in the ``alternativeNames`` array"
 msgstr ""
 "Для названий субъектов используйте элемент в массиве ``alternativeNames``"
 
-# b1936e2fe9f74ad68c4b772a7a0175c2
-#: ../../schema/guidance/languages.rst:9
+#: ../../schema/guidance/languages.rst:9 49c03ef31a524b9d8583a17b20e52962
 msgid ""
 "For other fields, an ``annotations`` object can be used to indicate that a "
 "particular field has a translation or transliteration."
