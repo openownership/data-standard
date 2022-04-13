@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +21,11 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# a9ac0381edd146539b5dcd727dd86857
-#: ../../primer/whatisbo.rst:4
+#: ../../primer/whatisbo.rst:4 b5d0a469f9b841d6812f573a2c3c0fd1
 msgid "What is beneficial ownership?"
 msgstr "¿Qué significa beneficiario final?"
 
-# 2ca95407630745b89dc346114f2434c9
-#: ../../primer/whatisbo.rst:6
+#: ../../primer/whatisbo.rst:6 6ce83d7d5a794513bed51853f66a5208
 msgid ""
 "The concept of beneficial ownership helps us understand how companies and "
 "other legal entities are owned and controlled."
@@ -36,14 +33,12 @@ msgstr ""
 "El concepto de beneficiario final nos ayuda a entender la titularidad y el "
 "control de las empresas y otras entidades jurídicas."
 
-# 178cdc18f37543ca88305cae75f7579a
-#: ../../primer/whatisbo.rst:13
+#: ../../primer/whatisbo.rst:13 b3ec24a7380e4ae29a6f748a112ff35f
 msgid "Companies or people can own other companies..."
 msgstr ""
 "Las empresas y los individuos pueden ser propietarios de otras empresas…"
 
-# 8def3a6a035949e2bf8f9d2e1a63c275
-#: ../../primer/whatisbo.rst:19
+#: ../../primer/whatisbo.rst:19 22f1f73ebbb74819b4c9ddd20a327306
 msgid ""
 "The idea that people own companies and sometimes companies own companies is "
 "well understood."
@@ -51,13 +46,15 @@ msgstr ""
 "Que los individuos son propietarios de empresas y que a veces las empresas "
 "son a su vez propietarias de otras empresas es algo bien sabido."
 
-# 5172e9bf472e45618342074e36e4b4ed
-#: ../../primer/whatisbo.rst:29
+#: ../../primer/whatisbo.rstNone 972dc28255ee45c9940168d59abb857f
+msgid "Person A owns 100% of Company 1"
+msgstr ""
+
+#: ../../primer/whatisbo.rst:29 f79dda5de9c14940ad9c0b59ab599134
 msgid "...but it's people that ultimately benefit..."
 msgstr "…pero son los individuos quienes se benefician en última instancia…"
 
-# 82930972c81642558cb1b10558035fa4
-#: ../../primer/whatisbo.rst:35
+#: ../../primer/whatisbo.rst:35 bcd00f0d9a9246cc9381307615e0d594
 msgid ""
 "Even when companies own companies, individuals almost always appear at the "
 "end of the ownership chain. They ultimately benefit from companies’ "
@@ -68,21 +65,24 @@ msgstr ""
 "titularidad. Se benefician en última instancia del éxito financiero de las "
 "empresas, y suelen participar de sus fracasos."
 
-# 69f856c1c4984f5da2f960fc760d3e3c
-#: ../../primer/whatisbo.rst:43
+#: ../../primer/whatisbo.rstNone 2076d0efd7964e2c8632500099394c46
+msgid ""
+"Company 2 owns 100% of Company 3's shares. And Person B owns\n"
+"30% of Company 2's shares"
+msgstr ""
+
+#: ../../primer/whatisbo.rst:43 999f26b57dfd4d788cc7c51a252ab69e
 msgid "Here, Company 2 acts as an intermediary in a chain of ownership."
 msgstr ""
 "En este caso, la Empresa 2 actúa como intermediaria en una cadena de "
 "titularidad."
 
-# 8622340ef03641c2980742daf59d98b8
-#: ../../primer/whatisbo.rst:49
+#: ../../primer/whatisbo.rst:49 2562793448a54392b9f50f5826bd6a3c
 msgid "...so, we need to know who ultimately controls a company..."
 msgstr ""
 "…por ende, necesitamos saber quién controla en último término a una empresa."
 
-# 3ec4515877d94a1f82baf57cfef6e17c
-#: ../../primer/whatisbo.rst:55
+#: ../../primer/whatisbo.rst:55 0a72ec1cfd5e47429b1675b160c01dc0
 msgid ""
 "If a person owns something, they usually have some control over it. Owning "
 "shares in a company may confer voting rights, for example. But ownership and"
@@ -99,8 +99,14 @@ msgstr ""
 "designar al 60 % de los otros miembros del órgano de administración, y al "
 "mismo tiempo tener escasa participación financiera en el negocio."
 
-# 306621deb10740cb9c051a186f406aff
-#: ../../primer/whatisbo.rst:67
+#: ../../primer/whatisbo.rstNone 2846cff24ec1410c9c56d9714f78cc2e
+msgid ""
+"Person B owns 30% of Company 2's shares. And Person C (an\n"
+"executive director) has the right to appoint 60% of Company 2's board\n"
+"members"
+msgstr ""
+
+#: ../../primer/whatisbo.rst:67 ab53c8eff2424e71865df9d3f6b2609d
 msgid ""
 "Significant control over a company’s composition and decisions may be used "
 "to steer benefits and direct risks. Those people taking the financial risks "
@@ -113,13 +119,11 @@ msgstr ""
 "financieros de una empresa pueden no ser aquellos que toman las decisiones. "
 "En ese caso, necesitamos saber quién ejerce el control."
 
-# 76e18b49ac564febb63d5e8a9f8495ef
-#: ../../primer/whatisbo.rst:76
+#: ../../primer/whatisbo.rst:76 fe42b981f361476ea3aeec111bbd8ca2
 msgid "...to see the big picture."
 msgstr "…para ver el panorama completo."
 
-# f264cf5be9104fc0be94102a9b975e86
-#: ../../primer/whatisbo.rst:82
+#: ../../primer/whatisbo.rst:82 64531193e269479cbefa4ffc99954563
 msgid ""
 "Beneficial ownership therefore takes in both types of involvement with a "
 "company: ownership and control."
@@ -127,8 +131,7 @@ msgstr ""
 "Por consiguiente, el concepto de beneficiario final abarca ambos tipos de "
 "intervención en una empresa: la titularidad y el control."
 
-# 1453c670345844adb8a7164ef10939bc
-#: ../../primer/whatisbo.rst:87
+#: ../../primer/whatisbo.rst:87 fc4c954d98a04f1986c3afc0029a2e9f
 msgid ""
 "**Beneficial ownership** is the right to some share of a legal entity's "
 "income or assets (ownership) or the right to direct or influence the "

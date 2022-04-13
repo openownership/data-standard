@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-04-05 17:16+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,27 +21,52 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# dc1570fdaf9d4ad6bb6d07c060f1f8e7
-#: ../../examples/index.rst:2
+#: ../../examples/index.rst:2 47859d888c8e4ab0953f1f343bb85aa2
 msgid "Examples"
 msgstr "Ejemplos"
 
-# 7cac8e0d3abb4a8290f520fe86729556
-#: ../../examples/index.rst:4
+#: ../../examples/index.rst:4 5585b27086254ff7ab8f30d5633df108
 msgid ""
-"The following examples highlight key elements of how ownership and control "
+"The examples below highlight key elements of how ownership and control "
 "information is built up through the use of statements."
 msgstr ""
-"Los siguientes ejemplos destacan los elementos clave de cómo se desarrolla "
-"la información sobre titularidad y control mediante el uso de declaraciones."
 
-# c3c37987c10243638237a50d6a8eb4e1
-#: ../../examples/index.rst:7
+#: ../../examples/index.rst:6 1b0a00a19b9e470987b81aea62502f08
+msgid ""
+"You can also find examples of valid BODS JSON files in the standard "
+"repository:"
+msgstr ""
+
+#: ../../examples/index.rst:8 985037f829e8437f91e1c5b4a19d7b12
+msgid ""
+"Example data (`v0.3 <https://github.com/openownership/data-"
+"standard/tree/0.3.0/examples>`__  |  `v0.2 "
+"<https://github.com/openownership/data-standard/tree/0.2.0/examples>`__  | "
+"`v0.1 <https://github.com/openownership/data-"
+"standard/tree/0.1.0/examples>`__ )"
+msgstr ""
+
+#: ../../examples/index.rst:9 540e265b7c794115b9247fae4b6878cf
+msgid ""
+"Test data (`v0.3 <https://github.com/openownership/data-"
+"standard/tree/0.3.0/tests/data/entity-statement/valid>`__  |  `v0.2 "
+"<https://github.com/openownership/data-"
+"standard/tree/0.2.0/tests/data/entity-statement/valid>`__  | `v0.1 "
+"<https://github.com/openownership/data-"
+"standard/tree/0.1.0/tests/data/entity-statement/valid>`__ )"
+msgstr ""
+
+#: ../../examples/index.rst:11 8f8a2ca41e404224aa42d2f3f15d1ea6
+msgid ""
+"For a visual rendering of these examples, use the `BODS Visualiser "
+"<https://www.openownership.org/visualisation/visualisation-tool/>`_."
+msgstr ""
+
+#: ../../examples/index.rst:15 81c781118bfd4571b78b1ef949dbe4fd
 msgid "A single direct owner"
 msgstr "Un único propietario directo"
 
-# 0b600477b9a14d6384727654b6f69bfc
-#: ../../examples/index.rst:9
+#: ../../examples/index.rst:17 842566d6430e472fb9d672088c8f3a95
 msgid ""
 "The example below presents three statements (Entity, Person and "
 "OwnershipOrControl) that describe the 100% beneficial ownership of Chrinon "
@@ -52,13 +76,11 @@ msgstr ""
 "sobre Persona y sobre Titularidad o Control) que explican la condición de "
 "beneficiario final en un 100 % de Chris Taggart en Chrinon Ltd."
 
-# 47e89534876948c99526f588340a71e2
-#: ../../examples/index.rst:15
+#: ../../examples/index.rst:23 fa6bee8fb4c04bfdb1ddf484c6586ef3
 msgid "Joint ownership"
 msgstr "Titularidad conjunta"
 
-# a087894e62ed42789aa2d882671cf568
-#: ../../examples/index.rst:17
+#: ../../examples/index.rst:25 e2381f73ddfe4a43a044d657361d5cba
 msgid ""
 "To model joint ownership, an artificial 'arrangement', owned by the two "
 "parties responsible for it, should be included within a chain of ownership."
@@ -67,13 +89,11 @@ msgstr ""
 "de titularidad una \"estructura jurídica\" artificial que sea propiedad de "
 "sus dos partes responsables."
 
-# 683a0c766d804e3b95b8f038f4816372
-#: ../../examples/index.rst:24
+#: ../../examples/index.rst:32 46880042f4564af98b1185d42635127c
 msgid "Updating ownership"
 msgstr "Actualización de la titularidad"
 
-# a1475a43d0e64e899f4ef6f186fb5158
-#: ../../examples/index.rst:26
+#: ../../examples/index.rst:34 3508a30019f64a78bf31ec3ca7f9ca64
 msgid ""
 "To update a previous statement, a new beneficial ownership statement, with a"
 " ``replacesStatement`` property is required."
@@ -81,8 +101,7 @@ msgstr ""
 "Para actualizar una declaración anterior, se necesita una nueva declaración "
 "sobre beneficiarios finales con la propiedad ``reemplazaDeclaración``."
 
-# 7a098c202a3f4e7e833fa3b6940eb778
-#: ../../examples/index.rst:28
+#: ../../examples/index.rst:36 2c82c39e382f40bf9591c7714adb8921
 msgid ""
 "In the (fictional) example below, the previous statement that Chris Taggart "
 "has 100% ownership of Chrinon Ltd is replaced by a new statement showing 50%"
@@ -95,16 +114,13 @@ msgstr ""
 "declaración aparte se indica que el propietario del otro 50 % aún no ha sido"
 " identificado."
 
-# e51daf4bfede4ac687325ec5ff77f98a
-#: ../../examples/index.rst:30
+#: ../../examples/index.rst:38 dd35d88e4e414936a3096b6550d3e480
 msgid ""
-"Note that only **changed statements** need to new statement identifiers."
+"Note that only **changed statements** need to have new statement "
+"identifiers."
 msgstr ""
-"Nótese que solo las **declaraciones modificadas** necesitan nuevos "
-"identificadores de declaración."
 
-# 0ec83b6f48d1412b91dedd35c2e097e4
-#: ../../examples/index.rst:35
+#: ../../examples/index.rst:43 ad8e3916af13407bba2e683c95138a18
 msgid ""
 "When a data file is provided, all the person or entity statements referenced"
 " from an ownershipOrControl statement ``subject`` or ``interestedParty`` "

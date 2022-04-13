@@ -37,9 +37,9 @@ docutils==0.16
     #   sphinxcontrib-opendataservices-jsonschema
 flake8==3.9.1
     # via -r requirements_test.in
-gitdb==4.0.7
+gitdb==4.0.9
     # via gitpython
-gitpython==3.1.15
+gitpython==3.1.27
     # via transifex-client
 idna==2.10
     # via requests
@@ -144,7 +144,7 @@ six==1.15.0
     #   -r requirements_test.in
     #   jsonschema
     #   transifex-client
-smmap==4.0.0
+smmap==5.0.0
     # via gitdb
 snowballstemmer==2.1.0
     # via sphinx
@@ -156,7 +156,7 @@ sphinx==4.2.0
     #   sphinx-rtd-theme
     #   sphinxcontrib-opendataservices
     #   standard-theme
-sphinx-intl==2.0.1
+sphinx-intl[transifex]==2.0.1
     # via
     #   -r requirements.in
     #   standard-theme
@@ -190,10 +190,8 @@ toml==0.10.2
     # via
     #   pep517
     #   pytest
-transifex-client==0.14.2
-    # via -r requirements.in
-typing-extensions==3.7.4.3
-    # via gitpython
+transifex-client==0.14.4
+    # via sphinx-intl
 urllib3==1.26.4
     # via
     #   -r requirements.in

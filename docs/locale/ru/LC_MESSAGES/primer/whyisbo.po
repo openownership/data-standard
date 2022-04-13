@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Valery Gusak <valery.gusak@gmail.com>, 2019
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-17 11:38+0100\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Valery Gusak <valery.gusak@gmail.com>, 2019\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,13 +21,11 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-# e0a57727f3d3402fae883d87a7b18eea
-#: ../../primer/whyisbo.rst:2
+#: ../../primer/whyisbo.rst:2 089b02dedf60486ab58933507381b11c
 msgid "Why beneficial ownership is a useful concept"
 msgstr "Почему бенефициарное владение является полезной концепцией"
 
-# 0048e60c9002486caa21323997ee40d0
-#: ../../primer/whyisbo.rst:4
+#: ../../primer/whyisbo.rst:4 e028e2c0334c49ae82364758984a1dd1
 msgid ""
 "People can be involved in a number of companies and in different ways. By "
 "limiting our understanding of people's involvement to ownership only, we "
@@ -38,8 +36,13 @@ msgstr ""
 "только владением, то не будут учитываться такие случаи, которые приведены "
 "ниже."
 
-# 9f41109e9813480b9b21b2f0829e8092
-#: ../../primer/whyisbo.rst:12
+#: ../../primer/whyisbo.rstNone dff95da78e854b8283de8723c73119d6
+msgid ""
+"Person A controls 60% of Company 2. And Person A owns 50% of\n"
+"Company 3"
+msgstr ""
+
+#: ../../primer/whyisbo.rst:12 4ce5a52c0b8f4589a8211e6d8ed4b06c
 msgid ""
 "The person both controls Company 1 and owns half of Company 2. This could be"
 " important to know if both companies bid for the same government contract, "
@@ -50,8 +53,7 @@ msgstr ""
 " на получение одного и того же государственного договора или если они обе "
 "являются частью цепочки закупок."
 
-# c93cf2e4f017422ea53daf2aa7ca7c1a
-#: ../../primer/whyisbo.rst:16
+#: ../../primer/whyisbo.rst:16 06310619076f4732bc86054af3eeb4c8
 msgid ""
 "It might be equally important to see that a person's control over a company "
 "is greater than one might expect given their financial stake in it."
@@ -60,13 +62,15 @@ msgstr ""
 "ожидалось, контроль над компанией, учитывая долю финансового участия "
 "физического лица в компании."
 
-# 9aa0ef83c5fc4064a3269d264355d1cd
-#: ../../primer/whyisbo.rst:27
+#: ../../primer/whyisbo.rstNone bd8e0310d7374212b2f9deaa9b007e18
+msgid ""
+"Person C controls 60% of votes in Company 2 while owning only\n"
+"20% of its stock."
+msgstr ""
+
+#: ../../primer/whyisbo.rst:27 f676f3c3fbf8485bac0798f125638fa2
 msgid ""
 "Uniting ownership and control under the banner of beneficial ownership "
 "allows us to represent the complex reality of corporate structures, and the "
-"multiple corporate interests a person might have."
+"multiple interests a person might have in a company."
 msgstr ""
-"Объединение владения и контроля в концепции бенефициарного владения "
-"позволяет нам отображать сложную реальность корпоративных структур и "
-"различные корпоративные интересы, которые может иметь физическое лицо."

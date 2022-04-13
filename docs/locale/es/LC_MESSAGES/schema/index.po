@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +21,11 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# f9aa9b648ca7477f81807363728e7352
-#: ../../schema/index.rst:2
+#: ../../schema/index.rst:2 1601d5c063c8455db56471adb405e128
 msgid "Data Schema"
 msgstr "Esquema de datos"
 
-# af1b828d4df74ac6bab044ebf3054eaf
-#: ../../schema/index.rst:6
+#: ../../schema/index.rst:6 2b5e966efb924a1ba7c1d496fd84d9d0
 msgid ""
 "This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model and additional codelist information. Implementers should "
@@ -43,8 +40,7 @@ msgstr ""
 ":doc:`Registro de modificaciones <changelog>` y `De qué se trata "
 "<../about>`_ para obtener más información."
 
-# 2256e57506a7400583ada6ba14caa54f
-#: ../../schema/index.rst:8
+#: ../../schema/index.rst:8 3eda14ad33ce478ba82956815ec94282
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
 "recommended elements of the Standard, as defined in `RFC2119 "
@@ -54,8 +50,7 @@ msgstr ""
 "requeridos y recomendados del Estándar, conforme a lo definido en `RFC2119 "
 "<https://tools.ietf.org/html/rfc2119>`_."
 
-# 9d157762b3e1440a933007c984d8e5be
-#: ../../schema/index.rst:10
+#: ../../schema/index.rst:10 37bb1ca06ca74638859927c88eea5dc5
 msgid ""
 "BODS provides a common data model for encapsulating information about the "
 ":doc:`beneficial ownership <../primer/whatisbo>` of corporate entities and "
@@ -74,8 +69,7 @@ msgstr ""
 "empresas) de otras entidades (incluidos los fideicomisos y las "
 "participaciones accionarias conjuntas) o de personas físicas."
 
-# 52e63ab835844ba192af0261e02a3b4f
-#: ../../schema/index.rst:12
+#: ../../schema/index.rst:12 336109a6b93f4d149f7cd5f8f12248d3
 msgid ""
 "The data model, as specified here in the Data Schema, is intended to "
 "represent, or help identify, ultimate beneficial ownership: the natural "
@@ -86,8 +80,7 @@ msgstr ""
 "finales en última instancia: la(s) persona(s) física(s) que en última "
 "instancia se beneficia(n) de una entidad o la controlan."
 
-# 8119727e30c547ef8ce63d06b2a0cf6d
-#: ../../schema/index.rst:14
+#: ../../schema/index.rst:14 86dda99ff53540449bf52a9e9a990d49
 msgid ""
 "The :doc:`schema browser <schema-browser>` provides a way of digging through"
 " the schema's structure, showing how its components and fields fit together."
@@ -99,8 +92,7 @@ msgstr ""
 "entre sí. Alternativamente, las :doc:`referencias del esquema <reference>` "
 "presentan estos elementos y sus descripciones en tablas de fácil referencia."
 
-# 71d8f65a5d0b4e06885655d9e37d3073
-#: ../../schema/index.rst:16
+#: ../../schema/index.rst:16 275734231b8d429dbdc8f08d9d8f152c
 msgid ""
 "Further considerations regarding the validation, publishing, and lifecycle "
 "of data are included in `technical guidance <guidance>`_."

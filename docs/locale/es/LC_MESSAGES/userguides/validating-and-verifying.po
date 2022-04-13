@@ -4,17 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Javier Sarquis <sarquis.translations@gmail.com>, 2020
-# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
+# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-06 12:18+0000\n"
-"PO-Revision-Date: 2019-06-17 10:44+0000\n"
-"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
+"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"PO-Revision-Date: 2022-04-05 16:57+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +21,13 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# 194a0ab17b1a4f35a9d08119339a8c7c
 #: ../../userguides/validating-and-verifying.rst:2
+#: 1c9bf49e9c2549bd8bccd9986b7f42eb
 msgid "Validating and verifying data"
 msgstr "Validación y verificación de datos"
 
-# e472d4a27ff84bdbad3bb285fc98f714
 #: ../../userguides/validating-and-verifying.rst:4
+#: ee1e87d3ac6a41e29fbf6ebe6c2557f4
 msgid ""
 "In order to be useful, the data that is published will need to be validated."
 " There are two areas of validation that can be planned for in the producing "
@@ -38,13 +37,13 @@ msgstr ""
 "dos áreas de validación que pueden planificarse en la fase de producción de "
 "datos."
 
-# 34e30156337845eb989cc0ecea28e826
 #: ../../userguides/validating-and-verifying.rst:12
+#: d26cfc2cc23944eda0756b6e2bdb7f8c
 msgid "Validation against the standard"
 msgstr "Validación en función del estándar"
 
-# da5f5d78e5594904ac48397a33579061
 #: ../../userguides/validating-and-verifying.rst:18
+#: bc108856346644a2814996c0a251bae6
 msgid ""
 "For interoperability with other publishers data, and to allow for common "
 "data analysis tools, releases in JSON format should validate against the "
@@ -60,8 +59,8 @@ msgstr ""
 "someterse a prueba a fin de garantizar que los datos estén correctamente "
 "representados."
 
-# e0fd82be0bcb4521a650cd2d35d48fdc
 #: ../../userguides/validating-and-verifying.rst:24
+#: 084a7eec2b6a41eb86540656b2db94c2
 msgid ""
 "For now, generic JSON schema validation tools should be used to test for "
 "correctness. In the future, custom validation tools will be made available "
@@ -73,19 +72,18 @@ msgstr ""
 " de herramientas de validación a medida para someter a prueba la exactitud "
 "de lo generado en JSON y la serialización a formatos de archivo plano."
 
-# 5dbc6e23dcbb43b0afbb878d360dbcca
 #: ../../userguides/validating-and-verifying.rst:33
+#: 9e6f6b07f9e9454aae90b4d1f8faa685
 msgid "Pre-validation of data during collection"
 msgstr "Prevalidación de los datos durante la recopilación"
 
-# 9c39a5a221d2462797305f92ab0a664b
-# d55d344d24394c7c80fcc0bf4a81c295
 #: ../../userguides/validating-and-verifying.rst:39
 #: ../../userguides/validating-and-verifying.rst:51
+#: 112b998e35fb4ea185484d99d931b837 05ebbb2af190482eba17d9a36b52342e
 msgid "(TBC)"
 msgstr "(pendiente de confirmación)"
 
-# 701036070f4143e8be60c5f568b2a3d0
 #: ../../userguides/validating-and-verifying.rst:45
+#: a242370afea94b1f95b42c3798deecff
 msgid "Verifying data"
 msgstr "Verificación de los datos"
