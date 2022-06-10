@@ -1,46 +1,54 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Carlos Hames, 2022
+# Stephen Abbott Pugh <stephen@openownership.org>, 2022
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:57+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../schema/schema-browser.rst:4 adfb2e78ff7040f8b417b7fa7139a51c
+#: ../../schema/schema-browser.rst:4 e90f30692cf5406e8f1d14682dc4bd28
 msgid "Schema browser"
 msgstr "Navegador del esquema"
 
-#: ../../schema/schema-browser.rst:8 844ebc78e08d4ea1ac550e38c3333319
+#: ../../schema/schema-browser.rst:8 511807ebfda74c0d9b0b361068d13412
 msgid ""
-"This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
-"to the data model and additional codelist information. Implementers should "
-"be aware that future changes are anticipated, before a version 1.0 release. "
-"See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more "
-"information."
+"This is v0.3 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model and codelists as well as additional technical guidance."
 msgstr ""
-"Esta es la vers. 0.2 del Estándar de Datos sobre Beneficiarios Finales. "
-"Incluye actualizaciones del modelo de datos e información adicional de la "
-"lista de códigos. Cabe señalar a los implementadores que se esperan cambios "
-"a futuro antes de la publicación de la versión 1.0. Consulte las páginas "
-":doc:`Registro de modificaciones <changelog>` y `De qué se trata "
-"<../about>`_ para obtener más información."
+"Esta es la versión 0.3 de  Beneficial Ownership Data Standard. Incluye "
+"actualizaciones del modelo de datos y listas de códigos, así como "
+"orientación técnica adicional."
 
-#: ../../schema/schema-browser.rst:10 63092a4f409346c5bc652ac305ca253d
+#: ../../schema/schema-browser.rst:10 823c6434ae6e4fce863c2527c168857a
+msgid ""
+"Implementers should be aware that future changes are anticipated, before a "
+"version 1.0 release. See the :doc:`Changelog <changelog>` and `About "
+"<../about>`_ pages for more information."
+msgstr ""
+"Los implementadores deben saber que se anticipan cambios futuros, antes del "
+"lanzamiento de la versión 1.0. Consulte las páginas :doc:`Registro de "
+"modificaciones <changelog>` y `Acerca de <../about>`_ para obtener más "
+"información."
+
+#: ../../schema/schema-browser.rst:12 764fac25efdd4b1885c8d828ecd9a0ca
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
 "recommended elements of the Standard, as defined in `RFC2119 "
@@ -50,13 +58,15 @@ msgstr ""
 "requeridos y recomendados del Estándar, conforme a lo definido en `RFC2119 "
 "<https://tools.ietf.org/html/rfc2119>`_."
 
-#: ../../schema/schema-browser.rst:13 b115cb5a060a489c840d267d3e960d0a
+#: ../../schema/schema-browser.rst:15 704bbca146304b3592f832ec73d457d8
 msgid ""
 "The draft Beneficial Ownership Data Standard schema is defined using `JSON "
 "Schema 0.4 <https://json-schema.org/>`_."
 msgstr ""
+"El esquema borrador de Beneficial Ownership Data Standard se define "
+"utilizando `JSON Schema 0.4 <https://json-schema.org/>`_."
 
-#: ../../schema/schema-browser.rst:15 aa1d7ce86c9643ac9ef3bd19a4afda19
+#: ../../schema/schema-browser.rst:17 0af43e6782834b66aba29b6320deafd0
 msgid ""
 "The structure of each of the schema's top level components can be explored "
 "using the viewers below. (Click on sub-components to reveal their "
@@ -66,26 +76,26 @@ msgstr ""
 "puede explorarse utilizando los visores incluidos más abajo. (Haga clic en "
 "los subcomponentes para revelar sus propiedades)."
 
-#: ../../schema/schema-browser.rst:17 d1079b9446a04483872e409850d51d8a
+#: ../../schema/schema-browser.rst:19 8c635a917a5b49e98cc77a8ad5d24a12
 msgid ""
 ":ref:`Ownership-or-control statement <schema-browser-ownership-or-control>`"
 msgstr ""
 ":ref:`Declaración sobre titularidad o control <schema-browser-ownership-or-"
 "control>`"
 
-#: ../../schema/schema-browser.rst:18 c042dd34ee0647398be38003300df692
+#: ../../schema/schema-browser.rst:20 8eca216a50494065ad7df8951ca9aa9d
 msgid ":ref:`Entity statement <schema-browser-entity>`"
 msgstr ":ref:`Declaración sobre entidad <schema-browser-entity>`"
 
-#: ../../schema/schema-browser.rst:19 bed0ca562a3a41a6b29fdd16de63f2e8
+#: ../../schema/schema-browser.rst:21 307ade43cb08421399d4e7ba61ac2c73
 msgid ":ref:`Person statement <schema-browser-person>`"
 msgstr ":ref:`Declaración sobre persona <schema-browser-person>`"
 
-#: ../../schema/schema-browser.rst:24 f00727fba6644562932b539c98110f4d
+#: ../../schema/schema-browser.rst:26 a4fe3585980149ccb897d485127b92c7
 msgid "Ownership-or-control statement"
 msgstr "Declaración sobre titularidad o control"
 
-#: ../../schema/schema-browser.rst:26 c085cbc582dd491ea3b9c4d039887d55
+#: ../../schema/schema-browser.rst:28 0e1882f3a663471fbe81d0f036489512
 msgid ""
 "View the `Ownership-or-control statement JSON schema <../_static/ownership-"
 "or-control-statement.json>`_ or explore it using the viewer below."
@@ -94,11 +104,11 @@ msgstr ""
 "<../_static/ownership-or-control-statement.json>`_ o explórelo usando el "
 "visor incluido más abajo."
 
-#: ../../schema/schema-browser.rst:35 ed77f524e3854e6e9033fccdc579527d
+#: ../../schema/schema-browser.rst:37 50240b64db62495a9e053328485158c3
 msgid "Entity statement"
 msgstr "Declaración sobre entidad"
 
-#: ../../schema/schema-browser.rst:38 361fa9b87f27450dbf86b5a2fb6d2eea
+#: ../../schema/schema-browser.rst:40 1d3dd73cb6e84a0b89243306057f84b9
 msgid ""
 "View the `Entity Statement JSON schema <../_static/entity-statement.json>`_ "
 "or explore it using the viewer below."
@@ -106,14 +116,14 @@ msgstr ""
 "Vea el `esquema JSON de Declaración sobre Entidad <../_static/entity-"
 "statement.json>`_ o explórelo usando el visor incluido más abajo."
 
-#: ../../schema/schema-browser.rst:48 ef70985184cd48ba83f362aaa1605636
+#: ../../schema/schema-browser.rst:50 b38f5e873a244a3a89b43ff72c52f2ba
 msgid "Person statement"
 msgstr "Declaración sobre persona"
 
-#: ../../schema/schema-browser.rst:50 738a6edbb52243249cc020f732d31d0c
+#: ../../schema/schema-browser.rst:52 5aaff9d42dfe447d8eaa09291ed0f12e
 msgid ""
 "View the `Person Statement JSON schema <../_static/person-statement.json>`_ "
 "or explore it using the viewer below."
 msgstr ""
-"Vea el `esquema JSON de Declaración sobre Persona<../_static/person-"
+"Vea el `esquema JSON de Declaración sobre Persona <../_static/person-"
 "statement.json>`_ o explórelo usando el visor incluido más abajo."

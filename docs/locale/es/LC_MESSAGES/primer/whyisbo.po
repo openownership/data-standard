@@ -1,31 +1,33 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Carlos Hames, 2022
+# Agustina De Luca, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Agustina De Luca, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../primer/whyisbo.rst:2 089b02dedf60486ab58933507381b11c
+#: ../../primer/whyisbo.rst:2 eeacba829ea44e689c5269d5cc931346
 msgid "Why beneficial ownership is a useful concept"
-msgstr "Por qué es útil el concepto de beneficiario final"
+msgstr "Por qué es útil el concepto de beneficiarios finales"
 
-#: ../../primer/whyisbo.rst:4 e028e2c0334c49ae82364758984a1dd1
+#: ../../primer/whyisbo.rst:4 46197d9cc9304d11bb8c6b8994bf9e11
 msgid ""
 "People can be involved in a number of companies and in different ways. By "
 "limiting our understanding of people's involvement to ownership only, we "
@@ -35,13 +37,15 @@ msgstr ""
 "maneras. Si restringimos la interpretación de su intervención solamente a la"
 " titularidad, estaríamos dejando de lado casos como los siguientes."
 
-#: ../../primer/whyisbo.rstNone dff95da78e854b8283de8723c73119d6
+#: ../../primer/whyisbo.rstNone 044cf0408c004980913d2026493f707a
 msgid ""
 "Person A controls 60% of Company 2. And Person A owns 50% of\n"
 "Company 3"
 msgstr ""
+"La Persona A controla el 60% de la Empresa 2. Y la Persona A posee el 50% de"
+" la Empresa 3"
 
-#: ../../primer/whyisbo.rst:12 4ce5a52c0b8f4589a8211e6d8ed4b06c
+#: ../../primer/whyisbo.rst:12 611814bd46bb4d5c9b95594201428ada
 msgid ""
 "The person both controls Company 1 and owns half of Company 2. This could be"
 " important to know if both companies bid for the same government contract, "
@@ -52,7 +56,7 @@ msgstr ""
 "la licitación de un mismo contrato con el Estado, o si ambas aparecen en una"
 " cadena de contrataciones."
 
-#: ../../primer/whyisbo.rst:16 06310619076f4732bc86054af3eeb4c8
+#: ../../primer/whyisbo.rst:16 bf387d0734df4d7699142047248af6c9
 msgid ""
 "It might be equally important to see that a person's control over a company "
 "is greater than one might expect given their financial stake in it."
@@ -61,15 +65,21 @@ msgstr ""
 "que el control de una persona sobre una empresa es mayor de lo que se podría"
 " suponer dada su participación financiera en ella."
 
-#: ../../primer/whyisbo.rstNone bd8e0310d7374212b2f9deaa9b007e18
+#: ../../primer/whyisbo.rstNone 79729d01511d482383095c93369672d0
 msgid ""
 "Person C controls 60% of votes in Company 2 while owning only\n"
 "20% of its stock."
 msgstr ""
+"La Persona C controla el 60% de los votos en la Empresa 2 mientras posee "
+"solo el 20% de sus acciones."
 
-#: ../../primer/whyisbo.rst:27 f676f3c3fbf8485bac0798f125638fa2
+#: ../../primer/whyisbo.rst:27 b30e2721d2c94b3e8999c9b0f9f65405
 msgid ""
 "Uniting ownership and control under the banner of beneficial ownership "
 "allows us to represent the complex reality of corporate structures, and the "
 "multiple interests a person might have in a company."
 msgstr ""
+"Unir la titularidad y el control bajo la bandera de los beneficiarios "
+"finales nos permite representar la compleja realidad de las estructuras "
+"corporativas y los múltiples intereses que una persona puede tener en una "
+"empresa."

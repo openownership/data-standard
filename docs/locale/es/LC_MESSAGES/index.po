@@ -1,46 +1,49 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Carlos Hames, 2022
+# Agustina De Luca, 2022
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../index.rst:2 783fa39acab04a9d860b0c76d94f8fd9
-msgid "Beneficial Ownership Data Standard (v0.2)"
-msgstr "Estándar de Datos sobre Beneficiarios Finales (vers. 0.2)"
+#: ../../index.rst:2 46b3369e61c348639a669d4f63a0ce2d
+msgid "Beneficial Ownership Data Standard (v0.3)"
+msgstr "Beneficial Ownership Data Standard (v0.3)"
 
-#: ../../index.rst:4 f2500111e3f04509a8914c1c44cbbbe8
+#: ../../index.rst:4 b44d48c1ed3243c3b4694ee040ccac79
 msgid ""
 "This website contains the draft specification of the Beneficial Ownership "
-"Data Standard (version 0.2) plus support for its use. :doc:`Find out more "
+"Data Standard (version 0.3) plus support for its use. :doc:`Find out more "
 "<about/index>` about the standard's development and how to get involved."
 msgstr ""
-"Este sitio web contiene un borrador de la especificación del Estándar de "
-"Datos sobre Beneficiarios Finales (versión 0.2) , además de ayuda para su "
-"uso. :doc:`Conozca más <about/index>` sobre el desarrollo del estándar y "
-"cómo participar en él."
+"Este sitio web contiene el borrador de la especificación de Beneficial "
+"Ownership Data Standard (versión 0.3) más el soporte para su uso. :doc:`Más "
+"información<about/index>` sobre el desarrollo del estándar y cómo "
+"participar."
 
-#: ../../index.rst:12 e299aaf465c54e3ea6504f9230c80794
+#: ../../index.rst:12 d6e1bf4b0eb04df68ab33b90253fe86a
 msgid "For Newcomers"
 msgstr "Para nuevos usuarios"
 
-#: ../../index.rst:14 cd05babe6163470d80f65c72d73c2a52
+#: ../../index.rst:14 ff0f0ef6524c41508e1d2bc1252617da
 msgid ""
 "Get an overview of beneficial ownership and why a standardised format for "
 "data is important."
@@ -48,44 +51,44 @@ msgstr ""
 "Obtenga una noción general de los beneficiarios finales y sepa por qué es "
 "importante contar con un formato estandarizado de datos."
 
-#: ../../index.rst:18 01f42315b8bb499aae6b1a1489efd23e
+#: ../../index.rst:18 9c015b1d932d401ab7a86efdd94bd7ac
 msgid ":doc:`Visit the primer <primer/index>`"
 msgstr ":doc:`Consulte la guía introductoria <primer/index>`"
 
-#: ../../index.rst:22 6c7cfd820b514874a29f7f906a7c320b
+#: ../../index.rst:22 808131e99949432c85e6335a84e8012e
 msgid ":doc:`What is beneficial ownership? <primer/whatisbo>`"
-msgstr ":doc:`¿Qué significa beneficiario final? <primer/whatisbo>`"
+msgstr ":doc:`¿Qué son los beneficiarios finales? <primer/whatisbo>`"
 
-#: ../../index.rst:26 69deb2048b7d47b5839c19b72e073927
+#: ../../index.rst:26 44e9a3b443bc4af8978025c04d2c2987
 msgid ":doc:`What is the data standard? <primer/whatisthebods>`"
 msgstr ":doc:`¿Qué es el estándar de datos? <primer/whatisthebods>`"
 
-#: ../../index.rst:30 91142b32be2b4c458fdcfead566be603
+#: ../../index.rst:30 f531b1d15e3743088d3b828b154e74c9
 msgid ":doc:`About the standard's development <about/index>`"
 msgstr ":doc:`Acerca del desarrollo del estándar <about/index>`"
 
-#: ../../index.rst:39 de66fd2b8d33459bb02715edba785d1b
+#: ../../index.rst:39 866271656e5f4af898e96b89ebdd9aab
 msgid "For Developers"
 msgstr "Para desarrolladores"
 
-#: ../../index.rst:41 22b691658ccd4918b510117b7f570989
+#: ../../index.rst:41 2f4afbec1d9a4c5ba368567a70328bd6
 msgid "Understand how to package up and release beneficial ownership data."
 msgstr ""
-"Comprenda cómo empaquetar y publicar datos sobre beneficiarios finales."
+"Comprenda cómo construir y publicar datos sobre beneficiarios finales."
 
-#: ../../index.rst:45 c70cf763a77e4bdd9598bcee4cd55650
+#: ../../index.rst:45 c0737964472f4a6aad70d873f4465d58
 msgid ":doc:`Visit the Data Schema <schema/index>`"
 msgstr ":doc:`Consulte el esquema de datos <schema/index>`"
 
-#: ../../index.rst:49 8da4aeb4aecd42e384754d8cc628e16c
+#: ../../index.rst:49 aa117f17aab047ae893648ef62e371e4
 msgid ":doc:`The data model  <schema/concepts>`"
 msgstr ":doc:`El modelo de datos  <schema/concepts>`"
 
-#: ../../index.rst:53 7e6026178c28438eac6f246a67b7a6a0
+#: ../../index.rst:53 4adade8ab60748f28988d81ee37037c3
 msgid ":doc:`Schema browser <schema/schema-browser>`"
 msgstr ":doc:`Navegador del esquema <schema/schema-browser>`"
 
-#: ../../index.rst:57 536c72178a21441f9b3a1db21d0417f8
+#: ../../index.rst:57 73aca03efcb2408f8f76c4ab49af624a
 msgid ""
 ":doc:`Requirements for publication systems <schema/guidance/functional-"
 "requirements>`"

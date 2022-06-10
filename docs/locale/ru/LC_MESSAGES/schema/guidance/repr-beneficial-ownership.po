@@ -1,0 +1,367 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2022
+# Galia Williams, 2022
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
+"PO-Revision-Date: 2022-04-13 15:11+0000\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
+"Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:4
+#: 15028319851f4e03bd6967d0bb578ff8
+msgid "Representing beneficial ownership"
+msgstr "Отражение структуры бенефициарного владения"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:8
+#: 1e00796775514ce3bf34b588e89e1738
+msgid ""
+"**Key requirement:** If a person is a beneficial owner of an entity - "
+"whether directly or indirectly - and the person or entity is required to "
+"declare this beneficial ownership, there MUST be an Ownership-or-control "
+"Statement connecting the two which represents the beneficial ownership "
+"relationship."
+msgstr ""
+"**Важное требование:** Если физическое лицо является бенефициарным "
+"владельцем какой-либо сущности - напрямую или косвенно - и это физическое "
+"лицо или эта сущность обязаны раскрыть такое бенефициарное владение, то "
+"ДОЛЖНА иметься Характеристика о владении или контроле (Ownership-or-control "
+"Statement), связывающая это физическое лицо и эту сущность и таким образом "
+"раскрывающая наличие отношений бенефициарного владения между ними."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:12
+#: 0314984cef91473c9cf21f255008945d
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:14
+#: 00843ded44724135994a749a5d3d4b79
+msgid ""
+"Beneficial owners can exercise ownership-or-control *directly* in an entity "
+"(expected to be a company) or *indirectly*, via intermediary entities (such "
+"as arrangements or other companies). It must be clear in a BODS dataset "
+"which people are declared as beneficial owners of which companies (and which"
+" entities are intermediaries). And it must be clear what overall control or "
+"ownership beneficial owners have (regardless of whether it is direct or "
+"indirect)."
+msgstr ""
+"Бенефициарные владельцы могут осуществлять владение или контроль над "
+"сущностью (предполагается, что это компания) *напрямую* или *косвенно*, "
+"через посреднические сущности (например, в рамках соответствующей "
+"договоренности или через другие компании). В наборе данных BODS должно быть "
+"четко видно, какие физические лица  являются бенефициарными владельцами "
+"каких компаний (и какие сущности являются посредниками). Также должно быть "
+"ясно, каким общим контролем или каким правом собственности обладают "
+"бенефициарные владельцы (независимо от того, осуществляются они напрямую или"
+" косвенно)."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rstNone
+#: ea6f8a47eea048d686558812b857d601
+msgid ""
+"Person 1 indirectly holds a 15 percent shareholding in Company E, via an "
+"intermediary: Company A. Person 2 directly holds 32 precent of Company E's "
+"shares."
+msgstr ""
+"Физическое лицо 1 косвенно владеет 15-процентным пакетом акций Компании E "
+"через посредника - Компанию А. Физическое лицо 2 напрямую владеет 32 "
+"процентами акций Компании Е."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:21
+#: 0f868bad91624489b921a5ce172e7987
+msgid ""
+"In the above situation, Person 1 *indirectly* benefits from a 15% "
+"shareholding in Company E and Person 2 has a *direct* 32% shareholding in "
+"Company E. In a jurisdiction where people with a shareholding (direct or "
+"indirect) of over 10% in a company should be disclosed as beneficial owners,"
+" both Person 1 and Person 2’s interests would be declared. Additionally, the"
+" jurisdiction may require that details of Person 1’s indirect interest are "
+"disclosed. That is: that some details of the chain Company E - Company A - "
+"Person 1 are also disclosed."
+msgstr ""
+"В описанной выше ситуации Физическое лицо 1 *косвенно* получает выгоду от "
+"15-процентного участия в Компании E, а Физическое лицо 2 *напрямую* владеет "
+"32 процентами акций Компании E. В юрисдикции, где физические лица, в "
+"собственности которых находится (напрямую или косвенно) более 10% акций "
+"компании, должны быть раскрыты как бенефициарные владельцы, необходимо "
+"указать доли участия как Физического лица 1, так и Физического лица 2. Кроме"
+" того, юрисдикция может требовать раскрытия деталей о косвенном владении или"
+" контроле со стороны Физического лица 1. Это означает, что некоторые детали "
+"цепочки Компания Е - Компания А - Физическое лицо 1 тоже должны быть "
+"раскрыты."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:23
+#: 3669cc4367794750ae78100d2b6cdbc7
+msgid ""
+"In BODS, the following properties are used to represent such information "
+"disclosure:"
+msgstr ""
+"В системе BODS для раскрытия такой информации используются следующие "
+"свойства:"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:25
+#: 46df189dfc5e483d94d2dd31eca2f4c3
+msgid "``beneficialOwnershipOrControl`` (See :ref:`schema-interest`)"
+msgstr "``beneficialOwnershipOrControl`` (см :ref:`schema-interest`)"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:26
+#: f420e5f4fb7342879c33c9fd32bcac37
+msgid "``directOrIndirect`` (See :ref:`schema-interest`)"
+msgstr "``directOrIndirect`` (см. :ref:`schema-interest`)"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:27
+#: ef0cf0b5a6694f6aab751c1214a88257
+msgid ""
+"``componentStatementIDs`` (See :ref:`schema-ownership-or-control-statement`)"
+msgstr ""
+"``componentStatementIDs`` (см. :ref:`schema-ownership-or-control-statement`)"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:28
+#: 51f55616c5ed43898899ffc6234ba9bd
+msgid "``isComponent`` (See :ref:`schema-entity-statement`)"
+msgstr "``isComponent`` (см. :ref:`schema-entity-statement`)"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:31
+#: 8e659d7828b64de78962158cbab0e95d
+msgid "Requirements"
+msgstr "Требования"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:34
+#: fc34447f158241ca8894d0f124b538b9
+msgid "The beneficial ownership relationship"
+msgstr "Отношения бенефициарного владения"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:36
+#: 8e4950e56bca454eb7c4b4146fa8815f
+msgid ""
+"If a person is a beneficial owner of an entity, entity X, whether directly "
+"or indirectly, and one of them is required to declare this beneficial "
+"ownership:"
+msgstr ""
+"Если физическое лицо является бенефициарным владельцем какой-либо сущности, "
+"например сущности Х, напрямую или косвенно, и это физическое лицо или эта "
+"сущность обязаны раскрыть такое бенефициарное владение:"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:38
+#: 41d2b3e8186746f692372e146eacc920
+msgid ""
+"There MUST be a *primary* Ownership-or-control Statement connecting the two "
+"which represents the beneficial ownership relationship. In particular:"
+msgstr ""
+"ДОЛЖНА иметься *первичная* Характеристика о владении или контроле, "
+"связывающая их обоих и раскрывающая наличие отношений бенефициарного "
+"владения между ними. В частности:"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:40
+#: b338cfb43f994919803fdd986da3bca4
+msgid "the entity’s Statement MUST be the ``subject``;"
+msgstr "Характеристика сущности ДОЛЖНА быть ``subject``;"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:41
+#: 9bb924fa979c45f99abf871f48e5c4e6
+msgid "the person’s Statement MUST be the ``interestedParty``;"
+msgstr "Характеристика физического лица ДОЛЖНА быть ``interestedParty``;"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:42
+#: 50d5fb4f97c94b5db760a6ba9b23db59
+msgid "``isComponent`` MUST be false;"
+msgstr "Свойство ``isComponent`` ДОЛЖНО быть 'false';"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:43
+#: 38b3d30ce7de4d11badaf2f2a0f1fd4c
+msgid ""
+"the ``interests`` which make the person meet the criteria for their being "
+"declared a beneficial owner MUST be included in this primary Ownership-or-"
+"control Statement if known; and"
+msgstr ""
+"``interests``, благодаря которым физическое лицо соответствует критериям для"
+" указания его в качестве бенефициарного владельца, ДОЛЖНЫ быть включены в "
+"эту первичную Характеристику о владении или контроле, если они известны; а "
+"также"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:44
+#: 7278b35a3ca34270b0aed53fb69ecca1
+msgid ""
+"the ``interests`` in (d) MUST have ``beneficialOwnershipOrControl`` set to "
+"'true'."
+msgstr ""
+"По отношению к ``interests`` в части (d) свойство "
+"``beneficialOwnershipOrControl`` ДОЛЖНО быть 'true'."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:46
+#: 83cdad6d714144f2a5e2bc3cd3f51c32
+msgid ""
+"If beneficial ownership is known to be exercised indirectly, via "
+"intermediary entities then ``directOrIndirect`` MUST be ‘indirect’. If it is"
+" known to be exercised directly then ``directOrIndirect`` MUST be ‘direct’. "
+"Otherwise ``directOrIndirect`` MUST be ‘unknown’."
+msgstr ""
+"Если известно, что бенефициарное владение осуществляется косвенно, через "
+"посреднические сущности, то свойство ``directOrIndirect`` ДОЛЖНО быть "
+"'indirect'. Если известно, что оно осуществляется напрямую, то "
+"``directOrIndirect`` ДОЛЖНО быть 'direct'. В других случаях "
+"``directOrIndirect`` ДОЛЖНО быть отмечено как 'unknown'."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:49
+#: 97787642f8844cf29f8a641a982ebbc7
+msgid "Intermediaries"
+msgstr "Посредники"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:51
+#: 52691cd4b03141ee8cb5bddee5fcca12
+msgid ""
+"Where beneficial ownership is known to be exercised indirectly, via known "
+"intermediary entities, this SHOULD be represented in addition to the above. "
+"In particular:"
+msgstr ""
+"Если известно, что бенефициарное владение осуществляется косвенно, через "
+"известные посреднические сущности, это тоже ДОЛЖНО быть раскрыто в "
+"дополнение к вышеуказанному. В частности:"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:53
+#: 5aa7ad0bc4104651bda35a772fd33242
+msgid ""
+"The chain of known intermediary entities SHOULD be represented by "
+"*secondary* Entity Statements, Ownership-or-control Statements and Person "
+"Statements."
+msgstr ""
+"Цепочка известных промежуточных сущностей ДОЛЖНА быть раскрыта во "
+"*вторичных* Характеристиках сущностей (Entity Statements), Характеристиках о"
+" владении или контроле (Ownership-or-control Statements) и Характеристиках "
+"физических лиц (Person Statements)."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:54
+#: 9b06b64f09514c1eb1dcb57502a6c165
+msgid ""
+"These secondary statements SHOULD link the beneficial owner’s Statement to "
+"entity X’s statement indirectly."
+msgstr ""
+"Эти вторичные характеристики ДОЛЖНЫ связывать Характеристику бенефициарного "
+"владельца с характеристикой сущности X косвенно."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:55
+#: b076a42d3dcd4baaa833d78130d89a86
+msgid ""
+"These secondary statements SHOULD all have ``isComponent`` set to 'true'."
+msgstr ""
+"В этих вторичных характеристиках свойство ``isComponent`` должно быть "
+"'true'."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:56
+#: f90796999d0642ae80c2ebd5493fa948
+msgid ""
+"These secondary statements SHOULD all have their ``statementID`` values "
+"listed in the ``componentStatementIDs`` array of the primary Ownership-or-"
+"control Statement."
+msgstr ""
+"В этих вторичных характеристиках все значения ``statementID`` ДОЛЖНЫ быть "
+"перечислены в массиве ``componentStatementIDs`` первичной Характеристики о "
+"владении или контроле."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:57
+#: 70879a32fbec47b59340922e7561ba20
+msgid ""
+"When the primary Ownership-or-control Statement is published in a BODS file:"
+msgstr ""
+"Когда первичная Характеристика о владении или контроле публикуется в файле "
+"BODS:"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:59
+#: d467520b0c3f4bcdac8514e44c492c38
+msgid ""
+"all secondary statements referenced from ``componentStatementIDs`` MUST also"
+" be published in that file;"
+msgstr ""
+"все вторичные характеристики, на которые ссылаются "
+"``componentStatementIDs``, также ДОЛЖНЫ быть опубликованы в этом файле;"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:60
+#: c6e5ab2418ad4d58ac77555f73c54648
+msgid ""
+"all secondary statements must appear before the primary Ownership-or-control"
+" Statement in the list of statements."
+msgstr ""
+"все вторичные характеристики должны располагаться до первичной "
+"Характеристики о владении или контроле в списке характеристик."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:63
+#: 5e69f39894be446e94d17651e75e7c5e
+msgid "Example"
+msgstr "Пример"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:65
+#: 5f28a6d0e4ad40a9bfcbccc247613aea
+msgid ""
+"In the following example, Person 1 is a beneficial owner of Company E. They "
+"exercise that beneficial ownership via an intermediary company, Company A. "
+"(Note: abbreviated statement IDs are used for brevity and clarity of "
+"explanation. Short IDs like ‘ooc-2’ are not valid in BODS.)"
+msgstr ""
+"В следующем примере Физическое лицо 1 является бенефициарным владельцем "
+"Компании E. Оно осуществляет это бенефициарное владение через компанию-"
+"посредника - Компанию A. (Примечание: сокращенные идентификаторы "
+"характеристик используются для краткости и четкости разъяснения. Сокращенные"
+" идентификаторы, такие как ‘ooc-2’ , не действительны в BODS)."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rstNone
+#: 74f69dcc85984c898687860902eaa900
+msgid ""
+"Person Statements, Entity Statements and Ownership-or-control Statements are"
+" linked, representing the company ownership structure. Statement property "
+"values are given as follows. Person 1's Statement: statementID is p-1, "
+"isComponent is false. Intermediary Company A's Statement: statementID is "
+"e-2, isComponent is true. Company E's Statement: statementID is e-1, "
+"isComponent is false. Ownership-or-control Statement connecting Person 1 and"
+" Company A: statementID is ooc-3, directOrIndirect is direct, isComponent is"
+" true, beneficialOwnershipOrControl is false. Ownership-or-control Statement"
+" connecting Company A and Company E: statementID is ooc-2, directOrIndirect "
+"is direct, isComponent is true, beneficialOwnershipOrControl is false. "
+"Ownership-or-control Statement connecting Person 1 and Company E: "
+"statementID is ooc-1, isComponent is false, componentStatementIDs are ooc-2 "
+"and e-2 and ooc-3; and its interests have directOrIndirect as indirect and "
+"beneficialOwnershipOrControl as true."
+msgstr ""
+"Характеристика физического лица, Характеристика сущности и Характеристика о "
+"владении или контроле связаны между собой, представляя структуру "
+"собственности компании. Значения свойств характеристик приведены ниже: "
+"statementID Характеристики Физического лица 1 - p-1, isComponent - false; "
+"statementID Характеристики Компании-посредника A - e-2, isComponent - true;"
+"  statementID Характеристики Компании E - e-1, isComponent - false;  "
+"statementID Характеристики о владении или контроле, связывающей Физическое "
+"лицо 1 и Компанию А - ooc-3, directOrIndirect - direct, isComponent - true, "
+"beneficialOwnershipOrControl - false;  statementID Характеристики о владении"
+" или контроле, связывающей  Компанию A и Компанию E - ooc-2, "
+"directOrIndirect - direct, isComponent - true, beneficialOwnershipOrControl "
+"- false; statementID Характеристики о владении или контроле, связывающей "
+"Физическое лицо 1 и Компанию E - ooc-1, isComponent - false, "
+"componentStatementIDs - ooc-2, e-2 и ooc-3; и для долей участия "
+"directOrIndirect отмечено как indirect и beneficialOwnershipOrControl как "
+"true."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:73
+#: 7d8b007602ce4cd9afdc4dfc3ee6f4b6
+msgid "Statement order"
+msgstr "Порядок характеристик"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:74
+#: 8046bc0a15864d9f9763d1c2edaf3ddc
+msgid ""
+"An example of valid statement order for the above would be: p-1, e-1, e-2, "
+"ooc-3, ooc-2, ooc-1."
+msgstr ""
+"Пример правильного порядка характеристик для вышеупомянутого: p-1, e-1, e-2,"
+" ooc-3, ooc-2, ooc-1."

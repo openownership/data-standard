@@ -25,12 +25,6 @@ source_file = docs/_build/gettext/svg.pot
 source_lang = en
 type = PO
 
-[bods-main.usecases]
-file_filter = docs/locale/<lang>/LC_MESSAGES/usecases.po
-source_file = docs/_build/gettext/usecases.pot
-source_lang = en
-type = PO
-
 [bods-main.about--credits]
 file_filter = docs/locale/<lang>/LC_MESSAGES/about/credits.po
 source_file = docs/_build/gettext/about/credits.pot
@@ -52,12 +46,6 @@ type = PO
 [bods-main.about--privacy-notice]
 file_filter = docs/locale/<lang>/LC_MESSAGES/about/privacy-notice.po
 source_file = docs/_build/gettext/about/privacy-notice.pot
-source_lang = en
-type = PO
-
-[bods-main.about--support]
-file_filter = docs/locale/<lang>/LC_MESSAGES/about/support.po
-source_file = docs/_build/gettext/about/support.pot
 source_lang = en
 type = PO
 
@@ -169,6 +157,18 @@ source_file = docs/_build/gettext/schema/guidance/provenance.pot
 source_lang = en
 type = PO
 
+[bods-main.schema--guidance--repr-beneficial-ownership]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-beneficial-ownership.po
+source_file = docs/_build/gettext/schema/guidance/repr-beneficial-ownership.pot
+source_lang = en
+type = PO
+
+[bods-main.schema--guidance--repr-state-owned-enterprises]
+file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-state-owned-enterprises.po
+source_file = docs/_build/gettext/schema/guidance/repr-state-owned-enterprises.pot
+source_lang = en
+type = PO
+
 [bods-main.schema--guidance--serialization]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/serialization.po
 source_file = docs/_build/gettext/schema/guidance/serialization.pot
@@ -187,56 +187,3 @@ source_file = docs/_build/gettext/schema/guidance/updating-data.pot
 source_lang = en
 type = PO
 
-[bods-main.toolbox--index]
-file_filter = docs/locale/<lang>/LC_MESSAGES/toolbox/index.po
-source_file = docs/_build/gettext/toolbox/index.pot
-source_lang = en
-type = PO
-
-[bods-main.userguides--bulk-data-and-api]
-file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/bulk-data-and-api.po
-source_file = docs/_build/gettext/userguides/bulk-data-and-api.pot
-source_lang = en
-type = PO
-
-[bods-main.userguides--index]
-file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/index.po
-source_file = docs/_build/gettext/userguides/index.pot
-source_lang = en
-type = PO
-
-[bods-main.userguides--licensing]
-file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/licensing.po
-source_file = docs/_build/gettext/userguides/licensing.pot
-source_lang = en
-type = PO
-
-[bods-main.userguides--links-other-standards]
-file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/links-other-standards.po
-source_file = docs/_build/gettext/userguides/links-other-standards.pot
-source_lang = en
-type = PO
-
-[bods-main.userguides--publishing-ben-ownership-data]
-file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/publishing-ben-ownership-data.po
-source_file = docs/_build/gettext/userguides/publishing-ben-ownership-data.pot
-source_lang = en
-type = PO
-
-[bods-main.userguides--updating-data]
-file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/updating-data.po
-source_file = docs/_build/gettext/userguides/updating-data.pot
-source_lang = en
-type = PO
-
-[bods-main.userguides--using-ben-ownership-data]
-file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/using-ben-ownership-data.po
-source_file = docs/_build/gettext/userguides/using-ben-ownership-data.pot
-source_lang = en
-type = PO
-
-[bods-main.userguides--validating-and-verifying]
-file_filter = docs/locale/<lang>/LC_MESSAGES/userguides/validating-and-verifying.po
-source_file = docs/_build/gettext/userguides/validating-and-verifying.pot
-source_lang = en
-type = PO

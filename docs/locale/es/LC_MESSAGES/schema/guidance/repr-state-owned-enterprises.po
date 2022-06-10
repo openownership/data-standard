@@ -1,0 +1,347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Carlos Hames, 2022
+# Agustina De Luca, 2022
+# Stephen Abbott Pugh <stephen@openownership.org>, 2022
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
+"PO-Revision-Date: 2022-04-13 15:11+0000\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:4
+#: d31194a4be454e84a7bd9b8b58cb6a40
+msgid "Representing state-owned enterprises"
+msgstr "Representación de empresas estatales"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:8
+#: d268c0921527410db937e5cc9b9d02ad
+msgid ""
+"**Key requirement:** If an entity's status as a state-owned enterprise needs"
+" to be represented, then its Entity statement MUST be the subject of "
+"Ownership-or-control statement(s) connecting it, either directly or "
+"indirectly, to an Entity statement with ``entityType`` of 'state' or "
+"'stateBody'."
+msgstr ""
+"**Requisito clave:** Si es necesario representar el estado de una entidad "
+"como empresa estatal, entonces su declaración de entidad DEBE ser sujeto de "
+"declaración sobre Titularidad-o-control que la conecten, ya sea directa o "
+"indirectamente, a una declaración de Entidad con ``entityType`` de 'state' o"
+" 'stateBody'."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:12
+#: 92983477bef249539c8fb727d02723d2
+msgid "Overview"
+msgstr "Descripción general"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:14
+#: 539439aa09d14ae29b4ffc44f86ae590
+msgid ""
+"The definition of 'state-owned enterprise' (SOE) can change according to "
+"jurisdiction or domain. The Beneficial Ownership Data Standard (BODS) does "
+"not therefore rely on, or support, any one definition. Instead, BODS enables"
+" the interests between a state (or state body) and an enterprise to be "
+"represented. This requires the state itself (or state body) to be "
+"represented by an Entity statement."
+msgstr ""
+"La definición de 'empresa estatal' (SOE) puede cambiar según la jurisdicción"
+" o el dominio. Por lo tanto, el Estándar de Datos de Beneficiario Final "
+"(BODS) no se basa ni respalda ninguna definición en particular. Por el "
+"contrario, BODS permite que los intereses entre un estado (u organismo "
+"estatal) y una empresa estén representados. Esto requiere que el propio "
+"estado (o el organismo del estado) esté representado por una declaración "
+"sobre entidad."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:16
+#: bd546e8ab8b346f7a6d5e9fb03a0cd9d
+msgid ""
+"In particular, the following properties and values SHOULD be used to "
+"represent information about enterprises and their links to states:"
+msgstr ""
+"En particular, las siguientes propiedades y valores DEBEN usarse para "
+"representar información sobre empresas y sus enlaces a estados:"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:18
+#: d41a266a21e2419b8a0f4c343bbf9aa7
+msgid ""
+"``entityType`` SHOULD be set to 'state' or 'stateBody', and ``jurisdiction``"
+" SHOULD be used to represent the particular state."
+msgstr ""
+"``entityType`` DEBE establecerse en 'state' o 'stateBody', y "
+"``jurisdiction`` DEBE usarse para representar el estado en particular."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:19
+#: a8c4293eb32b4eb19a1e87549e936ae7
+msgid ""
+"``entitySubtype`` SHOULD be used to refine the category of a given state "
+"body (as a 'government department', 'state agency' or 'other')."
+msgstr ""
+"``entitySubtype`` DEBE usarse para refinar la categoría de un organismo "
+"estatal dado (como 'government department', 'state agency' u 'other')."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:20
+#: a607203038404c9cb78488682bc34eff
+msgid ""
+"``formedByStatute`` MAY be used to supply details of a law, where an entity "
+"has been formed as a result of specific legislation."
+msgstr ""
+"``formedByStatute`` PUEDE usarse para proporcionar detalles de una ley, "
+"donde una entidad se ha formado como resultado de una legislación "
+"específica."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:22
+#: 5869e6b398224eb8a91b732c8fe8372c
+msgid ""
+"For more details about these properties see :ref:`schema-entity-statement`."
+msgstr ""
+"Para obtener más detalles sobre estas propiedades, consulte :ref:`schema-"
+"entity-statement`."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:24
+#: b46f79d7a8e04b5681f6ec1c1e81ece2
+msgid ""
+"A number of scenarios are outlined below. We show how the these properties "
+"and others can be used to represent information about SOEs within a set of "
+"connected BODS statements."
+msgstr ""
+"A continuación se describen varios escenarios. Mostramos cómo se pueden usar"
+" estas propiedades y otras para representar información sobre SOEs dentro de"
+" un conjunto de declaraciones de BODS conectadas."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:28
+#: 012a9114cc09486e9f18fbf797f30bd4
+msgid "Example scenarios"
+msgstr "Escenarios de ejemplo"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:30
+#: bc58782039214ad3b667e0235cfff9f1
+msgid ""
+"These examples show how statements might be connected to represent the "
+"involvement of a state with an enterprise. Only those property:value pairs "
+"that are particularly relevant to the scenario are shown in the statement "
+"blocks. Complete data would also show, for instance, the particular types of"
+" interests held by the state, such as an 80% shareholding."
+msgstr ""
+"Estos ejemplos muestran cómo se pueden conectar declaraciones para "
+"representar la participación de un estado con una empresa. Sólo aquellos "
+"pares property:value que son particularmente relevantes para el escenario se"
+" muestran en los bloques de declaraciones. Los datos completos también "
+"mostrarían, por ejemplo, los tipos particulares de intereses que posee el "
+"estado, como una participación accionaria del 80%."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:34
+#: d20f2a6b857b411ea54a7484a4710c0d
+msgid "Scenario 1"
+msgstr "Escenario 1"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:36
+#: a1ede5598216434982b3b59eedbc716c
+msgid ""
+"Ownership-or-control by a state is known and a statement about ownership is "
+"possible."
+msgstr ""
+"Se conoce la titularidad o el control por parte de un estado y es posible "
+"una declaración sobre la titularidad."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rstNone
+#: 14d62bf10ccd4a0e99629d65ecb0ded4
+msgid ""
+"Entity statement (with entityType 'registeredEntity') is connected via an "
+"Ownership-or-control statement to an Entity statement (with entityType "
+"'state' and jurisdiction 'zm')."
+msgstr ""
+"La declaración sobre Entidad (con entityType 'registeredEntity') se conecta "
+"a través de una declaración sobre Titularidad-o-control a una declaración "
+"sobre Entidad (con entityType 'state' y jurisdicción 'zm')."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:44
+#: 005ad0fac6754ff7b3e64d50f1b75d94
+msgid "Scenario 2"
+msgstr "Escenario 2"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:46
+#: f1ec21e112fc487288e13a577369f95c
+msgid ""
+"Ownership-or-control by a state body is known and a statement about "
+"ownership is possible."
+msgstr ""
+"Se conoce la titularidad o el control por parte de un organismo estatal y es"
+" posible una declaración sobre la titularidad."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rstNone
+#: 3c0e09ad88284f3fb035e80d48ad9f1d
+msgid ""
+"Entity statement (with entityType 'registeredEntity') is connected via an "
+"Ownership-or-control statement to an Entity statement (with entityType "
+"'stateBody' and jurisdiction 'gb')."
+msgstr ""
+"La declaración sobre entidad (con entityType 'registeredEntity') se conecta "
+"a través de una declaración sobre Titularidad-o-control a una declaración "
+"sobre Entidad (con entityType 'stateBody' and jurisdicción 'gb')."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:54
+#: 35d78c7d06594ba1abb0940de31d7a2b
+msgid "Scenario 3"
+msgstr "Escenario 3"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:56
+#: 361ca2bfc06d4f2d9facde02cf3995d7
+msgid ""
+"A registered entity declares that it is exempt from disclosing beneficial "
+"owners because it is an SOE."
+msgstr ""
+"Una entidad inscripta declara que está exenta de revelar a los beneficiarios"
+" finales porque es una SOE."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rstNone
+#: 9e093cc4266940a6a6b6945910b3c409
+msgid ""
+"Entity statement (with entityType 'registeredEntity') is connected via an "
+"Ownership-or-control statement to an Entity statement (with entityType "
+"'state' and jurisdiction 'nl'). The Entity statement with entityType "
+"'registeredEntity' is also connected to an Ownership-or-control statement "
+"which has interestedParty.unspecified.reason set to 'noBeneficialOwners' and"
+" interestedParty.unspecified.description set to 'Exemption granted on the "
+"basis that the declaring entity is a state-owned enterprise'."
+msgstr ""
+"La declaración sobre Entidad (con entityType 'registeredEntity') se conecta "
+"a través de una declaración sobre Titularidad-o-control a una declaración "
+"sobre Entidad (con entityType 'state' y jurisdicción 'nl'). La declaración "
+"sobre Entidad con entityType 'registeredEntity' también está conectada a una"
+" declaración sobre Titularidad-o-control que tiene "
+"interestedParty.unspecified.reason establecida como 'noBeneficialOwners'; y "
+"interestedParty.unspecified.description establecida como  'Exemption granted"
+" on the basis that the declaring entity is a state-owned enterprise'."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:64
+#: 0d551848303b4bfb999625e534f2f6e9
+msgid "Scenario 4"
+msgstr "Escenario 4"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:66
+#: 79eb3040da7e44e193f9a2f709306a15
+msgid ""
+"Describing control through a golden share provision in company articles or "
+"shareholder agreement."
+msgstr ""
+"Descripción del control a través de una acción de oro establecida en los "
+"estatutos de la empresa o en el convenio de accionistas."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rstNone
+#: 274e812d506943768e6b090741cde15b
+msgid ""
+"Entity statement (with entityType 'registeredEntity') is connected via an "
+"Ownership-or-control statement to an Entity statement (with entityType "
+"'stateBody' and jurisdiction 'nl'). The Ownership-or-control statement has "
+"interests.0.type set to 'controlViaCompanyRulesOrArticles' and "
+"interests.0.details set to 'Veto rights over specified company decisions'."
+msgstr ""
+"La declaración sobre Entidad (con entityType 'registeredEntity') se conecta "
+"a través de una declaración sobre Titularidad-o-control a una declaración "
+"sobre Entidad (con entityType 'stateBody' y jurisdicción 'nl'). La "
+"declaración sobre Titularidad-o-control tiene interest.0.type establecido "
+"como 'controlViaCompanyRulesOrArticles' e interest.0.details establecido "
+"como 'Veto rights over specified company decisions'."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:74
+#: b3414ebc7c8d482180b6683abff5db31
+msgid "Scenario 5"
+msgstr "Escenario 5"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:76
+#: a7aed3928ed14fa4915c33b544421a02
+msgid "Describing control of an SOE by a natural person."
+msgstr "Describir el control de una SOE por parte de una persona física."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rstNone
+#: d5c2ebae8ba74e34b1b8295f96a4f41c
+msgid ""
+"Entity statement (with entityType 'registeredEntity') is connected via an "
+"Ownership-or-control statement to an Entity statement (with entityType "
+"'state' and jurisdiction 'zm'). The Entity statement with entityType "
+"'registeredEntity' is also connected to an Ownership-or-control statement "
+"which has interests.0.type set to 'seniorManagingOfficial'. That last "
+"Ownership-or-control statement is connected to a Person statement with "
+"personType set to 'knownPerson'."
+msgstr ""
+"La declaración sobre Entidad (con entityType 'registeredEntity') se conecta "
+"a través de una declaración sobre Titularidad-o-control a una declaración "
+"sobre Entidad (con entityType 'state' y jurisdicción 'zm). La declaración "
+"sobre Entidad con entityType 'registeredEntity' también está conectada a una"
+" declaración sobre Titularidad-o-control que tiene interest.0.type "
+"establecido como 'seniorManagingOfficial'. Esa última declaración sobre "
+"Titularidad-o-control está conectada a una declaración sobre Persona con "
+"personType establecido como 'knownPerson'."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:84
+#: 13ea3202719b490b9cc0d31c07d02cd8
+msgid "Scenario 6"
+msgstr "Escenario 6"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:86
+#: 06f85cd756604759b7b750aabbb090a2
+msgid "An SOE is formed by statute."
+msgstr "Una SOE se forma por estatuto."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rstNone
+#: 6d0b647c1b92423090db9d68f21d444a
+msgid ""
+"Entity statement (with entityType 'legalEntity', formedByLegislation.name "
+"set to 'National Energy Act', and formedByLegislation.date set to "
+"'1980-02-01') is connected via an Ownership-or-control statement to an "
+"Entity statement (with entityType 'stateBody' and jurisdiction 'zm'). The "
+"Ownership-or-control statement has interests.0.type set to "
+"'controlByLegalFramework'."
+msgstr ""
+"La declaración sobre Entidad (con entityType 'legalEntity', "
+"formedByLegislation.name establecido como 'National Energy Act', y "
+"formedByLegislation.date establecido como '1980-02-01') se conecta a través "
+"de una declaración sobre Titularidad-o-control a una declaración sobre "
+"Entidad (con entityType 'stateBody' y jurisdicción 'zm'). La declaración "
+"sobre Titularidad-o-control tiene interest.0.type establecido como  "
+"'controlByLegalFramework'."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:94
+#: 1e8eb20e6b934406978b57002ecf0905
+msgid "Scenario 7"
+msgstr "Escenario 7"
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rst:96
+#: 7b156db20ab442d4ac0ac47f888f21a9
+msgid ""
+"A state's interests in an SOE are managed via a government-linked investment"
+" entity (GLIE)."
+msgstr ""
+"Los intereses de un estado en una SOE se gestionan a través de una entidad "
+"de inversión vinculada al gobierno (GLIE)."
+
+#: ../../schema/guidance/repr-state-owned-enterprises.rstNone
+#: aeacf48f0f914d1f83cddce0eebbf8dc
+msgid ""
+"Entity statement (with entityType 'registeredEntity') is connected via an "
+"Ownership-or-control statement to another Entity statement with entityType "
+"'registeredEntity' and name 'A G.L.I.E'. That latter Entity Statement is "
+"connected via an Ownership-or-control statement to an Entity statement (with"
+" entityType 'state' and jurisdiction 'gb')."
+msgstr ""
+"La declaración sobre Entidad (con 'controlByLegalFramework'.) está conectada"
+" a través de una declaración sobre Titularidad-o-control a otra declaración "
+"sobre Entidad con entityType 'registeredEntity' y nombre 'A G.L.I.E'. Esta "
+"última declaración sobre Entidad está conectada a través de una declaración "
+"sobre Titularidad-o-control a una declaración sobre Entidad (con entityType "
+"'state' y jurisdicción 'gb')"

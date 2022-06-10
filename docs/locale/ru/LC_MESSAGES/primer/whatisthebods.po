@@ -1,19 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Galia Williams, 2022
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,11 +23,11 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../primer/whatisthebods.rst:2 cb53e80a00b1450687ae888c4a2ea48a
+#: ../../primer/whatisthebods.rst:2 be35a25643844d70b77502d3ecf93e70
 msgid "What is the Beneficial Ownership Data Standard?"
 msgstr "Что такое Стандарт данных о бенефициарном владении?"
 
-#: ../../primer/whatisthebods.rst:4 85ea57668092472092993b199f697450
+#: ../../primer/whatisthebods.rst:4 e9d7826501084557a8b49d3aeaf09d80
 msgid ""
 "The value from beneficial ownership data comes when we can share it easily, "
 "knowing that it will be correctly understood. Data from different companies "
@@ -37,11 +39,11 @@ msgstr ""
 "разных компаний и разных стран могут быть объединены, наглядно представлены,"
 " изучены и проанализированы."
 
-#: ../../primer/whatisthebods.rst:13 fbbde5b3ed2d4a94acb5bce387200e80
+#: ../../primer/whatisthebods.rst:13 bcba064cd8c44b4a93af6fefdbee5e5f
 msgid "To gain insights about beneficial ownership..."
 msgstr "Для понимания сути бенефициарного владения..."
 
-#: ../../primer/whatisthebods.rst:19 8512171396da44b7a997f87c633c50bd
+#: ../../primer/whatisthebods.rst:19 2247dfdbd67a491cbc771473ce8a0eae
 msgid ""
 "Bringing together data from a variety of sources can give us insights into "
 "sprawling or complicated ownership and control structures. But, without "
@@ -53,11 +55,11 @@ msgstr ""
 "общих стандартов объединение и анализ данных из разных источников может быть"
 " крайне сложным, дорогостоящим и отнимать много времени."
 
-#: ../../primer/whatisthebods.rstNone 741808a215db4fc48244632df463f2de
+#: ../../primer/whatisthebods.rstNone 86b67d6b6eaa454181db7374c61148ae
 msgid "Data sources separately feeding into an unclear picture."
-msgstr ""
+msgstr "Источники данных по отдельности не дают четкую общую картину."
 
-#: ../../primer/whatisthebods.rst:27 9c0448d1c2b346f9ae56674b3f3af41b
+#: ../../primer/whatisthebods.rst:27 051540750e4e4b25b7f47de058a2085a
 msgid ""
 "When we only have scattered documents to draw upon, the bigger picture of "
 "beneficial ownership remains obscure."
@@ -65,11 +67,11 @@ msgstr ""
 "Если в нашем распоряжении имеются только разрозненные документы, то более "
 "полная картина бенефициарного владения остается неясной."
 
-#: ../../primer/whatisthebods.rst:34 5765aad4c0334c0b8f7f69d7220447a0
+#: ../../primer/whatisthebods.rst:34 447d4739e43b4c51bf949c3ee135e61e
 msgid "...data must be shared in standardised way..."
 msgstr "...данные должны передаваться стандартизированным способом..."
 
-#: ../../primer/whatisthebods.rst:40 d7ac396eb81b4936ac7e11563a232884
+#: ../../primer/whatisthebods.rst:40 4458a8c2c7c747f29bdcea199c369ce2
 msgid ""
 "The Beneficial Ownership Data Standard (BODS) provides a structured data "
 "format, along with guidance for collecting, sharing and using data on "
@@ -79,7 +81,7 @@ msgstr ""
 "структурированных данных вместе с руководством по сбору, предоставлению и "
 "использованию данных о бенефициарном владении:"
 
-#: ../../primer/whatisthebods.rst:44 07be9f8d258942a49c24355d294b2b98
+#: ../../primer/whatisthebods.rst:44 68781e31e775427796fafacf43095045
 msgid ""
 "The `data schema <../schema/index.html>`__ describes how and what data "
 "should be shared. It can also inform the design of data collection and "
@@ -89,7 +91,7 @@ msgstr ""
 "следует предоставлять. Также она может обеспечивать сведения для "
 "проектирования систем сбора и управления данными;"
 
-#: ../../primer/whatisthebods.rst:48 939f244a434549149fc0b57e5acdb8c7
+#: ../../primer/whatisthebods.rst:48 85a5f33767f249ac9064c78c8a14194e
 msgid ""
 "The `technical guidance <../schema/guidance/index.html>`__ provides support "
 "for publishers and users of the data."
@@ -97,13 +99,15 @@ msgstr ""
 "`Технические рекомендации <../schema/guidance/index.html>`__ обеспечивают "
 "поддержку для издателей и пользователей данных."
 
-#: ../../primer/whatisthebods.rstNone 28b2f2baf6a5465383aa9496e28732db
+#: ../../primer/whatisthebods.rstNone ff53e613e2d84d6498862ae694943a93
 msgid ""
 "A standardised 'template' for data makes processing it easier,\n"
 "leading to a clear picture."
 msgstr ""
+"Стандартизированный «шаблон» данных упрощает обработку\n"
+"и дает четкую общую картину."
 
-#: ../../primer/whatisthebods.rst:56 1d7dac40e1204d659dc5914702bf98ff
+#: ../../primer/whatisthebods.rst:56 2ca4ca9c73ca4bad91a4e506c4114c0c
 msgid ""
 "Using BODS simplifies the sharing and use of beneficial ownership "
 "information."
@@ -111,11 +115,11 @@ msgstr ""
 "Использование СДБВ упрощает предоставление и использование информации о "
 "бенефициарном владении."
 
-#: ../../primer/whatisthebods.rst:63 851b4e4f0ba141cf8e692ebe14288f6d
+#: ../../primer/whatisthebods.rst:63 3687cfe0d4254fdca2abd91f222e7a4a
 msgid "...as structured data."
 msgstr "...в виде структурированных данных."
 
-#: ../../primer/whatisthebods.rst:69 a39c879f53e74da9b6606b679ed86199
+#: ../../primer/whatisthebods.rst:69 7c600ce9bd1b4c87a707ada045b90638
 msgid ""
 "The data schema describes how data about the beneficial owners of a legal "
 "entity can be organized and exchanged. The schema is defined in a structured"
@@ -125,14 +129,17 @@ msgstr ""
 " о бенефициарных владельцах юридического лица. Схема определена в формате "
 "структурированных данных, именуемом JSON."
 
-#: ../../primer/whatisthebods.rstNone a819404c13944708a7204f768da02bf3
+#: ../../primer/whatisthebods.rstNone 5e988f1602994a81ad9ad5e61dad9bf2
 msgid ""
 "Company documents containing beneficial ownership information:\n"
 "the related structured data representation of these documents is on\n"
 "the right, in JSON."
 msgstr ""
+"Документы компании, содержащие информацию о бенефициарном владении: "
+"соответствующие структурированные данные по этим документам представлены "
+"справа, в формате JSON."
 
-#: ../../primer/whatisthebods.rst:79 345528018cdc44fab88b6b6621279814
+#: ../../primer/whatisthebods.rst:79 e31c4fae96e84281aa0174cfbbf4da44
 msgid ""
 "Using the popular JSON format facilitates computerised access and analysis "
 "of the data, whilst also providing human-readable data."
@@ -140,7 +147,7 @@ msgstr ""
 "Использование популярного формата JSON упрощает компьютерный доступ и анализ"
 " данных, при этом также предоставляя удобочитаемые для человека данные."
 
-#: ../../primer/whatisthebods.rst:84 40cd564c090f4c1198be6773ffa2b0a0
+#: ../../primer/whatisthebods.rst:84 eacb7b0c96bd4b27a8114319c3339fa4
 msgid ""
 "The **Beneficial Ownership Data Standard** describes what data should be "
 "shared and how (using a JSON schema) and provides guidance on data "

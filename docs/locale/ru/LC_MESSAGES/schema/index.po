@@ -1,19 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Galia Williams, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Galia Williams, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,26 +22,30 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../schema/index.rst:2 1601d5c063c8455db56471adb405e128
+#: ../../schema/index.rst:2 011128bfa3b34b3e8ca597afee954442
 msgid "Data Schema"
 msgstr "Схема данных"
 
-#: ../../schema/index.rst:6 2b5e966efb924a1ba7c1d496fd84d9d0
+#: ../../schema/index.rst:6 ee5a99f451b44ce389b969e3baec96d2
 msgid ""
-"This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
-"to the data model and additional codelist information. Implementers should "
-"be aware that future changes are anticipated, before a version 1.0 release. "
-"See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more "
-"information."
+"This is v0.3 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model and codelists as well as additional technical guidance."
 msgstr ""
-"Это версия 0.2 Стандарта данных о бенефициарном владении. Она включает в "
-"себя обновления модели данных и дополнительную информацию в списке "
-"допустимых значений. Имплементирующие лица должны понимать, что ожидаются "
-"будущие изменения до выпуска версии 1.0. См. страницы :doc:`Лог изменений "
-"<changelog>` и `О стандарте <../about>`_ для получения дополнительной "
-"информации."
+"Это версия 0.3 Стандарта данных о бенефициарном владении. Она включает в "
+"себя обновления модели данных, списки допустимых значений, а также "
+"дополнительные технические рекомендации."
 
-#: ../../schema/index.rst:8 3eda14ad33ce478ba82956815ec94282
+#: ../../schema/index.rst:8 ccfdc07c173f40fa9afd572e89f4a199
+msgid ""
+"Implementers should be aware that future changes are anticipated, before a "
+"version 1.0 release. See the :doc:`Changelog <changelog>` and `About "
+"<../about>`_ pages for more information."
+msgstr ""
+"Имплементирующие лица должны понимать, что ожидаются новые изменения до "
+"выхода версии 1.0. Дополнительную информацию см. на страницах :doc:`Лог "
+"изменений <changelog>` и `О стандарте <../about>`_ ."
+
+#: ../../schema/index.rst:10 42d59b885c564e17b84eb3370da560c3
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
 "recommended elements of the Standard, as defined in `RFC2119 "
@@ -50,7 +55,7 @@ msgstr ""
 "рекомендуемых элементов Стандарта, как определено в `RFC2119 "
 "<https://tools.ietf.org/html/rfc2119>`_."
 
-#: ../../schema/index.rst:10 37bb1ca06ca74638859927c88eea5dc5
+#: ../../schema/index.rst:12 a727f96865d348dfafee5740754e190c
 msgid ""
 "BODS provides a common data model for encapsulating information about the "
 ":doc:`beneficial ownership <../primer/whatisbo>` of corporate entities and "
@@ -69,7 +74,7 @@ msgstr ""
 "других субъектов (включая трасты и акции в совместном владении) или со "
 "стороны физических лиц."
 
-#: ../../schema/index.rst:12 336109a6b93f4d149f7cd5f8f12248d3
+#: ../../schema/index.rst:14 65e7bdfc43e54c2d9567c4400e505c17
 msgid ""
 "The data model, as specified here in the Data Schema, is intended to "
 "represent, or help identify, ultimate beneficial ownership: the natural "
@@ -80,7 +85,7 @@ msgstr ""
 "физическое лицо (лиц), получающих конечную выгоду от субъекта или "
 "контролирующих субъект."
 
-#: ../../schema/index.rst:14 86dda99ff53540449bf52a9e9a990d49
+#: ../../schema/index.rst:16 e2a1c6a8b733405ea95f521d52b6dbd1
 msgid ""
 "The :doc:`schema browser <schema-browser>` provides a way of digging through"
 " the schema's structure, showing how its components and fields fit together."
@@ -92,7 +97,7 @@ msgstr ""
 "качестве альтернативы :doc:`справочник схемы <reference>` представляет эти "
 "элементы и их описания в таблицах, характеризующихся простотой поиска."
 
-#: ../../schema/index.rst:16 275734231b8d429dbdc8f08d9d8f152c
+#: ../../schema/index.rst:18 3a5cecec57cb4b4887a4516878a94929
 msgid ""
 "Further considerations regarding the validation, publishing, and lifecycle "
 "of data are included in `technical guidance <guidance>`_."

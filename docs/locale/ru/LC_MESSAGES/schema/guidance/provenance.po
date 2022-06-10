@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:57+0000\n"
 "Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
@@ -21,11 +21,11 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../schema/guidance/provenance.rst:4 c55576f4aee8460aaf278d89cc6eeb1c
+#: ../../schema/guidance/provenance.rst:4 f2b03bdeb8b846ef939f5556a4439c1c
 msgid "Sources and annotations"
 msgstr "Источники и примечания"
 
-#: ../../schema/guidance/provenance.rst:6 3694604e3f5a41f7b94406646a24045f
+#: ../../schema/guidance/provenance.rst:6 eab10d0776bb40bfb02e2ebf5f11fb6d
 msgid ""
 "It is important to indicate clearly where data has come from, and any "
 "changes to it that have been made since it was originally collected."
@@ -33,7 +33,7 @@ msgstr ""
 "Важно четко указать, откуда были получены данные, а также все изменения, "
 "внесенные в них с момента первоначального сбора этих данных."
 
-#: ../../schema/guidance/provenance.rst:8 a9e648678fce441986b255d1f57b7bed
+#: ../../schema/guidance/provenance.rst:8 d08cdced920f421e8a5eb46889610a51
 msgid ""
 "Each statement SHOULD contain information on its source, and whether or not "
 "the information it contains has been verified. (For example, a statement may"
@@ -48,7 +48,7 @@ msgstr ""
 "процесса с целью удостовериться, что предоставленная информация является "
 "точной)."
 
-#: ../../schema/guidance/provenance.rst:10 771e64268f2943288acc101438e3fe3d
+#: ../../schema/guidance/provenance.rst:10 fcabbc2191b94889b6fbf140be0024dc
 msgid ""
 "The ``source`` property of each statement MAY be used to provide provenance "
 "information."
@@ -56,7 +56,7 @@ msgstr ""
 "Свойство ``source`` (источник) каждой записи МОЖЕТ использоваться для "
 "предоставления информации об источнике."
 
-#: ../../schema/guidance/provenance.rst:12 6f3f2120db9a40649a5a6ab6268a19ea
+#: ../../schema/guidance/provenance.rst:12 eb040e633c5548e7a4fec1c60a93fb77
 msgid ""
 "The ``annotations`` property of each statement MAY be used to provide "
 "additional contextual information at the level of a whole statement, a sub-"

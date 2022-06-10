@@ -1,19 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2022
+# Stephen Abbott Pugh <stephen@openownership.org>, 2022
+# Galia Williams, 2022
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-05 17:16+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,26 +25,35 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../about/governance.rst:2 14b476cefc594c86baa90487cb36c7b8
+#: ../../about/governance.rst:2 7e8a050efbd343ca85e715133409e797
 msgid "Governance"
 msgstr "Управление"
 
-#: ../../about/governance.rst:4 735b0006790a4073a6e5cb09b7b2d485
+#: ../../about/governance.rst:4 d5e562497c5b4900af39bc67c0735d47
 msgid ""
 "BODS is developed by `Open Ownership <https://www.openownership.org/>`__, a "
 "non-profit organisation focused on beneficial ownership transparency, in "
 "partnership with `Open Data Services <https://opendataservices.coop/>`__."
 msgstr ""
+"СДБВ разработан `Open Ownership <https://www.openownership.org/>`__, "
+"некоммерческой организацией, занимающейся проблемами прозрачности "
+"бенефициарного владения, в партнерстве с `Open Data Services "
+"<https://opendataservices.coop/>`__."
 
-#: ../../about/governance.rst:6 22e4f3480563442586c4634f4dcef83d
+#: ../../about/governance.rst:6 e10c94ee4c784bfea28a8e5c1b22992a
 msgid ""
 "An open `data standard working group "
 "<https://standard.openownership.org/en/latest/about/governance.html>`__ of "
 "data experts, beneficial ownership specialists and other interested parties "
 "also provide advice and help guide the development of BODS."
 msgstr ""
+"Открытая `рабочая группа по разработке стандарта данных "
+"<https://standard.openownership.org/en/latest/about/governance.html>`__ , "
+"состоящая из экспертов по данным, специалистов по бенефициарному владению и "
+"других заинтересованных сторон, также предоставляет консультации и задает "
+"направление дальнейшей работе по разработке Стандарта BODS."
 
-#: ../../about/governance.rst:8 7d741713791d48bb9f18735ceab1a7e0
+#: ../../about/governance.rst:8 ac93062eee6340da86ef4dedd5aabe28
 msgid ""
 "The working group is co-chaired by Open Ownership and Open Data Services - "
 "and anyone can apply to join the group by `filling out this form "
@@ -49,27 +62,42 @@ msgid ""
 "through a `Google group "
 "<https://groups.google.com/a/openownership.org/g/data-standard-wg>`__."
 msgstr ""
+"Сопредседателями рабочей группы являются организации Open Ownership и Open "
+"Data Services, и любой желающий может подать заявку на вступление в группу, "
+"`заполнив эту форму: "
+"<https://docs.google.com/forms/d/e/1FAIpQLSdRSmSUxyyv2t1k3vWXZ_3EhTW_f603MeGxgyjKnbNNE9vvbQ/viewform>`__."
+" Виртуальные встречи группы проводятся ежеквартально, а коммуникации "
+"координируются через `группу Google "
+"<https://groups.google.com/a/openownership.org/g/data-standard-wg>`__."
 
-#: ../../about/governance.rst:11 902381fbc21c423cb18fb10ef0ab291c
+#: ../../about/governance.rst:11 1295ea1f175f4240a197283781a294a2
 msgid "Data Standard Working Group - Terms of Reference"
-msgstr ""
+msgstr "Рабочая группа по Стандарту данных — Техническое задание"
 
-#: ../../about/governance.rst:13 71899ba280d64773aa25e2563a81f827
+#: ../../about/governance.rst:13 3fedddb7a852443c9d546f9dc891ba08
 msgid ""
 "The data standard working group helps drive the development of BODS, an open"
 " data standard designed to reduce the technical barriers to the collection "
 "and re-use of beneficial ownership data."
 msgstr ""
+"Рабочая группа по стандартам данных помогает направлять развитие СДБВ — "
+"стандарта открытых данных, разработанного для сокращения технических "
+"препятствий в сборе и повторном использовании данных о бенефициарном "
+"владении."
 
-#: ../../about/governance.rst:15 f800ab9666f440b9a60dd3f17dea04ee
+#: ../../about/governance.rst:15 35fd041a228e45a6a3c02db4331ded13
 msgid ""
 "This working group is open to all and includes stakeholders from a range of "
 "backgrounds with an interest and expertise in data relating to corporate "
 "control or beneficial ownership, and to the use of such data in the public "
 "interest."
 msgstr ""
+"Это открытая рабочая группа, в которую входят заинтересованные лица из "
+"разных сфер, имеющие опыт в работе с данными, связанный с корпоративным "
+"контролем или бенефициарным владением, а также с использованием таких данных"
+" в общественных интересах."
 
-#: ../../about/governance.rst:17 f800ab9666f440b9a60dd3f17dea04ee
+#: ../../about/governance.rst:17 8e542f45a93942a0ae05d3a48c290002
 msgid ""
 "While the development of the standard will take place through an open "
 "process, to which anyone can contribute, working group members take on a "
@@ -77,12 +105,17 @@ msgid ""
 "requirements, user needs and technical considerations are taken into "
 "account."
 msgstr ""
+"Поскольку разработка стандарта будет происходить в форме открытого процесса,"
+" в котором может принять участие кто угодно, члены рабочей группы берут на "
+"себя ответственность за руководство разработкой СДБВ и контроль соблюдения "
+"соответствующих требований, обеспечения потребностей пользователей и учет "
+"технических особенностей."
 
-#: ../../about/governance.rst:20 491cb5383c0047409414674ca7d8cba8
+#: ../../about/governance.rst:20 471ce148406a4bb4974995b78007612b
 msgid "Values"
 msgstr "Ценности"
 
-#: ../../about/governance.rst:22 1e75801ff89d4b21815bd4898821ee1a
+#: ../../about/governance.rst:22 f36ac4b8ed9749cd9c94539333cafec5
 msgid ""
 "All working group members must commit to support the following shared "
 "values."
@@ -90,28 +123,28 @@ msgstr ""
 "Все члены рабочей группы должны взять на себя обязательство поддерживать "
 "следующие общие ценности."
 
-#: ../../about/governance.rst:24 97de4933edca4a7abdf6ab234799ac23
+#: ../../about/governance.rst:24 c099747c194843deb88a2796a8f59643
 msgid "**Open**"
 msgstr "**Открытость**"
 
 #: ../../about/governance.rst:26 ../../about/governance.rst:34
-#: 01a8d5333c5a4aeb9d5d0580265c0373 01a8d5333c5a4aeb9d5d0580265c0373
+#: fe09b746398e49efa95d4599d96549fb f41aac62c57342e390774efc005ad3f0
 msgid "We will:"
 msgstr "Мы будем:"
 
-#: ../../about/governance.rst:28 7d3db2dc1df044cc87754273e7323326
+#: ../../about/governance.rst:28 14da21794c084516a93746f517ccacd5
 msgid "share our views and plans, and share knowledge as widely as possible;"
 msgstr ""
 "делиться своими мнениями и планами, а также максимально широко делиться "
 "знаниями;"
 
-#: ../../about/governance.rst:29 3ccadb5eaee44511a0cfe31ad7761106
+#: ../../about/governance.rst:29 db4fa75f53bc492e99e3b0e3a1c6c0de
 msgid "solicit and listen to views from end users and stakeholders;"
 msgstr ""
 "стараться узнать и прислушиваться к мнениям конечных пользователей и "
 "заинтересованных сторон;"
 
-#: ../../about/governance.rst:30 6edb52fa6bfb46838431b45a1fd8cea5
+#: ../../about/governance.rst:30 334735bee1264adaa0de365a294aa90b
 msgid ""
 "make our outputs available under an open licence and abide by the project "
 "`contributor agreement <https://github.com/openownership/data-"
@@ -122,15 +155,15 @@ msgstr ""
 "<https://github.com/openownership/data-"
 "standard/blob/master/CONTRIBUTING.md>`_."
 
-#: ../../about/governance.rst:32 6cbbed1ec66a4a32a876a24daf257337
+#: ../../about/governance.rst:32 7b92a3de5c6c4425b143fcc0b1a10c53
 msgid "**Expert**"
 msgstr "**Компетентность**"
 
-#: ../../about/governance.rst:36 4e5682ca712a4dbb83288e8cf106aa27
+#: ../../about/governance.rst:36 0588be13990045a28131756de710a4a0
 msgid "bring our expertise to the discussion as individuals;"
 msgstr "обсуждать нашу компетентность в индивидуальном порядке;"
 
-#: ../../about/governance.rst:37 6fda953dd096412cb75ab9ba244cb1f1
+#: ../../about/governance.rst:37 702e33f7e67f499db752ce7cbed70aa2
 msgid ""
 "use our expertise to synthesise the views of others in constructive and "
 "forward-thinking proposals;"
@@ -138,48 +171,51 @@ msgstr ""
 "использовать нашу компетентность для объединения мнений других людей в "
 "конструктивные и перспективные предложения;"
 
-#: ../../about/governance.rst:38 7ee9cfad560a4c31bbbedf73ed51ab76
+#: ../../about/governance.rst:38 3a50d7d3df5042208cd906055eedfd26
 msgid "use good judgement to respect privacy and confidentiality."
 msgstr ""
 "руководствоваться здравым смыслом для соблюдения приватности и "
 "конфиденциальности."
 
-#: ../../about/governance.rst:40 c5ea24feb17d4ad5ad6fd4f4ebf2d2ac
+#: ../../about/governance.rst:40 ef9ba7e0499c4180b0049b26471fa6ab
 msgid "**Collaborative**"
 msgstr "**Сотрудничество**"
 
-#: ../../about/governance.rst:42 5fe3e799de6a4c36a9d5d6487821ceec
+#: ../../about/governance.rst:42 adb69b3dd48d4e0087b4cb0fd2142490
 msgid "We will"
 msgstr "Мы будем"
 
-#: ../../about/governance.rst:44 5d5c4db44fa14cf08107e937fb0c49fa
+#: ../../about/governance.rst:44 5c904db18dc14bf1a691ce658a6061c9
 msgid "support each other in discussion, in decisions, and in delivery;"
 msgstr ""
 "поддерживать друг друга в обсуждениях, при принятии решений и выполнении "
 "работ;"
 
-#: ../../about/governance.rst:45 c136e31d174b41d7ba20f6f5b7ba171e
+#: ../../about/governance.rst:45 8370721545d24f62b586470446e3675e
 msgid "operate on the basis of consensus decision making;"
 msgstr "работать на основе решений, принятых путем консенсуса;"
 
-#: ../../about/governance.rst:46 de43604f65894c1f9255361138ca0690
+#: ../../about/governance.rst:46 cf743adf212b464b93645206a56cdf08
 msgid "constructively hold each other to account on our commitments;"
 msgstr ""
 "конструктивно призывать друг друга к ответственности по нашим "
 "обязательствам;"
 
-#: ../../about/governance.rst:47 d0f7924bb0644356b12a8ba2350cfb8d
+#: ../../about/governance.rst:47 dfe3d934160c40f99d63879fedbb5488
 msgid "ensure all voices are heard and considered carefully."
 msgstr ""
 "обеспечивать, чтобы все мнения были услышаны и внимательно учитывались."
 
-#: ../../about/governance.rst:50 97c7baa0531a492c901e8d8f66987004
+#: ../../about/governance.rst:50 3948001abf7b42ec936db33da93c9411
 msgid "Membership, term and role"
 msgstr "Членство, срок и роль"
 
-#: ../../about/governance.rst:52 2943a5244aed472fa6559daeaa1c9cd8
+#: ../../about/governance.rst:52 0411ac2d46644953a5f4a8cf7c6986f9
 msgid ""
 "Membership of the working group is a voluntary responsibility. Members "
 "should be prepared to join quarterly virtual group calls and respond to "
 "issues via GitHub or email."
 msgstr ""
+"Членство в рабочей группе является добровольной ответственностью. Члены "
+"должны быть готовы участвовать в виртуальных групповых звонках раз в квартал"
+" и отвечать на запросы через GitHub или электронную почту."

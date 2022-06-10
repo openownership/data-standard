@@ -1,74 +1,75 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Carlos Hames, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Carlos Hames, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../primer/whatisbodata.rst:2 f0e527cd304f404bb4b640e0c259736a
+#: ../../primer/whatisbodata.rst:2 6b5bc9f37b874363a15263bed984b48f
 msgid "What is beneficial ownership data?"
 msgstr "¿En qué consisten los datos sobre beneficiarios finales?"
 
-#: ../../primer/whatisbodata.rst:8 ec744ce081064fd9aba9c2b2f6bd15d8
+#: ../../primer/whatisbodata.rst:8 0299d90f1816456d9451b688cb5de331
 msgid ""
 "From owners' birth places to rules about shareholders' voting rights..."
 msgstr ""
 "Desde el lugar de nacimiento de los propietarios hasta las disposiciones "
 "sobre los derechos de voto de los accionistas…"
 
-#: ../../primer/whatisbodata.rst:14 6e2d2420ca564e8d9ae296670c40667d
+#: ../../primer/whatisbodata.rst:14 fb90c9591efb4ec5aead36fc3239c448
 msgid "Data relating to beneficial ownership may include:"
 msgstr ""
 "Entre los datos relacionados con los beneficiarios finales pueden contarse "
 "los siguientes:"
 
-#: ../../primer/whatisbodata.rst:16 5f4b4abacf8b4aa3bc82d07397b5129a
+#: ../../primer/whatisbodata.rst:16 c92877d6b0754da0af267cdf48971f87
 msgid "Details to identify individual owners"
 msgstr "Información que indentifique a los propietarios individuales"
 
-#: ../../primer/whatisbodata.rst:17 2cf5002ab6f24560bf5425f1b652219f
+#: ../../primer/whatisbodata.rst:17 4c34cb257b8749b1be4bb6fa8e986730
 msgid "Details of other legal entities"
 msgstr "Información sobre otras entidades jurídicas"
 
-#: ../../primer/whatisbodata.rst:18 5ae52f6d80a84788a4921aaddd7d8d3d
+#: ../../primer/whatisbodata.rst:18 654802300fd54488ac5982b87fbd78b5
 msgid "A breakdown of share holdings"
 msgstr "Un desglose de las participaciones accionarias"
 
-#: ../../primer/whatisbodata.rst:19 8f0cd8e049ae47e3ae624aa49c2271fd
+#: ../../primer/whatisbodata.rst:19 ee6a038329754050aa3fe6a9a67c0aec
 msgid "The voting rights attached to different share classes"
 msgstr "Los derechos de voto inherentes a las diferentes clases de acciones"
 
-#: ../../primer/whatisbodata.rst:20 151c6e63a1784cff9425375b52b03605
+#: ../../primer/whatisbodata.rst:20 dea9945ccb264a7485f26ea066a890ce
 msgid "Details of intermediate entities in an ownership chain"
 msgstr "Información sobre entidades intermedias en una cadena de titularidad"
 
-#: ../../primer/whatisbodata.rst:21 e6946e33f138462ca5fc5e74d10cd50b
+#: ../../primer/whatisbodata.rst:21 7363830f4cc149aa8a6987cb66c83c6d
 msgid "Rules of board membership"
 msgstr ""
 "Disposiciones relativas a la condición de miembro de un órgano de "
 "administración"
 
-#: ../../primer/whatisbodata.rst:23 b0ae0f50f1654782aba2508ba59f8274
+#: ../../primer/whatisbodata.rst:23 85bd33976dbb422895e9044ce08c3e83
 msgid "And so on."
 msgstr "Entre otras cosas."
 
-#: ../../primer/whatisbodata.rst:29 496a7a3d02d9431fa9d7bacf6920be37
+#: ../../primer/whatisbodata.rst:29 f6e5cccc307546178e8848ece38a7df0
 msgid ""
 "...data describing beneficial ownership is often scattered across "
 "documents..."
@@ -76,7 +77,7 @@ msgstr ""
 "…los datos referentes a los beneficiarios finales suelen estar dispersos en "
 "una variedad de documentos…"
 
-#: ../../primer/whatisbodata.rst:36 d6754f2d8f474954bbab9209b0622590
+#: ../../primer/whatisbodata.rst:36 0a64c2fd99c6412aa968476827123fff
 msgid ""
 "The data is often included in companies’ annual reports, founding articles "
 "and filings to regulatory authorities. Bringing it all together can build "
@@ -87,13 +88,15 @@ msgstr ""
 "reguladores. Reunir toda esa información puede darnos un panorama general "
 "sobre los beneficiarios finales de una empresa."
 
-#: ../../primer/whatisbodata.rstNone d0a73068d5ec4ecc9a30cf2904df2969
+#: ../../primer/whatisbodata.rstNone d54dba41146d4ad7906d34b49fe80af1
 msgid ""
 "A variety of information sources may hold beneficial ownership\n"
 "data"
 msgstr ""
+"Una variedad de fuentes de información pueden contener los datos de "
+"beneficiarios finales"
 
-#: ../../primer/whatisbodata.rst:48 56635ca5f2674bc7a63820c2c1ab8aa2
+#: ../../primer/whatisbodata.rst:48 58819ad8d2df4b9eb9d076c3b751da02
 msgid ""
 "...presenting challenges when sharing or collating beneficial ownership "
 "information..."
@@ -101,7 +104,7 @@ msgstr ""
 "…lo cual plantea desafíos al momento de compartir o cotejar información "
 "sobre beneficiarios finales…"
 
-#: ../../primer/whatisbodata.rst:55 5e8f6c9925a146308dec042070767ec2
+#: ../../primer/whatisbodata.rst:55 adf5d9ac8df141cba5569033607cbd14
 msgid ""
 "Accessing this data and understanding its relevance to beneficial ownership "
 "can be challenging:"
@@ -109,12 +112,12 @@ msgstr ""
 "Acceder a estos datos y entender su relevancia en relación con los "
 "beneficiarios finales puede resultar complejo:"
 
-#: ../../primer/whatisbodata.rst:58 d5138bad3a14467ba49fb75655bb48af
+#: ../../primer/whatisbodata.rst:58 42ad561c668445f0a44c0dc7a94f2a70
 msgid "The data may only be a small part of a longer document."
 msgstr ""
 "Los datos pueden ser solo una pequeña parte de un documento más extenso."
 
-#: ../../primer/whatisbodata.rst:59 9037a661c6eb4d6d8883cc68ccc64c17
+#: ../../primer/whatisbodata.rst:59 328547391d7d4f658af2cb120eef08e1
 msgid ""
 "The same types of data will be represented differently by different "
 "publishers."
@@ -122,20 +125,20 @@ msgstr ""
 "Distintos publicadores plantean los mismos tipos de datos de manera "
 "diferente."
 
-#: ../../primer/whatisbodata.rst:61 bdbb5c00f1284850ba25445d04fdfd90
+#: ../../primer/whatisbodata.rst:61 a4e6a40167774e688b37215ce58e2755
 msgid "Relevant data may appear across different documents."
 msgstr "Puede haber datos pertinentes en diferentes documentos."
 
-#: ../../primer/whatisbodata.rst:62 44241d5fe5e0423aa5afe00e28a74bcb
+#: ../../primer/whatisbodata.rst:62 49ce8a2ee4c843f296bbaf19428d7afd
 msgid "Legal terminology may differ across jurisdictions."
 msgstr "La terminología jurídica puede diferir de una jurisdicción a otra."
 
-#: ../../primer/whatisbodata.rst:68 7d87f1e51e544a178f3cfc733240bdfa
+#: ../../primer/whatisbodata.rst:68 12cc4527862d491499345ce710d4d019
 msgid "... which is becoming a frequent requirement for companies."
 msgstr ""
 "… lo cual se está convirtiendo en un requisito frecuente para las empresas."
 
-#: ../../primer/whatisbodata.rst:74 f6ff9aeaa9594109a9e84b5b38711033
+#: ../../primer/whatisbodata.rst:74 df2578c742ed4064b944b18d5734b9fc
 msgid ""
 "Increasingly, governments and regulatory authorities require beneficial "
 "ownership data to be disclosed and filed in official registers."
@@ -144,11 +147,11 @@ msgstr ""
 " los datos sobre los beneficiarios finales se divulguen y se consignen en "
 "registros oficiales."
 
-#: ../../primer/whatisbodata.rstNone 9b5c237eb69e453f91e467f41cd51df1
+#: ../../primer/whatisbodata.rstNone 454858b9909c474fbfe62985f37a9030
 msgid "Data has to be brought together for registration"
-msgstr ""
+msgstr "Los datos deben reunirse para la inscripción."
 
-#: ../../primer/whatisbodata.rst:80 da2c42e945aa4609951f5e347db948e9
+#: ../../primer/whatisbodata.rst:80 a9d8e5b7521844e18ed8583651c4559f
 msgid ""
 "These challenges require us to structure and standardise beneficial "
 "ownership data, so that it has a reliable scope and predictable format."
@@ -157,7 +160,7 @@ msgstr ""
 "beneficiarios finales, de modo que tengan un alcance fiable y un formato "
 "predecible."
 
-#: ../../primer/whatisbodata.rst:86 713e9b3691784b1f9a8e7cfb5bd9cd0b
+#: ../../primer/whatisbodata.rst:86 df5bfddf72a646c0af87da8957ee4692
 msgid ""
 "Companies already hold data about beneficial ownership. It is not always "
 "recorded, stored or shared in consistent ways, making reporting and "

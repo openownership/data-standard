@@ -5,37 +5,40 @@
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Carlos Hames, 2022
+# Stephen Abbott Pugh <stephen@openownership.org>, 2022
+# Agustina De Luca, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-04-05 17:18+0000\n"
+"POT-Creation-Date: 2022-04-13 16:07+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Agustina De Luca, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. /title
 #: schema/codelist-schema.json:1
 msgid "Codelist schema"
-msgstr ""
+msgstr "Esquema de lista de códigos"
 
 #. /description
 #: schema/codelist-schema.json:1
 msgid "Schema for BODS codelist CSV files."
-msgstr ""
+msgstr "Esquema para archivos CSV de lista de códigos BODS."
 
 #. /items/properties/code/title
 #: schema/codelist-schema.json:1
 msgid "code"
-msgstr ""
+msgstr "código"
 
 #. /items/properties/code/description
 #: schema/codelist-schema.json:1
@@ -43,36 +46,39 @@ msgid ""
 "The value to use in BODS data. Codes should match the letter case of "
 "external codes (e.g. ISO 4217) and should be camel case, otherwise."
 msgstr ""
+"El valor a utilizar en los datos BODS. Los códigos deben coincidir con las "
+"mayúsculas y minúsculas de los códigos externos (p. ej., ISO 4217) y, de lo "
+"contrario, deben ser camel case."
 
 #. /items/properties/title/title
 #: schema/codelist-schema.json:1
 msgid "title"
-msgstr ""
+msgstr "título"
 
 #. /items/properties/title/description
 #: schema/codelist-schema.json:1
 msgid "A short title for the code."
-msgstr ""
+msgstr "Un título corto para el código."
 
 #. /items/properties/description/title
 #: schema/codelist-schema.json:1
 msgid "description"
-msgstr ""
+msgstr "descripción"
 
 #. /items/properties/description/description
 #: schema/codelist-schema.json:1
 msgid "A longer-form description of the code."
-msgstr ""
+msgstr "Una descripción más larga del código."
 
 #. /items/properties/technical note/title
 #: schema/codelist-schema.json:1
 msgid "technical note"
-msgstr ""
+msgstr "nota técnica"
 
 #. /items/properties/technical note/description
 #: schema/codelist-schema.json:1
 msgid "Notes on the application of the code"
-msgstr ""
+msgstr "Notas sobre la aplicación del código"
 
 #. /definitions/StatementDate/title
 #: schema/components.json:1
@@ -301,6 +307,12 @@ msgid ""
 "3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` "
 "or `schemeName` (or both) MUST be included in an Identifier object."
 msgstr ""
+"Para declaraciones de entidades, el esquema debe ser una entrada de la lista"
+" de códigos org-id.guide (https://www.org-id.guide). Para declaraciones de "
+"persona, el esquema debe tener el patrón {JURISDICTION}-{TYPE} donde "
+"JURISDICTION es un código de país ISO de 3 dígitos y TIPO es uno de "
+"PASSPORT, TAXID o IDCARD. `scheme` o `schemeName` (o ambos) DEBEN incluirse "
+"en un objeto Identificador."
 
 #. /definitions/Identifier/properties/schemeName/title
 #: schema/components.json:1
@@ -325,6 +337,9 @@ msgid ""
 "(https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be "
 "included"
 msgstr ""
+"Cuando este identificador tenga un URI canónico "
+"(https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), se puede "
+"incluir."
 
 #. /definitions/ID/title
 #: schema/components.json:1
@@ -341,7 +356,7 @@ msgstr ""
 #. /definitions/Address/properties/address/title
 #: schema/components.json:1
 msgid "Address"
-msgstr "Domicilio"
+msgstr "Dirección"
 
 #. /definitions/Address/description
 #: schema/components.json:1
@@ -377,7 +392,7 @@ msgid ""
 "break or comma. Where postal codes are isolated fields in source systems, "
 "this `address` field SHOULD NOT include the postal code."
 msgstr ""
-"El domicilio, con cada una de sus líneas o componentes separados por un "
+"La dirección, con cada una de sus líneas o componentes separados por un "
 "salto de línea o una coma. Cuando los códigos postales son campos aislados "
 "en los sistemas fuente, el campo `address` NO DEBERÍA incluir el código "
 "postal."
@@ -401,7 +416,7 @@ msgstr "País"
 #. /definitions/Address/properties/country/description
 #: schema/components.json:1
 msgid "The 2-letter country code (ISO 3166-1) for this address."
-msgstr ""
+msgstr "El código de país de 2 letras (ISO 3166-1) para esta dirección."
 
 #. /definitions/Name/description
 #: schema/components.json:1
@@ -412,6 +427,11 @@ msgid ""
 "Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-"
 "vocabularies) definitions."
 msgstr ""
+"Un nombre por el cual se conoce a este individuo. Los nombres deben "
+"proporcionarse en `fullName` y, opcionalmente, pueden desglosarse en los "
+"campos `familyName`, `givenName` y `patronymicName`, según las definiciones "
+"del Vocabulario básico de personas de EC ISA "
+"(https://joinup.ec.europa.eu/solution/e-government-core-vocabularies)."
 
 #. /definitions/Name/properties/type/description
 #: schema/components.json:1
@@ -466,6 +486,12 @@ msgid ""
 "formal process. All given names are ordered in one field so that, for "
 "example, the given name for Johann Sebastian Bach is 'Johann Sebastian'."
 msgstr ""
+"Un nombre de pila, o múltiples nombres de pila, son los denominadores que "
+"identifican a un individuo dentro de una familia. Estos son dados a una "
+"persona por sus padres al nacer o pueden ser legalmente reconocidos como "
+"'nombres de pila' a través de un proceso formal. Todos los nombres de pila "
+"están ordenados en un campo de modo que, por ejemplo, el nombre de pila de "
+"Johann Sebastian Bach es 'Johann Sebastian'."
 
 #. /definitions/Name/properties/patronymicName/title
 #: schema/components.json:1
@@ -480,11 +506,15 @@ msgid ""
 " example. In Bulgaria and Russia, patronymic names are in every day usage, "
 "for example, the 'Sergeyevich' in 'Mikhail Sergeyevich Gorbachev'."
 msgstr ""
+"Los nombres patronímicos son importantes en algunos países. Islandia no "
+"tiene un concepto de apellido como muchos otros países europeos, por "
+"ejemplo. En Bulgaria y Rusia, los nombres patronímicos se usan todos los "
+"días, por ejemplo, el 'Sergeyevich' en 'Mikhail Sergeyevich Gorbachev'."
 
 #. /definitions/Interest/title
 #: schema/components.json:1
 msgid "Interest"
-msgstr "Participación"
+msgstr "Interés"
 
 #. /definitions/Interest/description
 #: schema/components.json:1
@@ -496,7 +526,7 @@ msgstr ""
 #. /definitions/Interest/properties/type/title
 #: schema/components.json:1
 msgid "Type of interest"
-msgstr "Tipo de participación"
+msgstr "Tipo de interés"
 
 #. /definitions/Interest/properties/type/description
 #: schema/components.json:1
@@ -510,7 +540,7 @@ msgstr ""
 #. /definitions/Interest/properties/directOrIndirect/title
 #: schema/components.json:1
 msgid "Direct or indirect"
-msgstr ""
+msgstr "Directo o indirecto"
 
 #. /definitions/Interest/properties/directOrIndirect/description
 #: schema/components.json:1
@@ -520,6 +550,10 @@ msgid ""
 "and MUST be 'direct' if such intermediaries are known not to exist. "
 "Otherwise the value MUST be 'unknown'."
 msgstr ""
+"La forma directa en que se ejerce el interés por la parte interesada. El "
+"valor DEBE ser 'indirecto' si se sabe que existen entidades o agentes "
+"intermediarios, y DEBE ser 'directo' si se sabe que dichos intermediarios no"
+" existen. De lo contrario, el valor DEBE ser 'desconocido'."
 
 #. /definitions/Interest/properties/beneficialOwnershipOrControl/title
 #: schema/components.json:1
@@ -579,6 +613,13 @@ msgid ""
 " to change these defaults, use the `exclusiveMinimum` and `exclusiveMaximum`"
 " properties."
 msgstr ""
+"Cuando se disponga de un porcentaje exacto, debe indicarse y los valores "
+"'máximo' y 'mínimo' deben establecerse como el porcentaje exacto. De lo "
+"contrario, 'máximo' y 'mínimo' se pueden utilizar para registrar el rango en"
+" el que cae la acción de este tipo de interés. Por defecto, el `mínimo` es "
+"inclusivo y el `máximo` exclusivo (valor mínimo ≤ acción< valor máximo). Si "
+"desea cambiar estos valores predeterminados, use las propiedades "
+"`exclusiveMinimum` y `exclusiveMaximum`."
 
 #. /definitions/Interest/properties/share/properties/exact/title
 #: schema/components.json:1
@@ -625,6 +666,9 @@ msgid ""
 "`minimum` value given. E.g. if `minimum` is '25', the share is at least "
 "25.1, and not simply 25."
 msgstr ""
+"Si `exclusiveMinimum` es verdadero, entonces la acción es al menos mayor que"
+" el valor `mínimo` dado. Por ejemplo, si `mínimo` es '25', la acción es al "
+"menos 25.1, y no simplemente 25."
 
 #. /definitions/Interest/properties/share/properties/exclusiveMaximum/title
 #: schema/components.json:1
@@ -638,11 +682,14 @@ msgid ""
 "`maximum` value given. E.g. if `maximum` is '50', the share is less than "
 "49.999, and not simply 50."
 msgstr ""
+"Si `exclusiveMaximum` es verdadero, entonces la acción es al menos menor que"
+" el valor `máximo` dado. Por ejemplo, si el `máximo` es '50', la acción es "
+"inferior a 49.999 y no simplemente 50."
 
 #. /definitions/Interest/properties/startDate/title
 #: schema/components.json:1
 msgid "Start date"
-msgstr ""
+msgstr "Fecha de inicio"
 
 #. /definitions/Interest/properties/startDate/description
 #: schema/components.json:1
@@ -705,6 +752,10 @@ msgid ""
 "from the root of the statement. A value of '/' indicates that the annotation"
 " applies to the whole statement."
 msgstr ""
+"Un indicador JSON RFC6901 (https://tools.ietf.org/html/rfc6901) que describe"
+" el fragmento de destino de la declaración a la que se aplica esta nota, "
+"comenzando desde la raíz de la declaración. Un valor de '/' indica que la "
+"nota se aplica a toda la declaración."
 
 #. /definitions/Annotation/properties/creationDate/title
 #: schema/components.json:1
@@ -791,6 +842,10 @@ msgid ""
 "statement, MAY be described in the `description` field. This field is "
 "REQUIRED if the value of `motivation` is 'linking'."
 msgstr ""
+"Un recurso vinculado que anota, proporciona contexto o mejora esta "
+"declaración. El contenido del recurso, o la relación con la declaración, "
+"PUEDE describirse en el campo `descripción`. Este campo es REQUERIDO si el "
+"valor de `motivación` es 'enlace'."
 
 #. /definitions/Country/description
 #: schema/components.json:1
@@ -798,6 +853,8 @@ msgid ""
 "A country MUST have a name. A country SHOULD have a 2-letter country code "
 "(ISO 3166-1)"
 msgstr ""
+"Un país DEBE tener un nombre. Un país DEBERÍA tener un código de país de 2 "
+"letras (ISO 3166-1)"
 
 #. /definitions/Country/properties/name/description
 #: schema/components.json:1
@@ -812,7 +869,7 @@ msgstr "Código de país"
 #. /definitions/Country/properties/code/description
 #: schema/components.json:1
 msgid "The 2-letter country code (ISO 3166-1) for this country."
-msgstr ""
+msgstr "El código de país de 2 letras (ISO 3166-1) para este país."
 
 #. /definitions/Jurisdiction/title
 #. /definitions/PepStatusDetails/properties/jurisdiction/title
@@ -828,6 +885,9 @@ msgid ""
 "country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the "
 "jurisdiction."
 msgstr ""
+"Una jurisdicción DEBE tener un nombre. Una jurisdicción DEBERÍA tener el "
+"código de país de 2 letras (ISO 3166-1) o el código de subdivisión (ISO "
+"3166-2) para la jurisdicción."
 
 #. /definitions/Jurisdiction/properties/name/description
 #: schema/components.json:1
@@ -837,7 +897,7 @@ msgstr "Nombre de la jurisdicción"
 #. /definitions/Jurisdiction/properties/code/title
 #: schema/components.json:1
 msgid "Country or subdivision code"
-msgstr ""
+msgstr "Código de país o subdivisión"
 
 #. /definitions/Jurisdiction/properties/code/description
 #: schema/components.json:1
@@ -845,6 +905,8 @@ msgid ""
 "The 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) "
 "for the jurisdiction."
 msgstr ""
+"El código de país de 2 letras (ISO 3166-1) o el código de subdivisión (ISO "
+"3166-2) para la jurisdicción."
 
 #. /definitions/PepStatusDetails/title
 #: schema/components.json:1
@@ -887,6 +949,11 @@ msgid ""
 "descriptive phrase from the source system, or a free-text justification. "
 "Where this field is present it should be the only field except for `source`."
 msgstr ""
+"Una explicación de la razón por la que no se proporciona el estado de PEP de"
+" la persona (es decir, `politicalExposure.status` es 'unknown'). Puede ser "
+"una frase descriptiva estándar del sistema fuente o una justificación de "
+"texto libre. Cuando este campo esté presente, debería ser el único campo "
+"excepto `fuente`."
 
 #. /definitions/PepStatusDetails/properties/jurisdiction/description
 #: schema/components.json:1
@@ -972,6 +1039,10 @@ msgid ""
 " Dedication or Open Definition Conformant "
 "(http://opendefinition.org/licenses/) license."
 msgstr ""
+"Un enlace a la licencia que se aplica a esta declaración. Se DEBE utilizar "
+"el URI canónico de la licencia. Se alienta a los editores a utilizar una "
+"licencia de Dedicación de dominio público o de conformidad con definición "
+"abierta (http://opendefinition.org/licenses/)."
 
 #. /definitions/PublicationDetails/properties/publisher/title
 #. /definitions/Publisher/title
@@ -1007,7 +1078,7 @@ msgstr ""
 #. /properties/publicListing/title
 #: schema/components.json:1 schema/entity-statement.json:1
 msgid "Public listing"
-msgstr ""
+msgstr "Listado público"
 
 #. /definitions/PublicListing/description
 #. /properties/publicListing/description
@@ -1017,11 +1088,14 @@ msgid ""
 "tradable financial instruments related to the entity), and related "
 "regulatory filings."
 msgstr ""
+"Detalles de una empresa que cotiza en bolsa, sus valores (acciones y otros "
+"instrumentos financieros negociables relacionados con la entidad) y "
+"documentos regulatorios relacionados."
 
 #. /definitions/PublicListing/properties/hasPublicListing/title
 #: schema/components.json:1
 msgid "Has public listing"
-msgstr ""
+msgstr "Tiene listado público"
 
 #. /definitions/PublicListing/properties/hasPublicListing/description
 #: schema/components.json:1
@@ -1029,11 +1103,13 @@ msgid ""
 "This value MUST be true if the entity is known to be a publicly listed "
 "company."
 msgstr ""
+"Este valor DEBE ser verdadero si se sabe que la entidad es una empresa que "
+"cotiza en bolsa."
 
 #. /definitions/PublicListing/properties/companyFilingsURLs/title
 #: schema/components.json:1
 msgid "Company filings URLs"
-msgstr ""
+msgstr "URL de presentación de la empresa"
 
 #. /definitions/PublicListing/properties/companyFilingsURLs/description
 #: schema/components.json:1
@@ -1042,11 +1118,15 @@ msgid ""
 "retrieved. URLs may point to pages maintained by regulatory bodies, stock "
 "exchanges or by the company itself."
 msgstr ""
+"La URL o las URLs donde se pueden recuperar las presentaciones "
+"reglamentarias relacionadas con las principales participaciones. Las URLs "
+"pueden apuntar a páginas mantenidas por organismos reguladores, bolsas de "
+"valores o por la propia empresa."
 
 #. /definitions/PublicListing/properties/securitiesListings/title
 #: schema/components.json:1
 msgid "Securities listings"
-msgstr ""
+msgstr "Listados de valores"
 
 #. /definitions/PublicListing/properties/securitiesListings/description
 #: schema/components.json:1
@@ -1057,23 +1137,28 @@ msgid ""
 "security is traded on more than one market, there SHOULD BE an entry for "
 "each market (or market segment)."
 msgstr ""
+"Detalles de los valores de la entidad y las bolsas y mercados públicos en "
+"los que se negocian. Todos los valores de renta variable DEBEN ESTAR "
+"enumerados aquí, además de cualquier otro valor del que puedan derivarse los"
+" beneficiarios finales. Cuando un valor se negocia en más de un mercado, "
+"DEBERÍA HABER una entrada para cada mercado (o segmento de mercado)."
 
 #. /definitions/PublicListing/properties/securitiesListings/items/title
 #. /definitions/SecuritiesListing/title
 #: schema/components.json:1
 msgid "Securities listing"
-msgstr ""
+msgstr "Listado de valores"
 
 #. /definitions/PublicListing/properties/securitiesListings/items/description
 #. /definitions/SecuritiesListing/description
 #: schema/components.json:1
 msgid "Details of a security and the market on which it is traded."
-msgstr ""
+msgstr "Detalles de un valor y el mercado en el que se negocia."
 
 #. /definitions/SecuritiesListing/properties/marketIdentifierCode/title
 #: schema/components.json:1
 msgid "Market Identifier Code (MIC)"
-msgstr ""
+msgstr "Códigos de Identificación del Mercado (MIC)"
 
 #. /definitions/SecuritiesListing/properties/marketIdentifierCode/description
 #: schema/components.json:1
@@ -1085,11 +1170,17 @@ msgid ""
 "`operatingMarketIdentifierCode`. MICs are allocated and managed under ISO "
 "standard 10383."
 msgstr ""
+"El Código de Identificación del Mercado (MIC) del mercado en el que se "
+"negocia el valor. Cuando el valor se negocia en un segmento de una bolsa, "
+"este es el MIC del segmento. Cuando se negocia en la bolsa principal, este "
+"es el MIC de la bolsa principal y DEBE coincidir con el "
+"`operatingMarketIdentifierCode`. Los MIC se asignan y gestionan según el "
+"estándar ISO 10383."
 
 #. /definitions/SecuritiesListing/properties/operatingMarketIdentifierCode/title
 #: schema/components.json:1
 msgid "Operating Market Identifier Code (Operating MIC)"
-msgstr ""
+msgstr "Código de Identificación del Mercado Operativo (MIC Operativo)"
 
 #. /definitions/SecuritiesListing/properties/operatingMarketIdentifierCode/description
 #: schema/components.json:1
@@ -1101,11 +1192,18 @@ msgid ""
 "exchange and MUST match the `marketIdentifierCode`. MICs are allocated and "
 "managed under ISO standard 10383."
 msgstr ""
+"El código de Identificación del Mercado (MIC) de la principal bolsa o "
+"plataforma de negociación que maneja transacciones en este valor. Cuando el "
+"valor se negocia en un segmento de una bolsa, este es el MIC de la "
+"plataforma de negociación o bolsa matriz. Cuando se negocia en la bolsa "
+"principal, este es el MIC de esa bolsa principal y DEBE coincidir con el "
+"`marketIdentifierCode`. Los MIC se asignan y gestionan según el estándar ISO"
+" 10383."
 
 #. /definitions/SecuritiesListing/properties/stockExchangeJurisdiction/title
 #: schema/components.json:1
 msgid "Stock exchange jurisdiction"
-msgstr ""
+msgstr "Jurisdicción bursátil"
 
 #. /definitions/SecuritiesListing/properties/stockExchangeJurisdiction/description
 #: schema/components.json:1
@@ -1114,11 +1212,14 @@ msgid ""
 "for the jurisdiction under which the exchange, market or trading platform is"
 " regulated."
 msgstr ""
+"El código de país de 2 letras (ISO 3166-1) o el código de subdivisión (ISO "
+"3166-2) de la jurisdicción bajo la cual se regula la bolsa, el mercado o la "
+"plataforma de negociación."
 
 #. /definitions/SecuritiesListing/properties/stockExchangeName/title
 #: schema/components.json:1
 msgid "Stock exchange name"
-msgstr ""
+msgstr "Nombre de la bolsa de valores"
 
 #. /definitions/SecuritiesListing/properties/stockExchangeName/description
 #: schema/components.json:1
@@ -1128,21 +1229,25 @@ msgid ""
 "name SHOULD include both elements. For example, 'London Stock Exchange - "
 "MTF'."
 msgstr ""
+"El nombre de la bolsa, mercado o plataforma de negociación en la que se "
+"negocia el valor. Si el valor se negocia en un segmento de la bolsa, "
+"entonces el nombre DEBERÍA incluir ambos elementos. Por ejemplo, 'Bolsa de "
+"Valores de Londres'."
 
 #. /definitions/SecuritiesListing/properties/security/title
 #: schema/components.json:1
 msgid "Security"
-msgstr ""
+msgstr "Valores"
 
 #. /definitions/SecuritiesListing/properties/security/description
 #: schema/components.json:1
 msgid "Identifying information of the stock or other security."
-msgstr ""
+msgstr "información identificatoria de la acción o de otro valor."
 
 #. /definitions/SecuritiesListing/properties/security/properties/idScheme/title
 #: schema/components.json:1
 msgid "Identifier scheme"
-msgstr ""
+msgstr "Esquema identificador"
 
 #. /definitions/SecuritiesListing/properties/security/properties/idScheme/description
 #: schema/components.json:1
@@ -1151,22 +1256,27 @@ msgid ""
 "identifier. For accepted schemas, see the securitiesIdentifierSchemes "
 "codelist."
 msgstr ""
+"El esquema bajo el cual se ha emitido al valor un identificador único y "
+"persistente. Para ver los esquemas aceptados, consulte la lista de códigos "
+"de securityIdentifierSchemes."
 
 #. /definitions/SecuritiesListing/properties/security/properties/id/description
 #: schema/components.json:1
 msgid "The unique identifier of the security as issued under the `idScheme`."
-msgstr ""
+msgstr "El identificador único del valor tal como se emitió bajo `idScheme`."
 
 #. /definitions/SecuritiesListing/properties/security/properties/ticker/title
 #: schema/components.json:1
 msgid "Stock ticker"
-msgstr ""
+msgstr "Tablero de cotizaciones"
 
 #. /definitions/SecuritiesListing/properties/security/properties/ticker/description
 #: schema/components.json:1
 msgid ""
 "The stock ticker identifying this security on the named stock exchange."
 msgstr ""
+"El tablero de cotizaciones que identifica este valor en la bolsa de valores "
+"mencionada."
 
 #. /title
 #: schema/entity-statement.json:1
@@ -1192,7 +1302,7 @@ msgstr "Tipo de declaración"
 #. /properties/statementType/description
 #: schema/entity-statement.json:1
 msgid "This MUST be 'entityStatement'."
-msgstr ""
+msgstr "Esto DEBE ser 'entityStatement'."
 
 #. /properties/isComponent/title
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
@@ -1230,24 +1340,25 @@ msgid ""
 "From the entityType codelist. What kind of entity is this? The "
 "'registeredEntity' code covers any legal entity created through an act of "
 "official registration, usually resulting in an identifier being assigned to "
-"the entity. The 'legalEntity' code covers other bodies with distinct legal "
-"personality (government departments, international institutions etc.).  The "
+"the entity. The ‘legalEntity’ code covers other bodies with distinct legal "
+"personality (international institutions, statutory corporations etc.). The "
 "'arrangement' code covers artificial entities, described in the data model "
 "for the purpose of associating one or more natural or legal persons together"
 " in an ownership or control relationship, but without implying that the "
 "parties to this arrangement have any other form of collective legal "
 "identity."
 msgstr ""
-"De la lista de códigos entityType. ¿De qué tipo de entidad se trata? El "
-"código \"registeredEntity\" comprende toda entidad jurídica creada mediante "
-"un acto de inscripción oficial, que por lo general da lugar a la asignación "
-"de un identificador a la entidad. El código \"legalEntity\" comprende otros "
-"organismos con personalidad jurídica propia (departamentos gubernamentales, "
-"instituciones internacionales, etc.). El código \"arrangement\" comprende "
-"entidades artificiales, descriptas en el modelo de datos con el propósito de"
-" asociar a una o más personas físicas o sujetos de derecho en una relación "
-"de titularidad o control, pero sin que ello implique que las partes de esta "
-"estructura jurídica tengan otra forma de identidad jurídica colectiva."
+"De la lista de códigos de entityType. ¿Qué clase de entidad es esta? El "
+"código de 'registeredEntity' cubre cualquier entidad jurídica creada a "
+"través de un acto de inscripción oficial, lo que generalmente resulta en la "
+"asignación de un identificador a la entidad. El código de ‘legalEntity’ "
+"cubre otros organismos con personalidad jurídica distinta (instituciones "
+"internacionales, corporaciones estatutarias, etc.). El código de "
+"'arrangement' cubre entidades artificiales, descritas en el modelo de datos "
+"con el fin de asociar una o más personas físicas o jurídicas en una relación"
+" de titularidad o control, pero sin implicar que las partes de esta "
+"estructura jurídica tengan cualquier otra forma de entidad de derecho "
+"colectiva."
 
 #. /properties/unspecifiedEntityDetails/title
 #: schema/entity-statement.json:1
@@ -1315,6 +1426,9 @@ msgid ""
 "registered entities, and arrangements). Or the state's jurisdiction (for "
 "states and state bodies)."
 msgstr ""
+"La jurisdicción en la que se registró esta entidad (para entidades legales y"
+" registradas, y arreglos). O la jurisdicción del estado (para estados y "
+"organismos estatales)."
 
 #. /properties/identifiers/title
 #: schema/entity-statement.json:1 schema/person-statement.json:1
@@ -1381,6 +1495,9 @@ msgid ""
 "(https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available for"
 " this entity this should be included."
 msgstr ""
+"Cuando haya un URI persistente "
+"(https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) disponible para "
+"esta entidad, debe incluirse."
 
 #. /properties/publicationDetails/title
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
@@ -1418,18 +1535,18 @@ msgstr "Notas sobre esta declaración o partes de ella."
 #. /properties/entitySubtype/title
 #: schema/entity-statement.json:1
 msgid "Subtype"
-msgstr ""
+msgstr "Subtipo"
 
 #. /properties/entitySubtype/description
 #: schema/entity-statement.json:1
 msgid ""
 "Further information about the type of entity described in the statement."
-msgstr ""
+msgstr "Más información sobre el tipo de entidad descrita en la declaración."
 
 #. /properties/entitySubtype/properties/generalCategory/title
 #: schema/entity-statement.json:1
 msgid "General category"
-msgstr ""
+msgstr "Categoría general"
 
 #. /properties/entitySubtype/properties/generalCategory/description
 #: schema/entity-statement.json:1
@@ -1437,11 +1554,13 @@ msgid ""
 "The general category into which the entity fits. The category classification"
 " MUST align with the `entityType` classification."
 msgstr ""
+"La categoría general en la que encaja la entidad. La clasificación de "
+"categoría DEBE alinearse con la clasificación `entityType`."
 
 #. /properties/entitySubtype/properties/localTerm/title
 #: schema/entity-statement.json:1
 msgid "Local term"
-msgstr ""
+msgstr "Término local"
 
 #. /properties/entitySubtype/properties/localTerm/description
 #: schema/entity-statement.json:1
@@ -1449,11 +1568,13 @@ msgid ""
 "The local term for the category of entity. For example, in Finland "
 "'ministeriö' for a government department."
 msgstr ""
+"El término local para la categoría de entidad. Por ejemplo, en Finlandia "
+"'ministeriö' para un departamento gubernamental."
 
 #. /properties/formedByStatute/title
 #: schema/entity-statement.json:1
 msgid "Formed by statute"
-msgstr ""
+msgstr "Formado por estatuto"
 
 #. /properties/formedByStatute/description
 #: schema/entity-statement.json:1
@@ -1462,21 +1583,24 @@ msgid ""
 "statement, where applicable. This information SHOULD be provided where a "
 "state has created an agency or other entity with specific legislation."
 msgstr ""
+"La ley que ordenó la formación de la entidad descrita en la declaración, en "
+"su caso. Esta información DEBERÍA proporcionarse cuando un estado haya "
+"creado una agencia u otra entidad con legislación específica."
 
 #. /properties/formedByStatute/properties/name/title
 #: schema/entity-statement.json:1
 msgid "Statute name"
-msgstr ""
+msgstr "Nombre del estatuto"
 
 #. /properties/formedByStatute/properties/name/description
 #: schema/entity-statement.json:1
 msgid "The name of the law."
-msgstr ""
+msgstr "El nombre de la ley."
 
 #. /properties/formedByStatute/properties/date/title
 #: schema/entity-statement.json:1
 msgid "Date"
-msgstr ""
+msgstr "Fecha"
 
 #. /properties/formedByStatute/properties/date/description
 #: schema/entity-statement.json:1
@@ -1485,6 +1609,9 @@ msgid ""
 "MM-DD. When only the year or year and month is known, these can be given as "
 "YYYY or YYYY-MM."
 msgstr ""
+"La fecha en que se aprobó la ley. La fecha DEBE estar en el formato AAAA-MM-"
+"DD. Cuando solo se conoce el año o el año y el mes, estos pueden darse como "
+"AAAA o AAAA-MM."
 
 #. /title
 #: schema/ownership-or-control-statement.json:1
@@ -1506,7 +1633,7 @@ msgstr ""
 #. /properties/statementType/description
 #: schema/ownership-or-control-statement.json:1
 msgid "This MUST be 'ownershipOrControlStatement'."
-msgstr ""
+msgstr "Esto DEBE ser 'ownershipOrControlStatement'."
 
 #. /properties/isComponent/description
 #: schema/ownership-or-control-statement.json:1
@@ -1531,9 +1658,9 @@ msgstr ""
 "`componentStatementIDs` de esa Declaración sobre Titularidad o Control "
 "primaria, (2) esta Declaración sobre Titularidad o Control DEBE preceder a "
 "la Declaración sobre Titularidad o Control primaria en un paquete o flujo "
-"del BODS, (3) se  DEBERÍA contemplar el reemplazo de esta Declaración sobe "
+"del BODS, (3) se DEBERÍA contemplar el reemplazo de esta Declaración sobre "
 "Titularidad o Control cuando se reemplace la Declaración sobre Titularidad o"
-" Control primaria, y (4) el valor de `esComponente` en la Declaración sobre "
+" Control primaria, y (4) el valor de `isComponent` en la Declaración sobre "
 "Titularidad o Control primaria DEBE ser \"false\". Cuando `isComponent` es "
 "\"false\", esta Declaración sobre Titularidad o Control es la declaración "
 "primaria de la relación entre el `subject` y la `interestedParty`."
@@ -1551,8 +1678,8 @@ msgid ""
 "`interestedParty`. If this Ownership-or-control Statement has components, it"
 " MUST itself have a `isComponent` value of 'false'."
 msgstr ""
-"Los identificadores de todas las declaraciones componentes que brindan "
-"detalles sobre la relación indirecta entre el `subject` y la "
+"Los identificadores de todos los componentes de las declaraciones que "
+"brindan detalles sobre la relación indirecta entre el `subject` y la "
 "`InterestedParty` de esta Declaración. Si la Declaración sobre Titularidad o"
 " Control posee componentes, el valor de `isComponent` de dicha declaración "
 "en sí misma DEBE ser 'false'."
@@ -1680,7 +1807,7 @@ msgstr ""
 "ownershipOrControlStatements en la misma estructura, o cuando haya una "
 "persona física que goza de titularidad o control, pero cuyo nombre o "
 "detalles no se conocen o no pueden divulgarse por algún motivo, no debería "
-"utilizarse  `unspecified` sino que debería hacerse referencia a una "
+"utilizarse `unspecified` sino que debería hacerse referencia a una "
 "`personStatement` o `entityStatement`, no obstante lo cual los detalles "
 "identificatorios PUEDEN dejarse en blanco."
 
@@ -1724,7 +1851,7 @@ msgstr ""
 #. /properties/statementType/description
 #: schema/person-statement.json:1
 msgid "This MUST be 'personStatement'."
-msgstr ""
+msgstr "Esto DEBE ser 'personStatement'."
 
 #. /properties/isComponent/description
 #: schema/person-statement.json:1
@@ -1742,13 +1869,13 @@ msgstr ""
 "¿Esta Declaración sobre Persona representa un componente de una relación de "
 "titularidad o control indirecta? Cuando `isComponent` es \"true\": (1) la "
 "`statementID` de esta Declaración sobre Persona DEBE ser un elemento en el "
-"arreglo `componentStatementIDs` de esa Declaración sobre Titularidad o "
-"Control primaria, (2) esta Declaración sobre Persona DEBE preceder a la "
-"Declaración de Titularidad o Control primaria en un paquete o flujo del "
-"BODS, (3) se DEBERÍA contemplar el reemplazo de esta Declaración sobre "
-"Persona cuando se reemplace la Declaración sobre Titularidad o Control "
-"primaria. El valor de `isComponent` en la Declaración sobre Titularidad o "
-"Control primaria DEBE ser \"false\"."
+"arreglo de datos `componentStatementIDs` de esa Declaración sobre "
+"Titularidad o Control primaria, (2) esta Declaración sobre Persona DEBE "
+"preceder a la Declaración sobre Titularidad o Control primaria en un paquete"
+" o flujo del BODS, (3) se DEBERÍA contemplar el reemplazo de esta "
+"Declaración sobre Persona cuando se reemplace la Declaración sobre "
+"Titularidad o Control primaria. El valor de `isComponent` en la Declaración "
+"sobre Titularidad o Control primaria DEBE ser \"false\"."
 
 #. /properties/personType/title
 #: schema/person-statement.json:1
@@ -1891,8 +2018,8 @@ msgstr ""
 
 #. /properties/politicalExposure/title
 #: schema/person-statement.json:1
-msgid "Political Exposure"
-msgstr ""
+msgid "Political exposure"
+msgstr "Exposición política"
 
 #. /properties/politicalExposure/description
 #: schema/person-statement.json:1
@@ -1902,6 +2029,15 @@ msgid ""
 " (PEP) declarations are expected as part of beneficial ownership "
 "declarations."
 msgstr ""
+"Información sobre si la persona descrita en esta declaración está expuesta "
+"políticamente y de qué manera. Use esta propiedad solo si se esperan "
+"declaraciones de personas políticamente expuestas (PEP) como parte de las "
+"declaraciones de beneficiarios finales."
+
+#. /properties/politicalExposure/properties/status/title
+#: schema/person-statement.json:1
+msgid "Politically exposed person (PEP) status"
+msgstr "Estado de persona políticamente expuesta (PEP)"
 
 #. /properties/politicalExposure/properties/status/description
 #: schema/person-statement.json:1
@@ -1912,11 +2048,16 @@ msgid ""
 "missing; the reason for the missing data SHOULD be supplied in the details "
 "array."
 msgstr ""
+"Este valor es 'isPep' o 'isNotPep' según que la persona descrita por esta "
+"declaración tenga la condición de persona políticamente expuesta (PEP). Un "
+"valor 'desconocido' significa que se espera una declaración de estado PEP "
+"pero falta; el motivo de la falta de datos DEBERÍA proporcionarse en el "
+"arreglo de datos de detalles."
 
 #. /properties/politicalExposure/properties/details/title
 #: schema/person-statement.json:1
-msgid "Politically Exposed Person Details"
-msgstr ""
+msgid "Politically exposed person (PEP) details"
+msgstr "Datos de la persona políticamente expuesta (PEP)"
 
 #. /properties/politicalExposure/properties/details/description
 #: schema/person-statement.json:1
@@ -1924,3 +2065,5 @@ msgid ""
 "One or more descriptions of this person's Politically Exposed Person (PEP) "
 "status."
 msgstr ""
+"Una o más descripciones del estado de Persona Políticamente Expuesta (PEP) "
+"de esta persona."

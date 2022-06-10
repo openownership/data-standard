@@ -5,15 +5,18 @@
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Galia Williams, 2022
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2022
+# Stephen Abbott Pugh <stephen@openownership.org>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-04-05 17:18+0000\n"
+"POT-Creation-Date: 2022-04-13 16:07+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Stephen Abbott Pugh <stephen@openownership.org>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,17 +28,17 @@ msgstr ""
 #. /title
 #: schema/codelist-schema.json:1
 msgid "Codelist schema"
-msgstr ""
+msgstr "Схема списка допустимых значений"
 
 #. /description
 #: schema/codelist-schema.json:1
 msgid "Schema for BODS codelist CSV files."
-msgstr ""
+msgstr "Схема для CSV-файлов списка допустимых значений СДБВ."
 
 #. /items/properties/code/title
 #: schema/codelist-schema.json:1
 msgid "code"
-msgstr ""
+msgstr "код"
 
 #. /items/properties/code/description
 #: schema/codelist-schema.json:1
@@ -43,36 +46,39 @@ msgid ""
 "The value to use in BODS data. Codes should match the letter case of "
 "external codes (e.g. ISO 4217) and should be camel case, otherwise."
 msgstr ""
+"Значение, используемое в данных СДБВ. Регистр кодов должен совпадать с "
+"регистром внешних кодов (например, ISO 4217), в противном случае "
+"рекомендуется использовать Camel-регистр."
 
 #. /items/properties/title/title
 #: schema/codelist-schema.json:1
 msgid "title"
-msgstr ""
+msgstr "заголовок"
 
 #. /items/properties/title/description
 #: schema/codelist-schema.json:1
 msgid "A short title for the code."
-msgstr ""
+msgstr "Короткий заголовок кода."
 
 #. /items/properties/description/title
 #: schema/codelist-schema.json:1
 msgid "description"
-msgstr ""
+msgstr "описание"
 
 #. /items/properties/description/description
 #: schema/codelist-schema.json:1
 msgid "A longer-form description of the code."
-msgstr ""
+msgstr "Детальное описание кода"
 
 #. /items/properties/technical note/title
 #: schema/codelist-schema.json:1
 msgid "technical note"
-msgstr ""
+msgstr "техническое примечание"
 
 #. /items/properties/technical note/description
 #: schema/codelist-schema.json:1
 msgid "Notes on the application of the code"
-msgstr ""
+msgstr "Примечания по применению этого кода"
 
 #. /definitions/StatementDate/title
 #: schema/components.json:1
@@ -299,6 +305,13 @@ msgid ""
 "3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` "
 "or `schemeName` (or both) MUST be included in an Identifier object."
 msgstr ""
+"Для характеристики сущности схема должна представлять собой значение из "
+"списка допустимых значений org-id.guide (https://www.org-id.guide). Для "
+"характеристики физического лица схема должна иметь структуру "
+"{JURISDICTION}-{TYPE}, где JURISDICTION — это 3-значный код страны согласно "
+"с ISO, а TYPE — PASSPORT, TAXID или IDCARD (паспорт, ИНН или удостоверение "
+"личности). Свойство `scheme` или `schemeName` (или оба) ДОЛЖНЫ быть включены"
+" в объект Identifier."
 
 #. /definitions/Identifier/properties/schemeName/title
 #: schema/components.json:1
@@ -323,6 +336,8 @@ msgid ""
 "(https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be "
 "included"
 msgstr ""
+"Если идентификатор имеет общепринятый код URI "
+"(https://ru.wikipedia.org/wiki/URI), можно включить его."
 
 #. /definitions/ID/title
 #: schema/components.json:1
@@ -395,7 +410,7 @@ msgstr "Страна"
 #. /definitions/Address/properties/country/description
 #: schema/components.json:1
 msgid "The 2-letter country code (ISO 3166-1) for this address."
-msgstr ""
+msgstr "2-буквенный код страны (ISO 3166-1) для указанного адреса."
 
 #. /definitions/Name/description
 #: schema/components.json:1
@@ -406,6 +421,11 @@ msgid ""
 "Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-"
 "vocabularies) definitions."
 msgstr ""
+"ФИО, под которыми известен этот человек. ФИО необходимо указывать в поле "
+"`fullName`, а также по желанию их можно разбить на поля `familyName`, "
+"`givenName` и `patronymicName`, в зависимости от определений в словаре EC "
+"ISA Core Person Vocabulary "
+"(https://joinup.ec.europa.eu/solution/e-government-core-vocabularies)."
 
 #. /definitions/Name/properties/type/description
 #: schema/components.json:1
@@ -459,6 +479,10 @@ msgid ""
 "formal process. All given names are ordered in one field so that, for "
 "example, the given name for Johann Sebastian Bach is 'Johann Sebastian'."
 msgstr ""
+"Имя или несколько имен, которыми этого человека называют в семье. Такие "
+"имена человеку дают родители при рождении, а также они могут признаваться "
+"юридически в соответствии с формальным процессом. Все имена указываются в "
+"одном поле. Например, имя Иоганна Себастьян Бах — «Иоганн Себастьян»."
 
 #. /definitions/Name/properties/patronymicName/title
 #: schema/components.json:1
@@ -473,6 +497,10 @@ msgid ""
 " example. In Bulgaria and Russia, patronymic names are in every day usage, "
 "for example, the 'Sergeyevich' in 'Mikhail Sergeyevich Gorbachev'."
 msgstr ""
+"Отчество — важная часть имени в некоторых странах. Например, в Исландии "
+"отсутствует понятие фамилии в том виде, в котором оно существует во многих "
+"европейских странах. В Болгарии и России отчество используется повсеместно, "
+"например «Сергеевич» в имени «Михаил Сергеевич Горбачев»."
 
 #. /definitions/Interest/title
 #: schema/components.json:1
@@ -504,7 +532,7 @@ msgstr ""
 #. /definitions/Interest/properties/directOrIndirect/title
 #: schema/components.json:1
 msgid "Direct or indirect"
-msgstr ""
+msgstr "Прямая или косвенная"
 
 #. /definitions/Interest/properties/directOrIndirect/description
 #: schema/components.json:1
@@ -514,6 +542,11 @@ msgid ""
 "and MUST be 'direct' if such intermediaries are known not to exist. "
 "Otherwise the value MUST be 'unknown'."
 msgstr ""
+"То, какую долю участия имеет заинтересованная сторона — прямую или "
+"косвенную. Значение ДОЛЖНО быть 'indirect' (косвенная), если присутствуют "
+"промежуточные сущности или агенты, и 'direct' (прямая), если таких "
+"посредников нет. В противном случае значение ДОЛЖНО быть 'unknown' "
+"(неизвестно)."
 
 #. /definitions/Interest/properties/beneficialOwnershipOrControl/title
 #: schema/components.json:1
@@ -573,6 +606,13 @@ msgid ""
 " to change these defaults, use the `exclusiveMinimum` and `exclusiveMaximum`"
 " properties."
 msgstr ""
+"Если известен определенный процент, его необходимо указать, а значениям "
+"`maximum` и `minimum` задать то же значение, что у и точного процента. Также"
+" `maximum` и `minimum` можно использовать для записи диапазона, в который "
+"входит такая доля участия. По умолчанию значение `minimum` является "
+"включительным, а `maximum` — исключительным (минимальное значение ≤ доля "
+"участия < максимальное значение). Если вы хотите изменить стандартные "
+"настройки, используйте свойства `exclusiveMinimum` и `exclusiveMaximum`."
 
 #. /definitions/Interest/properties/share/properties/exact/title
 #: schema/components.json:1
@@ -621,6 +661,9 @@ msgid ""
 "`minimum` value given. E.g. if `minimum` is '25', the share is at least "
 "25.1, and not simply 25."
 msgstr ""
+"Если свойство `exclusiveMinimum` имеет значение true, тогда доля должна быть"
+" больше указанного значения `minimum`. Например, если `minimum` составляет "
+"25, доля равна как минимум 25,1, а не 25."
 
 #. /definitions/Interest/properties/share/properties/exclusiveMaximum/title
 #: schema/components.json:1
@@ -634,11 +677,14 @@ msgid ""
 "`maximum` value given. E.g. if `maximum` is '50', the share is less than "
 "49.999, and not simply 50."
 msgstr ""
+"Если свойство `exclusiveMaximum` имеет значение true, тогда доля должна быть"
+" меньше указанного значения `maximum`. Например, если `maximum` составляет "
+"50, доля меньше 49,999, а не 50."
 
 #. /definitions/Interest/properties/startDate/title
 #: schema/components.json:1
 msgid "Start date"
-msgstr ""
+msgstr "Начальная дата"
 
 #. /definitions/Interest/properties/startDate/description
 #: schema/components.json:1
@@ -702,6 +748,11 @@ msgid ""
 "from the root of the statement. A value of '/' indicates that the annotation"
 " applies to the whole statement."
 msgstr ""
+"Путь к элементу json-документа RFC6901 "
+"(https://tools.ietf.org/html/rfc6901), который описывает целевой фрагмент "
+"характеристики, к которой применяется это примечание, начиная с корня "
+"характеристики. Значение «/» указывает, что примечание применяется ко всей "
+"характеристике."
 
 #. /definitions/Annotation/properties/creationDate/title
 #: schema/components.json:1
@@ -792,6 +843,10 @@ msgid ""
 "statement, MAY be described in the `description` field. This field is "
 "REQUIRED if the value of `motivation` is 'linking'."
 msgstr ""
+"Связанный ресурс, который добавляет к характеристике примечание, контекст и "
+"улучшает ее. Содержимое ресурса или его связь с характеристикой МОГУТ "
+"описываться в поле `description`. Это ОБЯЗАТЕЛЬНОЕ поле, если значение "
+"`motivation` — 'linking'."
 
 #. /definitions/Country/description
 #: schema/components.json:1
@@ -799,6 +854,8 @@ msgid ""
 "A country MUST have a name. A country SHOULD have a 2-letter country code "
 "(ISO 3166-1)"
 msgstr ""
+"У страны ДОЛЖНО быть название. РЕКОМЕНДУЕТСЯ, чтобы у страны был 2-буквенный"
+" код (ISO 3166-1)"
 
 #. /definitions/Country/properties/name/description
 #: schema/components.json:1
@@ -813,7 +870,7 @@ msgstr "Код страны"
 #. /definitions/Country/properties/code/description
 #: schema/components.json:1
 msgid "The 2-letter country code (ISO 3166-1) for this country."
-msgstr ""
+msgstr "2-буквенный код страны (ISO 3166-1)."
 
 #. /definitions/Jurisdiction/title
 #. /definitions/PepStatusDetails/properties/jurisdiction/title
@@ -829,6 +886,9 @@ msgid ""
 "country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the "
 "jurisdiction."
 msgstr ""
+"У юрисдикции ДОЛЖНО быть название. РЕКОМЕНДУЕТСЯ, чтобы у юрисдикции был "
+"2-буквенный код страны (ISO 3166-1) или код подразделения юрисдикции (ISO "
+"3166-2)."
 
 #. /definitions/Jurisdiction/properties/name/description
 #: schema/components.json:1
@@ -838,7 +898,7 @@ msgstr "Название юрисдикции"
 #. /definitions/Jurisdiction/properties/code/title
 #: schema/components.json:1
 msgid "Country or subdivision code"
-msgstr ""
+msgstr "Код страны или подразделения"
 
 #. /definitions/Jurisdiction/properties/code/description
 #: schema/components.json:1
@@ -846,6 +906,8 @@ msgid ""
 "The 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) "
 "for the jurisdiction."
 msgstr ""
+"2-буквенный код страны (ISO 3166-1) или код подразделения юрисдикции (ISO "
+"3166-2)."
 
 #. /definitions/PepStatusDetails/title
 #: schema/components.json:1
@@ -886,6 +948,11 @@ msgid ""
 "descriptive phrase from the source system, or a free-text justification. "
 "Where this field is present it should be the only field except for `source`."
 msgstr ""
+"Объяснение причины, почему не указан статус ПДЛ физического лица (например, "
+"`politicalExposure.status` — 'unknown'). Это может быть стандартная "
+"описательная фраза из исходной системы или пояснение в форме "
+"неструктурированного текста. Если это поле присутствует, оно должно быть "
+"единственным, кроме поля `source`."
 
 #. /definitions/PepStatusDetails/properties/jurisdiction/description
 #: schema/components.json:1
@@ -972,6 +1039,11 @@ msgid ""
 " Dedication or Open Definition Conformant "
 "(http://opendefinition.org/licenses/) license."
 msgstr ""
+"Ссылка на лицензию, которая применяется к этой характеристике. РЕКОМЕНДУЕТСЯ"
+" использовать общепринятый код URI лицензии. Издателям рекомендуется "
+"использовать лицензию, переданную в общественное достояние, или лицензию, "
+"соответствующую определениям о свободном доступе "
+"(http://opendefinition.org/licenses/)."
 
 #. /definitions/PublicationDetails/properties/publisher/title
 #. /definitions/Publisher/title
@@ -1004,7 +1076,7 @@ msgstr "URL родительского набора данных домашне�
 #. /properties/publicListing/title
 #: schema/components.json:1 schema/entity-statement.json:1
 msgid "Public listing"
-msgstr ""
+msgstr "Регистрация на фондовой бирже"
 
 #. /definitions/PublicListing/description
 #. /properties/publicListing/description
@@ -1014,11 +1086,14 @@ msgid ""
 "tradable financial instruments related to the entity), and related "
 "regulatory filings."
 msgstr ""
+"Информация о регистрации на фондовой бирже компании, ее ценных бумаг (акций "
+"и других продаваемых финансовых инструментов, связанных с сущностью), и "
+"связанными с ними документами, поданными в регулирующие органы."
 
 #. /definitions/PublicListing/properties/hasPublicListing/title
 #: schema/components.json:1
 msgid "Has public listing"
-msgstr ""
+msgstr "Зарегистрирована на фондовой бирже"
 
 #. /definitions/PublicListing/properties/hasPublicListing/description
 #: schema/components.json:1
@@ -1026,11 +1101,13 @@ msgid ""
 "This value MUST be true if the entity is known to be a publicly listed "
 "company."
 msgstr ""
+"Это значение ДОЛЖНО быть «true», если известно, что сущность является "
+"компанией, зарегистрированной на фондовой бирже."
 
 #. /definitions/PublicListing/properties/companyFilingsURLs/title
 #: schema/components.json:1
 msgid "Company filings URLs"
-msgstr ""
+msgstr "URL-адреса документов компании"
 
 #. /definitions/PublicListing/properties/companyFilingsURLs/description
 #: schema/components.json:1
@@ -1039,11 +1116,14 @@ msgid ""
 "retrieved. URLs may point to pages maintained by regulatory bodies, stock "
 "exchanges or by the company itself."
 msgstr ""
+"URL-адрес(-а), где можно найти поданные в регулирующие органы документы, "
+"связанные с основной собственностью. URL-адреса могут указывать на страницы,"
+" принадлежащие регулирующим органам, фондовым биржам или самой компании."
 
 #. /definitions/PublicListing/properties/securitiesListings/title
 #: schema/components.json:1
 msgid "Securities listings"
-msgstr ""
+msgstr "Регистрация ценных бумаг на фондовой бирже"
 
 #. /definitions/PublicListing/properties/securitiesListings/description
 #: schema/components.json:1
@@ -1054,23 +1134,28 @@ msgid ""
 "security is traded on more than one market, there SHOULD BE an entry for "
 "each market (or market segment)."
 msgstr ""
+"Информация о ценных бумагах компании, а также о публичных биржах и рынках, "
+"на которых они продаются. Здесь РЕКОМЕНДУЕТСЯ указать все долевые ценные "
+"бумаги, а также другие ценные бумаги, с которыми связано бенефициарное "
+"владение. Если ценные бумаги продаются на нескольких рынках, РЕКОМЕНДУЕТСЯ "
+"добавить запись по каждому рынку (или сегменту рынка)."
 
 #. /definitions/PublicListing/properties/securitiesListings/items/title
 #. /definitions/SecuritiesListing/title
 #: schema/components.json:1
 msgid "Securities listing"
-msgstr ""
+msgstr "Регистрация ценной бумаги на фондовой бирже"
 
 #. /definitions/PublicListing/properties/securitiesListings/items/description
 #. /definitions/SecuritiesListing/description
 #: schema/components.json:1
 msgid "Details of a security and the market on which it is traded."
-msgstr ""
+msgstr "Информация о ценной бумаге и рынке, на котором она продается."
 
 #. /definitions/SecuritiesListing/properties/marketIdentifierCode/title
 #: schema/components.json:1
 msgid "Market Identifier Code (MIC)"
-msgstr ""
+msgstr "Код идентификатора рынка (MIC)"
 
 #. /definitions/SecuritiesListing/properties/marketIdentifierCode/description
 #: schema/components.json:1
@@ -1082,11 +1167,17 @@ msgid ""
 "`operatingMarketIdentifierCode`. MICs are allocated and managed under ISO "
 "standard 10383."
 msgstr ""
+"Код идентификатора рынка (MIC), на котором продается ценная бумага. Если "
+"ценная бумага продается на сегменте фондовой биржи, указывается MIC этого "
+"сегмента. Если она продается на главной бирже, указывается MIC главной "
+"биржи, который ДОЛЖЕН соответствовать значению "
+"`operatingMarketIdentifierCode`. Коды MIC присваиваются и контролируются в "
+"соответствии со стандартом ISO 10383."
 
 #. /definitions/SecuritiesListing/properties/operatingMarketIdentifierCode/title
 #: schema/components.json:1
 msgid "Operating Market Identifier Code (Operating MIC)"
-msgstr ""
+msgstr "Операционный код идентификатора рынка (операционный MIC)"
 
 #. /definitions/SecuritiesListing/properties/operatingMarketIdentifierCode/description
 #: schema/components.json:1
@@ -1098,11 +1189,17 @@ msgid ""
 "exchange and MUST match the `marketIdentifierCode`. MICs are allocated and "
 "managed under ISO standard 10383."
 msgstr ""
+"Код идентификатора рынка (MIC) главной биржи или торговой платформы, на "
+"которой продается эта ценная бумага. Если ценная бумага продается на "
+"сегменте фондовой биржи, указывается MIC биржи или платформы высшего уровня."
+" Если она продается на главной бирже, указывается MIC главной биржи, который"
+" ДОЛЖЕН соответствовать значению `marketIdentifierCode`. Коды MIC "
+"присваиваются и контролируются в соответствии со стандартом ISO 10383."
 
 #. /definitions/SecuritiesListing/properties/stockExchangeJurisdiction/title
 #: schema/components.json:1
 msgid "Stock exchange jurisdiction"
-msgstr ""
+msgstr "Юрисдикция фондовой биржи"
 
 #. /definitions/SecuritiesListing/properties/stockExchangeJurisdiction/description
 #: schema/components.json:1
@@ -1111,11 +1208,13 @@ msgid ""
 "for the jurisdiction under which the exchange, market or trading platform is"
 " regulated."
 msgstr ""
+"2-буквенный код страны (ISO 3166-1) или код подразделения (ISO 3166-2) "
+"юрисдикции, в которой регулируется биржа, рынок или торговая платформа."
 
 #. /definitions/SecuritiesListing/properties/stockExchangeName/title
 #: schema/components.json:1
 msgid "Stock exchange name"
-msgstr ""
+msgstr "Название фондовой биржи"
 
 #. /definitions/SecuritiesListing/properties/stockExchangeName/description
 #: schema/components.json:1
@@ -1125,21 +1224,24 @@ msgid ""
 "name SHOULD include both elements. For example, 'London Stock Exchange - "
 "MTF'."
 msgstr ""
+"Название биржи, рынка или торговой платформы, на которых продается ценная "
+"бумага. Если ценная бумага продается на сегменте биржи, РЕКОМЕНДУЕТСЯ "
+"указывать оба элемента. Например, 'London Stock Exchange - MTF'."
 
 #. /definitions/SecuritiesListing/properties/security/title
 #: schema/components.json:1
 msgid "Security"
-msgstr ""
+msgstr "Ценная бумага"
 
 #. /definitions/SecuritiesListing/properties/security/description
 #: schema/components.json:1
 msgid "Identifying information of the stock or other security."
-msgstr ""
+msgstr "Идентифицирующая информация акции или другой ценной бумаги."
 
 #. /definitions/SecuritiesListing/properties/security/properties/idScheme/title
 #: schema/components.json:1
 msgid "Identifier scheme"
-msgstr ""
+msgstr "Схема идентификатора"
 
 #. /definitions/SecuritiesListing/properties/security/properties/idScheme/description
 #: schema/components.json:1
@@ -1148,22 +1250,29 @@ msgid ""
 "identifier. For accepted schemas, see the securitiesIdentifierSchemes "
 "codelist."
 msgstr ""
+"Схема, согласно которой ценной бумаге присваивается уникальный постоянный "
+"идентификатор. Одобренные схемы см. в списке допустимых значений "
+"securitiesIdentifierSchemes."
 
 #. /definitions/SecuritiesListing/properties/security/properties/id/description
 #: schema/components.json:1
 msgid "The unique identifier of the security as issued under the `idScheme`."
 msgstr ""
+"Уникальный идентификатор ценной бумаги, присвоенный в соответствии с "
+"`idScheme`."
 
 #. /definitions/SecuritiesListing/properties/security/properties/ticker/title
 #: schema/components.json:1
 msgid "Stock ticker"
-msgstr ""
+msgstr "Биржевой символ"
 
 #. /definitions/SecuritiesListing/properties/security/properties/ticker/description
 #: schema/components.json:1
 msgid ""
 "The stock ticker identifying this security on the named stock exchange."
 msgstr ""
+"Биржевой символ, идентифицирующий ценную бумагу на соответствующей фондовой "
+"бирже."
 
 #. /title
 #: schema/entity-statement.json:1
@@ -1188,7 +1297,7 @@ msgstr "Тип записи"
 #. /properties/statementType/description
 #: schema/entity-statement.json:1
 msgid "This MUST be 'entityStatement'."
-msgstr ""
+msgstr "ДОЛЖЕН иметь значение 'entityStatement'."
 
 #. /properties/isComponent/title
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
@@ -1224,22 +1333,22 @@ msgid ""
 "From the entityType codelist. What kind of entity is this? The "
 "'registeredEntity' code covers any legal entity created through an act of "
 "official registration, usually resulting in an identifier being assigned to "
-"the entity. The 'legalEntity' code covers other bodies with distinct legal "
-"personality (government departments, international institutions etc.).  The "
+"the entity. The ‘legalEntity’ code covers other bodies with distinct legal "
+"personality (international institutions, statutory corporations etc.). The "
 "'arrangement' code covers artificial entities, described in the data model "
 "for the purpose of associating one or more natural or legal persons together"
 " in an ownership or control relationship, but without implying that the "
 "parties to this arrangement have any other form of collective legal "
 "identity."
 msgstr ""
-"Из списка допустимых значений entityType. Какого типа этот субъект? Значение"
+"Из списка допустимых значений entityType. Какого типа эта сущность? Значение"
 " 'registeredEntity' относится к любому юридическому лицу, созданному через "
-"акт официальной регистрации, в результате чего, как правило, субъекту "
-"присваивается идентификатор. Значение 'legalEntity' распространяется на "
+"акт официальной регистрации, в результате чего, как правило, сущности "
+"присваивается идентификатор. Значение ‘legalEntity’ распространяется на "
 "другие организации с явно выраженным статусом юридического лица "
-"(государственные ведомства, международные организации и т. д.). Значение "
+"(международные учреждения, публично-правовые организации и т. д.). Значение "
 "'arrangement' (соглашение о владении и контроле) распространяется на "
-"искусственные субъекты, описанные в модели данных в целях связывания воедино"
+"искусственные сущности, описанные в модели данных в целях связывания воедино"
 " одного или нескольких физических или юридических лиц в отношениях владения "
 "или контроля, но не подразумевая, что стороны такого соглашения о владении и"
 " контроле имеют какую-либо иную форму коллективной правовой идентичности."
@@ -1311,6 +1420,9 @@ msgid ""
 "registered entities, and arrangements). Or the state's jurisdiction (for "
 "states and state bodies)."
 msgstr ""
+"Юрисдикция, в которой была зарегистрирована сущность (для юридических лиц и "
+"зарегистрированных субъектов, а также соглашений). Или юрисдикция "
+"государства (для государств и государственных органов)."
 
 #. /properties/identifiers/title
 #: schema/entity-statement.json:1 schema/person-statement.json:1
@@ -1377,6 +1489,9 @@ msgid ""
 "(https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) is available for"
 " this entity this should be included."
 msgstr ""
+"Если доступен постоянный URI "
+"(https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), его необходимо "
+"включить для такой сущности."
 
 #. /properties/publicationDetails/title
 #: schema/entity-statement.json:1 schema/ownership-or-control-statement.json:1
@@ -1414,18 +1529,19 @@ msgstr "Примечания о данной записи или отдельн�
 #. /properties/entitySubtype/title
 #: schema/entity-statement.json:1
 msgid "Subtype"
-msgstr ""
+msgstr "Подтип"
 
 #. /properties/entitySubtype/description
 #: schema/entity-statement.json:1
 msgid ""
 "Further information about the type of entity described in the statement."
 msgstr ""
+"Дополнительная информация о типе сущности, описанной в характеристике."
 
 #. /properties/entitySubtype/properties/generalCategory/title
 #: schema/entity-statement.json:1
 msgid "General category"
-msgstr ""
+msgstr "Общая категория"
 
 #. /properties/entitySubtype/properties/generalCategory/description
 #: schema/entity-statement.json:1
@@ -1433,11 +1549,13 @@ msgid ""
 "The general category into which the entity fits. The category classification"
 " MUST align with the `entityType` classification."
 msgstr ""
+"Общая категория, к которой относится сущность. Классификация по категориям "
+"ДОЛЖНА соответствовать классификации `entityType`."
 
 #. /properties/entitySubtype/properties/localTerm/title
 #: schema/entity-statement.json:1
 msgid "Local term"
-msgstr ""
+msgstr "Местное наименование"
 
 #. /properties/entitySubtype/properties/localTerm/description
 #: schema/entity-statement.json:1
@@ -1445,11 +1563,13 @@ msgid ""
 "The local term for the category of entity. For example, in Finland "
 "'ministeriö' for a government department."
 msgstr ""
+"Местное наименование категории сущности. Например, в Финляндии "
+"государственное ведомство называется «ministeriö»."
 
 #. /properties/formedByStatute/title
 #: schema/entity-statement.json:1
 msgid "Formed by statute"
-msgstr ""
+msgstr "Учреждено на основании устава"
 
 #. /properties/formedByStatute/description
 #: schema/entity-statement.json:1
@@ -1458,21 +1578,25 @@ msgid ""
 "statement, where applicable. This information SHOULD be provided where a "
 "state has created an agency or other entity with specific legislation."
 msgstr ""
+"Закон, который регулирует учреждение сущности, описанной в характеристике (в"
+" соответствующих случаях). Эту информацию РЕКОМЕНДУЕТСЯ указывать, если "
+"агентство или другую сущность создает государство в соответствии с "
+"конкретными законами."
 
 #. /properties/formedByStatute/properties/name/title
 #: schema/entity-statement.json:1
 msgid "Statute name"
-msgstr ""
+msgstr "Название устава"
 
 #. /properties/formedByStatute/properties/name/description
 #: schema/entity-statement.json:1
 msgid "The name of the law."
-msgstr ""
+msgstr "Название закона."
 
 #. /properties/formedByStatute/properties/date/title
 #: schema/entity-statement.json:1
 msgid "Date"
-msgstr ""
+msgstr "Дата"
 
 #. /properties/formedByStatute/properties/date/description
 #: schema/entity-statement.json:1
@@ -1481,6 +1605,9 @@ msgid ""
 "MM-DD. When only the year or year and month is known, these can be given as "
 "YYYY or YYYY-MM."
 msgstr ""
+"Дата принятия закона. Дату РЕКОМЕНДУЕТСЯ указывать в формате YYYY-MM-DD. "
+"Если известен только год или год и месяц, то их можно указать в формате YYYY"
+" или YYYY-MM."
 
 #. /title
 #: schema/ownership-or-control-statement.json:1
@@ -1502,7 +1629,7 @@ msgstr ""
 #. /properties/statementType/description
 #: schema/ownership-or-control-statement.json:1
 msgid "This MUST be 'ownershipOrControlStatement'."
-msgstr ""
+msgstr "ДОЛЖНА иметь значение 'ownershipOrControlStatement'."
 
 #. /properties/isComponent/description
 #: schema/ownership-or-control-statement.json:1
@@ -1720,7 +1847,7 @@ msgstr ""
 #. /properties/statementType/description
 #: schema/person-statement.json:1
 msgid "This MUST be 'personStatement'."
-msgstr ""
+msgstr "ДОЛЖНА иметь значение 'personStatement'."
 
 #. /properties/isComponent/description
 #: schema/person-statement.json:1
@@ -1889,8 +2016,8 @@ msgstr ""
 
 #. /properties/politicalExposure/title
 #: schema/person-statement.json:1
-msgid "Political Exposure"
-msgstr ""
+msgid "Political exposure"
+msgstr "Политический статус"
 
 #. /properties/politicalExposure/description
 #: schema/person-statement.json:1
@@ -1900,6 +2027,15 @@ msgid ""
 " (PEP) declarations are expected as part of beneficial ownership "
 "declarations."
 msgstr ""
+"Информация о том, является ли описанное в характеристике физическое лицо "
+"публичным должностным лицом и в каком виде. Это свойство используется, "
+"только если в рамках декларации бенефициарного владельца ожидаются "
+"декларации о статусе публичного должностного лица (ПДЛ)."
+
+#. /properties/politicalExposure/properties/status/title
+#: schema/person-statement.json:1
+msgid "Politically exposed person (PEP) status"
+msgstr "Статус публичного должностного лица (ПДЛ)"
 
 #. /properties/politicalExposure/properties/status/description
 #: schema/person-statement.json:1
@@ -1910,11 +2046,16 @@ msgid ""
 "missing; the reason for the missing data SHOULD be supplied in the details "
 "array."
 msgstr ""
+"Это значение может быть 'isPep' или 'isNotPep' в зависимости от того, имеет "
+"ли физическое лицо, описанное в этой характеристике, статус публичного "
+"должностного лица (ПДЛ). Значение 'unknown' означает, что статус ПДЛ должен "
+"быть, но не указан. В массиве информации РЕКОМЕНДУЕТСЯ указать причину "
+"отсутствия таких данных."
 
 #. /properties/politicalExposure/properties/details/title
 #: schema/person-statement.json:1
-msgid "Politically Exposed Person Details"
-msgstr ""
+msgid "Politically exposed person (PEP) details"
+msgstr "Информация о публичном должностном лице (ПДЛ)"
 
 #. /properties/politicalExposure/properties/details/description
 #: schema/person-statement.json:1
@@ -1922,3 +2063,5 @@ msgid ""
 "One or more descriptions of this person's Politically Exposed Person (PEP) "
 "status."
 msgstr ""
+"Одно или несколько описаний статуса публичного должностного лица (ПДЛ) этого"
+" физического лица."
