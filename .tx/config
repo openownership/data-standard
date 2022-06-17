@@ -1,187 +1,187 @@
 [main]
 host = https://www.transifex.com
 
-[bods-main.codelist]
+[bods-v03.codelist]
 file_filter = docs/locale/<lang>/LC_MESSAGES/codelist.po
 source_file = docs/_build/gettext/codelist.pot
 source_lang = en
 type = PO
 
-[bods-main.index]
+[bods-v03.index]
 file_filter = docs/locale/<lang>/LC_MESSAGES/index.po
 source_file = docs/_build/gettext/index.pot
 source_lang = en
 type = PO
 
-[bods-main.schema]
+[bods-v03.schema]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema.po
 source_file = docs/_build/gettext/schema.pot
 source_lang = en
 type = PO
 
-[bods-main.svg]
+[bods-v03.svg]
 file_filter = docs/locale/<lang>/LC_MESSAGES/svg.po
 source_file = docs/_build/gettext/svg.pot
 source_lang = en
 type = PO
 
-[bods-main.about--credits]
+[bods-v03.about--credits]
 file_filter = docs/locale/<lang>/LC_MESSAGES/about/credits.po
 source_file = docs/_build/gettext/about/credits.pot
 source_lang = en
 type = PO
 
-[bods-main.about--governance]
+[bods-v03.about--governance]
 file_filter = docs/locale/<lang>/LC_MESSAGES/about/governance.po
 source_file = docs/_build/gettext/about/governance.pot
 source_lang = en
 type = PO
 
-[bods-main.about--index]
+[bods-v03.about--index]
 file_filter = docs/locale/<lang>/LC_MESSAGES/about/index.po
 source_file = docs/_build/gettext/about/index.pot
 source_lang = en
 type = PO
 
-[bods-main.about--privacy-notice]
+[bods-v03.about--privacy-notice]
 file_filter = docs/locale/<lang>/LC_MESSAGES/about/privacy-notice.po
 source_file = docs/_build/gettext/about/privacy-notice.pot
 source_lang = en
 type = PO
 
-[bods-main.examples--index]
+[bods-v03.examples--index]
 file_filter = docs/locale/<lang>/LC_MESSAGES/examples/index.po
 source_file = docs/_build/gettext/examples/index.pot
 source_lang = en
 type = PO
 
-[bods-main.primer--index]
+[bods-v03.primer--index]
 file_filter = docs/locale/<lang>/LC_MESSAGES/primer/index.po
 source_file = docs/_build/gettext/primer/index.pot
 source_lang = en
 type = PO
 
-[bods-main.primer--whatdoesbodscover]
+[bods-v03.primer--whatdoesbodscover]
 file_filter = docs/locale/<lang>/LC_MESSAGES/primer/whatdoesbodscover.po
 source_file = docs/_build/gettext/primer/whatdoesbodscover.pot
 source_lang = en
 type = PO
 
-[bods-main.primer--whatisbo]
+[bods-v03.primer--whatisbo]
 file_filter = docs/locale/<lang>/LC_MESSAGES/primer/whatisbo.po
 source_file = docs/_build/gettext/primer/whatisbo.pot
 source_lang = en
 type = PO
 
-[bods-main.primer--whatisbodata]
+[bods-v03.primer--whatisbodata]
 file_filter = docs/locale/<lang>/LC_MESSAGES/primer/whatisbodata.po
 source_file = docs/_build/gettext/primer/whatisbodata.pot
 source_lang = en
 type = PO
 
-[bods-main.primer--whatisthebods]
+[bods-v03.primer--whatisthebods]
 file_filter = docs/locale/<lang>/LC_MESSAGES/primer/whatisthebods.po
 source_file = docs/_build/gettext/primer/whatisthebods.pot
 source_lang = en
 type = PO
 
-[bods-main.primer--whyisbo]
+[bods-v03.primer--whyisbo]
 file_filter = docs/locale/<lang>/LC_MESSAGES/primer/whyisbo.po
 source_file = docs/_build/gettext/primer/whyisbo.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--changelog]
+[bods-v03.schema--changelog]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/changelog.po
 source_file = docs/_build/gettext/schema/changelog.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--concepts]
+[bods-v03.schema--concepts]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/concepts.po
 source_file = docs/_build/gettext/schema/concepts.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--conformance]
+[bods-v03.schema--conformance]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/conformance.po
 source_file = docs/_build/gettext/schema/conformance.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--index]
+[bods-v03.schema--index]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/index.po
 source_file = docs/_build/gettext/schema/index.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--reference]
+[bods-v03.schema--reference]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/reference.po
 source_file = docs/_build/gettext/schema/reference.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--schema-browser]
+[bods-v03.schema--schema-browser]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/schema-browser.po
 source_file = docs/_build/gettext/schema/schema-browser.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--guidance--functional-requirements]
+[bods-v03.schema--guidance--functional-requirements]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/functional-requirements.po
 source_file = docs/_build/gettext/schema/guidance/functional-requirements.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--guidance--identifiers]
+[bods-v03.schema--guidance--identifiers]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/identifiers.po
 source_file = docs/_build/gettext/schema/guidance/identifiers.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--guidance--index]
+[bods-v03.schema--guidance--index]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/index.po
 source_file = docs/_build/gettext/schema/guidance/index.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--guidance--languages]
+[bods-v03.schema--guidance--languages]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/languages.po
 source_file = docs/_build/gettext/schema/guidance/languages.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--guidance--provenance]
+[bods-v03.schema--guidance--provenance]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/provenance.po
 source_file = docs/_build/gettext/schema/guidance/provenance.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--guidance--repr-beneficial-ownership]
+[bods-v03.schema--guidance--repr-beneficial-ownership]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-beneficial-ownership.po
 source_file = docs/_build/gettext/schema/guidance/repr-beneficial-ownership.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--guidance--repr-state-owned-enterprises]
+[bods-v03.schema--guidance--repr-state-owned-enterprises]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-state-owned-enterprises.po
 source_file = docs/_build/gettext/schema/guidance/repr-state-owned-enterprises.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--guidance--serialization]
+[bods-v03.schema--guidance--serialization]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/serialization.po
 source_file = docs/_build/gettext/schema/guidance/serialization.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--guidance--statement-identifiers]
+[bods-v03.schema--guidance--statement-identifiers]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/statement-identifiers.po
 source_file = docs/_build/gettext/schema/guidance/statement-identifiers.pot
 source_lang = en
 type = PO
 
-[bods-main.schema--guidance--updating-data]
+[bods-v03.schema--guidance--updating-data]
 file_filter = docs/locale/<lang>/LC_MESSAGES/schema/guidance/updating-data.po
 source_file = docs/_build/gettext/schema/guidance/updating-data.pot
 source_lang = en
