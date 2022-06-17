@@ -65,7 +65,7 @@ msgstr ""
 "Services, y cualquiera puede solicitar unirse al grupo `completando este "
 "formulario "
 "<https://docs.google.com/forms/d/e/1FAIpQLSdRSmSUxyyv2t1k3vWXZ_3EhTW_f603MeGxgyjKnbNNE9vvbQ/viewform>`__."
-" Las reuniones de grupos virtuales se llevan a cabo trimestralmente y la "
+" Las reuniones del grupo se llevan a cabo virtual y trimestralmente, y la "
 "comunicación se coordina a través de un `grupo de Google "
 "<https://groups.google.com/a/openownership.org/g/data-standard-wg>`__."
 

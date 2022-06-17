@@ -128,9 +128,9 @@ msgid ""
 "<changelog>` is provided, and the documentation of previous versions is "
 "maintained in archive form."
 msgstr ""
-"Esta es la versión 0.3 del Estándar de Datos de Beneficiarios Finales. Un "
-":ref:`registro de cambios<changelog>` es proporcionado, y la documentación "
-"de versiones anteriores se mantiene en forma de archivo."
+"Esta es la versión 0.3 del Estándar de Datos de Beneficiarios Finales. Se "
+"proporciona un :ref:`registro de cambios<changelog>`, y la documentación de "
+"versiones anteriores se mantiene en forma de archivo."
 
 #: ../../about/index.rst:49 b981c46d44f64bdaab9996946b4b4448
 msgid ""
@@ -142,7 +142,7 @@ msgstr ""
 "Los implementadores deben saber que se prevén cambios futuros antes del "
 "lanzamiento de la versión 1.0. Sin embargo, a partir de la versión v0.1 en "
 "adelante, cualquier cambio estructural o cambio de definición importante "
-"solo hará después de una consulta."
+"solo se hará después de una consulta."
 
 #: ../../about/index.rst:51 ba856c288e9b43d29439d9b64796b018
 msgid ""
