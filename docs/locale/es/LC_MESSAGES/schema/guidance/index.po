@@ -1,46 +1,54 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Agustina De Luca, 2022
+# Stephen Abbott Pugh <stephen@openownership.org>, 2022
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:57+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../schema/guidance/index.rst:2 117c92eda94045e5944051d3d7b2f041
+#: ../../schema/guidance/index.rst:2 b30bd1305034407d829bf87664cffd59
 msgid "Technical guidance"
 msgstr "Orientación técnica"
 
-#: ../../schema/guidance/index.rst:6 cd913f6b3f6f4f3299d61b1b4050644e
+#: ../../schema/guidance/index.rst:6 cc5cd69733504622944b8a779bda13f3
 msgid ""
-"This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
-"to the data model and additional codelist information. Implementers should "
-"be aware that future changes are anticipated, before a version 1.0 release. "
-"See the :any:`Changelog <changelog>` and `About <../../about>`_ pages for "
-"more information."
+"This is v0.3 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model and codelists as well as additional technical guidance."
 msgstr ""
-"Esta es la vers. 0.2 del Estándar de Datos sobre Beneficiarios Finales. "
-"Incluye actualizaciones del modelo de datos e información adicional de la "
-"lista de códigos. Cabe señalar a los implementadores que se esperan cambios "
-"a futuro antes de la publicación de la versión 1.0. Consulte las páginas "
-":any:`Registro de modificaciones <changelog>` y `De qué se trata "
-"<../../about>`_ para obtener más información."
+"Esta es la versión 0.3 del Estándar de Datos de Beneficiarios Finales. "
+"Incluye actualizaciones del modelo de datos y listas de códigos, así como "
+"orientación técnica adicional."
 
-#: ../../schema/guidance/index.rst:8 28cc0789bdc8443bbfef9a8bfa42c6ef
+#: ../../schema/guidance/index.rst:8 0f670da0da1b49ec8b1f996dbf2eb534
+msgid ""
+"Implementers should be aware that future changes are anticipated, before a "
+"version 1.0 release. See the :any:`Changelog <changelog>` and `About "
+"<../../about>`_ pages for more information."
+msgstr ""
+"Los implementadores deben saber que se anticipan cambios futuros, antes del "
+"lanzamiento de la versión 1.0. Consulte las páginas :any:`Registro de "
+"modificaciones <changelog>` y `Acerca de <../../about>`_ para obtener más "
+"información."
+
+#: ../../schema/guidance/index.rst:10 8107ff6477ba4ba69ed22bc825231328
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
 "recommended elements of the Standard, as defined in `RFC2119 "
@@ -50,7 +58,7 @@ msgstr ""
 "requeridos y recomendados del Estándar, conforme a lo definido en `RFC2119 "
 "<https://tools.ietf.org/html/rfc2119>`_."
 
-#: ../../schema/guidance/index.rst:10 dc1e0c4093f64e09b218ddee13d531ef
+#: ../../schema/guidance/index.rst:12 dd1c20480ff44169be446e387e53e208
 msgid ""
 "This section contains guidance and instruction on preparing and using BODS "
 "data. Along with the :ref:`Schema reference <schema-reference>` it comprises"

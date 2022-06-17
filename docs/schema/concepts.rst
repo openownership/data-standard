@@ -61,11 +61,11 @@ Statements are specified in the data schema as JSON objects:
 - :any:`Entity statement <schema-entity-statement>`
 - :any:`Person statement <schema-person-statement>`
 
-Each statement has a ``statementIdentifier`` and ``statementType`` field. The ``statementIdentifier`` exists solely for the purpose of connecting statements. 
+Each statement has a ``statementID`` and ``statementType`` field. The ``statementID`` exists solely for the purpose of connecting statements. 
 
 - **Entity statements** are used to describe registered legal entities that are the subject of legal ownership (such as companies, non-registered entities (such as trusts), and artificial entities (such as joint shareholding arrangements).
 - **Person statements** describe the natural persons who stand in relationships of ultimate beneficial ownership or control
-- **Ownership-or-control statements** describe the interest(s) held by one entity in another, or a person in an entity. They are connected to those entities and persons using ``statementIdentifier`` references.
+- **Ownership-or-control statements** describe the interest(s) held by one entity in another, or a person in an entity. They are connected to those entities and persons using ``statementID`` references.
 
 All statements have ``source`` and ``annotations`` properties which can provide an audit trail describing where information was obtained from, when, and any verification of the information that has taken place. See :ref:`Sources and annotations <provenance>` for guidance.
 
@@ -80,7 +80,7 @@ Including such identifiers allows intelligent integration of information across 
   
 These fields are designed to support 'strict' and 'relaxed' validation, to accommodate different data sources. New data sources should seek to provide the data required for strict validation, such as country codes, and full dates. Other sources should provide as much data as possible, subject to relevant policy and privacy constraints. 
 
-An ``ownershipOrControlStatement`` connects (via ``statementIdentifier`` references) the ``subject`` of the statement (an entity described by an ``entityStatement``) and an ``interestedParty``. This interested party may be: 
+An ``ownershipOrControlStatement`` connects (via ``statementID`` references) the ``subject`` of the statement (an entity described by an ``entityStatement``) and an ``interestedParty``. This interested party may be: 
 
 * Another entity described by an ``entityStatement``;
 * A person described by a ``personStatement``; or

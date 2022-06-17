@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:57+0000\n"
 "Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../schema/guidance/statement-identifiers.rst:4
-#: cbd05307cde34839a640935cb0d4d68b
+#: d972ab7a78ab4a789511b6c280dfa134
 msgid "Statement Identifiers"
 msgstr "Идентификаторы записей"
 
 #: ../../schema/guidance/statement-identifiers.rst:6
-#: cc6321485df04694a402bced157c06fd
+#: 3daa8a36a91a4d00bf4a3c34d0f2ad00
 msgid ""
 "Each statement MUST have an entirely unique identifier. There MUST be no "
 "possibility of collision between identifiers for different statements."
@@ -36,19 +36,19 @@ msgstr ""
 "быть возможности конфликта между идентификаторами для разных записей."
 
 #: ../../schema/guidance/statement-identifiers.rst:8
-#: 29390aac60be4cdba62836075b4309b3
+#: 76643d44c02a4807bd1a2e7aeef4d385
 msgid "This means that:"
 msgstr "Это означает следующее:"
 
 #: ../../schema/guidance/statement-identifiers.rst:10
-#: 4310636af6ed469c9fd6a2d5c03326b7
+#: f226f4be5bca42e0b80bd41f92426d93
 msgid "Two **different** statements SHOULD never have the same identifier;"
 msgstr ""
 "Никогда НЕ СЛЕДУЕТ допускать, чтобы две **разных** записи имели одинаковый "
 "идентификатор;"
 
 #: ../../schema/guidance/statement-identifiers.rst:11
-#: f779e8f02dff4614ba10ca245ef981db
+#: e76efe1c85a54c9b994304d79a3df263
 msgid ""
 "Once an identifier is assigned to a statement, the identifier SHOULD NOT "
 "change."
@@ -57,7 +57,7 @@ msgstr ""
 "изменять."
 
 #: ../../schema/guidance/statement-identifiers.rst:13
-#: b5dd2c6ecf7c4cc88a3226b6f01af4da
+#: 2348d6498e094ad4a17b736031c875ba
 msgid ""
 "The schema enforces a minimum statement identifier length of 32 characters, "
 "and maximum length of 64 characters."
@@ -66,7 +66,7 @@ msgstr ""
 "максимальная — 64 символа."
 
 #: ../../schema/guidance/statement-identifiers.rst:15
-#: 12280145d90e434d91b2a22d40b4e576
+#: 5bff2676672a4a91a004e5e87607a6f3
 msgid ""
 "Publishers MAY use one of the following strategies for creating statement "
 "identifiers."
@@ -75,12 +75,12 @@ msgstr ""
 "идентификаторов записей."
 
 #: ../../schema/guidance/statement-identifiers.rst:20
-#: 8af36ef1511d459e941024c62f1d1a7d
+#: c6fa4701e7ea41bab8e692d1ba11eb82
 msgid "Strategies for identifier creation"
 msgstr "Стратегии для создания идентификаторов"
 
 #: ../../schema/guidance/statement-identifiers.rst:22
-#: 11fe0ae419bd4b33886cf2a31bebde1f
+#: d4b62a1042dc48dea3669f2d67ed73ff
 msgid ""
 "Generating a `UUID "
 "<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ for each "
@@ -92,7 +92,7 @@ msgstr ""
 "обновлении соответствующего элемента(-ов), образующего запись;"
 
 #: ../../schema/guidance/statement-identifiers.rst:24
-#: eda426a884fd4ae9ba0209e76818f291
+#: c5aa4a7c1aab496282f875abcddd04f9
 msgid ""
 "Generating a `UUID "
 "<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ as a "
@@ -104,7 +104,7 @@ msgstr ""
 "элемента и идентификатора версии;"
 
 #: ../../schema/guidance/statement-identifiers.rst:26
-#: b03ea41a1fcf4f9baafc3958c125faeb
+#: 743376738776474dbcce8f7dd67190e4
 msgid ""
 "Using an appropriately designed hash function that generates identifiers "
 "from a normalised JSON representation of the statement (excluding the `id` "
@@ -115,7 +115,7 @@ msgstr ""
 "JSON (за исключением поля `id`) с низкой вероятностью конфликта."
 
 #: ../../schema/guidance/statement-identifiers.rst:28
-#: 3ddad599f80c4a7ab67e908e03e65074
+#: 8072c87a4a2f49b2bb13e1cc3a662449
 msgid ""
 "Using an internal identifier combined with a unique prefix to avoid "
 "collision between identifiers from different publishers"
@@ -124,7 +124,7 @@ msgstr ""
 "во избежание конфликта между идентификаторами от разных издателей"
 
 #: ../../schema/guidance/statement-identifiers.rst:31
-#: e3e06d0de17f4db0898ac07ed4c73064
+#: a60bab9bea514b1baf76ffbf6dd4b56e
 msgid ""
 "Statement identifiers are generally for creation and internal use within "
 "applications. In most circumstances they do not need to be displayed to "

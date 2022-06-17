@@ -1,19 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Galia Williams, 2022
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-05 17:16+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,26 +23,30 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../schema/reference.rst:4 1d277b59e621460ebe87033a1d4a16c4
+#: ../../schema/reference.rst:4 6c93980774be4ea6bffb94636d63da9c
 msgid "Schema reference"
 msgstr "Справочник схемы"
 
-#: ../../schema/reference.rst:8 a36dd8cbf879494881a4eb72c2cdcdd7
+#: ../../schema/reference.rst:8 a9ef394282e647d3b6d6cadb7e7b99b2
 msgid ""
-"This is v0.2 of the Beneficial Ownership Data Standard. It includes updates "
-"to the data model and additional codelist information. Implementers should "
-"be aware that future changes are anticipated, before a version 1.0 release. "
-"See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more "
-"information."
+"This is v0.3 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model and codelists as well as additional technical guidance."
 msgstr ""
-"Это версия 0.2 Стандарта данных о бенефициарном владении. Она включает в "
-"себя обновления модели данных и дополнительную информацию в списке "
-"допустимых значений. Имплементирующие лица должны понимать, что ожидаются "
-"будущие изменения до выпуска версии 1.0. См. страницы :doc:`Лог изменений "
-"<changelog>` и `О стандарте <../about>`_ для получения дополнительной "
-"информации."
+"Это версия 0.3 Стандарта данных о бенефициарном владении. Она включает в "
+"себя обновления модели данных, списки допустимых значений, а также "
+"дополнительные технические рекомендации."
 
-#: ../../schema/reference.rst:10 b50f67eb74a44bfd93db5fb9a9947d4c
+#: ../../schema/reference.rst:10 906499c4c67d424481352f634c7facb3
+msgid ""
+"Implementers should be aware that future changes are anticipated, before a "
+"version 1.0 release. See the :doc:`Changelog <changelog>` and `About "
+"<../about>`_ pages for more information."
+msgstr ""
+"Имплементирующие лица должны понимать, что ожидаются новые изменения до "
+"выхода версии 1.0. Дополнительную информацию см. на страницах :doc:`Лог "
+"изменений <changelog>` и `О стандарте <../about>`_ ."
+
+#: ../../schema/reference.rst:12 14c2340eb0c1421fadd0a6bfe880baf9
 msgid ""
 "**MUST** and **SHOULD** are used in the schema to denote required and "
 "recommended elements of the Standard, as defined in `RFC2119 "
@@ -50,7 +56,7 @@ msgstr ""
 " рекомендуемых элементов Стандарта, как определено в `RFC2119 "
 "<https://tools.ietf.org/html/rfc2119>`_."
 
-#: ../../schema/reference.rst:13 5c50017e93b24a059c296f9146c858e1
+#: ../../schema/reference.rst:15 c34fcdf383874d939c55d14eb702759c
 msgid ""
 "The following is an A - Z guide to the objects of the Data Standard's "
 "schema, plus its `codelists`_ . Details of each object's properties are "
@@ -64,11 +70,11 @@ msgstr ""
 "структурированного представления касательно того, как объекты сочетаются в "
 "схеме JSON, воспользуйтесь :doc:`Браузером схемы <schema-browser>`.)"
 
-#: ../../schema/reference.rst:15 112d9e9736e04ab5a1bb5e54f77fc6a2
+#: ../../schema/reference.rst:17 ad09b8db695a43ab8cb6a1213c32ab9a
 msgid "The top-level objects are :doc:`statements <concepts>`:"
 msgstr "Объектами верхнего уровня являются :doc:`записи <concepts>`:"
 
-#: ../../schema/reference.rst:17 38290339216142afa6fc5d29528cf1f8
+#: ../../schema/reference.rst:19 a4b5e5b25b4949999a209247b973e853
 msgid ""
 ":any:`Ownership-or-control statements <schema-ownership-or-control-"
 "statement>`"
@@ -76,15 +82,15 @@ msgstr ""
 ":any:`Записи о владении или контроле <schema-ownership-or-control-"
 "statement>`"
 
-#: ../../schema/reference.rst:18 258c913ed8984eb7af4a19c5a3c08d10
+#: ../../schema/reference.rst:20 e8ebbdcd25554824b21084b97840495c
 msgid ":any:`Entity statements <schema-entity-statement>`"
 msgstr ":any:`Записи о субъектах <schema-entity-statement>`"
 
-#: ../../schema/reference.rst:19 a9effe1e4d1240e790fe6a93e403f963
+#: ../../schema/reference.rst:21 921cbe39d7e043d1ad0e5b163efe563b
 msgid ":any:`Person statements <schema-person-statement>`"
 msgstr ":any:`Записи о физических лицах <schema-person-statement>`"
 
-#: ../../schema/reference.rst:21 0a2f83a2497142f397a359b730ef9fe3
+#: ../../schema/reference.rst:23 98a3ea9b13c4483f86b801ef71dd1e06
 msgid ""
 "Statements are built up from a set of nested objects and properties, each of"
 " which has a field name, a title and a description that defines how the "
@@ -94,7 +100,7 @@ msgstr ""
 "имеют имя поля, заголовок и описание, определяющее то, как следует "
 "использовать объект или поле."
 
-#: ../../schema/reference.rst:23 2804b979fa1d474387e084b61307700e
+#: ../../schema/reference.rst:25 f0a15fcc2bf04f37b4f7e1d510ea0b5d
 msgid ""
 "BODS data MAY be published as a valid `JSON document "
 "<https://tools.ietf.org/html/rfc8259>`_. See :any:`Serialization <guidance-"
@@ -104,11 +110,11 @@ msgstr ""
 "<https://tools.ietf.org/html/rfc8259>`_. См. :any:`Сериализацию <guidance-"
 "serialization>` для получения информации о дополнительных возможностях."
 
-#: ../../schema/reference.rst:29 e86fb438808144878023c0d9d95efcab
+#: ../../schema/reference.rst:31 e1b4c1cef36e43d880c373dd1f6702f9
 msgid "Address"
 msgstr "Address (Адрес)"
 
-#: ../../schema/reference.rstNone ac3f87dd542247b3b5c817fc512a377f
+#: ../../schema/reference.rstNone 08a8637a3b7b4cefafad6d3cf4331ef8
 msgid ""
 "A free text address string, providing as much address data as is relevant, "
 "suitable for processing using address parsing algorithms. For some uses (for"
@@ -128,16 +134,16 @@ msgstr ""
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
-#: ../../sphinxcontrib-jsonschema:1 dfb7be84c3794aa9b9d1b72aad94529f
-#: d68382eb753c4360bbd592da567d72f3 454b30f4d72740fb86e80400742debc7
-#: 60e2981cf8c8409cbc4ef1b046a100a5 b543490e8d024c5398b3aeb0ca4c5006
-#: 6828f3bdce504cd0a00670d7c3528576 29243b15f16f422981be15e9fc0d51db
-#: da1329c4cf2b4f588e806302c52e27a1 fc0a4ad647b44b7fa705e800cfe6d8d0
-#: 07c04573d58d4dc8aef5c2b66ee4a727 fb51ab915cad447ca37ccbf2fafa2925
-#: fb51ab915cad447ca37ccbf2fafa2925 fb51ab915cad447ca37ccbf2fafa2925
-#: fb51ab915cad447ca37ccbf2fafa2925 fb51ab915cad447ca37ccbf2fafa2925
-#: fb51ab915cad447ca37ccbf2fafa2925 fb51ab915cad447ca37ccbf2fafa2925
-#: fb51ab915cad447ca37ccbf2fafa2925 fb51ab915cad447ca37ccbf2fafa2925
+#: ../../sphinxcontrib-jsonschema:1 13678d4bc6564db8bc304d7b4b8f78ad
+#: 4d5d32961670461fa3c248774dae2d34 4fad503173e849cf8b08ca313445a8cd
+#: c66855423bbf4ba2aebcf9663d7e9d51 b565a76820b64b7996221b7ed1e6fa5e
+#: 90f1f7a952ae4d6a9e77aa9624c01c35 b60418f7ea9c4f60bbc70ea3b5a8dc19
+#: 986aeb46cd924473bda7e0f4367f1391 8dc9ddb9450348bebd74d6b341a3bb41
+#: f8b23cb889d1455c8890a5fdc2196db4 2ca438ea8b254c579c04f7d98f0ab6e4
+#: eeaacf1b3ae64b4f9b9d2485b87facaf 9f172e3f629e4fa0b5fd48538be0cc02
+#: 32717ff617d34327b3a6fcebc02d1374 77632aa1f27647e0bd68429990e367f3
+#: def459326f6e405a8582d3a0bca4cd6f e186192c7dc648baa4a419771417dfd4
+#: 5fc14bbf6bc74e1d96e57d84b573ce89 71e3d24df8bf4f88a6b42de641ec0152
 msgid "Title"
 msgstr "Заголовок"
 
@@ -150,16 +156,16 @@ msgstr "Заголовок"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
-#: ../../sphinxcontrib-jsonschema:1 cdab9b9f51414127bc7f78cfd5a6cfc7
-#: 28a6cf39952a4f26b85c894525f0ee48 d18a2b8ade584479aa5e6d3537aa7f39
-#: 29158bc0152a4ad19c4df7558616a93c e921edd54eb446c89c093d7f4371f212
-#: 7e95db192a5a424c928d438fe61ef6b4 57301c2961e643869ce27fc8b1b22348
-#: c5b0d6bad6194321a8a0deaaee8e4771 6d1f1ad7da58433aa4710b84183a20dc
-#: 9b05f341435248e58a777107a3d30487 b6b51c093c854cf58e62cc1ff119ffd5
-#: b6b51c093c854cf58e62cc1ff119ffd5 b6b51c093c854cf58e62cc1ff119ffd5
-#: b6b51c093c854cf58e62cc1ff119ffd5 b6b51c093c854cf58e62cc1ff119ffd5
-#: b6b51c093c854cf58e62cc1ff119ffd5 b6b51c093c854cf58e62cc1ff119ffd5
-#: b6b51c093c854cf58e62cc1ff119ffd5 b6b51c093c854cf58e62cc1ff119ffd5
+#: ../../sphinxcontrib-jsonschema:1 b07a5c6203e44eb6a732bcc64e8f8bec
+#: 540301af132c4704bb8d6c168702a549 abfc484a0536403f8711ef827ce1b8c9
+#: 8a40496660e14ddeb3b40e8d616b5e98 644eedc0064249538e0fbb78766e460f
+#: 5c146d2f353449a5a87b462b916d323f 502b79b95d1c4970959062892a5b3b35
+#: de28b0ac2eef459fa64abf3e83cc902c 3d0d8456fb0d424e82862a3e4a303030
+#: 9d061fe0fe9645a0b93f9cf62799de42 9950ba4f99a44447ac7a9468dd7d69d3
+#: 183f38a2bd0e4fffa247641ad008a949 cb034f4e1f3c48678c98e854c8afaabf
+#: 2e21dd390bb54b5eaea5a92dc0eb8d0a 25667e7ebd9946748858f1618b52093d
+#: d89f82d125da46fc938081bb79ab3334 eec30f60fecd443f8167decf73a8b67c
+#: 30dd043506bd43d8b517928fc8c494f3 7854da3bfeca4c11ab322465d7a777e8
 msgid "Description"
 msgstr "Описание"
 
@@ -172,16 +178,16 @@ msgstr "Описание"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
-#: ../../sphinxcontrib-jsonschema:1 1618accb5f584c579a1b31914319ab22
-#: bcfffd37f7c24b7ab60708f2a597b00f 0f84aa067661438baca483b1ea21d7b8
-#: f379e5105c3541b4a283bda566fe5998 aa90dbff814e44c3b740dc2be453e228
-#: 7b0686c0ad884073bc74e4d30efca148 da090b5cc70d41fa99231aba44423f96
-#: 10b90e95aacc4b07af9c5272ca0bdc0b 74907f002eb44ea19486fff48023e199
-#: 2eedf4d727fe4423a84d3e86eedbed90 bb13eab136764ed0acc97d04392cc903
-#: bb13eab136764ed0acc97d04392cc903 bb13eab136764ed0acc97d04392cc903
-#: bb13eab136764ed0acc97d04392cc903 bb13eab136764ed0acc97d04392cc903
-#: bb13eab136764ed0acc97d04392cc903 bb13eab136764ed0acc97d04392cc903
-#: bb13eab136764ed0acc97d04392cc903 bb13eab136764ed0acc97d04392cc903
+#: ../../sphinxcontrib-jsonschema:1 6db11f5e29f14fe18f67cec6f42fc22a
+#: 1eddfa3e2bce47be9f876f7a80ef5850 5563626e2f164eceb6a0cea64d384803
+#: cf7ee859d7054fc88c8edcd674563816 ce4f9a3bff744f16a7e74c664bbc0208
+#: d39fb4b9e5a842419fcaac9a8f75f05e 69aedd84d828453583e406f9390d4ae4
+#: d3ef6884a48041cab5decdc147efbc1e 83d4ff8f7e2b492dad48fc9a6d9171a7
+#: 926376575622465f89c71b493d39f6eb 86c73e7a14ea43f8ad9c272618d058b7
+#: e31357a1120e4fb081f3dde8c5534257 44a3cd3d5cad49ec8497d9ad5f55a05c
+#: 3e29152a9f454f51968ab9cf9e7ee2fb e597999bedfb49c5ab7dfdb0ca43bd24
+#: 49ffa7f033944975b7cc7780ad777063 863c2a66e95148e3b2b31fa7313b7b1f
+#: b1374af045b84a22a06f0ed87b498cf2 3ee29281271f4e76b5ec09e7b5c1cf24
 msgid "Type"
 msgstr "Тип"
 
@@ -194,16 +200,16 @@ msgstr "Тип"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
-#: ../../sphinxcontrib-jsonschema:1 7f085d852cb542359acdf2e7e2ad547c
-#: 8b33a9d8fe4343029a1f3a698e718275 2a760ccfb2e447f096f4edef4c13f9b8
-#: 144a400298ac4ede9c6c2a4bcc6d14a8 8f262703563541b5923462b9310701a0
-#: cfd9114d542a4e9587f91159c1421284 e1eb3af12ed94735a53de3bf54c2d8c1
-#: 251c26b07e3a4fc5ab0caeb9732851c4 724f1785cb764fb98ffe2cf0812dfcd8
-#: 03bd1b8a107d45c6aa9a531f0e87e783 2991d077284746d49286739d50d73ead
-#: 2991d077284746d49286739d50d73ead 2991d077284746d49286739d50d73ead
-#: 2991d077284746d49286739d50d73ead 2991d077284746d49286739d50d73ead
-#: 2991d077284746d49286739d50d73ead 2991d077284746d49286739d50d73ead
-#: 2991d077284746d49286739d50d73ead 2991d077284746d49286739d50d73ead
+#: ../../sphinxcontrib-jsonschema:1 e1c0f312d75a4cd5b3092591466926d0
+#: 9d5cccc86b1c4e10a8c4df9969699fe3 f1e8e14862414206b96c6257aa9b0740
+#: 22bdfca257ce4de584e2e2cced42fceb f25d8218b93542dd96129be75620212a
+#: b6bb366b07c640a98d9d141b7c29314f ef02aeec40b74682b4a352606f1079c5
+#: fc86911a0bad4c79b277d6659fe963fb 7789a349cf614db3af620496b5f7c124
+#: fa87349df9f84cd09d0d7d760f698530 0ba861e4418646d7b6906d0d3f939fc6
+#: 8893dfcae8ab41ad8c8909f82cc9f5df 87d14cea78394bbfae4f457e0ff7ef59
+#: b2ea7901df5445cd85e0a5b519848954 78252bc2dfc84fd787bd27fc4231582a
+#: cc52d76318d44eef8384252c6612e218 016d31e5b9c74bcd9553b9e520837158
+#: d1c4c1f125b14671910d1934d5882f8a fc0f20a32996409a83bc23d5c9fcb25d
 msgid "Format"
 msgstr "Формат"
 
@@ -216,20 +222,20 @@ msgstr "Формат"
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
 #: ../../sphinxcontrib-jsonschema:1 ../../sphinxcontrib-jsonschema:1
-#: ../../sphinxcontrib-jsonschema:1 a1fd9ee2416544768330abd5a0cff9d1
-#: fbe1a89a11ad40429233fc55dadc0fa2 0092aa245f0b47849884ba448c549ea2
-#: 23e74566fa1c404793b42bad6a46cbc3 de1567ba591a4c1380ed03c6cbcf5d42
-#: 6252dab6c9aa4cf8ac300cd8a4dac0c0 0aaeca5f4c0b47e7a2883a4d71ce8e81
-#: ae72911a1ecb4bf1991d24ff796b2cfe 6af91f2aa7e2442582ce7291c97bc62a
-#: d20a65d276c64c4e9f5ad7847c4513f5 e7ef0195ca3b4273bb02dac3d75ba8e6
-#: e7ef0195ca3b4273bb02dac3d75ba8e6 e7ef0195ca3b4273bb02dac3d75ba8e6
-#: e7ef0195ca3b4273bb02dac3d75ba8e6 e7ef0195ca3b4273bb02dac3d75ba8e6
-#: e7ef0195ca3b4273bb02dac3d75ba8e6 e7ef0195ca3b4273bb02dac3d75ba8e6
-#: e7ef0195ca3b4273bb02dac3d75ba8e6 e7ef0195ca3b4273bb02dac3d75ba8e6
+#: ../../sphinxcontrib-jsonschema:1 df8e4316d8984c4ba89c72110f62e1e4
+#: 0b1c082a104547dba87f151b39be769c 361a41f69844463ebcfc0535c7ae4094
+#: 7fff895e887b42d49d9307f1c6542b7c 84c94fa09e3c4767b08405b6e15d30c4
+#: 28e6689c9c1a45249f4d2a3b1a211601 5399c534b0944b068ad0b3bd0882b82e
+#: 1bdfff8eae2b4013852155f3de1fbc2c dd66a80c22654c388eafbbfd2b091c19
+#: 9bd2407d8d8d430d8a16ced9ffeec4a8 af5e65c652d04327bb831cff6a482201
+#: 07f4c95e47c64ddcad5b981478ea8433 54c569515aec4f3e841e3e951184a5bd
+#: e63343c05a924f11bf4c2bd8dbe20028 41b635ee148c4d4b85ba43f2aeb748ed
+#: 80d4a82fb4bc4c2a8823c2797c6769f1 a34d20d0ea38464b959ee5671395db8d
+#: 2520cdbaa22247749963bf323a2c1909 26a80c0e035740b5848cd3d4dc0942e9
 msgid "Required"
 msgstr "Обязательный"
 
-#: ../../schema/reference.rst:42 fc906079afb341b5b2c016fa6f933408
+#: ../../schema/reference.rst:44 c8075aaa6e79410baf52776ec66963be
 msgid ""
 "A diversity of address formats are used across data management systems, and "
 "data is often inconsistently entered across data fields in these source "
@@ -244,7 +250,7 @@ msgstr ""
 "Потребляющим системам необходимо будет выполнить парсинг адресов СДБВ перед "
 "проведением структурированного сравнения."
 
-#: ../../schema/reference.rst:44 77e77371183e4dcfa391cacac70eb6f3
+#: ../../schema/reference.rst:46 c4ffbb55d6464437afb2fd23fde515a2
 msgid ""
 "Designers of new data collection systems are encouraged to choose an "
 "appropriate structured format, with reference to established standards, and "
@@ -258,11 +264,11 @@ msgstr ""
 "сведений см. `проблему 18 <https://github.com/openownership/data-"
 "standard/issues/18>`_."
 
-#: ../../schema/reference.rst:49 b5f6c08317074c3d839be25b3c9e9e78
+#: ../../schema/reference.rst:51 5fb4e5a5b7ff41b2bd70863f20308950
 msgid "Agent"
 msgstr "Agent (Заявитель)"
 
-#: ../../schema/reference.rstNone 0830d8641070489baee0cb3c83251282
+#: ../../schema/reference.rstNone 0d905c6facb145209d007a1480fab26b
 msgid ""
 "An individual, organisation or other responsible agent making, or "
 "supporting, a given statement or annotation."
@@ -270,11 +276,11 @@ msgstr ""
 "Физическое лицо, организация или иной ответственный заявитель, формирующий "
 "или поддерживающий соответствеющую запись или примечание."
 
-#: ../../schema/reference.rst:62 c526947714e14106a4a83876cc2be891
+#: ../../schema/reference.rst:64 e975d56ade9f4727881388d0916a11e1
 msgid "Annotation"
 msgstr "Annotation (Примечание)"
 
-#: ../../schema/reference.rst:64 1afc4353c10d401f9990fe2ac1223ea5
+#: ../../schema/reference.rst:66 e688ca92d02547afa23d8ee8d1d8c2f5
 msgid ""
 "The ``annotations`` property of statements currently allows an array of "
 "these simple annotation objects to be included. An annotation can be used to"
@@ -288,21 +294,23 @@ msgstr ""
 "для которой не существует места в других местах схемы. Для получения "
 "дополнительных рекомендаций см. :ref:`Источники и примечания <provenance>`."
 
-#: ../../schema/reference.rst:74 fbb53e742d3a4c94acce4d276294ac6a
+#: ../../schema/reference.rst:76 3a189d1753cb49e88fe44c2c5afe0e3b
 msgid "Country"
 msgstr "Country (Страна)"
 
-#: ../../schema/reference.rstNone 1e9eb03509874e52bc05f68a0bd4d0e0
+#: ../../schema/reference.rstNone 8128f2c4f8cb4f24981caae980a5b997
 msgid ""
 "A country MUST have a name. A country SHOULD have a 2-letter country code "
 "(ISO 3166-1)"
 msgstr ""
+"У страны ДОЛЖНО быть название. РЕКОМЕНДУЕТСЯ, чтобы у страны был 2-буквенный"
+" код (ISO 3166-1)"
 
-#: ../../schema/reference.rst:87 ba1ea38e10d944b99568120feee9b7c9
+#: ../../schema/reference.rst:89 c50f1f3199ba441d84858238835e6ea4
 msgid "EntityStatement"
 msgstr "EntityStatement (Запись о субъекте)"
 
-#: ../../schema/reference.rstNone 6d2ff81c814542a38ac08f773689071e
+#: ../../schema/reference.rstNone 2075d6bf6eb4490ea2d89d1b341642ea
 msgid ""
 "A statement identifying and describing the entity that is the subject of the"
 " ownership or control described in an ownership or control statement."
@@ -310,23 +318,23 @@ msgstr ""
 "Запись, идентифицирующая и описывающая субъект, являющийся предметом "
 "владения или контроля, описанных в записи о владении или контроле."
 
-#: ../../schema/reference.rst:100 be808c7a166548d2a8637ddd524e19d0
+#: ../../schema/reference.rst:102 104cf253e80147599b0817fad1402d1d
 msgid "ID"
 msgstr "ID"
 
-#: ../../schema/reference.rst:102 7d0d138580cd4dce87fd94866df3a1a7
+#: ../../schema/reference.rst:104 5c34ec1c71ad423a9ccb5a949fe962be
 msgid "A string of minimum length 32 and maximum length 64."
 msgstr "Строка длиной 32 [знака] минимум и 64 максимум"
 
-#: ../../schema/reference.rstNone ffc7e67691f240abb2b99e3b7785d8ae
+#: ../../schema/reference.rstNone 116584d3c63a4266b0d3f6869acd5536
 msgid "A persistent globally unique identifier for this statement."
 msgstr "Постоянный глобальный уникальный идентификатор для данной записи"
 
-#: ../../schema/reference.rst:110 67d4f22d176e45c9ab3949fbbb65ab0b
+#: ../../schema/reference.rst:112 91f06f43b9d143f6a3708ed0e73ce192
 msgid "Identifier"
 msgstr "Identifier (Идентификатор)"
 
-#: ../../schema/reference.rst:112 a70ee53e4edc45b1b02db53525334768
+#: ../../schema/reference.rst:114 8b7fe650935b487f8a9bd8a4aee527d3
 msgid ""
 "The Identifier object is used to connect a statement to the real-world "
 "person or entity that it refers to, using one or more existing known "
@@ -339,7 +347,7 @@ msgstr ""
 "идентификаторы <guidance-identifiers>` для получения технических "
 "рекомендаций касательно того, как и когда использовать данный объект."
 
-#: ../../schema/reference.rstNone 4d8a157d12f94803900f419b4ce265d3
+#: ../../schema/reference.rstNone 24a754b9645e4e588ee79994c4d12a5f
 msgid ""
 "An identifier that has been assigned to this person or entity. The scheme or"
 " list from which the identifier is drawn should be declared."
@@ -347,22 +355,22 @@ msgstr ""
 "Идентификатор, который был присвоен данному физическому лицу или субъекту. "
 "Следует объявить схему или список, из которых был взят идентификатор."
 
-#: ../../schema/reference.rst:124 2a4cea7d0b194e69a0fb4c7b5fcfc8ca
+#: ../../schema/reference.rst:126 2db80d21c29b41e291f5dedfcea4896a
 msgid "Interest"
 msgstr "Interest (Доля участия)"
 
-#: ../../schema/reference.rstNone 5a8e7171d21e47b295a0650717be114d
+#: ../../schema/reference.rstNone 85de4b7ddafb4053ae2d7707fe9a283f
 msgid ""
 "A description of the interest held by an interestedParty in another entity."
 msgstr ""
 "Описание доли участия, которой владеет заинтересованная сторона "
 "(interestedParty) в другом субъекте."
 
-#: ../../schema/reference.rst:138 20e5aad3384b4975b2dd1ad6ca506252
+#: ../../schema/reference.rst:140 3c458afc4d43435c9a4edc843061dbbc
 msgid "InterestedParty"
 msgstr "InterestedParty (Заинтересованная сторона)"
 
-#: ../../schema/reference.rstNone fdfa4fe60305416f8debe3976693159e
+#: ../../schema/reference.rstNone 1f757c4c3fc84ef787e0e891de8924af
 msgid ""
 "The interested party has some level of ownership or control over the entity "
 "referenced in this ownership or control statement. This should be described "
@@ -375,22 +383,25 @@ msgstr ""
 "физическом лице, либо — если заинтересованная сторона неизвестна — "
 "необходимо указать сведения о причинах."
 
-#: ../../schema/reference.rst:152 a09eaa9e73724afc8acacb292e1b28d7
+#: ../../schema/reference.rst:154 dcd5c8d2e510405da2796a471ce562b4
 msgid "Jurisdiction"
 msgstr "Jurisdiction (Юрисдикция)"
 
-#: ../../schema/reference.rstNone bfae875f6eb84bac970d46a01a4a290a
+#: ../../schema/reference.rstNone b8c357804fcb4915ba71ebfa78262465
 msgid ""
 "A jurisdiction MUST have a name. A jurisdiction SHOULD have the 2-letter "
 "country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the "
 "jurisdiction."
 msgstr ""
+"У юрисдикции ДОЛЖНО быть название. РЕКОМЕНДУЕТСЯ, чтобы у юрисдикции был "
+"2-буквенный код страны (ISO 3166-1) или код подразделения юрисдикции (ISO "
+"3166-2)."
 
-#: ../../schema/reference.rst:164 75ffd2e2cc71477b89b780e019ea88d5
+#: ../../schema/reference.rst:166 00f4e89c1fbc40fbbc95f5331387108e
 msgid "Name"
 msgstr "Name (ФИО)"
 
-#: ../../schema/reference.rstNone 333f605b40f342c59f2af6627b3802da
+#: ../../schema/reference.rstNone c366068167b14782b37354072b5cd51c
 msgid ""
 "An name by which this individual is known. Names should be provided in "
 "`fullName`, and may optionally be broken down in the `familyName`, "
@@ -398,12 +409,17 @@ msgid ""
 "Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-"
 "vocabularies) definitions."
 msgstr ""
+"ФИО, под которыми известен этот человек. ФИО необходимо указывать в поле "
+"`fullName`, а также по желанию их можно разбить на поля `familyName`, "
+"`givenName` и `patronymicName`, в зависимости от определений в словаре EC "
+"ISA Core Person Vocabulary "
+"(https://joinup.ec.europa.eu/solution/e-government-core-vocabularies)."
 
-#: ../../schema/reference.rst:177 466052e671dc438abaa4376bf7969c8e
+#: ../../schema/reference.rst:179 9aa0850a9fd24723a0887532c5138475
 msgid "OwnershipOrControlStatement"
 msgstr "OwnershipOrControlStatement (Запись о владении или контроле)"
 
-#: ../../schema/reference.rst:179 5aeb3eadf96544b9920680818ac45cca
+#: ../../schema/reference.rst:181 426f69467e91477a962ad0dbb2af0931
 msgid ""
 "If a person is a beneficial owner of an entity - whether directly or "
 "indirectly - and the person or entity is required to declare this beneficial"
@@ -411,8 +427,15 @@ msgid ""
 "two which represents the beneficial ownership relationship. See "
 ":ref:`representing-bo` for detailed requirements."
 msgstr ""
+"Если физическое лицо является бенефициарным владельцем какой-либо сущности —"
+" напрямую или косвенно — и это физическое лицо или эта сущность обязаны "
+"раскрыть такое бенефициарное владение, то ДОЛЖНА иметься Характеристика о "
+"владении или контроле (Ownership-or-control Statement), связывающая это "
+"физическое лицо и эту сущность и таким образом раскрывающая наличие "
+"отношений бенефициарного владения между ними. Подробное описание требований "
+"см. в :ref:`representing-bo`."
 
-#: ../../schema/reference.rstNone 1d228c0d290f462fa8a41414f22b82d0
+#: ../../schema/reference.rstNone 168066253e204a64a41d96737eb20003
 msgid ""
 "An ownership or control statement is made up of an entity, an interested "
 "party (a reference to an entity, natural person, arrangement or trust), "
@@ -423,19 +446,19 @@ msgstr ""
 "траст), сведениях о доле участия и информации об источнике для данной "
 "записи."
 
-#: ../../schema/reference.rst:192 e30f0265ac1c45f49f565c15e50bed9e
+#: ../../schema/reference.rst:194 0624c1e76d514634a0e988948d0097c8
 msgid "PepStatusDetails"
 msgstr "PepStatusDetails"
 
-#: ../../schema/reference.rstNone 4a16665c780a46bba6074d1419d84c99
+#: ../../schema/reference.rstNone 9473aa66c614474ebd30f8969e78b21b
 msgid "A description of a politically-exposed person status."
 msgstr "Описание статуса публичного должностного лица."
 
-#: ../../schema/reference.rst:206 6fee0be152c3446fa2a17a6ec3b4e9ce
+#: ../../schema/reference.rst:208 4ec688b28c1645ad99a45cc7f4a18f0f
 msgid "PersonStatement"
 msgstr "PersonStatement (Запись о физическом лице)"
 
-#: ../../schema/reference.rstNone 4ac9f17c6e654e598aab2805c9143c4c
+#: ../../schema/reference.rstNone 4e73f961f0fd4f1b99613e1c0b293a70
 msgid ""
 "A person statement describes the information known about a natural person at"
 " a particular point in time, or from a given submission of information"
@@ -444,38 +467,41 @@ msgstr ""
 "физическом лице в определенный момент времени или на основе предоставленных "
 "сведений"
 
-#: ../../schema/reference.rst:220 e86d604f15894c96932f9335dcf16c2e
+#: ../../schema/reference.rst:222 f4cd7db0cce64d4e954a05dde479caa3
 msgid "PublicListing"
-msgstr ""
+msgstr "PublicListing (Регистрация на фондовой бирже)"
 
-#: ../../schema/reference.rstNone ef953446eb524fa8a5e393a35b0e3458
+#: ../../schema/reference.rstNone 7e3cc26a53034462b282113c17aacdc6
 msgid ""
 "Details of a publicly listed company, its securities (shares and other "
 "tradable financial instruments related to the entity), and related "
 "regulatory filings."
 msgstr ""
+"Информация о регистрации на фондовой бирже компании, ее ценных бумаг (акций "
+"и других продаваемых финансовых инструментов, связанных с сущностью), и "
+"связанных с ней документах, поданных в регулирующие органы."
 
-#: ../../schema/reference.rst:233 e86d604f15894c96932f9335dcf16c2e
+#: ../../schema/reference.rst:235 eeb873d52c724be888e6492edb3f0c48
 msgid "PublicationDetails"
 msgstr "PublicationDetails (Сведения о публикации)"
 
-#: ../../schema/reference.rstNone f45424e595384109b2debc72c8138a0a
+#: ../../schema/reference.rstNone 6ac5772bfcaa4571b15dba1ee00dc98b
 msgid "Information concerning the publication of this statement."
 msgstr "Информация касательно публикации данной записи."
 
-#: ../../schema/reference.rst:246 0cd0cddd15a449e4a4e00676c23f86c9
+#: ../../schema/reference.rst:248 05bc1b3ed5904635b619c211e53159f9
 msgid "Publisher"
 msgstr "Publisher (издатель)"
 
-#: ../../schema/reference.rstNone db8c1838579d4d718fe935896e22a7bb
+#: ../../schema/reference.rstNone 79a9141d4a954dea8898692dec6fd673
 msgid "Details of the organisation or individual publishing a statement."
 msgstr "Сведения об организации или физическом лице, публикующем запись."
 
-#: ../../schema/reference.rst:260 bbd84091415e4082b622d0f2be789997
+#: ../../schema/reference.rst:262 b0d88c8b690746b5b3d98e43c998e9a6
 msgid "ReplacesStatements"
 msgstr "ReplacesStatements (Заменяет записи)"
 
-#: ../../schema/reference.rstNone b970160f9f974a229c3251a6effb4abc
+#: ../../schema/reference.rstNone 421925419bfe4cc8a7c9846a4d4f7df5
 msgid ""
 "If this statement replaces a previous statement or statements, provide the "
 "identifier(s) for the previous statement(s) here. Consuming applications are"
@@ -485,7 +511,7 @@ msgstr ""
 "идентификатор(ы) предыдущей записи(-ей). Для ресурсоемких приложений "
 "рекомендуется отмечать идентифицированные записи как уже не активные."
 
-#: ../../schema/reference.rst:265 f5ad873da9ea4473bfa2b0fcec737b7b
+#: ../../schema/reference.rst:267 ad6b12e65c8d4713ae70c5b7cef794b2
 msgid ""
 "See :any:`Updating statements <guidance-updating-data>` for technical "
 "guidance on working with updates to data."
@@ -493,25 +519,28 @@ msgstr ""
 "См. :any:`Обновление записей <guidance-updating-data>` для получения "
 "технических рекомендаций по работе с обновлениями данных."
 
-#: ../../schema/reference.rst:271 4da939f4e72d4b65b74506c9739429a2
+#: ../../schema/reference.rst:273 4df0dde201a34ec9916ee057c400b653
 msgid "SecuritiesListing"
-msgstr ""
+msgstr "SecuritiesListing (Регистрация ценных бумаг на фондовой бирже)"
 
-#: ../../schema/reference.rstNone cb99b9644f354f4bb70ee2d457f32a61
+#: ../../schema/reference.rstNone a3550f008ffb40538876d714c96450eb
 msgid "Details of a security and the market on which it is traded."
-msgstr ""
+msgstr "Информация о ценных бумагах и рынке, на котором они продаются."
 
-#: ../../schema/reference.rst:276 f5ad873da9ea4473bfa2b0fcec737b7b
+#: ../../schema/reference.rst:278 b5db6cbac4964071863d2d164ff30ba6
 msgid ""
 "See :any:`Real world identifiers <guidance-identifiers-other>` for technical"
 " guidance on representing securities listings."
 msgstr ""
+"Технические рекомендации по отображению регистрации ценных бумаг на фондовой"
+" бирже см. в разделе :any:`Общие идентификаторы <guidance-identifiers-"
+"other>`."
 
-#: ../../schema/reference.rst:287 1fb3935520a34cefb59ef0326cc531fc
+#: ../../schema/reference.rst:289 32e357380bf0414daf96ac11b65a9249
 msgid "Share"
 msgstr "Share (Доля)"
 
-#: ../../schema/reference.rstNone b85012f8bf5343c09a82a98676fa34ba
+#: ../../schema/reference.rstNone 3e6d2b7653fc42cab4809bcf8c585fde
 msgid ""
 "Where an exact percentage is available, this should be given, and `maximum` "
 "and `minimum` values set to the same as the exact percentage. Otherwise, "
@@ -521,12 +550,19 @@ msgid ""
 " to change these defaults, use the `exclusiveMinimum` and `exclusiveMaximum`"
 " properties."
 msgstr ""
+"Если известен определенный процент, его необходимо указать, а значениям "
+"`maximum` и `minimum` задать то же значение, что у и точного процента. Также"
+" `maximum` и `minimum` можно использовать для записи диапазона, в который "
+"входит такая доля участия. По умолчанию значение `minimum` является "
+"включительным, а `maximum` — исключительным (минимальное значение ≤ доля "
+"участия < максимальное значение). Если вы хотите изменить стандартные "
+"настройки, используйте свойства `exclusiveMinimum` и `exclusiveMaximum`."
 
-#: ../../schema/reference.rst:300 bf16d6d36ca34fceba89121ad0310abb
+#: ../../schema/reference.rst:302 c0b2c89b667d4c9f84b5520e9240527d
 msgid "Source"
 msgstr "Source (Источник)"
 
-#: ../../schema/reference.rstNone faaaa2098c3944c6beca36db84780c24
+#: ../../schema/reference.rstNone 0e5d9f441840455db85914785215b248
 msgid ""
 "The source object is used to explain where information in a statement "
 "originated from, and to link to supporting information."
@@ -534,7 +570,7 @@ msgstr ""
 "Объект source используется для объяснения происхождения информации в записи "
 "и для ссылки на подтверждающую информацию."
 
-#: ../../schema/reference.rst:312 9a7a19f425ec4a229701aeaf269aa98f
+#: ../../schema/reference.rst:314 87e37205e5ba4955a19b1f099a1252d4
 msgid ""
 "See :any:`Sources and annotations <provenance>` for a discussion of "
 "provenance modelling."
@@ -542,11 +578,11 @@ msgstr ""
 "См. :any:`Источники и примечания <provenance>` для рассмотрения "
 "моделирования источника."
 
-#: ../../schema/reference.rst:317 765738f3eeae4d95a27adba345403c0f
+#: ../../schema/reference.rst:319 2010be7e7ff04d718faef3b0b0098b6f
 msgid "StatementDate"
 msgstr "StatementDate (Дата записи)"
 
-#: ../../schema/reference.rst:319 d5d746332cd54d0ebc95d111d6ddd560
+#: ../../schema/reference.rst:321 071484a4ee2244fdbc6be8364a1a18af
 msgid ""
 "Dates MUST conform with the extended format of `ISO 8601 "
 "<https://en.wikipedia.org/wiki/ISO_8601>`_. All of the following, for "
@@ -556,66 +592,70 @@ msgstr ""
 "<https://ru.wikipedia.org/wiki/ISO_8601>`__. Например, все из приведенного "
 "ниже действительно:"
 
-#: ../../schema/reference.rst:321 4196c1dd5122452fa3a882880e4af3b3
+#: ../../schema/reference.rst:323 784961f163b94d66aae7241991f3d246
 msgid "A full datetime string (YYYY-MM-DDTHH:MM:SSZ)"
 msgstr "Полная строка даты и времени (YYYY-MM-DDTHH:MM:SSZ)"
 
-#: ../../schema/reference.rst:322 773f013c00ef4a129c5f4226bfdab61c
+#: ../../schema/reference.rst:324 d7f2a30a9b37469b8ec7bf1d6fa2281b
 msgid "A year, month and day (YYYY-MM-DD)"
 msgstr "Год, месяц и день (YYYY-MM-DD)"
 
-#: ../../schema/reference.rst:323 d3dea4d5668c4b32b1635b411d8abb03
+#: ../../schema/reference.rst:325 a618ba94d87a4886a73785791d9fbc2f
 msgid "A year and month (YYYY-MM)"
 msgstr "Год и месяц (YYYY-MM)"
 
-#: ../../schema/reference.rst:324 3e3a18b9f4074e7c9caf711cb9deb307
+#: ../../schema/reference.rst:326 f30bed3957f5445fb1be1f836b8dc356
 msgid "A year (YYYY)"
 msgstr "Год (YYYY)"
 
-#: ../../schema/reference.rst:330 1cf5ba00df84498c98b7201db8116878
+#: ../../schema/reference.rst:332 32357ee641d34f72a00a78329af59bfe
 msgid "Codelists"
 msgstr "Списки допустимых значений"
 
-#: ../../schema/reference.rst:333 e6089ab8cdc04fb5bf7cd3942228fcd8
+#: ../../schema/reference.rst:335 48c060f1d10743c38be34238ce6794de
 msgid "AddressType"
 msgstr "AddressType (Тип адреса)"
 
-#: ../../schema/reference.rst:342 ed5eb3ebffc1403fa1e482e8081d03cf
+#: ../../schema/reference.rst:344 1e810aee2ca7485da1fd43062d933874
 msgid "AnnotationMotivation"
 msgstr "AnnotationMotivation (Мотивация примечания)"
 
-#: ../../schema/reference.rst:351 669e3837c3c8442b842f6a7bef5e2f73
+#: ../../schema/reference.rst:353 e895baba333e4b2081f071b65594583b
+msgid "DirectOrIndirect"
+msgstr "DirectOrIndirect (Прямо или косвенно)"
+
+#: ../../schema/reference.rst:362 5b14180fed304e48a0e5de97a9441149
 msgid "EntityType"
 msgstr "EntityType (Тип субъекта)"
 
-#: ../../schema/reference.rst:360 adc889bf2892460bb5c591b523b3ba01
-msgid "DirectOrIndirect"
-msgstr ""
+#: ../../schema/reference.rst:372 f213d05dc8b248fbb5ae2afa6fab6e64
+msgid "EntitySubtypeCategory"
+msgstr "EntitySubtypeCategory (Категория подтипа сущности)"
 
-#: ../../schema/reference.rst:369 2d87b69c02f2444e8cfc561284ae66a2
+#: ../../schema/reference.rst:382 dfa50f1a834143f5ba071ef6ac16aad6
 msgid "InterestType"
 msgstr "InterestType (Тип доли участия)"
 
-#: ../../schema/reference.rst:378 94527b43b1934c818509860f6619cf2a
+#: ../../schema/reference.rst:391 db4d9a13cb7247e08ce55efeab090a6a
 msgid "NameType"
 msgstr "NameType (Тип ФИО)"
 
-#: ../../schema/reference.rst:387 f3fdae656e4f4f8ea8801eed57dc8d68
+#: ../../schema/reference.rst:400 365103606b274435b1330aabdf1c9380
 msgid "PersonType"
 msgstr "PersonType (Тип физического лица)"
 
-#: ../../schema/reference.rst:396 ff2060f736a54061894ac89650aadbd9
+#: ../../schema/reference.rst:409 e62ed2095a7246169745a66cc50ed099
 msgid "SecuritiesIdentifierSchemes"
-msgstr ""
+msgstr "SecuritiesIdentifierSchemes (Схемы идентификатора ценных бумаг)"
 
-#: ../../schema/reference.rst:405 f333d495f8f04e6091e21a19b98e433c
+#: ../../schema/reference.rst:418 4ee91e6f8ff1464ba487f59c9d1e2e1a
 msgid "SourceType"
 msgstr "SourceType (Тип источника)"
 
-#: ../../schema/reference.rst:414 467914ac2bfa4be7b6970b9e5e74bf18
+#: ../../schema/reference.rst:427 d3b3657b09324e9bbfe600f2fe34c2e6
 msgid "StatementType"
 msgstr "StatementType (Тип записи)"
 
-#: ../../schema/reference.rst:423 6b097789251940af951dd3012e07dcb1
+#: ../../schema/reference.rst:436 a36f3daf3dba4c8f9b17d4f32bfee55a
 msgid "UnspecifiedReason"
 msgstr "UnspecifiedReason (Неуказанная причина)"

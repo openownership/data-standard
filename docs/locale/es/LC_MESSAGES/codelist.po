@@ -5,22 +5,25 @@
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Carlos Hames, 2022
+# Agustina De Luca, 2022
+# Stephen Abbott Pugh <stephen@openownership.org>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-04-05 17:18+0000\n"
+"POT-Creation-Date: 2022-04-13 16:07+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Stephen Abbott Pugh <stephen@openownership.org>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: schema/codelists/addressType.csv schema/codelists/annotationMotivation.csv
 #: schema/codelists/directOrIndirect.csv
@@ -83,7 +86,7 @@ msgstr ""
 #. title
 #: schema/codelists/addressType.csv:2
 msgid "Residential address"
-msgstr "Domicilio residencial:"
+msgstr "Domicilio residencial"
 
 #. description
 #: schema/codelists/addressType.csv:2
@@ -223,7 +226,7 @@ msgstr ""
 "Los valores de este campo, objeto o declaración han sido modificados "
 "respecto de su forma original utilizando el método señalado en el campo de "
 "descripción. La manifestación transformada puede incluirse en el campo "
-"contenidoTransformado."
+"transformedContent."
 
 #. title
 #: schema/codelists/directOrIndirect.csv:1
@@ -262,7 +265,7 @@ msgstr "La participación puede ser directa o indirecta."
 #. title
 #: schema/codelists/entitySubtypeCategory.csv:1
 msgid "State body > Government department"
-msgstr ""
+msgstr "Organismo estatal > Departamento de gobierno"
 
 #. description
 #: schema/codelists/entitySubtypeCategory.csv:1
@@ -270,11 +273,14 @@ msgid ""
 "An element of government with executive responsibilities. Terms often used "
 "to designate such a body: ministry, department, bureau or office."
 msgstr ""
+"Un elemento del gobierno con responsabilidades ejecutivas. Términos "
+"utilizados a menudo para designar un organismo de este tipo: ministerio, "
+"departamento, oficina u oficina."
 
 #. title
 #: schema/codelists/entitySubtypeCategory.csv:2
 msgid "State body > State Agency"
-msgstr ""
+msgstr "Organismo estatal > Agencia estatal"
 
 #. description
 #: schema/codelists/entitySubtypeCategory.csv:2
@@ -283,16 +289,21 @@ msgid ""
 " may have responsiblities which are devolved from government departments or "
 "from the state's legislative body."
 msgstr ""
+"Un organismo que supervisa o administra elementos de política pública. Las "
+"agencias estatales pueden tener responsabilidades que se delegan de los "
+"departamentos gubernamentales o del cuerpo legislativo del estado."
 
 #. title
 #: schema/codelists/entitySubtypeCategory.csv:3
 msgid "State body > Other"
-msgstr ""
+msgstr "Organismo estatal > Otro"
 
 #. description
 #: schema/codelists/entitySubtypeCategory.csv:3
 msgid "A type of state body unlike a government department or state agency."
 msgstr ""
+"Un tipo de organismo estatal diferente de un departamento gubernamental o "
+"agencia estatal."
 
 #. title
 #: schema/codelists/entityType.csv:1
@@ -321,6 +332,9 @@ msgid ""
 " or statutory corporation, but which is not otherwise uniquely identified in"
 " some official register."
 msgstr ""
+"Un organismo con personalidad jurídica distinta, como una institución "
+"internacional o una corporación estatutaria, pero que no está identificado "
+"de manera única en algún registro oficial."
 
 #. title
 #: schema/codelists/entityType.csv:3
@@ -360,23 +374,26 @@ msgstr "Entidad que no ha sido identificada."
 #. title
 #: schema/codelists/entityType.csv:6
 msgid "State"
-msgstr ""
+msgstr "Estado"
 
 #. description
 #: schema/codelists/entityType.csv:6
 msgid ""
 "A country, nation or community with legal sovereignty within a territory."
 msgstr ""
+"Un país, nación o comunidad con soberanía legal dentro de un territorio."
 
 #. title
 #: schema/codelists/entityType.csv:7
 msgid "State body"
-msgstr ""
+msgstr "Organismo estatal"
 
 #. description
 #: schema/codelists/entityType.csv:7
 msgid "A core administrative or legislative unit within a state's apparatus."
 msgstr ""
+"Una unidad central administrativa o legislativa dentro del aparato de un "
+"estado."
 
 #. title
 #: schema/codelists/interestType.csv:1
@@ -436,6 +453,9 @@ msgid ""
 "shareholder, having voting rights or having the absolute right to appoint to"
 " the board."
 msgstr ""
+"Cualquier influencia o control en una entidad que sea distinta de ser "
+"accionista, tener derechos de voto o tener el derecho absoluto de nombrar al"
+" órgano de administración."
 
 #. title
 #: schema/codelists/interestType.csv:5
@@ -454,7 +474,7 @@ msgstr ""
 #. title
 #: schema/codelists/interestType.csv:6
 msgid "Settlor"
-msgstr ""
+msgstr "Fideicomitente"
 
 #. description
 #: schema/codelists/interestType.csv:6
@@ -464,11 +484,16 @@ msgid ""
 "a trustor, a grantor or a donor. Also to be used for a person with a "
 "settlor-equivalent role in any legal arrangement that is similar to a trust."
 msgstr ""
+"Un fideicomitente es una persona que, ya sea de hecho o por ministerio de la"
+" ley, crea un fideicomiso. Un fideicomitente de un fideicomiso a veces "
+"también se conoce con otros nombres, como fiduciante, otorgante o donante. "
+"También puede ser utilizado para una persona con un papel equivalente al "
+"fideicomitente en cualquier arreglo legal que sea similar a un fideicomiso."
 
 #. title
 #: schema/codelists/interestType.csv:7
 msgid "Trustee"
-msgstr ""
+msgstr "Fiduciario"
 
 #. description
 #: schema/codelists/interestType.csv:7
@@ -479,11 +504,16 @@ msgid ""
 "person with a trustee-equivalent role in any legal arrangement that is "
 "similar to a trust."
 msgstr ""
+"Un fiduciario es una persona que administra el fideicomiso en beneficio de "
+"un tercero y en quien se confiere el título legal de propiedad ya sea por "
+"declaración del fideicomitente o por ministerio de la ley. También para ser "
+"utilizado para una persona con un rol equivalente a fiduciario en cualquier "
+"estructura jurídica legal que sea similar a un fideicomiso."
 
 #. title
 #: schema/codelists/interestType.csv:8
 msgid "Protector"
-msgstr ""
+msgstr "Curador"
 
 #. description
 #: schema/codelists/interestType.csv:8
@@ -493,11 +523,16 @@ msgid ""
 " trust. Also to be used for a person with a protector-equivalent role in any"
 " legal arrangement that is similar to a trust."
 msgstr ""
+"Un curador es una persona nombrada para proteger los intereses o deseos del "
+"fideicomitente, brindando influencia y orientación al fiduciario que "
+"administra el fideicomiso. También se utiliza para una persona con un papel "
+"equivalente a curador en cualquier estructura jurídica legal que sea similar"
+" a un fideicomiso."
 
 #. title
 #: schema/codelists/interestType.csv:9
 msgid "Beneficiary of a legal arrangement"
-msgstr ""
+msgstr "Beneficiario de una estructura jurídica legal"
 
 #. description
 #: schema/codelists/interestType.csv:9
@@ -506,6 +541,10 @@ msgid ""
 "person or legal entity who benefits from a trust or other legal "
 "arrangement's holdings or activities."
 msgstr ""
+"Un interés económico en un fideicomiso u otra estructura jurídica legal. Se "
+"define como una persona o entidad jurídica que se beneficia de las "
+"participaciones o actividades de un fideicomiso u otra estructura jurídica "
+"legal."
 
 #. title
 #: schema/codelists/interestType.csv:10
@@ -533,7 +572,7 @@ msgid ""
 "beyond those otherwise implied by ownership structures that are granted by "
 "contract."
 msgstr ""
-"Participación económica en una entidad. Se definen como los derechos de los "
+"Interés económico en una entidad. Se definen como los derechos de los "
 "beneficiarios finales más allá de los que se encuentran de algún otro modo "
 "implícitos en las estructuras de titularidad que se otorgan por contrato."
 
@@ -555,12 +594,12 @@ msgstr "Derechos condicionales otorgados por contrato"
 #. description
 #: schema/codelists/interestType.csv:13
 msgid "An interest that exists only if some contractual condition is met."
-msgstr ""
+msgstr "Un interés que existe sólo si se cumple alguna condición contractual."
 
 #. title
 #: schema/codelists/interestType.csv:14
 msgid "Control via company rules or articles"
-msgstr ""
+msgstr "Control a través de reglas o artículos de la empresa."
 
 #. description
 #: schema/codelists/interestType.csv:14
@@ -568,11 +607,13 @@ msgid ""
 "Control of an entity gained through a provision in company articles or by "
 "shareholder agreement."
 msgstr ""
+"Control de una entidad obtenido a través de una disposición en los estatutos"
+" de la empresa o por convenio de los accionistas."
 
 #. title
 #: schema/codelists/interestType.csv:15
 msgid "Control by legal framework"
-msgstr ""
+msgstr "Control por marco legal"
 
 #. description
 #: schema/codelists/interestType.csv:15
@@ -582,11 +623,15 @@ msgid ""
 " governments and legislators in order to establish and guide agencies and "
 "entities linked to the state."
 msgstr ""
+"Control de una entidad obtenido a través de un marco legal, como una "
+"combinación de legislación (primaria y secundaria). Este tipo de interés es "
+"creado por los gobiernos y legisladores con el fin de establecer y orientar "
+"las agencias y entidades vinculadas al estado."
 
 #. title
 #: schema/codelists/interestType.csv:16
 msgid "Board member"
-msgstr ""
+msgstr "Miembro del órgano de administración"
 
 #. description
 #: schema/codelists/interestType.csv:16
@@ -594,11 +639,13 @@ msgid ""
 "One of a group of people constituted as the strategic decision-making body "
 "of an organization."
 msgstr ""
+"Uno de un grupo de personas constituido como el órgano de toma de decisiones"
+" estratégicas de una organización."
 
 #. title
 #: schema/codelists/interestType.csv:17
 msgid "Board chair"
-msgstr ""
+msgstr "Presidente del órgano de administración"
 
 #. description
 #: schema/codelists/interestType.csv:17
@@ -608,11 +655,16 @@ msgid ""
 "ensure that the firm's duties to shareholders are being fulfilled by acting "
 "as a link between the board and upper management."
 msgstr ""
+"La persona que tiene el mayor poder y autoridad en el órgano de "
+"administración directivo. También brinda liderazgo a los funcionarios y "
+"ejecutivos de la empresa, y asegura que los deberes de la empresa para con "
+"los accionistas se cumplan al actuar como enlace entre el órgano de "
+"administración y la alta gerencia."
 
 #. title
 #: schema/codelists/interestType.csv:18
 msgid "Unknown interest"
-msgstr ""
+msgstr "Interés desconocido"
 
 #. description
 #: schema/codelists/interestType.csv:18
@@ -620,21 +672,24 @@ msgid ""
 "The interestedParty is known to have an interest in the subject of this "
 "Ownership-or-control Statement, but the nature of the interest is unknown."
 msgstr ""
+"Se sabe que la parteInteresada tiene un interés en el sujeto de esta "
+"declaración sobre titularidad o control, pero se desconoce la naturaleza del"
+" interés."
 
 #. title
 #: schema/codelists/interestType.csv:19
 msgid "Unpublished interest"
-msgstr ""
+msgstr "Interés no publicado"
 
 #. description
 #: schema/codelists/interestType.csv:19
 msgid "The nature of this interest is known but is not published."
-msgstr ""
+msgstr "La naturaleza de este interés se conoce pero no se publica."
 
 #. title
 #: schema/codelists/interestType.csv:20
 msgid "Enjoyment and use of assets"
-msgstr ""
+msgstr "Goce y uso de los bienes"
 
 #. description
 #: schema/codelists/interestType.csv:20
@@ -642,11 +697,13 @@ msgid ""
 "A controlling interest in an asset owned by an entity. Defined as the right "
 "to make use of assets belonging to an entity."
 msgstr ""
+"Un interés mayoritario en un activo propiedad de una entidad. Definido como "
+"el derecho a hacer uso de los bienes pertenecientes a una entidad."
 
 #. title
 #: schema/codelists/interestType.csv:21
 msgid "Right to profit or income from assets"
-msgstr ""
+msgstr "Derecho al beneficio o ingresos de los activos"
 
 #. description
 #: schema/codelists/interestType.csv:21
@@ -654,6 +711,9 @@ msgid ""
 "An economic interest in an asset owned by an entity. Defined as the right to"
 " derive profits and/or income from assets belonging to an entity."
 msgstr ""
+"Un interés económico en un activo propiedad de una entidad. Definido como el"
+" derecho a obtener ganancias o ingresos de los activos pertenecientes a una "
+"entidad."
 
 #. title
 #: schema/codelists/nameType.csv:1
@@ -692,6 +752,8 @@ msgstr "Transliteración del nombre"
 msgid ""
 "A transliteration of the person's individual name in a different script."
 msgstr ""
+"Una transliteración del nombre individual de la persona en una escritura "
+"diferente."
 
 #. title
 #: schema/codelists/nameType.csv:4
@@ -725,7 +787,7 @@ msgstr "Nombre de nacimiento"
 #. description
 #: schema/codelists/nameType.csv:6
 msgid "The legal name of the person at birth."
-msgstr ""
+msgstr "El nombre legal de la persona al nacer."
 
 #. title
 #: schema/codelists/personType.csv:1
@@ -755,7 +817,7 @@ msgid ""
 msgstr ""
 "La persona ha sido identificada, pero se mantiene reservada la información "
 "identificatoria. Se debería indicar el motivo de la no divulgación en el "
-"campo complementario `motivoDeInformaciónFaltante`."
+"campo complementario `missingInfoReason`."
 
 #. title
 #: schema/codelists/personType.csv:3
@@ -770,7 +832,7 @@ msgstr "La identidad de esta persona no ha sido descubierta ni confirmada."
 #. title
 #: schema/codelists/securitiesIdentifierSchemes.csv:1
 msgid "International Securities Identification Number (ISIN)"
-msgstr ""
+msgstr "Número Internacional de Identificación de Valores (ISIN)"
 
 #. description
 #: schema/codelists/securitiesIdentifierSchemes.csv:1
@@ -779,11 +841,14 @@ msgid ""
 "are issued 12-character identifiers. Full details of the scheme are "
 "specified by ISO 6166."
 msgstr ""
+"Esquema de identificación único de valores a nivel internacional. Los "
+"valores se emiten con identificadores de 12 caracteres. Los detalles "
+"completos del esquema se especifican en la norma ISO 6166."
 
 #. title
 #: schema/codelists/securitiesIdentifierSchemes.csv:2
 msgid "Financial Instrument Global identifier (FIGI)"
-msgstr ""
+msgstr "Identificador Global de Instrumentos Financieros (FIGI)"
 
 #. description
 #: schema/codelists/securitiesIdentifierSchemes.csv:2
@@ -793,12 +858,18 @@ msgid ""
 "specified as an Object Management Group standard: "
 "https://www.omg.org/spec/FIGI/."
 msgstr ""
+"Esquema de identificación única de valores a nivel internacional. Los "
+"valores se emiten con identificadores de 12 caracteres. Los detalles "
+"completos del esquema se especifican como un estándar del grupo de gestión "
+"de objetos: https://www.omg.org/spec/FIGI/."
 
 #. title
 #: schema/codelists/securitiesIdentifierSchemes.csv:3
 msgid ""
 "Committee on Uniform Securities Identification Procedures (CUSIP) Number"
 msgstr ""
+"Número del Comité de Procedimientos Uniformes de Identificación de Valores "
+"(CUSIP)"
 
 #. description
 #: schema/codelists/securitiesIdentifierSchemes.csv:3
@@ -807,11 +878,15 @@ msgid ""
 "are issued 9-character identifiers. The scheme is managed by the American "
 "Bankers Association and specified as ANSI X9.6."
 msgstr ""
+"Esquema para la identificación única de valores en América del Norte. Los "
+"valores se emiten con identificadores de 9 caracteres. El esquema es "
+"administrado por la Asociación de Banqueros Estadounidenses y se especifica "
+"como ANSI X9.6."
 
 #. title
 #: schema/codelists/securitiesIdentifierSchemes.csv:4
 msgid "CUSIP International Numbering System (CINS)"
-msgstr ""
+msgstr "Sistema Internacional de Numeración (CINS) de CUSIP"
 
 #. description
 #: schema/codelists/securitiesIdentifierSchemes.csv:4
@@ -820,6 +895,10 @@ msgid ""
 "Securities are issued 9-character identifiers. The scheme is managed by the "
 "American Bankers Association and specified as ANSI X9.6."
 msgstr ""
+"Esquema para la identificación única de valores emitidos fuera de América "
+"del Norte. Los valores se emiten con identificadores de 9 caracteres. El "
+"esquema es administrado por la Asociación de Banqueros Estadounidenses y se "
+"especifica como ANSI X9.6."
 
 #. title
 #: schema/codelists/sourceType.csv:1
@@ -857,7 +936,7 @@ msgid ""
 "individual, entity or interests described by this statement."
 msgstr ""
 "La información fue facilitada por una tercera parte sin relación directa con"
-" la persona, entidad o participaciones descriptas en esta declaración."
+" la persona, entidad o intereses descriptas en esta declaración."
 
 #. title
 #: schema/codelists/sourceType.csv:4
@@ -1013,8 +1092,7 @@ msgid ""
 "disclose its beneficial owner. (Replaces noNotifiableOwners.)"
 msgstr ""
 "El sujeto de esta declaración sobre titularidad o control no está obligado a"
-" divulgar su beneficiario final. (Reemplaza a "
-"sinPropietariosQueDebanNotificarse)."
+" divulgar su beneficiario final. (Reemplaza a noNotifiableOwners)."
 
 #. title
 #: schema/codelists/unspecifiedReason.csv:5

@@ -1,31 +1,32 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Stephen Abbott Pugh <stephen@openownership.org>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:57+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Stephen Abbott Pugh <stephen@openownership.org>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../schema/guidance/languages.rst:2 d2445a650445407da668772522c0c995
+#: ../../schema/guidance/languages.rst:2 89bf473a2a83498985c6d1a1f9f235aa
 msgid "Languages and transliteration"
 msgstr "Idiomas y transliteración"
 
-#: ../../schema/guidance/languages.rst:4 de66c6b04b4e4cf8b5f8a13358095a78
+#: ../../schema/guidance/languages.rst:4 956cc25aee59482caf11b6a57ec3f09b
 msgid ""
 "There may be times when beneficial ownership information needs to be "
 "provided in different languages."
@@ -33,24 +34,24 @@ msgstr ""
 "Puede haber casos en que sea necesario proporcionar información sobre "
 "beneficiarios finales en diferentes idiomas."
 
-#: ../../schema/guidance/languages.rst:6 cf46530c55c34c94a1eb7dee4e344e86
+#: ../../schema/guidance/languages.rst:6 7002d1a5864a4d90978fe6e5822ec92b
 msgid ""
 "For people's names, use an entry in the ``names`` array with a ``type`` of "
 "'translation'"
 msgstr ""
-"Para los nombres de personas, utilice una entrada en el arreglo ``nombres`` "
-"con un ``tipo`` consistente en \"traducción\""
+"Para los nombres de personas, utilice una entrada en el arreglo ``names`` "
+"con un ``type`` consistente en \"translation\""
 
-#: ../../schema/guidance/languages.rst:7 f3cc9ddf20ad4adaa873bea2abf93a59
+#: ../../schema/guidance/languages.rst:7 04e6ec3cd82b4046bd22ac6fd0c8a5ac
 msgid "For entity names, use an entry in the ``alternativeNames`` array"
 msgstr ""
 "Para los nombres de entidades, utilice una entrada en el arreglo "
-"``nombresAlternativos``"
+"``alternativeNames``"
 
-#: ../../schema/guidance/languages.rst:9 49c03ef31a524b9d8583a17b20e52962
+#: ../../schema/guidance/languages.rst:9 cac5aa371ad443d48a357cca01703177
 msgid ""
 "For other fields, an ``annotations`` object can be used to indicate that a "
 "particular field has a translation or transliteration."
 msgstr ""
-"Para otros campos, se puede utilizar un objeto ``notas`` para indicar que un"
-" determinado campo cuenta con una traducción o transliteración."
+"Para otros campos, se puede utilizar un objeto ``annotations`` para indicar "
+"que un determinado campo cuenta con una traducción o transliteración."

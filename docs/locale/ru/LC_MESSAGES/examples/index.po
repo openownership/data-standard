@@ -1,19 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Galia Williams, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-05 17:16+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Galia Williams, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,23 +22,27 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../examples/index.rst:2 47859d888c8e4ab0953f1f343bb85aa2
+#: ../../examples/index.rst:2 8eaf1ce59e3a4a289953197240ce27b4
 msgid "Examples"
 msgstr "Примеры"
 
-#: ../../examples/index.rst:4 5585b27086254ff7ab8f30d5633df108
+#: ../../examples/index.rst:4 87770a248c4540cb97ece04403869ef1
 msgid ""
 "The examples below highlight key elements of how ownership and control "
 "information is built up through the use of statements."
 msgstr ""
+"В приведенных ниже примерах показаны ключевые аспекты того, как формируется "
+"информация о владении и контроле через использование характеристик."
 
-#: ../../examples/index.rst:6 1b0a00a19b9e470987b81aea62502f08
+#: ../../examples/index.rst:6 c778cfdddc184b6884c1b698f31f3d90
 msgid ""
 "You can also find examples of valid BODS JSON files in the standard "
 "repository:"
 msgstr ""
+"Вы также можете найти примеры корректных JSON-файлов СДБВ в стандартном "
+"репозитории:"
 
-#: ../../examples/index.rst:8 985037f829e8437f91e1c5b4a19d7b12
+#: ../../examples/index.rst:8 5cd9ab26e16b4be3aa2d7deea8803588
 msgid ""
 "Example data (`v0.3 <https://github.com/openownership/data-"
 "standard/tree/0.3.0/examples>`__  |  `v0.2 "
@@ -45,8 +50,13 @@ msgid ""
 "`v0.1 <https://github.com/openownership/data-"
 "standard/tree/0.1.0/examples>`__ )"
 msgstr ""
+"Данные примеров (`версия 0.3 <https://github.com/openownership/data-"
+"standard/tree/0.3.0/examples>`__  |  `версия 0.2 "
+"<https://github.com/openownership/data-standard/tree/0.2.0/examples>`__  | "
+"`версия 0.1 <https://github.com/openownership/data-"
+"standard/tree/0.1.0/examples>`__ )"
 
-#: ../../examples/index.rst:9 540e265b7c794115b9247fae4b6878cf
+#: ../../examples/index.rst:9 d86e5c1d7c3f436382d2770afced458e
 msgid ""
 "Test data (`v0.3 <https://github.com/openownership/data-"
 "standard/tree/0.3.0/tests/data/entity-statement/valid>`__  |  `v0.2 "
@@ -55,18 +65,26 @@ msgid ""
 "<https://github.com/openownership/data-"
 "standard/tree/0.1.0/tests/data/entity-statement/valid>`__ )"
 msgstr ""
+"Тестовые данные (`версия 0.3 <https://github.com/openownership/data-"
+"standard/tree/0.3.0/tests/data/entity-statement/valid>`__  |  `версия 0.2 "
+"<https://github.com/openownership/data-"
+"standard/tree/0.2.0/tests/data/entity-statement/valid>`__  | `версия 0.1 "
+"<https://github.com/openownership/data-"
+"standard/tree/0.1.0/tests/data/entity-statement/valid>`__ )"
 
-#: ../../examples/index.rst:11 8f8a2ca41e404224aa42d2f3f15d1ea6
+#: ../../examples/index.rst:11 902ef246009049c1b5f1a4c6555000f9
 msgid ""
 "For a visual rendering of these examples, use the `BODS Visualiser "
 "<https://www.openownership.org/visualisation/visualisation-tool/>`_."
 msgstr ""
+"Для визуального отображения этих примеров используйте `BODS Visualiser "
+"<https://www.openownership.org/visualisation/visualisation-tool/>`_."
 
-#: ../../examples/index.rst:15 81c781118bfd4571b78b1ef949dbe4fd
+#: ../../examples/index.rst:15 c50ee5b326424248bfec757b6fdcffae
 msgid "A single direct owner"
 msgstr "Один прямой владелец"
 
-#: ../../examples/index.rst:17 842566d6430e472fb9d672088c8f3a95
+#: ../../examples/index.rst:17 89792f54c0d147d58364d1b845be4f4f
 msgid ""
 "The example below presents three statements (Entity, Person and "
 "OwnershipOrControl) that describe the 100% beneficial ownership of Chrinon "
@@ -77,11 +95,11 @@ msgstr ""
 "которые описывают 100%-ное бенефициарное владение Криса Таггарта компанией "
 "Chrinon Ltd."
 
-#: ../../examples/index.rst:23 fa6bee8fb4c04bfdb1ddf484c6586ef3
+#: ../../examples/index.rst:23 c53bf9d1b9a34498bd3db022c7ef4706
 msgid "Joint ownership"
 msgstr "Совместное владение"
 
-#: ../../examples/index.rst:25 e2381f73ddfe4a43a044d657361d5cba
+#: ../../examples/index.rst:25 a35f5b7b8d154324af772eee6f6c5752
 msgid ""
 "To model joint ownership, an artificial 'arrangement', owned by the two "
 "parties responsible for it, should be included within a chain of ownership."
@@ -90,11 +108,11 @@ msgstr ""
 "искусственное «соглашение о владении и контроле» между двумя сторонами, "
 "ответственными за него."
 
-#: ../../examples/index.rst:32 46880042f4564af98b1185d42635127c
+#: ../../examples/index.rst:32 1be19a1433d84d23bed91740b180fcfb
 msgid "Updating ownership"
 msgstr "Обновление владения"
 
-#: ../../examples/index.rst:34 3508a30019f64a78bf31ec3ca7f9ca64
+#: ../../examples/index.rst:34 7610052150a04da78762d68567cc7be6
 msgid ""
 "To update a previous statement, a new beneficial ownership statement, with a"
 " ``replacesStatement`` property is required."
@@ -102,7 +120,7 @@ msgstr ""
 "Чтобы обновить предыдущую запись, необходима новая запись о бенефициарном "
 "владении со свойством ``replacesStatement``."
 
-#: ../../examples/index.rst:36 2c82c39e382f40bf9591c7714adb8921
+#: ../../examples/index.rst:36 ff11aaa867ae4f8ca0b8ae2583048df5
 msgid ""
 "In the (fictional) example below, the previous statement that Chris Taggart "
 "has 100% ownership of Chrinon Ltd is replaced by a new statement showing 50%"
@@ -114,13 +132,15 @@ msgstr ""
 "записью, отражающей 50%-ное владение. Отдельной записью объявляется, что "
 "владелец остальных 50% еще не был идентифицирован."
 
-#: ../../examples/index.rst:38 dd35d88e4e414936a3096b6550d3e480
+#: ../../examples/index.rst:38 55696708440541158b2b304040725144
 msgid ""
 "Note that only **changed statements** need to have new statement "
 "identifiers."
 msgstr ""
+"Обратите внимание, что только для **измененных характеристик** необходимы "
+"новые идентификаторы характеристик."
 
-#: ../../examples/index.rst:43 ad8e3916af13407bba2e683c95138a18
+#: ../../examples/index.rst:43 c9ea5ecf3c9a4e9e8f46068872b0ea61
 msgid ""
 "When a data file is provided, all the person or entity statements referenced"
 " from an ownershipOrControl statement ``subject`` or ``interestedParty`` "

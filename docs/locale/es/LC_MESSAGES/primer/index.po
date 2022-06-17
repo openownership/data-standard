@@ -1,40 +1,42 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017, OpenOwnership
+# Copyright (C) 2022, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Agustina De Luca, 2022
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.1\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-14 16:55+0000\n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../primer/index.rst:2 b4de10c2aaaf4c0587001029f44e5cb9
+#: ../../primer/index.rst:2 81df7cc3e24a4604af49190cfd439a01
 msgid "Primer"
 msgstr "Guía introductoria"
 
-#: ../../primer/index.rst:4 75dd4a06d1b041cf93139818bb8df9ac
+#: ../../primer/index.rst:4 f698456e9bf9473f8cc05a97e93c277a
 msgid ""
 "This Primer sets out to explain the basics of Beneficial Ownership and the "
 "basics of a data standard handling Beneficial Ownership."
 msgstr ""
 "Esta guía introductoria tiene como objetivo explicar los fundamentos básicos"
-" del concepto de beneficiarios finales y de un estándar de datos que se "
-"ocupa de los beneficiarios finales."
+" del concepto de beneficiarios finales y de un estándar de datos que trata "
+"sobre ellos"
 
-#: ../../primer/index.rst:6 9456a5fd3d8541b487006614e7a0640c
+#: ../../primer/index.rst:6 2a217fdd476c4222926a0d3780680c6e
 msgid ""
 "People new to the concept of Beneficial Ownership will want to know "
 ":doc:`what it is <whatisbo>` and :doc:`why it's important <whyisbo>`. "
@@ -43,10 +45,10 @@ msgid ""
 " Data Standard <whatisthebods>` as a kind of template. Finally we look at "
 "the :doc:`scope of the Standard <whatdoesbodscover>` and what it offers."
 msgstr ""
-"Quienes desconocen el concepto de beneficiario final querrán saber :doc:`de "
-"qué se trata <whatisbo>` y :doc:`por qué es importante <whyisbo>`. Viendo "
-"entonces :doc:`qué datos se necesitan <whatisbodata>` para describir una "
-"cadena de titularidad de beneficiarios finales, podemos :doc:`entender el "
-"Estándar de Datos sobre Beneficiarios Finales <whatisthebods>` como un tipo "
-"de plantilla. Por último, veremos el :doc:`alcance del Estándar "
+"Quienes desconocen el concepto de beneficiarios finales querrán saber "
+":doc:`de qué se trata <whatisbo>` y :doc:`por qué es importante <whyisbo>`. "
+"Viendo entonces :doc:`qué datos se necesitan <whatisbodata>` para describir "
+"una cadena de titularidad de beneficiarios finales, podemos :doc:`entender "
+"el Estándar de Datos sobre Beneficiarios Finales <whatisthebods>` como una "
+"plantilla. Por último, veremos el :doc:`alcance del Estándar "
 "<whatdoesbodscover>` y lo que ofrece."

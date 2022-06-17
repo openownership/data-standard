@@ -1,0 +1,363 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Carlos Hames, 2022
+# Agustina De Luca, 2022
+# Stephen Abbott Pugh <stephen@openownership.org>, 2022
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-13 16:06+0100\n"
+"PO-Revision-Date: 2022-04-13 15:11+0000\n"
+"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:4
+#: 15028319851f4e03bd6967d0bb578ff8
+msgid "Representing beneficial ownership"
+msgstr "Representación del beneficiario final"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:8
+#: 1e00796775514ce3bf34b588e89e1738
+msgid ""
+"**Key requirement:** If a person is a beneficial owner of an entity - "
+"whether directly or indirectly - and the person or entity is required to "
+"declare this beneficial ownership, there MUST be an Ownership-or-control "
+"Statement connecting the two which represents the beneficial ownership "
+"relationship."
+msgstr ""
+"**Requisito clave:** Si una persona es el beneficiario final de una entidad,"
+" ya sea directa o indirectamente, y la persona o entidad debe declarar este "
+"beneficiario final, DEBE haber una Declaración sobre Titularidad-o-control "
+"que conecte los dos que representa la relación de beneficiario final."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:12
+#: 0314984cef91473c9cf21f255008945d
+msgid "Overview"
+msgstr "Descripción general"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:14
+#: 00843ded44724135994a749a5d3d4b79
+msgid ""
+"Beneficial owners can exercise ownership-or-control *directly* in an entity "
+"(expected to be a company) or *indirectly*, via intermediary entities (such "
+"as arrangements or other companies). It must be clear in a BODS dataset "
+"which people are declared as beneficial owners of which companies (and which"
+" entities are intermediaries). And it must be clear what overall control or "
+"ownership beneficial owners have (regardless of whether it is direct or "
+"indirect)."
+msgstr ""
+"Los beneficiarios finales pueden ejercer la titularidad o el control "
+"*directamente* en una entidad (que se espera que sea una empresa) o "
+"*indirectamente*, a través de entidades intermediarias (como arreglos u "
+"otras empresas). Debe quedar claro en un conjunto de datos BODS qué personas"
+" se declaran beneficiarios finales de qué empresas (y qué entidades son "
+"intermediarias). Y debe quedar claro qué control general o titularidad "
+"tienen los beneficiarios finales (independientemente de si es directo o "
+"indirecto)."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rstNone
+#: ea6f8a47eea048d686558812b857d601
+msgid ""
+"Person 1 indirectly holds a 15 percent shareholding in Company E, via an "
+"intermediary: Company A. Person 2 directly holds 32 precent of Company E's "
+"shares."
+msgstr ""
+"La Persona 1 posee indirectamente una participación accionaria del 15 por "
+"ciento en la empresa E, a través de un intermediario: la Empresa A. La "
+"Persona 2 posee directamente el 32 por ciento de las acciones de la Empresa "
+"E."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:21
+#: 0f868bad91624489b921a5ce172e7987
+msgid ""
+"In the above situation, Person 1 *indirectly* benefits from a 15% "
+"shareholding in Company E and Person 2 has a *direct* 32% shareholding in "
+"Company E. In a jurisdiction where people with a shareholding (direct or "
+"indirect) of over 10% in a company should be disclosed as beneficial owners,"
+" both Person 1 and Person 2’s interests would be declared. Additionally, the"
+" jurisdiction may require that details of Person 1’s indirect interest are "
+"disclosed. That is: that some details of the chain Company E - Company A - "
+"Person 1 are also disclosed."
+msgstr ""
+"En la situación anterior, la Persona 1 se beneficia *indirectamente* de una "
+"participación accionaria del 15% en la Empresa E y la Persona 2 tiene una "
+"participación accionaria *directa* del 32% en la Empresa E. En una "
+"jurisdicción donde las personas con una participación accionaria (directa o "
+"indirecta) de más de 10 % en una empresa debe revelarse como beneficiarios "
+"finales, se declararán los intereses de la Persona 1 y la Persona 2. Además,"
+" la jurisdicción puede exigir que se divulguen los detalles de la "
+"participación indirecta de la Persona 1. Es decir: que también se divulguen "
+"algunos detalles de la cadena Empresa E - Empresa A - Persona 1."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:23
+#: 3669cc4367794750ae78100d2b6cdbc7
+msgid ""
+"In BODS, the following properties are used to represent such information "
+"disclosure:"
+msgstr ""
+"En BODS, se utilizan las siguientes propiedades para representar dicha "
+"divulgación de información:"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:25
+#: 46df189dfc5e483d94d2dd31eca2f4c3
+msgid "``beneficialOwnershipOrControl`` (See :ref:`schema-interest`)"
+msgstr "``beneficialOwnershipOrControl`` (Ver :ref:`schema-interest`)"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:26
+#: f420e5f4fb7342879c33c9fd32bcac37
+msgid "``directOrIndirect`` (See :ref:`schema-interest`)"
+msgstr "``directOrIndirect`` (Ver :ref:`schema-interest`)"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:27
+#: ef0cf0b5a6694f6aab751c1214a88257
+msgid ""
+"``componentStatementIDs`` (See :ref:`schema-ownership-or-control-statement`)"
+msgstr ""
+"``componentStatementIDs`` (Ver :ref:`schema-ownership-or-control-statement`)"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:28
+#: 51f55616c5ed43898899ffc6234ba9bd
+msgid "``isComponent`` (See :ref:`schema-entity-statement`)"
+msgstr "``isComponent`` (Ver :ref:`schema-entity-statement`)"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:31
+#: 8e659d7828b64de78962158cbab0e95d
+msgid "Requirements"
+msgstr "Requisitos"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:34
+#: fc34447f158241ca8894d0f124b538b9
+msgid "The beneficial ownership relationship"
+msgstr "La relación de beneficiario final"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:36
+#: 8e4950e56bca454eb7c4b4146fa8815f
+msgid ""
+"If a person is a beneficial owner of an entity, entity X, whether directly "
+"or indirectly, and one of them is required to declare this beneficial "
+"ownership:"
+msgstr ""
+"Si una persona es el beneficiario final de una entidad, la entidad X, ya sea"
+" directa o indirectamente, y una de ellas está obligada a declarar dicho "
+"beneficiario final:"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:38
+#: 41d2b3e8186746f692372e146eacc920
+msgid ""
+"There MUST be a *primary* Ownership-or-control Statement connecting the two "
+"which represents the beneficial ownership relationship. In particular:"
+msgstr ""
+"DEBE haber una Declaración-sobre-titularidad-o-control *primaria* que "
+"conecte los dos que representan la relación de beneficiario final. En "
+"particular:"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:40
+#: b338cfb43f994919803fdd986da3bca4
+msgid "the entity’s Statement MUST be the ``subject``;"
+msgstr "la declaración de la entidad DEBE ser ``subject``;"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:41
+#: 9bb924fa979c45f99abf871f48e5c4e6
+msgid "the person’s Statement MUST be the ``interestedParty``;"
+msgstr "la declaración de la persona DEBE ser ``interestedParty``"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:42
+#: 50d5fb4f97c94b5db760a6ba9b23db59
+msgid "``isComponent`` MUST be false;"
+msgstr "``isComponent`` DEBE ser falso;"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:43
+#: 38b3d30ce7de4d11badaf2f2a0f1fd4c
+msgid ""
+"the ``interests`` which make the person meet the criteria for their being "
+"declared a beneficial owner MUST be included in this primary Ownership-or-"
+"control Statement if known; and"
+msgstr ""
+"los ``interests`` que hacen que la persona cumpla con los criterios para ser"
+" declarado beneficiario final DEBEN incluirse en esta Declaración-sobre-"
+"titularidad-o-control primaria, si se conocen; y"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:44
+#: 7278b35a3ca34270b0aed53fb69ecca1
+msgid ""
+"the ``interests`` in (d) MUST have ``beneficialOwnershipOrControl`` set to "
+"'true'."
+msgstr ""
+"los ``intereses`` en (d) DEBEN tener ``beneficialOwnershipOrControl`` "
+"establecido como 'true'."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:46
+#: 83cdad6d714144f2a5e2bc3cd3f51c32
+msgid ""
+"If beneficial ownership is known to be exercised indirectly, via "
+"intermediary entities then ``directOrIndirect`` MUST be ‘indirect’. If it is"
+" known to be exercised directly then ``directOrIndirect`` MUST be ‘direct’. "
+"Otherwise ``directOrIndirect`` MUST be ‘unknown’."
+msgstr ""
+"Si se sabe que el beneficiario final se ejerce indirectamente, a través de "
+"entidades intermediarias, entonces ``directOrIndirect`` DEBE ser ‘indirect’."
+" Si se sabe que se ejerce directamente, ``directOrIndirect`` DEBE ser "
+"‘direct’. De lo contrario ``directOrIndirect`` DEBE ser ‘unknown’."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:49
+#: 97787642f8844cf29f8a641a982ebbc7
+msgid "Intermediaries"
+msgstr "Intermediarios"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:51
+#: 52691cd4b03141ee8cb5bddee5fcca12
+msgid ""
+"Where beneficial ownership is known to be exercised indirectly, via known "
+"intermediary entities, this SHOULD be represented in addition to the above. "
+"In particular:"
+msgstr ""
+"Cuando se sabe que el beneficiario final se ejerce indirectamente, a través "
+"de entidades intermediarias conocidas, esto DEBE estar representado además "
+"de lo anterior. En particular:"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:53
+#: 5aa7ad0bc4104651bda35a772fd33242
+msgid ""
+"The chain of known intermediary entities SHOULD be represented by "
+"*secondary* Entity Statements, Ownership-or-control Statements and Person "
+"Statements."
+msgstr ""
+"La cadena de entidades intermediarias conocidas DEBE estar representada por "
+"Declaraciones de entidad *secundarias*, Declaraciones-de-propiedad-o-control"
+" y Declaraciones de persona."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:54
+#: 9b06b64f09514c1eb1dcb57502a6c165
+msgid ""
+"These secondary statements SHOULD link the beneficial owner’s Statement to "
+"entity X’s statement indirectly."
+msgstr ""
+"Estas declaraciones secundarias DEBEN vincular la Declaración del "
+"beneficiario final con la declaración de la entidad X indirectamente."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:55
+#: b076a42d3dcd4baaa833d78130d89a86
+msgid ""
+"These secondary statements SHOULD all have ``isComponent`` set to 'true'."
+msgstr ""
+"Todas estas declaraciones secundarias DEBEN tener ``isComponent`` "
+"establecido como  'true'."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:56
+#: f90796999d0642ae80c2ebd5493fa948
+msgid ""
+"These secondary statements SHOULD all have their ``statementID`` values "
+"listed in the ``componentStatementIDs`` array of the primary Ownership-or-"
+"control Statement."
+msgstr ""
+"Todas estas declaraciones secundarias DEBEN tener sus valores "
+"``statementID`` enumerados en el arreglo de datos ``componentStatementIDs`` "
+"de la declaración sobre titularidad o control."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:57
+#: 70879a32fbec47b59340922e7561ba20
+msgid ""
+"When the primary Ownership-or-control Statement is published in a BODS file:"
+msgstr ""
+"Cuando la Declaración-sobre-titularidad-o-control primaria se publica en un "
+"archivo BODS:"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:59
+#: d467520b0c3f4bcdac8514e44c492c38
+msgid ""
+"all secondary statements referenced from ``componentStatementIDs`` MUST also"
+" be published in that file;"
+msgstr ""
+"todas las declaraciones secundarias a las que se hace referencia desde "
+"``componentStatementIDs`` también DEBEN publicarse en ese archivo;"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:60
+#: c6e5ab2418ad4d58ac77555f73c54648
+msgid ""
+"all secondary statements must appear before the primary Ownership-or-control"
+" Statement in the list of statements."
+msgstr ""
+"todas las declaraciones secundarias deben aparecer antes de la declaración "
+"sobre titularidad o control principal en la lista de declaraciones."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:63
+#: 5e69f39894be446e94d17651e75e7c5e
+msgid "Example"
+msgstr "Ejemplo"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:65
+#: 5f28a6d0e4ad40a9bfcbccc247613aea
+msgid ""
+"In the following example, Person 1 is a beneficial owner of Company E. They "
+"exercise that beneficial ownership via an intermediary company, Company A. "
+"(Note: abbreviated statement IDs are used for brevity and clarity of "
+"explanation. Short IDs like ‘ooc-2’ are not valid in BODS.)"
+msgstr ""
+"En el siguiente ejemplo, la Persona 1 es un beneficiario final de la Empresa"
+" E. Ejerce ese beneficiario final a través de una empresa intermediaria, la "
+"Empresa A. (Nota: los ID de declaración abreviada se usan con fin de "
+"brevedad y claridad de la explicación. ID cortos como ‘ooc-2’ no son válidos"
+" en BODS.)"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rstNone
+#: 74f69dcc85984c898687860902eaa900
+msgid ""
+"Person Statements, Entity Statements and Ownership-or-control Statements are"
+" linked, representing the company ownership structure. Statement property "
+"values are given as follows. Person 1's Statement: statementID is p-1, "
+"isComponent is false. Intermediary Company A's Statement: statementID is "
+"e-2, isComponent is true. Company E's Statement: statementID is e-1, "
+"isComponent is false. Ownership-or-control Statement connecting Person 1 and"
+" Company A: statementID is ooc-3, directOrIndirect is direct, isComponent is"
+" true, beneficialOwnershipOrControl is false. Ownership-or-control Statement"
+" connecting Company A and Company E: statementID is ooc-2, directOrIndirect "
+"is direct, isComponent is true, beneficialOwnershipOrControl is false. "
+"Ownership-or-control Statement connecting Person 1 and Company E: "
+"statementID is ooc-1, isComponent is false, componentStatementIDs are ooc-2 "
+"and e-2 and ooc-3; and its interests have directOrIndirect as indirect and "
+"beneficialOwnershipOrControl as true."
+msgstr ""
+"Las Declaraciones de Persona, las Declaraciones de Entidad y las "
+"Declaraciones-de-titularidad-o-control están vinculadas y representan la "
+"estructura de titularidad de la empresa. Los valores de propiedad de "
+"declaración se dan de la siguiente manera. Declaración de la Persona 1: "
+"statementID es p-1, isComponent es false. Declaración de la Empresa "
+"intermediaria A: statementID es e-2, isComponent es true. Declaración de la "
+"Empresa E: statementID es e-1, isComponent es false. Declaración de "
+"titularidad o control que conecta a la Persona 1 y la Empresa A: statementID"
+" es ooc-3, directOrIndirect es direct, isComponent es true,  "
+"beneficialOwnershipOrControl es false. Declaración de titularidad o control "
+"que conecta la Empresa A y la Empresa E: statementID es ooc-2, "
+"directOrIndirect es direct, isComponent es true, "
+"beneficialOwnershipOrControl es falso. Declaración de titularidad o control "
+"que conecta a la Persona 1 y la Empresa E: statementID es ooc-1, isComponent"
+" es false, componentStatementIDs son ooc-2 y e-2 y ooc-3; y sus intereses "
+"tienen directOrIndirect como indirect y beneficiosoOwnershipOrControl como "
+"true."
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:73
+#: 7d8b007602ce4cd9afdc4dfc3ee6f4b6
+msgid "Statement order"
+msgstr "Orden de la declaración"
+
+#: ../../schema/guidance/repr-beneficial-ownership.rst:74
+#: 8046bc0a15864d9f9763d1c2edaf3ddc
+msgid ""
+"An example of valid statement order for the above would be: p-1, e-1, e-2, "
+"ooc-3, ooc-2, ooc-1."
+msgstr ""
+"Un ejemplo de orden de declaración válido para lo anterior sería: p-1, e-1, "
+"e-2, ooc-3, ooc-2, ooc-1."
