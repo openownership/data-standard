@@ -114,7 +114,7 @@ And you need to get a [Transifex API key](https://www.transifex.com/user/setting
 
 Run the following commands from the root directory unless otherwise specified (eg. sometimes it's less complicated to run them from `docs`).
 
-0. *Before you start*, run `tx-pull -a` to make sure you have the most up to date translations in your local environment.
+0. *Before you start*, run `tx pull -a` to make sure you have the most up to date translations in your local environment.
 
 **When you change text in the docs** you need to do the following so that they can be translated:
 
