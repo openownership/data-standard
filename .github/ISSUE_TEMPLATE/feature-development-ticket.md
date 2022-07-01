@@ -19,7 +19,7 @@ _The title of this GitHub ticket should be 'Feature: XXXXX' where XXXXX is the f
 
 ### Feature background
 
-**Briefly describe the purpose of this feature** _[This should be a high level overview and avoid content better suited to a implementation proposal]_
+**Briefly describe the purpose of this feature** _[This should be a high level overview and avoid content better suited to an implementation proposal]_
 
 
 **What user needs are met by introducing or developing this feature in BODS?** _[Summarise these needs. Link to user stories, reports, blogs and other evidence where possible. Or add user stories here directly.]_
