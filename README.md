@@ -9,7 +9,7 @@ You can find the latest version of the schema and documentation at [https://stan
 
 ## Governance
 
-BODS has been created by [Open Ownership](https://www.openownership.org) in partnership with [Open Data Services](https://opendataservices.coop/), and is provided under an open license for re-use. 
+BODS has been developed by [Open Ownership](https://www.openownership.org) in partnership with [Open Data Services](https://opendataservices.coop/), and is provided under an open license for re-use. 
 
 An [open data standard working group](https://standard.openownership.org/en/latest/about/governance.html) of data experts, beneficial ownership specialists and other interested parties also provides advice and helps guide the development of BODS.
 
