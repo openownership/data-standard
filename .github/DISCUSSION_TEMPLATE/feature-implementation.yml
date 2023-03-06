@@ -1,0 +1,51 @@
+title: "Implementation proposal: [FEATURE NAME] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        _This ticket proposes a particular approach to implementing a feature in BODS. In most cases, a proposal should be made only after the problem it tries to solve is described in a 'feature' ticket._
+
+        _See [Feature development in BODS](https://openownership.github.io/bods-dev-handbook/feature_development.html) in the Handbook._
+
+        _The title of this GitHub ticket should be 'Implementation proposal: XXXXX no.Y' where XXXXX is the feature name in the linked ticket. The proposal number, Y, should be incremented if this is an alternative proposal for meeting the needs of a feature. Comments on this ticket can be used to question, refine and develop this implementation proposal. Interactions and work on this ticket represent a collaborative process. Proposals may be paused, withdrawn, or developed into draft implementation plans. Update the 'Proposal status' as thinking progresses on this thread. Highlight changes or updates to the proposal within thread comments, with a clear 'Updated proposal' heading._
+  - type: markdown
+    attributes:
+      value: |
+        ## Implementation proposal for: 
+  - type: input
+    id: feature-name
+    attributes:
+      label: Feature name
+    validations:
+      required: true
+  - type: input
+    id: feature-ticket
+    attributes:
+      label: Feature ticket #
+  - type: dropdown
+    id: status
+    attributes:
+      label: Implementation proposal status
+      options:
+        - Active
+        - Paused
+        - Withdrawn
+        - Being implemented
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Initial proposal
+
+        _Broadly, what changes do you propose are made to the BODS schema or documentation in order to develop the feature in question._
+  - type: textarea
+    id: overview
+    attributes:
+      label: Overview
+      description: "Please provide a summary of your proposal"
+  - type: textarea
+    id: detail
+    attributes:
+      label: Detailed implementation proposal
+      description: "Please give a detailed account of your proposal. Include examples, implications for modelling, dependencies and anything that helps people understand the content and implications of the idea. Include links to supporting files if necessary."
