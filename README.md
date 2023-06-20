@@ -35,15 +35,12 @@ First, clone this repository so that you can work locally on your machine.
 
 The frontend uses **docson** JavaScript library to visualise the JSON schema. BODS uses [a specific patched fork of docson](https://github.com/OpenDataServices/docson/tree/master-bods) (which is different from the patched fork used by other standards). This is included in the `data-standard` repo rather than as part of the [Sphinx theme](https://github.com/openownership/data-standard-sphinx-theme) because it is necessary regardless of which theme is used to build the docs. See [data-standard-sphinx-theme#36](https://github.com/openownership/data-standard-sphinx-theme/issues/36) for the particulars of the patches. The situation with the various branches and patches of docson is in need of serious improvement.
 
-Meanwhile, to include the appropriate version of docson JS after you clone this repo, you need to run:
+Meanwhile, to include the appropriate version of docson JS after you clone this repo, you need to change directory into the cloned repository and run:
 
 ```
 git submodule init
 git submodule update
 ```
-
-Change to the directory of the repository.
-
 Create a Python Virtual Environment. It should be python3.8 to match our build server.
 
     python3 -m virtualenv -p python3.8 .ve
