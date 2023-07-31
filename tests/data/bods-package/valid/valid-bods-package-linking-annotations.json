@@ -79,10 +79,8 @@
         "type": "shareholding",
         "startDate": "2018-09-19",
         "share": {
-          "minimum": 25,
-          "maximum": 50,
-          "exclusiveMinimum": true,
-          "exclusiveMaximum": true
+          "exclusiveMinimum": 25,
+          "exclusiveMaximum": 50
         },
         "details": "The person holds, directly or indirectly, more than 25% but not more than 50% of the shares in the company."
       }
