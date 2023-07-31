@@ -60,7 +60,7 @@
         "directOrIndirect": "direct",
         "share": {
           "minimum": 75,
-          "maximum": 100
+          "exclusiveMaximum": 100
         }
       }
     ],
