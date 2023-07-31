@@ -1,7 +1,7 @@
 {
   "$id": "bods-package.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "0.3",
+  "version": "0.4",
   "type": "array",
   "items": {
     "oneOf": [

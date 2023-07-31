@@ -1,7 +1,7 @@
 {
   "$id": "ownership-or-control-statement.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "0.3",
+  "version": "0.4",
   "title": "Ownership or control Statement",
   "description": "An ownership or control statement is made up of an entity, an interested party (a reference to an entity, natural person, arrangement or trust), details of the interest and provenance information for the statement.",
   "type": "object",
