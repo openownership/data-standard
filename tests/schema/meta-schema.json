@@ -62,7 +62,7 @@
     "openCodelist": {
       "$comment": "A BODS schema property.",
       "title": "Open Codelist",
-      "description": "If true, the property can contain values beyond what is defined in the codelist in the BO Data Standard. If false,the property is restricuted to only the values defined in the codelist.",
+      "description": "If true, the property can contain values beyond what is defined in the codelist in the BO Data Standard. If false,the property is restricted to only the values defined in the codelist.",
       "type": "boolean",
       "default": false
     },
