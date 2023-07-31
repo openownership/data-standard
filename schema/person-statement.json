@@ -1,27 +1,25 @@
 {
-  "id": "person-statement.json",
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "person-statement.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.3",
   "type": "object",
   "title": "Person statement",
   "description": "A person statement describes the information known about a natural person at a particular point in time, or from a given submission of information",
   "properties": {
     "statementID": {
-      "$ref": "components.json#/definitions/ID",
-      "propertyOrder": 1
+      "propertyOrder": 1,
+      "$ref": "components.json#/$defs/ID"
     },
     "statementType": {
       "title": "Statement type",
       "description": "This MUST be 'personStatement'.",
       "type": "string",
-      "enum": [
-        "personStatement"
-      ],
-      "propertyOrder": 2
+      "propertyOrder": 2,
+      "const": "personStatement"
     },
     "statementDate": {
-      "$ref": "components.json#/definitions/StatementDate",
-      "propertyOrder": 3
+      "propertyOrder": 3,
+      "$ref": "components.json#/$defs/StatementDate"
     },
     "isComponent": {
       "title": "Is component",
@@ -78,7 +76,7 @@
       "description": "One or more known names for this individual.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/Name"
+        "$ref": "components.json#/$defs/Name"
       },
       "propertyOrder": 10
     },
@@ -87,7 +85,7 @@
       "description": "One or more official identifiers for this perrson. Where available, official registration numbers should be provided.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/Identifier"
+        "$ref": "components.json#/$defs/Identifier"
       },
       "propertyOrder": 20
     },
@@ -96,14 +94,14 @@
       "description": "An array of ISO 2-Digit country codes representing nationalities held by this individual.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/Country"
+        "$ref": "components.json#/$defs/Country"
       },
       "propertyOrder": 30
     },
     "placeOfBirth": {
       "title": "Place of birth",
-      "$ref": "components.json#/definitions/Address",
-      "propertyOrder": 40
+      "propertyOrder": 40,
+      "$ref": "components.json#/$defs/Address"
     },
     "birthDate": {
       "title": "Date of birth",
@@ -121,15 +119,15 @@
     },
     "placeOfResidence": {
       "title": "Place of residence",
-      "$ref": "components.json#/definitions/Address",
-      "propertyOrder": 50
+      "propertyOrder": 50,
+      "$ref": "components.json#/$defs/Address"
     },
     "taxResidencies": {
       "title": "Tax residency",
       "description": "An array of ISO 2-Digit country codes representing the tax residencies held by this individual.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/Country"
+        "$ref": "components.json#/$defs/Country"
       },
       "propertyOrder": 55
     },
@@ -138,33 +136,33 @@
       "description": "One or more addresses for this entity.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/Address"
+        "$ref": "components.json#/$defs/Address"
       },
       "propertyOrder": 60
     },
     "publicationDetails": {
       "title": "Publication details",
       "description": "Information concerning the original publication of this statement.",
-      "$ref": "components.json#/definitions/PublicationDetails",
-      "propertyOrder": 85
+      "propertyOrder": 85,
+      "$ref": "components.json#/$defs/PublicationDetails"
     },
     "source": {
       "title": "Source",
       "description": "The source of information about this person, or of information that supports an unknown or anonymous person statement.",
-      "$ref": "components.json#/definitions/Source",
-      "propertyOrder": 89
+      "propertyOrder": 89,
+      "$ref": "components.json#/$defs/Source"
     },
     "annotations": {
       "title": "Annotations",
       "description": "Annotations about this statement or parts of this statement",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/Annotation"
+        "$ref": "components.json#/$defs/Annotation"
       },
       "propertyOrder": 90
     },
     "replacesStatements": {
-      "$ref": "components.json#/definitions/ReplacesStatements"
+      "$ref": "components.json#/$defs/ReplacesStatements"
     },
     "politicalExposure": {
       "type": "object",
@@ -189,7 +187,7 @@
           "title": "Politically exposed person (PEP) details",
           "description": "One or more descriptions of this person's Politically Exposed Person (PEP) status.",
           "items": {
-            "$ref": "components.json#/definitions/PepStatusDetails"
+            "$ref": "components.json#/$defs/PepStatusDetails"
           }
         }
       }
