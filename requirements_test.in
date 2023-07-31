@@ -12,7 +12,7 @@ pyflakes
 pytest
 six
 json-merge-patch
-jscc>=0.2.0
+jscc>=0.2.3
 
 # Libraries required for jsonschema format checking
 # See table at bottom of https://python-jsonschema.readthedocs.io/en/latest/validate/#validating-formats
