@@ -1,270 +1,86 @@
 {
-  "id": "http://json-schema.org/draft-04/schema#",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Core schema meta-schema",
-  "definitions": {
-    "schemaArray": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "$ref": "#"
-      }
-    },
-    "positiveInteger": {
-      "type": "integer",
-      "minimum": 0
-    },
-    "positiveIntegerDefault0": {
-      "allOf": [
-        {
-          "$ref": "#/definitions/positiveInteger"
-        },
-        {
-          "default": 0
-        }
-      ]
-    },
-    "simpleTypes": {
-      "enum": [
-        "array",
-        "boolean",
-        "integer",
-        "null",
-        "number",
-        "object",
-        "string"
-      ]
-    },
-    "stringArray": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "minItems": 1,
-      "uniqueItems": true
-    }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://json-schema.org/draft/2020-12/schema",
+  "$vocabulary": {
+    "https://json-schema.org/draft/2020-12/vocab/core": true,
+    "https://json-schema.org/draft/2020-12/vocab/applicator": true,
+    "https://json-schema.org/draft/2020-12/vocab/unevaluated": true,
+    "https://json-schema.org/draft/2020-12/vocab/validation": true,
+    "https://json-schema.org/draft/2020-12/vocab/meta-data": true,
+    "https://json-schema.org/draft/2020-12/vocab/format-annotation": true,
+    "https://json-schema.org/draft/2020-12/vocab/content": true
   },
-  "type": "object",
+  "$dynamicAnchor": "meta",
+  "title": "Core and Validation specifications meta-schema",
+  "allOf": [
+    {"$ref": "meta/core"},
+    {"$ref": "meta/applicator"},
+    {"$ref": "meta/unevaluated"},
+    {"$ref": "meta/validation"},
+    {"$ref": "meta/meta-data"},
+    {"$ref": "meta/format-annotation"},
+    {"$ref": "meta/content"}
+  ],
+  "type": ["object", "boolean"],
+  "$comment": "This meta-schema also defines keywords that have appeared in previous drafts in order to prevent incompatible extensions as they remain in common use.",
   "properties": {
-    "id": {
-      "type": "string"
-    },
-    "$schema": {
-      "type": "string"
-    },
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
-    },
-    "default": {},
-    "multipleOf": {
-      "type": "number",
-      "minimum": 0,
-      "exclusiveMinimum": true
-    },
-    "maximum": {
-      "type": "number"
-    },
-    "exclusiveMaximum": {
-      "type": "boolean",
-      "default": false
-    },
-    "minimum": {
-      "type": "number"
-    },
-    "exclusiveMinimum": {
-      "type": "boolean",
-      "default": false
-    },
-    "maxLength": {
-      "$ref": "#/definitions/positiveInteger"
-    },
-    "minLength": {
-      "$ref": "#/definitions/positiveIntegerDefault0"
-    },
-    "pattern": {
-      "type": "string",
-      "format": "regex"
-    },
-    "additionalItems": {
-      "anyOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "$ref": "#"
-        }
-      ],
-      "default": {}
-    },
-    "items": {
-      "anyOf": [
-        {
-          "$ref": "#"
-        },
-        {
-          "$ref": "#/definitions/schemaArray"
-        }
-      ],
-      "default": {}
-    },
-    "maxItems": {
-      "$ref": "#/definitions/positiveInteger"
-    },
-    "minItems": {
-      "$ref": "#/definitions/positiveIntegerDefault0"
-    },
-    "uniqueItems": {
-      "type": "boolean",
-      "default": false
-    },
-    "maxProperties": {
-      "$ref": "#/definitions/positiveInteger"
-    },
-    "minProperties": {
-      "$ref": "#/definitions/positiveIntegerDefault0"
-    },
-    "required": {
-      "$ref": "#/definitions/stringArray"
-    },
-    "additionalProperties": {
-      "anyOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "$ref": "#"
-        }
-      ],
-      "default": {}
-    },
     "definitions": {
+      "$comment": "\"definitions\" has been replaced by \"$defs\".",
       "type": "object",
-      "additionalProperties": {
-        "$ref": "#"
-      },
-      "default": {}
-    },
-    "properties": {
-      "type": "object",
-      "additionalProperties": {
-        "$ref": "#"
-      },
-      "default": {}
-    },
-    "patternProperties": {
-      "type": "object",
-      "additionalProperties": {
-        "$ref": "#"
-      },
+      "additionalProperties": { "$dynamicRef": "#meta" },
+      "deprecated": true,
       "default": {}
     },
     "dependencies": {
+      "$comment": "\"dependencies\" has been split and replaced by \"dependentSchemas\" and \"dependentRequired\" in order to serve their differing semantics.",
       "type": "object",
       "additionalProperties": {
         "anyOf": [
-          {
-            "$ref": "#"
-          },
-          {
-            "$ref": "#/definitions/stringArray"
-          }
+          { "$dynamicRef": "#meta" },
+          { "$ref": "meta/validation#/$defs/stringArray" }
         ]
-      }
+      },
+      "deprecated": true,
+      "default": {}
     },
-    "enum": {
-      "type": "array",
-      "minItems": 1,
-      "uniqueItems": true
+    "$recursiveAnchor": {
+      "$comment": "\"$recursiveAnchor\" has been replaced by \"$dynamicAnchor\".",
+      "$ref": "meta/core#/$defs/anchorString",
+      "deprecated": true
     },
-    "type": {
-      "anyOf": [
-        {
-          "$ref": "#/definitions/simpleTypes"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/simpleTypes"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        }
-      ]
-    },
-    "format": {
-      "type": "string"
-    },
-    "allOf": {
-      "$ref": "#/definitions/schemaArray"
-    },
-    "anyOf": {
-      "$ref": "#/definitions/schemaArray"
-    },
-    "oneOf": {
-      "$ref": "#/definitions/schemaArray"
-    },
-    "not": {
-      "$ref": "#"
-    },
-    "$ref": {
-      "type": "string"
-    },
-    "omitWhenMerged": {
-      "type": "boolean",
-      "default": false
-    },
-    "deprecated": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "deprecatedVersion",
-        "description"
-      ],
-      "properties": {
-        "deprecatedVersion": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        }
-      }
+    "$recursiveRef": {
+      "$comment": "\"$recursiveRef\" has been replaced by \"$dynamicRef\".",
+      "$ref": "meta/core#/$defs/uriReferenceString",
+      "deprecated": true
     },
     "codelist": {
+      "$comment": "A BODS schema property.",
+      "title": "Codelist",
+      "description": "The filename of a .csv in the BO Data Standard which defines the allowed values for this property.",
       "type": "string"
     },
     "openCodelist": {
-      "type": "boolean",
-      "default": false
-    },
-    "wholeListMerge": {
-      "type": "boolean",
-      "default": false
-    },
-    "versionId": {
+      "$comment": "A BODS schema property.",
+      "title": "Open Codelist",
+      "description": "If true, the property can contain values beyond what is defined in the codelist in the BO Data Standard. If false,the property is restricuted to only the values defined in the codelist.",
       "type": "boolean",
       "default": false
     },
     "version": {
+      "$comment": "A BODS schema property.",
       "type": "string"
     },
     "propertyOrder": {
+      "$comment": "A BODS schema property.",
+      "title": "Property Order",
+      "description": "The order in which properties should be displayed for optimised user experience. Properties whose values are not objects or arrays should be listed first.",
       "type": "integer"
     },
     "oneOfEnumSelectorField": {
+      "$comment": "A BODS schema property.",
+      "name": "oneOf Enum Field",
+      "description": "Hints to a validator which subschema to use when validating objects which may use one of several schema options.",
       "type": "string"
     }
-  },
-  "dependencies": {
-    "exclusiveMaximum": [
-      "maximum"
-    ],
-    "exclusiveMinimum": [
-      "minimum"
-    ]
-  },
-  "default": {},
-  "additionalProperties": false
+  }
 }

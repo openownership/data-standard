@@ -15,13 +15,21 @@ import os
 import json
 
 
+schemas = [(path, name, data) for path, name, _, data in walk_json_data(top=absolute_path_to_source_schema_dir) if is_json_schema(data) and not path.endswith('tests/schema/meta-schema.json')]
+with open(os.path.join(this_dir, 'schema', 'meta-schema.json')) as fp:
+    metaschema = json.load(fp)
+
+validator = Draft202012Validator(metaschema, format_checker=FormatChecker())
+# validator = Draft202012Validator(Draft202012Validator.META_SCHEMA, format_checker=FormatChecker())
+
+
 def test_empty():
     empty_files_paths = [path for path in get_empty_files() if "src/" not in path[0]]
     warn_and_assert(empty_files_paths, "{0} is empty, run: rm {0}", "Files are empty. See warnings below.")
 
 
 def test_indent():
-    misindented_files_paths = [path for path in get_misindented_files() if "src/" not in path[0]]
+    misindented_files_paths = [path for path in get_misindented_files() if "src/" not in path[0] and "meta-schema.json" not in path[0]]
     warn_and_assert(
         misindented_files_paths,
         "{0} is not indented as expected",
@@ -34,12 +42,6 @@ def test_invalid_json():
         get_invalid_json_files(), "{0} is not valid JSON: {1}", "JSON files are invalid. See warnings below."
     )
 
-
-schemas = [(path, name, data) for path, name, _, data in walk_json_data(top=absolute_path_to_source_schema_dir) if is_json_schema(data) and not path.endswith('tests/schema/meta-schema.json')]
-with open(os.path.join(this_dir, 'schema', 'meta-schema.json')) as fp:
-    metaschema = json.load(fp)
-
-validator = Draft202012Validator(metaschema, format_checker=FormatChecker())
 
 @pytest.mark.parametrize("path,name,data", schemas)
 def test_schema_valid(path, name, data):
