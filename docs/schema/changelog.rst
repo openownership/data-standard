@@ -6,7 +6,7 @@ ChangeLog
 
 .. attention:: 
    
-    This is v0.3 of the Beneficial Ownership Data Standard. It includes updates to the data model and codelists as well as additional technical guidance.
+    The latest is v0.3 of the Beneficial Ownership Data Standard. It includes updates to the data model and codelists as well as additional technical guidance.
     
     Implementers should be aware that future changes are anticipated, before a version 1.0 release. However any structural changes, or major definitional changes, will only take place following consultation, with a clear changelog provided, and with the documentation of previous versions maintained in archive form.
 
@@ -14,12 +14,13 @@ ChangeLog
 
 [Unreleased]
 ==================
-Changed 
+
+Changed
 -------
 - Removed ``securitiesListing`` from required fields in ``hasPublicListing``.
-
 - Scenario added to 'Representing state-owned enterprises' page covering ownership or control by a regional government.
-
+- Updated the JSON Schema version from draft-04 to 2020-12.
+  - `Interest/share/maximum` is now inclusive by default. `exclusiveMinimum` and `exclusiveMaximum` are now numbers (instead of booleans), which are used in the same way as and alongside their inclusive counterparts `minimum` and `maximum`.
 
 [0.3] - 2022-04-15
 ==================
