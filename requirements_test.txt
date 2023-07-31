@@ -53,7 +53,7 @@ jinja2==2.11.3
     # via
     #   myst-parser
     #   sphinx
-jscc==0.2.2
+jscc==0.2.3
     # via -r requirements_test.in
 json-merge-patch==0.2
     # via
