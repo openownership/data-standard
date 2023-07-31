@@ -1,8 +1,8 @@
 {
-  "id": "components.json",
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "components.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.3",
-  "definitions": {
+  "$defs": {
     "StatementDate": {
       "title": "Statement date",
       "description": "The date on which this statement was made.",
@@ -53,7 +53,7 @@
           "description": "Who is making this statement? This may be the name of the person or organisation making a self-declaration (in which case, please make sure the name field matches the organisation or person name field), or the name or description of some other party. If this statement has been verified, this may also include the name of the organisation providing verification.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Agent"
+            "$ref": "#/$defs/Agent"
           }
         }
       }
@@ -281,7 +281,7 @@
         },
         "share": {
           "title": "Percentage share",
-          "description": "Where an exact percentage is available, this should be given, and `maximum` and `minimum` values set to the same as the exact percentage. Otherwise, `maximum` and `minimum` can be used to record the range into which the share of this kind of interest falls. By default the `minimum` is inclusive and the `maximum` exclusive (minimum-value ≤ share < maximum-value). If you wish to change these defaults, use the `exclusiveMinimum` and `exclusiveMaximum` properties.",
+          "description": "Where an exact percentage is available, this should be given, and `maximum` and `minimum` values set to the same as the exact percentage. Otherwise, `maximum` and `minimum` can be used to record the range into which the share of this kind of interest falls. The `minimum` is and `maximum` values are inclusive (minimum-value ≤ share ≤ maximum-value). To set exclusive ranges (minimum-value < share < maximum-value), use the `exclusiveMinimum` and `exclusiveMaximum` properties. Exclusive and inclusive values can be used in combination (e.g. minimum-value `minimum` ≤ share < maximum-value `exclusiveMaximum`).",
           "type": "object",
           "properties": {
             "exact": {
@@ -308,14 +308,16 @@
             "exclusiveMinimum": {
               "title": "Exclusive minimum",
               "description": "If `exclusiveMinimum` is true, then the share is at least greater than the `minimum` value given. E.g. if `minimum` is '25', the share is at least 25.1, and not simply 25.",
-              "type": "boolean",
-              "default": false
+              "type": "number",
+              "maximum": 100,
+              "minimum": 0
             },
             "exclusiveMaximum": {
               "title": "Exclusive maximum",
               "description": "If `exclusiveMaximum` is true, then the share is at least less than the `maximum` value given. E.g. if `maximum` is '50', the share is less than 49.999, and not simply 50.",
-              "type": "boolean",
-              "default": true
+              "type": "number",
+              "maximum": 100,
+              "minimum": 0
             }
           }
         },
@@ -407,9 +409,7 @@
         {
           "properties": {
             "motivation": {
-              "enum": [
-                "linking"
-              ]
+              "const": "linking"
             }
           },
           "required": [
@@ -494,7 +494,7 @@
         "jurisdiction": {
           "title": "Jurisdiction",
           "description": "The jurisdiction where this person is a PEP.",
-          "$ref": "#/definitions/Jurisdiction"
+          "$ref": "#/$defs/Jurisdiction"
         },
         "startDate": {
           "title": "State date",
@@ -511,7 +511,7 @@
         "source": {
           "title": "Source",
           "description": "The source of this PEP information",
-          "$ref": "components.json#/definitions/Source"
+          "$ref": "components.json#/$defs/Source"
         }
       }
     },
@@ -541,7 +541,7 @@
         "publisher": {
           "title": "Publisher",
           "description": "Details of the organisation or individual publishing this statement.",
-          "$ref": "components.json#/definitions/Publisher"
+          "$ref": "components.json#/$defs/Publisher"
         }
       },
       "required": [
@@ -610,7 +610,7 @@
           "items": {
             "title": "Securities listing",
             "description": "Details of a security and the market on which it is traded.",
-            "$ref": "#/definitions/SecuritiesListing"
+            "$ref": "#/$defs/SecuritiesListing"
           }
         }
       }

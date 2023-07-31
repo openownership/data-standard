@@ -1,24 +1,22 @@
 {
-  "id": "ownership-or-control-statement.json",
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "ownership-or-control-statement.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.3",
   "title": "Ownership or control Statement",
   "description": "An ownership or control statement is made up of an entity, an interested party (a reference to an entity, natural person, arrangement or trust), details of the interest and provenance information for the statement.",
   "type": "object",
   "properties": {
     "statementID": {
-      "$ref": "components.json#/definitions/ID"
+      "$ref": "components.json#/$defs/ID"
     },
     "statementType": {
       "title": "Statement type",
       "description": "This MUST be 'ownershipOrControlStatement'.",
       "type": "string",
-      "enum": [
-        "ownershipOrControlStatement"
-      ]
+      "const": "ownershipOrControlStatement"
     },
     "statementDate": {
-      "$ref": "components.json#/definitions/StatementDate"
+      "$ref": "components.json#/$defs/StatementDate"
     },
     "isComponent": {
       "title": "Is component",
@@ -30,7 +28,7 @@
       "description": "The identifiers of all component statements that provide detail about the indirect relationship between this Statement's `subject` and `interestedParty`. If this Ownership-or-control Statement has components, it MUST itself have a `isComponent` value of 'false'.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/ID"
+        "$ref": "components.json#/$defs/ID"
       }
     },
     "subject": {
@@ -49,36 +47,36 @@
       ]
     },
     "interestedParty": {
-      "$ref": "#/definitions/InterestedParty"
+      "$ref": "#/$defs/InterestedParty"
     },
     "interests": {
       "title": "Interests",
       "description": "A description of the interests held by the interestedParty covered by this statement in the entity covered by this statement.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/Interest"
+        "$ref": "components.json#/$defs/Interest"
       }
     },
     "publicationDetails": {
       "title": "Publication details",
       "description": "Information concerning the original publication of this statement.",
-      "$ref": "components.json#/definitions/PublicationDetails"
+      "$ref": "components.json#/$defs/PublicationDetails"
     },
     "source": {
       "title": "Source",
       "description": "The source of the information that links the entity and the interested party, or that supports a null statement.",
-      "$ref": "components.json#/definitions/Source"
+      "$ref": "components.json#/$defs/Source"
     },
     "annotations": {
       "title": "Annotations",
       "description": "Annotations about this statement or parts of this statement",
       "type": "array",
       "items": {
-        "$ref": "components.json#/definitions/Annotation"
+        "$ref": "components.json#/$defs/Annotation"
       }
     },
     "replacesStatements": {
-      "$ref": "components.json#/definitions/ReplacesStatements"
+      "$ref": "components.json#/$defs/ReplacesStatements"
     }
   },
   "required": [
@@ -89,7 +87,7 @@
     "interestedParty",
     "publicationDetails"
   ],
-  "definitions": {
+  "$defs": {
     "InterestedParty": {
       "title": "Interested party",
       "description": "The interested party has some level of ownership or control over the entity referenced in this ownership or control statement. This should be described with reference to either an entity statement or person statement, or, where the interested party is unknown, details of why. ",

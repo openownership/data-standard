@@ -1,5 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "codelist-schema.json",
   "title": "Codelist schema",
   "description": "Schema for BODS codelist CSV files.",
   "type": "array",
