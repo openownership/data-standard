@@ -293,28 +293,28 @@
             },
             "maximum": {
               "title": "Maximum share",
-              "description": "The upper bound of the share of this interest known to be held.",
+              "description": "The inclusive upper bound of the share of this interest known to be held.",
               "type": "number",
               "maximum": 100,
               "minimum": 0
             },
             "minimum": {
               "title": "Minimum share",
-              "description": "The lower bound of the share of this interest known to be held.",
+              "description": "The inclusive lower bound of the share of this interest known to be held.",
               "type": "number",
               "maximum": 100,
               "minimum": 0
             },
             "exclusiveMinimum": {
               "title": "Exclusive minimum",
-              "description": "If `exclusiveMinimum` is true, then the share is at least greater than the `minimum` value given. E.g. if `minimum` is '25', the share is at least 25.1, and not simply 25.",
+              "description": "The exclusive lower bound of the share of this interest known to be held.",
               "type": "number",
               "maximum": 100,
               "minimum": 0
             },
             "exclusiveMaximum": {
               "title": "Exclusive maximum",
-              "description": "If `exclusiveMaximum` is true, then the share is at least less than the `maximum` value given. E.g. if `maximum` is '50', the share is less than 49.999, and not simply 50.",
+              "description": "The exclusive upper bound of the share of this interest known to be held.",
               "type": "number",
               "maximum": 100,
               "minimum": 0
