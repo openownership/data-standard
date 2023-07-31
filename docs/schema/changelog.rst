@@ -13,7 +13,7 @@ ChangeLog
     The schema specifies a **structure**, **fields** and **codelists** but does not yet enforce validation constraints on most fields.
 
 [Unreleased]
-==================
+=======
 
 Changed
 -------
