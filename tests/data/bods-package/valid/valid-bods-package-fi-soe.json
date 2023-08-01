@@ -19,7 +19,7 @@
     "foundingDate": "2020-01-01",
     "publicationDetails": {
       "publicationDate": "2022-04-01",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
       "publisher": {
         "name": "X Register",
@@ -52,7 +52,7 @@
     "foundingDate": "2020-01-01",
     "publicationDetails": {
       "publicationDate": "2022-04-01",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
       "publisher": {
         "name": "X Register",
@@ -85,7 +85,7 @@
     },
     "publicationDetails": {
       "publicationDate": "2022-04-01",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
       "publisher": {
         "name": "X Register",
@@ -114,7 +114,7 @@
     },
     "publicationDetails": {
       "publicationDate": "2022-04-01",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
       "publisher": {
         "name": "X Register",
@@ -153,7 +153,7 @@
     "isComponent": true,
     "publicationDetails": {
       "publicationDate": "2022-04-01",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
       "publisher": {
         "name": "X Register",
@@ -192,7 +192,7 @@
     "isComponent": true,
     "publicationDetails": {
       "publicationDate": "2022-04-01",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
       "publisher": {
         "name": "X Register",
@@ -231,7 +231,7 @@
     "isComponent": true,
     "publicationDetails": {
       "publicationDate": "2022-04-01",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
       "publisher": {
         "name": "X Register",
@@ -264,7 +264,7 @@
     "isComponent": true,
     "publicationDetails": {
       "publicationDate": "2022-04-01",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
       "publisher": {
         "name": "X Register",
@@ -311,7 +311,7 @@
     "isComponent": false,
     "publicationDetails": {
       "publicationDate": "2022-04-01",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
       "publisher": {
         "name": "X Register",

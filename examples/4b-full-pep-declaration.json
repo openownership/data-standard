@@ -14,7 +14,7 @@
     ],
     "publicationDetails": {
       "publicationDate": "2019-06-07",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://example.com/document/ei-open-data-policy-2015",
       "publisher": {
         "name": "ETI International"
@@ -57,7 +57,7 @@
     },
     "publicationDetails": {
       "publicationDate": "2019-06-07",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://example.com/document/ei-open-data-policy-2015",
       "publisher": {
         "name": "ETI International"
@@ -99,7 +99,7 @@
     ],
     "publicationDetails": {
       "publicationDate": "2019-06-07",
-      "bodsVersion": "0.3",
+      "bodsVersion": "0.4",
       "license": "https://example.com/document/ei-open-data-policy-2015",
       "publisher": {
         "name": "ETI International"
