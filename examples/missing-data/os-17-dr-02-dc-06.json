@@ -5,7 +5,7 @@
       "publisher": {
         "name": "Example Register"
       },
-      "bodsVersion": "0.3"
+      "bodsVersion": "0.4"
     },
     "statementID": "60bb3996-b434-4377-930b-39972c65b400",
     "statementType": "entityStatement",
@@ -33,7 +33,7 @@
       "publisher": {
         "name": "Example Register"
       },
-      "bodsVersion": "0.3"
+      "bodsVersion": "0.4"
     },
     "statementID": "5b7273f7-6ca1-40f3-9146-646ce0f8b03e",
     "statementType": "ownershipOrControlStatement",
