@@ -81,7 +81,7 @@
         "directOrIndirect": "direct",
         "share": {
           "minimum": 25,
-          "maximum": 50
+          "exclusiveMaximum": 50
         },
         "startDate": "2016-07-07",
         "beneficialOwnershipOrControl": true
@@ -91,7 +91,7 @@
         "directOrIndirect": "direct",
         "share": {
           "minimum": 25,
-          "maximum": 50
+          "exclusiveMaximum": 50
         },
         "startDate": "2016-07-07",
         "beneficialOwnershipOrControl": true
