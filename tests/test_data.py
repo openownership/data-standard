@@ -151,6 +151,7 @@ test_invalid_statement_json_parametrize_data = [
     ("ownership-or-control-statement-no-publication-details.json", ValidationError),
     ("ownership-or-control-statement-no-statement-type.json", MissingStatementTypeError),
     ("ownership-or-control-statement-no-url-linking-annotation.json", ValidationError),
+    ("ownership-or-control-statement-boolean-exclusive-minmax.json", ValidationError)
 ]
 
 test_invalid_statement_json_parametrize_data = get_full_paths(test_invalid_statement_json_parametrize_data)
