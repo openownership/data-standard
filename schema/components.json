@@ -281,7 +281,7 @@
         },
         "share": {
           "title": "Percentage share",
-          "description": "Where an exact percentage is available, this should be given, and `maximum` and `minimum` values set to the same as the exact percentage. Otherwise, `maximum` and `minimum` can be used to record the range into which the share of this kind of interest falls. The `minimum` is and `maximum` values are inclusive (minimum-value ≤ share ≤ maximum-value). To set exclusive ranges (minimum-value < share < maximum-value), use the `exclusiveMinimum` and `exclusiveMaximum` properties. Exclusive and inclusive values can be used in combination (e.g. minimum-value `minimum` ≤ share < maximum-value `exclusiveMaximum`).",
+          "description": "Where an exact percentage is available, this should be given, and `maximum` and `minimum` values set to the same as the exact percentage. Otherwise, `minimum` (or `exclusiveMinimum`) and `maximum` (or `exclusiveMaximum`) can be used to record the range into which the share of this kind of interest falls. (The `minimum` and `maximum` values are inclusive.)",
           "type": "object",
           "properties": {
             "exact": {
