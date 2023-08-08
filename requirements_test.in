@@ -19,4 +19,6 @@ jscc>=0.2.3
 rfc3987
 strict-rfc3339
 compiletojsonschema==0.3.0
+rfc3339-validator
+rfc3986-validator
 

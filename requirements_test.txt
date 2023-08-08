@@ -138,11 +138,16 @@ requests==2.25.1
     #   jscc
     #   sphinx
     #   transifex-client
+rfc3339-validator==0.1.4
+    # via -r requirements_test.in
+rfc3986-validator==0.1.1
+    # via -r requirements_test.in
 rfc3987==1.3.8
     # via -r requirements_test.in
 six==1.15.0
     # via
     #   -r requirements_test.in
+    #   rfc3339-validator
     #   transifex-client
 smmap==5.0.0
     # via gitdb
