@@ -585,7 +585,6 @@
       "title": "Public listing",
       "description": "Details of a publicly listed company, its securities (shares and other tradable financial instruments related to the entity), and related regulatory filings.",
       "required": [
-        "securitiesListings",
         "hasPublicListing"
       ],
       "minProperties": 1,
