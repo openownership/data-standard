@@ -5,9 +5,16 @@
   "$defs": {
     "StatementDate": {
       "title": "Statement date",
-      "description": "The date on which this statement was made.",
+      "description": "The date (optionally including time) on which this statement was declared by the source.",
       "type": "string",
-      "format": "date"
+      "anyOf": [
+        {
+          "format": "date"
+        },
+        {
+          "format": "date-time"
+        }
+      ]
     },
     "Source": {
       "title": "Source",
@@ -44,9 +51,16 @@
         },
         "retrievedAt": {
           "title": "Retrieved at",
-          "description": "If this statement was imported from some external system, include a timestamp indicating when this took place. The statement's own date should be set based on the source information. ",
+          "description": "A timestamp indicating when this statement was imported from an external system, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format. (The statementDate should be set based on the source information.)",
           "type": "string",
-          "format": "date-time"
+          "anyOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ]
         },
         "assertedBy": {
           "title": "Asserted by",
@@ -323,15 +337,15 @@
         },
         "startDate": {
           "title": "Start date",
-          "description": "When did this interest first occur. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
+          "description": "The date from which this interest was active. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
           "type": "string",
-          "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+          "format": "date"
         },
         "endDate": {
           "title": "End date",
-          "description": "When did this interest cease. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
+          "description": "The date from which this interest ceased to exist. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
           "type": "string",
-          "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+          "format": "date"
         }
       }
     },
@@ -347,9 +361,16 @@
         },
         "creationDate": {
           "title": "Creation Date",
-          "description": "The date this annotation was created.",
+          "description": "The date at which this annotation was created, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format.",
           "type": "string",
-          "format": "date"
+          "anyOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ]
         },
         "createdBy": {
           "title": "Created By",
@@ -498,15 +519,15 @@
         },
         "startDate": {
           "title": "State date",
-          "description": "When did this PEP status begin. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
+          "description": "The date from which this individual had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
           "type": "string",
-          "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+          "format": "date"
         },
         "endDate": {
           "title": "End date",
-          "description": "When did this PEP status end. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
+          "description": "The date from which this individual no longer had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data..",
           "type": "string",
-          "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+          "format": "date"
         },
         "source": {
           "title": "Source",
@@ -522,9 +543,16 @@
       "properties": {
         "publicationDate": {
           "title": "Publication date",
-          "description": "The date on which this statement was published.",
+          "description": "The date on which this statement was published, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format.",
           "type": "string",
-          "format": "date"
+          "anyOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ]
         },
         "bodsVersion": {
           "title": "BODS version",

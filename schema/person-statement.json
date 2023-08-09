@@ -105,16 +105,30 @@
     },
     "birthDate": {
       "title": "Date of birth",
-      "description": "The date of birth for this individual. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
+      "description": "The date of birth for this individual, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
       "type": "string",
-      "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$",
+      "anyOf": [
+        {
+          "pattern": "^(\\d{4})(-(1[0-2]|0[1-9]))?$"
+        },
+        {
+          "format": "date"
+        }
+      ],
       "propertyOrder": 35
     },
     "deathDate": {
       "title": "Death date",
-      "description": "If this individual is no longer alive, provide their date of death. Please provide as precise a date as possible in ISO 8601 format. When only the year or year and month is known, these can be given as YYYY or YYYY-MM.",
+      "description": "The date of death for this individual, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
       "type": "string",
-      "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$",
+      "anyOf": [
+        {
+          "pattern": "^(\\d{4})(-(1[0-2]|0[1-9]))?$"
+        },
+        {
+          "format": "date"
+        }
+      ],
       "propertyOrder": 36
     },
     "placeOfResidence": {

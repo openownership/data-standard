@@ -138,6 +138,7 @@ test_invalid_statement_json_parametrize_data = [
     ("invalid-entity-statement-stateBody-no-entitySubtype-category.json", ValidationError),
     ("person-statement-with-invalid-statement-id.json", ValidationError),
     ("person-statement-with-bad-date.json", ValidationError),
+    ("person-statement-with-bad-birthdate.json", ValidationError),
     ("person-statement-no-publication-details.json", ValidationError),
     ("person-statement-no-bods-version.json", ValidationError),
     ("person-statement-no-publication-date.json", ValidationError),
@@ -257,7 +258,13 @@ test_invalid_statement_json_iter_errors_parametrize_data = [
     (
         "person-statement-with-bad-date.json",
         {
-            "'Tuesday' is not a 'date'",
+            "'Tuesday' is not valid under any of the given schemas",
+        },
+    ),
+    (
+        "person-statement-with-bad-birthdate.json",
+        {
+            "'1964-04-01T12:34:56' is not valid under any of the given schemas",
         },
     ),
     (
@@ -303,7 +310,7 @@ test_invalid_statement_json_iter_errors_parametrize_data = [
     (
         "person-statement-with-bad-publication-date.json",
         {
-            "'2017/11/18' is not a 'date'",
+            "'2017/11/18' is not valid under any of the given schemas",
         },
     ),
     (
@@ -315,7 +322,7 @@ test_invalid_statement_json_iter_errors_parametrize_data = [
     (
         "entity-statement-invalid-date-in-source.json",
         {
-            "'2018-11-14' is not a 'date-time'",
+            "'2018-11' is not valid under any of the given schemas",
         },
     ),
     (
