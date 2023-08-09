@@ -27,6 +27,10 @@ Alterations to schema structure and logic
   - `id` to `$id`
   - `definitions` to `$defs`
   - `enum`s with one value are now `const`
+- Updated which date formats are valid for all date fields.
+  - Interest `startDate` and `endDate`, PEP Status `startDate` and `endDate`, Entity `foundingDate` and `dissolutionDate`, and formedByStatute `date` are more strict - only date (YYYY-MM-DD) is valid; timestamps and partial dates are no longer valid.
+  - Person `birthDate` and `deathDate` are more strict - year (YYYY), year and month (YYYY-MM) and year, month and day (YYYY-MM-DD) are valid, but timestamps are no longer valid.
+  - Annotation `creationDate`, PublicationDetails `publicationDate` are less strict - valid as date or date-time (partial dates are still not valid).
 
 [0.3] - 2022-04-15
 ==================

@@ -322,9 +322,6 @@ Dates MUST conform with the extended format of `ISO 8601 <https://en.wikipedia.o
 
 * A full datetime string (YYYY-MM-DDTHH:MM:SSZ)
 * A year, month and day (YYYY-MM-DD)
-* A year and month (YYYY-MM)
-* A year (YYYY)
-
 
 .. _schema-codelists:
 
