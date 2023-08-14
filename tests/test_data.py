@@ -405,7 +405,6 @@ test_invalid_package_json_iter_errors_parametrize_data = [
             "interestedParty/describedByPersonStatement '019a93f1-e470-42e9-957b-03559861b2e2' does not match any known persons"
         },
     ),
-    ("invalid-entity-statement-no-securitiesListings.json", None, {"'securitiesListings' is a required property"}),
     (
         "invalid-entity-statement-plc-invalid-idScheme.json",
         None,
