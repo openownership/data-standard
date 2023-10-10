@@ -19,8 +19,14 @@ Changed
 -------
 - Removed ``securitiesListing`` from required fields in ``hasPublicListing``.
 - Scenario added to 'Representing state-owned enterprises' page covering ownership or control by a regional government.
+
+Alterations to schema structure and logic
+-----------------------------------------
 - Updated the JSON Schema version from draft-04 to 2020-12.
   - `Interest/share/maximum` is now inclusive by default. `exclusiveMinimum` and `exclusiveMaximum` are now numbers (instead of booleans), which are used in the same way as and alongside their inclusive counterparts `minimum` and `maximum`.
+  - `id` to `$id`
+  - `definitions` to `$defs`
+  - `enum`s with one value are now `const`
 
 [0.3] - 2022-04-15
 ==================
