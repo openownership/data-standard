@@ -16,7 +16,10 @@ ChangeLog
 ==================
 Changed 
 -------
-- Removed ``securitiesListing`` from required fields in ``hasPublicListing``. 
+- Removed ``securitiesListing`` from required fields in ``hasPublicListing``.
+
+- Scenario added to 'Representing state-owned enterprises' page covering ownership or control by a regional government.
+
 
 [0.3] - 2022-04-15
 ==================
