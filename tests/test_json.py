@@ -20,7 +20,6 @@ with open(os.path.join(this_dir, 'schema', 'meta-schema.json')) as fp:
     metaschema = json.load(fp)
 
 validator = Draft202012Validator(metaschema, format_checker=FormatChecker())
-# validator = Draft202012Validator(Draft202012Validator.META_SCHEMA, format_checker=FormatChecker())
 
 
 def test_empty():
