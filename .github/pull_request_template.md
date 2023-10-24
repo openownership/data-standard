@@ -14,6 +14,7 @@
 
 ## Documentation & Release
 
+- [ ] I've checked that the documentation builds without failing. See: https://github.com/openownership/data-standard#building-the-documentation-locally
 - [ ] I've thought about how and when this needs to be released. See:
       https://openownership.github.io/bods-dev-handbook/standard_releases.html      
 - [ ] I've updated the changelog, if necessary.
