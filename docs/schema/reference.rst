@@ -31,10 +31,10 @@ Address
 -------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/Address/description
+   :pointer: /$defs/Address/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Address
+   :pointer: /$defs/Address
    :externallinks: {"type":{"url":"#addresstype","text":"AddressType"}}
    :allowexternalrefs:
 
@@ -51,10 +51,10 @@ Agent
 -----
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/Agent/description
+   :pointer: /$defs/Agent/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Agent
+   :pointer: /$defs/Agent
    :collapse:
    :allowexternalrefs:
 
@@ -66,7 +66,7 @@ Annotation
 The ``annotations`` property of statements currently allows an array of these simple annotation objects to be included. An annotation can be used to hold information (structured or otherwise) for which a place does not exist elsewhere in the schema. See :ref:`Sources and annotations <provenance>` for further guidance.
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Annotation
+   :pointer: /$defs/Annotation
    :externallinks: {"motivation":{"url":"#annotationmotivation","text":"AnnotationMotivation"}}
    :allowexternalrefs:
 
@@ -76,10 +76,10 @@ Country
 -------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/Country/description
+   :pointer: /$defs/Country/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Country
+   :pointer: /$defs/Country
    :allowexternalrefs:
 
 
@@ -104,7 +104,7 @@ ID
 A string of minimum length 32 and maximum length 64.
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/ID/description
+   :pointer: /$defs/ID/description
 
 .. _schema-identifier:
 
@@ -114,10 +114,10 @@ Identifier
 The Identifier object is used to connect a statement to the real-world person or entity that it refers to, using one or more existing known identifiers. See :any:`Real world identifiers <guidance-identifiers>` for technical guidance on when and how to use this object.
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/Identifier/description
+   :pointer: /$defs/Identifier/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Identifier
+   :pointer: /$defs/Identifier
    :allowexternalrefs:
 
 .. _schema-interest:
@@ -126,10 +126,10 @@ Interest
 --------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/Interest/description
+   :pointer: /$defs/Interest/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Interest
+   :pointer: /$defs/Interest
    :collapse: share
    :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"InterestType"}}
    :allowexternalrefs:
@@ -140,7 +140,7 @@ InterestedParty
 ---------------
 
 .. json-value:: ../_build_schema/ownership-or-control-statement.json
-   :pointer: /definitions/InterestedParty/description
+   :pointer: /$defs/InterestedParty/description
 
 .. jsonschema:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /properties/interestedParty
@@ -154,10 +154,10 @@ Jurisdiction
 ------------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/Jurisdiction/description
+   :pointer: /$defs/Jurisdiction/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Jurisdiction
+   :pointer: /$defs/Jurisdiction
    :allowexternalrefs:
 
 .. _schema-name:
@@ -166,10 +166,10 @@ Name
 ----
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/Name/description
+   :pointer: /$defs/Name/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Name
+   :pointer: /$defs/Name
    :externallinks: {"type":{"url":"#nametype","text":"NameType"}}
    :allowexternalrefs:
 
@@ -194,10 +194,10 @@ PepStatusDetails
 ----------------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/PepStatusDetails/description
+   :pointer: /$defs/PepStatusDetails/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/PepStatusDetails
+   :pointer: /$defs/PepStatusDetails
    :collapse: jurisdiction,source
    :externallinks: {"source/type":{"url":"#sourcetype","text":"SourceType"}}
    :allowexternalrefs:
@@ -222,10 +222,10 @@ PublicListing
 ---------------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/PublicListing/description
+   :pointer: /$defs/PublicListing/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/PublicListing
+   :pointer: /$defs/PublicListing
    :collapse: securitiesListings
    :allowexternalrefs:
 
@@ -235,10 +235,10 @@ PublicationDetails
 ------------------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/PublicationDetails/description
+   :pointer: /$defs/PublicationDetails/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/PublicationDetails
+   :pointer: /$defs/PublicationDetails
    :collapse: publisher
    :allowexternalrefs:
 
@@ -248,10 +248,10 @@ Publisher
 ---------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/Publisher/description
+   :pointer: /$defs/Publisher/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Publisher
+   :pointer: /$defs/Publisher
    :allowexternalrefs:
 
 
@@ -262,7 +262,7 @@ ReplacesStatements
 ------------------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/ReplacesStatements/description
+   :pointer: /$defs/ReplacesStatements/description
 
 See :any:`Updating statements <guidance-updating-data>` for technical guidance on working with updates to data.
 
@@ -273,13 +273,13 @@ SecuritiesListing
 -----------------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/SecuritiesListing/description
+   :pointer: /$defs/SecuritiesListing/description
 
 See :any:`Real world identifiers <guidance-identifiers-other>` for technical guidance on representing securities listings.
 
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/SecuritiesListing
+   :pointer: /$defs/SecuritiesListing
    :externallinks: {"security/idScheme":{"url":"#securitiesidentifierschemes","text":"SecuritiesIdentifierSchemes"}}
    :allowexternalrefs:
 
@@ -289,10 +289,10 @@ Share
 -----
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/Interest/properties/share/description
+   :pointer: /$defs/Interest/properties/share/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Interest/properties/share
+   :pointer: /$defs/Interest/properties/share
    :allowexternalrefs:
 
 
@@ -302,10 +302,10 @@ Source
 ------
 
 .. json-value:: ../_build_schema/components.json
-   :pointer: /definitions/Source/description
+   :pointer: /$defs/Source/description
 
 .. jsonschema:: ../_build_schema/components.json
-   :pointer: /definitions/Source
+   :pointer: /$defs/Source
    :collapse: assertedBy
    :externallinks: {"type":{"url":"#sourcetype","text":"SourceType"}}
    :allowexternalrefs:
