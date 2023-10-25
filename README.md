@@ -41,11 +41,11 @@ Meanwhile, to include the appropriate version of docson JS after you clone this 
 git submodule init
 git submodule update
 ```
-Create a Python Virtual Environment. It should be python3.8 to match our build server.
+Create a Python Virtual Environment. It should be python3.9 to match our build server.
 
-    python3 -m virtualenv -p python3.8 .ve
+    python3 -m virtualenv -p python3.9 .ve
 
-(If you don't have python3.8 installed [see here](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa).)
+(If you don't have python3.9 installed [see here](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa).)
 
 Activate the virtual environment:
 
