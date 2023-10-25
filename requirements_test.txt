@@ -37,10 +37,6 @@ docutils==0.16
     #   sphinxcontrib-opendataservices-jsonschema
 flake8==3.9.1
     # via -r requirements_test.in
-gitdb==4.0.9
-    # via gitpython
-gitpython==3.1.27
-    # via transifex-client
 idna==2.10
     # via requests
 imagesize==1.2.0
@@ -122,8 +118,6 @@ pyrsistent==0.17.3
     # via jsonschema
 pytest==6.2.3
     # via -r requirements_test.in
-python-slugify==4.0.1
-    # via transifex-client
 pytz==2021.1
     # via babel
 pyyaml==6.0
@@ -133,7 +127,6 @@ requests==2.25.1
     #   -r requirements.in
     #   jscc
     #   sphinx
-    #   transifex-client
 rfc3339-validator==0.1.4
     # via -r requirements_test.in
 rfc3986-validator==0.1.1
@@ -145,8 +138,6 @@ six==1.15.0
     #   -r requirements_test.in
     #   rfc3339-validator
     #   transifex-client
-smmap==5.0.0
-    # via gitdb
 snowballstemmer==2.1.0
     # via sphinx
 sphinx==4.2.0
@@ -183,15 +174,13 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 strict-rfc3339==0.7
     # via -r requirements_test.in
-text-unidecode==1.3
-    # via python-slugify
 toml==0.10.2
     # via
     #   pep517
     #   pytest
-transifex-client==0.14.4
+transifex-client==0.12.5
     # via sphinx-intl
-urllib3==1.26.4
+urllib3==1.26.18
     # via
     #   -r requirements.in
     #   requests
