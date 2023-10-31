@@ -35,7 +35,7 @@ Address
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Address
-   :externallinks: {"type":{"url":"#address-type","text":"Address Type"}}
+   :externallinks: {"type":{"url":"#addresstype","text":"AddressType"}}
    :allowexternalrefs:
 
 
@@ -67,7 +67,7 @@ The ``annotations`` property of statements currently allows an array of these si
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Annotation
-   :externallinks: {"motivation":{"url":"#annotation-motivation","text":"Annotation Motivation"}}
+   :externallinks: {"motivation":{"url":"#annotationmotivation","text":"AnnotationMotivation"}}
    :allowexternalrefs:
 
 .. _schema-country:
@@ -93,7 +93,7 @@ Entity Statement
 
 .. jsonschema:: ../_build_schema/entity-statement.json
    :collapse: identifiers,addresses,source,jurisdiction,annotations,publicationDetails,publicListing
-   :externallinks: {"statementDate":{"url":"#statement-date","text":"Statement Date"},"entityType":{"url":"#entity-type","text":"Entity Type"},"entitySubtype/generalCategory":{"url":"#entity-subtype-category","text":"Entity Subtype Category"}, "unspecifiedEntityDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"},"replacesStatements":{"url":"#replaces-statements","text":"Replaces Statements"},"publicationDetails":{"url":"#publication-details","text":"Publication Details"},"publicListing":{"url":"#public-listing","text":"Public Listing"}}
+   :externallinks: {"entityType":{"url":"#entitytype","text":"EntityType"},"entitySubtype/generalCategory":{"url":"#entitysubtypecategory","text":"EntitySubtypeCategory"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
    :allowexternalrefs:
 
 .. _schema-id:
@@ -131,7 +131,7 @@ Interest
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Interest
    :collapse: share
-   :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interest-type","text":"Interest Type"}}
+   :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"InterestType"}}
    :allowexternalrefs:
 
 .. _schema-interested-party:
@@ -145,7 +145,7 @@ Interested Party
 .. jsonschema:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /properties/interestedParty
    :collapse:
-   :externallinks: {"unspecified/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"}}
+   :externallinks: {"unspecified/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
    :allowexternalrefs:
 
 .. _schema-jurisdiction:
@@ -170,7 +170,7 @@ Name
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Name
-   :externallinks: {"type":{"url":"#name-type","text":"Name Type"}}
+   :externallinks: {"type":{"url":"#nametype","text":"NameType"}}
    :allowexternalrefs:
 
 .. _schema-ownership-or-control-statement:
@@ -185,14 +185,12 @@ If a person is a beneficial owner of an entity - whether directly or indirectly 
 
 
 .. jsonschema:: ../_build_schema/ownership-or-control-statement.json
-    :externallinks: {"statementDate":{"url":"#statement-date","text":"Statement Date"},"interestedParty":{"url":"#interested-party","text":"Interested Party"},"replacesStatements":{"url":"#replaces-statements","text":"Replaces Statements"},"publicationDetails":{"url":"#publication-details","text":"Publication Details"}}
     :collapse: interests,source,annotations,interestedParty,publicationDetails
     :allowexternalrefs:
 
-
 .. _schema-pep-status:
 
-PEP Status Details
+Pep Status Details
 ------------------
 
 .. json-value:: ../_build_schema/components.json
@@ -201,7 +199,7 @@ PEP Status Details
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/PepStatusDetails
    :collapse: jurisdiction,source
-   :externallinks: {"source/type":{"url":"#source-type","text":"Source Type"}}
+   :externallinks: {"source/type":{"url":"#sourcetype","text":"SourceType"}}
    :allowexternalrefs:
 
 .. _schema-person-statement:
@@ -214,7 +212,7 @@ Person Statement
 
 .. jsonschema:: ../_build_schema/person-statement.json
    :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,politicalExposure/details,publicationDetails,taxResidencies
-   :externallinks: {"statementDate":{"url":"#statement-date","text":"Statement Date"},"personType":{"url": "#person-type","text":"Person Type"}, "unspecifiedPersonDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"},"replacesStatements":{"url":"#replaces-statements","text":"Replaces Statements"},"publicationDetails":{"url":"#publication-details","text":"Publication Details"},"politicalExposure/details":{"url":"#pep-status-details","text":"PEP Status Details"}}
+   :externallinks: {"personType":{"url": "#persontype","text":"PersonType"}, "unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
    :allowexternalrefs:
 
 
@@ -229,7 +227,6 @@ Public Listing
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/PublicListing
    :collapse: securitiesListings
-   :externallinks: {"securitiesListings":{"url":"#securities-listing","text":"Securities Listing"}}
    :allowexternalrefs:
 
 .. _schema-publicationdetails:
@@ -283,7 +280,7 @@ See :any:`Real world identifiers <guidance-identifiers-other>` for technical gui
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/SecuritiesListing
-   :externallinks: {"security/idScheme":{"url":"#securities-identifier-schemes","text":"Securities Identifier Schemes"}}
+   :externallinks: {"security/idScheme":{"url":"#securitiesidentifierschemes","text":"SecuritiesIdentifierSchemes"}}
    :allowexternalrefs:
 
 .. _schema-share:
@@ -310,7 +307,7 @@ Source
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Source
    :collapse: assertedBy
-   :externallinks: {"type":{"url":"#source-type","text":"Source Type"}}
+   :externallinks: {"type":{"url":"#sourcetype","text":"SourceType"}}
    :allowexternalrefs:
 
 

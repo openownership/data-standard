@@ -86,7 +86,7 @@ An ``ownershipOrControlStatement`` connects (via ``statementID`` references) the
 * A person described by a ``personStatement``; or
 * An unspecified party and the reasons that no ownership or control can be specified. 
 
-The ownership-or-control statement also contains an array of ``interests``, each with a type (selected from the `Interest Type codelist <reference.html#interest-type>`_) and, where relevant, percentages indicating the size of the interest. 
+The ownership-or-control statement also contains an array of ``interests``, each with a type (selected from the `interestType codelist <reference.html#interesttype>`_) and, where relevant, percentages indicating the size of the interest. 
 
 To explore the structure of the data model in full use the :doc:`Schema browser <schema-browser>`. Or read the :any:`Schema reference <schema-reference>` for detailed definitions of each object and field. 
 
