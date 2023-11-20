@@ -82,7 +82,7 @@
     },
     "identifiers": {
       "title": "Identifiers",
-      "description": "One or more official identifiers for this perrson. Where available, official registration numbers should be provided.",
+      "description": "One or more official identifiers for this person. Where available, official registration numbers should be provided.",
       "type": "array",
       "items": {
         "$ref": "components.json#/$defs/Identifier"
