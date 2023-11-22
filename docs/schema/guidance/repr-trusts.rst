@@ -71,7 +71,7 @@ Scenario 5
 ^^^^^^^^^^
 A trust that owns shares in a company. The beneficial owners of the trust are the beneficial owners of the company. Overarching relationship statements are represented by dotted lines. 
 
-For guidance on representing indirect beneficial ownership see :ref: `repr-beneficial-ownership`
+See `representing beneficial ownership <repr-beneficial-ownership>`_ for guidance on representing indirect beneficial ownership.
 
 .. figure:: ../../_assets/trust-scenario5.svg
    :alt: Company A is owned by Trust A and there is a relationship statement between them with interest type 'shareholding.' Trust A has a settlor, Person A, a trustee, Person B and a beneficiary, Person C. There are dotted lines between Company A and Person A, Person B and Person C to represent that they are the ultimate beneficial owners of Company A. 
@@ -82,7 +82,7 @@ Scenario 6
 ^^^^^^^^^^
 A trust where the trustee is a company. The owner of the company is a beneficial owner of the trust. The indirect relationship statement is represented by a dotted line. 
 
-For guidance on representing indirect beneficial ownership see :ref: `repr-beneficial-ownership`
+See `representing beneficial ownership <repr-beneficial-ownership>`_ for guidance on representing indirect beneficial ownership.
 
 .. figure:: ../../_assets/trust-scenario6.svg
    :alt: Trust A is linked to Company A by a relationship statement with interest type trustee. Company A is linked to Person C by a relationship statement with interest type shareholding. There is also a dotted line between Person C and Trust to represent that they are one of the ultimate beneficial owners of Trust A. There are also Person A and Person B the settlor and beneficiary of the trust. 
