@@ -85,7 +85,7 @@ A trust where the trustee is a company. The owner of the company is a beneficial
 See `representing beneficial ownership <repr-beneficial-ownership>`_ for guidance on representing indirect beneficial ownership.
 
 .. figure:: ../../_assets/trust-scenario6.svg
-   :alt: Trust A is linked to Company A by a relationship statement with interest type trustee. Company A is linked to Person C by a relationship statement with interest type shareholding. There is also a dotted line between Person C and Trust to represent that they are one of the ultimate beneficial owners of Trust A. There are also Person A and Person B the settlor and beneficiary of the trust. 
+   :alt: Trust A is linked to Company A by a relationship statement with interest type trustee. Company A is linked to Person C by a relationship statement with interest type shareholding. There is also a dotted line between Person C and Trust to represent that they are one of the ultimate beneficial owners of Trust A. The dotted line has a relationship statement attached with interest type 'other interest or control.' There are also Person A and Person B the settlor and beneficiary of the trust. 
    :figwidth: 100%
    :align: center
    
