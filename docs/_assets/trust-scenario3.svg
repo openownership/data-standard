@@ -571,7 +571,7 @@
          id="tspan328-5"
          x="98.599922"
          y="218.96877"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest/type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest.type:</tspan><tspan
          sodipodi:role="line"
          x="98.599922"
          y="232.41922"
@@ -587,7 +587,7 @@
          id="tspan328-7"
          x="302.56418"
          y="218.96877"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest/type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest.type:</tspan><tspan
          sodipodi:role="line"
          x="302.56418"
          y="232.41922"
@@ -603,7 +603,7 @@
          id="tspan328-7-2"
          x="506.49265"
          y="218.04948"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest/type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest.type:</tspan><tspan
          sodipodi:role="line"
          x="506.49265"
          y="231.49994"
@@ -647,7 +647,7 @@
        x="336.6731"
        y="375.88742"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start"
-       id="tspan453">entitySubtype/generalCategory:</tspan><tspan
+       id="tspan453">entitySubtype.generalCategory:</tspan><tspan
        sodipodi:role="line"
        x="336.6731"
        y="389.33786"

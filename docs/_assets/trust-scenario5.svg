@@ -601,7 +601,7 @@
          id="tspan328-7-2-3"
          x="368.95132"
          y="541.15186"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest/type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest.type:</tspan><tspan
          sodipodi:role="line"
          x="368.95132"
          y="554.60229"
@@ -655,7 +655,7 @@
          x="406.07288"
          y="449.5528"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start"
-         id="tspan453-1">entitySubtype/generalCategory:</tspan><tspan
+         id="tspan453-1">entitySubtype.generalCategory:</tspan><tspan
          sodipodi:role="line"
          x="406.07288"
          y="463.00323"
@@ -704,7 +704,7 @@
          id="tspan328"
          x="163.9758"
          y="284.19055"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest/type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest.type:</tspan><tspan
          sodipodi:role="line"
          x="163.9758"
          y="297.64102"
@@ -720,7 +720,7 @@
          id="tspan328-7"
          x="369.97089"
          y="284.19055"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest/type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest.type:</tspan><tspan
          sodipodi:role="line"
          x="369.97089"
          y="297.64102"
@@ -736,7 +736,7 @@
          id="tspan328-7-2"
          x="575.8916"
          y="283.27127"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest/type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start">interest.type:</tspan><tspan
          sodipodi:role="line"
          x="575.8916"
          y="296.72174"
