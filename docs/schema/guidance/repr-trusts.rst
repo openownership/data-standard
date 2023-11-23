@@ -69,7 +69,7 @@ A trust-like arrangement where local names are provided for the entityType and i
 
 Scenario 5
 ^^^^^^^^^^
-A trust that owns shares in a company. The beneficial owners of the trust are the beneficial owners of the company. Overarching relationship statements are represented by dotted lines. 
+A significant stake in a company is held in a trust. The parties to the trust are the beneficial owners of the company. Dotted lines represent the further Relationship statements needed to represent the indirect beneficial ownership of the parties. 
 
 See :ref:`representing-bo` for guidance on representing indirect beneficial ownership.
 
