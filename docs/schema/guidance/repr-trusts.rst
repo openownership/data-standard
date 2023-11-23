@@ -13,10 +13,10 @@ When representing trusts:
 
 * If the trust has legal personality ``entityType`` MUST be ``legalEntity``
 * If the trust does not have legal personality ``entityType`` MUST be ``arrangement``
-* ``entitySubtype/generalCategory`` MUST be ``trust``
-* ``entitySubtype/localTerm`` MAY be used to give a local name (e.g. "fiducie") or specify the type of trust (e.g. "inter-vivos trust")
+* ``entitySubtype.generalCategory`` MUST be ``trust``
+* ``entitySubtype.localTerm`` MAY be used to give a local name (e.g. "fiducie") or specify the type of trust (e.g. "inter-vivos trust")
 
-Relationships between trusts and their parties MUST be represented using only these ``interest/type`` codes:
+Relationships between trusts and their parties MUST be represented using only these ``interest.type`` codes:
 
 * ``settlor``
 * ``beneficiary``
@@ -24,7 +24,7 @@ Relationships between trusts and their parties MUST be represented using only th
 * ``protector``
 * ``otherInterestOrControl``
 
-``interest/details`` MAY be used to give a local name (e.g. "fiduciaire") or additional information about the interest (e.g. "power to dissolve trust") 
+``interest.details`` MAY be used to give a local name (e.g. "fiduciaire") or additional information about the interest (e.g. "power to dissolve trust") 
 
 Example Scenarios 
 -----------------
