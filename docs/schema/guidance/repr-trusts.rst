@@ -80,7 +80,7 @@ See :ref:`representing-bo` for guidance on representing indirect beneficial owne
    
 Scenario 6
 ^^^^^^^^^^
-A trust where the trustee is a company. The owner of the company is a beneficial owner of the trust. The indirect relationship statement is represented by a dotted line. 
+A trust where the trustee is a company. The owner of the company is deemed, in the jurisdiction under which the trust was established, to be a beneficial owner of the trust (indirectly).
 
 See `representing beneficial ownership <repr-beneficial-ownership>`_ for guidance on representing indirect beneficial ownership.
 
