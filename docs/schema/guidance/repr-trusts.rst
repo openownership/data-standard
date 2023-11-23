@@ -32,7 +32,7 @@ These examples show how statements could be connected to represent trusts within
 
 Scenario 1
 ^^^^^^^^^^
-A trust with a beneficiary, trustee and settlor. The trust does not have a legal personality.
+A trust with a known beneficiary, known trustee and known settlor. The trust does not have a legal personality.
 
 .. figure:: ../../_assets/trust-scenario1.svg
    :alt: entity statement labeled Trust A with entityType 'arrangement' and entitySubtype generalCategory 'trust.' Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', and person C by a relationship statement with interest type 'beneficiary'
