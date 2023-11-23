@@ -1,6 +1,6 @@
 .. _representing-trusts:
 
-Representing trusts and trust-like arrangements
+Representing trusts
 ===============================================
 
 Overview
