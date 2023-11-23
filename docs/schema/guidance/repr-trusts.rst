@@ -71,7 +71,7 @@ Scenario 5
 ^^^^^^^^^^
 A trust that owns shares in a company. The beneficial owners of the trust are the beneficial owners of the company. Overarching relationship statements are represented by dotted lines. 
 
-See `representing beneficial ownership <repr-beneficial-ownership>`_ for guidance on representing indirect beneficial ownership.
+See :ref:`representing-bo` for guidance on representing indirect beneficial ownership.
 
 .. figure:: ../../_assets/trust-scenario5.svg
    :alt: Company A is owned by Trust A and there is a relationship statement between them with interest type 'shareholding.' Trust A has a settlor, Person A, a trustee, Person B and a beneficiary, Person C. There are dotted lines between Company A and Person A, Person B and Person C to represent that they are the ultimate beneficial owners of Company A. 
