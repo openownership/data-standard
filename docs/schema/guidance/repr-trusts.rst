@@ -28,7 +28,7 @@ Relationships between trusts and their parties MUST be represented using only th
 
 Example Scenarios 
 -----------------
-These examples show how statements could be connected to represent ownership networks involving trusts. Only the property:value pairs that are relevant to the scenario are shown in the statement blocks. 
+These examples show how statements could be connected to represent trusts within beneficial ownership networks. Only the property:value pairs that are relevant to the scenario are shown in the statement blocks. 
 
 Scenario 1
 ^^^^^^^^^^
