@@ -36,7 +36,7 @@ A trust with a known beneficiary, known trustee and known settlor. The trust doe
 
 .. figure:: ../../_assets/trust-scenario1.svg
    :alt: entity statement labeled Trust A with entityType 'arrangement' and entitySubtype generalCategory 'trust.' Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', and person C by a relationship statement with interest type 'beneficiary'
-   :figwidth: 100%
+   :figwidth: 85%
    :align: center
    
 Scenario 2
@@ -55,7 +55,7 @@ A trust where the settlor and beneficiary are also both trustees.
 
 .. figure:: ../../_assets/trust-scenario3.svg
    :alt: Trust A is connected to person A by a relationship statement with interest types 'settlor' and 'trustee', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest types 'beneficiary' and 'trustee'
-   :figwidth: 100%
+   :figwidth: 85%
    :align: center
 
 Scenario 4
@@ -64,7 +64,7 @@ A trust-like arrangement where local names are provided for the entityType and i
 
 .. figure:: ../../_assets/trust-scenario4.svg
    :alt: entity statement labeled Trust A with entityType 'arrangement', entitySubtype generalCategory 'trust', and entitySubtype localTerm 'fiducie-sûreté.' Trust A is connected to person A by a relationship statement with interest type 'settlor' and interest details 'constituant', person B by a relationship statement with interest type 'trustee' and interest details 'fiduciaire', and person C by a relationship statement with interest type 'beneficiary' and interest details 'beneficiaire'
-   :figwidth: 100%
+   :figwidth: 85%
    :align: center
 
 Scenario 5
@@ -75,7 +75,7 @@ See :ref:`representing-bo` for guidance on representing indirect beneficial owne
 
 .. figure:: ../../_assets/trust-scenario5.svg
    :alt: Company A is owned by Trust A and there is a relationship statement between them with interest type 'shareholding.' Trust A has a settlor, Person A, a trustee, Person B and a beneficiary, Person C. There are dotted lines between Company A and Person A, Person B and Person C to represent that they are the ultimate beneficial owners of Company A. 
-   :figwidth: 100%
+   :figwidth: 90%
    :align: center
    
 Scenario 6
