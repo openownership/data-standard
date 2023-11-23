@@ -36,15 +36,15 @@ A trust with a known beneficiary, known trustee and known settlor. The trust doe
 
 .. figure:: ../../_assets/trust-scenario1.svg
    :alt: entity statement labeled Trust A with entityType 'arrangement' and entitySubtype generalCategory 'trust.' Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', and person C by a relationship statement with interest type 'beneficiary'
-   :figwidth: 85%
+   :figwidth: 75%
    :align: center
    
 Scenario 2
 ^^^^^^^^^^
-A trust with a beneficiary, trustee and settlor and protector. The trust has a legal personality. 
+A trust with an anonymous beneficiary, known trustee, known settlor and known protector. The trust has a legal personality. The beneficiary is exempt from disclosure in this jurisdiction as they are under the age of 18. 
 
 .. figure:: ../../_assets/trust-scenario2.svg
-   :alt: entity statement labeled Trust A with entityType 'legalEntity' and entitySubtype generalCategory 'trust.'  Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest type 'beneficiary', and person D by a relationship statement with interest type 'protector'
+   :alt: entity statement labeled Trust A with entityType 'legalEntity' and entitySubtype generalCategory 'trust.'  Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest type 'protector', and person D by a relationship statement with interest type 'beneficiary.' Person D has a person statement with person type 'anonymous person' and unspecified person details 'subjec Exempt From Disclosure'
    :figwidth: 100%
    :align: center
    
@@ -55,7 +55,7 @@ A trust where the settlor and beneficiary are also both trustees.
 
 .. figure:: ../../_assets/trust-scenario3.svg
    :alt: Trust A is connected to person A by a relationship statement with interest types 'settlor' and 'trustee', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest types 'beneficiary' and 'trustee'
-   :figwidth: 85%
+   :figwidth: 75%
    :align: center
 
 Scenario 4
@@ -64,7 +64,7 @@ A trust-like arrangement where local names are provided for the entityType and i
 
 .. figure:: ../../_assets/trust-scenario4.svg
    :alt: entity statement labeled Trust A with entityType 'arrangement', entitySubtype generalCategory 'trust', and entitySubtype localTerm 'fiducie-sûreté.' Trust A is connected to person A by a relationship statement with interest type 'settlor' and interest details 'constituant', person B by a relationship statement with interest type 'trustee' and interest details 'fiduciaire', and person C by a relationship statement with interest type 'beneficiary' and interest details 'beneficiaire'
-   :figwidth: 85%
+   :figwidth: 75%
    :align: center
 
 Scenario 5
@@ -75,18 +75,18 @@ See :ref:`representing-bo` for guidance on representing indirect beneficial owne
 
 .. figure:: ../../_assets/trust-scenario5.svg
    :alt: Company A is owned by Trust A and there is a relationship statement between them with interest type 'shareholding.' Trust A has a settlor, Person A, a trustee, Person B and a beneficiary, Person C. There are dotted lines between Company A and Person A, Person B and Person C to represent that they are the ultimate beneficial owners of Company A. 
-   :figwidth: 90%
+   :figwidth: 85%
    :align: center
    
 Scenario 6
 ^^^^^^^^^^
 A trust where the trustee is a company. The owner of the company is deemed, in the jurisdiction under which the trust was established, to be a beneficial owner of the trust (indirectly).
 
-See `representing beneficial ownership <repr-beneficial-ownership>`_ for guidance on representing indirect beneficial ownership.
+See :ref:`representing-bo` for guidance on representing indirect beneficial ownership.
 
 .. figure:: ../../_assets/trust-scenario6.svg
    :alt: Trust A is linked to Company A by a relationship statement with interest type trustee. Company A is linked to Person C by a relationship statement with interest type shareholding. There is also a dotted line between Person C and Trust to represent that they are one of the ultimate beneficial owners of Trust A. The dotted line has a relationship statement attached with interest type 'other interest or control.' There are also Person A and Person B the settlor and beneficiary of the trust. 
-   :figwidth: 100%
+   :figwidth: 95%
    :align: center
    
    
