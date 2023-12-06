@@ -60,11 +60,7 @@ A trust where the settlor is also a trustee and the beneficiary is anonymous due
 
 Scenario 4
 ^^^^^^^^^^
-<<<<<<< HEAD
-A trust-like arrangement where local names are provided for the type of entity and the interests. 
-=======
 A trust-like arrangement with local names for the entityType and interestTypes. 
->>>>>>> 3ebd0b3 (updating trusts reference page after review)
 
 .. figure:: ../../_assets/trust-scenario4.svg
    :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType 'arrangement', entitySubtype generalCategory 'trust', and entitySubtype localTerm 'fiducie-sûreté.' Trust A is connected to person A by a relationship statement with interest type 'settlor' and interest details 'constituant', person B by a relationship statement with interest type 'trustee' and interest details 'fiduciaire', and person C by a relationship statement with interest type 'beneficiary' and interest details 'beneficiaire'
