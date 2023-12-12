@@ -1,23 +1,11 @@
 {
-  "$id": "ownership-or-control-statement.json",
+  "$id": "relationship-record.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
-  "title": "Ownership or control Statement",
-  "description": "An ownership or control statement is made up of an entity, an interested party (a reference to an entity, natural person, arrangement or trust), details of the interest and provenance information for the statement.",
+  "title": "Relationship record",
+  "description": "A relationship record is made up of an entity, an interested party (a reference to an entity, natural person, arrangement or trust), details of the interest and provenance information for the statement.",
   "type": "object",
   "properties": {
-    "statementID": {
-      "$ref": "components.json#/$defs/ID"
-    },
-    "statementType": {
-      "title": "Statement type",
-      "description": "This MUST be 'ownershipOrControlStatement'.",
-      "type": "string",
-      "const": "ownershipOrControlStatement"
-    },
-    "statementDate": {
-      "$ref": "components.json#/$defs/StatementDate"
-    },
     "isComponent": {
       "title": "Is component",
       "description": "Does this Ownership-or-control Statement represent a component of a wider indirect ownership-or-control relationship? Where `isComponent` is 'true': (1) the `statementID` of this secondary Ownership-or-control Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Ownership-or-control Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Ownership-or-control Statement SHOULD be considered when replacing the primary Ownership-or-control Statement, and (4) the primary Ownership-or-control Statement MUST have a `isComponent` value of 'false'. Where `isComponent` is 'false', this Ownership-or-control Statement is the primary declaration of the relationship between the `subject` and the `interestedParty`.",
@@ -80,8 +68,6 @@
     }
   },
   "required": [
-    "statementID",
-    "statementType",
     "isComponent",
     "subject",
     "interestedParty",
