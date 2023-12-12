@@ -97,7 +97,7 @@
       "then": {
         "properties": {
           "recordDetails": {
-            "$ref": "person-statement.json"
+            "$ref": "person-record.json"
           }
         }
       }

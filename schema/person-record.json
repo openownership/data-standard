@@ -1,26 +1,11 @@
 {
-  "$id": "person-statement.json",
+  "$id": "person-record.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
   "type": "object",
-  "title": "Person statement",
-  "description": "A person statement describes the information known about a natural person at a particular point in time, or from a given submission of information",
+  "title": "Person record",
+  "description": "A person record describes the information known about a natural person at a particular point in time, or from a given submission of information",
   "properties": {
-    "statementID": {
-      "propertyOrder": 1,
-      "$ref": "components.json#/$defs/ID"
-    },
-    "statementType": {
-      "title": "Statement type",
-      "description": "This MUST be 'personStatement'.",
-      "type": "string",
-      "propertyOrder": 2,
-      "const": "personStatement"
-    },
-    "statementDate": {
-      "propertyOrder": 3,
-      "$ref": "components.json#/$defs/StatementDate"
-    },
     "isComponent": {
       "title": "Is component",
       "description": "Does this Person Statement represent a component of an indirect ownership-or-control relationship? Where `isComponent` is 'true': (1) the `statementID` of this Person Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Person Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Person Statement SHOULD be considered when replacing the primary Ownership-or-control Statement. The primary Ownership-or-control Statement MUST have a `isComponent` value of 'false'.",
@@ -208,8 +193,6 @@
     }
   },
   "required": [
-    "statementID",
-    "statementType",
     "personType",
     "isComponent",
     "publicationDetails"
