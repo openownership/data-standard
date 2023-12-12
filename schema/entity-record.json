@@ -1,26 +1,11 @@
 {
-  "$id": "entity-statement.json",
+  "$id": "entity-record.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
-  "title": "Entity statement",
-  "description": "A statement identifying and describing the entity that is the subject of the ownership or control described in an ownership or control statement.",
+  "title": "Entity record",
+  "description": "A record identifying and describing the entity that is the subject of the ownership or control described in an ownership or control statement.",
   "type": "object",
   "properties": {
-    "statementID": {
-      "propertyOrder": 1,
-      "$ref": "components.json#/$defs/ID"
-    },
-    "statementType": {
-      "title": "Statement type",
-      "description": "This MUST be 'entityStatement'.",
-      "type": "string",
-      "propertyOrder": 2,
-      "const": "entityStatement"
-    },
-    "statementDate": {
-      "propertyOrder": 3,
-      "$ref": "components.json#/$defs/StatementDate"
-    },
     "isComponent": {
       "title": "Is component",
       "description": "Does this Entity Statement represent a component of an indirect ownership-or-control relationship? Where `isComponent` is 'true': (1) the `statementID` of this Entity Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Entity Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Entity Statement SHOULD be considered when replacing the primary Ownership-or-control Statement. The primary Ownership-or-control Statement MUST have a `isComponent` value of 'false'.",
@@ -216,8 +201,6 @@
     }
   },
   "required": [
-    "statementID",
-    "statementType",
     "isComponent",
     "entityType",
     "publicationDetails"
