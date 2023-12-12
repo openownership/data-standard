@@ -113,7 +113,7 @@
       "then": {
         "properties": {
           "recordDetails": {
-            "$ref": "relationship-statement.json"
+            "$ref": "relationship-record.json"
           }
         }
       }
