@@ -35,7 +35,7 @@ Address
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Address
-   :externallinks: {"type":{"url":"#addresstype","text":"AddressType"}}
+   :externallinks: {"type":{"url":"#address-type","text":"Address Type"}}
    :allowexternalrefs:
 
 
@@ -67,7 +67,7 @@ The ``annotations`` property of statements currently allows an array of these si
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Annotation
-   :externallinks: {"motivation":{"url":"#annotationmotivation","text":"AnnotationMotivation"}}
+   :externallinks: {"motivation":{"url":"#annotation-motivation","text":"Annotation Motivation"}}
    :allowexternalrefs:
 
 .. _schema-country:
@@ -85,15 +85,15 @@ Country
 
 .. _schema-entity-statement:
 
-EntityStatement
----------------
+Entity Statement
+----------------
 
 .. json-value:: ../_build_schema/entity-statement.json
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/entity-statement.json
    :collapse: identifiers,addresses,source,jurisdiction,annotations,publicationDetails,publicListing
-   :externallinks: {"entityType":{"url":"#entitytype","text":"EntityType"},"entitySubtype/generalCategory":{"url":"#entitysubtypecategory","text":"EntitySubtypeCategory"}, "unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
+   :externallinks: {"statementDate":{"url":"#statement-date","text":"Statement Date"},"entityType":{"url":"#entity-type","text":"Entity Type"},"entitySubtype/generalCategory":{"url":"#entity-subtype-category","text":"Entity Subtype Category"}, "unspecifiedEntityDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"},"replacesStatements":{"url":"#replaces-statements","text":"Replaces Statements"},"publicationDetails":{"url":"#publication-details","text":"Publication Details"},"publicListing":{"url":"#public-listing","text":"Public Listing"}}
    :allowexternalrefs:
 
 .. _schema-id:
@@ -131,13 +131,13 @@ Interest
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Interest
    :collapse: share
-   :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"InterestType"}}
+   :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interest-type","text":"Interest Type"}}
    :allowexternalrefs:
 
 .. _schema-interested-party:
 
-InterestedParty
----------------
+Interested Party
+----------------
 
 .. json-value:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /$defs/InterestedParty/description
@@ -145,7 +145,7 @@ InterestedParty
 .. jsonschema:: ../_build_schema/ownership-or-control-statement.json
    :pointer: /properties/interestedParty
    :collapse:
-   :externallinks: {"unspecified/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
+   :externallinks: {"unspecified/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"}}
    :allowexternalrefs:
 
 .. _schema-jurisdiction:
@@ -170,13 +170,13 @@ Name
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Name
-   :externallinks: {"type":{"url":"#nametype","text":"NameType"}}
+   :externallinks: {"type":{"url":"#name-type","text":"Name Type"}}
    :allowexternalrefs:
 
 .. _schema-ownership-or-control-statement:
 
-OwnershipOrControlStatement
----------------------------
+Ownership Or Control Statement
+------------------------------
 
 If a person is a beneficial owner of an entity - whether directly or indirectly - and the person or entity is required to declare this beneficial ownership, there MUST be an Ownership-or-control Statement connecting the two which represents the beneficial ownership relationship. See :ref:`representing-bo` for detailed requirements.
 
@@ -185,13 +185,15 @@ If a person is a beneficial owner of an entity - whether directly or indirectly 
 
 
 .. jsonschema:: ../_build_schema/ownership-or-control-statement.json
+    :externallinks: {"statementDate":{"url":"#statement-date","text":"Statement Date"},"interestedParty":{"url":"#interested-party","text":"Interested Party"},"replacesStatements":{"url":"#replaces-statements","text":"Replaces Statements"},"publicationDetails":{"url":"#publication-details","text":"Publication Details"}}
     :collapse: interests,source,annotations,interestedParty,publicationDetails
     :allowexternalrefs:
 
+
 .. _schema-pep-status:
 
-PepStatusDetails
-----------------
+PEP Status Details
+------------------
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /$defs/PepStatusDetails/description
@@ -199,27 +201,27 @@ PepStatusDetails
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/PepStatusDetails
    :collapse: jurisdiction,source
-   :externallinks: {"source/type":{"url":"#sourcetype","text":"SourceType"}}
+   :externallinks: {"source/type":{"url":"#source-type","text":"Source Type"}}
    :allowexternalrefs:
 
 .. _schema-person-statement:
 
-PersonStatement
----------------
+Person Statement
+----------------
 
 .. json-value:: ../_build_schema/person-statement.json
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/person-statement.json
    :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,politicalExposure/details,publicationDetails,taxResidencies
-   :externallinks: {"personType":{"url": "#persontype","text":"PersonType"}, "unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
+   :externallinks: {"statementDate":{"url":"#statement-date","text":"Statement Date"},"personType":{"url": "#person-type","text":"Person Type"}, "unspecifiedPersonDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"},"replacesStatements":{"url":"#replaces-statements","text":"Replaces Statements"},"publicationDetails":{"url":"#publication-details","text":"Publication Details"},"politicalExposure/details":{"url":"#pep-status-details","text":"PEP Status Details"}}
    :allowexternalrefs:
 
 
 .. _schema-public-listing:
 
-PublicListing
----------------
+Public Listing
+--------------
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /$defs/PublicListing/description
@@ -227,12 +229,13 @@ PublicListing
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/PublicListing
    :collapse: securitiesListings
+   :externallinks: {"securitiesListings":{"url":"#securities-listing","text":"Securities Listing"}}
    :allowexternalrefs:
 
 .. _schema-publicationdetails:
 
-PublicationDetails
-------------------
+Publication Details
+-------------------
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /$defs/PublicationDetails/description
@@ -258,8 +261,8 @@ Publisher
 
 .. _schema-replaces-statements:
 
-ReplacesStatements
-------------------
+Replaces Statements
+-------------------
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /$defs/ReplacesStatements/description
@@ -269,8 +272,8 @@ See :any:`Updating statements <guidance-updating-data>` for technical guidance o
 
 .. _schema-securities-listing:
 
-SecuritiesListing
------------------
+Securities Listing
+------------------
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /$defs/SecuritiesListing/description
@@ -280,7 +283,7 @@ See :any:`Real world identifiers <guidance-identifiers-other>` for technical gui
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/SecuritiesListing
-   :externallinks: {"security/idScheme":{"url":"#securitiesidentifierschemes","text":"SecuritiesIdentifierSchemes"}}
+   :externallinks: {"security/idScheme":{"url":"#securities-identifier-schemes","text":"Securities Identifier Schemes"}}
    :allowexternalrefs:
 
 .. _schema-share:
@@ -307,7 +310,7 @@ Source
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Source
    :collapse: assertedBy
-   :externallinks: {"type":{"url":"#sourcetype","text":"SourceType"}}
+   :externallinks: {"type":{"url":"#source-type","text":"Source Type"}}
    :allowexternalrefs:
 
 
@@ -315,8 +318,8 @@ See :any:`Sources and annotations <provenance>` for a discussion of provenance m
 
 .. _schema-statement-date:
 
-StatementDate
--------------
+Statement Date
+--------------
 
 Dates MUST conform with the extended format of `ISO 8601 <https://en.wikipedia.org/wiki/ISO_8601>`_. All of the following, for example, are valid:
 
@@ -328,8 +331,8 @@ Dates MUST conform with the extended format of `ISO 8601 <https://en.wikipedia.o
 Codelists
 ---------
 
-AddressType
-+++++++++++
+Address Type
+++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -337,8 +340,8 @@ AddressType
    :file: ../_build_schema/codelists/addressType.csv
 
 
-AnnotationMotivation
-++++++++++++++++++++
+Annotation Motivation
++++++++++++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -346,8 +349,8 @@ AnnotationMotivation
    :file: ../_build_schema/codelists/annotationMotivation.csv
 
 
-DirectOrIndirect
-++++++++++++++++
+Direct Or Indirect
+++++++++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -355,8 +358,8 @@ DirectOrIndirect
    :file: ../_build_schema/codelists/directOrIndirect.csv
 
 
-EntityType
-++++++++++
+Entity Type
++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -365,8 +368,8 @@ EntityType
 
 
 
-EntitySubtypeCategory
-+++++++++++++++++++++
+Entity Subtype Category
++++++++++++++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -375,8 +378,8 @@ EntitySubtypeCategory
 
 
 
-InterestType
-++++++++++++
+Interest Type
++++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -384,8 +387,8 @@ InterestType
    :file: ../_build_schema/codelists/interestType.csv
 
 
-NameType
-++++++++
+Name Type
++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -393,8 +396,8 @@ NameType
    :file: ../_build_schema/codelists/nameType.csv
 
 
-PersonType
-++++++++++
+Person Type
++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -402,8 +405,8 @@ PersonType
    :file: ../_build_schema/codelists/personType.csv
 
 
-SecuritiesIdentifierSchemes
-+++++++++++++++++++++++++++
+Securities Identifier Schemes
++++++++++++++++++++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -411,8 +414,8 @@ SecuritiesIdentifierSchemes
    :file: ../_build_schema/codelists/securitiesIdentifierSchemes.csv
 
 
-SourceType
-++++++++++
+Source Type
++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -420,8 +423,8 @@ SourceType
    :file: ../_build_schema/codelists/sourceType.csv
 
 
-StatementType
-+++++++++++++
+Statement Type
+++++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
@@ -429,8 +432,8 @@ StatementType
    :file: ../_build_schema/codelists/statementType.csv
 
 
-UnspecifiedReason
-+++++++++++++++++
+Unspecified Reason
+++++++++++++++++++
 
 .. csv-table-no-translate::
    :header-rows: 1
