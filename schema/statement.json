@@ -1,0 +1,129 @@
+{
+  "$id": "statement.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.4",
+  "type": "object",
+  "properties": {
+    "statementId": {
+      "$ref": "components.json#/$defs/ID"
+    },
+    "statementDate": {
+      "$ref": "components.json#/$defs/StatementDate"
+    },
+    "annotations": {
+      "title": "Annotations",
+      "description": "Annotations about this statement or parts of this statement",
+      "type": "array",
+      "items": {
+        "$ref": "components.json#/$defs/Annotation"
+      }
+    },
+    "publicationDetails": {
+      "title": "Publication details",
+      "description": "Information concerning the original publication of this statement.",
+      "$ref": "components.json#/$defs/PublicationDetails"
+    },
+    "source": {
+      "title": "Source",
+      "description": "The source of information in this statement.",
+      "$ref": "components.json#/$defs/Source"
+    },
+    "declaration": {
+      "title": "Declaration (identifier)",
+      "description": "An identifier or reference for a declaration within a publisher’s system. Where a Statement is a claim from a particular declaration (made at a point in time by a `source` about a `declarationSubject`) this field should be used to identify the declaration.",
+      "type": "string"
+    },
+    "declarationSubject": {
+      "title": "Declaration subject",
+      "description": "A `recordId` value for the subject of a beneficial ownership network (always an entity or person).",
+      "type": "string"
+    },
+    "recordId": {
+      "title": "Record identifier",
+      "description": "A unique identifier for the record (within the publisher's system) to which this Statement relates. The identifier MUST represent the series of claims made about an entity, natural person or relationship by a particular source.",
+      "type": "string"
+    },
+    "recordType": {
+      "title": "Record type",
+      "description": "The type of record (within the publisher's system) to which this Statement relates: entity, person, or relationship.",
+      "type": "string",
+      "enum": [
+        "entity",
+        "person",
+        "relationship"
+      ]
+    },
+    "recordStatus": {
+      "title": "Record status",
+      "description": "The lifecycle status of the record (within the publisher's system ) to which this Statement relates, using the recordStatus codelist.",
+      "type": "string",
+      "enum": [
+        "new",
+        "updated",
+        "closed"
+      ]
+    },
+    "recordDetails": {
+      "title": "Record details",
+      "description": "The details of the entity, person or relationship as declared on the date of the statement.",
+      "type": "object"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "recordType": {
+            "const": "entity"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "recordDetails": {
+            "$ref": "entity-statement.json"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "recordType": {
+            "const": "person"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "recordDetails": {
+            "$ref": "person-statement.json"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "recordType": {
+            "const": "relationship"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "recordDetails": {
+            "$ref": "relationship-statement.json"
+          }
+        }
+      }
+    }
+  ],
+  "required": [
+    "statementId",
+    "declarationSubject",
+    "recordId",
+    "recordType",
+    "recordDetails"
+  ]
+}
