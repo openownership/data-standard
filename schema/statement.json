@@ -81,7 +81,7 @@
       "then": {
         "properties": {
           "recordDetails": {
-            "$ref": "entity-statement.json"
+            "$ref": "entity-record.json"
           }
         }
       }
