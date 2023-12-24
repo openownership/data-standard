@@ -1,0 +1,77 @@
+.. _representing-nominations:
+
+Representing nominee arrangements
+===============================================
+
+Overview
+--------
+In this documentation the term ‘nominee arrangement’ refers to an agreement between parties where one (the nominator) instructs the other (the nominee) to act on their behalf in some sort of capacity.
+
+BODS can be used to represent the beneficial ownership of entities via nominee arrangements. Nominee arrangements are represented by an Entity statement. 
+
+When representing nominee arrangements:
+
+* The ``entityType`` MUST be ``arrangement``
+* ``entitySubtype.generalCategory`` MUST be ``nomination``
+* ``entitySubtype.localTerm`` MAY be used to give a local name or specify the type of nominee arrangement
+
+Relationships between nominee arrangements and their parties MUST be represented using only these ``interest.type`` codes:
+
+* ``nominator``
+* ``nominee``
+
+``interest.details`` MAY be used to give a local name (e.g. "agent" or "principle")
+
+Example Scenarios 
+-----------------
+These examples show how statements might be connected to represent the ownership or control of a company through a nominee arrangement. Only the property:value pairs that are relevant to the scenario are shown in the statement blocks. 
+
+Scenario 1
+^^^^^^^^^^
+Persons enter into a nominee directorship arrangement for a company, and all details are known. Dotted lines represent the further Relationship Statements needed to represent the indirect beneficial ownership of the parties.
+
+See :ref:`representing-bo` for guidance on representing indirect beneficial ownership.
+
+.. figure:: ../../_assets/nom-scenario1.svg
+   :alt: Diagram showing linked statements.
+   :figwidth: 100%
+   :align: center
+   
+Scenario 2
+^^^^^^^^^^
+Persons enter into a nominee shareholding arrangement for a company, and all details are known. 
+
+.. figure:: ../../_assets/nom-scenario2.svg
+   :alt: Diagram showing linked statements. 
+   :figwidth: 100%
+   :align: center
+   
+   
+Scenario 3
+^^^^^^^^^^
+A person enters into a nominee shareholding arrangement for a company, and the nominee is an entity.
+
+.. figure:: ../../_assets/nom-scenario3.svg
+   :alt: Diagram showing linked statements.
+   :figwidth: 100%
+   :align: center
+
+Scenario 4
+^^^^^^^^^^
+Persons enter into a nominee directorship arrangement for a company, details for the nominator are required to be disclosed, but are unknown.
+
+.. figure:: ../../_assets/nom-scenario4.svg
+   :alt: Diagram showing linked statements. 
+   :figwidth: 100%
+   :align: center
+
+Scenario 5
+^^^^^^^^^^
+Persons enter into a nominee directorship arrangement for a company, and details for the nominator are not required to be disclosed. 
+
+.. figure:: ../../_assets/nom-scenario5.svg
+   :alt: Diagram showing linked statements. 
+   :figwidth: 100%
+   :align: center
+
+
