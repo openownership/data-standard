@@ -279,37 +279,26 @@
           "format": "uri"
         }
       },
-      "required": [
-        "statementPointerTarget",
-        "motivation"
-      ],
-      "oneOfEnumSelectorField": "motivation",
-      "oneOf": [
-        {
-          "properties": {
-            "motivation": {
-              "const": "linking"
-            }
-          },
-          "required": [
-            "statementPointerTarget",
-            "motivation",
-            "url"
-          ]
-        },
-        {
-          "properties": {
-            "motivation": {
-              "enum": [
-                "identifying",
-                "commenting",
-                "correcting",
-                "transformation"
-              ]
-            }
+      "if": {
+        "properties": {
+          "motivation": {
+            "const": "linking"
           }
         }
-      ]
+      },
+      "then": {
+        "required": [
+          "statementPointerTarget",
+          "motivation",
+          "url"
+        ]
+      },
+      "else": {
+        "required": [
+          "statementPointerTarget",
+          "motivation"
+        ]
+      }
     },
     "Source": {
       "title": "Source",
