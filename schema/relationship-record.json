@@ -42,7 +42,7 @@
       "description": "A description of the interests held by the interestedParty covered by this statement in the entity covered by this statement.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/$defs/Interest"
+        "$ref": "#/$defs/Interest"
       }
     },
     "publicationDetails": {
@@ -116,6 +116,119 @@
           "required": [
             "reason"
           ]
+        }
+      }
+    },
+    "Interest": {
+      "title": "Interest",
+      "description": "A description of the interest held by an interestedParty in another entity.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "title": "Type of interest",
+          "description": "A codelist value indicating the nature of the interest. See the interestType codelist",
+          "type": "string",
+          "enum": [
+            "shareholding",
+            "votingRights",
+            "appointmentOfBoard",
+            "otherInfluenceOrControl",
+            "seniorManagingOfficial",
+            "settlor",
+            "trustee",
+            "protector",
+            "beneficiaryOfLegalArrangement",
+            "rightsToSurplusAssetsOnDissolution",
+            "rightsToProfitOrIncome",
+            "rightsGrantedByContract",
+            "conditionalRightsGrantedByContract",
+            "controlViaCompanyRulesOrArticles",
+            "controlByLegalFramework",
+            "boardMember",
+            "boardChair",
+            "unknownInterest",
+            "unpublishedInterest",
+            "enjoymentAndUseOfAssets",
+            "rightToProfitOrIncomeFromAssets"
+          ],
+          "codelist": "interestType.csv",
+          "openCodelist": false
+        },
+        "directOrIndirect": {
+          "title": "Direct or indirect",
+          "description": "How directly the interest is exercised by the interested party. The value MUST be 'indirect' if intermediate entities or agents are known to exist, and MUST be 'direct' if such intermediaries are known not to exist. Otherwise the value MUST be 'unknown'.",
+          "type": "string",
+          "enum": [
+            "direct",
+            "indirect",
+            "unknown"
+          ],
+          "codelist": "directOrIndirect.csv",
+          "openCodelist": false
+        },
+        "beneficialOwnershipOrControl": {
+          "title": "Beneficial ownership or control",
+          "description": "Does this statement assert this as a beneficial ownership or control interest? A beneficial ownership or control interest is always between a natural person and some entity, and exists where the person ultimately benefits from, or has a degree of control over, the entity. There may be cases where a person has an interest in an entity, but where there are arrangements or other conditions that mean this interest does not constitute beneficial ownership or control.",
+          "type": "boolean"
+        },
+        "details": {
+          "title": "Details",
+          "description": "This field may be used to provide the local name given to this kind of interest, or any further semi-structured or unstructured information to clarify the nature of the interest held.",
+          "type": "string"
+        },
+        "share": {
+          "title": "Percentage share",
+          "description": "Where an exact percentage is available, this should be given, and `maximum` and `minimum` values set to the same as the exact percentage. Otherwise, `minimum` (or `exclusiveMinimum`) and `maximum` (or `exclusiveMaximum`) can be used to record the range into which the share of this kind of interest falls. (The `minimum` and `maximum` values are inclusive.)",
+          "type": "object",
+          "properties": {
+            "exact": {
+              "title": "Exact share",
+              "description": "The exact share of this interest held (where available).",
+              "type": "number",
+              "maximum": 100,
+              "minimum": 0
+            },
+            "maximum": {
+              "title": "Maximum share",
+              "description": "The inclusive upper bound of the share of this interest known to be held.",
+              "type": "number",
+              "maximum": 100,
+              "minimum": 0
+            },
+            "minimum": {
+              "title": "Minimum share",
+              "description": "The inclusive lower bound of the share of this interest known to be held.",
+              "type": "number",
+              "maximum": 100,
+              "minimum": 0
+            },
+            "exclusiveMinimum": {
+              "title": "Exclusive minimum",
+              "description": "The exclusive lower bound of the share of this interest known to be held.",
+              "type": "number",
+              "maximum": 100,
+              "minimum": 0
+            },
+            "exclusiveMaximum": {
+              "title": "Exclusive maximum",
+              "description": "The exclusive upper bound of the share of this interest known to be held.",
+              "type": "number",
+              "maximum": 100,
+              "minimum": 0
+            }
+          }
+        },
+        "startDate": {
+          "title": "Start date",
+          "description": "The date from which this interest was active. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
+          "type": "string",
+          "format": "date"
+        },
+        "endDate": {
+          "title": "End date",
+          "description": "The date from which this interest ceased to exist. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
+          "type": "string",
+          "format": "date"
         }
       }
     }
