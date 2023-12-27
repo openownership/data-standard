@@ -132,6 +132,37 @@
           ]
         }
       ]
+    },
+    "UnspecifiedRecord": {
+      "title": "Unspecified or unknown person or entity",
+      "description": "An explanation of why this person or entity is 'anonymous' or 'unknown'. A `reason` MUST be specified.",
+      "type": "object",
+      "properties": {
+        "reason": {
+          "title": "Reason",
+          "description": "The reason that a person or entity cannot be specified, from the unspecifiedReason codelist.",
+          "type": "string",
+          "enum": [
+            "noBeneficialOwners",
+            "subjectUnableToConfirmOrIdentifyBeneficialOwner",
+            "interestedPartyHasNotProvidedInformation",
+            "subjectExemptFromDisclosure",
+            "interestedPartyExemptFromDisclosure",
+            "unknown",
+            "informationUnknownToPublisher"
+          ],
+          "codelist": "unspecifiedReason.csv",
+          "openCodelist": false
+        },
+        "description": {
+          "title": "Description",
+          "description": "Any supporting information about the absence of a confirmed beneficial owner. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reason"
+      ]
     }
   }
 }
