@@ -102,7 +102,9 @@
         "entity",
         "person",
         "relationship"
-      ]
+      ],
+      "codelist": "recordType.csv",
+      "openCodelist": false
     },
     "recordStatus": {
       "title": "Record status",
@@ -112,7 +114,9 @@
         "new",
         "updated",
         "closed"
-      ]
+      ],
+      "codelist": "recordStatus.csv",
+      "openCodelist": false
     },
     "recordDetails": {
       "title": "Record details",
