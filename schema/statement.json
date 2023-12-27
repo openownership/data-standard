@@ -63,9 +63,34 @@
           "format": "uri"
         },
         "publisher": {
+          "type": "object",
           "title": "Publisher",
-          "description": "Details of the organisation or individual publishing this statement.",
-          "$ref": "components.json#/$defs/Publisher"
+          "description": "Details of the organisation or individual publishing a statement.",
+          "properties": {
+            "name": {
+              "title": "Name",
+              "description": "The name of the publisher",
+              "type": "string"
+            },
+            "url": {
+              "title": "URL",
+              "description": "The URL of the parent dataset or of the publisher's website homepage",
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "anyOf": [
+            {
+              "required": [
+                "name"
+              ]
+            },
+            {
+              "required": [
+                "url"
+              ]
+            }
+          ]
         }
       },
       "required": [
