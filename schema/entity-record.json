@@ -122,10 +122,6 @@
       "format": "uri",
       "propertyOrder": 21
     },
-    "replacesStatements": {
-      "propertyOrder": 100,
-      "$ref": "components.json#/$defs/ReplacesStatements"
-    },
     "publicationDetails": {
       "title": "Publication details",
       "description": "Information concerning the original publication of this statement.",

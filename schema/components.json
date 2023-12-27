@@ -21,18 +21,6 @@
         }
       }
     },
-    "ReplacesStatements": {
-      "title": "Replaces statement(s)",
-      "description": "If this statement replaces a previous statement or statements, provide the identifier(s) for the previous statement(s) here. Consuming applications are advised to mark the identified statements as no longer active.",
-      "type": "array",
-      "items": {
-        "title": "Statement identifier",
-        "description": "The identifier of a statement that is no longer active.",
-        "type": "string",
-        "minLength": 32,
-        "maxLength": 64
-      }
-    },
     "Identifier": {
       "title": "Identifier",
       "description": "An identifier that has been assigned to this person or entity. The scheme or list from which the identifier is drawn should be declared.",

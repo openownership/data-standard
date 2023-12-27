@@ -160,9 +160,6 @@
       },
       "propertyOrder": 90
     },
-    "replacesStatements": {
-      "$ref": "components.json#/$defs/ReplacesStatements"
-    },
     "politicalExposure": {
       "type": "object",
       "title": "Political exposure",
