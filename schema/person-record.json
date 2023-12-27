@@ -61,7 +61,7 @@
       "description": "One or more known names for this individual.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/$defs/Name"
+        "$ref": "#/$defs/Name"
       },
       "propertyOrder": 10
     },
@@ -183,7 +183,7 @@
           "title": "Politically exposed person (PEP) details",
           "description": "One or more descriptions of this person's Politically Exposed Person (PEP) status.",
           "items": {
-            "$ref": "components.json#/$defs/PepStatusDetails"
+            "$ref": "#/$defs/PepStatusDetails"
           }
         }
       }
@@ -193,5 +193,88 @@
     "personType",
     "isComponent",
     "publicationDetails"
-  ]
+  ],
+  "$defs": {
+    "Name": {
+      "title": "Name",
+      "description": "A name by which this individual is known. Names should be provided in `fullName`, and may optionally be broken down in the `familyName`, `givenName` and `patronymicName` fields, based on the EC ISA Core Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "title": "Type",
+          "description": "What kind of name is this? See the nameType codelist.",
+          "type": "string",
+          "enum": [
+            "individual",
+            "translation",
+            "transliteration",
+            "former",
+            "alternative",
+            "birth"
+          ],
+          "codelist": "nameType.csv",
+          "openCodelist": false
+        },
+        "fullName": {
+          "title": "Full name",
+          "description": "The full name contains the complete name of a person as one string.",
+          "type": "string"
+        },
+        "familyName": {
+          "title": "Family name",
+          "description": "A family name is usually shared by members of a family. This attribute also carries prefixes or suffixes which are part of the Family Name, e.g. 'de Boer', 'van de Putte', 'von und zu Orlow'. Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single Family Name field so that, for example, Miguel de Cervantes Saavedra's Family Name would be recorded as 'Cervantes Saavedra.'",
+          "type": "string"
+        },
+        "givenName": {
+          "title": "Given names",
+          "description": "A given name, or multiple given names, are the denominator(s) that identify an individual within a family. These are given to a person by his or her parents at birth or may be legally recognised as 'given names' through a formal process. All given names are ordered in one field so that, for example, the given name for Johann Sebastian Bach is 'Johann Sebastian'.",
+          "type": "string"
+        },
+        "patronymicName": {
+          "title": "Patronymic Name",
+          "description": "Patronymic names are important in some countries. Iceland does not have a concept of family name in the way that many other European countries do, for example. In Bulgaria and Russia, patronymic names are in every day usage, for example, the 'Sergeyevich' in 'Mikhail Sergeyevich Gorbachev'.",
+          "type": "string"
+        }
+      }
+    },
+    "PepStatusDetails": {
+      "title": "PEP Status",
+      "description": "A description of a politically-exposed person status.",
+      "type": "object",
+      "properties": {
+        "reason": {
+          "title": "Reason",
+          "description": "The reason for this person being declared a politically-exposed person.",
+          "type": "string"
+        },
+        "missingInfoReason": {
+          "title": "Missing information reason(s)",
+          "description": "An explanation of the reason that PEP status for the person is not provided (i.e. `politicalExposure.status` is 'unknown'). This may be a standard descriptive phrase from the source system, or a free-text justification. Where this field is present it should be the only field except for `source`.",
+          "type": "string"
+        },
+        "jurisdiction": {
+          "title": "Jurisdiction",
+          "description": "The jurisdiction where this person is a PEP.",
+          "$ref": "components.json#/$defs/Jurisdiction"
+        },
+        "startDate": {
+          "title": "State date",
+          "description": "The date from which this individual had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
+          "type": "string",
+          "format": "date"
+        },
+        "endDate": {
+          "title": "End date",
+          "description": "The date from which this individual no longer had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data..",
+          "type": "string",
+          "format": "date"
+        },
+        "source": {
+          "title": "Source",
+          "description": "The source of this PEP information",
+          "$ref": "statement.json#/$defs/Source"
+        }
+      }
+    }
+  }
 }
