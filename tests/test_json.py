@@ -99,7 +99,7 @@ def validate_json_schema(path, name, data):
         return
     errors = 0
     errors += validate_schema(path, data, validator)
-    errors += validate_items_type(path, data)
+    errors += validate_items_type(path, data, additional_valid_types=['object'])
     errors += validate_letter_case(path, data)
     # errors += validate_ref(path, data)
     assert not errors, "One or more JSON Schema files are invalid. See warnings below."

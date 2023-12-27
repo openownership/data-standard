@@ -362,7 +362,20 @@
           "description": "Who is making this statement? This may be the name of the person or organisation making a self-declaration (in which case, please make sure the name field matches the organisation or person name field), or the name or description of some other party. If this statement has been verified, this may also include the name of the organisation providing verification.",
           "type": "array",
           "items": {
-            "$ref": "components.json#/$defs/Agent"
+            "type": "object",
+            "properties": {
+              "name": {
+                "title": "Name",
+                "description": "The name of the agent making the assertion",
+                "type": "string"
+              },
+              "uri": {
+                "title": "URI",
+                "description": "An optional URI to identify the agent making the assertion",
+                "type": "string",
+                "format": "uri"
+              }
+            }
           }
         }
       }
