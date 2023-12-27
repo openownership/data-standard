@@ -1,4 +1,0 @@
-code,title,description,technical note
-personStatement,Person Statement,"The statement contains information known about a natural person at a particular point in time, or from a given submission of information.",The parent object should be validated using the Person Statement schema.
-entityStatement,Entity Statement,"The statement contains information that identifies and describes an entity at a particular point in time, or from a given submission of information.",The parent object should be validated using the Entity Statement schema.
-ownershipOrControlStatement,Ownership-or-control Statement,The statement contains details of the interests held by an interested party in an entity at a particular point in time.,The parent object should be validated using the Ownership-or-control Statement schema.

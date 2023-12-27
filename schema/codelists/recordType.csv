@@ -1,0 +1,4 @@
+code,title,description,technical note
+person,Person Record,"The record contains information known about a natural person at a particular point in time, or from a given submission of information.",The recordDetails object should be validated using the Person Record schema.
+entity,Entity Record,"The record contains information that identifies and describes an entity at a particular point in time, or from a given submission of information.",The recordDetails object should be validated using the Entity Record schema.
+relationship,Relationship Record,The record contains details of the interests held by an interested party in an entity at a particular point in time.,The recordDetails object should be validated using the Relationship Record schema.
