@@ -3,70 +3,6 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
   "$defs": {
-    "Agent": {
-      "type": "object",
-      "title": "Agent",
-      "description": "An individual, organisation or other responsible agent making, or supporting, a given statement or annotation.",
-      "properties": {
-        "name": {
-          "title": "Name",
-          "description": "The name of the agent",
-          "type": "string"
-        },
-        "uri": {
-          "title": "URI",
-          "description": "An optional URI to identify the agent.",
-          "type": "string",
-          "format": "uri"
-        }
-      }
-    },
-    "Identifier": {
-      "title": "Identifier",
-      "description": "An identifier that has been assigned to this person or entity. The scheme or list from which the identifier is drawn should be declared.",
-      "type": "object",
-      "properties": {
-        "id": {
-          "title": "ID",
-          "description": "The identifier for this person or entity as provided in the declared scheme.",
-          "type": "string"
-        },
-        "scheme": {
-          "title": "Scheme",
-          "description": "For entity statements, the scheme should be a entry from the org-id.guide (https://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
-          "type": "string"
-        },
-        "schemeName": {
-          "title": "Scheme name",
-          "description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
-          "type": "string"
-        },
-        "uri": {
-          "title": "URI",
-          "description": "Where this identifier has a canonical URI (https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be included",
-          "type": "string",
-          "format": "uri"
-        }
-      },
-      "anyOf": [
-        {
-          "required": [
-            "scheme"
-          ]
-        },
-        {
-          "required": [
-            "schemeName"
-          ]
-        },
-        {
-          "required": [
-            "scheme",
-            "schemeName"
-          ]
-        }
-      ]
-    },
     "Address": {
       "title": "Address",
       "description": "A free text address string, providing as much address data as is relevant, suitable for processing using address parsing algorithms. For some uses (for example, Place of Birth) only a town and country are required.",
@@ -103,6 +39,24 @@
           "type": "string",
           "minLength": 2,
           "maxLength": 2
+        }
+      }
+    },
+    "Agent": {
+      "type": "object",
+      "title": "Agent",
+      "description": "An individual, organisation or other responsible agent making, or supporting, a given statement or annotation.",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "The name of the agent",
+          "type": "string"
+        },
+        "uri": {
+          "title": "URI",
+          "description": "An optional URI to identify the agent.",
+          "type": "string",
+          "format": "uri"
         }
       }
     },
@@ -148,6 +102,52 @@
       },
       "required": [
         "name"
+      ]
+    },
+    "Identifier": {
+      "title": "Identifier",
+      "description": "An identifier that has been assigned to this person or entity. The scheme or list from which the identifier is drawn should be declared.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "ID",
+          "description": "The identifier for this person or entity as provided in the declared scheme.",
+          "type": "string"
+        },
+        "scheme": {
+          "title": "Scheme",
+          "description": "For entity statements, the scheme should be a entry from the org-id.guide (https://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
+          "type": "string"
+        },
+        "schemeName": {
+          "title": "Scheme name",
+          "description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
+          "type": "string"
+        },
+        "uri": {
+          "title": "URI",
+          "description": "Where this identifier has a canonical URI (https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be included",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "scheme"
+          ]
+        },
+        {
+          "required": [
+            "schemeName"
+          ]
+        },
+        {
+          "required": [
+            "scheme",
+            "schemeName"
+          ]
+        }
       ]
     }
   }
