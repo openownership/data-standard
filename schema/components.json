@@ -1,6 +1,7 @@
 {
   "$id": "components.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "This file contains generic components which are used in multiple places throughout the BODS schema. Components used only in Statement or one type of Record should be defined in their respective files.",
   "version": "0.4",
   "$defs": {
     "Address": {
@@ -39,24 +40,6 @@
           "type": "string",
           "minLength": 2,
           "maxLength": 2
-        }
-      }
-    },
-    "Agent": {
-      "type": "object",
-      "title": "Agent",
-      "description": "An individual, organisation or other responsible agent making, or supporting, a given statement or annotation.",
-      "properties": {
-        "name": {
-          "title": "Name",
-          "description": "The name of the agent",
-          "type": "string"
-        },
-        "uri": {
-          "title": "URI",
-          "description": "An optional URI to identify the agent.",
-          "type": "string",
-          "format": "uri"
         }
       }
     },
