@@ -6,7 +6,7 @@ from jscc.testing.checks import get_empty_files, get_misindented_files, get_inva
 from jscc.testing.util import warn_and_assert
 from jscc.testing.filesystem import walk_json_data, walk_csv_data
 from jscc.schema import is_json_schema
-from jscc.testing.checks import validate_items_type, validate_letter_case, validate_schema
+from jscc.testing.checks import validate_items_type, validate_letter_case, validate_schema, validate_ref
 from jsonschema import FormatChecker
 from jsonschema.validators import Draft202012Validator
 
@@ -50,7 +50,6 @@ def test_schema_valid(path, name, data):
         return
     validate_json_schema(path, name, data)
 
-
 @pytest.mark.parametrize("path,name,data", schemas)
 def test_codelist_enums(path, name, data):
     """
@@ -91,12 +90,6 @@ def test_codelists_used():
     unused_codelists = [codelist for codelist in codelist_files if codelist not in codelists]
     missing_codelists = [codelist for codelist in codelists if codelist not in codelist_files]
 
-    # because of how we use subschemas and how we use the statementType field to select which subschema to use,
-    # we can't reference the statementType.csv directly from the schema. But it is used in building the docs.
-    # So the file should be on disk, but we will falsely see it as unused in this test.
-    # See https://github.com/openownership/data-standard/issues/375
-    unused_codelists.remove('statementType.csv')
-
     assert len(unused_codelists) == 0, "Codelist files found not in schema: {}".format(unused_codelists)
     assert len(missing_codelists) == 0, "Codelists in schema missing CSVs: {}".format(missing_codelists)
 
@@ -108,6 +101,7 @@ def validate_json_schema(path, name, data):
     errors += validate_schema(path, data, validator)
     errors += validate_items_type(path, data)
     errors += validate_letter_case(path, data)
+    # errors += validate_ref(path, data)
     assert not errors, "One or more JSON Schema files are invalid. See warnings below."
 
 
