@@ -29,7 +29,7 @@
       "description": "Annotations about this statement or parts of this statement",
       "type": "array",
       "items": {
-        "$ref": "components.json#/$defs/Annotation"
+        "$ref": "#/$defs/Annotation"
       }
     },
     "publicationDetails": {
@@ -77,7 +77,7 @@
     "source": {
       "title": "Source",
       "description": "The source of information in this statement.",
-      "$ref": "components.json#/$defs/Source"
+      "$ref": "#/$defs/Source"
     },
     "declaration": {
       "title": "Declaration (identifier)",
@@ -176,5 +176,167 @@
     "recordId",
     "recordType",
     "recordDetails"
-  ]
+  ],
+  "$defs": {
+    "Annotation": {
+      "title": "Annotation",
+      "description": "An annotation provides additional information about ownership or control data being provided. Annotations can be provided in free-text, and can apply to a whole statement, an object or a single field. Additional extended properties can be included on the annotation object to provide structured data where required.",
+      "type": "object",
+      "properties": {
+        "statementPointerTarget": {
+          "title": "Statement Fragment Pointer",
+          "description": "An RFC6901 JSON Pointer (https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this annotation applies to, starting from the root of the statement. A value of '/' indicates that the annotation applies to the whole statement.",
+          "type": "string"
+        },
+        "creationDate": {
+          "title": "Creation Date",
+          "description": "The date at which this annotation was created, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format.",
+          "type": "string",
+          "anyOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ]
+        },
+        "createdBy": {
+          "title": "Created By",
+          "description": "The person, organisation or agent that created this annotation.",
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Name",
+              "description": "The name of the person, organisation or agent that created this annotation.",
+              "type": "string"
+            },
+            "uri": {
+              "title": "URI",
+              "description": "An optional URI to identify person, organisation or agent that created this annotation.",
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+        "motivation": {
+          "title": "Motivation",
+          "description": "The motivation for this annotation, chosen from a codelist. See the annotationMotivation codelist.",
+          "type": "string",
+          "enum": [
+            "commenting",
+            "correcting",
+            "identifying",
+            "linking",
+            "transformation"
+          ],
+          "codelist": "annotationMotivation.csv",
+          "openCodelist": false
+        },
+        "description": {
+          "title": "Description",
+          "description": "A free-text description to annotate this statement or field.",
+          "type": "string"
+        },
+        "transformedContent": {
+          "type": "string",
+          "title": "Transformed content",
+          "description": "A representation of the annotation target after the transformation in the description field has been applied. This field SHOULD only be used when the motivation is transformation."
+        },
+        "url": {
+          "title": "URL",
+          "description": "A linked resource that annotates, provides context for or enhances this statement. The content of the resource, or the relationship to the statement, MAY be described in the `description` field. This field is REQUIRED if the value of `motivation` is 'linking'.",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "statementPointerTarget",
+        "motivation"
+      ],
+      "oneOfEnumSelectorField": "motivation",
+      "oneOf": [
+        {
+          "properties": {
+            "motivation": {
+              "const": "linking"
+            }
+          },
+          "required": [
+            "statementPointerTarget",
+            "motivation",
+            "url"
+          ]
+        },
+        {
+          "properties": {
+            "motivation": {
+              "enum": [
+                "identifying",
+                "commenting",
+                "correcting",
+                "transformation"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Source": {
+      "title": "Source",
+      "description": "The source object is used to explain where information in a statement originated from, and to link to supporting information.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "title": "Source type",
+          "description": "What type of source is this? Multiple tags can be combined. Values should come from the source type codelist.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "selfDeclaration",
+              "officialRegister",
+              "thirdParty",
+              "primaryResearch",
+              "verified"
+            ],
+            "codelist": "sourceType.csv",
+            "openCodelist": false
+          }
+        },
+        "description": {
+          "title": "Description",
+          "description": "Where required, additional free-text information about the source of this statement can be provided here.",
+          "type": "string"
+        },
+        "url": {
+          "title": "Source URL",
+          "description": "If this information was fetched from an external URL, or a machine or human readable web page is available that provides additional information on how this statement was sourced, provide the URL.",
+          "type": "string",
+          "format": "uri"
+        },
+        "retrievedAt": {
+          "title": "Retrieved at",
+          "description": "A timestamp indicating when this statement was imported from an external system, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format. (The statementDate should be set based on the source information.)",
+          "type": "string",
+          "anyOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ]
+        },
+        "assertedBy": {
+          "title": "Asserted by",
+          "description": "Who is making this statement? This may be the name of the person or organisation making a self-declaration (in which case, please make sure the name field matches the organisation or person name field), or the name or description of some other party. If this statement has been verified, this may also include the name of the organisation providing verification.",
+          "type": "array",
+          "items": {
+            "$ref": "components.json#/$defs/Agent"
+          }
+        }
+      }
+    }
+  }
 }
