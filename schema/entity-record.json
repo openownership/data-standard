@@ -146,7 +146,7 @@
     "publicListing": {
       "title": "Public listing",
       "description": "Details of a publicly listed company, its securities (shares and other tradable financial instruments related to the entity), and related regulatory filings.",
-      "$ref": "components.json#/$defs/PublicListing"
+      "$ref": "#/$defs/PublicListing"
     },
     "entitySubtype": {
       "type": "object",
@@ -200,5 +200,108 @@
     "isComponent",
     "entityType",
     "publicationDetails"
-  ]
+  ],
+  "$defs": {
+    "PublicListing": {
+      "type": "object",
+      "title": "Public listing",
+      "description": "Details of a publicly listed company, its securities (shares and other tradable financial instruments related to the entity), and related regulatory filings.",
+      "required": [
+        "hasPublicListing"
+      ],
+      "minProperties": 1,
+      "properties": {
+        "hasPublicListing": {
+          "type": "boolean",
+          "title": "Has public listing",
+          "description": "This value MUST be true if the entity is known to be a publicly listed company."
+        },
+        "companyFilingsURLs": {
+          "type": "array",
+          "title": "Company filings URLs",
+          "description": "URL or URLs where regulatory filings related to major holdings can be retrieved. URLs may point to pages maintained by regulatory bodies, stock exchanges or by the company itself.",
+          "items": {
+            "type": "string"
+          },
+          "format": "uri"
+        },
+        "securitiesListings": {
+          "type": "array",
+          "title": "Securities listings",
+          "description": "Details of the entity's securities and the public exchanges and markets on which they are traded. All equity securities SHOULD BE listed here, plus any other securities from which beneficial ownership might be derived. Where a security is traded on more than one market, there SHOULD BE an entry for each market (or market segment).",
+          "items": {
+            "title": "Securities listing",
+            "description": "Details of a security and the market on which it is traded.",
+            "$ref": "#/$defs/SecuritiesListing"
+          }
+        }
+      }
+    },
+    "SecuritiesListing": {
+      "type": "object",
+      "title": "Securities listing",
+      "description": "Details of a security and the market on which it is traded.",
+      "required": [
+        "stockExchangeJurisdiction",
+        "security",
+        "stockExchangeName"
+      ],
+      "properties": {
+        "marketIdentifierCode": {
+          "type": "string",
+          "title": "Market Identifier Code (MIC)",
+          "description": "The Market Identifier Code (MIC) of the market on which the security is traded. Where the security is traded on a segment of an exchange, this is the MIC of the segment. Where it is traded on the main exchange, this is the MIC of the main exchange and MUST match the `operatingMarketIdentifierCode`. MICs are allocated and managed under ISO standard 10383."
+        },
+        "operatingMarketIdentifierCode": {
+          "type": "string",
+          "title": "Operating Market Identifier Code (Operating MIC)",
+          "description": "The Market Identifier Code (MIC) of the main exchange or trading platform handling trades in this security. Where the security is traded on a segment of an exchange, this is the MIC of the parent exchange or trading platform. Where it is traded on the main exchange, this is the MIC of that main exchange and MUST match the `marketIdentifierCode`. MICs are allocated and managed under ISO standard 10383."
+        },
+        "stockExchangeJurisdiction": {
+          "type": "string",
+          "title": "Stock exchange jurisdiction",
+          "description": "The 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the jurisdiction under which the exchange, market or trading platform is regulated.",
+          "maxLength": 6,
+          "minLength": 2
+        },
+        "stockExchangeName": {
+          "type": "string",
+          "title": "Stock exchange name",
+          "description": "The name of the exchange, market or trading platform on which the security is traded. If the security is traded on a segment of the exchange, then the name SHOULD include both elements. For example, 'London Stock Exchange - MTF'."
+        },
+        "security": {
+          "type": "object",
+          "title": "Security",
+          "description": "Identifying information of the stock or other security.",
+          "required": [
+            "ticker"
+          ],
+          "properties": {
+            "idScheme": {
+              "type": "string",
+              "title": "Identifier scheme",
+              "description": "The scheme under which the security has been issued a unique, persistent identifier. For accepted schemas, see the securitiesIdentifierSchemes codelist.",
+              "enum": [
+                "isin",
+                "figi",
+                "cusip",
+                "cins"
+              ],
+              "codelist": "securitiesIdentifierSchemes.csv"
+            },
+            "id": {
+              "type": "string",
+              "title": "Identifier",
+              "description": "The unique identifier of the security as issued under the `idScheme`."
+            },
+            "ticker": {
+              "type": "string",
+              "title": "Stock ticker",
+              "description": "The stock ticker identifying this security on the named stock exchange."
+            }
+          }
+        }
+      }
+    }
+  }
 }
