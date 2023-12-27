@@ -75,12 +75,6 @@
       "title": "Property Order",
       "description": "The order in which properties should be displayed for optimised user experience. Properties whose values are not objects or arrays should be listed first.",
       "type": "integer"
-    },
-    "oneOfEnumSelectorField": {
-      "$comment": "A BODS schema property.",
-      "name": "oneOf Enum Field",
-      "description": "Hints to a validator which subschema to use when validating objects which may use one of several schema options.",
-      "type": "string"
     }
   }
 }
