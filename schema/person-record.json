@@ -25,36 +25,7 @@
       "openCodelist": false
     },
     "unspecifiedPersonDetails": {
-      "title": "Unspecified person details",
-      "description": "An explanation of why this person has a `personType` of 'anonymousPerson' or 'unknownPerson'. A `reason` MUST be specified.",
-      "type": "object",
-      "properties": {
-        "reason": {
-          "title": "Reason",
-          "description": "The reason that an interested party cannot be specified. From the unspecifiedReason codelist.",
-          "type": "string",
-          "enum": [
-            "noBeneficialOwners",
-            "subjectUnableToConfirmOrIdentifyBeneficialOwner",
-            "interestedPartyHasNotProvidedInformation",
-            "subjectExemptFromDisclosure",
-            "interestedPartyExemptFromDisclosure",
-            "unknown",
-            "informationUnknownToPublisher"
-          ],
-          "codelist": "unspecifiedReason.csv",
-          "openCodelist": false
-        },
-        "description": {
-          "title": "Description",
-          "description": "Any supporting information about the absence of a confirmed beneficial owner. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
-          "type": "string"
-        }
-      },
-      "required": [
-        "reason"
-      ],
-      "propertyOrder": 5
+      "$ref": "components.json#/$defs/UnspecifiedRecord"
     },
     "names": {
       "title": "Names",

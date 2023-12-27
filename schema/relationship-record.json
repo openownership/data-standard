@@ -21,21 +21,27 @@
     },
     "subject": {
       "title": "Subject",
-      "description": "The subject of an ownership or control relationship.",
-      "type": "object",
-      "properties": {
-        "describedByEntityStatement": {
-          "title": "Described by entity statement",
-          "description": "Provide the identifier of the statement which describes the entity that the subject of an ownership or control interest.",
+      "description": "The recordId for the subject of the relationship, or a reason why the subject cannot be specified.",
+      "oneOf": [
+        {
           "type": "string"
+        },
+        {
+          "$ref": "components.json#/$defs/UnspecifiedRecord"
         }
-      },
-      "required": [
-        "describedByEntityStatement"
       ]
     },
     "interestedParty": {
-      "$ref": "#/$defs/InterestedParty"
+      "title": "Interested party",
+      "description": "The interested party has some level of ownership or control over the entity referenced by `subject` in this relationship record. The value is a record Id for either an entity record or person record, or, where the interested party is unknown, details of why. When confirmation has been provided that no interested party exists, where ownership and control information does not need to be provided, or where details of ownership and control are unknown, a `reason` MUST be given. Where an unknown entity is the `subject` of further Relationship Records in the same structure, or where there is a natural person with ownership or control but their name or details are not known or cannot be disclosed for some reason, a reference recordId for a person or entity should be provided but identifying details in the record MAY be left blank.",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "components.json#/$defs/UnspecifiedRecord"
+        }
+      ]
     },
     "interests": {
       "title": "Interests",
@@ -71,54 +77,6 @@
     "publicationDetails"
   ],
   "$defs": {
-    "InterestedParty": {
-      "title": "Interested party",
-      "description": "The interested party has some level of ownership or control over the entity referenced in this ownership or control statement. This should be described with reference to either an entity statement or person statement, or, where the interested party is unknown, details of why. ",
-      "type": "object",
-      "properties": {
-        "describedByEntityStatement": {
-          "title": "Described by entity statement",
-          "description": "A reference to a statement describing a registered entity, trust or arrangement that has an ownership or control interest in the subject of this statement. An entityStatement should be used when the direct interests to be described represents known control or ownership by anyone other than a natural person.",
-          "type": "string"
-        },
-        "describedByPersonStatement": {
-          "title": "Described by person statement",
-          "description": "A reference to a statement describing a natural person who has an ownership or control interest in the subject of this statement.",
-          "type": "string"
-        },
-        "unspecified": {
-          "title": "Unspecified or unknown ownership and control",
-          "description": "When confirmation has been provided that no interested party exists, where ownership and control information does not need to be provided, or where details of ownership and control are unknown, a `reason` MUST be given. Where an unknown entity is the `subject` of further ownershipOrControlStatements in the same structure, or where there is a natural person with ownership or control but their name or details are not known or cannot be disclosed for some reason, `unspecified` should not be used, but instead a reference to a `personStatement` or `entityStatement` should be provided but identifying details MAY be left blank.",
-          "type": "object",
-          "properties": {
-            "reason": {
-              "title": "Reason",
-              "description": "The reason that an interested party cannot be specified. From the unspecifiedReason codelist.",
-              "type": "string",
-              "enum": [
-                "noBeneficialOwners",
-                "subjectUnableToConfirmOrIdentifyBeneficialOwner",
-                "interestedPartyHasNotProvidedInformation",
-                "subjectExemptFromDisclosure",
-                "interestedPartyExemptFromDisclosure",
-                "unknown",
-                "informationUnknownToPublisher"
-              ],
-              "codelist": "unspecifiedReason.csv",
-              "openCodelist": false
-            },
-            "description": {
-              "title": "Description",
-              "description": "Any supporting information about the absence of a confirmed beneficial owner. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
-              "type": "string"
-            }
-          },
-          "required": [
-            "reason"
-          ]
-        }
-      }
-    },
     "Interest": {
       "title": "Interest",
       "description": "A description of the interest held by an interestedParty in another entity.",
