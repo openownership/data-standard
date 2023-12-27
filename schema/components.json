@@ -3,19 +3,6 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
   "$defs": {
-    "StatementDate": {
-      "title": "Statement date",
-      "description": "The date (optionally including time) on which this statement was declared by the source.",
-      "type": "string",
-      "anyOf": [
-        {
-          "format": "date"
-        },
-        {
-          "format": "date-time"
-        }
-      ]
-    },
     "Source": {
       "title": "Source",
       "description": "The source object is used to explain where information in a statement originated from, and to link to supporting information.",
@@ -147,13 +134,6 @@
           ]
         }
       ]
-    },
-    "ID": {
-      "title": "Statement Identifier",
-      "description": "A persistent globally unique identifier for this statement.",
-      "type": "string",
-      "minLength": 32,
-      "maxLength": 64
     },
     "Address": {
       "title": "Address",
@@ -535,48 +515,6 @@
           "$ref": "components.json#/$defs/Source"
         }
       }
-    },
-    "PublicationDetails": {
-      "title": "Publication Details",
-      "description": "Information concerning the publication of this statement.",
-      "type": "object",
-      "properties": {
-        "publicationDate": {
-          "title": "Publication date",
-          "description": "The date on which this statement was published, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format.",
-          "type": "string",
-          "anyOf": [
-            {
-              "format": "date"
-            },
-            {
-              "format": "date-time"
-            }
-          ]
-        },
-        "bodsVersion": {
-          "title": "BODS version",
-          "description": "The version of the Beneficial Ownership Data Standard to which this statement conforms, expressed as major.minor. For example: 0.2 or 1.0.",
-          "type": "string",
-          "pattern": "^(\\d+\\.)(\\d+)$"
-        },
-        "license": {
-          "title": "License URL",
-          "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or Open Definition Conformant (http://opendefinition.org/licenses/) license.",
-          "type": "string",
-          "format": "uri"
-        },
-        "publisher": {
-          "title": "Publisher",
-          "description": "Details of the organisation or individual publishing this statement.",
-          "$ref": "components.json#/$defs/Publisher"
-        }
-      },
-      "required": [
-        "publicationDate",
-        "bodsVersion",
-        "publisher"
-      ]
     },
     "Publisher": {
       "type": "object",
