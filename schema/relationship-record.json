@@ -1,5 +1,5 @@
 {
-  "$id": "relationship-record.json",
+  "$id": "urn:relationship",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
   "title": "Relationship record",
@@ -16,7 +16,7 @@
       "description": "The identifiers of all component statements that provide detail about the indirect relationship between this Statement's `subject` and `interestedParty`. If this Ownership-or-control Statement has components, it MUST itself have a `isComponent` value of 'false'.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/$defs/ID"
+        "$ref": "urn:components#/$defs/ID"
       }
     },
     "subject": {
@@ -27,7 +27,7 @@
           "type": "string"
         },
         {
-          "$ref": "components.json#/$defs/UnspecifiedRecord"
+          "$ref": "urn:components#/$defs/UnspecifiedRecord"
         }
       ]
     },
@@ -39,7 +39,7 @@
           "type": "string"
         },
         {
-          "$ref": "components.json#/$defs/UnspecifiedRecord"
+          "$ref": "urn:components#/$defs/UnspecifiedRecord"
         }
       ]
     },
@@ -54,19 +54,19 @@
     "publicationDetails": {
       "title": "Publication details",
       "description": "Information concerning the original publication of this statement.",
-      "$ref": "components.json#/$defs/PublicationDetails"
+      "$ref": "urn:components#/$defs/PublicationDetails"
     },
     "source": {
       "title": "Source",
       "description": "The source of the information that links the entity and the interested party, or that supports a null statement.",
-      "$ref": "components.json#/$defs/Source"
+      "$ref": "urn:components#/$defs/Source"
     },
     "annotations": {
       "title": "Annotations",
       "description": "Annotations about this statement or parts of this statement",
       "type": "array",
       "items": {
-        "$ref": "components.json#/$defs/Annotation"
+        "$ref": "urn:components#/$defs/Annotation"
       }
     }
   },

@@ -1,5 +1,5 @@
 {
-  "$id": "statement.json",
+  "$id": "urn:statement",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
   "type": "object",
@@ -161,7 +161,7 @@
       "then": {
         "properties": {
           "recordDetails": {
-            "$ref": "entity-record.json"
+            "$ref": "urn:entity"
           }
         }
       }
@@ -177,7 +177,7 @@
       "then": {
         "properties": {
           "recordDetails": {
-            "$ref": "person-record.json"
+            "$ref": "urn:person"
           }
         }
       }
@@ -193,7 +193,7 @@
       "then": {
         "properties": {
           "recordDetails": {
-            "$ref": "relationship-record.json"
+            "$ref": "urn:relationship"
           }
         }
       }
