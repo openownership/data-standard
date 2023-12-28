@@ -2,7 +2,7 @@
 
 attrs
 flake8
-jsonschema
+jsonschema==4.20.0
 mccabe
 pip-tools
 pluggy
