@@ -1,5 +1,5 @@
 {
-  "$id": "person-record.json",
+  "$id": "urn:person",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
   "type": "object",
@@ -25,7 +25,7 @@
       "openCodelist": false
     },
     "unspecifiedPersonDetails": {
-      "$ref": "components.json#/$defs/UnspecifiedRecord"
+      "$ref": "urn:components#/$defs/UnspecifiedRecord"
     },
     "names": {
       "title": "Names",
@@ -41,7 +41,7 @@
       "description": "One or more official identifiers for this person. Where available, official registration numbers should be provided.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/$defs/Identifier"
+        "$ref": "urn:components#/$defs/Identifier"
       },
       "propertyOrder": 20
     },
@@ -50,14 +50,14 @@
       "description": "An array of ISO 2-Digit country codes representing nationalities held by this individual.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/$defs/Country"
+        "$ref": "urn:components#/$defs/Country"
       },
       "propertyOrder": 30
     },
     "placeOfBirth": {
       "title": "Place of birth",
       "propertyOrder": 40,
-      "$ref": "components.json#/$defs/Address"
+      "$ref": "urn:components#/$defs/Address"
     },
     "birthDate": {
       "title": "Date of birth",
@@ -90,14 +90,14 @@
     "placeOfResidence": {
       "title": "Place of residence",
       "propertyOrder": 50,
-      "$ref": "components.json#/$defs/Address"
+      "$ref": "urn:components#/$defs/Address"
     },
     "taxResidencies": {
       "title": "Tax residency",
       "description": "An array of ISO 2-Digit country codes representing the tax residencies held by this individual.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/$defs/Country"
+        "$ref": "urn:components#/$defs/Country"
       },
       "propertyOrder": 55
     },
@@ -106,7 +106,7 @@
       "description": "One or more addresses for this entity.",
       "type": "array",
       "items": {
-        "$ref": "components.json#/$defs/Address"
+        "$ref": "urn:components#/$defs/Address"
       },
       "propertyOrder": 60
     },
@@ -114,20 +114,20 @@
       "title": "Publication details",
       "description": "Information concerning the original publication of this statement.",
       "propertyOrder": 85,
-      "$ref": "components.json#/$defs/PublicationDetails"
+      "$ref": "urn:components#/$defs/PublicationDetails"
     },
     "source": {
       "title": "Source",
       "description": "The source of information about this person, or of information that supports an unknown or anonymous person statement.",
       "propertyOrder": 89,
-      "$ref": "components.json#/$defs/Source"
+      "$ref": "urn:components#/$defs/Source"
     },
     "annotations": {
       "title": "Annotations",
       "description": "Annotations about this statement or parts of this statement",
       "type": "array",
       "items": {
-        "$ref": "components.json#/$defs/Annotation"
+        "$ref": "urn:components#/$defs/Annotation"
       },
       "propertyOrder": 90
     },
@@ -226,7 +226,7 @@
         "jurisdiction": {
           "title": "Jurisdiction",
           "description": "The jurisdiction where this person is a PEP.",
-          "$ref": "components.json#/$defs/Jurisdiction"
+          "$ref": "urn:components#/$defs/Jurisdiction"
         },
         "startDate": {
           "title": "State date",
@@ -243,7 +243,7 @@
         "source": {
           "title": "Source",
           "description": "The source of this PEP information",
-          "$ref": "statement.json#/$defs/Source"
+          "$ref": "urn:statement#/$defs/Source"
         }
       }
     }

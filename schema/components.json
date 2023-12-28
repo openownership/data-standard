@@ -1,5 +1,5 @@
 {
-  "$id": "components.json",
+  "$id": "urn:components",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$comment": "This file contains generic components which are used in multiple places throughout the BODS schema. Components used only in Statement or one type of Record should be defined in their respective files.",
   "version": "0.4",
