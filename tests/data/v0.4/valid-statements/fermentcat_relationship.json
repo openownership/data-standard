@@ -1,0 +1,45 @@
+{
+    "statementId": "9d167324c416bbfd37fe5c1a1b2afa95",
+    "statementDate": "2020-09-11T16:30:23Z",
+    "publicationDetails": {
+        "publicationDate": "2020-09-11T00:00:00+00:00",
+        "bodsVersion": "0.4",
+        "license": "http://opendefinition.org/licenses/cc-zero",
+        "publisher": {
+            "name": "Irish Business Authority"
+        }
+    },
+    "recordId": "rel-b05e7c91e0a04e4f",
+    "recordType": "relationship",
+    "recordStatus": "updated",
+    "declarationSubject": "ent-93c75c87ab28f889",
+    "source": {
+        "assertedBy": [
+            {
+                "name": "Riyadh Byrne-Amin"
+            }
+        ]
+    },
+    "recordDetails": {
+        "isComponent": false,
+        "subject": "ent-93c75c87ab28f889",
+        "interestedParty": "per-5faa4103dee78621",
+        "interests": [
+            {
+                "type": "shareholding",
+                "directOrIndirect": "direct",
+                "beneficialOwnershipOrControl": true,
+                "share": {
+                    "exact": 50
+                },
+                "startDate": "2019-09-11"
+            },
+            {
+                "type": "boardMember",
+                "directOrIndirect": "direct",
+                "beneficialOwnershipOrControl": true,
+                "startDate": "2019-09-11"
+            }
+        ]
+    }
+}
