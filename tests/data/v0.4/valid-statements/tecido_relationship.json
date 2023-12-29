@@ -1,0 +1,60 @@
+{
+    "statementId": "crxpru407636437638495407739553674232",
+    "statementDate": "2019-01-20",
+    "publicationDetails": {
+        "publicationDate": "2019-01-31",
+        "bodsVersion": "0.4",
+        "license": "http://opendefinition.org/licenses/cc-zero",
+        "publisher": {
+            "name": "Company Register, Delaware"
+        }
+    },
+    "recordId": "022EBEB66B",
+    "recordType": "relationship",
+    "recordStatus": "new",
+    "source": {
+        "type": ["selfDeclaration"],
+        "assertedBy": [
+            {
+                "name": "Maria Esteves"
+            }
+        ]
+    },
+    "declaration": "bo-jtc-8755982746",
+    "declarationSubject": "01B68D7633",
+    "recordDetails": {
+        "isComponent": false,
+        "subject": "01B68D7633",
+        "interestedParty": "018AF6B3EB",
+        "interests": [
+            {
+                "type": "shareholding",
+                "directOrIndirect": "direct",
+                "beneficialOwnershipOrControl": true,
+                "share": {
+                    "exact": 100,
+                    "maximum": 100,
+                    "minimum": 100
+                },
+                "startDate": "2002-03-09"
+            },
+            {
+                "type": "votingRights",
+                "directOrIndirect": "direct",
+                "beneficialOwnershipOrControl": true,
+                "share": {
+                    "exact": 100,
+                    "maximum": 100,
+                    "minimum": 100
+                },
+                "startDate": "2002-03-09"
+            },
+            {
+                "type": "boardChair",
+                "directOrIndirect": "direct",
+                "beneficialOwnershipOrControl": true,
+                "startDate": "2002-03-09"
+            }
+        ]
+    }
+}

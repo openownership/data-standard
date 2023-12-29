@@ -1,0 +1,53 @@
+{
+    "statementId": "733b20a572f8b306b538344c7946c9cb",
+    "statementDate": "2019-09-11T11:17:23Z",
+    "publicationDetails": {
+        "publicationDate": "2019-09-11T00:00:00+00:00",
+        "bodsVersion": "0.4",
+        "license": "http://opendefinition.org/licenses/cc-zero",
+        "publisher": {
+            "name": "Irish Business Authority"
+        }
+    },
+    "recordId": "per-5faa4103dee78621",
+    "recordType": "person",
+    "recordStatus": "new",
+    "declarationSubject": "ent-93c75c87ab28f889",
+    "source": {
+        "assertedBy": [
+            {
+                "name": "Riyadh Byrne-Amin"
+            }
+        ]
+    },
+    "recordDetails": {
+        "isComponent": false,
+        "personType": "knownPerson",
+        "names": [
+            {
+                "type": "individual",
+                "fullName": "Riyadh Byrne-Amin",
+                "familyName": "Byrne-Amin",
+                "givenName": "Riyadh"
+            }
+        ],
+        "birthDate": "1990-06-12",
+        "identifiers": [
+            {
+                "id": "7700225VH",
+                "scheme": "IE-TAXID",
+                "schemeName": "Ireland Personal Public Service Number"
+            }
+        ],
+        "nationalities": [
+            {
+                "name": "Iraq",
+                "code": "IQ"
+            },
+            {
+                "name": "Ireland",
+                "code": "IE"
+            }
+        ]
+    }
+}
