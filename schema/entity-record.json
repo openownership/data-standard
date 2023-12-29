@@ -148,8 +148,7 @@
   },
   "required": [
     "isComponent",
-    "entityType",
-    "publicationDetails"
+    "entityType"
   ],
   "$defs": {
     "PublicListing": {
