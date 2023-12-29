@@ -55,8 +55,7 @@
   "required": [
     "isComponent",
     "subject",
-    "interestedParty",
-    "publicationDetails"
+    "interestedParty"
   ],
   "$defs": {
     "Interest": {
