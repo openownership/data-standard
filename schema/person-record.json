@@ -141,8 +141,7 @@
   },
   "required": [
     "personType",
-    "isComponent",
-    "publicationDetails"
+    "isComponent"
   ],
   "$defs": {
     "Name": {
