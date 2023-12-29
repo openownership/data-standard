@@ -8,6 +8,7 @@ from jsonschema.validators import Draft202012Validator
 from referencing import Registry, Resource
 from referencing.jsonschema import DRAFT202012
 
+
 def get_json_files(dir):
     """
     Recursively gets files with .json extension in `path` and returns
@@ -18,8 +19,10 @@ def get_json_files(dir):
         paths.append(p)
     return paths
 
+
 def file_id(path):
     return path.name
+
 
 @pytest.fixture
 def bods_validator():
@@ -55,6 +58,7 @@ def bods_validator():
     bods_validator = Draft202012Validator(statement_schema, registry=registry, format_checker=FormatChecker())
     return bods_validator
 
+
 @pytest.fixture
 def bods_json(request):
     """
@@ -66,6 +70,7 @@ def bods_json(request):
     fp = request.param
     bods = json.loads(fp.read_text())
     return bods
+
 
 @pytest.fixture
 def get_valid_data():
@@ -84,6 +89,7 @@ def get_valid_data():
         }
     }
     return data
+
 
 @pytest.fixture
 def get_invalid_data():
