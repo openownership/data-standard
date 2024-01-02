@@ -5,6 +5,8 @@ import pytest
 from pathlib import Path
 from jsonschema import FormatChecker
 from jsonschema.validators import Draft202012Validator
+from jscc.schema import is_json_schema
+from jscc.testing.filesystem import walk_json_data
 from referencing import Registry, Resource
 from referencing.jsonschema import DRAFT202012
 
@@ -24,34 +26,67 @@ def file_id(path):
     return path.name
 
 
+def schema_paths():
+    here = os.path.dirname(os.path.realpath(__file__))
+    schema_dir = os.path.join(here, "..", "schema")
+    schema_paths = [(path, name, data) for path, name, _, data in walk_json_data(top=schema_dir) if is_json_schema(data)]
+    return schema_paths
+
+
+def schema_registry():
+    """
+    This loads the BODS schema files into a jsonschema registry, so the
+    validator can resolve $refs across all of the schema files.
+    """
+    schemas = []
+    for path, name, schema in schema_paths():
+        schemas.append((schema.get('$id'), Resource(contents=schema, specification=DRAFT202012)))
+
+    registry = Registry().with_resources(schemas)
+    return registry
+
+
+"""
+The fixtures in this file are automatically discovered by pytest without
+needing to import them in the test files.
+"""
+
+
+@pytest.fixture
+def schema_from_registry(request):
+    registry = schema_registry()
+    return registry.contents(request.param)
+
+
+@pytest.fixture
+def schema_validator():
+    """
+    This sets up and returns a 2020-12 validator, against which the BODS
+    schema can be checked. The BODS schema files are loaded into the
+    registry so $refs can be resolved.
+    """
+
+    registry = schema_registry()
+
+    # Get meta schema
+    here = os.path.dirname(os.path.realpath(__file__))
+    with open(os.path.join(here, 'schema', 'meta-schema.json')) as fp:
+        metaschema = json.load(fp)
+
+    validator = Draft202012Validator(metaschema, registry=registry, format_checker=FormatChecker())
+
+    return validator
+
+
 @pytest.fixture
 def bods_validator():
     """
-    This loads the five BODS schema files into a jsonschema registry, so the
-    validator can resolve $refs across all of the schema files.
-
-    Then sets up and returns the validator, using the statement.json
+    This sets up and returns the validator, using the statement.json
     schema as the primary schema against which data is validated.
     """
 
-    # Get schema JSON files from disc
-    here = os.path.dirname(os.path.realpath(__file__))
-    schema_paths = [
-        ("urn:statement", here + "/../schema/statement.json"),
-        ("urn:person", here + "/../schema/person-record.json"),
-        ("urn:entity", here + "/../schema/entity-record.json"),
-        ("urn:relationship", here + "/../schema/relationship-record.json"),
-        ("urn:components", here + "/../schema/components.json")
-    ]
-
-    # Load schemas into in-memory registry
-    # View contents with eg. print(registry.contents("urn:statement"))
-    schemas = []
-    for schema_id, schema_path in schema_paths:
-        with open(schema_path) as f:
-            schemas.append((schema_id, Resource(contents=json.load(f), specification=DRAFT202012)))
-
-    registry = Registry().with_resources(schemas)
+    # Get the registry
+    registry = schema_registry()
 
     # Make the validator
     statement_schema = registry.contents("urn:statement")
