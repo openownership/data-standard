@@ -22,7 +22,7 @@ Relationships between trusts and their parties MUST be represented using only th
 * ``beneficiary``
 * ``trustee``
 * ``protector``
-* ``otherInterestOrControl``
+* ``otherInfluenceOrControl``
 
 ``interest.details`` MAY be used to give a local name (e.g. "fiduciaire") or more information about the interest (e.g. "power to dissolve trust") 
 
@@ -85,7 +85,7 @@ A trust where the trustee is a company. In this jurisdiction, the owner of the c
 See :ref:`representing-bo` for guidance on representing indirect beneficial ownership.
 
 .. figure:: ../../_assets/trust-scenario6.svg
-   :alt: Diagram show linked statements. Trust A is linked to Company A by a relationship statement with interest type trustee. Company A is linked to Person C by a relationship statement with interest type shareholding. There is also a relationship statement between Person C and Trust to represent that they are one of the ultimate beneficial owners of Trust A. The interest type for this relationship statement is 'other interest or control.' There are also Person A and Person B the settlor and beneficiary of the trust. 
+   :alt: Diagram show linked statements. Trust A is linked to Company A by a relationship statement with interest type trustee. Company A is linked to Person C by a relationship statement with interest type shareholding. There is also a relationship statement between Person C and Trust to represent that they are one of the ultimate beneficial owners of Trust A. The interest type for this relationship statement is 'other influence or control.' There are also Person A and Person B the settlor and beneficiary of the trust. 
    :figwidth: 100%
    :align: center
    
