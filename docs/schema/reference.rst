@@ -22,7 +22,7 @@ The top-level objects are :doc:`statements <concepts>`:
 
 Statements are built up from a set of nested objects and properties, each of which has a field name, a title and a description that defines how the object or field should be used.
 
-BODS data MAY be published as a valid `JSON document <https://tools.ietf.org/html/rfc8259>`_. See :any:`Serialization <guidance-serialization>` for more options.
+BODS data MAY be published as a valid `JSON document <https://tools.ietf.org/html/rfc8259>`_. See :any:`Serialisation <guidance-serialisation>` for more options.
 
 
 .. _schema-address:

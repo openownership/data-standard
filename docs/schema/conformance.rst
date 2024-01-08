@@ -10,7 +10,7 @@ Conformance statement
 * It **must not** use terms from outside this specification’s terms where this specification’s terms would suffice.
 * It **may** use terms from outside this specification’s terms where this specification’s terms are insufficient.
 * Its usage of this specification’s terms **must** be consistent with the semantics of those terms.
-* If an implementation serializes to JSON, its serializations **must** validate against this specification’s JSON Schema.
+* If an implementation serialises to JSON, its serialisations **must** validate against this specification’s JSON Schema.
 
 (Statement `adapted from Popolo Project specification <http://www.popoloproject.com/specs/#conformance>`_)
 

@@ -1,13 +1,13 @@
-.. _guidance-serialization:
+.. _guidance-serialisation:
 
-Serialization
+Serialisation
 =============
 
-The canonical serialization of BODS data is as a `JSON document <https://tools.ietf.org/html/rfc8259>`_. A JSON BODS file SHOULD consist of a series of ordered statement objects within a top-level array. JSON Lines MAY also be used when creating large files.
+The canonical serialisation of BODS data is as a `JSON document <https://tools.ietf.org/html/rfc8259>`_. A JSON BODS file SHOULD consist of a series of ordered statement objects within a top-level array. JSON Lines MAY also be used when creating large files.
 
 Each of the :ref:`entityStatements <schema-entity-statement>` or :ref:`personStatements <schema-person-statement>` referenced by a particular :ref:`ownershipOrControlStatement <schema-ownership-or-control-statement>`  MUST appear before that particular ownership-or-control statement in the ordered array. 
 
-BODS data MAY also be serialized in tabular form, with each row representing a statement. Columns SHOULD represent statement fields and column titles SHOULD use the relevant relative JSON Pointer from the statement root. 
+BODS data MAY also be serialised in tabular form, with each row representing a statement. Columns SHOULD represent statement fields and column titles SHOULD use the relevant relative JSON Pointer from the statement root. 
 
 For example, the extract:
 
@@ -40,7 +40,7 @@ For example, the extract:
     }
    ]
 
-may be serialized in a table as:
+may be serialised in a table as:
 
 .. list-table:: 
    :header-rows: 1
