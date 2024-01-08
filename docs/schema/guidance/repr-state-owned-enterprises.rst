@@ -5,24 +5,24 @@ Representing state-owned enterprises
 
 .. highlights::
 
-    **Key requirement:** If an entity's status as a state-owned enterprise needs to be represented, then its Entity statement MUST be the subject of Ownership-or-control statement(s) connecting it, either directly or indirectly, to an Entity statement with ``entityType`` of 'state' or 'stateBody'.
+    **Key requirement:** If an entity's status as a state-owned enterprise needs to be represented, then its Entity Statement MUST be the subject of Ownership-or-control statements connecting it, either directly or indirectly, to an Entity statement with ``entityType`` of 'state' or 'stateBody'.
 
 
 Overview
 ------------------------
 
-The definition of 'state-owned enterprise' (SOE) can change according to jurisdiction or domain. The Beneficial Ownership Data Standard (BODS) does not therefore rely on, or support, any one definition. Instead, BODS enables the interests between a state (or state body) and an enterprise to be represented. This requires the state itself (or state body) to be represented by an Entity statement.
+The definition of 'state-owned enterprise' (SOE) can change according to jurisdiction or domain. BODS does not rely on, or support, any one definition of SOE. Instead, BODS enables the interests between a state (or state body) and an enterprise to be represented. This requires the state itself (or state body) to be represented by an Entity statement.
 
-In particular, the following properties and values SHOULD be used to represent information about enterprises and their links to states:
+The following properties and values SHOULD be used to represent information about states and state bodies:
+* ``entityType`` SHOULD be set to 'state' or 'stateBody'
+* ``jurisdiction`` SHOULD be used to represent the state
+* ``entitySubtype`` SHOULD be used to refine the category of a given state body (as a 'government department', 'state agency' or 'other')
 
-* ``entityType`` SHOULD be set to 'state' or 'stateBody', and ``jurisdiction`` SHOULD be used to represent the particular state.
-* ``entitySubtype`` SHOULD be used to refine the category of a given state body (as a 'government department', 'state agency' or 'other').
-* ``formedByStatute`` MAY be used to supply details of a law, where an entity has been formed as a result of specific legislation.
+The following properties and values SHOULD be used to represent information about SOEs:
+* ``entityType`` SHOULD be set to 'registeredEntity'
+* ``formedByStatute`` MAY be used to supply details of a law, where an entity has been formed as a result of specific legislation
 
 For more details about these properties see :ref:`schema-entity-statement`.
-
-A number of scenarios are outlined below. We show how the these properties and others can be used to represent information about SOEs within a set of connected BODS statements. 
-
 
 Example scenarios
 ------------------------
