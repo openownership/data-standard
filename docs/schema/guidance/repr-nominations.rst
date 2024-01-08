@@ -7,7 +7,7 @@ Overview
 --------
 In this documentation the term ‘nominee arrangement’ refers to an agreement between parties where one (the nominator) instructs the other (the nominee) to act on their behalf in a specified capacity.
 
-BODS can be used to represent the beneficial ownership of entities via nominee arrangements. Nominee arrangements are represented by an Entity statement. 
+BODS can be used to represent the beneficial ownership of entities via nominee arrangements. Nominee arrangements are represented by an Entity Statement. 
 
 When representing nominee arrangements:
 
