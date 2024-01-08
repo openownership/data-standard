@@ -17,7 +17,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs151" />
+     id="defs151">
+    <rect
+       x="549.27667"
+       y="171.76248"
+       width="105.05851"
+       height="26.967091"
+       id="rect1" />
+  </defs>
   <sodipodi:namedview
      id="namedview149"
      pagecolor="#ffffff"
@@ -28,12 +35,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="true"
-     inkscape:zoom="1.1009789"
-     inkscape:cx="466.85727"
-     inkscape:cy="365.58375"
-     inkscape:window-width="1920"
-     inkscape:window-height="1043"
-     inkscape:window-x="1920"
+     inkscape:zoom="1.5570193"
+     inkscape:cx="186.25331"
+     inkscape:cy="199.09837"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="g145">
@@ -336,14 +343,6 @@
        fill-rule="evenodd"
        id="path107" />
     <path
-       stroke="#000000"
-       stroke-width="2.24153"
-       stroke-linejoin="round"
-       stroke-linecap="butt"
-       d="M 73.649447,116.94635 V 306.04756 H 466.49982"
-       fill-rule="evenodd"
-       id="path109" />
-    <path
        fill="#000000"
        stroke="#000000"
        stroke-width="2"
@@ -358,14 +357,6 @@
        fill-rule="evenodd"
        id="path113" />
     <path
-       stroke="#000000"
-       stroke-width="1.99082"
-       stroke-linejoin="round"
-       stroke-linecap="butt"
-       d="m 502.27537,117.14551 v 77.51463 h 0.063 v 65.63394"
-       fill-rule="evenodd"
-       id="path115" />
-    <path
        fill="#000000"
        stroke="#000000"
        stroke-width="2"
@@ -379,14 +370,6 @@
        d="m 502.24387,344.28358 v 78.23151 h 0.063 v 78.24094"
        fill-rule="evenodd"
        id="path119" />
-    <path
-       stroke="#000000"
-       stroke-width="2"
-       stroke-linejoin="round"
-       stroke-linecap="butt"
-       d="m 502.24387,344.28358 v 78.23151 h 0.063 v 66.24094"
-       fill-rule="evenodd"
-       id="path121" />
     <path
        fill="#000000"
        stroke="#000000"
@@ -440,10 +423,34 @@
        d="m 502.24251,392.68387 h 254.51971 v 47.3071 H 502.24251 Z"
        fill-rule="evenodd"
        id="path139" />
+    <path
+       stroke="#000000"
+       stroke-width="2"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="m 502.24387,344.28358 v 78.23151 h 0.063 v 66.24094"
+       fill-rule="evenodd"
+       id="path121" />
+    <path
+       stroke="#000000"
+       stroke-width="1.99082"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="m 502.27537,117.14551 v 77.51463 h 0.063 v 65.63394"
+       fill-rule="evenodd"
+       id="path115" />
+    <path
+       stroke="#000000"
+       stroke-width="2.24153"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="M 73.649447,116.94635 V 306.04756 H 466.49982"
+       fill-rule="evenodd"
+       id="path109" />
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
      x="490.55856"
      y="379.07797"
      id="text804-4-6"><tspan
@@ -451,15 +458,15 @@
        id="tspan802-8-1"
        x="490.55856"
        y="379.07797"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">interests.0.type:</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">interests.0.type:</tspan><tspan
        sodipodi:role="line"
        x="490.55856"
-       y="395.61334"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       y="394.07797"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
        id="tspan806-1-5">boardMember</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
      x="489.46213"
      y="159.47711"
      id="text804-4"><tspan
@@ -467,15 +474,15 @@
        id="tspan802-8"
        x="489.46213"
        y="159.47711"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">interests.0.type:</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">interests.0.type:</tspan><tspan
        sodipodi:role="line"
        x="489.46213"
-       y="176.01248"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       y="174.47711"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
        id="tspan806-1">nominee</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.45725"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.45725"
      x="521.60278"
      y="56.826653"
      id="text688-2"><tspan
@@ -483,30 +490,32 @@
        id="tspan686-6"
        x="521.60278"
        y="56.826653"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.45725">personType: knownPerson</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.45725;font-size:12px">personType: knownPerson</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3386px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
-     x="343.73798"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
+     x="348.53967"
      y="25.226513"
      id="text230"><tspan
        sodipodi:role="line"
        id="tspan228"
-       x="343.73798"
-       y="25.226513">Person statement</tspan></text>
+       x="348.53967"
+       y="25.226513"
+       style="font-size:10.6667px">Person statement</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3386px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
-     x="660.76093"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;text-anchor:end;text-align:end"
+     x="749.3761"
      y="26.773045"
      id="text230-0"><tspan
        sodipodi:role="line"
        id="tspan228-6"
-       x="660.76093"
-       y="26.773045">Person statement</tspan></text>
+       x="666.67792"
+       y="26.773045"
+       style="font-size:10.6667px;text-anchor:end;text-align:end">Person statement</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.2835px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.45725"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.45725"
      x="92.249222"
      y="39.021606"
      id="text688"
@@ -515,50 +524,53 @@
        id="tspan686"
        x="92.249222"
        y="39.021606"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.2835px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.45725">personType: unknownPerson</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.45725">personType: unknownPerson</tspan><tspan
        sodipodi:role="line"
        x="92.249222"
-       y="54.37598"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.2835px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.45725"
+       y="54.021606"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.45725"
        id="tspan486">unspecifiedPersonDetails.reason:</tspan><tspan
        sodipodi:role="line"
        x="92.249222"
-       y="69.730354"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.2835px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.45725"
+       y="69.021606"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.45725"
        id="tspan743">subjectUnableToConfirmOrIdentifyBeneficialOwner</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3386px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
-     x="185.9032"
-     y="133.64204"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;text-anchor:end;text-align:end"
+     x="300.86282"
+     y="134.85226"
      id="text725"><tspan
        sodipodi:role="line"
        id="tspan723"
-       x="185.9032"
-       y="133.64204">Relationship statement</tspan></text>
+       x="193.27396"
+       y="134.85226"
+       style="font-size:10.6667px;text-anchor:end;text-align:end">Relationship statement</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3386px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
-     x="615.11548"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;text-anchor:end;text-align:end"
+     x="729.24329"
      y="135.48305"
      id="text725-7"><tspan
        sodipodi:role="line"
        id="tspan723-3"
-       x="615.11548"
-       y="135.48305">Relationship statement</tspan></text>
+       x="621.65442"
+       y="135.48305"
+       style="font-size:10.6667px;text-anchor:end;text-align:end">Relationship statement</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3386px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
-     x="614.59369"
-     y="357.138"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;text-anchor:end;text-align:end"
+     x="729.24329"
+     y="357.86224"
      id="text725-63"><tspan
        sodipodi:role="line"
        id="tspan723-9"
-       x="614.59369"
-       y="357.138">Relationship statement</tspan></text>
+       x="621.65442"
+       y="357.86224"
+       style="font-size:10.6667px;text-anchor:end;text-align:end">Relationship statement</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.2835px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
      x="521.06464"
      y="264.74127"
      id="text796"><tspan
@@ -566,20 +578,20 @@
        id="tspan794"
        x="521.06464"
        y="264.74127"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.2835px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">entityType: arrangement</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">entityType: arrangement</tspan><tspan
        sodipodi:role="line"
        x="521.06464"
-       y="280.09564"
+       y="279.74127"
        id="tspan798"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.2835px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">entitySubtype.generalCategory: </tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">entitySubtype.generalCategory: </tspan><tspan
        sodipodi:role="line"
        x="521.06464"
-       y="295.45001"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.2835px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       y="294.74127"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
        id="tspan800">nomination</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
      x="59.228695"
      y="158.703"
      id="text804"><tspan
@@ -587,40 +599,43 @@
        id="tspan802"
        x="59.228695"
        y="158.703"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">interests.0.type:</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">interests.0.type:</tspan><tspan
        sodipodi:role="line"
        x="59.228695"
-       y="175.23837"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       y="173.703"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
        id="tspan806">nominator</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
      x="522.61053"
      y="507.16531"
      id="text849"><tspan
        sodipodi:role="line"
        id="tspan847"
        x="522.61053"
-       y="507.16531">entityType: registeredEntity</tspan></text>
+       y="507.16531"
+       style="font-size:12px">entityType: registeredEntity</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3386px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
-     x="668.19324"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;text-anchor:end;text-align:end"
+     x="748.46381"
      y="248.73686"
      id="text853"><tspan
        sodipodi:role="line"
        id="tspan851"
-       x="668.19324"
-       y="248.73686">Entity statement</tspan></text>
+       x="672.90625"
+       y="248.73686"
+       style="font-size:10.6667px;text-anchor:end;text-align:end">Entity statement</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3386px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
-     x="668.03534"
-     y="476.33829"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;text-anchor:end;text-align:end"
+     x="748.46381"
+     y="477.35669"
      id="text853-2"><tspan
        sodipodi:role="line"
        id="tspan851-9"
-       x="668.03534"
-       y="476.33829">Entity statement</tspan></text>
+       x="672.90625"
+       y="477.35669"
+       style="font-size:10.6667px;text-anchor:end;text-align:end">Entity statement</tspan></text>
 </svg>
