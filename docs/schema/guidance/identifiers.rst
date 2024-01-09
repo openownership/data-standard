@@ -3,35 +3,16 @@
 Real world identifiers
 =============================
 
-Overview
-------------------------
-
-To create a link between statements, and the real-world organisations and people they relate to, statements may include a range of identifying information. We use a common :any:`Identifier object <schema-identifier>` with the following properties:
-
-* ``scheme`` should be a value from a codelist of known identifier sources. Separate codelists exist for entities and persons. See below.
-
-* ``id`` should be the value assigned to the relevant entity or person in that scheme.
-
-* ``uri`` may be used to provide a canonical URI for the entity or person within the scheme.
-
-* ``schemeName`` should be the name of the list, registry or ID system.
-
-A good-quality Identifier will contain ``scheme`` and ``id`` values which will uniquely identify an entity or person. Where these are not available, ``schemeName`` can be used to refer to the registration system in which the person or entity is known to be represented. When publishing an Identifier object, a value for either ``scheme`` or ``schemeName`` MUST be present.
-
-Other identifiable objects
-++++++++++++++++++++++++++
-
-Links to identifiable objects, artefacts and institutions are also made elsewhere in the schema. For example, tradable company securities can be referenced with an identifier. More information on such elements of the schema is provided below.
-
+The schema reference contains :any:`information about the Identifier object <schema-identifier>`. 
 
 Entity Identifiers
 ------------------
 
-The values for ``scheme`` within an Entity Statement Identifier should be drawn from the `http://org-id.guide <http://org-id.guide>`_ codelist. This contains details of hundreds of company registers and other identifier sources. 
+The values for ``scheme`` within an Entity Statement Identifier should come from the `http://org-id.guide <http://org-id.guide>`_ codelist. This contains details of company registers and other identifier sources. 
 
 Where the publisher is providing an internal identifier, the publisher should either:
 
-* Publish their full list of internal identifiers, and register this list with the `http://org-id.guide <http://org-id.guide>`_ codelist; or
+* Publish their full list of internal identifiers, and register this list with `http://org-id.guide <http://org-id.guide>`_
 * Use MISC-{Publisher_Name} as the scheme
 
 
@@ -41,21 +22,21 @@ Person Identifiers
 System Identifiers
 ++++++++++++++++++
 
-If the source system has assigned a unique identifier to individual persons, and this identifier can be published, then this should be included with the scheme 'MISC-{Publisher Name}'.
+If the source system has assigned a unique identifier to each person, and this identifier can be published, then this should be included with the scheme 'MISC-{Publisher Name}'.
 
-For example, a beneficial ownership reporting system may maintain a database table of 'person' records, each with its identifier as a primary key. So that users can recognise references to the same person mentioned in separate statements, this identifier should be included in the published data, either in raw form, or modified to ensure a unique value. 
+For example, a beneficial ownership reporting system may maintain a database table of 'person' records, each with its identifier as a primary key. So that users can recognise references to the same person in separate statements, this identifier should be included in the published data, either in raw form, or modified to ensure a unique value. 
 
 
 Shared identifiers
 ++++++++++++++++++
 
-If the source system has collected one or more known identification numbers for a person, and these can be published without privacy or security risks, then these should also be included in the ``PersonStatement.identifiers`` array. 
+If the source system has collected known identification numbers for a person, and these can be published without privacy or security risks, then these should also be included in the ``PersonStatement.identifiers`` array. 
 
-In such cases, the values for ``scheme`` should be based on the following pattern:
+In such cases, the values for ``scheme`` should be:
 
 {JURISDICTION}-{TYPE}
 
-Where jurisdiction is expressed using the extended ISO 3-digit country codes list proposed by in `ICAO Document 9303 §5 <http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_ (pages 22-29).
+Where jurisdiction is an `ISO 3-digit country code <https://www.iso.org/iso-3166-country-codes.html>`_ or one of the extensions in `ICAO Document 9303 §5 <http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_ (pages 21-23). And type is one of PASSPORT, TAXID or IDCARD.
 
 For example, a passport number from Afghanistan would have the scheme:
 
@@ -75,7 +56,7 @@ The following identification types are currently documented. Suggestions for new
 PASSPORT
 ++++++++
 
-Passport numbers should follow the format of the identifier (second) line in a machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 <http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) including at least the document number. 
+Passport numbers should follow the format of the identifier line in a machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 <http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) including at least the document number. 
 
 Parsers should be able to extract the document number from the first 9 characters, and to access any subsequent information supplied according to the ICAO format.
 
@@ -88,32 +69,6 @@ IDCARD
 ++++++
 
 Country ID card systems vary. Where specific guidance on including numbers from a particular jurisdiction is required, this may be included here in future.
-
-
-Multiple Identifiers for entities or people
--------------------------------------------
-
-A source system might hold the following identifying information for a single company:
-
-- A registered company number; and
-- A VAT number;
-
-In this case, two entries can be created in the Entity statement's ``identifiers`` array:
-
-.. code-block:: json
-
-    [
-        {
-            "scheme":"GB-COH",
-            "id":"012345678"
-        },
-        {
-            "scheme":"GB-VAT",
-            "id":"65251235"
-        }
-    ]
-
-Person Statements may also hold an array of Identifiers.
 
 .. _guidance-identifiers-other:
 
