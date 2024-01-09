@@ -8,9 +8,9 @@ The schema reference contains :any:`information about the Identifier object <sch
 Entity Identifiers
 ------------------
 
-The values for ``scheme`` within an Entity Statement Identifier should come from the `http://org-id.guide <http://org-id.guide>`_ codelist. This contains details of company registers and other identifier sources. 
+The values for ``scheme`` within an Entity Statement Identifier SHOULD come from the `http://org-id.guide <http://org-id.guide>`_ codelist. This contains details of company registers and other identifier sources. 
 
-Where the publisher is providing an internal identifier, the publisher should either:
+Where the publisher is providing an internal identifier, the publisher SHOULD either:
 
 * Publish their full list of internal identifiers, and register this list with `http://org-id.guide <http://org-id.guide>`_
 * Use MISC-{Publisher_Name} as the scheme
@@ -18,21 +18,21 @@ Where the publisher is providing an internal identifier, the publisher should ei
 
 Person Identifiers
 ------------------
-
+f
 System Identifiers
 ++++++++++++++++++
 
-If the source system has assigned a unique identifier to each person, and this identifier can be published, then this should be included with the scheme 'MISC-{Publisher Name}'.
+If the source system has assigned a unique identifier to each person, and this identifier can be published, then this SHOULD be included with the scheme 'MISC-{Publisher Name}'.
 
-For example, a beneficial ownership reporting system may maintain a database table of 'person' records, each with its identifier as a primary key. So that users can recognise references to the same person in separate statements, this identifier should be included in the published data, either in raw form, or modified to ensure a unique value. 
+For example, a beneficial ownership reporting system may maintain a database table of 'person' records, each with its identifier as a primary key. So that users can recognise references to the same person in separate statements, this identifier SHOULD be included in the published data, either in raw form, or modified to ensure a unique value. 
 
 
 Shared identifiers
 ++++++++++++++++++
 
-If the source system has collected known identification numbers for a person, and these can be published without privacy or security risks, then these should also be included in the ``PersonStatement.identifiers`` array. 
+If the source system has collected known identification numbers for a person, and these can be published without privacy or security risks, then these SHOULD also be included in the ``PersonStatement.identifiers`` array. 
 
-In such cases, the values for ``scheme`` should be:
+In such cases, the values for ``scheme`` SHOULD be:
 
 {JURISDICTION}-{TYPE}
 
@@ -42,7 +42,7 @@ For example, a passport number from Afghanistan would have the scheme:
 
 > AFG-PASSPORT-{NUMBER}
 
-Where the publisher is providing an internal identifier, these should use 'MISC-{Publisher_Name}' as the scheme.
+Where the publisher is providing an internal identifier, use 'MISC-{Publisher_Name}' as the scheme.
 
 .. warning:: 
 
@@ -56,7 +56,7 @@ The following identification types are currently documented. Suggestions for new
 PASSPORT
 ++++++++
 
-Passport numbers should follow the format of the identifier line in a machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 <http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) including at least the document number. 
+Passport numbers SHOULD follow the format of the identifier line in a machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 <http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) including at least the document number. 
 
 Parsers should be able to extract the document number from the first 9 characters, and to access any subsequent information supplied according to the ICAO format.
 
@@ -91,7 +91,7 @@ Tradable security identifiers
 
 See this `company information published as BODS JSON <https://github.com/openownership/data-standard/blob/master/tests/data/entity-statement/valid/valid-entity-statement-plc.json>`_ for an example use of securities identifiers.
 
-Where a ``securitiesListing`` is supplied (see above), it MUST include a ``ticker`` value. This will allow trades of that security to be tracked on the identified market. However, securities can be traded on several exchanges and therefore a globally unique identifier for the security SHOULD also be supplied where possible. Supported identifier schemes for securities are listed on the :any:`schema reference page <schema-codelists>`. The identifier scheme and the security’s ID under that scheme should be published as ``idScheme`` and ``id`` respectively.
+Where a ``securitiesListing`` is supplied (see above), it MUST include a ``ticker`` value. This will allow trades of that security to be tracked on the identified market. However, securities can be traded on several exchanges and therefore a globally unique identifier for the security SHOULD also be supplied where possible. Supported identifier schemes for securities are listed on the :any:`schema reference page <schema-codelists>`. The identifier scheme and the security’s ID under that scheme SHOULD be published as ``idScheme`` and ``id`` respectively.
 
 
 
