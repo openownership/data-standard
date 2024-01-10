@@ -5,7 +5,7 @@ Real world identifiers
 
 The schema reference contains :any:`information about the Identifier object <schema-identifier>`. 
 
-Entity Identifiers
+Entity identifiers
 ------------------
 
 The values for ``scheme`` within an Entity Statement Identifier SHOULD come from the `http://org-id.guide <http://org-id.guide>`_ codelist. This contains details of company registers and other identifier sources. 
@@ -16,10 +16,10 @@ Where the publisher is providing an internal identifier, the publisher SHOULD ei
 * Use MISC-{Publisher_Name} as the scheme
 
 
-Person Identifiers
+Person identifiers
 ------------------
-f
-System Identifiers
+
+System identifiers
 ++++++++++++++++++
 
 If the source system has assigned a unique identifier to each person, and this identifier can be published, then this SHOULD be included with the scheme 'MISC-{Publisher Name}'.
@@ -75,7 +75,7 @@ Country ID card systems vary. Where specific guidance on including numbers from 
 Other identifiers
 -----------------
 
-Market Identifier Codes (MICs)
+Market identifier codes (MICs)
 ++++++++++++++++++++++++++++++
 
 See this `company information published as BODS JSON <https://github.com/openownership/data-standard/blob/master/tests/data/entity-statement/valid/valid-entity-statement-plc.json>`_ for an example of a valid use of MICs.
