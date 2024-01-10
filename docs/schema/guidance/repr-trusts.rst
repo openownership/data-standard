@@ -26,7 +26,7 @@ Relationships between trusts and their parties MUST be represented using only th
 
 ``interest.details`` MAY be used to give a local name (e.g. "fiduciaire") or more information about the interest (e.g. "power to dissolve trust") 
 
-Example Scenarios 
+Example scenarios 
 -----------------
 These examples show how statements could be connected to represent trusts within beneficial ownership networks. Only the property:value pairs that are relevant to the scenario are shown in the statement blocks. 
 
@@ -90,7 +90,7 @@ See :ref:`representing-bo` for guidance on representing indirect beneficial owne
    :align: center
    
    
-Further Guidance 
+Further guidance 
 ----------------
 
 The `Open Ownership website <https://www.openownership.org/en/topics/trusts-and-legal-arrangements/>`_ has more guidance and research on capturing beneficial ownership information about trusts and legal arrangements.
