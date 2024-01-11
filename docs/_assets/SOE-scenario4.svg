@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    viewBox="0.0 0.0 636.1601049868766 276.43832020997377"
    fill="none"
@@ -15,8 +7,16 @@
    stroke-linecap="square"
    stroke-miterlimit="10"
    id="svg380"
-   sodipodi:docname="SOE-scenario3.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   sodipodi:docname="SOE-scenario4.svg"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata386">
     <rdf:RDF>
@@ -39,17 +39,21 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1025"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
      id="namedview382"
      showgrid="false"
-     inkscape:zoom="3.14"
-     inkscape:cx="429.31569"
-     inkscape:cy="138.21916"
+     inkscape:zoom="1.2524965"
+     inkscape:cx="345.70954"
+     inkscape:cy="156.48746"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg380" />
+     inkscape:current-layer="g378"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="false" />
   <clipPath
      id="p.0">
     <path
@@ -112,22 +116,22 @@
        fill-rule="evenodd"
        id="path294" />
     <g
-       transform="matrix(0.10000391329235916 0.0 0.0 0.09999847180937219 309.2386433141994 185.36076218964985)"
+       transform="matrix(0.10000391,0,0,0.09999847,310.33749,185.36069)"
        id="g301">
       <clipPath
          id="p.1">
         <path
-           d="m169.14238 159.13846l381.63892 0l0 401.76328l-381.63892 0z"
+           d="M 169.14238,159.13846 H 550.7813 V 560.90174 H 169.14238 Z"
            clip-rule="evenodd"
            id="path296" />
       </clipPath>
       <image
          clip-path="url(#p.1)"
-         fill="#000"
-         width="720.0"
-         height="720.0"
-         x="0.0"
-         y="0.0"
+         fill="#000000"
+         width="720"
+         height="720"
+         x="0"
+         y="0"
          preserveAspectRatio="none"
          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtAAAALQAgMAAADEOa8PAAAADFBMVEUAAAAAAAD///8AAADFTF0nAAAAAXRSTlMAQObYZgAAAl1JREFUeF7t3cFpwzAAQNGkdIXu0yU6ZbtjCyFtiKDG2M4ngvdOkU4fXYIUOT6dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/c7jxApv7+PMou+vcWavl3FiBqIroiuiK6IroiuiK6IroiuiK6/jxFqrNorHbw8vplxp0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRlc2nple/56LXQ9Rh+CBTrrToiuiK6IroiuiK6IroiuiK6IroiuiK6IroiujK3lPT88fS8EGmXGnRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdGVvaem7pquJboiuiK6Irqy9xtxheXfFrf8rc2UKy26IroiuiK6IroiuiK6IroiurL53RcHnItetof2iM9MdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdGXK6L03a5bvmi4PN5typUVXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFfcNa2IroiuiK6IroiuiK6IroiuiK6IroiuiK6IroiuuGtaEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXXHXtCK6IroiuiK6IroiuiK6IroiuiK6IroiuiK6Irqy967p1effp7vXA7treiO6IroiuiK6IroiuiK6IroiuiK6IroiuiK6Irpy0KnpP853Z6jjcLMpV1p0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRl8xP6R/GE/jMTXRFdEV0RXRFdEV0RXRFdmTIaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI7yA0WnNUvvsNeNAAAAAElFTkSuQmCC"
          id="image299" />
@@ -189,10 +193,10 @@
        id="path323" />
     <path
        stroke="#000000"
-       stroke-width="2.0"
+       stroke-width="2.4212"
        stroke-linejoin="round"
        stroke-linecap="butt"
-       d="m8.215223 121.178474l-0.33411932 0l0 100.18897l289.34198 0"
+       d="M 8.3634947,74.097575 H 8.0297198 V 221.08172 H 297.07344"
        fill-rule="evenodd"
        id="path325" />
     <path
@@ -229,14 +233,6 @@
        fill-rule="evenodd"
        id="path349" />
     <path
-       stroke="#000000"
-       stroke-width="2.0"
-       stroke-linejoin="round"
-       stroke-linecap="butt"
-       d="m345.17322 97.33066l0 44.015747l0.06298828 0l0 32.01573"
-       fill-rule="evenodd"
-       id="path351" />
-    <path
        fill="#000000"
        stroke="#000000"
        stroke-width="2.0"
@@ -251,10 +247,10 @@
        id="path355" />
     <path
        stroke="#000000"
-       stroke-width="1.0"
+       stroke-width="1"
        stroke-linejoin="round"
        stroke-linecap="butt"
-       d="m345.2362 121.47507l254.51971 0l0 42.015747l-254.51971 0z"
+       d="m 345.2362,121.47507 h 254.51971 v 42.01575 H 345.2362 Z"
        fill-rule="evenodd"
        id="path357" />
     <path
@@ -269,14 +265,6 @@
        d="m355.1811 142.48294l233.63782 0"
        fill-rule="evenodd"
        id="path365" />
-    <path
-       stroke="#999999"
-       stroke-width="1.0"
-       stroke-linejoin="round"
-       stroke-linecap="butt"
-       d="m355.1811 142.48294l233.63782 0"
-       fill-rule="evenodd"
-       id="path367" />
     <path
        fill="#000000"
        fill-opacity="0.0"
@@ -304,45 +292,53 @@
          xlink:href="data:image/png;base64,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"
          id="image374" />
     </g>
+    <path
+       stroke="#000000"
+       stroke-width="2.0"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="m345.17322 97.33066l0 44.015747l0.06298828 0l0 32.01573"
+       fill-rule="evenodd"
+       id="path351" />
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="387.30469"
+     style="font-style:normal;font-weight:normal;font-size:10.6667px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="622.97314"
      y="32.027431"
      id="text528"><tspan
        sodipodi:role="line"
        id="tspan526"
-       x="387.30469"
+       x="622.97314"
        y="32.027431"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">Entity statement</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:end">Entity statement</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="387.16766"
-     y="199.6041"
+     style="font-style:normal;font-weight:normal;font-size:10.6667px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="622.97314"
+     y="200.87593"
      id="text528-1"><tspan
        sodipodi:role="line"
        id="tspan526-0"
-       x="387.16766"
-       y="199.6041"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">Entity statement</tspan></text>
+       x="622.97314"
+       y="200.87593"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end;writing-mode:lr-tb;text-anchor:end">Entity statement</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="353.78229"
-     y="117.77917"
+     style="font-style:normal;font-weight:normal;font-size:10.6667px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="599.83405"
+     y="119.35527"
      id="text528-1-2"><tspan
        sodipodi:role="line"
        id="tspan526-0-5"
-       x="353.78229"
-       y="117.77917"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">Ownership-or-control statement</tspan><tspan
+       x="599.83405"
+       y="119.35527"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end;writing-mode:lr-tb;text-anchor:end">Ownership-or-control statement</tspan><tspan
        sodipodi:role="line"
-       x="353.78229"
-       y="132.77917"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan570" /></text>
+       x="599.83405"
+       y="132.68864"
+       id="tspan570"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end" /></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -353,12 +349,22 @@
        id="tspan582"
        x="387.16629"
        y="53.550213"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">entityType: state,</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">entityType: state,</tspan><tspan
        sodipodi:role="line"
        x="387.16629"
-       y="68.843109"
+       y="68.726013"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
+       id="tspan2">jurisdiction: nl</tspan><tspan
+       sodipodi:role="line"
+       x="387.16629"
+       y="83.90181"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
+       id="tspan3" /><tspan
+       sodipodi:role="line"
+       x="387.16629"
+       y="99.077606"
        id="tspan586"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial" /></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -368,94 +374,101 @@
        sodipodi:role="line"
        x="386.6265"
        y="66.747787"
-       id="tspan586-9"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">jurisdiction: nl</tspan><tspan
-       sodipodi:role="line"
-       x="386.6265"
-       y="82.04068"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
        id="tspan611" /></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="354.96381"
-     y="140.6131"
-     id="text584-9-9"><tspan
-       sodipodi:role="line"
+  <g
+     id="g3"
+     transform="translate(0,4.5026448)">
+    <path
+       stroke="#999999"
+       stroke-width="1"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       d="M 355.1811,142.48294 H 588.81892"
+       fill-rule="evenodd"
+       id="path367" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="354.96381"
        y="140.6131"
-       id="tspan586-9-3"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">interests</tspan><tspan
-       sodipodi:role="line"
-       x="354.96381"
-       y="155.90599"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan611-8" /></text>
+       id="text584-9-9"><tspan
+         sodipodi:role="line"
+         x="354.96381"
+         y="140.6131"
+         id="tspan586-9-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">interests</tspan><tspan
+         sodipodi:role="line"
+         x="354.96381"
+         y="155.78889"
+         id="tspan611-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial" /></text>
+  </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="font-style:normal;font-weight:normal;font-size:10.6667px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="386.82458"
-     y="222.43802"
+     y="226.82393"
      id="text584-9-9-3"><tspan
        sodipodi:role="line"
        x="386.82458"
-       y="222.43802"
+       y="226.82393"
        id="tspan586-9-3-2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">entityType: registeredEntity</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">entityType: registeredEntity</tspan><tspan
        sodipodi:role="line"
        x="386.82458"
-       y="237.73091"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan655" /><tspan
+       y="240.32785"
+       id="tspan655"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial" /><tspan
        sodipodi:role="line"
        x="386.82458"
-       y="252.73091"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan611-8-9" /></text>
+       y="253.66122"
+       id="tspan611-8-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial" /></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="29.391617"
-     y="69.598808"
+     style="font-style:normal;font-weight:normal;font-size:10.6667px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="294.84924"
+     y="71.090179"
      id="text528-1-2-7"><tspan
        sodipodi:role="line"
        id="tspan526-0-5-9"
-       x="29.391617"
-       y="69.598808"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">Ownership-or-control statement</tspan><tspan
+       x="294.84924"
+       y="71.090179"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:end;writing-mode:lr-tb;text-anchor:end">Ownership-or-control statement</tspan><tspan
        sodipodi:role="line"
-       x="29.391617"
-       y="84.598808"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan570-9" /></text>
+       x="294.84924"
+       y="84.423553"
+       id="tspan570-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end" /></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="27.500916"
-     y="92.186516"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="15.805067"
+     y="94.020508"
      id="text584-6"><tspan
        sodipodi:role="line"
        id="tspan529"
-       x="27.500916"
-       y="92.186516">interestedParty.unspecified.reason:</tspan><tspan
+       x="15.805067"
+       y="94.020508"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial">interestedParty.unspecified.reason:</tspan><tspan
        sodipodi:role="line"
        id="tspan531"
-       x="27.500916"
-       y="105.51985">noBeneficialOwners,</tspan><tspan
+       x="15.805067"
+       y="109.15223"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial">noBeneficialOwners,</tspan><tspan
        sodipodi:role="line"
        id="tspan533"
-       x="27.500916"
-       y="118.85318">interestedParty.unspecified.description:</tspan><tspan
-       sodipodi:role="line"
-       id="tspan535"
-       x="27.500916"
-       y="132.18652">Exemption granted on the basis that</tspan><tspan
-       sodipodi:role="line"
-       id="tspan537"
-       x="27.500916"
-       y="145.51985">the declaring entity is a state-owned</tspan><tspan
+       x="15.805067"
+       y="124.28395"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial">interestedParty.unspecified.description:</tspan><tspan
        sodipodi:role="line"
        id="tspan539"
-       x="27.500916"
-       y="158.85318">enterprise</tspan></text>
+       x="15.805067"
+       y="139.41568"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial">Exemption granted on the basis that the</tspan><tspan
+       sodipodi:role="line"
+       x="15.805067"
+       y="154.54739"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial"
+       id="tspan1">declaring entity is a state-owned enterprise</tspan></text>
 </svg>
