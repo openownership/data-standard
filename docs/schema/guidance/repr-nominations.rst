@@ -20,7 +20,7 @@ Relationships between nominee arrangements and their parties MUST be represented
 * ``nominator``
 * ``nominee``
 
-``interest.details`` MAY be used to give a local name (e.g. "agent" or "principle")
+``interest.details`` MAY be used to give a local name (e.g. "agent" or "principal")
 
 Example Scenarios 
 -----------------

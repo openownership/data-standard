@@ -5,7 +5,7 @@ Representing trusts
 
 Overview
 --------
-In this documentation the term ‘trust’ is inclusive of trusts and trust-like arrangements (such as fiducie, treuhand and waqf). 
+In this documentation the term ‘trust’ is inclusive of trusts and trust-like arrangements (such as *fiducie*, *treuhand* and *waqf*). 
 
 BODS can be used to represent the beneficial ownership of trusts and the beneficial ownership of entities via trusts. Trusts are represented by an Entity statement. 
 
