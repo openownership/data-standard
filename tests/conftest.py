@@ -112,17 +112,17 @@ def get_valid_data():
     """
     Returns a simple valid BODS statement.
     """
-    data = {
-        "statementId": "abcdefgkdddddddddddddddddddddddshdkjfkjdkjf",
-        "declarationSubject": "xyz",
-        "recordId": "123",
-        "recordType": "entity",
-        "recordDetails": {
-            "entityType": "unknownEntity",
-            "isComponent": False,
-            "publicationDetails": {}
-        }
-    }
+    data = [{
+            "statementId": "abcdefgkdddddddddddddddddddddddshdkjfkjdkjf",
+            "declarationSubject": "xyz",
+            "recordId": "123",
+            "recordType": "entity",
+            "recordDetails": {
+                "entityType": "unknownEntity",
+                "isComponent": False,
+                "publicationDetails": {}
+            }
+        }]
     return data
 
 
@@ -131,9 +131,9 @@ def get_invalid_data():
     """
     Returns a simple invalid BODS statement.
     """
-    data = {
-        "declarationSubject": "xyz",
-        "recordId": "123",
-        "recordType": "entity"
-    }
+    data = [{
+            "declarationSubject": "xyz",
+            "recordId": "123",
+            "recordType": "entity"
+        }]
     return data
