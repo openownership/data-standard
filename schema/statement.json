@@ -2,211 +2,217 @@
   "$id": "urn:statement",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
-  "type": "object",
-  "properties": {
-    "statementId": {
-      "title": "Statement Identifier",
-      "description": "A persistent globally unique identifier for this statement.",
-      "type": "string",
-      "minLength": 32,
-      "maxLength": 64
-    },
-    "statementDate": {
-      "title": "Statement date",
-      "description": "The date (optionally including time) on which this statement was declared by the source.",
-      "type": "string",
-      "anyOf": [
-        {
-          "format": "date"
-        },
-        {
-          "format": "date-time"
-        }
-      ]
-    },
-    "annotations": {
-      "title": "Annotations",
-      "description": "Annotations about this statement or parts of this statement",
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/Annotation"
-      }
-    },
-    "publicationDetails": {
-      "title": "Publication Details",
-      "description": "Information concerning the publication of this statement.",
-      "type": "object",
-      "properties": {
-        "publicationDate": {
-          "title": "Publication date",
-          "description": "The date on which this statement was published, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format.",
-          "type": "string",
-          "anyOf": [
-            {
-              "format": "date"
-            },
-            {
-              "format": "date-time"
-            }
-          ]
-        },
-        "bodsVersion": {
-          "title": "BODS version",
-          "description": "The version of the Beneficial Ownership Data Standard to which this statement conforms, expressed as major.minor. For example: 0.2 or 1.0.",
-          "type": "string",
-          "pattern": "^(\\d+\\.)(\\d+)$"
-        },
-        "license": {
-          "title": "License URL",
-          "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or Open Definition Conformant (http://opendefinition.org/licenses/) license.",
-          "type": "string",
-          "format": "uri"
-        },
-        "publisher": {
-          "type": "object",
-          "title": "Publisher",
-          "description": "Details of the organisation or individual publishing a statement.",
-          "properties": {
-            "name": {
-              "title": "Name",
-              "description": "The name of the publisher",
-              "type": "string"
-            },
-            "url": {
-              "title": "URL",
-              "description": "The URL of the parent dataset or of the publisher's website homepage",
-              "type": "string",
-              "format": "uri"
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/Statement"
+  },
+  "$defs": {
+    "Statement": {
+        "type": "object",
+        "properties": {
+          "statementId": {
+            "title": "Statement Identifier",
+            "description": "A persistent globally unique identifier for this statement.",
+            "type": "string",
+            "minLength": 32,
+            "maxLength": 64
+          },
+          "statementDate": {
+            "title": "Statement date",
+            "description": "The date (optionally including time) on which this statement was declared by the source.",
+            "type": "string",
+            "anyOf": [
+              {
+                "format": "date"
+              },
+              {
+                "format": "date-time"
+              }
+            ]
+          },
+          "annotations": {
+            "title": "Annotations",
+            "description": "Annotations about this statement or parts of this statement",
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/Annotation"
             }
           },
-          "anyOf": [
-            {
-              "required": [
-                "name"
-              ]
+          "publicationDetails": {
+            "title": "Publication Details",
+            "description": "Information concerning the publication of this statement.",
+            "type": "object",
+            "properties": {
+              "publicationDate": {
+                "title": "Publication date",
+                "description": "The date on which this statement was published, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format.",
+                "type": "string",
+                "anyOf": [
+                  {
+                    "format": "date"
+                  },
+                  {
+                    "format": "date-time"
+                  }
+                ]
+              },
+              "bodsVersion": {
+                "title": "BODS version",
+                "description": "The version of the Beneficial Ownership Data Standard to which this statement conforms, expressed as major.minor. For example: 0.2 or 1.0.",
+                "type": "string",
+                "pattern": "^(\\d+\\.)(\\d+)$"
+              },
+              "license": {
+                "title": "License URL",
+                "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or Open Definition Conformant (http://opendefinition.org/licenses/) license.",
+                "type": "string",
+                "format": "uri"
+              },
+              "publisher": {
+                "type": "object",
+                "title": "Publisher",
+                "description": "Details of the organisation or individual publishing a statement.",
+                "properties": {
+                  "name": {
+                    "title": "Name",
+                    "description": "The name of the publisher",
+                    "type": "string"
+                  },
+                  "url": {
+                    "title": "URL",
+                    "description": "The URL of the parent dataset or of the publisher's website homepage",
+                    "type": "string",
+                    "format": "uri"
+                  }
+                },
+                "anyOf": [
+                  {
+                    "required": [
+                      "name"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "url"
+                    ]
+                  }
+                ]
+              }
             },
-            {
-              "required": [
-                "url"
-              ]
+            "required": [
+              "publicationDate",
+              "bodsVersion",
+              "publisher"
+            ]
+          },
+          "source": {
+            "title": "Source",
+            "description": "The source of information in this statement.",
+            "$ref": "#/$defs/Source"
+          },
+          "declaration": {
+            "title": "Declaration (identifier)",
+            "description": "An identifier or reference for a declaration within a publisher’s system. Where a Statement is a claim from a particular declaration (made at a point in time by a `source` about a `declarationSubject`) this field should be used to identify the declaration.",
+            "type": "string"
+          },
+          "declarationSubject": {
+            "title": "Declaration subject",
+            "description": "A `recordId` value for the subject of a beneficial ownership network (always an entity or person).",
+            "type": "string"
+          },
+          "recordId": {
+            "title": "Record identifier",
+            "description": "A unique identifier for the record (within the publisher's system) to which this Statement relates. The identifier MUST represent the series of claims made about an entity, natural person or relationship by a particular source.",
+            "type": "string"
+          },
+          "recordType": {
+            "title": "Record type",
+            "description": "The type of record (within the publisher's system) to which this Statement relates: entity, person, or relationship.",
+            "type": "string",
+            "enum": [
+              "entity",
+              "person",
+              "relationship"
+            ],
+            "codelist": "recordType.csv",
+            "openCodelist": false
+          },
+          "recordStatus": {
+            "title": "Record status",
+            "description": "The lifecycle status of the record (within the publisher's system ) to which this Statement relates, using the recordStatus codelist.",
+            "type": "string",
+            "enum": [
+              "new",
+              "updated",
+              "closed"
+            ],
+            "codelist": "recordStatus.csv",
+            "openCodelist": false
+          },
+          "recordDetails": {
+            "title": "Record details",
+            "description": "The details of the entity, person or relationship as declared on the date of the statement.",
+            "type": "object"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "recordType": {
+                  "const": "entity"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "recordDetails": {
+                  "$ref": "urn:entity"
+                }
+              }
             }
-          ]
-        }
+          },
+          {
+            "if": {
+              "properties": {
+                "recordType": {
+                  "const": "person"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "recordDetails": {
+                  "$ref": "urn:person"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "recordType": {
+                  "const": "relationship"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "recordDetails": {
+                  "$ref": "urn:relationship"
+                }
+              }
+            }
+          }
+        ],
+        "required": [
+          "statementId",
+          "declarationSubject",
+          "recordId",
+          "recordType",
+          "recordDetails"
+        ]
       },
-      "required": [
-        "publicationDate",
-        "bodsVersion",
-        "publisher"
-      ]
-    },
-    "source": {
-      "title": "Source",
-      "description": "The source of information in this statement.",
-      "$ref": "#/$defs/Source"
-    },
-    "declaration": {
-      "title": "Declaration (identifier)",
-      "description": "An identifier or reference for a declaration within a publisher’s system. Where a Statement is a claim from a particular declaration (made at a point in time by a `source` about a `declarationSubject`) this field should be used to identify the declaration.",
-      "type": "string"
-    },
-    "declarationSubject": {
-      "title": "Declaration subject",
-      "description": "A `recordId` value for the subject of a beneficial ownership network (always an entity or person).",
-      "type": "string"
-    },
-    "recordId": {
-      "title": "Record identifier",
-      "description": "A unique identifier for the record (within the publisher's system) to which this Statement relates. The identifier MUST represent the series of claims made about an entity, natural person or relationship by a particular source.",
-      "type": "string"
-    },
-    "recordType": {
-      "title": "Record type",
-      "description": "The type of record (within the publisher's system) to which this Statement relates: entity, person, or relationship.",
-      "type": "string",
-      "enum": [
-        "entity",
-        "person",
-        "relationship"
-      ],
-      "codelist": "recordType.csv",
-      "openCodelist": false
-    },
-    "recordStatus": {
-      "title": "Record status",
-      "description": "The lifecycle status of the record (within the publisher's system ) to which this Statement relates, using the recordStatus codelist.",
-      "type": "string",
-      "enum": [
-        "new",
-        "updated",
-        "closed"
-      ],
-      "codelist": "recordStatus.csv",
-      "openCodelist": false
-    },
-    "recordDetails": {
-      "title": "Record details",
-      "description": "The details of the entity, person or relationship as declared on the date of the statement.",
-      "type": "object"
-    }
-  },
-  "allOf": [
-    {
-      "if": {
-        "properties": {
-          "recordType": {
-            "const": "entity"
-          }
-        }
-      },
-      "then": {
-        "properties": {
-          "recordDetails": {
-            "$ref": "urn:entity"
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "recordType": {
-            "const": "person"
-          }
-        }
-      },
-      "then": {
-        "properties": {
-          "recordDetails": {
-            "$ref": "urn:person"
-          }
-        }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "recordType": {
-            "const": "relationship"
-          }
-        }
-      },
-      "then": {
-        "properties": {
-          "recordDetails": {
-            "$ref": "urn:relationship"
-          }
-        }
-      }
-    }
-  ],
-  "required": [
-    "statementId",
-    "declarationSubject",
-    "recordId",
-    "recordType",
-    "recordDetails"
-  ],
-  "$defs": {
     "Annotation": {
       "title": "Annotation",
       "description": "An annotation provides additional information about ownership or control data being provided. Annotations can be provided in free-text, and can apply to a whole statement, an object or a single field. Additional extended properties can be included on the annotation object to provide structured data where required.",
