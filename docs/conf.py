@@ -89,8 +89,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_static/docson']
 
 # The name of the Pygments (syntax highlighting) style to use.
 
-oods.pygments.pygments_monkeypatch_style("oods", oods.pygments.OODSStyle)
-pygments_style = 'oods'
+# oods.pygments.pygments_monkeypatch_style("oods", oods.pygments.OODSStyle)
+# pygments_style = 'oods'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
