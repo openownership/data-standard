@@ -1,13 +1,6 @@
 Data Schema
 ===========
-
-.. attention:: 
-    
-    This is v0.3 of the Beneficial Ownership Data Standard. It includes updates to the data model and codelists as well as additional technical guidance. 
-    
-    Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
-
-    **MUST** and **SHOULD** are used in the schema to denote required and recommended elements of the Standard, as defined in `RFC2119 <https://tools.ietf.org/html/rfc2119>`_.
+.. include:: warningbox.rst
 
 BODS provides a common data model for encapsulating information about the :doc:`beneficial ownership <../primer/whatisbo>` of corporate entities and related arrangements, to facilitate :doc:`sharing of information <../primer/whatisthebods>`. In particular, the :any:`data model <key-concepts>` captures direct and indirect relationships of ownership and control by entities (such as companies) by other entities (including trusts and joint shareholdings) or by natural persons. 
 
