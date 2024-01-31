@@ -3,14 +3,7 @@
 Schema reference
 ================
 
-.. attention:: 
-    
-    This is v0.3 of the Beneficial Ownership Data Standard. It includes updates to the data model and codelists as well as additional technical guidance. 
-    
-    Implementers should be aware that future changes are anticipated, before a version 1.0 release. See the :doc:`Changelog <changelog>` and `About <../about>`_ pages for more information.
-
-    **MUST** and **SHOULD** are used in the schema to denote required and recommended elements of the Standard, as defined in `RFC2119 <https://tools.ietf.org/html/rfc2119>`_.
-
+.. include:: warningbox.rst
 
 The following is an A - Z guide to the objects of the Data Standard's schema, plus its `codelists`_ . Details of each object's properties are provided in a table generated from the JSON schema. (For a structured view of how objects fit together in the JSON schema, use the :doc:`Schema browser <schema-browser>`.)
 
