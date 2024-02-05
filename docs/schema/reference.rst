@@ -45,19 +45,6 @@ Address
 
     Designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See `issue 18 <https://github.com/openownership/data-standard/issues/18>`_ for more details.
 
-.. _schema-agent:
-
-Agent
------
-
-.. json-value:: ../_build_schema/components.json
-   :pointer: /$defs/Agent/description
-
-.. jsonschema:: ../_build_schema/components.json
-   :pointer: /$defs/Agent
-   :collapse:
-   :allowexternalrefs:
-
 .. _schema-annotation:
 
 Annotation
@@ -65,7 +52,7 @@ Annotation
 
 The ``annotations`` property of statements currently allows an array of these simple annotation objects to be included. An annotation can be used to hold information (structured or otherwise) for which a place does not exist elsewhere in the schema. See :ref:`Sources and annotations <provenance>` for further guidance.
 
-.. jsonschema:: ../_build_schema/components.json
+.. jsonschema:: ../_build_schema/statement.json
    :pointer: /$defs/Annotation
    :externallinks: {"motivation":{"url":"#annotation-motivation","text":"Annotation Motivation"}}
    :allowexternalrefs:
@@ -88,11 +75,11 @@ Country
 Entity Statement
 ----------------
 
-.. json-value:: ../_build_schema/entity-statement.json
+.. json-value:: ../_build_schema/entity-record.json
    :pointer: /description
 
-.. jsonschema:: ../_build_schema/entity-statement.json
-   :collapse: identifiers,addresses,source,jurisdiction,annotations,publicationDetails,publicListing
+.. jsonschema:: ../_build_schema/entity-record.json
+   :collapse: identifiers,addresses,jurisdiction,publicListing
    :externallinks: {"statementDate":{"url":"#statement-date","text":"Statement Date"},"entityType":{"url":"#entity-type","text":"Entity Type"},"entitySubtype/generalCategory":{"url":"#entity-subtype-category","text":"Entity Subtype Category"}, "unspecifiedEntityDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"},"replacesStatements":{"url":"#replaces-statements","text":"Replaces Statements"},"publicationDetails":{"url":"#publication-details","text":"Publication Details"},"publicListing":{"url":"#public-listing","text":"Public Listing"}}
    :allowexternalrefs:
 
@@ -139,10 +126,10 @@ Interest
 Interested Party
 ----------------
 
-.. json-value:: ../_build_schema/ownership-or-control-statement.json
+.. json-value:: ../_build_schema/relationship-record.json
    :pointer: /$defs/InterestedParty/description
 
-.. jsonschema:: ../_build_schema/ownership-or-control-statement.json
+.. jsonschema:: ../_build_schema/relationship-record.json
    :pointer: /properties/interestedParty
    :collapse:
    :externallinks: {"unspecified/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"}}
@@ -180,13 +167,13 @@ Ownership Or Control Statement
 
 If a person is a beneficial owner of an entity - whether directly or indirectly - and the person or entity is required to declare this beneficial ownership, there MUST be an Ownership-or-control Statement connecting the two which represents the beneficial ownership relationship. See :ref:`representing-bo` for detailed requirements.
 
-.. json-value:: ../_build_schema/ownership-or-control-statement.json
+.. json-value:: ../_build_schema/relationship-record.json
    :pointer: /description
 
 
-.. jsonschema:: ../_build_schema/ownership-or-control-statement.json
-    :externallinks: {"statementDate":{"url":"#statement-date","text":"Statement Date"},"interestedParty":{"url":"#interested-party","text":"Interested Party"},"replacesStatements":{"url":"#replaces-statements","text":"Replaces Statements"},"publicationDetails":{"url":"#publication-details","text":"Publication Details"}}
-    :collapse: interests,source,annotations,interestedParty,publicationDetails
+.. jsonschema:: ../_build_schema/relationship-record.json
+    :externallinks: {"interestedParty":{"url":"#interested-party","text":"Interested Party"}}
+    :collapse: interests,interestedParty
     :allowexternalrefs:
 
 
@@ -209,12 +196,12 @@ PEP Status Details
 Person Statement
 ----------------
 
-.. json-value:: ../_build_schema/person-statement.json
+.. json-value:: ../_build_schema/person-record.json
    :pointer: /description
 
-.. jsonschema:: ../_build_schema/person-statement.json
-   :collapse: names,identifiers,source,placeOfResidence,placeOfBirth,addresses,nationalities,annotations,politicalExposure/details,publicationDetails,taxResidencies
-   :externallinks: {"statementDate":{"url":"#statement-date","text":"Statement Date"},"personType":{"url": "#person-type","text":"Person Type"}, "unspecifiedPersonDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"},"replacesStatements":{"url":"#replaces-statements","text":"Replaces Statements"},"publicationDetails":{"url":"#publication-details","text":"Publication Details"},"politicalExposure/details":{"url":"#pep-status-details","text":"PEP Status Details"}}
+.. jsonschema:: ../_build_schema/person-record.json
+   :collapse: names,identifiers,placeOfResidence,placeOfBirth,addresses,nationalities,politicalExposure/details,taxResidencies 
+   :externallinks: {"personType":{"url": "#person-type","text":"Person Type"}, "unspecifiedPersonDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"},"politicalExposure/details":{"url":"#pep-status-details","text":"PEP Status Details"}}
    :allowexternalrefs:
 
 
@@ -256,18 +243,6 @@ Publisher
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Publisher
    :allowexternalrefs:
-
-
-
-.. _schema-replaces-statements:
-
-Replaces Statements
--------------------
-
-.. json-value:: ../_build_schema/components.json
-   :pointer: /$defs/ReplacesStatements/description
-
-See :any:`Updating statements <guidance-updating-data>` for technical guidance on working with updates to data.
 
 
 .. _schema-securities-listing:
