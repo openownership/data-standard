@@ -24,7 +24,7 @@ Relationships between trusts and their parties MUST be represented using only th
 * ``protector``
 * ``otherInfluenceOrControl``
 
-``interest.details`` MAY be used to give a local name (e.g. "fiduciaire") or more information about the interest (e.g. "power to dissolve trust") 
+``interest.details`` MAY be used to give a local name (e.g. "fiduciaire") or more information about the interest (e.g. "power to dissolve trust").
 
 Example Scenarios 
 -----------------
