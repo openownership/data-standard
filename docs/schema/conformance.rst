@@ -3,25 +3,35 @@
 Conformance and validation
 ===========================
 
-Conformance statement
----------------------
+Conformance
+----------------
 
-* A conforming implementation **may** use only a subset of this specification’s terms.
-* It **must not** use terms from outside this specification’s terms where this specification’s terms would suffice.
-* It **may** use terms from outside this specification’s terms where this specification’s terms are insufficient.
-* Its usage of this specification’s terms **must** be consistent with the semantics of those terms.
-* If an implementation serializes to JSON, its serializations **must** validate against this specification’s JSON Schema.
+A comforming implementation of BODS:
 
-(Statement `adapted from Popolo Project specification <http://www.popoloproject.com/specs/#conformance>`_)
+* MAY use a subset of the schema's terms
+
+* MAY use terms from outside this specification’s terms **only** where this specification’s terms are insufficient
+
+* MUST use the schema’s terms consistently with their definitions
+
+A conforming implementation of BODS that serialises to JSON MUST validate against the standard’s JSON schema. 
+
+`Adapted from Popolo Project specification <http://www.popoloproject.com/specs/#conformance>`_
 
 Extending the schema
 --------------------
+If you need to extend the schema:
 
-Publishers providing additional properties in their implementations are encouraged to `document these in the project issue tracker <https://github.com/openownership/data-standard/issues/>`_ with the 'extensions' tag, and to re-use `other publisher's extensions <https://github.com/openownership/data-standard/issues?q=is%3Aissue+label%3Aextension>`_ where possible.
+* re-use `other publisher's extensions <https://github.com/openownership/data-standard/issues?q=is%3Aissue+label%3Aextension>`_ where possible
+
+* document your extensions `in the project issue tracker <https://github.com/openownership/data-standard/issues/>`_ with the 'extensions' tag
+
 
 Validation
 ----------
+The BODS JSON schema includes validation checks that are possible to define using JSON schema 2020-12.
 
-Validation of BODS data can be carried out using the `BODS Data Review Tool <https://datareview.openownership.org/>`_.
+The `BODS Data Review Tool <https://datareview.openownership.org/>`_ validates conformance to the JSON schema and to additional requirements that can be validated programmatically but are not included in the schema. For example, it checks that record identifiers in the `subject` and `interestedParty` fields of Relationship statements appear in at least one statement elsewhere in the BODS JSON array. The Data Review Tool can ingest data serialised as JSON and in tabular form. 
 
-The current schema includes minimal validation requirements, and should be treated as a guide to data structure, rather than a full validation schema. 
+
+
