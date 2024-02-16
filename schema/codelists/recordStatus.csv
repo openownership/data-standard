@@ -1,4 +1,4 @@
 code,title,description,technical note
-new,New Record,"",
-updated,Updated Record,"",
-closed,Closed Record,"",
+new,New Record,"This is a new record",
+updated,Updated Record,"This is an update to an existing record",
+closed,Closed Record,"This is a closed record",
