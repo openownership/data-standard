@@ -31,16 +31,20 @@ def codelist_id(codelist_data):
     return codelist_data[1]
 
 
-def schema_paths():
+def get_schema_dir():
     here = os.path.dirname(os.path.realpath(__file__))
     schema_dir = os.path.join(here, "..", "schema")
+    return schema_dir
+
+
+def get_schema_paths():
+    schema_dir = get_schema_dir()
     schema_paths = [(path, name, data) for path, name, _, data in walk_json_data(top=schema_dir) if is_json_schema(data)]
     return schema_paths
 
 
-def codelist_paths():
-    here = os.path.dirname(os.path.realpath(__file__))
-    codelists_dir = os.path.join(here, "..", "schema", "codelists")
+def get_codelist_paths():
+    codelists_dir = os.path.join(get_schema_dir(), "codelists")
     codelist_paths = [(path, name, text, fieldnames, rows) for path, name, text, fieldnames, rows in walk_csv_data(top=codelists_dir) if is_codelist(fieldnames)]
     return codelist_paths
 
@@ -51,17 +55,47 @@ def schema_registry():
     validator can resolve $refs across all of the schema files.
     """
     schemas = []
-    for path, name, schema in schema_paths():
+    for path, name, schema in get_schema_paths():
         schemas.append((schema.get('$id'), Resource(contents=schema, specification=DRAFT202012)))
 
     registry = Registry().with_resources(schemas)
     return registry
 
 
+def get_codelists_from_schema(schema_content, pointer=''):
+    """
+    Gets the value of `codelist` properties and accompanying `enum`s from the schema.
+    Adapted from JSCC: https://github.com/open-contracting/jscc/blob/main/jscc/testing/checks.py#L696C5-L712C25
+    """
+    codelists = {}
+
+    if isinstance(schema_content, list):
+        for index, item in enumerate(schema_content):
+            codelists.update(get_codelists_from_schema(item, pointer=f'{pointer}/{index}'))
+    elif isinstance(schema_content, dict):
+        if 'codelist' in schema_content:
+            codelists[schema_content.get('codelist')] = schema_content.get('enum')
+
+        for key, value in schema_content.items():
+            codelists.update(get_codelists_from_schema(value, pointer=f'{pointer}/{key}'))
+
+    return codelists
+
+
+
 """
 The fixtures in this file are automatically discovered by pytest without
 needing to import them in the test files.
 """
+
+@pytest.fixture
+def schema_dir():
+    return get_schema_dir()
+
+
+@pytest.fixture
+def codelists_dir():
+    return os.path.join(get_schema_dir(), 'codelists')
 
 
 @pytest.fixture
@@ -143,6 +177,24 @@ def codelist_json(request):
     """
     codelist = request.param # (path, name, text, fieldnames, rows)
     return codelist[4]
+
+
+@pytest.fixture
+def codelist_values():
+    codelists = {}
+    schema_paths = get_schema_paths()
+    for path, name, data in schema_paths:
+        codelists.update(get_codelists_from_schema(data))
+
+    codelist_names = [name for name in codelists.keys()]
+    return codelist_names
+
+
+@pytest.fixture
+def codelist_enums(request):
+    registry = schema_registry()
+    schema_contents = registry.contents(request.param)
+    return get_codelists_from_schema(schema_contents)
 
 
 @pytest.fixture

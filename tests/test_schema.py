@@ -1,9 +1,9 @@
 import pytest
+import collections
 
-from conftest import codelist_paths, codelist_id, schema_paths
+from conftest import get_codelist_paths, codelist_id, get_schema_paths
 from jscc.testing.checks import (
     validate_array_items,
-    validate_codelist_enum,
     validate_deep_properties,
     validate_items_type,
     validate_letter_case,
@@ -35,7 +35,8 @@ schemas = [
 ]
 
 
-codelists = codelist_paths()
+schema_paths = get_schema_paths()
+codelists = get_codelist_paths()
 
 
 def test_metaschema_valid(schema_validator):
@@ -49,7 +50,7 @@ def test_metaschema_valid(schema_validator):
 
 def test_schemas_loaded():
     # check schemas var matches number of files in schema dir
-    schemas_from_file = schema_paths()
+    schemas_from_file = get_schema_paths()
     assert len(schemas_from_file) == len(schemas), "Schema found on disc that is not being tested.\nPlease update the schemas variable in test_schema.py."
 
 
@@ -60,7 +61,7 @@ def test_schema_valid(schema_validator, schema_from_registry):
     TODO: This only actually validates additional keywords defined when they
     appear at the top level of the schema; see: https://github.com/openownership/data-standard/issues/513
     """
-    assert schema_validator.is_valid(schema_from_registry) is True
+    assert schema_validator.is_valid(schema_from_registry)
 
 
 def test_letter_case():
@@ -123,12 +124,33 @@ def test_duplicate_codes(codelist_json):
     assert len(codes) == len(unique_codes), "Duplicate codes found: %s" % (codes)
 
 
-def test_codelist_enums():
+@pytest.mark.parametrize("codelist_enums", schemas, indirect=True)
+def test_schema_codelists_match(codelist_enums):
     # check csv codelists match enums in schema json
-    pass
+    any_errors = False
+    error_str = ""
+    # codelists is path, name, text, fieldnames, rows
+    for path, name, text, fieldnames, rows in codelists:
+        codes = [row['code'] for row in rows]
+        if codelist_enums.get(name):
+            if collections.Counter(codelist_enums.get(name)) != collections.Counter(codes):
+                any_errors = True
+                error_str += '\nCodelist file and schema enum mismatch:\n%s: %s\nenum: %s' % (name, codes, codelist_enums.get(name))
+
+    assert not any_errors, error_str
 
 
-def test_codelists_used():
-    # check there are no codelist csvs not present in the schema
-    # and that there are no codelists in schema missing csvs
-    pass
+def test_schema_codelists_used(codelist_values):
+    """
+    Check there are no codelist csvs not present in the schema
+    and that there are no codelists in schema missing csvs.
+
+    The `validate_schema_codelists_match` function in jscc doesn't work here
+    because it can only handle one schema file.
+    """
+    codelist_files = [name for _, name, _,_,_ in codelists]
+    unused_codelists = [codelist for codelist in codelist_files if codelist not in codelist_values]
+    missing_codelists = [codelist for codelist in codelist_values if codelist not in codelist_files]
+
+    assert len(unused_codelists) == 0, "Codelist files which are not used in the schema: {}".format(unused_codelists)
+    assert len(missing_codelists) == 0, "Codelists used in schema for which there are no CSV files: {}".format(missing_codelists)
