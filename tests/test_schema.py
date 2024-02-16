@@ -1,6 +1,6 @@
 import pytest
 
-from conftest import codelist_paths, codelist_id
+from conftest import codelist_paths, codelist_id, schema_paths
 from jscc.testing.checks import (
     validate_array_items,
     validate_codelist_enum,
@@ -24,6 +24,20 @@ components are renamed.
 """
 
 
+# Set `schemas` to a list of the $id values of the schemas you expect to find in the /schema/ directory
+schemas = [
+    "urn:components",
+    "urn:statement",
+    "urn:person",
+    "urn:entity",
+    "urn:relationship",
+    "urn:codelists"
+]
+
+
+codelists = codelist_paths()
+
+
 def test_metaschema_valid(schema_validator):
     """
     Checks the BODS metaschema is valid against 2020-12.
@@ -33,22 +47,10 @@ def test_metaschema_valid(schema_validator):
     schema_validator.check_schema(schema_validator.schema)
 
 
-# Set this to a list of the $id values of the schemas you expect to find in the /schema/ directory
-schemas = [
-    "urn:components",
-    "urn:statement",
-    "urn:person",
-    "urn:entity",
-    "urn:relationship"
-]
-
-
-codelists = codelist_paths()
-
-
 def test_schemas_loaded():
     # check schemas var matches number of files in schema dir
-    pass
+    schemas_from_file = schema_paths()
+    assert len(schemas_from_file) == len(schemas), "Schema found on disc that is not being tested.\nPlease update the schemas variable in test_schema.py."
 
 
 @pytest.mark.parametrize("schema_from_registry", schemas, indirect=True)
