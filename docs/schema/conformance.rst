@@ -31,11 +31,7 @@ Validation
 ----------
 The BODS JSON schema includes validation checks that are possible to define using JSON schema 2020-12.
 
-The `BODS Data Review Tool <https://datareview.openownership.org/>`_ validates conformance to the JSON schema and to additional requirements that can be validated programmatically but are not included in the schema. 
-
-For example, it checks that record identifiers in the ``subject`` and ``interestedParty`` fields of Relationship statements appear in at least one statement elsewhere in the BODS JSON array. 
-
-The Data Review Tool can ingest data serialised as JSON and in tabular form. 
+The `BODS Data Review Tool <https://datareview.openownership.org/>`_ validates conformance to the JSON schema and to additional requirements that can be validated programmatically but are not included in the schema. For example, it checks that record identifiers in the ``subject`` and ``interestedParty`` fields of Relationship statements appear in at least one statement elsewhere in the BODS JSON array. The Data Review Tool can ingest data serialised as JSON and in tabular form. 
 
 
 
