@@ -1,9 +1,25 @@
-Languages and transliteration
-=============================
+Representing alternative languages
+==================================
 
-There may be times when beneficial ownership information needs to be provided in different languages.
+Beneficial ownership information may need to be provided in different languages or scripts. BODS provides options for representing translated or transliterated information. 
 
-(1) For people's names, use an entry in the ``names`` array with a ``type`` of 'translation'
-(2) For entity names, use an entry in the ``alternativeNames`` array
+To represent:
 
-For other fields, an ``annotations`` object can be used to indicate that a particular field has a translation or transliteration.
+* people’s names, use an entry in the names array with ``name.type`` ‘translation’ or ‘transliteration’ 
+
+* entity names, use an entry in the ``alternativeNames`` array
+
+* entity types use ``entitySubtype.localTerm``
+
+* interest types use ``interest.details``
+
+For other fields or entire records, use an annotation. 
+
+In the annotation:
+
+* ``motivation`` MUST be ‘transformation’
+
+* ``description`` SHOULD explain the type of transformation (e.g. ‘translation’) 
+
+* ``transformedContent`` MUST contain the transformed content
+
