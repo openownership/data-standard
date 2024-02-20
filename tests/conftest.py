@@ -2,10 +2,13 @@ import os
 import json
 import pytest
 
+from warnings import warn
 from pathlib import Path
 from jsonschema import FormatChecker
 from jsonschema.validators import Draft202012Validator
-from jscc.schema import is_json_schema, is_codelist
+from jscc.schema import is_json_schema, is_codelist, is_missing_property
+from jscc.exceptions import MetadataPresenceWarning
+from jscc.testing.checks import _false, _true, _traverse
 from jscc.testing.filesystem import walk_json_data, walk_csv_data
 from referencing import Registry, Resource
 from referencing.jsonschema import DRAFT202012
@@ -81,6 +84,52 @@ def get_codelists_from_schema(schema_content, pointer=''):
 
     return codelists
 
+
+def validate_metadata_presence(*args, allow_missing=_false):
+    """
+    Warns and returns the number of errors relating to metadata in a JSON Schema.
+
+    The root schema and each field must have `"type" <https://tools.ietf.org/html/draft-fge-json-schema-validation-00#section-5.5.2>`__,
+    `"title" and "description" <https://tools.ietf.org/html/draft-fge-json-schema-validation-00#section-6.1>`__
+    properties, unless it has a `"$ref" <https://tools.ietf.org/html/draft-pbryan-zyp-json-ref-03>`__ property.
+
+    :param function allow_missing: a method that accepts a JSON Pointer, and returns whether the field is allowed to
+                                   not have a "title" or "description" property
+    :returns: the number of errors
+    :rtype: int
+
+    This is copied from JSCC to patch oneOf/anyOf/allOf/if/then/else properties being flagged by this.
+    TODO: see if this should be fixed in JSCC directly.
+    """  # noqa: E501
+    schema_fields = {'definitions', '$defs', 'deprecated', 'items', 'patternProperties', 'properties', 'oneOf', 'anyOf', 'allOf', 'if', 'then', 'else'}
+    schema_sections = {'patternProperties', 'properties', 'anyOf', 'allOf', 'if', 'then', 'else', 'oneOf'}
+    required_properties = {'title', 'description'}
+
+    def block(path, data, pointer):
+        errors = 0
+
+        parts = pointer.rsplit('/')
+        if len(parts) >= 3:
+            grandparent = parts[-2]
+        else:
+            grandparent = None
+        parent = parts[-1]
+
+        # Look for metadata fields on user-defined objects only. (Add exceptional condition for "items" field.)
+        if parent not in schema_fields and grandparent not in schema_sections:
+            for prop in required_properties:
+                # If a field has `$ref`, then its `title` and `description` might defer to the reference.
+                if is_missing_property(data, prop) and '$ref' not in data and not allow_missing(pointer):
+                    errors += 1
+                    warn(f'{path} is missing "{prop}" at {pointer}', MetadataPresenceWarning)
+
+            if 'type' not in data and '$ref' not in data and 'oneOf' not in data and '$defs' not in data and not allow_missing(pointer):
+                errors += 1
+                warn(f'{path} is missing "type" or "$ref" or "oneOf" at {pointer}', MetadataPresenceWarning)
+
+        return errors
+
+    return _traverse(block)(*args)
 
 
 """
