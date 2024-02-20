@@ -1,13 +1,13 @@
 import pytest
 import collections
 
-from conftest import get_codelist_paths, codelist_id, get_schema_paths
+from conftest import get_codelist_paths, codelist_id, get_schema_paths, validate_metadata_presence
 from jscc.testing.checks import (
     validate_array_items,
     validate_deep_properties,
     validate_items_type,
     validate_letter_case,
-    validate_metadata_presence,
+    # validate_metadata_presence,
     validate_null_type,
 )
 
@@ -64,34 +64,57 @@ def test_schema_valid(schema_validator, schema_from_registry):
     assert schema_validator.is_valid(schema_from_registry)
 
 
-def test_letter_case():
+@pytest.mark.parametrize("schema_from_registry", schemas, indirect=True)
+def test_letter_case(schema_from_registry):
     """
     Tests that properties are lowerCamelCase and definition names are
     UpperCamelCase.
     """
-    # errors = validate_letter_case(path, data)
-    # assert errors == None
-    pass
+    if schema_from_registry.get('$id') != 'urn:codelists':
+        # codelist schema is excluded from this check because 'technical note' is used instead of technicalNote
+        errors = validate_letter_case(schema_from_registry.get('$id'), schema_from_registry)
+        assert errors == 0
 
 
-def test_items_type():
-    # validate_items_type(path, data)
-    pass
+@pytest.mark.parametrize("schema_from_registry", schemas, indirect=True)
+def test_items_type(schema_from_registry):
+    """
+    Tests that the `type` value of items in an array are allowed. Allowed types:
+    * array
+    * number
+    * string
+    * object
+    """
+    errors = validate_items_type(schema_from_registry.get('$id'), schema_from_registry, additional_valid_types=['object'])
+    assert errors == 0
 
 
-def test_null_type():
-    # validate_null_type(path, data)
-    pass
+@pytest.mark.parametrize("schema_from_registry", schemas, indirect=True)
+def test_null_type(schema_from_registry):
+    """
+    Tests that the schema no field in the schema allows a null value.
+    `technical note` in the codelists schema is excluded from this, as that can be empty.
+    """
+    errors = validate_null_type(schema_from_registry.get('$id'), schema_from_registry, no_null=True, allow_null=['/items/properties/technical note'])
+    assert errors == 0
 
 
-def test_array_items():
-    # validate_array_items(path, data)
-    pass
+@pytest.mark.parametrize("schema_from_registry", schemas, indirect=True)
+def test_array_items(schema_from_registry):
+    """
+    Tests that all fields which can be arrays set the `items` property.
+    """
+    errors = validate_array_items(schema_from_registry.get('$id'), schema_from_registry)
+    assert errors == 0
 
 
-def test_field_metadata():
-    # validate_metadata_presence(path, data)
-    pass
+@pytest.mark.parametrize("schema_from_registry", schemas, indirect=True)
+def test_field_metadata(schema_from_registry):
+    """
+    Tests that all fields have a `title` and `description` property unless they are `$ref`s.
+    """
+    errors = validate_metadata_presence(schema_from_registry.get('$id'), schema_from_registry)
+    assert errors == 0, "%s fields missing title or description fields, see warnings." % errors
 
 
 @pytest.mark.parametrize("codelist_json", codelists, ids=codelist_id, indirect=True)
@@ -126,11 +149,12 @@ def test_duplicate_codes(codelist_json):
 
 @pytest.mark.parametrize("codelist_enums", schemas, indirect=True)
 def test_schema_codelists_match(codelist_enums):
-    # check csv codelists match enums in schema json
+    """
+    Check the codes in the CSV codelist files match the respective enums in the JSON schema
+    """
     any_errors = False
     error_str = ""
-    # codelists is path, name, text, fieldnames, rows
-    for path, name, text, fieldnames, rows in codelists:
+    for _,name,_,_,rows in codelists:
         codes = [row['code'] for row in rows]
         if codelist_enums.get(name):
             if collections.Counter(codelist_enums.get(name)) != collections.Counter(codes):
