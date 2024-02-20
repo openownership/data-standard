@@ -1,6 +1,8 @@
 {
   "$id": "urn:statement",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Statement",
+  "description": "A statement",
   "version": "0.4",
   "type": "array",
   "items": {
@@ -8,6 +10,8 @@
   },
   "$defs": {
     "Statement": {
+        "title": "Statement",
+        "description": "A statement about a person, entity or relationship, made at a particular point in time.",
         "type": "object",
         "properties": {
           "statementId": {
