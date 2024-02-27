@@ -2,6 +2,9 @@
     {
         "statementId": "2f7bf9370f1254068e5e946df067d07d",
         "publicationDetails": {
+            "publicationDate": "2021-09-11",
+            "bodsVersion": "0.4",
+            "publisher": { "name": "Test Publisher" },
             "license": "http://opendefinition.org/licenses/cc-zero"
         },
         "recordId": "ent-93c75c87ab28f889",
