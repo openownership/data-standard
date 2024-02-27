@@ -14,7 +14,7 @@
         "recordType": "person",
         "recordStatus": "new",
         "source": {
-            "type": "selfDeclaration",
+            "type": ["selfDeclaration"],
             "assertedBy": [
                 {
                     "name": "Maria Esteves"

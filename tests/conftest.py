@@ -277,7 +277,6 @@ def get_valid_data():
         "recordDetails": {
             "entityType": "unknownEntity",
             "isComponent": False,
-            "publicationDetails": {}
         }
     }]
     return data
