@@ -46,6 +46,12 @@ def get_examples_dir():
     return schema_dir
 
 
+def get_test_data_dir():
+    here = os.path.dirname(os.path.realpath(__file__))
+    data_dir = os.path.join(here, "data", "v0.4")
+    return data_dir
+
+
 def get_schema_paths():
     schema_dir = get_schema_dir()
     schema_paths = [(path, name, data) for path, name, _, data in walk_json_data(top=schema_dir) if is_json_schema(data)]
