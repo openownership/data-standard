@@ -40,6 +40,12 @@ def get_schema_dir():
     return schema_dir
 
 
+def get_examples_dir():
+    here = os.path.dirname(os.path.realpath(__file__))
+    schema_dir = os.path.join(here, "..", "examples")
+    return schema_dir
+
+
 def get_schema_paths():
     schema_dir = get_schema_dir()
     schema_paths = [(path, name, data) for path, name, _, data in walk_json_data(top=schema_dir) if is_json_schema(data)]
@@ -145,6 +151,11 @@ def schema_dir():
 @pytest.fixture
 def codelists_dir():
     return os.path.join(get_schema_dir(), 'codelists')
+
+
+@pytest.fixture
+def examples_dir():
+    return get_examples_dir()
 
 
 @pytest.fixture
