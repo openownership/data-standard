@@ -61,13 +61,14 @@ def test_examples_valid_bods(bods_validator, bods_json):
     """
     is_valid = bods_validator.is_valid(bods_json)
 
-    # (temp for debugging)
-    if not is_valid:
-        errors = bods_validator.iter_errors(bods_json)
-        for error in errors:
-            print(error.message)
-            print(error.path)
-            print(error.schema_path)
+    # Uncomment this if your example data is failling but you don't know why
+    # The validation errors will appear in the test output
+    # if not is_valid:
+    #     errors = bods_validator.iter_errors(bods_json)
+    #     for error in errors:
+    #         print(error.message)
+    #         print(error.path)
+    #         print(error.schema_path)
 
     assert is_valid
 
