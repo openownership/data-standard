@@ -1,0 +1,16 @@
+[
+    {
+        "statementId": "2f7bf9370f1254068e5e946df067d07d",
+        "publicationDetails": {},
+        "recordId": "ent-93c75c87ab28f889",
+        "recordType": "entity",
+        "declarationSubject": "ent-93c75c87ab28f889",
+        "recordDetails": {
+            "isComponent": false,
+            "entityType": "registeredEntity",
+            "jurisdiction": {
+                "name": "Ireland"
+            }
+        }
+    }
+]
