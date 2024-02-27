@@ -113,7 +113,7 @@ def test_field_metadata(schema_from_registry):
     Tests that all fields have a `title` and `description` property unless they are `$ref`s.
     """
     errors = validate_metadata_presence(schema_from_registry.get('$id'), schema_from_registry)
-    assert errors == 0, "%s fields missing title or description fields, see warnings." % errors
+    assert errors == 0, f'{errors} fields missing title or description fields, see warnings.'
 
 
 @pytest.mark.parametrize("codelist_json", codelists, ids=codelist_id, indirect=True)
@@ -130,7 +130,7 @@ def test_codelists_valid(codelist_json, codelist_validator):
     errors = codelist_validator.iter_errors(codelist_json)
     for error in errors:
         any_errors = True
-        error_str += '\n%s: %s' % (error.path, error.message)
+        error_str += f'\n{error.path}: {error.message}'
 
     assert not any_errors, error_str
 
@@ -143,7 +143,7 @@ def test_duplicate_codes(codelist_json):
     codes = [row['code'] for row in codelist_json]
     codes.sort()  # sort for readability in the error message
     unique_codes = set(codes)
-    assert len(codes) == len(unique_codes), "Duplicate codes found: %s" % (codes)
+    assert len(codes) == len(unique_codes), f'Duplicate codes found: {codes}'
 
 
 @pytest.mark.parametrize("codelist_enums", schemas, indirect=True)
@@ -158,7 +158,7 @@ def test_schema_codelists_match(codelist_enums):
         if codelist_enums.get(name):
             if collections.Counter(codelist_enums.get(name)) != collections.Counter(codes):
                 any_errors = True
-                error_str += '\nCodelist file and schema enum mismatch:\n%s: %s\nenum: %s' % (name, codes, codelist_enums.get(name))
+                error_str += f'\nCodelist file and schema enum mismatch:\n{name}: {codes}\nenum: {codelist_enums.get(name)}'
 
     assert not any_errors, error_str
 
