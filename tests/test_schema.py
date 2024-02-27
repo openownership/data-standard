@@ -4,7 +4,6 @@ import collections
 from conftest import get_codelist_paths, codelist_id, get_schema_paths, validate_metadata_presence
 from jscc.testing.checks import (
     validate_array_items,
-    validate_deep_properties,
     validate_items_type,
     validate_letter_case,
     # validate_metadata_presence,
@@ -154,7 +153,7 @@ def test_schema_codelists_match(codelist_enums):
     """
     any_errors = False
     error_str = ""
-    for _,name,_,_,rows in codelists:
+    for _, name, _, _, rows in codelists:
         codes = [row['code'] for row in rows]
         if codelist_enums.get(name):
             if collections.Counter(codelist_enums.get(name)) != collections.Counter(codes):
@@ -172,7 +171,7 @@ def test_schema_codelists_used(codelist_values):
     The `validate_schema_codelists_match` function in jscc doesn't work here
     because it can only handle one schema file.
     """
-    codelist_files = [name for _, name, _,_,_ in codelists]
+    codelist_files = [name for _, name, _, _, _ in codelists]
     unused_codelists = [codelist for codelist in codelist_files if codelist not in codelist_values]
     missing_codelists = [codelist for codelist in codelist_values if codelist not in codelist_files]
 

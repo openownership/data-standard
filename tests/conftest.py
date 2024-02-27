@@ -8,7 +8,7 @@ from jsonschema import FormatChecker
 from jsonschema.validators import Draft202012Validator
 from jscc.schema import is_json_schema, is_codelist, is_missing_property
 from jscc.exceptions import MetadataPresenceWarning
-from jscc.testing.checks import _false, _true, _traverse
+from jscc.testing.checks import _false, _traverse
 from jscc.testing.filesystem import walk_json_data, walk_csv_data
 from referencing import Registry, Resource
 from referencing.jsonschema import DRAFT202012
@@ -149,6 +149,7 @@ The fixtures in this file are automatically discovered by pytest without
 needing to import them in the test files.
 """
 
+
 @pytest.fixture
 def schema_dir():
     return get_schema_dir()
@@ -241,7 +242,7 @@ def codelist_json(request):
     `codelist_json` as a parameter with indirect=True, and the output passed to
     the test.
     """
-    codelist = request.param # (path, name, text, fieldnames, rows)
+    codelist = request.param  # (path, name, text, fieldnames, rows)
     return codelist[4]
 
 
