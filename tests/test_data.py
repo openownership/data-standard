@@ -1,6 +1,6 @@
 import os
 import pytest
-from conftest import get_json_files, file_id
+from conftest import get_json_files, file_id, get_test_data_dir
 
 """
 Data tests
@@ -13,8 +13,8 @@ the validation requirements. New requirements can be tested by
 adding new test data files to the /data directory.
 """
 
-valid_bods_statements = get_json_files(os.path.join(os.path.dirname(os.path.realpath(__file__)), "data", "v0.4", "valid-statements"))
-invalid_bods_statements = get_json_files(os.path.join(os.path.dirname(os.path.realpath(__file__)), "data", "v0.4", "invalid-statements"))
+valid_bods_statements = get_json_files(os.path.join(get_test_data_dir(), "valid-statements"))
+invalid_bods_statements = get_json_files(os.path.join(get_test_data_dir(), "invalid-statements"))
 
 
 @pytest.mark.parametrize("bods_json", valid_bods_statements, ids=file_id, indirect=True)

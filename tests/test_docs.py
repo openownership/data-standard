@@ -1,7 +1,8 @@
 import pytest
 import warnings
 
-from jscc.testing.checks import get_empty_files, get_misindented_files
+from conftest import get_json_files, get_examples_dir, file_id
+from jscc.testing.checks import get_empty_files, get_misindented_files, get_invalid_json_files
 
 
 """
@@ -11,35 +12,64 @@ Checks the example data used in the documentation are all valid BODS.
 """
 
 
-def test_examples_empty(examples_dir):
-  """
-  Check the data in the /examples directory are not empty
-  """
-  errors = False
-  empties = get_empty_files(top=examples_dir)
-  for path in empties:
-    warnings.warn(f'ERROR: Empty file at {path}')
-    errors = True
+examples = get_json_files(get_examples_dir())
 
-  assert not errors, f'Empty files found, see warnings.'
+
+def test_examples_empty(examples_dir):
+    """
+    Check the data in the /examples directory are not empty
+    """
+    errors = False
+    empties = get_empty_files(top=examples_dir)
+    for path in empties:
+        warnings.warn(f'ERROR: Empty file at {path}')
+        errors = True
+
+    assert not errors, f'Empty files found, see warnings.'
 
 
 def test_examples_indent(examples_dir):
+    """
+    Check the data in the /examples directory are indented correctly.
+    """
+    errors = False
+    misindented = get_misindented_files(top=examples_dir)
+    for path in misindented:
+        warnings.warn(f'ERROR: Misintended files at {path}')
+        errors = True
+
+    assert not errors, f'Misindented files found, see warnings.'
+
+
+def test_examples_valid_json(examples_dir):
+    """
+    Check data in /examples director are valid JSON files.
+    """
+    errors = False
+    invalid = get_invalid_json_files(top=examples_dir)
+    for path in invalid:
+        warnings.warn(f'ERROR: Invalid JSON at {path}')
+        errors = True
+
+    assert not errors, f'Invalid JSON found, see warnings.'
+
+
+@pytest.mark.parametrize("bods_json", examples, ids=file_id, indirect=True)
+def test_examples_valid_bods(bods_validator, bods_json):
   """
-  Check the data in the /examples directory are indented correctly.
+  Check data in /examples directory are valid BODS.
   """
-  errors = False
-  misindented = get_misindented_files(top=examples_dir)
-  for path in misindented:
-    warnings.warn(f'ERROR: Misintended files at {path}')
-    errors = True
+  is_valid = bods_validator.is_valid(bods_json)
 
-  assert not errors, f'Misindented files found, see warnings.'
+  # (temp for debugging)
+  if not is_valid:
+      errors = bods_validator.iter_errors(bods_json)
+      for error in errors:
+          print(error.message)
+          print(error.path)
+          print(error.schema_path)
 
-
-def test_examples_valid():
-  # check data in /examples directory are valid
-  pass
+  assert is_valid
 
 
 def test_docs():
