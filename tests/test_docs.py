@@ -25,7 +25,7 @@ def test_examples_empty(examples_dir):
         warnings.warn(f'ERROR: Empty file at {path}')
         errors = True
 
-    assert not errors, f'Empty files found, see warnings.'
+    assert not errors, 'Empty files found, see warnings.'
 
 
 def test_examples_indent(examples_dir):
@@ -38,7 +38,7 @@ def test_examples_indent(examples_dir):
         warnings.warn(f'ERROR: Misintended files at {path}')
         errors = True
 
-    assert not errors, f'Misindented files found, see warnings.'
+    assert not errors, 'Misindented files found, see warnings.'
 
 
 def test_examples_valid_json(examples_dir):
@@ -51,28 +51,28 @@ def test_examples_valid_json(examples_dir):
         warnings.warn(f'ERROR: Invalid JSON at {path}')
         errors = True
 
-    assert not errors, f'Invalid JSON found, see warnings.'
+    assert not errors, 'Invalid JSON found, see warnings.'
 
 
 @pytest.mark.parametrize("bods_json", examples, ids=file_id, indirect=True)
 def test_examples_valid_bods(bods_validator, bods_json):
-  """
-  Check data in /examples directory are valid BODS.
-  """
-  is_valid = bods_validator.is_valid(bods_json)
+    """
+    Check data in /examples directory are valid BODS.
+    """
+    is_valid = bods_validator.is_valid(bods_json)
 
-  # (temp for debugging)
-  if not is_valid:
-      errors = bods_validator.iter_errors(bods_json)
-      for error in errors:
-          print(error.message)
-          print(error.path)
-          print(error.schema_path)
+    # (temp for debugging)
+    if not is_valid:
+        errors = bods_validator.iter_errors(bods_json)
+        for error in errors:
+            print(error.message)
+            print(error.path)
+            print(error.schema_path)
 
-  assert is_valid
+    assert is_valid
 
 
 def test_docs():
-  # TODO
-  # check the docs build
-  pass
+    # TODO
+    # check the docs build
+    pass
