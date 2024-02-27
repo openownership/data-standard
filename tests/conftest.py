@@ -48,7 +48,7 @@ def get_examples_dir():
 
 def get_test_data_dir():
     here = os.path.dirname(os.path.realpath(__file__))
-    data_dir = os.path.join(here, "data", "v0.4")
+    data_dir = os.path.join(here, "data")
     return data_dir
 
 
