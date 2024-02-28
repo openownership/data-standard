@@ -1,17 +1,8 @@
 [
   {
-    "statementID": "0d2a7a15-3291-4ac7-9663-e3659056dadc",
-    "statementType": "entityStatement",
-    "isComponent": false,
+    "statementId": "0d2a7a15-3291-4ac7-9663-e3659056dadc",
+    "declarationSubject": "a7b3bd81d8ba",
     "statementDate": "2019-03-18",
-    "entityType": "registeredEntity",
-    "name": "Platinum Emerald and Plutonim Mining Limited",
-    "identifiers": [
-      {
-        "scheme": "GB-COH",
-        "id": "XE-000079054"
-      }
-    ],
     "publicationDetails": {
       "publicationDate": "2019-06-07",
       "bodsVersion": "0.4",
@@ -19,84 +10,74 @@
       "publisher": {
         "name": "ETI International"
       }
-    }
-  },
-  {
-    "statementID": "a5680770-899f-4f7a-b795-e266f1ce8668",
-    "statementType": "personStatement",
-    "isComponent": false,
-    "personType": "knownPerson",
-    "statementDate": "2019-03-18",
-    "names": [
-      {
-        "fullName": "Michael Hubbard"
-      }
-    ],
-    "politicalExposure": {
-      "status": "isPep",
-      "details": [
+    },
+    "recordId": "a7b3bd81d8ba",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": "registeredEntity",
+      "name": "Platinum Emerald and Plutonim Mining Limited",
+      "identifiers": [
         {
-          "jurisdiction": {
-            "code": "gb",
-            "name": "United Kingdom of Great Britain and Northern Ireland (the)"
-          },
-          "reason": "Member of Parliament",
-          "startDate": "2017-10-15",
-          "source": {
-            "type": [
-              "selfDeclaration"
-            ],
-            "assertedBy": [
-              {
-                "name": "Michael Hubbard"
-              }
-            ]
-          }
+          "scheme": "GB-COH",
+          "id": "XE-000079054"
         }
       ]
-    },
+    }
+  },
+  {
+    "statementId": "a5680770-899f-4f7a-b795-e266f1ce8668",
+    "declarationSubject": "a7b3bd81d8ba",
+    "statementDate": "2019-03-18",
     "publicationDetails": {
       "publicationDate": "2019-06-07",
       "bodsVersion": "0.4",
       "license": "https://example.com/document/ei-open-data-policy-2015",
       "publisher": {
         "name": "ETI International"
+      }
+    },
+    "recordId": "9bcdcc85e803",
+    "recordStatus": "new",
+    "recordType": "person",
+    "recordDetails": {
+      "isComponent": false,
+      "personType": "knownPerson",
+      "names": [
+        {
+          "fullName": "Michael Hubbard"
+        }
+      ],
+      "politicalExposure": {
+        "status": "isPep",
+        "details": [
+          {
+            "jurisdiction": {
+              "code": "gb",
+              "name": "United Kingdom of Great Britain and Northern Ireland (the)"
+            },
+            "reason": "Member of Parliament",
+            "startDate": "2017-10-15",
+            "source": {
+              "type": [
+                "selfDeclaration"
+              ],
+              "assertedBy": [
+                {
+                  "name": "Michael Hubbard"
+                }
+              ]
+            }
+          }
+        ]
       }
     }
   },
   {
-    "statementID": "106271aa-10ff-48ad-a5ba-f3f8132b59ff",
-    "statementType": "ownershipOrControlStatement",
-    "isComponent": false,
+    "statementId": "106271aa-10ff-48ad-a5ba-f3f8132b59ff",
+    "declarationSubject": "a7b3bd81d8ba",
     "statementDate": "2019-03-18",
-    "subject": {
-      "describedByEntityStatement": "0d2a7a15-3291-4ac7-9663-e3659056dadc"
-    },
-    "interestedParty": {
-      "describedByPersonStatement": "a5680770-899f-4f7a-b795-e266f1ce8668"
-    },
-    "interests": [
-      {
-        "type": "shareholding",
-        "directOrIndirect": "direct",
-        "share": {
-          "minimum": 25,
-          "exclusiveMaximum": 50
-        },
-        "startDate": "2016-07-07",
-        "beneficialOwnershipOrControl": true
-      },
-      {
-        "type": "votingRights",
-        "directOrIndirect": "direct",
-        "share": {
-          "minimum": 25,
-          "exclusiveMaximum": 50
-        },
-        "startDate": "2016-07-07",
-        "beneficialOwnershipOrControl": true
-      }
-    ],
     "publicationDetails": {
       "publicationDate": "2019-06-07",
       "bodsVersion": "0.4",
@@ -104,6 +85,36 @@
       "publisher": {
         "name": "ETI International"
       }
+    },
+    "recordId": "91e4b9055ca0",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "isComponent": false,
+      "subject": "a7b3bd81d8ba",
+      "interestedParty": "9bcdcc85e803",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "direct",
+          "share": {
+            "minimum": 25,
+            "exclusiveMaximum": 50
+          },
+          "startDate": "2016-07-07",
+          "beneficialOwnershipOrControl": true
+        },
+        {
+          "type": "votingRights",
+          "directOrIndirect": "direct",
+          "share": {
+            "minimum": 25,
+            "exclusiveMaximum": 50
+          },
+          "startDate": "2016-07-07",
+          "beneficialOwnershipOrControl": true
+        }
+      ]
     }
   }
 ]
