@@ -35,7 +35,7 @@ def test_examples_indent(examples_dir):
     errors = False
     misindented = get_misindented_files(top=examples_dir)
     for path in misindented:
-        warnings.warn(f'ERROR: Misintended files at {path}')
+        warnings.warn(f'ERROR: Misindented files at {path}')
         errors = True
 
     assert not errors, 'Misindented files found, see warnings.'
