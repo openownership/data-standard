@@ -22,10 +22,10 @@ def test_examples_empty(examples_dir):
     errors = False
     empties = get_empty_files(top=examples_dir)
     for path in empties:
-        warnings.warn(f'ERROR: Empty file at {path}')
+        warnings.warn(f"ERROR: Empty file at {path}")
         errors = True
 
-    assert not errors, 'Empty files found, see warnings.'
+    assert not errors, "Empty files found, see warnings."
 
 
 def test_examples_indent(examples_dir):
@@ -35,10 +35,10 @@ def test_examples_indent(examples_dir):
     errors = False
     misindented = get_misindented_files(top=examples_dir)
     for path in misindented:
-        warnings.warn(f'ERROR: Misindented files at {path}')
+        warnings.warn(f"ERROR: Misindented files at {path}")
         errors = True
 
-    assert not errors, 'Misindented files found, see warnings.'
+    assert not errors, "Misindented files found, see warnings."
 
 
 def test_examples_valid_json(examples_dir):
@@ -48,10 +48,10 @@ def test_examples_valid_json(examples_dir):
     errors = False
     invalid = get_invalid_json_files(top=examples_dir)
     for path in invalid:
-        warnings.warn(f'ERROR: Invalid JSON at {path}')
+        warnings.warn(f"ERROR: Invalid JSON at {path}")
         errors = True
 
-    assert not errors, 'Invalid JSON found, see warnings.'
+    assert not errors, "Invalid JSON found, see warnings."
 
 
 @pytest.mark.parametrize("bods_json", examples, ids=file_id, indirect=True)

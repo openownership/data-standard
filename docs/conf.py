@@ -270,7 +270,7 @@ def translate_schema_and_codelists(language='en'):
     ], str(localedir), language, version=os.environ.get('TRAVIS_BRANCH', 'latest'),
         headers='title,description,technical note')
 
-    print("Translated schema and codelists to {}".format(language))
+    print(f'Translated schema and codelists to {language}')
 
 
 def compile_schema_and_codelists():

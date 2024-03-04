@@ -24,14 +24,7 @@ components are renamed.
 
 
 # Set `schemas` to a list of the $id values of the schemas you expect to find in the /schema/ directory
-schemas = [
-    "urn:components",
-    "urn:statement",
-    "urn:person",
-    "urn:entity",
-    "urn:relationship",
-    "urn:codelists"
-]
+schemas = ["urn:components", "urn:statement", "urn:person", "urn:entity", "urn:relationship", "urn:codelists"]
 
 
 schema_paths = get_schema_paths()
@@ -50,7 +43,9 @@ def test_metaschema_valid(schema_validator):
 def test_schemas_loaded():
     # check schemas var matches number of files in schema dir
     schemas_from_file = get_schema_paths()
-    assert len(schemas_from_file) == len(schemas), "Schema found on disc that is not being tested.\nPlease update the schemas variable in test_schema.py."
+    assert len(schemas_from_file) == len(
+        schemas
+    ), "Schema found on disc that is not being tested.\nPlease update the schemas variable in test_schema.py."
 
 
 @pytest.mark.parametrize("schema_from_registry", schemas, indirect=True)
@@ -69,9 +64,9 @@ def test_letter_case(schema_from_registry):
     Tests that properties are lowerCamelCase and definition names are
     UpperCamelCase.
     """
-    if schema_from_registry.get('$id') != 'urn:codelists':
+    if schema_from_registry.get("$id") != "urn:codelists":
         # codelist schema is excluded from this check because 'technical note' is used instead of technicalNote
-        errors = validate_letter_case(schema_from_registry.get('$id'), schema_from_registry)
+        errors = validate_letter_case(schema_from_registry.get("$id"), schema_from_registry)
         assert errors == 0
 
 
@@ -84,7 +79,9 @@ def test_items_type(schema_from_registry):
     * string
     * object
     """
-    errors = validate_items_type(schema_from_registry.get('$id'), schema_from_registry, additional_valid_types=['object'])
+    errors = validate_items_type(
+        schema_from_registry.get("$id"), schema_from_registry, additional_valid_types=["object"]
+    )
     assert errors == 0
 
 
@@ -94,7 +91,12 @@ def test_null_type(schema_from_registry):
     Tests that the schema no field in the schema allows a null value.
     `technical note` in the codelists schema is excluded from this, as that can be empty.
     """
-    errors = validate_null_type(schema_from_registry.get('$id'), schema_from_registry, no_null=True, allow_null=['/items/properties/technical note'])
+    errors = validate_null_type(
+        schema_from_registry.get("$id"),
+        schema_from_registry,
+        no_null=True,
+        allow_null=["/items/properties/technical note"],
+    )
     assert errors == 0
 
 
@@ -103,7 +105,7 @@ def test_array_items(schema_from_registry):
     """
     Tests that all fields which can be arrays set the `items` property.
     """
-    errors = validate_array_items(schema_from_registry.get('$id'), schema_from_registry)
+    errors = validate_array_items(schema_from_registry.get("$id"), schema_from_registry)
     assert errors == 0
 
 
@@ -112,8 +114,8 @@ def test_field_metadata(schema_from_registry):
     """
     Tests that all fields have a `title` and `description` property unless they are `$ref`s.
     """
-    errors = validate_metadata_presence(schema_from_registry.get('$id'), schema_from_registry)
-    assert errors == 0, f'{errors} fields missing title or description fields, see warnings.'
+    errors = validate_metadata_presence(schema_from_registry.get("$id"), schema_from_registry)
+    assert errors == 0, f"{errors} fields missing title or description fields, see warnings."
 
 
 @pytest.mark.parametrize("codelist_json", codelists, ids=codelist_id, indirect=True)
@@ -126,11 +128,11 @@ def test_codelists_valid(codelist_json, codelist_validator):
      * Values don't have leading or trailing whitespace.
     """
     any_errors = False
-    error_str = ''
+    error_str = ""
     errors = codelist_validator.iter_errors(codelist_json)
     for error in errors:
         any_errors = True
-        error_str += f'\n{error.path}: {error.message}'
+        error_str += f"\n{error.path}: {error.message}"
 
     assert not any_errors, error_str
 
@@ -140,10 +142,10 @@ def test_duplicate_codes(codelist_json):
     """
     Check that codes are not duplicated within a codelist file.
     """
-    codes = [row['code'] for row in codelist_json]
+    codes = [row["code"] for row in codelist_json]
     codes.sort()  # sort for readability in the error message
     unique_codes = set(codes)
-    assert len(codes) == len(unique_codes), f'Duplicate codes found: {codes}'
+    assert len(codes) == len(unique_codes), f"Duplicate codes found: {codes}"
 
 
 @pytest.mark.parametrize("codelist_enums", schemas, indirect=True)
@@ -154,11 +156,13 @@ def test_schema_codelists_match(codelist_enums):
     any_errors = False
     error_str = ""
     for _, name, _, _, rows in codelists:
-        codes = [row['code'] for row in rows]
+        codes = [row["code"] for row in rows]
         if codelist_enums.get(name):
             if collections.Counter(codelist_enums.get(name)) != collections.Counter(codes):
                 any_errors = True
-                error_str += f'\nCodelist file and schema enum mismatch:\n{name}: {codes}\nenum: {codelist_enums.get(name)}'
+                error_str += (
+                    f"\nCodelist file and schema enum mismatch:\n{name}: {codes}\nenum: {codelist_enums.get(name)}"
+                )
 
     assert not any_errors, error_str
 
@@ -175,5 +179,7 @@ def test_schema_codelists_used(codelist_values):
     unused_codelists = [codelist for codelist in codelist_files if codelist not in codelist_values]
     missing_codelists = [codelist for codelist in codelist_values if codelist not in codelist_files]
 
-    assert len(unused_codelists) == 0, "Codelist files which are not used in the schema: {}".format(unused_codelists)
-    assert len(missing_codelists) == 0, "Codelists used in schema for which there are no CSV files: {}".format(missing_codelists)
+    assert len(unused_codelists) == 0, f"Codelist files which are not used in the schema: {unused_codelists}"
+    assert (
+        len(missing_codelists) == 0
+    ), f"Codelists used in schema for which there are no CSV files: {missing_codelists}"

@@ -27,7 +27,7 @@ def schema_dir():
 
 @pytest.fixture
 def codelists_dir():
-    return os.path.join(get_schema_dir(), 'codelists')
+    return os.path.join(get_schema_dir(), "codelists")
 
 
 @pytest.fixture
@@ -53,7 +53,7 @@ def schema_validator():
 
     # Get meta schema
     here = os.path.dirname(os.path.realpath(__file__))
-    with open(os.path.join(here, 'schema', 'meta-schema.json')) as fp:
+    with open(os.path.join(here, "schema", "meta-schema.json")) as fp:
         metaschema = json.load(fp)
 
     validator = Draft202012Validator(metaschema, registry=registry, format_checker=FormatChecker())
@@ -149,16 +149,18 @@ def get_valid_data():
     """
     Returns a simple valid BODS statement.
     """
-    data = [{
-        "statementId": "abcdefgkdddddddddddddddddddddddshdkjfkjdkjf",
-        "declarationSubject": "xyz",
-        "recordId": "123",
-        "recordType": "entity",
-        "recordDetails": {
-            "entityType": "unknownEntity",
-            "isComponent": False,
+    data = [
+        {
+            "statementId": "abcdefgkdddddddddddddddddddddddshdkjfkjdkjf",
+            "declarationSubject": "xyz",
+            "recordId": "123",
+            "recordType": "entity",
+            "recordDetails": {
+                "entityType": "unknownEntity",
+                "isComponent": False,
+            },
         }
-    }]
+    ]
     return data
 
 
@@ -167,11 +169,7 @@ def get_invalid_data():
     """
     Returns a simple invalid BODS statement.
     """
-    data = [{
-        "declarationSubject": "xyz",
-        "recordId": "123",
-        "recordType": "entity"
-    }]
+    data = [{"declarationSubject": "xyz", "recordId": "123", "recordType": "entity"}]
     return data
 
 
@@ -186,7 +184,7 @@ def get_json_files(dir):
     a list of the full paths.
     """
     paths = []
-    for p in Path(dir).rglob('*.json'):
+    for p in Path(dir).rglob("*.json"):
         paths.append(p)
     return paths
 
@@ -228,13 +226,19 @@ def get_test_data_dir():
 
 def get_schema_paths():
     schema_dir = get_schema_dir()
-    schema_paths = [(path, name, data) for path, name, _, data in walk_json_data(top=schema_dir) if is_json_schema(data)]
+    schema_paths = [
+        (path, name, data) for path, name, _, data in walk_json_data(top=schema_dir) if is_json_schema(data)
+    ]
     return schema_paths
 
 
 def get_codelist_paths():
     codelists_dir = os.path.join(get_schema_dir(), "codelists")
-    codelist_paths = [(path, name, text, fieldnames, rows) for path, name, text, fieldnames, rows in walk_csv_data(top=codelists_dir) if is_codelist(fieldnames)]
+    codelist_paths = [
+        (path, name, text, fieldnames, rows)
+        for path, name, text, fieldnames, rows in walk_csv_data(top=codelists_dir)
+        if is_codelist(fieldnames)
+    ]
     return codelist_paths
 
 
@@ -245,13 +249,13 @@ def schema_registry():
     """
     schemas = []
     for path, name, schema in get_schema_paths():
-        schemas.append((schema.get('$id'), Resource(contents=schema, specification=DRAFT202012)))
+        schemas.append((schema.get("$id"), Resource(contents=schema, specification=DRAFT202012)))
 
     registry = Registry().with_resources(schemas)
     return registry
 
 
-def get_codelists_from_schema(schema_content, pointer=''):
+def get_codelists_from_schema(schema_content, pointer=""):
     """
     Gets the value of `codelist` properties and accompanying `enum`s from the schema.
     Adapted from JSCC: https://github.com/open-contracting/jscc/blob/main/jscc/testing/checks.py#L696C5-L712C25
@@ -260,13 +264,13 @@ def get_codelists_from_schema(schema_content, pointer=''):
 
     if isinstance(schema_content, list):
         for index, item in enumerate(schema_content):
-            codelists.update(get_codelists_from_schema(item, pointer=f'{pointer}/{index}'))
+            codelists.update(get_codelists_from_schema(item, pointer=f"{pointer}/{index}"))
     elif isinstance(schema_content, dict):
-        if 'codelist' in schema_content:
-            codelists[schema_content.get('codelist')] = schema_content.get('enum')
+        if "codelist" in schema_content:
+            codelists[schema_content.get("codelist")] = schema_content.get("enum")
 
         for key, value in schema_content.items():
-            codelists.update(get_codelists_from_schema(value, pointer=f'{pointer}/{key}'))
+            codelists.update(get_codelists_from_schema(value, pointer=f"{pointer}/{key}"))
 
     return codelists
 
@@ -287,14 +291,27 @@ def validate_metadata_presence(*args, allow_missing=_false):
     This is copied from JSCC to patch oneOf/anyOf/allOf/if/then/else properties being flagged by this.
     TODO: see if this should be fixed in JSCC directly.
     """  # noqa: E501
-    schema_fields = {'definitions', '$defs', 'deprecated', 'items', 'patternProperties', 'properties', 'oneOf', 'anyOf', 'allOf', 'if', 'then', 'else'}
-    schema_sections = {'patternProperties', 'properties', 'anyOf', 'allOf', 'if', 'then', 'else', 'oneOf'}
-    required_properties = {'title', 'description'}
+    schema_fields = {
+        "definitions",
+        "$defs",
+        "deprecated",
+        "items",
+        "patternProperties",
+        "properties",
+        "oneOf",
+        "anyOf",
+        "allOf",
+        "if",
+        "then",
+        "else",
+    }
+    schema_sections = {"patternProperties", "properties", "anyOf", "allOf", "if", "then", "else", "oneOf"}
+    required_properties = {"title", "description"}
 
     def block(path, data, pointer):
         errors = 0
 
-        parts = pointer.rsplit('/')
+        parts = pointer.rsplit("/")
         if len(parts) >= 3:
             grandparent = parts[-2]
         else:
@@ -305,11 +322,17 @@ def validate_metadata_presence(*args, allow_missing=_false):
         if parent not in schema_fields and grandparent not in schema_sections:
             for prop in required_properties:
                 # If a field has `$ref`, then its `title` and `description` might defer to the reference.
-                if is_missing_property(data, prop) and '$ref' not in data and not allow_missing(pointer):
+                if is_missing_property(data, prop) and "$ref" not in data and not allow_missing(pointer):
                     errors += 1
                     warn(f'{path} is missing "{prop}" at {pointer}', MetadataPresenceWarning)
 
-            if 'type' not in data and '$ref' not in data and 'oneOf' not in data and '$defs' not in data and not allow_missing(pointer):
+            if (
+                "type" not in data
+                and "$ref" not in data
+                and "oneOf" not in data
+                and "$defs" not in data
+                and not allow_missing(pointer)
+            ):
                 errors += 1
                 warn(f'{path} is missing "type" or "$ref" or "oneOf" at {pointer}', MetadataPresenceWarning)
 
