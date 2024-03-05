@@ -6,7 +6,6 @@ from jscc.testing.checks import (
     validate_array_items,
     validate_items_type,
     validate_letter_case,
-    # validate_metadata_presence,
     validate_null_type,
 )
 

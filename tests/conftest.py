@@ -17,26 +17,42 @@ from referencing.jsonschema import DRAFT202012
 """
 The fixtures in this file are automatically discovered by pytest without
 needing to import them in the test files.
+
+After the pytest fixtures are helper functions used by the fixtures, or
+sometimes the tests directly.
 """
 
 
 @pytest.fixture
 def schema_dir():
+    """
+    Makes the directory the schema files are in available to tests.
+    """
     return get_schema_dir()
 
 
 @pytest.fixture
 def codelists_dir():
+    """
+    Makes the directory the cdoeslists are in available to tests.
+    """
     return os.path.join(get_schema_dir(), "codelists")
 
 
 @pytest.fixture
 def examples_dir():
+    """
+    Makes the directory the example files are in available to tests.
+    """
     return get_examples_dir()
 
 
 @pytest.fixture
 def schema_from_registry(request):
+    """
+    Fetches a schema from the registry by id.
+    `request.param` should be the value of `$id` in the schema.
+    """
     registry = schema_registry()
     return registry.contents(request.param)
 
@@ -125,10 +141,10 @@ def codelist_values():
     """
     codelists = {}
     schema_paths = get_schema_paths()
-    for path, name, data in schema_paths:
+    for _, _, data in schema_paths:
         codelists.update(get_codelists_from_schema(data))
 
-    codelist_names = [name for name in codelists.keys()]
+    codelist_names = list(codelists.keys())
     return codelist_names
 
 
@@ -173,11 +189,6 @@ def get_invalid_data():
     return data
 
 
-"""
-Helper functions used by the fixtures, or sometimes the tests directly.
-"""
-
-
 def get_json_files(dir):
     """
     Recursively gets files with .json extension in `path` and returns
@@ -207,24 +218,36 @@ def codelist_id(codelist_data):
 
 
 def get_schema_dir():
+    """
+    Assumes the schema directory is /schema
+    """
     here = os.path.dirname(os.path.realpath(__file__))
     schema_dir = os.path.join(here, "..", "schema")
     return schema_dir
 
 
 def get_examples_dir():
+    """
+    Assumes the examples directory is /examples
+    """
     here = os.path.dirname(os.path.realpath(__file__))
     schema_dir = os.path.join(here, "..", "examples")
     return schema_dir
 
 
 def get_test_data_dir():
+    """
+    Assumes the data for the tests is in /tests/data
+    """
     here = os.path.dirname(os.path.realpath(__file__))
     data_dir = os.path.join(here, "data")
     return data_dir
 
 
 def get_schema_paths():
+    """
+    Returns an array of paths, filenames, and contents (parsed JSON) for each of the schema files.
+    """
     schema_dir = get_schema_dir()
     schema_paths = [
         (path, name, data) for path, name, _, data in walk_json_data(top=schema_dir) if is_json_schema(data)
@@ -233,6 +256,9 @@ def get_schema_paths():
 
 
 def get_codelist_paths():
+    """
+    Returns an array of paths, filenames and contents for each codelist in the codelists directory.
+    """
     codelists_dir = os.path.join(get_schema_dir(), "codelists")
     codelist_paths = [
         (path, name, text, fieldnames, rows)
@@ -248,7 +274,7 @@ def schema_registry():
     validator can resolve $refs across all of the schema files.
     """
     schemas = []
-    for path, name, schema in get_schema_paths():
+    for _, _, schema in get_schema_paths():
         schemas.append((schema.get("$id"), Resource(contents=schema, specification=DRAFT202012)))
 
     registry = Registry().with_resources(schemas)

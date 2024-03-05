@@ -22,7 +22,7 @@ def test_examples_empty(examples_dir):
     errors = False
     empties = get_empty_files(top=examples_dir)
     for path in empties:
-        warnings.warn(f"ERROR: Empty file at {path}")
+        warnings.warn(f"ERROR: Empty file at {path}", stacklevel=1)
         errors = True
 
     assert not errors, "Empty files found, see warnings."
@@ -35,7 +35,7 @@ def test_examples_indent(examples_dir):
     errors = False
     misindented = get_misindented_files(top=examples_dir)
     for path in misindented:
-        warnings.warn(f"ERROR: Misindented files at {path}")
+        warnings.warn(f"ERROR: Misindented files at {path}", stacklevel=1)
         errors = True
 
     assert not errors, "Misindented files found, see warnings."
@@ -48,7 +48,7 @@ def test_examples_valid_json(examples_dir):
     errors = False
     invalid = get_invalid_json_files(top=examples_dir)
     for path in invalid:
-        warnings.warn(f"ERROR: Invalid JSON at {path}")
+        warnings.warn(f"ERROR: Invalid JSON at {path}", stacklevel=1)
         errors = True
 
     assert not errors, "Invalid JSON found, see warnings."
@@ -61,8 +61,9 @@ def test_examples_valid_bods(bods_validator, bods_json):
     """
     is_valid = bods_validator.is_valid(bods_json)
 
-    # Uncomment this if your example data is failling but you don't know why
-    # The validation errors will appear in the test output
+    # Uncomment below if your example data is failing but you don't know why
+    # so the validation errors will appear in the test output
+
     # if not is_valid:
     #     errors = bods_validator.iter_errors(bods_json)
     #     for error in errors:
