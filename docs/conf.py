@@ -158,7 +158,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'BeneficialOwnershipDataStandard_v_0_3.tex', 'Beneficial Ownership Data Standard (v0.3) Documentation',
+    (master_doc, 'BeneficialOwnershipDataStandard_v_0_3.tex',
+     'Beneficial Ownership Data Standard (v0.3) Documentation',
      'Open Ownership', 'manual'),
 ]
 
@@ -185,7 +186,7 @@ texinfo_documents = [
 ]
 
 
-# Adapted from https://github.com/OpenDataServices/sphinxcontrib-opendataservices/blob/master/sphinxcontrib/opendataservices.py#L50
+# Adapted from https://github.com/OpenDataServices/sphinxcontrib-opendataservices/blob/master/sphinxcontrib/opendataservices.py#L50 # noqa: E501
 # Should eventually move into there
 class JSONValue(LiteralInclude):
     option_spec = {
