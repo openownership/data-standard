@@ -1,0 +1,65 @@
+[
+  {
+    "statementId": "60bb3996-b434-4377-930b-39972c65b400",
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Listed Company 17"
+        }
+      ]
+    },
+    "declarationSubject": "4c7ea3bfbe6c",
+    "statementDate": "2019-05-05",
+    "publicationDetails": {
+      "publicationDate": "2019-06-13",
+      "publisher": {
+        "name": "Example Register"
+      },
+      "bodsVersion": "0.4"
+    },
+    "recordId": "4c7ea3bfbe6c",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": "registeredEntity",
+      "name": "Listed Company OS-17",
+      "identifiers": [
+        {
+          "scheme": "GB-COH",
+          "id": "XE000017"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "5b7273f7-6ca1-40f3-9146-646ce0f8b03e",
+    "source": {
+      "assertedBy": [
+        {
+          "name": "Listed Company 17"
+        }
+      ]
+    },
+    "declarationSubject": "4c7ea3bfbe6c",
+    "statementDate": "2019-05-10",
+    "publicationDetails": {
+      "publicationDate": "2019-06-13",
+      "publisher": {
+        "name": "Example Register"
+      },
+      "bodsVersion": "0.4"
+    },
+    "recordId": "fa402c4818f9",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "isComponent": false,
+      "subject": "4c7ea3bfbe6c",
+      "interestedParty": {
+        "reason": "subjectExemptFromDisclosure",
+        "description": "Exempt from disclosure as a company listed on a recognised stock exchange"
+      }
+    }
+  }
+]

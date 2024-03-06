@@ -1,179 +1,202 @@
 [
   {
-    "statementID": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
-    "statementType": "entityStatement",
-    "isComponent": false,
+    "statementId": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
+    "declarationSubject": "31c55e425764",
     "statementDate": "2017-11-18",
-    "entityType": "registeredEntity",
-    "name": "CHRINON LTD",
-    "foundingDate": "2010-11-18",
-    "identifiers": [
-      {
-        "scheme": "GB-COH",
-        "id": "07444723"
-      }
-    ],
-    "addresses": [
-      {
-        "type": "registered",
-        "address": "Aston House, Cornwall Avenue, London, N3 1LF",
-        "country": "GB",
-        "postCode": "N3 1LF"
-      }
-    ],
-    "jurisdiction": {
-      "code": "GB",
-      "name": "United Kingdom of Great Britain and Northern Ireland (the)"
-    },
     "publicationDetails": {
       "publicationDate": "2018-11-18",
       "bodsVersion": "0.4",
       "publisher": {
         "name": "CHRINON LTD"
       }
-    }
-  },
-  {
-    "statementID": "26e786f0-54c5-497d-a52d-b83439ce3dad",
-    "statementType": "entityStatement",
-    "isComponent": false,
-    "statementDate": "2018-01-05",
-    "entityType": "arrangement",
-    "name": "Joint shareholding",
-    "publicationDetails": {
-      "publicationDate": "2018-11-18",
-      "bodsVersion": "0.4",
-      "publisher": {
-        "name": "CHRINON LTD"
-      }
-    }
-  },
-  {
-    "statementID": "676ce2ec-e244-409e-85f9-9823e88bc099",
-    "statementType": "ownershipOrControlStatement",
-    "isComponent": false,
-    "statementDate": "2018-01-05",
-    "subject": {
-      "describedByEntityStatement": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7"
     },
-    "interestedParty": {
-      "describedByEntityStatement": "26e786f0-54c5-497d-a52d-b83439ce3dad"
-    },
-    "interests": [
-      {
-        "type": "shareholding",
-        "directOrIndirect": "direct",
-        "beneficialOwnershipOrControl": false,
-        "startDate": "2018-01-01",
-        "share": {
-          "exact": 100
+    "recordId": "31c55e425764",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": "registeredEntity",
+      "name": "CHRINON LTD",
+      "foundingDate": "2010-11-18",
+      "identifiers": [
+        {
+          "scheme": "GB-COH",
+          "id": "07444723"
         }
-      }
-    ],
-    "publicationDetails": {
-      "publicationDate": "2018-11-18",
-      "bodsVersion": "0.4",
-      "publisher": {
-        "name": "CHRINON LTD"
-      }
-    }
-  },
-  {
-    "statementID": "17bfeb0d-4a63-41d3-814d-b8a54c81a1f",
-    "statementType": "personStatement",
-    "isComponent": false,
-    "personType": "knownPerson",
-    "statementDate": "2018-01-05",
-    "names": [
-      {
-        "fullName": "Natalie Coleman"
-      }
-    ],
-    "publicationDetails": {
-      "publicationDate": "2018-11-18",
-      "bodsVersion": "0.4",
-      "publisher": {
-        "name": "CHRINON LTD"
-      }
-    }
-  },
-  {
-    "statementID": "d1eb52de-ff02-4690-8359-f4bbf9c128b1",
-    "statementType": "personStatement",
-    "isComponent": false,
-    "personType": "knownPerson",
-    "statementDate": "2018-01-05",
-    "names": [
-      {
-        "fullName": "Roberto López"
-      }
-    ],
-    "publicationDetails": {
-      "publicationDate": "2018-11-18",
-      "bodsVersion": "0.4",
-      "publisher": {
-        "name": "CHRINON LTD"
-      }
-    }
-  },
-  {
-    "statementID": "c222fe05-2bf3-4cc0-b126-f665109d7211",
-    "statementType": "ownershipOrControlStatement",
-    "isComponent": false,
-    "statementDate": "2018-01-05",
-    "subject": {
-      "describedByEntityStatement": "26e786f0-54c5-497d-a52d-b83439ce3dad"
-    },
-    "interestedParty": {
-      "describedByPersonStatement": "17bfeb0d-4a63-41d3-814d-b8a54c81a1f"
-    },
-    "interests": [
-      {
-        "type": "shareholding",
-        "directOrIndirect": "direct",
-        "beneficialOwnershipOrControl": true,
-        "startDate": "2018-01-01",
-        "share": {
-          "exact": 50
+      ],
+      "addresses": [
+        {
+          "type": "registered",
+          "address": "Aston House, Cornwall Avenue, London, N3 1LF",
+          "country": "GB",
+          "postCode": "N3 1LF"
         }
-      }
-    ],
-    "publicationDetails": {
-      "publicationDate": "2018-11-18",
-      "bodsVersion": "0.4",
-      "publisher": {
-        "name": "CHRINON LTD"
+      ],
+      "jurisdiction": {
+        "code": "GB",
+        "name": "United Kingdom of Great Britain and Northern Ireland (the)"
       }
     }
   },
   {
-    "statementID": "c222fe05-2bf3-4cc0-b126-f665109d7211",
-    "statementType": "ownershipOrControlStatement",
-    "isComponent": false,
+    "statementId": "26e786f0-54c5-497d-a52d-b83439ce3dad",
+    "declarationSubject": "31c55e425764",
     "statementDate": "2018-01-05",
-    "subject": {
-      "describedByEntityStatement": "26e786f0-54c5-497d-a52d-b83439ce3dad"
-    },
-    "interestedParty": {
-      "describedByPersonStatement": "d1eb52de-ff02-4690-8359-f4bbf9c128b1"
-    },
-    "interests": [
-      {
-        "type": "shareholding",
-        "directOrIndirect": "direct",
-        "beneficialOwnershipOrControl": true,
-        "startDate": "2018-01-01",
-        "share": {
-          "exact": 50
-        }
-      }
-    ],
     "publicationDetails": {
       "publicationDate": "2018-11-18",
       "bodsVersion": "0.4",
       "publisher": {
         "name": "CHRINON LTD"
       }
+    },
+    "recordId": "31c55e425764",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": "arrangement",
+      "name": "Joint shareholding"
+    }
+  },
+  {
+    "statementId": "676ce2ec-e244-409e-85f9-9823e88bc099",
+    "declarationSubject": "31c55e425764",
+    "statementDate": "2018-01-05",
+    "publicationDetails": {
+      "publicationDate": "2018-11-18",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
+    },
+    "recordId": "2670f25aee62",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "isComponent": false,
+      "subject": "31c55e425764",
+      "interestedParty": "31c55e425764",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": false,
+          "startDate": "2018-01-01",
+          "share": {
+            "exact": 100
+          }
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "17bfeb0d-4a63-41d3-814d-b8a54c81a1f",
+    "declarationSubject": "31c55e425764",
+    "statementDate": "2018-01-05",
+    "publicationDetails": {
+      "publicationDate": "2018-11-18",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
+    },
+    "recordId": "1accb8b18b99",
+    "recordStatus": "new",
+    "recordType": "person",
+    "recordDetails": {
+      "isComponent": false,
+      "personType": "knownPerson",
+      "names": [
+        {
+          "fullName": "Natalie Coleman"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "d1eb52de-ff02-4690-8359-f4bbf9c128b1",
+    "declarationSubject": "31c55e425764",
+    "statementDate": "2018-01-05",
+    "publicationDetails": {
+      "publicationDate": "2018-11-18",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
+    },
+    "recordId": "f040df24d9ec",
+    "recordStatus": "new",
+    "recordType": "person",
+    "recordDetails": {
+      "isComponent": false,
+      "personType": "knownPerson",
+      "names": [
+        {
+          "fullName": "Roberto Lopez"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "c222fe05-2bf3-4cc0-b126-f665109d7211",
+    "declarationSubject": "31c55e425764",
+    "statementDate": "2018-01-05",
+    "publicationDetails": {
+      "publicationDate": "2018-11-18",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
+    },
+    "recordId": "a86c50f8b3dd",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "isComponent": false,
+      "subject": "31c55e425764",
+      "interestedParty": "1accb8b18b99",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": true,
+          "startDate": "2018-01-01",
+          "share": {
+            "exact": 50
+          }
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "c222fe05-2bf3-4cc0-b126-f665109d7211",
+    "declarationSubject": "31c55e425764",
+    "statementDate": "2018-01-05",
+    "publicationDetails": {
+      "publicationDate": "2018-11-18",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
+    },
+    "recordId": "b391a41da07e",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "isComponent": false,
+      "subject": "31c55e425764",
+      "interestedParty": "f040df24d9ec",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": true,
+          "startDate": "2018-01-01",
+          "share": {
+            "exact": 50
+          }
+        }
+      ]
     }
   }
 ]

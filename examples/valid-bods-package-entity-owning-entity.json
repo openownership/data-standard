@@ -1,0 +1,86 @@
+[
+  {
+    "statementId": "ba2fcf1e-04d2-40ef-8508-d633404b43aa",
+    "declarationSubject": "12b7dd0770ce",
+    "statementDate": "2017-06-30",
+    "publicationDetails": {
+      "publicationDate": "2018-05-31",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "JENEX LIMITED"
+      }
+    },
+    "recordId": "12b7dd0770ce",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": "registeredEntity",
+      "name": "JENEX LIMITED",
+      "foundingDate": "1996-06-10",
+      "identifiers": [
+        {
+          "scheme": "GB-COH",
+          "id": "03209885"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "d36e6807-020c-4fb5-a0d4-5ab9eb971514",
+    "declarationSubject": "12b7dd0770ce",
+    "statementDate": "2017-08-09",
+    "publicationDetails": {
+      "publicationDate": "2018-05-31",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "JENEX LIMITED"
+      }
+    },
+    "recordId": "12b7dd0770ce",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": "registeredEntity",
+      "name": "MVJ LIMITED",
+      "foundingDate": "2012-07-19",
+      "identifiers": [
+        {
+          "scheme": "GB-COH",
+          "id": "08150312"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "85e7cbb2-992d-4bd2-a2f7-1274b1137f6d",
+    "declarationSubject": "12b7dd0770ce",
+    "statementDate": "2016-06-30",
+    "publicationDetails": {
+      "publicationDate": "2018-05-31",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "JENEX LIMITED"
+      }
+    },
+    "recordId": "0f31559c6eec",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "isComponent": false,
+      "subject": "12b7dd0770ce",
+      "interestedParty": "12b7dd0770ce",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "direct",
+          "share": {
+            "minimum": 75,
+            "exclusiveMaximum": 100
+          }
+        }
+      ]
+    }
+  }
+]
