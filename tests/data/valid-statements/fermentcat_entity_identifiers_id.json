@@ -9,7 +9,8 @@
             "entityType": "registeredEntity",
             "identifiers": [
                 {
-                    "id": "434151"
+                    "id": "434151",
+                    "scheme": "IE-BAU"
                 }
             ]
         }

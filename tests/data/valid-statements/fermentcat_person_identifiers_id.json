@@ -9,7 +9,8 @@
             "personType": "knownPerson",
             "identifiers": [
                 {
-                    "id": "7700225VH"
+                    "id": "7700225VH",
+                    "scheme": "IE-TAXID"
                 }
             ]
         }
