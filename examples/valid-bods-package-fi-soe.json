@@ -1,0 +1,352 @@
+[
+  {
+    "statementId": "xregi-es-00002247037980570744606",
+    "source": {
+      "type": [
+        "primaryResearch"
+      ]
+    },
+    "declarationSubject": "19f1c5afe9d7",
+    "statementDate": "2022-02-14",
+    "publicationDetails": {
+      "publicationDate": "2022-04-01",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
+      "publisher": {
+        "name": "X Register",
+        "url": "http://www.register.example"
+      }
+    },
+    "recordId": "19f1c5afe9d7",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": "registeredEntity",
+      "name": "Gasgrid Finland Oy",
+      "jurisdiction": {
+        "name": "Finland",
+        "code": "FI"
+      },
+      "identifiers": [
+        {
+          "id": "3007894-1",
+          "scheme": "FI-PRO"
+        }
+      ],
+      "foundingDate": "2020-01-01"
+    }
+  },
+  {
+    "statementId": "xregi-es-00008546493688880044606",
+    "source": {
+      "type": [
+        "primaryResearch"
+      ]
+    },
+    "declarationSubject": "19f1c5afe9d7",
+    "statementDate": "2022-02-14",
+    "publicationDetails": {
+      "publicationDate": "2022-04-01",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
+      "publisher": {
+        "name": "X Register",
+        "url": "http://www.register.example"
+      }
+    },
+    "recordId": "0199c515a699",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": true,
+      "entityType": "registeredEntity",
+      "name": "Suomen Kaasuverkko Oy",
+      "jurisdiction": {
+        "name": "Finland",
+        "code": "FI"
+      },
+      "identifiers": [
+        {
+          "id": "3010424-9",
+          "scheme": "FI-PRO"
+        }
+      ],
+      "foundingDate": "2020-01-01"
+    }
+  },
+  {
+    "statementId": "xregi-es-00001461827397290944606",
+    "source": {
+      "type": [
+        "primaryResearch"
+      ]
+    },
+    "declarationSubject": "19f1c5afe9d7",
+    "statementDate": "2022-02-14",
+    "publicationDetails": {
+      "publicationDate": "2022-04-01",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
+      "publisher": {
+        "name": "X Register",
+        "url": "http://www.register.example"
+      }
+    },
+    "recordId": "7ff95ba3682c",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": true,
+      "entityType": "stateBody",
+      "entitySubtype": {
+        "generalCategory": "stateBody-governmentDepartment",
+        "localTerm": "ministerio"
+      },
+      "name": "Valtiovarainministerio",
+      "alternateNames": [
+        "Finansministeriet"
+      ],
+      "jurisdiction": {
+        "name": "Finland",
+        "code": "FI"
+      }
+    }
+  },
+  {
+    "statementId": "xregi-es-00000683117111100044606",
+    "source": {
+      "type": [
+        "primaryResearch"
+      ]
+    },
+    "declarationSubject": "19f1c5afe9d7",
+    "statementDate": "2022-02-14",
+    "publicationDetails": {
+      "publicationDate": "2022-04-01",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
+      "publisher": {
+        "name": "X Register",
+        "url": "http://www.register.example"
+      }
+    },
+    "recordId": "19f1c5afe9d7",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": "state",
+      "name": "Suomen tasavalta",
+      "alternateNames": [
+        "Republic of Finland"
+      ],
+      "jurisdiction": {
+        "name": "Finland",
+        "code": "FI"
+      }
+    }
+  },
+  {
+    "statementId": "xregi-oocs-00000384456595684844606",
+    "source": {
+      "type": [
+        "primaryResearch"
+      ]
+    },
+    "declarationSubject": "19f1c5afe9d7",
+    "statementDate": "2022-02-14",
+    "publicationDetails": {
+      "publicationDate": "2022-04-01",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
+      "publisher": {
+        "name": "X Register",
+        "url": "http://www.register.example"
+      }
+    },
+    "recordId": "87ed6d1daf8f",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "subject": "19f1c5afe9d7",
+      "interestedParty": "0199c515a699",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": false,
+          "share": {
+            "exact": 76.5,
+            "maximum": 76.5,
+            "minimum": 76.5
+          },
+          "startDate": "2020-01-01"
+        }
+      ],
+      "isComponent": true
+    }
+  },
+  {
+    "statementId": "xregi-oocs-00004319992040145444606",
+    "source": {
+      "type": [
+        "primaryResearch"
+      ]
+    },
+    "declarationSubject": "19f1c5afe9d7",
+    "statementDate": "2022-02-14",
+    "publicationDetails": {
+      "publicationDate": "2022-04-01",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
+      "publisher": {
+        "name": "X Register",
+        "url": "http://www.register.example"
+      }
+    },
+    "recordId": "e34164e75ac3",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "subject": "0199c515a699",
+      "interestedParty": "7ff95ba3682c",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": false,
+          "share": {
+            "exact": 100,
+            "maximum": 100,
+            "minimum": 100
+          },
+          "startDate": "2020-01-01"
+        }
+      ],
+      "isComponent": true
+    }
+  },
+  {
+    "statementId": "xregi-oocs-00007980570744606044606",
+    "source": {
+      "type": [
+        "primaryResearch"
+      ]
+    },
+    "declarationSubject": "19f1c5afe9d7",
+    "statementDate": "2022-02-14",
+    "publicationDetails": {
+      "publicationDate": "2022-04-01",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
+      "publisher": {
+        "name": "X Register",
+        "url": "http://www.register.example"
+      }
+    },
+    "recordId": "10643ee6d6fa",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "subject": "19f1c5afe9d7",
+      "interestedParty": "7ff95ba3682c",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": false,
+          "share": {
+            "exact": 23.5,
+            "maximum": 23.5,
+            "minimum": 23.5
+          },
+          "startDate": "2020-01-01"
+        }
+      ],
+      "isComponent": true
+    }
+  },
+  {
+    "statementId": "xregi-oocs-00000137020039066644606",
+    "source": {
+      "type": [
+        "primaryResearch"
+      ]
+    },
+    "declarationSubject": "19f1c5afe9d7",
+    "statementDate": "2022-02-14",
+    "publicationDetails": {
+      "publicationDate": "2022-04-01",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
+      "publisher": {
+        "name": "X Register",
+        "url": "http://www.register.example"
+      }
+    },
+    "recordId": "324d0f570675",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "subject": "7ff95ba3682c",
+      "interestedParty": "19f1c5afe9d7",
+      "interests": [
+        {
+          "type": "otherInfluenceOrControl",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": false
+        }
+      ],
+      "isComponent": true
+    }
+  },
+  {
+    "statementId": "xregi-oocs-00005576684893527244606",
+    "source": {
+      "type": [
+        "primaryResearch"
+      ]
+    },
+    "declarationSubject": "19f1c5afe9d7",
+    "statementDate": "2022-02-14",
+    "publicationDetails": {
+      "publicationDate": "2022-04-01",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/licenses/by/2.0/legalcode",
+      "publisher": {
+        "name": "X Register",
+        "url": "http://www.register.example"
+      }
+    },
+    "recordId": "e8ddaee2a7a4",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "subject": "19f1c5afe9d7",
+      "interestedParty": "19f1c5afe9d7",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "indirect",
+          "beneficialOwnershipOrControl": false,
+          "share": {
+            "exact": 100,
+            "maximum": 100,
+            "minimum": 100
+          },
+          "startDate": "2020-01-01"
+        }
+      ],
+      "isComponent": false,
+      "componentRecords": [
+        "xregi-oocs-00000384456595684844606",
+        "xregi-oocs-00004319992040145444606",
+        "xregi-oocs-00007980570744606044606",
+        "xregi-oocs-00000137020039066644606",
+        "xregi-es-00008546493688880044606",
+        "xregi-es-00001461827397290944606"
+      ]
+    }
+  }
+]

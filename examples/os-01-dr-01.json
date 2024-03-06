@@ -1,18 +1,8 @@
 [
   {
-    "statementID": "a7b06b12-f5ff-49ff-a83f-41b2883d229b",
-    "statementType": "entityStatement",
-    "isComponent": false,
+    "statementId": "a7b06b12-f5ff-49ff-a83f-41b2883d229b",
+    "declarationSubject": "fd5c8dbc9a91",
     "statementDate": "2019-05-15",
-    "entityType": "registeredEntity",
-    "name": "Company A",
-    "foundingDate": "2019-01-01",
-    "identifiers": [
-      {
-        "scheme": "GB-COH",
-        "id": "XE-A-01"
-      }
-    ],
     "publicationDetails": {
       "publicationDate": "2019-05-15",
       "bodsVersion": "0.4",
@@ -21,81 +11,27 @@
         "name": "A. Aygun",
         "url": "http://www.aaygun.com/real-owners-project"
       }
-    }
-  },
-  {
-    "statementID": "60f05827-bbb0-4397-9dbd-5031dd3e49d9",
-    "statementType": "personStatement",
-    "isComponent": false,
-    "statementDate": "2017-11-18",
-    "personType": "knownPerson",
-    "nationalities": [
-      {
-        "code": "GB",
-        "name": "United Kingdom of Great Britain and Northern Ireland (the)"
-      }
-    ],
-    "taxResidencies": [
-      {
-        "code": "GB",
-        "name": "United Kingdom of Great Britain and Northern Ireland (the)"
-      },
-      {
-        "code": "UA",
-        "name": "Ukraine"
-      }
-    ],
-    "names": [
-      {
-        "type": "individual",
-        "fullName": "Logan Morton",
-        "givenName": "Logan",
-        "familyName": "Morton"
-      }
-    ],
-    "birthDate": "1975-01",
-    "addresses": [
-      {
-        "type": "service",
-        "address": "52  Front St, London",
-        "country": "GB",
-        "postCode": "SE16 2WN"
-      }
-    ],
-    "publicationDetails": {
-      "publicationDate": "2019-05-15",
-      "bodsVersion": "0.4",
-      "license": "https://opendatacommons.org/licenses/pddl/1.0/",
-      "publisher": {
-        "name": "A. Aygun",
-        "url": "http://www.aaygun.com/real-owners-project"
-      }
-    }
-  },
-  {
-    "statementID": "069675f7-d44b-4c52-b9c3-c9e4f160228e",
-    "statementType": "ownershipOrControlStatement",
-    "isComponent": false,
-    "statementDate": "2017-11-18",
-    "subject": {
-      "describedByEntityStatement": "a7b06b12-f5ff-49ff-a83f-41b2883d229b"
     },
-    "interestedParty": {
-      "describedByPersonStatement": "60f05827-bbb0-4397-9dbd-5031dd3e49d9"
-    },
-    "interests": [
-      {
-        "type": "shareholding",
-        "directOrIndirect": "direct",
-        "beneficialOwnershipOrControl": true,
-        "startDate": "2016-04-06",
-        "share": {
-          "exact": 100,
-          "minimum": 100,
-          "maximum": 100
+    "recordId": "fd5c8dbc9a91",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": "registeredEntity",
+      "name": "Company A",
+      "foundingDate": "2019-01-01",
+      "identifiers": [
+        {
+          "scheme": "GB-COH",
+          "id": "XE-A-01"
         }
-      }
-    ],
+      ]
+    }
+  },
+  {
+    "statementId": "60f05827-bbb0-4397-9dbd-5031dd3e49d9",
+    "declarationSubject": "fd5c8dbc9a91",
+    "statementDate": "2017-11-18",
     "publicationDetails": {
       "publicationDate": "2019-05-15",
       "bodsVersion": "0.4",
@@ -104,6 +40,81 @@
         "name": "A. Aygun",
         "url": "http://www.aaygun.com/real-owners-project"
       }
+    },
+    "recordId": "8f2f34b57a8f",
+    "recordStatus": "new",
+    "recordType": "person",
+    "recordDetails": {
+      "isComponent": false,
+      "personType": "knownPerson",
+      "nationalities": [
+        {
+          "code": "GB",
+          "name": "United Kingdom of Great Britain and Northern Ireland (the)"
+        }
+      ],
+      "taxResidencies": [
+        {
+          "code": "GB",
+          "name": "United Kingdom of Great Britain and Northern Ireland (the)"
+        },
+        {
+          "code": "UA",
+          "name": "Ukraine"
+        }
+      ],
+      "names": [
+        {
+          "type": "individual",
+          "fullName": "Logan Morton",
+          "givenName": "Logan",
+          "familyName": "Morton"
+        }
+      ],
+      "birthDate": "1975-01",
+      "addresses": [
+        {
+          "type": "service",
+          "address": "52  Front St, London",
+          "country": "GB",
+          "postCode": "SE16 2WN"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "069675f7-d44b-4c52-b9c3-c9e4f160228e",
+    "declarationSubject": "fd5c8dbc9a91",
+    "statementDate": "2017-11-18",
+    "publicationDetails": {
+      "publicationDate": "2019-05-15",
+      "bodsVersion": "0.4",
+      "license": "https://opendatacommons.org/licenses/pddl/1.0/",
+      "publisher": {
+        "name": "A. Aygun",
+        "url": "http://www.aaygun.com/real-owners-project"
+      }
+    },
+    "recordId": "97f71c8e649c",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "isComponent": false,
+      "subject": "fd5c8dbc9a91",
+      "interestedParty": "8f2f34b57a8f",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": true,
+          "startDate": "2016-04-06",
+          "share": {
+            "exact": 100,
+            "minimum": 100,
+            "maximum": 100
+          }
+        }
+      ]
     }
   }
 ]

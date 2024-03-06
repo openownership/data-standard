@@ -1,0 +1,105 @@
+[
+  {
+    "statementId": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
+    "declarationSubject": "c359f58d2977",
+    "statementDate": "2017-11-18",
+    "publicationDetails": {
+      "publicationDate": "2017-11-18",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
+    },
+    "recordId": "c359f58d2977",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": "registeredEntity",
+      "name": "CHRINON LTD",
+      "foundingDate": "2010-11-18",
+      "identifiers": [
+        {
+          "scheme": "GB-COH",
+          "id": "07444723"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "019a93f1-e470-42e9-957b-03559861b2e2",
+    "declarationSubject": "c359f58d2977",
+    "statementDate": "2017-11-18",
+    "publicationDetails": {
+      "publicationDate": "2017-11-18",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
+    },
+    "recordId": "10478c6cf6de",
+    "recordStatus": "new",
+    "recordType": "person",
+    "recordDetails": {
+      "isComponent": false,
+      "personType": "knownPerson",
+      "nationalities": [
+        {
+          "code": "GB",
+          "name": "United Kingdom of Great Britain and Northern Ireland (the)"
+        }
+      ],
+      "names": [
+        {
+          "type": "individual",
+          "fullName": "Christopher Taggart",
+          "givenName": "Christopher",
+          "familyName": "Taggart"
+        },
+        {
+          "type": "alternative",
+          "fullName": "Chris Taggart"
+        }
+      ],
+      "birthDate": "1964-04",
+      "addresses": [
+        {
+          "type": "service",
+          "address": "Aston House, Cornwall Avenue, London",
+          "country": "GB",
+          "postCode": "N3 1LF"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "fbfd0547-d0c6-4a00-b559-5c5e91c34f5c",
+    "declarationSubject": "c359f58d2977",
+    "statementDate": "2017-11-18",
+    "publicationDetails": {
+      "publicationDate": "2017-11-18",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "CHRINON LTD"
+      }
+    },
+    "recordId": "93b53022ae6a",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "recordDetails": {
+      "isComponent": false,
+      "subject": "c359f58d2977",
+      "interestedParty": "10478c6cf6de",
+      "interests": [
+        {
+          "type": "shareholding",
+          "directOrIndirect": "direct",
+          "startDate": "2016-04-06",
+          "share": {
+            "exact": 100
+          }
+        }
+      ]
+    }
+  }
+]
