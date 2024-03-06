@@ -9,6 +9,7 @@
             "personType": "knownPerson",
             "nationalities": [
                 {
+                    "name": "Iraq",
                     "code": "IQ"
                 }
             ]
