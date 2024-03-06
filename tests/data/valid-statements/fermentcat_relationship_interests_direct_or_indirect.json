@@ -6,6 +6,8 @@
         "declarationSubject": "ent-93c75c87ab28f889",
         "recordDetails": {
             "isComponent": false,
+            "subject": "ent-93c75c87ab28f889",
+            "interestedParty": "per-5faa4103dee78621",
             "interests": [
                 {
                     "directOrIndirect": "direct",
