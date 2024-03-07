@@ -94,7 +94,7 @@
     },
     "taxResidencies": {
       "title": "Tax residency",
-      "description": "An array of ISO 2-Digit country codes representing the tax residencies held by this individual.",
+      "description": "An array of Country objects representing the tax residencies held by this person.",
       "type": "array",
       "items": {
         "$ref": "urn:components#/$defs/Country"
