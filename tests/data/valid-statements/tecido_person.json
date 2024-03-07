@@ -28,7 +28,7 @@
             "personType": "knownPerson",
             "names": [
                 {
-                    "type": "individual",
+                    "type": "legal",
                     "fullName": "Maria Esteves",
                     "familyName": "Esteves",
                     "givenName": "Maria"
