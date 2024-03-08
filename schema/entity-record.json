@@ -254,26 +254,5 @@
         }
       }
     }
-  },
-  "if":{
-    "properties":{
-      "entitySubtype":{
-        "properties":{
-          "generalCategory":{
-            "const":"trust"
-          }
-        }
-      }
-    }
-  },
-  "then":{
-    "properties":{
-      "entityType":{
-        "enum":[
-          "arrangement",
-          "legalEntity"
-        ]
-      }
-    }
   }
 }
