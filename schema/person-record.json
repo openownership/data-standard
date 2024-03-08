@@ -154,7 +154,7 @@
           "description": "What kind of name is this? See the nameType codelist.",
           "type": "string",
           "enum": [
-            "individual",
+            "legal",
             "translation",
             "transliteration",
             "former",
