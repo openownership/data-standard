@@ -96,7 +96,7 @@
       "personType": "knownPerson",
       "names": [
         {
-          "type": "individual",
+          "type": "legal",
           "fullName": "Person 1"
         }
       ],

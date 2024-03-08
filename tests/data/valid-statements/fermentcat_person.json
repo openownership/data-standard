@@ -25,7 +25,7 @@
         "personType": "knownPerson",
         "names": [
             {
-                "type": "individual",
+                "type": "legal",
                 "fullName": "Riyadh Byrne-Amin",
                 "familyName": "Byrne-Amin",
                 "givenName": "Riyadh"
