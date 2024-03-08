@@ -100,7 +100,7 @@
       "isComponent": true,
       "entityType": "stateBody",
       "entitySubtype": {
-        "generalCategory": "stateBody-governmentDepartment",
+        "generalCategory": "governmentDepartment",
         "localTerm": "ministerio"
       },
       "name": "Valtiovarainministerio",
