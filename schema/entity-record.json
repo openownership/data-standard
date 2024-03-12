@@ -165,7 +165,7 @@
         "hasPublicListing": {
           "type": "boolean",
           "title": "Has public listing",
-          "description": "This value MUST be true if the entity is known to be a publicly listed company."
+          "description": "Whether the entity is a publicly listed company."
         },
         "companyFilingsURLs": {
           "type": "array",
