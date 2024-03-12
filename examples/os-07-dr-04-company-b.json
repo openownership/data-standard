@@ -15,14 +15,16 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
       "name": "Company B",
       "identifiers": [
         {
           "scheme": "UA-EDR",
           "id": "UA-XE-02"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {
@@ -73,14 +75,16 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": true,
-      "entityType": "registeredEntity",
       "name": "Company C",
       "identifiers": [
         {
           "scheme": "GB-COH",
           "id": "GB-XE-03"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {
@@ -99,14 +103,16 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": true,
-      "entityType": "registeredEntity",
       "name": "Company D",
       "identifiers": [
         {
           "scheme": "GB-COH",
           "id": "GB-XE-04"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {

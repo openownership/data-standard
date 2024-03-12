@@ -1,17 +1,19 @@
 [
-    {
-        "statementId": "2f7bf9370f1254068e5e946df067d07d",
-        "recordId": "ent-93c75c87ab28f889",
-        "recordType": "entity",
-        "declarationSubject": "ent-93c75c87ab28f889",
-        "recordDetails": {
-            "isComponent": false,
-            "entityType": "registeredEntity",
-            "addresses": [
-                {
-                    "postCode": "V94 V3VT"
-                }
-            ]
+  {
+    "statementId": "2f7bf9370f1254068e5e946df067d07d",
+    "recordId": "ent-93c75c87ab28f889",
+    "recordType": "entity",
+    "declarationSubject": "ent-93c75c87ab28f889",
+    "recordDetails": {
+      "isComponent": false,
+      "addresses": [
+        {
+          "postCode": "V94 V3VT"
         }
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
+  }
 ]

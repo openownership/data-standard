@@ -12,7 +12,7 @@
       "type": "boolean"
     },
     "entityType": {
-      "type": "object",
+      "entityType": "object",
       "title": "Type",
       "description": "The type of entity described in the statement.",
       "required": [
@@ -125,36 +125,6 @@
       "title": "Public listing",
       "description": "Details of a publicly listed company, its securities (shares and other tradable financial instruments related to the entity), and related regulatory filings.",
       "$ref": "#/$defs/PublicListing"
-    },
-    "entitySubtype": {
-      "type": "object",
-      "title": "Subtype",
-      "description": "Further information about the type of entity described in the statement.",
-      "required": [
-        "generalCategory"
-      ],
-      "properties": {
-        "generalCategory": {
-          "type": "string",
-          "title": "General category",
-          "description": "The general category into which the entity fits. The category classification MUST align with the `entityType` classification.",
-          "codelist": "entitySubtypeCategory.csv",
-          "enum": [
-            "governmentDepartment",
-            "stateAgency",
-            "other",
-            "trust",
-            "nomination"
-          ],
-          "openCodelist": false
-        },
-        "localTerm": {
-          "type": "string",
-          "title": "Local term",
-          "description": "The local term for the category of entity. For example, in Finland 'ministeriö' for a government department."
-        }
-      },
-      "propertyOrder": 5
     },
     "formedByStatute": {
       "type": "object",

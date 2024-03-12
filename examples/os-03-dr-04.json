@@ -15,14 +15,16 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
       "name": "Company A",
       "identifiers": [
         {
           "scheme": "GB-COH",
           "id": "XE9999"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {
@@ -41,14 +43,16 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": true,
-      "entityType": "registeredEntity",
       "name": "Company B",
       "identifiers": [
         {
           "scheme": "GB-COH",
           "id": "XE1010"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {

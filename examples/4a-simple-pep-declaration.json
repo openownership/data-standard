@@ -14,7 +14,6 @@
     "recordStatus": "new",
     "recordType": "entity",
     "recordDetails": {
-      "entityType": "registeredEntity",
       "isComponent": false,
       "name": "Platinum Emerald and Plutonim Mining Limited",
       "identifiers": [
@@ -22,7 +21,10 @@
           "scheme": "GB-COH",
           "id": "XE-000079054"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {
