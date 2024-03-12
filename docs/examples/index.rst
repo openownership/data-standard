@@ -16,8 +16,7 @@ A single direct owner
 
 The example below presents three statements (Entity, Person and OwnershipOrControl) that describe the 100% beneficial ownership of Chrinon Ltd by Chris Taggart. 
 
-.. literalinclude:: ../../examples/1-single-direct.json
-    :language: json
+-0.3 JSON EXAMPLE REMOVED SO DOCS BUILD-
 
 Joint ownership
 ---------------
@@ -37,7 +36,6 @@ In the (fictional) example below, the previous statement that Chris Taggart has 
 
 Note that only **changed statements** need to have new statement identifiers. 
 
-.. literalinclude:: ../../examples/2-single-update.json
-    :language: json
+-0.3 JSON EXAMPLE REMOVED SO DOCS BUILD-
 
 When a data file is provided, all the person or entity statements referenced from an ownershipOrControl statement ``subject`` or ``interestedParty`` field should be included in the file.

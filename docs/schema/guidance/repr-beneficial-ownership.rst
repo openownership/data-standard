@@ -24,8 +24,8 @@ In BODS, the following properties are used to represent such information disclos
 
 * ``beneficialOwnershipOrControl`` (See :ref:`schema-interest`)
 * ``directOrIndirect`` (See :ref:`schema-interest`)
-* ``componentStatementIDs`` (See :ref:`schema-ownership-or-control-statement`)
-* ``isComponent`` (See :ref:`schema-entity-statement`)
+* ``componentStatementIDs`` (See :ref:`schema-relationship-record`)
+* ``isComponent`` (See :ref:`schema-entity-record`)
 
 Requirements
 ------------------------

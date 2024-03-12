@@ -53,7 +53,7 @@ Country
 Entity Statement
 ----------------
 
-.. json-value:: ../_build_schema/eentity-record.json
+.. json-value:: ../_build_schema/entity-record.json
    :pointer: /description
 
 

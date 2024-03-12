@@ -19,7 +19,7 @@ In particular, the following properties and values SHOULD be used to represent i
 * ``entitySubtype`` SHOULD be used to refine the category of a given state body (as a 'government department', 'state agency' or 'other').
 * ``formedByStatute`` MAY be used to supply details of a law, where an entity has been formed as a result of specific legislation.
 
-For more details about these properties see :ref:`schema-entity-statement`.
+For more details about these properties see :ref:`schema-entity-record`.
 
 A number of scenarios are outlined below. We show how the these properties and others can be used to represent information about SOEs within a set of connected BODS statements. 
 
