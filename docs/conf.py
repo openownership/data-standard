@@ -33,7 +33,7 @@ from sphinx.directives.code import LiteralInclude
 
 import ocds_babel.translate as translate
 
-import oods.pygments
+# import oods.pygments
 import oods.sphinxtheme
 
 # -- General configuration ------------------------------------------------
