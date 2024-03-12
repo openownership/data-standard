@@ -10,7 +10,7 @@ The following is an A - Z guide to the objects of the Data Standard's schema, pl
 The top-level objects are :doc:`statements <concepts>`:
 
 - :any:`Ownership-or-control statements <schema-relationship-record>`
-- :any:`Entity statements <schema-eentity-record>`
+- :any:`Entity statements <schema-entity-record>`
 - :any:`Person statements <schema-person-record>`
 
 Statements are built up from a set of nested objects and properties, each of which has a field name, a title and a description that defines how the object or field should be used.
@@ -48,7 +48,7 @@ Country
    :pointer: /$defs/Country/description
 
 
-.. _schema-eentity-record:
+.. _schema-entity-record:
 
 Entity Statement
 ----------------
