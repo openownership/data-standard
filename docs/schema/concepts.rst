@@ -18,6 +18,8 @@ People or entities are obliged in some jurisdictions to disclose their beneficia
 
 .. figure:: ../_assets/key-concepts-img0.svg
    :alt: A labelled diagram of a beneficial ownership network. Labelled as 'Subject of beneficial ownership network' is Company E. Labelled as 'Direct relationship' is a solid line connected to Person 2. Labelled as 'Interest' is the text '32% shareholding' which sits on that solid line. Company E is also linked to Company A by a solid line. And Company A is linked to Person 1 by a solid line. Labelled as 'Indirect relationship' is a dotted line connecting Company E to Person 1. The text '45% shareholding' sits on that dotted line. Person 1 is labelled 'Beneficial owner'. Company A is labelled 'Intermediary entity'.
+   :figwidth: 85%
+   :align: center
 
 BODS Statements represent claims
 --------------------------------
@@ -30,6 +32,8 @@ The highest level object in a BODS dataset is a Statement. Each Statement repres
 
 .. figure:: ../_assets/key-concepts-img1.svg
    :alt: A relationship statement block (connecting a person and an entity) containing a source block with type-selfDeclaration and assertedBy value of Acme Industries Ltd. Statement also has statementDate of 2018-07-12
+   :figwidth: 50%
+   :align: center
 
 Representing beneficial ownership information in this way allows people to make sense of data received from multiple sources over extended periods of time. In particular, this model means that:
 
@@ -48,7 +52,7 @@ Data management systems need to maintain a unique ``recordId`` string for each p
 - linking entities and persons via relationships
 - publishing information updates
 
-See :ref:`record-identifiers` for full requirements.
+See :any:`record-identifiers` for full requirements.
 
 Linking entities and persons via relationships
 ++++++++++++++++++++++++++++++++++++++++++++++
@@ -57,6 +61,8 @@ Stable ``recordId`` values in BODS Statements allow the structure of beneficial 
 
 .. figure:: ../_assets/key-concepts-img2.svg
    :alt: A person node is connected via a solid line to an entity node. A person statement block sits next to the person node. A relationship statement block sits next to the solid line. An entity statement block sits next to the entity node. Within the person statement, recordType is 'person', the recordId is 'p24d78ae012f1', and the recordDetails show that the person's name is 'Lev Yotsky'. Within the relationship statement, the recordType is 'relationship' and the recordDetails show that the interestedParty is the record with recordId 'p24d78ae012f1' and the subject is the record with recordId 'e3f199ad8e312'. Within the entity statement, the recordType is 'entity', the recordId is 'e3f199ad8e312' and the recordDetails show that the entity is called 'White Flag Holdings Corp'. These elements represent Lev Yotsky's relationship with White Flag Holdings Corp.
+   :figwidth: 50%
+   :align: center
 
 The Relationship statement holds ``recordId`` values for the interested party and the subject of a relationship. 
 
@@ -69,6 +75,8 @@ People can then use ``recordId`` values to group Statements made over time to se
 
 .. figure:: ../_assets/key-concepts-img3.svg
    :alt: A person node is connected via a solid line to an entity node. A relationship statement block sits next to the solid line. A further two relationship statement blocks sit on top of the first. All three relationship statements have recordId 'r-d67fb1a-aa2f3da' and the recordDetails show that these statements are about a shareholding interest. The earliest relationship statement has statementDate '2018-07-12' and recordStatus 'new'. The next has statementDate '2019-11-01' and recordStatus 'updated'. And the final relationship statement has statementDate '2021-02-28' and recordStatus 'closed'.
+   :figwidth: 90%
+   :align: center
 
 Published BODS Statements build a write-only ledger, as new Statements are issued to amend or confirm details contained in older Statements.
 
@@ -90,4 +98,4 @@ The data model
 
 To explore the structure of the data model in full use the :doc:`Schema browser <schema-browser>`. Or read the :any:`Schema reference <schema-reference>` for detailed definitions and requirements for each object and field.
 
-The objects and fields of the data model allow you to represent a range of real-world situations. Explore related requirements in the :ref:`tech-guidance` section.
+The objects and fields of the data model allow you to represent a range of real-world situations. Explore related requirements in the :any:`modelling-requirements` section.
