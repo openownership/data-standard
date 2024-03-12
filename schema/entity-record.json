@@ -112,9 +112,11 @@
           "description": "The general category into which the entity fits. The category classification MUST align with the `entityType` classification.",
           "codelist": "entitySubtypeCategory.csv",
           "enum": [
-            "stateBody-governmentDepartment",
-            "stateBody-stateAgency",
-            "stateBody-other"
+            "governmentDepartment",
+            "stateAgency",
+            "other",
+            "trust",
+            "nomination"
           ],
           "openCodelist": false
         },
