@@ -22,34 +22,33 @@
       ]
     },
     "recordDetails": {
-      "isComponent": false,
-      "personType": "knownPerson",
-      "names": [
-        {
-          "type": "individual",
-          "fullName": "Riyadh Byrne-Amin",
-          "familyName": "Byrne-Amin",
-          "givenName": "Riyadh"
-        }
-      ],
-      "birthDate": "1990-06-12",
-      "identifiers": [
-        {
-          "id": "7700225VH",
-          "scheme": "IE-TAXID",
-          "schemeName": "Ireland Personal Public Service Number"
-        }
-      ],
-      "nationalities": [
-        {
-          "name": "Iraq",
-          "code": "IQ"
-        },
-        {
-          "name": "Ireland",
-          "code": "IE"
-        }
-      ]
+        "isComponent": false,
+        "personType": "knownPerson",
+        "names": [
+            {
+                "type": "legal",
+                "fullName": "Riyadh Byrne-Amin",
+                "familyName": "Byrne-Amin",
+                "givenName": "Riyadh"
+            }
+        ],
+        "birthDate": "1990-06-12",
+        "identifiers": [
+            {
+                "id": "7700225VH",
+                "scheme": "IE-TAXID",
+                "schemeName": "Ireland Personal Public Service Number"
+            }
+        ],
+        "nationalities": [
+            {
+                "name": "Iraq",
+                "code": "IQ"
+            },
+            {
+                "name": "Ireland",
+                "code": "IE"
+            }
+        ]
     }
-  }
-]
+}]

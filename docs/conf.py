@@ -33,7 +33,7 @@ from sphinx.directives.code import LiteralInclude
 
 import ocds_babel.translate as translate
 
-import oods.pygments
+# import oods.pygments
 import oods.sphinxtheme
 
 # -- General configuration ------------------------------------------------
@@ -128,7 +128,7 @@ htmlhelp_basename = 'BODS'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 locale_dirs = ['locale/', os.path.join(oods.sphinxtheme.get_html_theme_path(), 'locale')]
 gettext_compact = False
 gettext_uuid = True

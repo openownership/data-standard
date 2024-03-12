@@ -1,0 +1,6 @@
+code,title,description,technical note
+governmentDepartment,Government department,"An element of government with executive responsibilities. Terms often used to designate such a body: ministry, department, bureau or office. This MUST be used with entityType `stateBody`.",
+stateAgency,State Agency,A body overseeing or administering elements of public policy. State agencies may have responsiblities which are devolved from government departments or from the state's legislative body. This MUST be used with entityType `stateBody`.,
+other,Other,Any other type of entity.,
+trust,Trust,A trust or trust like arrangement. An arrangement where a settlor transfers ownership of assets to trustees to control for the benefit of beneficiaries. This MUST be used with entityType arrangement or legalEntity,
+nomination,Nomination,An agreement where a nominator instructs a nominee to act on their behalf in a specified capacity. This MUST be used with entityType arrangement.,

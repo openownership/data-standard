@@ -1,42 +1,42 @@
 [
-  {
-    "statementId": "crxpru288148613461215288221503762424",
-    "statementDate": "2019-01-20",
-    "publicationDetails": {
-      "publicationDate": "2019-01-31",
-      "bodsVersion": "0.4",
-      "license": "http://opendefinition.org/licenses/cc-zero",
-      "publisher": {
-        "name": "Company Register, Delaware"
-      }
-    },
-    "recordId": "018AF6B3EB",
-    "recordType": "person",
-    "recordStatus": "new",
-    "source": {
-      "type": [
-        "selfDeclaration"
-      ],
-      "assertedBy": [
-        {
-          "name": "Maria Esteves"
-        }
-      ]
-    },
-    "declaration": "bo-jtc-8755982746",
-    "declarationSubject": "01B68D7633",
-    "recordDetails": {
-      "isComponent": false,
-      "personType": "knownPerson",
-      "names": [
-        {
-          "type": "individual",
-          "fullName": "Maria Esteves",
-          "familyName": "Esteves",
-          "givenName": "Maria"
-        }
-      ],
-      "birthDate": "1956-05-24"
-    }
+
+    {
+        "statementId": "crxpru288148613461215288221503762424",
+        "statementDate": "2019-01-20",
+        "publicationDetails": {
+            "publicationDate": "2019-01-31",
+            "bodsVersion": "0.4",
+            "license": "http://opendefinition.org/licenses/cc-zero",
+            "publisher": {
+                "name": "Company Register, Delaware"
+            }
+        },
+        "recordId": "018AF6B3EB",
+        "recordType": "person",
+        "recordStatus": "new",
+        "source": {
+            "type": ["selfDeclaration"],
+            "assertedBy": [
+                {
+                    "name": "Maria Esteves"
+                }
+            ]
+        },
+        "declaration": "bo-jtc-8755982746",
+        "declarationSubject": "01B68D7633",
+        "recordDetails": {
+            "isComponent": false,
+            "personType": "knownPerson",
+            "names": [
+                {
+                    "type": "legal",
+                    "fullName": "Maria Esteves",
+                    "familyName": "Esteves",
+                    "givenName": "Maria"
+                }
+            ],
+            "birthDate": "1956-05-24"
+          }
   }
+
 ]
