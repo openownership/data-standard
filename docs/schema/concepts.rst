@@ -50,9 +50,9 @@ Data model overview
 
 Statements are specified in the data schema as JSON objects:
 
-- :any:`Ownership-or-control statement <schema-ownership-or-control-statement>`
-- :any:`Entity statement <schema-entity-statement>`
-- :any:`Person statement <schema-person-statement>`
+- :any:`Ownership-or-control statement <schema-relationship-record>`
+- :any:`Entity statement <schema-entity-record>`
+- :any:`Person statement <schema-person-record>`
 
 Each statement has a ``statementID`` and ``statementType`` field. The ``statementID`` exists solely for the purpose of connecting statements. 
 

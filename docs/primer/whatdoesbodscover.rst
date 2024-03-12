@@ -13,8 +13,8 @@ A broad, flexible range of fields and options...
 
 The Beneficial Ownership Data Standard (BODS) allows publishers to provide statements that describe:
 
-* :ref:`Identifiers <schema-identifier>` and :ref:`details <schema-person-statement>` for individuals
-* :ref:`Identifiers <schema-identifier>` and :ref:`details <schema-entity-statement>` for companies
+* :ref:`Identifiers <schema-identifier>` and :ref:`details <schema-person-record>` for individuals
+* :ref:`Identifiers <schema-identifier>` and :ref:`details <schema-entity-record>` for companies
 * :ref:`Types and levels of involvement <schema-interest>` in companies
 * :ref:`Provenance <schema-source>` information
 * Historical, as well as current, information
