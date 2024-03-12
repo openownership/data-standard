@@ -172,7 +172,7 @@ def get_valid_data():
             "recordId": "123",
             "recordType": "entity",
             "recordDetails": {
-                "entityType": {"type" : "unknownEntity"},
+                "entityType": {"type": "unknownEntity"},
                 "isComponent": False,
             },
         }
