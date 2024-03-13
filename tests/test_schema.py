@@ -89,12 +89,13 @@ def test_null_type(schema_from_registry):
     """
     Tests that the schema no field in the schema allows a null value.
     `technical note` in the codelists schema is excluded from this, as that can be empty.
+    conditional statements for entityType validation are excluded so this error isn't triggered.
     """
     errors = validate_null_type(
         schema_from_registry.get("$id"),
         schema_from_registry,
         no_null=True,
-        allow_null=["/items/properties/technical note","/properties/entityType/if/not/properties/subtype"]
+        allow_null=["/items/properties/technical note", "/properties/entityType/if/not/properties/subtype"]
     )
     assert errors == 0
 
