@@ -55,30 +55,34 @@
         }
       },
       "propertyOrder": 4,
-      "if": {
-        "not":{
-          "properties":{
-            "subtype":{
-              "type":"null"
+      "allOf":[
+        {
+          "if": {
+            "not":{
+              "properties":{
+                "subtype":{
+                  "type":"null"
+                }
+              }
+            },
+            "properties": {
+              "subtype": {
+                "const": "trust"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type":{
+                "enum":[
+                  "arrangement",
+                  "legalEntity"
+                ]
+              }
             }
           }
-        },
-        "properties": {
-          "subtype": {
-            "const": "trust"
-          }
         }
-      },
-      "then": {
-        "properties": {
-          "type":{
-            "enum":[
-              "arrangement",
-              "legalEntity"
-            ]
-          }
-        }
-      }
+      ]
     },
     "unspecifiedEntityDetails": {
       "$ref": "urn:components#/$defs/UnspecifiedRecord"
