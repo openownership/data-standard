@@ -81,6 +81,29 @@
               }
             }
           }
+        },
+        {
+          "if":{
+            "not":{
+              "properties":{
+                "subtype":{
+                  "type":"null"
+                }
+              }
+            },
+            "properties":{
+              "subtype":{
+                "const":"nomination"
+              }
+            }
+          },
+          "then":{
+            "properties":{
+              "type":{
+                "const": "arrangement"
+              }
+            }
+          }
         }
       ]
     },
