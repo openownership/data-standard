@@ -82,7 +82,16 @@
       "description": "One or more addresses for this entity.",
       "type": "array",
       "items": {
-        "$ref": "urn:components#/$defs/Address"
+        "$ref": "urn:components#/$defs/Address",
+        "properties":{
+          "type":{
+            "enum":[
+              "registered",
+              "business",
+              "alternative"
+            ]
+          }
+        }
       },
       "propertyOrder": 40
     },
