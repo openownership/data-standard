@@ -95,7 +95,7 @@ def test_null_type(schema_from_registry):
         schema_from_registry.get("$id"),
         schema_from_registry,
         no_null=True,
-        allow_null=["/items/properties/technical note", "/properties/entityType/allOf/0/if/not/properties/subtype", "/properties/entityType/allOf/1/if/not/properties/subtype"]
+        allow_null=["/items/properties/technical note", "/properties/entityType/allOf/0/if/not/properties/subtype", "/properties/entityType/allOf/1/if/not/properties/subtype","/properties/entityType/allOf/2/if/not/properties/subtype"]
     )
     assert errors == 0
 

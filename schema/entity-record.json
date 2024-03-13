@@ -104,6 +104,32 @@
               }
             }
           }
+        },
+        {
+          "if":{
+            "not":{
+              "properties":{
+                "subtype":{
+                  "type": "null"
+                }
+              }
+            },
+            "properties":{
+              "subtype":{
+                "enum":[
+                  "governmentDepartment",
+                  "stateAgency"
+                ]
+              }
+            }
+          },
+          "then":{
+            "properties":{
+              "type":{
+                "const":"stateBody"
+              }
+            }
+          }
         }
       ]
     },
