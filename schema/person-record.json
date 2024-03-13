@@ -106,7 +106,17 @@
       "description": "One or more addresses for this entity.",
       "type": "array",
       "items": {
-        "$ref": "urn:components#/$defs/Address"
+        "$ref": "urn:components#/$defs/Address",
+        "properties":{
+          "type":{
+            "enum":[
+              "placeOfBirth",
+              "residence",
+              "service",
+              "alternative"
+            ]
+          }
+        }
       },
       "propertyOrder": 60
     },
