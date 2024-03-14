@@ -650,17 +650,17 @@
        x="336.57993"
        y="361.51767"
        id="tspan332-6"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">entityType: arrangement</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">entityType.type: arrangement</tspan><tspan
        sodipodi:role="line"
        x="336.57993"
        y="376.51767"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-       id="tspan1512">entitySubtype.generalCategory: trust</tspan><tspan
+       id="tspan1512">entityType.subtype: trust</tspan><tspan
        sodipodi:role="line"
        x="336.57993"
        y="391.51767"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-       id="tspan1514">entitySubtype.localTerm: fiducie-sûreté</tspan></text>
+       id="tspan1514">entityType.details: fiducie-sûreté</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:end;text-anchor:end;fill:#000000"
