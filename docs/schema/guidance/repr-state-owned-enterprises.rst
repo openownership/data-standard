@@ -5,7 +5,7 @@ Representing state-owned enterprises
 
 .. highlights::
 
-    **Key requirement:** If an entity's status as a state-owned enterprise needs to be represented, then its Entity statement MUST be the subject of Ownership-or-control statement(s) connecting it, either directly or indirectly, to an Entity statement with ``entityType`` of 'state' or 'stateBody'.
+    **Key requirement:** If an entity's status as a state-owned enterprise needs to be represented, then its Entity statement MUST be the subject of Ownership-or-control statement(s) connecting it, either directly or indirectly, to an Entity statement with ``entityType.type`` of 'state' or 'stateBody'.
 
 
 Overview
@@ -15,8 +15,8 @@ The definition of 'state-owned enterprise' (SOE) can change according to jurisdi
 
 In particular, the following properties and values SHOULD be used to represent information about enterprises and their links to states:
 
-* ``entityType`` SHOULD be set to 'state' or 'stateBody', and ``jurisdiction`` SHOULD be used to represent the particular state.
-* ``entitySubtype`` SHOULD be used to refine the category of a given state body (as a 'government department', 'state agency' or 'other').
+* ``entityType.type`` SHOULD be set to 'state' or 'stateBody', and ``jurisdiction`` SHOULD be used to represent the particular state.
+* ``entityType.subtype`` SHOULD be used to refine the category of a given state body (as a 'government department', 'state agency' or 'other').
 * ``formedByStatute`` MAY be used to supply details of a law, where an entity has been formed as a result of specific legislation.
 
 For more details about these properties see :ref:`schema-entity-record`.
