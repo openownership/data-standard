@@ -126,7 +126,10 @@
           "then":{
             "properties":{
               "type":{
-                "const":"stateBody"
+                "enum":[
+                "stateBody",
+                "state"
+                ]
               }
             }
           }
