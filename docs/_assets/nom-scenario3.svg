@@ -447,7 +447,7 @@
        id="tspan847-6"
        x="451.95816"
        y="54.013836"
-       style="font-size:12px">entityType: registeredEntity</tspan></text>
+       style="font-size:12px">entityType.type: registeredEntity</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
@@ -529,7 +529,7 @@
        x="451.9874"
        y="278.30826"
        id="tspan798"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">entitySubtype.generalCategory: </tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">entityType.subtype: </tspan><tspan
        sodipodi:role="line"
        x="451.9874"
        y="293.30826"
