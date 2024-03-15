@@ -5,13 +5,18 @@ Key concepts
 
 .. include:: warningbox.rst
 
-Two things inform the Beneficial Ownership Data Standard (BODS) data model: what beneficial ownership information is, and how it is processed and used. Understanding these concepts and the data model will help you publish high-quality data.
+Two things inform the Beneficial Ownership Data Standard (BODS) data model:
+
+- what beneficial ownership information is
+- how it is processed and used
+
+Understanding these concepts and the data model will help you publish high-quality data.
 
 
 Beneficial ownership concepts
 -----------------------------
 
-As outlined in the :ref:`Primer <what-is-bo>`, a natural **person** is a **beneficial owner** of an **entity** because of certain **interests**. These interests may be rooted in legal ownership, or come from controlling the entity, or using its assets. The **relationship** between the beneficial owner and the entity may be **direct**, **indirect** or both. Where it is indirect, **intermediary** entities, people and their relationships, are part of the **beneficial ownership network**.
+A natural **person** is a **beneficial owner** of an **entity** because of certain **interests**. These interests may be rooted in legal ownership, or come from controlling the entity, or using its assets. The **relationship** between the beneficial owner and the entity may be **direct**, **indirect** or both. Where it is indirect, **intermediary** entities, people and their relationships, are part of the **beneficial ownership network**.
 
 People or entities are obliged in some jurisdictions to disclose their beneficial ownership. They declare this information to a designated agency. Each **declaration** is a set of **claims** about the entities, people and relationships within the **subject**’s beneficial ownership network. Information about those entities, people and relationships is captured by the agency in **records** which are updated as new claims are made.
 
@@ -87,7 +92,7 @@ Representing beneficial owners
 
 In a BODS dataset, the fact that a natural person is a beneficial owner of an entity is represented by including this information in the Relationship statement linking the two.
 
-It is possible to represent in BODS datasets an entity's declaration that it has no beneficial owners (according to a jurisdiction's definition of a beneficial owner).
+It is possible to represent an entity's declaration that it has no beneficial owners (according to a jurisdiction's definition of a beneficial owner).
 
 It is also possible to include in BODS datasets information about natural persons who are not beneficial owners. (For example, where the managing officials of an entity are disclosed because nobody meets the jurisdiction's definition of a beneficial owner.)
 
