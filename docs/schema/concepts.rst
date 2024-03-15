@@ -5,112 +5,102 @@ Key concepts
 
 .. include:: warningbox.rst
 
-The concept of a 'statement' is at the heart of the Beneficial Ownership Data Standard. BODS data consists of a collection of ordered statements describing:
+Two things inform the Beneficial Ownership Data Standard (BODS) data model:
 
-* Ownership or control
-* Entities (including companies, trusts and arrangements)
-* Natural persons (who own or control entities)
+- what beneficial ownership information is
+- how it is processed and used
 
-Statements
------------
-
-Details of how an interested party controls or owns a company or other legal entity are wrapped in an ownership-or-control statement.
-
-.. figure:: ../_assets/data-schema-model-1.svg
-   :alt: An ownership-or-control statement block containing two 'interests': one a 60% share-holding interest, the other a 30% voting-rights interest
-
-Details of the subject of an ownership-or-control statement and its interested party are wrapped in their own statements. The ownership-or-control statement refers out to these statements, acting as a connector.
-
-.. figure:: ../_assets/data-schema-model-2.svg
-   :alt: A person statement linked to an ownership-or-control statement linked to an entity statement.
-
-Together, the statements above tell us that Roberto Lopez has some kind of controlling or ownership stake in RENCO Energy Ltd.
-
-The :any:`schema reference <schema-reference>` defines in detail the fields that each statement should have, and how they should be structured.
-
-Statements as claims
---------------------
-
-Each statement represents a claim about beneficial ownership made by a particular source at a particular point in time.
-
-.. figure:: ../_assets/data-schema-model-3.svg
-   :alt: An ownership-or-control statement block containing a source block with type-selfDeclaration, retrievedAt date of 2018-11-07T13:55:32.734Z and assertedBy value of Acme Industries Ltd. Statement also has statementDate of 2018-07-12
-
-Modelling beneficial ownership information in this way allows us to make sense of data received from multiple sources over extended periods of time. In particular, it allows:
-
-* Statements about beneficial ownership to conflict
-* Statements about beneficial ownership to overlap
-* Production of historical beneficial ownership snapshots (to answer questions of 'who knew what, when?'). This is known as `bi-temporal modelling <https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_. 
-
-When representing data conforming to BODS, users therefore need to handle statements with due care. Ultimately it is up to data consumers to decide which statements to trust, and to verify identities using the :any:`identifying information <guidance-identifiers>` contained in ``personStatements`` and ``entityStatements``.
+Understanding these concepts and the data model will help you publish high-quality data.
 
 
-Data model overview
--------------------
+Beneficial ownership concepts
+-----------------------------
 
-Statements are specified in the data schema as JSON objects:
+A natural **person** is a **beneficial owner** of an **entity** because of certain **interests**. These interests may be rooted in legal ownership, or come from controlling the entity, or using its assets. The **relationship** between the beneficial owner and the entity may be **direct**, **indirect** or both. Where it is indirect, **intermediary** entities, people and their relationships, are part of the **beneficial ownership network**.
 
-- :any:`Ownership-or-control statement <schema-relationship-record>`
-- :any:`Entity statement <schema-entity-record>`
-- :any:`Person statement <schema-person-record>`
-
-Each statement has a ``statementID`` and ``statementType`` field. The ``statementID`` exists solely for the purpose of connecting statements. 
-
-- **Entity statements** are used to describe registered legal entities that are the subject of legal ownership (such as companies, non-registered entities (such as trusts), and artificial entities (such as joint shareholding arrangements).
-- **Person statements** describe the natural persons who stand in relationships of ultimate beneficial ownership or control
-- **Ownership-or-control statements** describe the interest(s) held by one entity in another, or a person in an entity. They are connected to those entities and persons using ``statementID`` references.
-
-All statements have ``source`` and ``annotations`` properties which can provide an audit trail describing where information was obtained from, when, and any verification of the information that has taken place. See :ref:`Sources and annotations <provenance>` for guidance.
-
-``personStatements`` and ``entityStatements`` both contain a set of fields that can be used to disclose the real-world identity of the entity or individual. These include:
-
-* An ``identifiers`` array that is used to provide known identifiers such as company registration for firms, or publicly shareable taxpayer identifiers for individuals. 
-* Jurisdiction or Nationality information
-* Important dates (birth date, death date, founding date, dissolution date)
-* Addresses
-
-Including such identifiers allows intelligent integration of information across disclosures, datasets and time.
-  
-These fields are designed to support 'strict' and 'relaxed' validation, to accommodate different data sources. New data sources should seek to provide the data required for strict validation, such as country codes, and full dates. Other sources should provide as much data as possible, subject to relevant policy and privacy constraints. 
-
-An ``ownershipOrControlStatement`` connects (via ``statementID`` references) the ``subject`` of the statement (an entity described by an ``entityStatement``) and an ``interestedParty``. This interested party may be: 
-
-* Another entity described by an ``entityStatement``;
-* A person described by a ``personStatement``; or
-* An unspecified party and the reasons that no ownership or control can be specified. 
-
-The ownership-or-control statement also contains an array of ``interests``, each with a type (selected from the `Interest Type codelist <reference.html#interest-type>`_) and, where relevant, percentages indicating the size of the interest. 
-
-To explore the structure of the data model in full use the :doc:`Schema browser <schema-browser>`. Or read the :any:`Schema reference <schema-reference>` for detailed definitions of each object and field. 
+People or entities are obliged in some jurisdictions to disclose their beneficial ownership. They declare this information to a designated agency. Each **declaration** is a set of **claims** about the entities, people and relationships within the **subject**’s beneficial ownership network. Information about those entities, people and relationships is captured by the agency in **records** which are updated as new claims are made.
 
 
-Ownership or control through arrangements
-------------------------------------------
+.. figure:: ../_assets/key-concepts-img0.svg
+   :alt: A labelled diagram of a beneficial ownership network. Labelled as 'Subject of beneficial ownership network' is Company E. Labelled as 'Direct relationship' is a solid line connected to Person 2. Labelled as 'Interest' is the text '32% shareholding' which sits on that solid line. Company E is also linked to Company A by a solid line. And Company A is linked to Person 1 by a solid line. Labelled as 'Indirect relationship' is a dotted line connecting Company E to Person 1. The text '45% shareholding' sits on that dotted line. Person 1 is labelled 'Beneficial owner'. Company A is labelled 'Intermediary entity'.
+   :figwidth: 85%
+   :align: center
 
-In some cases ownership or control is exercised through:
+BODS Statements represent claims
+--------------------------------
 
-* Trusts;
-* Contracts; and
-* Other arrangements
+The highest level object in a BODS dataset is a Statement. Each Statement represents a claim made by a source at a particular point in time. The claim can be about one of three elements of a beneficial ownership network:
 
-Depending on the particular jurisdiction these are covered by, they may or may not have a registered legal identity. 
+- an entity (including companies, trusts and arrangements)
+- a person (natural persons who own, control or benefit from entities)
+- a relationship (consisting of interests between an entity and an interested party)
 
-In BODS arrangements such as these are treated as a special kind of ``entityStatement`` with ``entityType`` value: 'arrangement'. 
+.. figure:: ../_assets/key-concepts-img1.svg
+   :alt: A relationship statement block (connecting a person and an entity) containing a source block with type-selfDeclaration and assertedBy value of Acme Industries Ltd. Statement also has statementDate of 2018-07-12
+   :figwidth: 50%
+   :align: center
 
-This allows control via arrangements to be modelled in two steps, describing how:
+Representing beneficial ownership information in this way allows people to make sense of data received from multiple sources over extended periods of time. In particular, this model means that:
 
-* Person P has an interest in Arrangement A
-* Arrangement A has an interest in Entity E
+- statements about beneficial ownership can conflict when they come from different sources
+- statements about beneficial ownership can overlap, referring to identical parties
+- historical beneficial ownership snapshots (to answer questions of ‘who knew what, when?’) can be produced. This is known as `bi-temporal modelling <https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_. 
 
-For more guidance on modelling arrangements, contact the :any:`BODS Helpdesk <Contact>`.
-
-Direct and indirect ownership and control
------------------------------------------
-
-BODS can be used to describe both direct ownership and control (where Person A has a direct share in Company B), or indirect ownership and control (Where Person A is an ultimate beneficial owner of B, but where there may be any number of known or unknown intermediate companies or arrangements). This is indicated by use of the ``directOrIndirect`` property that can be set for each interest declared. 
+To publish a BODS Statement, a data management system needs to include two types of information. First: the details claimed about the entity, person or relationship, as stored by records in your system. Secondly: information about the source, date and context of the claim. 
 
 
-Immutability of statements
---------------------------
+Beneficial ownership records
+----------------------------
 
-Published BODS statements should be treated as a write-only ledger, with new statements being issued to amend data contained in older statements and those new statements appended to the ledger. See :any:`Updating statements <guidance-updating-data>` for further guidance.
+Data management systems need to maintain a unique ``recordId`` string for each person, entity and relationship whose details are disclosed. The ``recordId`` has two purposes:
+
+- linking entities and persons via relationships
+- publishing information updates
+
+See :any:`record-identifiers` for full requirements.
+
+Linking entities and persons via relationships
+++++++++++++++++++++++++++++++++++++++++++++++
+
+Stable ``recordId`` values in BODS Statements allow the structure of beneficial ownership networks to be derived from BODS datasets.
+
+.. figure:: ../_assets/key-concepts-img2.svg
+   :alt: A person node is connected via a solid line to an entity node. A person statement block sits next to the person node. A relationship statement block sits next to the solid line. An entity statement block sits next to the entity node. Within the person statement, recordType is 'person', the recordId is 'p24d78ae012f1', and the recordDetails show that the person's name is 'Lev Yotsky'. Within the relationship statement, the recordType is 'relationship' and the recordDetails show that the interestedParty is the record with recordId 'p24d78ae012f1' and the subject is the record with recordId 'e3f199ad8e312'. Within the entity statement, the recordType is 'entity', the recordId is 'e3f199ad8e312' and the recordDetails show that the entity is called 'White Flag Holdings Corp'. These elements represent Lev Yotsky's relationship with White Flag Holdings Corp.
+   :figwidth: 50%
+   :align: center
+
+The Relationship statement holds ``recordId`` values for the interested party and the subject of a relationship. 
+
+Publishing information updates
+++++++++++++++++++++++++++++++
+
+As real-world beneficial ownership changes, updated details about people, entities and relationships are submitted to the data management system. The system publishes a new BODS Statement, containing the relevant ``recordId``, for each record whose details are updated or confirmed.
+
+People can then use ``recordId`` values to group Statements made over time to see what information was known when. 
+
+.. figure:: ../_assets/key-concepts-img3.svg
+   :alt: A person node is connected via a solid line to an entity node. A relationship statement block sits next to the solid line. A further two relationship statement blocks sit on top of the first. All three relationship statements have recordId 'r-d67fb1a-aa2f3da' and the recordDetails show that these statements are about a shareholding interest. The earliest relationship statement has statementDate '2018-07-12' and recordStatus 'new'. The next has statementDate '2019-11-01' and recordStatus 'updated'. And the final relationship statement has statementDate '2021-02-28' and recordStatus 'closed'.
+   :figwidth: 90%
+   :align: center
+
+Published BODS Statements build a write-only ledger, as new Statements are issued to amend or confirm details contained in older Statements.
+
+See :ref:`guidance-updating-data` for full requirements.
+
+Representing beneficial owners
+------------------------------
+
+In a BODS dataset, the fact that a natural person is a beneficial owner of an entity is represented by including this information in the Relationship statement linking the two.
+
+It is possible to represent an entity's declaration that it has no beneficial owners (according to a jurisdiction's definition of a beneficial owner).
+
+It is also possible to include in BODS datasets information about natural persons who are not beneficial owners. (For example, where the managing officials of an entity are disclosed because nobody meets the jurisdiction's definition of a beneficial owner.)
+
+See :ref:`representing-bo` for full requirements.
+
+The data model
+--------------
+
+To explore the structure of the data model in full use the :doc:`Schema browser <schema-browser>`. Or read the :any:`Schema reference <schema-reference>` for detailed definitions and requirements for each object and field.
+
+The objects and fields of the data model allow you to represent a range of real-world situations. Explore related requirements in the :any:`modelling-requirements` section.
