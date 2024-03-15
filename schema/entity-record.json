@@ -51,90 +51,77 @@
         "details": {
           "type": "string",
           "title": "Details",
-          "description": "This may be used to provide a local name for this type of entity, or any further information to identify the type of entity. For example, in Finland 'ministeriö' for a government department."
+          "description": "A local name for this type of entity, or any further information to identify the type of entity. For example, in Finland 'ministeriö' for a government department."
         }
       },
       "propertyOrder": 4,
-      "allOf":[
-        {
-          "if": {
-            "not":{
-              "properties":{
-                "subtype":{
-                  "type":"null"
-                }
-              }
-            },
-            "properties": {
-              "subtype": {
-                "const": "trust"
-              }
-            }
-          },
-          "then": {
-            "properties": {
-              "type":{
-                "enum":[
-                  "arrangement",
-                  "legalEntity"
-                ]
-              }
-            }
-          }
-        },
-        {
-          "if":{
-            "not":{
-              "properties":{
-                "subtype":{
-                  "type":"null"
-                }
-              }
-            },
-            "properties":{
-              "subtype":{
-                "const":"nomination"
-              }
-            }
-          },
-          "then":{
-            "properties":{
-              "type":{
-                "const": "arrangement"
-              }
-            }
-          }
-        },
-        {
-          "if":{
-            "not":{
-              "properties":{
-                "subtype":{
-                  "type": "null"
-                }
-              }
-            },
-            "properties":{
-              "subtype":{
-                "enum":[
-                  "governmentDepartment",
-                  "stateAgency"
-                ]
-              }
-            }
-          },
-          "then":{
-            "properties":{
-              "type":{
-                "enum":[
-                "stateBody",
-                "state"
-                ]
-              }
+      "if":{
+        "not":{
+          "properties":{
+            "subtype":{
+              "type":"null"
             }
           }
         }
-      ]
+      },
+      "then":{
+        "allOf":[
+          {
+            "if":{
+              "properties":{
+                "subtype":{
+                  "const": "trust"
+                }
+              }
+            },
+            "then":{
+              "properties":{
+                "type":{
+                  "enum":[
+                    "arrangement",
+                    "legalEntity"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if":{
+              "properties":{
+                "subtype":{
+                  "const": "nomination"
+                }
+              }
+            },
+            "then":{
+              "properties":{
+                "type":{
+                  "const":"arrangement"
+                }
+              }
+            }
+          },
+          {
+            "if":{
+              "properties":{
+                "subtype":{
+                  "enum": [
+                    "governmentDepartment",
+                    "stateAgency"
+                  ]
+                }
+              }
+            },
+            "then":{
+              "properties":{
+                "type":{
+                  "const": "stateBody"
+                }
+              }
+            }
+          }
+        ]
+      }
     },
     "unspecifiedEntityDetails": {
       "$ref": "urn:components#/$defs/UnspecifiedRecord"
