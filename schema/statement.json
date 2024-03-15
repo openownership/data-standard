@@ -280,7 +280,7 @@
         "transformedContent": {
           "type": "string",
           "title": "Transformed content",
-          "description": "A representation of the annotation target after the transformation in the description field has been applied. This field SHOULD only be used when the motivation is transformation."
+          "description": "A representation of the annotation target after the transformation in the description field has been applied. This field MUST only be used when the motivation is transformation."
         },
         "url": {
           "title": "URL",
