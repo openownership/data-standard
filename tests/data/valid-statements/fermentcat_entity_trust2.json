@@ -48,7 +48,7 @@
         }
       ],
       "entityType": {
-        "type": "arrangement",
+        "type": "legalEntity",
         "subtype": "trust"
       }
     }
