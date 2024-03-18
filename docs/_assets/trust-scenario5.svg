@@ -651,12 +651,12 @@
          x="400.07288"
          y="435.48444"
          id="tspan332-6-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">entityType: arrangement</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">entityType.type: arrangement</tspan><tspan
          sodipodi:role="line"
          x="400.07288"
          y="450.48444"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan453-1">entitySubtype.generalCategory:</tspan><tspan
+         id="tspan453-1">entityType.subtype:</tspan><tspan
          sodipodi:role="line"
          x="400.07288"
          y="465.48444"
@@ -874,7 +874,7 @@
        x="406.1535"
        y="639.84589"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-       id="tspan453-9">entityType: </tspan><tspan
+       id="tspan453-9">entityType.type: </tspan><tspan
        sodipodi:role="line"
        x="406.1535"
        y="654.84589"
