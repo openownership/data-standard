@@ -2,21 +2,21 @@
   "$id": "urn:relationship",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
-  "title": "Relationship record",
-  "description": "A relationship record is made up of an entity, an interested party (a reference to an entity, natural person, arrangement or trust), details of the interest and provenance information for the statement.",
+  "title": "Relationship record details",
+  "description": "Information about the interests that an interested party (a person or entity) holds in the subject (an entity).",
   "type": "object",
   "properties": {
     "isComponent": {
       "title": "Is component",
-      "description": "Does this Ownership-or-control Statement represent a component of a wider indirect ownership-or-control relationship? Where `isComponent` is 'true': (1) the `statementID` of this secondary Ownership-or-control Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Ownership-or-control Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Ownership-or-control Statement SHOULD be considered when replacing the primary Ownership-or-control Statement, and (4) the primary Ownership-or-control Statement MUST have a `isComponent` value of 'false'. Where `isComponent` is 'false', this Ownership-or-control Statement is the primary declaration of the relationship between the `subject` and the `interestedParty`.",
+      "description": "Whether this relationship represents a component of a wider indirect relationship. Where `isComponent` is 'true': (1) the `recordId` of this secondary Relationship statement MUST be an element in the `componentRecords` array of that primary Relationship statement, (2) this Relationship statement MUST come before that primary Relationship statement in a BODS package or stream, (3) the replacement of this Relationship statement SHOULD be considered when replacing the primary Relationship statement, and (4) the primary Relationship statement MUST have an `isComponent` value of 'false'. Where `isComponent` is 'false', this Relationship statement is the primary declaration of the relationship between the `subject` and the `interestedParty`.",
       "type": "boolean"
     },
-    "componentStatementIDs": {
-      "title": "Component statement IDs",
-      "description": "The identifiers of all component statements that provide detail about the indirect relationship between this Statement's `subject` and `interestedParty`. If this Ownership-or-control Statement has components, it MUST itself have a `isComponent` value of 'false'.",
+    "componentRecords": {
+      "title": "Component record IDs",
+      "description": "The `recordId` values of all component records that provide detail about this indirect relationship between the `subject` and the `interestedParty`. If this relationship has components, its own `isComponent` value MUST be 'false'.",
       "type": "array",
       "items": {
-        "$ref": "urn:components#/$defs/ID"
+        "type": "string"
       }
     },
     "subject": {
@@ -33,7 +33,7 @@
     },
     "interestedParty": {
       "title": "Interested party",
-      "description": "The interested party has some level of ownership or control over the entity referenced by `subject` in this relationship record. The value is a record Id for either an entity record or person record, or, where the interested party is unknown, details of why. When confirmation has been provided that no interested party exists, where ownership and control information does not need to be provided, or where details of ownership and control are unknown, a `reason` MUST be given. Where an unknown entity is the `subject` of further Relationship Records in the same structure, or where there is a natural person with ownership or control but their name or details are not known or cannot be disclosed for some reason, a reference recordId for a person or entity should be provided but identifying details in the record MAY be left blank.",
+      "description": "The recordId for the interested party in the relationship, or a reason why the interested party cannot be specified. The interested party MAY be an entity or a person. Where the entity or person is unknown or anonymous, the recordDetails of the interested party SHOULD reflect this. In place of a recordId, a reason SHOULD be given in cases where interested parties beyond this point of the beneficial ownership network: cannot be disclosed, have not been disclosed, are not required to be disclosed, or do not exist.",
       "oneOf": [
         {
           "type": "string"

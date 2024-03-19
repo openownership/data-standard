@@ -5,13 +5,15 @@ Representing beneficial ownership
 
 .. highlights::
 
-    **Key requirement:** If a person is a beneficial owner of an entity - whether directly or indirectly - and the person or entity is required to declare this beneficial ownership, there MUST be an Ownership-or-control Statement connecting the two which represents the beneficial ownership relationship.
+    **Key requirements:** If a person is a beneficial owner of an entity - whether directly or indirectly - and the person or entity is required to declare this beneficial ownership, there MUST be a Relationship statement connecting the two which represents the beneficial ownership relationship.
+
+    If an entity declares that it has no disclosable beneficial owners, its record MUST be the ``subject`` of a Relationship statement with ``recordDetails.interestedParty.reason`` 'noBeneficialOwners'.
 
 
 Overview
 ------------------------
 
-Beneficial owners can exercise ownership-or-control *directly* in an entity (expected to be a company) or *indirectly*, via intermediary entities (such as arrangements or other companies). It must be clear in a BODS dataset which people are declared as beneficial owners of which companies (and which entities are intermediaries). And it must be clear what overall control or ownership beneficial owners have (regardless of whether it is direct or indirect).
+Beneficial owners can exercise their interests *directly* in an entity (expected to be a company) or *indirectly*, via intermediary entities (such as arrangements or other companies). It must be clear in a BODS dataset which people are declared as beneficial owners of which companies (and which entities are intermediaries). And it must be clear what overall interests beneficial owners have (regardless of whether it is direct or indirect).
 
 .. figure:: ../../_assets/RepresentingChainsBODS-RealWorld.svg
    :alt: Person 1 indirectly holds a 15 percent shareholding in Company E, via an intermediary: Company A. Person 2 directly holds 32 precent of Company E's shares.
@@ -24,7 +26,7 @@ In BODS, the following properties are used to represent such information disclos
 
 * ``beneficialOwnershipOrControl`` (See :ref:`schema-interest`)
 * ``directOrIndirect`` (See :ref:`schema-interest`)
-* ``componentStatementIDs`` (See :ref:`schema-relationship-record`)
+* ``componentRecords`` (See :ref:`schema-relationship-record`)
 * ``isComponent`` (See :ref:`schema-entity-record`)
 
 Requirements
@@ -35,12 +37,12 @@ The beneficial ownership relationship
 
 If a person is a beneficial owner of an entity, entity X, whether directly or indirectly, and one of them is required to declare this beneficial ownership:
 
-1. There MUST be a *primary* Ownership-or-control Statement connecting the two which represents the beneficial ownership relationship. In particular: 
+1. There MUST be a *primary* relationship connecting the two which represents the beneficial ownership relationship. Specifically, in the ``recordDetails`` for the relationsship: 
 
-   a. the entity’s Statement MUST be the ``subject``;
-   b. the person’s Statement MUST be the ``interestedParty``;
+   a. the entity’s record MUST be the ``subject``;
+   b. the person’s record MUST be the ``interestedParty``;
    c. ``isComponent`` MUST be false;
-   d. the ``interests`` which make the person meet the criteria for their being declared a beneficial owner MUST be included in this primary Ownership-or-control Statement if known; and
+   d. the ``interests`` which make the person meet the criteria for their being declared a beneficial owner MUST be included if known; and
    e. the ``interests`` in (d) MUST have ``beneficialOwnershipOrControl`` set to 'true'.
 
 2. If beneficial ownership is known to be exercised indirectly, via intermediary entities then ``directOrIndirect`` MUST be ‘indirect’. If it is known to be exercised directly then ``directOrIndirect`` MUST be ‘direct’. Otherwise ``directOrIndirect`` MUST be ‘unknown’.
@@ -48,16 +50,16 @@ If a person is a beneficial owner of an entity, entity X, whether directly or in
 Intermediaries
 ^^^^^^^^^^^^^^
 
-Where beneficial ownership is known to be exercised indirectly, via known intermediary entities, this SHOULD be represented in addition to the above. In particular:
+Where beneficial ownership is known to be exercised indirectly, via known intermediary elements, this SHOULD be represented in addition to the above. In particular:
 
-1. The chain of known intermediary entities SHOULD be represented by *secondary* Entity Statements, Ownership-or-control Statements and Person Statements.
-2. These secondary statements SHOULD link the beneficial owner’s Statement to entity X’s statement indirectly.
-3. These secondary statements SHOULD all have ``isComponent`` set to 'true'.
-4. These secondary statements SHOULD all have their ``statementID`` values listed in the ``componentStatementIDs`` array of the primary Ownership-or-control Statement.
-5. When the primary Ownership-or-control Statement is published in a BODS file:
+1. The chain of known intermediary elements SHOULD be represented by *secondary* records.
+2. These secondary records SHOULD link the beneficial owner’s record to entity X’s record indirectly.
+3. These secondary records SHOULD all have ``isComponent`` set to 'true'.
+4. These secondary records SHOULD all have their ``recordId`` values listed in the ``componentRecords`` array of the ``recordDetails`` for the primary relationship.
+5. When ``recordDetails`` for the primary relationship are published in a BODS file:
 
-   a. all secondary statements referenced from ``componentStatementIDs`` MUST also be published in that file;
-   b. all secondary statements must appear before the primary Ownership-or-control Statement in the list of statements.
+   a. Statements for all secondary records referenced from ``componentRecords`` MUST also be published in that file;
+   b. Statements for all secondary records must appear before the the first Statement for the primary relationship.
 
 Example
 --------
