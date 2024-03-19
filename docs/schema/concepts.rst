@@ -44,15 +44,17 @@ Representing beneficial ownership information in this way allows people to make 
 
 - statements about beneficial ownership can conflict when they come from different sources
 - statements about beneficial ownership can overlap, referring to identical parties
-- historical beneficial ownership snapshots (to answer questions of ‘who knew what, when?’) can be produced. This is known as `bi-temporal modelling <https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_. 
+- historical beneficial ownership snapshots (to answer questions of ‘who knew what, when?’) can be produced. This is known as `bi-temporal modelling <https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_.
 
-To publish a BODS Statement, a data management system needs to include two types of information. First: the details claimed about the entity, person or relationship, as stored by records in your system. Secondly: information about the source, date and context of the claim. 
+Statements should therefore be considered immutable – presenting details about an element of beneficial ownership as claimed at a particular point in time. To achieve this, a data management system needs to include two types of information in each Statement. First: the details claimed about the entity, person or relationship, as stored by records in the system. Secondly: information about the source, date and context of the claim. 
+
+After publication, publishers do not edit a Statement to indicate an information update: they publish a new Statement with the updated details of the record.
 
 
 Beneficial ownership records
 ----------------------------
 
-Data management systems need to maintain a unique ``recordId`` string for each person, entity and relationship whose details are disclosed. The ``recordId`` has two purposes:
+Data management systems need to internally maintain their own record with an appropriate ``recordId`` string for each person, entity and relationship whose details are disclosed. The ``recordId`` has two purposes:
 
 - linking entities and persons via relationships
 - publishing information updates
