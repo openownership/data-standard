@@ -21,7 +21,7 @@
     },
     "subject": {
       "title": "Subject",
-      "description": "The recordId for the subject of the relationship, or a reason why the subject cannot be specified.",
+      "description": "The recordId for the subject of the relationship, or a reason why the subject cannot be specified. The subject MUST be an entity.",
       "oneOf": [
         {
           "type": "string"
