@@ -31,7 +31,7 @@ BODS Statements represent claims
 
 The highest level object in a BODS dataset is a Statement. Each Statement represents a claim made by a source at a particular point in time. The claim can be about one of three elements of a beneficial ownership network:
 
-- an entity (including companies, trusts and arrangements)
+- an entity (including companies, trusts and legal arrangements)
 - a person (natural persons who own, control or benefit from entities)
 - a relationship (consisting of interests between an entity and an interested party)
 
@@ -76,7 +76,7 @@ The Relationship statement holds ``recordId`` values for the interested party an
 Publishing information updates
 ++++++++++++++++++++++++++++++
 
-As real-world beneficial ownership changes, updated details about people, entities and relationships are submitted to the data management system. The system publishes a new BODS Statement, containing the relevant ``recordId``, for each record whose details are updated or confirmed.
+As real-world beneficial ownership changes, agents submit updated details about people, entities and relationships to the data management system. It updates its records accordingly. Then the system publishes a new BODS Statement, containing the relevant ``recordId``, for each updated record.
 
 People can then use ``recordId`` values to group Statements made over time to see what information was known when. 
 
