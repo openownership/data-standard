@@ -8,7 +8,7 @@
   "properties": {
     "isComponent": {
       "title": "Is component",
-      "description": "Whether this relationship represents a component of a wider indirect relationship. Where `isComponent` is 'true': (1) the `recordId` of this secondary Relationship statement MUST be an element in the `componentRecords` array of that primary Relationship statement, (2) this Relationship statement MUST come before that primary Relationship statement in a BODS package or stream, (3) the replacement of this Relationship statement SHOULD be considered when replacing the primary Relationship statement, and (4) the primary Relationship statement MUST have an `isComponent` value of 'false'. Where `isComponent` is 'false', this Relationship statement is the primary declaration of the relationship between the `subject` and the `interestedParty`.",
+      "description": "Whether this relationship is a component of a wider indirect relationship. Where `isComponent` is 'true': (1) the `recordId` of this secondary Relationship statement MUST be an element in the `componentRecords` array of that primary Relationship statement, (2) this Relationship statement MUST come before that primary Relationship statement in a BODS package or stream, (3) the replacement of this Relationship statement SHOULD be considered when replacing the primary Relationship statement, and (4) the primary Relationship statement MUST have an `isComponent` value of 'false'. Where `isComponent` is 'false', this Relationship statement is the primary declaration of the relationship between the `subject` and the `interestedParty`.",
       "type": "boolean"
     },
     "componentRecords": {
