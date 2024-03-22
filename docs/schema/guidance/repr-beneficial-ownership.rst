@@ -13,10 +13,10 @@ Representing beneficial owners
 Overview
 ------------------------
 
-Beneficial owners can exercise their interests *directly* in an entity (expected to be a company) or *indirectly*, via intermediary entities (such as arrangements or other companies). It must be clear in a BODS dataset which people are declared as beneficial owners of which companies (and which entities are intermediaries). And it must be clear what overall interests beneficial owners have (regardless of whether they are direct or indirect).
+Beneficial owners can exercise their interests *directly* in an entity or *indirectly*, via intermediary entities (such as arrangements or other companies). It must be clear in a BODS dataset which people are declared as beneficial owners of which companies (and which entities are intermediaries). And it must be clear what overall interests beneficial owners have (regardless of whether they are direct or indirect).
 
 .. figure:: ../../_assets/RepresentingChainsBODS-RealWorld.svg
-   :alt: Person 1 indirectly holds a 15 percent shareholding in Company E, via an intermediary: Company A. Person 2 directly holds 32 precent of Company E's shares.
+   :alt: Person 1 indirectly holds a 15 percent shareholding in Company E, via an intermediary: Company A. Person 2 directly holds 32 percent of Company E's shares.
    :figwidth: 65%
    :align: center
 

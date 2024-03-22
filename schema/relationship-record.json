@@ -21,7 +21,7 @@
     },
     "subject": {
       "title": "Subject",
-      "description": "The recordId for the subject of the relationship, or a reason why the subject cannot be specified.",
+      "description": "The `recordId` for the subject of the relationship, or a reason why the subject cannot be specified.",
       "oneOf": [
         {
           "type": "string"
@@ -33,7 +33,7 @@
     },
     "interestedParty": {
       "title": "Interested party",
-      "description": "The recordId for the interested party in the relationship, or a reason why the interested party cannot be specified. The interested party MAY be an entity or a person. Where the entity or person is unknown or anonymous, the recordDetails of the interested party SHOULD reflect this. In place of a recordId, a reason SHOULD be given in cases where interested parties beyond this point of the beneficial ownership network: cannot be disclosed, have not been disclosed, are not required to be disclosed, or do not exist.",
+      "description": "The `recordId` for the interested party in the relationship, or an Unspecified Record object with a reason for why this information has not been disclosed. The interested party MAY be an entity or a person. An Unspecified Record SHOULD only be used where no information at all is known about interested parties beyond this point of the beneficial ownership network. In other cases, the interested party should be noted as 'anonymous' or 'unknown' in its own `recordDetails`.",
       "oneOf": [
         {
           "type": "string"
