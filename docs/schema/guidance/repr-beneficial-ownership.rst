@@ -43,29 +43,27 @@ If an entity is exempt from declaring its beneficial owners its record SHOULD be
 A beneficial ownership relationship
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If a person is a beneficial owner of an entity, entity X, whether directly or indirectly, and one of them is required to declare this beneficial ownership:
+If a person is a beneficial owner of an entity, entity X, (whether directly or indirectly) and one of them is required to declare this beneficial ownership, there MUST be a *primary* relationship record connecting the two which represents the beneficial ownership relationship. Specifically, in the ``recordDetails`` for the relationship: 
 
-1. There MUST be a *primary* relationship connecting the two which represents the beneficial ownership relationship. Specifically, in the ``recordDetails`` for the relationship: 
-
-   a. the entity’s record MUST be the ``subject``;
-   b. the person’s record MUST be the ``interestedParty``;
-   c. ``isComponent`` MUST be false;
-   d. the ``interests`` which make the person meet the criteria for their being declared a beneficial owner MUST be included if known; and
-   e. the ``interests`` in (d) MUST have ``beneficialOwnershipOrControl`` set to 'true'. If an interest is known to be exercised indirectly, via intermediary entities then ``directOrIndirect`` MUST be ‘indirect’. If it is known to be exercised directly then ``directOrIndirect`` MUST be ‘direct’. Otherwise ``directOrIndirect`` MUST be ‘unknown’.
+- the entity’s ``recordId`` value MUST be the ``subject``
+- the person’s ``recordId`` value MUST be the ``interestedParty``
+- ``isComponent`` MUST be false
+- the ``interests`` which make the person meet the criteria for their being declared a beneficial owner MUST be included if known. They MUST have ``beneficialOwnershipOrControl`` set to 'true'. If an interest is known to be exercised indirectly, via intermediary entities then ``directOrIndirect`` MUST be ‘indirect’. If it is known to be exercised directly then ``directOrIndirect`` MUST be ‘direct’. Otherwise ``directOrIndirect`` MUST be ‘unknown’.
 
 Intermediaries
 ^^^^^^^^^^^^^^
 
 Where beneficial ownership is known to be exercised indirectly, via known intermediary elements, this SHOULD be represented in addition to the above. In particular:
 
-1. The chain of known intermediary elements SHOULD be represented by *secondary* records.
-2. These secondary records SHOULD link the beneficial owner’s record to entity X’s record indirectly.
-3. These secondary records SHOULD all have ``isComponent`` set to 'true'.
-4. These secondary records SHOULD all have their ``recordId`` values listed in the ``componentRecords`` array of the ``recordDetails`` for the primary relationship.
-5. When ``recordDetails`` for the primary relationship are published in a BODS file:
+- the chain of known intermediary elements SHOULD be represented by *secondary* records
+- these secondary records SHOULD link the beneficial owner’s record to entity X’s record indirectly
+- these secondary records SHOULD all have ``isComponent`` set to 'true'
+- these secondary records SHOULD all have their ``recordId`` values listed in the ``componentRecords`` array of the ``recordDetails`` for the primary relationship.
 
-   a. Statements for all secondary records referenced from ``componentRecords`` MUST also be published in that file;
-   b. Statements for all secondary records must appear before the the first Statement for the primary relationship.
+When Statements about the primary relationship are published in a BODS file:
+
+- Statements for all secondary records referenced from ``componentRecords`` MUST also be published in that file
+- Statements for all secondary records must appear before the the first Statement for the primary relationship.
 
 Example
 --------
