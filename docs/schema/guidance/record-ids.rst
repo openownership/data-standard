@@ -46,10 +46,10 @@ When the BODS data is published, there are statements about the two new Beta Sys
 
 Note that:
 
-- The name of the company has not been consistently disclosed. 
-- The two statements do pertain to the same real world entity, as the ``scheme`` and ``id`` properties in both statements are the same.
-- The two statements about the same real world entity relate to two different declaring subjects, as shown by the different ``declarationSubject`` values.
-- The statement for ‘Beta Systems’ has been disclosed by Beta Systems itself, since the ``recordId`` value is also given as the ``declarationSubject``.
+- the name of the company has not been consistently disclosed. 
+- the two statements do pertain to the same real world entity, as the ``scheme`` and ``id`` properties in both statements are the same.
+- the two statements about the same real world entity relate to two different declaring subjects, as shown by the different ``declarationSubject`` values.
+- the statement for ‘Beta Systems’ has been disclosed by Beta Systems itself, since the ``recordId`` value is also given as the ``declarationSubject``.
 
 
 
