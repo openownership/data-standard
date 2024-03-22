@@ -8,7 +8,7 @@ To publish beneficial ownership data in BODS format, an information management s
 
 Record identifiers MUST be unique within the publisher's system and never reused to refer to a different element. 
 
-There are situations where a publisher's system can allow information about the same person, entity or relationship to be collected in relation to the beneficial ownership networks of two (or more) different subjects. In these cases, information from different sources about the same person, entity or relationship can exist side-by-side and needs to be represented in published data. In these cases, each set of information MUST have its own record identifier. (See the example below.)
+There are situations where a publisher's system can allow information about the same person, entity or relationship to be collected in relation to the beneficial ownership networks of two (or more) different subjects. In these cases, information from different declaration subjects about the same person, entity or relationship can exist side-by-side and needs to be represented in published data. In these cases, each set of information MUST have its own record identifier. (See the example below.)
 
 The value of an entity or person record identifier MAY be a function of: the identity of the entity or natural person, plus the identity of the subject of the beneficial ownership network in which the entity or person appears. See :ref:`guidance-identifiers` for guidance on representing the identity of entities and natural persons.  
 
@@ -21,7 +21,7 @@ Example scenario
 
 Private companies in a jurisdiction are obliged to disclose to the Company Registration Authority: their legal owners and any beneficial owners with direct interests in the company. 
 
-In the declaration from Alpha Corp., it discloses one natural person as a beneficial owner (and legal owner) and it also discloses Beta Systems as a legal owner.
+Alpha Corp. discloses one natural person as a beneficial owner (and legal owner) and it also discloses Beta Systems as a legal owner.
 
 .. figure:: ../../_assets/AlphaCorp.svg
    :alt: Diagram of a beneficial ownership network. An entity node for the company Alpha Corp is connected via a solid line to a person node. Alpha Corp's node is also connected via a solid line to an entity node for the company Beta Systems. An entity statement block sits next to Alpha Corp's node. Within the entity statement, recordId is '04a221be'. An entity statement block sits next to Beta Systems's node. Within the entity statement, recordId is '09d3a4fb'. 
