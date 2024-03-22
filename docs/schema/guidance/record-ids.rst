@@ -10,7 +10,7 @@ Record identifiers MUST be unique within the publisher's system and never reused
 
 There are situations where a publisher's system can allow information about the same person, entity or relationship to be collected in relation to the beneficial ownership networks of two (or more) different subjects. In these cases, information from different sources about the same person, entity or relationship can exist side-by-side and needs to be represented in published data. In these cases, each set of information MUST have its own record identifier. (See the example below.)
 
-The value of an entity or person record identifier MAY be a function of: the identity of the entity or natural person in question, plus the identity of the subject of the beneficial ownership network in which the entity or person appears. See :ref:`guidance-identifiers` for guidance on representing the identity of entities and natural persons.  
+The value of an entity or person record identifier MAY be a function of: the identity of the entity or natural person, plus the identity of the subject of the beneficial ownership network in which the entity or person appears. See :ref:`guidance-identifiers` for guidance on representing the identity of entities and natural persons.  
 
 The identity of a relationship is constituted by the identities of its subject and interested party. Therefore the value of a relationship record identifier MAY be a function of: the record identifiers of its subject and interested party, plus the identity of the subject of the beneficial ownership network in which the relationship appears.
 
@@ -19,7 +19,7 @@ Record identifiers are used for :ref:`representing-bo` and for :ref:`guidance-up
 Example scenario
 ----------------
 
-Private companies in a given jurisdiction are obliged to disclose to the Company Registration Authority: their legal owners and any beneficial owners with direct interests in the company. 
+Private companies in a jurisdiction are obliged to disclose to the Company Registration Authority: their legal owners and any beneficial owners with direct interests in the company. 
 
 In the declaration from Alpha Corp., it discloses one natural person as a beneficial owner (and legal owner) and it also discloses Beta Systems as a legal owner.
 
@@ -28,7 +28,7 @@ In the declaration from Alpha Corp., it discloses one natural person as a benefi
    :figwidth: 80%
    :align: center
 
-In the declaration from Beta Systems, it declares that it has four direct beneficial owners. 
+Beta Systems declares that it has four direct beneficial owners. 
 
 .. figure:: ../../_assets/BetaSys.svg
    :alt: Diagram of a beneficial ownership network. An entity node for the company Beta Sys is connected via a solid lines to four person nodes. An entity statement block sits next to the Beta Sys node. Within the entity statement, recordId is '02c83aa2'.
