@@ -12,16 +12,14 @@ See Section 9 of the ECMA-404 JSON specification which deals with strings, encod
 
 JSON Lines MAY also be used when creating large files.
 
-Statement order and BODS version
---------------------------------
+Statement order
+---------------
 
 A JSON BODS file MUST consist of a series of ordered Statement objects within a top-level array. Specifically:
 
-- the `declarationSubject` value of each Statement MUST match the `recordId` value of at least one other *prior* Statement in the array (or match its own `recordId` value)
+- the ``declarationSubject`` value of each Statement MUST match the ``recordId`` value of at least one other *prior* Statement in the array (or match its own `recordId` value)
 
-- the `interestedParty` and `subject` values of a Relationship statement, when they are a `recordId` value, MUST match the `recordId` value of at least one other *prior* Statement in the array.
-
-In the array, all Statements MUST share the same major version number in their `publicationDetails.bodsVersion` field.
+- the ``interestedParty`` and ``subject`` values of a Relationship statement, when they are a ``recordId`` value, MUST match the ``recordId`` value of at least one other *prior* Statement in the array.
 
 
 Alternative tabular form
