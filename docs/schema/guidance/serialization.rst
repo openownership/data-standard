@@ -3,9 +3,29 @@
 Serialization
 =============
 
-The canonical serialization of BODS data is as a `JSON document <https://tools.ietf.org/html/rfc8259>`_. A JSON BODS file SHOULD consist of a series of ordered statement objects within a top-level array. JSON Lines MAY also be used when creating large files.
+The canonical serialization of BODS data is as a JSON document. Equivalent specifications of JSON are given by `IETF RFC 8256 <https://tools.ietf.org/html/rfc8259>`_ and by `ECMA 404 <https://ecma-international.org/publications-and-standards/standards/ecma-404/>`_. It is RECOMMENDED that publishers:
 
-Each of the :ref:`entityRecords <schema-entity-record>` or :ref:`personRecords <schema-person-record>` referenced by a particular :ref:`relationshipRecord <schema-relationship-record>`  MUST appear before that particular relationship-record in the ordered array. 
+- Use UTF-8 for maximal interoperability (section 8.1 of RFC 8259);
+- Escape characters that might cause problems when ingesting data (for example: &, <).
+
+See Section 9 of the ECMA-404 JSON specification which deals with strings, encoding and escaping.
+
+JSON Lines MAY also be used when creating large files.
+
+Statement order and BODS version
+--------------------------------
+
+A JSON BODS file MUST consist of a series of ordered Statement objects within a top-level array. Specifically:
+
+- the `declarationSubject` value of each Statement MUST match the `recordId` value of at least one other *prior* Statement in the array (or match its own `recordId` value)
+
+- the `interestedParty` and `subject` values of a Relationship statement, when they are a `recordId` value, MUST match the `recordId` value of at least one other *prior* Statement in the array.
+
+In the array, all Statements MUST share the same major version number in their `publicationDetails.bodsVersion` field.
+
+
+Alternative tabular form
+------------------------
 
 BODS data MAY also be serialized in tabular form, with each row representing a statement. Columns SHOULD represent statement fields and column titles SHOULD use the relevant relative JSON Pointer from the statement root. 
 
@@ -15,28 +35,35 @@ For example, the extract:
    
    [
     {
-      "statementID": "e3c07f34-1810-4eed-b845-4d9f4d97f9d5",
-      "statementType": "entityStatement",
-      "identifiers": [
-        {
-          "scheme": "GB-COH",
-          "id": "07444723"
-        }
-      ]
+      "statementId": "e3c07f34-1810-4eed-b845-4d9f4d97f9d5",
+      "recordId": "1810-4eed-b845-4d9f4d97f9d5",
+      "recordType": "entity",
+      "recordDetails": {
+        "identifiers": [
+          {
+            "scheme": "GB-COH",
+            "id": "07444723"
+          }
+        ]
+      }
     },
     {
-      "statementID":"a2b485be-e3b6-4fd7-8a6a-930e46cf9957",
-      "statementType":"personStatement",
-      "identifiers":[
-        {
-          "scheme":"MX-RFC",
-          "id":"ABC680524P-76"
-        }
-      ]
+      "statementId":"a2b485be-e3b6-4fd7-8a6a-930e46cf9957",
+      "recordId": "e3b6-4fd7-8a6a-930e46cf9957",
+      "recordType":"person",
+      "recordDetails": {
+        "identifiers":[
+          {
+            "scheme":"MX-RFC",
+            "id":"ABC680524P-76"
+          }
+        ]
+      }
     },
     {
-      "statementID":"34b479f2-1681-4064-ab51-1e703fbafa",
-      "statementType":"ownershipOrControlStatement"
+      "statementId":"34b479f2-1681-4064-ab51-1e703fbafa",
+      "recordId": "1681-4064-ab51-1e703fbafa",
+      "recordType":"relationship"
     }
    ]
 
@@ -45,21 +72,25 @@ may be serialized in a table as:
 .. list-table:: 
    :header-rows: 1
 
-   * - statementID 
-     - statementType 
-     - identifiers/0/scheme 
-     - identifiers/0/id
+   * - statementId 
+     - recordId
+     - recordType 
+     - recordDetails/identifiers/0/scheme 
+     - recordDetails/identifiers/0/id
    * - e3c07f34-1810-4eed-b845-4d9f4d97f9d5
-     - entityStatement
+     - 1810-4eed-b845-4d9f4d97f9d5
+     - entity
      - GB-COH
      - 07444723
    * - a2b485be-e3b6-4fd7-8a6a-930e46cf9957
-     - personStatement
+     - e3b6-4fd7-8a6a-930e46cf9957
+     - person
      - MX-RFC
      - ABC680524P-76
 
    * - 34b479f2-1681-4064-ab51-1e703fbafa
-     - ownershipOrControlStatement
+     - 1681-4064-ab51-1e703fbafa
+     - relationship
      - 
      - 
 
