@@ -1,17 +1,19 @@
 [
     {
         "statementId": "2f7bf9370f1254068e5e946df067d07d",
-        "recordId": "ent-93c75c87ab28f889",
+        "declarationSubject": "xyz",
+        "recordId": "123",
         "recordType": "entity",
-        "declarationSubject": "ent-93c75c87ab28f889",
         "recordDetails": {
-            "isComponent": false,
             "entityType": "registeredEntity",
+            "isComponent": false,
             "addresses": [
                 {
+                    "type": "registered",
+                    "address": "53 Killard, Kilteragh, Dooradoyle, Co. Limerick ",
+                    "postCode": "V94 V3VT",
                     "country": {
-                        "name": "Ireland",
-                        "code": "IE"
+                        "name": "Ireland"
                     }
                 }
             ]

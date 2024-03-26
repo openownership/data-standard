@@ -45,7 +45,10 @@
                     "type": "registered",
                     "address": "53 Killard, Kilteragh, Dooradoyle, Co. Limerick ",
                     "postCode": "V94 V3VT",
-                    "country": "IE"
+                    "country": {
+                        "name": "Ireland",
+                        "code": "IE"
+                    }
                 }
             ]
         }

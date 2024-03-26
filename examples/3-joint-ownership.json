@@ -28,8 +28,11 @@
         {
           "type": "registered",
           "address": "Aston House, Cornwall Avenue, London, N3 1LF",
-          "country": "GB",
-          "postCode": "N3 1LF"
+          "postCode": "N3 1LF",
+          "country": {
+            "name": "United Kingdom",
+            "code": "GB"
+          }
         }
       ],
       "jurisdiction": {
