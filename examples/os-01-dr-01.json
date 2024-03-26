@@ -76,8 +76,11 @@
         {
           "type": "service",
           "address": "52  Front St, London",
-          "country": "GB",
-          "postCode": "SE16 2WN"
+          "postCode": "SE16 2WN",
+          "country": {
+            "name": "United Kingdom",
+            "code": "GB"
+          }
         }
       ]
     }
