@@ -62,7 +62,7 @@
               },
               "bodsVersion": {
                 "title": "BODS version",
-                "description": "The version of the Beneficial Ownership Data Standard to which this statement conforms, expressed as major.minor. For example: 0.2 or 1.0.",
+                "description": "The version of the Beneficial Ownership Data Standard to which this statement conforms, expressed as major.minor (e.g. 0.2 or 1.0). In a published BODS dataset, all statements MUST have the same major version number.",
                 "type": "string",
                 "pattern": "^(\\d+\\.)(\\d+)$"
               },
