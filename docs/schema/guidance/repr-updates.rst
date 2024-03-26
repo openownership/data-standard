@@ -14,7 +14,7 @@ The ``recordId`` of the subject of each beneficial ownership network MUST be sta
 
 Each BODS statement issued in relation to any element of a subject's declared beneficial ownership network, at any point in time, MUST contain the subject's ``recordId`` as its ``declarationSubject``.
 
-The BODS data producer SHOULD publish guidance for data users explaining how to understand the lifecycle of declared information using the available BODS data. 
+The BODS data producer SHOULD publish guidance for data users explaining how to understand the lifecycle of declared information with reference to the available BODS data. 
 
 
 
