@@ -103,7 +103,7 @@
     },
     "addresses": {
       "title": "Addresses",
-      "description": "One or more addresses for this entity.",
+      "description": "One or more addresses for this person.",
       "type": "array",
       "items": {
         "$ref": "urn:components#/$defs/Address",
