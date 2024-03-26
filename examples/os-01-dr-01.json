@@ -17,7 +17,6 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
       "name": "Company A",
       "foundingDate": "2019-01-01",
       "identifiers": [
@@ -25,7 +24,10 @@
           "scheme": "GB-COH",
           "id": "XE-A-01"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {

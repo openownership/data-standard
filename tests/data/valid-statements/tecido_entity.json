@@ -1,41 +1,47 @@
-[{
+[
+  {
     "statementId": "crxpru319949212398855320030147004728",
     "statementDate": "2019-01-20",
     "publicationDetails": {
-        "publicationDate": "2019-01-31",
-        "bodsVersion": "0.4",
-        "license": "http://opendefinition.org/licenses/cc-zero",
-        "publisher": {
-            "name": "Company Register, Delaware"
-        }
+      "publicationDate": "2019-01-31",
+      "bodsVersion": "0.4",
+      "license": "http://opendefinition.org/licenses/cc-zero",
+      "publisher": {
+        "name": "Company Register, Delaware"
+      }
     },
     "recordId": "01B68D7633",
     "recordType": "entity",
     "recordStatus": "new",
     "source": {
-        "type": ["selfDeclaration"],
-        "assertedBy": [
-            {
-                "name": "Maria Esteves"
-            }
-        ]
+      "type": [
+        "selfDeclaration"
+      ],
+      "assertedBy": [
+        {
+          "name": "Maria Esteves"
+        }
+      ]
     },
     "declaration": "bo-jtc-8755982746",
     "declarationSubject": "01B68D7633",
     "recordDetails": {
-        "isComponent": false,
-        "entityType": "registeredEntity",
-        "name": "Tecido Ltd",
-        "jurisdiction": {
-            "name": "Delaware",
-            "code": "US-DE"
-        },
-        "foundingDate": "2002-03-09",
-        "identifiers": [
-            {
-                "id": "758355",
-                "schemeName": "Company Registry, Delaware. Company number"
-            }
-        ]
+      "isComponent": false,
+      "name": "Tecido Ltd",
+      "jurisdiction": {
+        "name": "Delaware",
+        "code": "US-DE"
+      },
+      "foundingDate": "2002-03-09",
+      "identifiers": [
+        {
+          "id": "758355",
+          "schemeName": "Company Registry, Delaware. Company number"
+        }
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
-}]
+  }
+]

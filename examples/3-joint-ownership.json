@@ -15,7 +15,6 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
       "name": "CHRINON LTD",
       "foundingDate": "2010-11-18",
       "identifiers": [
@@ -35,6 +34,9 @@
       "jurisdiction": {
         "code": "GB",
         "name": "United Kingdom of Great Britain and Northern Ireland (the)"
+      },
+      "entityType": {
+        "type": "registeredEntity"
       }
     }
   },
@@ -54,8 +56,10 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "arrangement",
-      "name": "Joint shareholding"
+      "name": "Joint shareholding",
+      "entityType": {
+        "type": "arrangement"
+      }
     }
   },
   {

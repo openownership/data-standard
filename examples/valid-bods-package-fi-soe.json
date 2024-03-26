@@ -22,7 +22,6 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
       "name": "Gasgrid Finland Oy",
       "jurisdiction": {
         "name": "Finland",
@@ -34,7 +33,10 @@
           "scheme": "FI-PRO"
         }
       ],
-      "foundingDate": "2020-01-01"
+      "foundingDate": "2020-01-01",
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {
@@ -60,7 +62,6 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": true,
-      "entityType": "registeredEntity",
       "name": "Suomen Kaasuverkko Oy",
       "jurisdiction": {
         "name": "Finland",
@@ -72,7 +73,10 @@
           "scheme": "FI-PRO"
         }
       ],
-      "foundingDate": "2020-01-01"
+      "foundingDate": "2020-01-01",
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {
@@ -98,11 +102,6 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": true,
-      "entityType": "stateBody",
-      "entitySubtype": {
-        "generalCategory": "governmentDepartment",
-        "localTerm": "ministerio"
-      },
       "name": "Valtiovarainministerio",
       "alternateNames": [
         "Finansministeriet"
@@ -110,6 +109,11 @@
       "jurisdiction": {
         "name": "Finland",
         "code": "FI"
+      },
+      "entityType": {
+        "type": "stateBody",
+        "details": "ministerio",
+        "subtype": "governmentDepartment"
       }
     }
   },
@@ -136,7 +140,6 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "state",
       "name": "Suomen tasavalta",
       "alternateNames": [
         "Republic of Finland"
@@ -144,6 +147,9 @@
       "jurisdiction": {
         "name": "Finland",
         "code": "FI"
+      },
+      "entityType": {
+        "type": "state"
       }
     }
   },

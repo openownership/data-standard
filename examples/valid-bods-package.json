@@ -15,7 +15,6 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
       "name": "CHRINON LTD",
       "foundingDate": "2010-11-18",
       "identifiers": [
@@ -23,7 +22,10 @@
           "scheme": "GB-COH",
           "id": "07444723"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {

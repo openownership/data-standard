@@ -26,14 +26,16 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
       "name": "DRILLGREAT LIMITED",
       "identifiers": [
         {
           "scheme": "GB-COH",
           "id": "06292597"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {
@@ -63,7 +65,6 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
       "name": "MONSOON HOLDINGS (NO.1) LIMITED",
       "foundingDate": "1991-02-25",
       "identifiers": [
@@ -75,6 +76,9 @@
       "jurisdiction": {
         "code": "GB",
         "name": "United Kingdom of Great Britain and Northern Ireland (the)"
+      },
+      "entityType": {
+        "type": "registeredEntity"
       }
     }
   },

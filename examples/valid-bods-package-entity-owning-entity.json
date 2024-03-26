@@ -15,7 +15,6 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
       "name": "JENEX LIMITED",
       "foundingDate": "1996-06-10",
       "identifiers": [
@@ -23,7 +22,10 @@
           "scheme": "GB-COH",
           "id": "03209885"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {
@@ -42,7 +44,6 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
       "name": "MVJ LIMITED",
       "foundingDate": "2012-07-19",
       "identifiers": [
@@ -50,7 +51,10 @@
           "scheme": "GB-COH",
           "id": "08150312"
         }
-      ]
+      ],
+      "entityType": {
+        "type": "registeredEntity"
+      }
     }
   },
   {
