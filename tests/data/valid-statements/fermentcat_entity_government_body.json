@@ -1,7 +1,6 @@
 [
   {
     "statementId": "2f7bf9370f1254068e5e946df067d07d",
-    "statementDate": "2021-09-11T16:15:08Z",
     "publicationDetails": {
       "publicationDate": "2021-09-11T00:00:00+00:00",
       "bodsVersion": "0.4",
@@ -11,18 +10,9 @@
     },
     "recordId": "ent-93c75c87ab28f889",
     "recordType": "entity",
-    "recordStatus": "updated",
     "declarationSubject": "ent-93c75c87ab28f889",
     "recordDetails": {
       "isComponent": false,
-      "name": "Fermentcat Ltd",
-      "identifiers": [
-        {
-          "id": "434151",
-          "scheme": "IE-BAU",
-          "schemeName": "Irish Business Authority "
-        }
-      ],
       "entityType": {
         "type": "stateBody",
         "subtype": "governmentDepartment"
