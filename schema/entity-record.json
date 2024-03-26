@@ -24,6 +24,7 @@
           "title": "Entity type",
           "description": "A value from the entityType codelist.",
           "codelist": "entityType.csv",
+          "openCodelist": false,
           "enum": [
             "registeredEntity",
             "legalEntity",
