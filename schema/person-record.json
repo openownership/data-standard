@@ -87,11 +87,6 @@
       ],
       "propertyOrder": 36
     },
-    "placeOfResidence": {
-      "title": "Place of residence",
-      "propertyOrder": 50,
-      "$ref": "urn:components#/$defs/Address"
-    },
     "taxResidencies": {
       "title": "Tax residency",
       "description": "An array of Country objects representing the tax residencies held by this person.",
