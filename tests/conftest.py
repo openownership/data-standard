@@ -169,6 +169,7 @@ def get_valid_data():
         {
             "statementId": "abcdefgkdddddddddddddddddddddddshdkjfkjdkjf",
             "declarationSubject": "xyz",
+            "statementDate": "2017-11-18",
             "recordId": "123",
             "recordType": "entity",
             "recordDetails": {

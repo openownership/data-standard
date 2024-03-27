@@ -5,6 +5,7 @@
         "recordType": "person",
         "recordStatus": "new",
         "declarationSubject": "ent-93c75c87ab28f889",
+        "statementDate": "2017-11-18",
         "recordDetails": {
             "isComponent": false,
             "personType": "knownPerson"
