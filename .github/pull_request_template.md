@@ -4,7 +4,7 @@
 - How can a reviewer test or examine your changes?
 - Who is best placed to review it?
 
-(Closes/Relates to) issue: #
+Closes #
 
 ## Translations
 
