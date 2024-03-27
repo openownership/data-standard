@@ -57,7 +57,14 @@
     "placeOfBirth": {
       "title": "Place of birth",
       "propertyOrder": 40,
-      "$ref": "urn:components#/$defs/Address"
+      "$ref": "urn:components#/$defs/Address",
+      "properties":{
+        "type":{
+          "enum":[
+            "placeOfBirth"
+          ]
+        }
+      }
     },
     "birthDate": {
       "title": "Date of birth",
@@ -110,7 +117,6 @@
         "properties":{
           "type":{
             "enum":[
-              "placeOfBirth",
               "residence",
               "service",
               "alternative"
