@@ -16,6 +16,7 @@
           "description": "What type of address is this? See the addressType codelist.",
           "type": "string",
           "enum": [
+            "placeOfBirth",
             "residence",
             "registered",
             "service",
