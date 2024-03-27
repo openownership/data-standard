@@ -11,7 +11,9 @@
                 {
                     "type":"placeOfBirth",
                     "address": "23 Regent St, London",
-                    "country": "GB"
+                    "country": {
+                    	"code": "GB"
+                    }
                 }
             ]
         }
