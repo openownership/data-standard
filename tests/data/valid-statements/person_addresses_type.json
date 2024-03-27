@@ -11,7 +11,10 @@
                 {
                     "type":"residence",
                     "address": "23 Regent St, London",
-                    "country": "GB"
+                    "country": {
+                    	"name":"United Kingdom of Great Britain and Northern Ireland", 
+                    	"code":"GB"
+                    }
                 }
             ]
         }

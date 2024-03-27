@@ -11,7 +11,10 @@
                 {
                     "type":"business",
                     "address": "23 Regent St, London",
-                    "country": "GB"
+                    "country": {
+                    	"name":"United Kingdom of Great Britatin and Northern Ireland", 
+                    	"code": "GB"
+                    }
                 }
             ]
         }
