@@ -10,8 +10,7 @@
             "addresses": [
                 {
                     "type":"placeOfBirth",
-                    "address": "23 Regent St, London",
-                    "country": "GB"
+                    "address": "23 Regent St, London"
                 }
             ]
         }
