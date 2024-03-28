@@ -1,5 +1,7 @@
 import os
 import pytest
+from warnings import warn
+from jsonschema.exceptions import ErrorTree
 from conftest import get_json_files, file_id, get_test_data_dir
 
 """
@@ -19,11 +21,12 @@ invalid_bods_statements = get_json_files(os.path.join(get_test_data_dir(), "inva
 
 @pytest.mark.parametrize("bods_json", valid_bods_statements, ids=file_id, indirect=True)
 def test_valid_files(bods_validator, bods_json):
-    is_valid = bods_validator.is_valid(bods_json)
+    file_path, bods = bods_json
+    is_valid = bods_validator.is_valid(bods)
 
     # (temp for debugging)
     if not is_valid:
-        errors = bods_validator.iter_errors(bods_json)
+        errors = bods_validator.iter_errors(bods)
         for error in errors:
             print(error.message)
             print(error.path)
@@ -33,18 +36,19 @@ def test_valid_files(bods_validator, bods_json):
 
 
 @pytest.mark.parametrize("bods_json", invalid_bods_statements, ids=file_id, indirect=True)
-def test_invalid_files(bods_validator, bods_json):
-    is_valid = bods_validator.is_valid(bods_json)
+def test_invalid_files(bods_validator, bods_json, invalid_data_errors):
+    file_path, bods = bods_json
 
-    if not is_valid:
-        errors = bods_validator.iter_errors(bods_json)
-        for error in errors:
-            print(error.message)
-            print(error.path)
-            print(error.schema_path)
+    errors = bods_validator.iter_errors(bods)
+    tree = ErrorTree(bods_validator.iter_errors(bods))
 
-    assert not is_valid
-    # todo: assert correct error message and field path
+    # Should only be one validation error per file
+    assert tree.total_errors == 1, f"Expecting 1 validation error, {tree.total_errors} found."
+    
+    # Check the type of error and path to the error are what we expect
+    for error in errors:
+        # TODO: this doesn't work if there's the correct error at the correct path but for the wrong property
+        assert (file_path, error.json_path) in invalid_data_errors.get(error.validator), f"Unexpected {error.validator} error at {error.json_path}."        
 
 
 def test_valid_data(bods_validator, get_valid_data):
