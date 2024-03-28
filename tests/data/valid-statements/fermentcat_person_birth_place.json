@@ -9,7 +9,10 @@
             "personType": "knownPerson",
             "placeOfBirth":{
               "type": "placeOfBirth",
-              "country": "IE"
+              "country": {
+              "code":"IE",
+              "name":"Ireland"
+              }
             }
             
         }
