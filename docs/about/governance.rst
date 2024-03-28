@@ -1,54 +1,43 @@
-Governance 
-==========
+Governance and development 
+==========================
 
-BODS is developed by `Open Ownership <https://www.openownership.org/>`__, a non-profit organisation focused on beneficial ownership transparency, in partnership with `Open Data Services <https://opendataservices.coop/>`__.
+The Beneficial Ownership Data Standard (BODS) is developed by `Open Ownership <https://www.openownership.org/>`_, a non-profit organisation focused on beneficial ownership transparency, in partnership with `Open Data Services <https://opendataservices.coop/>`_.
 
-An open `data standard working group <https://standard.openownership.org/en/latest/about/governance.html>`__ of data experts, beneficial ownership specialists and other interested parties also provide advice and help guide the development of BODS.
+Development of BODS responds to the evolving needs of those collecting, sharing and using beneficial ownership data.
 
-The working group is co-chaired by Open Ownership and Open Data Services - and anyone can apply to join the group by `filling out this form <https://docs.google.com/forms/d/e/1FAIpQLSdRSmSUxyyv2t1k3vWXZ_3EhTW_f603MeGxgyjKnbNNE9vvbQ/viewform>`__. Virtual group meetings are held quarterly and communication is coordinated through a `Google group <https://groups.google.com/a/openownership.org/g/data-standard-wg>`__.
+As work continues towards a version 1.0, the processes by which BODS is governed and developed will be updated by Open Ownership and Open Data Services in consultation with the Data Standard Working Group. 
 
-Data Standard Working Group - Terms of Reference
-------------------------------------------------
-
-The data standard working group helps drive the development of BODS, an open data standard designed to reduce the technical barriers to the collection and re-use of beneficial ownership data.
-
-This working group is open to all and includes stakeholders from a range of backgrounds with an interest and expertise in data relating to corporate control or beneficial ownership, and to the use of such data in the public interest. 
-
-While the development of the standard will take place through an open process, to which anyone can contribute, working group members take on a responsibility for guiding development of BODS, and ensuring that relevant requirements, user needs and technical considerations are taken into account.
-
-Values
-++++++
-
-All working group members must commit to support the following shared values.
-
-**Open**
-
-We will:
-
-* share our views and plans, and share knowledge as widely as possible;
-* solicit and listen to views from end users and stakeholders;
-* make our outputs available under an open licence and abide by the project `contributor agreement <https://github.com/openownership/data-standard/blob/master/CONTRIBUTING.md>`_; 
-
-**Expert**
-
-We will:
-
-* bring our expertise to the discussion as individuals;
-* use our expertise to synthesise the views of others in constructive and forward-thinking proposals;
-* use good judgement to respect privacy and confidentiality.
-
-**Collaborative**
-
-We will
-
-* support each other in discussion, in decisions, and in delivery;
-* operate on the basis of consensus decision making; 
-* constructively hold each other to account on our commitments;
-* ensure all voices are heard and considered carefully.
-
-Membership, term and role
--------------------------
-
-Membership of the working group is a voluntary responsibility. Members should be prepared to join quarterly virtual group calls and respond to issues via GitHub or email.
+Full details about these processes will be kept up-to-date in the `BODS development handbook <https://openownership.github.io/bods-dev-handbook/>`_.
 
 
+Feature requests and bug reports
+--------------------------------
+
+To suggest changes or fixes, anyone can submit a BODS feature request or bug report at any point via the `issue templates <https://github.com/openownership/data-standard/issues/new/choose>`_ available in the `BODS GitHub repository <https://github.com/openownership/data-standard/>`_.
+
+Open Ownership and Open Data Services will respond to all community feature requests or bug reports via comments on the Github issue.
+
+Feature development
+-------------------
+
+To lay out a proposed feature for development or to expand on a community-submitted feature, Open Ownership and Open Data Services use feature development tickets.
+
+Feature development tickets are in the format of problem statements: they focus on the user-need gaps in BODS which potentially need to be filled. Current open feature development tickets are listed on the `BODS feature tracker <https://github.com/openownership/data-standard/projects/4>`_ and new ones will first be added to the backlog. Once a ticket is actively being researched or worked on, it will be moved to the Research stage.
+
+Once the user needs for a new feature in BODS have been described in a feature development ticket, proposals can be made about how to implement the feature. Currently Open Ownership and Open Data Services use GitHub Discussions to get feedback about `implementation proposals <https://github.com/openownership/data-standard/discussions/categories/feature-implementation>`_.
+
+If broad consensus about whether or not to proceed with implementation as laid out in the proposal can't be reached, the decision should be postponed.
+
+Release tracking
+----------------
+
+For each new version of BODS, Open Ownership and Open Data Services will create a release tracker as a `project <https://github.com/orgs/openownership/projects>`_ of the `Open Ownership GitHub team <https://github.com/openownership>`_ to capture the features, bug fixes, changes and updates being made in the new version. Here is the `release tracker for BODS version 0.4 <https://github.com/orgs/openownership/projects/4/views/1>`_ as an example.
+
+Data Standard Working Group
+---------------------------
+
+The Data Standard Working Group brings together in-country, technical and data experts to help shape the development of BODS as well as driving adoption of the standard internationally.
+
+This working group is open to all and includes stakeholders from a range of backgrounds with an interest and expertise in data relating to corporate control or beneficial ownership, and to the use of such data in the public interest.
+
+Membership of the working group is voluntary. Anyone can apply to join the group by `filling out this form <https://docs.google.com/forms/d/e/1FAIpQLSdRSmSUxyyv2t1k3vWXZ_3EhTW_f603MeGxgyjKnbNNE9vvbQ/viewform>`_ after consulting the `terms of reference <https://docs.google.com/document/d/1kNxojFM0BLZvUYlFWfayQ88CG7ffC-ypjMtrZxDDKmU/edit?usp=sharing>`_. Virtual group meetings are held quarterly and communication is coordinated through a Google group. Members are encouraged to respond to issues via `GitHub <https://github.com/openownership/data-standard/issues>`_ or email.
