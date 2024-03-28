@@ -34,7 +34,7 @@ def schema_dir():
 @pytest.fixture
 def codelists_dir():
     """
-    Makes the directory the cdoeslists are in available to tests.
+    Makes the directory the codeslists are in available to tests.
     """
     return os.path.join(get_schema_dir(), "codelists")
 
@@ -110,14 +110,14 @@ def codelist_validator():
 @pytest.fixture
 def bods_json(request):
     """
-    Returns JSON from a file path.
+    Returns a tuple of filename and JSON from a file path.
     This is automatically called on all params for tests which take
     `bods_json` as a parameter with indirect=True, and the output passed to
     the test.
     """
     fp = request.param
     bods = json.loads(fp.read_text())
-    return bods
+    return (fp.name, bods)
 
 
 @pytest.fixture
@@ -158,6 +158,21 @@ def codelist_enums(request):
     registry = schema_registry()
     schema_contents = registry.contents(request.param)
     return get_codelists_from_schema(schema_contents)
+
+
+@pytest.fixture
+def invalid_data_errors():
+    """
+    Maps the invalid test data filenames to the expected validation errors.
+    Update this list when new test data files are added to the
+    `invalid-statements` directory.
+    """
+    errors = {
+        "entity_missing_declarationSubject.json": ("required", "$[0]", "declarationSubject"),
+        "entity_recordDetails_missing_isComponent.json": ("required", "$[0].recordDetails", "isComponent"),
+        "entity_addressType_placeOfBirth.json": ("enum", "$[0].recordDetails.addresses[0].type", "type"),
+    }
+    return errors
 
 
 @pytest.fixture
