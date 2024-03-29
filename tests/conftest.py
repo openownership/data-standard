@@ -179,36 +179,6 @@ def invalid_data_errors():
     return errors
 
 
-@pytest.fixture
-def get_valid_data():
-    """
-    Returns a simple valid BODS statement.
-    """
-    data = [
-        {
-            "statementId": "abcdefgkdddddddddddddddddddddddshdkjfkjdkjf",
-            "declarationSubject": "xyz",
-            "statementDate": "2017-11-18",
-            "recordId": "123",
-            "recordType": "entity",
-            "recordDetails": {
-                "entityType": "unknownEntity",
-                "isComponent": False,
-            },
-        }
-    ]
-    return data
-
-
-@pytest.fixture
-def get_invalid_data():
-    """
-    Returns a simple invalid BODS statement.
-    """
-    data = [{"declarationSubject": "xyz", "recordId": "123", "recordType": "entity"}]
-    return data
-
-
 def get_json_files(dir):
     """
     Recursively gets files with .json extension in `path` and returns
