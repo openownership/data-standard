@@ -2,16 +2,20 @@
     {
         "statementId": "2f7bf9370f1254068e5e946df067d07d",
         "statementDate": "2017-11-18",
-        "declarationSubject": "xyz",
         "recordId": "123",
         "recordType": "entity",
+        "declarationSubject": "xyz",
         "recordDetails": {
             "entityType": "registeredEntity",
             "isComponent": false,
             "addresses": [
                 {
                     "type":"placeOfBirth",
-                    "address": "23 Regent St, London"
+                    "address": "23 Regent St, London",
+                    "country": {
+                        "name": "United Kingdom",
+                        "code": "GB"
+                    }
                 }
             ]
         }
