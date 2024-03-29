@@ -32,12 +32,14 @@ The Beneficial Ownership Data Standard (BODS) provides a structured data format,
 
 
 Within BODS:
+
 * the :doc:`data schema<../schema/index>` describes how and what data should be shared. It can also inform the design of data collection and management systems. The schema is defined in a structured data format called JSON
 * the :doc:`technical guidance<../schema/guidance/index>` provides support for publishers and users of the data
 
 Collecting, sharing and using beneficial ownership information as `structured data <https://www.openownership.org/en/publications/structured-and-interoperable-beneficial-ownership-data/benefits-of-structured-and-interoperable-data/>`__ has a number of benefits. 
 
 Broadly, it:
+
 * improves the functionality of beneficial ownership information
 * reduces the cost of producing, using, and maintaining beneficial ownership information
 * has a greater chance of meeting beneficial ownership transparency policy goals than unstructured data
@@ -45,6 +47,7 @@ Broadly, it:
 Without common standards, combining and analysing data from different sources can be expensive and time-consuming, making it more difficult to understand beneficial ownership networks.
 
 BODS allows publishers to provide statements that describe:
+
 * :any:`details about natural persons <schema-person-record>`
 * :any:`details about entities <schema-entity-record>`
 * :doc:`identifiers for natural persons and entities <../schema/guidance/identifiers>`
