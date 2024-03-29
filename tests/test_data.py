@@ -1,6 +1,5 @@
 import os
 import pytest
-from warnings import warn
 from jsonschema.exceptions import ErrorTree
 from conftest import get_json_files, file_id, get_test_data_dir
 
@@ -43,7 +42,9 @@ def test_invalid_files(bods_validator, bods_json, invalid_data_errors):
     tree = ErrorTree(bods_validator.iter_errors(bods))
 
     # Check file is present in error mapping
-    assert file_name in invalid_data_errors.keys(), f"File missing from error mapping, please add it to expected_errors.csv"
+    assert (
+        file_name in invalid_data_errors.keys()
+    ), "File missing from error mapping, please add it to expected_errors.csv"
 
     # Should only be one validation error per file
     if tree.total_errors > 1:
@@ -57,9 +58,10 @@ def test_invalid_files(bods_validator, bods_json, invalid_data_errors):
     for error in errors:
         assert error.validator in invalid_data_errors.get(file_name) and error.json_path in invalid_data_errors.get(
             file_name
-        ), f"Expected {invalid_data_errors.get(file_name)[0]} error at {invalid_data_errors.get(file_name)[1]} but found {error.validator} error at {error.json_path}."
+        ), f"Expected {invalid_data_errors.get(file_name)[0]} error at {invalid_data_errors.get(file_name)[1]} \
+        but found {error.validator} error at {error.json_path}."
+        
         if error.validator == "required":
             assert (
                 invalid_data_errors.get(file_name)[2] in error.message
             ), f"Expected {invalid_data_errors.get(file_name)[2]} to be missing, but instead got: {error.message}."
-
