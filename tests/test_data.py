@@ -43,7 +43,7 @@ def test_invalid_files(bods_validator, bods_json, invalid_data_errors):
     tree = ErrorTree(bods_validator.iter_errors(bods))
 
     # Check file is present in error mapping
-    assert file_name in invalid_data_errors.keys(), f"File missing from error mapping"
+    assert file_name in invalid_data_errors.keys(), f"File missing from error mapping, please add it to expected_errors.csv"
 
     # Should only be one validation error per file
     assert tree.total_errors == 1, f"Expecting 1 validation error, {tree.total_errors} found."

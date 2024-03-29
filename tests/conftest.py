@@ -1,4 +1,5 @@
 import os
+import csv
 import json
 import pytest
 
@@ -163,15 +164,18 @@ def codelist_enums(request):
 @pytest.fixture
 def invalid_data_errors():
     """
-    Maps the invalid test data filenames to the expected validation errors.
-    Update this list when new test data files are added to the
-    `invalid-statements` directory.
+    The CSV file expected_errors.csv maps the invalid test data filenames to the expected validation errors.
+    This function reads that file into a dict with structure:
+        { file_name: ( validation_error, json_path, property ) }
+    for use in the invalid data tests.
+    Update the CSV file when new invalid data files are created.
     """
-    errors = {
-        "entity_missing_declarationSubject.json": ("required", "$[0]", "declarationSubject"),
-        "entity_recordDetails_missing_isComponent.json": ("required", "$[0].recordDetails", "isComponent"),
-        "entity_addressType_placeOfBirth.json": ("enum", "$[0].recordDetails.addresses[0].type", "type"),
-    }
+    errors = {}
+    with open(os.path.join(get_test_data_dir(), "invalid-statements", "expected_errors.csv"), newline="") as csvfile:
+        r = csv.reader(csvfile, delimiter=",", quotechar='"')
+        for row in r:
+            errors[row[0]] = (row[1], row[2], row[3])
+
     return errors
 
 

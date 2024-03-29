@@ -1,0 +1,3 @@
+"entity_missing_declarationSubject.json","required","$[0]","declarationSubject"
+"entity_recordDetails_missing_isComponent.json","required","$[0].recordDetails","isComponent"
+"entity_addressType_placeOfBirth.json", "enum","$[0].recordDetails.addresses[0].type","type"
