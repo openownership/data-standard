@@ -4,15 +4,17 @@
         "recordId": "per-5faa4103dee78621",
         "recordType": "person",
         "declarationSubject": "ent-93c75c87ab28f889",
-        "statementDate": "2017-11-18",
         "recordDetails": {
             "isComponent": false,
             "personType": "knownPerson",
-            "identifiers": [
-                {
-                    "scheme": "IE-TAXID"
-                }
-            ]
+            "placeOfBirth":{
+              "type": "placeOfBirth",
+              "country": {
+              "code":"IE",
+              "name":"Ireland"
+              }
+            }
+            
         }
     }
 ]
