@@ -1,0 +1,18 @@
+[
+    {
+        "statementId": "733b20a572f8b306b538344c7946c9cb",
+        "recordId": "per-5faa4103dee78621",
+        "recordType": "person",
+        "declarationSubject": "ent-93c75c87ab28f889",
+        "statementDate": "2017-11-18",
+        "recordDetails": {
+            "isComponent": false,
+            "personType": "knownPerson",
+            "names": [
+                {
+                    "patronymicName": "Sergeyevich"
+                }
+            ]
+        }
+    }
+]
