@@ -8,3 +8,4 @@
 "entity_statementDate_missing.json","required","$[0]","statementDate"
 "inv_person_addresses_birthplace.json","enum","$[0].recordDetails.addresses[0].type","type"
 "inv_entity_addresses_type.json","enum","$[0].recordDetails.addresses[0].type","type"
+"person_names_patronymic.json","type","$[0].recordDetails.names[0].patronymicName","patronymicName"
