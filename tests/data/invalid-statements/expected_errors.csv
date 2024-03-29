@@ -10,3 +10,4 @@
 "entity_addresses_type.json","enum","$[0].recordDetails.addresses[0].type","type"
 "person_names_patronymic.json","type","$[0].recordDetails.names[0].patronymicName","patronymicName"
 "person_death_date_number.json","type","$[0].recordDetails.deathDate","deathDate"
+"person_birth_date_number.json","type","$[0].recordDetails.birthDate","birthDate"
