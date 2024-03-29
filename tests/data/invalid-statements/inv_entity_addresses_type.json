@@ -1,8 +1,8 @@
 [
     {
         "statementId": "2f7bf9370f1254068e5e946df067d07d",
-        "declarationSubject": "xyz",
         "statementDate": "2017-11-18",
+        "declarationSubject": "xyz",
         "recordId": "123",
         "recordType": "entity",
         "recordDetails": {
@@ -10,12 +10,8 @@
             "isComponent": false,
             "addresses": [
                 {
-                    "type": "registered",
-                    "address": "53 Killard, Kilteragh, Dooradoyle, Co. Limerick ",
-                    "postCode": "V94 V3VT",
-                    "country": {
-                        "code": "IE"
-                    }
+                    "type":"placeOfBirth",
+                    "address": "23 Regent St, London"
                 }
             ]
         }

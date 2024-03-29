@@ -8,11 +8,14 @@
         "recordDetails": {
             "isComponent": false,
             "personType": "knownPerson",
-            "identifiers": [
-                {
-                    "scheme": "IE-TAXID"
-                }
-            ]
+            "placeOfBirth":{
+              "type": "placeOfBirth",
+              "country": {
+              "code":"IE",
+              "name":"Ireland"
+              }
+            }
+            
         }
     }
 ]

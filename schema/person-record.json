@@ -57,7 +57,14 @@
     "placeOfBirth": {
       "title": "Place of birth",
       "propertyOrder": 40,
-      "$ref": "urn:components#/$defs/Address"
+      "$ref": "urn:components#/$defs/Address",
+      "properties":{
+        "type":{
+          "enum":[
+            "placeOfBirth"
+          ]
+        }
+      }
     },
     "birthDate": {
       "title": "Date of birth",
@@ -87,11 +94,6 @@
       ],
       "propertyOrder": 36
     },
-    "placeOfResidence": {
-      "title": "Place of residence",
-      "propertyOrder": 50,
-      "$ref": "urn:components#/$defs/Address"
-    },
     "taxResidencies": {
       "title": "Tax residency",
       "description": "An array of Country objects representing the tax residencies held by this person.",
@@ -106,7 +108,16 @@
       "description": "One or more addresses for this entity.",
       "type": "array",
       "items": {
-        "$ref": "urn:components#/$defs/Address"
+        "$ref": "urn:components#/$defs/Address",
+        "properties":{
+          "type":{
+            "enum":[
+              "residence",
+              "service",
+              "alternative"
+            ]
+          }
+        }
       },
       "propertyOrder": 60
     },
