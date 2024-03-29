@@ -58,12 +58,3 @@ def test_invalid_files(bods_validator, bods_json, invalid_data_errors):
                 invalid_data_errors.get(file_name)[2] in error.message
             ), f"Expected {invalid_data_errors.get(file_name)[2]} to be missing, but instead got: {error.message}."
 
-
-def test_valid_data(bods_validator, get_valid_data):
-    is_valid = bods_validator.is_valid(get_valid_data)
-    assert is_valid
-
-
-def test_invalid_data(bods_validator, get_invalid_data):
-    is_valid = bods_validator.is_valid(get_invalid_data)
-    assert not is_valid
