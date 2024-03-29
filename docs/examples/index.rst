@@ -23,7 +23,7 @@ Joint ownership
 
 To model joint ownership, an artificial 'arrangement', owned by the two parties responsible for it, should be included within a chain of ownership.
 
-.. literalinclude:: ../../examples/3-joint-ownership.json
+.. literalinclude:: ../../examples/joint-ownership.json
     :language: json
 
 
