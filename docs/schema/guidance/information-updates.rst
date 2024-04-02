@@ -1,6 +1,6 @@
-.. _representing-updates:
+.. _information-updates:
 
-Representing information updates
+Information updates
 ========================================
 
 Systems that collect and manage beneficial ownership information often handle the updating or confirmation of existing records. Depending on how the information is managed, the BODS data that is produced will offer a high or low-resolution picture of the changing nature of a beneficial ownership network. Data management systems handling information updates need to meet the minimal set of requirements below, to offer a low-resolution picture. 
@@ -34,4 +34,22 @@ Once a series of Statements about a given element is closed, further Statements 
 
 When the subject or the interested party of a relationship change, the lifecycle of that relationship is considered to have ended. For example, if the owner of a company transfers their interest to a relative, the ``recordStatus`` of the first relationship would be 'closed', and - potentially - details of a new record would be published.
 
+Requirements for special cases
+------------------------------
 
+
+Error correction
+++++++++++++++++
+
+Errors in published data may be due to mistakes at the point of information disclosure, or to the mis-processing of information by the data management system. In either case, errors SHOULD be corrected by the issuing of new statements:
+
+- including an :any:`annotation <schema-annotation>` with the ``motivation`` 'correcting' and a ``description`` of the correction.
+- with an updated ``publicationDetails.publicationDate``
+
+See the example in :any:`guidance-dates`.
+
+
+Redaction
++++++++++
+
+If sensitive information is accidentally published in a Statement, the Statement MAY be republished with the same statement identifier and updated property values.

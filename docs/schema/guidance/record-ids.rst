@@ -14,7 +14,7 @@ The value of an entity or person record identifier MAY be a function of: the ide
 
 The identity of a relationship is constituted by the identities of its subject and interested party. Therefore the value of a relationship record identifier MAY be a function of: the record identifiers of its subject and interested party, plus the identity of the subject of the beneficial ownership network in which the relationship appears.
 
-Record identifiers are used for :ref:`representing-bo` and for :ref:`guidance-updating-data`.
+Record identifiers are used for :ref:`representing-bo` and for :ref:`information-updates`.
 
 Example scenario
 ----------------
