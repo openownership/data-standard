@@ -135,7 +135,7 @@
     },
     "UnspecifiedRecord": {
       "title": "Unspecified or unknown person or entity",
-      "description": "An explanation of why an interested party in a relationship is not specified, or why a person or entity is 'anonymous' or 'unknown'. A `reason` MUST be supplied.",
+      "description": "A `reason` MUST be supplied.",
       "type": "object",
       "properties": {
         "reason": {

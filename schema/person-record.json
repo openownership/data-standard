@@ -25,7 +25,8 @@
       "openCodelist": false
     },
     "unspecifiedPersonDetails": {
-      "$ref": "urn:components#/$defs/UnspecifiedRecord"
+      "$ref": "urn:components#/$defs/UnspecifiedRecord",
+      "description": "An explanation of why a person is anonymous or unknown." 
     },
     "names": {
       "title": "Names",
@@ -199,8 +200,8 @@
       }
     },
     "PepStatusDetails": {
-      "title": "PEP Status",
-      "description": "A description of a politically-exposed person status.",
+      "title": "PEP Status Details",
+      "description": "Information about a person's political involvement.",
       "type": "object",
       "properties": {
         "reason": {
@@ -209,8 +210,8 @@
           "type": "string"
         },
         "missingInfoReason": {
-          "title": "Missing information reason(s)",
-          "description": "An explanation of the reason that PEP status for the person is not provided (i.e. `politicalExposure.status` is 'unknown'). This may be a standard descriptive phrase from the source system, or a free-text justification. Where this field is present it should be the only field except for `source`.",
+          "title": "Missing Information Reason(s)",
+          "description": "An explanation of why the PEP status for the person is not provided (i.e. `politicalExposure.status` is 'unknown'). This may be a standard descriptive phrase from the source system, or a free-text justification. Where this field is present it should be the only field except for `source`.",
           "type": "string"
         },
         "jurisdiction": {
@@ -219,20 +220,20 @@
           "$ref": "urn:components#/$defs/Jurisdiction"
         },
         "startDate": {
-          "title": "State date",
-          "description": "The date from which this individual had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
+          "title": "State Date",
+          "description": "The date from which this individual had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "type": "string",
           "format": "date"
         },
         "endDate": {
-          "title": "End date",
-          "description": "The date from which this individual no longer had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data..",
+          "title": "End Date",
+          "description": "The date from which this individual no longer had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the (first) month.  This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "type": "string",
           "format": "date"
         },
         "source": {
           "title": "Source",
-          "description": "The source of this PEP information",
+          "description": "The source of this PEP information.",
           "$ref": "urn:statement#/$defs/Source"
         }
       }

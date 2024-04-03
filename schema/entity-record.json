@@ -29,7 +29,8 @@
       "propertyOrder": 4
     },
     "unspecifiedEntityDetails": {
-      "$ref": "urn:components#/$defs/UnspecifiedRecord"
+      "$ref": "urn:components#/$defs/UnspecifiedRecord",
+      "description": "An explanation of why an entity is anonymous or unknown." 
     },
     "name": {
       "title": "Entity Name",
