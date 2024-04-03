@@ -65,14 +65,14 @@
     },
     "foundingDate": {
       "title": "Founding Date",
-      "description": "The date on which this entity was founded, created or registered. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are not available, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in a accompanying guidance (such as a publication policy or data use guide).",
+      "description": "The date on which this entity was founded, created or registered. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are not available, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
       "type": "string",
       "format": "date",
       "propertyOrder": 30
     },
     "dissolutionDate": {
       "title": "Dissolution Date",
-      "description": "The date on which this entity was dissolved or ceased, if it is no longer active. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are not available, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in a accompanying guidance (such as a publication policy or data use guide).",
+      "description": "The date on which this entity was dissolved or ceased, if it is no longer active. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are not available, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
       "type": "string",
       "format": "date",
       "propertyOrder": 35
@@ -150,7 +150,7 @@
         "date": {
           "type": "string",
           "title": "Date",
-          "description": "The date on which the law came into force. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are not available, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in a accompanying guidance (such as a publication policy or data use guide).",
+          "description": "The date on which the law came into force. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are not available, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "format": "date"
         }
       },

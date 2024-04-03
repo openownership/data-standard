@@ -313,7 +313,7 @@
     },
     "Source": {
       "title": "Source",
-      "description": "The source of information in this Statement.",
+      "description": "Details describing an information source.",
       "type": "object",
       "properties": {
         "type": {
@@ -335,18 +335,18 @@
         },
         "description": {
           "title": "Description",
-          "description": "Additional, free-text information about the source of this statement.",
+          "description": "Additional, free-text information about the source of information.",
           "type": "string"
         },
         "url": {
           "title": "Source URL",
-          "description": "The external URL from which this information was fetched, if relevant. Or, if relevant, a URL providing additional information on how this Statement was sourced.",
+          "description": "The external URL from which this information was fetched, if relevant. Or, if relevant, a URL providing additional detail on how this information was sourced.",
           "type": "string",
           "format": "uri"
         },
         "retrievedAt": {
           "title": "Retrieved At",
-          "description": "A timestamp indicating when this statement was imported from an external system, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6. (`statementDate` should be set based on the source information.)",
+          "description": "A timestamp indicating when this information was imported from an external system, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
           "type": "string",
           "anyOf": [
             {
