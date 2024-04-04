@@ -1,4 +1,4 @@
 code,title,description,technical note
-new,New Record,"This is a new record",
-updated,Updated Record,"This is an update to an existing record",
-closed,Closed Record,"This is a closed record",
+new,New Record,"Indicates that this is the first Statement published pertaining to the record referenced by `recordId`.",
+updated,Updated Record,"Indicates that this Statement updates information published in a prior Statement pertaining to the record referenced by `recordId`.",
+closed,Closed Record,"Indicates that this is the final Statement published pertaining to the record referenced by `recordId`.",

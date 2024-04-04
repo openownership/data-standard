@@ -1,4 +1,4 @@
 code,title,description,technical note
-knownPerson,Known person,"This person has been identified, and information such as names, identifiers or biographical information may be provided about them.",
-anonymousPerson,Anonymous person,"This person has been identified, but identifying information is being withheld. The reason for non disclosure should be given in the accompanying `unspecifiedPersonDetails` field.",
-unknownPerson,Unknown person,The identity of this person has not been discovered or confirmed.,
+knownPerson,Known person,"A natural person who has been identified, and information such as names, identifiers or biographical information can be provided about them.",
+anonymousPerson,Anonymous person,"A natural person who has been identified, but identifying information is being withheld. The reason for non-disclosure should be given in the accompanying `unspecifiedPersonDetails` field.",
+unknownPerson,Unknown person,"A natural person whose identity has not been discovered or confirmed.",
