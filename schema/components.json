@@ -163,6 +163,75 @@
       "required": [
         "reason"
       ]
+    },
+    "Source": {
+      "title": "Source",
+      "description": "The source object is used to explain where information in a statement originated from, and to link to supporting information.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "title": "Source type",
+          "description": "What type of source is this? Multiple tags can be combined. Values should come from the source type codelist.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "selfDeclaration",
+              "officialRegister",
+              "thirdParty",
+              "primaryResearch",
+              "verified"
+            ],
+            "codelist": "sourceType.csv",
+            "openCodelist": false
+          }
+        },
+        "description": {
+          "title": "Description",
+          "description": "Where required, additional free-text information about the source of this statement can be provided here.",
+          "type": "string"
+        },
+        "url": {
+          "title": "Source URL",
+          "description": "If this information was fetched from an external URL, or a machine or human readable web page is available that provides additional information on how this statement was sourced, provide the URL.",
+          "type": "string",
+          "format": "uri"
+        },
+        "retrievedAt": {
+          "title": "Retrieved at",
+          "description": "A timestamp indicating when this statement was imported from an external system, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format. (The statementDate should be set based on the source information.)",
+          "type": "string",
+          "anyOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ]
+        },
+        "assertedBy": {
+          "title": "Asserted by",
+          "description": "An array of objects representing who is making this statement. This may be the name of the person or organisation making a self-declaration or the name of some other party making a declaration on their behalf. If this statement has been verified, the array may also include the name of the organisation providing verification.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "title": "Name",
+                "description": "The name of the agent making the assertion",
+                "type": "string"
+              },
+              "uri": {
+                "title": "URI",
+                "description": "An optional URI to identify the agent making the assertion",
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
