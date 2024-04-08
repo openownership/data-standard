@@ -232,7 +232,7 @@
         "source": {
           "title": "Source",
           "description": "The source of this PEP information",
-          "$ref": "urn:statement#/$defs/Source"
+          "$ref": "urn:components#/$defs/Source"
         }
       }
     }
