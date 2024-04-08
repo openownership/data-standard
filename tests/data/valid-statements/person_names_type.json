@@ -10,7 +10,8 @@
             "personType": "knownPerson",
             "names": [
                 {
-                    "type": "legal"
+                    "type": "legal",
+                    "fullName": "Riyadh Byrne-Amin"
                 }
             ]
         }
