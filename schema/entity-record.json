@@ -21,7 +21,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "title": "Entity type",
+          "title": "Type",
           "description": "A value from the entityType codelist.",
           "codelist": "entityType.csv",
           "openCodelist": false,
