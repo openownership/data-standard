@@ -48,7 +48,7 @@
     },
     "nationalities": {
       "title": "Nationality",
-      "description": "The nationalities held by this individual.",
+      "description": "The nationalities held by this person.",
       "type": "array",
       "items": {
         "$ref": "urn:components#/$defs/Country"
@@ -57,7 +57,7 @@
     },
     "placeOfBirth": {
       "title": "Place of Birth",
-      "description": "The place where this individual was born.",
+      "description": "The place where this person was born.",
       "propertyOrder": 40,
       "$ref": "urn:components#/$defs/Address",
       "properties":{
@@ -70,7 +70,7 @@
     },
     "birthDate": {
       "title": "Date of Birth",
-      "description": "The date of birth for this individual, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+      "description": "The date of birth for this person, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
       "type": "string",
       "anyOf": [
         {
@@ -84,7 +84,7 @@
     },
     "deathDate": {
       "title": "Death Date",
-      "description": "The date of death for this individual, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+      "description": "The date of death for this person, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
       "type": "string",
       "anyOf": [
         {
@@ -107,7 +107,7 @@
     },
     "addresses": {
       "title": "Addresses",
-      "description": "One or more addresses for this individual.",
+      "description": "One or more addresses for this person.",
       "type": "array",
       "items": {
         "$ref": "urn:components#/$defs/Address",
@@ -159,12 +159,12 @@
   "$defs": {
     "Name": {
       "title": "Name",
-      "description": "A name by which this individual is known. A name MUST be provided in `fullName`, and may optionally be broken down in the `familyName`, `givenName` and `patronymicName` fields, based on the EC ISA Core Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
+      "description": "A name by which this person is known. A name MUST be provided in `fullName`, and may optionally be broken down in the `familyName`, `givenName` and `patronymicName` fields, based on the EC ISA Core Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
       "type": "object",
       "properties": {
         "type": {
           "title": "Type",
-          "description": "The status of this name for the individual, using the nameType codelist.",
+          "description": "The status of this name for the person, using the nameType codelist.",
           "type": "string",
           "enum": [
             "legal",

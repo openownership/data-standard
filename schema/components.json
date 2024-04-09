@@ -99,7 +99,7 @@
         },
         "scheme": {
           "title": "Scheme Code",
-          "description": "For entities, a code from org-id.guide (https://www.org-id.guide) for an identifier-issuing authority (e.g. 'GB-COH'). For people, a value with the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3166-1 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD.",
+          "description": "For entities, a code from org-id.guide (https://www.org-id.guide) for an identifier-issuing authority (e.g. 'GB-COH'). For natural persons, a value with the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3166-1 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD.",
           "type": "string"
         },
         "schemeName": {

@@ -189,7 +189,7 @@
         "securitiesListings": {
           "type": "array",
           "title": "Securities Listings",
-          "description": "Details of the entity's securities and the public exchanges and markets on which they are traded. All equity securities SHOULD BE listed here, plus any other securities from which beneficial ownership might be derived. Where a security is traded on more than one market, there SHOULD BE an entry for each market (or market segment).",
+          "description": "Details of the entity's securities and the public exchanges and markets on which they are traded. All equity securities SHOULD be listed here, plus any other securities from which beneficial ownership might be derived. Where a security is traded on more than one market, there SHOULD be an entry for each market (or market segment).",
           "items": {
             "title": "Securities listing",
             "description": "Details of a security and the market on which it is traded.",
