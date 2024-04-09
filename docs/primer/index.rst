@@ -28,7 +28,7 @@ For more `information about beneficial ownership transparency <https://www.openo
 What is the Beneficial Ownership Data Standard?
 -----------------------------------------------
 
-The Beneficial Ownership Data Standard (BODS) provides a structured data format, along with guidance for collecting, sharing and using data on beneficial ownership.
+The Beneficial Ownership Data Standard (BODS) provides a structured data format, and related requirements, for representing and publishing beneficial ownership information. This is based on the :any:`key concepts <key-concepts>` which underpin beneficial ownership.
 
 
 Within BODS:
