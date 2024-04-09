@@ -87,7 +87,7 @@ def test_items_type(schema_from_registry):
 @pytest.mark.parametrize("schema_from_registry", schemas, indirect=True)
 def test_null_type(schema_from_registry):
     """
-    Tests that the schema no field in the schema allows a null value.
+    Tests that no field in the schema allows a null value.
     `technical note` in the codelists schema is excluded from this, as that can be empty.
     conditional statements for entityType validation are excluded so this error isn't triggered.
     """

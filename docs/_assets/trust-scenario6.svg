@@ -750,7 +750,7 @@
          x="304.12054"
          y="277.29221"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan453-9">entityType: </tspan><tspan
+         id="tspan453-9">entityType.type: </tspan><tspan
          sodipodi:role="line"
          x="304.12054"
          y="292.29221"
@@ -897,12 +897,12 @@
        x="528.93701"
        y="558.15247"
        id="tspan332-6"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">entityType: arrangement</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">entityType.type: arrangement</tspan><tspan
        sodipodi:role="line"
        x="528.93701"
        y="573.15247"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-       id="tspan453">entitySubtype.generalCategory:</tspan><tspan
+       id="tspan453">entityType.subtype:</tspan><tspan
        sodipodi:role="line"
        x="528.93701"
        y="588.15247"

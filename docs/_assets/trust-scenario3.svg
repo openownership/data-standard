@@ -506,12 +506,12 @@
          x="354.07761"
          y="348.41144"
          id="tspan332-6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">entityType: arrangement</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">entityType.type: arrangement</tspan><tspan
          sodipodi:role="line"
          x="354.07761"
          y="363.41144"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan532">entitySubtype.generalCategory: trust</tspan></text>
+         id="tspan532">entityType.subtype: trust</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.3333px;fill:#000000"

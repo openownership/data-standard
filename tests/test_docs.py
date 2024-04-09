@@ -59,19 +59,18 @@ def test_examples_valid_bods(bods_validator, bods_json):
     """
     Check data in /examples directory are valid BODS.
     """
-    is_valid = bods_validator.is_valid(bods_json)
+    file_name, bods = bods_json
+    is_valid = bods_validator.is_valid(bods)
 
-    # Uncomment below if your example data is failing but you don't know why
-    # so the validation errors will appear in the test output
+    error_msgs = []
+    if not is_valid:
+        errors = bods_validator.iter_errors(bods)
+        for error in errors:
+            error_msgs.append(error.message)
 
-    # if not is_valid:
-    #     errors = bods_validator.iter_errors(bods_json)
-    #     for error in errors:
-    #         print(error.message)
-    #         print(error.path)
-    #         print(error.schema_path)
+    error_msgs = "; ".join(error_msgs)
 
-    assert is_valid
+    assert is_valid, f"Validation error: {error_msgs}"
 
 
 def test_docs():

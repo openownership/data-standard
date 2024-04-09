@@ -38,10 +38,8 @@
         },
         "country": {
           "title": "Country",
-          "description": "The 2-letter country code (ISO 3166-1) for this address.",
-          "type": "string",
-          "minLength": 2,
-          "maxLength": 2
+          "description": "The country for this address.",
+          "$ref": "urn:components#/$defs/Country"
         }
       }
     },
