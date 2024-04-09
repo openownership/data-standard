@@ -38,7 +38,7 @@
         "subtype": {
           "type": "string",
           "title": "Entity subtype",
-          "description": "A value from the entitySubtype codelist. This MUST align with the `entityType` value.",
+          "description": "The particular form of the entity, where relevant, using the entitySubtype codelist. The value MUST align with the `entityType` value.",
           "codelist": "entitySubtype.csv",
           "enum": [
             "governmentDepartment",
