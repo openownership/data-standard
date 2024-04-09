@@ -8,7 +8,11 @@
         "recordDetails": {
             "isComponent": false,
             "personType": "knownPerson",
-            "deathDate": 2001
-        }
+            "names": [
+                {
+                    "type": "legal"
+                }
+            ]
     }
+  }
 ]

@@ -58,9 +58,9 @@
       "title": "Place of birth",
       "propertyOrder": 40,
       "$ref": "urn:components#/$defs/Address",
-      "properties": {
-        "type": {
-          "enum": [
+      "properties":{
+        "type":{
+          "enum":[
             "placeOfBirth"
           ]
         }
@@ -109,9 +109,9 @@
       "type": "array",
       "items": {
         "$ref": "urn:components#/$defs/Address",
-        "properties": {
-          "type": {
-            "enum": [
+        "properties":{
+          "type":{
+            "enum":[
               "residence",
               "service",
               "alternative"
@@ -159,9 +159,6 @@
       "title": "Name",
       "description": "A name by which this individual is known. Names should be provided in `fullName`, and may optionally be broken down in the `familyName`, `givenName` and `patronymicName` fields, based on the EC ISA Core Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
       "type": "object",
-      "required": [
-        "fullName"
-      ],
       "properties": {
         "type": {
           "title": "Type",
