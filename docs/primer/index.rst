@@ -21,7 +21,7 @@ Beneficial ownership can include all types of relationship with an entity such a
 
 If a person owns something, they usually have some control over it. Owning shares in a company may confer voting rights, for example. But ownership and control are sometimes separated - by share classes, contracts, agreements and other mechanisms. For example, an executive director might have the right to appoint 60% of the other board members, while having little financial stake in the business. There are also situations where a person may not have ownership or significant control but still has a relationship which means they benefit from the activities of an entity - for example, where they can enjoy and use assets owned by the entity.
 
-For more `information about beneficial ownership transparency <https://www.openownership.org/en/about/what-is-beneficial-ownership-transparency/>`__ and to read `the latest research <https://www.openownership.org/en/research/>`__, visit `the Open Ownership Website <https://www.openownership.org/en/>`__
+For more `information about beneficial ownership transparency <https://www.openownership.org/en/about/what-is-beneficial-ownership-transparency/>`_ and to read `the latest research <https://www.openownership.org/en/research/>`_, visit `the Open Ownership Website <https://www.openownership.org/en/>`_
 
 .. _whatisbods:
 
@@ -36,7 +36,7 @@ Within BODS:
 * the :doc:`data schema<../schema/index>` describes how and what data should be shared. It can also inform the design of data collection and management systems. The schema is defined in a structured data format called JSON
 * the :doc:`technical guidance<../schema/guidance/index>` provides support for publishers and users of the data
 
-Collecting, sharing and using beneficial ownership information as `structured data <https://www.openownership.org/en/publications/structured-and-interoperable-beneficial-ownership-data/benefits-of-structured-and-interoperable-data/>`__ has a number of benefits. 
+Collecting, sharing and using beneficial ownership information as `structured data <https://www.openownership.org/en/publications/structured-and-interoperable-beneficial-ownership-data/benefits-of-structured-and-interoperable-data/>`_ has a number of benefits. 
 
 Broadly, it:
 
