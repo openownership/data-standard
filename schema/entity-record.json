@@ -14,7 +14,7 @@
     "entityType": {
       "entityType": "object",
       "title": "Type",
-      "description": "The type of entity described in the statement.",
+      "description": "The form of the entity described in the Statement.",
       "required": [
         "type"
       ],
