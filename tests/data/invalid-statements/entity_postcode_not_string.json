@@ -10,8 +10,8 @@
             "isComponent": false,
             "addresses": [
                 {
-                    "type":"nonsense",
-                    "address": "23 Regent St, London"
+                    "type":"registered",
+                    "postCode": 98745672435
                 }
             ]
         }
