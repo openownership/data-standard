@@ -13,3 +13,4 @@
 "person_birth_date_number.json","type","$[0].recordDetails.birthDate","birthDate"
 "person_names_fullName_missing.json","required","$[0].recordDetails.names[0]","fullName"
 "person_taxResidencies_no_object.json","type","$[0].recordDetails.taxResidencies","taxResidencies"
+"person_addresses_no_array.json","type","$[0].recordDetails.addresses","addresses"
