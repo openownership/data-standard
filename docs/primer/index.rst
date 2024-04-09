@@ -48,10 +48,9 @@ Without common standards, combining and analysing data from different sources ca
 
 BODS allows publishers to provide statements that describe:
 
-* :any:`details about natural persons <schema-person-record>`
-* :any:`details about entities <schema-entity-record>`
-* :doc:`identifiers for natural persons and entities <../schema/guidance/identifiers>`
-* :any:`types of interests that can be held in entities <.. _schema-interest:>`
-* :any:`provenance information <.. _schema-source:>`
-* :doc:`historical, as well as current, information`<../schema/guidance/repr-updates>`
-* :any:`placeholders, when information must be witheld<.. _schema-interested-party:>`
+* details about natural persons and entities
+* identifiers for natural persons and entities
+* types of interests that can be held in entities
+* provenance information
+* historical, as well as current, information
+* placeholders, when information must be witheld
