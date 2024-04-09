@@ -1,18 +1,14 @@
 [
-    {
-        "statementId": "2f7bf9370f1254068e5e946df067d07d",
-        "recordId": "ent-93c75c87ab28f889",
-        "recordType": "entity",
-        "declarationSubject": "ent-93c75c87ab28f889",
-        "statementDate": "2017-11-18",
-        "recordDetails": {
-            "isComponent": false,
-            "entityType": "registeredEntity",
-            "identifiers": [
-                {
-                    "schemeName": "Irish Business Authority "
-                }
-            ]
+  {
+    "statementId": "2f7bf9370f1254068e5e946df067d07d",
+    "recordId": "ent-93c75c87ab28f889",
+    "recordType": "entity",
+    "declarationSubject": "ent-93c75c87ab28f889",
+    "recordDetails": {
+      "isComponent": false,
+      "identifiers": [
+        {
+          "schemeName": "Irish Business Authority "
         }
       ],
       "entityType": {

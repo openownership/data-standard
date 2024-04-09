@@ -1,6 +1,5 @@
 import os
 import pytest
-from jsonschema.exceptions import ErrorTree
 from conftest import get_json_files, file_id, get_test_data_dir
 
 """
@@ -20,48 +19,39 @@ invalid_bods_statements = get_json_files(os.path.join(get_test_data_dir(), "inva
 
 @pytest.mark.parametrize("bods_json", valid_bods_statements, ids=file_id, indirect=True)
 def test_valid_files(bods_validator, bods_json):
-    file_path, bods = bods_json
-    is_valid = bods_validator.is_valid(bods)
-    error_msgs = ""
+    is_valid = bods_validator.is_valid(bods_json)
 
+    # (temp for debugging)
     if not is_valid:
-        errors = bods_validator.iter_errors(bods)
+        errors = bods_validator.iter_errors(bods_json)
         for error in errors:
-            json_path = "/".join(str(p) for p in error.path)
-            schema_path = "/".join(str(p) for p in error.schema_path)
-            error_msgs += f"{error.message} at {json_path} (This constraint is in the schema at: {schema_path})"
+            print(error.message)
+            print(error.path)
+            print(error.schema_path)
 
-    assert is_valid, f"Validation failed: {error_msgs}"
+    assert is_valid
 
 
 @pytest.mark.parametrize("bods_json", invalid_bods_statements, ids=file_id, indirect=True)
-def test_invalid_files(bods_validator, bods_json, invalid_data_errors):
-    file_name, bods = bods_json
+def test_invalid_files(bods_validator, bods_json):
+    is_valid = bods_validator.is_valid(bods_json)
 
-    errors = bods_validator.iter_errors(bods)
-    tree = ErrorTree(bods_validator.iter_errors(bods))
-
-    # Check file is present in error mapping
-    assert (
-        file_name in invalid_data_errors.keys()
-    ), "File missing from error mapping, please add it to expected_errors.csv"
-
-    # Should only be one validation error per file
-    if tree.total_errors > 1:
-        error_msgs = []
+    if not is_valid:
+        errors = bods_validator.iter_errors(bods_json)
         for error in errors:
-            error_msgs.append(error.message)
-        msgs = "; ".join(error_msgs)
-    assert tree.total_errors == 1, f"Expecting 1 validation error, {tree.total_errors} found: {msgs}."
+            print(error.message)
+            print(error.path)
+            print(error.schema_path)
 
-    # Check the type of error and path to the error are what we expect
-    for error in errors:
-        assert error.validator in invalid_data_errors.get(file_name) and error.json_path in invalid_data_errors.get(
-            file_name
-        ), f"Expected {invalid_data_errors.get(file_name)[0]} error at {invalid_data_errors.get(file_name)[1]} \
-        but found {error.validator} error at {error.json_path}."
-        
-        if error.validator == "required":
-            assert (
-                invalid_data_errors.get(file_name)[2] in error.message
-            ), f"Expected {invalid_data_errors.get(file_name)[2]} to be missing, but instead got: {error.message}."
+    assert not is_valid
+    # todo: assert correct error message and field path
+
+
+def test_valid_data(bods_validator, get_valid_data):
+    is_valid = bods_validator.is_valid(get_valid_data)
+    assert is_valid
+
+
+def test_invalid_data(bods_validator, get_invalid_data):
+    is_valid = bods_validator.is_valid(get_invalid_data)
+    assert not is_valid

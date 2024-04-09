@@ -426,7 +426,7 @@
        id="tspan582"
        x="91.138275"
        y="53.627899"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">entityType.type: state,</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">entityType: state,</tspan><tspan
        sodipodi:role="line"
        x="91.138275"
        y="68.819763"
@@ -497,7 +497,7 @@
        x="91.115067"
        y="234.37962"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan508">entityType.type: registeredEntity</tspan><tspan
+       id="tspan508">entityType: registeredEntity</tspan><tspan
        sodipodi:role="line"
        x="91.115067"
        y="249.37962"
@@ -575,7 +575,7 @@
        y="389.8942"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
        id="tspan508-5"
-       sodipodi:role="line">entityType.type: registeredEntity</tspan><tspan
+       sodipodi:role="line">entityType: registeredEntity</tspan><tspan
        x="90.512695"
        y="404.8942"
        id="tspan655-9"

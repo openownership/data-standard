@@ -235,7 +235,7 @@ Entity Subtype Category
 .. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
-   :file: ../_build_schema/codelists/entitySubtype.csv
+   :file: ../_build_schema/codelists/entitySubtypeCategory.csv
 
 
 

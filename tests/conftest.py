@@ -1,5 +1,4 @@
 import os
-import csv
 import json
 import pytest
 
@@ -35,7 +34,7 @@ def schema_dir():
 @pytest.fixture
 def codelists_dir():
     """
-    Makes the directory the codeslists are in available to tests.
+    Makes the directory the cdoeslists are in available to tests.
     """
     return os.path.join(get_schema_dir(), "codelists")
 
@@ -111,14 +110,14 @@ def codelist_validator():
 @pytest.fixture
 def bods_json(request):
     """
-    Returns a tuple of filename and JSON from a file path.
+    Returns JSON from a file path.
     This is automatically called on all params for tests which take
     `bods_json` as a parameter with indirect=True, and the output passed to
     the test.
     """
     fp = request.param
     bods = json.loads(fp.read_text())
-    return (fp.name, bods)
+    return bods
 
 
 @pytest.fixture
@@ -162,21 +161,32 @@ def codelist_enums(request):
 
 
 @pytest.fixture
-def invalid_data_errors():
+def get_valid_data():
     """
-    The CSV file expected_errors.csv maps the invalid test data filenames to the expected validation errors.
-    This function reads that file into a dict with structure:
-        { file_name: ( validation_error, json_path, property ) }
-    for use in the invalid data tests.
-    Update the CSV file when new invalid data files are created.
+    Returns a simple valid BODS statement.
     """
-    errors = {}
-    with open(os.path.join(get_test_data_dir(), "invalid-statements", "expected_errors.csv"), newline="") as csvfile:
-        r = csv.reader(csvfile, delimiter=",", quotechar='"')
-        for row in r:
-            errors[row[0]] = (row[1], row[2], row[3])
+    data = [
+        {
+            "statementId": "abcdefgkdddddddddddddddddddddddshdkjfkjdkjf",
+            "declarationSubject": "xyz",
+            "recordId": "123",
+            "recordType": "entity",
+            "recordDetails": {
+                "entityType": {"type": "unknownEntity"},
+                "isComponent": False,
+            },
+        }
+    ]
+    return data
 
-    return errors
+
+@pytest.fixture
+def get_invalid_data():
+    """
+    Returns a simple invalid BODS statement.
+    """
+    data = [{"declarationSubject": "xyz", "recordId": "123", "recordType": "entity"}]
+    return data
 
 
 def get_json_files(dir):

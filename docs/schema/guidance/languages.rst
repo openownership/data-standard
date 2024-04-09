@@ -9,7 +9,7 @@ To represent:
 
 * entity names, use an entry in the ``alternativeNames`` array
 
-* entity types use ``entityType.details``
+* entity types use ``entitySubtype.localTerm``
 
 * interest types use ``interest.details``
 

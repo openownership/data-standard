@@ -3,12 +3,12 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
   "type": "object",
-  "title": "Person record details",
-  "description": "Information about a natural person.",
+  "title": "Person record",
+  "description": "A person record describes the information known about a natural person at a particular point in time, or from a given submission of information",
   "properties": {
     "isComponent": {
       "title": "Is component",
-      "description": "Whether this person is a component of an indirect relationship. Where `isComponent` is 'true': (1) the `recordId` of this person MUST be an element in the `componentRecords` array of that primary Relationship statement, (2) this Person statement MUST come before that primary Relationship statement in a BODS package or stream, (3) the replacement of this Person statement SHOULD be considered when replacing the primary Relationship statement. The primary Relationship statement MUST have a `isComponent` value of 'false'.",
+      "description": "Does this Person Statement represent a component of an indirect ownership-or-control relationship? Where `isComponent` is 'true': (1) the `statementID` of this Person Statement MUST be an element in the `componentStatementIDs` array of that primary Ownership-or-control Statement, (2) this Person Statement MUST come before that primary Ownership-or-control Statement in a BODS package or stream, (3) the replacement of this Person Statement SHOULD be considered when replacing the primary Ownership-or-control Statement. The primary Ownership-or-control Statement MUST have a `isComponent` value of 'false'.",
       "type": "boolean"
     },
     "personType": {
@@ -57,14 +57,7 @@
     "placeOfBirth": {
       "title": "Place of birth",
       "propertyOrder": 40,
-      "$ref": "urn:components#/$defs/Address",
-      "properties":{
-        "type":{
-          "enum":[
-            "placeOfBirth"
-          ]
-        }
-      }
+      "$ref": "urn:components#/$defs/Address"
     },
     "birthDate": {
       "title": "Date of birth",
@@ -94,6 +87,11 @@
       ],
       "propertyOrder": 36
     },
+    "placeOfResidence": {
+      "title": "Place of residence",
+      "propertyOrder": 50,
+      "$ref": "urn:components#/$defs/Address"
+    },
     "taxResidencies": {
       "title": "Tax residency",
       "description": "An array of Country objects representing the tax residencies held by this person.",
@@ -108,16 +106,7 @@
       "description": "One or more addresses for this entity.",
       "type": "array",
       "items": {
-        "$ref": "urn:components#/$defs/Address",
-        "properties":{
-          "type":{
-            "enum":[
-              "residence",
-              "service",
-              "alternative"
-            ]
-          }
-        }
+        "$ref": "urn:components#/$defs/Address"
       },
       "propertyOrder": 60
     },

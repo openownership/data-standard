@@ -11,10 +11,10 @@ BODS can be used to represent the beneficial ownership of trusts and the benefic
 
 When representing trusts:
 
-* If the trust has legal personality ``entityType.type`` MUST be ``legalEntity``
-* If the trust does not have legal personality ``entityType.type`` MUST be ``arrangement``
-* ``entityType.subtype`` MUST be ``trust``
-* ``entityType.details`` MAY be used to give a local name (e.g. "fiducie") or specify the type of trust (e.g. "inter-vivos trust")
+* If the trust has legal personality ``entityType`` MUST be ``legalEntity``
+* If the trust does not have legal personality ``entityType`` MUST be ``arrangement``
+* ``entitySubtype.generalCategory`` MUST be ``trust``
+* ``entitySubtype.localTerm`` MAY be used to give a local name (e.g. "fiducie") or specify the type of trust (e.g. "inter-vivos trust")
 
 Relationships between trusts and their parties MUST be represented using only these ``interest.type`` codes:
 
@@ -35,7 +35,7 @@ Scenario 1
 A trust with a known beneficiary, known trustee and known settlor. The trust does not have a legal personality.
 
 .. figure:: ../../_assets/trust-scenario1.svg
-   :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType type 'arrangement' and subtype 'trust.' Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', and person C by a relationship statement with interest type 'beneficiary'
+   :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType 'arrangement' and entitySubtype generalCategory 'trust.' Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', and person C by a relationship statement with interest type 'beneficiary'
    :figwidth: 80%
    :align: center
    
@@ -44,7 +44,7 @@ Scenario 2
 A trust with a known beneficiary, known trustee, known settlor and known protector. The trust has a legal personality. 
 
 .. figure:: ../../_assets/trust-scenario2.svg
-   :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType type 'legalEntity' and subtype 'trust.'  Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest type 'protector', and person D by a relationship statement with interest type 'beneficiary.' 
+   :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType 'legalEntity' and entitySubtype generalCategory 'trust.'  Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest type 'protector', and person D by a relationship statement with interest type 'beneficiary.' 
    :figwidth: 100%
    :align: center
    
@@ -63,7 +63,7 @@ Scenario 4
 A trust-like arrangement with local names for the entityType and interestTypes. 
 
 .. figure:: ../../_assets/trust-scenario4.svg
-   :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType type 'arrangement', subtype 'trust', and details 'fiducie-sûreté.' Trust A is connected to person A by a relationship statement with interest type 'settlor' and interest details 'constituant', person B by a relationship statement with interest type 'trustee' and interest details 'fiduciaire', and person C by a relationship statement with interest type 'beneficiary' and interest details 'beneficiaire'
+   :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType 'arrangement', entitySubtype generalCategory 'trust', and entitySubtype localTerm 'fiducie-sûreté.' Trust A is connected to person A by a relationship statement with interest type 'settlor' and interest details 'constituant', person B by a relationship statement with interest type 'trustee' and interest details 'fiduciaire', and person C by a relationship statement with interest type 'beneficiary' and interest details 'beneficiaire'
    :figwidth: 82%
    :align: center
 

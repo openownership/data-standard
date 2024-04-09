@@ -68,11 +68,8 @@
         {
           "type": "service",
           "address": "Aston House, Cornwall Avenue, London",
-          "postCode": "N3 1LF",
-          "country": {
-            "name": "United Kingdom",
-            "code": "GB"
-          }
+          "country": "GB",
+          "postCode": "N3 1LF"
         }
       ]
     }
