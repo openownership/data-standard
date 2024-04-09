@@ -6,7 +6,7 @@ What is beneficial ownership?
 
 A beneficial owner is a natural person who holds interests, directly or indirectly, that give them the right to a share of the income or assets of a corporate vehicle, or the ability to control or benefit from its activities.
 
-`Open Ownership <https://www.openownership.org/>`__ uses the term corporate vehicles to refer to both legal entities, such as companies, and legal arrangements, such as trusts. In BODS we refer to all types of corporate vehicles as ‘entities’.
+`Open Ownership <https://www.openownership.org/>`_ uses the term corporate vehicles to refer to both legal entities, such as companies, and legal arrangements, such as trusts. In BODS we refer to all types of corporate vehicles as ‘entities’.
 
 Often entities own other entities, but people almost always appear at the end of beneficial ownership networks. They are the ones who ultimately benefit from the financial successes of the entity, due to their relationship with it.
 
