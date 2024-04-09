@@ -40,7 +40,7 @@ Collecting, sharing and using beneficial ownership information as `structured da
 
 Broadly, it:
 
-* improves the functionality of beneficial ownership information
+* improves the interoperability of beneficial ownership information
 * reduces the cost of producing, using, and maintaining beneficial ownership information
 * has a greater chance of meeting beneficial ownership transparency policy goals than unstructured data
 
