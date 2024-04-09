@@ -220,7 +220,7 @@
       },
     "Annotation": {
       "title": "Annotation",
-      "description": "Supplementary information about the data contained in this Statement. Annotations can apply to a whole statement, an object or a single field. Custom properties can be included within the Annotation object to provide structured data where required.",
+      "description": "Additional information about the data contained in this Statement. Annotations can apply to a whole statement, an object or a single field. Custom properties can be included within the Annotation object to provide structured data where required.",
       "type": "object",
       "properties": {
         "statementPointerTarget": {
@@ -318,7 +318,7 @@
       "properties": {
         "type": {
           "title": "Source Type",
-          "description": "The types(s) of the source, using the sourceType codelist.",
+          "description": "The types of the source, using the sourceType codelist.",
           "type": "array",
           "items": {
             "type": "string",

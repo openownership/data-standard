@@ -159,7 +159,7 @@
   "$defs": {
     "Name": {
       "title": "Name",
-      "description": "A name by which this person is known. A name MUST be provided in `fullName`, and may optionally be broken down in the `familyName`, `givenName` and `patronymicName` fields, based on the EC ISA Core Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
+      "description": "A name by which this person is known. A name MUST be provided in `fullName`, and MAY be broken down in the `familyName`, `givenName` and `patronymicName` fields, based on the EC ISA Core Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
       "type": "object",
       "properties": {
         "type": {
