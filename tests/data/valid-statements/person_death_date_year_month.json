@@ -8,13 +8,7 @@
         "recordDetails": {
             "isComponent": false,
             "personType": "knownPerson",
-            "names": [
-                {
-                    "familyName": "Byrne-Amin"
-                }
-            ]
+            "deathDate": "2001-06"
         }
-      ]
     }
-  }
 ]

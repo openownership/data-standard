@@ -8,13 +8,7 @@
         "recordDetails": {
             "isComponent": false,
             "personType": "knownPerson",
-            "names": [
-                {
-                    "givenName": "Riyadh"
-                }
-            ]
+            "deathDate": "2001"
         }
-      ]
     }
-  }
 ]
