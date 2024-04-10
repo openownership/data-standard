@@ -188,7 +188,7 @@
         },
         "description": {
           "title": "Description",
-          "description": "Where required, additional free-text information about the source of this statement can be provided here.",
+          "description": "Additional, free-text information about the source of information.",
           "type": "string"
         },
         "url": {
