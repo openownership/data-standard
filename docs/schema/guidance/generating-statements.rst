@@ -14,7 +14,7 @@ This means that:
 
 The schema enforces a minimum statement identifier length of 32 characters, and maximum length of 64 characters. 
 
-Statement identifiers are generally for creation and internal use within applications. In most circumstances they do not need to be displayed to users. This is in contrast to :ref:`entity or person identifiers <guidance-identifiers>`, which are useful to display to users. 
+Statement identifiers are generally for internal use within applications. In most circumstances they do not need to be displayed to users. This is in contrast to :ref:`entity or person identifiers <guidance-identifiers>`, which are useful to display to users. 
 
 Publishers MAY use one of the following strategies for creating statement identifiers.
 
