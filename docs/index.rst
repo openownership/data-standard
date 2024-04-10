@@ -15,19 +15,19 @@ This website contains the draft specification of the Beneficial Ownership Data S
 
    .. cssclass:: primaryfrontpageboxlink
 
-      :doc:`Visit the primer <primer/index>`
+      :doc:`Visit the primer <../primer/index>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`What is beneficial ownership? <primer/whatisbo>`
+      :doc:`What is beneficial ownership? <../primer/index>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`What is the data standard? <primer/whatisthebods>`
+      :any:`What is the data standard? <whatisbods>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`About the standard's development <about/index>`
+      :doc:`About the standard's development <../about/index>`
 
 
 
@@ -42,19 +42,19 @@ This website contains the draft specification of the Beneficial Ownership Data S
 
    .. cssclass:: primaryfrontpageboxlink
 
-      :doc:`Visit the Data Schema <schema/index>`
+      :doc:`Visit the Data Schema <../schema/index>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`The data model  <schema/concepts>`
+      :doc:`The data model  <../schema/concepts>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`Schema browser <schema/schema-browser>`
+      :doc:`Schema browser <../schema/schema-browser>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`Requirements for publication systems <schema/guidance/functional-requirements>`
+      :doc:`Requirements for publication systems <../schema/guidance/functional-requirements>`
 
 .. raw:: html
 

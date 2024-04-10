@@ -2,7 +2,7 @@
   "$id": "urn:statement",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Statements",
-  "description": "An array of statements",
+  "description": "An array of Statements.",
   "version": "0.4",
   "type": "array",
   "items": {
@@ -11,19 +11,19 @@
   "$defs": {
     "Statement": {
         "title": "Statement",
-        "description": "A statement about a person, entity or relationship, made at a particular point in time.",
+        "description": "A claim about a person, entity or relationship, made at a particular point in time.",
         "type": "object",
         "properties": {
           "statementId": {
             "title": "Statement Identifier",
-            "description": "A persistent globally unique identifier for this statement.",
+            "description": "A persistent globally unique identifier for this Statement. Length MUST be 32 - 64 characters (inclusive).",
             "type": "string",
             "minLength": 32,
             "maxLength": 64
           },
           "statementDate": {
-            "title": "Statement date",
-            "description": "The date (optionally including time) on which this statement was declared by the source, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format.",
+            "title": "Statement Date",
+            "description": "The date (optionally including time) on which this statement was declared by the source, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
             "type": "string",
             "anyOf": [
               {
@@ -36,7 +36,7 @@
           },
           "annotations": {
             "title": "Annotations",
-            "description": "Annotations about this statement or parts of this statement",
+            "description": "Annotations about this Statement or parts of this Statement",
             "type": "array",
             "items": {
               "$ref": "#/$defs/Annotation"
@@ -44,12 +44,12 @@
           },
           "publicationDetails": {
             "title": "Publication Details",
-            "description": "Information concerning the publication of this statement.",
+            "description": "Information concerning the publication of this Statement.",
             "type": "object",
             "properties": {
               "publicationDate": {
                 "title": "Publication date",
-                "description": "The date on which this statement was published, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format.",
+                "description": "The date (optionally including time) on which this statement was published, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
                 "type": "string",
                 "anyOf": [
                   {
@@ -61,30 +61,30 @@
                 ]
               },
               "bodsVersion": {
-                "title": "BODS version",
-                "description": "The version of the Beneficial Ownership Data Standard to which this statement conforms, expressed as major.minor (e.g. 0.2 or 1.0). In a published BODS dataset, all statements MUST have the same major version number.",
+                "title": "BODS Version",
+                "description": "The version of the Beneficial Ownership Data Standard to which this Statement conforms, expressed as major.minor (e.g. 0.2 or 1.0). In a published BODS dataset, all Statements MUST have the same major version number.",
                 "type": "string",
                 "pattern": "^(\\d+\\.)(\\d+)$"
               },
               "license": {
                 "title": "License URL",
-                "description": "A link to the license that applies to this statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or Open Definition Conformant (http://opendefinition.org/licenses/) license.",
+                "description": "A link to the license that applies to this Statement. The canonical URI of the license SHOULD be used. Publishers are encouraged to use a Public Domain Dedication or Open Definition Conformant (http://opendefinition.org/licenses/) license.",
                 "type": "string",
                 "format": "uri"
               },
               "publisher": {
                 "type": "object",
                 "title": "Publisher",
-                "description": "Details of the organisation or individual publishing a statement.",
+                "description": "Details of the organisation or individual publishing a Statement.",
                 "properties": {
                   "name": {
                     "title": "Name",
-                    "description": "The name of the publisher",
+                    "description": "The name of the publisher.",
                     "type": "string"
                   },
                   "url": {
                     "title": "URL",
-                    "description": "The URL of the parent dataset or of the publisher's website homepage",
+                    "description": "The URL where details of the full dataset, or of the publisher, can be found.",
                     "type": "string",
                     "format": "uri"
                   }
@@ -112,25 +112,25 @@
           "source": {
             "title": "Source",
             "description": "The source of information in this statement.",
-            "$ref": "#/$defs/Source"
+            "$ref": "urn:components#/$defs/Source"
           },
           "declaration": {
-            "title": "Declaration (identifier)",
-            "description": "An identifier or reference for a declaration within a publisher’s system. Where a Statement is a claim from a particular declaration (made at a point in time by a `source` about a `declarationSubject`) this field should be used to identify the declaration.",
+            "title": "Declaration Reference",
+            "description": "An identifier or reference for a declaration within the publisher’s system. Where a Statement is a claim from a particular declaration (made at a point in time by a `source` about a `declarationSubject`) this field identifies the declaration.",
             "type": "string"
           },
           "declarationSubject": {
-            "title": "Declaration subject",
+            "title": "Declaration Subject",
             "description": "A `recordId` value for the subject of a beneficial ownership network (always an entity or person).",
             "type": "string"
           },
           "recordId": {
-            "title": "Record identifier",
-            "description": "A unique identifier for the record (within the publisher's system) to which this Statement relates. The identifier MUST represent the series of claims made about an entity, natural person or relationship by a particular source.",
+            "title": "Record Identifier",
+            "description": "A unique identifier for the record (within the publisher's system) to which this Statement relates. (A record captures information about an entity, natural person or relationship within the beneficial ownership network of a particular declaration subject.)",
             "type": "string"
           },
           "recordType": {
-            "title": "Record type",
+            "title": "Record Type",
             "description": "The type of record (within the publisher's system) to which this Statement relates: entity, person, or relationship.",
             "type": "string",
             "enum": [
@@ -142,8 +142,8 @@
             "openCodelist": false
           },
           "recordStatus": {
-            "title": "Record status",
-            "description": "The lifecycle status of the record (within the publisher's system ) to which this Statement relates, using the recordStatus codelist.",
+            "title": "Record Status",
+            "description": "The lifecycle status of the record (within the publisher's system) to which this Statement relates, using the recordStatus codelist.",
             "type": "string",
             "enum": [
               "new",
@@ -154,8 +154,8 @@
             "openCodelist": false
           },
           "recordDetails": {
-            "title": "Record details",
-            "description": "The details of the entity, person or relationship as declared on the date of the statement.",
+            "title": "Record Details",
+            "description": "The details of the entity, person or relationship as declared on the Statement Date.",
             "type": "object"
           }
         },
@@ -220,17 +220,17 @@
       },
     "Annotation": {
       "title": "Annotation",
-      "description": "An annotation provides additional information about ownership or control data being provided. Annotations can be provided in free-text, and can apply to a whole statement, an object or a single field. Additional extended properties can be included on the annotation object to provide structured data where required.",
+      "description": "Additional information about the data contained in this Statement. Annotations can apply to a whole statement, an object or a single field. Custom properties can be included within the Annotation object to provide structured data where required.",
       "type": "object",
       "properties": {
         "statementPointerTarget": {
           "title": "Statement Fragment Pointer",
-          "description": "An RFC6901 JSON Pointer (https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this annotation applies to, starting from the root of the statement. A value of '/' indicates that the annotation applies to the whole statement.",
+          "description": "An RFC6901 JSON Pointer (https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this Annotation applies to, starting from the root of the Statement. An empty string (\"\") indicates that the Annotation applies to the whole Statement.",
           "type": "string"
         },
         "creationDate": {
           "title": "Creation Date",
-          "description": "The date at which this annotation was created, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format.",
+          "description": "The date (optionally including time) on which this Annotation was created, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
           "type": "string",
           "anyOf": [
             {
@@ -243,17 +243,17 @@
         },
         "createdBy": {
           "title": "Created By",
-          "description": "The person, organisation or agent that created this annotation.",
+          "description": "The person, organisation or agent that created this Annotation.",
           "type": "object",
           "properties": {
             "name": {
               "title": "Name",
-              "description": "The name of the person, organisation or agent that created this annotation.",
+              "description": "The name of the person, organisation or agent that created this Annotation.",
               "type": "string"
             },
             "uri": {
               "title": "URI",
-              "description": "An optional URI to identify person, organisation or agent that created this annotation.",
+              "description": "An optional URI to identify the person, organisation or agent that created this Annotation.",
               "type": "string",
               "format": "uri"
             }
@@ -261,7 +261,7 @@
         },
         "motivation": {
           "title": "Motivation",
-          "description": "The motivation for this annotation, chosen from a codelist. See the annotationMotivation codelist.",
+          "description": "The reason for this Annotation, using the annotationMotivation codelist.",
           "type": "string",
           "enum": [
             "commenting",
@@ -275,17 +275,17 @@
         },
         "description": {
           "title": "Description",
-          "description": "A free-text description to annotate this statement or field.",
+          "description": "A free-text description providing extra information about part of this Statement.",
           "type": "string"
         },
         "transformedContent": {
           "type": "string",
-          "title": "Transformed content",
-          "description": "A representation of the annotation target after the transformation in the description field has been applied. This field MUST only be used when the motivation is transformation."
+          "title": "Transformed Content",
+          "description": "A representation of the Annotation target after the transformation in the `description` field has been applied. This field MUST only be used when the `motivation` is 'transformation'."
         },
         "url": {
           "title": "URL",
-          "description": "A linked resource that annotates, provides context for or enhances this statement. The content of the resource, or the relationship to the statement, MAY be described in the `description` field. This field is REQUIRED if the value of `motivation` is 'linking'.",
+          "description": "A linked resource that annotates, provides context for or enhances this Statement. The content of the resource, or the relationship to the statement, MAY be described in the `description` field. This field is REQUIRED if the value of `motivation` is 'linking'.",
           "type": "string",
           "format": "uri"
         }
@@ -309,75 +309,6 @@
           "statementPointerTarget",
           "motivation"
         ]
-      }
-    },
-    "Source": {
-      "title": "Source",
-      "description": "The source object is used to explain where information in a statement originated from, and to link to supporting information.",
-      "type": "object",
-      "properties": {
-        "type": {
-          "title": "Source type",
-          "description": "What type of source is this? Multiple tags can be combined. Values should come from the source type codelist.",
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "selfDeclaration",
-              "officialRegister",
-              "thirdParty",
-              "primaryResearch",
-              "verified"
-            ],
-            "codelist": "sourceType.csv",
-            "openCodelist": false
-          }
-        },
-        "description": {
-          "title": "Description",
-          "description": "Where required, additional free-text information about the source of this statement can be provided here.",
-          "type": "string"
-        },
-        "url": {
-          "title": "Source URL",
-          "description": "If this information was fetched from an external URL, or a machine or human readable web page is available that provides additional information on how this statement was sourced, provide the URL.",
-          "type": "string",
-          "format": "uri"
-        },
-        "retrievedAt": {
-          "title": "Retrieved at",
-          "description": "A timestamp indicating when this statement was imported from an external system, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format. (The statementDate should be set based on the source information.)",
-          "type": "string",
-          "anyOf": [
-            {
-              "format": "date"
-            },
-            {
-              "format": "date-time"
-            }
-          ]
-        },
-        "assertedBy": {
-          "title": "Asserted by",
-          "description": "An array of objects representing who is making this statement. This may be the name of the person or organisation making a self-declaration or the name of some other party making a declaration on their behalf. If this statement has been verified, the array may also include the name of the organisation providing verification.",
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "title": "Name",
-                "description": "The name of the agent making the assertion",
-                "type": "string"
-              },
-              "uri": {
-                "title": "URI",
-                "description": "An optional URI to identify the agent making the assertion",
-                "type": "string",
-                "format": "uri"
-              }
-            }
-          }
-        }
       }
     }
   }

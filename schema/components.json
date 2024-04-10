@@ -8,12 +8,12 @@
   "$defs": {
     "Address": {
       "title": "Address",
-      "description": "A free text address string, providing as much address data as is relevant, suitable for processing using address parsing algorithms. For some uses (for example, Place of Birth) only a town and country are required.",
+      "description": "Semi-structured address details, suitable for processing using address-parsing algorithms. Where postal codes and country information are isolated fields in source systems, this information SHOULD be published in the dedicated fields and SHOULD NOT be published in the `address` field.",
       "type": "object",
       "properties": {
         "type": {
           "title": "Type",
-          "description": "What type of address is this? See the addressType codelist.",
+          "description": "The function of the address, using the addressType codelist.",
           "type": "string",
           "enum": [
             "placeOfBirth",
@@ -28,7 +28,7 @@
         },
         "address": {
           "title": "Address",
-          "description": "The address, with each line or component of the address separated by a line-break or comma. Where postal codes are isolated fields in source systems, this `address` field SHOULD NOT include the postal code.",
+          "description": "The address, with each line or component separated by a line-break or comma.",
           "type": "string"
         },
         "postCode": {
@@ -54,7 +54,7 @@
           "type": "string"
         },
         "code": {
-          "title": "Country code",
+          "title": "Country Code",
           "description": "The 2-letter country code (ISO 3166-1) for this country.",
           "type": "string",
           "maxLength": 2,
@@ -67,7 +67,7 @@
     },
     "Jurisdiction": {
       "title": "Jurisdiction",
-      "description": "A jurisdiction MUST have a name. A jurisdiction SHOULD have the 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the jurisdiction.",
+      "description": "A Jurisdiction MUST have a name. A jurisdiction SHOULD have a 2-letter country code (ISO 3166-1) or a subdivision code (ISO 3166-2).",
       "type": "object",
       "properties": {
         "name": {
@@ -76,7 +76,7 @@
           "type": "string"
         },
         "code": {
-          "title": "Country or subdivision code",
+          "title": "Country or Subdivision Code",
           "description": "The 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the jurisdiction.",
           "type": "string",
           "maxLength": 6,
@@ -89,27 +89,27 @@
     },
     "Identifier": {
       "title": "Identifier",
-      "description": "An identifier that has been assigned to this person or entity. The scheme or list from which the identifier is drawn should be declared.",
+      "description": "An identifier that has been assigned to a person or entity. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
       "type": "object",
       "properties": {
         "id": {
           "title": "ID",
-          "description": "The identifier for this person or entity as provided in the declared scheme.",
+          "description": "The identifier for a person or entity, as issued by the scheme.",
           "type": "string"
         },
         "scheme": {
-          "title": "Scheme",
-          "description": "For entity statements, the scheme should be a entry from the org-id.guide (https://www.org-id.guide) codelist. For person statements, the scheme should have the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
+          "title": "Scheme Code",
+          "description": "For entities, a code from org-id.guide (https://www.org-id.guide) for an identifier-issuing authority (e.g. 'GB-COH'). For natural persons, a value with the pattern {JURISDICTION}-{TYPE} where JURISDICTION is an ISO 3166-1 3-digit country code and TYPE is one of PASSPORT, TAXID or IDCARD.",
           "type": "string"
         },
         "schemeName": {
-          "title": "Scheme name",
-          "description": "The name of this scheme, where the org-id code is unknown or only an unvalidated string is provided. `scheme` or `schemeName` (or both) MUST be included in an Identifier object.",
+          "title": "Scheme Name",
+          "description": "The name of the identifier-issuing authority.",
           "type": "string"
         },
         "uri": {
           "title": "URI",
-          "description": "Where this identifier has a canonical URI (https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) this may be included",
+          "description": "A canonical URI (https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) for the identifier and associated details of the person or entity, if one exists.",
           "type": "string",
           "format": "uri"
         }
@@ -135,12 +135,12 @@
     },
     "UnspecifiedRecord": {
       "title": "Unspecified or unknown person or entity",
-      "description": "An explanation of why this person or entity is 'anonymous' or 'unknown'. A `reason` MUST be specified.",
+      "description": "A `reason` MUST be supplied.",
       "type": "object",
       "properties": {
         "reason": {
           "title": "Reason",
-          "description": "The reason that a person or entity cannot be specified, from the unspecifiedReason codelist.",
+          "description": "The reason that a person or entity cannot be specified, using the unspecifiedReason codelist.",
           "type": "string",
           "enum": [
             "noBeneficialOwners",
@@ -156,13 +156,82 @@
         },
         "description": {
           "title": "Description",
-          "description": "Any supporting information about the absence of a confirmed beneficial owner. This field may be used to provide set phrases from a source system, or for a free-text explanation.",
+          "description": "Additional information about the absence of details for a person or entity. This field may be used to provide set phrases from a source system, or a free-text explanation.",
           "type": "string"
         }
       },
       "required": [
         "reason"
       ]
+    },
+    "Source": {
+      "title": "Source",
+      "description": "Details describing an information source.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "title": "Source Type",
+          "description": "The types of the source, using the sourceType codelist.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "selfDeclaration",
+              "officialRegister",
+              "thirdParty",
+              "primaryResearch",
+              "verified"
+            ],
+            "codelist": "sourceType.csv",
+            "openCodelist": false
+          }
+        },
+        "description": {
+          "title": "Description",
+          "description": "Additional, free-text information about the source of information.",
+          "type": "string"
+        },
+        "url": {
+          "title": "Source URL",
+          "description": "The external URL from which this information was fetched, if relevant. Or, if relevant, a URL providing additional detail on how this information was sourced.",
+          "type": "string",
+          "format": "uri"
+        },
+        "retrievedAt": {
+          "title": "Retrieved At",
+          "description": "A timestamp indicating when this information was imported from an external system, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
+          "type": "string",
+          "anyOf": [
+            {
+              "format": "date"
+            },
+            {
+              "format": "date-time"
+            }
+          ]
+        },
+        "assertedBy": {
+          "title": "Asserted By",
+          "description": "The people or organisations providing the information asserted in this Statement. This may include the declaring subject of a self-declaration, or the name of an agent making a declaration on their behalf. If this Statement has been verified, the array may include the name of the organisation providing verification.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "title": "Name",
+                "description": "The name of the agent making the assertion",
+                "type": "string"
+              },
+              "uri": {
+                "title": "URI",
+                "description": "An optional URI to identify the agent making the assertion",
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

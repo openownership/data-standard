@@ -3,17 +3,17 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
   "type": "object",
-  "title": "Person record details",
+  "title": "Person Record Details",
   "description": "Information about a natural person.",
   "properties": {
     "isComponent": {
       "title": "Is component",
-      "description": "Whether this person is a component of an indirect relationship. Where `isComponent` is 'true': (1) the `recordId` of this person MUST be an element in the `componentRecords` array of that primary Relationship statement, (2) this Person statement MUST come before that primary Relationship statement in a BODS package or stream, (3) the replacement of this Person statement SHOULD be considered when replacing the primary Relationship statement. The primary Relationship statement MUST have a `isComponent` value of 'false'.",
+      "description": "Whether this person is a component of an indirect relationship. Where `isComponent` is 'true': (1) the `recordId` of this person MUST be an element in the `componentRecords` array of that primary Relationship Statement, (2) this Person Statement MUST come before that primary Relationship Statement in a BODS package or stream, (3) the replacement of this Person Statement SHOULD be considered when replacing the primary Relationship Statement. The primary Relationship Statement MUST have a `isComponent` value of 'false'.",
       "type": "boolean"
     },
     "personType": {
-      "title": "Person type",
-      "description": "Use the personType codelist. The ultimate beneficial owner of a legal entity is always a natural person. Where the beneficial owner has been identified, but information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'. Where the beneficial owner has been identified use knownPerson. Where a person has the type 'anonymousPerson' or 'unknownPerson' a reason for the absence of information SHOULD be provided in 'unspecifiedPersonDetails')",
+      "title": "Person Type",
+      "description": "The status of this person, using the personType codelist. Where the beneficial owner has been identified, but information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'. Where the beneficial owner has been identified use knownPerson. Where a person has the type 'anonymousPerson' or 'unknownPerson' a reason for the absence of information SHOULD be provided in 'unspecifiedPersonDetails')",
       "type": "string",
       "enum": [
         "anonymousPerson",
@@ -25,7 +25,8 @@
       "openCodelist": false
     },
     "unspecifiedPersonDetails": {
-      "$ref": "urn:components#/$defs/UnspecifiedRecord"
+      "$ref": "urn:components#/$defs/UnspecifiedRecord",
+      "description": "An explanation of why a person is anonymous or unknown." 
     },
     "names": {
       "title": "Names",
@@ -47,7 +48,7 @@
     },
     "nationalities": {
       "title": "Nationality",
-      "description": "An array of ISO 2-Digit country codes representing nationalities held by this individual.",
+      "description": "The nationalities held by this person.",
       "type": "array",
       "items": {
         "$ref": "urn:components#/$defs/Country"
@@ -55,7 +56,8 @@
       "propertyOrder": 30
     },
     "placeOfBirth": {
-      "title": "Place of birth",
+      "title": "Place of Birth",
+      "description": "The place where this person was born.",
       "propertyOrder": 40,
       "$ref": "urn:components#/$defs/Address",
       "properties": {
@@ -67,8 +69,8 @@
       }
     },
     "birthDate": {
-      "title": "Date of birth",
-      "description": "The date of birth for this individual, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+      "title": "Date of Birth",
+      "description": "The date of birth for this person, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
       "type": "string",
       "anyOf": [
         {
@@ -81,8 +83,8 @@
       "propertyOrder": 35
     },
     "deathDate": {
-      "title": "Death date",
-      "description": "The date of death for this individual, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
+      "title": "Death Date",
+      "description": "The date of death for this person, in YYYY, YYYY-MM, or YYYY-MM-DD format.",
       "type": "string",
       "anyOf": [
         {
@@ -95,8 +97,8 @@
       "propertyOrder": 36
     },
     "taxResidencies": {
-      "title": "Tax residency",
-      "description": "An array of Country objects representing the tax residencies held by this person.",
+      "title": "Tax Residency",
+      "description": "The tax residencies held by this person, as an array of Country objects.",
       "type": "array",
       "items": {
         "$ref": "urn:components#/$defs/Country"
@@ -105,7 +107,7 @@
     },
     "addresses": {
       "title": "Addresses",
-      "description": "One or more addresses for this entity.",
+      "description": "One or more addresses for this person.",
       "type": "array",
       "items": {
         "$ref": "urn:components#/$defs/Address",
@@ -123,7 +125,7 @@
     },
     "politicalExposure": {
       "type": "object",
-      "title": "Political exposure",
+      "title": "Political Exposure",
       "description": "Information about whether, and how, the person described by this statement is politically exposed. Use this property only if politically exposed person (PEP) declarations are expected as part of beneficial ownership declarations.",
       "required": [
         "status"
@@ -131,8 +133,8 @@
       "properties": {
         "status": {
           "type": "string",
-          "title": "Politically exposed person (PEP) status",
-          "description": "This value is 'isPep' or 'isNotPep' according to whether the person described by this statement has the status of politically exposed person (PEP). An 'unknown' value means a PEP status declaration is expected but missing; the reason for the missing data SHOULD be supplied in the details array.",
+          "title": "Politically Exposed Person (PEP) Status",
+          "description": "This value is 'isPep' or 'isNotPep' according to whether the person described by this statement has the status of politically exposed person (PEP). An 'unknown' value means a PEP status declaration is expected but missing; the reason for the missing data SHOULD be supplied in the `details` array.",
           "enum": [
             "isPep",
             "isNotPep",
@@ -141,7 +143,7 @@
         },
         "details": {
           "type": "array",
-          "title": "Politically exposed person (PEP) details",
+          "title": "Politically Exposed Person (PEP) Details",
           "description": "One or more descriptions of this person's Politically Exposed Person (PEP) status.",
           "items": {
             "$ref": "#/$defs/PepStatusDetails"
@@ -157,7 +159,7 @@
   "$defs": {
     "Name": {
       "title": "Name",
-      "description": "A name by which this individual is known. Names should be provided in `fullName`, and may optionally be broken down in the `familyName`, `givenName` and `patronymicName` fields, based on the EC ISA Core Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
+      "description": "A name by which this person is known. A name MUST be provided in `fullName`, and MAY be broken down in the `familyName`, `givenName` and `patronymicName` fields, based on the EC ISA Core Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) definitions.",
       "type": "object",
       "required": [
         "fullName"
@@ -165,7 +167,7 @@
       "properties": {
         "type": {
           "title": "Type",
-          "description": "What kind of name is this? See the nameType codelist.",
+          "description": "The status of this name for the person, using the nameType codelist.",
           "type": "string",
           "enum": [
             "legal",
@@ -179,30 +181,30 @@
           "openCodelist": false
         },
         "fullName": {
-          "title": "Full name",
-          "description": "The full name contains the complete name of a person as one string.",
+          "title": "Full Name",
+          "description": "The complete name of the person.",
           "type": "string"
         },
         "familyName": {
-          "title": "Family name",
-          "description": "A family name is usually shared by members of a family. This attribute also carries prefixes or suffixes which are part of the Family Name, e.g. 'de Boer', 'van de Putte', 'von und zu Orlow'. Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single Family Name field so that, for example, Miguel de Cervantes Saavedra's Family Name would be recorded as 'de Cervantes Saavedra.'",
+          "title": "Family Name",
+          "description": "Part of the person's `fullName` which is shared by family members. The value may include prefixes or suffixes, e.g. 'de Boer', 'van de Putte', 'von und zu Orlow'. The value may be a multiple-part family name, such as are commonly found in Hispanic countries. For example, Miguel de Cervantes Saavedra's Family Name would be recorded as 'de Cervantes Saavedra.'",
           "type": "string"
         },
         "givenName": {
-          "title": "Given names",
-          "description": "A given name, or multiple given names, are the denominator(s) that identify an individual within a family. These are given to a person by his or her parents at birth or may be legally recognised as 'given names' through a formal process. All given names are ordered in one field so that, for example, the given name for Johann Sebastian Bach is 'Johann Sebastian'.",
+          "title": "Given Names",
+          "description": "The part of the person's `fullName` that identifies the individual within their family. These are given to a person by their parents at birth or may be legally recognised as 'given names' through a formal process. For example, the given name for Johann Sebastian Bach is 'Johann Sebastian'.",
           "type": "string"
         },
         "patronymicName": {
           "title": "Patronymic Name",
-          "description": "Patronymic names are important in some countries. Iceland does not have a concept of family name in the way that many other European countries do, for example. In Bulgaria and Russia, patronymic names are in every day usage, for example, the 'Sergeyevich' in 'Mikhail Sergeyevich Gorbachev'.",
+          "description": "Part of the person's `fullName` which is inherited from their father, as is common in countries such as Iceland, Ethiopia and Russia. For example, the 'Sergeyevich' in 'Mikhail Sergeyevich Gorbachev'.",
           "type": "string"
         }
       }
     },
     "PepStatusDetails": {
-      "title": "PEP Status",
-      "description": "A description of a politically-exposed person status.",
+      "title": "PEP Status Details",
+      "description": "Information about a person's political involvement.",
       "type": "object",
       "properties": {
         "reason": {
@@ -211,8 +213,8 @@
           "type": "string"
         },
         "missingInfoReason": {
-          "title": "Missing information reason(s)",
-          "description": "An explanation of the reason that PEP status for the person is not provided (i.e. `politicalExposure.status` is 'unknown'). This may be a standard descriptive phrase from the source system, or a free-text justification. Where this field is present it should be the only field except for `source`.",
+          "title": "Missing Information Reason(s)",
+          "description": "An explanation of why the PEP status for the person is not provided (i.e. `politicalExposure.status` is 'unknown'). This may be a standard descriptive phrase from the source system, or a free-text justification. Where this field is present it should be the only field except for `source`.",
           "type": "string"
         },
         "jurisdiction": {
@@ -221,21 +223,21 @@
           "$ref": "urn:components#/$defs/Jurisdiction"
         },
         "startDate": {
-          "title": "State date",
-          "description": "The date from which this individual had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
+          "title": "State Date",
+          "description": "The date from which this individual had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "type": "string",
           "format": "date"
         },
         "endDate": {
-          "title": "End date",
-          "description": "The date from which this individual no longer had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data..",
+          "title": "End Date",
+          "description": "The date from which this individual no longer had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the (first) month.  This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "type": "string",
           "format": "date"
         },
         "source": {
           "title": "Source",
           "description": "The source of this PEP information",
-          "$ref": "urn:statement#/$defs/Source"
+          "$ref": "urn:components#/$defs/Source"
         }
       }
     }
