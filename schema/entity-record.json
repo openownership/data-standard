@@ -2,13 +2,13 @@
   "$id": "urn:entity",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
-  "title": "Entity record details",
+  "title": "Entity Record Details",
   "description": "Information about an entity.",
   "type": "object",
   "properties": {
     "isComponent": {
       "title": "Is component",
-      "description": "Whether this entity is a component in an indirect relationship. Where `isComponent` is 'true': (1) the `recordId` of this entity MUST be an element in the `componentRecords` array of that primary Relationship statement, (2) this Entity statement MUST come before that primary Relationship statement in a BODS package or stream, (3) the replacement of this Entity statement SHOULD be considered when replacing the primary Relationship statement. The primary Relationship statement MUST have a `isComponent` value of 'false'.",
+      "description": "Whether this entity is a component in an indirect relationship. Where `isComponent` is 'true': (1) the `recordId` of this entity MUST be an element in the `componentRecords` array of that primary Relationship Statement, (2) this Entity Statement MUST come before that primary Relationship Statement in a BODS package or stream, (3) the replacement of this Entity Statement SHOULD be considered when replacing the primary Relationship Statement. The primary Relationship statement MUST have a `isComponent` value of 'false'.",
       "type": "boolean"
     },
     "entityType": {
@@ -29,16 +29,17 @@
       "propertyOrder": 4
     },
     "unspecifiedEntityDetails": {
-      "$ref": "urn:components#/$defs/UnspecifiedRecord"
+      "$ref": "urn:components#/$defs/UnspecifiedRecord",
+      "description": "An explanation of why an entity is anonymous or unknown." 
     },
     "name": {
-      "title": "Entity name",
+      "title": "Entity Name",
       "description": "The declared name of this entity.",
       "type": "string",
       "propertyOrder": 10
     },
     "alternateNames": {
-      "title": "Alternative names",
+      "title": "Alternative Names",
       "description": "An array of other names this entity is known by.",
       "type": "array",
       "items": {
@@ -50,7 +51,7 @@
     },
     "jurisdiction": {
       "title": "Jurisdiction",
-      "description": "The jurisdiction in which this entity was registered (for legal and registered entities, and arrangements). Or the state's jurisdiction (for states and state bodies).",
+      "description": "The jurisdiction in which this entity was registered or created (for legal and registered entities, and arrangements). Or the state's jurisdiction (for states and state bodies).",
       "propertyOrder": 15,
       "$ref": "urn:components#/$defs/Jurisdiction"
     },
@@ -64,15 +65,15 @@
       "propertyOrder": 20
     },
     "foundingDate": {
-      "title": "Founding date",
-      "description": "The date on which this entity was founded, created or registered. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
+      "title": "Founding Date",
+      "description": "The date on which this entity was founded, created or registered. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are not available, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
       "type": "string",
       "format": "date",
       "propertyOrder": 30
     },
     "dissolutionDate": {
-      "title": "Dissolution date",
-      "description": "The date on which this entity was disolved or ceased if it is no longer active. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
+      "title": "Dissolution Date",
+      "description": "The date on which this entity was dissolved or ceased, if it is no longer active. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are not available, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
       "type": "string",
       "format": "date",
       "propertyOrder": 35
@@ -103,7 +104,7 @@
       "propertyOrder": 21
     },
     "publicListing": {
-      "title": "Public listing",
+      "title": "Public Listing",
       "description": "Details of a publicly listed company, its securities (shares and other tradable financial instruments related to the entity), and related regulatory filings.",
       "$ref": "#/$defs/PublicListing"
     },
@@ -139,18 +140,18 @@
     },
     "formedByStatute": {
       "type": "object",
-      "title": "Formed by statute",
-      "description": "The law which mandated the formation of the entity described in the statement, where applicable. This information SHOULD be provided where a state has created an agency or other entity with specific legislation. ",
+      "title": "Formed by Statute",
+      "description": "The law which mandated the formation of the entity described in the statement, where applicable. This information SHOULD be provided where a state has created an agency or other entity with specific legislation.",
       "properties": {
         "name": {
           "type": "string",
-          "title": "Statute name",
+          "title": "Statute Name",
           "description": "The name of the law. "
         },
         "date": {
           "type": "string",
           "title": "Date",
-          "description": "The date on which the law came into force. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
+          "description": "The date on which the law came into force. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are not available, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "format": "date"
         }
       },
@@ -164,7 +165,7 @@
   "$defs": {
     "PublicListing": {
       "type": "object",
-      "title": "Public listing",
+      "title": "Public Listing",
       "description": "Details of a publicly listed company, its securities (shares and other tradable financial instruments related to the entity), and related regulatory filings.",
       "required": [
         "hasPublicListing"
@@ -173,12 +174,12 @@
       "properties": {
         "hasPublicListing": {
           "type": "boolean",
-          "title": "Has public listing",
+          "title": "Has Public Listing",
           "description": "Whether the entity is a publicly listed company."
         },
         "companyFilingsURLs": {
           "type": "array",
-          "title": "Company filings URLs",
+          "title": "Company Filings URLs",
           "description": "URL or URLs where regulatory filings related to major holdings can be retrieved. URLs may point to pages maintained by regulatory bodies, stock exchanges or by the company itself.",
           "items": {
             "type": "string"
@@ -187,8 +188,8 @@
         },
         "securitiesListings": {
           "type": "array",
-          "title": "Securities listings",
-          "description": "Details of the entity's securities and the public exchanges and markets on which they are traded. All equity securities SHOULD BE listed here, plus any other securities from which beneficial ownership might be derived. Where a security is traded on more than one market, there SHOULD BE an entry for each market (or market segment).",
+          "title": "Securities Listings",
+          "description": "Details of the entity's securities and the public exchanges and markets on which they are traded. All equity securities SHOULD be listed here, plus any other securities from which beneficial ownership might be derived. Where a security is traded on more than one market, there SHOULD be an entry for each market (or market segment).",
           "items": {
             "title": "Securities listing",
             "description": "Details of a security and the market on which it is traded.",
@@ -199,7 +200,7 @@
     },
     "SecuritiesListing": {
       "type": "object",
-      "title": "Securities listing",
+      "title": "Securities Listing",
       "description": "Details of a security and the market on which it is traded.",
       "required": [
         "stockExchangeJurisdiction",
@@ -219,14 +220,14 @@
         },
         "stockExchangeJurisdiction": {
           "type": "string",
-          "title": "Stock exchange jurisdiction",
+          "title": "Stock Exchange Jurisdiction",
           "description": "The 2-letter country code (ISO 3166-1) or the subdivision code (ISO 3166-2) for the jurisdiction under which the exchange, market or trading platform is regulated.",
           "maxLength": 6,
           "minLength": 2
         },
         "stockExchangeName": {
           "type": "string",
-          "title": "Stock exchange name",
+          "title": "Stock Exchange Name",
           "description": "The name of the exchange, market or trading platform on which the security is traded. If the security is traded on a segment of the exchange, then the name SHOULD include both elements. For example, 'London Stock Exchange - MTF'."
         },
         "security": {
@@ -239,8 +240,8 @@
           "properties": {
             "idScheme": {
               "type": "string",
-              "title": "Identifier scheme",
-              "description": "The scheme under which the security has been issued a unique, persistent identifier. For accepted schemas, see the securitiesIdentifierSchemes codelist.",
+              "title": "Identifier Scheme",
+              "description": "The scheme under which the security has been issued a unique, persistent identifier, using the securitiesIdentifierSchemes codelist.",
               "enum": [
                 "isin",
                 "figi",
@@ -256,7 +257,7 @@
             },
             "ticker": {
               "type": "string",
-              "title": "Stock ticker",
+              "title": "Stock Ticker",
               "description": "The stock ticker identifying this security on the named stock exchange."
             }
           }

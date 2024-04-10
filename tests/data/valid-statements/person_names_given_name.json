@@ -10,7 +10,8 @@
             "personType": "knownPerson",
             "names": [
                 {
-                    "givenName": "Riyadh"
+                    "givenName": "Riyadh",
+                    "fullName": "Riyadh Byrne-Amin"
                 }
             ]
         }

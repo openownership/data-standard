@@ -10,7 +10,8 @@
             "personType": "knownPerson",
             "names": [
                 {
-                    "patronymicName": true
+                    "patronymicName": true,
+                    "fullName": "Yuri Sergeyevich"
                 }
             ]
         }

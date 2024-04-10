@@ -2,18 +2,18 @@
   "$id": "urn:relationship",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.4",
-  "title": "Relationship record details",
+  "title": "Relationship Record Details",
   "description": "Information about the interests that an interested party (a person or entity) holds in the subject (an entity).",
   "type": "object",
   "properties": {
     "isComponent": {
       "title": "Is component",
-      "description": "Whether this relationship is a component of a wider indirect relationship. Where `isComponent` is 'true': (1) the `recordId` of this secondary Relationship statement MUST be an element in the `componentRecords` array of that primary Relationship statement, (2) this Relationship statement MUST come before that primary Relationship statement in a BODS package or stream, (3) the replacement of this Relationship statement SHOULD be considered when replacing the primary Relationship statement, and (4) the primary Relationship statement MUST have an `isComponent` value of 'false'. Where `isComponent` is 'false', this Relationship statement is the primary declaration of the relationship between the `subject` and the `interestedParty`.",
+      "description": "Whether this relationship is a component of a wider indirect relationship. Where `isComponent` is 'true': (1) the `recordId` of this secondary Relationship Statement MUST be an element in the `componentRecords` array of that primary Relationship Statement, (2) this Relationship Statement MUST come before that primary Relationship Statement in a BODS package or stream, (3) the replacement of this Relationship Statement SHOULD be considered when replacing the primary Relationship Statement, and (4) the primary Relationship Statement MUST have an `isComponent` value of 'false'. Where `isComponent` is 'false', this Relationship Statement is the primary declaration of the relationship between the `subject` and the `interestedParty`.",
       "type": "boolean"
     },
     "componentRecords": {
-      "title": "Component record IDs",
-      "description": "The `recordId` values of all component records that provide detail about this indirect relationship between the `subject` and the `interestedParty`. If this relationship has components, its own `isComponent` value MUST be 'false'.",
+      "title": "Component Record IDs",
+      "description": "The `recordId` values of all component records that provide detail about this relationship between the `subject` and the `interestedParty` (if it is indirect). If this relationship has components, its own `isComponent` value MUST be 'false'.",
       "type": "array",
       "items": {
         "type": "string"
@@ -32,8 +32,8 @@
       ]
     },
     "interestedParty": {
-      "title": "Interested party",
-      "description": "The `recordId` for the interested party in the relationship, or an Unspecified Record object with a reason for why this information has not been disclosed. The interested party MAY be an entity or a person. An Unspecified Record SHOULD only be used where no information at all is known about interested parties beyond this point of the beneficial ownership network. In other cases, the interested party should be noted as 'anonymous' or 'unknown' in its own `recordDetails`.",
+      "title": "Interested Party",
+      "description": "The `recordId` for the interested party in the relationship, or an Unspecified Record object with a reason for why this information has not been disclosed. The interested party MAY be an entity or a person. An Unspecified Record SHOULD only be used where no information at all is known about interested parties beyond this point of the beneficial ownership network. If the interested party is known to be an entity or person but their particular identity is unavailable, a `recordId` for them SHOULD be provided here (and the their `recordDetails.[person|entity]Type` should indicate that they are anonymous or unknown).",
       "oneOf": [
         {
           "type": "string"
@@ -45,7 +45,7 @@
     },
     "interests": {
       "title": "Interests",
-      "description": "A description of the interests held by the interestedParty covered by this statement in the entity covered by this statement.",
+      "description": "A description of the interests held by the interested party in the subject.",
       "type": "array",
       "items": {
         "$ref": "#/$defs/Interest"
@@ -60,12 +60,12 @@
   "$defs": {
     "Interest": {
       "title": "Interest",
-      "description": "A description of the interest held by an interestedParty in another entity.",
+      "description": "A description of an interest held by an interestedParty in the subject.",
       "type": "object",
       "properties": {
         "type": {
-          "title": "Type of interest",
-          "description": "A codelist value indicating the nature of the interest. See the interestType codelist",
+          "title": "Type of Interest",
+          "description": "The nature of the interest, using the interestType codelist.",
           "type": "string",
           "enum": [
             "shareholding",
@@ -94,7 +94,7 @@
           "openCodelist": false
         },
         "directOrIndirect": {
-          "title": "Direct or indirect",
+          "title": "Direct or Indirect",
           "description": "How directly the interest is exercised by the interested party. The value MUST be 'indirect' if intermediate entities or agents are known to exist, and MUST be 'direct' if such intermediaries are known not to exist. Otherwise the value MUST be 'unknown'.",
           "type": "string",
           "enum": [
@@ -106,51 +106,51 @@
           "openCodelist": false
         },
         "beneficialOwnershipOrControl": {
-          "title": "Beneficial ownership or control",
-          "description": "Does this statement assert this as a beneficial ownership or control interest? A beneficial ownership or control interest is always between a natural person and some entity, and exists where the person ultimately benefits from, or has a degree of control over, the entity. There may be cases where a person has an interest in an entity, but where there are arrangements or other conditions that mean this interest does not constitute beneficial ownership or control.",
+          "title": "Beneficial Ownership or Control",
+          "description": "Whether this interest (alone or with others) means the interested party is a beneficial owner of the subject. If 'true' the interested party MUST be a natural person. The definition of 'beneficial owner' in operation SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "type": "boolean"
         },
         "details": {
           "title": "Details",
-          "description": "This field may be used to provide the local name given to this kind of interest, or any further semi-structured or unstructured information to clarify the nature of the interest held.",
+          "description": "The local name given to this kind of interest, or further information (semi-structured or unstructured) to clarify the nature of the interest.",
           "type": "string"
         },
         "share": {
-          "title": "Percentage share",
-          "description": "Where an exact percentage is available, this should be given, and `maximum` and `minimum` values set to the same as the exact percentage. Otherwise, `minimum` (or `exclusiveMinimum`) and `maximum` (or `exclusiveMaximum`) can be used to record the range into which the share of this kind of interest falls. (The `minimum` and `maximum` values are inclusive.)",
+          "title": "Percentage Share",
+          "description": "The proportion of this type of interest held by the interested party, where an interest is countable. Provide the `exact` percentage if known. Otherwise, `minimum` (or `exclusiveMinimum`) and `maximum` (or `exclusiveMaximum`) can be used to record the range into which the proportion falls. (The `minimum` and `maximum` values are inclusive.)",
           "type": "object",
           "properties": {
             "exact": {
-              "title": "Exact share",
-              "description": "The exact share of this interest held (where available).",
+              "title": "Exact percentage",
+              "description": "The exact share of this interest held (if available).",
               "type": "number",
               "maximum": 100,
               "minimum": 0
             },
             "maximum": {
-              "title": "Maximum share",
-              "description": "The inclusive upper bound of the share of this interest known to be held.",
+              "title": "Maximum Percentage",
+              "description": "The inclusive upper bound of the share of this interest.",
               "type": "number",
               "maximum": 100,
               "minimum": 0
             },
             "minimum": {
-              "title": "Minimum share",
-              "description": "The inclusive lower bound of the share of this interest known to be held.",
+              "title": "Minimum Percentage",
+              "description": "The inclusive lower bound of the share of this interest.",
               "type": "number",
               "maximum": 100,
               "minimum": 0
             },
             "exclusiveMinimum": {
-              "title": "Exclusive minimum",
-              "description": "The exclusive lower bound of the share of this interest known to be held.",
+              "title": "Exclusive Minimum percentage",
+              "description": "The exclusive lower bound of the share of this interest.",
               "type": "number",
               "maximum": 100,
               "minimum": 0
             },
             "exclusiveMaximum": {
-              "title": "Exclusive maximum",
-              "description": "The exclusive upper bound of the share of this interest known to be held.",
+              "title": "Exclusive mMximum Percentage",
+              "description": "The exclusive upper bound of the share of this interest.",
               "type": "number",
               "maximum": 100,
               "minimum": 0
@@ -158,14 +158,14 @@
           }
         },
         "startDate": {
-          "title": "Start date",
-          "description": "The date from which this interest was active. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
+          "title": "Start Date",
+          "description": "The date from which this interest was active. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "type": "string",
           "format": "date"
         },
         "endDate": {
-          "title": "End date",
-          "description": "The date from which this interest ceased to exist. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the month. This rounding SHOULD be noted in accompanying guidance for users of the data.",
+          "title": "End Date",
+          "description": "The date from which this interest ceased to exist. The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "type": "string",
           "format": "date"
         }
