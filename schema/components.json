@@ -166,7 +166,7 @@
     },
     "Source": {
       "title": "Source",
-      "description": "The source object is used to explain where information in a statement originated from, and to link to supporting information.",
+      "description": "Details describing an information source.",
       "type": "object",
       "properties": {
         "type": {
