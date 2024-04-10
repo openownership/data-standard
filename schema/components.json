@@ -198,7 +198,7 @@
           "format": "uri"
         },
         "retrievedAt": {
-          "title": "Retrieved at",
+          "title": "Retrieved At",
           "description": "A timestamp indicating when this statement was imported from an external system, in YYYY-MM-DDTHH:MM:SS or YYYY-MM-DD format. (The statementDate should be set based on the source information.)",
           "type": "string",
           "anyOf": [
