@@ -172,7 +172,7 @@ Share
 Source
 ------
 
-.. json-value:: ../_build_schema/statement.json
+.. json-value:: ../_build_schema/components.json
    :pointer: /$defs/Source/description
 
 
