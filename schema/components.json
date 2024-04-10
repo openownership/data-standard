@@ -212,7 +212,7 @@
         },
         "assertedBy": {
           "title": "Asserted By",
-          "description": "An array of objects representing who is making this statement. This may be the name of the person or organisation making a self-declaration or the name of some other party making a declaration on their behalf. If this statement has been verified, the array may also include the name of the organisation providing verification.",
+          "description": "The people or organisations providing the information asserted in this Statement. This may include the declaring subject of a self-declaration, or the name of an agent making a declaration on their behalf. If this Statement has been verified, the array may include the name of the organisation providing verification.",
           "type": "array",
           "items": {
             "type": "object",
