@@ -170,7 +170,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "title": "Source type",
+          "title": "Source Type",
           "description": "What type of source is this? Multiple tags can be combined. Values should come from the source type codelist.",
           "type": "array",
           "items": {
