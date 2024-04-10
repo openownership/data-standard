@@ -33,6 +33,7 @@ Address
 
     Designers of new data collection systems are encouraged to choose an appropriate structured format, with reference to established standards, and awareness of the need to accomodate addresses from across the world. See `issue 18 <https://github.com/openownership/data-standard/issues/18>`_ for more details.
 
+.. _schema-annotation:
 
 Annotation
 ----------
@@ -235,7 +236,7 @@ Entity Subtype Category
 .. csv-table-no-translate::
    :header-rows: 1
    :class: codelist-table
-   :file: ../_build_schema/codelists/entitySubtype.csv
+   :file: ../_build_schema/codelists/entitySubtypeCategory.csv
 
 
 
