@@ -171,7 +171,7 @@
       "properties": {
         "type": {
           "title": "Source Type",
-          "description": "What type of source is this? Multiple tags can be combined. Values should come from the source type codelist.",
+          "description": "The types of the source, using the sourceType codelist.",
           "type": "array",
           "items": {
             "type": "string",
