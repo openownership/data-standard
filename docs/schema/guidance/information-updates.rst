@@ -41,7 +41,7 @@ Requirements for special cases
 Error correction
 ++++++++++++++++
 
-Errors in published data may be due to mistakes at the point of information disclosure, or to the mis-processing of information by the data management system. In either case, errors SHOULD be corrected by the issuing of new statements:
+Errors in published data may be due to mistakes at the point of information disclosure, or the mis-processing of information by the data management system. In either case, errors SHOULD be corrected by the issuing of new statements:
 
 - including an :any:`annotation <schema-annotation>` with the ``motivation`` 'correcting' and a ``description`` of the correction.
 - with an updated ``publicationDetails.publicationDate``
