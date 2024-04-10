@@ -22,3 +22,4 @@
 "entity_address_country_code_1chars.json","minLength","$[0].recordDetails.addresses[0].country.code","code"
 "statement_annotations_creationDate.json","type","$[0].annotations[0].creationDate","creationDate"
 "statement_annotations_createdBy_no_object.json","type","$[0].annotations[0].createdBy","createdBy"
+"statement_annotations_createdBy_name_string.json","type","$[0].annotations[0].createdBy.name","name"
