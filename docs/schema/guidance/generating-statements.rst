@@ -5,7 +5,7 @@ Generating statements
 
 Statements SHOULD be treated as immutable: once a Statement is published it SHOULD NOT be republished with the same statement identifier (``statementId``) and different property values. See :ref:`information-updates` for more information.
 
-Each Statement MUST have an entirely unique statement identifier. There MUST NOT be a possibility of collision between identifiers for different Statements. 
+Each Statement MUST have a unique statement identifier. There MUST NOT be a possibility of collision between identifiers for different Statements. 
 
 This means that:
 
