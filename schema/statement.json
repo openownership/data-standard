@@ -111,8 +111,8 @@
           },
           "source": {
             "title": "Source",
-            "description": "The source of information in this Statement.",
-            "$ref": "#/$defs/Source"
+            "description": "The source of information in this statement.",
+            "$ref": "urn:components#/$defs/Source"
           },
           "declaration": {
             "title": "Declaration Reference",
@@ -309,75 +309,6 @@
           "statementPointerTarget",
           "motivation"
         ]
-      }
-    },
-    "Source": {
-      "title": "Source",
-      "description": "Details describing an information source.",
-      "type": "object",
-      "properties": {
-        "type": {
-          "title": "Source Type",
-          "description": "The types of the source, using the sourceType codelist.",
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "selfDeclaration",
-              "officialRegister",
-              "thirdParty",
-              "primaryResearch",
-              "verified"
-            ],
-            "codelist": "sourceType.csv",
-            "openCodelist": false
-          }
-        },
-        "description": {
-          "title": "Description",
-          "description": "Additional, free-text information about the source of information.",
-          "type": "string"
-        },
-        "url": {
-          "title": "Source URL",
-          "description": "The external URL from which this information was fetched, if relevant. Or, if relevant, a URL providing additional detail on how this information was sourced.",
-          "type": "string",
-          "format": "uri"
-        },
-        "retrievedAt": {
-          "title": "Retrieved At",
-          "description": "A timestamp indicating when this information was imported from an external system, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
-          "type": "string",
-          "anyOf": [
-            {
-              "format": "date"
-            },
-            {
-              "format": "date-time"
-            }
-          ]
-        },
-        "assertedBy": {
-          "title": "Asserted By",
-          "description": "The people or organisations providing the information asserted in this Statement. This may include the declaring subject of a self-declaration, or the name of an agent making a declaration on their behalf. If this Statement has been verified, the array may include the name of the organisation providing verification.",
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "title": "Name",
-                "description": "The name of the agent making the assertion.",
-                "type": "string"
-              },
-              "uri": {
-                "title": "URI",
-                "description": "An optional URI to identify the agent making the assertion.",
-                "type": "string",
-                "format": "uri"
-              }
-            }
-          }
-        }
       }
     }
   }
