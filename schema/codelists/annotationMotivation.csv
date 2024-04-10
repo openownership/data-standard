@@ -3,4 +3,4 @@ commenting,Commenting,"The description field provides contextual comments for a 
 correcting,Correcting,"The value of this field, object or statement has been corrected, using the method in the description field and/or from the original value given in the description field.",
 identifying,Identifying,"The value of this field, object or statement has been augmented or processed for the purpose of identifying natural persons or legal entities, using the method in the description field.",
 linking,Linking,"The description explains how linked material relates to the field, object or statement. A URL to linked material MUST be provided in the `url` field.",
-transformation,Transformation,"The values of this field, object or statement have been changed from their original form using the method in the description field. The transformed representation may be provided in the transformedContent field.",
+transformation,Transformation,"The values of this field, object or statement have been changed from their original form using the method in the description field. The transformed representation may be provided in the `transformedContent` field.",
