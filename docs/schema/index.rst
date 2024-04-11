@@ -1,5 +1,8 @@
 Data Schema
 ===========
+
+.. _data-standard-index:
+
 .. include:: warningbox.rst
 
 BODS provides a common data model for encapsulating information about the :doc:`beneficial ownership <../primer/index>` of corporate entities and related arrangements, to facilitate :any:`sharing of information <whatisbods>`. In particular, the :any:`data model <key-concepts>` captures direct and indirect relationships of ownership and control by entities (such as companies) by other entities (including trusts and joint shareholdings) or by natural persons. 

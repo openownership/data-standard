@@ -6,7 +6,7 @@ What is beneficial ownership?
 
 A beneficial owner is a natural person who holds interests, directly or indirectly, that give them the right to a share of the income or assets of a corporate vehicle, or the ability to control or benefit from its activities.
 
-`Open Ownership <https://www.openownership.org/>`_ uses the term corporate vehicles to refer to both legal entities, such as companies, and legal arrangements, such as trusts. In BODS we refer to all types of corporate vehicles as ‘entities’.
+`Open Ownership <https://www.openownership.org/>`_ uses the term corporate vehicles to refer to both legal entities, such as companies, and legal arrangements, such as trusts. In the Beneficial Ownership Data Standard we refer to all types of corporate vehicles as ‘entities’.
 
 Often entities own other entities, but people almost always appear at the end of beneficial ownership networks. They are the ones who ultimately benefit from the financial successes of the entity, due to their relationship with it.
 
@@ -21,7 +21,7 @@ Beneficial ownership can include all types of relationship with an entity such a
 
 If a person owns something, they usually have some control over it. Owning shares in a company may confer voting rights, for example. But ownership and control are sometimes separated - by share classes, contracts, agreements and other mechanisms. For example, an executive director might have the right to appoint 60% of the other board members, while having little financial stake in the business. There are also situations where a person may not have ownership or significant control but still has a relationship which means they benefit from the activities of an entity - for example, where they can enjoy and use assets owned by the entity.
 
-For more `information about beneficial ownership transparency <https://www.openownership.org/en/about/what-is-beneficial-ownership-transparency/>`_ and to read `the latest research <https://www.openownership.org/en/research/>`_, visit `the Open Ownership Website <https://www.openownership.org/en/>`_
+For more `information about beneficial ownership transparency <https://www.openownership.org/en/about/what-is-beneficial-ownership-transparency/>`_ and to read `the latest research <https://www.openownership.org/en/research/>`_, visit `the Open Ownership website. <https://www.openownership.org/en/>`_
 
 .. _whatisbods:
 
