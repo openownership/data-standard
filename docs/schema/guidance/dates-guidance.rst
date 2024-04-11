@@ -29,26 +29,21 @@ Where rounded dates are used this should be noted in the publisher’s accompany
 
 For example:
 
-* If an interest started in March 2022 but the exact day is not known ``interest.startDate`` would be published as 2022-03-01
-* If an interest started in 2022 but the exact month and day is not known ``interest.startDate`` would be published as 2022-01-01 
+* If an interest started in March 2022 but the day is not known ``interest.startDate`` would be published as 2022-03-01
+* If an interest started in 2022 but the month and day are not known ``interest.startDate`` would be published as 2022-01-01 
 
 Examples
 --------
 
 An interest ending
 ^^^^^^^^^^^^^^^^^^
+This statement represents someone divesting from shares. We can use the statement to construct a timeline of events.
+
 .. figure:: ../../_assets/dates-guidance1.svg
-   :alt: A statement with statement date 2019-09-10, publication date 2021-09-13 and interest end date 2021-09-3.
-   :figwidth: 65%
+   :alt: A statement with statement date 2019-09-10, publication date 2021-09-13 and interest end date 2021-09-3. Next to the statement is a timeline showing the events - the relationship ending, the change being reported and the change being published. 
+   :figwidth: 100%
    :align: center
 
-From this closing statement we can construct a timeline of events for this interest
-
-.. figure:: ../../_assets/dates-guidance2.svg
-   :alt: The dates from the above statement on a timeline showing the relationship ending, the change being reported and the change being published.
-   :figwidth: 65%
-   :align: center
-   
    
 A confirmation process 
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -57,7 +52,7 @@ Someone founds a company and registers it. One year later nothing has changed. T
 
 .. figure:: ../../_assets/dates-guidance3.svg
    :alt: 2 statements showing the same interest start date and entity founding date. The statement date and publication date are one year apart. 
-   :figwidth: 65%
+   :figwidth: 75%
    :align: center
    
 An error correction
@@ -65,17 +60,17 @@ An error correction
 
 Due to an error in the publication system, a relationship statement is published with an incorrect interest.startDate. To correct this, a new statement is published replacing the incorrect one. 
 
-.. figure:: ../../_assets/dates-guidance4.svg
-   :alt: 2 statements showing the same recordId and statementDate. The second statement has a different publication date, statementId and interest start date. The second statement has an annotation with motivation "correction" point towards the interest start date. 
-   :figwidth: 65%
-   :align: center
-
 The new statement:
 
 * has the same statementDate, as the information originally submitted has not changed
 * had a new publication date 
 * has a corrected interest.startDate
 * has an annotation explaining the correction
+
+.. figure:: ../../_assets/dates-guidance4.svg
+   :alt: 2 statements showing the same recordId and statementDate. The second statement has a different publication date, statementId and interest start date. The second statement has an annotation with motivation "correction" point towards the interest start date. 
+   :figwidth: 75%
+   :align: center
 
 
 
