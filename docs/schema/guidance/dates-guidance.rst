@@ -29,8 +29,8 @@ Where rounded dates are used this should be noted in the publisher’s accompany
 
 For example:
 
-* If an interest started in March 2022 but the exact day is not known the ``interest.startDate`` would be published as 2022-03-01
-* If an interest started in 2022 but the exact month and day is not known the ``interest.startDate`` would be published as 2022-01-01 
+* If an interest started in March 2022 but the exact day is not known ``interest.startDate`` would be published as 2022-03-01
+* If an interest started in 2022 but the exact month and day is not known ``interest.startDate`` would be published as 2022-01-01 
 
 Examples
 --------
