@@ -5,9 +5,9 @@ Information on who owns, controls, and benefits from companies and other corpora
 
 The Beneficial Ownership Data Standard (BODS) is an open standard providing guidance for collecting, sharing and using high-quality data on beneficial ownership. 
 
-This website contains the draft specification of version 0.4 of BODS plus support for its use. Documentation is available in `English<https://standard.openownership.org/en/latest/>`_, `French<https://standard.openownership.org/fr/latest/>_`, `Spanish<https://standard.openownership.org/es/latest/>`_ and `Russian<https://standard.openownership.org/ru/latest/>_`.
+This website contains the draft specification of version 0.4 of BODS plus support for its use. Documentation is available in `English <https://standard.openownership.org/en/latest/>`_, `French <https://standard.openownership.org/fr/latest/>`_, `Spanish <https://standard.openownership.org/es/latest/>`_ and `Russian <https://standard.openownership.org/ru/latest/>`_.
 
-It is developed by `Open Ownership<https://www.openownership.org/>`_, a non-profit organisation focused on beneficial ownership transparency, in partnership with `Open Data Services<https://opendataservices.coop/>`_. Find out more about the `governance of BODS<https://standard.openownership.org/en/0.4.0/about/governance.html>`_ and how to get involved.
+It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-profit organisation focused on beneficial ownership transparency, in partnership with `Open Data Services <https://opendataservices.coop/>`_. Find out more about the :doc:`governance of BODS <../about/governance>` and how to get involved.
 
 .. container:: frontpageboxleft
 
@@ -35,7 +35,7 @@ It is developed by `Open Ownership<https://www.openownership.org/>`_, a non-prof
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      `Open Ownership's work, team and purpose<https://www.openownership.org/en/about/>`_
+      `Open Ownership's work, team and purpose <https://www.openownership.org/en/about/>`_
 
 
 .. container:: frontpageboxright
