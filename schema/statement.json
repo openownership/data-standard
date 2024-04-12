@@ -111,7 +111,7 @@
           },
           "source": {
             "title": "Source",
-            "description": "The source of information in this statement.",
+            "description": "The source of information in this statement. Each statement SHOULD contain source information",
             "$ref": "urn:components#/$defs/Source"
           },
           "declaration": {
