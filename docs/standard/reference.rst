@@ -38,9 +38,6 @@ Address
 Annotation
 ----------
 
-<<<<<<< HEAD:docs/standard/reference.rst
-The ``annotations`` property of statements currently allows an array of these simple annotation objects to be included. An annotation can be used to hold information (structured or otherwise) for which a place does not exist elsewhere in the schema.
-=======
 The ``annotations`` property of statements is an array of Annotation objects. 
 
 Annotations can be used to:
@@ -49,7 +46,6 @@ Annotations can be used to:
 * provide additional context to information in the schema (e.g. if data has been transformed) 
 
 Annotations can apply to a whole statement, part of a statement or a specific field. annotation.statementPointerTarget indicates where the annotation applies. 
->>>>>>> 9e96af3 (updating reference page and fixing US spelling of serialisation):docs/schema/reference.rst
 
 .. _schema-country:
 
@@ -194,9 +190,6 @@ Source
 .. json-value:: ../_build_schema/components.json
    :pointer: /$defs/Source/description
 
-<<<<<<< HEAD:docs/standard/reference.rst
-.. _schema-statement-date:
-=======
 .. _schema-statement:
 
 Statement
@@ -204,7 +197,6 @@ Statement
 
 .. json-value:: ../_build_schema/statement.json
    :pointer: /$defs/Statement/description
->>>>>>> 9e96af3 (updating reference page and fixing US spelling of serialisation):docs/schema/reference.rst
 
 Statement Id
 ------------
