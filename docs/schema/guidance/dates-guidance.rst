@@ -63,7 +63,7 @@ Due to an error in the publication system, a relationship statement is published
 The new statement:
 
 * has the same `statementDate`, because the date of the original information submission has not changed
-* had a new publication date 
+* has a new `publicationDate` 
 * has a corrected interest.startDate
 * has an annotation explaining the correction
 
