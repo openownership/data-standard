@@ -5,7 +5,7 @@
         "statementDate": "2017-11-18",
         "annotations": [
             {
-                "statementPointerTarget": "/recordDetails/interestedParty",
+                "statementPointerTarget": "/statementDate",
                 "motivation": "transformation",
                 "transformedContent": "12-31-2020"
             }
