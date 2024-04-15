@@ -10,7 +10,7 @@ In BODS, dates represent real world events and information about how data has mo
 
 ``statementDate`` is the date that the information about the entity, person or relationship is claimed to be true. This could be recorded automatically when someone submits an online declaration form or be the submission date listed on a physical form. For a service consolidating beneficial ownership data, it would be the date on which several sources of information were resolved to make a coherent claim about the state of an entity, person, or relationship.
 
-``publicationDetails.publicationDate`` is the date this statement was published. For example, the date the information was added to a public registry, or made available via an API. This can be the same as the statementDate if data is published immediately after submission. In many cases there will be a delay between submission and publication.	
+``publicationDetails.publicationDate`` is the date this statement was published. For example, the date the information was added to a public registry, or made available via an API. This can be the same as the `statementDate` value if data is published immediately after submission. In many cases there will be a delay between submission and publication.	
 
 ``interest.startDate`` is the date an interest started. For example, the date shares were purchased or the day that someone was appointed to the board of directors.
 
