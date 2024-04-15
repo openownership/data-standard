@@ -58,14 +58,14 @@ Someone founds a company and registers it. One year later nothing has changed. T
 An error correction
 ^^^^^^^^^^^^^^^^^^^
 
-Due to an error in the publication system, a relationship statement is published with an incorrect interest.startDate. To correct this, a new statement is published replacing the incorrect one. 
+Due to an error in the publication system, a relationship statement is published with an incorrect `interest.startDate`. To correct this, a new statement is published replacing the incorrect one. 
 
 The new statement:
 
-* has the same statementDate, as the information originally submitted has not changed
-* had a new publication date 
-* has a corrected interest.startDate
-* has an annotation explaining the correction
+* has the same `statementDate`, because the date of the original information submission has not changed
+* has a new `publicationDate` 
+* has a corrected `interest.startDate`
+* has an Annotation explaining the correction
 
 .. figure:: ../../_assets/dates-guidance4.svg
    :alt: 2 statements showing the same recordId and statementDate. The second statement has a different publication date, statementId and interest start date. The second statement has an annotation with motivation "correction" point towards the interest start date. 
