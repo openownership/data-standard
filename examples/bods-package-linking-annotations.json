@@ -28,7 +28,9 @@
     "recordDetails": {
       "isComponent": false,
       "name": "MARE POND PROPERTIES LIMITED",
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "identifiers": [
         {
           "scheme": "GB-COH",

@@ -15,7 +15,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "Company A",
       "identifiers": [
         {
@@ -41,7 +43,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": true,
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "Company B",
       "identifiers": [
         {
@@ -67,7 +71,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": true,
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "Company C",
       "identifiers": [
         {

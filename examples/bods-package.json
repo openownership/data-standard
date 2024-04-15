@@ -15,7 +15,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "CHRINON LTD",
       "foundingDate": "2010-11-18",
       "identifiers": [

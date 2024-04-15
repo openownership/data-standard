@@ -22,7 +22,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "Gasgrid Finland Oy",
       "jurisdiction": {
         "name": "Finland",
@@ -60,7 +62,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": true,
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "Suomen Kaasuverkko Oy",
       "jurisdiction": {
         "name": "Finland",
@@ -98,9 +102,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": true,
-      "entityType": "stateBody",
-      "entitySubtype": {
-        "generalCategory": "governmentDepartment",
+      "entityType": {
+        "type": "stateBody",
+        "subtype": "governmentDepartment",
         "localTerm": "ministerio"
       },
       "name": "Valtiovarainministerio",
@@ -136,7 +140,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "state",
+      "entityType": {
+        "type": "state"
+      },
       "name": "Suomen tasavalta",
       "alternateNames": [
         "Republic of Finland"
