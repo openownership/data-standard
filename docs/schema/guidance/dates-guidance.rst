@@ -16,7 +16,7 @@ In BODS, dates represent real world events and information about how data has mo
 
 ``interest.endDate`` is the date an interest ended. For example, the day shares were divested of or someone resigned from the board of directors.
 
-``source.retrievedAt`` is only applicable where data is being republished. For example, some 3rd parties might download data from government registries, transform it into BODS format and share it elsewhere. When this is done, they must provide information on when they downloaded the data from the government registry. 
+``source.retrievedAt`` is only applicable where data is being republished. For example, some third parties might download data from government registries, transform it into BODS format and share it elsewhere. When this is done, they must provide information on when they downloaded the data from the government registry. 
 
 Date rounding
 -------------
