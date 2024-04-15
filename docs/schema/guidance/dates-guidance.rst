@@ -58,7 +58,7 @@ Someone founds a company and registers it. One year later nothing has changed. T
 An error correction
 ^^^^^^^^^^^^^^^^^^^
 
-Due to an error in the publication system, a relationship statement is published with an incorrect interest.startDate. To correct this, a new statement is published replacing the incorrect one. 
+Due to an error in the publication system, a relationship statement is published with an incorrect `interest.startDate`. To correct this, a new statement is published replacing the incorrect one. 
 
 The new statement:
 
