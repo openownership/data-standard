@@ -25,7 +25,7 @@ For some fields, when exact dates are required but not known, rounded dates may 
 
 Where a month is known but not the day, the first day of the month can be used. Where a year is known but not the month, the first day of the year can be used. 
 
-Where rounded dates are used this should be noted in the publisher’s accompanying guidance for data users. `See building an auditable record of beneficial ownership <https://www.openownership.org/en/publications/building-an-auditable-record-of-beneficial-ownership/feature-five-publication-policy/>`_
+Where rounded dates are used this should be communicated to users of the data, to prevent misunderstanding. We RECOMMEND that publisher’s create accompanying guidance for data users.
 
 For example:
 
