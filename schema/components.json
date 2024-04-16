@@ -171,7 +171,7 @@
       "properties": {
         "type": {
           "title": "Source Type",
-          "description": "The types of the source, using the sourceType codelist.",
+          "description": "The types of the source, using the sourceType codelist. Include 'verified' in the array if the information in the Statement has undergone a verification process.",
           "type": "array",
           "items": {
             "type": "string",
