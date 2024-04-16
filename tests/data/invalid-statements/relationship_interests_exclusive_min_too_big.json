@@ -1,0 +1,21 @@
+[
+    {
+        "statementId": "9d167324c416bbfd37fe5c1a1b2afa95",
+        "recordId": "rel-b05e7c91e0a04e4f",
+        "recordType": "relationship",
+        "declarationSubject": "ent-93c75c87ab28f889",
+        "statementDate": "2017-11-18",
+        "recordDetails": {
+            "isComponent": false,
+            "subject": "ent-93c75c87ab28f889",
+            "interestedParty": "per-5faa4103dee78621",
+            "interests": [
+                {
+                    "share": {
+                        "exclusiveMinimum": 105
+                    }
+                }
+            ]
+        }
+    }
+]
