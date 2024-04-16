@@ -25,7 +25,7 @@ For some fields, when exact dates are required but not known, rounded dates may 
 
 Where a month is known but not the day, the first day of the month can be used. Where a year is known but not the month, the first day of the year can be used. 
 
-Where rounded dates are used this should be communicated to users of the data, to prevent misunderstanding. We RECOMMEND that publisher’s create accompanying guidance for data users.
+Where rounded dates are used this should be communicated to users of the data, to prevent misunderstanding. We RECOMMEND that publishers create accompanying guidance for data users.
 
 For example:
 
