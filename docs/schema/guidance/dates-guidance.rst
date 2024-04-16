@@ -64,7 +64,7 @@ The new statement:
 
 * has the same `statementDate`, because the date of the original information submission has not changed
 * has a new ``publicationDate``
-* has a corrected `interest.startDate`
+* has a corrected ``interest.startDate``
 * has an Annotation explaining the correction
 
 .. figure:: ../../_assets/dates-guidance4.svg
