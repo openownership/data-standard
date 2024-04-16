@@ -60,3 +60,10 @@ statement_source_retrievedAt_date.json,type,$[0].source.retrievedAt,retrievedAt
 statement_source_assertedBy_not_array.json,type,$[0].source.assertedBy,assertedBy
 statement_source_assertedBy_name_string.json,type,$[0].source.assertedBy[0].name,name
 statement_source_assertedBy_uri.json,format,$[0].source.assertedBy[0].uri,uri
+entity_dissolution_date_number.json,type,$[0].recordDetails.dissolutionDate,dissolutionDate
+entity_dissolution_date_string.json,format,$[0].recordDetails.dissolutionDate,dissolutionDate
+entity_type_details_number.json,type,$[0].recordDetails.entityType.details,details
+entity_formed_by_statute_string.json,type,$[0].recordDetails.formedByStatute,formedByStatute
+entity_formed_by_statute_name_number.json,type,$[0].recordDetails.formedByStatute.name,name
+entity_formed_by_statute_date_year_only.json,format,$[0].recordDetails.formedByStatute.date,date
+entity_formed_by_statute_date_number.json,type,$[0].recordDetails.formedByStatute.date,date
