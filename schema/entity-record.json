@@ -54,7 +54,90 @@
           "description": "This may be used to provide a local name for this type of entity, or any further information to identify the type of entity. For example, in Finland 'ministeriö' for a government department."
         }
       },
-      "propertyOrder": 4
+      "propertyOrder": 4,
+      "allOf":[
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "arrangement"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum":[
+                  "trust",
+                  "nomination",
+                  "other"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "legalEntity"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "trust",
+                  "other"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "stateBody"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "subtype": {
+                "enum": [
+                  "governmentDepartment",
+                  "stateAgency",
+                  "other"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "not": {
+              "properties":{
+                "type":{
+                  "enum":[
+                    "legalEntity",
+                    "arrangement",
+                    "stateBody"
+                  ]
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "subtype":{
+                "const": "other"
+              }
+            }
+          }
+        }
+      ]
     },
     "unspecifiedEntityDetails": {
       "$ref": "urn:components#/$defs/UnspecifiedRecord",
