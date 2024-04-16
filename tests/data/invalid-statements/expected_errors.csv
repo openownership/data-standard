@@ -44,3 +44,5 @@ statement_annotations.statementPointerTarget_missing.json,required,$[0].annotati
 statement_annotations_motivation_missing.json,required,$[0].annotations[0],motivation
 relationship_interests_exclusive_min_negative.json,minimum,$[0].recordDetails.interests[0].share.exclusiveMinimum,exclusiveMinimum
 relationship_interests_exclusive_min_too_big.json,maximum,$[0].recordDetails.interests[0].share.exclusiveMinimum,exclusiveMinimum
+relationship_interests_exclusive_max_too_big.json,maximum,$[0].recordDetails.interests[0].share.exclusiveMaximum,exclusiveMaximum
+relationship_interests_exclusive_max_negative.json,minimum,$[0].recordDetails.interests[0].share.exclusiveMaximum,exclusiveMaximum
