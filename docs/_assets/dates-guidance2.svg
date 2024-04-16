@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 800 250"
+   fill="none"
+   stroke="none"
+   stroke-linecap="square"
+   stroke-miterlimit="10"
+   id="svg16"
+   sodipodi:docname="dates-guidance2.svg"
+   width="800"
+   height="250"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:zoom="1.0292332"
+     inkscape:cx="334.2294"
+     inkscape:cy="227.83952"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g16">
+    <sodipodi:guide
+       position="444.50382,141.37405"
+       orientation="0,-1"
+       id="guide17"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <clipPath
+     id="p.0">
+    <path
+       d="M 0,0 H 960 V 720 H 0 Z"
+       clip-rule="nonzero"
+       id="path1" />
+  </clipPath>
+  <g
+     clip-path="url(#p.0)"
+     id="g16">
+    <path
+       fill="#000000"
+       fill-opacity="0"
+       d="M 0,0 H 960 V 720 H 0 Z"
+       fill-rule="evenodd"
+       id="path2" />
+    <g
+       id="g17"
+       transform="translate(-80,-0.787395)">
+      <path
+         fill="#000000"
+         fill-opacity="0"
+         d="M 332.5748,218.49606 V 125.78741 H 498.9685 V 33.07873"
+         fill-rule="evenodd"
+         id="path15" />
+      <g
+         id="g23">
+        <path
+           fill="#000000"
+           fill-opacity="0"
+           d="M 131.2126,101.22833 H 828.7874"
+           fill-rule="evenodd"
+           id="path3" />
+        <path
+           stroke="#000000"
+           stroke-width="3"
+           stroke-linejoin="round"
+           stroke-linecap="butt"
+           stroke-dasharray="3, 9"
+           d="M 131.2126,101.22833 H 828.7874"
+           fill-rule="evenodd"
+           id="path4" />
+        <path
+           fill="#000000"
+           d="m 205.16798,101.22833 v 0 c 0,-6.43607 5.21747,-11.65353 11.65353,-11.65353 v 0 c 3.09072,0 6.05484,1.22778 8.24031,3.41323 2.18546,2.18549 3.41324,5.1496 3.41324,8.2403 v 0 c 0,6.4361 -5.21746,11.65356 -11.65355,11.65356 v 0 c -6.43606,0 -11.65353,-5.21746 -11.65353,-11.65356 z"
+           fill-rule="evenodd"
+           id="path5" />
+        <path
+           stroke="#000000"
+           stroke-width="1"
+           stroke-linejoin="round"
+           stroke-linecap="butt"
+           d="m 205.16798,101.22833 v 0 c 0,-6.43607 5.21747,-11.65353 11.65353,-11.65353 v 0 c 3.09072,0 6.05484,1.22778 8.24031,3.41323 2.18546,2.18549 3.41324,5.1496 3.41324,8.2403 v 0 c 0,6.4361 -5.21746,11.65356 -11.65355,11.65356 v 0 c -6.43606,0 -11.65353,-5.21746 -11.65353,-11.65356 z"
+           fill-rule="evenodd"
+           id="path6" />
+        <path
+           fill="#000000"
+           d="m 519.5092,101.22833 v 0 c 0,-6.43607 5.21747,-11.65353 11.65353,-11.65353 v 0 c 3.09073,0 6.05484,1.22778 8.2403,3.41323 2.18548,2.18549 3.41327,5.1496 3.41327,8.2403 v 0 c 0,6.4361 -5.21747,11.65356 -11.65357,11.65356 v 0 c -6.43606,0 -11.65353,-5.21746 -11.65353,-11.65356 z"
+           fill-rule="evenodd"
+           id="path7" />
+        <path
+           stroke="#000000"
+           stroke-width="1"
+           stroke-linejoin="round"
+           stroke-linecap="butt"
+           d="m 519.5092,101.22833 v 0 c 0,-6.43607 5.21747,-11.65353 11.65353,-11.65353 v 0 c 3.09073,0 6.05484,1.22778 8.2403,3.41323 2.18548,2.18549 3.41327,5.1496 3.41327,8.2403 v 0 c 0,6.4361 -5.21747,11.65356 -11.65357,11.65356 v 0 c -6.43606,0 -11.65353,-5.21746 -11.65353,-11.65356 z"
+           fill-rule="evenodd"
+           id="path8" />
+        <path
+           fill="#000000"
+           d="m 648.874,101.22833 v 0 c 0,-6.43607 5.21747,-11.65353 11.65356,-11.65353 v 0 c 3.0907,0 6.05481,1.22778 8.2403,3.41323 2.18542,2.18549 3.41321,5.1496 3.41321,8.2403 v 0 c 0,6.4361 -5.21747,11.65356 -11.65351,11.65356 v 0 c -6.43609,0 -11.65356,-5.21746 -11.65356,-11.65356 z"
+           fill-rule="evenodd"
+           id="path9" />
+        <path
+           stroke="#000000"
+           stroke-width="1"
+           stroke-linejoin="round"
+           stroke-linecap="butt"
+           d="m 648.874,101.22833 v 0 c 0,-6.43607 5.21747,-11.65353 11.65356,-11.65353 v 0 c 3.0907,0 6.05481,1.22778 8.2403,3.41323 2.18542,2.18549 3.41321,5.1496 3.41321,8.2403 v 0 c 0,6.4361 -5.21747,11.65356 -11.65351,11.65356 v 0 c -6.43609,0 -11.65356,-5.21746 -11.65356,-11.65356 z"
+           fill-rule="evenodd"
+           id="path10" />
+        <path
+           fill="#000000"
+           fill-opacity="0"
+           d="m 216.82152,112.8819 v 67.37009"
+           fill-rule="evenodd"
+           id="path11" />
+        <path
+           stroke="#000000"
+           stroke-width="1"
+           stroke-linejoin="round"
+           stroke-linecap="butt"
+           d="m 216.82152,112.8819 v 67.37009"
+           fill-rule="evenodd"
+           id="path12" />
+        <path
+           fill="#000000"
+           fill-opacity="0"
+           d="m 660.5276,112.8819 v 67.37009"
+           fill-rule="evenodd"
+           id="path13" />
+        <path
+           stroke="#000000"
+           stroke-width="1"
+           stroke-linejoin="round"
+           stroke-linecap="butt"
+           d="m 660.5276,112.8819 v 67.37009"
+           fill-rule="evenodd"
+           id="path14" />
+        <path
+           stroke="#000000"
+           stroke-width="0.878663"
+           stroke-linejoin="round"
+           stroke-linecap="butt"
+           d="m 332.64992,180.74699 v -1.49453 -1.35559 m 0,0 v -56.09384 l 198.04932,0.12612 -0.0782,-30.01971"
+           fill-rule="evenodd"
+           id="path16"
+           sodipodi:nodetypes="csccccc" />
+        <text
+           class="cls-3"
+           id="text31-0-6"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;display:inline;fill:#ffffff;fill-opacity:1"
+           x="324.68762"
+           y="77.952469"><tspan
+             x="285.33353"
+             y="77.952469"
+             id="tspan35-6-3"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#1f1f1f;fill-opacity:1">3 Sept 2021</tspan></text>
+        <text
+           class="cls-3"
+           id="text31-0-6-3"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;display:inline;fill:#ffffff;fill-opacity:1"
+           x="646.07709"
+           y="77.952469"><tspan
+             x="606.72296"
+             y="77.952469"
+             id="tspan35-6-3-6"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#1f1f1f;fill-opacity:1">10 Sept 2021</tspan></text>
+        <text
+           class="cls-3"
+           id="text31-0-6-3-3"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;display:inline;fill:#ffffff;fill-opacity:1"
+           x="775.44189"
+           y="77.952469"><tspan
+             x="736.08777"
+             y="77.952469"
+             id="tspan35-6-3-6-5"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#1f1f1f;fill-opacity:1">13 Sept 2021</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:10.6667px;line-height:12.5px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start;fill:#000000;stroke-opacity:0.956863"
+           x="222.22256"
+           y="148.07959"
+           id="text17"><tspan
+             sodipodi:role="line"
+             x="222.22256"
+             y="148.07959"
+             id="tspan19">Person A divests </tspan><tspan
+             sodipodi:role="line"
+             x="222.22256"
+             y="160.57959"
+             id="tspan20">from company B</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:10.6667px;line-height:12.5px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start;fill:#000000;stroke-opacity:0.956863"
+           x="665.92865"
+           y="147.80893"
+           id="text17-1"><tspan
+             sodipodi:role="line"
+             x="665.92865"
+             y="147.80893"
+             id="tspan20-7">Public register </tspan><tspan
+             sodipodi:role="line"
+             x="665.92865"
+             y="160.30893"
+             id="tspan23">is updated</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:10.6667px;line-height:12.5px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start;fill:#000000;stroke-opacity:0.956863"
+           x="337.52829"
+           y="141.89468"
+           id="text17-6"><tspan
+             sodipodi:role="line"
+             x="337.52829"
+             y="141.89468"
+             id="tspan20-9">Representative of company B files </tspan><tspan
+             sodipodi:role="line"
+             x="337.52829"
+             y="154.39468"
+             id="tspan21">updated beneficial ownership </tspan><tspan
+             sodipodi:role="line"
+             x="337.52829"
+             y="166.89468"
+             id="tspan22">information with  the Business Register</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
