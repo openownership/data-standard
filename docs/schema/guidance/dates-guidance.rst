@@ -48,7 +48,7 @@ This statement represents someone divesting from shares. We can use the statemen
 A confirmation process 
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Someone founds a company and registers it. One year later nothing has changed. They file a confirmation statement and a new statement is generated with an updated statementDate and publicationDate. 
+Someone founds a company, registers it and discloses its beneficial owners. One year later nothing has changed. They file a confirmation declaration and a new Relationship statement is generated with an updated ``statementDate`` and ``publicationDate``. 
 
 .. figure:: ../../_assets/dates-guidance3.svg
    :alt: 2 statements showing the same interest start date and entity founding date. The statement date and publication date are one year apart. 
