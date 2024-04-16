@@ -74,3 +74,8 @@ person_politicalExposure_details_not_array.json,type,$[0].recordDetails.politica
 entity_security_listing_no_jurisdiction.json,required,$[0].recordDetails.publicListing.securitiesListings[0],stockExchangeJurisdiction
 entity_security_listing_no_security.json,required,$[0].recordDetails.publicListing.securitiesListings[0],security
 entity_security_listing_no_stock_exchange.json,required,$[0].recordDetails.publicListing.securitiesListings[0],stockExchangeName
+entity_security_listing_string.json,type,$[0].recordDetails.publicListing.securitiesListings[0].security,security
+entity_security_listing_no_ticker.json,required,$[0].recordDetails.publicListing.securitiesListings[0].security,ticker
+entity_security_idscheme_wrong_code.json,enum,$[0].recordDetails.publicListing.securitiesListings[0].security.idScheme,idScheme
+entity_security_id_number.json,type,$[0].recordDetails.publicListing.securitiesListings[0].security.id,id
+entity_security_ticker_number.json,type,$[0].recordDetails.publicListing.securitiesListings[0].security.ticker,ticker

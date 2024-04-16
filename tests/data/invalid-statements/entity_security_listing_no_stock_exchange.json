@@ -7,7 +7,9 @@
         "statementDate": "2017-11-18",
         "recordDetails": {
             "isComponent": false,
-            "entityType": "registeredEntity",
+            "entityType": {
+                "type": "registeredEntity"
+            },
             "publicListing":{
             	"hasPublicListing" : true,
 		"securitiesListings": [

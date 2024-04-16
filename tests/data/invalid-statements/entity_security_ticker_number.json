@@ -15,7 +15,7 @@
 		"securitiesListings": [
 		    {
 		        "security": {
-		            "ticker": "FMT"
+		            "ticker": 12
 		        },
 		        "stockExchangeName" :"Irish stock exchange",
 		        "stockExchangeJurisdiction": "IE"

@@ -14,9 +14,7 @@
             	"hasPublicListing" : true,
 		"securitiesListings": [
 		    {
-		        "security": {
-		            "ticker": "FMT"
-		        },
+		        "security": "FMT",
 		        "stockExchangeName" :"Irish stock exchange",
 		        "stockExchangeJurisdiction": "IE"
 		    }
