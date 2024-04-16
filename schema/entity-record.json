@@ -12,20 +12,48 @@
       "type": "boolean"
     },
     "entityType": {
-      "title": "Type",
-      "description": "From the entityType codelist. What kind of entity is this? The 'registeredEntity' code covers any legal entity created through an act of official registration, usually resulting in an identifier being assigned to the entity. The ‘legalEntity’ code covers other bodies with distinct legal personality (international institutions, statutory corporations etc.). The 'arrangement' code covers artificial entities, described in the data model for the purpose of associating one or more natural or legal persons together in an ownership or control relationship, but without implying that the parties to this arrangement have any other form of collective legal identity.",
-      "type": "string",
-      "enum": [
-        "registeredEntity",
-        "legalEntity",
-        "arrangement",
-        "anonymousEntity",
-        "unknownEntity",
-        "state",
-        "stateBody"
+      "type": "object",
+      "title": "Entity Type",
+      "description": "The form of the entity described in the Statement.",
+      "required": [
+        "type"
       ],
-      "codelist": "entityType.csv",
-      "openCodelist": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "title": "Type",
+          "description": "The general form of the entity, using the entityType codelist.",
+          "codelist": "entityType.csv",
+          "enum": [
+            "registeredEntity",
+            "legalEntity",
+            "arrangement",
+            "anonymousEntity",
+            "unknownEntity",
+            "state",
+            "stateBody"
+          ]
+        },
+        "subtype": {
+          "type": "string",
+          "title": "Subtype",
+          "description": "The particular form of the entity, where relevant, using the entitySubtype codelist. The value MUST align with the `entityType` value.",
+          "codelist": "entitySubtype.csv",
+          "enum": [
+            "governmentDepartment",
+            "stateAgency",
+            "other",
+            "trust",
+            "nomination"
+          ],
+          "openCodelist": false
+        },
+        "details": {
+          "type": "string",
+          "title": "Details",
+          "description": "This may be used to provide a local name for this type of entity, or any further information to identify the type of entity. For example, in Finland 'ministeriö' for a government department."
+        }
+      },
       "propertyOrder": 4
     },
     "unspecifiedEntityDetails": {
@@ -107,36 +135,6 @@
       "title": "Public Listing",
       "description": "Details of a publicly listed company, its securities (shares and other tradable financial instruments related to the entity), and related regulatory filings.",
       "$ref": "#/$defs/PublicListing"
-    },
-    "entitySubtype": {
-      "type": "object",
-      "title": "Subtype",
-      "description": "Further information about the type of entity described in the statement.",
-      "required": [
-        "generalCategory"
-      ],
-      "properties": {
-        "generalCategory": {
-          "type": "string",
-          "title": "General category",
-          "description": "The general category into which the entity fits. The category classification MUST align with the `entityType` classification.",
-          "codelist": "entitySubtypeCategory.csv",
-          "enum": [
-            "governmentDepartment",
-            "stateAgency",
-            "other",
-            "trust",
-            "nomination"
-          ],
-          "openCodelist": false
-        },
-        "localTerm": {
-          "type": "string",
-          "title": "Local term",
-          "description": "The local term for the category of entity. For example, in Finland 'ministeriö' for a government department."
-        }
-      },
-      "propertyOrder": 5
     },
     "formedByStatute": {
       "type": "object",

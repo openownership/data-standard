@@ -22,7 +22,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "Listed Company OS-17",
       "identifiers": [
         {

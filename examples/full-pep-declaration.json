@@ -16,7 +16,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "Platinum Emerald and Plutonim Mining Limited",
       "identifiers": [
         {

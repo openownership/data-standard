@@ -1,20 +1,22 @@
 [
-    {
-        "statementId": "2f7bf9370f1254068e5e946df067d07d",
-        "declarationSubject": "xyz",
-        "statementDate": "2017-11-18",
-        "annotations": [
-            {
-                "statementPointerTarget": "/recordDetails/interestedParty",
-                "motivation": "identifying",
-                "creationDate": 2017
-            }
-        ],
-        "recordId": "123",
-        "recordType": "entity",
-        "recordDetails": {
-            "entityType": "unknownEntity",
-            "isComponent": false
-        }
+  {
+    "statementId": "2f7bf9370f1254068e5e946df067d07d",
+    "declarationSubject": "xyz",
+    "statementDate": "2017-11-18",
+    "annotations": [
+      {
+        "statementPointerTarget": "/recordDetails/interestedParty",
+        "motivation": "identifying",
+        "creationDate": 2017
+      }
+    ],
+    "recordId": "123",
+    "recordType": "entity",
+    "recordDetails": {
+      "entityType": {
+        "type": "unknownEntity"
+      },
+      "isComponent": false
     }
+  }
 ]
