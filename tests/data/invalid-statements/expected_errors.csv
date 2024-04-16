@@ -42,3 +42,9 @@ statement_annotations_url_format.json,format,$[0].annotations[0].url,url
 statement_annotations_url_linking_missing.json,required,$[0].annotations[0],url
 statement_annotations.statementPointerTarget_missing.json,required,$[0].annotations[0],statementPointerTarget
 statement_annotations_motivation_missing.json,required,$[0].annotations[0],motivation
+person_PepStatusDetails_reason.json,type,$[0].recordDetails.politicalExposure.details[0].reason,reason
+person_PepStatusDetails_missingInfoReason_string.json,type,$[0].recordDetails.politicalExposure.details[0].missingInfoReason,missingInfoReason
+person_PepStatusDetails_jurisdiction_no_object.json,type,$[0].recordDetails.politicalExposure.details[0].jurisdiction,jurisdiction
+person_PepStatusDetails_startDate_string.json,type,$[0].recordDetails.politicalExposure.details[0].startDate,startDate
+person_PepStatusDetails_endDate_string.json,type,$[0].recordDetails.politicalExposure.details[0].endDate,endDate
+person_PepStatusDetails_source_no_object.json,type,$[0].recordDetails.politicalExposure.details[0].source,source
