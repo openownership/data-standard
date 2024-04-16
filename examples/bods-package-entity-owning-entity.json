@@ -15,7 +15,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "JENEX LIMITED",
       "foundingDate": "1996-06-10",
       "identifiers": [
@@ -42,7 +44,9 @@
     "recordType": "entity",
     "recordDetails": {
       "isComponent": false,
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "MVJ LIMITED",
       "foundingDate": "2012-07-19",
       "identifiers": [

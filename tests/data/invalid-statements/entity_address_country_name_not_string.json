@@ -1,23 +1,25 @@
 [
-    {
-        "statementId": "2f7bf9370f1254068e5e946df067d07d",
-        "statementDate": "2017-11-18",
-        "recordId": "123",
-        "recordType": "entity",
-        "declarationSubject": "xyz",
-        "recordDetails": {
-            "entityType": "registeredEntity",
-            "isComponent": false,
-            "addresses": [
-                {
-                    "type":"registered",
-                    "address": "23 Regent St, London",
-                    "country": {
-                        "name": false,
-                        "code": "GB"
-                    }
-                }
-            ]
+  {
+    "statementId": "2f7bf9370f1254068e5e946df067d07d",
+    "statementDate": "2017-11-18",
+    "recordId": "123",
+    "recordType": "entity",
+    "declarationSubject": "xyz",
+    "recordDetails": {
+      "entityType": {
+        "type": "registeredEntity"
+      },
+      "isComponent": false,
+      "addresses": [
+        {
+          "type": "registered",
+          "address": "23 Regent St, London",
+          "country": {
+            "name": false,
+            "code": "GB"
+          }
         }
+      ]
     }
+  }
 ]

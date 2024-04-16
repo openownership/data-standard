@@ -1,20 +1,22 @@
 [
-    {
-        "statementId": "2f7bf9370f1254068e5e946df067d07d",
-        "statementDate": "2017-11-18",
-        "recordId": "123",
-        "recordType": "entity",
-        "declarationSubject": "eyh3827439",
-        "recordDetails": {
-            "entityType": "registeredEntity",
-            "isComponent": false,
-            "identifiers": [
-                {
-                    "schemeName": "64732",
-                    "id": "2475625",
-                    "uri": "http://www.righturl.com"
-                }
-            ]
+  {
+    "statementId": "2f7bf9370f1254068e5e946df067d07d",
+    "statementDate": "2017-11-18",
+    "recordId": "123",
+    "recordType": "entity",
+    "declarationSubject": "eyh3827439",
+    "recordDetails": {
+      "entityType": {
+        "type": "registeredEntity"
+      },
+      "isComponent": false,
+      "identifiers": [
+        {
+          "schemeName": "64732",
+          "id": "2475625",
+          "uri": "http://www.righturl.com"
         }
+      ]
     }
+  }
 ]
