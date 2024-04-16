@@ -25,12 +25,12 @@ For some fields, when exact dates are required but not known, rounded dates may 
 
 Where a month is known but not the day, the first day of the month can be used. Where a year is known but not the month, the first day of the year can be used. 
 
-Where rounded dates are used this should be communicated to users of the data, to prevent misunderstanding. We RECOMMEND that publishers create accompanying guidance for data users.
+Where rounded dates are used this should be communicated to users of the data, to prevent misunderstanding. Publishers SHOULD create accompanying guidance for data users.
 
 For example:
 
-* If an interest started in March 2022 but the day is not known ``interest.startDate`` would be published as 2022-03-01
-* If an interest started in 2022 but the month and day are not known ``interest.startDate`` would be published as 2022-01-01 
+* If an interest started in March 2022 but the day is not known the interest's ``startDate`` would be published as 2022-03-01
+* If an interest started in 2022 but the month is not known the interest's ``startDate`` would be published as 2022-01-01 
 
 Examples
 --------
@@ -58,7 +58,7 @@ Someone founds a company, registers it and discloses its beneficial owners. One 
 An error correction
 ^^^^^^^^^^^^^^^^^^^
 
-Due to an error in the publication system, a relationship statement is published with an incorrect ``interest.startDate``. To correct this, a new statement is published replacing the incorrect one. 
+Due to an error in the publication system, a relationship statement is published with an incorrect ``interests[0].startDate``. To correct this, a new statement is published replacing the incorrect one. 
 
 The new statement:
 
