@@ -144,3 +144,5 @@ entity_public_listing_company_filings_not_array.json,type,$[0].recordDetails.pub
 entity_public_listing_company_filings_not_uri.json,format,$[0].recordDetails.publicListing.companyFilingsURLs[0],companyFilingsURLs
 entity_public_listing_company_filings_not_string.json,type,$[0].recordDetails.publicListing.companyFilingsURLs[0],companyFilingsURLs
 entity_security_listing_not_array.json,type,$[0].recordDetails.publicListing.securitiesListings,securitiesListings
+relationship_interests_end_date_string.json,type,$[0].recordDetails.interests[0].endDate,endDate
+relationship_interests_end_date_dateformat.json,format,$[0].recordDetails.interests[0].endDate,endDate
