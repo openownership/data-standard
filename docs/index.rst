@@ -1,23 +1,19 @@
-Beneficial Ownership Data Standard (v0.3)
+Beneficial Ownership Data Standard (v0.4)
 ============================================
 
-This website contains the draft specification of the Beneficial Ownership Data Standard (version 0.3) plus support for its use. :doc:`Find out more <about/index>` about the standard's development and how to get involved.
+The Beneficial Ownership Data Standard (BODS) is an open standard providing guidance for collecting, sharing and using high-quality data on beneficial ownership. 
 
-
+It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-profit organisation focused on beneficial ownership transparency, in partnership with `Open Data Services <https://opendataservices.coop/>`_. Find out more about the :doc:`governance of BODS <../about/governance>` and how to get involved.
 
 .. container:: frontpageboxleft
 
    .. cssclass:: h2
 
-     For Newcomers
+     Introduction
 
-   Get an overview of beneficial ownership and why a standardised format for data is important.
+   Learn about beneficial ownership and why a standardised format for data is important.
 
    .. cssclass:: primaryfrontpageboxlink
-
-      :doc:`Visit the primer <../primer/index>`
-
-   .. cssclass:: secondaryfrontpageboxlink
 
       :doc:`What is beneficial ownership? <../primer/index>`
 
@@ -29,7 +25,9 @@ This website contains the draft specification of the Beneficial Ownership Data S
 
       :doc:`About the standard's development <../about/index>`
 
+   .. cssclass:: secondaryfrontpageboxlink
 
+      `Open Ownership's work, team and purpose <https://www.openownership.org/en/about/>`_
 
 
 .. container:: frontpageboxright
@@ -42,11 +40,11 @@ This website contains the draft specification of the Beneficial Ownership Data S
 
    .. cssclass:: primaryfrontpageboxlink
 
-      :doc:`Visit the Data Schema <../schema/index>`
+      :doc:`Key Concepts <../schema/concepts>`
 
-   .. cssclass:: secondaryfrontpageboxlink
+..   .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`The data model  <../schema/concepts>`
+      :doc:`Modelling requirements  <../schema/modelling-requirements>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
@@ -54,7 +52,8 @@ This website contains the draft specification of the Beneficial Ownership Data S
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`Requirements for publication systems <../schema/guidance/functional-requirements>`
+      :doc:`System requirements <../schema/system-requirements>`
+
 
 .. raw:: html
 
