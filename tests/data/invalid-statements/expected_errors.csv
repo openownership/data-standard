@@ -79,3 +79,5 @@ entity_security_listing_no_ticker.json,required,$[0].recordDetails.publicListing
 entity_security_idscheme_wrong_code.json,enum,$[0].recordDetails.publicListing.securitiesListings[0].security.idScheme,idScheme
 entity_security_id_number.json,type,$[0].recordDetails.publicListing.securitiesListings[0].security.id,id
 entity_security_ticker_number.json,type,$[0].recordDetails.publicListing.securitiesListings[0].security.ticker,ticker
+entity_security_MIC_string.json,type,$[0].recordDetails.publicListing.securitiesListings[0].marketIdentifierCode,marketIdentifierCode
+entity_security_OMIC_string.json,type,$[0].recordDetails.publicListing.securitiesListings[0].operatingMarketIdentifierCode,operatingMarketIdentifierCode
