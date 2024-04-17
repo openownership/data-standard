@@ -52,6 +52,7 @@ relationship_interests_exclusive_min_negative.json,minimum,$[0].recordDetails.in
 relationship_interests_exclusive_min_too_big.json,maximum,$[0].recordDetails.interests[0].share.exclusiveMinimum,exclusiveMinimum
 relationship_interests_exclusive_max_too_big.json,maximum,$[0].recordDetails.interests[0].share.exclusiveMaximum,exclusiveMaximum
 relationship_interests_exclusive_max_negative.json,minimum,$[0].recordDetails.interests[0].share.exclusiveMaximum,exclusiveMaximum
+<<<<<<< HEAD
 statement_source_type_not_array.json,type,$[0].source.type,type
 statement_source_type_code.json,enum,$[0].source.type[0],type
 statement_source_description_string.json,type,$[0].source.description,description
@@ -111,4 +112,9 @@ statement_declaration_not_string.json,type,$[0].declaration,declaration
 entity_trust_registeredentity.json,const,$[0].recordDetails.entityType.subtype,subtype
 entity_nomination_unknown.json,const,$[0].recordDetails.entityType.subtype,subtype
 entity_state_stateAgency.json,const,$[0].recordDetails.entityType.subtype,subtype
+=======
+entity_trust_registeredentity.json,enum,$[0].recordDetails.entityType.subtype,subtype
+entity_nomination_unknown.json,enum,$[0].recordDetails.entityType.subtype,subtype
+entity_state_stateAgency.json,enum,$[0].recordDetails.entityType.subtype,subtype
+>>>>>>> 1239869 (changing logic from positive to negative for remaining entityTypes)
 entity_governmentDepartment_arrangement.json,enum,$[0].recordDetails.entityType.subtype,subtype

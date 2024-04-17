@@ -123,15 +123,14 @@
         },
         {
           "if": {
-            "not": {
-              "properties":{
-                "type":{
-                  "enum":[
-                    "legalEntity",
-                    "arrangement",
-                    "stateBody"
-                  ]
-                }
+            "properties":{
+              "type":{
+                "enum":[
+                  "registeredEntity",
+                  "state",
+                  "anonymousEntity",
+                  "unknownEntity"
+                ]
               }
             }
           },
