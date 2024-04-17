@@ -33,6 +33,8 @@ Release tracking
 
 For each new version of BODS, Open Ownership and Open Data Services will create a release tracker as a `project <https://github.com/orgs/openownership/projects>`_ of the `Open Ownership GitHub team <https://github.com/openownership>`_ to capture the features, bug fixes, changes and updates being made in the new version. Here is the `release tracker for BODS version 0.4 <https://github.com/orgs/openownership/projects/4/views/1>`_ as an example.
 
+.. _working-group:
+
 Data Standard Working Group
 ---------------------------
 
