@@ -60,7 +60,9 @@
           "if": {
             "properties": {
               "type": {
-                "const": "arrangement"
+                "enum": [
+                    "arrangement"
+                ]
               }
             }
           },
@@ -80,7 +82,9 @@
           "if": {
             "properties": {
               "type": {
-                "const": "legalEntity"
+                "enum": [
+                    "legalEntity"
+                ]
               }
             }
           },
@@ -99,7 +103,9 @@
           "if": {
             "properties": {
               "type": {
-                "const": "stateBody"
+                "enum": [
+                    "stateBody"
+                ]
               }
             }
           },
@@ -132,7 +138,9 @@
           "then": {
             "properties": {
               "subtype":{
-                "const": "other"
+                "enum": [
+                    "other"
+                ]
               }
             }
           }
