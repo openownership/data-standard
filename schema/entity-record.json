@@ -180,9 +180,9 @@
           "title": "Company Filings URLs",
           "description": "URL or URLs where regulatory filings related to major holdings can be retrieved. URLs may point to pages maintained by regulatory bodies, stock exchanges or by the company itself.",
           "items": {
-            "type": "string"
-          },
-          "format": "uri"
+            "type": "string",
+            "format": "uri"
+          }
         },
         "securitiesListings": {
           "type": "array",
