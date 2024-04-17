@@ -67,3 +67,7 @@ entity_formed_by_statute_string.json,type,$[0].recordDetails.formedByStatute,for
 entity_formed_by_statute_name_number.json,type,$[0].recordDetails.formedByStatute.name,name
 entity_formed_by_statute_date_year_only.json,format,$[0].recordDetails.formedByStatute.date,date
 entity_formed_by_statute_date_number.json,type,$[0].recordDetails.formedByStatute.date,date
+person_politicalExposure_no_object.json,type,$[0].recordDetails.politicalExposure,politicalExposure
+person_politicalExposure_no_status.json,required,$[0].recordDetails.politicalExposure,status
+person_politicalExposure_status_code.json,enum,$[0].recordDetails.politicalExposure.status,status
+person_politicalExposure_details_not_array.json,type,$[0].recordDetails.politicalExposure.details,details
