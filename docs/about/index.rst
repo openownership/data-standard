@@ -32,7 +32,7 @@ An open :any:`data standard working group <working-group>` of data experts, bene
 Current status of the standard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is v0.4 of the Beneficial Ownership Data Standard. Changes are documented in the :ref:`changelog <changelog>` , and the documentation of previous versions is maintained in archive form.
+This is v0.4 of the Beneficial Ownership Data Standard. Changes are documented in the :ref:`changelog <changelog>`, and the documentation of previous versions is maintained in archive form.
 
 Implementers should be aware that future changes are anticipated before a version 1.0 release. However, from the v0.1 release onwards, any structural changes or major definitional changes will only take place following consultation.
 
