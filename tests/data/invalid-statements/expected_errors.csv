@@ -147,3 +147,5 @@ entity_security_listing_not_array.json,type,$[0].recordDetails.publicListing.sec
 relationship_interests_end_date_string.json,type,$[0].recordDetails.interests[0].endDate,endDate
 relationship_interests_end_date_dateformat.json,format,$[0].recordDetails.interests[0].endDate,endDate
 relationship_interests_details_string.json,type,$[0].recordDetails.interests[0].details,details
+entity_uri_format.json,format,$[0].recordDetails.uri,uri
+entity_uri_string.json,type,$[0].recordDetails.uri,uri
