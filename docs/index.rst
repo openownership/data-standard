@@ -42,7 +42,7 @@ It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-pro
 
       :doc:`Key Concepts <../schema/concepts>`
 
-   .. cssclass:: secondaryfrontpageboxlink
+..   .. cssclass:: secondaryfrontpageboxlink
 
       :doc:`Modelling requirements  <../schema/modelling-requirements>`
 
