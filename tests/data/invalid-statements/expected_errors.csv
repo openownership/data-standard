@@ -52,3 +52,11 @@ relationship_interests_exclusive_min_negative.json,minimum,$[0].recordDetails.in
 relationship_interests_exclusive_min_too_big.json,maximum,$[0].recordDetails.interests[0].share.exclusiveMinimum,exclusiveMinimum
 relationship_interests_exclusive_max_too_big.json,maximum,$[0].recordDetails.interests[0].share.exclusiveMaximum,exclusiveMaximum
 relationship_interests_exclusive_max_negative.json,minimum,$[0].recordDetails.interests[0].share.exclusiveMaximum,exclusiveMaximum
+statement_source_type_not_array.json,type,$[0].source.type,type
+statement_source_type_code.json,enum,$[0].source.type[0],type
+statement_source_description_string.json,type,$[0].source.description,description
+statement_source_url.json,format,$[0].source.url,url
+statement_source_retrievedAt_date.json,type,$[0].source.retrievedAt,retrievedAt
+statement_source_assertedBy_not_array.json,type,$[0].source.assertedBy,assertedBy
+statement_source_assertedBy_name_string.json,type,$[0].source.assertedBy[0].name,name
+statement_source_assertedBy_uri.json,format,$[0].source.assertedBy[0].uri,uri
