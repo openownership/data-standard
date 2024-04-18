@@ -44,7 +44,8 @@ def test_schemas_loaded():
     schemas_from_file = get_schema_paths()
     assert len(schemas_from_file) == len(
         schemas
-    ), "Schema found on disc that is not being tested.\nPlease update the schemas variable in test_schema.py."
+    ), ("Schema found on disc that is either not valid JSON or not being tested.\n"
+        "Please fix the JSON or update the schemas variable in test_schema.py.")
 
 
 @pytest.mark.parametrize("schema_from_registry", schemas, indirect=True)
