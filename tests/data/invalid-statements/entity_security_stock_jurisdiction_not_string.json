@@ -18,7 +18,7 @@
 		            "ticker": "FMT"
 		        },
 		        "stockExchangeName" :"Irish stock exchange",
-		        "stockExchangeJurisdiction": 1
+		        "stockExchangeJurisdiction": 123
 		    }
 		]
             }

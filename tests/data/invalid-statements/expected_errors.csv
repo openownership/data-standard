@@ -81,7 +81,7 @@ entity_security_id_number.json,type,$[0].recordDetails.publicListing.securitiesL
 entity_security_ticker_number.json,type,$[0].recordDetails.publicListing.securitiesListings[0].security.ticker,ticker
 entity_security_MIC_string.json,type,$[0].recordDetails.publicListing.securitiesListings[0].marketIdentifierCode,marketIdentifierCode
 entity_security_OMIC_string.json,type,$[0].recordDetails.publicListing.securitiesListings[0].operatingMarketIdentifierCode,operatingMarketIdentifierCode
-entity_security_stock_jurisdiction_short.json,minLength,$[0].recordDetails.publicListing.securitiesListings[0].stockExchangeJurisdiction,stockExchangeJurisdiction
-entity_security_stock_jurisdiction_long.json,maxLength,$[0].recordDetails.publicListing.securitiesListings[0].stockExchangeJurisdiction,stockExchangeJurisdiction
-entity_security_stock_jurisdiction_string.json,type,$[0].recordDetails.publicListing.securitiesListings[0].stockExchangeJurisdiction,stockExchangeJurisdiction
+entity_security_stock_jurisdiction_too_short.json,minLength,$[0].recordDetails.publicListing.securitiesListings[0].stockExchangeJurisdiction,stockExchangeJurisdiction
+entity_security_stock_jurisdiction_too_long.json,maxLength,$[0].recordDetails.publicListing.securitiesListings[0].stockExchangeJurisdiction,stockExchangeJurisdiction
+entity_security_stock_jurisdiction_not_string.json,type,$[0].recordDetails.publicListing.securitiesListings[0].stockExchangeJurisdiction,stockExchangeJurisdiction
 entity_security_stock_name_string.json,type,$[0].recordDetails.publicListing.securitiesListings[0].stockExchangeName,stockExchangeName
