@@ -1,0 +1,28 @@
+[
+    {
+        "statementId": "2f7bf9370f1254068e5e946df067d07d",
+        "recordId": "ent-93c75c87ab28f889",
+        "recordType": "entity",
+        "declarationSubject": "ent-93c75c87ab28f889",
+        "statementDate": "2017-11-18",
+        "recordDetails": {
+            "isComponent": false,
+            "entityType": {
+                "type": "registeredEntity"
+            },
+            "publicListing":{
+            	"hasPublicListing" : true,
+		"securitiesListings": [
+		    {
+		        "operatingMarketIdentifierCode": 11, 
+		        "security": {
+		            "ticker": "FMT"
+		        },
+		        "stockExchangeName" :"Irish stock exchange",
+		        "stockExchangeJurisdiction": "IE"
+		    }
+		]
+            }
+         }
+     }
+]
