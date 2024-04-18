@@ -1,7 +1,7 @@
 Credits
 =======
 
-The first beta version of the Beneficial Ownership Data Standard was
+The beta version of the Beneficial Ownership Data Standard was
 written by Tim Davies (`Open Data Services <https://www.opendataservices.coop>`_) with Ben Symonds
 (`OpenCorporates <https://www.opencorporates.com>`_), Chris Taggart
 (`OpenCorporates <https://www.opencorporates.com>`_) and Jack Lord
@@ -18,3 +18,5 @@ Armstrong (`Open Data Services <https://www.opendataservices.coop>`_), with tech
 James Baster, Ben Webb, Amy Guy and David Raznick (`Open Data Services <https://www.opendataservices.coop>`_) and input from the :doc:`data standard working group <governance>`.
 
 The 0.3 version was written by Kadie Armstrong, Jack Lord, Simon Whitehouse and Emma Howard (`Open Data Services <https://www.opendataservices.coop>`_), with technical work from James Baster, Ben Webb, Amy Guy and David Raznick (`Open Data Services <https://www.opendataservices.coop>`_) and input from the data standard working group.
+
+The 0.4 version was writted by Kadie Armstrong, Emma Howard, Kathryn Irish and Rachel Vint (`Open Data Services <https://www.opendataservices.coop>`_), with technical work from Amy Guy (`Open Data Services <https://www.opendataservices.coop>`_) and input from the data standard working group.
