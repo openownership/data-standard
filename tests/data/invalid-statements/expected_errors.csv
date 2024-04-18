@@ -121,4 +121,5 @@ entity_type_trust_registeredentity.json,enum,$[0].recordDetails.entityType.subty
 entity_type_nomination_unknown.json,enum,$[0].recordDetails.entityType.subtype,subtype
 entity_type_state_stateAgency.json,enum,$[0].recordDetails.entityType.subtype,subtype
 entity_type_governmentDepartment_arrangement.json,enum,$[0].recordDetails.entityType.subtype,subtype
-entity_type_subtype_notype.json,required,$[0].recordDetails.entityType,type
+entity_type_notype.json,required,$[0].recordDetails.entityType,type
+entity_type_no_entity_type.json,required,$[0].recordDetails,entityType
