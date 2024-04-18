@@ -1,0 +1,15 @@
+[
+    {
+        "statementId": "123456789012345678901234567890123",
+        "recordId": "ent-93c75c87ab28f889",
+        "recordType": "entity",
+        "declarationSubject": "ent-93c75c87ab28f889",
+        "statementDate": 2017,
+        "recordDetails": {
+            "isComponent": false,
+            "entityType": {
+                "type": "registeredEntity"
+            }
+        }
+    } 
+]

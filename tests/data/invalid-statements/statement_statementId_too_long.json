@@ -1,0 +1,15 @@
+[
+    {
+        "statementId": "NhQk1exCaQZIDZKOEPtouC4lyjXVhew6TCI20SiKTr7sRbftCajzpg3oXt8WnfdB3PxObVbJcaMxK11l",
+        "recordId": "ent-93c75c87ab28f889",
+        "recordType": "entity",
+        "declarationSubject": "ent-93c75c87ab28f889",
+        "statementDate": "2017-11-18",
+        "recordDetails": {
+            "isComponent": false,
+            "entityType": {
+                "type": "registeredEntity"
+            }
+        }
+    } 
+]
