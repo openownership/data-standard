@@ -1,5 +1,5 @@
-Data Schema
-===========
+Data Standard
+=============
 
 .. _data-standard-index:
 
@@ -19,8 +19,8 @@ Further considerations regarding the validation, publishing, and lifecycle of da
    concepts
    schema-browser
    reference
-   guidance/index
+   modelling/index
+   system/index
    changelog
-   conformance
 
 
