@@ -3,7 +3,7 @@
 System requirements
 ===================
 
-.. include:: /schema/warningbox.rst
+.. include:: /standard/warningbox.rst
 
 This section contains requirements for systems generating beneficial ownership data. 
 

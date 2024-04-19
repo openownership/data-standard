@@ -87,7 +87,7 @@ People can then use ``recordId`` values to group Statements made over time to se
 
 Published BODS Statements build a write-only ledger, as new Statements are issued to amend or confirm details contained in older Statements.
 
-See :ref:`guidance-updating-data` for full requirements.
+See :ref:`information-updates` for full requirements.
 
 Representing beneficial owners
 ------------------------------

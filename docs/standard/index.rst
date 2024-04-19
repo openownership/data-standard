@@ -1,17 +1,15 @@
+.. _data-standard-index:
+
 Data Standard
 =============
 
-.. _data-standard-index:
-
 .. include:: warningbox.rst
 
-BODS provides a common data model for encapsulating information about the :doc:`beneficial ownership <../primer/index>` of corporate entities and related arrangements, to facilitate :any:`sharing of information <whatisbods>`. In particular, the :any:`data model <key-concepts>` captures direct and indirect relationships of ownership and control by entities (such as companies) by other entities (including trusts and joint shareholdings) or by natural persons. 
+BODS data encapsulates information about the :doc:`beneficial ownership <../primer/index>` of corporate entities and related arrangements, to facilitate sharing of information. The data model is based on :any:`Key concepts <key-concepts>` relating to this information and its management. 
 
-The data model, as specified here in the Data Schema, is intended to represent, or help identify, ultimate beneficial ownership: the natural person(s) who ultimately benefit from, or control, an entity. 
+The BODS schema, defined using `JSON Schema 2020-12 <https://json-schema.org/>`_, describes the data model. The :ref:`Schema browser <schema-browser>` provides a way of digging through the schema's structure, showing how its components and fields fit together. Alternatively, the :ref:`Schema reference <schema-reference>` presents these elements and their descriptions in easy-to-reference tables. 
 
-The :doc:`schema browser <schema-browser>` provides a way of digging through the schema's structure, showing how its components and fields fit together. Alternatively, the :doc:`schema reference <reference>` presents these elements and their descriptions in easy-to-reference tables. 
-
-Further considerations regarding the validation, publishing, and lifecycle of data are included in `technical guidance <guidance>`_.
+Further requirements are described in the :ref:`Modelling requirements <modelling-requirements>` and :ref:`System requirements <system-requirements>` sections.
 
 .. toctree::
    :maxdepth: 1
