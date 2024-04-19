@@ -114,3 +114,9 @@ entity_type_state_stateAgency.json,enum,$[0].recordDetails.entityType.subtype,su
 entity_type_governmentDepartment_arrangement.json,enum,$[0].recordDetails.entityType.subtype,subtype
 entity_type_notype.json,required,$[0].recordDetails.entityType,type
 entity_type_no_entity_type.json,required,$[0].recordDetails,entityType
+entity_name_not_string.json,type,$[0].recordDetails.name,name
+entity_jurisdiction_not_object.json,type,$[0].recordDetails.jurisdiction,jurisdiction
+entity_identifiers_not_array.json,type,$[0].recordDetails.identifiers,identifiers
+entity_identifiers_not_objects.json,type,$[0].recordDetails.identifiers[0],identifiers
+entity_founding_date_not_string.json,type,$[0].recordDetails.foundingDate,foundingDate
+entity_founding_date_not_date.json,format,$[0].recordDetails.foundingDate,foundingDate
