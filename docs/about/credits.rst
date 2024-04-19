@@ -19,4 +19,4 @@ James Baster, Ben Webb, Amy Guy and David Raznick (`Open Data Services <https://
 
 The 0.3 version was written by Kadie Armstrong, Jack Lord, Simon Whitehouse and Emma Howard (`Open Data Services <https://www.opendataservices.coop>`_), with technical work from James Baster, Ben Webb, Amy Guy and David Raznick (`Open Data Services <https://www.opendataservices.coop>`_) and input from the data standard working group.
 
-The 0.4 version was writted by Kadie Armstrong, Emma Howard, Kathryn Irish and Rachel Vint (`Open Data Services <https://www.opendataservices.coop>`_), with technical work from Amy Guy (`Open Data Services <https://www.opendataservices.coop>`_) and input from the data standard working group.
+The 0.4 version was writted by Kadie Armstrong, Emma Howard, Kathryn Irish and Rachel Vint (`Open Data Services <https://www.opendataservices.coop>`_), with technical work from Amy Guy and Ed Lloyd-Davies (`Open Data Services <https://www.opendataservices.coop>`_) and input from the data standard working group.
