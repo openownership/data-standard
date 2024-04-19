@@ -1,0 +1,23 @@
+[
+  {
+    "statementId": "2f7bf9370f1254068e5e946df067d07d",
+    "statementDate": "2022-01-08",
+    "publicationDetails": {
+      "publicationDate": "2021-09-11T00:00:00+00:00",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "Irish Business Authority"
+      }
+    },
+    "recordId": "ent-93c75c87ab28f889",
+    "recordType": "entity",
+    "declarationSubject": "ent-93c75c87ab28f889",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": {
+        "type": "arrangement",
+        "subtype": "trust"
+      }
+    }
+  }
+]
