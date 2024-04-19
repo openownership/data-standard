@@ -65,3 +65,13 @@ def test_invalid_files(bods_validator, bods_json, invalid_data_errors):
             assert (
                 invalid_data_errors.get(file_name)[2] in error.message
             ), f"Expected {invalid_data_errors.get(file_name)[2]} to be missing, but instead got: {error.message}."
+
+
+def test_error_files_used(invalid_data_errors):
+    """
+    Check for files in the error mapping which don't exist on disc.
+    Not critical to the schema tests, but helps to catch typos and keep the test data tidy.
+    """
+    for file_name in invalid_data_errors.keys():
+        path = os.path.join(get_test_data_dir(), "invalid-statements", file_name)
+        assert os.path.isfile(path), f"Unexpected file {file_name} found in expected_errors.csv"
