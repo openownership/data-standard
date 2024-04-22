@@ -108,6 +108,17 @@ publication_details_publisher_no_publication_date.json,required,$[0].publication
 publication_details_publisher_no_bods_version.json,required,$[0].publicationDetails,bodsVersion
 publication_details_publisher_no_publisher.json,required,$[0].publicationDetails,publisher
 statement_declaration_not_string.json,type,$[0].declaration,declaration
+statement_recordType_code.json,enum,$[0].recordType,recordType
+statement_recordStatus_code.json,enum,$[0].recordStatus,recordStatus
+statement_recordDetails_no_object.json,type,$[0].recordDetails,recordDetails
+statement_statementId_missing.json,required,$[0],statementId
+statement_statementDate_missing.json,required,$[0],statementDate
+statement_declarationSubject_missing.json,required,$[0],declarationSubject
+statement_recordId_missing.json,required,$[0],recordId
+statement_recordDetails_missing.json,required,$[0],recordDetails
+statement_declarationSubject_string.json,type,$[0].declarationSubject,declarationSubject
+statement_recordId_string.json,type,$[0].recordId,recordId
+statement_source_no_object.json,type,$[0].source,source
 entity_type_trust_registeredentity.json,enum,$[0].recordDetails.entityType.subtype,subtype
 entity_type_nomination_unknown.json,enum,$[0].recordDetails.entityType.subtype,subtype
 entity_type_state_stateAgency.json,enum,$[0].recordDetails.entityType.subtype,subtype
