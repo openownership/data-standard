@@ -1,5 +1,5 @@
 sphinx
-sphinx-intl[transifex]
+sphinx-intl
 sphinx_rtd_theme<=2.0.0
 sphinxcontrib-opendataservices-jsonschema
 sphinxcontrib-opendataservices
