@@ -38,7 +38,7 @@ Address
 Annotation
 ----------
 
-The ``annotations`` property of statements currently allows an array of these simple annotation objects to be included. An annotation can be used to hold information (structured or otherwise) for which a place does not exist elsewhere in the schema. See :ref:`Sources and annotations <provenance>` for further guidance.
+The ``annotations`` property of statements currently allows an array of these simple annotation objects to be included. An annotation can be used to hold information (structured or otherwise) for which a place does not exist elsewhere in the schema.
 
 .. _schema-country:
 
@@ -174,9 +174,6 @@ Source
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /$defs/Source/description
-
-
-See :any:`Sources and annotations <provenance>` for a discussion of provenance modelling.
 
 .. _schema-statement-date:
 

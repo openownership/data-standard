@@ -15,15 +15,15 @@ It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-pro
 
    .. cssclass:: primaryfrontpageboxlink
 
-      :doc:`What is beneficial ownership? <../primer/index>`
+      :ref:`What is beneficial ownership? <primer>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :any:`What is the data standard? <whatisbods>`
+      :ref:`What is the data standard? <whatisbods>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`About the standard's development <../about/index>`
+      :ref:`About the standard's development <about>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
@@ -40,19 +40,19 @@ It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-pro
 
    .. cssclass:: primaryfrontpageboxlink
 
-      :doc:`Key Concepts <../schema/concepts>`
-
-..   .. cssclass:: secondaryfrontpageboxlink
-
-      :doc:`Modelling requirements  <../schema/modelling-requirements>`
+      :ref:`Key Concepts <key-concepts>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`Schema browser <../schema/schema-browser>`
+      :ref:`Modelling requirements  <modelling-requirements>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :doc:`System requirements <../schema/system-requirements>`
+      :ref:`Schema browser <schema-browser>`
+
+   .. cssclass:: secondaryfrontpageboxlink
+
+      :ref:`System requirements <system-requirements>`
 
 
 .. raw:: html
@@ -67,6 +67,6 @@ It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-pro
    :hidden:
 
    primer/index
-   schema/index
+   standard/index
    examples/index
    about/index
