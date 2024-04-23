@@ -9,7 +9,7 @@ This is an A - Z guide to the schema's objects and `codelists`_ . For a structur
 
 The top-level objects are :any:`Statements <schema-statement>`. Each statement contains details of one of three types of system record:
 
-- :any:`Ownership-or-control statements <schema-relationship-record>`
+- :any:`Relationship statements <schema-relationship-record>`
 - :any:`Entity statements <schema-entity-record>`
 - :any:`Person statements <schema-person-record>`
 
