@@ -29,8 +29,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="true"
      inkscape:zoom="1.4468942"
-     inkscape:cx="430.57744"
-     inkscape:cy="276.79978"
+     inkscape:cx="454.07605"
+     inkscape:cy="316.88564"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -482,7 +482,7 @@
        x="441.40536"
        y="384.29416"
        id="tspan371-7"
-       style="font-size:12px">interests[0].type: boardMember</tspan></text>
+       style="font-size:12px">interests.0.type: boardMember</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
@@ -493,17 +493,17 @@
        x="21.185936"
        y="369.42307"
        id="tspan371"
-       style="font-size:12px">interests[0].type: otherInfluenceOrControl</tspan><tspan
+       style="font-size:12px">interests.0.type: otherInfluenceOrControl</tspan><tspan
        sodipodi:role="line"
        x="21.185936"
        y="384.42307"
        id="tspan1"
-       style="font-size:12px">interests[0].directOrIndirect: indirect</tspan><tspan
+       style="font-size:12px">interests.0.directOrIndirect: indirect</tspan><tspan
        sodipodi:role="line"
        x="21.185936"
        y="399.42307"
        id="tspan2"
-       style="font-size:12px">interests[0].beneficialOwnershipOrControl: true</tspan></text>
+       style="font-size:12px">interests.0.beneficialOwnershipOrControl: true</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
@@ -514,7 +514,7 @@
        x="441.81577"
        y="162.39391"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-       id="tspan806-1">interests[0].type: nominee</tspan></text>
+       id="tspan806-1">interests.0.type: nominee</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.45725"
@@ -633,7 +633,7 @@
        x="83.445541"
        y="162.01334"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-       id="tspan806">interests[0].type: nominator</tspan></text>
+       id="tspan806">interests.0.type: nominator</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
