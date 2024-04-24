@@ -10,7 +10,7 @@
    sodipodi:docname="AlphaBeta.svg"
    width="618.961"
    height="223.87399"
-   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
    inkscape:export-filename="AlphaBeta.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200"
@@ -28,6 +28,117 @@
          clip-rule="evenodd"
          id="path10-4" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4">
+      <g
+         id="g5">
+        <path
+           d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+           clip-rule="nonzero"
+           id="path5" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5">
+      <g
+         id="g6">
+        <path
+           d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+           clip-rule="nonzero"
+           id="path6" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath6">
+      <g
+         id="g15">
+        <path
+           d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+           clip-rule="nonzero"
+           id="path15" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath15">
+      <g
+         id="g16">
+        <path
+           d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+           clip-rule="nonzero"
+           id="path16" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16">
+      <g
+         id="g17"
+         transform="matrix(10,0,0,10,-138.91749,-182.57166)">
+        <path
+           d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+           clip-rule="nonzero"
+           id="path17" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath17">
+      <g
+         id="g18">
+        <path
+           d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+           clip-rule="nonzero"
+           id="path18" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath18">
+      <g
+         id="g19">
+        <path
+           d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+           clip-rule="nonzero"
+           id="path19" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath19">
+      <g
+         id="g20">
+        <path
+           d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+           clip-rule="nonzero"
+           id="path20" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath20">
+      <g
+         id="g21">
+        <path
+           d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+           clip-rule="nonzero"
+           id="path21" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath21">
+      <g
+         id="g22">
+        <path
+           d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+           clip-rule="nonzero"
+           id="path22" />
+      </g>
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="namedview20"
@@ -38,149 +149,163 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="2.0847407"
-     inkscape:cx="378.94401"
-     inkscape:cy="134.54911"
+     inkscape:zoom="1.4741343"
+     inkscape:cx="305.26391"
+     inkscape:cy="142.11731"
      inkscape:window-width="1920"
-     inkscape:window-height="1009"
+     inkscape:window-height="1043"
      inkscape:window-x="0"
-     inkscape:window-y="34"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg20"
-     inkscape:export-bgcolor="#ffffffff" />
-  <clipPath
-     id="p.0">
-    <path
-       d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
-       clip-rule="nonzero"
-       id="path1" />
-  </clipPath>
-  <g
-     clip-path="url(#p.0)"
-     id="g20">
-    <path
-       fill="#000000"
-       fill-opacity="0"
-       d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
-       fill-rule="evenodd"
-       id="path2" />
-    <path
-       stroke="#000000"
-       stroke-width="0.82968"
-       stroke-linejoin="round"
-       stroke-linecap="butt"
-       d="M 62.745526,70.774587 H 294.79774 V 196.56191 H 62.745526 Z"
-       fill-rule="evenodd"
-       id="path4"
-       style="fill:#efefef;fill-opacity:1" />
-    <path
-       fill="#ffffff"
-       d="m 13.89175,54.257165 v 0 c 0,-19.88225 16.117748,-36 36,-36 v 0 c 9.547794,0 18.704533,3.792846 25.455845,10.544156 6.751304,6.751308 10.544151,15.908049 10.544151,25.455843 v 0 c 0,19.882248 -16.117744,36 -35.999996,36 v 0 c -19.882252,0 -36,-16.117752 -36,-35.999999 z"
-       fill-rule="evenodd"
-       id="path7" />
-    <path
-       stroke="#000000"
-       stroke-width="2"
-       stroke-linejoin="round"
-       stroke-linecap="butt"
-       d="m 13.89175,54.257165 v 0 c 0,-19.88225 16.117748,-36 36,-36 v 0 c 9.547794,0 18.704533,3.792846 25.455845,10.544156 6.751304,6.751308 10.544151,15.908049 10.544151,25.455843 v 0 c 0,19.882248 -16.117744,36 -35.999996,36 v 0 c -19.882252,0 -36,-16.117752 -36,-35.999999 z"
-       fill-rule="evenodd"
-       id="path8" />
-    <path
-       fill="#000000"
-       fill-opacity="0"
-       d="m 13.89175,18.257166 h 72 v 72 h -72 z"
-       fill-rule="evenodd"
-       id="path9" />
-    <g
-       transform="matrix(0.1,0,0,0.1,13.891749,18.257166)"
-       id="g10">
-      <clipPath
-         id="p.1">
-        <path
-           d="M 0,0 H 720 V 720 H 0 Z"
-           clip-rule="evenodd"
-           id="path10" />
-      </clipPath>
-      <image
-         clip-path="url(#p.1)"
-         fill="#000000"
-         width="720"
-         height="720"
-         x="0"
-         y="0"
-         preserveAspectRatio="none"
-         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtAAAALQAgMAAADEOa8PAAAADFBMVEUAAAAAAAD///8AAADFTF0nAAAAAXRSTlMAQObYZgAAAl1JREFUeF7t3cFpwzAAQNGkdIXu0yU6ZbtjCyFtiKDG2M4ngvdOkU4fXYIUOT6dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/c7jxApv7+PMou+vcWavl3FiBqIroiuiK6IroiuiK6IroiuiK6/jxFqrNorHbw8vplxp0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRlc2nple/56LXQ9Rh+CBTrrToiuiK6IroiuiK6IroiuiK6IroiuiK6IroiujK3lPT88fS8EGmXGnRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdGVvaem7pquJboiuiK6Irqy9xtxheXfFrf8rc2UKy26IroiuiK6IroiuiK6IroiurL53RcHnItetof2iM9MdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdGXK6L03a5bvmi4PN5typUVXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFfcNa2IroiuiK6IroiuiK6IroiuiK6IroiuiK6IroiuuGtaEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXXHXtCK6IroiuiK6IroiuiK6IroiuiK6IroiuiK6Irqy967p1effp7vXA7treiO6IroiuiK6IroiuiK6IroiuiK6IroiuiK6Irpy0KnpP853Z6jjcLMpV1p0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRl8xP6R/GE/jMTXRFdEV0RXRFdEV0RXRFdmTIaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI7yA0WnNUvvsNeNAAAAAElFTkSuQmCC"
-         id="image10" />
-    </g>
-    <path
-       fill="#000000"
-       fill-opacity="0"
-       d="m 156,313.2651 h 19.2126 v 0.94485 H 156 Z"
-       fill-rule="evenodd"
-       id="path11" />
-    <path
-       fill="#000000"
-       fill-opacity="0"
-       d="M 208.7874,313.2651 H 228 v 0.94485 h -19.2126 z"
-       fill-rule="evenodd"
-       id="path12" />
-    <path
-       fill="#000000"
-       fill-opacity="0"
-       d="m 86,121.19423 h 19.2126 v 0.94488 H 86 Z"
-       fill-rule="evenodd"
-       id="path13" />
-    <path
-       fill="#000000"
-       fill-opacity="0"
-       d="M 138.7874,121.19423 H 158 v 0.94488 h -19.2126 z"
-       fill-rule="evenodd"
-       id="path14" />
-  </g>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:12px;line-height:160%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="78.122757"
-     y="100.17892"
-     id="text30-5-0"><tspan
-       sodipodi:role="line"
-       id="tspan30-0-1"
-       x="78.122757"
-       y="100.17892"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start">recordId: 09d3a4fb</tspan><tspan
-       sodipodi:role="line"
-       x="78.122757"
-       y="119.57079"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
-       id="tspan20">recordDetails.name: BetaSys</tspan><tspan
-       sodipodi:role="line"
-       x="78.122757"
-       y="138.96265"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
-       id="tspan21">[...]identifiers.0.scheme: TZ-CRA</tspan><tspan
-       sodipodi:role="line"
-       x="78.122757"
-       y="158.35451"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
-       id="tspan22">[...]identifiers.0.id: pc-239118274</tspan><tspan
-       sodipodi:role="line"
-       x="78.122757"
-       y="177.74638"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
-       id="tspan23">declarationSubject: 04a221be</tspan></text>
+     inkscape:export-bgcolor="#ffffffff"
+     showguides="true">
+    <sodipodi:guide
+       position="373.10034,172.31831"
+       orientation="0,-1"
+       id="guide22"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="367.91146,117.38593"
+       orientation="1,0"
+       id="guide23"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="61.878199,87.166343"
+       orientation="1,0"
+       id="guide24"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="80.725346,139.75682"
+       orientation="1,0"
+       id="guide26"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="385.98926,118.04917"
+       orientation="1,0"
+       id="guide27"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <path
+     fill="#000000"
+     fill-opacity="0"
+     d="M 0,0 H 531.96063 V 268.87402 H 0 Z"
+     fill-rule="evenodd"
+     id="path2"
+     clip-path="url(#clipPath21)" />
   <path
      stroke="#000000"
      stroke-width="0.82968"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="M 368.39086,69.774583 H 600.44307 V 195.5619 H 368.39086 Z"
+     d="M 62.745526,70.774587 H 294.79774 V 196.56191 H 62.745526 Z"
+     fill-rule="evenodd"
+     id="path4"
+     style="fill:#efefef;fill-opacity:1"
+     clip-path="url(#clipPath20)"
+     transform="matrix(0.99973919,0,0,1.1515115,0.04662507,-29.811643)" />
+  <path
+     fill="#ffffff"
+     d="m 13.89175,54.257165 v 0 c 0,-19.88225 16.117748,-36 36,-36 v 0 c 9.547794,0 18.704533,3.792846 25.455845,10.544156 6.751304,6.751308 10.544151,15.908049 10.544151,25.455843 v 0 c 0,19.882248 -16.117744,36 -35.999996,36 v 0 c -19.882252,0 -36,-16.117752 -36,-35.999999 z"
+     fill-rule="evenodd"
+     id="path7"
+     clip-path="url(#clipPath19)"
+     transform="translate(4.000001,-13.999999)" />
+  <path
+     stroke="#000000"
+     stroke-width="2"
+     stroke-linejoin="round"
+     stroke-linecap="butt"
+     d="m 13.89175,54.257165 v 0 c 0,-19.88225 16.117748,-36 36,-36 v 0 c 9.547794,0 18.704533,3.792846 25.455845,10.544156 6.751304,6.751308 10.544151,15.908049 10.544151,25.455843 v 0 c 0,19.882248 -16.117744,36 -35.999996,36 v 0 c -19.882252,0 -36,-16.117752 -36,-35.999999 z"
+     fill-rule="evenodd"
+     id="path8"
+     clip-path="url(#clipPath18)"
+     transform="translate(4,-14)" />
+  <path
+     fill="#000000"
+     fill-opacity="0"
+     d="m 13.89175,18.257166 h 72 v 72 h -72 z"
+     fill-rule="evenodd"
+     id="path9"
+     clip-path="url(#clipPath17)" />
+  <g
+     transform="matrix(0.1,0,0,0.1,17.891749,4.257166)"
+     id="g10"
+     clip-path="url(#clipPath16)">
+    <clipPath
+       id="p.1">
+      <path
+         d="M 0,0 H 720 V 720 H 0 Z"
+         clip-rule="evenodd"
+         id="path10" />
+    </clipPath>
+    <image
+       clip-path="url(#p.1)"
+       fill="#000000"
+       width="720"
+       height="720"
+       x="0"
+       y="0"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtAAAALQAgMAAADEOa8PAAAADFBMVEUAAAAAAAD///8AAADFTF0nAAAAAXRSTlMAQObYZgAAAl1JREFUeF7t3cFpwzAAQNGkdIXu0yU6ZbtjCyFtiKDG2M4ngvdOkU4fXYIUOT6dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/c7jxApv7+PMou+vcWavl3FiBqIroiuiK6IroiuiK6IroiuiK6/jxFqrNorHbw8vplxp0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRlc2nple/56LXQ9Rh+CBTrrToiuiK6IroiuiK6IroiuiK6IroiuiK6IroiujK3lPT88fS8EGmXGnRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdGVvaem7pquJboiuiK6Irqy9xtxheXfFrf8rc2UKy26IroiuiK6IroiuiK6IroiurL53RcHnItetof2iM9MdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdGXK6L03a5bvmi4PN5typUVXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFfcNa2IroiuiK6IroiuiK6IroiuiK6IroiuiK6IroiuuGtaEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXXHXtCK6IroiuiK6IroiuiK6IroiuiK6IroiuiK6Irqy967p1effp7vXA7treiO6IroiuiK6IroiuiK6IroiuiK6IroiuiK6Irpy0KnpP853Z6jjcLMpV1p0RXRFdEV0RXRFdEV0RXRFdEV0RXRFdEV0RXRl8xP6R/GE/jMTXRFdEV0RXRFdEV0RXRFdmTIaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI7yA0WnNUvvsNeNAAAAAElFTkSuQmCC"
+       id="image10" />
+  </g>
+  <path
+     fill="#000000"
+     fill-opacity="0"
+     d="m 156,313.2651 h 19.2126 v 0.94485 H 156 Z"
+     fill-rule="evenodd"
+     id="path11"
+     clip-path="url(#clipPath15)" />
+  <path
+     fill="#000000"
+     fill-opacity="0"
+     d="M 208.7874,313.2651 H 228 v 0.94485 h -19.2126 z"
+     fill-rule="evenodd"
+     id="path12"
+     clip-path="url(#clipPath6)" />
+  <path
+     fill="#000000"
+     fill-opacity="0"
+     d="m 86,121.19423 h 19.2126 v 0.94488 H 86 Z"
+     fill-rule="evenodd"
+     id="path13"
+     clip-path="url(#clipPath5)" />
+  <path
+     fill="#000000"
+     fill-opacity="0"
+     d="M 138.7874,121.19423 H 158 v 0.94488 h -19.2126 z"
+     fill-rule="evenodd"
+     id="path14"
+     clip-path="url(#clipPath4)" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12px;line-height:160%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="80.122757"
+     y="78.178917"
+     id="text30-5-0"><tspan
+       sodipodi:role="line"
+       x="80.122757"
+       y="78.178917"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
+       id="tspan23">recordId: 09d3a4fb</tspan><tspan
+       sodipodi:role="line"
+       x="80.122757"
+       y="97.570786"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
+       id="tspan3">declarationSubject: 04a221be</tspan></text>
+  <path
+     stroke="#000000"
+     stroke-width="0.887743"
+     stroke-linejoin="round"
+     stroke-linecap="butt"
+     d="M 368.41989,51.48778 H 600.41404 V 195.53287 H 368.41989 Z"
      fill-rule="evenodd"
      id="path4-2"
      style="fill:#efefef;fill-opacity:1" />
   <path
      fill="#ffffff"
-     d="m 317.53708,53.257164 v 0 c 0,-19.88225 16.11775,-36 36,-36 v 0 c 9.54779,0 18.70453,3.792846 25.45584,10.544156 6.75131,6.751304 10.54415,15.908044 10.54415,25.455844 v 0 c 0,19.88225 -16.11774,36 -35.99999,36 v 0 c -19.88225,0 -36,-16.11775 -36,-36 z"
+     d="m 321.53708,40.257166 v 0 c 0,-19.88225 16.11775,-36 36,-36 v 0 c 9.54779,0 18.70453,3.792846 25.45584,10.544156 6.75131,6.751304 10.54415,15.908044 10.54415,25.455844 v 0 c 0,19.88225 -16.11774,36 -35.99999,36 v 0 c -19.88225,0 -36,-16.11775 -36,-36 z"
      fill-rule="evenodd"
      id="path7-2" />
   <path
@@ -188,7 +313,7 @@
      stroke-width="2"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="m 317.53708,53.257164 v 0 c 0,-19.88225 16.11775,-36 36,-36 v 0 c 9.54779,0 18.70453,3.792846 25.45584,10.544156 6.75131,6.751304 10.54415,15.908044 10.54415,25.455844 v 0 c 0,19.88225 -16.11774,36 -35.99999,36 v 0 c -19.88225,0 -36,-16.11775 -36,-36 z"
+     d="m 323.53708,40.257166 v 0 c 0,-19.88225 16.11775,-36 36,-36 v 0 c 9.54779,0 18.70453,3.792846 25.45584,10.544156 6.75131,6.751304 10.54415,15.908044 10.54415,25.455844 v 0 c 0,19.88225 -16.11774,36 -35.99999,36 v 0 c -19.88225,0 -36,-16.11775 -36,-36 z"
      fill-rule="evenodd"
      id="path8-1" />
   <path
@@ -198,7 +323,7 @@
      fill-rule="evenodd"
      id="path9-7" />
   <g
-     transform="matrix(0.1,0,0,0.1,317.53708,17.257165)"
+     transform="matrix(0.1,0,0,0.1,323.53708,4.257166)"
      id="g10-2">
     <clipPath
        id="clipPath1">
@@ -233,54 +358,115 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:12px;line-height:160%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="381.7681"
-     y="99.178917"
+     x="385.7681"
+     y="78.067589"
      id="text30-5-0-7"><tspan
        sodipodi:role="line"
-       id="tspan30-0-1-8"
-       x="381.7681"
-       y="99.178917"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start">recordId: 02c83aa2</tspan><tspan
-       sodipodi:role="line"
-       x="381.7681"
-       y="118.57079"
+       x="385.7681"
+       y="78.067589"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
-       id="tspan20-5">recordDetails.name: Beta Systems</tspan><tspan
+       id="tspan22-2">recordId: 02c83aa2</tspan><tspan
        sodipodi:role="line"
-       x="381.7681"
-       y="137.96265"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
-       id="tspan21-9">[...]identifiers.0.scheme: TZ-CRA</tspan><tspan
-       sodipodi:role="line"
-       x="381.7681"
-       y="157.35451"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
-       id="tspan22-2">[...]identifiers.0.id: pc-239118274</tspan><tspan
-       sodipodi:role="line"
-       x="381.7681"
-       y="176.74638"
+       x="385.7681"
+       y="97.459457"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
        id="tspan24">declarationSubject: 02c83aa2</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="601.1131"
-     y="67.140984"
+     x="600.93604"
+     y="48.79911"
      id="text30-5-0-1-0"><tspan
        sodipodi:role="line"
        id="tspan30-0-1-3-3"
-       x="601.1131"
-       y="67.140984"
+       x="600.93604"
+       y="48.79911"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end">Entity statement</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="295.4678"
-     y="68.140991"
+     y="48.963615"
      id="text30-5-0-1-0-7"><tspan
        sodipodi:role="line"
        id="tspan30-0-1-3-3-3"
        x="295.4678"
-       y="68.140991"
+       y="48.963615"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end">Entity statement</tspan></text>
+  <text
+     class="cls-3"
+     id="text31-0-6"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;display:inline;fill:#ffffff;fill-opacity:1"
+     x="312.47363"
+     y="118.56954"><tspan
+       x="273.11954"
+       y="118.56954"
+       id="tspan35-6-3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#1f1f1f;fill-opacity:1">record details</tspan></text>
+  <rect
+     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.680103;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     id="rect11772-8-4"
+     width="187.08995"
+     height="62.019489"
+     x="85.226654"
+     y="121.05022" />
+  <text
+     class="cls-3"
+     id="text31-0-6-0"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;display:inline;fill:#ffffff;fill-opacity:1"
+     x="618.06757"
+     y="118.58517"><tspan
+       x="578.71344"
+       y="118.58517"
+       id="tspan35-6-3-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#1f1f1f;fill-opacity:1">record details</tspan></text>
+  <rect
+     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000001;stroke-width:0.680103;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     id="rect11772-8-4-3"
+     width="187.08995"
+     height="62.019489"
+     x="390.87198"
+     y="121.05022" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12px;line-height:160%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="401.78802"
+     y="135.84387"
+     id="text30-5-0-7-6"><tspan
+       sodipodi:role="line"
+       x="401.78802"
+       y="135.84387"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
+       id="tspan20-5-9">name: Beta Systems</tspan><tspan
+       sodipodi:role="line"
+       x="401.78802"
+       y="155.23573"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
+       id="tspan21-9-1">identifiers[0].scheme: TZ-CRA</tspan><tspan
+       sodipodi:role="line"
+       x="401.78802"
+       y="174.62761"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
+       id="tspan24-7">identifiers[0].id: pc-239118274</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12px;line-height:160%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="96.095589"
+     y="135.84387"
+     id="text30-5-0-3"><tspan
+       sodipodi:role="line"
+       x="96.095589"
+       y="135.84387"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
+       id="tspan20-7">name: BetaSys</tspan><tspan
+       sodipodi:role="line"
+       x="96.095589"
+       y="155.23573"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
+       id="tspan21-5">identifiers[0].scheme: TZ-CRA</tspan><tspan
+       sodipodi:role="line"
+       x="96.095589"
+       y="174.62761"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:160%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start"
+       id="tspan23-5">identifiers[0]id: pc-239118274</tspan></text>
 </svg>
