@@ -1,41 +1,46 @@
 Examples
 ========
 
-The examples below highlight key elements of how ownership and control information is built up through the use of statements.
+The examples below highlight key elements of how ownership and control information is built up through the use of statements. These examples are synthetic data. 
 
-You can also find examples of valid BODS JSON files in the standard repository:
+There are additional examples of valid BODS JSON files in the standard repository:
 
-- Example data (`v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/examples>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/examples>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/examples>`__ )
-- Test data (`v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/tests/data/entity-statement/valid>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/tests/data/entity-statement/valid>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/tests/data/entity-statement/valid>`__ )
+Example data (`v0.4 <https://github.com/openownership/data-standard/tree/0.4.0/examples>`__ | `v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/examples>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/examples>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/examples>`__ )
 
-For a visual rendering of these examples, use the `BODS Visualiser <https://www.openownership.org/visualisation/visualisation-tool/>`_.
+Test data demonstrates individual features of the schema:
 
+Test data (`v0.4 <https://github.com/openownership/data-standard/tree/0.4.0/tests/data/valid-statements>`__  | `v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/tests/data/>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/tests/data/>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/tests/data/>`__ )
 
 A single direct owner
 ---------------------
 
-The example below presents three statements (Entity, Person and OwnershipOrControl) that describe the 100% beneficial ownership of Chrinon Ltd by Chris Taggart. 
+The example below presents three statements (Entity, Person and Relationship) that describe the 100% beneficial ownership of Profitech Ltd by Jennifer Hewitson-Smith. 
 
--0.3 JSON EXAMPLE REMOVED SO DOCS BUILD-
-
-Joint ownership
----------------
-
-To model joint ownership, an artificial 'arrangement', owned by the two parties responsible for it, should be included within a chain of ownership.
-
-.. literalinclude:: ../../examples/joint-ownership.json
+.. literalinclude:: ../../examples/bods-package.json
     :language: json
 
+Fermcat
+-------
 
-Updating ownership
-------------------
+This example demonstrates how a confirmation process and changes in ownership are represented in BODS. 
 
-To update a previous statement, a new beneficial ownership statement, with a ``replacesStatement`` property is required.
+`Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/fermcat.json>`__ 
 
-In the (fictional) example below, the previous statement that Chris Taggart has 100% ownership of Chrinon Ltd is replaced by a new statement showing 50% ownership. A separate statement declares that the owner of the other 50% has not yet been identified.
+*11th September 2019*
+Fermcat is registered with the beneficial ownership register. There are 2 owners who each own 50% of the company. 
 
-Note that only **changed statements** need to have new statement identifiers. 
+*11th September 2020*
+The yearly confirmation process is completed. There have been no changes in ownership. 
 
--0.3 JSON EXAMPLE REMOVED SO DOCS BUILD-
+*11th September 2021*
+In April 2021 one of the owners dies and his shares are transferred to his next of kin. 
 
-When a data file is provided, all the person or entity statements referenced from an ownershipOrControl statement ``subject`` or ``interestedParty`` field should be included in the file.
+When the yearly confirmation process is started this prompts Fermcat's accountant to update the register with this change. After updating the register she files the confirmation statement. 
+
+*21st January 2022* 
+One of the co-owners is bought out by the other. Fermcat's accountant updates the register to reflect this change. 
+
+Tecido
+------
+
+
