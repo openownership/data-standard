@@ -8,7 +8,7 @@
    stroke-miterlimit="10"
    id="svg67"
    sodipodi:docname="trust-scenario6.svg"
-   inkscape:version="1.3.1 (6036e22fae, 2023-11-19, custom)"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -25,11 +25,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.81466068"
-     inkscape:cx="599.02241"
-     inkscape:cy="462.15561"
-     inkscape:window-width="1920"
-     inkscape:window-height="1043"
+     inkscape:zoom="2.3042084"
+     inkscape:cx="328.52932"
+     inkscape:cy="555.50532"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -610,7 +610,7 @@
          id="tspan328-7-2"
          x="725.46118"
          y="409.33932"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0]].type:</tspan><tspan
          sodipodi:role="line"
          x="725.46118"
          y="424.33932"
@@ -637,7 +637,7 @@
          id="tspan328"
          x="498.44211"
          y="410.54929"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0]].type:</tspan><tspan
          sodipodi:role="line"
          x="498.44211"
          y="425.54929"
@@ -702,7 +702,7 @@
          id="tspan328-7"
          x="272.89706"
          y="410.54929"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0]].type:</tspan><tspan
          sodipodi:role="line"
          x="272.89706"
          y="425.54929"
@@ -718,17 +718,17 @@
          x="113.2694"
          y="557.10657"
          id="tspan332-5-3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type: otherInfluenceOrControl</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0]].type: otherInterestOrControl</tspan><tspan
          sodipodi:role="line"
          x="113.2694"
          y="572.10657"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan7">interests.0.directOrIndirect: indirect</tspan><tspan
+         id="tspan7">interests[0]].directOrIndirect: indirect</tspan><tspan
          sodipodi:role="line"
          x="113.2694"
          y="587.10657"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan8">interests.0.beneficialOwnershipOrControl: true</tspan></text>
+         id="tspan8">interests[0]].beneficialOwnershipOrControl: true</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.3333px;fill:#000000"
@@ -750,7 +750,7 @@
          x="304.12054"
          y="277.29221"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan453-9">entityType.type: </tspan><tspan
+         id="tspan453-9">entityType: </tspan><tspan
          sodipodi:role="line"
          x="304.12054"
          y="292.29221"
@@ -799,7 +799,7 @@
          x="272.6731"
          y="180.31668"
          id="tspan332-5-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type: shareholding</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0]].type: shareholding</tspan><tspan
          sodipodi:role="line"
          x="272.6731"
          y="195.31668"
@@ -891,21 +891,16 @@
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000"
      x="528.93701"
-     y="558.15247"
+     y="564.46008"
      id="text330-9"><tspan
        sodipodi:role="line"
        x="528.93701"
-       y="558.15247"
+       y="564.46008"
        id="tspan332-6"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">entityType.type: arrangement</tspan><tspan
        sodipodi:role="line"
        x="528.93701"
-       y="573.15247"
+       y="579.46008"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-       id="tspan453">entityType.subtype:</tspan><tspan
-       sodipodi:role="line"
-       x="528.93701"
-       y="588.15247"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-       id="tspan532">trust</tspan></text>
+       id="tspan532">entityType.subtype: trust</tspan></text>
 </svg>

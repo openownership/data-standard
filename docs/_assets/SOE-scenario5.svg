@@ -327,7 +327,7 @@
        id="tspan970"
        x="58.900776"
        y="162.85349"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial">interests.0.type:</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial">interests[0].type:</tspan><tspan
        sodipodi:role="line"
        id="tspan972"
        x="58.900776"
@@ -337,7 +337,7 @@
        id="tspan974"
        x="58.900776"
        y="193.11693"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial">interests.0.details: Veto rights</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial">interests[0].details: Veto rights</tspan><tspan
        sodipodi:role="line"
        id="tspan976"
        x="58.900776"

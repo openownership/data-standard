@@ -541,7 +541,7 @@
          id="tspan328-5"
          x="98.599922"
          y="207.67792"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type:</tspan><tspan
          sodipodi:role="line"
          x="98.599922"
          y="222.67792"
@@ -557,7 +557,7 @@
          id="tspan328-7"
          x="302.56418"
          y="207.67792"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type:</tspan><tspan
          sodipodi:role="line"
          x="302.56418"
          y="222.67792"
@@ -573,7 +573,7 @@
          id="tspan328-7-2"
          x="506.49265"
          y="206.48553"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type:</tspan><tspan
          sodipodi:role="line"
          x="506.49265"
          y="221.48553"

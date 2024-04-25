@@ -605,7 +605,7 @@
          id="tspan328-7-2"
          x="495.99133"
          y="189.76646"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type:</tspan><tspan
          sodipodi:role="line"
          x="495.99133"
          y="204.76646"
@@ -621,7 +621,7 @@
          id="tspan328-7-2-7"
          x="699.3772"
          y="189.69615"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type:</tspan><tspan
          sodipodi:role="line"
          x="699.3772"
          y="204.69615"
@@ -637,7 +637,7 @@
          id="tspan328"
          x="89.410179"
          y="190.88853"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type:</tspan><tspan
          sodipodi:role="line"
          x="89.410179"
          y="205.88853"
@@ -653,7 +653,7 @@
          id="tspan328-7"
          x="291.85684"
          y="190.88853"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type:</tspan><tspan
          sodipodi:role="line"
          x="291.85684"
          y="205.88853"

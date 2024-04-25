@@ -8,7 +8,7 @@
    stroke-miterlimit="10"
    id="svg3703"
    sodipodi:docname="trust-scenario5.svg"
-   inkscape:version="1.3.1 (6036e22fae, 2023-11-19, custom)"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -27,14 +27,14 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="1.2581824"
-     inkscape:cx="321.09812"
-     inkscape:cy="319.11112"
-     inkscape:window-width="1920"
-     inkscape:window-height="1043"
+     inkscape:cx="517.41306"
+     inkscape:cy="513.43907"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg3703" />
+     inkscape:current-layer="g3701" />
   <clipPath
      id="p.0">
     <path
@@ -645,23 +645,18 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000"
        x="400.07288"
-       y="435.48444"
+       y="441.79205"
        id="text330-9-2"><tspan
          sodipodi:role="line"
          x="400.07288"
-         y="435.48444"
+         y="441.79205"
          id="tspan332-6-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">entityType.type: arrangement</tspan><tspan
          sodipodi:role="line"
          x="400.07288"
-         y="450.48444"
+         y="456.79205"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan453-1">entityType.subtype:</tspan><tspan
-         sodipodi:role="line"
-         x="400.07288"
-         y="465.48444"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan532">trust</tspan></text>
+         id="tspan532">entityType.subtype: trust</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:end;text-anchor:end;fill:#000000"

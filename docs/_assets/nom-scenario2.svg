@@ -449,7 +449,7 @@
        x="418.45209"
        y="163.09903"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-       id="tspan806-1">interests.0.type: nominee</tspan></text>
+       id="tspan806-1">interests[0].type: nominee</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.45725"
@@ -553,7 +553,7 @@
        x="59.324131"
        y="162.71846"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-       id="tspan806">interests.0.type: nominator</tspan></text>
+       id="tspan806">interests[0].type: nominator</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
@@ -597,5 +597,5 @@
        x="418.91714"
        y="384.9993"
        id="tspan1114"
-       style="font-size:12px">interests.0.type: shareholding</tspan></text>
+       style="font-size:12px">interests[0].type: shareholding</tspan></text>
 </svg>
