@@ -610,7 +610,7 @@
          id="tspan328-7-2"
          x="725.46118"
          y="409.33932"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0]].type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type:</tspan><tspan
          sodipodi:role="line"
          x="725.46118"
          y="424.33932"
@@ -637,7 +637,7 @@
          id="tspan328"
          x="498.44211"
          y="410.54929"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0]].type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type:</tspan><tspan
          sodipodi:role="line"
          x="498.44211"
          y="425.54929"
@@ -702,7 +702,7 @@
          id="tspan328-7"
          x="272.89706"
          y="410.54929"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0]].type:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type:</tspan><tspan
          sodipodi:role="line"
          x="272.89706"
          y="425.54929"
@@ -718,17 +718,17 @@
          x="113.2694"
          y="557.10657"
          id="tspan332-5-3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0]].type: otherInterestOrControl</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type: otherInterestOrControl</tspan><tspan
          sodipodi:role="line"
          x="113.2694"
          y="572.10657"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan7">interests[0]].directOrIndirect: indirect</tspan><tspan
+         id="tspan7">interests[0].directOrIndirect: indirect</tspan><tspan
          sodipodi:role="line"
          x="113.2694"
          y="587.10657"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan8">interests[0]].beneficialOwnershipOrControl: true</tspan></text>
+         id="tspan8">interests[0].beneficialOwnershipOrControl: true</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:13.3333px;fill:#000000"
@@ -799,7 +799,7 @@
          x="272.6731"
          y="180.31668"
          id="tspan332-5-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0]].type: shareholding</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type: shareholding</tspan><tspan
          sodipodi:role="line"
          x="272.6731"
          y="195.31668"
