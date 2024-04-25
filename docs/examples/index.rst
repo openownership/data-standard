@@ -14,10 +14,31 @@ Test data (`v0.4 <https://github.com/openownership/data-standard/tree/0.4.0/test
 A single direct owner
 ---------------------
 
-The example below presents three statements (Entity, Person and Relationship) that describe the 100% beneficial ownership of Profitech Ltd by Jennifer Hewitson-Smith. 
+This example includes three statements (Entity, Person and Relationship) that describe the 100% beneficial ownership of Profitech Ltd by Jennifer Hewitson-Smith. 
 
 .. literalinclude:: ../../examples/bods-package.json
     :language: json
+
+Tecido
+------
+
+This example demonstrates a gradual transfer of ownership from a single owner to an employee owned trust. In this jurisdiction a beneficial owner must be declared when they own at least 25% of the company. 
+
+The trust itself is not represented here, shares are shown as being owned by a professional holding company. This could be the case where a jurisdiction has no trust register or a separate trust register. 
+
+`Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/tecido.json>`__ 
+
+*20th January 2019*
+Tecido is registered with one person as owner and director. 
+
+*25th September 2021*
+60% of shares are transferred to a corporate trustee company.
+
+*25th September 2022*
+An additional 10% of shares are transferred to the trustee company, who now owns 70% of the shares. 
+
+*3rd March 2023*
+An additional 10% of shares are transferred to the trustee company, who now owns 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner. 
 
 Fermcat
 -------
@@ -27,7 +48,7 @@ This example demonstrates how a confirmation process and changes in ownership ar
 `Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/fermcat.json>`__ 
 
 *11th September 2019*
-Fermcat is registered with the beneficial ownership register. There are 2 owners who each own 50% of the company. 
+Fermcat is registered as having 2 owners who each own 50% of the company. 
 
 *11th September 2020*
 The yearly confirmation process is completed. There have been no changes in ownership. 
@@ -40,7 +61,5 @@ When the yearly confirmation process is started this prompts Fermcat's accountan
 *21st January 2022* 
 One of the co-owners is bought out by the other. Fermcat's accountant updates the register to reflect this change. 
 
-Tecido
-------
 
 
