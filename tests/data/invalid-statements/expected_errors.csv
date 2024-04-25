@@ -176,7 +176,7 @@ relationship_interestedParty_missing.json,required,$[0].recordDetails,interested
 relationship_interests_type_code.json,enum,$[0].recordDetails.interests[0].type,type
 relationship_interests_direct_indirect_code.json,enum,$[0].recordDetails.interests[0].directOrIndirect,directOrIndirect
 relationship_interests_beneficialOwnershipOrControl_not_boolean.json,type,$[0].recordDetails.interests[0].beneficialOwnershipOrControl,beneficialOwnershipOrControl
-relationship_interests_share_missing.json,type,$[0].recordDetails.interests[0].share,share
+relationship_interests_share_not_object.json,type,$[0].recordDetails.interests[0].share,share
 relationship_interests_share_startDate_format.json,type,$[0].recordDetails.interests[0].startDate,startDate
 relationship_interests_share_exact_too_small.json,minimum,$[0].recordDetails.interests[0].share.exact,exact
 relationship_interests_share_exact_too_big.json,maximum,$[0].recordDetails.interests[0].share.exact,exact 
