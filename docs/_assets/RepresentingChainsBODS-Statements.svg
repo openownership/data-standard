@@ -679,7 +679,7 @@
        x="436.85278"
        y="229.95461"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8519px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan5756">record details.isComponent: false</tspan><tspan
+       id="tspan5756">recordDetails.isComponent: false</tspan><tspan
        sodipodi:role="line"
        x="436.85278"
        y="244.76947"
@@ -698,7 +698,7 @@
        sodipodi:role="line"
        id="tspan18"
        x="403.78403"
-       y="332.63531">record details.isComponent: true </tspan></text>
+       y="332.63531">recordDetails.isComponent: true </tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8519px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -709,7 +709,7 @@
        id="tspan18-2"
        x="669.87311"
        y="361.10022"
-       style="text-align:end;text-anchor:end">record details.interests[0] </tspan></text>
+       style="text-align:end;text-anchor:end">recordDetails.interests[0] </tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8519px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -723,7 +723,7 @@
        sodipodi:role="line"
        id="tspan18-6"
        x="403.78403"
-       y="576.63531">record details.isComponent: true</tspan></text>
+       y="576.63531">recordDetails.isComponent: true</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8519px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -739,7 +739,7 @@
        x="436.03976"
        y="475.31375"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8519px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan5766">record details.isComponent: true</tspan><tspan
+       id="tspan5766">recordDetails.isComponent: true</tspan><tspan
        sodipodi:role="line"
        x="436.03976"
        y="490.12863"
@@ -786,7 +786,7 @@
        x="436.31641"
        y="721.30273"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8519px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan5766-5">record details.isComponent: false</tspan><tspan
+       id="tspan5766-5">recordDetails.isComponent: false</tspan><tspan
        sodipodi:role="line"
        x="436.31641"
        y="736.11761"
@@ -844,12 +844,12 @@
        x="39.001511"
        y="458.7193"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8519px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan5956">record details.isComponent: false</tspan><tspan
+       id="tspan5956">recordDetails.isComponent: false</tspan><tspan
        sodipodi:role="line"
        x="39.001511"
        y="473.53418"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8519px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-       id="tspan5958">record details.componentRecords: r-2,e-2,r-3</tspan><tspan
+       id="tspan5958">recordDetails.componentRecords: r-2,e-2,r-3</tspan><tspan
        sodipodi:role="line"
        x="39.001511"
        y="488.34903"
@@ -911,7 +911,7 @@
        id="tspan18-2-2"
        x="669.87305"
        y="605.89484"
-       style="text-align:end;text-anchor:end">record details.interests[0] </tspan></text>
+       style="text-align:end;text-anchor:end">recordDetails.interests[0] </tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.8519px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -936,5 +936,5 @@
        id="tspan18-2-2-9"
        x="313.24069"
        y="494.64667"
-       style="text-align:end;text-anchor:end">record details.interests[0] </tspan></text>
+       style="text-align:end;text-anchor:end">recordDetails.interests[0] </tspan></text>
 </svg>
