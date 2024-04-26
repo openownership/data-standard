@@ -40,7 +40,7 @@ This example demonstrates how a confirmation process and changes in ownership ar
 `Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/fermcat.json>`__ 
 
 | **11th September 2019**
-| Fermcat is registered as having 2 owners who each own 50% of the company. 
+| Fermcat is registered as having two beneficial owners who each own 50% of the company. 
 |
 | **11th September 2020**
 | The yearly confirmation process is completed. There have been no changes in ownership. 
