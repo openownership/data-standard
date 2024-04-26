@@ -30,7 +30,7 @@ The trust itself is not represented here, shares are shown as being owned by a p
 | An additional 10% of shares are transferred to the trustee company, who now owns 70% of the shares. 
 |
 | **3rd March 2023**
-| An additional 10% of shares are transferred to the trustee company, who now owns 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner. 
+| An additional 10% of shares are transferred to the trustee company, which now holds 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner. 
 
 Fermcat
 -------
@@ -40,13 +40,13 @@ This example demonstrates how a confirmation process and changes in ownership ar
 `Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/fermcat.json>`__ 
 
 | **11th September 2019**
-| Fermcat is registered as having 2 owners who each own 50% of the company. 
+| Fermcat is registered as having two beneficial owners who each own 50% of the company. 
 |
 | **11th September 2020**
-| The yearly confirmation process is completed. There have been no changes in ownership. 
+| The yearly confirmation process is completed. There have been no changes in beneficial ownership. 
 |
 | **11th September 2021**
-| In April 2021 one of the owners dies and his shares are transferred to his next of kin. When the yearly confirmation process is started this prompts Fermcat's accountant to update the register with this change. After updating the register she files the confirmation statement. 
+| In April 2021 one of the owners dies and his shares are transferred to his next of kin. When the yearly confirmation process is started, this prompts Fermcat's accountant to update the register with this change. After updating the register she files the confirmation statement. 
 |
 | **21st January 2022**
 | One of the co-owners is bought out by the other. Fermcat's accountant updates the register to reflect this change. 
