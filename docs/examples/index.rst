@@ -30,7 +30,7 @@ The trust itself is not represented here, shares are shown as being owned by a p
 | An additional 10% of shares are transferred to the trustee company, who now owns 70% of the shares. 
 |
 | **3rd March 2023**
-| An additional 10% of shares are transferred to the trustee company, who now owns 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner. 
+| An additional 10% of shares are transferred to the trustee company, which now holds 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner. 
 
 Fermcat
 -------
