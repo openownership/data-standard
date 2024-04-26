@@ -193,7 +193,24 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "ent-93c75c87ab28f889",
-      "interestedParty": "per-5faa4103dee78621"
+      "interestedParty": "per-5faa4103dee78621",
+      "interests": [
+        {
+          "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11",
+          "share": {
+            "exact": 50
+          }
+        },
+        {
+          "type": "boardMember",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11"
+        }
+      ]
     }
   },
   {
@@ -224,7 +241,24 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "ent-93c75c87ab28f889",
-      "interestedParty": "per-41c0bb0cef246f7c"
+      "interestedParty": "per-41c0bb0cef246f7c",
+      "interests": [
+        {
+          "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11",
+          "share": {
+            "exact": 50
+          }
+        },
+        {
+          "type": "boardMember",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11"
+        }
+      ]
     }
   },
   {
@@ -421,7 +455,24 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "ent-93c75c87ab28f889",
-      "interestedParty": "per-5faa4103dee78621"
+      "interestedParty": "per-5faa4103dee78621",
+      "interests": [
+        {
+          "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11",
+          "share": {
+            "exact": 50
+          }
+        },
+        {
+          "type": "boardMember",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11"
+        }
+      ]
     }
   },
   {
@@ -452,7 +503,24 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "ent-93c75c87ab28f889",
-      "interestedParty": "per-41c0bb0cef246f7c"
+      "interestedParty": "per-41c0bb0cef246f7c",
+      "interests": [
+        {
+          "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11",
+          "share": {
+            "exact": 50
+          }
+        },
+        {
+          "type": "boardMember",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11"
+        }
+      ]
     }
   },
   {
@@ -592,7 +660,26 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "ent-93c75c87ab28f889",
-      "interestedParty": "per-5faa4103dee78621"
+      "interestedParty": "per-5faa4103dee78621",
+      "interests": [
+        {
+          "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11",
+          "endDate": "2021-04-03",
+          "share": {
+            "exact": 50
+          }
+        },
+        {
+          "type": "boardMember",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11",
+          "endDate": "2021-04-03"
+        }
+      ]
     }
   },
   {
@@ -623,7 +710,18 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "ent-93c75c87ab28f889",
-      "interestedParty": "per-e334cc6258e56467"
+      "interestedParty": "per-e334cc6258e56467",
+      "interests": [
+        {
+          "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2021-04-03",
+          "share": {
+            "exact": 50
+          }
+        }
+      ]
     }
   },
   {
@@ -816,7 +914,24 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "ent-93c75c87ab28f889",
-      "interestedParty": "per-41c0bb0cef246f7c"
+      "interestedParty": "per-41c0bb0cef246f7c",
+      "interests": [
+        {
+          "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11",
+          "share": {
+            "exact": 50
+          }
+        },
+        {
+          "type": "boardMember",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11"
+        }
+      ]
     }
   },
   {
@@ -847,7 +962,18 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "ent-93c75c87ab28f889",
-      "interestedParty": "per-e334cc6258e56467"
+      "interestedParty": "per-e334cc6258e56467",
+      "interests": [
+        {
+          "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2021-04-03",
+          "share": {
+            "exact": 50
+          }
+        }
+      ]
     }
   },
   {
@@ -980,7 +1106,24 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "ent-93c75c87ab28f889",
-      "interestedParty": "per-41c0bb0cef246f7c"
+      "interestedParty": "per-41c0bb0cef246f7c",
+      "interests": [
+        {
+          "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11",
+          "share": {
+            "exact": 100
+          }
+        },
+        {
+          "type": "boardMember",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2019-09-11"
+        }
+      ]
     }
   },
   {
@@ -1011,7 +1154,19 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "ent-93c75c87ab28f889",
-      "interestedParty": "per-e334cc6258e56467"
+      "interestedParty": "per-e334cc6258e56467",
+      "interests": [
+        {
+          "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
+          "directOrIndirect": "direct",
+          "startDate": "2021-04-03",
+          "endDate": "2022-01-21",
+          "share": {
+            "exact": 50
+          }
+        }
+      ]
     }
   }
 ]
