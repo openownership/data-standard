@@ -98,6 +98,7 @@
       "interests": [
         {
           "type": "shareholding",
+          "beneficialOwnershipOrControl": true,
           "directOrIndirect": "direct",
           "startDate": "2016-04-06",
           "share": {
