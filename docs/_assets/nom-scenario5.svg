@@ -30,9 +30,9 @@
      showgrid="true"
      inkscape:zoom="1.1111111"
      inkscape:cx="205.2"
-     inkscape:cy="331.65"
-     inkscape:window-width="1920"
-     inkscape:window-height="1043"
+     inkscape:cy="475.2"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -373,7 +373,7 @@
        x="58.281826"
        y="386.11395"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-       id="tspan806-1-4">interests.0.type: boardMember</tspan></text>
+       id="tspan806-1-4">interests[0].type: boardMember</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
@@ -384,7 +384,7 @@
        x="57.932785"
        y="164.52586"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.2283px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-       id="tspan806-1">interests.0.type: nominee</tspan></text>
+       id="tspan806-1">interests[0].type: nominee</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.45725"
@@ -409,15 +409,15 @@
        style="font-size:10.6667px;text-align:end;text-anchor:end">Person statement</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;text-anchor:end;text-align:end"
-     x="299.28735"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000"
+     x="300.20404"
      y="135.39055"
      id="text725-7"><tspan
        sodipodi:role="line"
        id="tspan723-3"
-       x="191.69849"
+       x="300.20404"
        y="135.39055"
-       style="font-size:10.6667px;text-anchor:end;text-align:end">Relationship statement</tspan></text>
+       style="font-size:10.6667px;text-align:end;text-anchor:end">Relationship statement</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
@@ -433,23 +433,18 @@
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
      x="90.906471"
-     y="264.22839"
+     y="270.53601"
      id="text796"><tspan
        sodipodi:role="line"
        id="tspan794"
        x="90.906471"
-       y="264.22839"
+       y="270.53601"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">entityType.type: arrangement</tspan><tspan
        sodipodi:role="line"
        x="90.906471"
-       y="279.22839"
-       id="tspan798"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">entityType.subtype: </tspan><tspan
-       sodipodi:role="line"
-       x="90.906471"
-       y="294.22839"
+       y="285.53601"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-       id="tspan800">nomination</tspan></text>
+       id="tspan800">entityType.subtype: nomination</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
@@ -464,23 +459,23 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000"
-     x="319.42972"
+     x="319.92972"
      y="249.10544"
      id="text853"><tspan
        sodipodi:role="line"
        id="tspan851"
-       x="319.42972"
+       x="319.92972"
        y="249.10544"
        style="font-size:10.6667px;text-align:end;text-anchor:end">Entity statement</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000"
-     x="319.42972"
+     x="319.92972"
      y="476.78525"
      id="text853-2"><tspan
        sodipodi:role="line"
        id="tspan851-9"
-       x="319.42972"
+       x="319.92972"
        y="476.78525"
        style="font-size:10.6667px;text-align:end;text-anchor:end">Entity statement</tspan></text>
 </svg>

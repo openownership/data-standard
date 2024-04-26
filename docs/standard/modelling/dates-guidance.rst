@@ -50,7 +50,7 @@ A confirmation process
 
 Someone founds a company, registers it and discloses its beneficial owners. One year later nothing has changed. They file a confirmation declaration and a new Relationship statement is generated with an updated ``statementDate`` and ``publicationDate``. 
 
-.. figure:: ../../_assets/dates-guidance3.svg
+.. figure:: ../../_assets/dates-guidance2.svg
    :alt: 2 statements showing the same interest start date and entity founding date. The statement date and publication date are one year apart. 
    :figwidth: 75%
    :align: center
@@ -67,7 +67,7 @@ The new statement:
 * has a corrected ``interest.startDate``
 * has an Annotation explaining the correction
 
-.. figure:: ../../_assets/dates-guidance4.svg
+.. figure:: ../../_assets/dates-guidance3.svg
    :alt: 2 statements showing the same recordId and statementDate. The second statement has a different publication date, statementId and interest start date. The second statement has an annotation with motivation "correction" point towards the interest start date. 
    :figwidth: 75%
    :align: center

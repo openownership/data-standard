@@ -468,7 +468,7 @@
          x="78.414574"
          y="198.39149"
          id="tspan332-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests.0.type: settlor</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">interests[0].type: settlor</tspan><tspan
          sodipodi:role="line"
          x="78.414574"
          y="213.39149"
@@ -484,7 +484,7 @@
          x="318.03778"
          y="205.49599"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan51-1">interests.0.type: trustee</tspan></text>
+         id="tspan51-1">interests[0].type: trustee</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000"
@@ -495,7 +495,7 @@
          x="557.47345"
          y="205.55107"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan51-0">interests.0.type: beneficiary</tspan></text>
+         id="tspan51-0">interests[0].type: beneficiary</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000"

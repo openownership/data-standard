@@ -77,5 +77,5 @@ In the following example, Person 1 is a beneficial owner of Company E. They exer
 
 Statement order
 ^^^^^^^^^^^^^^^^
-An example of valid statement order within a BODS dataset for the above would be: p-1, e-1, e-2, ooc-3, ooc-2, ooc-1.
+An example of valid statement order within a BODS dataset for the above would be: p-1, e-1, e-2, r-3, r-2, r-1.
 
