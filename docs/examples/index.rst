@@ -6,7 +6,7 @@ These fictional examples highlight key elements of how ownership and control inf
 A single, direct beneficial owner
 ----------------------------------------------------------------
 
-Three statements (Entity, Person and Relationship) that describe the 100% beneficial ownership of Profitech Ltd by Jennifer Hewitson-Smith. 
+Three statements (Entity, Person and Relationship) that describe the beneficial ownership (and 100% legal ownership) of Profitech Ltd by Jennifer Hewitson-Smith. 
 
 .. literalinclude:: ../../examples/bods-package.json
     :language: json
