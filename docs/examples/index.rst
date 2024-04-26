@@ -3,7 +3,7 @@ Examples
 
 These fictional examples highlight key elements of how ownership and control information is built up through the use of statements.
 
-A single direct owner
+A single, direct beneficial owner
 ---------------------
 
 Three statements (Entity, Person and Relationship) that describe the 100% beneficial ownership of Profitech Ltd by Jennifer Hewitson-Smith. 
