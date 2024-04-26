@@ -57,20 +57,6 @@
     "subject",
     "interestedParty"
   ],
-  "if": {
-      "properties":{
-          "isComponent":{
-              "const": true
-          }
-      } 
-  },
-  "then": {
-      "properties":{
-          "componentRecords":{
-              "const": []
-          }
-      } 
-  },
   "$defs": {
     "Interest": {
       "title": "Interest",
