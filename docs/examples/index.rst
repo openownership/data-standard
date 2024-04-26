@@ -46,7 +46,7 @@ This example demonstrates how a confirmation process and changes in ownership ar
 | The yearly confirmation process is completed. There have been no changes in beneficial ownership. 
 |
 | **11th September 2021**
-| In April 2021 one of the owners dies and his shares are transferred to his next of kin. When the yearly confirmation process is started this prompts Fermcat's accountant to update the register with this change. After updating the register she files the confirmation statement. 
+| In April 2021 one of the owners dies and his shares are transferred to his next of kin. When the yearly confirmation process is started, this prompts Fermcat's accountant to update the register with this change. After updating the register she files the confirmation statement. 
 |
 | **21st January 2022**
 | One of the co-owners is bought out by the other. Fermcat's accountant updates the register to reflect this change. 
