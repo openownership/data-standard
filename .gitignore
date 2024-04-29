@@ -9,3 +9,7 @@ node_modules
 *.pytest_cache*
 *.mo
 /schema/testing
+tx
+tests/__pycache__/
+src/
+.tx/*bak
