@@ -49,7 +49,7 @@ This example demonstrates how a confirmation process and changes in beneficial o
 | **21st January 2022**
 | One of the co-owners is bought out by the other. Fermcat's accountant updates the register to reflect this change. 
 
-Levent Trust 
+A trust-like arrangement
 ------------
 
 This example demonstrates how the beneficial ownership of a trust-like arrangement can be represented using BODS. 
