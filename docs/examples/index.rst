@@ -19,7 +19,7 @@ This example demonstrates a gradual transfer of ownership from a single owner to
 `Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/tecido.json>`__ 
 
 | **20th January 2019** 
-| Tecido is registered with one person as owner and director. 
+| Tecido is registered with one person as beneficial owner, legal owner and director. 
 |
 | **25th September 2021**
 | 60% of shares are transferred to a corporate trustee company, Shear Trust.
