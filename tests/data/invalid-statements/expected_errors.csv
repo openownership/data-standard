@@ -184,3 +184,7 @@ relationship_interests_share_maximum_too_small.json,minimum,$[0].recordDetails.i
 relationship_interests_share_maximum_too_big.json,maximum,$[0].recordDetails.interests[0].share.maximum,maximum
 relationship_interests_share_minimum_too_small.json,minimum,$[0].recordDetails.interests[0].share.minimum,minimum
 relationship_interests_share_minimum_too_big.json,maximum,$[0].recordDetails.interests[0].share.minimum,minimum
+relationship_component_records_not_array.json,type,$[0].recordDetails.componentRecords,componentRecords
+relationship_component_records_not_string.json,type,$[0].recordDetails.componentRecords[0],componentRecords
+relationship_interested_party_invalid_type.json,oneOf,$[0].recordDetails.interestedParty,interestedParty
+relationship_subject_invalid_type.json,oneOf,$[0].recordDetails.subject,subject
