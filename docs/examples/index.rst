@@ -14,9 +14,7 @@ Three statements (Entity, Person and Relationship) that describe the beneficial 
 Updating information over time 1 (Tecido scenario)
 ------
 
-This example demonstrates a gradual transfer of ownership from a single owner to an employee owned trust. In this jurisdiction a beneficial owner must be declared when they own at least 25% of the company. 
-
-The trust itself is not represented here, shares are shown as being owned by a professional holding company. This could be the case where a jurisdiction has no trust register or a separate trust register. 
+This example demonstrates a gradual transfer of ownership from a single owner to an employee owned trust. In this example, a beneficial owner must be disclosed when they own at least 25% of the company. The trust arrangement itself is not disclosed.
 
 `Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/tecido.json>`__ 
 
