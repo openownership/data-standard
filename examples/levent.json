@@ -1,0 +1,198 @@
+[
+  {
+    "statementId": "496025091ceeb1a6c54ef351cf9131d5",
+    "statementDate": "2020-09-19",
+    "publicationDetails": {
+      "publicationDate": "2020-09-23",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "Trusts register"
+      }
+    },
+    "recordId": "700c264e",
+    "recordType": "person",
+    "recordStatus": "new",
+    "declarationSubject": "8e40d059",
+    "recordDetails": {
+      "isComponent": false,
+      "personType": "knownPerson",
+      "birthDate": "2002-01-11",
+      "names": [
+        {
+          "fullName": "Andrew Anderson"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "20261c95f1e267689b4d7fed6eb8d146",
+    "statementDate": "2020-09-19",
+    "publicationDetails": {
+      "publicationDate": "2020-09-23",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "Trusts register"
+      }
+    },
+    "recordId": "d8855000",
+    "recordType": "person",
+    "recordStatus": "new",
+    "declarationSubject": "8e40d059",
+    "recordDetails": {
+      "isComponent": false,
+      "personType": "knownPerson",
+      "birthDate": "1999-07-17",
+      "names": [
+        {
+          "fullName": "Bella Buxton"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "96db13c758eeded7d23485496925f7ac",
+    "statementDate": "2020-09-19",
+    "publicationDetails": {
+      "publicationDate": "2020-09-23",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "Trusts register"
+      }
+    },
+    "recordId": "81337a6e",
+    "recordType": "person",
+    "recordStatus": "new",
+    "declarationSubject": "8e40d059",
+    "recordDetails": {
+      "isComponent": false,
+      "personType": "anonymousPerson",
+      "unspecifiedPersonDetails": {
+        "reason": "interestedPartyExemptFromDisclosure",
+        "description": "beneficiary is underage and therefore exempt from reporting"
+      }
+    }
+  },
+  {
+    "statementId": "ab8cdc525f0dcfd127a40bad17da8fca",
+    "statementDate": "2020-09-19",
+    "publicationDetails": {
+      "publicationDate": "2020-09-23",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "Trusts register"
+      }
+    },
+    "recordId": "8e40d059",
+    "recordType": "entity",
+    "recordStatus": "new",
+    "declarationSubject": "8e40d059",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": {
+        "type": "arrangement",
+        "subtype": "trust",
+        "details": "fiducie surete"
+      },
+      "name": "Levent Trust",
+      "jurisdiction": {
+        "name": "France",
+        "code": "FR"
+      },
+      "foundingDate": "2019-11-08"
+    }
+  },
+  {
+    "statementId": "4f46b8725145e5f2a521a2dfd55be4d6",
+    "statementDate": "2020-09-19",
+    "publicationDetails": {
+      "publicationDate": "2020-09-23",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "Trusts register"
+      }
+    },
+    "recordId": "2341f5ce",
+    "recordType": "relationship",
+    "recordStatus": "new",
+    "declarationSubject": "8e40d059",
+    "recordDetails": {
+      "interests": [
+        {
+          "type": "trustee",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": true,
+          "details": "fiduciaire",
+          "startDate": "2019-08-11"
+        }
+      ],
+      "isComponent": false,
+      "subject": "8e40d059",
+      "interestedParty": "700c264e"
+    }
+  },
+  {
+    "statementId": "d0b94d42cf4fa162feea882aba2a8a47",
+    "statementDate": "2020-09-19",
+    "publicationDetails": {
+      "publicationDate": "2020-09-23",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "Trusts register"
+      }
+    },
+    "recordId": "ee2a8c79",
+    "recordType": "relationship",
+    "recordStatus": "new",
+    "declarationSubject": "8e40d059",
+    "recordDetails": {
+      "interests": [
+        {
+          "type": "settlor",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": true,
+          "details": "constituant",
+          "startDate": "2019-11-08"
+        },
+        {
+          "type": "trustee",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": true,
+          "details": "fiduciaire",
+          "startDate": "2019-11-08"
+        }
+      ],
+      "isComponent": false,
+      "subject": "8e40d059",
+      "interestedParty": "d8855000"
+    }
+  },
+  {
+    "statementId": "bf77518bdf48716d70346e70303c587a",
+    "statementDate": "2020-09-19",
+    "publicationDetails": {
+      "publicationDate": "2020-09-23",
+      "bodsVersion": "0.4",
+      "publisher": {
+        "name": "Trusts register"
+      }
+    },
+    "recordId": "3e47afda",
+    "recordType": "relationship",
+    "recordStatus": "new",
+    "declarationSubject": "8e40d059",
+    "recordDetails": {
+      "interests": [
+        {
+          "type": "beneficiaryOfLegalArrangement",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": true,
+          "details": "beneficiaire",
+          "startDate": "2019-11-08"
+        }
+      ],
+      "isComponent": false,
+      "subject": "8e40d059",
+      "interestedParty": "81337a6e"
+    }
+  }
+]

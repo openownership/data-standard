@@ -1,41 +1,81 @@
 Examples
 ========
 
-The examples below highlight key elements of how ownership and control information is built up through the use of statements.
+These fictional examples highlight key elements of how ownership and control information is built up through the use of statements.
 
-You can also find examples of valid BODS JSON files in the standard repository:
+A single, direct beneficial owner
+---------------------------------
 
-- Example data (`v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/examples>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/examples>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/examples>`__ )
-- Test data (`v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/tests/data/entity-statement/valid>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/tests/data/entity-statement/valid>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/tests/data/entity-statement/valid>`__ )
+Three statements (Entity, Person and Relationship) that describe the beneficial ownership (and 100% legal ownership) of Profitech Ltd by Jennifer Hewitson-Smith. 
 
-For a visual rendering of these examples, use the `BODS Visualiser <https://www.openownership.org/visualisation/visualisation-tool/>`_.
+.. literalinclude:: ../../examples/bods-package.json
+    :language: json
+    
+A trust-like arrangement
+------------------------
 
+This example demonstrates how the beneficial ownership of a trust-like arrangement can be represented using BODS. A fiducie is registered with information about the settlor and trustees disclosed. The beneficiary is exempt from disclosure.
 
-A single direct owner
----------------------
-
-The example below presents three statements (Entity, Person and OwnershipOrControl) that describe the 100% beneficial ownership of Chrinon Ltd by Chris Taggart. 
-
--0.3 JSON EXAMPLE REMOVED SO DOCS BUILD-
-
-Joint ownership
----------------
-
-To model joint ownership, an artificial 'arrangement', owned by the two parties responsible for it, should be included within a chain of ownership.
-
-.. literalinclude:: ../../examples/joint-ownership.json
+.. literalinclude:: ../../examples/levent.json
     :language: json
 
+Updating information over time 1
+--------------------------------
 
-Updating ownership
-------------------
+This example demonstrates a gradual transfer of ownership from a single owner to an employee owned trust. In this example, a beneficial owner must be disclosed when they own at least 25% of the company. The trust arrangement itself is not disclosed.
 
-To update a previous statement, a new beneficial ownership statement, with a ``replacesStatement`` property is required.
+`Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/tecido.json>`__ 
 
-In the (fictional) example below, the previous statement that Chris Taggart has 100% ownership of Chrinon Ltd is replaced by a new statement showing 50% ownership. A separate statement declares that the owner of the other 50% has not yet been identified.
+**Timeline**
 
-Note that only **changed statements** need to have new statement identifiers. 
+.. list-table::
+    :widths: 15 25 65
+    :header-rows: 1
+    
+    * - Statement Date
+      - Declaration
+      - Description
+    * - 2019-01-20
+      - bo-jtc-8755982746
+      - Tecido is registered with Maria Esteves as sole beneficial owner, legal owner and director.
+    * - 2021-09-25
+      - bo-tjf-7435753839
+      - 60% of shares are transferred to a corporate trustee company, Shear Trust.
+    * - 2022-09-25
+      - bo-kks-9337584037
+      - An additional 10% of shares are transferred to the trustee company, which now holds 70% of the shares.
+    * - 2023-03-03
+      - bo-tns-6849443385
+      - An additional 10% of shares are transferred to the trustee company, which now holds 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner.
+      
+Updating information over time 2
+--------------------------------
 
--0.3 JSON EXAMPLE REMOVED SO DOCS BUILD-
+This example demonstrates how a confirmation process and changes in beneficial ownership information are represented in BODS. 
 
-When a data file is provided, all the person or entity statements referenced from an ownershipOrControl statement ``subject`` or ``interestedParty`` field should be included in the file.
+`Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/fermcat.json>`__ 
+
+**Timeline** 
+
+.. list-table::
+    :widths: 15 75
+    :header-rows: 1
+    
+    * - Statement Date 
+      - Description
+    * - 2019-09-11 
+      - Fermcat is registered as having two beneficial owners who each own 50% of the company.
+    * - 2020-09-11
+      - The yearly confirmation process is completed. There have been no changes in beneficial ownership.
+    * - 2021-09-11
+      - In April 2021 one of the owners dies and his shares are transferred to his next of kin. When the yearly confirmation process is started, this prompts Fermcat's accountant to update the register with this change. After updating the register she files the confirmation statement. 
+    * - 2022-01-21
+      - One of the co-owners is bought out by the other. Fermcat's accountant updates the register to reflect this change.
+      
+Other examples
+--------------
+
+There are additional examples of valid BODS JSON files in the standard repository. These examples include representing indirect ownership, use of annotations, and representing state owned enterprises. 
+
+Example data (`v0.4 <https://github.com/openownership/data-standard/tree/0.4.0/examples>`__ | `v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/examples>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/examples>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/examples>`__ )
+
