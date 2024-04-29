@@ -14,13 +14,10 @@ Three statements (Entity, Person and Relationship) that describe the beneficial 
 A trust-like arrangement
 ------------------------
 
-This example demonstrates how the beneficial ownership of a trust-like arrangement can be represented using BODS. 
+This example demonstrates how the beneficial ownership of a trust-like arrangement can be represented using BODS. A fiducie is registered with information about the settlor and trustees disclosed. The beneficiary is exempt from disclosure.
 
 .. literalinclude:: ../../examples/levent.json
     :language: json
-
-| **19th September 2020**
-| A fiducie is registered with information about the settlor and trustees disclosed. The beneficiary is exempt from disclosure. 
 
 Updating information over time 1
 --------------------------------
@@ -29,18 +26,28 @@ This example demonstrates a gradual transfer of ownership from a single owner to
 
 `Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/tecido.json>`__ 
 
-| **20th January 2019** 
-| Tecido is registered with one person as beneficial owner, legal owner and director. 
-|
-| **25th September 2021**
-| 60% of shares are transferred to a corporate trustee company, Shear Trust.
-|
-| **25th September 2022**
-| An additional 10% of shares are transferred to the trustee company, which now holds 70% of the shares. 
-|
-| **3rd March 2023**
-| An additional 10% of shares are transferred to the trustee company, which now holds 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner. 
+**Timeline**
 
+.. list-table::
+    :widths: 15 25 65
+    :header-rows: 1
+    
+    * - Statement Date
+      - Declaration
+      - Description
+    * - 2019-01-20
+      - bo-jtc-8755982746
+      - Tecido is registered with Maria Esteves as sole beneficial owner, legal owner and director.
+    * - 2021-09-25
+      - bo-tjf-7435753839
+      - 60% of shares are transferred to a corporate trustee company, Shear Trust.
+    * - 2022-09-25
+      - bo-kks-9337584037
+      - An additional 10% of shares are transferred to the trustee company, which now holds 70% of the shares.
+    * - 2023-03-03
+      - bo-tns-6849443385
+      - An additional 10% of shares are transferred to the trustee company, which now holds 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner.
+      
 Updating information over time 2
 --------------------------------
 
@@ -48,19 +55,23 @@ This example demonstrates how a confirmation process and changes in beneficial o
 
 `Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/fermcat.json>`__ 
 
-| **11th September 2019**
-| Fermcat is registered as having two beneficial owners who each own 50% of the company. 
-|
-| **11th September 2020**
-| The yearly confirmation process is completed. There have been no changes in beneficial ownership. 
-|
-| **11th September 2021**
-| In April 2021 one of the owners dies and his shares are transferred to his next of kin. When the yearly confirmation process is started, this prompts Fermcat's accountant to update the register with this change. After updating the register she files the confirmation statement. 
-|
-| **21st January 2022**
-| One of the co-owners is bought out by the other. Fermcat's accountant updates the register to reflect this change. 
+**Timeline** 
 
-
+.. list-table::
+    :widths: 15 75
+    :header-rows: 1
+    
+    * - Statement Date 
+      - Description
+    * - 2019-09-11 
+      - Fermcat is registered as having two beneficial owners who each own 50% of the company.
+    * - 2020-09-11
+      - The yearly confirmation process is completed. There have been no changes in beneficial ownership.
+    * - 2021-09-11
+      - In April 2021 one of the owners dies and his shares are transferred to his next of kin. When the yearly confirmation process is started, this prompts Fermcat's accountant to update the register with this change. After updating the register she files the confirmation statement. 
+    * - 2022-01-21
+      - One of the co-owners is bought out by the other. Fermcat's accountant updates the register to reflect this change.
+      
 Other examples
 --------------
 
