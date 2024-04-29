@@ -16,7 +16,8 @@ A trust-like arrangement
 
 This example demonstrates how the beneficial ownership of a trust-like arrangement can be represented using BODS. 
 
-`Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/levent.json>`__
+.. literalinclude:: ../../examples/levent.json
+    :language: json
 
 | **19th September 2020**
 | A fiducie is registered with information about the settlor and trustees disclosed. The beneficiary is exempt from disclosure. 
