@@ -4,15 +4,25 @@ Examples
 These fictional examples highlight key elements of how ownership and control information is built up through the use of statements.
 
 A single, direct beneficial owner
-----------------------------------------------------------------
+---------------------------------
 
 Three statements (Entity, Person and Relationship) that describe the beneficial ownership (and 100% legal ownership) of Profitech Ltd by Jennifer Hewitson-Smith. 
 
 .. literalinclude:: ../../examples/bods-package.json
     :language: json
+    
+A trust-like arrangement
+------------------------
 
-Updating information over time 1 (Tecido scenario)
-------
+This example demonstrates how the beneficial ownership of a trust-like arrangement can be represented using BODS. 
+
+`Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/levent.json>`__
+
+| **19th September 2020**
+| A fiducie is registered with information about the settlor and trustees disclosed. The beneficiary is exempt from disclosure. 
+
+Updating information over time 1
+--------------------------------
 
 This example demonstrates a gradual transfer of ownership from a single owner to an employee owned trust. In this example, a beneficial owner must be disclosed when they own at least 25% of the company. The trust arrangement itself is not disclosed.
 
@@ -30,8 +40,8 @@ This example demonstrates a gradual transfer of ownership from a single owner to
 | **3rd March 2023**
 | An additional 10% of shares are transferred to the trustee company, which now holds 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner. 
 
-Updating information over time 2 (Fermcat scenario)
--------
+Updating information over time 2
+--------------------------------
 
 This example demonstrates how a confirmation process and changes in beneficial ownership information are represented in BODS. 
 
@@ -49,15 +59,6 @@ This example demonstrates how a confirmation process and changes in beneficial o
 | **21st January 2022**
 | One of the co-owners is bought out by the other. Fermcat's accountant updates the register to reflect this change. 
 
-A trust-like arrangement
-------------
-
-This example demonstrates how the beneficial ownership of a trust-like arrangement can be represented using BODS. 
-
-`Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/levent.json>`__
-
-| **19th September 2020**
-| A fiducie is registered with information about the settlor and trustees disclosed. The beneficiary is exempt from disclosure. 
 
 Other examples
 --------------
