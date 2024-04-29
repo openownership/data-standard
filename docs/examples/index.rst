@@ -66,7 +66,3 @@ There are additional examples of valid BODS JSON files in the standard repositor
 
 Example data (`v0.4 <https://github.com/openownership/data-standard/tree/0.4.0/examples>`__ | `v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/examples>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/examples>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/examples>`__ )
 
-In 0.4, test files are used to validate the schema. Each test file represents a feature of the schema. 
-
-Test data (`v0.4 <https://github.com/openownership/data-standard/tree/0.4.0/tests/data/valid-statements>`__  | `v0.3 <https://github.com/openownership/data-standard/tree/0.3.0/tests/data/>`__  |  `v0.2 <https://github.com/openownership/data-standard/tree/0.2.0/tests/data/>`__  | `v0.1 <https://github.com/openownership/data-standard/tree/0.1.0/tests/data/>`__ )
-
