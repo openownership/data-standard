@@ -32,7 +32,7 @@ The trust itself is not represented here, shares are shown as being owned by a p
 | **3rd March 2023**
 | An additional 10% of shares are transferred to the trustee company, which now holds 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner. 
 
-Fermcat
+Updating information over time 2 (Fermcat scenario)
 -------
 
 This example demonstrates how a confirmation process and changes in ownership are represented in BODS. 
