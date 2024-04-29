@@ -24,7 +24,7 @@ The trust itself is not represented here, shares are shown as being owned by a p
 | Tecido is registered with one person as owner and director. 
 |
 | **25th September 2021**
-| 60% of shares are transferred to a corporate trustee company.
+| 60% of shares are transferred to a corporate trustee company, Shear Trust.
 |
 | **25th September 2022**
 | An additional 10% of shares are transferred to the trustee company, who now owns 70% of the shares. 
