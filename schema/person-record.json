@@ -30,7 +30,7 @@
     },
     "names": {
       "title": "Names",
-      "description": "One or more known names for this individual.",
+      "description": "One or more known names for this person.",
       "type": "array",
       "items": {
         "$ref": "#/$defs/Name"
@@ -192,7 +192,7 @@
         },
         "givenName": {
           "title": "Given Names",
-          "description": "The part of the person's `fullName` that identifies the individual within their family. These are given to a person by their parents at birth or may be legally recognised as 'given names' through a formal process. For example, the given name for Johann Sebastian Bach is 'Johann Sebastian'.",
+          "description": "The part of the person's `fullName` that identifies the person within their family. These are given to a person by their parents at birth or may be legally recognised as 'given names' through a formal process. For example, the given name for Johann Sebastian Bach is 'Johann Sebastian'.",
           "type": "string"
         },
         "patronymicName": {
@@ -224,13 +224,13 @@
         },
         "startDate": {
           "title": "State Date",
-          "description": "The date from which this individual had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
+          "description": "The date from which this person had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the (first) month. This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "type": "string",
           "format": "date"
         },
         "endDate": {
           "title": "End Date",
-          "description": "The date from which this individual no longer had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the (first) month.  This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
+          "description": "The date from which this person no longer had the status of a Politically-exposed Person (PEP). The date MUST be given in YYYY-MM-DD format. Where a precise month or date are unknown, the value may be rounded to the first day of the (first) month.  This rounding SHOULD be noted in accompanying guidance (such as a publication policy or data use guide).",
           "type": "string",
           "format": "date"
         },

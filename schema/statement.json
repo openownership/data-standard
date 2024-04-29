@@ -75,7 +75,7 @@
             "publisher": {
               "type": "object",
               "title": "Publisher",
-              "description": "Details of the organisation or individual publishing a Statement.",
+              "description": "Details of the organisation or person publishing a Statement.",
               "properties": {
                 "name": {
                   "title": "Name",
