@@ -11,7 +11,7 @@ Three statements (Entity, Person and Relationship) that describe the beneficial 
 .. literalinclude:: ../../examples/bods-package.json
     :language: json
 
-Tecido
+Updating information over time 1 (Tecido scenario)
 ------
 
 This example demonstrates a gradual transfer of ownership from a single owner to an employee owned trust. In this jurisdiction a beneficial owner must be declared when they own at least 25% of the company. 
