@@ -33,7 +33,7 @@ This example demonstrates a gradual transfer of ownership from a single owner to
 Updating information over time 2 (Fermcat scenario)
 -------
 
-This example demonstrates how a confirmation process and changes in ownership are represented in BODS. 
+This example demonstrates how a confirmation process and changes in beneficial ownership information are represented in BODS. 
 
 `Example JSON <https://github.com/openownership/data-standard/tree/0.4.0/examples/fermcat.json>`__ 
 
