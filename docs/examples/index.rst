@@ -25,7 +25,7 @@ This example demonstrates a gradual transfer of ownership from a single owner to
 | 60% of shares are transferred to a corporate trustee company, Shear Trust.
 |
 | **25th September 2022**
-| An additional 10% of shares are transferred to the trustee company, who now owns 70% of the shares. 
+| An additional 10% of shares are transferred to the trustee company, which now holds 70% of the shares. 
 |
 | **3rd March 2023**
 | An additional 10% of shares are transferred to the trustee company, which now holds 80% of the shares. The original owner is now below the threshold for reporting and is no longer disclosed as a beneficial owner. 
