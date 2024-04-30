@@ -1,4 +1,4 @@
 [submodule "docs/_static/docson"]
 	path = docs/_static/docson
 	url = https://github.com/OpenDataServices/docson
-	branch = master-bods
+	branch = bods_handle_urns
