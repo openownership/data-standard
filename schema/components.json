@@ -156,7 +156,7 @@
         },
         "description": {
           "title": "Description",
-          "description": "Additional information about the absence of details for a person or entity. This field may be used to provide set phrases from a source system, or a free-text explanation.",
+          "description": "Additional information about the absence of details for a person or entity. This field may be used to provide set phrases from a source system, or a free text explanation.",
           "type": "string"
         }
       },
@@ -188,7 +188,7 @@
         },
         "description": {
           "title": "Description",
-          "description": "Additional, free-text information about the source of information.",
+          "description": "Additional, free text information about the source of information.",
           "type": "string"
         },
         "url": {

@@ -213,8 +213,8 @@
           "type": "string"
         },
         "missingInfoReason": {
-          "title": "Missing Information Reason(s)",
-          "description": "An explanation of why the PEP status for the person is not provided (i.e. `politicalExposure.status` is 'unknown'). This may be a standard descriptive phrase from the source system, or a free-text justification. Where this field is present it should be the only field except for `source`.",
+          "title": "Missing Information Reasons",
+          "description": "An explanation of why the PEP status for the person is not provided (i.e. `politicalExposure.status` is 'unknown'). This may be a standard descriptive phrase from the source system, or a free text justification. Where this field is present it should be the only field except for `source`.",
           "type": "string"
         },
         "jurisdiction": {

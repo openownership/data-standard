@@ -275,7 +275,7 @@
         },
         "description": {
           "title": "Description",
-          "description": "A free-text description providing extra information about part of this Statement.",
+          "description": "A free text description providing extra information about part of this Statement.",
           "type": "string"
         },
         "transformedContent": {
