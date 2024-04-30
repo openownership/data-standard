@@ -21,47 +21,31 @@ In particular, the following properties and values SHOULD be used to represent i
 
 For more details about these properties see :ref:`schema-entity-record`.
 
-A number of scenarios are outlined below. We show how the these properties and others can be used to represent information about SOEs within a set of connected BODS statements. 
+Examples
+--------
 
+Ownership by state body
+^^^^^^^^^^^^^^^^^^^^^^^
 
-Example scenarios
-------------------------
-
-These examples show how statements might be connected to represent the involvement of a state with an enterprise. Only those property:value pairs that are particularly relevant to the scenario are shown in the statement blocks. Complete data would also show, for instance, the particular types of interests held by the state, such as an 80% shareholding. 
-
-
-Scenario 1
-^^^^^^^^^^
-
-Ownership-or-control by a state is known and a statement about ownership is possible.
-
-.. figure:: ../../_assets/SOE-scenario1.svg
-   :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'state' and jurisdiction 'zm').
-   :figwidth: 50%
-   :align: center
-
-Scenario 2
-^^^^^^^^^^
-
-Ownership-or-control by a regional state government is known and a statement about ownership is possible.
-
-.. figure:: ../../_assets/SOE-scenario2.svg
-   :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'state' and jurisdiction 'zm').
-   :figwidth: 50%
-   :align: center
-
-Scenario 3
-^^^^^^^^^^
-
-Ownership-or-control by a state body is known and a statement about ownership is possible.
+Beneficial ownership by a state body is known and a statement about ownership is possible.
 
 .. figure:: ../../_assets/SOE-scenario3.svg
    :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'stateBody' and jurisdiction 'gb').
    :figwidth: 50%
    :align: center
 
-Scenario 4
-^^^^^^^^^^
+Ownership by regional government
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Beneficial ownership by a regional state government is known and a statement about ownership is possible.
+
+.. figure:: ../../_assets/SOE-scenario2.svg
+   :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'state' and jurisdiction 'zm').
+   :figwidth: 50%
+   :align: center
+
+SOE exempt from disclosure
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A registered entity declares that it is exempt from disclosing beneficial owners because it is an SOE.
 
@@ -70,28 +54,28 @@ A registered entity declares that it is exempt from disclosing beneficial owners
    :figwidth: 85%
    :align: center
 
-Scenario 5
-^^^^^^^^^^
+Golden share provision
+^^^^^^^^^^^^^^^^^^^^^^
 
-Describing control through a golden share provision in company articles or shareholder agreement.
+Control through a golden share provision in company articles or shareholder agreement.
 
 .. figure:: ../../_assets/SOE-scenario5.svg
    :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'stateBody' and jurisdiction 'nl'). The Ownership-or-control statement has interests.0.type set to 'controlViaCompanyRulesOrArticles' and interests.0.details set to 'Veto rights over specified company decisions'.
    :figwidth: 50%
    :align: center
 
-Scenario 6
-^^^^^^^^^^
+Managing official
+^^^^^^^^^^^^^^^^^
 
-Describing control of an SOE by a natural person.
+An SOE controlled by a natural person.
 
 .. figure:: ../../_assets/SOE-scenario6.svg
    :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'state' and jurisdiction 'zm'). The Entity statement with entityType type 'registeredEntity' is also connected to a Relationship statement which has interests.0.type set to 'seniorManagingOfficial'. That last Ownership-or-control statement is connected to a Person statement with personType set to 'knownPerson'.
    :figwidth: 85%
    :align: center
 
-Scenario 7
-^^^^^^^^^^
+Formed by statute
+^^^^^^^^^^^^^^^^^
 
 An SOE is formed by statute.
 
@@ -100,8 +84,8 @@ An SOE is formed by statute.
    :figwidth: 50%
    :align: center
 
-Scenario 8
-^^^^^^^^^^
+GLIE
+^^^^
 
 A state's interests in an SOE are managed via a government-linked investment entity (GLIE).
 
