@@ -29,7 +29,7 @@ Ownership by state body
 
 Beneficial ownership by a state body is known and a statement about ownership is possible.
 
-.. figure:: ../../_assets/SOE-scenario3.svg
+.. figure:: ../../_assets/SOE-scenario1.svg
    :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'stateBody' and jurisdiction 'gb').
    :figwidth: 50%
    :align: center
@@ -49,7 +49,7 @@ SOE exempt from disclosure
 
 A registered entity declares that it is exempt from disclosing beneficial owners because it is an SOE.
 
-.. figure:: ../../_assets/SOE-scenario4.svg
+.. figure:: ../../_assets/SOE-scenario3.svg
    :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'state' and jurisdiction 'nl'). The Entity statement with entityType type 'registeredEntity' is also connected to a Relationship statement which has interestedParty.unspecified.reason set to 'noBeneficialOwners' and interestedParty.unspecified.description set to 'Exemption granted on the basis that the declaring entity is a state-owned enterprise'.
    :figwidth: 85%
    :align: center
@@ -59,7 +59,7 @@ Golden share provision
 
 Control through a golden share provision in company articles or shareholder agreement.
 
-.. figure:: ../../_assets/SOE-scenario5.svg
+.. figure:: ../../_assets/SOE-scenario4.svg
    :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'stateBody' and jurisdiction 'nl'). The Ownership-or-control statement has interests.0.type set to 'controlViaCompanyRulesOrArticles' and interests.0.details set to 'Veto rights over specified company decisions'.
    :figwidth: 50%
    :align: center
@@ -69,7 +69,7 @@ Managing official
 
 An SOE controlled by a natural person.
 
-.. figure:: ../../_assets/SOE-scenario6.svg
+.. figure:: ../../_assets/SOE-scenario5.svg
    :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'state' and jurisdiction 'zm'). The Entity statement with entityType type 'registeredEntity' is also connected to a Relationship statement which has interests.0.type set to 'seniorManagingOfficial'. That last Ownership-or-control statement is connected to a Person statement with personType set to 'knownPerson'.
    :figwidth: 85%
    :align: center
@@ -79,7 +79,7 @@ Formed by statute
 
 An SOE is formed by statute.
 
-.. figure:: ../../_assets/SOE-scenario7.svg
+.. figure:: ../../_assets/SOE-scenario6.svg
    :alt: Entity statement (with entityType type 'legalEntity', formedByLegislation.name set to 'National Energy Act', and formedByLegislation.date set to '1980-02-01') is connected via a Relationship statement to an Entity statement (with entityType type 'stateBody' and jurisdiction 'zm'). The Ownership-or-control statement has interests.0.type set to 'controlByLegalFramework'.
    :figwidth: 50%
    :align: center
@@ -89,7 +89,7 @@ GLIE
 
 A state's interests in an SOE are managed via a government-linked investment entity (GLIE).
 
-.. figure:: ../../_assets/SOE-scenario8.svg
+.. figure:: ../../_assets/SOE-scenario7.svg
    :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to another Entity statement with entityType type 'registeredEntity' and name 'A G.L.I.E'. That latter Entity Statement is connected via a Relationship statement to an Entity statement (with entityType type 'state' and jurisdiction 'gb').
    :figwidth: 50%
    :align: center
