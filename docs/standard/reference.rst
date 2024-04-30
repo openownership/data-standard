@@ -30,6 +30,8 @@ Address
    :pointer: /$defs/Address
    :externallinks: {"type":{"url":"#addresstype","text":"AddressType"}}
    :allowexternalrefs:
+   :allowurnrefs:
+
 
 .. note::
 
@@ -55,6 +57,7 @@ Annotations can apply to a whole statement, part of a statement or a specific fi
    :pointer: /$defs/Annotation
    :externallinks: {"motivation":{"url":"#annotationmotivation","text":"AnnotationMotivation"}}
    :allowexternalrefs:
+   :allowurnrefs:
 
 
 .. _schema-country:
@@ -68,6 +71,7 @@ Country
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Country
    :allowexternalrefs:
+   :allowurnrefs:
 
 
 .. _schema-entity-record:
@@ -82,6 +86,7 @@ Entity Record
    :collapse: identifiers,addresses,jurisdiction,publicListing
    :externallinks: {"unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-identifier:
 
@@ -96,6 +101,7 @@ The Identifier object connects a statement to the natural person or entity that 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Identifier
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-interest:
 
@@ -110,6 +116,7 @@ Interest
    :collapse: share
    :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"InterestType"}}
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-jurisdiction:
 
@@ -123,6 +130,7 @@ Jurisdiction
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Jurisdiction
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-name:
 
@@ -136,6 +144,7 @@ Name
    :pointer: /$defs/Name
    :externallinks: {"type":{"url":"#nametype","text":"NameType"}}
    :allowexternalrefs:
+   :allowurnrefs:
 
 
 .. _schema-pep-status:
@@ -150,6 +159,7 @@ PEP Status Details
    :pointer: /$defs/PepStatusDetails
    :collapse: jurisdiction,source
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-person-record:
 
@@ -163,6 +173,7 @@ Person Record
    :collapse: names,identifiers,placeOfBirth,addresses,nationalities,politicalExposure/details,taxResidencies
    :externallinks: {"personType":{"url": "#persontype","text":"PersonType"}, "unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-public-listing:
 
@@ -176,6 +187,7 @@ Public Listing
    :pointer: /$defs/PublicListing
    :collapse: securitiesListings
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-publicationdetails:
 
@@ -189,6 +201,7 @@ Publication Details
    :pointer: /$defs/Statement/properties/publicationDetails
    :collapse: publisher
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-publisher:
 
@@ -201,6 +214,7 @@ Publisher
 .. jsonschema:: ../_build_schema/statement.json
    :pointer: /$defs/Statement/properties/publicationDetails/properties/publisher
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-relationship-record:
 
@@ -213,8 +227,9 @@ See :ref:`representing-bo` for detailed requirements.
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/relationship-record.json
-    :collapse: interests
-    :allowexternalrefs:
+   :collapse: interests
+   :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-securities-listing:
 
@@ -230,6 +245,7 @@ See :any:`Real world identifiers <guidance-identifiers-other>` for guidance on r
    :pointer: /$defs/SecuritiesListing
    :externallinks: {"security/idScheme":{"url":"#securitiesidentifierschemes","text":"SecuritiesIdentifierSchemes"}}
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-share:
 
@@ -242,6 +258,7 @@ Share
 .. jsonschema:: ../_build_schema/relationship-record.json
    :pointer: /$defs/Interest/properties/share
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-source:
 
@@ -256,6 +273,7 @@ Source
    :collapse: assertedBy
    :externallinks: {"type":{"url":"#sourcetype","text":"SourceType"}}
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-statement:
 
@@ -269,6 +287,7 @@ Statement
    :pointer: /$defs/Statement
    :collapse: source,annotations,publicationDetails
    :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-codelists:
 
