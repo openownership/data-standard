@@ -51,7 +51,7 @@ Annotations can be used to:
 
 Annotations can apply to a whole statement, part of a statement or a specific field. annotation.statementPointerTarget indicates where the annotation applies. 
 
-.. jsonschema:: ../_build_schema/components.json
+.. jsonschema:: ../_build_schema/statement.json
    :pointer: /$defs/Annotation
    :externallinks: {"motivation":{"url":"#annotationmotivation","text":"AnnotationMotivation"}}
    :allowexternalrefs:
@@ -111,7 +111,7 @@ Interest
    :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"InterestType"}}
    :allowexternalrefs:
 
-.. _schema-interested-party:
+.. _schema-jurisdiction:
 
 
 Jurisdiction
@@ -146,7 +146,7 @@ PEP Status Details
 .. json-value:: ../_build_schema/person-record.json
    :pointer: /$defs/PepStatusDetails/description
 
-.. jsonschema:: ../_build_schema/components.json
+.. jsonschema:: ../_build_schema/person-record.json
    :pointer: /$defs/PepStatusDetails
    :collapse: jurisdiction,source
    :allowexternalrefs:
