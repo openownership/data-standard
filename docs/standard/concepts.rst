@@ -46,7 +46,11 @@ Representing beneficial ownership information in this way allows people to make 
 - statements about beneficial ownership can overlap, referring to identical parties
 - historical beneficial ownership snapshots (to answer questions of ‘who knew what, when?’) can be produced. This is known as `bi-temporal modelling <https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_.
 
-Statements should therefore be considered immutable – presenting details about an element of beneficial ownership as claimed at a particular point in time. To achieve this, a data management system needs to include two types of information in each Statement. First: the details claimed about the entity, person or relationship, as stored by records in the system. Secondly: information about the source, date and context of the claim. 
+Statements should therefore be considered immutable – presenting details about an element of beneficial ownership as claimed at a particular point in time. 
+
+To achieve this, a data management system needs to include: 
+- the details claimed about the entity, person or relationship, as stored by records in the system
+- information about the source, date and context of the claim
 
 After publication, publishers do not edit a Statement to indicate an information update: they publish a new Statement with the updated details of the record.
 
@@ -76,7 +80,7 @@ The Relationship statement holds ``recordId`` values for the interested party an
 Publishing information updates
 ++++++++++++++++++++++++++++++
 
-As real-world beneficial ownership changes, agents submit updated details about people, entities and relationships to the data management system. It updates its records accordingly. Then the system publishes a new BODS Statement, containing the relevant ``recordId``, for each updated record.
+As real-world beneficial ownership changes, agents submit updated details about people, entities and relationships to the data management system. Then the system updates its records accordingly and publishes a new BODS Statement, containing the relevant ``recordId``, for each updated record.
 
 People can then use ``recordId`` values to group Statements made over time to see what information was known when. 
 
@@ -96,13 +100,13 @@ In a BODS dataset, the fact that a natural person is a beneficial owner of an en
 
 It is possible to represent an entity's declaration that it has no beneficial owners (according to a jurisdiction's definition of a beneficial owner).
 
-It is also possible to include in BODS datasets information about natural persons who are not beneficial owners. (For example, where the managing officials of an entity are disclosed because nobody meets the jurisdiction's definition of a beneficial owner.)
+It is also possible to include in BODS datasets information about natural persons who are not beneficial owners. For example, where the managing officials of an entity are disclosed because nobody meets the jurisdiction's definition of a beneficial owner.
 
 See :ref:`representing-bo` for full requirements.
 
 The data model
 --------------
 
-To explore the structure of the data model in full use the :doc:`Schema browser <schema-browser>`. Or read the :any:`Schema reference <schema-reference>` for detailed definitions and requirements for each object and field.
+Use the :doc:`Schema browser <schema-browser>` to explore the structure of the data model in full. Read the :any:`Schema reference <schema-reference>` for detailed definitions and requirements for each object and field.
 
 The objects and fields of the data model allow you to represent a range of real-world situations. Explore related requirements in the :any:`modelling-requirements` section.
