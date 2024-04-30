@@ -39,9 +39,7 @@ Within BODS:
 * the :any:`data schema <schema-reference>` describes what data should be shared. It can also inform the design of data collection and management systems. A format called JSON can be used to publish BODS data
 * the :any:`requirements sections <data-standard-index>` set out how information should be represented and managed to conform with the data standard. 
 
-Collecting, sharing and using beneficial ownership information as `structured data <https://www.openownership.org/en/publications/structured-and-interoperable-beneficial-ownership-data/benefits-of-structured-and-interoperable-data/>`_ has a number of benefits. 
-
-Broadly, it:
+Collecting, sharing and using beneficial ownership information as `structured data <https://www.openownership.org/en/publications/structured-and-interoperable-beneficial-ownership-data/benefits-of-structured-and-interoperable-data/>`_:
 
 * improves the interoperability of beneficial ownership information
 * reduces the cost of producing, using, and maintaining beneficial ownership information
