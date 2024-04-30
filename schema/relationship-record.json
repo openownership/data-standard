@@ -163,7 +163,7 @@
               "minimum": 0
             },
             "exclusiveMaximum": {
-              "title": "Exclusive mMximum Percentage",
+              "title": "Exclusive Maximum Percentage",
               "description": "The exclusive upper bound of the share of this interest.",
               "type": "number",
               "maximum": 100,
