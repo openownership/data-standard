@@ -3,7 +3,8 @@
 Real world identifiers
 ==================================
 
-Real world identifiers are essential for making beneficial ownership data interoperable. By 'real world identifier' we mean reference strings for entities, people and items (issued by authoritative registration schemes) which have gained widespread use in the world. People can use them to verify that the referenced person, entity or item exists.
+Real world identifiers are essential for making beneficial ownership data interoperable. By 'real world identifier' we mean reference strings, issued by authoritative registration schemes, which have gained widespread use in the world. People can use them to verify that the referenced person, entity or item exists.
+
 In BODS, real world identifiers can be published for:
 
 - entities
@@ -35,7 +36,7 @@ In such cases, the values for ``scheme`` SHOULD be:
 
 {JURISDICTION}-{TYPE}
 
-Where {JURISDICTION} is an `ISO 3-digit country code <https://www.iso.org/iso-3166-country-codes.html>`_ (or one of the extensions in `ICAO Document 9303 §5 <http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_, pages 21-23). And {TYPE} is one of 'PASSPORT', 'TAXID' or 'IDCARD' (see below).
+Where {JURISDICTION} is an `ISO 3-digit country code <https://www.iso.org/iso-3166-country-codes.html>`_ (or one of the extensions in `ICAO Document 9303 §5 <http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_, pages 21-23). And {TYPE} is one of 'PASSPORT', 'TAXID' or 'IDCARD'.
 
 For example, a passport number from Afghanistan would have the ``scheme`` value:
 
@@ -77,7 +78,7 @@ Market identifier codes (MICs)
 
 See this :ref:`example data <examples-plc>` for a valid use of MICs.
 
-Two properties in an Entity Statement’s :ref:`Securities Listing <schema-securities-listing>` object identify where a security is traded: the ``operatingMarketIdentifierCode`` of the operating market plus a ``marketIdentifierCode``. The ``marketIdentifierCode`` SHOULD be the same as the ``operatingMarketIdentifierCode`` if the security is traded on a main exchange. The ``marketIdentifierCode`` will differ where a security is traded on a segment of an exchange.
+Two properties in an Entity Statement’s :ref:`Securities Listing <schema-securities-listing>` object identify where a security is traded: the ``operatingMarketIdentifierCode`` of the operating market and the ``marketIdentifierCode``. The ``marketIdentifierCode`` SHOULD be the same as the ``operatingMarketIdentifierCode`` if the security is traded on a main exchange. The ``marketIdentifierCode`` will differ where a security is traded on a segment of an exchange.
 
 MICs are standardised, issued and maintained by SWIFT as `ISO 10383 <https://www.iso20022.org/market-identifier-codes>`_. The specification of ``operatingMarketIdentifierCode`` and ``marketIdentifierCode`` is part of the ISO standard.
 
