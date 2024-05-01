@@ -1,9 +1,9 @@
 .. _guidance-serialization:
 
-Serialization
+Serialisation
 =============
 
-The canonical serialization of BODS data is as a JSON document. Equivalent specifications of JSON are given by `IETF RFC 8256 <https://tools.ietf.org/html/rfc8259>`_ and by `ECMA 404 <https://ecma-international.org/publications-and-standards/standards/ecma-404/>`_. It is RECOMMENDED that publishers:
+The canonical serialisation of BODS data is as a JSON document. Equivalent specifications of JSON are given by `IETF RFC 8256 <https://tools.ietf.org/html/rfc8259>`_ and by `ECMA 404 <https://ecma-international.org/publications-and-standards/standards/ecma-404/>`_. It is RECOMMENDED that publishers:
 
 - Use UTF-8 for maximal interoperability (section 8.1 of RFC 8259);
 - Escape characters that might cause problems when ingesting data (for example: &, <).
@@ -15,15 +15,15 @@ JSON Lines MAY also be used when creating large files.
 Statement order
 ---------------
 
-A JSON BODS file MUST consist of a series of ordered Statement objects within a top-level array. Specifically:
+A JSON BODS file MUST consist of a series of ordered Statement objects within a top-level array. 
 
-- the ``interestedParty`` and ``subject`` values of a Relationship statement, when they are a ``recordId`` value, MUST match the ``recordId`` value of at least one other *prior* Statement in the array.
+Specifically, the ``interestedParty`` and ``subject`` values of a Relationship statement, when they are a ``recordId`` value, MUST match the ``recordId`` value of at least one other *prior* Statement in the array.
 
 
 Alternative tabular form
 ------------------------
 
-BODS data MAY also be serialized in tabular form, with each row representing a statement. Columns SHOULD represent statement fields and column titles SHOULD use the relevant relative JSON Pointer from the statement root. 
+BODS data MAY also be serialised in tabular form, with each row representing a statement. Columns SHOULD represent statement fields and column titles SHOULD use the relevant relative JSON Pointer from the statement root. 
 
 For example, the extract:
 
@@ -63,7 +63,7 @@ For example, the extract:
     }
    ]
 
-may be serialized in a table as:
+may be serialised in a table as:
 
 .. list-table:: 
    :header-rows: 1

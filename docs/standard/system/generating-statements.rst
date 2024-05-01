@@ -16,12 +16,12 @@ The schema enforces a minimum statement identifier length of 32 characters, and 
 
 Statement identifiers are generally for internal use within applications. In most circumstances they do not need to be displayed to users. This is in contrast to :ref:`entity or person identifiers <guidance-identifiers>`, which are useful to display to users. 
 
-Publishers MAY use one of the following strategies for creating statement identifiers.
-
 Strategies for identifier creation
 ----------------------------------
 
-* Generate a `UUID <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ for the first Statement pertaining to a record. Store this in the data management system. Update it whenever the relevant record is updated. 
+Publishers MAY use one of the following strategies to create statement identifiers.
+
+* Generate a `UUID <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ for the first Statement related to a record. Store this in the data management system. Update it whenever the relevant record is updated. 
 * Generate a `UUID <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ as a publisher-related prefix. Append the relevant ``recordId``, and a version identifier to it.
 * Use an appropriately designed hash function that generates identifiers from a normalised JSON representation of the statement (excluding the ``statementId`` field) with a low collision probability.
 * Use an internal identifier combined with a unique prefix to avoid collision between identifiers from different publishers.
