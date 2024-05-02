@@ -24,20 +24,20 @@ Alterations to schema structure and logic
 * Included as much validation as possible within the schema  
 * Updated which date formats are valid for all date fields
 * Schema and codelist titles and descriptions updated
+* Changes to specific objects and fields: 
 
-Specific objects and fields  
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* `entityType` and `entitySubtype` combined into `entityType`
-* `Interest/share/maximum` is now inclusive by default. `exclusiveMinimum` and `exclusiveMaximum` are now numbers
-* `statementDate` now required
-* `securitiesListing` removed from required fields in ``hasPublicListing``
-* `placeOfResidence`, `agent` and `replacesStatements` removed 
+  * ``entityType`` and ``entitySubtype`` combined into ``entityType``
+  * ``Interest/share/maximum`` is now inclusive by default. ``exclusiveMinimum`` and ``exclusiveMaximum`` are now numbers
+  * ``statementDate`` now required
+  * ``securitiesListing`` removed from required fields in ``hasPublicListing``
+  * ``placeOfResidence``, ``agent`` and ``replacesStatements`` removed 
 
 Documentation Changes
 ---------------------
 * Documentation guidance restructured into modelling requirements and system requirements 
 * All documentation and images reviewed and updated 
 * New pages added: 
+
   * Dates guidance 
   * Generating statements
   * Record identifiers
