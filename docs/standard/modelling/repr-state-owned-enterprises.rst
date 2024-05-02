@@ -85,7 +85,7 @@ An SOE is formed by statute.
    :align: center
 
 Government-linked investment entity
-^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A state's interests in an SOE are managed via a government-linked investment entity (GLIE).
 
