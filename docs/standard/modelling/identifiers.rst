@@ -1,142 +1,95 @@
 .. _guidance-identifiers:
 
 Real world identifiers
-=============================
+==================================
 
-Overview
-------------------------
+Real world identifiers are essential for making beneficial ownership data interoperable. By 'real world identifier' we mean reference strings, issued by authoritative registration schemes, which have gained widespread use in the world. People can use them to verify that the referenced person, entity or item exists.
 
-To create a link between statements, and the real-world organisations and people they relate to, statements may include a range of identifying information. We use a common :any:`Identifier object <schema-identifier>` with the following properties:
+In BODS, real world identifiers can be published for:
 
-* ``scheme`` should be a value from a codelist of known identifier sources. Separate codelists exist for entities and persons. See below.
+- entities
+- people
+- stock markets and trading exchanges
+- tradable securities
 
-* ``id`` should be the value assigned to the relevant entity or person in that scheme.
+Entity identifiers
+-------------------------------
 
-* ``uri`` may be used to provide a canonical URI for the entity or person within the scheme.
+Use an :ref:`Identifier <schema-identifier>` in the ``identifiers`` array of an Entity Statement to supply a company registration number, Legal Entity Identifier (LEI), or other real world identifier.
 
-* ``schemeName`` should be the name of the list, registry or ID system.
+The value for ``Identifier.scheme`` SHOULD come from `org-id.guide <http://org-id.guide>`_. This resource contains details of company registers and other identifier sources. If the identifier scheme you need to reference is not already listed on org-id.guide `propose a new entry <https://org-idguide-handbook.readthedocs.io/en/latest/contribute/#proposing-a-new-entry>`_.
 
-A good-quality Identifier will contain ``scheme`` and ``id`` values which will uniquely identify an entity or person. Where these are not available, ``schemeName`` can be used to refer to the registration system in which the person or entity is known to be represented. When publishing an Identifier object, a value for either ``scheme`` or ``schemeName`` MUST be present.
+If it is useful to publish an internal identifier from your data management system, first consider whether it should be used as a :ref:`record identifier <record-identifiers>`. If not, either:
 
-Other identifiable objects
-++++++++++++++++++++++++++
+- publish your full list of internal identifiers, and propose it as an entry to `org-id.guide <http://org-id.guide>`_, or
+- use ``schemeName`` to identify your system and leave ``scheme`` blank
 
-Links to identifiable objects, artefacts and institutions are also made elsewhere in the schema. For example, tradable company securities can be referenced with an identifier. More information on such elements of the schema is provided below.
+Person identifiers
+----------------------------------
 
+Global identifiers
++++++++++++++++++++
 
-Entity Identifiers
-------------------
+If the system holds identification numbers for a person, and these can be published without privacy or security risks, then these SHOULD be included in the ``identifiers`` array of the Person Statement.
 
-The values for ``scheme`` within an Entity Statement Identifier should be drawn from the `http://org-id.guide <http://org-id.guide>`_ codelist. This contains details of hundreds of company registers and other identifier sources. 
-
-Where the publisher is providing an internal identifier, the publisher should either:
-
-* Publish their full list of internal identifiers, and register this list with the `http://org-id.guide <http://org-id.guide>`_ codelist; or
-* Use MISC-{Publisher_Name} as the scheme
-
-
-Person Identifiers
-------------------
-
-System Identifiers
-++++++++++++++++++
-
-If the source system has assigned a unique identifier to individual persons, and this identifier can be published, then this should be included with the scheme 'MISC-{Publisher Name}'.
-
-For example, a beneficial ownership reporting system may maintain a database table of 'person' records, each with its identifier as a primary key. So that users can recognise references to the same person mentioned in separate statements, this identifier should be included in the published data, either in raw form, or modified to ensure a unique value. 
-
-
-Shared identifiers
-++++++++++++++++++
-
-If the source system has collected one or more known identification numbers for a person, and these can be published without privacy or security risks, then these should also be included in the ``PersonStatement.identifiers`` array. 
-
-In such cases, the values for ``scheme`` should be based on the following pattern:
+In such cases, the values for ``scheme`` SHOULD be:
 
 {JURISDICTION}-{TYPE}
 
-Where jurisdiction is expressed using the extended ISO 3-digit country codes list proposed by in `ICAO Document 9303 §5 <http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_ (pages 22-29).
+Where {JURISDICTION} is an `ISO 3-digit country code <https://www.iso.org/iso-3166-country-codes.html>`_ (or one of the extensions in `ICAO Document 9303 §5 <http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_, pages 21-23). And {TYPE} is one of 'PASSPORT', 'TAXID' or 'IDCARD'.
 
-For example, a passport number from Afghanistan would have the scheme:
+For example, a passport number from Afghanistan would have the ``scheme`` value:
 
-> AFG-PASSPORT-{NUMBER}
+> AFG-PASSPORT
 
-Where the publisher is providing an internal identifier, these should use 'MISC-{Publisher_Name}' as the scheme.
+.. warning::
+  When making BODS data publicly available, it is important to ensure any person identifiers are suitable for publication under national laws and data protection frameworks.
 
-.. warning:: 
+  Most of the identifier types listed below are not suitable for publication as part of an open dataset.
 
-  When using BODS to provide open data, it is important to ensure any person identifiers are suitable for publication under national laws and data protection frameworks.
+The following identification types can currently be used in BODS. Suggestions for new types should be made through the `issue tracker <https://github.com/openownership/data-standard/issues>`_.
 
-  Most of the identifier types listed below **are not** suitable for publication as part of an open dataset.
+**PASSPORT**
 
-
-The following identification types are currently documented. Suggestions for new types should be made through the `issue tracker <https://github.com/openownership/data-standard/issues>`_. 
-
-PASSPORT
-++++++++
-
-Passport numbers should follow the format of the identifier (second) line in a machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 <http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) including at least the document number. 
+Passport numbers SHOULD follow the format of the identifier line in a machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 <http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) including at least the document number.
 
 Parsers should be able to extract the document number from the first 9 characters, and to access any subsequent information supplied according to the ICAO format.
 
-TAXID
-+++++
+**TAXID**
 
-Country taxpayer identification systems vary. Where specific guidance on including numbers from a particular jurisdiction is required, this may be included here in future.
+Taxpayer identification regimes vary from country to country. Where guidance on including numbers from a particular jurisdiction is required, this may be included here in future.
 
-IDCARD
-++++++
+**IDCARD**
 
-Country ID card systems vary. Where specific guidance on including numbers from a particular jurisdiction is required, this may be included here in future.
+ID card systems vary. Where guidance on including numbers from a particular jurisdiction is required, this may be included here in future.
+
+Special case: internal identifiers
++++++++++++++++++++++++++++++++++++
+
+Data management systems may generate internal identifiers for people, or for records about people, or both.
+
+If multiple records in the system are known to relate to the same person, the data management system SHOULD assign a unique identifier to the person, and publish this identifier in the associated records. The identifier SHOULD be included in the ``identifiers`` array with a ``schemeName`` value ‘{publisher name}-{identifier type}’. For example, 'AtlantisCorporateRegister-PersonReference'.
+
+Alternatively, if a known person is only ever represented by one record on the system, then an internal person identifier may serve as the ``recordId``. See :ref:`record-identifiers`.
 
 
-Multiple Identifiers for entities or people
--------------------------------------------
+Market identifier codes (MICs)
+----------------------------------------------
 
-A source system might hold the following identifying information for a single company:
+See this :ref:`example data <examples-plc>` for a valid use of MICs.
 
-- A registered company number; and
-- A VAT number;
-
-In this case, two entries can be created in the Entity statement's ``identifiers`` array:
-
-.. code-block:: json
-
-    [
-        {
-            "scheme":"GB-COH",
-            "id":"012345678"
-        },
-        {
-            "scheme":"GB-VAT",
-            "id":"65251235"
-        }
-    ]
-
-Person Statements may also hold an array of Identifiers.
-
-.. _guidance-identifiers-other:
-
-Other identifiers
------------------
-
-Market Identifier Codes (MICs)
-++++++++++++++++++++++++++++++
-
-See this `company information published as BODS JSON <https://github.com/openownership/data-standard/blob/master/tests/data/entity-statement/valid/valid-entity-statement-plc.json>`_ for an example of a valid use of MICs.
-
-When a company is listed, a ``publicListing`` object can be published within the Entity Statement, containing information about its securities and where they are traded. An array of ``securitiesListings`` MAY be built and, for each security and market on which it is traded, the identifier for the market MAY be published.
-
-Two properties SHOULD be used to accurately identify where a security is traded: the ``operatingMarketIdentifierCode`` of the operating market plus a ``marketIdentifierCode``. The ``marketIdentifierCode`` will be the same as the ``operatingMarketIdentifierCode`` if the security is traded on a main exchange. However the ``marketIdentifierCode`` will differ where a security is traded on a segment of an exchange.
+Two properties in an Entity Statement’s :ref:`Securities Listing <schema-securities-listing>` object identify where a security is traded: the ``operatingMarketIdentifierCode`` of the operating market and the ``marketIdentifierCode``. The ``marketIdentifierCode`` SHOULD be the same as the ``operatingMarketIdentifierCode`` if the security is traded on a main exchange. The ``marketIdentifierCode`` will differ where a security is traded on a segment of an exchange.
 
 MICs are standardised, issued and maintained by SWIFT as `ISO 10383 <https://www.iso20022.org/market-identifier-codes>`_. The specification of ``operatingMarketIdentifierCode`` and ``marketIdentifierCode`` is part of the ISO standard.
 
+.. guidance-identifiers-securities:
+
 Tradable security identifiers
-+++++++++++++++++++++++++++++
+---------------------------------------------
 
-See this `company information published as BODS JSON <https://github.com/openownership/data-standard/blob/master/tests/data/entity-statement/valid/valid-entity-statement-plc.json>`_ for an example use of securities identifiers.
+See this :ref:`example data <examples-plc>` for a valid use of securities identifiers.
 
-Where a ``securitiesListing`` is supplied (see above), it MUST include a ``ticker`` value. This will allow trades of that security to be tracked on the identified market. However, securities can be traded on several exchanges and therefore a globally unique identifier for the security SHOULD also be supplied where possible. Supported identifier schemes for securities are listed on the :any:`schema reference page <schema-codelists>`. The identifier scheme and the security’s ID under that scheme should be published as ``idScheme`` and ``id`` respectively.
+Where a :ref:`Securities Listing <schema-securities-listing>` is supplied, it needs to include a ``ticker`` value. This will allow trades of that security to be tracked on the identified market. However, securities can be traded on several exchanges and therefore supplying a globally unique identifier for the security is RECOMMENDED. Supported identifier schemes for securities are listed on the :ref:`schema reference page <schema-reference>`. Publish the identifier scheme and the security’s ID as ``idScheme`` and ``id`` respectively.
 
 
 

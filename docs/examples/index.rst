@@ -3,6 +3,8 @@ Examples
 
 These fictional examples highlight key elements of how ownership and control information is built up through the use of statements.
 
+.. _examples-simple-bo:
+
 A single, direct beneficial owner
 ---------------------------------
 
@@ -10,13 +12,25 @@ Three statements (Entity, Person and Relationship) that describe the beneficial 
 
 .. literalinclude:: ../../examples/bods-package.json
     :language: json
-    
+
+.. _examples-trust:
+
 A trust-like arrangement
 ------------------------
 
 This example demonstrates how the beneficial ownership of a trust-like arrangement can be represented using BODS. A fiducie is registered with information about the settlor and trustees disclosed. The beneficiary is exempt from disclosure.
 
 .. literalinclude:: ../../examples/levent.json
+    :language: json
+
+.. _examples-plc:
+
+An entity statement for a listed company
+-----------------------------------------
+
+This statement demonstrates how the details of a listed company can be published in BODS format.
+
+.. literalinclude:: ../../examples/plc-entity-statement.json
     :language: json
 
 Updating information over time 1
