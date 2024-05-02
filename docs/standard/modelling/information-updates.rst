@@ -43,7 +43,7 @@ Error correction
 
 Errors in published data may be due to mistakes at the point of information disclosure, or the incorrect processing of information by the data management system.
 
-In either case, errors SHOULD be corrected by the issuing of new statements including an :any:`annotation <schema-annotation>` with the ``motivation`` 'correcting' and a ``description`` of the correction and an updated ``publicationDetails.publicationDate``.
+In either case, errors SHOULD be corrected by the issuing of new statements including an :any:`annotation <schema-annotation>`, with the ``motivation`` 'correcting' and a ``description`` of the correction, and an updated ``publicationDetails.publicationDate``.
 
 See the example in :any:`guidance-dates`.
 
