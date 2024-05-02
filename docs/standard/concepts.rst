@@ -48,7 +48,7 @@ Representing beneficial ownership information in this way allows people to make 
 
 Statements should therefore be considered immutable – presenting details about an element of beneficial ownership as claimed at a particular point in time. 
 
-To achieve this, a data management system needs to include: 
+To achieve this, each Statement produced by a data management system needs to include: 
 - the details claimed about the entity, person or relationship, as stored by records in the system
 - information about the source, date and context of the claim
 
