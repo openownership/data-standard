@@ -21,7 +21,7 @@ Strategies for statement identifier creation
 
 Publishers MAY use one of the following strategies to create statement identifiers.
 
-* Generate a `UUID <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ for the first Statement related to a record. Store this in the data management system. Update it whenever the relevant record is updated. 
+* Generate a `UUID <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ for the first Statement for a record. Store this in the data management system. Update it whenever the relevant record is updated. 
 * Generate a `UUID <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ as a publisher-related prefix. Append the relevant ``recordId``, and a version identifier to it.
 * Use an appropriately designed hash function that generates identifiers from a normalised JSON representation of the statement (excluding the ``statementId`` field) with a low collision probability.
 * Use an internal identifier combined with a unique prefix to avoid collision between identifiers from different publishers.
