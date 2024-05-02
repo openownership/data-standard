@@ -70,7 +70,7 @@ Managing official
 An SOE controlled by a natural person.
 
 .. figure:: ../../_assets/SOE-scenario5.svg
-   :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'state' and jurisdiction 'zm'). The Entity statement with entityType type 'registeredEntity' is also connected to a Relationship statement which has interests.0.type set to 'seniorManagingOfficial'. That last Ownership-or-control statement is connected to a Person statement with personType set to 'knownPerson'.
+   :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'state' and jurisdiction 'zm'). The Entity statement with entityType type 'registeredEntity' is also connected to a Relationship statement which has interests.0.type set to 'seniorManagingOfficial'. That last Relationship statement is connected to a Person statement with personType set to 'knownPerson'.
    :figwidth: 85%
    :align: center
 
