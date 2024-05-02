@@ -233,8 +233,8 @@ redirect_files = [
 def copy_legacy_redirects(app, docname):  # Sphinx expects two arguments
     if app.builder.name == 'html' or app.builder.name == 'readthedocs':
         for html_src_path in redirect_files:
-            target_path = app.outdir + '/' + html_src_path
-            src_path = app.srcdir + '/' + html_src_path
+            target_path = os.path.join(app.outdir, html_src_path)
+            src_path = os.path.join(app.srcdir, html_src_path)
             if os.path.isfile(src_path):
                 copyfile(src_path, target_path)
 
