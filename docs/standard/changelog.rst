@@ -6,25 +6,45 @@ ChangeLog
 
 .. include:: warningbox.rst
 
-[Unreleased]
-============
+0.4 - 2024-05-04
+================
+BODS 0.4 is a major overhaul to the schema and documentation. 
 
-Changed
--------
-- Removed ``securitiesListing`` from required fields in ``hasPublicListing``.
-- Scenario added to 'Representing state-owned enterprises' page covering ownership or control by a regional government.
+Feature changes 
+---------------
+* Representing change over time
+* Separating data and meta data
+* Representing declarations
+
+See :any:`key-concepts` an :any:`modelling-requirements` for information about these features 
 
 Alterations to schema structure and logic
 -----------------------------------------
-- Updated the JSON Schema version from draft-04 to 2020-12.
-  - `Interest/share/maximum` is now inclusive by default. `exclusiveMinimum` and `exclusiveMaximum` are now numbers (instead of booleans), which are used in the same way as and alongside their inclusive counterparts `minimum` and `maximum`.
-  - `id` to `$id`
-  - `definitions` to `$defs`
-  - `enum`s with one value are now `const`
-- Updated which date formats are valid for all date fields.
-  - Interest `startDate` and `endDate`, PEP Status `startDate` and `endDate`, Entity `foundingDate` and `dissolutionDate`, and formedByStatute `date` are more strict - only date (YYYY-MM-DD) is valid; timestamps and partial dates are no longer valid.
-  - Person `birthDate` and `deathDate` are more strict - year (YYYY), year and month (YYYY-MM) and year, month and day (YYYY-MM-DD) are valid, but timestamps are no longer valid.
-  - Annotation `creationDate`, PublicationDetails `publicationDate` are less strict - valid as date or date-time (partial dates are still not valid).
+* Updated the JSON Schema version from draft-04 to 2020-12
+* Included as much validation as possible within the schema  
+* Updated which date formats are valid for all date fields
+* Schema and codelist titles and descriptions updated
+
+Specific objects and fields  
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* `entityType` and `entitySubtype` combined into `entityType`
+* `Interest/share/maximum` is now inclusive by default. `exclusiveMinimum` and `exclusiveMaximum` are now numbers
+* `statementDate` now required
+* `securitiesListing` removed from required fields in ``hasPublicListing``
+* `placeOfResidence`, `agent` and `replacesStatements` removed 
+
+Documentation Changes
+---------------------
+* Documentation guidance restructured into modelling requirements and system requirements 
+* All documentation and images reviewed and updated 
+* New pages added: 
+  * Dates guidance 
+  * Generating statements
+  * Record identifiers
+  * Representing trusts 
+  * Representing nominees 
+  * Representing record updates
+
 
 [0.3] - 2022-04-15
 ==================
