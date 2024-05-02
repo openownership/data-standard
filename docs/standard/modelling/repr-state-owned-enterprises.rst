@@ -80,7 +80,7 @@ Formed by statute
 An SOE is formed by statute.
 
 .. figure:: ../../_assets/SOE-scenario6.svg
-   :alt: Entity statement (with entityType type 'legalEntity', formedByLegislation.name set to 'National Energy Act', and formedByLegislation.date set to '1980-02-01') is connected via a Relationship statement to an Entity statement (with entityType type 'stateBody' and jurisdiction 'zm'). The Ownership-or-control statement has interests.0.type set to 'controlByLegalFramework'.
+   :alt: Entity statement (with entityType type 'legalEntity', formedByLegislation.name set to 'National Energy Act', and formedByLegislation.date set to '1980-02-01') is connected via a Relationship statement to an Entity statement (with entityType type 'stateBody' and jurisdiction 'zm'). The Relationship statement has interests.0.type set to 'controlByLegalFramework'.
    :figwidth: 50%
    :align: center
 
