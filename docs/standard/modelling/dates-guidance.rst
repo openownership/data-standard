@@ -14,7 +14,7 @@ In BODS, dates represent real world events and information about how data has mo
 
 ``interest.startDate`` is the date an interest started. For example, the date that shares were purchased or someone was appointed to the board of directors.
 
-``interest.endDate`` is the date an interest ended. For example, the date that shares were divested of or someone resigned from the board of directors.
+``interest.endDate`` is the date an interest ended. For example, the date that shares were divested of or that someone resigned from the board of directors.
 
 ``source.retrievedAt`` is only applicable where data is being republished. For example, some third parties might download data from government registries, transform it into BODS format and share it elsewhere. When this is done, they must provide information on when they downloaded the data from the government registry. 
 
