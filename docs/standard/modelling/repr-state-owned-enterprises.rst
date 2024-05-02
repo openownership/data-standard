@@ -37,7 +37,7 @@ Ownership or control by a state body is known and a statement about these intere
 Ownership by regional government
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Beneficial ownership by a regional state government is known and a statement about ownership is possible.
+Ownership or control by a regional state government is known and a statement about these interests is possible.
 
 .. figure:: ../../_assets/SOE-scenario2.svg
    :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'state' and jurisdiction 'zm').
