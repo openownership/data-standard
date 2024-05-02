@@ -7,36 +7,14 @@ ChangeLog
 .. include:: warningbox.rst
 
 0.4 - 2024-05-04
-================
-BODS 0.4 is a major overhaul to the schema and documentation. 
+================ 
 
-Feature changes 
----------------
-* Representing change over time
-* Separating data and meta data
-* Representing declarations
-
-See :any:`key-concepts` an :any:`modelling-requirements` for information about these features 
-
-Alterations to schema structure and logic
------------------------------------------
-* Updated the JSON Schema version from draft-04 to 2020-12
-* Included as much validation as possible within the schema  
-* Updated which date formats are valid for all date fields
-* Schema and codelist titles and descriptions updated
-* Changes to specific objects and fields: 
-
-  * ``entityType`` and ``entitySubtype`` combined into ``entityType``
-  * ``Interest/share/maximum`` is now inclusive by default. ``exclusiveMinimum`` and ``exclusiveMaximum`` are now numbers
-  * ``statementDate`` now required
-  * ``securitiesListing`` removed from required fields in ``hasPublicListing``
-  * ``placeOfResidence``, ``agent`` and ``replacesStatements`` removed 
-
-Documentation Changes
----------------------
-* Documentation guidance restructured into modelling requirements and system requirements 
-* All documentation and images reviewed and updated 
-* New pages added: 
+Added
+-----
+* Separation of metadata and data into statements and records
+* ``declaration`` and ``declarationSubject`` 
+* ``recordId`` and ``recordStatus`` to model change over time 
+* New documentation pages: 
 
   * Dates guidance 
   * Generating statements
@@ -44,6 +22,32 @@ Documentation Changes
   * Representing trusts 
   * Representing nominees 
   * Representing record updates
+
+Changed
+-------
+  * valid date formats for all date fields 
+  * ``entityType`` and ``entitySubtype`` combined into ``entityType``
+  * ``Interest/share/maximum`` is now inclusive by default. ``exclusiveMinimum`` and ``exclusiveMaximum`` are now numbers
+  * ``statementDate`` now required
+  * ``securitiesListing`` removed from required fields in ``hasPublicListing``
+  * Schema and codelist titles and descriptions updated
+  * Documentation images and text updated 
+  * Documentation guidance restructured into modelling requirements and system requirements 
+  
+Removed
+-------
+ * ``placeOfResidence``
+ * ``agent``
+ * ``replacesStatements``
+ *  Functional Requirements page
+ 
+ Alterations to schema structure and logic
+-----------------------------------------
+* Updated the JSON Schema version from draft-04 to 2020-12
+* Included as much validation as possible within the schema 
+* id to $id
+* definitions to $defs
+* enum`s with one value are now `const`
 
 
 [0.3] - 2022-04-15
