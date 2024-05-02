@@ -27,7 +27,7 @@ Examples
 Ownership by state body
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Beneficial ownership by a state body is known and a statement about ownership is possible.
+Ownership or control by a state body is known and a statement about these interests is possible.
 
 .. figure:: ../../_assets/SOE-scenario1.svg
    :alt: Entity statement (with entityType type 'registeredEntity') is connected via a Relationship statement to an Entity statement (with entityType type 'stateBody' and jurisdiction 'gb').
