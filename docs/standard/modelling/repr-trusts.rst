@@ -5,7 +5,7 @@ Representing trusts
 
 Overview
 --------
-In this documentation the term ‘trust’ is inclusive of trusts and trust-like arrangements (such as *fiducie*, *treuhand* and *waqf*). 
+In this documentation, the term ‘trust’ is inclusive of trusts and trust-like arrangements (such as *fiducie*, *treuhand* and *waqf*). 
 
 BODS can be used to represent the beneficial ownership of trusts and the beneficial ownership of entities via trusts. Trusts are represented by an Entity statement. 
 
@@ -27,11 +27,10 @@ Relationships between trusts and their parties MUST be represented using only th
 ``interest.details`` MAY be used to give a local name (e.g. "fiduciaire") or more information about the interest (e.g. "power to dissolve trust").
 
 Example Scenarios 
------------------
-These examples show how statements could be connected to represent trusts within beneficial ownership networks. Only the property:value pairs that are relevant to the scenario are shown in the statement blocks. 
+----------------- 
 
-Scenario 1
-^^^^^^^^^^
+Trust without legal personality 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A trust with a known beneficiary, known trustee and known settlor. The trust does not have a legal personality.
 
 .. figure:: ../../_assets/trust-scenario1.svg
@@ -39,8 +38,8 @@ A trust with a known beneficiary, known trustee and known settlor. The trust doe
    :figwidth: 80%
    :align: center
    
-Scenario 2
-^^^^^^^^^^
+Trust with legal personality and protector
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A trust with a known beneficiary, known trustee, known settlor and known protector. The trust has a legal personality. 
 
 .. figure:: ../../_assets/trust-scenario2.svg
@@ -49,8 +48,8 @@ A trust with a known beneficiary, known trustee, known settlor and known protect
    :align: center
    
    
-Scenario 3
-^^^^^^^^^^
+Trust with combined roles and anonymous beneficiary 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A trust where the settlor is also a trustee and the beneficiary is anonymous due to a disclosure exemption.
 
 .. figure:: ../../_assets/trust-scenario3.svg
@@ -58,8 +57,8 @@ A trust where the settlor is also a trustee and the beneficiary is anonymous due
    :figwidth: 95%
    :align: center
 
-Scenario 4
-^^^^^^^^^^
+Trust-like arrangement 
+^^^^^^^^^^^^^^^^^^^^^^
 A trust-like arrangement with local names for the entityType and interestTypes. 
 
 .. figure:: ../../_assets/trust-scenario4.svg
@@ -67,8 +66,8 @@ A trust-like arrangement with local names for the entityType and interestTypes.
    :figwidth: 82%
    :align: center
 
-Scenario 5
-^^^^^^^^^^
+Company shares held in trust
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A significant stake in a company is held in a trust. The parties to the trust are the beneficial owners of the company. Dotted lines represent the further Relationship Statements needed to represent the indirect beneficial ownership of the parties. 
 
 See :ref:`representing-bo` for guidance on representing indirect beneficial ownership.
@@ -78,8 +77,8 @@ See :ref:`representing-bo` for guidance on representing indirect beneficial owne
    :figwidth: 90%
    :align: center
    
-Scenario 6
-^^^^^^^^^^
+Company as a trustee
+^^^^^^^^^^^^^^^^^^^^
 A trust where the trustee is a company. In this jurisdiction, the owner of the company is deemed to be an indirect beneficial owner of the trust.
 
 See :ref:`representing-bo` for guidance on representing indirect beneficial ownership.

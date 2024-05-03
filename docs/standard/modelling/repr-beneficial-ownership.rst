@@ -48,7 +48,7 @@ If a person is a beneficial owner of an entity, entity X, (whether directly or i
 - the entity’s ``recordId`` value MUST be the ``subject``
 - the person’s ``recordId`` value MUST be the ``interestedParty``
 - ``isComponent`` MUST be false
-- the ``interests`` which make the person meet the criteria for their being declared a beneficial owner MUST be included if known. They MUST have ``beneficialOwnershipOrControl`` set to 'true'. If an interest is known to be exercised indirectly, via intermediary entities then ``directOrIndirect`` MUST be ‘indirect’. If it is known to be exercised directly then ``directOrIndirect`` MUST be ‘direct’. Otherwise ``directOrIndirect`` MUST be ‘unknown’.
+- the ``interests`` which make the person meet the criteria for being declared a beneficial owner MUST be included if known. They MUST have ``beneficialOwnershipOrControl`` set to 'true'. If an interest is known to be exercised indirectly, via intermediary entities then ``directOrIndirect`` MUST be ‘indirect’. If it is known to be exercised directly then ``directOrIndirect`` MUST be ‘direct’. Otherwise ``directOrIndirect`` MUST be ‘unknown’.
 
 Intermediaries
 ^^^^^^^^^^^^^^

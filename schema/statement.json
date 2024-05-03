@@ -75,7 +75,7 @@
             "publisher": {
               "type": "object",
               "title": "Publisher",
-              "description": "Details of the organisation or individual publishing a Statement.",
+              "description": "Details of the organisation or person publishing a Statement.",
               "properties": {
                 "name": {
                   "title": "Name",
@@ -275,7 +275,7 @@
         },
         "description": {
           "title": "Description",
-          "description": "A free-text description providing extra information about part of this Statement.",
+          "description": "A free text description providing extra information about part of this Statement.",
           "type": "string"
         },
         "transformedContent": {
