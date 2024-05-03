@@ -31,6 +31,7 @@ Changed
 * Documentation guidance restructured into modelling requirements and system requirements
 * 'Ownership-or-control' statements renamed 'Relationship' statements
 * Statement fields:
+
   * ``statementDate`` now required
   * ``statementType`` replaced with ``recordType``
   * ``statementID`` renamed ``statementId``
