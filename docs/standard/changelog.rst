@@ -12,7 +12,7 @@ ChangeLog
 Added
 -----
 * ``recordDetails`` object to contain person, entity or relationship fields within a Statement.
-* ``declaration`` and ``declarationSubject`` to model declarations
+* ``declaration`` and ``declarationSubject`` to support grouping of Statements by parent declaration (filing) or by the declarant
 * ``recordId`` and ``recordStatus`` to model change over time 
 * New documentation pages: 
 
