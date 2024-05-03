@@ -41,7 +41,7 @@ Removed
  * ``replacesStatements``
  *  Functional Requirements page
  
- Alterations to schema structure and logic
+Alterations to schema structure and logic
 -----------------------------------------
 * Updated the JSON Schema version from draft-04 to 2020-12
 * Included as much validation as possible within the schema 
