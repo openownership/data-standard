@@ -33,6 +33,11 @@ Changed
   * Schema and codelist titles and descriptions updated
   * Documentation images and text updated 
   * Documentation guidance restructured into modelling requirements and system requirements 
+  * Renamed nameType code ``individual`` to ``legal`` 
+  * ``statementType`` replaced with ``recordType``
+  * ``nominee`` and ``nominator`` added to interest type codelist 
+  * ``nomination``, ``trust`` added to ``entitySubtype`` codelist
+  * prefixes removed from ``entitySubtype`` codelist 
   
 Removed
 -------
