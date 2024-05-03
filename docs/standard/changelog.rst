@@ -12,7 +12,7 @@ ChangeLog
 Added
 -----
 * Separation of metadata and data into statements and records
-* ``declaration`` and ``declarationSubject`` 
+* ``declaration`` and ``declarationSubject`` to model declarations
 * ``recordId`` and ``recordStatus`` to model change over time 
 * New documentation pages: 
 
@@ -25,26 +25,38 @@ Added
 
 Changed
 -------
-  * valid date formats for all date fields 
-  * ``entityType`` and ``entitySubtype`` combined into ``entityType``
-  * ``Interest/share/maximum`` is now inclusive by default. ``exclusiveMinimum`` and ``exclusiveMaximum`` are now numbers
+* valid date formats for all date fields restricted 
+* Schema and codelist titles and descriptions updated
+* Documentation images and text updated 
+* Documentation guidance restructured into modelling requirements and system requirements
+* Ownership-or-control statements replaced with Relationship statements
+* Statement fields:
   * ``statementDate`` now required
-  * ``securitiesListing`` removed from required fields in ``hasPublicListing``
-  * Schema and codelist titles and descriptions updated
-  * Documentation images and text updated 
-  * Documentation guidance restructured into modelling requirements and system requirements 
-  * Renamed nameType code ``individual`` to ``legal`` 
   * ``statementType`` replaced with ``recordType``
+  * ``statementID`` renamed ``statementId``
+* Entity fields: 
+  * ``entityType`` and ``entitySubtype`` combined into ``entityType``
+  * ``securitiesListing`` removed from required fields in ``hasPublicListing``
+  * ``nomination`` and ``trust`` added to ``entitySubtype`` codelist
+  * prefixes removed from ``entitySubtype`` codelist (e.g. ``stateBody-stateAgency`` is now ``stateAgency``) 
+* Relationship fields:
+  * ``Interest/share/maximum`` is now inclusive by default. ``exclusiveMinimum`` and ``exclusiveMaximum`` are now numbers
   * ``nominee`` and ``nominator`` added to interest type codelist 
-  * ``nomination``, ``trust`` added to ``entitySubtype`` codelist
-  * prefixes removed from ``entitySubtype`` codelist 
-  
+  * ``interestedParty.describedByEntityStatement``, ``interestedParty.describedByPersonStatement``, ``interestedParty.unspecified`` combined into ``interestedParty`` which is either a string referring to a recordId or an Unspecified Record. 
+  * ``componentStatementIds`` replaced with ``componentRecordIds``
+* Person fields:
+  * ``fullName`` is now required 
+  * Renamed nameType code ``individual`` to ``legal`` 
+* ``address.country`` is now a Country object not a country code. 
+
 Removed
 -------
  * ``placeOfResidence``
  * ``agent``
  * ``replacesStatements``
- *  Functional Requirements page
+ * Functional requirements page
+ * Sources and annotations page
+
  
 Alterations to schema structure and logic
 -----------------------------------------
