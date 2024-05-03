@@ -102,7 +102,9 @@
             "unknownInterest",
             "unpublishedInterest",
             "enjoymentAndUseOfAssets",
-            "rightToProfitOrIncomeFromAssets"
+            "rightToProfitOrIncomeFromAssets",
+            "nominee",
+            "nominator" 
           ],
           "codelist": "interestType.csv",
           "openCodelist": false
