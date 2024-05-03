@@ -42,6 +42,7 @@ Changed
   * 'nomination' and 'trust' added ``entitySubtype`` codelist
   * prefixes removed from ``entitySubtype`` codelist (e.g. 'stateBody-stateAgency' is now 'stateAgency') 
 * Relationship fields:
+
   * ``Interest/share/maximum`` is now inclusive by default. ``exclusiveMinimum`` and ``exclusiveMaximum`` are now numbers
   * ``nominee`` and ``nominator`` added to interest type codelist 
   * ``interestedParty.describedByEntityStatement``, ``interestedParty.describedByPersonStatement``, ``interestedParty.unspecified`` combined into ``interestedParty`` which is either a string referring to a recordId or an Unspecified Record. 
