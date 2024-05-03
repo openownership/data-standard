@@ -64,7 +64,7 @@ Alterations to schema structure and logic
 * Included as much validation as possible within the schema 
 * id to $id
 * definitions to $defs
-* enum`s with one value are now `const`
+* enum types with one value replaced with const type
 
 
 [0.3] - 2022-04-15
