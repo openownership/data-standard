@@ -6,7 +6,7 @@ ChangeLog
 
 .. include:: warningbox.rst
 
-0.4 - 2024-05-04
+[0.4] - 2024-05-08
 ================ 
 
 Added
