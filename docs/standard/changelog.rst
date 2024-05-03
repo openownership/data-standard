@@ -63,6 +63,7 @@ Removed
 Alterations to schema structure and logic
 -----------------------------------------
 * Updated the JSON Schema version from draft-04 to 2020-12
+* Schema files renamed and contents refactored
 * Included as much validation as possible within the schema 
 * id to $id
 * definitions to $defs
