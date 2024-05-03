@@ -46,7 +46,7 @@ Changed
   * ``componentStatementIds`` renamed ``componentRecordIds`` and now holds ``recordId`` values
 * Person fields:
   * ``fullName`` is now required 
-  * Renamed nameType code ``individual`` to ``legal`` 
+  * Renamed ``name.type`` code 'individual' to 'legal'
 * ``address.country`` is now a Country object not a country code. 
 
 Removed
