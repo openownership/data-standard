@@ -11,7 +11,7 @@ ChangeLog
 
 Added
 -----
-* Separation of metadata and data into statements and records
+* ``recordDetails`` object to contain person, entity or relationship fields within a Statement.
 * ``declaration`` and ``declarationSubject`` to model declarations
 * ``recordId`` and ``recordStatus`` to model change over time 
 * New documentation pages: 
