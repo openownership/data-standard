@@ -43,7 +43,7 @@ Changed
   * ``Interest/share/maximum`` is now inclusive by default. ``exclusiveMinimum`` and ``exclusiveMaximum`` are now numbers
   * ``nominee`` and ``nominator`` added to interest type codelist 
   * ``interestedParty.describedByEntityStatement``, ``interestedParty.describedByPersonStatement``, ``interestedParty.unspecified`` combined into ``interestedParty`` which is either a string referring to a recordId or an Unspecified Record. 
-  * ``componentStatementIds`` replaced with ``componentRecordIds``
+  * ``componentStatementIds`` renamed ``componentRecordIds`` and now holds ``recordId`` values
 * Person fields:
   * ``fullName`` is now required 
   * Renamed nameType code ``individual`` to ``legal`` 
