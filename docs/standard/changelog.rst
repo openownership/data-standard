@@ -25,7 +25,7 @@ Added
 
 Changed
 -------
-* valid date formats for all date fields restricted 
+* All date and date-time fields reviewed to ensure appropriate validation 
 * Schema and codelist titles and descriptions updated
 * Documentation images and text updated 
 * Documentation guidance restructured into modelling requirements and system requirements
