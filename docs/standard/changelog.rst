@@ -29,7 +29,7 @@ Changed
 * Schema and codelist titles and descriptions updated
 * Documentation images and text updated 
 * Documentation guidance restructured into modelling requirements and system requirements
-* Ownership-or-control statements replaced with Relationship statements
+* 'Ownership-or-control' statements renamed 'Relationship' statements
 * Statement fields:
   * ``statementDate`` now required
   * ``statementType`` replaced with ``recordType``
