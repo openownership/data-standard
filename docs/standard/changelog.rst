@@ -40,7 +40,7 @@ Changed
   * ``entityType`` and ``entitySubtype`` combined into ``entityType``
   * ``securitiesListing`` removed from required fields in ``hasPublicListing``
   * 'nomination' and 'trust' added ``entitySubtype`` codelist
-  * prefixes removed from ``entitySubtype`` codelist (e.g. ``stateBody-stateAgency`` is now ``stateAgency``) 
+  * prefixes removed from ``entitySubtype`` codelist (e.g. 'stateBody-stateAgency' is now 'stateAgency') 
 * Relationship fields:
   * ``Interest/share/maximum`` is now inclusive by default. ``exclusiveMinimum`` and ``exclusiveMaximum`` are now numbers
   * ``nominee`` and ``nominator`` added to interest type codelist 
