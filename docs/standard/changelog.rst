@@ -36,6 +36,7 @@ Changed
   * ``statementType`` replaced with ``recordType``
   * ``statementID`` renamed ``statementId``
 * Entity fields: 
+
   * ``entityType`` and ``entitySubtype`` combined into ``entityType``
   * ``securitiesListing`` removed from required fields in ``hasPublicListing``
   * ``nomination`` and ``trust`` added to ``entitySubtype`` codelist
