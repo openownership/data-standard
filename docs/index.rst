@@ -1,7 +1,7 @@
 Beneficial Ownership Data Standard (v0.4)
 ============================================
 
-The Beneficial Ownership Data Standard (BODS) is an open standard providing guidance for collecting, sharing and using high-quality data on beneficial ownership. 
+The Beneficial Ownership Data Standard (BODS) is an open standard providing guidance for collecting, sharing and using high-quality beneficial ownership data. 
 
 It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-profit organisation focused on beneficial ownership transparency, in partnership with `Open Data Services <https://opendataservices.coop/>`_. Find out more about the :doc:`governance of BODS <../about/governance>` and how to get involved.
 

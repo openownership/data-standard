@@ -32,7 +32,7 @@ The lifecycle of a record about an element (entity, person or relationship) with
 
 Once a series of Statements about a given element is closed, further Statements with the related ``recordId`` MUST NOT be generated.
 
-When the subject or the interested party of a relationship change, the lifecycle of that relationship is considered to have ended. For example, if the owner of a company transfers their interest to a relative, the ``recordStatus`` of the first relationship would be 'closed', and - potentially - details of a new record would be published.
+When the subject or the interested party of a relationship change, the lifecycle of that relationship is considered to have ended. For example, if the owner of a company transfers their interest to a relative, the ``recordStatus`` of the first relationship would be 'closed', and details of a new record would be published.
 
 Requirements for special cases
 ------------------------------
@@ -43,10 +43,7 @@ Error correction
 
 Errors in published data may be due to mistakes at the point of information disclosure, or the incorrect processing of information by the data management system.
 
-In either case, errors SHOULD be corrected by the issuing of new statements:
-
-- including an :any:`annotation <schema-annotation>` with the ``motivation`` 'correcting' and a ``description`` of the correction
-- with an updated ``publicationDetails.publicationDate``.
+In either case, errors SHOULD be corrected by the issuing of new statements including an :any:`annotation <schema-annotation>`, with the ``motivation`` 'correcting' and a ``description`` of the correction, and an updated ``publicationDetails.publicationDate``.
 
 See the example in :any:`guidance-dates`.
 

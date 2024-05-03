@@ -3,8 +3,7 @@
 About
 =====
 
-This website contains the specification of `version 0.4 of the Beneficial Ownership Data Standard (BODS)
-<https://standard.openownership.org/en/0.4.0/>`__ and support for its use. 
+This website contains the specification of version 0.4 of the Beneficial Ownership Data Standard (BODS) and support for its use. 
 
 BODS is an open standard for collecting, sharing and using high-quality, machine-readable data on beneficial ownership.
 
@@ -28,7 +27,7 @@ Background
 
 Collecting, storing, and making beneficial ownership information available as `structured and interoperable data <https://www.openownership.org/en/principles/structured-data/>`__ improves its functionality. It reduces the cost of producing, using, and maintaining the information, and has a greater chance of meeting beneficial ownership transparency policy goals such as exposing transnational networks of illicit financial flows or supporting effective and timely due diligence.
 
-BODS enables beneficial ownership transparency by providing a conceptual and practical framework for collecting and publishing beneficial ownership data, resulting in data that is interoperable and of higher quality.
+BODS enables beneficial ownership transparency by providing a conceptual and practical framework for collecting and publishing beneficial ownership data, resulting in data that is interoperable and high quality.
 
 BODS is developed by `Open Ownership <https://www.openownership.org/>`__, a non-profit organisation focused on beneficial ownership transparency, in partnership with `Open Data Services <https://opendataservices.coop/>`__.
 
@@ -113,5 +112,5 @@ Contact
 
    </h2>
 
-To connect with the data standard support team at Open Ownership, please email
+To contact the data standard support team at Open Ownership, please email
 support@openownership.org.
