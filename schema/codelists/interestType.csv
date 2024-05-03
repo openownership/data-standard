@@ -20,5 +20,5 @@ unknownInterest,Unknown interest,"The interestedParty is known to have an intere
 unpublishedInterest,Unpublished interest,The nature of this interest is known but is not published.,
 enjoymentAndUseOfAssets,Enjoyment and use of assets,The use of assets belonging to an entity.,
 rightToProfitOrIncomeFromAssets,Right to profit or income from assets,"The right to derive profits, income or both from assets belonging to an entity.",
-nominee,Nominee,A person who acts on behalf of the nominator in a nominee arrangement.,
+nominee,Nominee,A person who agrees to act on behalf of the nominator in a specified capacity.,
 nominator,Nominator,A person who instructs a nominee to act on their behalf in a specified capacity.,
