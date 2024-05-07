@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
--e git+https://github.com/openownership/data-standard-sphinx-theme.git@master#egg=standard_theme
+-e git+https://github.com/openownership/data-standard-sphinx-theme.git@master-0.4#egg=standard_theme
     # via -r requirements.in
 alabaster==0.7.16
     # via sphinx
