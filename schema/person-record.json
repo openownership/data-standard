@@ -13,7 +13,7 @@
     },
     "personType": {
       "title": "Person Type",
-      "description": "The status of this person, using the personType codelist. Where the beneficial owner has been identified, but information about them cannot be disclosed, use 'anonymousPerson'. Where the beneficial owner has not been clearly identified, use 'unknownPerson'. Where the beneficial owner has been identified use knownPerson. Where a person has the type 'anonymousPerson' or 'unknownPerson' a reason for the absence of information SHOULD be provided in 'unspecifiedPersonDetails')",
+      "description": "The status of this person, using the personType codelist. Where a person has the type 'anonymousPerson' or 'unknownPerson' a reason for the absence of information SHOULD be provided in 'unspecifiedPersonDetails'",
       "type": "string",
       "enum": [
         "anonymousPerson",
