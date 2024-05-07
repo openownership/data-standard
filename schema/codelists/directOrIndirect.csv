@@ -1,4 +1,4 @@
-code,title,description,technical note
-direct,Direct,"The interest is held directly.",
-indirect,Indirect,"The interest is held through one or more intermediate entities (including arrangements).",
-unknown,Unknown,"The interest may be direct or indirect.",
+code,title,description
+direct,Direct,The interest is held directly.
+indirect,Indirect,The interest is held through one or more intermediate entities (including arrangements).
+unknown,Unknown,The interest may be direct or indirect.

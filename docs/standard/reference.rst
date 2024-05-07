@@ -7,13 +7,15 @@ Schema reference
 
 This is an A - Z guide to the schema's objects and `codelists`_ . For a structured view of how objects fit together in the JSON schema, use the :doc:`Schema browser <schema-browser>`.
 
-The top-level objects are :any:`Statements <schema-statement>`. Statements are built up from a set of nested objects and properties, each of which has a field name, a title and a description that defines how the object or field should be used.
+The top-level objects are :any:`Statements <schema-statement>`.
 
 Each statement contains details of one of three types of system record:
 
 - :any:`Relationship record <schema-relationship-record>`
 - :any:`Entity record <schema-entity-record>`
 - :any:`Person record <schema-person-record>`
+
+Statements are built up from a set of nested objects and properties, each of which has a field name, a title and a description that defines how the object or field should be used.
 
 BODS data MAY be published as a valid `JSON document <https://tools.ietf.org/html/rfc8259>`_. See :any:`Serialisation <guidance-serialisation>` for other options.
 
@@ -28,7 +30,7 @@ Address
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Address
-   :externallinks: {"type":{"url":"#addresstype","text":"AddressType"}}
+   :externallinks: {"type":{"url":"#address-type","text":"Address Type"}}
    :allowexternalrefs:
    :allowurnrefs:
 
@@ -51,11 +53,11 @@ Annotations can be used to:
 * hold information that does not have an appropriate field in the schema
 * provide additional context to information in the schema (e.g. if data has been transformed) 
 
-Annotations can apply to a whole statement, part of a statement or a specific field. annotation.statementPointerTarget indicates where the annotation applies. 
+Annotations can apply to a whole statement, part of a statement or a specific field. ``annotation.statementPointerTarget`` indicates where the annotation applies. 
 
 .. jsonschema:: ../_build_schema/statement.json
    :pointer: /$defs/Annotation
-   :externallinks: {"motivation":{"url":"#annotationmotivation","text":"AnnotationMotivation"}}
+   :externallinks: {"motivation":{"url":"#annotation-motivation","text":"Annotation Motivation"}}
    :allowexternalrefs:
    :allowurnrefs:
 
@@ -84,7 +86,7 @@ Entity Record
 
 .. jsonschema:: ../_build_schema/entity-record.json
    :collapse: identifiers,addresses,jurisdiction,publicListing
-   :externallinks: {"unspecifiedEntityDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
+   :externallinks: {"unspecifiedEntityDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"},"entityType/type":{"url":"#entity-type","text":"Entity Type"},"entityType/subtype":{"url":"#entity-subtype","text":"Entity Subtype"}}
    :allowexternalrefs:
    :allowurnrefs:
 
@@ -93,7 +95,7 @@ Entity Record
 Identifier
 ----------
 
-The Identifier object connects a statement to the natural person or entity that it refers to. See :any:`Real world identifiers <guidance-identifiers>` for technical guidance on how to use this object.
+The Identifier object connects a statement to the natural person, entity or item that it refers to. See :any:`Real world identifiers <guidance-identifiers>` for guidance on using this object.
 
 .. json-value:: ../_build_schema/components.json
    :pointer: /$defs/Identifier/description
@@ -114,7 +116,7 @@ Interest
 .. jsonschema:: ../_build_schema/relationship-record.json
    :pointer: /$defs/Interest
    :collapse: share
-   :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interesttype","text":"InterestType"}}
+   :externallinks: {"share":{"url":"#share","text":"Share"}, "type":{"url":"#interest-type","text":"Interest Type"}}
    :allowexternalrefs:
    :allowurnrefs:
 
@@ -142,7 +144,7 @@ Name
 
 .. jsonschema:: ../_build_schema/person-record.json
    :pointer: /$defs/Name
-   :externallinks: {"type":{"url":"#nametype","text":"NameType"}}
+   :externallinks: {"type":{"url":"#name-type","text":"Name Type"}}
    :allowexternalrefs:
    :allowurnrefs:
 
@@ -171,13 +173,13 @@ Person Record
 
 .. jsonschema:: ../_build_schema/person-record.json
    :collapse: names,identifiers,placeOfBirth,addresses,nationalities,politicalExposure/details,taxResidencies
-   :externallinks: {"personType":{"url": "#persontype","text":"PersonType"}, "unspecifiedPersonDetails/reason":{"url":"#unspecifiedreason","text":"UnspecifiedReason"}}
+   :externallinks: {"personType":{"url": "#person-type","text":"Person Type"}, "unspecifiedPersonDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"}}
    :allowexternalrefs:
    :allowurnrefs:
 
 .. _schema-public-listing:
 
-Public Listing
+PublicListing
 --------------
 
 .. json-value:: ../_build_schema/entity-record.json
@@ -216,6 +218,16 @@ Publisher
    :allowexternalrefs:
    :allowurnrefs:
 
+.. _schema-record-id:
+
+Record Id
+---------
+
+See :ref:`record-identifiers` for information about Record Ids 
+
+.. json-value:: ../_build_schema/statement.json
+   :pointer: /$defs/Statement/properties/recordId/description
+
 .. _schema-relationship-record:
 
 Relationship Record
@@ -233,17 +245,17 @@ See :ref:`representing-bo` for detailed requirements.
 
 .. _schema-securities-listing:
 
-Securities Listing
+SecuritiesListing
 ------------------
 
 .. json-value:: ../_build_schema/entity-record.json
    :pointer: /$defs/SecuritiesListing/description
 
-See :any:`Real world identifiers <guidance-identifiers-other>` for guidance on representing securities listings.
+See :any:`Real world identifiers <guidance-identifiers>` for guidance on representing securities listings.
 
 .. jsonschema:: ../_build_schema/entity-record.json
    :pointer: /$defs/SecuritiesListing
-   :externallinks: {"security/idScheme":{"url":"#securitiesidentifierschemes","text":"SecuritiesIdentifierSchemes"}}
+   :externallinks: {"security/idScheme":{"url":"#securitiesidentifierschemes","text":"Securities Identifier Schemes"}}
    :allowexternalrefs:
    :allowurnrefs:
 
@@ -271,7 +283,7 @@ Source
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Source
    :collapse: assertedBy
-   :externallinks: {"type":{"url":"#sourcetype","text":"SourceType"}}
+   :externallinks: {"type":{"url":"#source-type","text":"Source Type"}}
    :allowexternalrefs:
    :allowurnrefs:
 
@@ -286,8 +298,34 @@ Statement
 .. jsonschema:: ../_build_schema/statement.json
    :pointer: /$defs/Statement
    :collapse: source,annotations,publicationDetails
+   :externallinks: {"recordStatus":{"url":"#record-status","text":"Record Status"}}
    :allowexternalrefs:
    :allowurnrefs:
+
+.. _schema-statement-id:
+
+Statement Id
+------------
+
+See :ref:`generating-statements` for advice on generating unique Statement Ids
+
+.. json-value:: ../_build_schema/statement.json
+   :pointer: /$defs/Statement/properties/statementId/description
+
+.. _schema-unspecified-record:
+
+UnspecifiedRecord
+-----------------
+
+.. json-value:: ../_build_schema/components.json
+   :pointer: /$defs/UnspecifiedRecord/description
+
+.. jsonschema:: ../_build_schema/components.json
+   :pointer: /$defs/UnspecifiedRecord
+   :externallinks: {"reason":{"url":"#unspecified-reason","text":"Unspecified Reason"}}
+   :allowexternalrefs:
+   :allowurnrefs:
+
 
 .. _schema-codelists:
 

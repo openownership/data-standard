@@ -1,4 +1,4 @@
-.. _guidance-serialization:
+.. _guidance-serialisation:
 
 Serialisation
 =============
