@@ -28,7 +28,8 @@ Changed
 * All date and date-time fields reviewed to ensure appropriate validation 
 * Schema and codelist titles and descriptions updated
 * Documentation images and text updated 
-* Documentation guidance restructured into modelling requirements and system requirements
+* Documentation section 'Data schema' renamed 'Data standard' for clarity
+* Guidance pages in 'Data standard' restructured into 'Modelling requirements' and 'System requirements' sub-sections
 * 'Ownership-or-control' statements renamed 'Relationship' statements
 * Statement fields:
 
