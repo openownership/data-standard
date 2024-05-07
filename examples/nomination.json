@@ -1,0 +1,363 @@
+[
+  {
+    "statementId": "hwleh31162645801286103119169607703640",
+    "statementDate": "2023-05-08",
+    "publicationDetails": {
+      "publicationDate": "2023-06-19",
+      "bodsVersion": "0.4",
+      "license": "http://opendefinition.org/licenses/cc-zero",
+      "publisher": {
+        "name": "Company Register, Ciudad de Mexico"
+      }
+    },
+    "recordId": "101AB1984F",
+    "recordType": "person",
+    "recordStatus": "new",
+    "source": {
+      "type": [
+        "selfDeclaration"
+      ],
+      "assertedBy": [
+        {
+          "name": "Silvia Perez"
+        }
+      ]
+    },
+    "declaration": "bo-nom-989160",
+    "declarationSubject": "104AB1984C",
+    "recordDetails": {
+      "addresses": [
+        {
+          "type": "service",
+          "address": "Gta. Mirador, Las Brisas, Acapulco de Juarez, Guerrero",
+          "postCode": "39888",
+          "country": {
+            "name": "Mexico"
+          }
+        }
+      ],
+      "isComponent": false,
+      "personType": "knownPerson",
+      "birthDate": "2005-03-12",
+      "names": [
+        {
+          "type": "legal",
+          "fullName": "Silvia Teixeira Perez",
+          "familyName": "Teixeira Perez",
+          "givenName": "Silvia"
+        }
+      ],
+      "nationalities": [
+        {
+          "name": "Mexico",
+          "code": "MX"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "hwleh31283586711181803131274972982320",
+    "statementDate": "2023-05-08",
+    "publicationDetails": {
+      "publicationDate": "2023-06-19",
+      "bodsVersion": "0.4",
+      "license": "http://opendefinition.org/licenses/cc-zero",
+      "publisher": {
+        "name": "Company Register, Ciudad de Mexico"
+      }
+    },
+    "recordId": "102AB1984E",
+    "recordType": "person",
+    "recordStatus": "new",
+    "source": {
+      "type": [
+        "selfDeclaration"
+      ],
+      "assertedBy": [
+        {
+          "name": "Silvia Perez"
+        }
+      ]
+    },
+    "declaration": "bo-nom-989160",
+    "declarationSubject": "104AB1984C",
+    "recordDetails": {
+      "addresses": [
+        {
+          "type": "service",
+          "address": "Arcos Bosques Corporativo Torre Oriente, Bosques de las Lomas, Cuajimalpa de Morelos, Ciudad de México",
+          "postCode": "05120",
+          "country": {
+            "name": "Mexico"
+          }
+        }
+      ],
+      "isComponent": false,
+      "personType": "knownPerson",
+      "birthDate": "1968-09-20",
+      "names": [
+        {
+          "type": "legal",
+          "fullName": "Vanessa Rivero",
+          "familyName": "Rivero",
+          "givenName": "Vanessa"
+        }
+      ],
+      "nationalities": [
+        {
+          "name": "Mexico",
+          "code": "MX"
+        }
+      ]
+    }
+  },
+  {
+    "statementId": "hwleh31404527621077503143380338261000",
+    "statementDate": "2023-05-08",
+    "publicationDetails": {
+      "publicationDate": "2023-06-19",
+      "bodsVersion": "0.4",
+      "license": "http://opendefinition.org/licenses/cc-zero",
+      "publisher": {
+        "name": "Company Register, Ciudad de Mexico"
+      }
+    },
+    "recordId": "103AB1984D",
+    "recordType": "entity",
+    "recordStatus": "new",
+    "source": {
+      "type": [
+        "selfDeclaration"
+      ],
+      "assertedBy": [
+        {
+          "name": "Silvia Perez"
+        }
+      ]
+    },
+    "declaration": "bo-nom-989160",
+    "declarationSubject": "104AB1984C",
+    "recordDetails": {
+      "isComponent": true,
+      "entityType": {
+        "type": "arrangement",
+        "subtype": "nomination"
+      },
+      "name": "Perez-Rivero nomination",
+      "jurisdiction": {
+        "name": "Mexico",
+        "code": "MX"
+      }
+    }
+  },
+  {
+    "statementId": "hwleh31525468530973203155485703539680",
+    "statementDate": "2023-05-08",
+    "publicationDetails": {
+      "publicationDate": "2023-06-19",
+      "bodsVersion": "0.4",
+      "license": "http://opendefinition.org/licenses/cc-zero",
+      "publisher": {
+        "name": "Company Register, Ciudad de Mexico"
+      }
+    },
+    "recordId": "104AB1984C",
+    "recordType": "entity",
+    "recordStatus": "new",
+    "source": {
+      "type": [
+        "selfDeclaration"
+      ],
+      "assertedBy": [
+        {
+          "name": "Silvia Perez"
+        }
+      ]
+    },
+    "declaration": "bo-nom-989160",
+    "declarationSubject": "104AB1984C",
+    "recordDetails": {
+      "identifiers": [
+        {
+          "id": "CPL211105123",
+          "scheme": "MX-RFC",
+          "schemeName": "Registro Federal de Contribuyentes de México"
+        }
+      ],
+      "isComponent": false,
+      "entityType": {
+        "type": "legalEntity"
+      },
+      "name": "Los Corazones de Plata",
+      "jurisdiction": {
+        "name": "Mexico",
+        "code": "MX"
+      },
+      "foundingDate": "1921-11-05"
+    }
+  },
+  {
+    "statementId": "hwleh31646409440868903167591068818360",
+    "statementDate": "2023-05-08",
+    "publicationDetails": {
+      "publicationDate": "2023-06-19",
+      "bodsVersion": "0.4",
+      "license": "http://opendefinition.org/licenses/cc-zero",
+      "publisher": {
+        "name": "Company Register, Ciudad de Mexico"
+      }
+    },
+    "recordId": "105AB1984B",
+    "recordType": "relationship",
+    "recordStatus": "new",
+    "source": {
+      "type": [
+        "selfDeclaration"
+      ],
+      "assertedBy": [
+        {
+          "name": "Silvia Perez"
+        }
+      ]
+    },
+    "declaration": "bo-nom-989160",
+    "declarationSubject": "104AB1984C",
+    "recordDetails": {
+      "interests": [
+        {
+          "type": "nominator",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": false,
+          "startDate": "2023-04-30"
+        }
+      ],
+      "isComponent": true,
+      "subject": "103AB1984D",
+      "interestedParty": "101AB1984F"
+    }
+  },
+  {
+    "statementId": "hwleh31767350350764603179696434097040",
+    "statementDate": "2023-05-08",
+    "publicationDetails": {
+      "publicationDate": "2023-06-19",
+      "bodsVersion": "0.4",
+      "license": "http://opendefinition.org/licenses/cc-zero",
+      "publisher": {
+        "name": "Company Register, Ciudad de Mexico"
+      }
+    },
+    "recordId": "106AB1984A",
+    "recordType": "relationship",
+    "recordStatus": "new",
+    "source": {
+      "type": [
+        "selfDeclaration"
+      ],
+      "assertedBy": [
+        {
+          "name": "Silvia Perez"
+        }
+      ]
+    },
+    "declaration": "bo-nom-989160",
+    "declarationSubject": "104AB1984C",
+    "recordDetails": {
+      "interests": [
+        {
+          "type": "nominee",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": false,
+          "startDate": "2023-04-30"
+        }
+      ],
+      "isComponent": false,
+      "subject": "103AB1984D",
+      "interestedParty": "102AB1984E"
+    }
+  },
+  {
+    "statementId": "hwleh31888763688794603191849086229590",
+    "statementDate": "2023-05-08",
+    "publicationDetails": {
+      "publicationDate": "2023-06-19",
+      "bodsVersion": "0.4",
+      "license": "http://opendefinition.org/licenses/cc-zero",
+      "publisher": {
+        "name": "Company Register, Ciudad de Mexico"
+      }
+    },
+    "recordId": "107AC1984F",
+    "recordType": "relationship",
+    "recordStatus": "new",
+    "source": {
+      "type": [
+        "selfDeclaration"
+      ],
+      "assertedBy": [
+        {
+          "name": "Silvia Perez"
+        }
+      ]
+    },
+    "declaration": "bo-nom-989160",
+    "declarationSubject": "104AB1984C",
+    "recordDetails": {
+      "interests": [
+        {
+          "type": "boardMember",
+          "directOrIndirect": "direct",
+          "beneficialOwnershipOrControl": false,
+          "startDate": "2023-04-30"
+        }
+      ],
+      "isComponent": true,
+      "subject": "104AB1984C",
+      "interestedParty": "103AB1984D"
+    }
+  },
+  {
+    "statementId": "hwleh32009704598690303203954451508270",
+    "statementDate": "2023-05-08",
+    "publicationDetails": {
+      "publicationDate": "2023-06-19",
+      "bodsVersion": "0.4",
+      "license": "http://opendefinition.org/licenses/cc-zero",
+      "publisher": {
+        "name": "Company Register, Ciudad de Mexico"
+      }
+    },
+    "recordId": "108AC1984E",
+    "recordType": "relationship",
+    "recordStatus": "new",
+    "source": {
+      "type": [
+        "selfDeclaration"
+      ],
+      "assertedBy": [
+        {
+          "name": "Silvia Perez"
+        }
+      ]
+    },
+    "declaration": "bo-nom-989160",
+    "declarationSubject": "104AB1984C",
+    "recordDetails": {
+      "interests": [
+        {
+          "type": "otherInfluenceOrControl",
+          "directOrIndirect": "indirect",
+          "beneficialOwnershipOrControl": true,
+          "startDate": "2023-04-30"
+        }
+      ],
+      "isComponent": false,
+      "componentRecords": [
+        "103AB1984D",
+        "105AB1984B;107AC1984F"
+      ],
+      "subject": "104AB1984C",
+      "interestedParty": "101AB1984F"
+    }
+  }
+]
