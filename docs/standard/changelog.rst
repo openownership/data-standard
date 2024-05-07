@@ -6,25 +6,70 @@ ChangeLog
 
 .. include:: warningbox.rst
 
-[Unreleased]
-============
+[0.4] - 2024-05-08
+===============================
+
+Added
+-----
+* ``recordDetails`` object to contain person, entity or relationship fields within a Statement.
+* ``declaration`` and ``declarationSubject`` to support grouping of Statements by parent declaration (filing) or by the declarant
+* ``recordId`` and ``recordStatus`` to support information updates
+* New documentation pages: 
+
+  * Dates guidance 
+  * Generating statements
+  * Record identifiers
+  * Representing trusts 
+  * Representing nominees 
+  * Representing record updates
 
 Changed
 -------
-- Removed ``securitiesListing`` from required fields in ``hasPublicListing``.
-- Scenario added to 'Representing state-owned enterprises' page covering ownership or control by a regional government.
+* All date and date-time fields reviewed to ensure appropriate validation 
+* Schema and codelist titles and descriptions updated
+* Documentation images and text updated 
+* Documentation section 'Data schema' renamed 'Data standard' for clarity
+* Guidance pages in 'Data standard' restructured into 'Modelling requirements' and 'System requirements' sub-sections
+* 'Ownership-or-control' statements renamed 'Relationship' statements
+* Statement fields:
 
+  * ``statementDate`` now required
+  * ``statementType`` replaced with ``recordType``
+  * ``statementID`` renamed ``statementId``
+* Entity fields: 
+
+  * ``entityType`` and ``entitySubtype`` combined into ``entityType``
+  * ``securitiesListings`` removed from required fields in ``publicListing``
+  * 'nomination' and 'trust' added ``entitySubtype`` codelist
+  * prefixes removed from ``entitySubtype`` codelist (e.g. 'stateBody-stateAgency' is now 'stateAgency') 
+* Relationship fields:
+
+  * ``Interest.share`` properties and requirements updated. Exact values and ranges are now represented in simpler ways.
+  * 'nominee' and 'nominator' added to ``Interest.type`` codelist 
+  * ``interestedParty`` and ``subject`` fields now hold a ``recordId`` value (rather than a ``statementId`` value). They may instead take an Unspecified Record object, to represent missing information.
+  * ``componentStatementIds`` renamed ``componentRecordIds`` and now holds ``recordId`` values
+* Person fields:
+
+  * ``fullName`` is now required 
+  * Renamed ``name.type`` code 'individual' to 'legal'
+* ``address.country`` is now a Country object not a country code. 
+
+Removed
+-------
+ * ``placeOfResidence``
+ * ``agent``
+ * ``replacesStatements``
+ * Functional requirements page
+ * Sources and annotations page
+
+ 
 Alterations to schema structure and logic
 -----------------------------------------
-- Updated the JSON Schema version from draft-04 to 2020-12.
-  - `Interest/share/maximum` is now inclusive by default. `exclusiveMinimum` and `exclusiveMaximum` are now numbers (instead of booleans), which are used in the same way as and alongside their inclusive counterparts `minimum` and `maximum`.
-  - `id` to `$id`
-  - `definitions` to `$defs`
-  - `enum`s with one value are now `const`
-- Updated which date formats are valid for all date fields.
-  - Interest `startDate` and `endDate`, PEP Status `startDate` and `endDate`, Entity `foundingDate` and `dissolutionDate`, and formedByStatute `date` are more strict - only date (YYYY-MM-DD) is valid; timestamps and partial dates are no longer valid.
-  - Person `birthDate` and `deathDate` are more strict - year (YYYY), year and month (YYYY-MM) and year, month and day (YYYY-MM-DD) are valid, but timestamps are no longer valid.
-  - Annotation `creationDate`, PublicationDetails `publicationDate` are less strict - valid as date or date-time (partial dates are still not valid).
+* Updated the JSON Schema version from draft-04 to 2020-12
+* Schema files renamed and contents refactored
+* Included as much validation as possible within the schema 
+* enum types with one value replaced with const type
+
 
 [0.3] - 2022-04-15
 ==================
