@@ -39,7 +39,7 @@ Changed
 * Entity fields: 
 
   * ``entityType`` and ``entitySubtype`` combined into ``entityType``
-  * ``securitiesListing`` removed from required fields in ``hasPublicListing``
+  * ``securitiesListings`` removed from required fields in ``publicListing``
   * 'nomination' and 'trust' added ``entitySubtype`` codelist
   * prefixes removed from ``entitySubtype`` codelist (e.g. 'stateBody-stateAgency' is now 'stateAgency') 
 * Relationship fields:
