@@ -44,7 +44,7 @@ Changed
   * prefixes removed from ``entitySubtype`` codelist (e.g. 'stateBody-stateAgency' is now 'stateAgency') 
 * Relationship fields:
 
-  * ``Interest/share/maximum`` is now inclusive by default. ``exclusiveMinimum`` and ``exclusiveMaximum`` are now numbers
+  * ``Interest.share`` properties and requirements updated. Exact values and ranges are now represented in simpler ways.
   * 'nominee' and 'nominator' added to ``Interest.type`` codelist 
   * ``interestedParty`` and ``subject`` fields now hold a ``recordId`` value (rather than a ``statementId`` value). They may instead take an Unspecified Record object, to represent missing information.
   * ``componentStatementIds`` renamed ``componentRecordIds`` and now holds ``recordId`` values
