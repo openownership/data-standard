@@ -49,6 +49,7 @@ Changed
   * ``interestedParty`` and ``subject`` fields now hold a ``recordId`` value (rather than a ``statementId`` value). They may instead take an Unspecified Record object, to represent missing information.
   * ``componentStatementIds`` renamed ``componentRecordIds`` and now holds ``recordId`` values
 * Person fields:
+
   * ``fullName`` is now required 
   * Renamed ``name.type`` code 'individual' to 'legal'
 * ``address.country`` is now a Country object not a country code. 
