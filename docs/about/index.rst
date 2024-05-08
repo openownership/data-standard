@@ -76,7 +76,7 @@ Partners and funders
 
    </h2>
 
-The initial development of BODS was funded by Open Ownership as part of a `UK Department for International Development (DfID) <https://www.gov.uk/government/organisations/department-for-international-development>`__ funded project and its development continues to be funded by the `UK Foreign, Commonwealth and Development Office <https://www.gov.uk/government/organisations/foreign-commonwealth-development-office>`__ and the `Norwegian Agency for Development Cooperation (Norad) <https://www.norad.no/en/front/>`__
+The initial development of BODS was funded by Open Ownership as part of a `UK Department for International Development (DfID) <https://www.gov.uk/government/organisations/department-for-international-development>`__ funded project and its development continues to be funded by the `UK Foreign, Commonwealth and Development Office <https://www.gov.uk/government/organisations/foreign-commonwealth-development-office>`__ and the `Norwegian Agency for Development Cooperation (Norad) <https://www.norad.no/en/front/>`__.
 
 `Open Ownership <https://www.openownership.org/en/>`__ is a non-profit organisation driving the global shift towards transparency and accountability in corporate ownership and control. It’s managed by an executive team who are overseen by a Steering Group made up of leading transparency and accountability organisations.
 
