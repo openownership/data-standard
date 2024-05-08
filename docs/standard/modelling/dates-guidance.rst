@@ -65,7 +65,7 @@ The new statement:
 * has the same ``statementDate``, because the date of the original information submission has not changed
 * has a new ``publicationDate``
 * has a corrected ``interest.startDate``
-* has an 'Annotation <https://standard.openownership.org/en/main/standard/reference.html#schema-annotation>'_ explaining the correction
+* has an :ref:`Annotation <schema-annotation>` explaining the correction
 
 .. figure:: ../../_assets/dates-guidance3.svg
    :alt: 2 statements showing the same recordId and statementDate. The second statement has a different publication date, statementId and interest start date. The second statement has an annotation with motivation "correction" point towards the interest start date. 
