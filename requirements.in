@@ -3,8 +3,8 @@ sphinx-intl
 sphinx_rtd_theme<=2.0.0
 sphinxcontrib-opendataservices-jsonschema
 sphinxcontrib-opendataservices
--e git+https://github.com/openownership/data-standard-sphinx-theme.git@master#egg=standard_theme
+# Theme locked to commit on master-0.4 branch
+-e git+https://github.com/openownership/data-standard-sphinx-theme.git@163158577d5843399b5e7172c59ecbf308c518df#egg=standard_theme
 ocds-babel
 urllib3>=1.23
 requests>=2.21.0
-
