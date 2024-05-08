@@ -174,7 +174,7 @@ sphinxcontrib-jsmath==1.0.1
     # via sphinx
 sphinxcontrib-opendataservices==0.5.0
     # via -r requirements.in
-sphinxcontrib-opendataservices-jsonschema==0.6.1
+sphinxcontrib-opendataservices-jsonschema==0.7.0
     # via
     #   -r requirements.in
     #   sphinxcontrib-opendataservices

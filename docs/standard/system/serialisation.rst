@@ -1,4 +1,4 @@
-.. _guidance-serialization:
+.. _guidance-serialisation:
 
 Serialisation
 =============
@@ -18,7 +18,6 @@ Statement order
 A JSON BODS file MUST consist of a series of ordered Statement objects within a top-level array. 
 
 Specifically, the ``interestedParty`` and ``subject`` values of a Relationship statement, when they are a ``recordId`` value, MUST match the ``recordId`` value of at least one other *prior* Statement in the array.
-
 
 Alternative tabular form
 ------------------------

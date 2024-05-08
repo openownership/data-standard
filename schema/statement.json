@@ -23,7 +23,7 @@
         },
         "statementDate": {
           "title": "Statement Date",
-          "description": "The date (optionally including time) on which this statement was declared by the source, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
+          "description": "The date on which this statement was declared by the source, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
           "type": "string",
           "anyOf": [
             {
@@ -49,7 +49,7 @@
           "properties": {
             "publicationDate": {
               "title": "Publication date",
-              "description": "The date (optionally including time) on which this statement was published, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
+              "description": "The date on which this statement was published, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
               "type": "string",
               "anyOf": [
                 {
@@ -230,7 +230,7 @@
         },
         "creationDate": {
           "title": "Creation Date",
-          "description": "The date (optionally including time) on which this Annotation was created, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
+          "description": "The date on which this Annotation was created, in full-date (YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 standard, section 5.6.",
           "type": "string",
           "anyOf": [
             {

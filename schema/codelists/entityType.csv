@@ -1,8 +1,8 @@
-code,title,description,technical note
-registeredEntity,Registered Entity,"A legal entity created through an act of official registration. In most cases, registered entities have an officially issued identifier.",
-legalEntity,Legal entity,"A body with distinct legal personality, such as an international institution or statutory corporation, but which is not otherwise uniquely identified in some official register.",
-arrangement,Arrangement,"A legal arrangement, agreement, contract or other mechanism via which one or more natural or legal persons can associate to exert ownership or control over an entity. Parties to an arrangement have no other form of collective legal identity.",
-anonymousEntity,Anonymous entity,"An entity that has been identified, but for which identifying information is being withheld. The reason for non-disclosure should be given in the accompanying `unspecifiedEntityDetails` field.",
-unknownEntity,Unknown entity,"An entity that has not been identified.",
-state,State,"A country, nation or community with legal sovereignty within a territory.",
-stateBody,State body,"A core administrative or legislative unit within a state's apparatus.",
+code,title,description
+registeredEntity,Registered Entity,"A legal entity created through an act of official registration. In most cases, registered entities have an officially issued identifier."
+legalEntity,Legal entity,"A body with distinct legal personality, such as an international institution or statutory corporation, but which is not otherwise uniquely identified in some official register."
+arrangement,Arrangement,"A legal arrangement, agreement, contract or other mechanism via which one or more natural or legal persons can associate to exert ownership or control over an entity. Parties to an arrangement have no other form of collective legal identity."
+anonymousEntity,Anonymous entity,"An entity that has been identified, but for which identifying information is being withheld. The reason for non-disclosure should be given in the accompanying `unspecifiedEntityDetails` field."
+unknownEntity,Unknown entity,An entity that has not been identified.
+state,State,"A country, nation or community with legal sovereignty within a territory."
+stateBody,State body,A core administrative or legislative unit within a state's apparatus.
