@@ -5,17 +5,13 @@ Schema reference
 
 .. include:: warningbox.rst
 
-This is an A - Z guide to the schema's objects and `codelists`_ . For a structured view of how objects fit together in the JSON schema, use the :doc:`Schema browser <schema-browser>`.
+This is an A - Z guide to the objects of the Data Standard's schema and its `codelists`_ . Details of each object's properties are provided in a table. For a structured view of how objects fit together in the JSON schema, use the :doc:`Schema browser <schema-browser>`.
 
-The top-level objects are :any:`Statements <schema-statement>`.
+The top-level objects are :any:`Statements <schema-statement>`. Each statement contains record details for one of three beneficial ownership elements:
 
-Each statement contains details of one of three types of system record:
-
-- :any:`Relationship record <schema-relationship-record>`
-- :any:`Entity record <schema-entity-record>`
-- :any:`Person record <schema-person-record>`
-
-Statements are built up from a set of nested objects and properties, each of which has a field name, a title and a description that defines how the object or field should be used.
+- :any:`Entity <schema-entity-record>`
+- :any:`Person <schema-person-record>`
+- :any:`Relationship <schema-relationship-record>`
 
 BODS data MAY be published as a valid `JSON document <https://tools.ietf.org/html/rfc8259>`_. See :any:`Serialisation <guidance-serialisation>` for other options.
 
@@ -29,6 +25,7 @@ Address
    :pointer: /$defs/Address/description
 
 .. jsonschema:: ../_build_schema/components.json
+   :collapse: country
    :pointer: /$defs/Address
    :externallinks: {"type":{"url":"#address-type","text":"Address Type"}}
    :allowexternalrefs:
@@ -75,20 +72,6 @@ Country
    :allowexternalrefs:
    :allowurnrefs:
 
-
-.. _schema-entity-record:
-
-Entity Record
-----------------
-
-.. json-value:: ../_build_schema/entity-record.json
-   :pointer: /description
-
-.. jsonschema:: ../_build_schema/entity-record.json
-   :collapse: identifiers,addresses,jurisdiction,publicListing
-   :externallinks: {"unspecifiedEntityDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"},"entityType/type":{"url":"#entity-type","text":"Entity Type"},"entityType/subtype":{"url":"#entity-subtype","text":"Entity Subtype"}}
-   :allowexternalrefs:
-   :allowurnrefs:
 
 .. _schema-identifier:
 
@@ -151,7 +134,7 @@ Name
 
 .. _schema-pep-status:
 
-PEP Status Details
+PEPstatusDetails
 ------------------
 
 .. json-value:: ../_build_schema/person-record.json
@@ -160,20 +143,6 @@ PEP Status Details
 .. jsonschema:: ../_build_schema/person-record.json
    :pointer: /$defs/PepStatusDetails
    :collapse: jurisdiction,source
-   :allowexternalrefs:
-   :allowurnrefs:
-
-.. _schema-person-record:
-
-Person Record
-----------------
-
-.. json-value:: ../_build_schema/person-record.json
-   :pointer: /description
-
-.. jsonschema:: ../_build_schema/person-record.json
-   :collapse: names,identifiers,placeOfBirth,addresses,nationalities,politicalExposure/details,taxResidencies
-   :externallinks: {"personType":{"url": "#person-type","text":"Person Type"}, "unspecifiedPersonDetails/reason":{"url":"#unspecified-reason","text":"Unspecified Reason"}}
    :allowexternalrefs:
    :allowurnrefs:
 
@@ -218,20 +187,39 @@ Publisher
    :allowexternalrefs:
    :allowurnrefs:
 
-.. _schema-record-id:
 
-Record Id
----------
+.. _schema-entity-record:
 
-See :ref:`record-identifiers` for information about Record Ids 
+Record Details (entity)
+------------------------
 
-.. json-value:: ../_build_schema/statement.json
-   :pointer: /$defs/Statement/properties/recordId/description
+.. json-value:: ../_build_schema/entity-record.json
+   :pointer: /description
+
+.. jsonschema:: ../_build_schema/entity-record.json
+   :collapse: identifiers,addresses,jurisdiction,publicListing,unspecifiedEntityDetails
+   :externallinks: {"entityType/type":{"url":"#entity-type","text":"Entity Type"},"entityType/subtype":{"url":"#entity-subtype","text":"Entity Subtype"}}
+   :allowexternalrefs:
+   :allowurnrefs:
+
+.. _schema-person-record:
+
+Record Details (person)
+------------------------
+
+.. json-value:: ../_build_schema/person-record.json
+   :pointer: /description
+
+.. jsonschema:: ../_build_schema/person-record.json
+   :collapse: names,identifiers,placeOfBirth,addresses,nationalities,politicalExposure/details,taxResidencies,unspecifiedPersonDetails
+   :externallinks: {"personType":{"url": "#person-type","text":"Person Type"}}
+   :allowexternalrefs:
+   :allowurnrefs:
 
 .. _schema-relationship-record:
 
-Relationship Record
--------------------
+Record Details (relationship)
+-------------------------------
 
 See :ref:`representing-bo` for detailed requirements.
 
@@ -242,6 +230,17 @@ See :ref:`representing-bo` for detailed requirements.
    :collapse: interests
    :allowexternalrefs:
    :allowurnrefs:
+
+
+.. _schema-record-id:
+
+Record Id
+---------
+
+See :ref:`record-identifiers` for information about Record Ids 
+
+.. json-value:: ../_build_schema/statement.json
+   :pointer: /$defs/Statement/properties/recordId/description
 
 .. _schema-securities-listing:
 
@@ -255,7 +254,7 @@ See :any:`Real world identifiers <guidance-identifiers>` for guidance on represe
 
 .. jsonschema:: ../_build_schema/entity-record.json
    :pointer: /$defs/SecuritiesListing
-   :externallinks: {"security/idScheme":{"url":"#securitiesidentifierschemes","text":"Securities Identifier Schemes"}}
+   :externallinks: {"security/idScheme":{"url":"#securities-identifier-schemes","text":"Securities Identifier Schemes"}}
    :allowexternalrefs:
    :allowurnrefs:
 
@@ -282,7 +281,6 @@ Source
 
 .. jsonschema:: ../_build_schema/components.json
    :pointer: /$defs/Source
-   :collapse: assertedBy
    :externallinks: {"type":{"url":"#source-type","text":"Source Type"}}
    :allowexternalrefs:
    :allowurnrefs:
@@ -298,7 +296,7 @@ Statement
 .. jsonschema:: ../_build_schema/statement.json
    :pointer: /$defs/Statement
    :collapse: source,annotations,publicationDetails
-   :externallinks: {"recordStatus":{"url":"#record-status","text":"Record Status"}}
+   :externallinks: {"recordStatus":{"url":"#record-status","text":"Record Status"},"recordId":{"url":"#record-id","text":"Record Id"},"statementId":{"url":"#statement-id","text":"Statement Id"},"publicationDetails":{"url":"#publication-details","text":"Publication Details"},"recordDetails":{"url":"#record-details-entity","text":"Record details"}}
    :allowexternalrefs:
    :allowurnrefs:
 

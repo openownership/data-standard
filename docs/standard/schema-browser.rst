@@ -7,13 +7,14 @@ Schema browser
 
 The draft Beneficial Ownership Data Standard schema is defined using `JSON Schema 2020-12 <https://json-schema.org/>`_.
 
-Within each BODS statement are ``recordDetails`` for one of three elements: an entity, a person, or a relationship. The structure of each of the related top level objects in the schema can be explored using the viewers below. (Click on object buttons to reveal their properties.)
+A BODS dataset is an array of Statements. Each Statement contains ``recordDetails`` for one of three beneficial ownership elements. The structure of these objects can be explored using the viewers below. (Click on object buttons to reveal their properties.)
 
 * :ref:`schema-browser-statement`
 * :ref:`schema-browser-entity`
 * :ref:`schema-browser-person`
 * :ref:`schema-browser-relationship`
 
+For an A - Z guide to the the Data Standard's schema objects and codelists, see the :ref:`schema-reference`.
 
 .. _schema-browser-statement:
 
@@ -28,8 +29,8 @@ View the `Statements JSON schema <../_static/statement.json>`_ or explore it usi
 
 .. _schema-browser-entity:
 
-Entity record details
----------------------
+Record details (entity)
+------------------------
 
 View the `Entity record details JSON schema <../_static/entity-record.json>`_ or explore it using the viewer below.
 
@@ -40,8 +41,8 @@ View the `Entity record details JSON schema <../_static/entity-record.json>`_ or
 
 .. _schema-browser-person:
 
-Person record details
----------------------
+Record details (person)
+------------------------
 
 View the `Person record details JSON schema <../_static/person-statement.json>`_ or explore it using the viewer below.
 
@@ -51,8 +52,8 @@ View the `Person record details JSON schema <../_static/person-statement.json>`_
 
 .. _schema-browser-relationship:
 
-Relationship record details
----------------------------
+Record details (relationship)
+------------------------------
 
 View the `Relationship record details JSON schema <../_static/relationship-record.json>`_ or explore it using the viewer below.
 
