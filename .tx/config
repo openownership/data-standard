@@ -82,444 +82,192 @@ resource_name          = schema
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--changelog]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/changelog.po
-source_file            = docs/_build/gettext/schema/changelog.pot
+[o:OpenDataServices:p:bods-main:r:standard--changelog]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/changelog.po
+source_file            = docs/_build/gettext/standard/changelog.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--changelog
+resource_name          = standard--changelog
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--concepts]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/concepts.po
-source_file            = docs/_build/gettext/schema/concepts.pot
+[o:OpenDataServices:p:bods-main:r:standard--concepts]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/concepts.po
+source_file            = docs/_build/gettext/standard/concepts.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--concepts
+resource_name          = standard--concepts
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--conformance]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/conformance.po
-source_file            = docs/_build/gettext/schema/conformance.pot
+[o:OpenDataServices:p:bods-main:r:standard--index]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/index.po
+source_file            = docs/_build/gettext/standard/index.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--conformance
+resource_name          = standard--index
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--dates-guidance]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/dates-guidance.po
-source_file            = docs/_build/gettext/schema/guidance/dates-guidance.pot
+[o:OpenDataServices:p:bods-main:r:standard--modelling--dates-guidance]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/modelling/dates-guidance.po
+source_file            = docs/_build/gettext/standard/modelling/dates-guidance.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--dates-guidance
+resource_name          = standard--modelling--dates-guidance
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--functional-requirements]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/functional-requirements.po
-source_file            = docs/_build/gettext/schema/guidance/functional-requirements.pot
+[o:OpenDataServices:p:bods-main:r:standard--modelling--identifiers]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/modelling/identifiers.po
+source_file            = docs/_build/gettext/standard/modelling/identifiers.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--functional-requirements
+resource_name          = standard--modelling--identifiers
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--generating-statements]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/generating-statements.po
-source_file            = docs/_build/gettext/schema/guidance/generating-statements.pot
+[o:OpenDataServices:p:bods-main:r:standard--modelling--index]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/modelling/index.po
+source_file            = docs/_build/gettext/standard/modelling/index.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--generating-statements
+resource_name          = standard--modelling--index
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--identifiers]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/identifiers.po
-source_file            = docs/_build/gettext/schema/guidance/identifiers.pot
+[o:OpenDataServices:p:bods-main:r:standard--modelling--information-updates]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/modelling/information-updates.po
+source_file            = docs/_build/gettext/standard/modelling/information-updates.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--identifiers
+resource_name          = standard--modelling--information-updates
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--index]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/index.po
-source_file            = docs/_build/gettext/schema/guidance/index.pot
+[o:OpenDataServices:p:bods-main:r:standard--modelling--languages]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/modelling/languages.po
+source_file            = docs/_build/gettext/standard/modelling/languages.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--index
+resource_name          = standard--modelling--languages
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--information-updates]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/information-updates.po
-source_file            = docs/_build/gettext/schema/guidance/information-updates.pot
+[o:OpenDataServices:p:bods-main:r:standard--modelling--record-ids]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/modelling/record-ids.po
+source_file            = docs/_build/gettext/standard/modelling/record-ids.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--information-updates
+resource_name          = standard--modelling--record-ids
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--languages]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/languages.po
-source_file            = docs/_build/gettext/schema/guidance/languages.pot
+[o:OpenDataServices:p:bods-main:r:standard--modelling--repr-beneficial-ownership]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/modelling/repr-beneficial-ownership.po
+source_file            = docs/_build/gettext/standard/modelling/repr-beneficial-ownership.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--languages
+resource_name          = standard--modelling--repr-beneficial-ownership
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--record-ids]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/record-ids.po
-source_file            = docs/_build/gettext/schema/guidance/record-ids.pot
+[o:OpenDataServices:p:bods-main:r:standard--modelling--repr-nominations]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/modelling/repr-nominations.po
+source_file            = docs/_build/gettext/standard/modelling/repr-nominations.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--record-ids
+resource_name          = standard--modelling--repr-nominations
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--repr-beneficial-ownership]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-beneficial-ownership.po
-source_file            = docs/_build/gettext/schema/guidance/repr-beneficial-ownership.pot
+[o:OpenDataServices:p:bods-main:r:standard--modelling--repr-state-owned-enterprises]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/modelling/repr-state-owned-enterprises.po
+source_file            = docs/_build/gettext/standard/modelling/repr-state-owned-enterprises.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--repr-beneficial-ownership
+resource_name          = standard--modelling--repr-state-owned-enterprises
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--repr-nominations]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-nominations.po
-source_file            = docs/_build/gettext/schema/guidance/repr-nominations.pot
+[o:OpenDataServices:p:bods-main:r:standard--modelling--repr-trusts]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/modelling/repr-trusts.po
+source_file            = docs/_build/gettext/standard/modelling/repr-trusts.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--repr-nominations
+resource_name          = standard--modelling--repr-trusts
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--repr-state-owned-enterprises]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-state-owned-enterprises.po
-source_file            = docs/_build/gettext/schema/guidance/repr-state-owned-enterprises.pot
+[o:OpenDataServices:p:bods-main:r:standard--reference]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/reference.po
+source_file            = docs/_build/gettext/standard/reference.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--repr-state-owned-enterprises
+resource_name          = standard--reference
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--repr-trusts]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-trusts.po
-source_file            = docs/_build/gettext/schema/guidance/repr-trusts.pot
+[o:OpenDataServices:p:bods-main:r:standard--schema-browser]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/schema-browser.po
+source_file            = docs/_build/gettext/standard/schema-browser.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--repr-trusts
+resource_name          = standard--schema-browser
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--guidance--serialization]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/serialization.po
-source_file            = docs/_build/gettext/schema/guidance/serialization.pot
+[o:OpenDataServices:p:bods-main:r:standard--system--conformance]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/system/conformance.po
+source_file            = docs/_build/gettext/standard/system/conformance.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--guidance--serialization
+resource_name          = standard--system--conformance
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--index]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/index.po
-source_file            = docs/_build/gettext/schema/index.pot
+[o:OpenDataServices:p:bods-main:r:standard--system--generating-statements]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/system/generating-statements.po
+source_file            = docs/_build/gettext/standard/system/generating-statements.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--index
+resource_name          = standard--system--generating-statements
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--reference]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/reference.po
-source_file            = docs/_build/gettext/schema/reference.pot
+[o:OpenDataServices:p:bods-main:r:standard--system--index]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/system/index.po
+source_file            = docs/_build/gettext/standard/system/index.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--reference
+resource_name          = standard--system--index
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--schema-browser]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/schema-browser.po
-source_file            = docs/_build/gettext/schema/schema-browser.pot
+[o:OpenDataServices:p:bods-main:r:standard--system--serialisation]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/system/serialisation.po
+source_file            = docs/_build/gettext/standard/system/serialisation.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--schema-browser
+resource_name          = standard--system--serialisation
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-main:r:schema--warningbox]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/warningbox.po
-source_file            = docs/_build/gettext/schema/warningbox.pot
+[o:OpenDataServices:p:bods-main:r:standard--warningbox]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/standard/warningbox.po
+source_file            = docs/_build/gettext/standard/warningbox.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = schema--warningbox
+resource_name          = standard--warningbox
 replace_edited_strings = false
 keep_translations      = false
 
-[o:OpenDataServices:p:bods-test:r:about--credits]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/about/credits.po
-source_file            = docs/_build/gettext/about/credits.pot
+[o:OpenDataServices:p:bods-main:r:svg]
+file_filter            = docs/locale/<lang>/LC_MESSAGES/svg.po
+source_file            = docs/_build/gettext/svg.pot
 type                   = PO
 minimum_perc           = 0
-resource_name          = about--credits
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:about--governance]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/about/governance.po
-source_file            = docs/_build/gettext/about/governance.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = about--governance
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:about--index]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/about/index.po
-source_file            = docs/_build/gettext/about/index.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = about--index
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:about--privacy-notice]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/about/privacy-notice.po
-source_file            = docs/_build/gettext/about/privacy-notice.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = about--privacy-notice
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:codelist]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/codelist.po
-source_file            = docs/_build/gettext/codelist.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = codelist
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:examples--index]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/examples/index.po
-source_file            = docs/_build/gettext/examples/index.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = examples--index
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:index]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/index.po
-source_file            = docs/_build/gettext/index.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = index
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:primer--index]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/primer/index.po
-source_file            = docs/_build/gettext/primer/index.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = primer--index
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema.po
-source_file            = docs/_build/gettext/schema.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--changelog]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/changelog.po
-source_file            = docs/_build/gettext/schema/changelog.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--changelog
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--concepts]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/concepts.po
-source_file            = docs/_build/gettext/schema/concepts.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--concepts
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--conformance]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/conformance.po
-source_file            = docs/_build/gettext/schema/conformance.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--conformance
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--dates-guidance]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/dates-guidance.po
-source_file            = docs/_build/gettext/schema/guidance/dates-guidance.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--dates-guidance
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--functional-requirements]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/functional-requirements.po
-source_file            = docs/_build/gettext/schema/guidance/functional-requirements.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--functional-requirements
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--generating-statements]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/generating-statements.po
-source_file            = docs/_build/gettext/schema/guidance/generating-statements.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--generating-statements
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--identifiers]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/identifiers.po
-source_file            = docs/_build/gettext/schema/guidance/identifiers.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--identifiers
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--index]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/index.po
-source_file            = docs/_build/gettext/schema/guidance/index.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--index
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--information-updates]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/information-updates.po
-source_file            = docs/_build/gettext/schema/guidance/information-updates.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--information-updates
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--languages]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/languages.po
-source_file            = docs/_build/gettext/schema/guidance/languages.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--languages
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--record-ids]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/record-ids.po
-source_file            = docs/_build/gettext/schema/guidance/record-ids.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--record-ids
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--repr-beneficial-ownership]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-beneficial-ownership.po
-source_file            = docs/_build/gettext/schema/guidance/repr-beneficial-ownership.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--repr-beneficial-ownership
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--repr-nominations]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-nominations.po
-source_file            = docs/_build/gettext/schema/guidance/repr-nominations.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--repr-nominations
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--repr-state-owned-enterprises]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-state-owned-enterprises.po
-source_file            = docs/_build/gettext/schema/guidance/repr-state-owned-enterprises.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--repr-state-owned-enterprises
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--repr-trusts]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/repr-trusts.po
-source_file            = docs/_build/gettext/schema/guidance/repr-trusts.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--repr-trusts
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--guidance--serialization]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/guidance/serialization.po
-source_file            = docs/_build/gettext/schema/guidance/serialization.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--guidance--serialization
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--index]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/index.po
-source_file            = docs/_build/gettext/schema/index.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--index
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--reference]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/reference.po
-source_file            = docs/_build/gettext/schema/reference.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--reference
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--schema-browser]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/schema-browser.po
-source_file            = docs/_build/gettext/schema/schema-browser.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--schema-browser
-replace_edited_strings = false
-keep_translations      = false
-
-[o:OpenDataServices:p:bods-test:r:schema--warningbox]
-file_filter            = docs/locale/<lang>/LC_MESSAGES/schema/warningbox.po
-source_file            = docs/_build/gettext/schema/warningbox.pot
-type                   = PO
-minimum_perc           = 0
-resource_name          = schema--warningbox
+resource_name          = svg
 replace_edited_strings = false
 keep_translations      = false
 
