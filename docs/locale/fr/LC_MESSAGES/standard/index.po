@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Katia Da Silva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Katia Da Silva, 2024\n"
+"Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/index.rst:4 8e0e94723def475189c4cc3f07c60056
+msgid "Data Standard"
+msgstr ""
+
+#: ../../standard/warningbox.rst:3 812b3c86712b44419d3c59a7868f99b3
+msgid ""
+"This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model, codelists, and technical guidance."
+msgstr ""
+"Ceci est la v.04 de la norme de données sur la propriété effective "
+"comprenant des mises à jour du modèle de données, des listes de codes et des"
+" orientations techniques."
+
+#: ../../standard/warningbox.rst:5 03cfc2fe72804401bf8f97f2d9e66445
+msgid ""
+"Future changes are anticipated before a version 1.0 release. See the "
+":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
+"information."
+msgstr ""
+"Des modifications ultérieures sont anticipées avant la version 1.0. Voir les"
+" pages :ref:`Changelog <changelog>` et `About <../about>`_ pages pour plus "
+"d'informations."
+
+#: ../../standard/index.rst:8 4e1c4392abb3427c9bfc9168024862f5
+msgid ""
+"BODS data encapsulates information about the :doc:`beneficial ownership "
+"<../primer/index>` of corporate vehicles, to facilitate sharing of "
+"information. The data model is based on :any:`key concepts <key-concepts>` "
+"relating to this information and its management."
+msgstr ""
+
+#: ../../standard/index.rst:10 fa0b59d362ca435e8f2df2b5dc8b2645
+msgid ""
+"The BODS schema, defined using `JSON Schema 2020-12 <https://json-"
+"schema.org/>`_, describes the data model. The :ref:`Schema browser <schema-"
+"browser>` shows how the schema's objects and properties fit together. The "
+":ref:`Schema reference <schema-reference>` includes an A-Z of objects, "
+"detailing their properties and related codelists."
+msgstr ""
+
+#: ../../standard/index.rst:12 77c800c5324f4ceb9964d7ae270f59e9
+msgid ""
+"Further requirements are described in the :ref:`Modelling requirements "
+"<modelling-requirements>` and :ref:`System requirements <system-"
+"requirements>` sections."
+msgstr ""

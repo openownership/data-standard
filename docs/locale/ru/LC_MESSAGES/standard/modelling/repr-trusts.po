@@ -1,0 +1,371 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Galia Williams, 2024
+# Kateryna Volobuieva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../standard/modelling/repr-trusts.rst:4 86f44d21e3c742cb86c17a5263e11b92
+msgid "Representing trusts"
+msgstr "Отображение  трастов"
+
+#: ../../standard/modelling/repr-trusts.rst:7 374be32ff09544a6918ebd124d4dff31
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../standard/modelling/repr-trusts.rst:8 c22ad39c6d7e4d2b9a678b6b92ca839c
+msgid ""
+"In this documentation, the term ‘trust’ is inclusive of trusts and trust-"
+"like arrangements (such as *fiducie*, *treuhand* and *waqf*)."
+msgstr ""
+"Термин ‘траст’, используемый в тексте этой документации, включает трасты и "
+"аналогичные трастам правоотношения (такие как *fiducie*, *treuhand* и "
+"*waqf*)."
+
+#: ../../standard/modelling/repr-trusts.rst:10
+#: 2cd3b138817f4133849d329af6897367
+msgid ""
+"BODS can be used to represent the beneficial ownership of trusts and the "
+"beneficial ownership of entities via trusts. Trusts are represented by an "
+"Entity statement."
+msgstr ""
+"СДБВ может использоваться для отображения бенефициарного владения трастами, "
+"а также бенефициарного владения субъектами через трасты. Трасты отображаются"
+" посредством Записи о субъекте."
+
+#: ../../standard/modelling/repr-trusts.rst:12
+#: cc160c2fb80d4538848956dcaaba5530
+msgid "When representing trusts:"
+msgstr "При отображении  трастов:"
+
+#: ../../standard/modelling/repr-trusts.rst:14
+#: cb7400d4108e4692b48cd5934eb1fb57
+msgid ""
+"If the trust has legal personality ``entityType.type`` MUST be "
+"``legalEntity``"
+msgstr ""
+"Если траст имеет статус юридического лица, свойство ``entityType.type`` "
+"ДОЛЖНО иметь значение ``legalEntity``."
+
+#: ../../standard/modelling/repr-trusts.rst:15
+#: 789937888e5d40ffb0051099d13569fe
+msgid ""
+"If the trust does not have legal personality ``entityType.type`` MUST be "
+"``arrangement``"
+msgstr ""
+"Если траст не имеет статуса юридического лица, свойство ``entityType.type`` "
+"ДОЛЖНО иметь значение ``arrangement``."
+
+#: ../../standard/modelling/repr-trusts.rst:16
+#: 22a6633d4a4a4385a625561376fefa91
+msgid "``entityType.subtype`` MUST be ``trust``"
+msgstr "Свойство ``entityType.subtype`` ДОЛЖНО иметь значение ``trust``."
+
+#: ../../standard/modelling/repr-trusts.rst:17
+#: 1acc2d6fb994478ca3033de7cf141351
+msgid ""
+"``entityType.details`` MAY be used to give a local name (e.g. \"fiducie\") "
+"or specify the type of trust (e.g. \"inter-vivos trust\")"
+msgstr ""
+"Поле ``entityType.details`` МОЖЕТ использоваться для указания местного "
+"названия (например, \"fiducie\") или типа траста (например, \"inter-vivos "
+"trust\")."
+
+#: ../../standard/modelling/repr-trusts.rst:19
+#: 99e4a072cd9d41d9847a8e3860fb9d24
+msgid ""
+"Relationships between trusts and their parties MUST be represented using "
+"only these ``interest.type`` codes:"
+msgstr ""
+"Отношения между трастами и их сторонами ДОЛЖНЫ отображаться исключительно с "
+"помощью этих значений свойства ``interest.type``:"
+
+#: ../../standard/modelling/repr-trusts.rst:21
+#: 81265fb2cdb74a1489e445dcbf6db2fc
+msgid "``settlor``"
+msgstr "``settlor`` (учредитель траста);"
+
+#: ../../standard/modelling/repr-trusts.rst:22
+#: 4a83aefc76d14116b0eccc80e46f9b08
+msgid "``beneficiary``"
+msgstr "``beneficiary`` (доверительный собственник);"
+
+#: ../../standard/modelling/repr-trusts.rst:23
+#: a552728163fe4af6a648692363e52290
+msgid "``trustee``"
+msgstr "``trustee`` (доверительный управляющий траста);"
+
+#: ../../standard/modelling/repr-trusts.rst:24
+#: f08888283233480d8699bbaa910f2420
+msgid "``protector``"
+msgstr "``protector`` (попечитель траста);"
+
+#: ../../standard/modelling/repr-trusts.rst:25
+#: a959d75f1d754914a76f1f4316e93fce
+msgid "``otherInfluenceOrControl``"
+msgstr "``otherInfluenceOrControl`` (прочее влияние или контроль)."
+
+#: ../../standard/modelling/repr-trusts.rst:27
+#: 4a82701efcc74e51972a40d1d63a8b5d
+msgid ""
+"``interest.details`` MAY be used to give a local name (e.g. \"fiduciaire\") "
+"or more information about the interest (e.g. \"power to dissolve trust\")."
+msgstr ""
+"Для указания местного названия (например, \"fiduciaire\") или дополнительной"
+" информации о доли участия (например, \"power to dissolve trust\" "
+"(полномочия по роспуску траста)) МОЖЕТ быть использовано поле "
+"``interest.details``."
+
+#: ../../standard/modelling/repr-trusts.rst:30
+#: 8fc18c327e314609abf59698944e1c85
+msgid "Example Scenarios"
+msgstr "Примеры сценариев"
+
+#: ../../standard/modelling/repr-trusts.rst:33
+#: 33222d9e38a34e85978386729a36c4a1
+msgid "Trust without legal personality"
+msgstr "Траст без статуса юридического лица"
+
+#: ../../standard/modelling/repr-trusts.rst:34
+#: c8bba18f8dbf4e53b14324835b6963a2
+msgid ""
+"A trust with a known beneficiary, known trustee and known settlor. The trust"
+" does not have a legal personality."
+msgstr ""
+"Траст с известным бенефициарным владельцем, известным доверительным "
+"управляющим и известным учредителем. Траст не имеет статуса юридического "
+"лица."
+
+#: ../../standard/modelling/repr-trusts.rst-1 9d096cd42b5c435abd7d0c60baeff83c
+msgid ""
+"Diagram show linked statements. Entity statement labeled Trust A with "
+"entityType type 'arrangement' and subtype 'trust.' Trust A is connected to "
+"person A by a relationship statement with interest type 'settlor', person B "
+"by a relationship statement with interest type 'trustee', and person C by a "
+"relationship statement with interest type 'beneficiary'"
+msgstr ""
+"На схеме изображены связанные записи. Запись о субъекте, обозначенная как "
+"Траст А, в которой тип свойства entityType имеет значение 'arrangement', а "
+"подтип — 'trust'. Траст A связан с физическим лицом A записью об отношениях,"
+" в которой тип доли участия имеет значение 'settlor', с физическим лицом B —"
+" записью об отношениях, в которой тип доли участия имеет значение 'trustee',"
+" и с физическим лицом C — записью об отношениях, в которой тип доли участия "
+"имеет значение 'beneficiary'."
+
+#: ../../standard/modelling/repr-trusts.rst:42
+#: aa7add7c0f69445a87436d602e4c34ab
+msgid "Trust with legal personality and protector"
+msgstr "Траст со статусом юридического лица и попечителем"
+
+#: ../../standard/modelling/repr-trusts.rst:43
+#: 38d979aab9f74848beecf1d0402a1517
+msgid ""
+"A trust with a known beneficiary, known trustee, known settlor and known "
+"protector. The trust has a legal personality."
+msgstr ""
+"Траст с известным бенефициарным владельцем, известным доверительным "
+"управляющим, известным учредителем и известным попечителем. Траст имеет "
+"статус юридического лица."
+
+#: ../../standard/modelling/repr-trusts.rst-1 d8eabc4556bb44279e6a21f411748f08
+msgid ""
+"Diagram show linked statements. Entity statement labeled Trust A with "
+"entityType type 'legalEntity' and subtype 'trust.'  Trust A is connected to "
+"person A by a relationship statement with interest type 'settlor', person B "
+"by a relationship statement with interest type 'trustee', person C by a "
+"relationship statement with interest type 'protector', and person D by a "
+"relationship statement with interest type 'beneficiary.'"
+msgstr ""
+"На схеме изображены связанные записи. Запись о субъекте, обозначенная как "
+"Траст А, в которой тип свойства entityType имеет значение 'legalEntity', а "
+"подтип — 'trust'. Траст A связан с физическим лицом A записью об отношениях,"
+" в которой тип доли участия имеет значение 'settlor', с физическим лицом B —"
+" записью об отношениях, в которой тип доли участия имеет значение 'trustee',"
+" с физическим лицом C — записью об отношениях, в которой тип доли участия "
+"имеет значение 'protector', и с физическим лицом D — записью об отношениях, "
+"в которой тип доли участия имеет значение 'beneficiary'."
+
+#: ../../standard/modelling/repr-trusts.rst:52
+#: 6753a8165170426b85202f34d451b7da
+msgid "Trust with combined roles and anonymous beneficiary"
+msgstr ""
+"Траст с комбинированными функциями и неустановленным бенефициарным "
+"владельцем "
+
+#: ../../standard/modelling/repr-trusts.rst:53
+#: 0a983566bf9e455bb33d5032892a33ec
+msgid ""
+"A trust where the settlor is also a trustee and the beneficiary is anonymous"
+" due to a disclosure exemption."
+msgstr ""
+"Траст, в котором учредитель также выполняет функцию доверительного "
+"управляющего, а бенефициарный владелец является неустановленным в силу "
+"освобождения от раскрытия информации."
+
+#: ../../standard/modelling/repr-trusts.rst-1 be5cf3dadba44c6281e5e8a88ab43649
+msgid ""
+"Diagram show linked statements. Trust A is connected to person A by a "
+"relationship statement with interest types 'settlor' and 'trustee', person B"
+" by a relationship statement with interest type 'trustee', person C by a "
+"relationship statement with interest types 'beneficiary.' Person D has a "
+"person statement with person type 'anonymous person' and unspecified person "
+"details 'subject exempt from disclosure'"
+msgstr ""
+"На схеме изображены связанные записи. Траст A связан с физическим лицом A "
+"записью об отношениях, в которой типы долей участия имеют значение 'settlor'"
+" и  'trustee', с физическим лицом B — записью об отношениях, в которой тип "
+"доли участия имеет значение 'trustee', и с физическим лицом C — записью об "
+"отношениях, в которой тип доли участия имеет значение 'beneficiary'. В "
+"записи о физическом лице С тип физического лица имеет значение 'anonymous "
+"person', а в поле 'unspecified person details' указано 'subject exempt from "
+"disclosure'."
+
+#: ../../standard/modelling/repr-trusts.rst:61
+#: db3c7cd0904d4991a2d9acb0e9ca3984
+msgid "Trust-like arrangement"
+msgstr "Аналогичные трасту правоотношения"
+
+#: ../../standard/modelling/repr-trusts.rst:62
+#: eaa4a53290464fecb3649f6a85b5976f
+msgid ""
+"A trust-like arrangement with local names for the entityType and "
+"interestTypes."
+msgstr ""
+"Аналогичные трасту правоотношения с указанием местных названий для свойств "
+"entityType и interestTypes."
+
+#: ../../standard/modelling/repr-trusts.rst-1 27ec6a9370c846aaa96b5ab9497d5520
+msgid ""
+"Diagram show linked statements. Entity statement labeled Trust A with "
+"entityType type 'arrangement', subtype 'trust', and details 'fiducie-"
+"sûreté.' Trust A is connected to person A by a relationship statement with "
+"interest type 'settlor' and interest details 'constituant', person B by a "
+"relationship statement with interest type 'trustee' and interest details "
+"'fiduciaire', and person C by a relationship statement with interest type "
+"'beneficiary' and interest details 'beneficiaire'"
+msgstr ""
+"На схеме изображены связанные записи. Запись о субъекте, обозначенная как "
+"Траст А, в которой тип свойства entityType имеет значение 'arrangement', "
+"подтип — 'trust', а в поле сведений указано 'fiducie-sûreté.' Траст A связан"
+" с физическим лицом A записью об отношениях, в которой тип доли участия "
+"имеет значение 'settlor', а в поле сведений о доле участия указано "
+"'constituant', с физическим лицом B — записью об отношениях, в которой тип "
+"доли участия имеет значение 'trustee', а в поле сведений о доле участия "
+"указано 'fiduciaire', и с физическим лицом C — записью об отношениях, в "
+"которой тип доли участия имеет значение 'beneficiary', а в поле сведений о "
+"доле участия указано 'beneficiaire'."
+
+#: ../../standard/modelling/repr-trusts.rst:70
+#: 7b8ab1e384f844f3a48fec83b13cf979
+msgid "Company shares held in trust"
+msgstr "Акции компании в доверительном управлении"
+
+#: ../../standard/modelling/repr-trusts.rst:71
+#: 7df8d3df70fe4175807f77ac53921c00
+msgid ""
+"A significant stake in a company is held in a trust. The parties to the "
+"trust are the beneficial owners of the company. Dotted lines represent the "
+"further Relationship Statements needed to represent the indirect beneficial "
+"ownership of the parties."
+msgstr ""
+"Значительный пакет акций компании находится в доверительном управлении. "
+"Стороны траста являются бенефициарными владельцами компании. Пунктирные "
+"линии отображают дополнительные записи об отношениях, необходимые для "
+"отражения косвенного бенефициарного владения, осуществляемого сторонами."
+
+#: ../../standard/modelling/repr-trusts.rst:73
+#: ../../standard/modelling/repr-trusts.rst:84
+#: 32e6c544db7147968f70ca10045c55e9 4a723f25f64c4be2bc28912e847c8dd6
+msgid ""
+"See :ref:`representing-bo` for guidance on representing indirect beneficial "
+"ownership."
+msgstr ""
+"Рекомендации по отображению косвенного бенефициарного владения см. в разделе"
+" :ref:`Отображение бенефициарных владельцев`."
+
+#: ../../standard/modelling/repr-trusts.rst-1 5f6be83059774092af67b32c569080ef
+msgid ""
+"Diagram show linked statements. Company A is owned by Trust A and there is a"
+" relationship statement between them with interest type 'shareholding.' "
+"Trust A has a settlor, Person A, a trustee, Person B and a beneficiary, "
+"Person C. There are dotted lines between Company A and Person A, Person B "
+"and Person C to represent that they are the ultimate beneficial owners of "
+"Company A."
+msgstr ""
+"На схеме изображены связанные записи. Компания A находится в собственности "
+"Траста A, и между ними имеется запись об отношениях, в которой тип доли "
+"участия имеет значение 'shareholding'. У Траста A есть учредитель "
+"(Физическое лицо A), доверительный управляющий (Физическое лицо B) и "
+"бенефициарный владелец (Физическое лицо C). Между Компанией A и Физическим "
+"лицом A, Физическим лицом B и Физическим лицом C имеются пунктирные линии, "
+"указывающие на то, что эти лица являются конечными бенефициарными "
+"владельцами Компании A."
+
+#: ../../standard/modelling/repr-trusts.rst:81
+#: cf2030c94ad347c7a8072235b8aa49bb
+msgid "Company as a trustee"
+msgstr "Компания в качестве доверительного управляющего"
+
+#: ../../standard/modelling/repr-trusts.rst:82
+#: ec5078f632e647a088bf3794358d265b
+msgid ""
+"A trust where the trustee is a company. In this jurisdiction, the owner of "
+"the company is deemed to be an indirect beneficial owner of the trust."
+msgstr ""
+"Траст, доверительным управляющим которого является компания. В этой "
+"юрисдикции владелец компании считается косвенным бенефициарным владельцем "
+"траста."
+
+#: ../../standard/modelling/repr-trusts.rst-1 47b0fc60e7384cd7ac36c875af2613fd
+msgid ""
+"Diagram show linked statements. Trust A is linked to Company A by a "
+"relationship statement with interest type trustee. Company A is linked to "
+"Person C by a relationship statement with interest type shareholding. There "
+"is also a relationship statement between Person C and Trust to represent "
+"that they are one of the ultimate beneficial owners of Trust A. The interest"
+" type for this relationship statement is 'other influence or control.' There"
+" are also Person A and Person B the settlor and beneficiary of the trust."
+msgstr ""
+"На схеме изображены связанные записи. Траст A связан с Компанией A записью "
+"об отношениях, в которой тип доли участия имеет значение 'trustee'. Компания"
+" A связана с Физическим лицом C записью об отношениях, в которой тип доли "
+"участия имеет значение 'shareholding'. Также имеется запись об отношениях "
+"между Физическим лицом C и Трастом, указывающая на то, что это лицо является"
+" одним из конечных бенефициарных владельцев Траста A. Тип доли участия в "
+"этой записи об отношениях имеет значение 'other influence or control.' Схема"
+" также включает Физическое лицо A и Физическое лицо B, которые обозначены "
+"как учредитель и бенефициарный владелец траста."
+
+#: ../../standard/modelling/repr-trusts.rst:93
+#: 11ce49d6ef4e46b893765b6701e6497e
+msgid "Further Guidance"
+msgstr "Дополнительные рекомендации"
+
+#: ../../standard/modelling/repr-trusts.rst:95
+#: 46b56c5e6953492da3e289f5cbe85156
+msgid ""
+"The `Open Ownership website <https://www.openownership.org/en/topics/trusts-"
+"and-legal-arrangements/>`_ has more guidance and research on capturing "
+"beneficial ownership information about trusts and legal arrangements."
+msgstr ""
+"На `веб-сайте Open Ownership "
+"<https://www.openownership.org/en/topics/trusts-and-legal-arrangements/>`_ "
+"приводятся дополнительные рекомендации и результаты исследований по фиксации"
+" информации о бенефициарном владении в отношении трастов и правоотношений."

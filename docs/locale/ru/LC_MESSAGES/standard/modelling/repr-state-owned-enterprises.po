@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Galia Williams, 2024
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Kateryna Volobuieva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:4
+#: 4bd98b99ad7e45fb8d42c6c297ce5fa2
+msgid "Representing state-owned enterprises"
+msgstr "Отображение информации о государственных предприятиях"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:8
+#: e21c52919058452d951b8336e5e933c5
+msgid ""
+"**Key requirement:** If an entity's status as a state-owned enterprise needs"
+" to be represented, then its Entity statement MUST be the subject of "
+"Relationship statements connecting it, either directly or indirectly, to an "
+"Entity statement with ``entityType.type`` of 'state' or 'stateBody'."
+msgstr ""
+"**Важное требование:** если необходимо отобразить статус субъекта как "
+"государственного предприятия, то его собственная запись о субъекте ДОЛЖНА "
+"быть предметом записей об отношениях, связывающих его, напрямую или "
+"косвенно, с записью о субъекте, в которой параметр ``entityType`` имеет "
+"значение 'state' или 'stateBody'."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:12
+#: 65254760020349eca2734bc1695dacc6
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:14
+#: 630c179aab1445768ba34b74659d1f29
+msgid ""
+"The definition of 'state-owned enterprise' (SOE) can change according to "
+"jurisdiction or domain. The Beneficial Ownership Data Standard (BODS) does "
+"not therefore rely on, or support, any one definition. Instead, BODS enables"
+" the interests between a state (or state body) and an enterprise to be "
+"represented. This requires the state itself (or state body) to be "
+"represented by an Entity statement."
+msgstr ""
+"Определение 'государственного предприятия' (ГП) может варьироваться в "
+"зависимости от юрисдикции и сектора. Поэтому Стандарт данных о бенефициарном"
+" владении (СДБВ) не опирается на и не использует какое-либо одно "
+"определение. Вместо этого СДБВ позволяет предоставить информацию об "
+"отношениях между государством (или государственным органом) и предприятием. "
+"Для этого необходимо, чтобы само государство (или государственный орган) "
+"было представлено записью о субъекте."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:16
+#: 541c5e5cdae240a3b997962e6c4b0afb
+msgid ""
+"In particular, the following properties and values SHOULD be used to "
+"represent information about enterprises and their links to states:"
+msgstr ""
+"В частности, для раскрытия информации о предприятиях и их связях с "
+"государством ДОЛЖНЫ использоваться следующие свойства и значения:"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:18
+#: 11152c5a279b4eababf0f79db3784794
+msgid ""
+"``entityType.type`` SHOULD be set to 'state' or 'stateBody', and "
+"``jurisdiction`` SHOULD be used to represent the particular state."
+msgstr ""
+"Для свойства ``entityType.type`` СЛЕДУЕТ установить значение 'state' или "
+"'stateBody', а свойство ``jurisdiction`` СЛЕДУЕТ использовать для "
+"отображения конкретной страны."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:19
+#: 93aec1189bfb4f39b825eb900681a8ed
+msgid ""
+"``entityType.subtype`` SHOULD be used to refine the category of a given "
+"state body (as a 'government department', 'state agency' or 'other')."
+msgstr ""
+"Свойство ``entityType.subtype`` СЛЕДУЕТ использовать для уточнения типа "
+"государственного органа ('government department', 'state agency' или "
+"'other')."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:20
+#: 8ed32d5728ad49569a33216a477c976c
+msgid ""
+"``formedByStatute`` MAY be used to supply details of a law, where an entity "
+"has been formed as a result of specific legislation."
+msgstr ""
+"Свойство ``formedByStatute`` МОЖЕТ использоваться для предоставления "
+"сведений о законе, если субъект был учрежден в соответствии с конкретным "
+"законодательным актом."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:22
+#: cf39b2e82d9448d89347c17cefd2dadd
+msgid ""
+"For more details about these properties see :ref:`schema-entity-record`."
+msgstr "Подробнее об этих свойствах смотрите в :ref:`schema-entity-record`."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:25
+#: b94b98d0e9264fcc957d18259cdadf99
+msgid "Examples"
+msgstr "Примеры"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:28
+#: 6b7cdd46d4444826a3e2492ce6803dfd
+msgid "Ownership by state body"
+msgstr "Владение со стороны государства"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:30
+#: 66a252060732451d9ae526d6e410906c
+msgid ""
+"Ownership or control by a state body is known and a statement about these "
+"interests is possible."
+msgstr ""
+"Владение или контроль со стороны государства известны, и возможна запись о "
+"таких долях участия."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst-1
+#: dbaf772b9f7740febd4f8fcabbd85f89
+msgid ""
+"Entity statement (with entityType type 'registeredEntity') is connected via "
+"a Relationship statement to an Entity statement (with entityType type "
+"'stateBody' and jurisdiction 'gb')."
+msgstr ""
+"Запись о субъекте (в которой свойство entityType имеет  значение "
+"'registeredEntity') связана посредством Записи об отношениях с Записью о "
+"субъекте (в которой свойство entityType имеет значение 'stateBody', а "
+"юрисдикция обозначена значением 'gb')."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:38
+#: d8c021219bcc40a1a10f644e847fec64
+msgid "Ownership by regional government"
+msgstr "Владение со стороны местных органов власти"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:40
+#: 511262e870774b73875fc5d5960b3cb3
+msgid ""
+"Ownership or control by a regional state government is known and a statement"
+" about these interests is possible."
+msgstr ""
+"Владение или контроль со стороны местных органов власти известны, и возможна"
+" запись о таких долях участия."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst-1
+#: a919d42096744f1aade937e1ef98a75e
+msgid ""
+"Entity statement (with entityType type 'registeredEntity') is connected via "
+"a Relationship statement to an Entity statement (with entityType type "
+"'state' and jurisdiction 'zm')."
+msgstr ""
+"Запись о субъекте (в которой свойство entityType имеет значение "
+"'registeredEntity') связана посредством Записи об отношениях с Записью о "
+"субъекте (в которой свойство entityType имеет значение 'state', а юрисдикция"
+" обозначена значением 'zm')."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:48
+#: e8b709c0349142dab3c775dee22b9bee
+msgid "SOE exempt from disclosure"
+msgstr "ГП, освобожденное от раскрытия информации"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:50
+#: bbc17533636744bf8da2b8f6bef581ac
+msgid ""
+"A registered entity declares that it is exempt from disclosing beneficial "
+"owners because it is an SOE."
+msgstr ""
+"Зарегистрированный субъект заявляет, что он освобожден от раскрытия "
+"информации о бенефициарных владельцах, поскольку является ГП."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst-1
+#: 8908148364aa4344950409ec50b24394
+msgid ""
+"Entity statement (with entityType type 'registeredEntity') is connected via "
+"a Relationship statement to an Entity statement (with entityType type "
+"'state' and jurisdiction 'nl'). The Entity statement with entityType type "
+"'registeredEntity' is also connected to a Relationship statement which has "
+"interestedParty.unspecified.reason set to 'noBeneficialOwners' and "
+"interestedParty.unspecified.description set to 'Exemption granted on the "
+"basis that the declaring entity is a state-owned enterprise'."
+msgstr ""
+"Запись о субъекте (в которой свойство entityType имеет значение "
+"'registeredEntity') связана посредством Записи об отношениях с Записью о "
+"субъекте (в которой свойство entityType имеет значение 'state', а юрисдикция"
+" обозначена значением 'nl'). Запись о субъекте, в которой свойство "
+"entityType имеет значение 'registeredEntity', также связана с Записью об "
+"отношениях, в которой для свойства interestedParty.unspecified.reason "
+"установлено значение 'noBeneficialOwners', а для свойства "
+"interestedParty.unspecified.description — значение 'Exemption granted on the"
+" basis that the declaring entity is a state-owned enterprise' (Освобождение "
+"предоставлено на основании того, что заявляющий субъект яляется "
+"государственным предприятием)."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:58
+#: 746ef90914c4492bae02a4ed1a20e8c4
+msgid "Golden share provision"
+msgstr "Положение о золотой акции"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:60
+#: 6351b146e71b426b9516b9f48712b53d
+msgid ""
+"Control through a golden share provision in company articles or shareholder "
+"agreement."
+msgstr ""
+"Контроль, полученный в соответствии с положением о золотой акции в уставе "
+"компании или акционерном соглашении."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst-1
+#: cd40e7e0e8284f79a156e392de1b8fdc
+msgid ""
+"Entity statement (with entityType type 'registeredEntity') is connected via "
+"a Relationship statement to an Entity statement (with entityType type "
+"'stateBody' and jurisdiction 'nl'). The Ownership-or-control statement has "
+"interests.0.type set to 'controlViaCompanyRulesOrArticles' and "
+"interests.0.details set to 'Veto rights over specified company decisions'."
+msgstr ""
+"Запись о субъекте (в которой свойство entityType имеет значение "
+"'registeredEntity') связана посредством Записи об отношениях с Записью о "
+"субъекте (в которой свойство entityType имеет значение 'stateBody', а "
+"юрисдикция обозначена значением 'nl'). В Записи о владении или контроле для "
+"свойства interests.0.type установлено значение "
+"'controlViaCompanyRulesOrArticles', а для свойства interests.0.details — "
+"значение 'Veto rights over specified company decisions' (Право вето на "
+"определенные решения компании)."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:68
+#: b40eca442a6b46cb82ad3799ffe9eea0
+msgid "Managing official"
+msgstr "Управляющее должностное лицо"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:70
+#: ad51092f3869426e8818fd6ce3bb2bea
+msgid "An SOE controlled by a natural person."
+msgstr "ГП, контролируемое физическим лицом"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst-1
+#: 821ff2365f4d48ddb62077eafbe8e2c5
+msgid ""
+"Entity statement (with entityType type 'registeredEntity') is connected via "
+"a Relationship statement to an Entity statement (with entityType type "
+"'state' and jurisdiction 'zm'). The Entity statement with entityType type "
+"'registeredEntity' is also connected to a Relationship statement which has "
+"interests.0.type set to 'seniorManagingOfficial'. That last Relationship "
+"statement is connected to a Person statement with personType set to "
+"'knownPerson'."
+msgstr ""
+"Запись о субъекте (в которой свойство entityType имеет значение "
+"'registeredEntity') связана посредством Записи об отношениях с Записью о "
+"субъекте (в которой свойство entityType имеет значение 'state', а юрисдикция"
+" обозначена значением 'zm'). Запись о субъекте, в которой свойство "
+"entityType имеет значение 'registeredEntity', также связана с Записью об "
+"отношениях, в которой для свойства interests.0.type установлено значение "
+"'seniorManagingOfficial'. Эта последняя Запись об отношениях связана с "
+"Записью о физическом лице, в которой для свойства personType установлено "
+"значение 'knownPerson'."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:78
+#: ee9495fb8ffd42edaf57de59841e8419
+msgid "Formed by statute"
+msgstr "Учреждено на основании устава"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:80
+#: 24e01a09d7b44b09a7b20169861d0c4c
+msgid "An SOE is formed by statute."
+msgstr "ГП было учреждено на основании устава."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst-1
+#: 67ff57cdc8ce4d9b9dd971e5d42f7210
+msgid ""
+"Entity statement (with entityType type 'legalEntity', "
+"formedByLegislation.name set to 'National Energy Act', and "
+"formedByLegislation.date set to '1980-02-01') is connected via a "
+"Relationship statement to an Entity statement (with entityType type "
+"'stateBody' and jurisdiction 'zm'). The Relationship statement has "
+"interests.0.type set to 'controlByLegalFramework'."
+msgstr ""
+"Запись о субъекте (в которой свойство entityType имеет значение "
+"'legalEntity', для свойства formedByLegislation.name установлено значение "
+"'National Energy Act', а для свойства formedByLegislation.date — значение "
+"'1980-02-01') связана посредством Записи об отношениях с Записью о субъекте "
+"(в которой свойство entityType имеет значение 'stateBody', а юрисдикция "
+"обозначена значением 'zm'). В Записи об отношениях для свойства "
+"interests.0.type установлено значение 'controlByLegalFramework'."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:88
+#: 5c1f1781c29c40aba4d730353db6de84
+msgid "Government-linked investment entity"
+msgstr "Инвестиционный субъект, связанный с государством"
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst:90
+#: 5ef1c2b23c854a2e91ebbcb7f3796623
+msgid ""
+"A state's interests in an SOE are managed via a government-linked investment"
+" entity (GLIE)."
+msgstr ""
+"Доли государства в ГП управляются через инвестиционный субъект, связанный с "
+"государством (GLIE)."
+
+#: ../../standard/modelling/repr-state-owned-enterprises.rst-1
+#: 3b4deaf888464255bae854b9fbd4edef
+msgid ""
+"Entity statement (with entityType type 'registeredEntity') is connected via "
+"a Relationship statement to another Entity statement with entityType type "
+"'registeredEntity' and name 'A G.L.I.E'. That latter Entity Statement is "
+"connected via a Relationship statement to an Entity statement (with "
+"entityType type 'state' and jurisdiction 'gb')."
+msgstr ""
+"Запись о субъекте (в которой свойство entityType имеет значение "
+"'registeredEntity') связана посредством Записи об отношениях с другой "
+"Записью о субъекте, в которой свойство entityType имеет значение "
+"'registeredEntity', а название — 'A G.L.I.E'. Эта последняя Запись о "
+"субъекте связана посредством Записи об отношениях с Записью о субъекте (в "
+"которой свойство entityType имеет значение 'state', а юрисдикция обозначена "
+"значением 'gb')."

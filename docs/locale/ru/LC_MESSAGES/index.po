@@ -1,94 +1,94 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, Open Ownership
+# Copyright (C) 2024, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
-# Galia Williams, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-13 16:06+0100\n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Galia Williams, 2022\n"
-"Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../index.rst:2 46b3369e61c348639a669d4f63a0ce2d
-msgid "Beneficial Ownership Data Standard (v0.3)"
-msgstr "Стандарт данных о бенефициарном владении (версия 0.3)"
-
-#: ../../index.rst:4 b44d48c1ed3243c3b4694ee040ccac79
-msgid ""
-"This website contains the draft specification of the Beneficial Ownership "
-"Data Standard (version 0.3) plus support for its use. :doc:`Find out more "
-"<about/index>` about the standard's development and how to get involved."
+#: ../../index.rst:2 fc13bceebec2410c8e7da1650e465254
+msgid "Beneficial Ownership Data Standard (v0.4)"
 msgstr ""
-"Данный веб-сайт содержит проект спецификации Стандарта данных о "
-"бенефициарном владении (версия 0.3) и поддержку в его использовании. "
-":doc:`Узнайте больше <about/index>` о разработке стандарта и о том, как "
-"принять участие."
 
-#: ../../index.rst:12 d6e1bf4b0eb04df68ab33b90253fe86a
-msgid "For Newcomers"
-msgstr "для начинающих пользователей"
-
-#: ../../index.rst:14 ff0f0ef6524c41508e1d2bc1252617da
+#: ../../index.rst:4 bcdb8d77de3240b5baa001a40c5abd3d
 msgid ""
-"Get an overview of beneficial ownership and why a standardised format for "
-"data is important."
+"The Beneficial Ownership Data Standard (BODS) is an open standard providing "
+"guidance for collecting, sharing and using high-quality beneficial ownership"
+" data."
 msgstr ""
-"Обзор бенефициарного владения и почему важен стандартизированный формат "
-"данных."
 
-#: ../../index.rst:18 9c015b1d932d401ab7a86efdd94bd7ac
-msgid ":doc:`Visit the primer <primer/index>`"
-msgstr ":doc:`Базовая информация <primer/index>`"
+#: ../../index.rst:6 be031c1dc1de4bcaa66bffd88cb94668
+msgid ""
+"It is developed by `Open Ownership <https://www.openownership.org/>`_, a "
+"non-profit organisation focused on beneficial ownership transparency, in "
+"partnership with `Open Data Services <https://opendataservices.coop/>`_. "
+"Find out more about the :doc:`governance of BODS <../about/governance>` and "
+"how to get involved."
+msgstr ""
 
-#: ../../index.rst:22 808131e99949432c85e6335a84e8012e
-msgid ":doc:`What is beneficial ownership? <primer/whatisbo>`"
-msgstr ":doc:`Что такое бенефициарное владение? <primer/whatisbo>`"
+#: ../../index.rst:12 7739934b9f874808beded5af7cecba37
+msgid "Introduction"
+msgstr ""
 
-#: ../../index.rst:26 44e9a3b443bc4af8978025c04d2c2987
-msgid ":doc:`What is the data standard? <primer/whatisthebods>`"
-msgstr ":doc:`Что такое стандарт данных? <primer/whatisthebods>`"
+#: ../../index.rst:14 343e893d4203453f9c519acaee081119
+msgid ""
+"Learn about beneficial ownership and why a standardised format for data is "
+"important."
+msgstr ""
 
-#: ../../index.rst:30 f531b1d15e3743088d3b828b154e74c9
-msgid ":doc:`About the standard's development <about/index>`"
-msgstr ":doc:`О разработке стандарта <about/index>`"
+#: ../../index.rst:18 66a86c7baa804b929aaa415db155db3e
+msgid ":ref:`What is beneficial ownership? <primer>`"
+msgstr ""
 
-#: ../../index.rst:39 866271656e5f4af898e96b89ebdd9aab
+#: ../../index.rst:22 85dfef5cf3824d3ab341ee16465a3b28
+msgid ":ref:`What is the data standard? <whatisbods>`"
+msgstr ""
+
+#: ../../index.rst:26 f3879e8d222740548009cab83cfa2fb1
+msgid ":ref:`About the standard's development <about>`"
+msgstr ""
+
+#: ../../index.rst:30 a573902516874d6c910ef104fb8629f6
+msgid ""
+"`Open Ownership's work, team and purpose "
+"<https://www.openownership.org/en/about/>`_"
+msgstr ""
+
+#: ../../index.rst:37 704368b0b86949e89d71b4dff5107a86
 msgid "For Developers"
 msgstr "для разработчиков"
 
-#: ../../index.rst:41 2f4afbec1d9a4c5ba368567a70328bd6
+#: ../../index.rst:39 112a08938c1a4fffa55f657e1ee94707
 msgid "Understand how to package up and release beneficial ownership data."
 msgstr "Сведения об оформлении и публикации данных о бенефициарном владении."
 
-#: ../../index.rst:45 c0737964472f4a6aad70d873f4465d58
-msgid ":doc:`Visit the Data Schema <schema/index>`"
-msgstr ":doc:`Схема данных <schema/index>`"
-
-#: ../../index.rst:49 aa117f17aab047ae893648ef62e371e4
-msgid ":doc:`The data model  <schema/concepts>`"
-msgstr ":doc:`Модель данных <schema/concepts>`"
-
-#: ../../index.rst:53 4adade8ab60748f28988d81ee37037c3
-msgid ":doc:`Schema browser <schema/schema-browser>`"
-msgstr ":doc:`Браузер схемы <schema/schema-browser>`"
-
-#: ../../index.rst:57 73aca03efcb2408f8f76c4ab49af624a
-msgid ""
-":doc:`Requirements for publication systems <schema/guidance/functional-"
-"requirements>`"
+#: ../../index.rst:43 1b4bc18d796a4789912aaa35c7d666dd
+msgid ":ref:`Key Concepts <key-concepts>`"
 msgstr ""
-":doc:`Требования для систем опубликования <schema/guidance/functional-"
-"requirements>`"
+
+#: ../../index.rst:47 fc9de6820145423f88cc6b492e87f101
+msgid ":ref:`Modelling requirements  <modelling-requirements>`"
+msgstr ""
+
+#: ../../index.rst:51 310da8c541ba4a7597ddc9149f955f6b
+msgid ":ref:`Schema browser <schema-browser>`"
+msgstr ""
+
+#: ../../index.rst:55 635fe9d295bb42c6b14c5d13413302a2
+msgid ":ref:`System requirements <system-requirements>`"
+msgstr ""

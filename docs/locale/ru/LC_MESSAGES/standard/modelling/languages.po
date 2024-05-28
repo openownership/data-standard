@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Kateryna Volobuieva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../standard/modelling/languages.rst:2 8a42b55124a641859a156f212f26f350
+msgid "Representing alternative languages"
+msgstr "Отображение альтернативных языков"
+
+#: ../../standard/modelling/languages.rst:4 a0fe30292611498281cc9335168a0cf8
+msgid ""
+"Beneficial ownership information may need to be provided in different "
+"languages or scripts. BODS provides options for representing translated or "
+"transliterated information."
+msgstr ""
+"Иногда информацию о бенефициарном владении необходимо предоставлять на "
+"других языках или в другом написании. СДБВ предусматривает варианты "
+"отображения переведенной или преобразованной информации."
+
+#: ../../standard/modelling/languages.rst:6 c6c1c406cbf3439abcfe54c2e88ef5b7
+msgid "To represent:"
+msgstr "Для отображения:"
+
+#: ../../standard/modelling/languages.rst:8 6382fbedc1c549b2b6b398b1b7cfda0b
+msgid ""
+"people’s names, use an entry in the names array with ``name.type`` "
+"‘translation’ or ‘transliteration’"
+msgstr ""
+"ФИО физических лиц используйте элемент в массиве ``names``, у которого "
+"параметр ``name.type` имеет значение ‘translation’ (перевод) или "
+"‘transliteration’ (транслитерация);"
+
+#: ../../standard/modelling/languages.rst:10 413423e90b43493f9ce5398af9eec3ae
+msgid "entity names, use an entry in the ``alternativeNames`` array"
+msgstr "названий субъектов используйте элемент в массиве``alternativeNames``;"
+
+#: ../../standard/modelling/languages.rst:12 aa9004b279db476a90a2488d75fadf12
+msgid "entity types use ``entityType.details``"
+msgstr "типов субъектов используйте поле ``entityType.details``;"
+
+#: ../../standard/modelling/languages.rst:14 b6e3e248430b430f81de86d6dc6bc96e
+msgid "interest types use ``interest.details``"
+msgstr "типов долей участия используйте поле ``interest.details`.`"
+
+#: ../../standard/modelling/languages.rst:16 af6152cc36894ae5b87cc55cdb6247ca
+msgid "For other fields or entire records, use an annotation."
+msgstr "Для других полей или целых элементов используйте примечание."
+
+#: ../../standard/modelling/languages.rst:18 3baabe77bc16490e8db6ca15b90b66fe
+msgid "In the annotation:"
+msgstr "В примечании:"
+
+#: ../../standard/modelling/languages.rst:20 dd0d2e55cdbd436fbb60124a4bbcb4cc
+msgid "``motivation`` MUST be ‘transformation’"
+msgstr ""
+"параметр ``motivation`` ДОЛЖЕН иметь значение ‘transformation’ "
+"(преобразование);"
+
+#: ../../standard/modelling/languages.rst:22 548ad5151e9e489fb87c89880ad8461b
+msgid ""
+"``description`` SHOULD explain the type of transformation (e.g. "
+"‘translation’)"
+msgstr ""
+"в поле ``description`` СЛЕДУЕТ дать пояснение типа преобразования (например,"
+" ‘translation’ (перевод));"
+
+#: ../../standard/modelling/languages.rst:24 b957053c6b7a43e49105b321cdd4d71b
+msgid "``transformedContent`` MUST contain the transformed content"
+msgstr ""
+"поле ``transformedContent`` ДОЛЖНО содержать преобразованное содержимое."

@@ -1,72 +1,59 @@
 # Translations template for PROJECT.
-# Copyright (C) 2022 ORGANIZATION
+# Copyright (C) 2024 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
-# Galia Williams, 2022
 # Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2022
+# Galia Williams, 2022
+# Kateryna Volobuieva, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-04-13 16:07+0100\n"
+"POT-Creation-Date: 2024-05-10 16:05+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2022\n"
-"Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.14.0\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: schema/codelists/addressType.csv schema/codelists/annotationMotivation.csv
-#: schema/codelists/directOrIndirect.csv
-#: schema/codelists/entitySubtypeCategory.csv schema/codelists/entityType.csv
-#: schema/codelists/interestType.csv schema/codelists/nameType.csv
-#: schema/codelists/personType.csv
+#: schema/codelists/directOrIndirect.csv schema/codelists/entitySubtype.csv
+#: schema/codelists/entityType.csv schema/codelists/interestType.csv
+#: schema/codelists/nameType.csv schema/codelists/personType.csv
+#: schema/codelists/recordStatus.csv schema/codelists/recordType.csv
 #: schema/codelists/securitiesIdentifierSchemes.csv
-#: schema/codelists/sourceType.csv schema/codelists/statementType.csv
-#: schema/codelists/unspecifiedReason.csv
+#: schema/codelists/sourceType.csv schema/codelists/unspecifiedReason.csv
 msgid "code"
 msgstr "значение"
 
 #: schema/codelists/addressType.csv schema/codelists/annotationMotivation.csv
-#: schema/codelists/directOrIndirect.csv
-#: schema/codelists/entitySubtypeCategory.csv schema/codelists/entityType.csv
-#: schema/codelists/interestType.csv schema/codelists/nameType.csv
-#: schema/codelists/personType.csv
+#: schema/codelists/directOrIndirect.csv schema/codelists/entitySubtype.csv
+#: schema/codelists/entityType.csv schema/codelists/interestType.csv
+#: schema/codelists/nameType.csv schema/codelists/personType.csv
+#: schema/codelists/recordStatus.csv schema/codelists/recordType.csv
 #: schema/codelists/securitiesIdentifierSchemes.csv
-#: schema/codelists/sourceType.csv schema/codelists/statementType.csv
-#: schema/codelists/unspecifiedReason.csv
+#: schema/codelists/sourceType.csv schema/codelists/unspecifiedReason.csv
 msgid "title"
 msgstr "заголовок"
 
 #: schema/codelists/addressType.csv schema/codelists/annotationMotivation.csv
-#: schema/codelists/directOrIndirect.csv
-#: schema/codelists/entitySubtypeCategory.csv schema/codelists/entityType.csv
-#: schema/codelists/interestType.csv schema/codelists/nameType.csv
-#: schema/codelists/personType.csv
+#: schema/codelists/directOrIndirect.csv schema/codelists/entitySubtype.csv
+#: schema/codelists/entityType.csv schema/codelists/interestType.csv
+#: schema/codelists/nameType.csv schema/codelists/personType.csv
+#: schema/codelists/recordStatus.csv schema/codelists/recordType.csv
 #: schema/codelists/securitiesIdentifierSchemes.csv
-#: schema/codelists/sourceType.csv schema/codelists/statementType.csv
-#: schema/codelists/unspecifiedReason.csv
+#: schema/codelists/sourceType.csv schema/codelists/unspecifiedReason.csv
 msgid "description"
 msgstr "описание"
-
-#: schema/codelists/addressType.csv schema/codelists/annotationMotivation.csv
-#: schema/codelists/directOrIndirect.csv
-#: schema/codelists/entitySubtypeCategory.csv schema/codelists/entityType.csv
-#: schema/codelists/interestType.csv schema/codelists/nameType.csv
-#: schema/codelists/personType.csv
-#: schema/codelists/securitiesIdentifierSchemes.csv
-#: schema/codelists/sourceType.csv schema/codelists/statementType.csv
-#: schema/codelists/unspecifiedReason.csv
-msgid "technical note"
-msgstr "техническое примечание"
 
 #. title
 #: schema/codelists/addressType.csv:1
@@ -76,11 +63,13 @@ msgstr "Место рождения"
 #. description
 #: schema/codelists/addressType.csv:1
 msgid ""
-"The place where a person was born. This must only be used to describe "
-"natural persons. Only a town and country are required."
+"The place where a person was born. A town (in the `address` field) and "
+"`country` may be sufficient information. This MUST only apply to the "
+"`placeOfBirth` field for natural persons."
 msgstr ""
-"Место, в котором человек родился. Следует использовать только для описания "
-"физических лиц. Необходимо указать только город и страну."
+"Место, в котором человек родился. Может быть достаточно указать город (в "
+"поле `address` (адрес)) и `страну`. Это значение ДОЛЖНО указываться только в"
+" поле `placeOfBirth` для физических лиц."
 
 #. title
 #: schema/codelists/addressType.csv:2
@@ -90,10 +79,10 @@ msgstr "Адрес проживания"
 #. description
 #: schema/codelists/addressType.csv:2
 msgid ""
-"An address where someone lives. This must only be used for natural persons."
+"An address where someone lives. This MUST only apply to natural persons."
 msgstr ""
-"Адрес, по которому человек проживает. Должен использоваться только для "
-"физических лиц. "
+"Адрес, по которому человек проживает. Это значение ДОЛЖНО указываться только"
+" для физических лиц."
 
 #. title
 #: schema/codelists/addressType.csv:3
@@ -104,12 +93,11 @@ msgstr "Юридический адрес"
 #: schema/codelists/addressType.csv:3
 msgid ""
 "An official address for delivering statutory mail and legal notices which "
-"must be provided to company registers. This must only be used to describe "
-"entities."
+"must be provided to company registers. This MUST only apply to entities."
 msgstr ""
 "Официальный адрес для доставки почты от государственных органов и "
-"официальных уведомлений, которые должны передаваться в реестры компаний. "
-"Должен использоваться только для описания юридических лиц."
+"официальных уведомлений, который должен предоставляться в реестры компаний. "
+"Это значение ДОЛЖНО указываться только для субъектов."
 
 #. title
 #: schema/codelists/addressType.csv:4
@@ -120,11 +108,11 @@ msgstr "Адрес для доставки"
 #: schema/codelists/addressType.csv:4
 msgid ""
 "An address which can be used as an alternative to a residential address for "
-"the purpose of receiving post. This must only be used for natural persons."
+"the purpose of receiving post. This MUST only apply to natural persons."
 msgstr ""
 "Адрес, который может использоваться в качестве альтернативы адресу "
-"проживания в целях получения почты. Должен использоваться только для "
-"физических лиц."
+"проживания в целях получения почты. Это значение ДОЛЖНО указываться только "
+"для физических лиц."
 
 #. title
 #: schema/codelists/addressType.csv:5
@@ -174,12 +162,12 @@ msgstr "Корректировка"
 #: schema/codelists/annotationMotivation.csv:2
 msgid ""
 "The value of this field, object or statement has been corrected, using the "
-"method in the description field and/or from the original value given in the "
+"method in the description field or from the original value given in the "
 "description field."
 msgstr ""
 "Значение данного поля, объекта или записи было откорректировано при помощи "
-"метода в поле описания и/или на основе первоначального значения, указанного "
-"в поле описания."
+"метода в поле описания или относительно первоначального значения, указанного"
+" в поле описания."
 
 #. title
 #: schema/codelists/annotationMotivation.csv:3
@@ -221,11 +209,11 @@ msgstr "Преобразование"
 msgid ""
 "The values of this field, object or statement have been changed from their "
 "original form using the method in the description field. The transformed "
-"representation may be provided in the transformedContent field."
+"representation may be provided in the `transformedContent` field."
 msgstr ""
 "Значения данного поля, объекта или записи были изменены относительно их "
 "первоначальной формы при помощи метода в поле описания. Преобразованное "
-"представление может быть указано в поле transformedContent."
+"представление может быть указано в поле `transformedContent`."
 
 #. title
 #: schema/codelists/directOrIndirect.csv:1
@@ -262,48 +250,85 @@ msgid "The interest may be direct or indirect."
 msgstr "Доля участия может быть прямой или косвенной."
 
 #. title
-#: schema/codelists/entitySubtypeCategory.csv:1
-msgid "State body > Government department"
-msgstr "Государственный орган  > Правительственное ведомство"
+#: schema/codelists/entitySubtype.csv:1
+msgid "Government department"
+msgstr "Правительственное ведомство"
 
 #. description
-#: schema/codelists/entitySubtypeCategory.csv:1
+#: schema/codelists/entitySubtype.csv:1
 msgid ""
-"An element of government with executive responsibilities. Terms often used "
-"to designate such a body: ministry, department, bureau or office."
+"An element of government with executive responsibilities. These terms are "
+"often used to designate such a body: ministry, department, bureau or office."
+" This MUST be used with `entityType.type` 'stateBody'."
 msgstr ""
 "Элемент правительства с исполнительными обязанностями. Термины, которые "
 "обычно используются для обозначения такого органа: министерство, ведомство, "
-"бюро или офис."
+"бюро или офис. Это значение ДОЛЖНО использоваться, если параметр "
+"`entityType.type` имеет значение 'stateBody'."
 
 #. title
-#: schema/codelists/entitySubtypeCategory.csv:2
-msgid "State body > State Agency"
-msgstr "Государственный орган > Государственное агентство"
+#: schema/codelists/entitySubtype.csv:2
+msgid "State Agency"
+msgstr "Государственное агентство"
 
 #. description
-#: schema/codelists/entitySubtypeCategory.csv:2
+#: schema/codelists/entitySubtype.csv:2
 msgid ""
 "A body overseeing or administering elements of public policy. State agencies"
-" may have responsiblities which are devolved from government departments or "
-"from the state's legislative body."
+" may have responsibilities which are devolved from government departments or"
+" from the state's legislative body. This MUST be used with `entityType.type`"
+" 'stateBody."
 msgstr ""
 "Орган, осуществляющий надзор или управление по отношению к элементам "
 "государственной политики. Государственные агентства могут иметь обязанности,"
 " возложенные на них правительственными ведомствами или государственным "
-"законодательным органом власти."
+"законодательным органом власти.  Это значение ДОЛЖНО использоваться, если "
+"параметр `entityType.type` имеет значение 'stateBody'."
 
 #. title
-#: schema/codelists/entitySubtypeCategory.csv:3
-msgid "State body > Other"
-msgstr "Государственный орган > Другое"
+#: schema/codelists/entitySubtype.csv:3
+msgid "Other"
+msgstr "Другое"
 
 #. description
-#: schema/codelists/entitySubtypeCategory.csv:3
-msgid "A type of state body unlike a government department or state agency."
+#: schema/codelists/entitySubtype.csv:3
+msgid "Any other type of entity."
+msgstr "Любой другой тип субъекта."
+
+#. title
+#: schema/codelists/entitySubtype.csv:4
+msgid "Trust"
+msgstr "Траст"
+
+#. description
+#: schema/codelists/entitySubtype.csv:4
+msgid ""
+"A trust or trust like arrangement. An arrangement where a settlor transfers "
+"ownership of assets to trustees to control for the benefit of beneficiaries."
+" This MUST be used with `entityType.type` 'arrangement' or 'legalEntity'."
 msgstr ""
-"Тип государственного органа, который не относится к правительственному "
-"ведомству или государственному агентству."
+"Траст или аналогичные трасту правоотношения. Правоотношения, в которых "
+"учредитель траста передает право собственности на активы доверительным "
+"управляющим для осуществления контроля в интересах выгодоприобретателей. Это"
+" значение ДОЛЖНО использоваться, если параметр `entityType.type` имеет "
+"значение 'arrangement' или 'legalEntity'."
+
+#. title
+#: schema/codelists/entitySubtype.csv:5
+msgid "Nomination"
+msgstr "Назначение номинального владельца"
+
+#. description
+#: schema/codelists/entitySubtype.csv:5
+msgid ""
+"An agreement where a nominator instructs a nominee to act on their behalf in"
+" a specified capacity. This MUST be used with `entityType.type` "
+"'arrangement'."
+msgstr ""
+"Правоотношения, в которых назначающее лицо поручает номинальному владельцу "
+"действовать от его имени в указанном качестве. Это значене ДОЛЖНО "
+"использоваться, если параметр `entityType.type` имеет значение "
+"'arrangement'."
 
 #. title
 #: schema/codelists/entityType.csv:1
@@ -313,12 +338,12 @@ msgstr "Зарегистрированное юридическое лицо"
 #. description
 #: schema/codelists/entityType.csv:1
 msgid ""
-"Any legal entity created through an act of official registration. In most "
-"cases, registered entities will have an official issued identifier."
+"A legal entity created through an act of official registration. In most "
+"cases, registered entities have an officially issued identifier."
 msgstr ""
-"Любое юридическое лицо, созданное посредством акта официальной регистрации. "
-"В большинстве случаев зарегистрированные юридические лица имеют официально "
-"выданный идентификатор."
+"Юридическое лицо, созданное посредством акта официальной регистрации. В "
+"большинстве случаев зарегистрированные юридические лица имеют официально "
+"присвоенный идентификатор."
 
 #. title
 #: schema/codelists/entityType.csv:2
@@ -344,10 +369,16 @@ msgstr "Соглашение о владении и контроле"
 #. description
 #: schema/codelists/entityType.csv:3
 msgid ""
-"An artificial entity, created by agreements, contracts or other processes."
+"A legal arrangement, agreement, contract or other mechanism via which one or"
+" more natural or legal persons can associate to exert ownership or control "
+"over an entity. Parties to an arrangement have no other form of collective "
+"legal identity."
 msgstr ""
-"Искусственный субъект, созданный посредством соглашений, договоров или иных "
-"процессов."
+"Правоотношения, соглашение, договор или иной механизм, посредством которого "
+"одно или несколько физических или юридических лиц могут объединиться с целью"
+" осуществления владения или контроля в отношении субъекта. Стороны "
+"соглашения о владении и контроле не имеют никаких других форм коллективной "
+"правосубъектности."
 
 #. title
 #: schema/codelists/entityType.csv:4
@@ -357,11 +388,13 @@ msgstr "Субъект с неустановленным владельцем"
 #. description
 #: schema/codelists/entityType.csv:4
 msgid ""
-"An entity that has been identified, but for which no identifying information"
-" is being published."
+"An entity that has been identified, but for which identifying information is"
+" being withheld. The reason for non-disclosure should be given in the "
+"accompanying `unspecifiedEntityDetails` field."
 msgstr ""
-"Субъект, который был идентифицирован, но для которого не публикуется "
-"идентифицирующая информация."
+"Субъект, который был идентифицирован, но идентифицирующая информация не была"
+" предоставлена. Причина непредоставления информации должна быть указана в "
+"сопроводительном поле `unspecifiedEntityDetails`."
 
 #. title
 #: schema/codelists/entityType.csv:5
@@ -481,15 +514,16 @@ msgstr "Учредитель траста"
 #. description
 #: schema/codelists/interestType.csv:6
 msgid ""
-"A settlor is a person who, either actually or by operation of law, creates a"
-" trust. A settlor of a trust is sometimes also known by other names such as "
-"a trustor, a grantor or a donor. Also to be used for a person with a "
-"settlor-equivalent role in any legal arrangement that is similar to a trust."
+"A person who, either actually or by operation of law, creates a trust. They "
+"may be referred to by other names such as a trustor, a grantor or a donor. "
+"This should also be used for a person with a settlor-equivalent role in any "
+"legal arrangement that is similar to a trust."
 msgstr ""
-"Учредитель траста — это лицо, которое фактически или в силу закона создает "
-"траст. Учредителя траста также иногда называют доверителем или донором. "
-"Термин также используется по отношению к человеку с ролью, аналогичной "
-"учредителю траста, в любых правоотношениях, аналогичных трасту."
+"Физическое лицо, которое фактически или в силу закона создает траст. Его "
+"также могут называть по-другому, например доверителем, дарителем или "
+"донором. Этот термин также используется по отношению к физическому лицу, "
+"выполняюющему функцию, эквивалентную учредителю траста, в любых "
+"правоотношениях, аналогичных трасту."
 
 #. title
 #: schema/codelists/interestType.csv:7
@@ -499,17 +533,18 @@ msgstr "Доверительный управляющий траста"
 #. description
 #: schema/codelists/interestType.csv:7
 msgid ""
-"A trustee is a person who administers the trust for the benefit of a third "
-"party and in whom the legal title of the trust property is vested either by "
-"declaration of the settlor or by operation of law. Also to be used for a "
-"person with a trustee-equivalent role in any legal arrangement that is "
-"similar to a trust."
+"A person who administers a trust for the benefit of a third party and in "
+"whom the legal title of the trust property is vested either by declaration "
+"of the settlor or by operation of law. This should also be used for a person"
+" with a trustee-equivalent role in any legal arrangement that is similar to "
+"a trust."
 msgstr ""
-"Доверительный управляющий траста — это лицо, управляющее трастом в интересах"
-" третьей стороны и на которого возлагается законное право собственности в "
-"трасте либо путем заявления со стороны учредителя траста, либо в силу "
-"закона. Термин также используется по отношению к роли, аналогичной "
-"доверительному управляющему траста, в правоотношениях, аналогичных трасту."
+"Физическое лицо, управляющее трастом в интересах третьей стороны, которое "
+"наделяется законным правом собственности на имущество траста либо путем "
+"заявления со стороны учредителя траста, либо в силу закона. Этот термин "
+"также используется по отношению к физическому лицу, выполняющему функцию, "
+"эквивалентную доверительному управляющему траста, в правоотношениях, "
+"аналогичных трасту."
 
 #. title
 #: schema/codelists/interestType.csv:8
@@ -519,16 +554,16 @@ msgstr "Попечитель траста"
 #. description
 #: schema/codelists/interestType.csv:8
 msgid ""
-"A protector is a person appointed to protect the interests or wishes of the "
-"settlor, providing influence and guidance to the trustee who administers the"
-" trust. Also to be used for a person with a protector-equivalent role in any"
-" legal arrangement that is similar to a trust."
+"A person appointed to protect the interests or wishes of the settlor, "
+"providing influence and guidance to the trustee who administers the trust. "
+"This should also be used for a person with a protector-equivalent role in "
+"any legal arrangement that is similar to a trust."
 msgstr ""
-"Попечитель  траста — лицо, назначенное защищать интересы или пожелания "
-"учредителя траста, оказывать влияние или направлять деятельность "
-"доверительного управляющего, который руководит трастом. Термин также "
-"используется по отношению к роли, аналогичной попечителю траста, в "
-"правоотношениях, аналогичных трасту."
+"Физическое лицо, назначенное защищать интересы или пожелания учредителя "
+"траста, оказывать влияние или направлять деятельность доверительного "
+"управляющего, который руководит трастом. Этот термин также используется по "
+"отношению к физическому лицу, выполняющему функцию, эквивалентную попечителю"
+" траста, в правоотношениях, аналогичных трасту."
 
 #. title
 #: schema/codelists/interestType.csv:9
@@ -538,13 +573,11 @@ msgstr "Выгодоприобретатель правоотношений"
 #. description
 #: schema/codelists/interestType.csv:9
 msgid ""
-"An economic interest in a trust or other legal arrangement. Defined as a "
-"person or legal entity who benefits from a trust or other legal "
-"arrangement's holdings or activities."
+"A person who benefits from a trust or other legal arrangement's holdings or "
+"activities."
 msgstr ""
-"Экономическая доля участия в трасте или другом субъекте правоотношений. "
-"Определяется как физическое или юридическое лицо, которое получает выгоду от"
-" собственности или деятельности траста или другого субъекта правоотношений."
+"Физическое лицо, которое получает выгоду от собственности или деятельности "
+"траста или другого вида правоотношений."
 
 #. title
 #: schema/codelists/interestType.csv:10
@@ -653,16 +686,8 @@ msgstr "Председатель коллегиального органа уп�
 #. description
 #: schema/codelists/interestType.csv:17
 msgid ""
-"The person holding the most power and authority on the board of directors. "
-"They also provide leadership to the firm's officers and executives, and "
-"ensure that the firm's duties to shareholders are being fulfilled by acting "
-"as a link between the board and upper management."
-msgstr ""
-"Лицо, обладающее наибольшими полномочиями в совете директоров. Также "
-"руководит членами правления и исполнительными руководителями фирмы и "
-"гарантирует исполнение фирмой в полном объеме своих обязанностей перед "
-"акционерами, выступая в качестве связующего звена между советом и высшим "
-"руководством."
+"The person holding the most power and authority on the board of directors."
+msgstr "Лицо, обладающее наибольшими полномочиями в совете директоров."
 
 #. title
 #: schema/codelists/interestType.csv:18
@@ -673,10 +698,11 @@ msgstr "Неизвестная доля участия"
 #: schema/codelists/interestType.csv:18
 msgid ""
 "The interestedParty is known to have an interest in the subject of this "
-"Ownership-or-control Statement, but the nature of the interest is unknown."
+"Relationship Statement, but the nature of the interest is unknown."
 msgstr ""
-"Сторона, имеющая долю участия в субъекте определенной характеристики о "
-"владение или контроле, но характер доли участия которой неизвестен."
+"Известно, что заинтересованная сторона (interestedParty) имеет долю участия "
+"в предмете данной записи об отношениях, но характер этой доли участия "
+"неизвестен."
 
 #. title
 #: schema/codelists/interestType.csv:19
@@ -695,12 +721,8 @@ msgstr "Обладание и использование активов"
 
 #. description
 #: schema/codelists/interestType.csv:20
-msgid ""
-"A controlling interest in an asset owned by an entity. Defined as the right "
-"to make use of assets belonging to an entity."
-msgstr ""
-"Контрольная доля участия в активе, находящемся в собственности сущности. "
-"Определяется как право на использование активов, принадлежащих сущности."
+msgid "The use of assets belonging to an entity."
+msgstr "Использование активов, принадлежащих субъекту."
 
 #. title
 #: schema/codelists/interestType.csv:21
@@ -710,11 +732,39 @@ msgstr "Право на прибыль или доход от активов"
 #. description
 #: schema/codelists/interestType.csv:21
 msgid ""
-"An economic interest in an asset owned by an entity. Defined as the right to"
-" derive profits and/or income from assets belonging to an entity."
+"The right to derive profits, income or both from assets belonging to an "
+"entity."
 msgstr ""
-"Экономическая доля участия в активе, принадлежащем сущности. Определяется "
-"как право получать прибыль и (или) доход от активов, принадлежащих сущности."
+"Право получать прибыль, доход или и то, и другое от активов, принадлежащих "
+"субъекту."
+
+#. title
+#: schema/codelists/interestType.csv:22
+msgid "Nominee"
+msgstr "Номинальный владелец"
+
+#. description
+#: schema/codelists/interestType.csv:22
+msgid ""
+"A person who agrees to act on behalf of the nominator in a specified "
+"capacity."
+msgstr ""
+"Лицо, которое соглашается действовать от имени назначающего лица в указанном"
+" качестве."
+
+#. title
+#: schema/codelists/interestType.csv:23
+msgid "Nominator"
+msgstr "Назначающее лицо"
+
+#. description
+#: schema/codelists/interestType.csv:23
+msgid ""
+"A person who instructs a nominee to act on their behalf in a specified "
+"capacity."
+msgstr ""
+"Лицо, которое поручает номинальному владельцу действовать от его имени в "
+"указанном качестве."
 
 #. title
 #: schema/codelists/nameType.csv:1
@@ -739,8 +789,8 @@ msgstr "Перевод ФИО"
 
 #. description
 #: schema/codelists/nameType.csv:2
-msgid "A translation of the person's individual name in a different language."
-msgstr "Перевод индивидуального ФИО соответствующего лица на другой язык."
+msgid "A translation of the person's legal name in a different language."
+msgstr "Перевод официального ФИО лица на другой язык."
 
 #. title
 #: schema/codelists/nameType.csv:3
@@ -749,9 +799,8 @@ msgstr "Транслитерация ФИО"
 
 #. description
 #: schema/codelists/nameType.csv:3
-msgid ""
-"A transliteration of the person's individual name in a different script."
-msgstr "Транслитерация ФИО лица в другом написании."
+msgid "A transliteration of the person's legal name in a different script."
+msgstr "Транслитерация официального ФИО лица в другом написании."
 
 #. title
 #: schema/codelists/nameType.csv:4
@@ -796,11 +845,12 @@ msgstr "Известное физическое лицо"
 #. description
 #: schema/codelists/personType.csv:1
 msgid ""
-"This person has been identified, and information such as names, identifiers "
-"or biographical information may be provided about them."
+"A natural person who has been identified, and information such as names, "
+"identifiers or biographical information can be provided about them."
 msgstr ""
-"Это физическое лицо было идентифицировано, и о нем может быть предоставлена "
-"такая информация, как ФИО, идентификаторы или биографические сведения."
+"Физическое лицо, которое было идентифицировано, и о нем может быть "
+"предоставлена такая информация, как ФИО, идентификаторы или биографические "
+"сведения."
 
 #. title
 #: schema/codelists/personType.csv:2
@@ -810,13 +860,13 @@ msgstr "Неустановленное физическое лицо"
 #. description
 #: schema/codelists/personType.csv:2
 msgid ""
-"This person has been identified, but identifying information is being "
-"withheld. The reason for non disclosure should be given in the accompanying "
-"`missingInfoReason` field."
+"A natural person who has been identified, but identifying information is "
+"being withheld. The reason for non-disclosure should be given in the "
+"accompanying `unspecifiedPersonDetails` field."
 msgstr ""
-"Это физическое лицо было идентифицировано, но идентифицирующая информация не"
-" была предоставлена. Причина непредоставления информации должна быть указана"
-" в сопроводительном поле `missingInfoReason`."
+"Физическое лицо, которое было идентифицировано, но идентифицирующая "
+"информация не была предоставлена. Причина непредоставления информации должна"
+" быть указана в сопроводительном поле `unspecifiedPersonDetails`."
 
 #. title
 #: schema/codelists/personType.csv:3
@@ -825,8 +875,121 @@ msgstr "Неизвестное физическое лицо"
 
 #. description
 #: schema/codelists/personType.csv:3
-msgid "The identity of this person has not been discovered or confirmed."
-msgstr "Личность этого физического лица не была выяснена или подтверждена."
+msgid "A natural person whose identity has not been discovered or confirmed."
+msgstr "Физическое лицо, чья личность не была выяснена или подтверждена."
+
+#. title
+#: schema/codelists/recordStatus.csv:1
+msgid "New Record"
+msgstr "Новый элемент"
+
+#. description
+#: schema/codelists/recordStatus.csv:1
+msgid ""
+"This is the first Statement published pertaining to the record referenced by"
+" `recordId`."
+msgstr ""
+"Это первая опубликованная Запись, касающаяся элемента, на который ссылается "
+"параметр `recordId`."
+
+#. title
+#: schema/codelists/recordStatus.csv:2
+msgid "Updated Record"
+msgstr "Обновленный элемент"
+
+#. description
+#: schema/codelists/recordStatus.csv:2
+msgid ""
+"This Statement updates information published in a prior Statement pertaining"
+" to the record referenced by `recordId`."
+msgstr ""
+"В этой Записи обновляется информация, опубликованная в предыдущей Записи, "
+"касающейся элемента, на который ссылается параметр `recordId`."
+
+#. title
+#: schema/codelists/recordStatus.csv:3
+msgid "Closed Record"
+msgstr "Закрытый элемент"
+
+#. description
+#: schema/codelists/recordStatus.csv:3
+msgid ""
+"This is the final Statement published pertaining to the record referenced by"
+" `recordId`."
+msgstr ""
+"Это последняя опубликованная Запись, касающаяся элемента, на который "
+"ссылается параметр `recordId`."
+
+#: schema/codelists/recordType.csv
+msgid "technical note"
+msgstr "техническое примечание"
+
+#. title
+#: schema/codelists/recordType.csv:1
+msgid "Person"
+msgstr "Физическое лицо"
+
+#. description
+#: schema/codelists/recordType.csv:1
+msgid ""
+"The Record Details in this Statement contain information about a natural "
+"person at a particular point in time."
+msgstr ""
+"Сведения об элементе в этой Записи содержат информацию о физическом лице в "
+"определенный момент времени."
+
+#. technical note
+#: schema/codelists/recordType.csv:1
+msgid ""
+"The recordDetails object should be validated using the Person Record schema."
+msgstr ""
+"Следует обеспечить валидацию объекта recordDetails при помощи схемы Элемента"
+" о физическом лице."
+
+#. title
+#: schema/codelists/recordType.csv:2
+msgid "Entity"
+msgstr "Субъект"
+
+#. description
+#: schema/codelists/recordType.csv:2
+msgid ""
+"The Record Details in this Statement contain information that identifies and"
+" describes an entity at a particular point in time."
+msgstr ""
+"Сведения об элементе в этой Записи содержат информацию, которая "
+"идентифицирует и описывает субъект в определенный момент времени."
+
+#. technical note
+#: schema/codelists/recordType.csv:2
+msgid ""
+"The recordDetails object should be validated using the Entity Record schema."
+msgstr ""
+"Следует обеспечить валидацию объекта recordDetails при помощи схемы Элемента"
+" о субъекте."
+
+#. title
+#: schema/codelists/recordType.csv:3
+msgid "Relationship"
+msgstr "Отношения"
+
+#. description
+#: schema/codelists/recordType.csv:3
+msgid ""
+"The Record Details in this Statement describe the interests held by an "
+"interested party in a subject (an entity) at a particular point in time."
+msgstr ""
+"Сведения об элементе в этой Записи описывают долю участия заинтересованной "
+"стороны в предмете (субъекте) в определенный момент времени. "
+
+#. technical note
+#: schema/codelists/recordType.csv:3
+msgid ""
+"The recordDetails object should be validated using the Relationship Record "
+"schema."
+msgstr ""
+"Следует обеспечить валидацию объекта recordDetails при помощи схемы Элемента"
+" об отношениях."
 
 #. title
 #: schema/codelists/securitiesIdentifierSchemes.csv:1
@@ -888,9 +1051,9 @@ msgstr "Международная система нумерации CUSIP (CINS
 #. description
 #: schema/codelists/securitiesIdentifierSchemes.csv:4
 msgid ""
-"Scheme for unique identification of securites issued outside North America. "
-"Securities are issued 9-character identifiers. The scheme is managed by the "
-"American Bankers Association and specified as ANSI X9.6."
+"Scheme for unique identification of securities issued outside North America."
+" Securities are issued 9-character identifiers. The scheme is managed by the"
+" American Bankers Association and specified as ANSI X9.6."
 msgstr ""
 "Схема уникальной идентификации ценных бумаг, выпущенных за пределами "
 "Северной Америки. Каждой ценной бумаге присваивается 9-значный "
@@ -905,11 +1068,12 @@ msgstr "Личная декларация"
 #. description
 #: schema/codelists/sourceType.csv:1
 msgid ""
-"The information was provided by the individual or entity referred to in this"
-" statement, or by their authorised representative."
+"The information was provided by the person or entity referred to from "
+"`declarationSubject`, or by their authorised representative."
 msgstr ""
 "Информация была предоставлена физическим лицом или субъектом, указанным в "
-"данной записи, или его уполномоченным представителем."
+"поле `declarationSubject` (предмет декларации), или его уполномоченным "
+"представителем."
 
 #. title
 #: schema/codelists/sourceType.csv:2
@@ -930,7 +1094,7 @@ msgstr "Третья сторона"
 #: schema/codelists/sourceType.csv:3
 msgid ""
 "The information was provided by a third party, not directly related to the "
-"individual, entity or interests described by this statement."
+"person, entity or interests described by this statement."
 msgstr ""
 "Информация была предоставлена третьей стороной, непосредственно не связанной"
 " с физическим лицом, субъектом или долевым участием, описанными в данной "
@@ -964,73 +1128,6 @@ msgstr ""
 "соответствующем описании."
 
 #. title
-#: schema/codelists/statementType.csv:1
-msgid "Person Statement"
-msgstr "Запись о физическом лице"
-
-#. description
-#: schema/codelists/statementType.csv:1
-msgid ""
-"The statement contains information known about a natural person at a "
-"particular point in time, or from a given submission of information."
-msgstr ""
-"Запись содержит информацию, известную о физическом лице в определенный "
-"момент времени или на основе предоставленных сведений."
-
-#. technical note
-#: schema/codelists/statementType.csv:1
-msgid ""
-"The parent object should be validated using the Person Statement schema."
-msgstr ""
-"Следует обеспечить валидацию родительского объекта при помощи схемы Записи о"
-" физическом лице."
-
-#. title
-#: schema/codelists/statementType.csv:2
-msgid "Entity Statement"
-msgstr "Запись о субъекте"
-
-#. description
-#: schema/codelists/statementType.csv:2
-msgid ""
-"The statement contains information that identifies and describes an entity "
-"at a particular point in time, or from a given submission of information."
-msgstr ""
-"Запись содержит информацию, которая идентифицирует и описывает субъект в "
-"определенный момент времени или на основе предоставленных сведений."
-
-#. technical note
-#: schema/codelists/statementType.csv:2
-msgid ""
-"The parent object should be validated using the Entity Statement schema."
-msgstr ""
-"Следует обеспечить валидацию родительского объекта при помощи схемы Записи о"
-" субъекте."
-
-#. title
-#: schema/codelists/statementType.csv:3
-msgid "Ownership-or-control Statement"
-msgstr "Запись о владении или контроле"
-
-#. description
-#: schema/codelists/statementType.csv:3
-msgid ""
-"The statement contains details of the interests held by an interested party "
-"in an entity at a particular point in time."
-msgstr ""
-"Запись содержит сведения о долевом участии, которым владеет заинтересованная"
-" сторона в субъекте в определенный момент времени."
-
-#. technical note
-#: schema/codelists/statementType.csv:3
-msgid ""
-"The parent object should be validated using the Ownership-or-control "
-"Statement schema."
-msgstr ""
-"Следует обеспечить валидацию родительского объекта при помощи схемы Записи о"
-" владении или контроле."
-
-#. title
 #: schema/codelists/unspecifiedReason.csv:1
 msgid "No beneficial owners"
 msgstr "Бенефициарные владельцы отсутствуют"
@@ -1053,13 +1150,13 @@ msgstr ""
 #. description
 #: schema/codelists/unspecifiedReason.csv:2
 msgid ""
-"The subject of this ownership or control statement has, as the disclosing "
-"party, been unwilling or unable to confirm the existence identify a "
-"beneficial owner."
+"The subject of this Relationship Statement has, as the disclosing party, "
+"been unwilling or unable to confirm the existence identify a beneficial "
+"owner."
 msgstr ""
-"Субъект данной записи о владении или контроле как раскрывающая сторона не "
-"желает или неспособен подтвердить существование и идентифицировать "
-"бенефициарного владельца."
+"Предмет данной Записи об отношениях как раскрывающая сторона не желает или "
+"неспособен подтвердить существование или идентифицировать бенефициарного "
+"владельца."
 
 #. title
 #: schema/codelists/unspecifiedReason.csv:3
@@ -1069,13 +1166,12 @@ msgstr "Заинтересованная сторона не предостав�
 #. description
 #: schema/codelists/unspecifiedReason.csv:3
 msgid ""
-"The interested party in this ownership or control statement has not provided"
-" enough information to identify or confirm the identity of the beneficial "
-"owner."
+"The interested party in this Relationship Statement has not provided enough "
+"information to identify or confirm the identity of the beneficial owner."
 msgstr ""
-"Заинтересованная сторона в данной записи о владении или контроле не "
-"предоставила достаточно информации для идентификации или подтверждения "
-"личности бенефициарного владельца."
+"Заинтересованная сторона в данной Записи об отношениях не предоставила "
+"достаточно информации для идентификации или подтверждения личности "
+"бенефициарного владельца."
 
 #. title
 #: schema/codelists/unspecifiedReason.csv:4
@@ -1085,11 +1181,11 @@ msgstr "Субъект освобожден от раскрытия информ
 #. description
 #: schema/codelists/unspecifiedReason.csv:4
 msgid ""
-"The subject of this ownership or control statement is not required to "
-"disclose its beneficial owner. (Replaces noNotifiableOwners.)"
+"The subject of this Relationship Statement is not required to disclose its "
+"beneficial owner."
 msgstr ""
-"От субъекта данной записи о владении или контроле не требуется раскрывать "
-"своего бенефициарного владельца (заменяет noNotifiableOwners)."
+"От предмета этой Записи об отношениях не требуется раскрывать информацию о "
+"своем бенефициарном владельце."
 
 #. title
 #: schema/codelists/unspecifiedReason.csv:5
@@ -1099,11 +1195,11 @@ msgstr "Заинтересованная сторона освобождена �
 #. description
 #: schema/codelists/unspecifiedReason.csv:5
 msgid ""
-"The interested party in this ownership or control statement is exempt from "
-"having their identity disclosed."
+"The interested party in this Relationship Statement is exempt from having "
+"their identity disclosed."
 msgstr ""
-"Заинтересованная сторона в данной записи о владении или контроле освобождена"
-" от необходимости раскрытия своей идентичности."
+"Заинтересованная сторона в этой Записи об отношениях освобождена от "
+"необходимости раскрытия идентифицирующей ее информации."
 
 #. title
 #: schema/codelists/unspecifiedReason.csv:6

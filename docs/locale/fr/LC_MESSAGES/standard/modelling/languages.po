@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/modelling/languages.rst:2 8a42b55124a641859a156f212f26f350
+msgid "Representing alternative languages"
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:4 a0fe30292611498281cc9335168a0cf8
+msgid ""
+"Beneficial ownership information may need to be provided in different "
+"languages or scripts. BODS provides options for representing translated or "
+"transliterated information."
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:6 c6c1c406cbf3439abcfe54c2e88ef5b7
+msgid "To represent:"
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:8 6382fbedc1c549b2b6b398b1b7cfda0b
+msgid ""
+"people’s names, use an entry in the names array with ``name.type`` "
+"‘translation’ or ‘transliteration’"
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:10 413423e90b43493f9ce5398af9eec3ae
+msgid "entity names, use an entry in the ``alternativeNames`` array"
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:12 aa9004b279db476a90a2488d75fadf12
+msgid "entity types use ``entityType.details``"
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:14 b6e3e248430b430f81de86d6dc6bc96e
+msgid "interest types use ``interest.details``"
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:16 af6152cc36894ae5b87cc55cdb6247ca
+msgid "For other fields or entire records, use an annotation."
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:18 3baabe77bc16490e8db6ca15b90b66fe
+msgid "In the annotation:"
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:20 dd0d2e55cdbd436fbb60124a4bbcb4cc
+msgid "``motivation`` MUST be ‘transformation’"
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:22 548ad5151e9e489fb87c89880ad8461b
+msgid ""
+"``description`` SHOULD explain the type of transformation (e.g. "
+"‘translation’)"
+msgstr ""
+
+#: ../../standard/modelling/languages.rst:24 b957053c6b7a43e49105b321cdd4d71b
+msgid "``transformedContent`` MUST contain the transformed content"
+msgstr ""

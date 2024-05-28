@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/modelling/information-updates.rst:4
+#: 63142a2003d54c519c3287f73a6d9c95
+msgid "Information updates"
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:6
+#: d9f345fccd09412e9f3892fa8c2bee6d
+msgid ""
+"Systems that collect and manage beneficial ownership information often "
+"handle the updating or confirmation of existing records. Depending on how "
+"the information is managed, the BODS data that is produced will offer a high"
+" or low-resolution picture of the changing nature of a beneficial ownership "
+"network. Data management systems handling information updates need to meet "
+"the minimal set of requirements below, to offer a low-resolution picture."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:10
+#: b72479dabf924a408c2434f780629162
+msgid "Minimal requirements"
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:11
+#: 50070139b6ba459bb716c89cc4236570
+msgid ""
+"A new BODS statement MUST be generated for an element (entity, person or "
+"relationship) of a subject's beneficial ownership network when its details "
+"are changed or confirmed. See :ref:`generating-statements` for further "
+"requirements."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:13
+#: 9f424dee98a74441b1b66cb0cbb99b38
+msgid ""
+"The ``recordId`` of the subject of each beneficial ownership network MUST be"
+" stable over time. That is: when the details of the beneficial ownership "
+"network's subject change, or are confirmed, the new Statement generated must"
+" contain the same ``recordId`` as in the outdated Statement."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:15
+#: c96002ddc0f64654b5a4ba1a90d55db0
+msgid ""
+"Each BODS statement issued in relation to any element of a subject's "
+"declared beneficial ownership network, at any point in time, MUST contain "
+"the subject's ``recordId`` as its ``declarationSubject``."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:17
+#: 70e36bdaf6c84dcebeb56b75ace94283
+msgid ""
+"The BODS data producer SHOULD publish guidance for data users explaining how"
+" to understand the lifecycle of declared information with reference to the "
+"available BODS data."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:22
+#: 54b09b7157984f16bf854a3dcb4d532f
+msgid "Full requirements"
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:23
+#: a43e4a54d7d34664a48c1e20ada9cb21
+msgid "The minimal requirements stated above MUST be met."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:25
+#: a0792fee553d49e3b4961fe29c3f2182
+msgid ""
+"The lifecycle of a record about an element (entity, person or relationship) "
+"within a beneficial ownership network is represented by a series of "
+"Statements:"
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:27
+#: 378fe2a99bfd4ae9898469e4839de716
+msgid ""
+"The ``recordId`` of each element of a beneficial ownership network MUST be "
+"stable over time. That is: when the details of an element change, or are "
+"confirmed, the new Statement generated must contain the same ``recordId`` as"
+" in the outdated Statement."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:29
+#: 3c8cd0a9072241a7a4ddb5d2d65ab509
+msgid ""
+"The first time a Statement is published about an element within a beneficial"
+" ownership network, the ``recordStatus`` MUST be 'new'. When the details of "
+"the element change, or are confirmed, in the new Statement ``recordStatus`` "
+"MUST be 'updated'. When the element is no longer a part of the beneficial "
+"ownership network, in the new Statement ``recordStatus`` MUST be 'closed'."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:31
+#: 81c19e5abb61442c92d066552c8f489d
+msgid ""
+"When the details of an element have not changed but are confirmed to be "
+"accurate, a new Statement SHOULD be generated with the same ``recordId`` as "
+"in the outdated Statement and with ``recordStatus`` 'updated'."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:33
+#: 53774796ba4c461dbba217d7c337da79
+msgid ""
+"Once a series of Statements about a given element is closed, further "
+"Statements with the related ``recordId`` MUST NOT be generated."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:35
+#: ede83e5b90884fd58dcef824d76ce726
+msgid ""
+"When the subject or the interested party of a relationship change, the "
+"lifecycle of that relationship is considered to have ended. For example, if "
+"the owner of a company transfers their interest to a relative, the "
+"``recordStatus`` of the first relationship would be 'closed', and details of"
+" a new record would be published."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:38
+#: 1d0af85521804916ade17908c8dcd168
+msgid "Requirements for special cases"
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:42
+#: e1dde693e884403bbbc165e4c69317dd
+msgid "Error correction"
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:44
+#: 0be859bb1bda4dc1a8133c5c5ff67a1f
+msgid ""
+"Errors in published data may be due to mistakes at the point of information "
+"disclosure, or the incorrect processing of information by the data "
+"management system."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:46
+#: 8f17de3b9de34f0c970d8f0f2d8af19e
+msgid ""
+"In either case, errors SHOULD be corrected by the issuing of new statements "
+"including an :any:`annotation <schema-annotation>`, with the ``motivation`` "
+"'correcting' and a ``description`` of the correction, and an updated "
+"``publicationDetails.publicationDate``."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:48
+#: e45158bb9bc64c938e4beaf762acf4bf
+msgid "See the example in :any:`guidance-dates`."
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:52
+#: db3d0f1ec1a34b8f8133998b140f5369
+msgid "Redaction"
+msgstr ""
+
+#: ../../standard/modelling/information-updates.rst:54
+#: c2afea5a65df4b0db9e656ab49a7e347
+msgid ""
+"If sensitive information is accidentally published in a Statement, the "
+"Statement MAY be republished with the same statement identifier and updated "
+"property values."
+msgstr ""

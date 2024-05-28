@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, Open Ownership
+# Copyright (C) 2024, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -10,23 +10,23 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-13 16:06+0100\n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
 "Last-Translator: Carlos Hames, 2022\n"
-"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../about/privacy-notice.rst:2 1eb4b8aba9df48abb56b15eb0256f6ae
+#: ../../about/privacy-notice.rst:2 3e6fb0df72564349aec011ef4e14441d
 msgid "Privacy Notice"
 msgstr "Aviso sobre privacidad"
 
-#: ../../about/privacy-notice.rst:4 1ff46e4477e740fabb47ee5b066ff0c1
+#: ../../about/privacy-notice.rst:4 d8100a603ba3483bbfc219d4bd7f3869
 msgid ""
 "Open Ownership's full privacy notice, covering all of our services, can be "
 "found at https://openownership.org/privacy on our main website"

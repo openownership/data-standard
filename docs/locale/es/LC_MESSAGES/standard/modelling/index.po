@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Carmen Edery, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Carmen Edery, 2024\n"
+"Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/modelling/index.rst:4 0621919241ac4e3c988318d2e02bdd6b
+msgid "Modelling requirements"
+msgstr "Requisitos de modelado"
+
+#: ../../standard/warningbox.rst:3 8338bba6c32f4190b45fb83f187b76c9
+msgid ""
+"This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model, codelists, and technical guidance."
+msgstr ""
+"Esta es la versión 0.3 del Estándar de Datos de Beneficiarios Finales. "
+"Incluye actualizaciones del modelo de datos, listas de códigos y orientación"
+" técnica."
+
+#: ../../standard/warningbox.rst:5 c1532c2cc4b4455f9c0439783810d324
+msgid ""
+"Future changes are anticipated before a version 1.0 release. See the "
+":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
+"information."
+msgstr ""
+"Se anticipan cambios futuros antes del lanzamiento de la versión 1.0. "
+"Consulte las páginas :ref:`Changelog<changelog>` y `About <../about>`_ para "
+"obtener más información."
+
+#: ../../standard/modelling/index.rst:8 11c38537e186423a91ed412c1e111453
+msgid ""
+"This section contains requirements for representing beneficial ownership "
+"information."
+msgstr ""
+"Esta sección contiene requisitos para representar la información sobre la "
+"propiedad efectiva."

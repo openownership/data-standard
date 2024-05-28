@@ -1,52 +1,269 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, Open Ownership
+# Copyright (C) 2024, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Amy Guy <amy.guy@opendataservices.coop>, 2022
-# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Kateryna Volobuieva, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-13 16:06+0100\n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
-"Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../primer/index.rst:2 81df7cc3e24a4604af49190cfd439a01
+#: ../../primer/index.rst:5 6833e97867ce467886812fe0dcbd3f41
 msgid "Primer"
 msgstr "Базовая информация"
 
-#: ../../primer/index.rst:4 f698456e9bf9473f8cc05a97e93c277a
-msgid ""
-"This Primer sets out to explain the basics of Beneficial Ownership and the "
-"basics of a data standard handling Beneficial Ownership."
-msgstr ""
-"В этой Базовой информации объясняются основы Бенефициарного владения и "
-"основы стандарта данных о Бенефициарном владении."
+#: ../../primer/index.rst:8 87495a0b09754fa6a69e832dc01d6477
+msgid "What is beneficial ownership?"
+msgstr "Что такое бенефициарное владение?"
 
-#: ../../primer/index.rst:6 2a217fdd476c4222926a0d3780680c6e
+#: ../../primer/index.rst:10 d0c71fab20c64544ad690a74f4c04828
 msgid ""
-"People new to the concept of Beneficial Ownership will want to know "
-":doc:`what it is <whatisbo>` and :doc:`why it's important <whyisbo>`. "
-"Looking then at :doc:`what data is needed <whatisbodata>` to describe a "
-"Beneficial Ownership chain, we can :doc:`understand the Beneficial Ownership"
-" Data Standard <whatisthebods>` as a kind of template. Finally we look at "
-"the :doc:`scope of the Standard <whatdoesbodscover>` and what it offers."
+"A beneficial owner is a natural person who holds interests, directly or "
+"indirectly, that give them the right to a share of the income or assets of a"
+" corporate vehicle, or the ability to control or benefit from its "
+"activities."
 msgstr ""
-"Те, для кого концепция Бенефициарного владения является новой, захотят "
-"узнать, :doc:`что она собой представляет <whatisbo>` и :doc:`почему является"
-" важной <whyisbo>`. Затем, ознакомившись с тем, :doc:`какие данные "
-"необходимы <whatisbodata>` для описания цепочки Бенефициарного владения, "
-":doc:`мы сможем понять Стандарт данных о бенефициарном владении "
-"<whatisthebods>` как своего рода шаблон. В заключение мы :doc:`рассмотрим "
-"охват Стандарта <whatdoesbodscover>` и предлагаемые им возможности."
+"Бенефициарный владелец — это физическое лицо, владеющее долей участия, прямо"
+" или косвенно, что дает ему право на долю дохода или активов корпоративного "
+"механизма или возможность контролировать его деятельность или получать от "
+"нее выгоду."
+
+#: ../../primer/index.rst:12 6148bb7a872b49dd93f8dbc2ecc47185
+msgid ""
+"`Open Ownership <https://www.openownership.org/>`_ uses the term corporate "
+"vehicles to refer to both legal entities, such as companies, and legal "
+"arrangements, such as trusts. In the Beneficial Ownership Data Standard "
+"'entities' is used to refer to all types of corporate vehicle."
+msgstr ""
+"Организация `Open Ownership <https://www.openownership.org/>`_ использует "
+"термин «корпоративный механизм» для обозначения как юридических лиц, "
+"например компаний, так и правоотношений, например трастов. В Стандарте "
+"данных о бенефициарном владении для обозначения корпоративных механизмов "
+"всех типов используется термин 'субъекты'."
+
+#: ../../primer/index.rst:14 57877cee28594f108fa31c3ef8bc9eb5
+msgid ""
+"Often entities own other entities, but people almost always appear at the "
+"end of beneficial ownership networks. They are the ones who ultimately "
+"benefit from the financial successes of the entity, due to their "
+"relationship with it."
+msgstr ""
+"Часто субъекты владеют другими субъектами, но в конце сети бенефициарного "
+"владения почти всегда стоят физические лица. Именно они в конечном итоге "
+"получают выгоду от финансовых успехов субъекта в силу имеющихся между ними "
+"отношений."
+
+#: ../../primer/index.rst:16 930b088e3305425683ed9cb64460ec4b
+msgid ""
+"The beneficial ownership networks connected to entities can be complex and "
+"opaque. This means that the identities of the people who own, control, or "
+"benefit from entities can remain hidden. If the beneficial owners are "
+"hidden, then governments don’t know who is bidding for a contract, companies"
+" don’t know who they are doing business with, society doesn’t know who is "
+"financing a new political party, and law enforcement can’t fight money "
+"laundering and other cross-border financial crimes."
+msgstr ""
+"Сети бенефициарного владения, связанные с субъектами, могут быть сложными и "
+"непрозрачными. Это означает, что личность физических лиц, владеющих "
+"субъектами, контролирующих их или получающих от них выгоду, может оставаться"
+" скрытой. Если бенефициарные владельцы скрыты, правительственные органы не "
+"знают, кто подает заявку на участие в тендере, компании не знают, с кем они "
+"ведут бизнес, общество не знает, кто финансирует новую политическую партию, "
+"а правоохранительные органы не могут противодействовать легализации средств,"
+" полученных преступным путем, и другим трансграничным финансовым "
+"преступлениям."
+
+#: ../../primer/index.rst-1 c3b77235c13740c893eaa83811dfcbc2
+msgid ""
+"A labelled diagram of a beneficial ownership network. Labelled as 'Subject "
+"of beneficial ownership network' is Company E. Labelled as 'Direct "
+"relationship' is a solid line connected to Person 2. Labelled as 'Interest' "
+"is the text '32% shareholding' which sits on that solid line. Company E is "
+"also linked to Company A by a solid line. And Company A is linked to Person "
+"1 by a solid line. Labelled as 'Indirect relationship' is a dotted line "
+"connecting Company E to Person 1. The text '45% shareholding' sits on that "
+"dotted line. Person 1 is labelled 'Beneficial owner'. Company A is labelled "
+"'Intermediary entity'."
+msgstr ""
+"Схема сети бенефициарного владения с надписями. Компания Е помечена надписью"
+" 'Предмет сети бенефициарного владения'. Сплошная линия, ведущая к "
+"Физическому лицу 2, помечена надписью 'Прямые отношения'. Текст '32 % акций "
+"в собственности', размещенный на этой сплошной линии, помечен надписью 'Доля"
+" владения'. Компания E также соединена с Компанией A сплошной линией. А "
+"Компания A соединена сплошной линией с Физическим лицом 1. Пунктирная линия,"
+" соединяющая Компанию Е с Физическим лицом 1, помечена надписью 'Косвенные "
+"отношения'. Текст '45 % акций в собственности' размещен на этой пунктирной "
+"линии. Физическое лицо 1 помечено надписью 'Бенефициарный собственник'. "
+"Компания A помечена надписью 'Посреднический субъект'."
+
+#: ../../primer/index.rst:23 ebc684a01c7f4255b3f758b37ac86ec9
+msgid ""
+"Beneficial ownership can include all types of relationship with an entity "
+"such as ownership, control or benefitting from the entity’s activities."
+msgstr ""
+"Бенефициарное владение может включать все виды отношений с субъектом, такие "
+"как владение, контроль или получение выгоды от деятельности субъекта."
+
+#: ../../primer/index.rst:25 616ee4d241474d14bde83c2cd3628700
+msgid ""
+"If a person owns something, they usually have some control over it. Owning "
+"shares in a company may confer voting rights, for example. But ownership and"
+" control are sometimes separated - by share classes, contracts, agreements "
+"and other mechanisms. For example, an executive director might have the "
+"right to appoint 60% of the other board members, while having little "
+"financial stake in the business. There are also situations where a person "
+"may not have ownership or significant control but still has a relationship "
+"which means they benefit from the activities of an entity - for example, "
+"where they can enjoy and use assets owned by the entity."
+msgstr ""
+"Если физическое лицо чем-то владеет, оно обычно имеет над этим некоторый "
+"контроль. Например, владение акциями компании может давать право голоса. "
+"Однако владение и контроль иногда разграничиваются — при помощи классов "
+"акций, договоров, соглашений и других механизмов. К примеру, исполнительный "
+"директор может иметь право назначать 60% других членов совета директоров, "
+"имея при этом лишь небольшую финансовую долю в бизнесе. Также бывают "
+"ситуации, когда физическое лицо может не иметь права владения или "
+"существенного контроля, но при этом иметь отношения с субъектом, а значит, "
+"получать выгоду от его деятельности, например, имея возможность пользоваться"
+" активами, принадлежащими субъекту. "
+
+#: ../../primer/index.rst:27 2c1fc5e43a3c4935ba18ab31508654c6
+msgid ""
+"For more `information about beneficial ownership transparency "
+"<https://www.openownership.org/en/about/what-is-beneficial-ownership-"
+"transparency/>`_ and to read `the latest research "
+"<https://www.openownership.org/en/research/>`_, visit `the Open Ownership "
+"website. <https://www.openownership.org/en/>`_"
+msgstr ""
+"С дополнительной `информацией о прозрачности бенефициарного владения "
+"<https://www.openownership.org/en/about/what-is-beneficial-ownership-"
+"transparency/>`_ и данными `последнего исследования "
+"<https://www.openownership.org/en/research/>`_ можно ознакомиться на `веб-"
+"сайте Open Ownership. <https://www.openownership.org/en/>`_"
+
+#: ../../primer/index.rst:32 a522fdedb45845548778194bb6321513
+msgid "What is the Beneficial Ownership Data Standard?"
+msgstr "Что такое Стандарт данных о бенефициарном владении?"
+
+#: ../../primer/index.rst:34 6e83ae7e3a1847e78b332d34ab93d4eb
+msgid ""
+"The Beneficial Ownership Data Standard (BODS) provides a structured data "
+"format, and related requirements, for representing and publishing beneficial"
+" ownership information. This is based on the :any:`key concepts <key-"
+"concepts>` which underpin beneficial ownership."
+msgstr ""
+"Стандарт данных о бенефициарном владении (СДБВ) предусматривает формат "
+"структурированных данных, а также связанные с этим требования, для "
+"отображения и опубликования информации о бенефициарном владении. В нем "
+"использованы :any:`основные концепции <key-concepts>`, лежащие в основе "
+"бенефициарного владения."
+
+#: ../../primer/index.rst:37 a7b7e68d34e5432f8249321d3c2327c9
+msgid "Within BODS:"
+msgstr "В тексте СДБВ:"
+
+#: ../../primer/index.rst:39 c3b0c018304f4d3e9760c568c4f941cf
+msgid ""
+"the :any:`data schema <schema-reference>` describes what data should be "
+"shared. It can also inform the design of data collection and management "
+"systems. A format called JSON can be used to publish BODS data."
+msgstr ""
+":any:`Схема данных <schema-reference>` описывает, какие данные следует "
+"предоставлять. Также она может служить основой для разработки систем сбора и"
+" управления данными. Для опубликования данных СДБВ может использоваться "
+"формат JSON."
+
+#: ../../primer/index.rst:40 df4b6cefa25243369e90c9e25047ae6b
+msgid ""
+"the :any:`requirements sections <data-standard-index>` set out how "
+"information should be represented and managed to conform with the data "
+"standard."
+msgstr ""
+"В :any:`разделах о требованиях<data-standard-index>` указано, как следует "
+"отображать информацию и управлять ею в соответствии со стандартом данных."
+
+#: ../../primer/index.rst:42 04954b3cee6145ebb0157288256a42b7
+msgid ""
+"Collecting, sharing and using beneficial ownership information as "
+"`structured data <https://www.openownership.org/en/publications/structured-"
+"and-interoperable-beneficial-ownership-data/benefits-of-structured-and-"
+"interoperable-data/>`_:"
+msgstr ""
+"Сбор, предоставление и использование информации о бенефициарном владении в "
+"виде `структурированных данных "
+"<https://www.openownership.org/en/publications/structured-and-interoperable-"
+"beneficial-ownership-data/benefits-of-structured-and-interoperable-data/>`_:"
+
+#: ../../primer/index.rst:44 9fec528bcc7d4f4980fa4127e6d0a2a1
+msgid "improves the interoperability of beneficial ownership information"
+msgstr ""
+"улучшает функциональную совместимость информации о бенефициарном владении;"
+
+#: ../../primer/index.rst:45 111e06b9ddf34970a75fa8a4ce40c5ce
+msgid ""
+"reduces the cost of producing, using, and maintaining beneficial ownership "
+"information"
+msgstr ""
+"снижает затраты на создание, использование и хранение информации о "
+"бенефициарном владении;"
+
+#: ../../primer/index.rst:46 45f1c737d57542f3baa5dfb46b66c203
+msgid ""
+"has a greater chance of meeting beneficial ownership transparency policy "
+"goals than unstructured data"
+msgstr ""
+"обеспечивает более высокую вероятность достижения целей политики "
+"прозрачности бенефициарного владения по сравнению с неструктурированными "
+"данными."
+
+#: ../../primer/index.rst:48 94d197b37ec04c33b6dbea769515157d
+msgid ""
+"Without common standards, combining and analysing data from different "
+"sources can be expensive and time-consuming, making it more difficult to "
+"understand beneficial ownership networks."
+msgstr ""
+"Без общих стандартов объединение и анализ данных из разных источников может "
+"быть дорогостоящим и отнимать много времени, что усложняет понимание сетей "
+"бенефициарного владения."
+
+#: ../../primer/index.rst:50 0e60da8eb47541de90e0bf0333a914cf
+msgid "BODS allows publishers to provide statements that describe:"
+msgstr "СДБВ позволяет издателям формировать записи, которые содержат:"
+
+#: ../../primer/index.rst:52 fa9d8f94cabe4ded8a7763e412fb4758
+msgid "details about natural persons and entities"
+msgstr "сведения о физических лицах и субъектах;"
+
+#: ../../primer/index.rst:53 26ced1dcb94d48348867f2cfc677e194
+msgid "identifiers for natural persons and entities"
+msgstr "идентификаторы для физических лиц и субъектов;"
+
+#: ../../primer/index.rst:54 9e4940ea905a4ef3b5260f901ddf45c8
+msgid "types of interests that can be held in entities"
+msgstr "типы долей участия в субъектах;"
+
+#: ../../primer/index.rst:55 c3ac6f997cfb460e9d864dedced8033c
+msgid "provenance information"
+msgstr "информацию об источнике;"
+
+#: ../../primer/index.rst:56 f3389f33ccef41ebb1c7b4e3aa36bbbb
+msgid "historical, as well as current, information"
+msgstr "информацию за прошлые периоды, а также актуальную инфомацию;"
+
+#: ../../primer/index.rst:57 36ce93dfa61345bfad832b20ca27a6da
+msgid "placeholders, when information must be witheld"
+msgstr "заполнители в случаях, когда требуется скрыть информацию."

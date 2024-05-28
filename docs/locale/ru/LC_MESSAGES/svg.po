@@ -1,776 +1,1347 @@
 # 
 # Translators:
-# Amy Guy <amy.guy@opendataservices.coop>, 2022
 # Galia Williams, 2022
 # Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Transifex Bot <>, 2024
+# Kateryna Volobuieva, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-04-13 16:08+0100\n"
+"POT-Creation-Date: 2024-05-10 16:05+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
-"Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#. (itstool) path: Work/format
-#: docs/_assets/data-schema-model-1.svg:23
-#: docs/_assets/data-schema-model-2.svg:23
-#: docs/_assets/data-schema-model-3.svg:23 docs/_assets/Diag1-simpleOwn.svg:26
-#: docs/_assets/Diag2-simpleInd.svg:23 docs/_assets/Diag3-splitContr.svg:26
-#: docs/_assets/Diag4b-splitContr2.svg:26
-#: docs/_assets/Diag4-complexInvolve.svg:23
-#: docs/_assets/Diag5-sourcesData.svg:51 docs/_assets/Diag6-registers.svg:59
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:60
-#: docs/_assets/Diag8-dataStandardTemplate.svg:60
-#: docs/_assets/Diag9-JSONdata.svg:226
-#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:25
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:25
-#: docs/_assets/SOE-scenario1.svg:25 docs/_assets/SOE-scenario2.svg:25
-#: docs/_assets/SOE-scenario3.svg:25 docs/_assets/SOE-scenario4.svg:25
-#: docs/_assets/SOE-scenario5.svg:25 docs/_assets/SOE-scenario6.svg:25
-#: docs/_assets/SOE-scenario7.svg:25
-msgid "image/svg+xml"
-msgstr "image/svg+xml"
-
-#. (itstool) path: Work/title
-#. (itstool) path: svg/title
-#: docs/_assets/data-schema-model-1.svg:26
-#: docs/_assets/data-schema-model-1.svg:249
-#: docs/_assets/data-schema-model-2.svg:26
-#: docs/_assets/data-schema-model-2.svg:249
-#: docs/_assets/data-schema-model-3.svg:26
-#: docs/_assets/data-schema-model-3.svg:249
-#: docs/_assets/Diag1-simpleOwn.svg:29 docs/_assets/Diag1-simpleOwn.svg:216
-#: docs/_assets/Diag2-simpleInd.svg:26 docs/_assets/Diag2-simpleInd.svg:150
-#: docs/_assets/Diag3-splitContr.svg:29 docs/_assets/Diag3-splitContr.svg:206
-#: docs/_assets/Diag4b-splitContr2.svg:29
-#: docs/_assets/Diag4b-splitContr2.svg:209
-#: docs/_assets/Diag4-complexInvolve.svg:26
-#: docs/_assets/Diag4-complexInvolve.svg:222
-#: docs/_assets/Diag5-sourcesData.svg:54
-#: docs/_assets/Diag5-sourcesData.svg:360 docs/_assets/Diag6-registers.svg:62
-#: docs/_assets/Diag6-registers.svg:316
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:63
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:479
-#: docs/_assets/Diag8-dataStandardTemplate.svg:63
-#: docs/_assets/Diag8-dataStandardTemplate.svg:515
-msgid "Artboard 1 copy"
-msgstr "Artboard 1 copy"
-
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:596
-#: docs/_assets/data-schema-model-1.svg:666
-msgid "Interest"
-msgstr "Interest"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:608
+#: docs/_assets/AlphaBeta.svg:257 docs/_assets/AlphaCorp.svg:320
 #, no-wrap
-msgid "Type:   share-holding"
-msgstr "Type: share-holding"
+msgid "recordId: 09d3a4fb"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:613
+#: docs/_assets/AlphaBeta.svg:262
 #, no-wrap
-msgid "Share: 60%"
-msgstr "Share: 60%"
+msgid "declarationSubject: 04a221be"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:625
-#: docs/_assets/data-schema-model-2.svg:663
-#: docs/_assets/data-schema-model-3.svg:645 docs/_assets/SOE-scenario1.svg:357
-#: docs/_assets/SOE-scenario2.svg:347 docs/_assets/SOE-scenario3.svg:388
-#: docs/_assets/SOE-scenario5.svg:459 docs/_assets/SOE-scenario7.svg:473
-#: docs/_assets/SOE-scenario7.svg:531
+#: docs/_assets/AlphaBeta.svg:368 docs/_assets/BetaSys.svg:408
 #, no-wrap
-msgid "interests"
-msgstr "interests"
+msgid "recordId: 02c83aa2"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:637
-#: docs/_assets/data-schema-model-2.svg:617
-#: docs/_assets/data-schema-model-3.svg:618
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:626
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:730
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:819
-#: docs/_assets/SOE-scenario1.svg:298 docs/_assets/SOE-scenario2.svg:299
-#: docs/_assets/SOE-scenario3.svg:340 docs/_assets/SOE-scenario3.svg:425
-#: docs/_assets/SOE-scenario4.svg:285 docs/_assets/SOE-scenario5.svg:411
-#: docs/_assets/SOE-scenario5.svg:507 docs/_assets/SOE-scenario6.svg:277
-#: docs/_assets/SOE-scenario7.svg:425 docs/_assets/SOE-scenario7.svg:515
+#: docs/_assets/AlphaBeta.svg:373
 #, no-wrap
-msgid "Ownership-or-control statement"
-msgstr "Характеристика о владение или контроль"
+msgid "declarationSubject: 02c83aa2"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:678
-#, no-wrap
-msgid "Type:   voting-rights"
-msgstr "type: voting-rights"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-1.svg:683
-#, no-wrap
-msgid "Share: 30%"
-msgstr "Share: 30%"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:589
-#, no-wrap
-msgid "person:  47bdf780-787d-4bfd-9205"
-msgstr "person: 47bdf780-787d-4bfd-9205"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:605
-msgid "interestedParty"
-msgstr "interestedParty"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:635
-#, no-wrap
-msgid "entity:  ty4t68s3-hha4-8ks3-0d8w  "
-msgstr "entity: ty4t68s3-hha4-8ks3-0d8w"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:651
-msgid "subject"
-msgstr "subject"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:706
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:604
-#: docs/_assets/SOE-scenario5.svg:496
-#, no-wrap
-msgid "Person statement"
-msgstr "Характеристика физического лица"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:717
-#, no-wrap
-msgid "statementID:  47bdf780-787d-4bfd-9205"
-msgstr "statementID: 47bdf780-787d-4bfd-9205"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:722
-#, no-wrap
-msgid "name: Roberto Lopez"
-msgstr "name: Roberto Lopez"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:727
-#, no-wrap
-msgid "birthDate: 1967-03-12"
-msgstr "birthDate: 1967-03-12"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:762
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:615
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:808
-#: docs/_assets/SOE-scenario1.svg:276 docs/_assets/SOE-scenario1.svg:287
-#: docs/_assets/SOE-scenario2.svg:277 docs/_assets/SOE-scenario2.svg:288
-#: docs/_assets/SOE-scenario3.svg:318 docs/_assets/SOE-scenario3.svg:329
-#: docs/_assets/SOE-scenario4.svg:263 docs/_assets/SOE-scenario4.svg:274
-#: docs/_assets/SOE-scenario5.svg:389 docs/_assets/SOE-scenario5.svg:400
-#: docs/_assets/SOE-scenario6.svg:255 docs/_assets/SOE-scenario6.svg:266
-#: docs/_assets/SOE-scenario7.svg:403 docs/_assets/SOE-scenario7.svg:414
-#: docs/_assets/SOE-scenario7.svg:547
+#: docs/_assets/AlphaBeta.svg:384 docs/_assets/AlphaBeta.svg:395
+#: docs/_assets/AlphaCorp.svg:342 docs/_assets/AlphaCorp.svg:353
+#: docs/_assets/BetaSys.svg:419
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:650
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:815
+#: docs/_assets/SOE-scenario1.svg:272 docs/_assets/SOE-scenario1.svg:283
+#: docs/_assets/SOE-scenario2.svg:272 docs/_assets/SOE-scenario2.svg:283
+#: docs/_assets/SOE-scenario3.svg:314 docs/_assets/SOE-scenario3.svg:325
+#: docs/_assets/SOE-scenario4.svg:266 docs/_assets/SOE-scenario4.svg:277
+#: docs/_assets/SOE-scenario5.svg:384 docs/_assets/SOE-scenario5.svg:395
+#: docs/_assets/SOE-scenario6.svg:260 docs/_assets/SOE-scenario6.svg:271
+#: docs/_assets/SOE-scenario7.svg:391 docs/_assets/SOE-scenario7.svg:402
+#: docs/_assets/SOE-scenario7.svg:567 docs/_assets/key-concepts-img2.svg:210
+#: docs/_assets/nom-scenario1.svg:653 docs/_assets/nom-scenario1.svg:664
+#: docs/_assets/nom-scenario2.svg:578 docs/_assets/nom-scenario2.svg:589
+#: docs/_assets/nom-scenario3.svg:565 docs/_assets/nom-scenario3.svg:576
+#: docs/_assets/nom-scenario3.svg:598 docs/_assets/nom-scenario4.svg:615
+#: docs/_assets/nom-scenario4.svg:626 docs/_assets/nom-scenario5.svg:469
+#: docs/_assets/nom-scenario5.svg:480 docs/_assets/trust-scenario1.svg:473
+#: docs/_assets/trust-scenario2.svg:683 docs/_assets/trust-scenario3.svg:479
+#: docs/_assets/trust-scenario4.svg:674 docs/_assets/trust-scenario5.svg:643
+#: docs/_assets/trust-scenario5.svg:861 docs/_assets/trust-scenario6.svg:780
+#: docs/_assets/trust-scenario6.svg:889
 #, no-wrap
 msgid "Entity statement"
 msgstr "Xарактеристика сущности"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:773
+#: docs/_assets/AlphaBeta.svg:405 docs/_assets/AlphaBeta.svg:422
+#: docs/_assets/dates-guidance2.svg:215 docs/_assets/dates-guidance2.svg:372
+#: docs/_assets/dates-guidance3.svg:211 docs/_assets/dates-guidance3.svg:440
+#: docs/_assets/key-concepts-img2.svg:130
+#: docs/_assets/key-concepts-img2.svg:199
+#: docs/_assets/key-concepts-img2.svg:279
+msgid "recordDetails"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/AlphaBeta.svg:440
 #, no-wrap
-msgid "statementID:  ty4t68s3-hha4-8ks3-0d8w"
-msgstr "statementID: ty4t68s3-hha4-8ks3-0d8w"
+msgid "name: Beta Systems"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:778
+#: docs/_assets/AlphaBeta.svg:445 docs/_assets/AlphaBeta.svg:466
 #, no-wrap
-msgid "name: RENCO Energy Ltd"
-msgstr "name: RENCO Energy Ltd"
+msgid "identifiers[0].scheme: TZ-CRA"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-2.svg:783
+#: docs/_assets/AlphaBeta.svg:450
 #, no-wrap
-msgid "foundingDate: 2016-07-07"
-msgstr "foundingDate: 2016-07-07"
+msgid "identifiers[0].id: pc-239118274"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-3.svg:585
+#: docs/_assets/AlphaBeta.svg:461
 #, no-wrap
-msgid "type:               selfDeclaration"
-msgstr "type: selfDeclaration"
+msgid "name: BetaSys"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-3.svg:590
+#: docs/_assets/AlphaBeta.svg:471
 #, no-wrap
-msgid "retrievedAt:   2018-11-07T13:55:32.734Z"
-msgstr "retrievedAt: 2018-11-07T13:55:32.734Z"
+msgid "identifiers[0]id: pc-239118274"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-3.svg:595
+#: docs/_assets/AlphaCorp.svg:298
 #, no-wrap
-msgid "assertedBy:   Acme Industries Ltd"
-msgstr "assertedBy: Acme Industries Ltd"
+msgid "Alpha Corp."
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-3.svg:606
-msgid "source"
-msgstr "source"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/data-schema-model-3.svg:629
+#: docs/_assets/AlphaCorp.svg:309 docs/_assets/BetaSys.svg:430
 #, no-wrap
-msgid "statementDate:   2018-07-12"
-msgstr "statementDate: 2018-07-12"
+msgid "Beta Systems"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag1-simpleOwn.svg:240
-#: docs/_assets/Diag4-complexInvolve.svg:246
-#: docs/_assets/Diag4-complexInvolve.svg:577
-#: docs/_assets/Diag5-sourcesData.svg:409
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1275
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1306
-msgid "Person A"
-msgstr "Физическое лицо А"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag1-simpleOwn.svg:263
-#: docs/_assets/Diag4-complexInvolve.svg:268
-#: docs/_assets/Diag5-sourcesData.svg:421
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1877
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1803
-msgid "Company 1"
-msgstr "Компания 1"
-
-#. (itstool) path: svg/text
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag1-simpleOwn.svg:497 docs/_assets/Diag1-simpleOwn.svg:558
-msgid "100% owned by"
-msgstr "100% акций в собственности"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag1-simpleOwn.svg:547 docs/_assets/Diag2-simpleInd.svg:189
-#: docs/_assets/Diag3-splitContr.svg:218
-#: docs/_assets/Diag4b-splitContr2.svg:221
-#: docs/_assets/Diag4-complexInvolve.svg:837
-#: docs/_assets/Diag5-sourcesData.svg:433
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1890
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1815
-msgid "Company 2"
-msgstr "Компания 2"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag1-simpleOwn.svg:570 docs/_assets/Diag2-simpleInd.svg:463
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1549
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1578
-msgid "Company 3"
-msgstr "Компания 3"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag2-simpleInd.svg:167 docs/_assets/Diag3-splitContr.svg:332
+#: docs/_assets/AlphaCorp.svg:331
 #, no-wrap
-msgid "Person B"
-msgstr "Физическое лицо В"
+msgid "recordId: 04a221be"
+msgstr ""
+
+#. (itstool) path: Work/format
+#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:27
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:27
+#: docs/_assets/SOE-scenario1.svg:25 docs/_assets/SOE-scenario2.svg:25
+#: docs/_assets/SOE-scenario3.svg:25 docs/_assets/SOE-scenario4.svg:25
+#: docs/_assets/SOE-scenario5.svg:25 docs/_assets/SOE-scenario6.svg:25
+#: docs/_assets/SOE-scenario7.svg:25 docs/_assets/key-concepts-img0.svg:170
+msgid "image/svg+xml"
+msgstr "image/svg+xml"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/Diag2-simpleInd.svg:428
-msgid "60% shares owned by"
-msgstr "60% доли в собственности"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag2-simpleInd.svg:445 docs/_assets/Diag5-sourcesData.svg:792
-#, no-wrap
-msgid "100% shares owned by"
-msgstr "100% акций в собственности"
-
-#. (itstool) path: text/tspan
-#. (itstool) path: tspan/tspan
-#: docs/_assets/Diag3-splitContr.svg:308
-#: docs/_assets/Diag4-complexInvolve.svg:895
-#: docs/_assets/Diag5-sourcesData.svg:505
-#, no-wrap
-msgid "60% directors appointed by"
-msgstr "60% директоров назначается"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag3-splitContr.svg:320
-#, no-wrap
-msgid "30% shares owned by"
-msgstr "30% акций в собственности"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag3-splitContr.svg:344
-#: docs/_assets/Diag4b-splitContr2.svg:329
-#, no-wrap
-msgid "Person C"
-msgstr "Физическое лицо С"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag3-splitContr.svg:349
-#, no-wrap
-msgid "(Executive "
-msgstr "(Исполнительный "
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag3-splitContr.svg:354
-#, no-wrap
-msgid "Director)"
-msgstr "директор)"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag4b-splitContr2.svg:305
-#, no-wrap
-msgid "60% voting rights held by"
-msgstr "60% прав голоса принадлежат"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag4b-splitContr2.svg:317
-#, no-wrap
-msgid "20% shares owned by"
-msgstr "20% акций в собственности"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag4-complexInvolve.svg:929
-#, no-wrap
-msgid "50% shares owned by"
-msgstr "50% акций в собственности"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag5-sourcesData.svg:557
-#: docs/_assets/Diag5-sourcesData.svg:624
-#: docs/_assets/Diag5-sourcesData.svg:653
-#: docs/_assets/Diag5-sourcesData.svg:713
-#: docs/_assets/Diag5-sourcesData.svg:773 docs/_assets/Diag6-registers.svg:438
-#: docs/_assets/Diag6-registers.svg:467 docs/_assets/Diag6-registers.svg:521
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:600
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:629
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:683
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:829
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:858
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:917
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:946
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1055
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1142
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1171
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1251
-#: docs/_assets/Diag8-dataStandardTemplate.svg:636
-#: docs/_assets/Diag8-dataStandardTemplate.svg:665
-#: docs/_assets/Diag8-dataStandardTemplate.svg:719
-#: docs/_assets/Diag8-dataStandardTemplate.svg:865
-#: docs/_assets/Diag8-dataStandardTemplate.svg:894
-#: docs/_assets/Diag8-dataStandardTemplate.svg:953
-#: docs/_assets/Diag8-dataStandardTemplate.svg:982
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1091
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1178
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1207
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1287
-#, no-wrap
-msgid "i"
-msgstr "i"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1298
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1328
-msgid "Company 4"
-msgstr "Компания 4"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1690
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1663
-#, no-wrap
-msgid "60% directors"
-msgstr "60% директоров "
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1695
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1668
-#, no-wrap
-msgid "appointed by"
-msgstr "назначается"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1707
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1679
-#, no-wrap
-msgid "30% shares"
-msgstr "30% доли "
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1712
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1855
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1908
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1684
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1782
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1832
-#, no-wrap
-msgid "owned by"
-msgstr "в собственности"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1850
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1777
-#, no-wrap
-msgid "99% shares"
-msgstr "99% доли "
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1903
-#: docs/_assets/Diag8-dataStandardTemplate.svg:1827
-#, no-wrap
-msgid "1% shares"
-msgstr "1% доли"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag7-dataStandardBlackBox.svg:1961
-#, no-wrap
-msgid "?"
-msgstr "?"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag8-dataStandardTemplate.svg:2645
-#, no-wrap
-msgid "standardised data"
-msgstr "стандартизованные данные"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/Diag9-JSONdata.svg:364
-#, no-wrap
-msgid "JSON"
-msgstr "JSON"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:469
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:520
+#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:474
 #, no-wrap
 msgid "Direct ownership or control"
 msgstr "Прямое владение или контроль"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:477
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:528
+#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:482
 #, no-wrap
 msgid "Indirect ownership or control"
 msgstr "Косвенное владение или контроль"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:492
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:593
+#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:497
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:628
 #, no-wrap
 msgid "Key"
 msgstr "Ключ"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:502
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:550
+#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:508
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:580
+#: docs/_assets/key-concepts-img0.svg:911
 #, no-wrap
 msgid "Person 1"
 msgstr "Физическое лицо 1"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:516
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:564
+#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:524
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:596
+#: docs/_assets/key-concepts-img0.svg:927 docs/_assets/trust-scenario5.svg:850
+#: docs/_assets/trust-scenario6.svg:742
 #, no-wrap
 msgid "Company A"
 msgstr "Компания A"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:530
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:578
+#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:540
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:612
+#: docs/_assets/key-concepts-img0.svg:943
 #, no-wrap
 msgid "Company E"
 msgstr "Компания E"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:544
+#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:556
+#: docs/_assets/key-concepts-img0.svg:959
 #, no-wrap
 msgid "Person 2"
 msgstr "Физическое лицо 2"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:555
+#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:567
+#: docs/_assets/key-concepts-img0.svg:970
 #, no-wrap
 msgid "32% shareholding"
 msgstr "32% акций в собственности"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:566
+#: docs/_assets/RepresentingChainsBODS-RealWorld.svg:578
 #, no-wrap
 msgid "15% shareholding"
 msgstr "15% акций в собственности"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:536
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:549
+#: docs/_assets/key-concepts-img0.svg:432
+#, no-wrap
+msgid "Direct relationship"
+msgstr "Прямые отношения"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:557
+#: docs/_assets/key-concepts-img0.svg:408
+#, no-wrap
+msgid "Indirect relationship"
+msgstr "Косвенные отношения"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:565
 #, no-wrap
 msgid "Statement and relevant properties"
 msgstr "Характеристика и соответствующие свойства"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:642
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:639
+#: docs/_assets/SOE-scenario5.svg:504 docs/_assets/key-concepts-img2.svg:141
+#: docs/_assets/nom-scenario1.svg:539 docs/_assets/nom-scenario1.svg:550
+#: docs/_assets/nom-scenario2.svg:474 docs/_assets/nom-scenario2.svg:485
+#: docs/_assets/nom-scenario3.svg:472 docs/_assets/nom-scenario4.svg:500
+#: docs/_assets/nom-scenario4.svg:511 docs/_assets/nom-scenario5.svg:409
+#: docs/_assets/trust-scenario1.svg:495 docs/_assets/trust-scenario1.svg:592
+#: docs/_assets/trust-scenario1.svg:603 docs/_assets/trust-scenario2.svg:727
+#: docs/_assets/trust-scenario2.svg:754 docs/_assets/trust-scenario2.svg:781
+#: docs/_assets/trust-scenario2.svg:808 docs/_assets/trust-scenario3.svg:642
+#: docs/_assets/trust-scenario3.svg:653 docs/_assets/trust-scenario3.svg:664
+#: docs/_assets/trust-scenario4.svg:571 docs/_assets/trust-scenario4.svg:582
+#: docs/_assets/trust-scenario4.svg:593 docs/_assets/trust-scenario5.svg:800
+#: docs/_assets/trust-scenario5.svg:811 docs/_assets/trust-scenario5.svg:822
+#: docs/_assets/trust-scenario6.svg:591 docs/_assets/trust-scenario6.svg:694
+#: docs/_assets/trust-scenario6.svg:845
 #, no-wrap
-msgid "statementID: p-1,"
-msgstr "statementID: p-1,"
+msgid "Person statement"
+msgstr "Характеристика физического лица"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:647
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:782
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:661
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:768
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:826
+#: docs/_assets/SOE-scenario1.svg:294 docs/_assets/SOE-scenario2.svg:294
+#: docs/_assets/SOE-scenario3.svg:336 docs/_assets/SOE-scenario3.svg:437
+#: docs/_assets/SOE-scenario4.svg:288 docs/_assets/SOE-scenario5.svg:406
+#: docs/_assets/SOE-scenario5.svg:515 docs/_assets/SOE-scenario6.svg:282
+#: docs/_assets/SOE-scenario7.svg:413 docs/_assets/SOE-scenario7.svg:521
+#: docs/_assets/dates-guidance2.svg:382 docs/_assets/dates-guidance2.svg:392
+#: docs/_assets/dates-guidance3.svg:221 docs/_assets/dates-guidance3.svg:311
+#: docs/_assets/key-concepts-img1.svg:256
+#: docs/_assets/key-concepts-img2.svg:290 docs/_assets/nom-scenario1.svg:572
+#: docs/_assets/nom-scenario1.svg:583 docs/_assets/nom-scenario1.svg:593
+#: docs/_assets/nom-scenario1.svg:604 docs/_assets/nom-scenario2.svg:507
+#: docs/_assets/nom-scenario2.svg:518 docs/_assets/nom-scenario2.svg:529
+#: docs/_assets/nom-scenario3.svg:494 docs/_assets/nom-scenario3.svg:505
+#: docs/_assets/nom-scenario3.svg:516 docs/_assets/nom-scenario4.svg:544
+#: docs/_assets/nom-scenario4.svg:555 docs/_assets/nom-scenario4.svg:566
+#: docs/_assets/nom-scenario5.svg:420 docs/_assets/nom-scenario5.svg:431
+#: docs/_assets/trust-scenario1.svg:484 docs/_assets/trust-scenario1.svg:506
+#: docs/_assets/trust-scenario1.svg:517 docs/_assets/trust-scenario2.svg:564
+#: docs/_assets/trust-scenario2.svg:575 docs/_assets/trust-scenario2.svg:586
+#: docs/_assets/trust-scenario2.svg:597 docs/_assets/trust-scenario3.svg:446
+#: docs/_assets/trust-scenario3.svg:457 docs/_assets/trust-scenario3.svg:468
+#: docs/_assets/trust-scenario4.svg:442 docs/_assets/trust-scenario4.svg:453
+#: docs/_assets/trust-scenario4.svg:464 docs/_assets/trust-scenario5.svg:621
+#: docs/_assets/trust-scenario5.svg:670 docs/_assets/trust-scenario5.svg:681
+#: docs/_assets/trust-scenario5.svg:692 docs/_assets/trust-scenario6.svg:629
+#: docs/_assets/trust-scenario6.svg:667 docs/_assets/trust-scenario6.svg:769
+#: docs/_assets/trust-scenario6.svg:818 docs/_assets/trust-scenario6.svg:856
 #, no-wrap
-msgid "isComponent: false"
-msgstr "isComponent: false"
+msgid "Relationship statement"
+msgstr "Запись об отношениях"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:663
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:677
 #, no-wrap
-msgid "statementID: ooc-3,"
-msgstr "statementID: ooc-3,"
+msgid "recordId: p-1"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:668
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:751
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:682
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:789
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:847
 #, no-wrap
-msgid "directOrIndirect: direct,"
-msgstr "directOrIndirect: direct,"
+msgid "recordDetails.isComponent: false"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:673
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:756
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:697
 #, no-wrap
-msgid "isComponent: true,"
-msgstr "isComponent: true,"
+msgid "recordId: r-3"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:678
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:761
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:701
 #, no-wrap
-msgid "beneficialOwnershipOrControl: false"
-msgstr "beneficialOwnershipOrControl: false"
+msgid "recordDetails.isComponent: true "
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:699
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:712
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:914
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:939
 #, no-wrap
-msgid "statementID: e-2,"
-msgstr "statementID: e-2,"
+msgid "recordDetails.interests[0] "
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:704
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:722
 #, no-wrap
-msgid "isComponent: true"
-msgstr "isComponent: true"
+msgid "recordId: r-2"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:746
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:726
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:742
 #, no-wrap
-msgid "statementID: ooc-2,"
-msgstr "statementID: ooc-2,"
+msgid "recordDetails.isComponent: true"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:777
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:737
 #, no-wrap
-msgid "statementID: e-1,"
-msgstr "statementID: e-1,"
+msgid "recordId: e-2"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:835
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:784
 #, no-wrap
-msgid "statementID: ooc-1,"
-msgstr "statementID: ooc-1,"
+msgid "recordId: e-1"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:840
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:842
 #, no-wrap
-msgid "isComponent: false,"
-msgstr "isComponent: false,"
+msgid "recordId: r-1"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:845
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:852
 #, no-wrap
-msgid "componentStatementIDs: ooc-2,e-2,ooc-3,"
-msgstr "componentStatementIDs: ooc-2,e-2,ooc-3,"
+msgid "recordDetails.componentRecords: r-2,e-2,r-3"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:866
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:873
 #, no-wrap
-msgid "Interests"
-msgstr "Interests"
+msgid "directOrIndirect: indirect"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:876
-#, no-wrap
-msgid "directOrIndirect: indirect,"
-msgstr "directOrIndirect: indirect,"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:881
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:878
 #, no-wrap
 msgid "beneficialOwnershipOrControl: true"
 msgstr "beneficialOwnershipOrControl: true"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/RepresentingChainsBODS-Statements.svg:892
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:889
 #, no-wrap
 msgid "property: value"
 msgstr "свойство: значение"
 
+#. (itstool) path: text/tspan
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:899
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:924
+#, no-wrap
+msgid "directOrIndirect: direct"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:903
+#: docs/_assets/RepresentingChainsBODS-Statements.svg:928
+#, no-wrap
+msgid "beneficialOwnershipOrControl: false      "
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/SOE-scenario1.svg:310 docs/_assets/SOE-scenario4.svg:304
+#: docs/_assets/SOE-scenario6.svg:298
+#, no-wrap
+msgid "entityType.type: stateBody"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/SOE-scenario1.svg:315 docs/_assets/SOE-scenario7.svg:434
+#, no-wrap
+msgid "jurisdiction.code: GB"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#. (itstool) path: tspan/tspan
+#: docs/_assets/SOE-scenario1.svg:359 docs/_assets/SOE-scenario2.svg:366
+#: docs/_assets/SOE-scenario3.svg:399 docs/_assets/SOE-scenario5.svg:466
+#: docs/_assets/SOE-scenario7.svg:478 docs/_assets/SOE-scenario7.svg:550
+#, no-wrap
+msgid "interests"
+msgstr "interests"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/SOE-scenario1.svg:377 docs/_assets/SOE-scenario6.svg:355
+#: docs/_assets/trust-scenario2.svg:694
+#, no-wrap
+msgid "entityType.type: legalEntity"
+msgstr ""
+
 #. (itstool) path: flowRoot/flowPara
-#. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario1.svg:314 docs/_assets/SOE-scenario1.svg:325
-#: docs/_assets/SOE-scenario3.svg:356 docs/_assets/SOE-scenario5.svg:427
-#: docs/_assets/SOE-scenario7.svg:441
+#: docs/_assets/SOE-scenario2.svg:310
 #, no-wrap
-msgid "entityType: state,"
-msgstr "entityType: state,"
+msgid "entityType.type: state,"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario1.svg:341 docs/_assets/SOE-scenario5.svg:443
-#: docs/_assets/SOE-scenario6.svg:309
+#: docs/_assets/SOE-scenario2.svg:322 docs/_assets/SOE-scenario3.svg:352
+#: docs/_assets/SOE-scenario5.svg:422 docs/_assets/SOE-scenario7.svg:429
 #, no-wrap
-msgid "jurisdiction: zm"
-msgstr "jurisdiction: zm"
+msgid "entityType.type: state"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario1.svg:373 docs/_assets/SOE-scenario3.svg:404
-#: docs/_assets/SOE-scenario4.svg:339 docs/_assets/SOE-scenario5.svg:475
-#: docs/_assets/SOE-scenario7.svg:494 docs/_assets/SOE-scenario7.svg:558
+#: docs/_assets/SOE-scenario2.svg:327
 #, no-wrap
-msgid "entityType: registeredEntity"
-msgstr "entityType: registeredEntity"
+msgid "jurisdiction.code: CA-AB"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario2.svg:315 docs/_assets/SOE-scenario4.svg:301
-#: docs/_assets/SOE-scenario6.svg:293
+#: docs/_assets/SOE-scenario2.svg:383 docs/_assets/SOE-scenario3.svg:416
+#: docs/_assets/SOE-scenario4.svg:356 docs/_assets/SOE-scenario5.svg:483
+#: docs/_assets/SOE-scenario7.svg:500 docs/_assets/SOE-scenario7.svg:578
+#: docs/_assets/nom-scenario1.svg:642 docs/_assets/nom-scenario2.svg:567
+#: docs/_assets/nom-scenario3.svg:450 docs/_assets/nom-scenario3.svg:554
+#: docs/_assets/nom-scenario4.svg:604 docs/_assets/nom-scenario5.svg:458
 #, no-wrap
-msgid "entityType: stateBody,"
-msgstr "entityType: stateBody,"
+msgid "entityType.type: registeredEntity"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario2.svg:331 docs/_assets/SOE-scenario7.svg:457
+#: docs/_assets/SOE-scenario3.svg:357 docs/_assets/SOE-scenario4.svg:309
 #, no-wrap
-msgid "jurisdiction: gb"
-msgstr "jurisdiction: gb"
+msgid "jurisdiction.code: NL"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario2.svg:363
-#, no-wrap
-msgid "entityType: legalEntity"
-msgstr "entityType: legalEntity"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario3.svg:372 docs/_assets/SOE-scenario4.svg:360
-#, no-wrap
-msgid "jurisdiction: nl"
-msgstr "jurisdiction: nl"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario3.svg:440
+#: docs/_assets/SOE-scenario3.svg:453
 #, no-wrap
 msgid "interestedParty.unspecified.reason:"
 msgstr "interestedParty.unspecified.reason:"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario3.svg:444
+#: docs/_assets/SOE-scenario3.svg:458
 #, no-wrap
-msgid "noBeneficialOwners,"
-msgstr "noBeneficialOwners,"
+msgid "noBeneficialOwners"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario3.svg:448
+#: docs/_assets/SOE-scenario3.svg:463
 #, no-wrap
 msgid "interestedParty.unspecified.description:"
 msgstr "interestedParty.unspecified.description:"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario3.svg:452
+#: docs/_assets/SOE-scenario3.svg:468
 #, no-wrap
-msgid "Exemption granted on the basis that"
-msgstr "Исключение предоставлено на основании того, что"
+msgid "Exemption granted on the basis that the"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario3.svg:456
+#: docs/_assets/SOE-scenario3.svg:473
 #, no-wrap
-msgid "the declaring entity is a state-owned"
-msgstr "объявленная сущность является государственным"
+msgid "declaring entity is a state-owned enterprise"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario3.svg:460
+#: docs/_assets/SOE-scenario4.svg:330 docs/_assets/SOE-scenario5.svg:547
+#: docs/_assets/SOE-scenario6.svg:334 docs/_assets/trust-scenario1.svg:544
+#: docs/_assets/trust-scenario1.svg:560 docs/_assets/trust-scenario1.svg:576
+#: docs/_assets/trust-scenario2.svg:608 docs/_assets/trust-scenario2.svg:624
+#: docs/_assets/trust-scenario2.svg:640 docs/_assets/trust-scenario2.svg:656
+#: docs/_assets/trust-scenario5.svg:605 docs/_assets/trust-scenario5.svg:703
+#: docs/_assets/trust-scenario5.svg:719 docs/_assets/trust-scenario5.svg:735
+#: docs/_assets/trust-scenario6.svg:613 docs/_assets/trust-scenario6.svg:640
+#: docs/_assets/trust-scenario6.svg:705
 #, no-wrap
-msgid "enterprise"
-msgstr "предприятием"
+msgid "interests[0].type:"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario4.svg:316 docs/_assets/SOE-scenario5.svg:539
-#: docs/_assets/SOE-scenario6.svg:325
+#: docs/_assets/SOE-scenario4.svg:335
 #, no-wrap
-msgid "interests.0.type:"
-msgstr "interests.0.type:"
+msgid "controlViaCompanyRulesOrArticles"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario4.svg:320
+#: docs/_assets/SOE-scenario4.svg:340
 #, no-wrap
-msgid "controlViaCompanyRulesOrArticles,"
-msgstr "controlViaCompanyRulesOrArticles,"
+msgid "interests[0].details: Veto rights"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario4.svg:324
-#, no-wrap
-msgid "interests.0.details: Veto rights"
-msgstr "interests.0.details: Право вето"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario4.svg:328
+#: docs/_assets/SOE-scenario4.svg:345
 #, no-wrap
 msgid "over specified company decisions"
 msgstr "на определенные решения компании"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario5.svg:523
+#: docs/_assets/SOE-scenario5.svg:427 docs/_assets/SOE-scenario6.svg:303
+#, no-wrap
+msgid "jurisdiction.code: ZM"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/SOE-scenario5.svg:531 docs/_assets/nom-scenario1.svg:528
+#: docs/_assets/nom-scenario1.svg:561 docs/_assets/nom-scenario2.svg:463
+#: docs/_assets/nom-scenario2.svg:496 docs/_assets/nom-scenario3.svg:483
+#: docs/_assets/nom-scenario4.svg:489 docs/_assets/nom-scenario5.svg:398
 #, no-wrap
 msgid "personType: knownPerson"
 msgstr "personType: knownPerson"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario5.svg:544
+#: docs/_assets/SOE-scenario5.svg:552
 #, no-wrap
 msgid "seniorManagingOfficial"
 msgstr "seniorManagingOfficial"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario6.svg:330
+#: docs/_assets/SOE-scenario6.svg:339
 #, no-wrap
 msgid "controlByLegalFramework"
 msgstr "controlByLegalFramework"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario6.svg:346
-#, no-wrap
-msgid "entityType: legalEntity,"
-msgstr "entityType: legalEntity,"
-
-#. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario6.svg:351
+#: docs/_assets/SOE-scenario6.svg:360
 #, no-wrap
 msgid "formedByLegislation.name:"
 msgstr "formedByLegislation.name:"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario6.svg:356
+#: docs/_assets/SOE-scenario6.svg:365
 #, no-wrap
-msgid "National Energy Act,"
-msgstr "Национальный акт об энергии,"
+msgid "National Energy Act"
+msgstr ""
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario6.svg:361
+#: docs/_assets/SOE-scenario6.svg:370
 #, no-wrap
 msgid "formedByLegislation.date: 1980-02-01"
 msgstr "formedByLegislation.date: 1980-02-01"
 
 #. (itstool) path: text/tspan
-#: docs/_assets/SOE-scenario7.svg:489
+#: docs/_assets/SOE-scenario7.svg:495
 #, no-wrap
 msgid "name: A GLIE"
 msgstr "name: A GLIE"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:154 docs/_assets/dates-guidance2.svg:152
+#: docs/_assets/dates-guidance2.svg:275 docs/_assets/dates-guidance3.svg:149
+#: docs/_assets/dates-guidance3.svg:279 docs/_assets/key-concepts-img3.svg:529
+#, no-wrap
+msgid "type:               selfDeclaration"
+msgstr "type: selfDeclaration"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:159 docs/_assets/dates-guidance2.svg:157
+#: docs/_assets/dates-guidance2.svg:280 docs/_assets/dates-guidance3.svg:154
+#: docs/_assets/dates-guidance3.svg:284 docs/_assets/key-concepts-img1.svg:204
+#: docs/_assets/key-concepts-img3.svg:534
+#, no-wrap
+msgid "assertedBy:   Acme Industries Ltd"
+msgstr "assertedBy: Acme Industries Ltd"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:169 docs/_assets/dates-guidance2.svg:167
+#: docs/_assets/dates-guidance2.svg:290 docs/_assets/dates-guidance3.svg:164
+#: docs/_assets/dates-guidance3.svg:294 docs/_assets/key-concepts-img1.svg:214
+#: docs/_assets/key-concepts-img3.svg:250
+#: docs/_assets/key-concepts-img3.svg:544
+msgid "source"
+msgstr "source"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:197 docs/_assets/key-concepts-img3.svg:569
+#, no-wrap
+msgid "type:               shareholding"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:202
+#, no-wrap
+msgid "endDate:        2021-09-03"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:212 docs/_assets/key-concepts-img3.svg:584
+msgid "recordDetails.interests[0]"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:334
+msgid "3 Sept 2021"
+msgstr "3 сентября 2021 г."
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:344
+msgid "10 Sept 2021"
+msgstr "10 сентября 2021 г."
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:354
+msgid "13 Sept 2021"
+msgstr "13 сентября 2021 г."
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:365
+#, no-wrap
+msgid "Person A "
+msgstr "Физическое лицо А"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:370
+#, no-wrap
+msgid "divests from "
+msgstr "выходит из числа собственников"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:375
+#, no-wrap
+msgid "company B"
+msgstr "компании В"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:386
+#, no-wrap
+msgid "Public register "
+msgstr "Публичный реестр"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:391
+#, no-wrap
+msgid "is updated"
+msgstr "обновляется"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:402
+#, no-wrap
+msgid "Company B files updated "
+msgstr "Компания В подает обновленную"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:407
+#, no-wrap
+msgid "ownership information "
+msgstr "информацию о собственниках"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:412
+#, no-wrap
+msgid "with the Business Register"
+msgstr "в Реестр компаний"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:431 docs/_assets/key-concepts-img3.svg:610
+#, no-wrap
+msgid "recordType:        relationship"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:436 docs/_assets/key-concepts-img3.svg:605
+#, no-wrap
+msgid "recordStatus:      closed"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:441
+#, no-wrap
+msgid "statementDate:   2021-09-10"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance1.svg:446
+#, no-wrap
+msgid "publicationDetails.publicationDate: 2021-09-13"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:195 docs/_assets/dates-guidance2.svg:352
+#, no-wrap
+msgid "interests[0].startDate: 2022-03-02"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:200 docs/_assets/dates-guidance2.svg:357
+#, no-wrap
+msgid "interests[0].interestedParty: per-015397"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:205 docs/_assets/dates-guidance2.svg:362
+#, no-wrap
+msgid "interests[0].subject: ent-908906"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:232 docs/_assets/key-concepts-img3.svg:223
+#, no-wrap
+msgid "recordStatus: new"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:237
+#, no-wrap
+msgid "statementId: da3ae15cf269914d97e8c"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:242
+#, no-wrap
+msgid "statementDate: 2022-04-04"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:247
+#, no-wrap
+msgid "publicationDetails.publicationDate: 2022-04-07"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:313
+#, no-wrap
+msgid "recordStatus: updated"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:318
+#, no-wrap
+msgid "statementId: eea9ac2266588a9e4405a"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:323
+#, no-wrap
+msgid "statementDate: 2023-04-04"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance2.svg:328
+#, no-wrap
+msgid "publicationDetails.publicationDate: 2023-04-08"
+msgstr ""
+
+#. (itstool) path: tspan/tspan
+#: docs/_assets/dates-guidance3.svg:191 docs/_assets/dates-guidance3.svg:256
+#, no-wrap
+msgid "2024-02-18"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:189 docs/_assets/dates-guidance3.svg:418
+#, no-wrap
+msgid "interests[0].startDate: <_:tspan-1/>"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:196 docs/_assets/dates-guidance3.svg:425
+#: docs/_assets/nom-scenario2.svg:600 docs/_assets/nom-scenario3.svg:587
+#: docs/_assets/trust-scenario6.svg:802
+#, no-wrap
+msgid "interests[0].type: shareholding"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:201 docs/_assets/dates-guidance3.svg:430
+#, no-wrap
+msgid "interests[0].share.exact: 30"
+msgstr ""
+
+#. (itstool) path: tspan/tspan
+#: docs/_assets/dates-guidance3.svg:239
+#, no-wrap
+msgid "frbnc-94C43-45C5F-0E282"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:237 docs/_assets/dates-guidance3.svg:327
+#, no-wrap
+msgid "statementId: <_:tspan-1/>"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:244 docs/_assets/dates-guidance3.svg:334
+#, no-wrap
+msgid "recordId: epr948376592765"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:249 docs/_assets/dates-guidance3.svg:339
+#, no-wrap
+msgid "statementDate:   2024-02-18"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:254 docs/_assets/dates-guidance3.svg:344
+#, no-wrap
+msgid "publicationDetails.publicationDate: <_:tspan-1/>"
+msgstr ""
+
+#. (itstool) path: tspan/tspan
+#: docs/_assets/dates-guidance3.svg:329
+#, no-wrap
+msgid "frbnc-E50AF-63746-383B2"
+msgstr ""
+
+#. (itstool) path: tspan/tspan
+#: docs/_assets/dates-guidance3.svg:346
+#, no-wrap
+msgid "2024-05-23"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:367
+#, no-wrap
+msgid "annotations[0].motivation: correcting"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:372
+#, no-wrap
+msgid "annotations[0].statementPointerTarget:"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:377
+#, no-wrap
+msgid "/recordDetails/interests[0]/startDate"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:382
+#, no-wrap
+msgid "annotations[0].description:"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:387
+#, no-wrap
+msgid "register processing error 34677: interest "
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/dates-guidance3.svg:392
+#, no-wrap
+msgid "start date incorrectly set to statementDate"
+msgstr ""
+
+#. (itstool) path: tspan/tspan
+#: docs/_assets/dates-guidance3.svg:420
+#, no-wrap
+msgid "2024-02-12"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img0.svg:346
+#, no-wrap
+msgid "Beneficial ownership network"
+msgstr "Сеть бенефициарного владения"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img0.svg:360
+#, no-wrap
+msgid "Beneficial owner"
+msgstr "Бенефицарный владелец"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img0.svg:384
+#, no-wrap
+msgid "Intermediary entity"
+msgstr "Посреднический субъект"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img0.svg:456
+#, no-wrap
+msgid "Subject of beneficial ownership network"
+msgstr "Предмет сети бенефициарного владения"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img0.svg:480
+#, no-wrap
+msgid "Interest"
+msgstr "Interest"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img0.svg:981
+#, no-wrap
+msgid "45% shareholding"
+msgstr "45 % акций в собственности"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img1.svg:199
+#, no-wrap
+msgid "type:              selfDeclaration"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img1.svg:225
+#: docs/_assets/key-concepts-img3.svg:208
+#, no-wrap
+msgid "statementDate:   2018-07-12"
+msgstr "statementDate: 2018-07-12"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img1.svg:230
+#, no-wrap
+msgid "recordType:         relationship"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img1.svg:240
+msgid "recordDetails.interests"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img2.svg:103
+#, no-wrap
+msgid "names.0.fullName:  Lev Yotsky"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img2.svg:114
+#, no-wrap
+msgid "recordType:          person"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img2.svg:119
+#, no-wrap
+msgid "recordId:               p24d78ae012f1"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img2.svg:172
+#, no-wrap
+msgid "name:  White Flag Holdings Corp"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img2.svg:183
+#, no-wrap
+msgid "recordType:          entity"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img2.svg:188
+#, no-wrap
+msgid "recordId:               e3f199ad8e312"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img2.svg:242
+#, no-wrap
+msgid "interestedParty:  p24d78ae012f1"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img2.svg:247
+#, no-wrap
+msgid "subject:               e3f199ad8e312"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img2.svg:263
+#, no-wrap
+msgid "recordType:          relationship"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img2.svg:268
+#, no-wrap
+msgid "recordId:               r4bed1a5f7f12"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img3.svg:213
+#: docs/_assets/key-concepts-img3.svg:273
+#: docs/_assets/key-concepts-img3.svg:600
+#, no-wrap
+msgid "recordId:             r-d67fb1a-aa2f3da"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img3.svg:218
+#, no-wrap
+msgid "recordStatus:      new"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img3.svg:268
+#, no-wrap
+msgid "statementDate:   2019-11-01"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img3.svg:278
+#, no-wrap
+msgid "recordStatus:      updated"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img3.svg:574
+#, no-wrap
+msgid "endDate:        2021-02-22"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/key-concepts-img3.svg:595
+#, no-wrap
+msgid "statementDate:   2021-02-28"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario1.svg:485 docs/_assets/nom-scenario4.svg:467
+#: docs/_assets/nom-scenario5.svg:376
+#, no-wrap
+msgid "interests[0].type: boardMember"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario1.svg:496
+#, no-wrap
+msgid "interests[0].type: otherInfluenceOrControl"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario1.svg:501 docs/_assets/trust-scenario6.svg:726
+#, no-wrap
+msgid "interests[0].directOrIndirect: indirect"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario1.svg:506 docs/_assets/trust-scenario6.svg:731
+#, no-wrap
+msgid "interests[0].beneficialOwnershipOrControl: true"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario1.svg:517 docs/_assets/nom-scenario2.svg:452
+#: docs/_assets/nom-scenario3.svg:461 docs/_assets/nom-scenario4.svg:478
+#: docs/_assets/nom-scenario5.svg:387
+#, no-wrap
+msgid "interests[0].type: nominee"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario1.svg:615 docs/_assets/nom-scenario2.svg:540
+#: docs/_assets/nom-scenario3.svg:527 docs/_assets/nom-scenario4.svg:577
+#: docs/_assets/nom-scenario5.svg:442 docs/_assets/trust-scenario1.svg:647
+#: docs/_assets/trust-scenario4.svg:653 docs/_assets/trust-scenario5.svg:654
+#: docs/_assets/trust-scenario6.svg:900
+#, no-wrap
+msgid "entityType.type: arrangement"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario1.svg:620 docs/_assets/nom-scenario2.svg:545
+#: docs/_assets/nom-scenario3.svg:532 docs/_assets/nom-scenario4.svg:582
+#: docs/_assets/nom-scenario5.svg:447
+#, no-wrap
+msgid "entityType.subtype: nomination"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario1.svg:631 docs/_assets/nom-scenario2.svg:556
+#: docs/_assets/nom-scenario3.svg:543 docs/_assets/nom-scenario4.svg:593
+#, no-wrap
+msgid "interests[0].type: nominator"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario4.svg:523
+#, no-wrap
+msgid "personType: unknownPerson"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario4.svg:528
+#, no-wrap
+msgid "unspecifiedPersonDetails.reason:"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/nom-scenario4.svg:533
+#, no-wrap
+msgid "subjectUnableToConfirmOrIdentifyBeneficialOwner"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario1.svg:429 docs/_assets/trust-scenario2.svg:672
+#: docs/_assets/trust-scenario3.svg:577 docs/_assets/trust-scenario4.svg:431
+#: docs/_assets/trust-scenario5.svg:632 docs/_assets/trust-scenario6.svg:878
+#, no-wrap
+msgid "Trust A"
+msgstr "Траст А"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario1.svg:440 docs/_assets/trust-scenario2.svg:520
+#: docs/_assets/trust-scenario3.svg:544 docs/_assets/trust-scenario4.svg:538
+#: docs/_assets/trust-scenario5.svg:751 docs/_assets/trust-scenario6.svg:656
+#, no-wrap
+msgid "Person A"
+msgstr "Физическое лицо А"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario1.svg:451 docs/_assets/trust-scenario2.svg:531
+#: docs/_assets/trust-scenario3.svg:555 docs/_assets/trust-scenario4.svg:549
+#: docs/_assets/trust-scenario5.svg:762 docs/_assets/trust-scenario6.svg:602
+#, no-wrap
+msgid "Person B"
+msgstr "Физическое лицо В"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario1.svg:462 docs/_assets/trust-scenario2.svg:542
+#: docs/_assets/trust-scenario3.svg:566 docs/_assets/trust-scenario4.svg:560
+#: docs/_assets/trust-scenario5.svg:773 docs/_assets/trust-scenario6.svg:791
+#, no-wrap
+msgid "Person C"
+msgstr "Физическое лицо С"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario1.svg:528 docs/_assets/trust-scenario1.svg:614
+#: docs/_assets/trust-scenario1.svg:630 docs/_assets/trust-scenario2.svg:711
+#: docs/_assets/trust-scenario2.svg:738 docs/_assets/trust-scenario2.svg:765
+#: docs/_assets/trust-scenario2.svg:792 docs/_assets/trust-scenario3.svg:589
+#: docs/_assets/trust-scenario3.svg:605 docs/_assets/trust-scenario4.svg:604
+#: docs/_assets/trust-scenario4.svg:620 docs/_assets/trust-scenario4.svg:636
+#: docs/_assets/trust-scenario5.svg:117 docs/_assets/trust-scenario5.svg:784
+#: docs/_assets/trust-scenario5.svg:833 docs/_assets/trust-scenario6.svg:575
+#: docs/_assets/trust-scenario6.svg:678 docs/_assets/trust-scenario6.svg:829
+#, no-wrap
+msgid "personType:"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario1.svg:533 docs/_assets/trust-scenario1.svg:619
+#: docs/_assets/trust-scenario1.svg:635 docs/_assets/trust-scenario2.svg:716
+#: docs/_assets/trust-scenario2.svg:743 docs/_assets/trust-scenario2.svg:770
+#: docs/_assets/trust-scenario2.svg:797 docs/_assets/trust-scenario3.svg:594
+#: docs/_assets/trust-scenario3.svg:610 docs/_assets/trust-scenario4.svg:609
+#: docs/_assets/trust-scenario4.svg:625 docs/_assets/trust-scenario4.svg:641
+#: docs/_assets/trust-scenario5.svg:122 docs/_assets/trust-scenario5.svg:789
+#: docs/_assets/trust-scenario5.svg:838 docs/_assets/trust-scenario6.svg:580
+#: docs/_assets/trust-scenario6.svg:683 docs/_assets/trust-scenario6.svg:834
+#, no-wrap
+msgid "knownPerson"
+msgstr "knownPerson"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario1.svg:549 docs/_assets/trust-scenario2.svg:661
+#: docs/_assets/trust-scenario5.svg:724 docs/_assets/trust-scenario6.svg:645
+#, no-wrap
+msgid "settlor"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario1.svg:565 docs/_assets/trust-scenario2.svg:645
+#: docs/_assets/trust-scenario5.svg:708 docs/_assets/trust-scenario6.svg:710
+#, no-wrap
+msgid "trustee"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario1.svg:581 docs/_assets/trust-scenario2.svg:629
+#: docs/_assets/trust-scenario5.svg:740 docs/_assets/trust-scenario6.svg:618
+#, no-wrap
+msgid "beneficiary"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario1.svg:652 docs/_assets/trust-scenario2.svg:699
+#: docs/_assets/trust-scenario4.svg:658 docs/_assets/trust-scenario5.svg:659
+#: docs/_assets/trust-scenario6.svg:905
+#, no-wrap
+msgid "entityType.subtype: trust"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario2.svg:553
+#, no-wrap
+msgid "Person D"
+msgstr "Физическое лицо D"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario2.svg:613
+#, no-wrap
+msgid "protector"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario3.svg:490
+#, no-wrap
+msgid "interests.0.type: settlor"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario3.svg:495
+#, no-wrap
+msgid "interests.1.type: trustee"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario3.svg:506
+#, no-wrap
+msgid "interests.0.type: trustee"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario3.svg:517
+#, no-wrap
+msgid "interests.0.type: beneficiary"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario3.svg:528
+#, no-wrap
+msgid "entityType: arrangement"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario3.svg:533
+#, no-wrap
+msgid "entitySubtype.generalCategory: trust"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario3.svg:621
+#, no-wrap
+msgid "personType: anonymousPerson"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario3.svg:626
+#, no-wrap
+msgid "unspecifiedPersonReason:"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario3.svg:631
+#, no-wrap
+msgid "subjectExemptFromDisclosure"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario4.svg:475
+#, no-wrap
+msgid "interests[0].type: settlor"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario4.svg:480 docs/_assets/trust-scenario4.svg:501
+#: docs/_assets/trust-scenario4.svg:522
+#, no-wrap
+msgid "interests[0].details: "
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario4.svg:485
+#, no-wrap
+msgid "constituant "
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario4.svg:496
+#, no-wrap
+msgid "interests[0].type: beneficiary"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario4.svg:506
+#, no-wrap
+msgid "bénéficiaire "
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario4.svg:517
+#, no-wrap
+msgid "interests[0].type: trustee"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario4.svg:527
+#, no-wrap
+msgid "fiduciaire "
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario4.svg:663
+#, no-wrap
+msgid "entityType.details: fiducie-sûreté"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario5.svg:610
+#, no-wrap
+msgid "shareholding"
+msgstr "shareholding"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario5.svg:872
+#, no-wrap
+msgid "entityType.type: "
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario5.svg:877 docs/_assets/trust-scenario6.svg:758
+#, no-wrap
+msgid "registeredEntity"
+msgstr "registeredEntity"
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario6.svg:721
+#, no-wrap
+msgid "interests[0].type: otherInterestOrControl"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario6.svg:753
+#, no-wrap
+msgid "entityType: "
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario6.svg:807
+#, no-wrap
+msgid "share.exact: 100"
+msgstr ""
+
+#. (itstool) path: text/tspan
+#: docs/_assets/trust-scenario6.svg:866
+#, no-wrap
+msgid "s"
+msgstr ""
