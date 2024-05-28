@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Kateryna Volobuieva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../standard/modelling/index.rst:4 0621919241ac4e3c988318d2e02bdd6b
+msgid "Modelling requirements"
+msgstr "Требования к моделированию"
+
+#: ../../standard/warningbox.rst:3 8338bba6c32f4190b45fb83f187b76c9
+msgid ""
+"This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model, codelists, and technical guidance."
+msgstr ""
+"Это версия 0.4 Стандарта данных о бенефициарном владении. Она включает в "
+"себя обновления модели данных, списки допустимых значений и технические "
+"рекомендации."
+
+#: ../../standard/warningbox.rst:5 c1532c2cc4b4455f9c0439783810d324
+msgid ""
+"Future changes are anticipated before a version 1.0 release. See the "
+":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
+"information."
+msgstr ""
+"Ожидаются новые изменения до выхода версии 1.0. Дополнительную информацию "
+"см. на страницах :ref:`Лог изменений <changelog>` и `О стандарте "
+"<../about>`_ ."
+
+#: ../../standard/modelling/index.rst:8 11c38537e186423a91ed412c1e111453
+msgid ""
+"This section contains requirements for representing beneficial ownership "
+"information."
+msgstr ""
+"Данный раздел содержит требования к отображению информации о бенефициарном "
+"владении."

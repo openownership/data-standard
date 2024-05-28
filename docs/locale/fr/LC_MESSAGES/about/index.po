@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../about/index.rst:4 72de4448857843dd87c200ac6457c3e4
+msgid "About"
+msgstr ""
+
+#: ../../about/index.rst:6 d398f8b363894099871ac679403333b6
+msgid ""
+"This website contains the specification of version 0.4 of the Beneficial "
+"Ownership Data Standard (BODS) and support for its use."
+msgstr ""
+
+#: ../../about/index.rst:8 d4726f521bcf404697719e63ac2a5167
+msgid ""
+"BODS is an open standard for collecting, sharing and using high-quality, "
+"machine-readable data on beneficial ownership."
+msgstr ""
+
+#: ../../about/index.rst:22 74f69d57e5fc4cec93b4478b8b946206
+msgid "Background"
+msgstr ""
+
+#: ../../about/index.rst:28 b3fa9c5069584d9d8e7a120506729b4f
+msgid ""
+"Collecting, storing, and making beneficial ownership information available "
+"as `structured and interoperable data "
+"<https://www.openownership.org/en/principles/structured-data/>`__ improves "
+"its functionality. It reduces the cost of producing, using, and maintaining "
+"the information, and has a greater chance of meeting beneficial ownership "
+"transparency policy goals such as exposing transnational networks of illicit"
+" financial flows or supporting effective and timely due diligence."
+msgstr ""
+
+#: ../../about/index.rst:30 81b051aa177745ed8df2b4f85c595e43
+msgid ""
+"BODS enables beneficial ownership transparency by providing a conceptual and"
+" practical framework for collecting and publishing beneficial ownership "
+"data, resulting in data that is interoperable and high quality."
+msgstr ""
+
+#: ../../about/index.rst:32 c2f8d84a7f194819859642f9d486ace2
+msgid ""
+"BODS is developed by `Open Ownership <https://www.openownership.org/>`__, a "
+"non-profit organisation focused on beneficial ownership transparency, in "
+"partnership with `Open Data Services <https://opendataservices.coop/>`__."
+msgstr ""
+
+#: ../../about/index.rst:34 00698e4daf744a07834a97c48d542f4b
+msgid ""
+"An open :any:`data standard working group <working-group>` of data experts, "
+"beneficial ownership specialists and other interested parties also provides "
+"advice and helps guide the development of BODS."
+msgstr ""
+
+#: ../../about/index.rst:40 d1212e7b4cad4498a44ffaecda5427d6
+msgid "Current status of the standard"
+msgstr ""
+
+#: ../../about/index.rst:46 d2c970705960477ba989f77ec926baf9
+msgid ""
+"This is v0.4 of the Beneficial Ownership Data Standard. Changes are "
+"documented in the :ref:`changelog <changelog>`, and the documentation of "
+"previous versions is maintained in archive form."
+msgstr ""
+
+#: ../../about/index.rst:48 16777f2b89084c8f859d87488d458a89
+msgid ""
+"Implementers should be aware that future changes are anticipated before a "
+"version 1.0 release. However, from the v0.1 release onwards, any structural "
+"changes or major definitional changes will only take place following "
+"consultation."
+msgstr ""
+
+#: ../../about/index.rst:50 63e852eb90cb4a2aa6b0dd1bac40e2dc
+msgid ""
+"The `schema "
+"<https://standard.openownership.org/en/latest/schema/index.html>`__ contains"
+" a structure, fields and codelists. Where possible, validation constraints "
+"are included within the JSON schema. Constraints that cannot be integrated "
+"into the schema can be checked using the Data Review Tool. See "
+":ref:`Conformance and validation <conformance>` for more information."
+msgstr ""
+
+#: ../../about/index.rst:56 a105a121fb29466d9a7e2a9e4207db75
+msgid "Get involved"
+msgstr ""
+
+#: ../../about/index.rst:62 30f9b85f5b12467f8700144eb96ad4ed
+msgid ""
+"All changes to the standard draft, documentation and specification take "
+"place via GitHub at https://github.com/openownership/data-standard/."
+msgstr ""
+
+#: ../../about/index.rst:65 1ae44d5c49bc4180a44854c107b848a2
+msgid ""
+"A `feature tracker is available on GitHub "
+"<https://github.com/openownership/data-standard/projects/4>`__ which "
+"documents all new BODS features being researched, proposed or implemented."
+msgstr ""
+
+#: ../../about/index.rst:67 925fee92ce23478cbb51dc890e40f04e
+msgid ""
+"Anyone can submit a feature request or bug report, contribute to feature "
+"development tickets, or make implementation proposals. If you would like to "
+"be involved in the development and review of the Standard, see the "
+":doc:`Governance <governance>` page."
+msgstr ""
+
+#: ../../about/index.rst:73 87911b42591a499987c2c61d39d31569
+msgid "Partners and funders"
+msgstr ""
+
+#: ../../about/index.rst:79 d7d49e58644345f6b8a81f2479f6bb02
+msgid ""
+"The initial development of BODS was funded by Open Ownership as part of a "
+"`UK Department for International Development (DfID) "
+"<https://www.gov.uk/government/organisations/department-for-international-"
+"development>`__ funded project and its development continues to be funded by"
+" the `UK Foreign, Commonwealth and Development Office "
+"<https://www.gov.uk/government/organisations/foreign-commonwealth-"
+"development-office>`__ and the `Norwegian Agency for Development Cooperation"
+" (Norad) <https://www.norad.no/en/front/>`__."
+msgstr ""
+
+#: ../../about/index.rst:81 95bec3356d2341f0a71220ecf05d8027
+msgid ""
+"`Open Ownership <https://www.openownership.org/en/>`__ is a non-profit "
+"organisation driving the global shift towards transparency and "
+"accountability in corporate ownership and control. It’s managed by an "
+"executive team who are overseen by a Steering Group made up of leading "
+"transparency and accountability organisations."
+msgstr ""
+
+#: ../../about/index.rst:83 e154220caf4d4b18927ec9df3164272e
+msgid ""
+"In order to focus on its mission, Open Ownership is fiscally sponsored by "
+"`Global Impact <https://charity.org>`__. `Fiscal sponsorship "
+"<https://charity.org/fiscal-sponsorship>`__ is a common mechanism in the "
+"non-profit sector that enables organisations to launch new programmes "
+"without needing to complete the full process of establishing a new legal "
+"entity."
+msgstr ""
+
+#: ../../about/index.rst:85 883875af9ccf40e2915b458d26abf466
+msgid ""
+"The specification and documentation of BODS have been developed by Open "
+"Ownership, Open Data Services and `OpenCorporates "
+"<https://opencorporates.com/>`__. Read the :doc:`credits <credits>` for full"
+" details of the people who have helped develop BODS."
+msgstr ""
+
+#: ../../about/index.rst:92 2c9c8f295b014a258ba45fab128c5b75
+msgid "License and contributor agreement"
+msgstr ""
+
+#: ../../about/index.rst:98 5fb7cc1e64914273a286dd954587ad89
+msgid ""
+"Schema content of the Open Ownership Register is published under the `GNU "
+"Affero General Public License v3.0 "
+"<https://github.com/openownership/register/blob/master/LICENSE>`__."
+msgstr ""
+
+#: ../../about/index.rst:100 1b016f5d6816472088c534f47e27860d
+msgid ""
+"The BODS schema is licensed under the `Apache License, Version 2.0 "
+"<https://www.apache.org/licenses/LICENSE-2.0>`__. Stakeholders can use the "
+"software for any purpose, to distribute it, to modify it, and to distribute "
+"modified versions of the software. Contributors are required to accept the "
+"`contributor agreement <https://github.com/openownership/data-"
+"standard/blob/master/CONTRIBUTING.md>`__."
+msgstr ""
+
+#: ../../about/index.rst:109 12154d94a6ac46af8fef1b3089e34817
+msgid "Contact"
+msgstr ""
+
+#: ../../about/index.rst:115 ef2f4a0e1c87484eab45259edce62fa0
+msgid ""
+"To contact the data standard support team at Open Ownership, please email "
+"support@openownership.org."
+msgstr ""

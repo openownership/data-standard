@@ -1,87 +1,86 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, Open Ownership
+# Copyright (C) 2024, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
-# Carlos Hames, 2022
 # Agustina De Luca, 2022
 # Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
+# Carmen Edery, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-13 16:06+0100\n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
-"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"Last-Translator: Carmen Edery, 2024\n"
+"Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../about/index.rst:2 f66bdeb4a9df474891cddf47341dc0bc
+#: ../../about/index.rst:4 72de4448857843dd87c200ac6457c3e4
 msgid "About"
 msgstr "¿De qué se trata?"
 
-#: ../../about/index.rst:4 a43dbf5df9184d2ca4eedeb97e9894ef
+#: ../../about/index.rst:6 d398f8b363894099871ac679403333b6
 msgid ""
-"This website contains the specification of `version 0.3 of the Beneficial "
-"Ownership Data Standard (BODS) "
-"<https://standard.openownership.org/en/0.3.0/>`__ plus support for its use."
+"This website contains the specification of version 0.4 of the Beneficial "
+"Ownership Data Standard (BODS) and support for its use."
 msgstr ""
-"Este sitio web contiene la especificación de `la versión 0.3 del Estándar de"
-" Datos de Beneficiarios Finales (BODS) "
-"<https://standard.openownership.org/es/0.3.0/>`__ más soporte para su uso."
+"Este sitio web contiene la especificación de la versión 0.4 del Estándar de "
+"datos sobre titularidad de beneficiarios reales (BODS, en inglés) y el "
+"soporte para su uso."
 
-#: ../../about/index.rst:7 d6c42e38f9924cbba317651b88e5ff69
+#: ../../about/index.rst:8 d4726f521bcf404697719e63ac2a5167
 msgid ""
-"BODS is an open standard providing guidance and a structured template for "
-"collecting, sharing and using high-quality, machine-readable data on "
-"beneficial ownership."
+"BODS is an open standard for collecting, sharing and using high-quality, "
+"machine-readable data on beneficial ownership."
 msgstr ""
-"BODS es un estándar abierto que proporciona orientación y una plantilla "
-"estructurada para recopilar, compartir y utilizar datos de alta calidad "
-"legibles por máquina sobre beneficiarios finales."
+"El BODS es un estándar abierto para recopilar, compartir y usar datos "
+"legibles por máquina de alta calidad sobre la titularidad de beneficiarios "
+"reales."
 
-#: ../../about/index.rst:21 7b9463c911944b129e712cffa69a8cb3
+#: ../../about/index.rst:22 74f69d57e5fc4cec93b4478b8b946206
 msgid "Background"
 msgstr "Antecedentes"
 
-#: ../../about/index.rst:27 7dc4bfe90cae4e83a2a82ce2b93fefd5
+#: ../../about/index.rst:28 b3fa9c5069584d9d8e7a120506729b4f
 msgid ""
-"The utility of beneficial ownership data is enhanced when the data is "
-"available in a `structured format "
-"<https://www.openownership.org/en/principles/structured-data/>`__. This "
-"allows the data to be easily analysed and linked with other datasets, "
-"enhancing the data’s ability to expose transnational networks of illicit "
-"financial flows and support effective and timely due diligence."
+"Collecting, storing, and making beneficial ownership information available "
+"as `structured and interoperable data "
+"<https://www.openownership.org/en/principles/structured-data/>`__ improves "
+"its functionality. It reduces the cost of producing, using, and maintaining "
+"the information, and has a greater chance of meeting beneficial ownership "
+"transparency policy goals such as exposing transnational networks of illicit"
+" financial flows or supporting effective and timely due diligence."
 msgstr ""
-"La utilidad de los datos de beneficiarios finales mejora cuando los datos "
-"están disponibles en un `formato estructurado "
-"<https://www.openownership.org/es/principles/structured-data/>`__. Esto "
-"permite que los datos se analicen fácilmente y se vinculen con otros "
-"conjuntos de datos, lo que mejora la capacidad de los datos para exponer "
-"redes transnacionales de flujos financieros ilícitos y respaldar una debida "
-"diligencia efectiva y oportuna."
+"Recopilar, almacenar y hacer que la información de titularidad de "
+"beneficiarios reales esté disponible como `datos estructurados e "
+"interoperables <https://www.openownership.org/en/principles/structured-"
+"data/>`__ mejora su funcionalidad. Reduce el costo de producir, usar y "
+"mantener la información, y tiene mayores posibilidades de cumplir con las "
+"metas de la política de transparencia de titularidad de beneficiarios "
+"reales, tales como exponer a las redes transnacionales de flujo financiero "
+"ilícito o apoyar la diligencia debida efectiva y oportuna."
 
-#: ../../about/index.rst:29 186e8ac011ac4144b4ffbbe01eaec552
+#: ../../about/index.rst:30 81b051aa177745ed8df2b4f85c595e43
 msgid ""
-"BODS enables beneficial ownership transparency by providing a solid "
-"conceptual and practical framework for collecting and publishing beneficial "
-"ownership data, resulting in data that is interoperable, more easily reused "
-"and of higher quality."
+"BODS enables beneficial ownership transparency by providing a conceptual and"
+" practical framework for collecting and publishing beneficial ownership "
+"data, resulting in data that is interoperable and high quality."
 msgstr ""
-"BODS permite la transparencia de los beneficiarios finales al proporcionar "
-"un sólido marco conceptual y práctico para recopilar y publicar datos de "
-"beneficiarios finales, lo que da como resultado datos que son "
-"interoperables, más fáciles de reutilizar y de mayor calidad."
+"El BODS permite la transparencia de titularidad de beneficiarios reales al "
+"ofrecer un marco conceptual y práctico para recopilar y publicar datos de "
+"titularidad de beneficiarios reales, lo que se deriva en datos que son "
+"interoperables y de alta calidad."
 
-#: ../../about/index.rst:31 68dd8360d3bc404d9f058b2142ba26d6
+#: ../../about/index.rst:32 c2f8d84a7f194819859642f9d486ace2
 msgid ""
 "BODS is developed by `Open Ownership <https://www.openownership.org/>`__, a "
 "non-profit organisation focused on beneficial ownership transparency, in "
@@ -92,47 +91,32 @@ msgstr ""
 "enfocada en la transparencia de beneficiarios finales, en asociación con "
 "`Open Data Services <https://opendataservices.coop/>`__."
 
-#: ../../about/index.rst:33 081e4975280c486f987eba1588ec24f4
+#: ../../about/index.rst:34 00698e4daf744a07834a97c48d542f4b
 msgid ""
-"An open :doc:`data standard working group <governance>` of data experts, "
+"An open :any:`data standard working group <working-group>` of data experts, "
 "beneficial ownership specialists and other interested parties also provides "
 "advice and helps guide the development of BODS."
 msgstr ""
-"Un :doc:`grupo de trabajo estándar de datos <governance>` abiertos de "
-"expertos en datos, especialistas en beneficiarios finales y otras partes "
-"interesadas también brinda asesoramiento y ayuda a guiar el desarrollo de "
+"Un :any:`data standard working group <working-group>` de expertos en datos, "
+"especialistas en titularidad de beneficiarios reales y otras partes "
+"interesadas también brinda asesoría y ayuda a orientar el desarrollo del "
 "BODS."
 
-#: ../../about/index.rst:35 bcea821e479d430082fa9525e64d51b5
-msgid ""
-"The working group is co-chaired by Open Ownership and Open Data Services - "
-"and anyone can apply to join the group by `filling out this form "
-"<https://docs.google.com/forms/d/e/1FAIpQLSdRSmSUxyyv2t1k3vWXZ_3EhTW_f603MeGxgyjKnbNNE9vvbQ/viewform>`__."
-" Virtual group meetings are held quarterly and communication is coordinated "
-"through a :doc:`Google group <governance>`."
-msgstr ""
-"El grupo de trabajo está copresidido por Open Ownership y Open Data "
-"Services, y cualquiera puede solicitar unirse al grupo `completando este "
-"formulario "
-"<https://docs.google.com/forms/d/e/1FAIpQLSdRSmSUxyyv2t1k3vWXZ_3EhTW_f603MeGxgyjKnbNNE9vvbQ/viewform>`__."
-" Las reuniones de grupos virtuales se llevan a cabo trimestralmente y la "
-"comunicación se coordina a través de un :doc:`grupo de Google<governance>`."
-
-#: ../../about/index.rst:41 8618d7a278514f398c877983df23a36e
+#: ../../about/index.rst:40 d1212e7b4cad4498a44ffaecda5427d6
 msgid "Current status of the standard"
 msgstr "Estado actual del estándar"
 
-#: ../../about/index.rst:47 b36747d04d58480094553c5d612c63ff
+#: ../../about/index.rst:46 d2c970705960477ba989f77ec926baf9
 msgid ""
-"This is v0.3 of the Beneficial Ownership Data Standard. A :ref:`changelog "
-"<changelog>` is provided, and the documentation of previous versions is "
-"maintained in archive form."
+"This is v0.4 of the Beneficial Ownership Data Standard. Changes are "
+"documented in the :ref:`changelog <changelog>`, and the documentation of "
+"previous versions is maintained in archive form."
 msgstr ""
-"Esta es la versión 0.3 del Estándar de Datos de Beneficiarios Finales. Se "
-"proporciona un :ref:`registro de cambios<changelog>`, y la documentación de "
-"versiones anteriores se mantiene en forma de archivo."
+"Esta es la v0.4 del Estándar de datos de titularidad de beneficiarios "
+"reales. Los cambios están documentados en el :ref:`changelog <changelog>`, y"
+" la documentación de versiones anteriores se mantiene en forma de archivo."
 
-#: ../../about/index.rst:49 b981c46d44f64bdaab9996946b4b4448
+#: ../../about/index.rst:48 16777f2b89084c8f859d87488d458a89
 msgid ""
 "Implementers should be aware that future changes are anticipated before a "
 "version 1.0 release. However, from the v0.1 release onwards, any structural "
@@ -144,23 +128,28 @@ msgstr ""
 "adelante, cualquier cambio estructural o cambio de definición importante "
 "solo se hará después de una consulta."
 
-#: ../../about/index.rst:51 ba856c288e9b43d29439d9b64796b018
+#: ../../about/index.rst:50 63e852eb90cb4a2aa6b0dd1bac40e2dc
 msgid ""
 "The `schema "
 "<https://standard.openownership.org/en/latest/schema/index.html>`__ contains"
-" a structure, fields and codelists but does not yet enforce validation "
-"constraints on most fields."
+" a structure, fields and codelists. Where possible, validation constraints "
+"are included within the JSON schema. Constraints that cannot be integrated "
+"into the schema can be checked using the Data Review Tool. See "
+":ref:`Conformance and validation <conformance>` for more information."
 msgstr ""
 "El `esquema "
-"<https://standard.openownership.org/es/latest/schema/index.html>`__ contiene"
-" una estructura, campos y listas de códigos, pero aún no impone "
-"restricciones de validación en la mayoría de los campos."
+"<https://standard.openownership.org/en/latest/schema/index.html>`__ contiene"
+" una estructura, campos y listas de códigos. Si es posible, se incluyen las "
+"limitaciones de validación dentro del esquema JSON. Las limitaciones que no "
+"pueden integrarse en el esquema pueden revisarse usando la herramienta de "
+"revisión de datos. Consulte :ref:`Conformance and validation <conformance>` "
+"para obtener más información."
 
-#: ../../about/index.rst:57 54c801cc829a469aa628ff8238853a20
+#: ../../about/index.rst:56 a105a121fb29466d9a7e2a9e4207db75
 msgid "Get involved"
 msgstr "Involúcrate"
 
-#: ../../about/index.rst:63 f2f6531126c146399d4b061d72b577ed
+#: ../../about/index.rst:62 30f9b85f5b12467f8700144eb96ad4ed
 msgid ""
 "All changes to the standard draft, documentation and specification take "
 "place via GitHub at https://github.com/openownership/data-standard/."
@@ -169,7 +158,7 @@ msgstr ""
 "especificaciones se llevan a cabo por medio de GitHub en "
 "https://github.com/openownership/data-standard/."
 
-#: ../../about/index.rst:66 0404cc9532e14504ac49cab9d678ea43
+#: ../../about/index.rst:65 1ae44d5c49bc4180a44854c107b848a2
 msgid ""
 "A `feature tracker is available on GitHub "
 "<https://github.com/openownership/data-standard/projects/4>`__ which "
@@ -180,54 +169,23 @@ msgstr ""
 "documenta todas las características nuevas de BODS que se están "
 "investigando, proponiendo o implementando."
 
-#: ../../about/index.rst:68 c983f5646e854dddb91d9a4113181e69
+#: ../../about/index.rst:67 925fee92ce23478cbb51dc890e40f04e
 msgid ""
-"Features currently on the tracker are those adopted for development by the "
-"Open Ownership and Open Data Services teams following work with implementers"
-" of beneficial ownership reforms and in consultation with the Data Standard "
-"Working Group."
+"Anyone can submit a feature request or bug report, contribute to feature "
+"development tickets, or make implementation proposals. If you would like to "
+"be involved in the development and review of the Standard, see the "
+":doc:`Governance <governance>` page."
 msgstr ""
-"Las características que se encuentran actualmente en la herramienta de "
-"seguimiento son las adoptadas para su desarrollo por los equipos de Open "
-"Ownership y Open Data Services luego del trabajo con los implementadores de "
-"las reformas de beneficiarios finales y en consulta con el Grupo de Trabajo "
-"de Estándar de Datos."
+"Cualquiera puede enviar una solicitud de función o informe de errores, "
+"contribuir a los tickets de desarrollo de funciones o presentar propuestas "
+"de implementación. Si desea involucrarse en el desarrollo y la revisión del "
+"estándar, consulte la página :doc:`Governance <governance>`."
 
-#: ../../about/index.rst:70 d1b951965ba74efcbee6302b27e1341f
-msgid ""
-"However, anyone can submit a feature request ticket, contribute to a feature"
-" development ticket, or make an implementation proposal. The data standard "
-"support team at Open Ownership will consider and reply to any submitted "
-"feature requests within a month from submission."
-msgstr ""
-"Sin embargo, cualquiera puede enviar un ticket de solicitud de funciones, "
-"contribuir a un ticket de desarrollo de características o hacer una "
-"propuesta de implementación. El equipo de soporte de estándares de datos en "
-"Open Ownership considerará y responderá a cualquier solicitud de "
-"características enviada dentro de un mes desde el envío."
-
-#: ../../about/index.rst:72 f322c10a92714dd29d962d6e212c4431
-msgid ""
-"See the `project issue tracker <https://github.com/openownership/data-"
-"standard/issues>`__ for a list of open bugs, issues and features."
-msgstr ""
-"Consulte la `herramienta de seguimiento de problemas del proyecto "
-"<https://github.com/openownership/data-standard/issues>`__ para obtener una "
-"lista de errores abiertos, problemas y características."
-
-#: ../../about/index.rst:74 b65c8e97533d46349f00df51c27fa921
-msgid ""
-"If you would like to be involved in the development and review of the "
-"Standard, see the :doc:`Governance <governance>` page."
-msgstr ""
-"Si desea participar en el desarrollo y la revisión del Estándar, consulte la"
-" página sobre :doc:`Gobernanza <governance>` ."
-
-#: ../../about/index.rst:80 6e88ad6629e441f2aac94d602c9ef1a1
+#: ../../about/index.rst:73 87911b42591a499987c2c61d39d31569
 msgid "Partners and funders"
 msgstr "Aliados y financiadores"
 
-#: ../../about/index.rst:86 8b50eaabc76f4411abf6f96466290492
+#: ../../about/index.rst:79 d7d49e58644345f6b8a81f2479f6bb02
 msgid ""
 "The initial development of BODS was funded by Open Ownership as part of a "
 "`UK Department for International Development (DfID) "
@@ -235,31 +193,34 @@ msgid ""
 "development>`__ funded project and its development continues to be funded by"
 " the `UK Foreign, Commonwealth and Development Office "
 "<https://www.gov.uk/government/organisations/foreign-commonwealth-"
-"development-office>`__ which replaced DfID."
+"development-office>`__ and the `Norwegian Agency for Development Cooperation"
+" (Norad) <https://www.norad.no/en/front/>`__."
 msgstr ""
-"El desarrollo inicial de BODS fue financiado por Open Ownership como parte "
-"de un proyecto financiado por el `Departamento para el Desarrollo "
-"Internacional del Reino Unido (DfID) "
+"El desarrollo inicial del BODS fue financiado por Open Ownership como parte "
+"de un proyecto financiado por el `Departamento de Desarrollo Internacional "
+"del Reino Unido (DfID, en inglés) "
 "<https://www.gov.uk/government/organisations/department-for-international-"
-"development>`__  y su desarrollo continúa siendo financiado por la `Oficina "
-"de Asuntos Exteriores, Commonwealth y Desarrollo del Reino Unido "
+"development>`__ y su desarrollo sigue siendo financiado por la `Oficina de "
+"Asuntos Extranjeros, Commonwealth y Desarrollo del Reino Unido "
 "<https://www.gov.uk/government/organisations/foreign-commonwealth-"
-"development-office>`__ que reemplazó a DfID."
+"development-office>`__ y la `Agencia de Cooperación para el Desarrollo de "
+"Noruega (Norad) <https://www.norad.no/en/front/>`__."
 
-#: ../../about/index.rst:88 ddd2457cc5764849aeb79c00c077cd77
+#: ../../about/index.rst:81 95bec3356d2341f0a71220ecf05d8027
 msgid ""
-"Open Ownership is a non-profit organisation supporting countries that are "
-"making the beneficial ownership of companies more transparent. Its day-to-"
-"day management is done by an executive team who are overseen by a Steering "
-"Group made up of leading transparency and accountability organisations."
+"`Open Ownership <https://www.openownership.org/en/>`__ is a non-profit "
+"organisation driving the global shift towards transparency and "
+"accountability in corporate ownership and control. It’s managed by an "
+"executive team who are overseen by a Steering Group made up of leading "
+"transparency and accountability organisations."
 msgstr ""
-"Open Ownership es una organización sin fines de lucro que apoya a los países"
-" que están transparentando los beneficiarios finales de las empresas. Su "
-"gestión diaria la realiza un equipo ejecutivo supervisado por un Grupo "
-"Directivo formado por organizaciones líderes en transparencia y rendición de"
-" cuentas."
+"`Open Ownership <https://www.openownership.org/en/>`__ es una organización "
+"sin fines de lucro que impulsa el cambio global hacia la transparencia y la "
+"responsabilidad en la titularidad y el control corporativos. Es administrada"
+" por un equipo ejecutivo que es supervisado por un grupo directivo "
+"conformado por organizaciones líderes en transparencia y responsabilidad."
 
-#: ../../about/index.rst:90 8a4422d842674193b4d66ee43928e995
+#: ../../about/index.rst:83 e154220caf4d4b18927ec9df3164272e
 msgid ""
 "In order to focus on its mission, Open Ownership is fiscally sponsored by "
 "`Global Impact <https://charity.org>`__. `Fiscal sponsorship "
@@ -275,7 +236,7 @@ msgstr ""
 " programas sin necesidad de completar el proceso completo de establecimiento"
 " de una nueva entidad jurídica."
 
-#: ../../about/index.rst:92 a73d907b673c47bfb2242ba2cc38f163
+#: ../../about/index.rst:85 883875af9ccf40e2915b458d26abf466
 msgid ""
 "The specification and documentation of BODS have been developed by Open "
 "Ownership, Open Data Services and `OpenCorporates "
@@ -288,11 +249,11 @@ msgstr ""
 "conocer todos los detalles de las personas que han ayudado a desarrollar "
 "BODS."
 
-#: ../../about/index.rst:99 e55f1deb01c64a57a3d5689754a11426
+#: ../../about/index.rst:92 2c9c8f295b014a258ba45fab128c5b75
 msgid "License and contributor agreement"
 msgstr "Licencia y convenio de contribución"
 
-#: ../../about/index.rst:105 7434411fbbae40bfae5f52e4fd39f0a8
+#: ../../about/index.rst:98 5fb7cc1e64914273a286dd954587ad89
 msgid ""
 "Schema content of the Open Ownership Register is published under the `GNU "
 "Affero General Public License v3.0 "
@@ -302,7 +263,7 @@ msgstr ""
 "`Licencia Pública General Affero de GNU v3.0 "
 "<https://github.com/openownership/register/blob/master/LICENSE>`__."
 
-#: ../../about/index.rst:107 58b86607483848fcad76d000b26c9d5d
+#: ../../about/index.rst:100 1b016f5d6816472088c534f47e27860d
 msgid ""
 "The BODS schema is licensed under the `Apache License, Version 2.0 "
 "<https://www.apache.org/licenses/LICENSE-2.0>`__. Stakeholders can use the "
@@ -319,14 +280,14 @@ msgstr ""
 "<https://github.com/openownership/data-"
 "standard/blob/master/CONTRIBUTING.md>`__."
 
-#: ../../about/index.rst:116 23e8343a73a54c868199fa3e022f9a99
+#: ../../about/index.rst:109 12154d94a6ac46af8fef1b3089e34817
 msgid "Contact"
 msgstr "Contacto"
 
-#: ../../about/index.rst:122 0f57530a5e004b818717720df3d0faf6
+#: ../../about/index.rst:115 ef2f4a0e1c87484eab45259edce62fa0
 msgid ""
-"To connect with the data standard support team at Open Ownership, please "
-"email support@openownership.org."
+"To contact the data standard support team at Open Ownership, please email "
+"support@openownership.org."
 msgstr ""
-"Para comunicarse con el equipo de soporte de estándares de datos de Open "
+"Para comunicarse con el equipo de soporte sobre estándares de datos de Open "
 "Ownership, envíe un correo electrónico a support@openownership.org."

@@ -1,0 +1,458 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Kateryna Volobuieva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../standard/concepts.rst:4 4e76c6f344bc4a239791087b2755a407
+msgid "Key concepts"
+msgstr "Основные концепции"
+
+#: ../../standard/warningbox.rst:3 37840bfcf4ba46669a349eb1ea200c99
+msgid ""
+"This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model, codelists, and technical guidance."
+msgstr ""
+"Это версия 0.4 Стандарта данных о бенефициарном владении. Она включает в "
+"себя обновления модели данных, списки допустимых значений и технические "
+"рекомендации."
+
+#: ../../standard/warningbox.rst:5 1e4cc4cc8fbd4ac7bacd20ab265c73d0
+msgid ""
+"Future changes are anticipated before a version 1.0 release. See the "
+":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
+"information."
+msgstr ""
+"Ожидаются новые изменения до выхода версии 1.0. Дополнительную информацию "
+"см. на страницах :ref:`Лог изменений <changelog>` и `О стандарте "
+"<../about>`_ ."
+
+#: ../../standard/concepts.rst:8 43e2058798794399add75035598fa4c5
+msgid ""
+"Two things inform the Beneficial Ownership Data Standard (BODS) data model:"
+msgstr ""
+"Модель данных, предусмотренная Стандартом данных о бенефициарном владении "
+"(СДБВ), определяется двумя факторами:"
+
+#: ../../standard/concepts.rst:10 8bf0ee85b764408ca7217a3ffa0636f9
+msgid "what beneficial ownership information is"
+msgstr "что представляет собой информация о бенефициарном владении;"
+
+#: ../../standard/concepts.rst:11 12f212823178433ca1838756852b8e84
+msgid "how it is processed and used"
+msgstr "как она обрабатывается и используется."
+
+#: ../../standard/concepts.rst:13 12d4107116ce4a5fb0d6d7c3780d30af
+msgid ""
+"Understanding these concepts and the data model will help you publish high-"
+"quality data."
+msgstr ""
+"Понимание этих концепций и модели данных поможет вам публиковать данные "
+"высокого качества."
+
+#: ../../standard/concepts.rst:17 2995a3efb448406c83dea218c349ec17
+msgid "Beneficial ownership concepts"
+msgstr "Концепции бенефициарного владения"
+
+#: ../../standard/concepts.rst:19 1bf3c803f9394aa79c237fc78df4476b
+msgid ""
+"A natural **person** is a **beneficial owner** of an **entity** because of "
+"certain **interests**. These interests may be rooted in legal ownership, or "
+"come from controlling the entity, or using its assets. The **relationship** "
+"between the beneficial owner and the entity may be **direct**, **indirect** "
+"or both. Where it is indirect, **intermediary** entities, people and their "
+"relationships, are part of the **beneficial ownership network**."
+msgstr ""
+"Физическое **лицо** является **бенефицарным владельцем** **субъекта** "
+"вследствие определенной **доли участия**. Эта доля участия может быть "
+"основана на юридическом владении или возникать в результате контроля "
+"субъекта или использования его активов. **Отношения** между бенефицарным "
+"владельцем и субъектом могут быть **прямыми**, **косвенными** или и теми, и "
+"другими одновременно. Если они косвенные, **посреднические** субъекты, "
+"физические лица и их отношения формируют **сеть бенефициарного владения**."
+
+#: ../../standard/concepts.rst:21 b565f8eaefa44df2bcde2f311c5672da
+msgid ""
+"People or entities are obliged in some jurisdictions to disclose their "
+"beneficial ownership. They declare this information to a designated agency. "
+"Each **declaration** is a set of **claims** about the entities, people and "
+"relationships within the **subject**’s beneficial ownership network. "
+"Information about those entities, people and relationships is captured by "
+"the agency in **records** which are updated as new claims are made."
+msgstr ""
+"В некоторых юрисдикциях физические лица или субъекты обязаны раскрывать "
+"сведения о своем бенефициарном владении. Они предоставляют такую информацию "
+"уполномоченному органу в форме декларации. Каждая **декларация** — это ряд "
+"**заявлений** о субъектах, физических лицах и отношениях внутри сети "
+"бенефициарного владения **предмета** декларации. Информация о таких "
+"субъектах, физических лицах и отношениях фиксируется таким органом в "
+"**элементах**, которые обновляются по мере поступления новых заявлений."
+
+#: ../../standard/concepts.rst-1 2c90747a9cc3417aaced34d23fe8e5d7
+msgid ""
+"A labelled diagram of a beneficial ownership network. Labelled as 'Subject "
+"of beneficial ownership network' is Company E. Labelled as 'Direct "
+"relationship' is a solid line connected to Person 2. Labelled as 'Interest' "
+"is the text '32% shareholding' which sits on that solid line. Company E is "
+"also linked to Company A by a solid line. And Company A is linked to Person "
+"1 by a solid line. Labelled as 'Indirect relationship' is a dotted line "
+"connecting Company E to Person 1. The text '45% shareholding' sits on that "
+"dotted line. Person 1 is labelled 'Beneficial owner'. Company A is labelled "
+"'Intermediary entity'."
+msgstr ""
+"Схема сети бенефициарного владения с надписями. Компания Е помечена надписью"
+" 'Предмет сети бенефициарного владения'. Сплошная линия, ведущая к "
+"Физическому лицу 2, помечена надписью 'Прямые отношения'. Текст '32 % акций "
+"в собственности', размещенный на этой сплошной линии, помечен надписью 'Доля"
+" владения'. Компания E также соединена с Компанией A сплошной линией. А "
+"Компания A соединена сплошной линией с Физическим лицом 1. Пунктирная линия,"
+" соединяющая Компанию Е с Физическим лицом 1, помечена надписью 'Косвенные "
+"отношения'. Текст '45 % акций в собственности' размещен на этой пунктирной "
+"линии. Физическое лицо 1 помечено надписью 'Бенефициарный собственник'. "
+"Компания A помечена надписью 'Посреднический субъект'."
+
+#: ../../standard/concepts.rst:30 11ea0869dcb542cc81f29a7b83cfafd5
+msgid "BODS Statements represent claims"
+msgstr "Записи СДБВ отображают заявления"
+
+#: ../../standard/concepts.rst:32 75a2a111337e4b9fb3bb1ed2377802ea
+msgid ""
+"The highest level object in a BODS dataset is a Statement. Each Statement "
+"represents a claim made by a source at a particular point in time. The claim"
+" can be about one of three elements of a beneficial ownership network:"
+msgstr ""
+"Объектом высшего уровня в наборе данных СДБВ является Запись. Каждая Запись "
+"представлет собой заявление, сделанное источником в определенный момент "
+"времени. Заявление может касаться одного из трех элементов сети "
+"бенефициарного владения:"
+
+#: ../../standard/concepts.rst:34 991ffdd79225451cb62e6d301ae6cc8b
+msgid "an entity (including companies, trusts and legal arrangements)"
+msgstr "субъекта (включая компании, трасты и правоотношения);"
+
+#: ../../standard/concepts.rst:35 1c7c2986dd48441192f62efb12a93142
+msgid "a person (natural persons who own, control or benefit from entities)"
+msgstr ""
+"физического лица (которое владеет субъектами, контролирует их или получает "
+"от них выгоду);"
+
+#: ../../standard/concepts.rst:36 8ba218416fb44ae4b811896e0bbc3cac
+msgid ""
+"a relationship (consisting of interests between an entity and an interested "
+"party)"
+msgstr ""
+"отношений (состоящих в долевом участии заинтересованной стороны в субъекте)."
+
+#: ../../standard/concepts.rst-1 6a3c932fc23a423bb098608a44703382
+msgid ""
+"A relationship statement block (connecting a person and an entity) "
+"containing a source block with type-selfDeclaration and assertedBy value of "
+"Acme Industries Ltd. Statement also has statementDate of 2018-07-12"
+msgstr ""
+"Блок записи об отношениях (отражающий связь между физическим лицом и "
+"субъектом), который содержит блок источника со значением selfDeclaration для"
+" параметра type и значением Acme Industries Ltd. для параметра assertedBy. "
+"Запись также содержит значение 2018-07-12 для параметра statementDate"
+
+#: ../../standard/concepts.rst:43 007da1c55e974334b6618dafdbe0c948
+msgid ""
+"Representing beneficial ownership information in this way allows people to "
+"make sense of data received from multiple sources over extended periods of "
+"time. In particular, this model means that:"
+msgstr ""
+"Такой способ представления информации о бенефициарном владении позволяет "
+"людям понять смысл данных, полученных из различных источников за длительный "
+"период времени. В частности, эта модель означает, что:"
+
+#: ../../standard/concepts.rst:45 8ba9e13597124c3998f0e240600c1034
+msgid ""
+"statements about beneficial ownership can conflict when they come from "
+"different sources"
+msgstr ""
+"записи о бенефициарном владении могут противоречить друг другу, если они "
+"происходят из различных источников;"
+
+#: ../../standard/concepts.rst:46 966859e729f143e3a9a2621975952052
+msgid ""
+"statements about beneficial ownership can overlap, referring to identical "
+"parties"
+msgstr ""
+"записи о бенефициарном владении могут дублироваться, если они касаются одних"
+" и тех же сторон;"
+
+#: ../../standard/concepts.rst:47 cb97dbb252a84b8ca0c23bfde3189a26
+msgid ""
+"historical beneficial ownership snapshots (to answer questions of ‘who knew "
+"what, when?’) can be produced. This is known as `bi-temporal modelling "
+"<https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_."
+msgstr ""
+"могут создаваться моментальные снимки состояния данных о бенефициарном "
+"владении за прошлые периоды (для ответа на вопросы о том, ‘кто что знал и "
+"когда’), что известно как `битемпоральное моделирование "
+"<https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_."
+
+#: ../../standard/concepts.rst:49 c4d2faa08aa248deac310dd64f51a567
+msgid ""
+"Statements should therefore be considered immutable – presenting details "
+"about an element of beneficial ownership as claimed at a particular point in"
+" time."
+msgstr ""
+"Следовательно, записи следует считать неизменными, так как они содержат "
+"сведения об элементе бенефициарного владения, заявленные в определенный "
+"момент времени."
+
+#: ../../standard/concepts.rst:51 a1760c1a70464b389e8b1b7dfe124fe0
+msgid ""
+"To achieve this, each Statement produced by a data management system needs "
+"to include:"
+msgstr ""
+"Для достижения этой цели каждая Запись, созданная системой управления "
+"данными, должна включать:"
+
+#: ../../standard/concepts.rst:53 728f602993ff40199f30e01338d665cd
+msgid ""
+"the details claimed about the entity, person or relationship, as stored by "
+"records in the system"
+msgstr ""
+"заявленные сведения о субъекте, физическом лице или отношениях, которые "
+"хранятся в системе;"
+
+#: ../../standard/concepts.rst:54 fd3cf203722a4f379ab9553ec75190a4
+msgid "information about the source, date and context of the claim"
+msgstr "информацию об источнике, дате и контексте заявления;"
+
+#: ../../standard/concepts.rst:56 d706f8ef46e84339812b1b0c7a6e798c
+msgid ""
+"After publication, publishers do not edit a Statement to indicate an "
+"information update: they publish a new Statement with the updated details of"
+" the record."
+msgstr ""
+"После публикации издатели не редактируют Запись, чтобы отразить обновление "
+"информации — они публикуют новую Запись с обновленными сведениями."
+
+#: ../../standard/concepts.rst:60 dd8611046a6b4f9aac88e2b9b0096e51
+msgid "Beneficial ownership records"
+msgstr "Информация о бенефициарном владении"
+
+#: ../../standard/concepts.rst:62 e470c65cef234e6d971130a9f00a75fe
+msgid ""
+"Data management systems need to internally maintain their own record with an"
+" appropriate ``recordId`` string for each person, entity and relationship "
+"whose details are disclosed. The ``recordId`` has two purposes:"
+msgstr ""
+"В системах управления данными должны вестись внутренние записи (элементы) с "
+"соответствующей строкой ``recordId`` для каждого физического лица, субъекта "
+"и отношений, сведения о которых раскрываются. Строка ``recordId`` имеет две "
+"цели:"
+
+#: ../../standard/concepts.rst:64 8ea8cf04960642db9b1fa73bdd84c1ba
+msgid "linking entities and persons via relationships"
+msgstr "связь субъектов и физических лиц посредством отношений;"
+
+#: ../../standard/concepts.rst:65 1a6f7dc74ce848a4a3f486ac358c7b3e
+msgid "publishing information updates"
+msgstr "публикация обновленной информации."
+
+#: ../../standard/concepts.rst:67 91b9d18c05824cc9bb0fc24204bd4d72
+msgid "See :any:`record-identifiers` for full requirements."
+msgstr ""
+"См. полный перечень требований в разделе :any:`Идентификаторы элементов`."
+
+#: ../../standard/concepts.rst:70 0c776de779fe4eebbeaebd0b5af2ba72
+msgid "Linking entities and persons via relationships"
+msgstr "Связь субъектов и физических лиц посредством отношений"
+
+#: ../../standard/concepts.rst:72 be6dfa5ebc294e6986c8d26ef97c1d2a
+msgid ""
+"Stable ``recordId`` values in BODS Statements allow the structure of "
+"beneficial ownership networks to be derived from BODS datasets."
+msgstr ""
+"Стабильные значения ``recordId`` в записях СДБВ позволяют получить структуру"
+" сетей бенефициарного владения на основе наборов данных СДБВ."
+
+#: ../../standard/concepts.rst-1 7ec38efdaa834110bcb6ff3e55a42c77
+msgid ""
+"A person node is connected via a solid line to an entity node. A person "
+"statement block sits next to the person node. A relationship statement block"
+" sits next to the solid line. An entity statement block sits next to the "
+"entity node. Within the person statement, recordType is 'person', the "
+"recordId is 'p24d78ae012f1', and the recordDetails show that the person's "
+"name is 'Lev Yotsky'. Within the relationship statement, the recordType is "
+"'relationship' and the recordDetails show that the interestedParty is the "
+"record with recordId 'p24d78ae012f1' and the subject is the record with "
+"recordId 'e3f199ad8e312'. Within the entity statement, the recordType is "
+"'entity', the recordId is 'e3f199ad8e312' and the recordDetails show that "
+"the entity is called 'White Flag Holdings Corp'. These elements represent "
+"Lev Yotsky's relationship with White Flag Holdings Corp."
+msgstr ""
+"Узел физического лица соединен с узлом субъекта сплошной линией. Блок записи"
+" о физическом лице расположен рядом с узлом физического лица. Блок записи об"
+" отношениях расположен рядом со сплошной линией. Блок записи о субъекте "
+"расположен рядом с узлом субъекта. В записи о физическом лице параметр "
+"recordType имеет значение 'физическое лицо', параметр recordId — "
+"'p24d78ae012f1', а в поле recordDetails указано, что имя физического лица — "
+"'Lev Yotsky'. В записи об отношениях параметр recordType имеет значение "
+"'отношения', а в поле recordDetails указано, что interestedParty имеет "
+"recordId 'p24d78ae012f1', а субъект имеет recordId 'e3f199ad8e312'. В записи"
+" об отношениях параметр recordType имеет значение 'субъект' с recordId "
+"'e3f199ad8e312', а в поле recordDetails указано, что название субъекта — "
+"'White Flag Holdings Corp'. Эти элементы отражают отношения между Lev Yotsky"
+" и White Flag Holdings Corp."
+
+#: ../../standard/concepts.rst:79 d13f9a8c36154ff4b31e6b4a74878c5b
+msgid ""
+"The Relationship statement holds ``recordId`` values for the interested "
+"party and the subject of a relationship."
+msgstr ""
+"Запись об отношениях содержит значения ``recordId`` для заинтересованой "
+"стороны и предмета отношений."
+
+#: ../../standard/concepts.rst:82 b5cec2c9c4c94cb4aea47ec6b11fd02d
+msgid "Publishing information updates"
+msgstr "Публикация обновленной информации"
+
+#: ../../standard/concepts.rst:84 6197954244334a98b06024dbeae28194
+msgid ""
+"As real-world beneficial ownership changes, agents submit updated details "
+"about people, entities and relationships to the data management system. Then"
+" the system updates its records accordingly and publishes a new BODS "
+"Statement, containing the relevant ``recordId``, for each updated record."
+msgstr ""
+"При изменении реальных бенефициарных владельцев агенты подают обновленную "
+"информацию о физических лицах, организациях и отношениях в систему "
+"управления данными. После этого система соответствующим образом обновляет "
+"свои элементы и публикует новую Запись СДБВ, содержащую соответствующее "
+"значение ``recordId`` для каждого обновленного элемента."
+
+#: ../../standard/concepts.rst:86 9824b85fb24f473397c9423a6562f77b
+msgid ""
+"People can then use ``recordId`` values to group Statements made over time "
+"to see what information was known when."
+msgstr ""
+"И тогда пользователи могут использовать значения ``recordId`` для "
+"группирования Записей, созданных в течение некоторого времени, чтобы "
+"выяснить, какая информация была известна и когда."
+
+#: ../../standard/concepts.rst-1 9e8b8ca1ff4542feaa06303b1ea4c3de
+msgid ""
+"A person node is connected via a solid line to an entity node. A "
+"relationship statement block sits next to the solid line. A further two "
+"relationship statement blocks sit on top of the first. All three "
+"relationship statements have recordId 'r-d67fb1a-aa2f3da' and the "
+"recordDetails show that these statements are about a shareholding interest. "
+"The earliest relationship statement has statementDate '2018-07-12' and "
+"recordStatus 'new'. The next has statementDate '2019-11-01' and recordStatus"
+" 'updated'. And the final relationship statement has statementDate "
+"'2021-02-28' and recordStatus 'closed'."
+msgstr ""
+"Узел физического лица соединен с узлом субъекта сплошной линией. Блок записи"
+" об отношениях расположен рядом со сплошной линией. Два дополнительных блока"
+" записей об отношениях расположены поверх первого блока. Во всех записях об "
+"отношениях параметр recordId имеет значение 'r-d67fb1a-aa2f3da', а в поле "
+"recordDetails указано, что эти записи касаются доли участия в форме акций в "
+"собственности. В самой ранней записи об отношениях параметр statementDate "
+"имеет значение '2018-07-12', а параметр recordStatus — значение 'новый'. В "
+"следующей записи значение параметра statementDate — '2019-11-01', а значение"
+" параметра recordStatus — 'обновленный'. А в последней записи об отношениях "
+"значение параметра statementDate — '2021-02-28', а значение параметра "
+"recordStatus — 'закрытый'."
+
+#: ../../standard/concepts.rst:93 13d0767050c745ef8cdb109ca16c5952
+msgid ""
+"Published BODS Statements build a write-only ledger, as new Statements are "
+"issued to amend or confirm details contained in older Statements."
+msgstr ""
+"Опубликованные Записи СДБВ представляют собой реестр, доступный только для "
+"записи, поскольку новые Записи создаются для изменения или подтверждения "
+"сведений, содержащихся в более старых Записях."
+
+#: ../../standard/concepts.rst:95 00af9162c4b24cfca998e0bc3afc0085
+msgid "See :ref:`information-updates` for full requirements."
+msgstr ""
+"См. полный перечень требований в разделе :ref:`Обновленная информация`."
+
+#: ../../standard/concepts.rst:98 a77d3880c78c45b3b29f721d3e19ee06
+msgid "Representing beneficial owners"
+msgstr "Отображение бенефицарных владельцев"
+
+#: ../../standard/concepts.rst:100 f1d5f0ea4bb049dfaa69dfaa3d4382d2
+msgid ""
+"In a BODS dataset, the fact that a natural person is a beneficial owner of "
+"an entity is represented by including this information in the Relationship "
+"statement linking the two."
+msgstr ""
+"Тот факт, что физическое лицо является бенефициарным владельцем субъекта, "
+"отображается в наборе данных СДБВ посредством включения этой информации в "
+"запись об отношениях, связывающую это физическое лицо и этого субъекта. "
+
+#: ../../standard/concepts.rst:102 f24a9bb166b44eacb9bcd94b4d1090e0
+msgid ""
+"It is possible to represent an entity's declaration that it has no "
+"beneficial owners (according to a jurisdiction's definition of a beneficial "
+"owner)."
+msgstr ""
+"Можно отобразить декларацию субъекта об отсутствии у него бенефициарных "
+"владельцев (в соответствии с определением бенефицарного владельца, принятым "
+"в соответствующей юрисдикции)."
+
+#: ../../standard/concepts.rst:104 123ef69a2e1548e88b8c297707cac8e1
+msgid ""
+"It is also possible to include in BODS datasets information about natural "
+"persons who are not beneficial owners. For example, where the managing "
+"officials of an entity are disclosed because nobody meets the jurisdiction's"
+" definition of a beneficial owner."
+msgstr ""
+"Можно также включать в наборы данных СДБВ информацию о физических лицах, "
+"которые не являются бенефициарными владельцами. Например, когда раскрываются"
+" сведения об управляющих должностных лицах субъекта ввиду отсутствия лиц, "
+"соответствующих определению бенефицарного владельца, которое принято в "
+"соответсвтующей юрисдикции."
+
+#: ../../standard/concepts.rst:106 5e3909bc0bd44d098a2c128ec05c53f0
+msgid "See :ref:`representing-bo` for full requirements."
+msgstr ""
+"См. полный перечень требований в разделе :ref:`Отображение бенефициарных "
+"владельцев`."
+
+#: ../../standard/concepts.rst:109 970f440b2038460e9dfc1a551d22488c
+msgid "The data model"
+msgstr "Модель данных"
+
+#: ../../standard/concepts.rst:111 ff9fb1431731447a83169d10ee9172ce
+msgid ""
+"Use the :doc:`Schema browser <schema-browser>` to explore the structure of "
+"the data model in full. Read the :any:`Schema reference <schema-reference>` "
+"for detailed definitions and requirements for each object and field."
+msgstr ""
+"Чтобы изучить структуру модели данных в полном объеме, воспользуйтесь "
+":doc:`Браузером схемы <schema-browser>`. Подробные определения и требования "
+"по каждому объекту и полю приводятся в :any:`Справочнике схемы <schema-"
+"reference>`."
+
+#: ../../standard/concepts.rst:113 761f06f84d764ee3b84290245c495fb9
+msgid ""
+"The objects and fields of the data model allow you to represent a range of "
+"real-world situations. Explore related requirements in the :any:`modelling-"
+"requirements` section."
+msgstr ""
+"Объекты и поля модели данных позволяют отображать различные реальные "
+"ситуации. Ознакомьтесь с соответствующими требованиями в разделе "
+":any:`Требования к моделированию`."

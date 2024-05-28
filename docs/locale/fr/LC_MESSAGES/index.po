@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../index.rst:2 fc13bceebec2410c8e7da1650e465254
+msgid "Beneficial Ownership Data Standard (v0.4)"
+msgstr ""
+
+#: ../../index.rst:4 bcdb8d77de3240b5baa001a40c5abd3d
+msgid ""
+"The Beneficial Ownership Data Standard (BODS) is an open standard providing "
+"guidance for collecting, sharing and using high-quality beneficial ownership"
+" data."
+msgstr ""
+
+#: ../../index.rst:6 be031c1dc1de4bcaa66bffd88cb94668
+msgid ""
+"It is developed by `Open Ownership <https://www.openownership.org/>`_, a "
+"non-profit organisation focused on beneficial ownership transparency, in "
+"partnership with `Open Data Services <https://opendataservices.coop/>`_. "
+"Find out more about the :doc:`governance of BODS <../about/governance>` and "
+"how to get involved."
+msgstr ""
+
+#: ../../index.rst:12 7739934b9f874808beded5af7cecba37
+msgid "Introduction"
+msgstr ""
+
+#: ../../index.rst:14 343e893d4203453f9c519acaee081119
+msgid ""
+"Learn about beneficial ownership and why a standardised format for data is "
+"important."
+msgstr ""
+
+#: ../../index.rst:18 66a86c7baa804b929aaa415db155db3e
+msgid ":ref:`What is beneficial ownership? <primer>`"
+msgstr ""
+
+#: ../../index.rst:22 85dfef5cf3824d3ab341ee16465a3b28
+msgid ":ref:`What is the data standard? <whatisbods>`"
+msgstr ""
+
+#: ../../index.rst:26 f3879e8d222740548009cab83cfa2fb1
+msgid ":ref:`About the standard's development <about>`"
+msgstr ""
+
+#: ../../index.rst:30 a573902516874d6c910ef104fb8629f6
+msgid ""
+"`Open Ownership's work, team and purpose "
+"<https://www.openownership.org/en/about/>`_"
+msgstr ""
+
+#: ../../index.rst:37 704368b0b86949e89d71b4dff5107a86
+msgid "For Developers"
+msgstr ""
+
+#: ../../index.rst:39 112a08938c1a4fffa55f657e1ee94707
+msgid "Understand how to package up and release beneficial ownership data."
+msgstr ""
+
+#: ../../index.rst:43 1b4bc18d796a4789912aaa35c7d666dd
+msgid ":ref:`Key Concepts <key-concepts>`"
+msgstr ""
+
+#: ../../index.rst:47 fc9de6820145423f88cc6b492e87f101
+msgid ":ref:`Modelling requirements  <modelling-requirements>`"
+msgstr ""
+
+#: ../../index.rst:51 310da8c541ba4a7597ddc9149f955f6b
+msgid ":ref:`Schema browser <schema-browser>`"
+msgstr ""
+
+#: ../../index.rst:55 635fe9d295bb42c6b14c5d13413302a2
+msgid ":ref:`System requirements <system-requirements>`"
+msgstr ""

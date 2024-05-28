@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Kateryna Volobuieva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../standard/system/conformance.rst:4 ce344d6938ea4febad5a19998d35dd83
+msgid "Conformance and validation"
+msgstr "Соответствие и валидация"
+
+#: ../../standard/system/conformance.rst:7 ac181059823d423d9adfcd2eea43fc05
+msgid "Conformance"
+msgstr "Соответствие"
+
+#: ../../standard/system/conformance.rst:9 7a16fcdf108b42fc81c5f31d495c5b01
+msgid "A comforming implementation of BODS:"
+msgstr "В имплементации СДБВ, соответствующей требованиям:"
+
+#: ../../standard/system/conformance.rst:11 5eb86fd32edf4af7988494dbc4eaaabb
+msgid "MAY use a subset of the schema's terms"
+msgstr "МОЖЕТ использоваться подмножество терминов схемы;"
+
+#: ../../standard/system/conformance.rst:13 c293bca96e5643dfba59d491581b5db2
+msgid ""
+"MAY use terms from outside the schema **only** where the schema's terms are "
+"insufficient"
+msgstr ""
+"термины, не являющиеся терминами схемы, МОГУТ использоваться **только** в "
+"тех случаях, когда терминов схемы недостаточно;"
+
+#: ../../standard/system/conformance.rst:15 f08eb0638e53408189164a845c1f3558
+msgid "MUST use the schema’s terms consistently with their definitions"
+msgstr ""
+"термины схемы ДОЛЖНЫ использоваться в соответствии с их определениями."
+
+#: ../../standard/system/conformance.rst:17 2a7789fc14d44cf6a605ad0750c6d923
+msgid ""
+"A conforming implementation of BODS that serialises to JSON MUST validate "
+"against the standard’s JSON schema."
+msgstr ""
+"Соответствующая требованиям имплементация СДБВ с сериализацией в формат JSON"
+" ДОЛЖНА пройти валидацию на основе схемы JSON этого стандарта."
+
+#: ../../standard/system/conformance.rst:19 57629a8a6f2c4ea8b9206b2e089de2b9
+msgid ""
+"`Adapted from Popolo Project specification "
+"<http://www.popoloproject.com/specs/#conformance>`_"
+msgstr ""
+"`Адаптировано на основе спецификации Проекта Popolo "
+"<http://www.popoloproject.com/specs/#conformance>`_"
+
+#: ../../standard/system/conformance.rst:22 c49482cd84dd4c238da528117a589a37
+msgid "Extending the schema"
+msgstr "Расширение схемы"
+
+#: ../../standard/system/conformance.rst:23 6624b59e3d3e483c8b0b255c533e666b
+msgid "If you need to extend the schema:"
+msgstr "Если необходимо расширить схему:"
+
+#: ../../standard/system/conformance.rst:25 a1d5aeeb2dda46c5b68bf27fc278b8a3
+msgid ""
+"re-use `other publisher's extensions <https://github.com/openownership/data-"
+"standard/issues?q=is%3Aissue+label%3Aextension>`_ where possible"
+msgstr ""
+"повторно используйте `расширения другого издателя "
+"<https://github.com/openownership/data-"
+"standard/issues?q=is%3Aissue+label%3Aextension>`_ в случаях, когда это "
+"возможно;"
+
+#: ../../standard/system/conformance.rst:27 df7dff4606ce4b2c808317fd46284f01
+msgid ""
+"document your extensions `in the project issue tracker "
+"<https://github.com/openownership/data-standard/issues/>`_ with the "
+"'extensions' tag"
+msgstr ""
+"документируйте свои расширения `в системе отслеживания ошибок проекта "
+"<https://github.com/openownership/data-standard/issues/>`_ с тегом "
+"'extensions'."
+
+#: ../../standard/system/conformance.rst:31 3e0fb3410379468bbf93a49c38c8b0aa
+msgid "Validation"
+msgstr "Валидация"
+
+#: ../../standard/system/conformance.rst:32 44b8817b8b2640079cfe0bbb596c3897
+msgid ""
+"The BODS JSON schema includes validation checks that are possible to define "
+"using JSON schema 2020-12."
+msgstr ""
+"Схема JSON стандарта СДБВ предусматривает валидационные проверки, содержание"
+" и объем которых можно определить с помощью схемы JSON 2020-12."
+
+#: ../../standard/system/conformance.rst:34 f7359c770d1648f08417ba1d6ce59f84
+msgid ""
+"The `BODS Data Review Tool <https://datareview.openownership.org/>`_ "
+"validates conformance to the JSON schema and to additional requirements that"
+" can be validated programmatically but are not included in the schema. For "
+"example, it checks that record identifiers in the ``subject`` and "
+"``interestedParty`` fields of Relationship statements appear in at least one"
+" statement elsewhere in the BODS JSON array. The Data Review Tool can ingest"
+" data serialised as JSON and in tabular form."
+msgstr ""
+"`Средство анализа данных СДБВ <https://datareview.openownership.org/>`_ "
+"выполняет проверку на соответствие схеме JSON и дополнительным требованиям, "
+"которые могут быть проверены программно, но не включены в схему. Например, "
+"это средство позволяет проверить, появляются ли идентификаторы элементов, "
+"указанные в полях ``subject`` и ``interestedParty`` записи об отношениях, по"
+" крайней мере еще в одной записи в массиве данных JSON стандарта СДБВ. "
+"Средство анализа данных может принимать данные, сериализированные в формате "
+"JSON, а также в виде таблицы."

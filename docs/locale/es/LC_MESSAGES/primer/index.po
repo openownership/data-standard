@@ -1,54 +1,273 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, Open Ownership
+# Copyright (C) 2024, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
-# Agustina De Luca, 2022
-# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
+# Carmen Edery, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-13 16:06+0100\n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
-"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"Last-Translator: Carmen Edery, 2024\n"
+"Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../../primer/index.rst:2 81df7cc3e24a4604af49190cfd439a01
+#: ../../primer/index.rst:5 6833e97867ce467886812fe0dcbd3f41
 msgid "Primer"
 msgstr "Guía introductoria"
 
-#: ../../primer/index.rst:4 f698456e9bf9473f8cc05a97e93c277a
-msgid ""
-"This Primer sets out to explain the basics of Beneficial Ownership and the "
-"basics of a data standard handling Beneficial Ownership."
-msgstr ""
-"Esta guía introductoria tiene como objetivo explicar los fundamentos básicos"
-" del concepto de beneficiarios finales y de un estándar de datos que trata "
-"sobre ellos"
+#: ../../primer/index.rst:8 87495a0b09754fa6a69e832dc01d6477
+msgid "What is beneficial ownership?"
+msgstr "¿Qué significa beneficiario real?"
 
-#: ../../primer/index.rst:6 2a217fdd476c4222926a0d3780680c6e
+#: ../../primer/index.rst:10 d0c71fab20c64544ad690a74f4c04828
 msgid ""
-"People new to the concept of Beneficial Ownership will want to know "
-":doc:`what it is <whatisbo>` and :doc:`why it's important <whyisbo>`. "
-"Looking then at :doc:`what data is needed <whatisbodata>` to describe a "
-"Beneficial Ownership chain, we can :doc:`understand the Beneficial Ownership"
-" Data Standard <whatisthebods>` as a kind of template. Finally we look at "
-"the :doc:`scope of the Standard <whatdoesbodscover>` and what it offers."
+"A beneficial owner is a natural person who holds interests, directly or "
+"indirectly, that give them the right to a share of the income or assets of a"
+" corporate vehicle, or the ability to control or benefit from its "
+"activities."
 msgstr ""
-"Quienes desconocen el concepto de beneficiarios finales querrán saber "
-":doc:`de qué se trata <whatisbo>` y :doc:`por qué es importante <whyisbo>`. "
-"Viendo entonces :doc:`qué datos se necesitan <whatisbodata>` para describir "
-"una cadena de titularidad de beneficiarios finales, podemos :doc:`entender "
-"el Estándar de Datos sobre Beneficiarios Finales <whatisthebods>` como una "
-"plantilla. Por último, veremos el :doc:`alcance del Estándar "
-"<whatdoesbodscover>` y lo que ofrece."
+"Un beneficiario real es una persona física que posee intereses, directa o "
+"indirectamente, que les brindan el derecho a una parte de los ingresos o "
+"activos de un vehículo societario o la capacidad de controlar o beneficiarse"
+" de sus actividades."
+
+#: ../../primer/index.rst:12 6148bb7a872b49dd93f8dbc2ecc47185
+msgid ""
+"`Open Ownership <https://www.openownership.org/>`_ uses the term corporate "
+"vehicles to refer to both legal entities, such as companies, and legal "
+"arrangements, such as trusts. In the Beneficial Ownership Data Standard "
+"'entities' is used to refer to all types of corporate vehicle."
+msgstr ""
+"`Open Ownership <https://www.openownership.org/>`_ usa el término "
+"\"vehículos societarios\" para hacer referencia a ambas entidades legales, "
+"como empresas, y estructuras jurídicas, como fideicomisos. En el Estándar de"
+" datos sobre titularidad de beneficiarios reales, 'entities' se usa para "
+"hacer referencia a todo tipo de vehículo societario."
+
+#: ../../primer/index.rst:14 57877cee28594f108fa31c3ef8bc9eb5
+msgid ""
+"Often entities own other entities, but people almost always appear at the "
+"end of beneficial ownership networks. They are the ones who ultimately "
+"benefit from the financial successes of the entity, due to their "
+"relationship with it."
+msgstr ""
+"A menudo, las entidades poseen a otras entidades, pero las personas casi "
+"siempre aparecen al final de las redes de titularidad de beneficiarios "
+"reales. Son las que se benefician en última instancia de los éxitos "
+"financieros de la entidad, debido a su relación con ella."
+
+#: ../../primer/index.rst:16 930b088e3305425683ed9cb64460ec4b
+msgid ""
+"The beneficial ownership networks connected to entities can be complex and "
+"opaque. This means that the identities of the people who own, control, or "
+"benefit from entities can remain hidden. If the beneficial owners are "
+"hidden, then governments don’t know who is bidding for a contract, companies"
+" don’t know who they are doing business with, society doesn’t know who is "
+"financing a new political party, and law enforcement can’t fight money "
+"laundering and other cross-border financial crimes."
+msgstr ""
+"Las redes de titularidad de beneficiarios reales conectadas a las entidades "
+"pueden ser complejas y opacas. Esto significa que la identidad de las "
+"personas que posen, controlan o se benefician de las entidades puede "
+"permanecer oculta. Si los beneficiarios reales están ocultos, los gobiernos "
+"no sabrán quién licita para un contrato, las empresas no sabrán con quién "
+"están haciendo negocios, la sociedad no sabrá quién está financiando a un "
+"nuevo partido político, y las fuerzas policiales no podrán luchar contra el "
+"lavado de dinero y otros crímenes financieros transfronterizos."
+
+#: ../../primer/index.rst-1 c3b77235c13740c893eaa83811dfcbc2
+msgid ""
+"A labelled diagram of a beneficial ownership network. Labelled as 'Subject "
+"of beneficial ownership network' is Company E. Labelled as 'Direct "
+"relationship' is a solid line connected to Person 2. Labelled as 'Interest' "
+"is the text '32% shareholding' which sits on that solid line. Company E is "
+"also linked to Company A by a solid line. And Company A is linked to Person "
+"1 by a solid line. Labelled as 'Indirect relationship' is a dotted line "
+"connecting Company E to Person 1. The text '45% shareholding' sits on that "
+"dotted line. Person 1 is labelled 'Beneficial owner'. Company A is labelled "
+"'Intermediary entity'."
+msgstr ""
+"Diagrama etiquetado de una red de titularidad de beneficiarios reales. La "
+"empresa E está etiquetada como 'Subject of beneficial ownership network'. "
+"Una línea continua conectada a la persona 2 está etiquetada como 'Direct "
+"relationship'. El texto '32% shareholding' ubicado sobre esa línea continua "
+"está etiquetado como 'Interest'. La empresa E también está vinculada a la "
+"empresa A con una línea continua. Y la empresa A está vinculada a la persona"
+" 1 con una línea continua. Una línea punteada que conecta a la empresa E con"
+" la persona 1 está etiquetada como 'Indirect relationship'. El texto '45% "
+"shareholding' está ubicado sobre esa línea punteada. La persona 1 está "
+"etiquetada como 'Beneficial owner'. La empresa A está etiquetada como "
+"'Intermediary entity'."
+
+#: ../../primer/index.rst:23 ebc684a01c7f4255b3f758b37ac86ec9
+msgid ""
+"Beneficial ownership can include all types of relationship with an entity "
+"such as ownership, control or benefitting from the entity’s activities."
+msgstr ""
+"La titularidad de beneficiarios reales puede incluir todo tipo de relación "
+"con una entidad, como titularidad, control o beneficio de las actividades de"
+" la entidad."
+
+#: ../../primer/index.rst:25 616ee4d241474d14bde83c2cd3628700
+msgid ""
+"If a person owns something, they usually have some control over it. Owning "
+"shares in a company may confer voting rights, for example. But ownership and"
+" control are sometimes separated - by share classes, contracts, agreements "
+"and other mechanisms. For example, an executive director might have the "
+"right to appoint 60% of the other board members, while having little "
+"financial stake in the business. There are also situations where a person "
+"may not have ownership or significant control but still has a relationship "
+"which means they benefit from the activities of an entity - for example, "
+"where they can enjoy and use assets owned by the entity."
+msgstr ""
+"Si una persona posee algo, normalmente tiene cierto control sobre eso. "
+"Poseer acciones en una empresa puede conferir derechos de voto, por ejemplo."
+" Pero en ocasiones la titularidad y el control están separados (por clases "
+"de acciones, contratos, acuerdos u otros mecanismos). Por ejemplo, un "
+"director ejecutivo puede tener derecho a designar el 60% de los demás "
+"miembros del órgano de administración, mientras tiene una pequeña "
+"participación en la empresa. Además, existen situaciones en las que es "
+"posible que una persona no tenga titularidad o control significativo, pero "
+"tiene una relación, lo que significa que se beneficia de las actividades de "
+"una entidad; por ejemplo, cuando pueden disfrutar de los activos propiedad "
+"de la entidad y usarlos."
+
+#: ../../primer/index.rst:27 2c1fc5e43a3c4935ba18ab31508654c6
+msgid ""
+"For more `information about beneficial ownership transparency "
+"<https://www.openownership.org/en/about/what-is-beneficial-ownership-"
+"transparency/>`_ and to read `the latest research "
+"<https://www.openownership.org/en/research/>`_, visit `the Open Ownership "
+"website. <https://www.openownership.org/en/>`_"
+msgstr ""
+"Para obtener más `información sobre la transparencia de la titularidad de "
+"beneficiarios reales <https://www.openownership.org/en/about/what-is-"
+"beneficial-ownership-transparency/>`_ y para leer `la última investigación "
+"<https://www.openownership.org/en/research/>`_, visite `el sitio web de Open"
+" Ownership. <https://www.openownership.org/en/>`_"
+
+#: ../../primer/index.rst:32 a522fdedb45845548778194bb6321513
+msgid "What is the Beneficial Ownership Data Standard?"
+msgstr "¿Qué es el Estándar de datos sobre beneficiarios reales?"
+
+#: ../../primer/index.rst:34 6e83ae7e3a1847e78b332d34ab93d4eb
+msgid ""
+"The Beneficial Ownership Data Standard (BODS) provides a structured data "
+"format, and related requirements, for representing and publishing beneficial"
+" ownership information. This is based on the :any:`key concepts <key-"
+"concepts>` which underpin beneficial ownership."
+msgstr ""
+"El Estándar de datos sobre beneficiarios reales (BODS, en inglés) ofrece un "
+"formato de datos estructurado y requisitos relacionados para representar y "
+"publicar información de titularidad de beneficiarios reales. Esto se basa en"
+" los :any:`key concepts <key-concepts>` que respaldan la titularidad de "
+"beneficiarios reales."
+
+#: ../../primer/index.rst:37 a7b7e68d34e5432f8249321d3c2327c9
+msgid "Within BODS:"
+msgstr "Dentro del BODS:"
+
+#: ../../primer/index.rst:39 c3b0c018304f4d3e9760c568c4f941cf
+msgid ""
+"the :any:`data schema <schema-reference>` describes what data should be "
+"shared. It can also inform the design of data collection and management "
+"systems. A format called JSON can be used to publish BODS data."
+msgstr ""
+"en el :any:`data schema <schema-reference>` se describe qué datos deben "
+"compartirse. También puede servir de base para el diseño de los sistemas de "
+"recopilación y gestión de datos. Puede usarse un formato llamado JSON para "
+"publicar datos del BODS."
+
+#: ../../primer/index.rst:40 df4b6cefa25243369e90c9e25047ae6b
+msgid ""
+"the :any:`requirements sections <data-standard-index>` set out how "
+"information should be represented and managed to conform with the data "
+"standard."
+msgstr ""
+"en las :any:`requirements sections <data-standard-index>` se establece cómo "
+"debe representarse y gestionarse la información para guardar conformidad con"
+" el estándar de datos."
+
+#: ../../primer/index.rst:42 04954b3cee6145ebb0157288256a42b7
+msgid ""
+"Collecting, sharing and using beneficial ownership information as "
+"`structured data <https://www.openownership.org/en/publications/structured-"
+"and-interoperable-beneficial-ownership-data/benefits-of-structured-and-"
+"interoperable-data/>`_:"
+msgstr ""
+"Recopilar, compartir y usar la información de titularidad de beneficiarios "
+"reales como `datos estructurados "
+"<https://www.openownership.org/en/publications/structured-and-interoperable-"
+"beneficial-ownership-data/benefits-of-structured-and-interoperable-data/>`_:"
+
+#: ../../primer/index.rst:44 9fec528bcc7d4f4980fa4127e6d0a2a1
+msgid "improves the interoperability of beneficial ownership information"
+msgstr ""
+"Mejora la interoperabilidad de la información de titularidad de "
+"beneficiarios reales"
+
+#: ../../primer/index.rst:45 111e06b9ddf34970a75fa8a4ce40c5ce
+msgid ""
+"reduces the cost of producing, using, and maintaining beneficial ownership "
+"information"
+msgstr ""
+"reduce el costo de producir, usar y conservar la información de titularidad "
+"de beneficiarios reales"
+
+#: ../../primer/index.rst:46 45f1c737d57542f3baa5dfb46b66c203
+msgid ""
+"has a greater chance of meeting beneficial ownership transparency policy "
+"goals than unstructured data"
+msgstr ""
+"tiene una mayor probabilidad de cumplir con las metas de la política de "
+"transparencia de beneficiarios reales que los datos estructurados"
+
+#: ../../primer/index.rst:48 94d197b37ec04c33b6dbea769515157d
+msgid ""
+"Without common standards, combining and analysing data from different "
+"sources can be expensive and time-consuming, making it more difficult to "
+"understand beneficial ownership networks."
+msgstr ""
+"Sin los estándares comunes, combinar y analizar datos de diferentes fuentes "
+"puede ser costoso y consumir mucho tiempo, lo que dificulta la comprensión "
+"de las redes de titularidad de beneficiarios reales."
+
+#: ../../primer/index.rst:50 0e60da8eb47541de90e0bf0333a914cf
+msgid "BODS allows publishers to provide statements that describe:"
+msgstr ""
+"El BODS permite a los publicadores brindar declaraciones que describen:"
+
+#: ../../primer/index.rst:52 fa9d8f94cabe4ded8a7763e412fb4758
+msgid "details about natural persons and entities"
+msgstr "detalles sobre personas físicas y entidades"
+
+#: ../../primer/index.rst:53 26ced1dcb94d48348867f2cfc677e194
+msgid "identifiers for natural persons and entities"
+msgstr "identificadores para personas físicas y entidades"
+
+#: ../../primer/index.rst:54 9e4940ea905a4ef3b5260f901ddf45c8
+msgid "types of interests that can be held in entities"
+msgstr "tipos de intereses que pueden retenerse en las entidades"
+
+#: ../../primer/index.rst:55 c3ac6f997cfb460e9d864dedced8033c
+msgid "provenance information"
+msgstr "información sobre procedencia"
+
+#: ../../primer/index.rst:56 f3389f33ccef41ebb1c7b4e3aa36bbbb
+msgid "historical, as well as current, information"
+msgstr "información histórica y actual"
+
+#: ../../primer/index.rst:57 36ce93dfa61345bfad832b20ca27a6da
+msgid "placeholders, when information must be witheld"
+msgstr "marcadores de posición, cuando la información debe retenerse"

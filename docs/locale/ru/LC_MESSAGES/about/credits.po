@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, Open Ownership
+# Copyright (C) 2024, Open Ownership
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -10,40 +10,33 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Beneficial Ownership Data Standard 0.3\n"
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-13 16:06+0100\n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
 "Last-Translator: Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022\n"
-"Language-Team: Russian (https://www.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../about/credits.rst:2 0b70cd0e82534ef4b8f05a250a01fd0a
+#: ../../about/credits.rst:2 a6ca4e5665134231b77b93c8ea9731af
 msgid "Credits"
 msgstr "Сведения об авторах"
 
-#: ../../about/credits.rst:4 97bae3bf575e4e43a96394b23704c0ae
+#: ../../about/credits.rst:4 c2ea99c5ce6348c9b1f565cb6659f0b1
 msgid ""
-"The first beta version of the Beneficial Ownership Data Standard was written"
-" by Tim Davies (`Open Data Services <https://www.opendataservices.coop>`_) "
-"with Ben Symonds (`OpenCorporates <https://www.opencorporates.com>`_), Chris"
-" Taggart (`OpenCorporates <https://www.opencorporates.com>`_) and Jack Lord "
+"The beta version of the Beneficial Ownership Data Standard was written by "
+"Tim Davies (`Open Data Services <https://www.opendataservices.coop>`_) with "
+"Ben Symonds (`OpenCorporates <https://www.opencorporates.com>`_), Chris "
+"Taggart (`OpenCorporates <https://www.opencorporates.com>`_) and Jack Lord "
 "(`Open Data Services <https://www.opendataservices.coop>`_) and input from "
 "the :doc:`data standard working group <governance>`."
 msgstr ""
-"Первую бета-версию Стандарта данных о бенефициарном владении написал Тим "
-"Дейвис (`Open Data Services Co-operative "
-"<http://www.opendataservices.coop>`__) с Беном Саймондсом (`OpenCorporates "
-"<http://www.opencorporates.com>`__), Крисом Таггартом (`OpenCorporates "
-"<http://www.opencorporates.com>`__) и Джеком Лордом (`Open Data Services Co-"
-"operative <http://www.opendataservices.coop>`__) при поддержке :doc:`группы "
-"по стандарту данных <governance>`."
 
-#: ../../about/credits.rst:11 67dd0a76c2404b1ea626dffc46bdfbd6
+#: ../../about/credits.rst:11 5851332e903f448ea4f2860614ef0b74
 msgid ""
 "The 0.1 version was written by Tim Davies and Jack Lord with supporting "
 "documentation from Kadie Armstrong (`Open Data Services "
@@ -58,7 +51,7 @@ msgstr ""
 "<http://www.opendataservices.coop>`__), при этом было получено содействие "
 "рабочей :doc:`группы по стандарту данных <governance>`."
 
-#: ../../about/credits.rst:16 36f06e7a97ef429aa3ed03523bf7b7ec
+#: ../../about/credits.rst:16 b1c0f3c0d29545a0a5ec83931459b8b5
 msgid ""
 "The 0.2 version was written by Jack Lord, Simon Whitehouse and Kadie "
 "Armstrong (`Open Data Services <https://www.opendataservices.coop>`_), with "
@@ -72,7 +65,7 @@ msgstr ""
 "<https://www.opendataservices.coop>`__), также было получено содействие "
 "рабочей :doc:`группы по стандарту данных <governance>`."
 
-#: ../../about/credits.rst:20 0b549184680e4dfc89a947871c13d255
+#: ../../about/credits.rst:20 deae4979c5354c81bbdcc4c50423ea5a
 msgid ""
 "The 0.3 version was written by Kadie Armstrong, Jack Lord, Simon Whitehouse "
 "and Emma Howard (`Open Data Services <https://www.opendataservices.coop>`_),"
@@ -85,3 +78,12 @@ msgstr ""
 "работу выполнили Джеймс Бастер, Ами Гай и Дэвид Разник (`Open Data Services "
 "<https://www.opendataservices.coop>`__), также было получено содействие "
 "рабочей группы по стандарту данных."
+
+#: ../../about/credits.rst:22 2bac5154fe48421db3cbd976f2fab2ae
+msgid ""
+"The 0.4 version was written by Kadie Armstrong, Emma Howard, Kathryn Irish, "
+"Rachel Vint and Lewis Spurgin (`Open Data Services "
+"<https://www.opendataservices.coop>`_), with technical work from Amy Guy and"
+" Ed Lloyd-Davies (`Open Data Services <https://www.opendataservices.coop>`_)"
+" and input from the data standard working group."
+msgstr ""

@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Katia Da Silva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Katia Da Silva, 2024\n"
+"Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/system/index.rst:4 7df50865970445d480bbdaea5511be2a
+msgid "System requirements"
+msgstr ""
+
+#: ../../standard/warningbox.rst:3 75b377295e51461f9919fa2b2f000207
+msgid ""
+"This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model, codelists, and technical guidance."
+msgstr ""
+"Ceci est la v.04 de la norme de données sur la propriété effective "
+"comprenant des mises à jour du modèle de données, des listes de codes et des"
+" orientations techniques."
+
+#: ../../standard/warningbox.rst:5 1855d7e38c7448bb9e786ab88fdc4948
+msgid ""
+"Future changes are anticipated before a version 1.0 release. See the "
+":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
+"information."
+msgstr ""
+"Des modifications ultérieures sont anticipées avant la version 1.0. Voir les"
+" pages :ref:`Changelog <changelog>` et `About <../about>`_ pages pour plus "
+"d'informations."
+
+#: ../../standard/system/index.rst:8 33704f55f3d6439ba794242bb4d86c3a
+msgid ""
+"This section contains requirements for systems generating beneficial "
+"ownership data."
+msgstr ""

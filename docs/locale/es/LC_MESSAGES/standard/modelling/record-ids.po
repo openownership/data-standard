@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Carmen Edery, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Carmen Edery, 2024\n"
+"Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/modelling/record-ids.rst:5 44b9a670f781453c8ed1f8500bb7f2a3
+msgid "Record identifiers"
+msgstr "Identificadores de registro"
+
+#: ../../standard/modelling/record-ids.rst:7 1bfc148eaab843f3b86a24acd6158134
+msgid ""
+"To publish beneficial ownership data in BODS format, an information "
+"management system MUST maintain record identifiers for each element (person,"
+" entity and relationship) in each beneficial ownership network."
+msgstr ""
+"Para publicar datos de titularidad de beneficiarios reales en formato de "
+"BODS, un sistema de gestión de información DEBE conservar los "
+"identificadores de registros para cada elemento (persona, entidad y "
+"relación) en cada red de titularidad de beneficiarios reales."
+
+#: ../../standard/modelling/record-ids.rst:9 07130b16098049318df42233911b5ef3
+msgid ""
+"Record identifiers MUST be unique within the publisher's system and never "
+"reused to refer to a different element."
+msgstr ""
+"Los identificadores de registros DEBEN ser únicos dentro del sistema del "
+"publicador y nunca deben reutilizarse para hacer referencia a un elemento "
+"diferente."
+
+#: ../../standard/modelling/record-ids.rst:11 bd6d96a0fd5c47f1afa4c4e8db233f35
+msgid ""
+"There are situations where a publisher's system can allow information about "
+"the same person, entity or relationship to be collected in relation to the "
+"beneficial ownership networks of multiple different subjects. In these "
+"cases, information from different declaration subjects about the same "
+"person, entity or relationship can exist side-by-side and needs to be "
+"represented in published data. In these cases, each set of information MUST "
+"have its own record identifier. (See the example below.)"
+msgstr ""
+"Hay situaciones en las que el sistema de un publicador puede permitir "
+"recopilar información sobre la misma persona, entidad o relación en relación"
+" con las redes de titularidad de beneficiarios reales de varios sujetos "
+"diferentes. En estos casos, puede existir información de diferentes sujetos "
+"de declaración sobre la misma persona, entidad o relación lado a lado y debe"
+" ser representada en los datos publicados. En estos casos, cada conjunto de "
+"información DEBE tener su propio identificador de registro (Consulte el "
+"siguiente ejemplo)."
+
+#: ../../standard/modelling/record-ids.rst:13 0ca97a1236834be7a8471c6758cbbeae
+msgid ""
+"The value of an entity or person record identifier MAY be a function of: the"
+" identity of the entity or natural person, plus the identity of the subject "
+"of the beneficial ownership network in which the entity or person appears. "
+"See :ref:`guidance-identifiers` for guidance on representing the identity of"
+" entities and natural persons."
+msgstr ""
+"El valor de un identificador de registro de entidad o persona PUEDE ser una "
+"función de: la identidad de la entidad o persona física, además de la "
+"identidad del sujeto de la red de titularidad de beneficiarios reales donde "
+"la entidad o persona aparece. Consulte :ref:`guidance-identifiers` para "
+"obtener orientación sobre cómo representar la identidad de entidades o "
+"personas físicas."
+
+#: ../../standard/modelling/record-ids.rst:15 74f5b7449539407dac229061af80f914
+msgid ""
+"The identity of a relationship is constituted by the identities of its "
+"subject and interested party. Therefore the value of a relationship record "
+"identifier MAY be a function of: the record identifiers of its subject and "
+"interested party, plus the identity of the subject of the beneficial "
+"ownership network in which the relationship appears."
+msgstr ""
+"La identidad de una relación está constituida por las identidades de su "
+"sujeto y de la parte interesada. Por lo tanto, el valor de un identificador "
+"de registro de relación PUEDE ser una función de: los identificadores de "
+"registro de su sujeto y de la parte interesada, además de la identidad del "
+"sujeto de la red titularidad de beneficiarios reales en la que aparece la "
+"relación."
+
+#: ../../standard/modelling/record-ids.rst:17 b546dabee4ac4c848bd9b06354f01510
+msgid ""
+"Record identifiers are used for :ref:`representing-bo` and for "
+":ref:`information-updates`."
+msgstr ""
+"Los identificadores de registro se utilizan para :ref:`representing-bo` y "
+"para :ref:`information-updates`."
+
+#: ../../standard/modelling/record-ids.rst:20 07b28aa5ca7648659388c194158978e4
+msgid "Example scenario"
+msgstr "Ejemplo de caso"
+
+#: ../../standard/modelling/record-ids.rst:22 2e2208b6661e449d8c4b6d8c132b6b78
+msgid ""
+"Private companies in a jurisdiction are obliged to disclose to the Company "
+"Registration Authority: their legal owners and any beneficial owners with "
+"direct interests in the company."
+msgstr ""
+"Las empresas privadas en una jurisdicción tienen la obligación de divulgar "
+"ante la autoridad de inscripción de la empresa: sus titulares legales y "
+"cualquier titular de beneficiario real con intereses directos en la empresa."
+
+#: ../../standard/modelling/record-ids.rst:24 a4c85c3f753d44ae94ad76979e16773e
+msgid ""
+"Alpha Corp. discloses one natural person as a beneficial owner (and legal "
+"owner) and it also discloses Beta Systems as a legal owner."
+msgstr ""
+"Alpha Corp. divulga a una persona como beneficiario real  (y titular legal) "
+"y también divulga a Beta Systems como titular legal."
+
+#: ../../standard/modelling/record-ids.rst-1 56ab238866964620b1f7b1f9036635f7
+msgid ""
+"Diagram of a beneficial ownership network. An entity node for the company "
+"Alpha Corp is connected via a solid line to a person node. Alpha Corp's node"
+" is also connected via a solid line to an entity node for the company Beta "
+"Systems. An entity statement block sits next to Alpha Corp's node. Within "
+"the entity statement, recordId is '04a221be'. An entity statement block sits"
+" next to Beta Systems's node. Within the entity statement, recordId is "
+"'09d3a4fb'."
+msgstr ""
+"Diagrama de una red de titularidad de beneficiarios reales. Un nodo de "
+"entidad para la empresa Alpha Corp está conectado a través de una línea "
+"continua con el nodo de una persona. El nodo de Alpha Corp también está "
+"conectado a través de una línea continua con un nodo de entidad para la "
+"empresa Beta Systems. Un bloque de declaración sobre entidad está ubicado "
+"junto al nodo de Alpha Corp. Dentro de la declaración sobre entidad, "
+"recordId es '04a221be'. Un bloque de declaración sobre entidad se ubica "
+"junto al nodo de Beta Systems. Dentro de la declaración sobre entidad, "
+"recordId es '09d3a4fb'."
+
+#: ../../standard/modelling/record-ids.rst:31 c897cd3dd68a4709850eb932e959971b
+msgid "Beta Systems declares that it has four direct beneficial owners."
+msgstr "Beta Systems declara que tiene cuatro beneficarios reales directos."
+
+#: ../../standard/modelling/record-ids.rst-1 4b8339ac6caa4742bf3d3b859ca6b555
+msgid ""
+"Diagram of a beneficial ownership network. An entity node for the company "
+"Beta Sys is connected via a solid lines to four person nodes. An entity "
+"statement block sits next to the Beta Sys node. Within the entity statement,"
+" recordId is '02c83aa2'."
+msgstr ""
+"Diagrama de una red de titularidad de beneficiarios reales. Un nodo de "
+"entidad para la empresa Beta Sys está conectado a través de líneas continuas"
+" con cuatro nodos de personas. Un bloque de declaración sobre entidad está "
+"ubicado junto al nodo Beta Sys. Dentro de la declaración de entidad, "
+"recordId es '02c83aa2'."
+
+#: ../../standard/modelling/record-ids.rst:38 1830b2861fc748169e7873e2069309ed
+msgid ""
+"Separate records are maintained by the Company Registration Authority for "
+"the information about Beta Systems disclosed by Alpha Corp. (record "
+"identifier 09d3a4fb) and the information which is self-disclosed by Beta "
+"Systems (record identifier 02c83aa2)."
+msgstr ""
+"La autoridad de inscripción de la empresa conserva registros separados para "
+"la información sobre Beta Systems divulgada por Alpha Corp. (identificador "
+"de registro 09d3a4fb) y la información que Beta Systems divulgó sobre sí "
+"misma (identificador de registro 02c83aa2)."
+
+#: ../../standard/modelling/record-ids.rst:40 5750e1b2717e4fd2bc9c3b1f34f99aeb
+msgid ""
+"When the BODS data is published, there are statements about the two new Beta"
+" Systems records."
+msgstr ""
+"Cuando los datos del BODS se publican, hay declaraciones sobre los dos "
+"nuevos registros de Beta Systems."
+
+#: ../../standard/modelling/record-ids.rst-1 389348edee6a4c4fa9c536b269333593
+msgid ""
+"Diagram of two entity statement blocks. The first has: recordId '09d3a4fb', "
+"recordDetails.name 'BetaSys', recordDetails.identifiers.0.scheme 'TZ-CRA', "
+"recordDetails.identifiers.0.id: 'pc-239118274', declarationSubject: "
+"'04a221be'. The second has: recordId '02c83aa2', recordDetails.name 'Beta "
+"Systems', recordDetails.identifiers.0.scheme 'TZ-CRA', "
+"recordDetails.identifiers.0.id: 'pc-239118274', declarationSubject: "
+"'02c83aa2'"
+msgstr ""
+"Diagrama de dos bloques de declaración sobre entidad. El primero tiene: "
+"recordId '09d3a4fb', recordDetails.name 'BetaSys', "
+"recordDetails.identifiers.0.scheme 'TZ-CRA', recordDetails.identifiers.0.id:"
+" 'pc-239118274', declarationSubject: '04a221be'. El segundo tiene: recordId "
+"'02c83aa2', recordDetails.name 'Beta Systems', "
+"recordDetails.identifiers.0.scheme 'TZ-CRA', recordDetails.identifiers.0.id:"
+" 'pc-239118274', declarationSubject: '02c83aa2'"
+
+#: ../../standard/modelling/record-ids.rst:47 96c7927d9f6e47f6bf39d65c06d9ec02
+msgid "Note that:"
+msgstr "Tenga en cuenta que:"
+
+#: ../../standard/modelling/record-ids.rst:49 21916806fa9f43fa9c7c5dc8a48446b3
+msgid "the name of the company has not been consistently disclosed."
+msgstr "el nombre de la empresa no ha sido divulgado de forma consistente."
+
+#: ../../standard/modelling/record-ids.rst:50 37368802d4af401296a0790bcb4ca3c7
+msgid ""
+"the two statements do refer to the same real world entity, as the ``scheme``"
+" and ``id`` properties in both statements are the same."
+msgstr ""
+"las dos declaraciones sí hacen referencia a la misma entidad del mundo real,"
+" ya que las propiedades ``scheme`` e ``id`` en ambas declaraciones son "
+"iguales."
+
+#: ../../standard/modelling/record-ids.rst:51 dcee7eba1ccd4f74b21b421d56e4bda5
+msgid ""
+"the two statements about the same real world entity relate to two different "
+"declaring subjects, as shown by the different ``declarationSubject`` values."
+msgstr ""
+"las dos declaraciones sobre la misma entidad del mundo real se relacionan "
+"con dos sujetos declarantes diferentes, tal como lo muestran los diferentes "
+"valores ``declarationSubject``."
+
+#: ../../standard/modelling/record-ids.rst:52 feaf43da2e5646818986de4a9b673354
+msgid ""
+"the statement for ‘Beta Systems’ has been disclosed by Beta Systems itself, "
+"since the ``recordId`` value is also given as the ``declarationSubject``."
+msgstr ""
+"la declaración para ‘Beta Systems’ fue divulgada por la misma empresa Beta "
+"Systems, ya que el valor ``recordId`` también se indica como "
+"``declarationSubject``."

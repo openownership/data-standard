@@ -1,0 +1,317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Galia Williams, 2024
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Kateryna Volobuieva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../standard/modelling/repr-nominations.rst:4
+#: 643ad864beae4cada1d33d909764e4b2
+msgid "Representing nominee arrangements"
+msgstr "Отображение соглашений о назначении номинальных владельцев"
+
+#: ../../standard/modelling/repr-nominations.rst:7
+#: 609eaad53d114500970aff0a2a36e7a3
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../standard/modelling/repr-nominations.rst:8
+#: e84980e77c524721b01379b462247a1e
+msgid ""
+"A ‘nominee arrangement’ is an agreement between parties where one (the "
+"nominator) instructs the other (the nominee) to act on their behalf in a "
+"specified capacity."
+msgstr ""
+"‘Соглашение о назначении номинального владельца’ — это договор между "
+"сторонами, по которому одна сторона (назначающее лицо) поручает другой "
+"стороне (номинальный владелец) действовать от ее имени в указанном качестве."
+
+#: ../../standard/modelling/repr-nominations.rst:10
+#: 9b7977cd6fce443da87c6d94445499b5
+msgid ""
+"BODS can be used to represent the beneficial ownership of entities via "
+"nominee arrangements. Nominee arrangements are represented by an Entity "
+"Statement."
+msgstr ""
+"СДБВ может использоваться для отображения бенефициарного владения субъектами"
+" через соглашения о назначении номинальных владельцев. Соглашения о "
+"назначении номинальных владельцев отображаются посредством Записи о "
+"субъекте."
+
+#: ../../standard/modelling/repr-nominations.rst:12
+#: c8e51c408f3b4a71bb8c417f9945dcb3
+msgid "When representing nominee arrangements:"
+msgstr "При отображении соглашений о назначении номинальных владельцев:"
+
+#: ../../standard/modelling/repr-nominations.rst:14
+#: caf402f733a9400eb5bc86565aceebbc
+msgid "The ``entityType.type`` MUST be ``arrangement``"
+msgstr "Свойство ``entityType.type`` ДОЛЖНО иметь значение ``arrangement``."
+
+#: ../../standard/modelling/repr-nominations.rst:15
+#: de426324db8a424ca4a6408d3afd043f
+msgid "``entityType.subtype`` MUST be ``nomination``"
+msgstr "Свойство ``entityType.subtype`` ДОЛЖНО иметь значение ``nomination``."
+
+#: ../../standard/modelling/repr-nominations.rst:16
+#: 7d7e98906ed44850b3f78d0e748d46dd
+msgid ""
+"``entityType.details`` MAY be used to give a local name or specify the type "
+"of nominee arrangement"
+msgstr ""
+"Поле ``entityType.details`` МОЖЕТ использоваться для указания местного "
+"названия или типа соглашения о назначении номинального владельца."
+
+#: ../../standard/modelling/repr-nominations.rst:18
+#: 0bfa300f35c14a609a9703d57179eda4
+msgid ""
+"Relationships between nominee arrangements and their parties MUST be "
+"represented using only these ``interest.type`` codes:"
+msgstr ""
+"Отношения между соглашением о назначении номинального владельца и его "
+"сторонами ДОЛЖНЫ отображаться исключительно с помощью этих значений свойства"
+" ``interest.type``:"
+
+#: ../../standard/modelling/repr-nominations.rst:20
+#: 1b9fb34d62f6434a9b13c7c1f9320554
+msgid "``nominator``"
+msgstr "``nominator`` (назначающее лицо);"
+
+#: ../../standard/modelling/repr-nominations.rst:21
+#: c1e1a53f337041d887c0f7ca5a0c2911
+msgid "``nominee``"
+msgstr "``nominee`` (номинальный владелец)."
+
+#: ../../standard/modelling/repr-nominations.rst:23
+#: b0434053d20d4ff08074ad90228bd7ae
+msgid ""
+"``interest.details`` MAY be used to give a local name (e.g. \"agent\" or "
+"\"principal\")"
+msgstr ""
+"Для указания местного названия (например, \"agent\" (агент) или "
+"\"principal\" (доверитель)) МОЖЕТ быть использовано "
+"поле``interest.details``. "
+
+#: ../../standard/modelling/repr-nominations.rst:26
+#: 3ff681a7131445fead2d0940a3bb9320
+msgid "Examples"
+msgstr "Примеры"
+
+#: ../../standard/modelling/repr-nominations.rst:29
+#: f9229f6bd3ec40ffba50b32bd3a3ea4e
+msgid "Nominee directorship"
+msgstr "Номинальное управление"
+
+#: ../../standard/modelling/repr-nominations.rst:30
+#: 3b4c2d4820fe4992bffc6488ecefdb3e
+msgid ""
+"Two people enter into a nominee directorship arrangement for a company, and "
+"all details are known. Dotted lines represent the further Relationship "
+"statements needed to represent the indirect beneficial ownership of the "
+"parties."
+msgstr ""
+"Два физических лица заключают соглашение о номинальном управлении в "
+"отношении компании, при этом все сведения известны. Пунктирные линии "
+"отображают дополнительные записи об отношениях, необходимые для отражения "
+"косвенного бенефициарного владения, осуществляемого сторонами."
+
+#: ../../standard/modelling/repr-nominations.rst:32
+#: 3bfe2de7e48c44b38a4b7e2c4ff4eb2e
+msgid ""
+"See :ref:`representing-bo` for guidance on representing indirect beneficial "
+"ownership."
+msgstr ""
+"Рекомендации по отображению косвенного бенефициарного владения см. в разделе"
+" :ref:`Отображение бенефициарных владельцев`."
+
+#: ../../standard/modelling/repr-nominations.rst-1
+#: dbea8b48a2a341b7b50f53dae1bf09f3
+msgid ""
+"Diagram showing linked statements. Entity statement with entityType type "
+"'arrangement' and subtype 'nomination'. The arrangement entity is connected "
+"to one person statement by a relationship statement with interest type "
+"'nominator', and to a second person statement by a relationship statement "
+"with interest type 'nominee'. A second entity statement with the type "
+"\"Registered entity\" is connected to the arrangement entity by a "
+"relationship statement with interest type 'board member'. There is also a "
+"relationship statement between the first person statement and the registered"
+" entity to represent that they are one of the ultimate beneficial owners of "
+"the registered entity. The interest type for this relationship statement is "
+"'other influence or control'."
+msgstr ""
+"Схема, изображающая связанные записи. Запись о субъекте, в которой тип "
+"свойства entityType имеет значение 'arrangement', а подтип — 'nomination'. "
+"Субъект-соглашение соединен с первой записью о физическом лице посредством "
+"записи об отношениях, в которой тип доли участия имеет значение 'nominator',"
+" а со второй записью о физическом лице — посредством записи об отношениях, в"
+" которой тип доли участия имеет значение 'nominee'. Вторая запись о "
+"субъекте, тип которого указан как \"Registered entity\", соединена с "
+"субъектом-соглашением посредством записи об отношениях, в которой тип доли "
+"участия имеет значение 'board member'. Также имеется запись об отношениях "
+"между первой записью о физическом лице и зарегистрированным субъектом, "
+"указывающая на то, что это лицо является одним из конечных бенефициарных "
+"владельцев зарегистрированного субъекта. Тип доли участия в этой записи об "
+"отношениях имеет значение 'other influence or control'."
+
+#: ../../standard/modelling/repr-nominations.rst:40
+#: 84a81e261d954293be243501f33c4c3c
+msgid "Nominee shareholding"
+msgstr "Номинальное владение акциями"
+
+#: ../../standard/modelling/repr-nominations.rst:41
+#: 15a51de398a7456bb102f08549903847
+msgid ""
+"Two people enter into a nominee shareholding arrangement for a company, and "
+"all details are known."
+msgstr ""
+"Два физических лица заключают согашение о номинальном владении акциями в "
+"отношении компании, при этом все сведения известны."
+
+#: ../../standard/modelling/repr-nominations.rst-1
+#: ca685775d94f424a9c61411396ab13be
+msgid ""
+"Diagram showing linked statements. Entity statement with entityType type "
+"'arrangement' and subtype 'nomination'. The arrangement entity is connected "
+"to one person statement by a relationship statement with interest type "
+"'nominator', and to a second person statement by a relationship statement "
+"with interest type 'nominee'. A second entity statement with the type "
+"\"Registered entity\" is connected to the arrangement entity by a "
+"relationship statement with interest type 'shareholding'."
+msgstr ""
+"Схема, изображающая связанные записи. Запись о субъекте, в которой тип "
+"свойства entityType имеет значение 'arrangement', а подтип — 'nomination'. "
+"Субъект-соглашение соединен с первой записью о физическом лице посредством "
+"записи об отношениях, в которой тип доли участия имеет значение 'nominator',"
+" а со второй записью о физическом лице — посредством записи об отношениях, в"
+" которой тип доли участия имеет значение 'nominee'. Вторая запись о "
+"субъекте, тип которого указан как \"Registered entity\", соединена с "
+"субъектом-соглашением посредством записи об отношениях, в которой тип доли "
+"участия имеет значение 'shareholding'."
+
+#: ../../standard/modelling/repr-nominations.rst:50
+#: 0965456d67794250aa1b7eabdd2fa5f1
+msgid "Entity as a nominee"
+msgstr "Субъект как номинальный владелец"
+
+#: ../../standard/modelling/repr-nominations.rst:51
+#: 79e97f94b8fe4d618771b517cabe4ab0
+msgid ""
+"A person enters into a nominee shareholding arrangement for a company, and "
+"the nominee is an entity."
+msgstr ""
+"Физическое лицо заключает соглашение о номинальном владении акциями в "
+"отношении компании, при этом номинальным владельцем является субъект."
+
+#: ../../standard/modelling/repr-nominations.rst-1
+#: 52e7a71efd07469394c4886ee4fd3a62
+msgid ""
+"Diagram showing linked statements. Entity statement with entityType type "
+"'arrangement' and subtype 'nomination'. The arrangement entity is connected "
+"to one person statement by a relationship statement with interest type "
+"'nominator', and to a second entity statement with entity type 'registered "
+"entity' by a relationship statement with interest type 'nominee'. A third "
+"entity statement with the type \"Registered entity\" is connected to the "
+"arrangement entity by a relationship statement with interest type "
+"'shareholding'."
+msgstr ""
+"Схема, изображающая связанные записи. Запись о субъекте, в которой тип "
+"свойства entityType имеет значение 'arrangement', а подтип — 'nomination'. "
+"Субъект-соглашение соединен с первой записью о физическом лице посредством "
+"записи об отношениях, в которой тип доли участия имеет значение 'nominator',"
+" а со второй записью о субъекте с типом субъекта 'registered entity' — "
+"посредством записи об отношениях, в которой тип доли участия имеет значение "
+"'nominee'. Третья запись о субъекте, тип которого указан как \"Registered "
+"entity\", соединена с субъектом-соглашением посредством записи об "
+"отношениях, в которой тип доли участия имеет значение 'shareholding'."
+
+#: ../../standard/modelling/repr-nominations.rst:59
+#: 322ceee5240e402b813811da5b148156
+msgid "Unknown nominator"
+msgstr "Неизвестное назначающее лицо"
+
+#: ../../standard/modelling/repr-nominations.rst:60
+#: c834166730c24496a6b1876c10cd0d23
+msgid ""
+"Two people enter into a nominee directorship arrangement for a company and "
+"details for the nominator are required to be disclosed, but are unknown."
+msgstr ""
+"Два физических лица заключают соглашение о номинальном управлении в "
+"отношении компании, при этом сведения о назначающем лице должны быть "
+"раскрыты, но они неизвестны."
+
+#: ../../standard/modelling/repr-nominations.rst-1
+#: f28642d4cabb4a61be392b5d4d67cadd
+msgid ""
+"Diagram showing linked statements. Entity statement with entityType type "
+"'arrangement' and subtype 'nomination'. The arrangement entity is connected "
+"to one person statement with the person type 'unknown person' and "
+"unspecifiedPersonDetails reason 'subject unable to confirm or identify "
+"beneficial owner', by a relationship statement with interest type "
+"'nominator'. The arrangement entity is also connected to a second person "
+"statement by a relationship statement with interest type 'nominee'. A second"
+" entity statement with the type \"Registered entity\" is connected to the "
+"arrangement entity by a relationship statement with interest type 'board "
+"member'."
+msgstr ""
+"Схема, изображающая связанные записи. Запись о субъекте, в которой тип "
+"свойства entityType имеет значение 'arrangement', а подтип — 'nomination'. "
+"Субъект-соглашение соединен с первой записью о физическом лице с типом лица "
+"'unknown person' и причиной в поле unspecifiedPersonDetails, обозначенной "
+"как 'subject unable to confirm or identify beneficial owner', посредством "
+"записи об отношениях, в которой тип доли участия имеет значение 'nominator'."
+" Субъект-соглашение также соединен со второй записью о физическом лице "
+"посредством записи об отношениях, в которой тип доли участия имеет значение "
+"'nominee'. Вторая запись о субъекте, тип которого указан как \"Registered "
+"entity\", соединена с субъектом-соглашением посредством записи об "
+"отношениях, в которой тип доли участия имеет значение 'board member'."
+
+#: ../../standard/modelling/repr-nominations.rst:68
+#: a7db5c26811045cc9e32f628f197f60c
+msgid "Nominator not required to disclose"
+msgstr "Назначающее лицо, раскрывать информацию о котором не требуется"
+
+#: ../../standard/modelling/repr-nominations.rst:69
+#: 2665c686d57d498380666174c174c22c
+msgid ""
+"Two people enter into a nominee directorship arrangement for a company, and "
+"details for the nominator are not required to be disclosed."
+msgstr ""
+"Два физических лица заключают соглашение о номинальном управлении в "
+"отношении компании, при этом сведения о назначающем лице раскрывать не "
+"требуется.  "
+
+#: ../../standard/modelling/repr-nominations.rst-1
+#: ad71c0cd1354430bb5007b749788eb1c
+msgid ""
+"Diagram showing linked statements. Entity statement with entityType type "
+"'arrangement' and subtype 'nomination'. The arrangement entity is connected "
+"to one person statement by a relationship statement with interest type "
+"'nominee'. A second entity statement with the type \"Registered entity\" is "
+"connected to the arrangement entity by a relationship statement with "
+"interest type 'board member'."
+msgstr ""
+"Схема, изображающая связанные записи. Запись о субъекте, в которой тип "
+"свойства entityType имеет значение 'arrangement', а подтип — 'nomination'. "
+"Субъект-соглашение соединен с первой записью о физическом лице посредством "
+"записи об отношениях, в которой тип доли участия имеет значение 'nominee'. "
+"Вторая запись о субъекте, тип которого указан как \"Registered entity\", "
+"соединена с субъектом-соглашением посредством записи об отношениях, в "
+"которой тип доли участия имеет значение 'board member'."

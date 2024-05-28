@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Kateryna Volobuieva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../standard/index.rst:4 8e0e94723def475189c4cc3f07c60056
+msgid "Data Standard"
+msgstr "Стандарт данных"
+
+#: ../../standard/warningbox.rst:3 812b3c86712b44419d3c59a7868f99b3
+msgid ""
+"This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model, codelists, and technical guidance."
+msgstr ""
+"Это версия 0.4 Стандарта данных о бенефициарном владении. Она включает в "
+"себя обновления модели данных, списки допустимых значений и технические "
+"рекомендации."
+
+#: ../../standard/warningbox.rst:5 03cfc2fe72804401bf8f97f2d9e66445
+msgid ""
+"Future changes are anticipated before a version 1.0 release. See the "
+":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
+"information."
+msgstr ""
+"Ожидаются новые изменения до выхода версии 1.0. Дополнительную информацию "
+"см. на страницах :ref:`Лог изменений <changelog>` и `О стандарте "
+"<../about>`_ ."
+
+#: ../../standard/index.rst:8 4e1c4392abb3427c9bfc9168024862f5
+msgid ""
+"BODS data encapsulates information about the :doc:`beneficial ownership "
+"<../primer/index>` of corporate vehicles, to facilitate sharing of "
+"information. The data model is based on :any:`key concepts <key-concepts>` "
+"relating to this information and its management."
+msgstr ""
+"Данные СДБВ отображают в краткой форме информацию о :doc:`бенефициарном "
+"владении <../primer/index>`, касающуюся корпоративных механизмов, что "
+"упрощает обмен информацией. Используемая модель данных базируется на "
+":any:`основных концепциях <key-concepts>`, касающихся этой информации и "
+"управления ею."
+
+#: ../../standard/index.rst:10 fa0b59d362ca435e8f2df2b5dc8b2645
+msgid ""
+"The BODS schema, defined using `JSON Schema 2020-12 <https://json-"
+"schema.org/>`_, describes the data model. The :ref:`Schema browser <schema-"
+"browser>` shows how the schema's objects and properties fit together. The "
+":ref:`Schema reference <schema-reference>` includes an A-Z of objects, "
+"detailing their properties and related codelists."
+msgstr ""
+"Схема СДБВ, определенная с помощью `Схемы JSON 2020-12 <https://json-"
+"schema.org/>`_, описывает модель данных. В :ref:`Браузере схемы <schema-"
+"browser>` показано, как объекты и свойства схемы сочетаются друг с другом. "
+":ref:`Справочник схемы <schema-reference>` включает полный перечень объектов"
+" от А до Я с подробным описанием их свойств и соответствующих списков "
+"допустимых значений."
+
+#: ../../standard/index.rst:12 77c800c5324f4ceb9964d7ae270f59e9
+msgid ""
+"Further requirements are described in the :ref:`Modelling requirements "
+"<modelling-requirements>` and :ref:`System requirements <system-"
+"requirements>` sections."
+msgstr ""
+"Дополнительные требования описаны в разделах :ref:`Требования к "
+"моделированию <modelling-requirements>` и :ref:`Системные требования "
+"<system-requirements>`."

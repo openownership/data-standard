@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/modelling/dates-guidance.rst:4
+#: 3caf9240aeb4416ab13a17fba9910ea5
+msgid "Dates guidance"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:7
+#: a337b697bea34e7e9a090a29d502affa
+msgid "Key dates"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:9
+#: 45c0b29df86841d18bde69e887ba3659
+msgid ""
+"In BODS, dates represent real world events and information about how data "
+"has moved through a system."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:11
+#: 4ea8bcb790b341d284292335378da80b
+msgid ""
+"``statementDate`` is the date that the information about the entity, person "
+"or relationship is claimed to be true. This could be recorded automatically "
+"when someone submits an online declaration form or be the submission date "
+"listed on a physical form. For a service consolidating beneficial ownership "
+"data, it would be the date on which several sources of information were "
+"resolved to make a coherent claim about the state of an entity, person, or "
+"relationship."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:13
+#: 3c30d6932609432cafa0acea9dc9d92a
+msgid ""
+"``publicationDetails.publicationDate`` is the date this statement was "
+"published. For example, the date that the information was added to a public "
+"registry, or made available via an API. This can be the same as the "
+"``statementDate`` value if data is published immediately after submission. "
+"In many cases there will be a delay between submission and publication."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:15
+#: a801807a23ac4f67a87ba21b9ca21edc
+msgid ""
+"``interest.startDate`` is the date an interest started. For example, the "
+"date that shares were purchased or someone was appointed to the board of "
+"directors."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:17
+#: 52272444902f437193b0ff43adfc213b
+msgid ""
+"``interest.endDate`` is the date an interest ended. For example, the date "
+"that shares were divested of or that someone resigned from the board of "
+"directors."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:19
+#: 0d1ea463b096478985863944ac5e01f7
+msgid ""
+"``source.retrievedAt`` is only applicable where data is being republished. "
+"For example, some third parties might download data from government "
+"registries, transform it into BODS format and share it elsewhere. When this "
+"is done, they must provide information on when they downloaded the data from"
+" the government registry."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:22
+#: 7e0600371f7f43cb9b8c7c693be6339e
+msgid "Date rounding"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:24
+#: 2424a5463fde456da994ffb093f2b7f0
+msgid ""
+"For some fields, when exact dates are required but not known, rounded dates "
+"may be published. This is indicated in the schema description for those "
+"fields."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:26
+#: 216cabd460844bf9b2466b0c603ea3fc
+msgid ""
+"Where a month is known but not the day, the first day of the month can be "
+"used. Where a year is known but not the month, the first day of the year can"
+" be used."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:28
+#: f177b1e840294fff801504bdf91dc97a
+msgid ""
+"Where rounded dates are used this should be communicated to users of the "
+"data, to prevent misunderstanding. Publishers SHOULD create accompanying "
+"guidance for data users."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:30
+#: 590bd419c88640da946997eac03777f5
+msgid "For example:"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:32
+#: 7e41bd5a99ac4a95bd9a0b7264586b91
+msgid ""
+"If an interest started in March 2022 but the day is not known the interest's"
+" ``startDate`` would be published as 2022-03-01"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:33
+#: 75a8fa5a01764d9fac0937ae48b38e0f
+msgid ""
+"If an interest started in 2022 but the month is not known the interest's "
+"``startDate`` would be published as 2022-01-01"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:36
+#: eee211860b734644928da833c1653d45
+msgid "Examples"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:39
+#: bc44d6a6318b4d319f44eef6f78ab2ef
+msgid "An interest ending"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:40
+#: 706aaaa9ffdc4e1684a19b1521dbcaba
+msgid ""
+"This statement represents someone divesting from shares. We can use the "
+"statement to construct a timeline of events."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst-1
+#: c26fd2565da9460ea915a71a6786cbf9
+msgid ""
+"A statement with statement date 2019-09-10, publication date 2021-09-13 and "
+"interest end date 2021-09-3. Next to the statement is a timeline showing the"
+" events - the relationship ending, the change being reported and the change "
+"being published."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:49
+#: 8938de462e294b84928a43c6b3b21918
+msgid "A confirmation process"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:51
+#: ae61d895cb3b4295ade886bdec3d9671
+msgid ""
+"Someone founds a company, registers it and discloses its beneficial owners. "
+"One year later nothing has changed. They file a confirmation declaration and"
+" a new Relationship statement is generated with an updated ``statementDate``"
+" and ``publicationDate``."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst-1
+#: fdb89245f84541f8ab4f95e617a827ea
+msgid ""
+"2 statements showing the same interest start date and entity founding date. "
+"The statement date and publication date are one year apart."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:59
+#: 9aa369428f984bb9b2b5b1adecddb799
+msgid "An error correction"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:61
+#: a66e06b113c84da2a9f253379e31b947
+msgid ""
+"Due to an error in the publication system, a relationship statement is "
+"published with an incorrect ``interests[0].startDate``. To correct this, a "
+"new statement is published replacing the incorrect one."
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:63
+#: 74976cac7ddb411b8789e4343ce789ec
+msgid "The new statement:"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:65
+#: fb70c5f391fa4d0b8fbb697e50745633
+msgid ""
+"has the same ``statementDate``, because the date of the original information"
+" submission has not changed"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:66
+#: fa9c3d173dc04f3eb9afe88e5ff08883
+msgid "has a new ``publicationDate``"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:67
+#: 7cb9d423b0af4fbbb583916b651dffe1
+msgid "has a corrected ``interest.startDate``"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst:68
+#: 4868b3b6dab2415eba83abf150ca08a2
+msgid "has an :ref:`Annotation <schema-annotation>` explaining the correction"
+msgstr ""
+
+#: ../../standard/modelling/dates-guidance.rst-1
+#: 24b4163a805e490bb8c1cf44c4302093
+msgid ""
+"2 statements showing the same recordId and statementDate. The second "
+"statement has a different publication date, statementId and interest start "
+"date. The second statement has an annotation with motivation \"correction\" "
+"point towards the interest start date."
+msgstr ""

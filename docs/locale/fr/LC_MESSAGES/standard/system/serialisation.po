@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/system/serialisation.rst:4 4c750127195940e9a32980b0478d1443
+msgid "Serialisation"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:6 ee8951fdaee8484cb116fedcc701d891
+msgid ""
+"The canonical serialisation of BODS data is as a JSON document. Equivalent "
+"specifications of JSON are given by `IETF RFC 8256 "
+"<https://tools.ietf.org/html/rfc8259>`_ and by `ECMA 404 <https://ecma-"
+"international.org/publications-and-standards/standards/ecma-404/>`_. It is "
+"RECOMMENDED that publishers:"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:8 ad1e87e89b64411dafd22e0038cc28f3
+msgid "Use UTF-8 for maximal interoperability (section 8.1 of RFC 8259);"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:9 66beb6f4868c402c934039d57a171c5a
+msgid ""
+"Escape characters that might cause problems when ingesting data (for "
+"example: &, <)."
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:11 cd6abb160e9c45eb80dd06b15214540b
+msgid ""
+"See Section 9 of the ECMA-404 JSON specification which deals with strings, "
+"encoding and escaping."
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:13 525e23c6c47048faa38b7ac93413f444
+msgid "JSON Lines MAY also be used when creating large files."
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:16 61045d7036fa4373af813ed17cab0719
+msgid "Statement order"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:18 f561d0b9d8e54b699f04e56265443c8a
+msgid ""
+"A JSON BODS file MUST consist of a series of ordered Statement objects "
+"within a top-level array."
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:20 40209926298e4b2c9b4fabedc9d904e2
+msgid ""
+"Specifically, the ``interestedParty`` and ``subject`` values of a "
+"Relationship statement, when they are a ``recordId`` value, MUST match the "
+"``recordId`` value of at least one other *prior* Statement in the array."
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:23 0254084d4f4b4ea299b8ef5c3f41774d
+msgid "Alternative tabular form"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:25 ca785821b78648069dbbfea00827f5f3
+msgid ""
+"BODS data MAY also be serialised in tabular form, with each row representing"
+" a statement. Columns SHOULD represent statement fields and column titles "
+"SHOULD use the relevant relative JSON Pointer from the statement root."
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:27 c1a8fca361544a4ca7a30854967f1aef
+msgid "For example, the extract:"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:65 d002db0cc1ca47e8a4f481bccdb202db
+msgid "may be serialised in a table as:"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:70 82206c161e1e4bfcbba1e9d4fd2437a1
+msgid "statementId"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:71 4377a1b1fa184804a1f16769df07012d
+msgid "recordId"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:72 129311366bb3432cbc0097c49387c2ed
+msgid "recordType"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:73 32257f46c46d480ea7bd9609819bcb39
+msgid "recordDetails/identifiers/0/scheme"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:74 3e53ff059a3f409abacd23074eaa3be0
+msgid "recordDetails/identifiers/0/id"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:75 9a3a757d04324b96ab75617c1390ed78
+msgid "e3c07f34-1810-4eed-b845-4d9f4d97f9d5"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:76 7fd37ab5225043cc8429474f0e6ff29f
+msgid "1810-4eed-b845-4d9f4d97f9d5"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:77 0ba3f8fa0c41486da99d1191769d046c
+msgid "entity"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:78 6edc27f180864e9089b6585527d8d4d2
+msgid "GB-COH"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:79 6fbdc82218c84ddda5d0c40b2a7030a9
+msgid "07444723"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:80 5d3c6acfae414567acec81b7a2f66488
+msgid "a2b485be-e3b6-4fd7-8a6a-930e46cf9957"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:81 d4cb412f1bd748c5bc94e703fed744b0
+msgid "e3b6-4fd7-8a6a-930e46cf9957"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:82 851669a37d50477897ab6e05bf190715
+msgid "person"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:83 8fe6796597e74c3a812260cfc1447088
+msgid "MX-RFC"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:84 ecad9427591440aeaffa92eba41c4476
+msgid "ABC680524P-76"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:86 a4752cb5b8bc4bbfb75aab2564bfdbbc
+msgid "34b479f2-1681-4064-ab51-1e703fbafa"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:87 074e9e913de546f09fe7eaa629ee9d66
+msgid "1681-4064-ab51-1e703fbafa"
+msgstr ""
+
+#: ../../standard/system/serialisation.rst:88 4fe8e97689b9424f8211850f0e4d111c
+msgid "relationship"
+msgstr ""

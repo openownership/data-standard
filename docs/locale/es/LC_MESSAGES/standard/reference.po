@@ -1,0 +1,548 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Stephen Abbott Pugh <stephen@openownership.org>, 2024
+# Carlos Hames, 2024
+# Agustina De Luca, 2024
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Carmen Edery, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Carmen Edery, 2024\n"
+"Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/reference.rst:4 8416376c04154015bd7deea0887a4453
+msgid "Schema reference"
+msgstr "Referencias del esquema"
+
+#: ../../standard/warningbox.rst:3 d624cae8b36146fc942d9d29dd27d606
+msgid ""
+"This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model, codelists, and technical guidance."
+msgstr ""
+"Esta es la versión 0.3 del Estándar de datos sobre beneficiarios reales. "
+"Incluye actualizaciones del modelo de datos, listas de códigos y orientación"
+" técnica."
+
+#: ../../standard/warningbox.rst:5 ecdb977eafd147f2a844c7366c62c3cc
+msgid ""
+"Future changes are anticipated before a version 1.0 release. See the "
+":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
+"information."
+msgstr ""
+"Se anticipan cambios futuros antes del lanzamiento de la versión 1.0. "
+"Consulte las páginas :ref:`Changelog<changelog>` y `About <../about>`_ para "
+"obtener más información."
+
+#: ../../standard/reference.rst:8 b5e689ea27264118a5bb1e26014fdf75
+msgid ""
+"This is an A - Z guide to the objects of the Data Standard's schema and its "
+"`codelists`_ . Details of each object's properties are provided in a table. "
+"For a structured view of how objects fit together in the JSON schema, use "
+"the :doc:`Schema browser <schema-browser>`."
+msgstr ""
+"Esta es una guía de la A a la Z de los objetos del esquema del Estándar de "
+"datos y su `codelists`_ . Se ofrecen detalles de las propiedades de cada "
+"objeto en una tabla. (Para ver de manera estructurada cómo los objetos "
+"encajan entre sí en el esquema JSON, use el :doc:`Schema browser <schema-"
+"browser>`.)"
+
+#: ../../standard/reference.rst:10 4efc0007be0c40789dd46e1e0c4ba2a2
+msgid ""
+"The top-level objects are :any:`Statements <schema-statement>`. Each "
+"statement contains record details for one of three beneficial ownership "
+"elements:"
+msgstr ""
+"Los objetos de nivel superior son :any:`Statements <schema-statement>`. Cada"
+" declaración contiene detalles de registro para uno de tres elementos de "
+"titularidad de beneficiario real:"
+
+#: ../../standard/reference.rst:12 223768f31fed43b887c3cd75a35c4c46
+msgid ":any:`Entity <schema-entity-record>`"
+msgstr ":any:`Entity <schema-entity-record>`"
+
+#: ../../standard/reference.rst:13 bcefa263b803455c9824dccf2444e333
+msgid ":any:`Person <schema-person-record>`"
+msgstr ":any:`Person <schema-person-record>`"
+
+#: ../../standard/reference.rst:14 535cf735558b4c86b5efa297c406c70c
+msgid ":any:`Relationship <schema-relationship-record>`"
+msgstr ":any:`Relationship <schema-relationship-record>`"
+
+#: ../../standard/reference.rst:16 07607d79ea964b0396099bd8101d8d04
+msgid ""
+"BODS data MAY be published as a valid `JSON document "
+"<https://tools.ietf.org/html/rfc8259>`_. See :any:`Serialisation <guidance-"
+"serialisation>` for other options."
+msgstr ""
+"Los datos basados en BODS PUEDEN publicarse como un  `documento JSON "
+"<https://tools.ietf.org/html/rfc8259>`_ válido. Consulte :any:`Serialisation"
+" <guidance-serialisation>` para conocer más opciones."
+
+#: ../../standard/reference.rst:22 d5e61ebe53af40779625a3a37ed12d07
+msgid "Address"
+msgstr "Dirección"
+
+#: ../../standard/reference.rst-1 596f4793ec6a4ea683cacea4d3d578dc
+msgid ""
+"Semi-structured address details, suitable for processing using address-"
+"parsing algorithms. Where postal codes and country information are isolated "
+"fields in source systems, this information SHOULD be published in the "
+"dedicated fields and SHOULD NOT be published in the `address` field."
+msgstr ""
+"Detalles de dirección semiestructurados, aptos para procesamiento usando "
+"algoritmos de análisis de direcciones. Si los códigos postales y la "
+"información de país son campos aislados en los sistemas fuente, esta "
+"información DEBE publicarse en los campos exclusivos y NO DEBE publicarse en"
+" el campo `dirección`."
+
+#: ../../sphinxcontrib-jsonschema:1 436ad4f0b2b34259ad301cd66b760626
+#: e595e3fe88f4430ca19dfffb06e8f926 503f27a0e6a94a148460aa5b3ad032e7
+#: 3ae13c7945eb45ed8cec9068b92fe531 2231429bb67843da9305f600495a2fb0
+#: 65f5f953a91246ea99b63268b049f0b7 a17c148e3dd9451eb9f23ed09fc1a4b8
+#: a4813e1594974539ad4bdc4b051418e4 0e66e64476804dd3b875936f43a423b3
+#: 58d7bccbdd064ac1bfe9d24393881712 bca0ffeb7e60465fb8d042eba4dc30c4
+#: 1f4ca2b5372142b589db31c8b739b021 f6161f548aaa4412b8a30e7e5a82674e
+#: fb71f2da30694d348e894f2991ab46ed 3de8823533e24ba3a552baf0a93be56b
+#: 81a3e64ebca64be8a769605350e824a6 85f1f0607bd844e78d3b5a614127cedd
+#: 65781e0cbc17487890f7f101fd846dd9 bd479b18c9de4cc299be13404cee38dc
+msgid "Title"
+msgstr "Título"
+
+#: ../../sphinxcontrib-jsonschema:1 bd1736fe6a94412db5af261f54a37b39
+#: 9db04423f1f241c288df86f6547324bc d51c964cdd2746f68d9d6f3fbcedc396
+#: da130d542e844544a6f848458e3726f6 af17d3c362a64cf6ae1acccecd3be2b8
+#: 0b6a83ddd93e4347bb2d8842091c04d0 86de5c5eb9514c118655c5eacbb5283b
+#: bd59448516264a048e48d37de3147b21 de9db8561d0340cf8f3b83e431202baa
+#: cc0aa74284c1456e9ad8f213dfe6873f 52d9dcffd24d4368a0dbd3fac7bc004d
+#: e90fb5a5c242462e884dd639efe8aafe 95efee297be045cf86ad00a7162ea8de
+#: 3cff3f99e99a4485b81228e029ca4654 0a538edb71114cda904efca071ed53ce
+#: 4976a5390fd04d11bc7df06baede7d4d 2a8514e2c77b4ea29ce578322731543e
+#: 170968813e8e49b3a639bb3395f26e33 8e94cf5f057b420cae917790e6a7a0bf
+msgid "Description"
+msgstr "Descripción"
+
+#: ../../sphinxcontrib-jsonschema:1 c0f80fe75ea14b1f910da5569040bf39
+#: e6450cb9b5c04a0c953a5125acd0334c 6870e0b10af040dab472e761060f96d4
+#: 93800c289d7c4a159c81b1e7f091f570 5105b2d9cbc241d3a37cafd3cf833a41
+#: a696dd92f6394ae1b9773a573fafec32 5da761def39948baa1f03d902f1a3637
+#: 3e30dcbdf9e0462f846b5caa001d36ff 6490fc4a431c472daa3ff3f96280d750
+#: f9c2adb1183741ac85e8f47971ea7fe9 4b8e94ff1ab741ba9da637240b7fa7e1
+#: 4360789a09ab4057a6521e0b66943b08 2355aa2973ee4bbc8561034b137a37f6
+#: fe31db8b841546d6833da95d9fac07c5 24e178e967114c98b4e4dbcc56181c9b
+#: 1c2b4008ed13478ab3eebe595948b888 e2e62e54c91e475e92e23a3c77ea2599
+#: 5adab197d01945bb93e9b1533edd5c0e f0993b3150a54bb4801ca83f4a835aad
+msgid "Type"
+msgstr "Tipo"
+
+#: ../../sphinxcontrib-jsonschema:1 556b47c9174648a6ba4dab49bdf9fc2b
+#: df0c8d29022a4bc1847380a2906dec27 e41abb29b5e64e2eb9e6e4b75943516d
+#: e9e276a844924b03953d1dde88c15fdf 9e270669199b41b49e7905cb5815d874
+#: da9d82f540de43dcb67e07f8f747c06b 82459c3f2a6d4114b343979d3a5ff6d2
+#: f73e5884c7ee4358a974cf2e20bb7500 1c4913677860430db728078cabcb8e69
+#: 3cde360c5bbe4f6b84c35a224e3445dd eac4f07131bd410db958cb7e8e9e297c
+#: 9333148697cd401caf9a591e4335b0fc 3b876557d4814b98a0bc23ed2a98a5c9
+#: 8c674a6b9e714ffbb833f897ee76844d 5b854845d34c438e99570e54862cff26
+#: 53597f099e974c79bb9e34e64be46857 da5f16fb763548e99db5907547d41913
+#: 5f063802fa274aa1b7eaef705837e46f 62f6cd56592f43e8a6313a9d0dc89fae
+msgid "Format"
+msgstr "Formato"
+
+#: ../../sphinxcontrib-jsonschema:1 064e4315715744899a7a7868dacfb0dc
+#: ae0b09bb69cb4a80ba00352ca9e52f0d 2d9fb96bf6784b06bb70cd9ccb2a3474
+#: f529a8552a3c4b129b2e28f1302e07af 299e99d580054d6ba01bf077437cf3ef
+#: dbaa162209dc46b68aa833ec62ce6386 f33528b1c408419fa0a9841a1310a4dc
+#: 6ea1e452d607461e8a691885ba5dee9e b3df87c0e8c94bee8318bf55ef6d0706
+#: 23e542e92bf348b08fea81b6058228a2 80ae3784a1264ca5a6369997f110abb2
+#: e5972dcbc3434adda056bc1fbdb23200 5143405ece5c46fea2242fdc1f0be293
+#: dd7d8233e8df47ee9fb89e5b40b36a74 141a85a5347944b9874a513b046859be
+#: cdc66e6a17db48c682eaa9a98b74a327 b76a3db61aef4330a0001db6a6b72051
+#: 3baffaa092fd467d9070bebb162f740f b34d93c9fc7a420d99eeaef4e2687fcc
+msgid "Required"
+msgstr "Requerido"
+
+#: ../../standard/reference.rst:37 c237c339d25941df8402c04218e41282
+msgid ""
+"Various address formats are used across data management systems, and data is"
+" often inconsistent. That is why the BODS schema uses a simple address "
+"format for data exchange. Systems importing BODS data will need to parse "
+"BODS addresses before carrying out any structured comparison."
+msgstr ""
+"Los distintos formatos de dirección se utilizan en varios sistemas de "
+"gestión de datos y los datos a menudo son inconsistentes. Es por ello que el"
+" esquema del BODS utiliza un formato de dirección simple para el intercambio"
+" de datos. Los sistemas que importan datos del BODS deben analizar las "
+"direcciones del BODS antes de llevar a cabo cualquier comparación "
+"estructurada."
+
+#: ../../standard/reference.rst:39 aeb05f1d01e247beb155606f14e9e521
+msgid ""
+"Designers of new data collection systems should choose an appropriate "
+"structured format, with reference to established standards, that can "
+"accommodate addresses from across the world. See `issue 18 "
+"<https://github.com/openownership/data-standard/issues/18>`_ for more "
+"details."
+msgstr ""
+"Se alienta a los diseñadores de nuevos sistemas de recopilación de datos a "
+"elegir un formato estructurado apropiado, que haga referencia a estándares "
+"establecidos, y que advierta la necesidad de adaptarse a direcciones de todo"
+" el mundo. Consulte el `tema 18 <https://github.com/openownership/data-"
+"standard/issues/18>`_ para obtener información más detallada."
+
+#: ../../standard/reference.rst:44 71b6cc517dcb4f49bd070c710c47a9d6
+msgid "Annotation"
+msgstr "Annotation (Nota)"
+
+#: ../../standard/reference.rst:46 e330faa7f48840e9af1917d0de70f731
+msgid ""
+"The ``annotations`` property of statements is an array of Annotation "
+"objects."
+msgstr ""
+"La propiedad de declaraciones ``annotations`` es una variedad de objetos de "
+"notas."
+
+#: ../../standard/reference.rst:48 1e2f624acc77494f93cd7285428d1aa0
+msgid "Annotations can be used to:"
+msgstr "Las notas pueden utilizarse para:"
+
+#: ../../standard/reference.rst:50 23eed05000ce4f92abb5bf15e91386ab
+msgid "hold information that does not have an appropriate field in the schema"
+msgstr "contener información que no tiene un campo apropiado en el esquema"
+
+#: ../../standard/reference.rst:51 0a51fb5fa5eb48dbb653de180d2db5ef
+msgid ""
+"provide additional context to information in the schema (e.g. if data has "
+"been transformed)"
+msgstr ""
+"brindar contexto adicional a la información del esquema (p. ej., si los "
+"datos se han transformado)"
+
+#: ../../standard/reference.rst:53 8d05e188dbc24ae68a741aaed47040ba
+msgid ""
+"Annotations can apply to a whole statement, part of a statement or a "
+"specific field. ``annotation.statementPointerTarget`` indicates where the "
+"annotation applies."
+msgstr ""
+"Las notas pueden aplicarse a toda una declaración, parte de una declaración "
+"o un campo específico. ``annotation.statementPointerTarget`` indica dónde se"
+" aplica la nota."
+
+#: ../../standard/reference.rst:65 7c7ea5683d8c4a7588f5aff3718b45be
+msgid "Country"
+msgstr "País"
+
+#: ../../standard/reference.rst-1 5c972fbfa3244f3885253ab352e29815
+msgid ""
+"A country MUST have a name. A country SHOULD have a 2-letter country code "
+"(ISO 3166-1)"
+msgstr ""
+"Un país DEBE tener un nombre. Un país DEBERÍA tener un código de país de 2 "
+"letras (ISO 3166-1)"
+
+#: ../../standard/reference.rst:79 2d6eb638a95c4951964dad906c2d7f79
+msgid "Identifier"
+msgstr "Identificador"
+
+#: ../../standard/reference.rst:81 0d7050df462340f6b2b96de5a9f71114
+msgid ""
+"The Identifier object connects a statement to the natural person, entity or "
+"item that it refers to. See :any:`Real world identifiers <guidance-"
+"identifiers>` for guidance on using this object."
+msgstr ""
+"El objeto de identificación conecta con la declaración sobre la persona, "
+"entidad u objeto al cual hace referencia. Consulte :any:`Real world "
+"identifiers <guidance-identifiers>` para obtener orientación sobre cómo usar"
+" este objeto."
+
+#: ../../standard/reference.rst-1 27882388f8764cc387d10d399e7e0195
+msgid ""
+"An identifier that has been assigned to a person or entity. `scheme` or "
+"`schemeName` (or both) MUST be included in an Identifier object."
+msgstr ""
+"Un identificador que se ha asignado a una persona o entidad. `esquema` o "
+"`schemeName` (o ambos) DEBEN estar incluidos en un objeto identificador."
+
+#: ../../standard/reference.rst:94 cc26d5b72c30427fbc7faedd245c6837
+msgid "Interest"
+msgstr "Interés"
+
+#: ../../standard/reference.rst-1 cbae21e426b44681b8beb14a169e036f
+msgid ""
+"A description of an interest held by an interestedParty in the subject."
+msgstr ""
+"Una descripción de un interés que una interestedParty tiene en el sujeto."
+
+#: ../../standard/reference.rst:110 6f1a93a595264b3cbf0c253bdf263509
+msgid "Jurisdiction"
+msgstr "Jurisdiction (Jurisdicción)"
+
+#: ../../standard/reference.rst-1 1f68ce404687489d8d7b6b9dc277502a
+msgid ""
+"A Jurisdiction MUST have a name. A jurisdiction SHOULD have a 2-letter "
+"country code (ISO 3166-1) or a subdivision code (ISO 3166-2)."
+msgstr ""
+"Una jurisdicción DEBE tener un nombre. Una jurisdicción DEBE tener un código"
+" de país de 2 letras (ISO 3166-1) o un código de subdivisión (ISO 3166-2)."
+
+#: ../../standard/reference.rst:123 273c5df10a9a440bb759aea49b24b355
+msgid "Name"
+msgstr "Nombre"
+
+#: ../../standard/reference.rst-1 4d5d3d9db1c6406aa32df29a8e5101b3
+msgid ""
+"A name by which this person is known. A name MUST be provided in `fullName`,"
+" and MAY be broken down in the `familyName`, `givenName` and "
+"`patronymicName` fields, based on the EC ISA Core Person Vocabulary "
+"(https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) "
+"definitions."
+msgstr ""
+"Un nombre por el que se conoce a esta persona. DEBE proporcionarse un nombre"
+" en `fullName`, y PUEDE dividirse en los campos `familyName`, `givenName` y "
+"`patronymicName`, según las definiciones del Vocabulario principal de "
+"personas ISA de la CE (https://joinup.ec.europa.eu/solution/e-government-"
+"core-vocabularies) definitions."
+
+#: ../../standard/reference.rst:138 f79a8b60765a405eb5bee79eb58aa30c
+msgid "PEPstatusDetails"
+msgstr "PEPstatusDetails"
+
+#: ../../standard/reference.rst-1 09729a717d29477886c58c531e7532ab
+msgid "Information about a person's political involvement."
+msgstr "Información sobre la participación política de una persona."
+
+#: ../../standard/reference.rst:152 37220704372047b2a4b46851713a8579
+msgid "PublicListing"
+msgstr "PublicListing (Listado público)"
+
+#: ../../standard/reference.rst-1 1b3e168b73294429aebb2a3a58f74117
+msgid ""
+"Details of a publicly listed company, its securities (shares and other "
+"tradable financial instruments related to the entity), and related "
+"regulatory filings."
+msgstr ""
+"Detalles de una empresa que cotiza en bolsa, sus valores (acciones y otros "
+"instrumentos financieros negociables relacionados con la entidad) y "
+"documentos regulatorios relacionados."
+
+#: ../../standard/reference.rst:166 7287709734914ba0b8d6a715a496c911
+msgid "Publication Details"
+msgstr "Detalles de la publicación"
+
+#: ../../standard/reference.rst-1 20bd3f9bc90a4636a09fba31516bd956
+msgid "Information concerning the publication of this Statement."
+msgstr "Información relacionada con la publicación de esta declaración."
+
+#: ../../standard/reference.rst:180 e521a60fd7734e52b0dc23cad32db601
+msgid "Publisher"
+msgstr "Publisher (Publicador)"
+
+#: ../../standard/reference.rst-1 fe562614c42f48fabad72659c556842e
+msgid "Details of the organisation or person publishing a Statement."
+msgstr "Detalles de la organización o persona que publica una declaración."
+
+#: ../../standard/reference.rst:194 53590c011b3640fab9e794fc82f824c8
+msgid "Record Details (entity)"
+msgstr "Detalles del registro (entidad)"
+
+#: ../../standard/reference.rst-1 24c4713551c848baaa64836e042a03bf
+msgid "Information about an entity."
+msgstr "Información sobre una entidad."
+
+#: ../../standard/reference.rst:208 26ef6e4efefa47b2b86637e2066635a8
+msgid "Record Details (person)"
+msgstr "Detalles del registro (persona)"
+
+#: ../../standard/reference.rst-1 9e935fd58dbf4d998ab9a081e0d28a2a
+msgid "Information about a natural person."
+msgstr "Información sobre una persona física."
+
+#: ../../standard/reference.rst:222 fcd2b89543bc4148be55c068225a601f
+msgid "Record Details (relationship)"
+msgstr "Detalles del registro (relación)"
+
+#: ../../standard/reference.rst:224 465e6b34389745c7bfe075ead86dc540
+msgid "See :ref:`representing-bo` for detailed requirements."
+msgstr ""
+"Consulte :ref:`representing-bo` para ver detalles sobre los requisitos."
+
+#: ../../standard/reference.rst-1 4016d83e353a4aeeb505789b008261a2
+msgid ""
+"Information about the interests that an interested party (a person or "
+"entity) holds in the subject (an entity)."
+msgstr ""
+"Información sobre los intereses que una parte interesada (una persona o "
+"entidad) tiene sobre el sujeto (una entidad)."
+
+#: ../../standard/reference.rst:238 bd51d9c12f094ca2b08e004f43766727
+msgid "Record Id"
+msgstr "ID de registro"
+
+#: ../../standard/reference.rst:240 34587424b9ce49e3b0cde8fbb2fc298d
+msgid "See :ref:`record-identifiers` for information about Record Ids"
+msgstr ""
+"Consulte :ref:`record-identifiers` para obtener información sobre ID de "
+"registro"
+
+#: ../../standard/reference.rst-1 4e591769b1074d29b5c440183b32632b
+msgid ""
+"A unique identifier for the record (within the publisher's system) to which "
+"this Statement relates. (A record captures information about an entity, "
+"natural person or relationship within the beneficial ownership network of a "
+"particular declaration subject.)"
+msgstr ""
+"Un identificador único para el registro (dentro del sistema del publicador) "
+"relacionado con esta declaración. (Un registro captura información sobre una"
+" entidad, persona física o relación dentro de la red de titularidad de "
+"beneficiarios reales del sujeto de una declaración particular)."
+
+#: ../../standard/reference.rst:248 9b74f6a898544506a66bdb320dce8f44
+msgid "SecuritiesListing"
+msgstr "SecuritiesListing (Listado de valores)"
+
+#: ../../standard/reference.rst-1 3f0881803e4b40979d0408d85295dcc7
+msgid "Details of a security and the market on which it is traded."
+msgstr "Detalles de un valor y el mercado en el que se negocia."
+
+#: ../../standard/reference.rst:253 c1969567ce7e4fb6bd54c2f647400b9e
+msgid ""
+"See :any:`Real world identifiers <guidance-identifiers>` for guidance on "
+"representing securities listings."
+msgstr ""
+"Consulte :any:`Real world identifiers <guidance-identifiers>` para obtener "
+"orientación sobre cómo representar las cotizaciones de los valores."
+
+#: ../../standard/reference.rst:264 29597c924a9040ec9cb8ccef0b1e326d
+msgid "Share"
+msgstr "Share (Porción)"
+
+#: ../../standard/reference.rst-1 d8bf17da63e641d18bd2d2ecb5049df6
+msgid ""
+"The proportion of this type of interest held by the interested party, where "
+"an interest is countable. Provide the `exact` percentage if known. "
+"Otherwise, `minimum` (or `exclusiveMinimum`) and `maximum` (or "
+"`exclusiveMaximum`) can be used to record the range into which the "
+"proportion falls. (The `minimum` and `maximum` values are inclusive.)"
+msgstr ""
+"La proporción de este tipo de interés que la parte interesada posee, donde "
+"un interés es contable. Indique el porcentaje `exact` si lo conoce. De lo "
+"contrario, puede usar `minimum` (o `exclusiveMinimum`) y `maximum` (or "
+"`exclusiveMaximum`) para registrar en rango en el que cae la proporción (Los"
+" valores `minimum` y `maximum` son inclusivos)."
+
+#: ../../standard/reference.rst:277 cf53c1ec6d864d8f82672c05b41753f0
+msgid "Source"
+msgstr "Fuente"
+
+#: ../../standard/reference.rst-1 8d4ebf40a25a41cfa52fff6e6ba742d7
+msgid "Details describing an information source."
+msgstr "Detalles que describen una fuente de información."
+
+#: ../../standard/reference.rst:291 f1cc9b2d695547eb9240fb6b8949f709
+msgid "Statement"
+msgstr "Declaración"
+
+#: ../../standard/reference.rst-1 786964e76b1b424eb0fcff0f1da18dff
+msgid ""
+"A claim about a person, entity or relationship, made at a particular point "
+"in time."
+msgstr ""
+"Una afirmación sobre una persona, entidad o relación, realizada en un "
+"momento particular."
+
+#: ../../standard/reference.rst:306 dab956dbb10545c1a6fce8ab2b1367d8
+msgid "Statement Id"
+msgstr "ID de declaración"
+
+#: ../../standard/reference.rst:308 30f9e3efda094a119c819061b0cb249d
+msgid ""
+"See :ref:`generating-statements` for advice on generating unique Statement "
+"Ids"
+msgstr ""
+"Consulte :ref:`generating-statements` para obtener ayuda sobre cómo generar "
+"ID de declaración únicos"
+
+#: ../../standard/reference.rst-1 dbee3c6d06034220bb67327d4fe59de2
+msgid ""
+"A persistent globally unique identifier for this Statement. Length MUST be "
+"32 - 64 characters (inclusive)."
+msgstr ""
+"Un identificador único global persistente para esta declaración. La longitud"
+" DEBE ser de entre 32 y 64 caracteres (inclusivo)."
+
+#: ../../standard/reference.rst:316 106e3abb1b3d43289069c0ada26bee62
+msgid "UnspecifiedRecord"
+msgstr "UnspecifiedRecord"
+
+#: ../../standard/reference.rst-1 61e601e35fb34689967c17e4482eb971
+msgid "A `reason` MUST be supplied."
+msgstr "DEBE indicarse un `reason`."
+
+#: ../../standard/reference.rst:331 94d83443ca89484d8d40128ce29a152e
+msgid "Codelists"
+msgstr "Listas de códigos"
+
+#: ../../standard/reference.rst:334 a4cf84d680ed4dc0bc4dbc9c6078bfa3
+msgid "Address Type"
+msgstr "Tipo de dirección"
+
+#: ../../standard/reference.rst:343 3385ae9b67ab4ea9884e11f5701b7272
+msgid "Annotation Motivation"
+msgstr "Motivación de la nota"
+
+#: ../../standard/reference.rst:352 850cb22b444c4e26810aa67058490dee
+msgid "Direct Or Indirect"
+msgstr "Directo o indirecto"
+
+#: ../../standard/reference.rst:361 2aa4c04cafad499d908c3cfc8512627b
+msgid "Entity Type"
+msgstr "Tipo de entidad"
+
+#: ../../standard/reference.rst:371 ef95ebb7952c41f5893897cae8f6b06c
+msgid "Entity Subtype"
+msgstr "Subtipo de entidad"
+
+#: ../../standard/reference.rst:381 cd19120e6c804e0b9be9b8c5533e0e0e
+msgid "Interest Type"
+msgstr "Tipo de interés"
+
+#: ../../standard/reference.rst:390 eb849185618c4f47bb5ad48ba3ca4a61
+msgid "Name Type"
+msgstr "Tipo de nombre"
+
+#: ../../standard/reference.rst:399 6c2c74050e09467f81033b567a8afb24
+msgid "Person Type"
+msgstr "Tipo de persona"
+
+#: ../../standard/reference.rst:408 a401ee5cb2ba49b280a6c1231a2517a8
+msgid "Record Status"
+msgstr "Estado del registro"
+
+#: ../../standard/reference.rst:418 44ab19d8b77b43119b36dca636a999ee
+msgid "Record Type"
+msgstr "Tipo de registro"
+
+#: ../../standard/reference.rst:427 9df1f7df207949c181654bffbe95180b
+msgid "Securities Identifier Schemes"
+msgstr "Esquemas de identificación de valores"
+
+#: ../../standard/reference.rst:436 39edb35dac3e44eba7ac4078915c7d4d
+msgid "Source Type"
+msgstr "Tipo de fuente"
+
+#: ../../standard/reference.rst:445 e0f64334cf134225bdb4a1c9347795b0
+msgid "Unspecified Reason"
+msgstr "Motivo no especificado"

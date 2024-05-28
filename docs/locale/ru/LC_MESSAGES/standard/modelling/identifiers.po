@@ -1,0 +1,411 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Galia Williams, 2024
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Kateryna Volobuieva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../../standard/modelling/identifiers.rst:4 cdddf9a2ff5f4416a099661ea9c071ba
+msgid "Real world identifiers"
+msgstr "Общие идентификаторы"
+
+#: ../../standard/modelling/identifiers.rst:6 c7d625e86ab84532996f53766a838782
+msgid ""
+"Real world identifiers are essential for making beneficial ownership data "
+"interoperable. By 'real world identifier' we mean reference strings, issued "
+"by authoritative registration schemes, which have gained widespread use in "
+"the world. People can use them to verify that the referenced person, entity "
+"or item exists."
+msgstr ""
+"Общие идентификаторы необходимы для обеспечения функциональной совместимости"
+" данных о бенефициарном владении. Под 'общими идентификаторами' "
+"подразумеваются ссылочные строки, присвоенные авторитетными регистрационными"
+" схемами, которые получили широкое распространение в мире. Идентификаторы "
+"можно использовать, чтобы проверить существование указанного физического "
+"лица, субъекта или элемента."
+
+#: ../../standard/modelling/identifiers.rst:8 84e447e33eeb4fd2972ab679d12c66fe
+msgid "In BODS, real world identifiers can be published for:"
+msgstr "В системе СДБВ общие идентфикаторы могут публиковаться для:"
+
+#: ../../standard/modelling/identifiers.rst:10
+#: 0b165d5ddec14870bdbaf982efb9977e
+msgid "entities"
+msgstr "субъектов;"
+
+#: ../../standard/modelling/identifiers.rst:11
+#: 36da7424baec4d8fa0439eefe22a7ffc
+msgid "people"
+msgstr "физических лиц;"
+
+#: ../../standard/modelling/identifiers.rst:12
+#: 5a288908578f4febbaa6298138ceb7e5
+msgid "stock markets and trading exchanges"
+msgstr "фондовых рынков и торговых бирж;"
+
+#: ../../standard/modelling/identifiers.rst:13
+#: e40b90e8c923499fa74c24d0c27ec7cf
+msgid "tradable securities"
+msgstr "продаваемых ценных бумаг."
+
+#: ../../standard/modelling/identifiers.rst:16
+#: fe5459dfd382466ab08eacf1f90673af
+msgid "Entity identifiers"
+msgstr "Идентификаторы субъектов"
+
+#: ../../standard/modelling/identifiers.rst:18
+#: 8ef86c877af04a879ee196c7f459133e
+msgid ""
+"Use an :ref:`Identifier <schema-identifier>` in the ``identifiers`` array of"
+" an Entity Statement to supply a company registration number, Legal Entity "
+"Identifier (LEI), or other real world identifier."
+msgstr ""
+"Используйте :ref:`Идентификатор` в массиве``identifiers`` Записи о субъекте,"
+" чтобы указать регистрационный номер компании, идентификатор юридического "
+"лица (Legal Entity Identifier, LEI) или другой общий идентификатор."
+
+#: ../../standard/modelling/identifiers.rst:20
+#: a777c8001def4bf58839ba30d3a89629
+msgid ""
+"The value for ``Identifier.scheme`` SHOULD come from `org-id.guide "
+"<http://org-id.guide>`_. This resource contains details of company registers"
+" and other identifier sources. If the identifier scheme you need to "
+"reference is not already listed on org-id.guide `propose a new entry "
+"<https://org-idguide-"
+"handbook.readthedocs.io/en/latest/contribute/#proposing-a-new-entry>`_."
+msgstr ""
+"РЕКОМЕНДУЕТСЯ, чтобы значение свойства ``Identifier.scheme`` было взято с "
+"`org-id.guide <http://org-id.guide>`_. Этот ресурс содержит сведения о "
+"реестрах компаний и других источниках идентификаторов. Если схема "
+"идентификаторов, на которую необходимо ссылаться, еще не зарегистрирована на"
+" org-id.guide, `предложите зарегистрировать нового субъекта <https://org-"
+"idguide-handbook.readthedocs.io/en/latest/contribute/#proposing-a-new-"
+"entry>`_."
+
+#: ../../standard/modelling/identifiers.rst:22
+#: 681de2617ebc4cd89beb0cae3fde44c3
+msgid ""
+"If it is useful to publish an internal identifier from your data management "
+"system, first consider whether it should be used as a :ref:`record "
+"identifier <record-identifiers>`. If not, either:"
+msgstr ""
+"Если полезно опубликовать внутренний идентификатор из своей собственной "
+"системы управления данными, сначала решите, следует ли его использовать как "
+":ref:`идентификатор элемента<record-identifiers>`. Если нет, тогда:"
+
+#: ../../standard/modelling/identifiers.rst:24
+#: 2cbf9f7e5142479182eddd78a0c00479
+msgid ""
+"publish your full list of internal identifiers, and propose it as an entry "
+"to `org-id.guide <http://org-id.guide>`_, or"
+msgstr ""
+"опубликуйте свой полный перечень внутренних идентификаторов и предложите "
+"внести его на `org-id.guide <http://org-id.guide>`_; или"
+
+#: ../../standard/modelling/identifiers.rst:25
+#: 120653809ac9467392491dd0d6cde402
+msgid "use ``schemeName`` to identify your system and leave ``scheme`` blank"
+msgstr ""
+"используйте свойство ``schemeName``, чтобы указать свою систему, а поле "
+"``scheme`` оставьте незаполненным."
+
+#: ../../standard/modelling/identifiers.rst:28
+#: 0543adf89481412ab57e5bebbec6ab73
+msgid "Person identifiers"
+msgstr "Идентификаторы физических лиц"
+
+#: ../../standard/modelling/identifiers.rst:31
+#: 6e68b4d8836d4f61930bf64bb36a6c94
+msgid "Global identifiers"
+msgstr "Глобальные идентификаторы"
+
+#: ../../standard/modelling/identifiers.rst:33
+#: 2a021921038343459bcb4e6ab13bdd91
+msgid ""
+"If the system holds identification numbers for a person, and these can be "
+"published without privacy or security risks, then these SHOULD be included "
+"in the ``identifiers`` array of the Person Statement."
+msgstr ""
+"Если система хранит идентификационные номера физического лица, и они могут "
+"быть опубликованы без риска для конфиденциальности или безопасности, то их "
+"СЛЕДУЕТ включить в массив ``identifiers`` Записи о физическом лице."
+
+#: ../../standard/modelling/identifiers.rst:35
+#: af340a63084c4e14a029c4f631406c20
+msgid "In such cases, the values for ``scheme`` SHOULD be:"
+msgstr ""
+"В таких случаях РЕКОМЕНДУЕТСЯ, чтобы у свойства ``scheme`` были такие "
+"значения:"
+
+#: ../../standard/modelling/identifiers.rst:37
+#: e9d4eb17b0d44f9ca9c73f2e5ddca609
+msgid "{JURISDICTION}-{TYPE}"
+msgstr "{JURISDICTION}-{TYPE}"
+
+#: ../../standard/modelling/identifiers.rst:39
+#: 11999fdd62ae4768a9ed238cca15f614
+msgid ""
+"Where {JURISDICTION} is an `ISO 3-digit country code "
+"<https://www.iso.org/iso-3166-country-codes.html>`_ (or one of the "
+"extensions in `ICAO Document 9303 §5 "
+"<http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_, pages "
+"21-23). And {TYPE} is one of 'PASSPORT', 'TAXID' or 'IDCARD'."
+msgstr ""
+"где {JURISDICTION} — это `3-значный код страны согласно стандарту ISO "
+"<https://www.iso.org/iso-3166-country-codes.html>`_ (или одно из расширений "
+"из `Документа ICAO 9303, §5 "
+"<http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_, страницы"
+" 21-23), а {TYPE} — это 'PASSPORT', 'TAXID' или 'IDCARD'  (паспорт, ИНН или "
+"удостоверение личности)."
+
+#: ../../standard/modelling/identifiers.rst:41
+#: ea2a0a4036194f76a66f6e636a9135f2
+msgid ""
+"For example, a passport number from Afghanistan would have the ``scheme`` "
+"value:"
+msgstr ""
+"Например, для паспорта, выданного в Афганистане, свойство ``scheme`` будет "
+"иметь значение:"
+
+#: ../../standard/modelling/identifiers.rst:43
+#: 214ad3074f874ade8b20e1f96bd24755
+msgid "> AFG-PASSPORT"
+msgstr "> AFG-PASSPORT"
+
+#: ../../standard/modelling/identifiers.rst:46
+#: 809e8a8ea28f453aa6d23327a0a32a15
+msgid ""
+"When making BODS data publicly available, it is important to ensure any "
+"person identifiers are suitable for publication under national laws and data"
+" protection frameworks."
+msgstr ""
+"Обеспечивая публичный доступ к данным СДБВ, важно убедиться, что любые "
+"идентификаторы физических лиц подходят для публикации в соответствии с "
+"национальным законодательством и механизмами защиты данных."
+
+#: ../../standard/modelling/identifiers.rst:48
+#: 331c979d61a3452490d0f6a92d173f45
+msgid ""
+"Most of the identifier types listed below are not suitable for publication "
+"as part of an open dataset."
+msgstr ""
+"Большинство из перечисленных ниже типов идентификаторов не подходят для "
+"публикации в составе открытого набора данных."
+
+#: ../../standard/modelling/identifiers.rst:50
+#: cf1b609acf934e1d8c65d6b94a4e3cf9
+msgid ""
+"The following identification types can currently be used in BODS. "
+"Suggestions for new types should be made through the `issue tracker "
+"<https://github.com/openownership/data-standard/issues>`_."
+msgstr ""
+"В данных СДБВ в настоящее время могут использоваться описанные ниже типы "
+"идентификаторов. Предложения касательно новых типов следует вносить через "
+"`систему отслеживания ошибок <https://github.com/openownership/data-"
+"standard/issues>`_."
+
+#: ../../standard/modelling/identifiers.rst:52
+#: bf5d1b06f87c4b2683ffd6ac296390df
+msgid "**PASSPORT**"
+msgstr "**ПАСПОРТ**"
+
+#: ../../standard/modelling/identifiers.rst:54
+#: f6f492a0d86147669ffd495287b5efe0
+msgid ""
+"Passport numbers SHOULD follow the format of the identifier line in a "
+"machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 "
+"<http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) "
+"including at least the document number."
+msgstr ""
+"РЕКОМЕНДУЕТСЯ, чтобы номера паспортов соответствовали формату строки "
+"идентификатора в машиночитаемом паспорте (см. `Приложение B к Части 4 "
+"Документа ICAO 9303 "
+"<http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_), включая"
+" как минимум номер документа.."
+
+#: ../../standard/modelling/identifiers.rst:56
+#: 32b451544840461c9582145fb2fbde03
+msgid ""
+"Parsers should be able to extract the document number from the first 9 "
+"characters, and to access any subsequent information supplied according to "
+"the ICAO format."
+msgstr ""
+"Парсеры должны иметь возможность извлекать номер документа из первых 9 "
+"символов, а также получать доступ к последующей информации, предоставляемой "
+"в соответствии с форматом ICAO."
+
+#: ../../standard/modelling/identifiers.rst:58
+#: 413c48ee5ce8455c84444788b1613946
+msgid "**TAXID**"
+msgstr "**ИНН**"
+
+#: ../../standard/modelling/identifiers.rst:60
+#: 0283ae9db01040a296a7dfebcd0e14ad
+msgid ""
+"Taxpayer identification regimes vary from country to country. Where guidance"
+" on including numbers from a particular jurisdiction is required, this may "
+"be included here in future."
+msgstr ""
+"В разных странах существуют различные системы идентификации "
+"налогоплательщиков. В случае если потребуются указания касательно включения "
+"числовых значений из определенной юрисдикции, они могут быть приведены здесь"
+" в дальнейшем."
+
+#: ../../standard/modelling/identifiers.rst:62
+#: 023b4732e19042feb33375733fb1d2ce
+msgid "**IDCARD**"
+msgstr "**УДОСТОВЕРЕНИЕ ЛИЧНОСТИ**"
+
+#: ../../standard/modelling/identifiers.rst:64
+#: 2bd25ffa34ba418e85c6e6422456ec68
+msgid ""
+"ID card systems vary. Where guidance on including numbers from a particular "
+"jurisdiction is required, this may be included here in future."
+msgstr ""
+"Существуют различные системы идентификационных карт. В случае если "
+"потребуются указания касательно включения числовых значений из определенной "
+"юрисдикции, они могут быть приведены здесь в дальнейшем."
+
+#: ../../standard/modelling/identifiers.rst:67
+#: 8ed36bee75b747b4a0033c5ab9145d65
+msgid "Special case: internal identifiers"
+msgstr "Особый случай: внутренние идентификаторы"
+
+#: ../../standard/modelling/identifiers.rst:69
+#: 8ad320f5270c469a91a6fbab6fe4a255
+msgid ""
+"Data management systems may generate internal identifiers for people, or for"
+" records about people, or both."
+msgstr ""
+"Системы управления данными могут генерировать внутренние идентификаторы для "
+"физических лиц или для элементов о физических лицах либо и для тех, и для "
+"других."
+
+#: ../../standard/modelling/identifiers.rst:71
+#: 1c4055e49cc74aac9c8d31a64497c72a
+msgid ""
+"If multiple records in the system are known to relate to the same person, "
+"the data management system SHOULD assign a unique identifier to the person, "
+"and publish this identifier in the associated records. The identifier SHOULD"
+" be included in the ``identifiers`` array with a ``schemeName`` value "
+"‘{publisher name}-{identifier type}’. For example, "
+"'AtlantisCorporateRegister-PersonReference'."
+msgstr ""
+"Если известно, что несколько элементов в системе касаются одного и того же "
+"физического лица, РЕКОМЕНДУЕТСЯ присвоить такому физическому лицу уникальный"
+" идентификатор в системе управления данными и опубликовать этот "
+"идентификатор в соответствующих элементах. Идентификатор СЛЕДУЕТ включить в "
+"массив ``identifiers``, указав для свойства ``schemeName`` значение "
+"‘{publisher name}-{identifier type}’. Например, 'AtlantisCorporateRegister-"
+"PersonReference'."
+
+#: ../../standard/modelling/identifiers.rst:73
+#: 63149edcfb084353969e87d1f80306d7
+msgid ""
+"Alternatively, if a known person is only ever represented by one record on "
+"the system, then an internal person identifier may serve as the "
+"``recordId``. See :ref:`record-identifiers`."
+msgstr ""
+"Или же, как вариант, если известное физическое лицо всегда представлено в "
+"системе лишь одним элементом, тогда в качестве значения параметра "
+"``recordId`` может выступать внутренний идентификатор физического лица. См. "
+"раздел :ref:`Идентификаторы элементов`."
+
+#: ../../standard/modelling/identifiers.rst:77
+#: 7fb83b3012d84c2ea0aaa6579b998f74
+msgid "Market identifier codes (MICs)"
+msgstr "Коды идентификатора рынка (MIC)"
+
+#: ../../standard/modelling/identifiers.rst:79
+#: ce650bdd62bc4b418c94ab273a474a73
+msgid "See this :ref:`example data <examples-plc>` for a valid use of MICs."
+msgstr ""
+"Правильное использование MIC см. в этом :ref:`примере данных <examples-"
+"plc>`."
+
+#: ../../standard/modelling/identifiers.rst:81
+#: c21e87d7013946d39cbcdd06f516d398
+msgid ""
+"Two properties in an Entity Statement’s :ref:`Securities Listing <schema-"
+"securities-listing>` object identify where a security is traded: the "
+"``operatingMarketIdentifierCode`` of the operating market and the "
+"``marketIdentifierCode``. The ``marketIdentifierCode`` SHOULD be the same as"
+" the ``operatingMarketIdentifierCode`` if the security is traded on a main "
+"exchange. The ``marketIdentifierCode`` will differ where a security is "
+"traded on a segment of an exchange."
+msgstr ""
+"Два свойства объекта :ref:`Регистрация ценных бумаг на фондовой бирже "
+"<schema-securities-listing>` в Записи о субъекте указывают на то, где "
+"торгуется ценная бумага: свойство ``operatingMarketIdentifierCode`` "
+"действующего рынка и свойство ``marketIdentifierCode``. Если ценная бумага "
+"торгуется на основной бирже, РЕКОМЕНДУЕТСЯ, чтобы значение свойства "
+"``marketIdentifierCode`` было таким же, как и свойства "
+"``operatingMarketIdentifierCode``. Если ценная бумага торгуется в сегменте "
+"биржи,. значение свойства ``marketIdentifierCode`` будет отличаться."
+
+#: ../../standard/modelling/identifiers.rst:83
+#: 2ed35d9966d045a2bb14c3f9f3baac74
+msgid ""
+"MICs are standardised, issued and maintained by SWIFT as `ISO 10383 "
+"<https://www.iso20022.org/market-identifier-codes>`_. The specification of "
+"``operatingMarketIdentifierCode`` and ``marketIdentifierCode`` is part of "
+"the ISO standard."
+msgstr ""
+"За стандартизацию, публикацию и поддержку кодов MIC отвечает SWIFT: `ISO "
+"10383 <https://www.iso20022.org/market-identifier-codes>`_. Спецификация "
+"кодов ``operatingMarketIdentifierCode`` и ``marketIdentifierCode`` является "
+"частью стандарта ISO."
+
+#: ../../standard/modelling/identifiers.rst:88
+#: f5a62dad89034a9db9fbe3864b117251
+msgid "Tradable security identifiers"
+msgstr "Идентификаторы торгуемой ценной бумаги"
+
+#: ../../standard/modelling/identifiers.rst:90
+#: 60659a2ba9ac4b1b8397aa1440ed6e96
+msgid ""
+"See this :ref:`example data <examples-plc>` for a valid use of securities "
+"identifiers."
+msgstr ""
+"Правильное использование идентификаторов ценных бумаг см. в этом "
+":ref:`примере данных<examples-plc>`."
+
+#: ../../standard/modelling/identifiers.rst:92
+#: b7c3f9de184b4e41ab9e836dc66032d2
+msgid ""
+"Where a :ref:`Securities Listing <schema-securities-listing>` is supplied, "
+"it needs to include a ``ticker`` value. This will allow trades of that "
+"security to be tracked on the identified market. However, securities can be "
+"traded on several exchanges and therefore supplying a globally unique "
+"identifier for the security is RECOMMENDED. Supported identifier schemes for"
+" securities are listed on the :ref:`schema reference page <schema-"
+"reference>`. Publish the identifier scheme and the security’s ID as "
+"``idScheme`` and ``id`` respectively."
+msgstr ""
+"Если указывается информация о :ref:`Регистрации ценных бумаг на фондовой "
+"бирже <schema-securities-listing>`, необходимо, чтобы она включала значение "
+"свойства ``ticker``. Это позволит отслеживать продажи такой ценной бумаги на"
+" идентифицированном рынке. При этом ценные бумаги могут торговаться на "
+"нескольких биржах, поэтому РЕКОМЕНДУЕТСЯ указывать глобальный уникальный "
+"идентификатор ценной бумаги. Поддерживаемые схемы идентификаторов для ценных"
+" бумаг указаны на :any:`странице справочника схемы <schema-reference>`. "
+"Схему идентификаторов и ID ценной бумаги необходимо публиковать как "
+"``idScheme`` и ``id`` соответственно."

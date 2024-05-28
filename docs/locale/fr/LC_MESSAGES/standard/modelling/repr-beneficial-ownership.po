@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Katia Da Silva, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Katia Da Silva, 2024\n"
+"Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:4
+#: 4162c67c29b4479b9f59a1ca5b0b6b5e
+msgid "Representing beneficial owners"
+msgstr "Représentation des bénéficiaires effectifs"
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:8
+#: ea568849db304bea85cd418207e22939
+msgid ""
+"**Key requirements:** If a person is a beneficial owner of an entity - "
+"whether directly or indirectly - and the person or entity is required to "
+"declare this beneficial ownership, there MUST be a Relationship statement "
+"connecting the two which represents the beneficial ownership relationship."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:10
+#: ../../standard/modelling/repr-beneficial-ownership.rst:38
+#: df9516eda30244839d58f93b1bd5c3ea 23a328fdecdd43b59c85c44910e72325
+msgid ""
+"If an entity declares that it has no disclosable beneficial owners, its "
+"record MUST be the ``subject`` of a Relationship statement with "
+"``recordDetails.interestedParty.reason`` 'noBeneficialOwners'."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:14
+#: 2febc27836da411db09a1253cc0e3a45
+msgid "Overview"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:16
+#: 1b092c3a34ed4efd807f1323abb317ba
+msgid ""
+"Beneficial owners can exercise their interests *directly* in an entity or "
+"*indirectly*, via intermediary entities (such as arrangements or other "
+"companies). It must be clear in a BODS dataset which people are declared as "
+"beneficial owners of which companies (and which entities are "
+"intermediaries). And it must be clear what overall interests beneficial "
+"owners have (regardless of whether they are direct or indirect)."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst-1
+#: aefdb4612c2b48bc8fc163f8499e7f1c
+msgid ""
+"Person 1 indirectly holds a 15 percent shareholding in Company E, via an "
+"intermediary: Company A. Person 2 directly holds 32 percent of Company E's "
+"shares."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:23
+#: 6f5fa4520ef84f87a899c90e4336ac17
+msgid ""
+"In the above situation, Person 1 *indirectly* benefits from a 15% "
+"shareholding in Company E and Person 2 has a *direct* 32% shareholding in "
+"Company E. In a jurisdiction where people with a shareholding (direct or "
+"indirect) of over 10% in a company should be disclosed as beneficial owners,"
+" both Person 1 and Person 2’s interests would be declared. Additionally, the"
+" jurisdiction may require that details of Person 1’s indirect interest are "
+"disclosed. That is: that some details of the chain Company E - Company A - "
+"Person 1 are also disclosed."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:25
+#: e715a55497544525ab022cca014fb3c7
+msgid ""
+"In BODS, the following properties are used to represent such information "
+"disclosure:"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:27
+#: bc9496ca5c7044659c32c8c9976456c2
+msgid "``beneficialOwnershipOrControl`` (See :ref:`schema-interest`)"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:28
+#: 9f599a3ee7784350915acd3f60a26770
+msgid "``directOrIndirect`` (See :ref:`schema-interest`)"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:29
+#: 3934328a66c84e0a9b3018f8c867c592
+msgid "``componentRecords`` (See :ref:`schema-relationship-record`)"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:30
+#: 6ae58c7200a1482bbae0403c7d8af3e4
+msgid "``isComponent`` (See :ref:`schema-entity-record`)"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:33
+#: f4bac19aabb5412ba92eb75c8e9a0b47
+msgid "Requirements"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:36
+#: 7a0fac7054614ccb83331cc70b80c5ab
+msgid "No beneficial ownership relationships"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:40
+#: 0309e6b756df47b9a631bba862d49fc0
+msgid ""
+"If an entity is exempt from declaring its beneficial owners its record "
+"SHOULD be the ``subject`` of a Relationship statement with "
+"``recordDetails.interestedParty.reason`` 'subjectExemptFromDisclosure'."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:44
+#: a655b7f30715474f99bf876a0e226bdc
+msgid "A beneficial ownership relationship"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:46
+#: 8b575e7ea0d2467791d659f88842b261
+msgid ""
+"If a person is a beneficial owner of an entity, entity X, (whether directly "
+"or indirectly) and one of them is required to declare this beneficial "
+"ownership, there MUST be a *primary* relationship record connecting the two "
+"which represents the beneficial ownership relationship. Specifically, in the"
+" ``recordDetails`` for the relationship:"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:48
+#: 40a1ca08d2604a0491c2c5e07d6b6fe3
+msgid "the entity’s ``recordId`` value MUST be the ``subject``"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:49
+#: bb997ccae5b44c54a2e03e6697014a3d
+msgid "the person’s ``recordId`` value MUST be the ``interestedParty``"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:50
+#: c05c976fe7a04656ab5d8ff0488e2141
+msgid "``isComponent`` MUST be false"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:51
+#: e0124f53606b4542b7f4d5cc07629d88
+msgid ""
+"the ``interests`` which make the person meet the criteria for being declared"
+" a beneficial owner MUST be included if known. They MUST have "
+"``beneficialOwnershipOrControl`` set to 'true'. If an interest is known to "
+"be exercised indirectly, via intermediary entities then ``directOrIndirect``"
+" MUST be ‘indirect’. If it is known to be exercised directly then "
+"``directOrIndirect`` MUST be ‘direct’. Otherwise ``directOrIndirect`` MUST "
+"be ‘unknown’."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:54
+#: b58d4744bc8c4ce7bf0bc2ecc80becc2
+msgid "Intermediaries"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:56
+#: ebe50041af2c42d6a5a0116da3cb15b0
+msgid ""
+"Where beneficial ownership is known to be exercised indirectly, via known "
+"intermediary elements, this SHOULD be represented in addition to the above. "
+"In particular:"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:58
+#: 6b7caa1af25f4a42af86deab031f5252
+msgid ""
+"the chain of known intermediary elements SHOULD be represented by "
+"*secondary* records"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:59
+#: dbb99af5a99f4f4a8537a4fd3be7fe92
+msgid ""
+"these secondary records SHOULD link the beneficial owner’s record to entity "
+"X’s record indirectly"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:60
+#: 34ff9f511c7e441f9a088eee6bd70616
+msgid "these secondary records SHOULD all have ``isComponent`` set to 'true'"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:61
+#: 79eed059690e4223a034bb88afd47158
+msgid ""
+"these secondary records SHOULD all have their ``recordId`` values listed in "
+"the ``componentRecords`` array of the ``recordDetails`` for the primary "
+"relationship."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:63
+#: 7417e3268bf14e5ca88a7230cc2681dd
+msgid ""
+"When Statements about the primary relationship are published in a BODS file:"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:65
+#: 51f5bce6ed6f4b48a1297f87e5f00a3b
+msgid ""
+"Statements for all secondary records referenced from ``componentRecords`` "
+"MUST also be published in that file"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:66
+#: 3af240a55c054e049ef8a9f8ac264956
+msgid ""
+"Statements for all secondary records must appear before the the first "
+"Statement for the primary relationship."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:69
+#: 5c3c637e1baf463480b5595f1a3073ac
+msgid "Example"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:71
+#: 576d7c2ed89d4406a2cd144cbfcdfde7
+msgid ""
+"In the following example, Person 1 is a beneficial owner of Company E. They "
+"exercise that beneficial ownership via an intermediary company, Company A."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst-1
+#: 9a3dbe28e89345ee89574de1f7128dbd
+msgid ""
+"Person statements, Entity statements and Relationship statements are linked "
+"by lines, representing the company ownership structure. Statement property "
+"values are given as follows. Person 1's Statement: recordId is 'p-1', "
+"recordDetails.isComponent is false. Intermediary Company A's Statement: "
+"recordId is 'e-2', recordDetails.isComponent is true. Company E's Statement:"
+" recordId is 'e-1', recordDetails.isComponent is false. Relationship "
+"statement connecting Person 1 and Company A: recordId is 'ooc-3', "
+"recordDetails.isComponent is true, its interest has directOrIndirect as "
+"'direct' and beneficialOwnershipOrControl as false. Relationship statement "
+"connecting Company A and Company E: recordId is 'ooc-2', "
+"recordDetails.isComponent is true, its interest has directOrIndirect as "
+"'direct' and beneficialOwnershipOrControl as false. Relationship statement "
+"connecting Person 1 and Company E: recordId is 'ooc-1', "
+"recordDetails.isComponent is false, componentRecords are ooc-2 and e-2 and "
+"ooc-3; and its interests have directOrIndirect as 'indirect' and "
+"beneficialOwnershipOrControl as true."
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:79
+#: db7b4850bdb745c6b81186092e3826f2
+msgid "Statement order"
+msgstr ""
+
+#: ../../standard/modelling/repr-beneficial-ownership.rst:80
+#: f0a25c97efe24faf88d523802210ff4b
+msgid ""
+"An example of valid statement order within a BODS dataset for the above "
+"would be: p-1, e-1, e-2, r-3, r-2, r-1."
+msgstr ""

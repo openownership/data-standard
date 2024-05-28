@@ -1,0 +1,405 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Carlos Hames, 2024
+# Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2024
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Carmen Edery, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Carmen Edery, 2024\n"
+"Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/modelling/identifiers.rst:4 cdddf9a2ff5f4416a099661ea9c071ba
+msgid "Real world identifiers"
+msgstr "Identificadores del mundo real"
+
+#: ../../standard/modelling/identifiers.rst:6 c7d625e86ab84532996f53766a838782
+msgid ""
+"Real world identifiers are essential for making beneficial ownership data "
+"interoperable. By 'real world identifier' we mean reference strings, issued "
+"by authoritative registration schemes, which have gained widespread use in "
+"the world. People can use them to verify that the referenced person, entity "
+"or item exists."
+msgstr ""
+"Los identificadores del mundo real son esenciales para que los datos de "
+"titularidad de beneficiarios reales sean interoperables. Con 'real world "
+"identifier', nos referimos a las cadenas de caracteres de referencia, "
+"emitidas por esquemas de inscripción confiables, que sean de uso amplio en "
+"el mundo. Las personas pueden usarlos para verificar que la persona, entidad"
+" u objeto al que se hace referencia existe."
+
+#: ../../standard/modelling/identifiers.rst:8 84e447e33eeb4fd2972ab679d12c66fe
+msgid "In BODS, real world identifiers can be published for:"
+msgstr ""
+"En el BODS, los identificadores del mundo real pueden publicarse para:"
+
+#: ../../standard/modelling/identifiers.rst:10
+#: 0b165d5ddec14870bdbaf982efb9977e
+msgid "entities"
+msgstr "entidades"
+
+#: ../../standard/modelling/identifiers.rst:11
+#: 36da7424baec4d8fa0439eefe22a7ffc
+msgid "people"
+msgstr "personas"
+
+#: ../../standard/modelling/identifiers.rst:12
+#: 5a288908578f4febbaa6298138ceb7e5
+msgid "stock markets and trading exchanges"
+msgstr "mercados bursátiles y bolsas de valores"
+
+#: ../../standard/modelling/identifiers.rst:13
+#: e40b90e8c923499fa74c24d0c27ec7cf
+msgid "tradable securities"
+msgstr "valores negociables"
+
+#: ../../standard/modelling/identifiers.rst:16
+#: fe5459dfd382466ab08eacf1f90673af
+msgid "Entity identifiers"
+msgstr "identificadores de entidades"
+
+#: ../../standard/modelling/identifiers.rst:18
+#: 8ef86c877af04a879ee196c7f459133e
+msgid ""
+"Use an :ref:`Identifier <schema-identifier>` in the ``identifiers`` array of"
+" an Entity Statement to supply a company registration number, Legal Entity "
+"Identifier (LEI), or other real world identifier."
+msgstr ""
+"Utilice un :ref:`Identifier <schema-identifier>` en el arreglo de datos "
+"``identifiers`` de una declaración sobre entidad para proporcionar un número"
+" de inscripción de empresa, un identificador de entidad legal (LEI) u otra "
+"identificador del mundo real."
+
+#: ../../standard/modelling/identifiers.rst:20
+#: a777c8001def4bf58839ba30d3a89629
+msgid ""
+"The value for ``Identifier.scheme`` SHOULD come from `org-id.guide "
+"<http://org-id.guide>`_. This resource contains details of company registers"
+" and other identifier sources. If the identifier scheme you need to "
+"reference is not already listed on org-id.guide `propose a new entry "
+"<https://org-idguide-"
+"handbook.readthedocs.io/en/latest/contribute/#proposing-a-new-entry>`_."
+msgstr ""
+"El valor para ``Identifier.scheme`` DEBE venir de `org-id.guide <http://org-"
+"id.guide>`_. Este recurso contiene detalles de registros de la empresa y "
+"otras fuentes de identificación. Si el esquema de identificación que "
+"necesita consultar aún no figura en org-id.guide `proponer una nueva partida"
+" <https://org-idguide-"
+"handbook.readthedocs.io/en/latest/contribute/#proposing-a-new-entry>`_."
+
+#: ../../standard/modelling/identifiers.rst:22
+#: 681de2617ebc4cd89beb0cae3fde44c3
+msgid ""
+"If it is useful to publish an internal identifier from your data management "
+"system, first consider whether it should be used as a :ref:`record "
+"identifier <record-identifiers>`. If not, either:"
+msgstr ""
+"Si resulta útil publicar un identificador interno de su sistema de gestión "
+"de datos, primero considere si debe utilizarse como :ref:`record identifier "
+"<record-identifiers>`. De lo contrario:"
+
+#: ../../standard/modelling/identifiers.rst:24
+#: 2cbf9f7e5142479182eddd78a0c00479
+msgid ""
+"publish your full list of internal identifiers, and propose it as an entry "
+"to `org-id.guide <http://org-id.guide>`_, or"
+msgstr ""
+"publique su lista completa de identificadores internos y propóngala como "
+"partida de `org-id.guide <http://org-id.guide>`_, o"
+
+#: ../../standard/modelling/identifiers.rst:25
+#: 120653809ac9467392491dd0d6cde402
+msgid "use ``schemeName`` to identify your system and leave ``scheme`` blank"
+msgstr ""
+"utilice ``schemeName`` para identificar su sistema y deje ``scheme`` en "
+"blanco"
+
+#: ../../standard/modelling/identifiers.rst:28
+#: 0543adf89481412ab57e5bebbec6ab73
+msgid "Person identifiers"
+msgstr "Identificadores de personas"
+
+#: ../../standard/modelling/identifiers.rst:31
+#: 6e68b4d8836d4f61930bf64bb36a6c94
+msgid "Global identifiers"
+msgstr "Identificadores globales"
+
+#: ../../standard/modelling/identifiers.rst:33
+#: 2a021921038343459bcb4e6ab13bdd91
+msgid ""
+"If the system holds identification numbers for a person, and these can be "
+"published without privacy or security risks, then these SHOULD be included "
+"in the ``identifiers`` array of the Person Statement."
+msgstr ""
+"Si el sistema contiene números de identificación de una persona y estos "
+"pueden publicarse sin riesgos en cuanto a su privacidad o seguridad, "
+"entonces también DEBEN incluirse en el arreglo de datos ``identifiers`` de "
+"la declaración sobre persona."
+
+#: ../../standard/modelling/identifiers.rst:35
+#: af340a63084c4e14a029c4f631406c20
+msgid "In such cases, the values for ``scheme`` SHOULD be:"
+msgstr "En tales casos, los valores de ``scheme`` DEBEN ser:"
+
+#: ../../standard/modelling/identifiers.rst:37
+#: e9d4eb17b0d44f9ca9c73f2e5ddca609
+msgid "{JURISDICTION}-{TYPE}"
+msgstr "{JURISDICCIÓN}-{TIPO}"
+
+#: ../../standard/modelling/identifiers.rst:39
+#: 11999fdd62ae4768a9ed238cca15f614
+msgid ""
+"Where {JURISDICTION} is an `ISO 3-digit country code "
+"<https://www.iso.org/iso-3166-country-codes.html>`_ (or one of the "
+"extensions in `ICAO Document 9303 §5 "
+"<http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_, pages "
+"21-23). And {TYPE} is one of 'PASSPORT', 'TAXID' or 'IDCARD'."
+msgstr ""
+"Cuando {JURISDICTION} es un código de país `ISO de 3 dígitos "
+"<https://www.iso.org/iso-3166-country-codes.html>`_ (o una de las "
+"extensiones de `ICAO Document 9303 §5 "
+"<http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_, páginas "
+"21-23). Y {TYPE} es 'PASSPORT', 'TAXID' o 'IDCARD'."
+
+#: ../../standard/modelling/identifiers.rst:41
+#: ea2a0a4036194f76a66f6e636a9135f2
+msgid ""
+"For example, a passport number from Afghanistan would have the ``scheme`` "
+"value:"
+msgstr ""
+"Por ejemplo, un número de pasaporte de Afganistán tendría el valor "
+"``scheme``:"
+
+#: ../../standard/modelling/identifiers.rst:43
+#: 214ad3074f874ade8b20e1f96bd24755
+msgid "> AFG-PASSPORT"
+msgstr "> AFG-PASSPORT"
+
+#: ../../standard/modelling/identifiers.rst:46
+#: 809e8a8ea28f453aa6d23327a0a32a15
+msgid ""
+"When making BODS data publicly available, it is important to ensure any "
+"person identifiers are suitable for publication under national laws and data"
+" protection frameworks."
+msgstr ""
+"Cuando se ponen los datos del BODS a disposición del público, es importante "
+"asegurarse de que los identificadores de personas sean aptos para "
+"publicación bajo las leyes y los marcos de protección de datos nacionales."
+
+#: ../../standard/modelling/identifiers.rst:48
+#: 331c979d61a3452490d0f6a92d173f45
+msgid ""
+"Most of the identifier types listed below are not suitable for publication "
+"as part of an open dataset."
+msgstr ""
+"La mayoría de los tipos de identificadores que figuran a continuación no son"
+" aptos para publicación como parte de un conjunto de datos abiertos."
+
+#: ../../standard/modelling/identifiers.rst:50
+#: cf1b609acf934e1d8c65d6b94a4e3cf9
+msgid ""
+"The following identification types can currently be used in BODS. "
+"Suggestions for new types should be made through the `issue tracker "
+"<https://github.com/openownership/data-standard/issues>`_."
+msgstr ""
+"Los siguientes tipos de identificación pueden utilizarse actualmente en el "
+"BODS. Las sugerencias de nuevos tipos deben realizarse a través de la "
+"`herramienta de seguimiento de incidencias "
+"<https://github.com/openownership/data-standard/issues>`_."
+
+#: ../../standard/modelling/identifiers.rst:52
+#: bf5d1b06f87c4b2683ffd6ac296390df
+msgid "**PASSPORT**"
+msgstr "**PASSPORT**"
+
+#: ../../standard/modelling/identifiers.rst:54
+#: f6f492a0d86147669ffd495287b5efe0
+msgid ""
+"Passport numbers SHOULD follow the format of the identifier line in a "
+"machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 "
+"<http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) "
+"including at least the document number."
+msgstr ""
+"Los números de pasaporte DEBEN seguir el formato de la línea de "
+"identificación en un pasaporte legible por medios informáticos (consulte "
+"`Anexo B a la parte 4 de ICAO Doc 9303 "
+"<http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) que "
+"incluya al menos el número de documento."
+
+#: ../../standard/modelling/identifiers.rst:56
+#: 32b451544840461c9582145fb2fbde03
+msgid ""
+"Parsers should be able to extract the document number from the first 9 "
+"characters, and to access any subsequent information supplied according to "
+"the ICAO format."
+msgstr ""
+"Los analizadores estructurales deberían ser capaces de extraer el número del"
+" documento de los primeros 9 caracteres y de acceder a toda información "
+"adicional suministrada de acuerdo con el formato de la OACI."
+
+#: ../../standard/modelling/identifiers.rst:58
+#: 413c48ee5ce8455c84444788b1613946
+msgid "**TAXID**"
+msgstr "**TAXID**"
+
+#: ../../standard/modelling/identifiers.rst:60
+#: 0283ae9db01040a296a7dfebcd0e14ad
+msgid ""
+"Taxpayer identification regimes vary from country to country. Where guidance"
+" on including numbers from a particular jurisdiction is required, this may "
+"be included here in future."
+msgstr ""
+"Los regímenes de identificación de contribuyentes varían según cada país. De"
+" ser necesaria orientación sobre la inclusión de los números de una "
+"jurisdicción determinada, puede que se la incluya aquí en el futuro."
+
+#: ../../standard/modelling/identifiers.rst:62
+#: 023b4732e19042feb33375733fb1d2ce
+msgid "**IDCARD**"
+msgstr "**IDCARD**"
+
+#: ../../standard/modelling/identifiers.rst:64
+#: 2bd25ffa34ba418e85c6e6422456ec68
+msgid ""
+"ID card systems vary. Where guidance on including numbers from a particular "
+"jurisdiction is required, this may be included here in future."
+msgstr ""
+"Los sistemas de tarjetas de identidad varían. De ser necesaria orientación "
+"sobre la inclusión de los números de una jurisdicción determinada, puede que"
+" se la incluya aquí en el futuro."
+
+#: ../../standard/modelling/identifiers.rst:67
+#: 8ed36bee75b747b4a0033c5ab9145d65
+msgid "Special case: internal identifiers"
+msgstr "Caso especial: identificadores internos"
+
+#: ../../standard/modelling/identifiers.rst:69
+#: 8ad320f5270c469a91a6fbab6fe4a255
+msgid ""
+"Data management systems may generate internal identifiers for people, or for"
+" records about people, or both."
+msgstr ""
+"Los sistemas de gestión de datos pueden generar identificadores internos "
+"para personas o registros de personas, o ambos."
+
+#: ../../standard/modelling/identifiers.rst:71
+#: 1c4055e49cc74aac9c8d31a64497c72a
+msgid ""
+"If multiple records in the system are known to relate to the same person, "
+"the data management system SHOULD assign a unique identifier to the person, "
+"and publish this identifier in the associated records. The identifier SHOULD"
+" be included in the ``identifiers`` array with a ``schemeName`` value "
+"‘{publisher name}-{identifier type}’. For example, "
+"'AtlantisCorporateRegister-PersonReference'."
+msgstr ""
+"Si se descubre que varios registros del sistema se relacionan con la misma "
+"persona, el sistema de gestión de datos DEBE asignar un identificador único "
+"a la persona y publicarlo en los registros asociados. El identificador DEBE "
+"incluirse en el arreglo de datos ``identifiers`` con un valor ``schemeName``"
+" ‘{publisher name}-{identifier type}’. Por ejemplo, "
+"'AtlantisCorporateRegister-PersonReference'."
+
+#: ../../standard/modelling/identifiers.rst:73
+#: 63149edcfb084353969e87d1f80306d7
+msgid ""
+"Alternatively, if a known person is only ever represented by one record on "
+"the system, then an internal person identifier may serve as the "
+"``recordId``. See :ref:`record-identifiers`."
+msgstr ""
+"De forma alternativa, si una persona conocida solo es representada por un "
+"registro en el sistema, un identificador de personas interno puede servir "
+"como el ``recordId``. Consulte :ref:`record-identifiers`."
+
+#: ../../standard/modelling/identifiers.rst:77
+#: 7fb83b3012d84c2ea0aaa6579b998f74
+msgid "Market identifier codes (MICs)"
+msgstr "Códigos de identificación del mercado (MIC)"
+
+#: ../../standard/modelling/identifiers.rst:79
+#: ce650bdd62bc4b418c94ab273a474a73
+msgid "See this :ref:`example data <examples-plc>` for a valid use of MICs."
+msgstr ""
+"Consulte este :ref:`example data <examples-plc>` para ver un uso válido de "
+"los MIC."
+
+#: ../../standard/modelling/identifiers.rst:81
+#: c21e87d7013946d39cbcdd06f516d398
+msgid ""
+"Two properties in an Entity Statement’s :ref:`Securities Listing <schema-"
+"securities-listing>` object identify where a security is traded: the "
+"``operatingMarketIdentifierCode`` of the operating market and the "
+"``marketIdentifierCode``. The ``marketIdentifierCode`` SHOULD be the same as"
+" the ``operatingMarketIdentifierCode`` if the security is traded on a main "
+"exchange. The ``marketIdentifierCode`` will differ where a security is "
+"traded on a segment of an exchange."
+msgstr ""
+"Dos propiedades del objeto de la :ref:`Securities Listing <schema-"
+"securities-listing>` de una declaración sobre entidad identifican dónde se "
+"se negocia un valor: el ``operatingMarketIdentifierCode`` del mercado "
+"operativo y el ``marketIdentifierCode``. El ``marketIdentifierCode`` DEBE "
+"ser igual que el ``operatingMarketIdentifierCode`` si el valor se negocia en"
+" una bolsa principal. El ``marketIdentifierCode`` diferirá cuando un valor "
+"se negocie en un segmento de una bolsa."
+
+#: ../../standard/modelling/identifiers.rst:83
+#: 2ed35d9966d045a2bb14c3f9f3baac74
+msgid ""
+"MICs are standardised, issued and maintained by SWIFT as `ISO 10383 "
+"<https://www.iso20022.org/market-identifier-codes>`_. The specification of "
+"``operatingMarketIdentifierCode`` and ``marketIdentifierCode`` is part of "
+"the ISO standard."
+msgstr ""
+"Los MIC están estandarizados, emitidos y mantenidos por SWIFT como `ISO "
+"10383 <https://www.iso20022.org/market-identifier-codes>`_. La "
+"especificación de ``operatingMarketIdentifierCode`` y "
+"``marketIdentifierCode`` es parte del estándar ISO."
+
+#: ../../standard/modelling/identifiers.rst:88
+#: f5a62dad89034a9db9fbe3864b117251
+msgid "Tradable security identifiers"
+msgstr "Identificadores de valores negociables"
+
+#: ../../standard/modelling/identifiers.rst:90
+#: 60659a2ba9ac4b1b8397aa1440ed6e96
+msgid ""
+"See this :ref:`example data <examples-plc>` for a valid use of securities "
+"identifiers."
+msgstr ""
+"Consulte este :ref:`example data <examples-plc>` para ver un uso válido de "
+"los identificadores de valores."
+
+#: ../../standard/modelling/identifiers.rst:92
+#: b7c3f9de184b4e41ab9e836dc66032d2
+msgid ""
+"Where a :ref:`Securities Listing <schema-securities-listing>` is supplied, "
+"it needs to include a ``ticker`` value. This will allow trades of that "
+"security to be tracked on the identified market. However, securities can be "
+"traded on several exchanges and therefore supplying a globally unique "
+"identifier for the security is RECOMMENDED. Supported identifier schemes for"
+" securities are listed on the :ref:`schema reference page <schema-"
+"reference>`. Publish the identifier scheme and the security’s ID as "
+"``idScheme`` and ``id`` respectively."
+msgstr ""
+"Cuando se proporciona un :ref:`Securities Listing <schema-securities-"
+"listing>` debe incluir un valor de ``ticker``. Esto permitirá hacer un "
+"seguimiento de las transacciones de ese valor en el mercado identificado. "
+"Sin embargo, los valores pueden negociarse en varias bolsas y, por lo tanto,"
+" se RECOMIENDA proporcionar un identificador único global para el valor. Los"
+" esquemas de identificadores admitidos para valores se enumeran en la página"
+" de referencia<schema-reference>`. Publique el esquema de identificación y "
+"el ID del valor como ``idScheme`` y ``id`` respectivamente."

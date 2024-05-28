@@ -1,0 +1,463 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Ownership
+# This file is distributed under the same license as the Beneficial Ownership Data Standard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Carmen Edery, 2024
+# María Renée Briozzo Mitchell, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
+"Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../standard/concepts.rst:4 4e76c6f344bc4a239791087b2755a407
+msgid "Key concepts"
+msgstr "Conceptos clave"
+
+#: ../../standard/warningbox.rst:3 37840bfcf4ba46669a349eb1ea200c99
+msgid ""
+"This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
+"to the data model, codelists, and technical guidance."
+msgstr ""
+"Esta es la versión 0.4 del Estándar de datos sobre titularidad del "
+"beneficiario real. Incluye actualizaciones del modelo de datos, listas de "
+"códigos y orientación técnica."
+
+#: ../../standard/warningbox.rst:5 1e4cc4cc8fbd4ac7bacd20ab265c73d0
+msgid ""
+"Future changes are anticipated before a version 1.0 release. See the "
+":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
+"information."
+msgstr ""
+"Se anticipan cambios futuros antes del lanzamiento de la versión 1.0. "
+"Consulte las páginas :ref:`Changelog<changelog>` y `About <../about>`_ para "
+"obtener más información."
+
+#: ../../standard/concepts.rst:8 43e2058798794399add75035598fa4c5
+msgid ""
+"Two things inform the Beneficial Ownership Data Standard (BODS) data model:"
+msgstr ""
+"Dos elementos sirven de base para el modelo de datos del Estándar de datos "
+"sobre titularidad del beneficiario real (BODS):"
+
+#: ../../standard/concepts.rst:10 8bf0ee85b764408ca7217a3ffa0636f9
+msgid "what beneficial ownership information is"
+msgstr "qué es la información sobre la propiedad efectiva"
+
+#: ../../standard/concepts.rst:11 12f212823178433ca1838756852b8e84
+msgid "how it is processed and used"
+msgstr "cómo se procesa y se utiliza"
+
+#: ../../standard/concepts.rst:13 12d4107116ce4a5fb0d6d7c3780d30af
+msgid ""
+"Understanding these concepts and the data model will help you publish high-"
+"quality data."
+msgstr ""
+"Al entender estos conceptos y el modelo de datos, podrá publicar datos de "
+"alta calidad."
+
+#: ../../standard/concepts.rst:17 2995a3efb448406c83dea218c349ec17
+msgid "Beneficial ownership concepts"
+msgstr "Conceptos de titularidad del beneficiario real"
+
+#: ../../standard/concepts.rst:19 1bf3c803f9394aa79c237fc78df4476b
+msgid ""
+"A natural **person** is a **beneficial owner** of an **entity** because of "
+"certain **interests**. These interests may be rooted in legal ownership, or "
+"come from controlling the entity, or using its assets. The **relationship** "
+"between the beneficial owner and the entity may be **direct**, **indirect** "
+"or both. Where it is indirect, **intermediary** entities, people and their "
+"relationships, are part of the **beneficial ownership network**."
+msgstr ""
+"Una **persona** física es un **beneficiario real** de una **entidad** "
+"gracias a ciertos **intereses**. Estos intereses pueden estar arraigados en "
+"la titularidad legal o derivarse del control de la entidad o el uso de sus "
+"activos. La **relación** entre el beneficiario real y la entidad puede ser "
+"**directa**, **indirecta** o ambas. Cuando es indirecta, las entidades "
+"**intermediarias**, las personas y sus relaciones forman parte de la **red "
+"de titularidad del beneficiario real**."
+
+#: ../../standard/concepts.rst:21 b565f8eaefa44df2bcde2f311c5672da
+msgid ""
+"People or entities are obliged in some jurisdictions to disclose their "
+"beneficial ownership. They declare this information to a designated agency. "
+"Each **declaration** is a set of **claims** about the entities, people and "
+"relationships within the **subject**’s beneficial ownership network. "
+"Information about those entities, people and relationships is captured by "
+"the agency in **records** which are updated as new claims are made."
+msgstr ""
+"Las personas o entidades tienen la obligación, en algunas jurisdicciones, de"
+" divulgar la titularidad de su beneficiario real. Declaran esta información "
+"ante una agencia designada. Cada **declaración** es un conjunto de "
+"**afirmaciones** sobre las entidades, las personas y las relaciones dentro "
+"de la red de titularidad del beneficiario real del **sujeto**. La "
+"información sobre dichas entidades, personas y relaciones es capturada por "
+"la agencia en **registros** que se actualizan a medida que se realizan "
+"nuevas afirmaciones."
+
+#: ../../standard/concepts.rst-1 2c90747a9cc3417aaced34d23fe8e5d7
+msgid ""
+"A labelled diagram of a beneficial ownership network. Labelled as 'Subject "
+"of beneficial ownership network' is Company E. Labelled as 'Direct "
+"relationship' is a solid line connected to Person 2. Labelled as 'Interest' "
+"is the text '32% shareholding' which sits on that solid line. Company E is "
+"also linked to Company A by a solid line. And Company A is linked to Person "
+"1 by a solid line. Labelled as 'Indirect relationship' is a dotted line "
+"connecting Company E to Person 1. The text '45% shareholding' sits on that "
+"dotted line. Person 1 is labelled 'Beneficial owner'. Company A is labelled "
+"'Intermediary entity'."
+msgstr ""
+"Diagrama etiquetado de una red de titularidad del beneficiario real. La "
+"Empresa E está etiquetada como 'Sujeto de la red de titularidad del "
+"beneficiario real'. Una línea continua conectada a la Persona 2 está "
+"etiquetada como  'Relación directa'. El texto 'Participación accionaria del "
+"32%' ubicado sobre esa línea continua está etiquetado como 'Interés. La "
+"Empresa E también está vinculada a la Empresa A con una línea continua. Y la"
+" Empresa A está vinculada a la Persona 1 con una línea continua. Una línea "
+"punteada que conecta a la Empresa E con la Persona 1 está etiquetada como "
+"'Relación indirecta'. El texto 'Participación accionaria del 45%' está "
+"ubicado sobre esa línea punteada. La Persona 1 está etiquetada como  "
+"'Beneficiario real'. La Empresa A está etiquetada como 'Entidad "
+"intermediaria'."
+
+#: ../../standard/concepts.rst:30 11ea0869dcb542cc81f29a7b83cfafd5
+msgid "BODS Statements represent claims"
+msgstr "Las declaraciones del BODS representan afirmaciones"
+
+#: ../../standard/concepts.rst:32 75a2a111337e4b9fb3bb1ed2377802ea
+msgid ""
+"The highest level object in a BODS dataset is a Statement. Each Statement "
+"represents a claim made by a source at a particular point in time. The claim"
+" can be about one of three elements of a beneficial ownership network:"
+msgstr ""
+"El objeto del más alto nivel en un conjunto de datos del BODS es una "
+"declaración. Cada declaración representa una afirmación realizada por una "
+"fuente en un momento particular. La afirmación puede ser sobre uno de tres "
+"elementos de una red de titularidad del beneficiario real:"
+
+#: ../../standard/concepts.rst:34 991ffdd79225451cb62e6d301ae6cc8b
+msgid "an entity (including companies, trusts and legal arrangements)"
+msgstr ""
+"una entidad (incluidas las empresas, los fideicomisos y las estructuras "
+"jurídicas)"
+
+#: ../../standard/concepts.rst:35 1c7c2986dd48441192f62efb12a93142
+msgid "a person (natural persons who own, control or benefit from entities)"
+msgstr ""
+"una persona (personas físicas que poseen, controlan o se benefician de las "
+"entidades)"
+
+#: ../../standard/concepts.rst:36 8ba218416fb44ae4b811896e0bbc3cac
+msgid ""
+"a relationship (consisting of interests between an entity and an interested "
+"party)"
+msgstr ""
+"una relación (que consiste en intereses entre una entidad y una parte "
+"interesada)"
+
+#: ../../standard/concepts.rst-1 6a3c932fc23a423bb098608a44703382
+msgid ""
+"A relationship statement block (connecting a person and an entity) "
+"containing a source block with type-selfDeclaration and assertedBy value of "
+"Acme Industries Ltd. Statement also has statementDate of 2018-07-12"
+msgstr ""
+"Un bloque de declaración sobre relación (que conecta a una persona y a una "
+"entidad) que contiene un bloque fuente con un valor type-selfDeclaration y "
+"assertedBy de Acme Industries Ltd. Una declaración también tiene una "
+"statementDate de 2018-07-12"
+
+#: ../../standard/concepts.rst:43 007da1c55e974334b6618dafdbe0c948
+msgid ""
+"Representing beneficial ownership information in this way allows people to "
+"make sense of data received from multiple sources over extended periods of "
+"time. In particular, this model means that:"
+msgstr ""
+"Representar la información sobre la propiedad efectiva de esta forma permite"
+" a las personas encontrarle un sentido a los datos recibidos de varias "
+"fuentes durante períodos de tiempo extendidos. En particular, este modelo "
+"implica lo siguiente:"
+
+#: ../../standard/concepts.rst:45 8ba9e13597124c3998f0e240600c1034
+msgid ""
+"statements about beneficial ownership can conflict when they come from "
+"different sources"
+msgstr ""
+"las declaraciones sobre la titularidad del beneficiario real pueden entrar "
+"en conflicto cuando provienen de diferentes fuentes"
+
+#: ../../standard/concepts.rst:46 966859e729f143e3a9a2621975952052
+msgid ""
+"statements about beneficial ownership can overlap, referring to identical "
+"parties"
+msgstr ""
+"las declaraciones sobre la titularidad del beneficiario real puede "
+"superponerse, en lo que respecta a las partes idénticas"
+
+#: ../../standard/concepts.rst:47 cb97dbb252a84b8ca0c23bfde3189a26
+msgid ""
+"historical beneficial ownership snapshots (to answer questions of ‘who knew "
+"what, when?’) can be produced. This is known as `bi-temporal modelling "
+"<https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_."
+msgstr ""
+"pueden producirse capturas de pantalla históricas de la titularidad del "
+"beneficario real (para responder preguntas sobre \"¿quién sabía qué y en qué"
+" momento?\", lo que se conoce como `modelación bitemporal "
+"<https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_."
+
+#: ../../standard/concepts.rst:49 c4d2faa08aa248deac310dd64f51a567
+msgid ""
+"Statements should therefore be considered immutable – presenting details "
+"about an element of beneficial ownership as claimed at a particular point in"
+" time."
+msgstr ""
+"Por lo tanto, las declaraciones deben considerarse inalterables, presentando"
+" detalles sobre un elemento de la titularidad del beneficiario real según se"
+" afirmó en un momento particular."
+
+#: ../../standard/concepts.rst:51 a1760c1a70464b389e8b1b7dfe124fe0
+msgid ""
+"To achieve this, each Statement produced by a data management system needs "
+"to include:"
+msgstr ""
+"Para lograr esto, cada declaración producida por un sistema de gestión de "
+"datos debe incluir lo siguiente:"
+
+#: ../../standard/concepts.rst:53 728f602993ff40199f30e01338d665cd
+msgid ""
+"the details claimed about the entity, person or relationship, as stored by "
+"records in the system"
+msgstr ""
+"Los detalles afirmados sobre la entidad, persona o relación, según lo "
+"registrado en el sistema"
+
+#: ../../standard/concepts.rst:54 fd3cf203722a4f379ab9553ec75190a4
+msgid "information about the source, date and context of the claim"
+msgstr "Información sobre la fuente, la fecha y el contexto de la afirmación"
+
+#: ../../standard/concepts.rst:56 d706f8ef46e84339812b1b0c7a6e798c
+msgid ""
+"After publication, publishers do not edit a Statement to indicate an "
+"information update: they publish a new Statement with the updated details of"
+" the record."
+msgstr ""
+"Tras la publicación, los publicadores no editan una declaración para indicar"
+" una actualización de información: publican una nueva declaración con los "
+"detalles actualizados del registro."
+
+#: ../../standard/concepts.rst:60 dd8611046a6b4f9aac88e2b9b0096e51
+msgid "Beneficial ownership records"
+msgstr "Registros de titularidad del beneficiario real"
+
+#: ../../standard/concepts.rst:62 e470c65cef234e6d971130a9f00a75fe
+msgid ""
+"Data management systems need to internally maintain their own record with an"
+" appropriate ``recordId`` string for each person, entity and relationship "
+"whose details are disclosed. The ``recordId`` has two purposes:"
+msgstr ""
+"Los sistemas de gestión de datos necesitan conservar, a nivel interno, su "
+"propio registro con una cadena de caracteres ``recordId`` correcta para cada"
+" persona, entidad o relación cuyos detalles se divulgan. El ``recordId`` "
+"tiene dos finalidades:"
+
+#: ../../standard/concepts.rst:64 8ea8cf04960642db9b1fa73bdd84c1ba
+msgid "linking entities and persons via relationships"
+msgstr "enlazar a las entidades y a las personas mediante relaciones"
+
+#: ../../standard/concepts.rst:65 1a6f7dc74ce848a4a3f486ac358c7b3e
+msgid "publishing information updates"
+msgstr "publicar actualizaciones de información"
+
+#: ../../standard/concepts.rst:67 91b9d18c05824cc9bb0fc24204bd4d72
+msgid "See :any:`record-identifiers` for full requirements."
+msgstr "Consulte :any:`record-identifiers` para ver los requisitos completos."
+
+#: ../../standard/concepts.rst:70 0c776de779fe4eebbeaebd0b5af2ba72
+msgid "Linking entities and persons via relationships"
+msgstr "Enlazar a las entidades y a las personas mediante relaciones"
+
+#: ../../standard/concepts.rst:72 be6dfa5ebc294e6986c8d26ef97c1d2a
+msgid ""
+"Stable ``recordId`` values in BODS Statements allow the structure of "
+"beneficial ownership networks to be derived from BODS datasets."
+msgstr ""
+"Los valores ``recordId`` estables en las declaraciones del BODS permiten que"
+" la estructura de las redes de titularidad del beneficiario real se deriven "
+"de los conjuntos de datos del BODS."
+
+#: ../../standard/concepts.rst-1 7ec38efdaa834110bcb6ff3e55a42c77
+msgid ""
+"A person node is connected via a solid line to an entity node. A person "
+"statement block sits next to the person node. A relationship statement block"
+" sits next to the solid line. An entity statement block sits next to the "
+"entity node. Within the person statement, recordType is 'person', the "
+"recordId is 'p24d78ae012f1', and the recordDetails show that the person's "
+"name is 'Lev Yotsky'. Within the relationship statement, the recordType is "
+"'relationship' and the recordDetails show that the interestedParty is the "
+"record with recordId 'p24d78ae012f1' and the subject is the record with "
+"recordId 'e3f199ad8e312'. Within the entity statement, the recordType is "
+"'entity', the recordId is 'e3f199ad8e312' and the recordDetails show that "
+"the entity is called 'White Flag Holdings Corp'. These elements represent "
+"Lev Yotsky's relationship with White Flag Holdings Corp."
+msgstr ""
+"El nodo de una persona se conecta a través de una línea continua al nodo de "
+"una entidad. El bloque de declaración sobre persona se ubica junto al nodo "
+"de la persona. Un bloque de declaración sobre relación se ubica junto a la "
+"línea sólida. Un bloque de declaración sobre entidad se ubica junto al nodo "
+"de la entidad. Dentro de la declaración sobre persona, recordType es "
+"'persona', el recordId es 'p24d78ae012f1', y los recordDetails muestran que "
+"el nombre de la persona es 'Lev Yotsky'. Dentro de la declaración sobre "
+"relación, el recordType es 'relación' y los recordDetails muestran que la "
+"interestedParty es el registro con el recordId 'p24d78ae012f1' y el sujeto "
+"es el registro con el recordId 'e3f199ad8e312'. Dentro de la declaración "
+"sobre entidad, el recordType es 'entidad', el recordId es 'e3f199ad8e312' y "
+"los recordDetails muestran que la entidad se llama 'White Flag Holdings "
+"Corp'. Estos elementos representan la relación de Lev Yotsky con White Flag "
+"Holdings Corp."
+
+#: ../../standard/concepts.rst:79 d13f9a8c36154ff4b31e6b4a74878c5b
+msgid ""
+"The Relationship statement holds ``recordId`` values for the interested "
+"party and the subject of a relationship."
+msgstr ""
+"La declaración sobre relación contiene valores ``recordId`` para la parte "
+"interesada y el sujeto de una relación."
+
+#: ../../standard/concepts.rst:82 b5cec2c9c4c94cb4aea47ec6b11fd02d
+msgid "Publishing information updates"
+msgstr "Publicar actualizaciones de información"
+
+#: ../../standard/concepts.rst:84 6197954244334a98b06024dbeae28194
+msgid ""
+"As real-world beneficial ownership changes, agents submit updated details "
+"about people, entities and relationships to the data management system. Then"
+" the system updates its records accordingly and publishes a new BODS "
+"Statement, containing the relevant ``recordId``, for each updated record."
+msgstr ""
+"A medida que la titularidad del beneficiario real cambia, los agentes envían"
+" detalles actualizados sobre personas, entidades y relaciones al sistema de "
+"gestión de datos. Luego, el sistema actualiza sus registros en consecuencia "
+"y publica una nueva declaración de BODS, que contiene el ``recordId`` "
+"relevante para cada registro actualizado."
+
+#: ../../standard/concepts.rst:86 9824b85fb24f473397c9423a6562f77b
+msgid ""
+"People can then use ``recordId`` values to group Statements made over time "
+"to see what information was known when."
+msgstr ""
+"Las personas pueden usar valores ``recordId`` para agrupar declaraciones "
+"realizadas a través del tiempo para ver qué información se conocía entonces."
+
+#: ../../standard/concepts.rst-1 9e8b8ca1ff4542feaa06303b1ea4c3de
+msgid ""
+"A person node is connected via a solid line to an entity node. A "
+"relationship statement block sits next to the solid line. A further two "
+"relationship statement blocks sit on top of the first. All three "
+"relationship statements have recordId 'r-d67fb1a-aa2f3da' and the "
+"recordDetails show that these statements are about a shareholding interest. "
+"The earliest relationship statement has statementDate '2018-07-12' and "
+"recordStatus 'new'. The next has statementDate '2019-11-01' and recordStatus"
+" 'updated'. And the final relationship statement has statementDate "
+"'2021-02-28' and recordStatus 'closed'."
+msgstr ""
+"El nodo de una persona está conectado a través de una línea continua con el "
+"nodo de una entidad. Un bloque de declaración sobre relación está ubicado "
+"junto a la línea continua. Dos bloques de declaración sobre relación "
+"adicionales se ubican sobre el primero. Las tres declaraciones sobre "
+"relación tienen recordId 'r-d67fb1a-aa2f3da' y los recordDetails muestran "
+"que estas declaraciones son sobre un interés de participación accionaria. La"
+" declaración sobre relación más antigua tiene statementDate '2018-07-12' y "
+"recordStatus 'nuevo'. La siguiente tiene statementDate '2019-11-01' y "
+"recordStatus 'actualizado'. Y la declaración sobre relación final tiene "
+"statementDate '2021-02-28' y recordStatus 'cerrado'."
+
+#: ../../standard/concepts.rst:93 13d0767050c745ef8cdb109ca16c5952
+msgid ""
+"Published BODS Statements build a write-only ledger, as new Statements are "
+"issued to amend or confirm details contained in older Statements."
+msgstr ""
+"Las declaraciones del BODS publicadas dan lugar a un libro mayor de solo "
+"escritura, ya que se emiten las nuevas declaraciones para modificar o "
+"confirmar los detalles incluidos en declaraciones más antiguas."
+
+#: ../../standard/concepts.rst:95 00af9162c4b24cfca998e0bc3afc0085
+msgid "See :ref:`information-updates` for full requirements."
+msgstr ""
+"Consulte :ref:`information-updates` para ver los requisitos completos."
+
+#: ../../standard/concepts.rst:98 a77d3880c78c45b3b29f721d3e19ee06
+msgid "Representing beneficial owners"
+msgstr "Representación de los beneficiarios reales"
+
+#: ../../standard/concepts.rst:100 f1d5f0ea4bb049dfaa69dfaa3d4382d2
+msgid ""
+"In a BODS dataset, the fact that a natural person is a beneficial owner of "
+"an entity is represented by including this information in the Relationship "
+"statement linking the two."
+msgstr ""
+"En un conjunto de datos del BODS, el hecho de que una persona física sea un "
+"beneficiario real de una entidad se representa incluyendo esta información "
+"en la declaración sobre relación que vincula a ambos."
+
+#: ../../standard/concepts.rst:102 f24a9bb166b44eacb9bcd94b4d1090e0
+msgid ""
+"It is possible to represent an entity's declaration that it has no "
+"beneficial owners (according to a jurisdiction's definition of a beneficial "
+"owner)."
+msgstr ""
+"Es posible representar la declaración de una entidad de que no tiene "
+"beneficiarios reales (según la definición de beneficiario real de una "
+"jurisdicción)."
+
+#: ../../standard/concepts.rst:104 123ef69a2e1548e88b8c297707cac8e1
+msgid ""
+"It is also possible to include in BODS datasets information about natural "
+"persons who are not beneficial owners. For example, where the managing "
+"officials of an entity are disclosed because nobody meets the jurisdiction's"
+" definition of a beneficial owner."
+msgstr ""
+"Además, es posible incluir información de los conjuntos de datos del BODS "
+"sobre personas físicas que no son beneficiarios reales. Por ejemplo, cuando "
+"se divulgan los gerentes de una entidad porque nadie cumple con la "
+"definición de beneficiario real de la jurisdicción."
+
+#: ../../standard/concepts.rst:106 5e3909bc0bd44d098a2c128ec05c53f0
+msgid "See :ref:`representing-bo` for full requirements."
+msgstr "Consulte :ref:`representing-bo` para ver los requisitos completos."
+
+#: ../../standard/concepts.rst:109 970f440b2038460e9dfc1a551d22488c
+msgid "The data model"
+msgstr "El modelo de datos"
+
+#: ../../standard/concepts.rst:111 ff9fb1431731447a83169d10ee9172ce
+msgid ""
+"Use the :doc:`Schema browser <schema-browser>` to explore the structure of "
+"the data model in full. Read the :any:`Schema reference <schema-reference>` "
+"for detailed definitions and requirements for each object and field."
+msgstr ""
+"Utilice el :doc:`Schema browser <schema-browser>` para explorar la "
+"estructura del modelo de datos en su totalidad. Consulte la :any:`Schema "
+"reference <schema-reference>` para ver definiciones y requisitos detallados "
+"para cada objeto y campo."
+
+#: ../../standard/concepts.rst:113 761f06f84d764ee3b84290245c495fb9
+msgid ""
+"The objects and fields of the data model allow you to represent a range of "
+"real-world situations. Explore related requirements in the :any:`modelling-"
+"requirements` section."
+msgstr ""
+"Los objetos y los campos del modelo de datos le permiten representar una "
+"variedad de situaciones del mundo real. Explore los requisitos relacionados "
+"en la sección :any:`modelling-requirements`."
