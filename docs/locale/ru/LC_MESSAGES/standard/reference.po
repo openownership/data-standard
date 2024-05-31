@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Galia Williams, 2024
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
+# Galia Williams, 2024
 # Kateryna Volobuieva, 2024
 # Rachel Vint, 2024
 # 
@@ -493,7 +493,7 @@ msgstr "ДОЛЖНА быть указана причина (`reason`)."
 
 #: ../../standard/reference.rst:331 94d83443ca89484d8d40128ce29a152e
 msgid "Codelists"
-msgstr "Списки допустимых значений"
+msgstr "Codelists (Списки допустимых значений)"
 
 #: ../../standard/reference.rst:334 a4cf84d680ed4dc0bc4dbc9c6078bfa3
 msgid "Address Type"
