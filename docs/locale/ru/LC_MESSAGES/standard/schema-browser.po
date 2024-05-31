@@ -6,6 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -87,7 +88,7 @@ msgid ""
 "see the :ref:`schema-reference`."
 msgstr ""
 "Подробное руководство от A до Я по объектам схемы Стандарта данных и спискам"
-" допустимых значений приводится в :ref:`Справочнике схемы`."
+" допустимых значений приводится в :ref:`schema-reference`."
 
 #: ../../standard/schema-browser.rst:22 a9974f34febe4993ad00709170a45571
 msgid "Statements array"

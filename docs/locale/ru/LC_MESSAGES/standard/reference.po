@@ -7,6 +7,7 @@
 # Galia Williams, 2024
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -375,9 +376,7 @@ msgstr "Record Details (relationship) (Сведения об элементе (�
 
 #: ../../standard/reference.rst:224 465e6b34389745c7bfe075ead86dc540
 msgid "See :ref:`representing-bo` for detailed requirements."
-msgstr ""
-"Подробное описание требований см. в разделе :ref:`Отображение бенефициарных "
-"владельцев`."
+msgstr "Подробное описание требований см. в разделе :ref:`representing-bo`."
 
 #: ../../standard/reference.rst-1 4016d83e353a4aeeb505789b008261a2
 msgid ""
@@ -394,8 +393,8 @@ msgstr "Record Id (Идентификатор элемента)"
 #: ../../standard/reference.rst:240 34587424b9ce49e3b0cde8fbb2fc298d
 msgid "See :ref:`record-identifiers` for information about Record Ids"
 msgstr ""
-"Информацию об идентификаторах элементов смотрите в разделе "
-":ref:`Идентификаторы элементов`."
+"Информацию об идентификаторах элементов смотрите в разделе :ref:`record-"
+"identifiers`."
 
 #: ../../standard/reference.rst-1 4e591769b1074d29b5c440183b32632b
 msgid ""
@@ -474,7 +473,7 @@ msgid ""
 "Ids"
 msgstr ""
 "Рекомендации по генерированию уникальных идентификаторов записи см. в "
-"разделе :ref:`Создание записей`."
+"разделе :ref:`generating-statements`."
 
 #: ../../standard/reference.rst-1 dbee3c6d06034220bb67327d4fe59de2
 msgid ""

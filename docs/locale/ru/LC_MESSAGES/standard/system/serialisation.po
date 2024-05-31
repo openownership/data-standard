@@ -6,6 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -142,7 +143,7 @@ msgstr "1810-4eed-b845-4d9f4d97f9d5"
 
 #: ../../standard/system/serialisation.rst:77 0ba3f8fa0c41486da99d1191769d046c
 msgid "entity"
-msgstr "субъект"
+msgstr "entity"
 
 #: ../../standard/system/serialisation.rst:78 6edc27f180864e9089b6585527d8d4d2
 msgid "GB-COH"
@@ -162,7 +163,7 @@ msgstr "e3b6-4fd7-8a6a-930e46cf9957"
 
 #: ../../standard/system/serialisation.rst:82 851669a37d50477897ab6e05bf190715
 msgid "person"
-msgstr "физическое лицо"
+msgstr "person"
 
 #: ../../standard/system/serialisation.rst:83 8fe6796597e74c3a812260cfc1447088
 msgid "MX-RFC"
@@ -182,4 +183,4 @@ msgstr "1681-4064-ab51-1e703fbafa"
 
 #: ../../standard/system/serialisation.rst:88 4fe8e97689b9424f8211850f0e4d111c
 msgid "relationship"
-msgstr "отношения"
+msgstr "relationship"

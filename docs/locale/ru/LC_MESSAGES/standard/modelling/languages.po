@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Kateryna Volobuieva, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,13 +45,14 @@ msgid ""
 "people’s names, use an entry in the names array with ``name.type`` "
 "‘translation’ or ‘transliteration’"
 msgstr ""
-"ФИО физических лиц используйте элемент в массиве ``names``, у которого "
-"параметр ``name.type` имеет значение ‘translation’ (перевод) или "
-"‘transliteration’ (транслитерация);"
+"ФИО физических лиц используйте элемент в массиве names, у которого параметр "
+"``name.type`` имеет значение ‘translation’ (перевод) или ‘transliteration’ "
+"(транслитерация);"
 
 #: ../../standard/modelling/languages.rst:10 413423e90b43493f9ce5398af9eec3ae
 msgid "entity names, use an entry in the ``alternativeNames`` array"
-msgstr "названий субъектов используйте элемент в массиве``alternativeNames``;"
+msgstr ""
+"названий субъектов используйте элемент в массиве ``alternativeNames`` ;"
 
 #: ../../standard/modelling/languages.rst:12 aa9004b279db476a90a2488d75fadf12
 msgid "entity types use ``entityType.details``"
@@ -58,7 +60,7 @@ msgstr "типов субъектов используйте поле ``entityTy
 
 #: ../../standard/modelling/languages.rst:14 b6e3e248430b430f81de86d6dc6bc96e
 msgid "interest types use ``interest.details``"
-msgstr "типов долей участия используйте поле ``interest.details`.`"
+msgstr "типов долей участия используйте поле ``interest.details`` ."
 
 #: ../../standard/modelling/languages.rst:16 af6152cc36894ae5b87cc55cdb6247ca
 msgid "For other fields or entire records, use an annotation."

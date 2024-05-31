@@ -6,6 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,10 +32,12 @@ msgid ""
 "These fictional examples highlight key elements of how ownership and control"
 " information is built up through the use of statements."
 msgstr ""
+"В этих вымышленных примерах показаны ключевые аспекты того, как формируется "
+"информация о владении и контроле через использование записей."
 
 #: ../../examples/index.rst:11 1fa151b77f7d41f99dcbd2a513f05a80
 msgid "A single, direct beneficial owner"
-msgstr ""
+msgstr "Единоличный прямой бенефициарный владелец"
 
 #: ../../examples/index.rst:13 15247ff39e304f3886934bbb62a872f1
 msgid ""
@@ -42,10 +45,13 @@ msgid ""
 "beneficial ownership (and 100% legal ownership) of Profitech Ltd by Jennifer"
 " Hewitson-Smith."
 msgstr ""
+"Три записи (субъект, физическое лицо и отношения), которые описывают "
+"бенефициарное владение (и 100%-ное юридическое владение) компанией Profitech"
+" Ltd, осуществляемое Дженнифер Хьюитсон-Смит."
 
 #: ../../examples/index.rst:21 c5474214dbd64bacbac298e91314ca3d
 msgid "A trust-like arrangement"
-msgstr ""
+msgstr "Аналогичные трасту правоотношения"
 
 #: ../../examples/index.rst:23 c63fac59ebfd475d9d431e099a2afd81
 msgid ""
@@ -54,20 +60,28 @@ msgid ""
 "information about the settlor and trustees disclosed. The beneficiary is "
 "exempt from disclosure."
 msgstr ""
+"Этот пример демонстрирует, как с помощью данных СДБВ можно отобразить "
+"бенефициарное владение аналогичными трасту правоотношениями. "
+"Зарегистрированы правоотношения в форме fiducie (доверительное управление), "
+"при этом информация об учредителе и доверительных управляющих раскрыта. "
+"Бенефициарный владелец освобожден от раскрытия информации."
 
 #: ../../examples/index.rst:31 1a6ff90a6d624df39f6ef258501d4ac6
 msgid "An entity statement for a listed company"
 msgstr ""
+"Запись о субъекте в отношении компании, зарегистрированной на фондовой бирже"
 
 #: ../../examples/index.rst:33 58763970f5fd45d4a66160fe70ff53fc
 msgid ""
 "This statement demonstrates how the details of a listed company can be "
 "published in BODS format."
 msgstr ""
+"Эта запись демонстрирует, как сведения о компании, зарегистрированной на "
+"фондовой бирже, могут быть опубликованы в формате СДБВ."
 
 #: ../../examples/index.rst:39 ac9303ea413d47b28daef39c7d4401b4
 msgid "Updating information over time 1"
-msgstr ""
+msgstr "Обновление информации с течением времени - 1"
 
 #: ../../examples/index.rst:41 fda341e5ceb8470e844331ec5795f7b0
 msgid ""
@@ -76,17 +90,23 @@ msgid ""
 "be disclosed when they own at least 25% of the company. The trust "
 "arrangement itself is not disclosed."
 msgstr ""
+"Этот пример демонстрирует постепенный переход права собственности на траст "
+"от единоличного владельца к работникам. В этом примере бенефициарный "
+"владелец должен быть раскрыт, если он владеет не менее чем 25%-ной долей в "
+"компании. Тип трастовых правоотношений не раскрыт."
 
 #: ../../examples/index.rst:43 61b8b7333fe641fba9c463c1013cf0c6
 msgid ""
 "`Example JSON <https://github.com/openownership/data-"
 "standard/tree/0.4.0/examples/tecido.json>`__"
 msgstr ""
+"`Пример в формате JSON <https://github.com/openownership/data-"
+"standard/tree/0.4.0/examples/tecido.json>`__"
 
 #: ../../examples/index.rst:45 ../../examples/index.rst:74
 #: 0f357df538a442998a218792ba4ee766 a027214835a34b1e88f9a81cdeffbc41
 msgid "**Timeline**"
-msgstr ""
+msgstr "**Хронология**"
 
 #: ../../examples/index.rst:51 ../../examples/index.rst:80
 #: 59cc7b14ba1b4e93be42df2b06528a27 fda434e6f71a4910b423c948562fa2d8
@@ -95,7 +115,7 @@ msgstr "Дата записи"
 
 #: ../../examples/index.rst:52 f71d5d49953d4444bd710cd0366bf33c
 msgid "Declaration"
-msgstr ""
+msgstr "Декларация"
 
 #: ../../examples/index.rst:53 ../../examples/index.rst:81
 #: 14bb7daa00e048deb7c273f152ad3e64 81d4312bc7cc409594ab11be21c48858
@@ -104,52 +124,58 @@ msgstr "Описание"
 
 #: ../../examples/index.rst:54 d4a344d818ce4f009e14dc0e4601de2e
 msgid "2019-01-20"
-msgstr ""
+msgstr "2019-01-20"
 
 #: ../../examples/index.rst:55 a4d4efe0e9a84e1d90e97595156a3c1f
 msgid "bo-jtc-8755982746"
-msgstr ""
+msgstr "bo-jtc-8755982746"
 
 #: ../../examples/index.rst:56 4506fdc53a494667a4900ae8f4810d40
 msgid ""
 "Tecido is registered with Maria Esteves as sole beneficial owner, legal "
 "owner and director."
 msgstr ""
+"Компания Tecido зарегистрирована на Марию Эстевес, которая является ее "
+"единоличным бенефициарным владельцем, законным владельцем и директором."
 
 #: ../../examples/index.rst:57 36ad792dcb8b4017a73c7fdbdde994cb
 msgid "2021-09-25"
-msgstr ""
+msgstr "2021-09-25"
 
 #: ../../examples/index.rst:58 a50b0880f1e34819bbd762f7b908eadd
 msgid "bo-tjf-7435753839"
-msgstr ""
+msgstr "bo-tjf-7435753839"
 
 #: ../../examples/index.rst:59 b9d22556301b4d6eaf08b8ae75fe178f
 msgid ""
 "60% of shares are transferred to a corporate trustee company, Shear Trust."
 msgstr ""
+"60% акций передано корпоративному доверительному управляющему — компании "
+"Shear Trust."
 
 #: ../../examples/index.rst:60 2abc49845dcd4c9292e6b37ba6dc720f
 msgid "2022-09-25"
-msgstr ""
+msgstr "2022-09-25"
 
 #: ../../examples/index.rst:61 49c26eb7bb08445fa0d7b88dc623a071
 msgid "bo-kks-9337584037"
-msgstr ""
+msgstr "bo-kks-9337584037"
 
 #: ../../examples/index.rst:62 40ab0601c0934aac9ced1e10caa5bafb
 msgid ""
 "An additional 10% of shares are transferred to the trustee company, which "
 "now holds 70% of the shares."
 msgstr ""
+"Еще 10% акций передано доверительной управляющей компании, которая теперь "
+"владеет 70% акций."
 
 #: ../../examples/index.rst:63 11d6ebf928f1402490169124e0f7634b
 msgid "2023-03-03"
-msgstr ""
+msgstr "2023-03-03"
 
 #: ../../examples/index.rst:64 3c77338602554c2c9c207f63560707ec
 msgid "bo-tns-6849443385"
-msgstr ""
+msgstr "bo-tns-6849443385"
 
 #: ../../examples/index.rst:65 1043df8b33b54b338ae60769cd595f62
 msgid ""
@@ -157,46 +183,57 @@ msgid ""
 "now holds 80% of the shares. The original owner is now below the threshold "
 "for reporting and is no longer disclosed as a beneficial owner."
 msgstr ""
+"Еще 10% акций передано доверительной управляющей компании, которая теперь "
+"владеет 80% акций. Теперь первоначальный владелец находится ниже порога "
+"отчетности и больше не указывается как бенефициарный владелец."
 
 #: ../../examples/index.rst:68 5c864f2cee124679b94bbf7abfaab476
 msgid "Updating information over time 2"
-msgstr ""
+msgstr "Обновление информации с течением времени - 2"
 
 #: ../../examples/index.rst:70 724ef41abd91467cbdfc3f456c1327a2
 msgid ""
 "This example demonstrates how a confirmation process and changes in "
 "beneficial ownership information are represented in BODS."
 msgstr ""
+"Этот пример демонстрирует, как в системе данных СДБВ отображается процедура "
+"подтверждения, а также изменения в информации о бенефициарном владении."
 
 #: ../../examples/index.rst:72 d528d563dfb647f8bc3e9dd45828ac30
 msgid ""
 "`Example JSON <https://github.com/openownership/data-"
 "standard/tree/0.4.0/examples/fermcat.json>`__"
 msgstr ""
+"`Пример в формате JSON <https://github.com/openownership/data-"
+"standard/tree/0.4.0/examples/fermcat.json>`__"
 
 #: ../../examples/index.rst:82 c168d2ce02c04f318c55a1d6e2ac1e04
 msgid "2019-09-11"
-msgstr ""
+msgstr "2019-09-11"
 
 #: ../../examples/index.rst:83 a64b8cf765694aa29afff62e95b4566c
 msgid ""
 "Fermcat is registered as having two beneficial owners who each own 50% of "
 "the company."
 msgstr ""
+"Компания Fermcat зарегистрирована на двух бенефициарных владельцев, каждый "
+"из которых владеет 50%-ной долей в компании."
 
 #: ../../examples/index.rst:84 369957c7cfb8478bb0dc24a98d818980
 msgid "2020-09-11"
-msgstr ""
+msgstr "2020-09-11"
 
 #: ../../examples/index.rst:85 c327f74a077148418f299f5fd025b426
 msgid ""
 "The yearly confirmation process is completed. There have been no changes in "
 "beneficial ownership."
 msgstr ""
+"Завершена ежегодная процедура подтверждения. В бенефициарном владении не "
+"произошло никаких изменений."
 
 #: ../../examples/index.rst:86 3c8d9daef5cf4027aa5724bf0a697034
 msgid "2021-09-11"
-msgstr ""
+msgstr "2021-09-11"
 
 #: ../../examples/index.rst:87 75012907e8be42b689583a14e8ceb0fd
 msgid ""
@@ -205,20 +242,26 @@ msgid ""
 "Fermcat's accountant to update the register with this change. After updating"
 " the register she files the confirmation statement."
 msgstr ""
+"В апреле 2021 г. один из владельцев умирает, и его акции переходят к его "
+"близкому родственнику. Когда начинается ежегодная процедура подтверждения, "
+"бухгалтеру компании Fermcat предлагается внести в реестр это изменение. "
+"После обновления данных в реестре она регистрирует запись о подтверждении."
 
 #: ../../examples/index.rst:88 e950c2d3ce2b441ca8491e803a58e1f7
 msgid "2022-01-21"
-msgstr ""
+msgstr "2022-01-21"
 
 #: ../../examples/index.rst:89 e6fa3889da5b43d2a0a973de4aacd6d5
 msgid ""
 "One of the co-owners is bought out by the other. Fermcat's accountant "
 "updates the register to reflect this change."
 msgstr ""
+"Доля одного из совладельцев выкуплена другим совладельцем. Бухгалтер "
+"компании Fermcat обновляет реестр с учетом этого изменения."
 
 #: ../../examples/index.rst:92 53cbdc69f09d40308e38544a4db4e797
 msgid "Other examples"
-msgstr ""
+msgstr "Другие примеры"
 
 #: ../../examples/index.rst:94 0ec8161ed8a042fa87a72766d669579c
 msgid ""
@@ -226,6 +269,9 @@ msgid ""
 "repository. These examples include representing indirect ownership, use of "
 "annotations, and representing state owned enterprises."
 msgstr ""
+"В репозитории стандарта есть и другие примеры корректных JSON-файлов СДБВ. "
+"Эти примеры демонстрируют отображение косвенного владения, использование "
+"примечаний и отображение информации о государственных прредприятиях."
 
 #: ../../examples/index.rst:96 de00e70daac248dfa5fa312d1f6b6b6a
 msgid ""
@@ -236,3 +282,9 @@ msgid ""
 "standard/tree/0.2.0/examples>`__  | `v0.1 "
 "<https://github.com/openownership/data-standard/tree/0.1.0/examples>`__ )"
 msgstr ""
+"Примеры данных (`версия 0.4 <https://github.com/openownership/data-"
+"standard/tree/0.4.0/examples>`__ | `версия 0.3 "
+"<https://github.com/openownership/data-standard/tree/0.3.0/examples>`__ |  "
+"`версия 0.2 <https://github.com/openownership/data-"
+"standard/tree/0.2.0/examples>`__  | `версия 0.1 "
+"<https://github.com/openownership/data-standard/tree/0.1.0/examples>`__ )"
