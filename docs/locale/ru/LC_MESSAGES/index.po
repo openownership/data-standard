@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
+# Kateryna Volobuieva, 2024
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2022\n"
+"Last-Translator: Kateryna Volobuieva, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr ""
 
 #: ../../index.rst:2 fc13bceebec2410c8e7da1650e465254
 msgid "Beneficial Ownership Data Standard (v0.4)"
-msgstr ""
+msgstr "Стандарт данных о бенефициарном владении (версия 0.4)"
 
 #: ../../index.rst:4 bcdb8d77de3240b5baa001a40c5abd3d
 msgid ""
@@ -31,6 +32,9 @@ msgid ""
 "guidance for collecting, sharing and using high-quality beneficial ownership"
 " data."
 msgstr ""
+"Стандарт данных о бенефициарном владении (СДБВ) —это открытый стандарт, "
+"который содержит рекомендации по сбору, передаче и использованию "
+"высококачественных данных о бенефициарном владении."
 
 #: ../../index.rst:6 be031c1dc1de4bcaa66bffd88cb94668
 msgid ""
@@ -40,34 +44,44 @@ msgid ""
 "Find out more about the :doc:`governance of BODS <../about/governance>` and "
 "how to get involved."
 msgstr ""
+"Он разработан `Open Ownership <https://www.openownership.org/>`_ — "
+"некоммерческой организацией, занимающейся проблемами прозрачности "
+"бенефициарного владения, в партнерстве с `Open Data Services "
+"<https://opendataservices.coop/>`_. Узнайте больше об :doc:`управлении "
+"процессом разработки СДБВ <../about/governance>` и о том, как принять "
+"участие."
 
 #: ../../index.rst:12 7739934b9f874808beded5af7cecba37
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
 #: ../../index.rst:14 343e893d4203453f9c519acaee081119
 msgid ""
 "Learn about beneficial ownership and why a standardised format for data is "
 "important."
 msgstr ""
+"Узнайте о бенефициарном владении и о том, почему важно использовать "
+"стандартифированный формат для отображения данных."
 
 #: ../../index.rst:18 66a86c7baa804b929aaa415db155db3e
 msgid ":ref:`What is beneficial ownership? <primer>`"
-msgstr ""
+msgstr ":ref:`Что такое бенефициарное владение? <primer>`"
 
 #: ../../index.rst:22 85dfef5cf3824d3ab341ee16465a3b28
 msgid ":ref:`What is the data standard? <whatisbods>`"
-msgstr ""
+msgstr ":ref:`Что такое стандарт данных? <whatisbods>`"
 
 #: ../../index.rst:26 f3879e8d222740548009cab83cfa2fb1
 msgid ":ref:`About the standard's development <about>`"
-msgstr ""
+msgstr ":ref:`О разработке стандарта <about>`"
 
 #: ../../index.rst:30 a573902516874d6c910ef104fb8629f6
 msgid ""
 "`Open Ownership's work, team and purpose "
 "<https://www.openownership.org/en/about/>`_"
 msgstr ""
+"`Деятельность, команда и цель организации Open Ownership "
+"<https://www.openownership.org/en/about/>`_"
 
 #: ../../index.rst:37 704368b0b86949e89d71b4dff5107a86
 msgid "For Developers"
@@ -79,16 +93,16 @@ msgstr "Сведения об оформлении и публикации да�
 
 #: ../../index.rst:43 1b4bc18d796a4789912aaa35c7d666dd
 msgid ":ref:`Key Concepts <key-concepts>`"
-msgstr ""
+msgstr ":ref:`Основные концепции <key-concepts>`"
 
 #: ../../index.rst:47 fc9de6820145423f88cc6b492e87f101
 msgid ":ref:`Modelling requirements  <modelling-requirements>`"
-msgstr ""
+msgstr ":ref:`Требования к моделированию  <modelling-requirements>`"
 
 #: ../../index.rst:51 310da8c541ba4a7597ddc9149f955f6b
 msgid ":ref:`Schema browser <schema-browser>`"
-msgstr ""
+msgstr ":ref:`Браузер схемы <schema-browser>`"
 
 #: ../../index.rst:55 635fe9d295bb42c6b14c5d13413302a2
 msgid ":ref:`System requirements <system-requirements>`"
-msgstr ""
+msgstr ":ref:`Системные требования <system-requirements>`"

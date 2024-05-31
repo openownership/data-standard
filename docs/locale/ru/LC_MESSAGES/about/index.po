@@ -7,6 +7,8 @@
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
 # Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2022
 # Galia Williams, 2022
+# Kateryna Volobuieva, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Galia Williams, 2022\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,12 +34,16 @@ msgid ""
 "This website contains the specification of version 0.4 of the Beneficial "
 "Ownership Data Standard (BODS) and support for its use."
 msgstr ""
+"Данный веб-сайт содержит спецификацию версии 0.4 Стандарта данных о "
+"бенефициарном владении (СДБВ) и рекомендации по его использованию."
 
 #: ../../about/index.rst:8 d4726f521bcf404697719e63ac2a5167
 msgid ""
 "BODS is an open standard for collecting, sharing and using high-quality, "
 "machine-readable data on beneficial ownership."
 msgstr ""
+"BODS — это открытый стандарт по сбору, предоставлению и использованию "
+"высококачественных машиночитаемых данных о бенефициарном владении."
 
 #: ../../about/index.rst:22 74f69d57e5fc4cec93b4478b8b946206
 msgid "Background"
@@ -53,6 +59,14 @@ msgid ""
 "transparency policy goals such as exposing transnational networks of illicit"
 " financial flows or supporting effective and timely due diligence."
 msgstr ""
+"Сбор, хранение и предоставление информации о бенефициарном владении в виде "
+"`структурированных и совместимых данных "
+"<https://www.openownership.org/en/principles/structured-data/>`__ улучшает "
+"ее функциональность. Это снижает затраты на создание, использование и "
+"хранение информации и обеспечивает более высокую вероятность достижения "
+"целей политики прозрачности бенефициарного владения, таких как раскрытие "
+"транснациональных сетей незаконных финансовых потоков и содействие "
+"эффективному и своевременному проведению комплексных проверок."
 
 #: ../../about/index.rst:30 81b051aa177745ed8df2b4f85c595e43
 msgid ""
@@ -60,6 +74,10 @@ msgid ""
 " practical framework for collecting and publishing beneficial ownership "
 "data, resulting in data that is interoperable and high quality."
 msgstr ""
+"СДБВ обеспечивает прозрачность бенефициарного владения, предоставляя "
+"надежную концептуальную и практическую основу для сбора и публикации данных "
+"о бенефициарном владении, в результате чего данные становятся совместимыми, "
+"и повышается их качество."
 
 #: ../../about/index.rst:32 c2f8d84a7f194819859642f9d486ace2
 msgid ""
@@ -78,6 +96,10 @@ msgid ""
 "beneficial ownership specialists and other interested parties also provides "
 "advice and helps guide the development of BODS."
 msgstr ""
+"Открытая :any:`рабочая группа по разработке стандарта данных <working-"
+"group>` , состоящая из экспертов по данным, специалистов по бенефициарному "
+"владению и других заинтересованных сторон, также предоставляет консультации "
+"и задает направление дальнейшей работе по разработке СДБВ."
 
 #: ../../about/index.rst:40 d1212e7b4cad4498a44ffaecda5427d6
 msgid "Current status of the standard"
@@ -89,6 +111,9 @@ msgid ""
 "documented in the :ref:`changelog <changelog>`, and the documentation of "
 "previous versions is maintained in archive form."
 msgstr ""
+"Это версия 0.4 Стандарта данных о бенефициарном владении. Изменения "
+"документально отражены в :ref:`логе изменений <changelog>`, а документация "
+"предыдущих версий хранится в архиве."
 
 #: ../../about/index.rst:48 16777f2b89084c8f859d87488d458a89
 msgid ""
@@ -110,6 +135,12 @@ msgid ""
 "into the schema can be checked using the Data Review Tool. See "
 ":ref:`Conformance and validation <conformance>` for more information."
 msgstr ""
+"`Схема <https://standard.openownership.org/en/latest/schema/index.html>`__ "
+"содержит структуру, поля и списки допустимых значений. Ограничения в "
+"отношении валидации по возможности включены в схему JSON. Ограничения, "
+"которые нельзя интегрировать в схему, могут быть проверены с помощью "
+"Средства анализа данных. Дополнительную информацию см. в разделе "
+":ref:`Соответствие и валидация <conformance>`."
 
 #: ../../about/index.rst:56 a105a121fb29466d9a7e2a9e4207db75
 msgid "Get involved"
@@ -141,6 +172,10 @@ msgid ""
 "be involved in the development and review of the Standard, see the "
 ":doc:`Governance <governance>` page."
 msgstr ""
+"Любой человек может подать запрос на добавление функции или отчет об ошибке,"
+" помочь в разработке функций по поданным заявкам или внести предложение по "
+"реализации. Если вы хотите принять участие в разработке и анализе Стандарта,"
+" см. станицу :doc:`Управление <governance>`."
 
 #: ../../about/index.rst:73 87911b42591a499987c2c61d39d31569
 msgid "Partners and funders"
@@ -157,6 +192,16 @@ msgid ""
 "development-office>`__ and the `Norwegian Agency for Development Cooperation"
 " (Norad) <https://www.norad.no/en/front/>`__."
 msgstr ""
+"Первоначальная разработка СДБВ была профинансирована организацией Open "
+"Ownership в рамках проекта, который спонсировался `Министерством "
+"международного развития Великобритании (DfID) "
+"<https://www.gov.uk/government/organisations/department-for-international-"
+"development>`__ , и его разработка продолжает финансироваться `Министерством"
+" иностранных дел, по делам Содружества и развития "
+"Великобритании<https://www.gov.uk/government/organisations/foreign-"
+"commonwealth-development-office>`__ и `Норвежским агентством по "
+"сотрудничеству в области развития (Norad) "
+"<https://www.norad.no/en/front/>`__."
 
 #: ../../about/index.rst:81 95bec3356d2341f0a71220ecf05d8027
 msgid ""
@@ -166,6 +211,12 @@ msgid ""
 "executive team who are overseen by a Steering Group made up of leading "
 "transparency and accountability organisations."
 msgstr ""
+"`Open Ownership <https://www.openownership.org/en/>`__ — это некоммерческая "
+"организация, способствующая глобальному сдвигу в сторону прозрачности и "
+"подотчетности в сфере корпоративной собственности и контроля. Управление "
+"организацией осуществляет исполнительная команда, которую контролирует "
+"Руководящая группа, состоящая из ведущих организаций, занимающихся "
+"проблемами обеспечения прозрачности и подотчетности."
 
 #: ../../about/index.rst:83 e154220caf4d4b18927ec9df3164272e
 msgid ""
@@ -235,3 +286,6 @@ msgid ""
 "To contact the data standard support team at Open Ownership, please email "
 "support@openownership.org."
 msgstr ""
+"Чтобы связаться со службой поддержки по вопросам стандартов данных "
+"организации Open Ownership, отправьте письмо по адресу "
+"support@openownership.org."

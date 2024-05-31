@@ -6,6 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,7 +39,7 @@ msgstr ""
 "Записи СЛЕДУЕТ рассматривать как неизменные: после того, как Запись была "
 "опубликована, она НЕ ДОЛЖНА публиковаться повторно с тем же идентификатором "
 "записи (``statementID``) и другими значениями свойств. Дополнительную "
-"информацию см. в разделе :ref:`Обновленная информация`."
+"информацию см. в разделе :ref:`information-updates`."
 
 #: ../../standard/system/generating-statements.rst:8
 #: 658194ae9f2249a7a157a8b881e1c1f5

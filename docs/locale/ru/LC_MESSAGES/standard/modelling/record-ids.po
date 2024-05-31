@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Kateryna Volobuieva, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,7 +77,7 @@ msgstr ""
 "также идентифицирующей информации предмета сети бенефициарного владения, в "
 "которой фигурирует субъект или физическое лицо. Рекомендации по отображению "
 "идентифицирующей информации субъектов и физических лиц см. в разделе "
-":ref:`Общие идентификаторы`."
+":ref:`guidance-identifiers` ."
 
 #: ../../standard/modelling/record-ids.rst:15 74f5b7449539407dac229061af80f914
 msgid ""
@@ -98,8 +99,8 @@ msgid ""
 "Record identifiers are used for :ref:`representing-bo` and for "
 ":ref:`information-updates`."
 msgstr ""
-"Идентификаторы элементов используются для :ref:`отображения бенефициарных "
-"владельцев` и для публикации :ref:`обновленной информации`."
+"Идентификаторы элементов используются для :ref:`representing-bo` и для "
+"публикации :ref:`information-updates`."
 
 #: ../../standard/modelling/record-ids.rst:20 07b28aa5ca7648659388c194158978e4
 msgid "Example scenario"
