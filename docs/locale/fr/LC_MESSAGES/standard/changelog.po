@@ -4,6 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Cécile Guarin, 2024
 # Katia Da Silva, 2024
 # 
 #, fuzzy
@@ -23,16 +24,16 @@ msgstr ""
 
 #: ../../standard/changelog.rst:5 c981b16ddea34110adfd13df6949a1ff
 msgid "ChangeLog"
-msgstr ""
+msgstr "Journal des modifications"
 
 #: ../../standard/warningbox.rst:3 b25d215fcbb6487bbf5c6c52a773baea
 msgid ""
 "This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model, codelists, and technical guidance."
 msgstr ""
-"Ceci est la v.04 de la norme de données sur la propriété effective "
-"comprenant des mises à jour du modèle de données, des listes de codes et des"
-" orientations techniques."
+"Ceci est la v.04 de la norme relative aux données sur la propriété effective"
+" comprenant des mises à jour du modèle de données, des listes de codes et "
+"des orientations techniques."
 
 #: ../../standard/warningbox.rst:5 3348e6dfff264a19965018ae3908de64
 msgid ""
@@ -40,152 +41,180 @@ msgid ""
 ":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
 "information."
 msgstr ""
-"Des modifications ultérieures sont anticipées avant la version 1.0. Voir les"
-" pages :ref:`Changelog <changelog>` et `About <../about>`_ pages pour plus "
-"d'informations."
+"Des modifications ultérieures sont prévues avant le lancement de la version "
+"1.0. Voir les pages :ref:`Journal des modifications <changelog>` et `À "
+"propos <../about>`_ pour plus d'informations."
 
 #: ../../standard/changelog.rst:10 b820ba66a6de403cb91ebb4d729f3fba
 msgid "[0.4] - 2024-05-08"
-msgstr ""
+msgstr "[0.4] - 2024-05-08"
 
 #: ../../standard/changelog.rst:13 ../../standard/changelog.rst:78
 #: ../../standard/changelog.rst:134 ../../standard/changelog.rst:201
 #: 1f13b5acc43640cbacc8e504106db8bc 4064740da5c044bc8ea66aac69dedc63
 #: ea4a74a16def4c8aaaf69b069a27b943 a37f8e213a194df3875aacb43e482a78
 msgid "Added"
-msgstr ""
+msgstr "Ajouts"
 
 #: ../../standard/changelog.rst:14 53ebba0d29ab49a4bdf61eabf941902c
 msgid ""
 "``recordDetails`` object to contain person, entity or relationship fields "
 "within a Statement."
 msgstr ""
+"Objet ``recordDetails`` qui contient les champs de personne, d'entité ou de "
+"relation dans une déclaration."
 
 #: ../../standard/changelog.rst:15 4704ab751f4747beb33593d26669986d
 msgid ""
 "``declaration`` and ``declarationSubject`` to support grouping of Statements"
 " by parent declaration (filing) or by the declarant"
 msgstr ""
+"``declaration`` et ``declarationSubject`` pour faciliter le regroupement des"
+" déclarations par déclaration principale (dépôt) ou par déclarant"
 
 #: ../../standard/changelog.rst:16 a6bb12aa2caa46a082254cd09bece40a
 msgid "``recordId`` and ``recordStatus`` to support information updates"
 msgstr ""
+"``recordId`` et ``recordStatus`` pour faciliter les mises à jour des "
+"informations"
 
 #: ../../standard/changelog.rst:17 7e034dba5cca4cafadf0991d28f92a59
 msgid "New documentation pages:"
-msgstr ""
+msgstr "Nouvelles pages de documentation :"
 
 #: ../../standard/changelog.rst:19 1786eab402cc49e68e98f761c7043d54
 msgid "Dates guidance"
-msgstr ""
+msgstr "Indications concernant les dates"
 
 #: ../../standard/changelog.rst:20 4b2ed130890046819aed09d753792103
 msgid "Generating statements"
-msgstr ""
+msgstr "Production de déclarations"
 
 #: ../../standard/changelog.rst:21 294cebedefbf4a6d86adb45eb6d16841
 msgid "Record identifiers"
-msgstr ""
+msgstr "Identifiants d'enregistrement"
 
 #: ../../standard/changelog.rst:22 876795f11fc74563afdc3c6e408cd9f2
 msgid "Representing trusts"
-msgstr ""
+msgstr "Représentation des trusts"
 
 #: ../../standard/changelog.rst:23 8d4fef32caee4a03b456339b6dce7309
 msgid "Representing nominees"
-msgstr ""
+msgstr "Représentation des mandataires"
 
 #: ../../standard/changelog.rst:24 ca716ed6eef1414499d1a50d422a51ae
 msgid "Representing record updates"
-msgstr ""
+msgstr "Représentation des mises à jour de l'enregistrement"
 
 #: ../../standard/changelog.rst:27 ../../standard/changelog.rst:97
 #: ../../standard/changelog.rst:163 ../../standard/changelog.rst:208
 #: 1e4ccb9f17b74c08aa4a55244cc53ff9 e96b13e2feb242e991728ffbd3e98569
 #: 2235e95210894d58b8828b2ff28a1190 af8b909d2ebd46b4a29f1e96b4683003
 msgid "Changed"
-msgstr ""
+msgstr "Modifications"
 
 #: ../../standard/changelog.rst:28 7435530cb5204107acec9efa8c8885a0
 msgid ""
 "All date and date-time fields reviewed to ensure appropriate validation"
 msgstr ""
+"Tous les champs de date et de date-heure ont été revus afin d'en garantir la"
+" bonne validation"
 
 #: ../../standard/changelog.rst:29 c9eff9ed31f54d558968cc793ec7324d
 msgid "Schema and codelist titles and descriptions updated"
 msgstr ""
+"Les titres et les descriptions du schéma et des listes de codes ont été "
+"actualisés"
 
 #: ../../standard/changelog.rst:30 3b634799eaf24b75a1e2d36eb3e6e761
 msgid "Documentation images and text updated"
-msgstr ""
+msgstr "Les images et le texte de la documentation ont été actualisés"
 
 #: ../../standard/changelog.rst:31 ea6ea32e193e4e1c8587e1f7d5d703ea
 msgid ""
 "Documentation section 'Data schema' renamed 'Data standard' for clarity"
 msgstr ""
+"La section 'Schéma des données' de la documentation a été renommée 'Normes "
+"relative aux données' pour plus de clarté"
 
 #: ../../standard/changelog.rst:32 5a51c863ea3d47f7ab9da259a6d33d8f
 msgid ""
 "Guidance pages in 'Data standard' restructured into 'Modelling requirements'"
 " and 'System requirements' sub-sections"
 msgstr ""
+"Les pages d'indications dans 'Norme relative aux données' ont été "
+"restructurées en sous-sections 'Exigences relatives à la modélisation' et "
+"'Exigences relatives aux systèmes'"
 
 #: ../../standard/changelog.rst:33 3f7cfac72f9447c7a0a26e32c51e56a8
 msgid "'Ownership-or-control' statements renamed 'Relationship' statements"
 msgstr ""
+"Les déclarations 'Propriété ou contrôle' ont été renommées déclarations de "
+"'relation'"
 
 #: ../../standard/changelog.rst:34 fc600b0f03cb4133b88f45a56399a718
 msgid "Statement fields:"
-msgstr ""
+msgstr "Champs de déclaration :"
 
 #: ../../standard/changelog.rst:36 81326c659a3a4a0a95eefc25e85a3000
 msgid "``statementDate`` now required"
-msgstr ""
+msgstr "``statementDate`` est désormais obligatoire"
 
 #: ../../standard/changelog.rst:37 f6aceb72a3804988b2b5a523d18e548b
 msgid "``statementType`` replaced with ``recordType``"
-msgstr ""
+msgstr "``statementType`` a été remplacé par ``recordType``"
 
 #: ../../standard/changelog.rst:38 7058ee22e8454999996d3f4f271710cc
 msgid "``statementID`` renamed ``statementId``"
-msgstr ""
+msgstr "``statementID`` a été renommé ``statementId``"
 
 #: ../../standard/changelog.rst:39 22a8e727675b4048898ccbf018dc7d4f
 msgid "Entity fields:"
-msgstr ""
+msgstr "Champs d'entité :"
 
 #: ../../standard/changelog.rst:41 199b31fc73b146619234461af9a1a601
 msgid "``entityType`` and ``entitySubtype`` combined into ``entityType``"
 msgstr ""
+"``entityType`` et ``entitySubtype`` ont été fusionnés dans ``entityType``"
 
 #: ../../standard/changelog.rst:42 23da8398925c477fbcd7424cf18d3928
 msgid ""
 "``securitiesListings`` removed from required fields in ``publicListing``"
 msgstr ""
+"``securitiesListings`` a été supprimé des champs obligatoires dans "
+"``publicListing``"
 
 #: ../../standard/changelog.rst:43 3bbb15c240304f49b5a11b8ae00bcf24
 msgid "'nomination' and 'trust' added ``entitySubtype`` codelist"
 msgstr ""
+"'mandat' et 'trust' ont été ajoutés à la liste de codes ``entitySubtype``"
 
 #: ../../standard/changelog.rst:44 b61bca5c9e4d4dd5ab13357c862c7b88
 msgid ""
 "prefixes removed from ``entitySubtype`` codelist (e.g. 'stateBody-"
 "stateAgency' is now 'stateAgency')"
 msgstr ""
+"Les préfixes ont été supprimés de la liste de codes ``entitySubtype`` (ex. "
+"'stateBody-stateAgency' se présente désormais sous la forme 'stateAgency')"
 
 #: ../../standard/changelog.rst:45 9b9cbea1761642d2b10f7216ff4154d2
 msgid "Relationship fields:"
-msgstr ""
+msgstr "Champs de relation :"
 
 #: ../../standard/changelog.rst:47 734f38adcd1b450d921259d8b93ff8a1
 msgid ""
 "``Interest.share`` properties and requirements updated. Exact values and "
 "ranges are now represented in simpler ways."
 msgstr ""
+"Les propriétés et les exigences de ``Interest.share`` ont été actualisées. "
+"Les valeurs et les fourchettes exactes sont désormais représentées de façon "
+"plus simple."
 
 #: ../../standard/changelog.rst:48 9e926310da4b4ddeae096fe3e1f2afbc
 msgid "'nominee' and 'nominator' added to ``Interest.type`` codelist"
 msgstr ""
+"'mandataire' et 'mandant' ont été ajoutés à la liste de codes  "
+"``Interest.type``"
 
 #: ../../standard/changelog.rst:49 c09e3bf0d79e4c56b9490db2f40cd087
 msgid ""
@@ -193,79 +222,87 @@ msgid ""
 "(rather than a ``statementId`` value). They may instead take an Unspecified "
 "Record object, to represent missing information."
 msgstr ""
+"Les champs ``interestedParty`` et ``subject`` contiennent désormais une "
+"valeur ``recordId`` (et non plus une valeur ``statementId``). Ils peuvent la"
+" remplacer par un objet Enregistrement non spécifié pour représenter des "
+"informations manquantes."
 
 #: ../../standard/changelog.rst:50 56ab2c12ae104dff8459351341cc5dff
 msgid ""
 "``componentStatementIds`` renamed ``componentRecordIds`` and now holds "
 "``recordId`` values"
 msgstr ""
+"``componentStatementIds`` a été renommé ``componentRecordIds`` et contient "
+"désormais les valeurs ``recordId``"
 
 #: ../../standard/changelog.rst:51 b58381f6e34d46c181e8ef17469df9fd
 msgid "Person fields:"
-msgstr ""
+msgstr "Champs de personne :"
 
 #: ../../standard/changelog.rst:53 caf6274412674446bba801571dcf401c
 msgid "``fullName`` is now required"
-msgstr ""
+msgstr "``fullName`` est désormais obligatoire"
 
 #: ../../standard/changelog.rst:54 124a5c44b5b9444e9c1c0ecc2b0750d6
 msgid "Renamed ``name.type`` code 'individual' to 'legal'"
-msgstr ""
+msgstr "Le code ``name.type`` 'individual' a été renommé 'legal'"
 
 #: ../../standard/changelog.rst:55 8d9a82ba1dac4c1b9c1b9dec4b78d998
 msgid "``address.country`` is now a Country object not a country code."
 msgstr ""
+"``address.country`` est désormais un objet de pays et non plus un code de "
+"pays."
 
 #: ../../standard/changelog.rst:58 ../../standard/changelog.rst:194
 #: ../../standard/changelog.rst:214 0e180680e3aa4082a89616d6dbbc14af
 #: f3d3bb4c0da04b40915cb49517f2f9e2 9ef7595f901e490e8dd6abd39e46bc00
 msgid "Removed"
-msgstr ""
+msgstr "Suppressions"
 
 #: ../../standard/changelog.rst:59 405dcaed457e426e9f87b1db6fe0908a
 msgid "``placeOfResidence``"
-msgstr ""
+msgstr "``placeOfResidence``"
 
 #: ../../standard/changelog.rst:60 f8bbdbeff3804d5087fff32a95aebd5b
 msgid "``agent``"
-msgstr ""
+msgstr "``agent``"
 
 #: ../../standard/changelog.rst:61 db4f02a014c34097a058cf40bddfec66
 msgid "``replacesStatements``"
-msgstr ""
+msgstr "``replacesStatements``"
 
 #: ../../standard/changelog.rst:62 902d6b269fb04c6487710567ea4955d6
 msgid "Functional requirements page"
-msgstr ""
+msgstr "Page des exigences fonctionnelles"
 
 #: ../../standard/changelog.rst:63 e341b5efecac4c46a163a606868f578b
 msgid "Sources and annotations page"
-msgstr ""
+msgstr "Page des sources et des annotations"
 
 #: ../../standard/changelog.rst:67 ../../standard/changelog.rst:124
 #: f881b8a086a14ad5ae07cc3a9c53f1c2 829d4209ca79490ab5e48d234e9f0b0d
 msgid "Alterations to schema structure and logic"
-msgstr ""
+msgstr "Modifications apportées à la structure et à la logique du schéma"
 
 #: ../../standard/changelog.rst:68 e64ff50b50d24195a899f5121808b239
 msgid "Updated the JSON Schema version from draft-04 to 2020-12"
-msgstr ""
+msgstr "Mise à jour de la version du schéma JSON de draft-04 à 2020-12"
 
 #: ../../standard/changelog.rst:69 090f4989b6d3456082255fabc4d0b17b
 msgid "Schema files renamed and contents refactored"
-msgstr ""
+msgstr "Nouveau nommage des fichiers du schéma et refactorisation du contenu"
 
 #: ../../standard/changelog.rst:70 979beda8b79a44a598caf9ed46e97f68
 msgid "Included as much validation as possible within the schema"
-msgstr ""
+msgstr "Intégration de la meilleure validation possible dans le schéma"
 
 #: ../../standard/changelog.rst:71 640981356d914a5f9954fd3c6133b2fd
 msgid "enum types with one value replaced with const type"
-msgstr ""
+msgstr "Remplacement des types enum avec une valeur par un type const"
 
 #: ../../standard/changelog.rst:75 869829526db44d8ca516115aa4a32483
 msgid "[0.3] - 2022-04-15"
-msgstr ""
+msgstr "[0.3] - 2022-04-15"
 
 #: ../../standard/changelog.rst:79 2b6a341f352d4517a4527ef845414dcd
 msgid ""
@@ -274,6 +311,10 @@ msgid ""
 "``beneficialOwnershipOrControl``, ``directOrIndirect``, "
 "``componentStatementIDs``, and ``isComponent``."
 msgstr ""
+"Orientations techniques (normatives) concernant 'Représentation des "
+"bénéficiaires effectifs' : spécification d'exigences détaillées relatives à "
+"l'utilisation de ``beneficialOwnershipOrControl``, ``directOrIndirect``, "
+"``componentStatementIDs``, et ``isComponent``."
 
 #: ../../standard/changelog.rst:81 e8e123918462443a8f3d77e4b0b5dbdd
 msgid ""
@@ -281,15 +322,22 @@ msgid ""
 " company (PLC): a new ``publicListing`` object has been added to Entity "
 "Statements."
 msgstr ""
+"Aide à la description des valeurs mobilières négociées et du statut d'une "
+"société cotée en bourse (publicly listed company ou PLC, en anglais) : un "
+"nouvel objet ``publicListing`` a été ajouté aux déclarations d'entité."
 
 #: ../../standard/changelog.rst:83 62e830f736ef4a83beb9247090b84773
 msgid "Support for representing state-owned enterprises (SOEs):"
 msgstr ""
+"Aide à la représentation des entreprises publiques (state-owned enterprises "
+"ou SOE, en anglais) :"
 
 #: ../../standard/changelog.rst:85 11c3572554ba48e6b79f3cf33d12e944
 msgid ""
 "New codes 'state' and 'stateBody' added to the ``entityType`` codelist."
 msgstr ""
+"Ajout de nouveaux codes 'state' et 'stateBody' à la liste de codes "
+"``entityType``."
 
 #: ../../standard/changelog.rst:86 61d8123b9edf4d94890f3b3747febe6d
 msgid ""
@@ -297,29 +345,40 @@ msgid ""
 "object with properties ``generalCategory`` (codelist, see below) and "
 "``localTerm`` (string)."
 msgstr ""
+"Ajout d'une nouvelle propriété ``entitySubtype`` aux déclarations d'entité. "
+"Sa valeur est un objet avec les propriétés ``generalCategory`` (liste de "
+"codes, voir ci-dessous) et ``localTerm`` (chaîne)."
 
 #: ../../standard/changelog.rst:87 801966cc06c944fc8ffeee1f6bb153d7
 msgid ""
 "New ``entitySubtypeCategory``. Currently only populated with codes related "
 "to state bodies."
 msgstr ""
+"Nouvelle ``entitySubtypeCategory``. Actuellement, seuls les codes liés à des"
+" organes de l'État sont utilisés."
 
 #: ../../standard/changelog.rst:88 e87df2b680a54957b99bf87f3c2c6666
 msgid ""
 "New ``formedByStatute`` property added to Entity Statements. Its value is an"
 " object with properties ``name`` and ``date``."
 msgstr ""
+"Ajout d'une nouvelle propriété ``formedByStatute`` aux déclarations "
+"d'entité. Sa valeur est un objet avec les propriétés ``name`` et ``date``."
 
 #: ../../standard/changelog.rst:89 2f980e73c0fa45349ba3f9f7a24392fb
 msgid ""
 "Changes (below) to accommodate representation of states and state bodies."
 msgstr ""
+"Modifications (ci-dessous) pour intégrer une représentation des États et de "
+"leurs organes."
 
 #: ../../standard/changelog.rst:91 f7f844c2507247a8b40eb06c9459cb1f
 msgid ""
 "Technical guidance (normative) on 'Representing state-owned enterprises': "
 "providing modelling requirements."
 msgstr ""
+"Orientations techniques (normatives) pour la 'Représentation des entreprises"
+" publiques' contenant des exigences de modélisation."
 
 #: ../../standard/changelog.rst:93 cd6a455551494a9ea88184d80c56043e
 msgid ""
@@ -328,12 +387,19 @@ msgid ""
 "'boardMember', 'boardChair', 'unknownInterest', 'unpublishedInterest', "
 "'enjoymentAndUseOfAssets', 'rightToProfitOrIncomeFromAssets'."
 msgstr ""
+"Les nouveaux codes suivants ont été ajoutés à la liste de codes "
+"``interestType`` : 'controlViaCompanyRulesOrArticles', "
+"'controlByLegalFramework', 'boardMember', 'boardChair', 'unknownInterest', "
+"'unpublishedInterest', 'enjoymentAndUseOfAssets', "
+"'rightToProfitOrIncomeFromAssets'."
 
 #: ../../standard/changelog.rst:98 442c1d1f484247c1bac5e5eac0d9c64a
 msgid ""
 "The ``interestType`` and ``unspecifiedReason`` codelist codes have been "
 "changed from using hyphens to camelCase."
 msgstr ""
+"Les codes des listes de codes ``interestType`` et ``unspecifiedReason`` "
+"n'utilisent plus des tirets mais le camelCase."
 
 #: ../../standard/changelog.rst:100 3a1c3cc27b2b4479931b0189a8aba33e
 msgid ""
@@ -341,51 +407,65 @@ msgid ""
 "wrapped in a ``PoliticalExposure`` object and renamed ``status`` and "
 "``details``."
 msgstr ""
+"Dans la déclaration de personne physique, ``hasPepStatus`` et ``pepDetails``"
+" ont été inclus dans un objet ``PoliticalExposure`` et renommés ``status`` "
+"et ``details``."
 
 #: ../../standard/changelog.rst:102 0575384a168a452eb886df8f7218a28a
 msgid ""
 "``incorporatedInJurisdiction`` property in Entity Statements renamed to "
 "``jurisdiction`` and description updated."
 msgstr ""
+"La propriété ``incorporatedInJurisdiction`` dans les déclarations d'entité a"
+" été renommée ``jurisdiction`` et sa description a été actualisée."
 
 #: ../../standard/changelog.rst:104 922edee38a8a45a195ad4788a8ec8687
 msgid ""
 "``Jurisdiction.name`` is now a required field (previously it was defined as "
 "\"MUST\" in the description)."
 msgstr ""
+"``Jurisdiction.name`` est désormais un champ obligatoire (avant, il était "
+"défini comme \"DOIT\" dans la description)."
 
 #: ../../standard/changelog.rst:106 e28a7aaf1d9a4c05947b9dbf47271aa3
 msgid ""
 "``Country.name`` is now a required field (previously it was defined as "
 "\"MUST\" in the description)."
 msgstr ""
+"``Country.name`` est désormais un champ obligatoire (avant, il était défini "
+"comme \"DOIT\" dans la description)."
 
 #: ../../standard/changelog.rst:108 eb30801a3f9c46b69928718096f176d0
 msgid ""
 "'legalEntity' description in the ``entityType`` codelist updated to remove "
 "coverage of government departments (which now fall under 'stateBody')."
 msgstr ""
+"La description 'legalEntity' dans la liste de codes ``entityType`` a été "
+"actualisée afin de ne plus inclure les ministères (qui apparaissent "
+"désormais dans 'stateBody')."
 
 #: ../../standard/changelog.rst:110 8ab5f0f0e14141a388b3247d446a5d59
 msgid "Clarified ``Address.country`` is from the ISO 3166-1 list."
-msgstr ""
+msgstr "Clarification de ``Address.country`` issue de la liste ISO 3166-1."
 
 #: ../../standard/changelog.rst:112 a38b55a5d54b421087da9f3bf93be6bb
 msgid "Clarified ``Country.code`` is from the ISO 3166-1 list."
-msgstr ""
+msgstr "Clarification de ``Country.code`` issue de la liste ISO 3166-1."
 
 #: ../../standard/changelog.rst:114 2d6da5ee2d684a88874c4ad1fb95c76e
 msgid ""
 "Clarified ``Jurisdiction.code`` is from the ISO 3166-1 or ISO 3166-2 list."
 msgstr ""
+"Clarification de ``Jurisdiction.code`` issue de la liste ISO 3166-1 ou ISO "
+"3166-2."
 
 #: ../../standard/changelog.rst:116 8198620b4cb84595ab0cc31ca401cf51
 msgid "Clarified required values for ``statementType``."
-msgstr ""
+msgstr "Clarification des valeurs obligatoires pour ``statementType``."
 
 #: ../../standard/changelog.rst:118 4f29cb8836af477da89bf93b92d6b337
 msgid "``interestLevel`` renamed to ``directOrIndirect``."
-msgstr ""
+msgstr "``interestLevel`` renommé ``directOrIndirect``."
 
 #: ../../standard/changelog.rst:120 f83906698de14870a4623e2a00e82562
 msgid ""
@@ -395,10 +475,15 @@ msgid ""
 "'beneficiaryOfLegalArrangement' to avoid ambiguity and "
 "'otherInfluenceOrControlOfTrust' has been removed."
 msgstr ""
+"'OfTrust' a été supprimé des codes de la liste de codes ``interestType`` "
+"afin qu'ils désignent tout type de construction juridique. Leur description "
+"a été modifiée en conséquence. 'beneficiaryOfTrust' a été modifié par "
+"'beneficiaryOfLegalArrangement' pour éviter toute ambiguïté et "
+"'otherInfluenceOrControlOfTrust' a été supprimé."
 
 #: ../../standard/changelog.rst:125 3c1e03e6fab741e381b3b102173527fb
 msgid "``Annotation`` object refactored."
-msgstr ""
+msgstr "Objet ``Annotation`` refactorisé."
 
 #: ../../standard/changelog.rst:127 fb196e5b07144fa48c42ed01ef5e0716
 msgid ""
@@ -407,10 +492,15 @@ msgid ""
 "validation. This should not impact anyone using the compiled schema, but may"
 " affect those using the files in the 'schema' directory directly."
 msgstr ""
+"La référence à la liste de codes dans ``statementType`` a été supprimée. "
+"Cela permet de résoudre les problèmes causés par l'utilisation de ce champ "
+"pour sélectionner un sous-schéma pour validation. Cette suppression ne "
+"devrait pas affecter les utilisateurs du schéma compilé, mais directement "
+"les utilisateurs de fichiers du répertoire 'schéma'."
 
 #: ../../standard/changelog.rst:131 aa163980f51645f5bdc79d3c3da5e462
 msgid "[0.2] - 2019-06-30"
-msgstr ""
+msgstr "[0.2] - 2019-06-30"
 
 #: ../../standard/changelog.rst:135 0f6f2af613cd4c94a99bcda47bf5a028
 msgid ""
@@ -418,6 +508,9 @@ msgid ""
 "relationships (where a beneficial owner owns or controls an entity through "
 "intermediaries):"
 msgstr ""
+"Aide à la représentation des détails des relations de propriété effective "
+"indirectes (lorsqu'un bénéficiaire effectif possède ou contrôle une entité à"
+" travers des intermédiaires) :"
 
 #: ../../standard/changelog.rst:137 021226ca7c8f4b1bb40e9dc8628b2f88
 msgid ""
@@ -425,6 +518,10 @@ msgid ""
 "objects. It takes a boolean value and indicates whether a Statement "
 "represents part of a primary indirect ownership-or-control relationship."
 msgstr ""
+"Une propriété ``isComponent`` obligatoire a été ajoutée aux trois objets de "
+"déclaration. Elle a une valeur booléenne et indique si une déclaration "
+"représente une partie d'une relation principale indirecte de propriété ou de"
+" contrôle."
 
 #: ../../standard/changelog.rst:138 9315383a6bae4316981a518f649009c1
 msgid ""
@@ -432,6 +529,10 @@ msgid ""
 "Statements. It takes an array of Statement IDs, indicating which component "
 "statements provide detail about the parent Ownership-or-control Statement."
 msgstr ""
+"Une propriété ``componentStatementIDs`` a été ajoutée aux déclarations de "
+"propriété ou de contrôle. Elle possède un tableau des identifiants de "
+"déclaration indiquant quelles déclarations de composant détaillent la "
+"déclaration de propriété ou de contrôle principale."
 
 #: ../../standard/changelog.rst:140 242e11eb37fc4ecebf8e6d544e5c0b26
 msgid ""
@@ -439,26 +540,30 @@ msgid ""
 "Statement objects. It represents metadata for Statements: information about "
 "their original publisher. Sub-properties (and their sub-properties) are:"
 msgstr ""
+"Une propriété ``publicationDetails`` obligatoire a été ajoutée aux trois "
+"objets de déclaration. Elle représente les métadonnées des déclarations : "
+"informations sur leur éditeur d'origine. Les sous-propriétés (et leurs sous-"
+"propriétés) sont :"
 
 #: ../../standard/changelog.rst:142 f0a3c41d679543249d20f5c63bb15a13
 msgid "``publicationDate``\\*"
-msgstr ""
+msgstr "``publicationDate``\\*"
 
 #: ../../standard/changelog.rst:143 2626a358c6d34c8aa50d25b9fbe44740
 msgid "``bodsVersion``\\*"
-msgstr ""
+msgstr "``bodsVersion``\\*"
 
 #: ../../standard/changelog.rst:144 211b1e53a07c49af8c2ee3e38612229e
 msgid "``license``"
-msgstr ""
+msgstr "``license``"
 
 #: ../../standard/changelog.rst:145 6e449b39687e4879800b7b73f6089812
 msgid "``publisher``\\* (``name``, ``url``)"
-msgstr ""
+msgstr "``publisher``\\* (``name``, ``url``)"
 
 #: ../../standard/changelog.rst:147 c906f6beb8734898872e5cddc5eff410
 msgid "\\* required"
-msgstr ""
+msgstr "\\* obligatoire"
 
 #: ../../standard/changelog.rst:149 72ab650604df44e5b2d11003ba85779a
 msgid ""
@@ -466,34 +571,48 @@ msgid ""
 "Person Statements. It is only to be used where disclosure requirements "
 "require that Politically Exposed Persons are flagged."
 msgstr ""
+"Une propriété ``hasPepStatus`` (ayant une valeur booléenne) a été ajoutée "
+"aux déclarations de personne physique. Elle ne doit être utilisée que si les"
+" exigences de déclaration imposent le signalement de personnes politiquement"
+" exposées."
 
 #: ../../standard/changelog.rst:151 f2c89e909acc425fb37efded19f4bb40
 msgid ""
 "PEP Status objects now have the additional properties ``missingInfoReason`` "
 "and ``source``."
 msgstr ""
+"Les objets Statut de PPE ont désormais d'autres propriétés "
+"``missingInfoReason`` et ``source``."
 
 #: ../../standard/changelog.rst:153 14ccd1fca7d146be864c126a85177cf2
 msgid ""
 "A ``taxResidencies`` property has been added to Person Statements. It takes "
 "an array of Country objects."
 msgstr ""
+"Une propriété ``taxResidencies`` a été ajoutée aux déclarations de personne "
+"physique. Elle possède un tableau des objets Pays."
 
 #: ../../standard/changelog.rst:155 8b265b3948644e1b9c93d337033f6b25
 msgid "Support for more structured accounts of missing and anonymised data:"
 msgstr ""
+"Aide pour une explication plus structurée des données manquantes et "
+"anonymisées :"
 
 #: ../../standard/changelog.rst:157 64c1b8a6f78d4fc5a7320da8def0a23d
 msgid ""
 "``unspecifiedPersonDetails`` has been added to Person Statements (with a "
 "required ``reason`` sub-property)"
 msgstr ""
+"``unspecifiedPersonDetails`` a été ajouté aux déclarations de personne "
+"physique (avec une sous-propriété ``reason`` obligatoire)"
 
 #: ../../standard/changelog.rst:158 dfb2240c600b41cca0c372382edf245a
 msgid ""
 "``unspecifiedEntityDetails`` has been added to Entity Statements (with a "
 "required ``reason`` sub-property)"
 msgstr ""
+"``unspecifiedEntityDetails`` a été ajouté aux déclarations d'entité (avec "
+"une sous-propriété ``reason`` obligatoire)"
 
 #: ../../standard/changelog.rst:160 22fe4fea80f245c1b9406ba53c09c3f2
 msgid ""
@@ -501,81 +620,97 @@ msgid ""
 "does the Ownership-or-control Statement's ``interestedParty.unspecified`` "
 "property)."
 msgstr ""
+"La sous-propriété ``reason`` s'appuie sur la liste de codes Motif non "
+"précisé (tout comme la propriété ``interestedParty.unspecified`` de la "
+"déclaration de propriété ou de contrôle)."
 
 #: ../../standard/changelog.rst:164 0d533cc5aa5940cc89fc68ee84b92af1
 msgid ""
 "The ``pepStatus`` property of Person Statements has been renamed "
 "``pepStatusDetails`` (and still references an array of PEP Status objects)."
 msgstr ""
+"La propriété ``pepStatus`` des déclarations de personne physique a été "
+"renommée ``pepStatusDetails`` (et continue de se référer à un tableau "
+"d'objets Statut de PPE)."
 
 #: ../../standard/changelog.rst:166 be8f8683b92e44fdbacbf27cab4a2d76
 msgid "The ``personType`` property of Person Statements is now required."
 msgstr ""
+"La propriété ``personType`` des déclarations de personne physique est "
+"désormais obligatoire."
 
 #: ../../standard/changelog.rst:168 e43e1af936b242e69305d4ec1561dce3
 msgid ""
 "If ``Annotation.motivation`` is 'linking', ``Annotation.url`` is required."
 msgstr ""
+"Si ``Annotation.motivation`` est 'linking', ``Annotation.url`` est "
+"obligatoire."
 
 #: ../../standard/changelog.rst:170 bcc1ba8be2db4398b3e46e705acdd95f
 msgid "The Interest Type codelist has been amended:"
-msgstr ""
+msgstr "La liste de codes Type de participation a été modifiée :"
 
 #: ../../standard/changelog.rst:172 f0549f0dc002404aadce9ec1d965d1f4
 msgid "'influence-or-control' is renamed 'other-influence-or-control'"
-msgstr ""
+msgstr "'influence-or-control' est renommé 'other-influence-or-control'"
 
 #: ../../standard/changelog.rst:173 52e49beed15b40c0a5315851c345fef7
 msgid ""
 "'rights-to-surplus-assets' is renamed 'rights-to-surplus-assets-on-"
 "dissolution'"
 msgstr ""
+"'rights-to-surplus-assets' est renommé 'rights-to-surplus-assets-on-"
+"dissolution'"
 
 #: ../../standard/changelog.rst:174 0e5f5e16f9de4e199f3151635a14232a
 msgid "'rights-granted-by-contract' has been added"
-msgstr ""
+msgstr "'rights-granted-by-contract' a été ajouté"
 
 #: ../../standard/changelog.rst:175 210d2c15b534444795b99bf40db07a99
 msgid "'conditional-rights-granted-by-contract' has been added"
-msgstr ""
+msgstr "'conditional-rights-granted-by-contract' a été ajouté"
 
 #: ../../standard/changelog.rst:177 771f183829d740d4a1d11c78023a383b
 msgid "The Address Type codelist has been amended:"
-msgstr ""
+msgstr "La liste de codes Type d'adresse a été modifiée :"
 
 #: ../../standard/changelog.rst:179 2e5154824be3420bb6fe524c4a2df55a
 msgid "'home' has been removed (since 'residence' can be used instead)"
 msgstr ""
+"'home' a été supprimé (étant donné que 'residence' peut être utilisé à la "
+"place)"
 
 #: ../../standard/changelog.rst:180 37cc6585ea5f48ab972014afef75a773
 msgid "'business' has been added"
-msgstr ""
+msgstr "'business' a été ajouté"
 
 #: ../../standard/changelog.rst:182 7378a020863c46d5805b9d580c9d5904
 msgid "The Name Type codelist has been amended:"
-msgstr ""
+msgstr "La liste de codes Type de nom a été modifiée :"
 
 #: ../../standard/changelog.rst:184 87de95acb204467ebb2098becef98ca4
 msgid ""
 "'alias', 'aka', and 'nick' have all been removed. They are replaced by "
 "'alternative'"
 msgstr ""
+"'alias', 'aka' et 'nick' ont tous été supprimés. Ils sont remplacés par "
+"'alternative'"
 
 #: ../../standard/changelog.rst:185 2f97ab84d8da452b9f04fa26b42a2122
 msgid "'transliteration' has been added"
-msgstr ""
+msgstr "'transliteration' a été ajouté"
 
 #: ../../standard/changelog.rst:187 4e7a2a59de20404d9f8e0e29597e9ec2
 msgid "The Unspecified Reason codelist has been amended:"
-msgstr ""
+msgstr "La liste de codes Motif non précisé a été modifiée :"
 
 #: ../../standard/changelog.rst:189 f1b0a34b0fb545b3afde4d8f3733f0f8
 msgid "'information-unknown-to-publisher' has been added"
-msgstr ""
+msgstr "'information-unknown-to-publisher' a été ajouté"
 
 #: ../../standard/changelog.rst:191 e5c6d9f66e364f2f838b0e2b7492bd4a
 msgid "All codelist codes now have descriptions."
-msgstr ""
+msgstr "Toutes les listes de codes contiennent désormais des descriptions."
 
 #: ../../standard/changelog.rst:195 a2252e42cb514165a1601a9f77d1a5b3
 msgid ""
@@ -583,10 +718,13 @@ msgid ""
 "Statements. It has been replaced with ``unspecifiedPersonDetails`` and "
 "``unspecifiedEntityDetails`` respectively."
 msgstr ""
+"La propriété ``missingInfoReason`` a été supprimée des déclarations de "
+"personne physique et d'entité et a été remplacée par "
+"``unspecifiedPersonDetails`` et ``unspecifiedEntityDetails`` respectivement."
 
 #: ../../standard/changelog.rst:198 fce68083a0d24dd2bc4c7e457cb285af
 msgid "[0.1] - 2018-12-12"
-msgstr ""
+msgstr "[0.1] - 2018-12-12"
 
 #: ../../standard/changelog.rst:202 6027448400334e7bb3ce4bf8953eca16
 msgid ""
@@ -594,6 +732,10 @@ msgid ""
 "boolean value. Can be used to assert that an interest between a natural "
 "person and an entity makes that person a beneficial owner."
 msgstr ""
+"Une propriété ``beneficialOwnershipOrControl`` a été ajoutée à l'objet "
+"Participation au capital. Elle a une valeur booléenne et peut être utilisée "
+"pour affirmer qu'une personne physique est un bénéficiaire effectif du fait "
+"de sa participation dans une entité."
 
 #: ../../standard/changelog.rst:203 31b535874d2448659d86a63d564a30ea
 msgid ""
@@ -601,6 +743,10 @@ msgid ""
 "person to be recorded as a politically exposed person (with a related "
 "reason, jurisdiction, start date and end date)."
 msgstr ""
+"La propriété ``pepStatus`` a été ajoutée à l'objet Déclaration de personne "
+"physique. Elle permet d'enregistrer une personne physique en tant que "
+"personne politiquement exposée (avec un motif, une juridiction, une date de "
+"début et une date de fin)."
 
 #: ../../standard/changelog.rst:204 bfaf42464d724bd5923117991262f41f
 msgid ""
@@ -608,6 +754,9 @@ msgid ""
 "provide a way of including additional (structured) data or transforming "
 "existing data in a targeted way."
 msgstr ""
+"La propriété ``annotations`` a été ajoutée aux trois types de déclaration. "
+"Les annotations permettent d'intégrer des données (structurées) "
+"supplémentaires ou de transformer les données existantes de manière ciblée."
 
 #: ../../standard/changelog.rst:205 7d7514b22bee4a328e1df2706c550341
 msgid ""
@@ -615,23 +764,33 @@ msgid ""
 " parties.  An unspecifiedReason codelist provides options for describing why"
 " an interested party is not recorded."
 msgstr ""
+"Une propriété ``unspecified`` remplace l'option ``nullParty`` pour les "
+"parties intéressées.  Une liste de codes unspecifiedReason offre des options"
+" afin d'expliquer la raison du non enregistrement de la partie intéressée."
 
 #: ../../standard/changelog.rst:209 42396f3e81ee4399b393258437ab1583
 msgid ""
 "The interestType codelist has been extended to include interests in trusts."
 msgstr ""
+"La liste de codes interestType a été étendue pour inclure les participations"
+" dans des trusts."
 
 #: ../../standard/changelog.rst:210 9c4eb4cffcb64088aa14aeff14052a2f
 msgid ""
 "The structure of BODS-formatted data has been flattened, to remove "
 "extraneous nesting and facilitate serialization using JSON Lines."
 msgstr ""
+"La structure des données au format BODS a été aplanie afin d'éliminer les "
+"imbrications superflues et faciliter la sérialisation à l'aide de JSON "
+"Lines."
 
 #: ../../standard/changelog.rst:211 8f2b826093144fd9b92931dc41ee73b2
 msgid ""
 "'Beneficial ownership statements' have been renamed 'Ownership-or-control "
 "statements' to reflect the scope of their use."
 msgstr ""
+"'Beneficial ownership statements' a été renommé 'Ownership-or-control "
+"statements' afin de refléter la portée de leur utilisation."
 
 #: ../../standard/changelog.rst:215 18551a51164a4d6191761b3f2a9eee9c
 msgid ""
@@ -639,9 +798,15 @@ msgid ""
 "group id) are no longer used to package arrays of statements. This reflects "
 "a flattening of the structure of BODS formatted data."
 msgstr ""
+"Les tableaux d'objets ``statementGroup`` (chaque objet avec son identifiant "
+"de groupe de déclaration) ne sont plus utilisés pour combiner des tableaux "
+"de déclarations. Ceci reflète un aplanissement de la structure des données "
+"au format BODS."
 
 #: ../../standard/changelog.rst:216 a3f03f2683d746c5b74d586cfc81ad00
 msgid ""
 "The ``nullParty`` option for interested parties. See ``unspecified`` "
 "property in the Added section above."
 msgstr ""
+"L'option ``nullParty`` pour les parties intéressées. Voir la propriété "
+"``unspecified`` dans la section Ajouts ci-dessus."

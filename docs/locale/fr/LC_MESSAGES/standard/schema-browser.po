@@ -23,16 +23,16 @@ msgstr ""
 
 #: ../../standard/schema-browser.rst:4 df38adce72d3498786da32d792417c47
 msgid "Schema browser"
-msgstr ""
+msgstr "Navigateur du schéma"
 
 #: ../../standard/warningbox.rst:3 7093ebf488d6463f8b7c56089a338da9
 msgid ""
 "This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model, codelists, and technical guidance."
 msgstr ""
-"Ceci est la v.04 de la norme de données sur la propriété effective "
-"comprenant des mises à jour du modèle de données, des listes de codes et des"
-" orientations techniques."
+"Ceci est la v.04 de la norme relative aux données sur la propriété effective"
+" comprenant des mises à jour du modèle de données, des listes de codes et "
+"des orientations techniques."
 
 #: ../../standard/warningbox.rst:5 d9f04a5877534626bfd8726a22fe3c84
 msgid ""
@@ -40,15 +40,18 @@ msgid ""
 ":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
 "information."
 msgstr ""
-"Des modifications ultérieures sont anticipées avant la version 1.0. Voir les"
-" pages :ref:`Changelog <changelog>` et `About <../about>`_ pages pour plus "
-"d'informations."
+"Des modifications ultérieures sont prévues avant le lancement de la version "
+"1.0. Voir les pages :ref:`Journal des modifications <changelog>` et `À "
+"propos <../about>`_ pour plus d'informations."
 
 #: ../../standard/schema-browser.rst:8 f6fa3fd4b9a8492aa0254efec7175771
 msgid ""
 "The draft Beneficial Ownership Data Standard schema is defined using `JSON "
 "Schema 2020-12 <https://json-schema.org/>`_."
 msgstr ""
+"Le projet de schéma de la norme relative aux données sur la propriété "
+"effective est défini à l'aide du `Schéma JSON 12-2020 <https://json-"
+"schema.org/>`_."
 
 #: ../../standard/schema-browser.rst:10 ae98f49242bf4f9ea33a988c7f048948
 msgid ""
@@ -57,65 +60,83 @@ msgid ""
 "structure of these objects can be explored using the viewers below. (Click "
 "on object buttons to reveal their properties.)"
 msgstr ""
+"Un ensemble de données de la BODS est un tableau de déclarations. Chaque "
+"déclaration contient des ``recordDetails`` pour l'un des trois éléments de "
+"la propriété effective. La structure de ces objets peut être explorée à "
+"l'aide des visionneurs ci-dessous. (Cliquez sur les boutons d'objet pour "
+"révéler leurs propriétés.)"
 
 #: ../../standard/schema-browser.rst:12 b56c00fadb1f4a0586e3d32223260c8d
 msgid ":ref:`schema-browser-statement`"
-msgstr ""
+msgstr ":ref:`schema-browser-statement`"
 
 #: ../../standard/schema-browser.rst:13 80eacb2b2eda4f7d8899a82e5b0a72ef
 msgid ":ref:`schema-browser-entity`"
-msgstr ""
+msgstr ":ref:`schema-browser-entity`"
 
 #: ../../standard/schema-browser.rst:14 05eb8d313b1541b48d5d85ebaa615809
 msgid ":ref:`schema-browser-person`"
-msgstr ""
+msgstr ":ref:`schema-browser-person`"
 
 #: ../../standard/schema-browser.rst:15 3088a918a4dc479e9905613b51bbe577
 msgid ":ref:`schema-browser-relationship`"
-msgstr ""
+msgstr ":ref:`schema-browser-relationship`"
 
 #: ../../standard/schema-browser.rst:17 db1fbeeee6e14e7e913f49ceaf0b83c0
 msgid ""
 "For an A - Z guide to the the Data Standard's schema objects and codelists, "
 "see the :ref:`schema-reference`."
 msgstr ""
+"Pour un guide de A à Z des listes de codes et des objets du schéma de la "
+"norme relative aux données, consultez la :ref:`schema-reference`."
 
 #: ../../standard/schema-browser.rst:22 a9974f34febe4993ad00709170a45571
 msgid "Statements array"
-msgstr ""
+msgstr "Tableau de déclarations"
 
 #: ../../standard/schema-browser.rst:24 6833ff35c3c8456a92ed3c10c3bb2bd4
 msgid ""
 "View the `Statements JSON schema <../_static/statement.json>`_ or explore it"
 " using the viewer below."
 msgstr ""
+"Affichez le `Schéma JSON des déclarations <../_static/statement.json>`_ ou "
+"explorez-le à l'aide du visionneur ci-dessous."
 
 #: ../../standard/schema-browser.rst:33 b9ebc6a087c547119b33ad791054d912
 msgid "Record details (entity)"
-msgstr ""
+msgstr "Détails de l'enregistrement (entité)"
 
 #: ../../standard/schema-browser.rst:35 5e437b896aa04c938d17e23a9cb341e3
 msgid ""
 "View the `Entity record details JSON schema <../_static/entity-"
 "record.json>`_ or explore it using the viewer below."
 msgstr ""
+"Affichez le `Schéma JSON des détails de l'enregistrement de l'entité "
+"<../_static/entity-record.json>`_ ou explorez-le à l'aide du visionneur ci-"
+"dessous."
 
 #: ../../standard/schema-browser.rst:45 52b71448b3c440c2910c423f3e8474a7
 msgid "Record details (person)"
-msgstr ""
+msgstr "Détails de l'enregistrement (personne)"
 
 #: ../../standard/schema-browser.rst:47 b2c83310f7044d4bae430f47e6ce0e12
 msgid ""
 "View the `Person record details JSON schema <../_static/person-"
 "statement.json>`_ or explore it using the viewer below."
 msgstr ""
+"Affichez le `Schéma JSON des détails de l'enregistrement de la personne "
+"<../_static/entity-record.json>`_ ou explorez-le à l'aide du visionneur ci-"
+"dessous."
 
 #: ../../standard/schema-browser.rst:56 b031268dc7e844f6a3da20e4ccadc4d2
 msgid "Record details (relationship)"
-msgstr ""
+msgstr "Détails de l'enregistrement (relation)"
 
 #: ../../standard/schema-browser.rst:58 1a83494714db454e825b4e02aa9c92cf
 msgid ""
 "View the `Relationship record details JSON schema <../_static/relationship-"
 "record.json>`_ or explore it using the viewer below."
 msgstr ""
+"Affichez le `Schéma JSON des détails de l'enregistrement de la relation "
+"<../_static/entity-record.json>`_ ou explorez-le à l'aide du visionneur ci-"
+"dessous."

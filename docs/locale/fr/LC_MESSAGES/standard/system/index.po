@@ -23,16 +23,16 @@ msgstr ""
 
 #: ../../standard/system/index.rst:4 7df50865970445d480bbdaea5511be2a
 msgid "System requirements"
-msgstr ""
+msgstr "Exigences relatives aux systèmes"
 
 #: ../../standard/warningbox.rst:3 75b377295e51461f9919fa2b2f000207
 msgid ""
 "This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model, codelists, and technical guidance."
 msgstr ""
-"Ceci est la v.04 de la norme de données sur la propriété effective "
-"comprenant des mises à jour du modèle de données, des listes de codes et des"
-" orientations techniques."
+"Ceci est la v.04 de la norme relative aux données sur la propriété effective"
+" comprenant des mises à jour du modèle de données, des listes de codes et "
+"des orientations techniques."
 
 #: ../../standard/warningbox.rst:5 1855d7e38c7448bb9e786ab88fdc4948
 msgid ""
@@ -40,12 +40,14 @@ msgid ""
 ":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
 "information."
 msgstr ""
-"Des modifications ultérieures sont anticipées avant la version 1.0. Voir les"
-" pages :ref:`Changelog <changelog>` et `About <../about>`_ pages pour plus "
-"d'informations."
+"Des modifications ultérieures sont prévues avant le lancement de la version "
+"1.0. Voir les pages :ref:`Journal des modifications <changelog>` et `À "
+"propos <../about>`_ pour plus d'informations."
 
 #: ../../standard/system/index.rst:8 33704f55f3d6439ba794242bb4d86c3a
 msgid ""
 "This section contains requirements for systems generating beneficial "
 "ownership data."
 msgstr ""
+"Cette section contient les exigences relatives aux systèmes qui produisent "
+"des données sur la propriété effective."

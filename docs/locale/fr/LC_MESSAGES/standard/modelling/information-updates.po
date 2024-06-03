@@ -3,6 +3,10 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Cécile Guarin, 2024
+# Rachel Vint, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +25,7 @@ msgstr ""
 #: ../../standard/modelling/information-updates.rst:4
 #: 63142a2003d54c519c3287f73a6d9c95
 msgid "Information updates"
-msgstr ""
+msgstr "Mises à jour des informations"
 
 #: ../../standard/modelling/information-updates.rst:6
 #: d9f345fccd09412e9f3892fa8c2bee6d
@@ -32,11 +37,19 @@ msgid ""
 "network. Data management systems handling information updates need to meet "
 "the minimal set of requirements below, to offer a low-resolution picture."
 msgstr ""
+"Souvent, les systèmes qui collectent et gèrent les informations sur les "
+"bénéficiaires effectifs se chargent d'actualiser ou de confirmer les "
+"enregistrements existants. En fonction de la manière dont les informations "
+"sont gérées, les données de la norme BODS qui sont générées fourniront une "
+"image en haute ou basse résolution de la nature évolutive d'un réseau des "
+"bénéficiaires effectifs. Les systèmes de gestion des données gérant les "
+"mises à jour des informations doivent se conformer à l'ensemble d'exigences "
+"minimales ci-dessous afin de fournir une image en basse résolution."
 
 #: ../../standard/modelling/information-updates.rst:10
 #: b72479dabf924a408c2434f780629162
 msgid "Minimal requirements"
-msgstr ""
+msgstr "Exigences minimales"
 
 #: ../../standard/modelling/information-updates.rst:11
 #: 50070139b6ba459bb716c89cc4236570
@@ -46,6 +59,11 @@ msgid ""
 "are changed or confirmed. See :ref:`generating-statements` for further "
 "requirements."
 msgstr ""
+"Une nouvelle déclaration de la norme BODS doit être générée pour un élément "
+"(c'est-à-dire une entité, une personne ou une relation) du réseau des "
+"bénéficiaires effectifs d'un sujet lorsque ses informations sont modifiées "
+"ou confirmées. Consultez la section :ref:`generating-statements` pour "
+"connaître les exigences supplémentaires."
 
 #: ../../standard/modelling/information-updates.rst:13
 #: 9f424dee98a74441b1b66cb0cbb99b38
@@ -55,6 +73,11 @@ msgid ""
 "network's subject change, or are confirmed, the new Statement generated must"
 " contain the same ``recordId`` as in the outdated Statement."
 msgstr ""
+"Le champ ``recordId`` du sujet de chaque réseau des bénéficiaires effectifs "
+"doit être stable dans le temps. En d'autres termes, lorsque les informations"
+" sur le sujet du réseau des bénéficiaires effectifs sont modifiées ou "
+"confirmées, la nouvelle déclaration générée doit contenir le même champ "
+"``recordId`` que dans la déclaration obsolète."
 
 #: ../../standard/modelling/information-updates.rst:15
 #: c96002ddc0f64654b5a4ba1a90d55db0
@@ -63,6 +86,10 @@ msgid ""
 "declared beneficial ownership network, at any point in time, MUST contain "
 "the subject's ``recordId`` as its ``declarationSubject``."
 msgstr ""
+"Chaque déclaration de la norme BODS, qui est émise à tout moment en lien "
+"avec tout élément d'un réseau des bénéficiaires effectifs déclaré d'un "
+"sujet, doit contenir le champ ``recordId`` du sujet en tant que "
+"``declarationSubject``."
 
 #: ../../standard/modelling/information-updates.rst:17
 #: 70e36bdaf6c84dcebeb56b75ace94283
@@ -71,16 +98,20 @@ msgid ""
 " to understand the lifecycle of declared information with reference to the "
 "available BODS data."
 msgstr ""
+"Les générateurs de données de la norme BODS doivent publier des conseils à "
+"destination des utilisateurs et utilisatrices des informations afin de leur "
+"expliquer le cycle de vie des informations déclarées, notamment concernant "
+"les données de la norme BODS disponibles."
 
 #: ../../standard/modelling/information-updates.rst:22
 #: 54b09b7157984f16bf854a3dcb4d532f
 msgid "Full requirements"
-msgstr ""
+msgstr "Liste complète des exigences"
 
 #: ../../standard/modelling/information-updates.rst:23
 #: a43e4a54d7d34664a48c1e20ada9cb21
 msgid "The minimal requirements stated above MUST be met."
-msgstr ""
+msgstr "Les exigences minimales susmentionnées doivent être respectées."
 
 #: ../../standard/modelling/information-updates.rst:25
 #: a0792fee553d49e3b4961fe29c3f2182
@@ -89,6 +120,9 @@ msgid ""
 "within a beneficial ownership network is represented by a series of "
 "Statements:"
 msgstr ""
+"Le cycle de vie d'un enregistrement concernant un élément (c'est-à-dire une "
+"entité, une personne ou une relation) au sein d'un réseau des bénéficiaires "
+"effectifs est représenté par une série de déclarations :"
 
 #: ../../standard/modelling/information-updates.rst:27
 #: 378fe2a99bfd4ae9898469e4839de716
@@ -98,6 +132,11 @@ msgid ""
 "confirmed, the new Statement generated must contain the same ``recordId`` as"
 " in the outdated Statement."
 msgstr ""
+"Le champ ``recordId`` de chaque élément d'un réseau des bénéficiaires "
+"effectifs doit être stable dans le temps. En d'autres termes, lorsque les "
+"informations d'un élément sont modifiées ou confirmées, la nouvelle "
+"déclaration générée doit contenir le même champ ``recordId`` que dans la "
+"déclaration obsolète."
 
 #: ../../standard/modelling/information-updates.rst:29
 #: 3c8cd0a9072241a7a4ddb5d2d65ab509
@@ -108,6 +147,14 @@ msgid ""
 "MUST be 'updated'. When the element is no longer a part of the beneficial "
 "ownership network, in the new Statement ``recordStatus`` MUST be 'closed'."
 msgstr ""
+"Lorsqu'une déclaration est publiée pour la première à propos d'un élément "
+"dans un réseau des bénéficiaires effectifs, le champ ``recordStatus`` doit "
+"être configuré sur 'new' (nouveau). Lorsque les informations de l'élément "
+"sont modifiées ou confirmées, le champ ``recordStatus`` dans la nouvelle "
+"déclaration doit être configuré sur 'updated' (actualisé). Quand l'élément "
+"ne fait plus partie d'un réseau des bénéficiaires effectifs, le champ "
+"``recordStatus`` dans la nouvelle déclaration doit être configuré sur "
+"'closed' (clôturé)."
 
 #: ../../standard/modelling/information-updates.rst:31
 #: 81c19e5abb61442c92d066552c8f489d
@@ -116,6 +163,10 @@ msgid ""
 "accurate, a new Statement SHOULD be generated with the same ``recordId`` as "
 "in the outdated Statement and with ``recordStatus`` 'updated'."
 msgstr ""
+"Lorsque les informations d'un élément n'ont pas été modifiées, mais que leur"
+" exactitude a été confirmée, une nouvelle déclaration doit être générée avec"
+" le même champ ``recordId`` que dans la déclaration obsolète et le champ "
+"``recordStatus`` doit être configuré sur` 'updated' (acualisé)."
 
 #: ../../standard/modelling/information-updates.rst:33
 #: 53774796ba4c461dbba217d7c337da79
@@ -123,6 +174,9 @@ msgid ""
 "Once a series of Statements about a given element is closed, further "
 "Statements with the related ``recordId`` MUST NOT be generated."
 msgstr ""
+"Lorsqu'une série de déclarations sur un élément donné est clôturée, les "
+"déclarations suivantes avec un champ ``recordId`` connexe ne doivent pas "
+"être générées."
 
 #: ../../standard/modelling/information-updates.rst:35
 #: ede83e5b90884fd58dcef824d76ce726
@@ -133,16 +187,22 @@ msgid ""
 "``recordStatus`` of the first relationship would be 'closed', and details of"
 " a new record would be published."
 msgstr ""
+"Quand le sujet ou la partie intéressée d'une relation change, le cycle de "
+"vie de cette relation est considéré comme terminé. Par exemple, si le "
+"propriétaire d'une entreprise transfère sa participation au capital à un "
+"proche, le champ ``recordStatus`` de la première relation devrait être "
+"configuré sur 'closed' (cloturé) et les informations d'un nouvel "
+"enregistrement doivent être publiées."
 
 #: ../../standard/modelling/information-updates.rst:38
 #: 1d0af85521804916ade17908c8dcd168
 msgid "Requirements for special cases"
-msgstr ""
+msgstr "Exigences relatives aux cas particuliers"
 
 #: ../../standard/modelling/information-updates.rst:42
 #: e1dde693e884403bbbc165e4c69317dd
 msgid "Error correction"
-msgstr ""
+msgstr "Correction des erreurs"
 
 #: ../../standard/modelling/information-updates.rst:44
 #: 0be859bb1bda4dc1a8133c5c5ff67a1f
@@ -151,6 +211,9 @@ msgid ""
 "disclosure, or the incorrect processing of information by the data "
 "management system."
 msgstr ""
+"Les erreurs survenant dans les données publiées peuvent provenir d'erreurs "
+"au moment de la divulgation des informations ou du traitement incorrect des "
+"informations par le système de gestion des données."
 
 #: ../../standard/modelling/information-updates.rst:46
 #: 8f17de3b9de34f0c970d8f0f2d8af19e
@@ -160,16 +223,21 @@ msgid ""
 "'correcting' and a ``description`` of the correction, and an updated "
 "``publicationDetails.publicationDate``."
 msgstr ""
+"Dans tous les cas, les erreurs doivent être corrigées en émettant de "
+"nouvelles déclarations avec une :any:`annotation <schema-annotation>` "
+"contenant un champ ``motivation`` configuré sur 'correcting' (correction) et"
+" un champ ``description`` de la correction ainsi qu'un champ "
+"``publicationDetails.publicationDate`` mis à jour."
 
 #: ../../standard/modelling/information-updates.rst:48
 #: e45158bb9bc64c938e4beaf762acf4bf
 msgid "See the example in :any:`guidance-dates`."
-msgstr ""
+msgstr "Consultez l'exemple fourni sur la page :any:`guidance-dates`."
 
 #: ../../standard/modelling/information-updates.rst:52
 #: db3d0f1ec1a34b8f8133998b140f5369
 msgid "Redaction"
-msgstr ""
+msgstr "Révision"
 
 #: ../../standard/modelling/information-updates.rst:54
 #: c2afea5a65df4b0db9e656ab49a7e347
@@ -178,3 +246,6 @@ msgid ""
 "Statement MAY be republished with the same statement identifier and updated "
 "property values."
 msgstr ""
+"Si des informations sensibles sont accidentellement divulguées dans une "
+"déclaration, cette dernière peut être republiée avec le même identifiant de "
+"déclaration et des valeurs de propriété actualisées."

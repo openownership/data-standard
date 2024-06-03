@@ -25,12 +25,12 @@ msgstr ""
 #. /title
 #: schema/codelist-schema.json:1
 msgid "Codelist schema"
-msgstr "Schéma de la liste de codes"
+msgstr "Schéma de liste de codes"
 
 #. /description
 #: schema/codelist-schema.json:1
 msgid "Schema for BODS codelist CSV files."
-msgstr "Schéma pour les fichiers CSV de la liste de codes de la BODS"
+msgstr "Schéma pour les fichiers CSV des listes de codes de la BODS"
 
 #. /items/properties/code/title
 #: schema/codelist-schema.json:1
@@ -105,7 +105,7 @@ msgstr ""
 "Détails d'adresse semi-structurés, adaptés au traitement par des algorithmes"
 " d'analyse d'adresse. Si les codes postaux et les informations de pays sont "
 "des champs isolés dans les systèmes sources, ces informations DEVRAIENT être"
-" publiées dans les champs dédiés et non PAS dans le champ `adresse`."
+" publiées dans les champs dédiés et non PAS dans le champ `address`."
 
 #. /$defs/Address/properties/type/title
 #. /properties/entityType/properties/type/title
@@ -727,13 +727,13 @@ msgid ""
 msgstr ""
 "Une ou plusieurs URL permettant de récupérer les dépôts réglementaires "
 "concernant les participations importantes. Ces URL peuvent diriger vers des "
-"pages conservées par des organismes réglementaires, des bourses de valeurs "
+"pages conservées par des organismes réglementaires, des bourses de valeurs "
 "ou l'entreprise elle-même."
 
 #. /$defs/PublicListing/properties/securitiesListings/title
 #: schema/entity-record.json:1
 msgid "Securities Listings"
-msgstr ""
+msgstr "Cotations des valeurs mobilières"
 
 #. /$defs/PublicListing/properties/securitiesListings/description
 #: schema/entity-record.json:1
@@ -744,22 +744,29 @@ msgid ""
 "security is traded on more than one market, there SHOULD be an entry for "
 "each market (or market segment)."
 msgstr ""
+"Détails des valeurs mobilières de l'entité et des bourses et marchés publics"
+" sur lesquels elles sont négociées. Tous les titres de participation "
+"DEVRAIENT être cités ici, ainsi que toute autre valeur mobilière dont "
+"pourrait découler une propriété effective. Si une valeur mobilière est "
+"négociée sur plusieurs marchés, une entrée DEVRAIT être créée pour chaque "
+"marché (ou segment de marché)."
 
 #. /$defs/PublicListing/properties/securitiesListings/items/title
 #: schema/entity-record.json:1
 msgid "Securities listing"
-msgstr ""
+msgstr "Cotation de la valeur mobilière"
 
 #. /$defs/PublicListing/properties/securitiesListings/items/description
 #. /$defs/SecuritiesListing/description
 #: schema/entity-record.json:1
 msgid "Details of a security and the market on which it is traded."
 msgstr ""
+"Détails d'une valeur mobilière et du marché sur lequel elle est négociée."
 
 #. /$defs/SecuritiesListing/title
 #: schema/entity-record.json:1
 msgid "Securities Listing"
-msgstr ""
+msgstr "Cotation de la valeur mobilière"
 
 #. /$defs/SecuritiesListing/properties/marketIdentifierCode/title
 #: schema/entity-record.json:1
@@ -776,11 +783,17 @@ msgid ""
 "`operatingMarketIdentifierCode`. MICs are allocated and managed under ISO "
 "standard 10383."
 msgstr ""
+"Code d'identification (Market Identifier Code ou MIC, en anglais) du marché "
+"sur lequel la valeur mobilière est négociée. Lorsque la valeur mobilière est"
+" négociée sur un segment de bourse, il s'agit du MIC du segment. Lorsqu'elle"
+" est négociée sur la bourse principale, il s'agit du MIC de la bourse "
+"principale et DOIT correspondre au `operatingMarketIdentifierCode`. Les MIC "
+"sont attribués et gérés selon la norme ISO 10383."
 
 #. /$defs/SecuritiesListing/properties/operatingMarketIdentifierCode/title
 #: schema/entity-record.json:1
 msgid "Operating Market Identifier Code (Operating MIC)"
-msgstr ""
+msgstr "Code d'identification de marché opérationnel"
 
 #. /$defs/SecuritiesListing/properties/operatingMarketIdentifierCode/description
 #: schema/entity-record.json:1
@@ -792,11 +805,19 @@ msgid ""
 "exchange and MUST match the `marketIdentifierCode`. MICs are allocated and "
 "managed under ISO standard 10383."
 msgstr ""
+"Code d'identification de marché (Market Identifier Code ou MIC, en anglais) "
+"de la bourse ou de la plateforme de négociation principale qui gèrent les "
+"transactions sur cette valeur mobilière. Lorsque la valeur mobilière est "
+"négociée sur un segment de bourse, il s'agit du MIC de la bourse ou de la "
+"plateforme de négociation parent. Lorsqu'elle est négociée sur la bourse "
+"principale, il s'agit du MIC de la bourse principale et DOIT correspondre au"
+" `operatingMarketIdentifierCode`. Les MIC sont attribués et gérés selon la "
+"norme ISO 10383."
 
 #. /$defs/SecuritiesListing/properties/stockExchangeJurisdiction/title
 #: schema/entity-record.json:1
 msgid "Stock Exchange Jurisdiction"
-msgstr ""
+msgstr "Juridiction de la bourse"
 
 #. /$defs/SecuritiesListing/properties/stockExchangeJurisdiction/description
 #: schema/entity-record.json:1
@@ -805,11 +826,14 @@ msgid ""
 "for the jurisdiction under which the exchange, market or trading platform is"
 " regulated."
 msgstr ""
+"Code pays à 2 lettres (ISO 3166-1) ou code de subdivision (ISO 3166-2) pour "
+"la juridiction sous laquelle la bourse, le marché ou la plateforme de "
+"négociation est réglementé."
 
 #. /$defs/SecuritiesListing/properties/stockExchangeName/title
 #: schema/entity-record.json:1
 msgid "Stock Exchange Name"
-msgstr ""
+msgstr "Nom de la bourse"
 
 #. /$defs/SecuritiesListing/properties/stockExchangeName/description
 #: schema/entity-record.json:1
@@ -819,21 +843,26 @@ msgid ""
 "name SHOULD include both elements. For example, 'London Stock Exchange - "
 "MTF'."
 msgstr ""
+"Nom de la bourse, du marché ou de la plateforme de négociation sur laquelle "
+"ou lequel la valeur mobilière est négociée. Si la valeur est négociée sur un"
+" segment de la bourse, le nom DEVRAIT inclure ces éléments. Par exemple, "
+"'London Stock Exchange - MTF'."
 
 #. /$defs/SecuritiesListing/properties/security/title
 #: schema/entity-record.json:1
 msgid "Security"
-msgstr ""
+msgstr "Valeur mobilière"
 
 #. /$defs/SecuritiesListing/properties/security/description
 #: schema/entity-record.json:1
 msgid "Identifying information of the stock or other security."
 msgstr ""
+"Informations d'identification de l'action ou d'une autre valeur mobilière."
 
 #. /$defs/SecuritiesListing/properties/security/properties/idScheme/title
 #: schema/entity-record.json:1
 msgid "Identifier Scheme"
-msgstr ""
+msgstr "Schéma d'identifiant"
 
 #. /$defs/SecuritiesListing/properties/security/properties/idScheme/description
 #: schema/entity-record.json:1
@@ -841,27 +870,32 @@ msgid ""
 "The scheme under which the security has been issued a unique, persistent "
 "identifier, using the securitiesIdentifierSchemes codelist."
 msgstr ""
+"Schéma sous lequel un identifiant unique et persistant a été émis pour la "
+"valeur mobilière à l'aide de la liste de codes securitiesIdentifierSchemes."
 
 #. /$defs/SecuritiesListing/properties/security/properties/id/description
 #: schema/entity-record.json:1
 msgid "The unique identifier of the security as issued under the `idScheme`."
 msgstr ""
+"Identifiant unique de la valeur mobilière tel qu'émis sous le `idScheme`."
 
 #. /$defs/SecuritiesListing/properties/security/properties/ticker/title
 #: schema/entity-record.json:1
 msgid "Stock Ticker"
-msgstr ""
+msgstr "Affichage des cotes de la bourse"
 
 #. /$defs/SecuritiesListing/properties/security/properties/ticker/description
 #: schema/entity-record.json:1
 msgid ""
 "The stock ticker identifying this security on the named stock exchange."
 msgstr ""
+"Affichage des cotes de la bourse identifiant cette valeur mobilière sur la "
+"bourse citée."
 
 #. /title
 #: schema/person-record.json:1
 msgid "Person Record Details"
-msgstr ""
+msgstr "Détails de l'enregistrement de la personne"
 
 #. /description
 #: schema/person-record.json:1
@@ -882,7 +916,7 @@ msgid ""
 msgstr ""
 "Si cette personne est un composant d'une relation indirecte. Lorsque "
 "`isComponent` est 'true' : 1) le `recordId` de cette personne DOIT être un "
-"élément dans la série `componentRecords` de cette déclaration de relation "
+"élément dans le tableau `componentRecords` de cette déclaration de relation "
 "principale, 2) cette personne DOIT être antérieure à la déclaration de "
 "relation principale dans un paquet ou un flux de la BODS, 3) le remplacement"
 " de cette déclaration de personne DEVRAIT être envisagé lors du remplacement"
@@ -901,6 +935,10 @@ msgid ""
 " the type 'anonymousPerson' or 'unknownPerson' a reason for the absence of "
 "information SHOULD be provided in 'unspecifiedPersonDetails'"
 msgstr ""
+"Statut de cette personne, à l'aide de la liste de codes personType. "
+"Lorsqu'une personne a le type 'anonymousPerson' ou 'unknownPerson', un motif"
+" de l'absence d'information DEVRAIT être fourni dans "
+"'unspecifiedPersonDetails'"
 
 #. /properties/unspecifiedPersonDetails/description
 #: schema/person-record.json:1
@@ -982,7 +1020,7 @@ msgstr "Domicile fiscal"
 #: schema/person-record.json:1
 msgid ""
 "The tax residencies held by this person, as an array of Country objects."
-msgstr ""
+msgstr "Domiciles fiscaux de cette personne, comme tableau des objets Pays."
 
 #. /properties/addresses/description
 #: schema/person-record.json:1
@@ -1002,11 +1040,15 @@ msgid ""
 " (PEP) declarations are expected as part of beneficial ownership "
 "declarations."
 msgstr ""
+"Information sur l'éventuelle exposition politique de la personne décrite par"
+" cette déclaration. Il convient d'utiliser cette propriété uniquement si les"
+" déclarations de personne politiquement exposée (PPE) sont attendues dans le"
+" cadre des déclarations des bénéficiaires effectifs."
 
 #. /properties/politicalExposure/properties/status/title
 #: schema/person-record.json:1
 msgid "Politically Exposed Person (PEP) Status"
-msgstr ""
+msgstr "Statut de personne politiquement exposée (PPE)"
 
 #. /properties/politicalExposure/properties/status/description
 #: schema/person-record.json:1
@@ -1017,11 +1059,16 @@ msgid ""
 "missing; the reason for the missing data SHOULD be supplied in the `details`"
 " array."
 msgstr ""
+"Cette valeur est 'isPep' ou 'isNotPep' selon que la personne décrite par "
+"cette déclaration possède ou non le statut de personne politiquement exposée"
+" (PPE). Une valeur 'unknown' signifie que la déclaration du statut de PPE "
+"est attendue mais manquante ; le motif de l'absence de données DEVRAIT être "
+"fourni dans le tableau `details`."
 
 #. /properties/politicalExposure/properties/details/title
 #: schema/person-record.json:1
 msgid "Politically Exposed Person (PEP) Details"
-msgstr ""
+msgstr "Détails de la personne politiquement exposée (PPE)"
 
 #. /properties/politicalExposure/properties/details/description
 #: schema/person-record.json:1
@@ -1029,6 +1076,8 @@ msgid ""
 "One or more descriptions of this person's Politically Exposed Person (PEP) "
 "status."
 msgstr ""
+"Une ou plusieurs descriptions du statut de personne politiquement exposée "
+"(PPE) de cette personne."
 
 #. /$defs/Name/description
 #: schema/person-record.json:1
@@ -1039,11 +1088,17 @@ msgid ""
 "(https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) "
 "definitions."
 msgstr ""
+"Nom par lequel cette personne est connue. Un nom DOIT être indiqué dans "
+"`fullName`, et PEUT être réparti dans les champs `familyName`, `givenName` "
+"et `patronymicName`, selon les définitions du vocabulaire pour décrire des "
+"personnes (Core Person Vocabulary) développé par le programme ISA de la "
+"Commission européenne (https://joinup.ec.europa.eu/solution/e-government-"
+"core-vocabularies)."
 
 #. /$defs/Name/properties/type/description
 #: schema/person-record.json:1
 msgid "The status of this name for the person, using the nameType codelist."
-msgstr ""
+msgstr "Statut du nom de la personne, à l'aide de la liste de codes nameType."
 
 #. /$defs/Name/properties/fullName/title
 #: schema/person-record.json:1
@@ -1069,11 +1124,16 @@ msgid ""
 "commonly found in Hispanic countries. For example, Miguel de Cervantes "
 "Saavedra's Family Name would be recorded as 'de Cervantes Saavedra.'"
 msgstr ""
+"Partie du `fullName` de la personne commun aux membres de sa famille. La "
+"valeur peut inclure des préfixes ou des suffixes. (Par ex. 'de Boer', 'van "
+"de Putte', 'von und zu Orlow'.) La valeur peut être un nom de famille "
+"composé, comme dans les pays hispaniques. Par exemple, le nom de famille de "
+"Miguel de Cervantes Saavedra sera enregistré comme 'de Cervantes Saavedra.'"
 
 #. /$defs/Name/properties/givenName/title
 #: schema/person-record.json:1
 msgid "Given Names"
-msgstr ""
+msgstr "Prénoms"
 
 #. /$defs/Name/properties/givenName/description
 #: schema/person-record.json:1
@@ -1083,11 +1143,16 @@ msgid ""
 "legally recognised as 'given names' through a formal process. For example, "
 "the given name for Johann Sebastian Bach is 'Johann Sebastian'."
 msgstr ""
+"Partie du `fullName` de la personne qui identifie la personne au sein de sa "
+"famille. Le prénom est choisi par les parents à la naissance de la personne "
+"ou il peut être reconnu sur le plan juridique comme 'given names' au moyen "
+"d'une procédure officielle. Par exemple, le prénom de Johann Sebastian Bach "
+"est 'Johann Sebastian'."
 
 #. /$defs/Name/properties/patronymicName/title
 #: schema/person-record.json:1
 msgid "Patronymic Name"
-msgstr ""
+msgstr "Nom patronymique"
 
 #. /$defs/Name/properties/patronymicName/description
 #: schema/person-record.json:1
@@ -1096,27 +1161,32 @@ msgid ""
 "common in countries such as Iceland, Ethiopia and Russia. For example, the "
 "'Sergeyevich' in 'Mikhail Sergeyevich Gorbachev'."
 msgstr ""
+"Partie du `fullName` de la personne qui est héritée du père, une pratique "
+"courante dans certains pays comme l'Islande, l'Éthiopie et la Russie. Par "
+"exemple, 'Sergeyevich' dans 'Mikhail Sergeyevich Gorbachev'."
 
 #. /$defs/PepStatusDetails/title
 #: schema/person-record.json:1
 msgid "PEP Status Details"
-msgstr ""
+msgstr "Détails du statut de PPE"
 
 #. /$defs/PepStatusDetails/description
 #: schema/person-record.json:1
 msgid "Information about a person's political involvement."
-msgstr ""
+msgstr "Informations sur l'engagement politique d'une personne."
 
 #. /$defs/PepStatusDetails/properties/reason/description
 #: schema/person-record.json:1
 msgid ""
 "The reason for this person being declared a politically-exposed person."
 msgstr ""
+"Motif pour lequel cette personne est déclarée comme personne politiquement "
+"exposée."
 
 #. /$defs/PepStatusDetails/properties/missingInfoReason/title
 #: schema/person-record.json:1
 msgid "Missing Information Reasons"
-msgstr ""
+msgstr "Motifs d'informations manquantes"
 
 #. /$defs/PepStatusDetails/properties/missingInfoReason/description
 #: schema/person-record.json:1
@@ -1126,16 +1196,21 @@ msgid ""
 " phrase from the source system, or a free text justification. Where this "
 "field is present it should be the only field except for `source`."
 msgstr ""
+"Explication de l'absence d'indication du statut de PPE de la personne "
+"(`politicalExposure.status` est 'unknown'). Il peut s'agir d'une phrase "
+"descriptive type du système source ou d'une justification sous forme de "
+"texte libre. Lorsque ce champ est présent, il doit être le seul champ à "
+"l'exception de la `source`."
 
 #. /$defs/PepStatusDetails/properties/jurisdiction/description
 #: schema/person-record.json:1
 msgid "The jurisdiction where this person is a PEP."
-msgstr ""
+msgstr "Juridiction où la personne est politiquement exposée."
 
 #. /$defs/PepStatusDetails/properties/startDate/title
 #: schema/person-record.json:1
 msgid "State Date"
-msgstr ""
+msgstr "Date de statut"
 
 #. /$defs/PepStatusDetails/properties/startDate/description
 #: schema/person-record.json:1
@@ -1146,12 +1221,18 @@ msgid ""
 "(first) month. This rounding SHOULD be noted in accompanying guidance (such "
 "as a publication policy or data use guide)."
 msgstr ""
+"Date à laquelle cette personne avait le statut de personne politiquement "
+"exposée (PPE). La date DOIT respecter le format AAAA-MM-JJ. En cas d'absence"
+" de précision sur le mois ou la date, la valeur peut être arrondie au "
+"premier jour du (premier) mois. Cet arrondi DEVRAIT être noté dans les "
+"documents relatifs (comme une politique de publication ou un guide "
+"d'utilisation des données)."
 
 #. /$defs/PepStatusDetails/properties/endDate/title
 #. /$defs/Interest/properties/endDate/title
 #: schema/person-record.json:1 schema/relationship-record.json:1
 msgid "End Date"
-msgstr ""
+msgstr "Date de fin"
 
 #. /$defs/PepStatusDetails/properties/endDate/description
 #: schema/person-record.json:1
@@ -1162,16 +1243,22 @@ msgid ""
 " of the (first) month.  This rounding SHOULD be noted in accompanying "
 "guidance (such as a publication policy or data use guide)."
 msgstr ""
+"Date à laquelle cette personne n'a plus le statut de personne politiquement "
+"exposée (PPE). La date DOIT respecter le format AAAA-MM-JJ. En cas d'absence"
+" de précision sur le mois ou la date, la valeur peut être arrondie au "
+"premier jour du (premier) mois. Cet arrondi DEVRAIT être noté dans les "
+"documents relatifs (comme une politique de publication ou un guide "
+"d'utilisation des données)."
 
 #. /$defs/PepStatusDetails/properties/source/description
 #: schema/person-record.json:1
 msgid "The source of this PEP information"
-msgstr ""
+msgstr "Source de ces informations sur la PPE"
 
 #. /title
 #: schema/relationship-record.json:1
 msgid "Relationship Record Details"
-msgstr ""
+msgstr "Détails de l'enregistrement de la relation"
 
 #. /description
 #: schema/relationship-record.json:1
@@ -1179,6 +1266,8 @@ msgid ""
 "Information about the interests that an interested party (a person or "
 "entity) holds in the subject (an entity)."
 msgstr ""
+"Informations sur la participation qu'une partie intéressée (une personne ou "
+"une entité) détient dans le sujet (une entité)."
 
 #. /properties/isComponent/description
 #: schema/relationship-record.json:1
@@ -1195,11 +1284,22 @@ msgid ""
 "declaration of the relationship between the `subject` and the "
 "`interestedParty`."
 msgstr ""
+"Si cette relation est un composant d'une relation indirecte plus large. "
+"Lorsque `isComponent` est 'true' : 1) le `recordId` de cette déclaration de "
+"relation secondaire DOIT être un élément dans le tableau `componentRecords` "
+"de cette déclaration de relation principale, 2) cette déclaration de "
+"relation DOIT être antérieure à la déclaration de relation principale dans "
+"un paquet ou un flux de la BODS, 3) le remplacement de cette déclaration de "
+"relation DEVRAIT être envisagé lors du remplacement de la déclaration de "
+"relation principale et 4) la valeur `isComponent` de la déclaration de la "
+"relation principale DOIT être 'false'. Si `isComponent` est 'false', cette "
+"déclaration de relation est la déclaration principale de la relation entre "
+"le `subject` et la `interestedParty`."
 
 #. /properties/componentRecords/title
 #: schema/relationship-record.json:1
 msgid "Component Record IDs"
-msgstr ""
+msgstr "Identifiants des enregistrements de composants"
 
 #. /properties/componentRecords/description
 #: schema/relationship-record.json:1
@@ -1209,6 +1309,10 @@ msgid ""
 "indirect). If this relationship has components, its own `isComponent` value "
 "MUST be 'false'."
 msgstr ""
+"Les valeurs `recordId` de tous les enregistrements de composants qui "
+"fournissent des détails sur cette relation entre le `subject` et la "
+"`interestedParty` (si elle est indirecte). Si cette relation a des "
+"composants, sa valeur `isComponent` DOIT être 'false'."
 
 #. /properties/subject/title
 #: schema/relationship-record.json:1
@@ -1242,43 +1346,58 @@ msgid ""
 "provided here (and the their `recordDetails.[person|entity]Type` should "
 "indicate that they are anonymous or unknown)."
 msgstr ""
+"`recordId` de la partie intéressée dans la relation ou objet Enregistrement "
+"non spécifié accompagné d'un motif expliquant pourquoi ces informations "
+"n'ont pas été divulguées. La partie intéressée PEUT être une entité ou une "
+"personne. Un enregistrement non spécifié DEVRAIT uniquement être utilisé si "
+"aucune information n'est connue à propos des parties intéressées au-delà de "
+"ce point du réseau des bénéficiaires effectifs. Si la partie intéressée est "
+"connue comme une entité ou une personne mais que son identité n'est pas "
+"disponible, un `recordId` DEVRAIT lui être attribué ici (et ses "
+"`recordDetails.[person|entity]Type` devraient indiquer qu'elle est anonyme "
+"ou inconnue)."
 
 #. /properties/interests/title
 #: schema/relationship-record.json:1
 msgid "Interests"
-msgstr ""
+msgstr "Participations au capital"
 
 #. /properties/interests/description
 #: schema/relationship-record.json:1
 msgid ""
 "A description of the interests held by the interested party in the subject."
 msgstr ""
+"Description des participations détenues par la partie intéressée dans le "
+"sujet."
 
 #. /$defs/Interest/title
 #: schema/relationship-record.json:1
 msgid "Interest"
-msgstr ""
+msgstr "Participation au capital"
 
 #. /$defs/Interest/description
 #: schema/relationship-record.json:1
 msgid ""
 "A description of an interest held by an interestedParty in the subject."
 msgstr ""
+"Description d'une participation détenue par une interestedParty dans le "
+"sujet."
 
 #. /$defs/Interest/properties/type/title
 #: schema/relationship-record.json:1
 msgid "Type of Interest"
-msgstr ""
+msgstr "Type de participation"
 
 #. /$defs/Interest/properties/type/description
 #: schema/relationship-record.json:1
 msgid "The nature of the interest, using the interestType codelist."
 msgstr ""
+"Nature de la participation, à l'aide de la liste de codes interestType."
 
 #. /$defs/Interest/properties/directOrIndirect/title
 #: schema/relationship-record.json:1
 msgid "Direct or Indirect"
-msgstr ""
+msgstr "Directe ou indirecte"
 
 #. /$defs/Interest/properties/directOrIndirect/description
 #: schema/relationship-record.json:1
@@ -1288,6 +1407,10 @@ msgid ""
 "and MUST be 'direct' if such intermediaries are known not to exist. "
 "Otherwise the value MUST be 'unknown'."
 msgstr ""
+"Degré auquel la participation est directement exercée par la partie "
+"intéressée. La valeur DOIT être 'indirecte' en présence d'entités ou "
+"d'agents intermédiaires et DOIT être 'directe' en l'absence de ces "
+"intermédiaires. Autrement, la valeur DOIT être 'inconnue'."
 
 #. /$defs/Interest/properties/beneficialOwnershipOrControl/title
 #: schema/relationship-record.json:1
@@ -1303,6 +1426,11 @@ msgid ""
 "noted in accompanying guidance (such as a publication policy or data use "
 "guide)."
 msgstr ""
+"Si cette participation (seule ou non) signifie que la partie intéressée est "
+"un bénéficiaire effectif du sujet. Si c'est 'true', la partie intéressée "
+"DOIT être une personne physique. La définition de 'bénéficiaire effectif' "
+"utilisée DEVRAIT être notée dans les documents relatifs (comme une politique"
+" de publication ou un guide d'utilisation des données)."
 
 #. /$defs/Interest/properties/details/description
 #: schema/relationship-record.json:1
@@ -1310,11 +1438,14 @@ msgid ""
 "The local name given to this kind of interest, or further information (semi-"
 "structured or unstructured) to clarify the nature of the interest."
 msgstr ""
+"Nom local donné à ce type de participation, ou informations complémentaires "
+"(semi-structurées ou non structurées) pour clarifier la nature de la "
+"participation."
 
 #. /$defs/Interest/properties/share/title
 #: schema/relationship-record.json:1
 msgid "Percentage Share"
-msgstr ""
+msgstr "Quote-part en pourcentage"
 
 #. /$defs/Interest/properties/share/description
 #: schema/relationship-record.json:1
@@ -1325,6 +1456,12 @@ msgid ""
 "`exclusiveMaximum`) can be used to record the range into which the "
 "proportion falls. (The `minimum` and `maximum` values are inclusive.)"
 msgstr ""
+"Quote-part de ce type de participation détenue par la partie intéressée, "
+"lorsqu'une participation est dénombrable. Il convient d'indiquer le "
+"pourcentage `exact`, s'il est connu. Autrement, un `minimum` (ou "
+"`exclusiveMinimum`) et `maximum` (ou `exclusiveMaximum`) peuvent être "
+"utilisés pour enregistrer la fourchette à laquelle la proportion appartient."
+" (Les valeurs `minimum` et `maximum` sont inclusives.)"
 
 #. /$defs/Interest/properties/share/properties/exact/title
 #: schema/relationship-record.json:1
@@ -1334,7 +1471,7 @@ msgstr "Pourcentage exact"
 #. /$defs/Interest/properties/share/properties/exact/description
 #: schema/relationship-record.json:1
 msgid "The exact share of this interest held (if available)."
-msgstr ""
+msgstr "Quote-part exact de cette participation (si disponible)."
 
 #. /$defs/Interest/properties/share/properties/maximum/title
 #: schema/relationship-record.json:1
@@ -1344,7 +1481,7 @@ msgstr "Pourcentage maximum"
 #. /$defs/Interest/properties/share/properties/maximum/description
 #: schema/relationship-record.json:1
 msgid "The inclusive upper bound of the share of this interest."
-msgstr ""
+msgstr "Limite supérieure inclusive de la quote-part de cette participation."
 
 #. /$defs/Interest/properties/share/properties/minimum/title
 #: schema/relationship-record.json:1
@@ -1354,32 +1491,32 @@ msgstr "Pourcentage minimum"
 #. /$defs/Interest/properties/share/properties/minimum/description
 #: schema/relationship-record.json:1
 msgid "The inclusive lower bound of the share of this interest."
-msgstr ""
+msgstr "Limite inférieure inclusive de la quote-part de cette participation."
 
 #. /$defs/Interest/properties/share/properties/exclusiveMinimum/title
 #: schema/relationship-record.json:1
 msgid "Exclusive Minimum percentage"
-msgstr ""
+msgstr "Pourcentage minimum exclusif"
 
 #. /$defs/Interest/properties/share/properties/exclusiveMinimum/description
 #: schema/relationship-record.json:1
 msgid "The exclusive lower bound of the share of this interest."
-msgstr ""
+msgstr "Limite inférieure exclusive de la quote-part de cette participation."
 
 #. /$defs/Interest/properties/share/properties/exclusiveMaximum/title
 #: schema/relationship-record.json:1
 msgid "Exclusive Maximum Percentage"
-msgstr ""
+msgstr "Pourcentage maximum exclusif"
 
 #. /$defs/Interest/properties/share/properties/exclusiveMaximum/description
 #: schema/relationship-record.json:1
 msgid "The exclusive upper bound of the share of this interest."
-msgstr ""
+msgstr "Limite supérieure exclusive de la quote-part de cette participation."
 
 #. /$defs/Interest/properties/startDate/title
 #: schema/relationship-record.json:1
 msgid "Start Date"
-msgstr ""
+msgstr "Date de début"
 
 #. /$defs/Interest/properties/startDate/description
 #: schema/relationship-record.json:1
@@ -1390,6 +1527,11 @@ msgid ""
 "noted in accompanying guidance (such as a publication policy or data use "
 "guide)."
 msgstr ""
+"Date à laquelle cette participation est active. La date DOIT respecter le "
+"format AAAA-MM-JJ. En cas d'absence de précision sur le mois ou la date, la "
+"valeur peut être arrondie au premier jour du (premier) mois. Cet arrondi "
+"DEVRAIT être noté dans les documents relatifs (comme une politique de "
+"publication ou un guide d'utilisation des données)."
 
 #. /$defs/Interest/properties/endDate/description
 #: schema/relationship-record.json:1
@@ -1400,6 +1542,11 @@ msgid ""
 "noted in accompanying guidance (such as a publication policy or data use "
 "guide)."
 msgstr ""
+"Date à laquelle cette participation cesse d'exister. La date DOIT respecter "
+"le format AAAA-MM-JJ. En cas d'absence de précision sur le mois ou la date, "
+"la valeur peut être arrondie au premier jour du (premier) mois. Cet arrondi "
+"DEVRAIT être noté dans les documents relatifs (comme une politique de "
+"publication ou un guide d'utilisation des données)."
 
 #. /title
 #: schema/statement.json:1
@@ -1409,7 +1556,7 @@ msgstr "Déclarations"
 #. /description
 #: schema/statement.json:1
 msgid "An array of Statements."
-msgstr "Série de déclarations."
+msgstr "Tableau de déclarations."
 
 #. /$defs/Statement/title
 #: schema/statement.json:1
@@ -1422,11 +1569,13 @@ msgid ""
 "A claim about a person, entity or relationship, made at a particular point "
 "in time."
 msgstr ""
+"Affirmation à propos d'une personne, d'une entité ou d'une relation, "
+"formulée à un moment donné."
 
 #. /$defs/Statement/properties/statementId/title
 #: schema/statement.json:1
 msgid "Statement Identifier"
-msgstr ""
+msgstr "Identifiant de déclaration"
 
 #. /$defs/Statement/properties/statementId/description
 #: schema/statement.json:1
@@ -1434,6 +1583,8 @@ msgid ""
 "A persistent globally unique identifier for this Statement. Length MUST be "
 "32 - 64 characters (inclusive)."
 msgstr ""
+"Identifiant global unique persistant de cette déclaration. La longueur DOIT "
+"être de 32 à 64 caractères (inclusive)."
 
 #. /$defs/Statement/properties/statementDate/title
 #: schema/statement.json:1
@@ -1447,6 +1598,9 @@ msgid ""
 "(YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF "
 "RFC3339 standard, section 5.6."
 msgstr ""
+"Date de création de cette déclaration par la source, sous un format de date "
+"complète (AAAA-MM-JJ) ou de date-heure (ex. AAAA-MM-JJTHH:MM:SSZ). Voir la "
+"norme IETF RFC3339, section 5.6."
 
 #. /$defs/Statement/properties/annotations/title
 #: schema/statement.json:1
@@ -1463,7 +1617,7 @@ msgstr ""
 #. /$defs/Statement/properties/publicationDetails/title
 #: schema/statement.json:1
 msgid "Publication Details"
-msgstr ""
+msgstr "Détails de la publication"
 
 #. /$defs/Statement/properties/publicationDetails/description
 #: schema/statement.json:1
@@ -1499,11 +1653,15 @@ msgid ""
 "published BODS dataset, all Statements MUST have the same major version "
 "number."
 msgstr ""
+"Version de la norme relative aux données sur la propriété effective à "
+"laquelle cette déclaration se conforme, exprimée comme majeure/mineure (ex. "
+"0.2 ou 1.0). Dans un ensemble de données de la BODS publié, toutes les "
+"déclarations DOIVENT avoir le même numéro majeur de version."
 
 #. /$defs/Statement/properties/publicationDetails/properties/license/title
 #: schema/statement.json:1
 msgid "License URL"
-msgstr ""
+msgstr "URL de la licence"
 
 #. /$defs/Statement/properties/publicationDetails/properties/license/description
 #: schema/statement.json:1
@@ -1513,6 +1671,10 @@ msgid ""
 " Dedication or Open Definition Conformant "
 "(http://opendefinition.org/licenses/) license."
 msgstr ""
+"Lien vers la licence qui s'applique à cette déclaration. L'URI canonique de "
+"la licence DEVRAIT être utilisé. Les éditeurs sont encouragés à utiliser une"
+" licence Public Domain Dedication ou Open Definition Conformant "
+"(http://opendefinition.org/licenses/)."
 
 #. /$defs/Statement/properties/publicationDetails/properties/publisher/title
 #: schema/statement.json:1
@@ -1523,6 +1685,7 @@ msgstr "Éditeur"
 #: schema/statement.json:1
 msgid "Details of the organisation or person publishing a Statement."
 msgstr ""
+"Détails de l'organisation ou de la personne qui publie une déclaration."
 
 #. /$defs/Statement/properties/publicationDetails/properties/publisher/properties/name/description
 #: schema/statement.json:1
@@ -1566,6 +1729,10 @@ msgid ""
 "in time by a `source` about a `declarationSubject`) this field identifies "
 "the declaration."
 msgstr ""
+"Identifiant ou référence d'une déclaration dans le système de l'éditeur. "
+"Lorsqu'une déclaration est une affirmation d'une déclaration en particulier "
+"(faite à un moment donné par une `source` sur un `declarationSubject`), ce "
+"champ identifie la déclaration."
 
 #. /$defs/Statement/properties/declarationSubject/title
 #: schema/statement.json:1
@@ -1584,7 +1751,7 @@ msgstr ""
 #. /$defs/Statement/properties/recordId/title
 #: schema/statement.json:1
 msgid "Record Identifier"
-msgstr ""
+msgstr "Identifiant d'enregistrement"
 
 #. /$defs/Statement/properties/recordId/description
 #: schema/statement.json:1
@@ -1594,11 +1761,15 @@ msgid ""
 "natural person or relationship within the beneficial ownership network of a "
 "particular declaration subject.)"
 msgstr ""
+"Identifiant unique de l'enregistrement (dans le système de l'éditeur) auquel"
+" cette déclaration se rapporte. (Un enregistrement saisit les informations "
+"sur une entité, une personne physique ou une relation dans le réseau des "
+"bénéficiaires effectifs d'un sujet de déclaration donné.)"
 
 #. /$defs/Statement/properties/recordType/title
 #: schema/statement.json:1
 msgid "Record Type"
-msgstr ""
+msgstr "Type d'enregistrement"
 
 #. /$defs/Statement/properties/recordType/description
 #: schema/statement.json:1
@@ -1606,11 +1777,13 @@ msgid ""
 "The type of record (within the publisher's system) to which this Statement "
 "relates: entity, person, or relationship."
 msgstr ""
+"Type d'enregistrement (dans le système de l'éditeur) auquel se rapporte "
+"cette déclaration : entité, personne ou relation."
 
 #. /$defs/Statement/properties/recordStatus/title
 #: schema/statement.json:1
 msgid "Record Status"
-msgstr ""
+msgstr "Statut de l'enregistrement"
 
 #. /$defs/Statement/properties/recordStatus/description
 #: schema/statement.json:1
@@ -1618,11 +1791,14 @@ msgid ""
 "The lifecycle status of the record (within the publisher's system) to which "
 "this Statement relates, using the recordStatus codelist."
 msgstr ""
+"État du cycle de vie de l'enregistrement (dans le système de l'éditeur) "
+"auquel se rapporte cette déclaration, à l'aide de la liste de codes "
+"recordStatus."
 
 #. /$defs/Statement/properties/recordDetails/title
 #: schema/statement.json:1
 msgid "Record Details"
-msgstr ""
+msgstr "Détails de l'enregistrement"
 
 #. /$defs/Statement/properties/recordDetails/description
 #: schema/statement.json:1
@@ -1646,11 +1822,16 @@ msgid ""
 "Custom properties can be included within the Annotation object to provide "
 "structured data where required."
 msgstr ""
+"Informations complémentaires sur les données contenues dans cette "
+"déclaration. Les annotations peuvent s'appliquer à l'ensemble de la "
+"déclaration, à un objet ou à un champ. Des propriétés personnalisées peuvent"
+" être incluses dans l'objet Annotation pour fournir des données structurées,"
+" si nécessaire."
 
 #. /$defs/Annotation/properties/statementPointerTarget/title
 #: schema/statement.json:1
 msgid "Statement Fragment Pointer"
-msgstr ""
+msgstr "Pointeur de fragment de déclaration"
 
 #. /$defs/Annotation/properties/statementPointerTarget/description
 #: schema/statement.json:1
@@ -1660,6 +1841,10 @@ msgid ""
 "from the root of the Statement. An empty string (\"\") indicates that the "
 "Annotation applies to the whole Statement."
 msgstr ""
+"Pointeur JSON RFC6901 (https://tools.ietf.org/html/rfc6901) décrivant le "
+"fragment cible de la déclaration auquel s'applique cette annotation, en "
+"commençant par la racine de la déclaration. Une chaîne vide (\"\") indique "
+"que l'annotation s'applique à l'ensemble de la déclaration."
 
 #. /$defs/Annotation/properties/creationDate/title
 #: schema/statement.json:1
@@ -1750,3 +1935,7 @@ msgid ""
 "statement, MAY be described in the `description` field. This field is "
 "REQUIRED if the value of `motivation` is 'linking'."
 msgstr ""
+"Ressource liée qui annote, fournit un contexte ou apporte une amélioration à"
+" cette déclaration. Le contenu de la ressource, ou la relation à la "
+"déclaration, PEUT être décrit dans le champ `description`. Ce champ est "
+"OBLIGATOIRE si la valeur de la `motivation` est 'lien'."

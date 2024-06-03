@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Cécile Guarin, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
+"Last-Translator: Cécile Guarin, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: ../../about/governance.rst:2 a09896bb0778440fb77342b6454fae16
 msgid "Governance and development"
-msgstr ""
+msgstr "Gouvernance et développement"
 
 #: ../../about/governance.rst:4 b340f18ee2ac4f09819c0e6bd7a94f1a
 msgid ""
@@ -28,12 +32,20 @@ msgid ""
 "focused on beneficial ownership transparency, in partnership with `Open Data"
 " Services <https://opendataservices.coop/>`_."
 msgstr ""
+"La Norme de données sur la propriété effective (« Beneficial Ownership Data "
+"Standard » ou BODS) est développée par `Open Ownership "
+"<https://www.openownership.org/>`_, une organisation à but non lucratif "
+"orientée vers la transparence de la propriété effective, en partenariat avec"
+" `Open Data Services <https://opendataservices.coop/>`_."
 
 #: ../../about/governance.rst:6 979298d168ea43c484409e58475e6c50
 msgid ""
 "Development of BODS responds to the evolving needs of those collecting, "
 "sharing and using beneficial ownership data."
 msgstr ""
+"Le développement de la norme BODS vise à répondre aux besoins en constante "
+"évolution des responsables de la collecte, du partage et de l'utilisation "
+"des données sur la propriété effective."
 
 #: ../../about/governance.rst:8 34142492ba924560b029eb0470a43cb3
 msgid ""
@@ -41,16 +53,23 @@ msgid ""
 "governed and developed will be updated by Open Ownership and Open Data "
 "Services in consultation with the Data Standard Working Group."
 msgstr ""
+"Au fur et à mesure de la conception de la version 1.0, Open Ownership et "
+"Open Data Services, avec l'aide consultative du groupe de travail sur la "
+"norme de données, actualiseront les procédures de gouvernance et de "
+"développement de la norme BODS."
 
 #: ../../about/governance.rst:10 6a1cb71b6a2543a0a283d7d1c1c2d4f5
 msgid ""
 "Full details about these processes will be kept up-to-date in the `BODS "
 "development handbook <https://openownership.github.io/bods-dev-handbook/>`_."
 msgstr ""
+"Ces procédures seront détaillées et actualisées dans le `manuel de "
+"développement de la norme BODS <https://openownership.github.io/bods-dev-"
+"handbook/>`_."
 
 #: ../../about/governance.rst:14 f33bb88d817144f18411f0dbdb82944f
 msgid "Feature requests and bug reports"
-msgstr ""
+msgstr "Demandes de fonctionnalité et rapports d'erreur"
 
 #: ../../about/governance.rst:16 250ac98febb44225bacc3ce08127e885
 msgid ""
@@ -59,16 +78,25 @@ msgid ""
 "standard/issues/new/choose>`_ available in the `BODS GitHub repository "
 "<https://github.com/openownership/data-standard/>`_."
 msgstr ""
+"Si vous souhaitez proposer des modifications ou des corrections, envoyez une"
+" demande de fonctionnalité ou un rapport d'erreur sur la norme BODS grâce "
+"aux `modèles de signalement des problèmes "
+"<https://github.com/openownership/data-standard/issues/new/choose>`_ "
+"disponibles dans le `référentiel GitHub dédié à la norme BODS "
+"<https://github.com/openownership/data-standard/>`_."
 
 #: ../../about/governance.rst:18 15fad8b94f66450c86853df00a364357
 msgid ""
 "Open Ownership and Open Data Services will respond to all community feature "
 "requests or bug reports via comments on the Github issue."
 msgstr ""
+"Open Ownership et Open Data Services répondront à tous les rapports d'erreur"
+" et à toutes les demandes de fonctionnalité de la communauté en ajoutant des"
+" commentaires au sujet du problème signalé dans Github."
 
 #: ../../about/governance.rst:21 353be43ce2374a69a563956467d062fd
 msgid "Feature development"
-msgstr ""
+msgstr "Développement de fonctionnalités"
 
 #: ../../about/governance.rst:23 bb5129b364f548fc816db0ada51b9109
 msgid ""
@@ -76,6 +104,10 @@ msgid ""
 "submitted feature, Open Ownership and Open Data Services use feature "
 "development tickets."
 msgstr ""
+"Pour proposer en détail une fonctionnalité à développer ou pour contribuer à"
+" une demande de fonctionnalité provenant de la communauté, Open Ownership et"
+" Open Data Services utilisent les tickets de développement des "
+"fonctionnalités."
 
 #: ../../about/governance.rst:25 e5d7051800194b25bb589ec790a3e787
 msgid ""
@@ -86,6 +118,14 @@ msgid ""
 "will first be added to the backlog. Once a ticket is actively being "
 "researched or worked on, it will be moved to the Research stage."
 msgstr ""
+"Il s'agit de descriptions des problèmes rencontrés qui se concentrent sur "
+"les lacunes en matière de besoins des utilisateurs et utilisateurs dans la "
+"norme BODS devant éventuellement être satisfaits. Les tickets de "
+"développement des fonctionnalités actuellement ouverts sont répertoriés dans"
+" `l'outil de suivi des fonctionnalités de la norme BODS "
+"<https://github.com/openownership/data-standard/projects/4>`_. Les nouveaux "
+"tickets sont ajoutés en premier dans le backlog. Lorsqu'un ticket fait "
+"l'objet d'une recherche active ou est géré, il passe à l'étape de recherche."
 
 #: ../../about/governance.rst:27 3f5104561b9c4f6db80bac4086181af5
 msgid ""
@@ -96,16 +136,26 @@ msgid ""
 "<https://github.com/openownership/data-"
 "standard/discussions/categories/feature-implementation>`_."
 msgstr ""
+"Une fois que la nécessité pour les utilisateurs et les utilisatrices de "
+"disposer d'une nouvelle fonctionnalité dans la norme BODS a été décrite dans"
+" un ticket de développement des fonctionnalités, il est possible de proposer"
+" une méthode de mise en œuvre. Actuellement, Open Ownership et Open Data "
+"Services utilisent la section « Discussions » de GitHub pour obtenir des "
+"commentaires sur les `propositions de mise en œuvre "
+"<https://github.com/openownership/data-"
+"standard/discussions/categories/feature-implementation>`_."
 
 #: ../../about/governance.rst:29 19c6ba29bd12416b8c9e5fbe2b8c1af8
 msgid ""
 "If broad consensus about whether or not to proceed with implementation as "
 "laid out in the proposal can't be reached, the decision should be postponed."
 msgstr ""
+"Si aucun consensus ne peut être obtenu quant au lancement de la mise en "
+"œuvre telle que proposée, la décision doit être reportée."
 
 #: ../../about/governance.rst:32 6e9323319e2f416d8cc5025fdb315a3f
 msgid "Release tracking"
-msgstr ""
+msgstr "Suivi des lancements"
 
 #: ../../about/governance.rst:34 851f4fe161d64cbe8792e61262381b6d
 msgid ""
@@ -117,10 +167,19 @@ msgid ""
 "`release tracker for BODS version 0.4 "
 "<https://github.com/orgs/openownership/projects/4/views/1>`_."
 msgstr ""
+"Lorsqu'une nouvelle version de la norme BODS est mise à disposition, Open "
+"Ownership et Open Data Services créent un outil de suivi des lancements en "
+"tant que `projet <https://github.com/orgs/openownership/projects>`_ de "
+"`l'équipe Open Ownership dans GitHub <https://github.com/openownership>`_ "
+"afin de répertorier les fonctionnalités, les corrections d'erreurs, les "
+"modifications et les actualisations apportées à la nouvelle version. L'outil"
+" de suivi pour le lancement de la version 0.4 de la norme BODS est "
+"disponible sur `cette page "
+"<https://github.com/orgs/openownership/projects/4/views/1>`_."
 
 #: ../../about/governance.rst:39 c799e349b61c41db96eb7ed1d3bec34c
 msgid "Data Standard Working Group"
-msgstr ""
+msgstr "Groupe de travail sur la norme de données"
 
 #: ../../about/governance.rst:41 e013aedf3ecb442f82a8d2cd78550802
 msgid ""
@@ -128,6 +187,10 @@ msgid ""
 "data experts to help shape the development of BODS as well as driving "
 "adoption of the standard internationally."
 msgstr ""
+"Le groupe de travail sur la norme de données rassemblent des spécialistes "
+"des données, techniques et au sein du pays afin de concevoir le "
+"développement de la norme BODS et de favoriser l'adoption de la norme à "
+"l'international."
 
 #: ../../about/governance.rst:43 13212a0f468a4680950434d8b55d92a9
 msgid ""
@@ -136,6 +199,11 @@ msgid ""
 "control or beneficial ownership, and to the use of such data in the public "
 "interest."
 msgstr ""
+"Ce groupe de travail est ouvert à tout le monde et comprend des parties "
+"prenantes provenant de divers milieux qui ont un intérêt et une expertise "
+"dans les données relatives au contrôle des entreprises ou à la propriété "
+"effective, mais aussi dans l'utilisation de telles informations pour les "
+"besoins du grand public."
 
 #: ../../about/governance.rst:45 cb8d2b9e09764e32b489bbc65c9eb5c3
 msgid ""
@@ -149,3 +217,12 @@ msgid ""
 "encouraged to respond to issues via `GitHub "
 "<https://github.com/openownership/data-standard/issues>`_ or email."
 msgstr ""
+"Les membres du groupe de travail se proposent de manière spontanée. Toute "
+"personne peut demander à en faire partie en `remplissant ce formulaire "
+"<https://docs.google.com/forms/d/e/1FAIpQLSdRSmSUxyyv2t1k3vWXZ_3EhTW_f603MeGxgyjKnbNNE9vvbQ/viewform>`_"
+" après en avoir lu les `attributions "
+"<https://docs.google.com/document/d/1kNxojFM0BLZvUYlFWfayQ88CG7ffC-"
+"ypjMtrZxDDKmU/edit?usp=sharing>`_. Le groupe de travail se réunit en ligne "
+"tous les trimestres et communique à l'aide d'un groupe Google. Les membres "
+"peuvent répondre aux problèmes dans `GitHub "
+"<https://github.com/openownership/data-standard/issues>`_ ou par e-mail."

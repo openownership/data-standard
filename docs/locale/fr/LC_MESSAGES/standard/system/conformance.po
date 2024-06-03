@@ -3,6 +3,10 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Cécile Guarin, 2024
+# Rachel Vint, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,55 +24,64 @@ msgstr ""
 
 #: ../../standard/system/conformance.rst:4 ce344d6938ea4febad5a19998d35dd83
 msgid "Conformance and validation"
-msgstr ""
+msgstr "Conformité et validation"
 
 #: ../../standard/system/conformance.rst:7 ac181059823d423d9adfcd2eea43fc05
 msgid "Conformance"
-msgstr ""
+msgstr "Conformité"
 
 #: ../../standard/system/conformance.rst:9 7a16fcdf108b42fc81c5f31d495c5b01
 msgid "A comforming implementation of BODS:"
-msgstr ""
+msgstr "Une mise en œuvre conforme de la norme BODS :"
 
 #: ../../standard/system/conformance.rst:11 5eb86fd32edf4af7988494dbc4eaaabb
 msgid "MAY use a subset of the schema's terms"
-msgstr ""
+msgstr "peut utiliser un sous-ensemble de termes du schéma ;"
 
 #: ../../standard/system/conformance.rst:13 c293bca96e5643dfba59d491581b5db2
 msgid ""
 "MAY use terms from outside the schema **only** where the schema's terms are "
 "insufficient"
 msgstr ""
+"peut utiliser des termes extérieurs au schéma **uniquement** si ceux du "
+"schéma sont insuffisants ;"
 
 #: ../../standard/system/conformance.rst:15 f08eb0638e53408189164a845c1f3558
 msgid "MUST use the schema’s terms consistently with their definitions"
-msgstr ""
+msgstr "doit utiliser les termes du schéma conformément à leur définition."
 
 #: ../../standard/system/conformance.rst:17 2a7789fc14d44cf6a605ad0750c6d923
 msgid ""
 "A conforming implementation of BODS that serialises to JSON MUST validate "
 "against the standard’s JSON schema."
 msgstr ""
+"Une mise en œuvre conforme de la norme BODS qui se sérialise au format JSON "
+"doit être valide par rapport au schéma JSON de la norme."
 
 #: ../../standard/system/conformance.rst:19 57629a8a6f2c4ea8b9206b2e089de2b9
 msgid ""
 "`Adapted from Popolo Project specification "
 "<http://www.popoloproject.com/specs/#conformance>`_"
 msgstr ""
+"`Ce paragraphe est une adaptation de la spécification du projet Popolo "
+"<http://www.popoloproject.com/specs/#conformance>`_"
 
 #: ../../standard/system/conformance.rst:22 c49482cd84dd4c238da528117a589a37
 msgid "Extending the schema"
-msgstr ""
+msgstr "Élargissement du schéma"
 
 #: ../../standard/system/conformance.rst:23 6624b59e3d3e483c8b0b255c533e666b
 msgid "If you need to extend the schema:"
-msgstr ""
+msgstr "Si vous avez besoin d'élargir le schéma :"
 
 #: ../../standard/system/conformance.rst:25 a1d5aeeb2dda46c5b68bf27fc278b8a3
 msgid ""
 "re-use `other publisher's extensions <https://github.com/openownership/data-"
 "standard/issues?q=is%3Aissue+label%3Aextension>`_ where possible"
 msgstr ""
+"réutilisez `les extensions d'autres éditeurs "
+"<https://github.com/openownership/data-"
+"standard/issues?q=is%3Aissue+label%3Aextension>`_, le cas échéant ;"
 
 #: ../../standard/system/conformance.rst:27 df7dff4606ce4b2c808317fd46284f01
 msgid ""
@@ -75,16 +89,21 @@ msgid ""
 "<https://github.com/openownership/data-standard/issues/>`_ with the "
 "'extensions' tag"
 msgstr ""
+"documentez vos extensions dans `l'outil de suivi des problèmes rencontrés au"
+" cours du projet <https://github.com/openownership/data-standard/issues/>`_ "
+"en ajoutant la balise 'extensions'."
 
 #: ../../standard/system/conformance.rst:31 3e0fb3410379468bbf93a49c38c8b0aa
 msgid "Validation"
-msgstr ""
+msgstr "Validation"
 
 #: ../../standard/system/conformance.rst:32 44b8817b8b2640079cfe0bbb596c3897
 msgid ""
 "The BODS JSON schema includes validation checks that are possible to define "
 "using JSON schema 2020-12."
 msgstr ""
+"Le schéma JSON de la norme BODS comprend des contrôles de validation qu'il "
+"est possible de définir à l'aide du schéma JSON 2020-12."
 
 #: ../../standard/system/conformance.rst:34 f7359c770d1648f08417ba1d6ce59f84
 msgid ""
@@ -96,3 +115,12 @@ msgid ""
 " statement elsewhere in the BODS JSON array. The Data Review Tool can ingest"
 " data serialised as JSON and in tabular form."
 msgstr ""
+"L'`outil d'études des données de la norme BODS "
+"<https://datareview.openownership.org/>`_ valide la conformité au "
+"schéma JSON et aux exigences supplémentaires pouvant être validées par "
+"programmation, mais qui ne sont pas comprises dans le schéma. Par exemple, "
+"il vérifie que les identifiants de l'enregistrement dans les champs "
+"``subject`` et ``interestedParty`` des déclarations de relation apparaissent"
+" au moins dans une autre déclaration du tableau JSON de la norme BODS. "
+"L'outil d'étude des données peuvent ingérer des données sérialisées au "
+"format JSON et sous la forme d'un tableau."
