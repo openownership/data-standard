@@ -3,6 +3,11 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Katia Da Silva, 2024
+# Cécile Guarin, 2024
+# Rachel Vint, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,17 +25,19 @@ msgstr ""
 
 #: ../../standard/modelling/repr-trusts.rst:4 86f44d21e3c742cb86c17a5263e11b92
 msgid "Representing trusts"
-msgstr ""
+msgstr "Représentation des trusts"
 
 #: ../../standard/modelling/repr-trusts.rst:7 374be32ff09544a6918ebd124d4dff31
 msgid "Overview"
-msgstr ""
+msgstr "Aperçu"
 
 #: ../../standard/modelling/repr-trusts.rst:8 c22ad39c6d7e4d2b9a678b6b92ca839c
 msgid ""
 "In this documentation, the term ‘trust’ is inclusive of trusts and trust-"
 "like arrangements (such as *fiducie*, *treuhand* and *waqf*)."
 msgstr ""
+"Dans la présente documentation, le mot ‘trust’ désigne les trusts comme les "
+"accords similaires (notamment *fiducie*, *treuhand* et *waqf*)."
 
 #: ../../standard/modelling/repr-trusts.rst:10
 #: 2cd3b138817f4133849d329af6897367
@@ -38,11 +46,14 @@ msgid ""
 "beneficial ownership of entities via trusts. Trusts are represented by an "
 "Entity statement."
 msgstr ""
+"La norme BODS peut être utilisée pour représenter la propriété effective des"
+" trusts et celle des entités par le biais des trusts. Les trusts sont "
+"représentés par une déclaration d'entité."
 
 #: ../../standard/modelling/repr-trusts.rst:12
 #: cc160c2fb80d4538848956dcaaba5530
 msgid "When representing trusts:"
-msgstr ""
+msgstr "Lors de la représentation des trusts :"
 
 #: ../../standard/modelling/repr-trusts.rst:14
 #: cb7400d4108e4692b48cd5934eb1fb57
@@ -50,6 +61,8 @@ msgid ""
 "If the trust has legal personality ``entityType.type`` MUST be "
 "``legalEntity``"
 msgstr ""
+"si le trust est une personne morale, le champ ``entityType.type`` doit être "
+"configuré sur ``legalEntity`` ;"
 
 #: ../../standard/modelling/repr-trusts.rst:15
 #: 789937888e5d40ffb0051099d13569fe
@@ -57,11 +70,13 @@ msgid ""
 "If the trust does not have legal personality ``entityType.type`` MUST be "
 "``arrangement``"
 msgstr ""
+"si le trust n'est pas une personne morale, le champ ``entityType.type`` doit"
+" être configuré sur ``arrangement`` ;"
 
 #: ../../standard/modelling/repr-trusts.rst:16
 #: 22a6633d4a4a4385a625561376fefa91
 msgid "``entityType.subtype`` MUST be ``trust``"
-msgstr ""
+msgstr "le champ ``entityType.subtype`` doit être configuré sur ``trust`` ;"
 
 #: ../../standard/modelling/repr-trusts.rst:17
 #: 1acc2d6fb994478ca3033de7cf141351
@@ -69,6 +84,9 @@ msgid ""
 "``entityType.details`` MAY be used to give a local name (e.g. \"fiducie\") "
 "or specify the type of trust (e.g. \"inter-vivos trust\")"
 msgstr ""
+"le champ ``entityType.details`` peut être utilisé pour donner un nom local "
+"(par exemple, \"fiducie\") ou préciser le type de trust (par exemple, "
+"\"trust entre-vifs\")."
 
 #: ../../standard/modelling/repr-trusts.rst:19
 #: 99e4a072cd9d41d9847a8e3860fb9d24
@@ -76,31 +94,33 @@ msgid ""
 "Relationships between trusts and their parties MUST be represented using "
 "only these ``interest.type`` codes:"
 msgstr ""
+"Les relations entre les trusts et leurs parties doivent être représentées à "
+"l'aide des codes ``interest.type`` suivants :"
 
 #: ../../standard/modelling/repr-trusts.rst:21
 #: 81265fb2cdb74a1489e445dcbf6db2fc
 msgid "``settlor``"
-msgstr ""
+msgstr "``settlor``"
 
 #: ../../standard/modelling/repr-trusts.rst:22
 #: 4a83aefc76d14116b0eccc80e46f9b08
 msgid "``beneficiary``"
-msgstr ""
+msgstr "``beneficiary``"
 
 #: ../../standard/modelling/repr-trusts.rst:23
 #: a552728163fe4af6a648692363e52290
 msgid "``trustee``"
-msgstr ""
+msgstr "``trustee``"
 
 #: ../../standard/modelling/repr-trusts.rst:24
 #: f08888283233480d8699bbaa910f2420
 msgid "``protector``"
-msgstr ""
+msgstr "``protector``"
 
 #: ../../standard/modelling/repr-trusts.rst:25
 #: a959d75f1d754914a76f1f4316e93fce
 msgid "``otherInfluenceOrControl``"
-msgstr ""
+msgstr "``otherInfluenceOrControl``"
 
 #: ../../standard/modelling/repr-trusts.rst:27
 #: 4a82701efcc74e51972a40d1d63a8b5d
@@ -108,16 +128,19 @@ msgid ""
 "``interest.details`` MAY be used to give a local name (e.g. \"fiduciaire\") "
 "or more information about the interest (e.g. \"power to dissolve trust\")."
 msgstr ""
+"Le champ ``interest.details`` peut être utilisé pour donner un nom local "
+"(par exemple, \"fiduciaire\") ou des informations supplémentaires sur la "
+"participation au capital (par exemple, \"pouvoir de dissoudre le trust\")."
 
 #: ../../standard/modelling/repr-trusts.rst:30
 #: 8fc18c327e314609abf59698944e1c85
 msgid "Example Scenarios"
-msgstr ""
+msgstr "Exemples de scénario"
 
 #: ../../standard/modelling/repr-trusts.rst:33
 #: 33222d9e38a34e85978386729a36c4a1
 msgid "Trust without legal personality"
-msgstr ""
+msgstr "Trust sans personne morale"
 
 #: ../../standard/modelling/repr-trusts.rst:34
 #: c8bba18f8dbf4e53b14324835b6963a2
@@ -125,6 +148,8 @@ msgid ""
 "A trust with a known beneficiary, known trustee and known settlor. The trust"
 " does not have a legal personality."
 msgstr ""
+"Un trust avec un bénéficiaire connu, un mandataire connu et un constituant "
+"connu n'est pas une personne morale."
 
 #: ../../standard/modelling/repr-trusts.rst-1 9d096cd42b5c435abd7d0c60baeff83c
 msgid ""
@@ -134,11 +159,20 @@ msgid ""
 "by a relationship statement with interest type 'trustee', and person C by a "
 "relationship statement with interest type 'beneficiary'"
 msgstr ""
+"Schéma représentant les déclarations reliées. La déclaration d'entité "
+"étiquetée Trust A, contenant le champ entityType dont le type est configuré "
+"sur 'arrangement' (construction juridique) et le sous-type sur 'trust.' Le "
+"trust A est relié à une personne A par une déclaration de relation dont le "
+"type de participation au capital est configuré sur 'settlor', (constituant) "
+"une personne B par une déclaration de relation dont le type de participation"
+" au capital est configurée sur 'trustee' (mandataire) et une personne C par "
+"une déclaration de relation dont le type de participation au capital est "
+"configuré sur 'beneficiary' (bénéficiaire)."
 
 #: ../../standard/modelling/repr-trusts.rst:42
 #: aa7add7c0f69445a87436d602e4c34ab
 msgid "Trust with legal personality and protector"
-msgstr ""
+msgstr "Trust avec personne morale et tiers protecteur"
 
 #: ../../standard/modelling/repr-trusts.rst:43
 #: 38d979aab9f74848beecf1d0402a1517
@@ -146,6 +180,8 @@ msgid ""
 "A trust with a known beneficiary, known trustee, known settlor and known "
 "protector. The trust has a legal personality."
 msgstr ""
+"Un trust avec un bénéficiaire connu, un mandataire connu, un constituant "
+"connu et un tiers protecteur connu est une personne morale."
 
 #: ../../standard/modelling/repr-trusts.rst-1 d8eabc4556bb44279e6a21f411748f08
 msgid ""
@@ -156,11 +192,22 @@ msgid ""
 "relationship statement with interest type 'protector', and person D by a "
 "relationship statement with interest type 'beneficiary.'"
 msgstr ""
+"Schéma représentant les déclarations reliées. La déclaration d'entité "
+"étiquetée Trust A, contenant le champ entityType dont le type est configuré "
+"sur 'legalEntity' (entité juridique) et le sous-type sur 'trust.' Le trust A"
+" est relié à une personne A par une déclaration de relation dont le type de "
+"participation au capital est configuré sur 'settlor' (constituant), une "
+"personne B par une déclaration de relation dont le type de participation au "
+"capital est configuré sur 'trustee' (mandataire), une personne C par une "
+"déclaration de relation dont le type de participation au capital est "
+"configuré sur 'protector' (tiers protecteur) et une personne D par une "
+"déclaration de relation dont le type de participation au capital est "
+"configuré sur 'beneficiary' (bénéficiaire)."
 
 #: ../../standard/modelling/repr-trusts.rst:52
 #: 6753a8165170426b85202f34d451b7da
 msgid "Trust with combined roles and anonymous beneficiary"
-msgstr ""
+msgstr "Trust avec des rôles associés et des bénéficiaires anonymes"
 
 #: ../../standard/modelling/repr-trusts.rst:53
 #: 0a983566bf9e455bb33d5032892a33ec
@@ -168,6 +215,8 @@ msgid ""
 "A trust where the settlor is also a trustee and the beneficiary is anonymous"
 " due to a disclosure exemption."
 msgstr ""
+"Un trust dont le constituant est également un mandataire et le bénéficiaire "
+"est anonyme, pour cause de dispense de divulgation."
 
 #: ../../standard/modelling/repr-trusts.rst-1 be5cf3dadba44c6281e5e8a88ab43649
 msgid ""
@@ -178,11 +227,22 @@ msgid ""
 "person statement with person type 'anonymous person' and unspecified person "
 "details 'subject exempt from disclosure'"
 msgstr ""
+"Schéma représentant les déclarations reliées. Le trust A est relié à une "
+"personne A par une déclaration de relation, dont les types de participation "
+"au capital sont configurés sur 'settlor' (constituant) et 'trustee' "
+"(mandataire), à une personne B par une déclaration de relation dont le type "
+"de participation au capital est configuré sur 'trustee' (mandataire) et à "
+"une personne C par une déclaration de relation dont les types de "
+"participation au capital sont configurés sur 'beneficiary' (bénéficiaire). "
+"Une personne D a une déclaration de personne dont le type de personne est "
+"configuré sur 'anonymous person' (personne anonyme) et les informations de "
+"personne non indiquées sont configurées sur 'subject exempt from disclosure'"
+" (sujet exempté de divulgation)."
 
 #: ../../standard/modelling/repr-trusts.rst:61
 #: db3c7cd0904d4991a2d9acb0e9ca3984
 msgid "Trust-like arrangement"
-msgstr ""
+msgstr "Accord similaire à un trust"
 
 #: ../../standard/modelling/repr-trusts.rst:62
 #: eaa4a53290464fecb3649f6a85b5976f
@@ -190,6 +250,8 @@ msgid ""
 "A trust-like arrangement with local names for the entityType and "
 "interestTypes."
 msgstr ""
+"Un accord similaire à un trust avec des noms locaux pour les champs "
+"entityType et interestTypes."
 
 #: ../../standard/modelling/repr-trusts.rst-1 27ec6a9370c846aaa96b5ab9497d5520
 msgid ""
@@ -201,11 +263,23 @@ msgid ""
 "'fiduciaire', and person C by a relationship statement with interest type "
 "'beneficiary' and interest details 'beneficiaire'"
 msgstr ""
+"Schéma représentant les déclarations reliées. Une déclaration d'entité "
+"étiquetée Trust A, contenant le champ entityType dont le type est configuré "
+"sur 'arrangement' (construction juridique), le sous-type sur 'trust' et les "
+"informations sur 'fiducie-sûreté.' Le trust A est relié à une personne A par"
+" une déclaration de relation dont le type de participation au capital est "
+"configuré sur 'settlor' (constituant) et les informations sur cette "
+"participation sur 'constituant', à une personne B par une déclaration de "
+"relation dont le type de participation au capital est configuré sur "
+"'trustee' (mandataire) et les informations sur cette participation sur "
+"'fiduciaire' et à une personne C par une déclaration de relation dont le "
+"type de participation au capital est 'beneficiary' (bénéficiaire) et les "
+"informations sur cette participation sur 'bénéficiaire'."
 
 #: ../../standard/modelling/repr-trusts.rst:70
 #: 7b8ab1e384f844f3a48fec83b13cf979
 msgid "Company shares held in trust"
-msgstr ""
+msgstr "Actions d'entreprise détenues dans un trust"
 
 #: ../../standard/modelling/repr-trusts.rst:71
 #: 7df8d3df70fe4175807f77ac53921c00
@@ -215,6 +289,11 @@ msgid ""
 "further Relationship Statements needed to represent the indirect beneficial "
 "ownership of the parties."
 msgstr ""
+"Une participation importante au capital d'une entreprise est détenue dans un"
+" trust. Les parties de ce trust sont les bénéficiaires effectifs de "
+"l'entreprise. Les lignes en pointillés représentent les déclarations de "
+"relation requises pour représenter la propriété effective indirecte des "
+"parties."
 
 #: ../../standard/modelling/repr-trusts.rst:73
 #: ../../standard/modelling/repr-trusts.rst:84
@@ -223,6 +302,8 @@ msgid ""
 "See :ref:`representing-bo` for guidance on representing indirect beneficial "
 "ownership."
 msgstr ""
+"Consultez la page :ref:`representing-bo` pour obtenir des conseils sur la "
+"représentation de la propriété effective indirecte."
 
 #: ../../standard/modelling/repr-trusts.rst-1 5f6be83059774092af67b32c569080ef
 msgid ""
@@ -233,11 +314,19 @@ msgid ""
 "and Person C to represent that they are the ultimate beneficial owners of "
 "Company A."
 msgstr ""
+"Schéma représentant les déclarations reliées. Une entreprise A appartient à "
+"un trust A auquel il est relié par une déclaration de relation dont le type "
+"de participation au capital est configuré sur 'shareholding' (détenction "
+"d'actions). Le trust A a un constituant (la personne A), un mandataire (la "
+"personne B) et un bénéficiaire (la personne C). Les lignes en pointillés "
+"entre l'entreprise A et la personne A, la personne B et la personne C "
+"indiquent qu'ils sont les bénéficiaires effectifs en dernière analyse de "
+"l'entreprise A."
 
 #: ../../standard/modelling/repr-trusts.rst:81
 #: cf2030c94ad347c7a8072235b8aa49bb
 msgid "Company as a trustee"
-msgstr ""
+msgstr "Entreprise mandataire"
 
 #: ../../standard/modelling/repr-trusts.rst:82
 #: ec5078f632e647a088bf3794358d265b
@@ -245,6 +334,9 @@ msgid ""
 "A trust where the trustee is a company. In this jurisdiction, the owner of "
 "the company is deemed to be an indirect beneficial owner of the trust."
 msgstr ""
+"Un trust dont le mandataire est une entreprise. Dans cette juridiction, le "
+"propriétaire de l'entreprise est considéré comme un bénéficiaire effectif "
+"indirect du trust."
 
 #: ../../standard/modelling/repr-trusts.rst-1 47b0fc60e7384cd7ac36c875af2613fd
 msgid ""
@@ -256,11 +348,22 @@ msgid ""
 " type for this relationship statement is 'other influence or control.' There"
 " are also Person A and Person B the settlor and beneficiary of the trust."
 msgstr ""
+"Schéma représentant les déclarations reliées. Un trust A est relié à une "
+"entreprise A par une déclaration de relation dont le type de participation "
+"au capital est configuré sur mandataire. L'entreprise A est reliée à une "
+"personne C par une déclaration de relation dont le type de participation au "
+"capital est configuré sur détention d'actions. Il existe également une "
+"déclaration de relation entre la personne C et le trust qui les représentent"
+" comme l'un des bénéficiaires effectifs en dernière analyse du trust A. Le "
+"type de participation au capital pour cette déclaration de relation est "
+"configuré sur 'other influence or control' (autre influence ou contrôle). En"
+" outre, la personne A et la personne B sont respectivement le constituant et"
+" le bénéficiaire du trust."
 
 #: ../../standard/modelling/repr-trusts.rst:93
 #: 11ce49d6ef4e46b893765b6701e6497e
 msgid "Further Guidance"
-msgstr ""
+msgstr "Conseils supplémentaires"
 
 #: ../../standard/modelling/repr-trusts.rst:95
 #: 46b56c5e6953492da3e289f5cbe85156
@@ -269,3 +372,8 @@ msgid ""
 "and-legal-arrangements/>`_ has more guidance and research on capturing "
 "beneficial ownership information about trusts and legal arrangements."
 msgstr ""
+"Le `site web d'Open Ownership "
+"<https://www.openownership.org/en/topics/trusts-and-legal-arrangements/>`_ "
+"fournit des conseils supplémentaires et des recherches sur l'obtention des "
+"informations relatives à la propriété effective des trusts et des "
+"constructions juridiques."

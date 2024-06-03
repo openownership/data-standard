@@ -3,6 +3,10 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Katia Da Silva, 2024
+# Cécile Guarin, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Cécile Guarin, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,12 +25,12 @@ msgstr ""
 #: ../../standard/modelling/dates-guidance.rst:4
 #: 3caf9240aeb4416ab13a17fba9910ea5
 msgid "Dates guidance"
-msgstr ""
+msgstr "Conseils concernant les dates"
 
 #: ../../standard/modelling/dates-guidance.rst:7
 #: a337b697bea34e7e9a090a29d502affa
 msgid "Key dates"
-msgstr ""
+msgstr "Principales dates"
 
 #: ../../standard/modelling/dates-guidance.rst:9
 #: 45c0b29df86841d18bde69e887ba3659
@@ -33,6 +38,8 @@ msgid ""
 "In BODS, dates represent real world events and information about how data "
 "has moved through a system."
 msgstr ""
+"Dans la norme BODS, les dates représentent des événements concrets et des "
+"informations sur le transfert des données dans un système."
 
 #: ../../standard/modelling/dates-guidance.rst:11
 #: 4ea8bcb790b341d284292335378da80b
@@ -45,6 +52,14 @@ msgid ""
 "resolved to make a coherent claim about the state of an entity, person, or "
 "relationship."
 msgstr ""
+"``statementDate`` est la date à laquelle les informations sur l'entité, la "
+"personne ou la relation ont été déclarées vraies. Elle peut être enregistrée"
+" automatiquement quand une personne envoie un formulaire de déclaration en "
+"ligne ou il peut s'agir de la date d'envoi indiquée sur un formulaire "
+"physique. Dans le cas d'un service regroupant des données sur la propriété "
+"effective, il devrait s'agir de la date à laquelle plusieurs sources "
+"d'information ont décidé d'envoyer une déclaration cohérente sur l'état "
+"d'une entité, d'une personne ou d'une relation."
 
 #: ../../standard/modelling/dates-guidance.rst:13
 #: 3c30d6932609432cafa0acea9dc9d92a
@@ -55,6 +70,12 @@ msgid ""
 "``statementDate`` value if data is published immediately after submission. "
 "In many cases there will be a delay between submission and publication."
 msgstr ""
+"``publicationDetails.publicationDate`` est la date de publication de cette "
+"déclaration. Il peut s'agir notamment de la date d'ajout des informations "
+"dans un registre public ou de leur mise à disposition par la biais d'une "
+"API. La date peut être identique à la valeur du champ ``statementDate`` si "
+"les données sont publiées immédiatement après l'envoi. Dans bien des cas, il"
+" existe un décalage entre l'envoi et la publication."
 
 #: ../../standard/modelling/dates-guidance.rst:15
 #: a801807a23ac4f67a87ba21b9ca21edc
@@ -63,6 +84,9 @@ msgid ""
 "date that shares were purchased or someone was appointed to the board of "
 "directors."
 msgstr ""
+"``interest.startDate`` est la date de début d'une participation au capital. "
+"Il peut notamment s'agir de la date d'achat d'actions ou de celle à laquelle"
+" une personne a été nommée au sein d'un conseil d'administration."
 
 #: ../../standard/modelling/dates-guidance.rst:17
 #: 52272444902f437193b0ff43adfc213b
@@ -71,6 +95,9 @@ msgid ""
 "that shares were divested of or that someone resigned from the board of "
 "directors."
 msgstr ""
+"``interest.endDate`` est la date de fin d'une participation au capital. Il "
+"peut notamment s'agir de la date de vente d'actions ou de celle à laquelle "
+"une personne a quitté un conseil d'administration."
 
 #: ../../standard/modelling/dates-guidance.rst:19
 #: 0d1ea463b096478985863944ac5e01f7
@@ -81,11 +108,17 @@ msgid ""
 "is done, they must provide information on when they downloaded the data from"
 " the government registry."
 msgstr ""
+"``source.retrievedAt`` s'applique uniquement lorsque des données sont "
+"republiées Par exemple, des parties tierces peuvent télécharger des données "
+"depuis des registres gouvernementaux, les transformer au format BODS et les "
+"partager à un autre emplacement. Ensuite, elles doivent fournir des "
+"informations sur la date à laquelle elles ont téléchargé les données depuis "
+"le registre gouvernemental."
 
 #: ../../standard/modelling/dates-guidance.rst:22
 #: 7e0600371f7f43cb9b8c7c693be6339e
 msgid "Date rounding"
-msgstr ""
+msgstr "Règles pour arrondir les dates"
 
 #: ../../standard/modelling/dates-guidance.rst:24
 #: 2424a5463fde456da994ffb093f2b7f0
@@ -94,6 +127,9 @@ msgid ""
 "may be published. This is indicated in the schema description for those "
 "fields."
 msgstr ""
+"Lorsque des dates exactes sont requises, mais inconnues, il est possible, "
+"pour certains champs, de publier des dates arrondies, comme cela est précisé"
+" dans la description du schéma pour ces champs."
 
 #: ../../standard/modelling/dates-guidance.rst:26
 #: 216cabd460844bf9b2466b0c603ea3fc
@@ -102,6 +138,9 @@ msgid ""
 "used. Where a year is known but not the month, the first day of the year can"
 " be used."
 msgstr ""
+"Quand un mois est connu, mais pas le jour, le premier jour du mois peut être"
+" utilisé. Quand une année est connue, mais pas le mois, le premier jour de "
+"l'année peut être utilisé."
 
 #: ../../standard/modelling/dates-guidance.rst:28
 #: f177b1e840294fff801504bdf91dc97a
@@ -110,11 +149,15 @@ msgid ""
 "data, to prevent misunderstanding. Publishers SHOULD create accompanying "
 "guidance for data users."
 msgstr ""
+"Quand des dates arrondies sont utilisées, il convient d'en informer les "
+"utilisateurs et les utilisatrices des données afin d'éviter tout malentendu."
+" Les éditeurs doivent créer des conseils en conséquence à destination des "
+"utilisateurs et des utilisatrices des données."
 
 #: ../../standard/modelling/dates-guidance.rst:30
 #: 590bd419c88640da946997eac03777f5
 msgid "For example:"
-msgstr ""
+msgstr "Par exemple :"
 
 #: ../../standard/modelling/dates-guidance.rst:32
 #: 7e41bd5a99ac4a95bd9a0b7264586b91
@@ -122,6 +165,8 @@ msgid ""
 "If an interest started in March 2022 but the day is not known the interest's"
 " ``startDate`` would be published as 2022-03-01"
 msgstr ""
+"Si une participation au capital a débuté en mars 2022, mais que le jour est "
+"inconnu, le champ ``startDate`` de cette participation doit être 2022-03-01."
 
 #: ../../standard/modelling/dates-guidance.rst:33
 #: 75a8fa5a01764d9fac0937ae48b38e0f
@@ -129,16 +174,19 @@ msgid ""
 "If an interest started in 2022 but the month is not known the interest's "
 "``startDate`` would be published as 2022-01-01"
 msgstr ""
+"Si une participation au capital a débuté au cours de l'année 2022, mais que "
+"le mois est inconnu, le champ ``startDate`` de cette participation doit être"
+" 2022-01-01."
 
 #: ../../standard/modelling/dates-guidance.rst:36
 #: eee211860b734644928da833c1653d45
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
 #: ../../standard/modelling/dates-guidance.rst:39
 #: bc44d6a6318b4d319f44eef6f78ab2ef
 msgid "An interest ending"
-msgstr ""
+msgstr "La fin d'une participation au capital"
 
 #: ../../standard/modelling/dates-guidance.rst:40
 #: 706aaaa9ffdc4e1684a19b1521dbcaba
@@ -146,6 +194,8 @@ msgid ""
 "This statement represents someone divesting from shares. We can use the "
 "statement to construct a timeline of events."
 msgstr ""
+"Cette déclaration représente une personne vendant des actions. Nous pouvons "
+"l'utiliser pour établir la chronologie des événements."
 
 #: ../../standard/modelling/dates-guidance.rst-1
 #: c26fd2565da9460ea915a71a6786cbf9
@@ -155,11 +205,16 @@ msgid ""
 " events - the relationship ending, the change being reported and the change "
 "being published."
 msgstr ""
+"Imaginons une déclaration dont la date d'envoi est 2019-09-10, la date de "
+"publication est 2021-09-13 et la date de fin de la participation au capital "
+"est 2021-09-03. En regard de la déclaration apparaît une chronologie des "
+"événements indiquant la fin de la relation, la déclaration de la "
+"modification et la publication de la modification."
 
 #: ../../standard/modelling/dates-guidance.rst:49
 #: 8938de462e294b84928a43c6b3b21918
 msgid "A confirmation process"
-msgstr ""
+msgstr "Une procédure de confirmation"
 
 #: ../../standard/modelling/dates-guidance.rst:51
 #: ae61d895cb3b4295ade886bdec3d9671
@@ -169,6 +224,11 @@ msgid ""
 " a new Relationship statement is generated with an updated ``statementDate``"
 " and ``publicationDate``."
 msgstr ""
+"Une personne crée une entreprise, l'immatricule et en divulgue les "
+"bénéficiaires effectifs. Une année plus tard, la situation n'a pas évolué. "
+"Une déclaration de confirmation est déposée et une nouvelle déclaration de "
+"relation est générée avec des champs ``statementDate`` et "
+"``publicationDate`` actualisés."
 
 #: ../../standard/modelling/dates-guidance.rst-1
 #: fdb89245f84541f8ab4f95e617a827ea
@@ -176,11 +236,14 @@ msgid ""
 "2 statements showing the same interest start date and entity founding date. "
 "The statement date and publication date are one year apart."
 msgstr ""
+"Deux déclarations indiquent la même date de début de la participation au "
+"capital et de création de l'entité. La date de déclaration est antérieure "
+"d'un an à la date de publication."
 
 #: ../../standard/modelling/dates-guidance.rst:59
 #: 9aa369428f984bb9b2b5b1adecddb799
 msgid "An error correction"
-msgstr ""
+msgstr "La correction d'une erreur"
 
 #: ../../standard/modelling/dates-guidance.rst:61
 #: a66e06b113c84da2a9f253379e31b947
@@ -189,11 +252,15 @@ msgid ""
 "published with an incorrect ``interests[0].startDate``. To correct this, a "
 "new statement is published replacing the incorrect one."
 msgstr ""
+"Suite à une erreur survenue dans le système de publication, une déclaration "
+"de relation est publiée avec une valeur incorrecte pour le champ "
+"``interests[0].startDate``. Afin de corriger cela, une nouvelle déclaration "
+"est publiée en remplacement de la déclaration erronée."
 
 #: ../../standard/modelling/dates-guidance.rst:63
 #: 74976cac7ddb411b8789e4343ce789ec
 msgid "The new statement:"
-msgstr ""
+msgstr "La nouvelle déclaration :"
 
 #: ../../standard/modelling/dates-guidance.rst:65
 #: fb70c5f391fa4d0b8fbb697e50745633
@@ -201,21 +268,24 @@ msgid ""
 "has the same ``statementDate``, because the date of the original information"
 " submission has not changed"
 msgstr ""
+"affiche la même valeur dans le champ ``statementDate``, car la date d'envoi "
+"originel des informations n'a pas changé ;"
 
 #: ../../standard/modelling/dates-guidance.rst:66
 #: fa9c3d173dc04f3eb9afe88e5ff08883
 msgid "has a new ``publicationDate``"
-msgstr ""
+msgstr "affiche une nouvelle valeur dans le champ ``publicationDate`` ;"
 
 #: ../../standard/modelling/dates-guidance.rst:67
 #: 7cb9d423b0af4fbbb583916b651dffe1
 msgid "has a corrected ``interest.startDate``"
-msgstr ""
+msgstr "affiche une valeur corrigée dans le champ ``interest.startDate`` ;"
 
 #: ../../standard/modelling/dates-guidance.rst:68
 #: 4868b3b6dab2415eba83abf150ca08a2
 msgid "has an :ref:`Annotation <schema-annotation>` explaining the correction"
 msgstr ""
+"contient une :ref:`annotation <schema-annotation>` expliquant la correction."
 
 #: ../../standard/modelling/dates-guidance.rst-1
 #: 24b4163a805e490bb8c1cf44c4302093
@@ -225,3 +295,9 @@ msgid ""
 "date. The second statement has an annotation with motivation \"correction\" "
 "point towards the interest start date."
 msgstr ""
+"Deux déclarations affichent les mêmes valeurs dans les champs recordId et "
+"statementDate. La seconde déclaration a une date de publication, une valeur "
+"pour le champ statementId et une date de début de la participation au "
+"capital différentes. En outre, elle contient une annotation indiquant comme "
+"motivation une \"correction\" autour de la date de début de la participation"
+" au capital."

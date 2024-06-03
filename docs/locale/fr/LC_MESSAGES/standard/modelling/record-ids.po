@@ -3,6 +3,10 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Cécile Guarin, 2024
+# Rachel Vint, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +24,7 @@ msgstr ""
 
 #: ../../standard/modelling/record-ids.rst:5 44b9a670f781453c8ed1f8500bb7f2a3
 msgid "Record identifiers"
-msgstr ""
+msgstr "Identifiants d'enregistrement"
 
 #: ../../standard/modelling/record-ids.rst:7 1bfc148eaab843f3b86a24acd6158134
 msgid ""
@@ -27,12 +32,19 @@ msgid ""
 "management system MUST maintain record identifiers for each element (person,"
 " entity and relationship) in each beneficial ownership network."
 msgstr ""
+"Afin de publier des données relatives aux bénéficiaires effectifs dans la "
+"norme BODS, un système de gestion des informations doit conserver les "
+"identifiants d'enregistrement pour chaque élément (c'es-à-dire une personne,"
+" une entité et une relation) au sein de chaque réseau des bénéficiaires "
+"effectifs."
 
 #: ../../standard/modelling/record-ids.rst:9 07130b16098049318df42233911b5ef3
 msgid ""
 "Record identifiers MUST be unique within the publisher's system and never "
 "reused to refer to a different element."
 msgstr ""
+"Les identifiants d'enregistrement doivent être uniques au sein du système de"
+" l'éditeur et ne doivent jamais être réutilisés pour un élément différent."
 
 #: ../../standard/modelling/record-ids.rst:11 bd6d96a0fd5c47f1afa4c4e8db233f35
 msgid ""
@@ -44,6 +56,14 @@ msgid ""
 "represented in published data. In these cases, each set of information MUST "
 "have its own record identifier. (See the example below.)"
 msgstr ""
+"Dans certaines situations, un système d'éditeur peut autoriser la collecte "
+"des informations sur la même personne, entité ou relation dans le cadre des "
+"réseaux des bénéficiaires effectifs de plusieurs sujets différents. Si cela "
+"arrive, les informations provenant de différents sujets de déclaration sur "
+"la même personne, entité ou relation peuvent exister en parallèle et doivent"
+" être représentées dans les données publiées. Dans ce cas, chaque ensemble "
+"d'informations doit avoir son propre identifiant d'enregistrement (voir "
+"l'exemple ci-dessous)."
 
 #: ../../standard/modelling/record-ids.rst:13 0ca97a1236834be7a8471c6758cbbeae
 msgid ""
@@ -53,6 +73,12 @@ msgid ""
 "See :ref:`guidance-identifiers` for guidance on representing the identity of"
 " entities and natural persons."
 msgstr ""
+"La valeur de l'identifiant d'enregistrement d'une entité ou d'une personne "
+"peut dépendre de l'identité de l'entité ou de la personne physique et "
+"l'identité du sujet du réseau des bénéficiaires effectifs au sein duquel "
+"l'entité ou la personne apparaît. Consultez la page :ref:`guidance-"
+"identifiers` pour obtenir des conseils sur la représentation de l'identité "
+"des entités et des personnes physiques."
 
 #: ../../standard/modelling/record-ids.rst:15 74f5b7449539407dac229061af80f914
 msgid ""
@@ -62,16 +88,24 @@ msgid ""
 "interested party, plus the identity of the subject of the beneficial "
 "ownership network in which the relationship appears."
 msgstr ""
+"L'identité d'une relation est constituée de l'identité de ses sujets et "
+"parties intéressées. Par conséquent, la valeur de l'identifiant "
+"d'enregistrement d'une relation peut dépendre des identifiants "
+"d'enregistrement de ses sujets et parties intéressées , mais aussi de "
+"l'identité du sujet du réseau des bénéficiaires effectifs au sein duquel la "
+"relation apparaît."
 
 #: ../../standard/modelling/record-ids.rst:17 b546dabee4ac4c848bd9b06354f01510
 msgid ""
 "Record identifiers are used for :ref:`representing-bo` and for "
 ":ref:`information-updates`."
 msgstr ""
+"Les identifiants d'enregistrement sont utilisés pour :ref:`representing-bo` "
+"et pour :ref:`information-updates`."
 
 #: ../../standard/modelling/record-ids.rst:20 07b28aa5ca7648659388c194158978e4
 msgid "Example scenario"
-msgstr ""
+msgstr "Exemple de scénario"
 
 #: ../../standard/modelling/record-ids.rst:22 2e2208b6661e449d8c4b6d8c132b6b78
 msgid ""
@@ -79,12 +113,19 @@ msgid ""
 "Registration Authority: their legal owners and any beneficial owners with "
 "direct interests in the company."
 msgstr ""
+"Des entreprises privées au sein d'une juridiction donnée doivent communiquer"
+" à l'autorité chargée de l'immatriculation des sociétés leurs propriétaires "
+"légaux et tout bénéficiaire effectif ayant une participation directe au "
+"capital d'une entreprise."
 
 #: ../../standard/modelling/record-ids.rst:24 a4c85c3f753d44ae94ad76979e16773e
 msgid ""
 "Alpha Corp. discloses one natural person as a beneficial owner (and legal "
 "owner) and it also discloses Beta Systems as a legal owner."
 msgstr ""
+"Alpha Corp. déclare une personne physique en tant que bénéficiaire effectif "
+"(et propriétaire légal), mais aussi désigne Beta Systems comme propriétaire "
+"légal."
 
 #: ../../standard/modelling/record-ids.rst-1 56ab238866964620b1f7b1f9036635f7
 msgid ""
@@ -96,10 +137,18 @@ msgid ""
 " next to Beta Systems's node. Within the entity statement, recordId is "
 "'09d3a4fb'."
 msgstr ""
+"Schéma d'un réseau des bénéficiaires effectifs. Un nœud d'entité pour "
+"l'entreprise Alpha Corp est relié par une ligne continue à un nœud de "
+"personne. Le nœud d'Alpha Corp est également relié par une ligne continue à "
+"un nœud d'entité pour l'entreprise Beta Systems. Un bloc de déclaration "
+"d'entité se situe à côté du nœud d'Alpha Corp. Dans la déclaration d'entité,"
+" le champ recordId est configuré sur '04a221be'. Un bloc de déclaration "
+"d'entité se situe à côté du nœud de Beta Systems. Dans la déclaration "
+"d'entité, le champ recordId est configuré sur '09d3a4fb'."
 
 #: ../../standard/modelling/record-ids.rst:31 c897cd3dd68a4709850eb932e959971b
 msgid "Beta Systems declares that it has four direct beneficial owners."
-msgstr ""
+msgstr "Beta Systems déclare avoir quatre bénéficiaires effectifs directs."
 
 #: ../../standard/modelling/record-ids.rst-1 4b8339ac6caa4742bf3d3b859ca6b555
 msgid ""
@@ -108,6 +157,11 @@ msgid ""
 "statement block sits next to the Beta Sys node. Within the entity statement,"
 " recordId is '02c83aa2'."
 msgstr ""
+"Schéma d'un réseau des bénéficiaires effectifs. Un nœud d'entité pour "
+"l'entreprise Beta Systems est relié par une ligne continue à quatre nœuds de"
+" personne. Un bloc de déclaration d'entité se situe à côté du nœud de Beta "
+"Systems. Dans la déclaration d'entité, le champ recordId est configuré sur "
+"'02c83aa2'."
 
 #: ../../standard/modelling/record-ids.rst:38 1830b2861fc748169e7873e2069309ed
 msgid ""
@@ -116,12 +170,19 @@ msgid ""
 "identifier 09d3a4fb) and the information which is self-disclosed by Beta "
 "Systems (record identifier 02c83aa2)."
 msgstr ""
+"L'autorité chargée de l'immatriculation des sociétés conserve des "
+"enregistrements distincts pour les informations sur Beta Systems qui ont été"
+" communiquées par Alpha Corp. (identifiant d'enregistrement 09d3a4fb) et "
+"pour les informations que Beta Systems a déclarées (identifiant "
+"d'enregistrement 02c83aa2)."
 
 #: ../../standard/modelling/record-ids.rst:40 5750e1b2717e4fd2bc9c3b1f34f99aeb
 msgid ""
 "When the BODS data is published, there are statements about the two new Beta"
 " Systems records."
 msgstr ""
+"Quand les données de la norme BODS sont publiées, des déclarations sont "
+"émises pour les deux nouveaux enregistrements de Beta Systems."
 
 #: ../../standard/modelling/record-ids.rst-1 389348edee6a4c4fa9c536b269333593
 msgid ""
@@ -133,29 +194,45 @@ msgid ""
 "recordDetails.identifiers.0.id: 'pc-239118274', declarationSubject: "
 "'02c83aa2'"
 msgstr ""
+"Schéma de deux blocs de déclaration d'entité. Le premier contient les "
+"informations suivantes : recordId '09d3a4fb', recordDetails.name 'BetaSys', "
+"recordDetails.identifiers.0.scheme 'TZ-CRA', recordDetails.identifiers.0.id:"
+" 'pc-239118274', declarationSubject: '04a221be'. Le second contient les "
+"informations suivantes : recordId '02c83aa2', recordDetails.name 'Beta "
+"Systems', recordDetails.identifiers.0.scheme 'TZ-CRA', "
+"recordDetails.identifiers.0.id: 'pc-239118274', declarationSubject: "
+"'02c83aa2'."
 
 #: ../../standard/modelling/record-ids.rst:47 96c7927d9f6e47f6bf39d65c06d9ec02
 msgid "Note that:"
-msgstr ""
+msgstr "Remarques :"
 
 #: ../../standard/modelling/record-ids.rst:49 21916806fa9f43fa9c7c5dc8a48446b3
 msgid "the name of the company has not been consistently disclosed."
-msgstr ""
+msgstr "Le nom de l'entreprise n'a pas été communiqué de manière cohérente."
 
 #: ../../standard/modelling/record-ids.rst:50 37368802d4af401296a0790bcb4ca3c7
 msgid ""
 "the two statements do refer to the same real world entity, as the ``scheme``"
 " and ``id`` properties in both statements are the same."
 msgstr ""
+"Les deux déclarations se réfèrent à la même entité réelle, car les "
+"propriétés des champs ``scheme`` et ``id`` sont identiques."
 
 #: ../../standard/modelling/record-ids.rst:51 dcee7eba1ccd4f74b21b421d56e4bda5
 msgid ""
 "the two statements about the same real world entity relate to two different "
 "declaring subjects, as shown by the different ``declarationSubject`` values."
 msgstr ""
+"Les deux déclarations sur la même entité réelle concernent deux sujets "
+"déclarants différents, comme le démontrent les valeurs divergentes du champ "
+"``declarationSubject``."
 
 #: ../../standard/modelling/record-ids.rst:52 feaf43da2e5646818986de4a9b673354
 msgid ""
 "the statement for ‘Beta Systems’ has been disclosed by Beta Systems itself, "
 "since the ``recordId`` value is also given as the ``declarationSubject``."
 msgstr ""
+"La déclaration pour ‘Beta Systems’ a été transmise par l'entreprise elle-"
+"même, étant donné que la valeur du champ ``recordId`` est également "
+"communiquée en tant que ``declarationSubject``."

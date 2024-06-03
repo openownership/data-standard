@@ -23,16 +23,16 @@ msgstr ""
 
 #: ../../standard/modelling/index.rst:4 0621919241ac4e3c988318d2e02bdd6b
 msgid "Modelling requirements"
-msgstr ""
+msgstr "Exigences relatives à la modélisation"
 
 #: ../../standard/warningbox.rst:3 8338bba6c32f4190b45fb83f187b76c9
 msgid ""
 "This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model, codelists, and technical guidance."
 msgstr ""
-"Ceci est la v.04 de la norme de données sur la propriété effective "
-"comprenant des mises à jour du modèle de données, des listes de codes et des"
-" orientations techniques."
+"Ceci est la v.04 de la norme relative aux données sur la propriété effective"
+" comprenant des mises à jour du modèle de données, des listes de codes et "
+"des orientations techniques."
 
 #: ../../standard/warningbox.rst:5 c1532c2cc4b4455f9c0439783810d324
 msgid ""
@@ -40,12 +40,14 @@ msgid ""
 ":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
 "information."
 msgstr ""
-"Des modifications ultérieures sont anticipées avant la version 1.0. Voir les"
-" pages :ref:`Changelog <changelog>` et `About <../about>`_ pages pour plus "
-"d'informations."
+"Des modifications ultérieures sont prévues avant le lancement de la version "
+"1.0. Voir les pages :ref:`Journal des modifications <changelog>` et `À "
+"propos <../about>`_ pour plus d'informations."
 
 #: ../../standard/modelling/index.rst:8 11c38537e186423a91ed412c1e111453
 msgid ""
 "This section contains requirements for representing beneficial ownership "
 "information."
 msgstr ""
+"Cette section contient les exigences relatives à la représentation des "
+"informations sur les bénéficiaires effectifs."

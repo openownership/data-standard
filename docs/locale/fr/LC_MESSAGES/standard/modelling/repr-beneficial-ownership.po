@@ -5,6 +5,8 @@
 # 
 # Translators:
 # Katia Da Silva, 2024
+# Cécile Guarin, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Katia Da Silva, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,6 +36,10 @@ msgid ""
 "declare this beneficial ownership, there MUST be a Relationship statement "
 "connecting the two which represents the beneficial ownership relationship."
 msgstr ""
+"**Principales exigences :** si une personne est, directement ou non, un "
+"bénéficiaire effectif d'une entité et si la personne ou l'entité doit "
+"déclarer sa propriété effective, une déclaration de relation doit relier les"
+" deux parties qui constituent une relation de propriété effective."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:10
 #: ../../standard/modelling/repr-beneficial-ownership.rst:38
@@ -43,11 +49,15 @@ msgid ""
 "record MUST be the ``subject`` of a Relationship statement with "
 "``recordDetails.interestedParty.reason`` 'noBeneficialOwners'."
 msgstr ""
+"Si une entité déclare n'avoir aucun bénéficiaire effectif, son "
+"enregistrement doit être le ``subject`` d'une déclaration de relation et "
+"comprendre le champ ``recordDetails.interestedParty.reason`` configuré sur "
+"'noBeneficialOwners' (aucun bénéficiaire effectif)."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:14
 #: 2febc27836da411db09a1253cc0e3a45
 msgid "Overview"
-msgstr ""
+msgstr "Aperçu"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:16
 #: 1b092c3a34ed4efd807f1323abb317ba
@@ -59,6 +69,13 @@ msgid ""
 "intermediaries). And it must be clear what overall interests beneficial "
 "owners have (regardless of whether they are direct or indirect)."
 msgstr ""
+"Les bénéficiaires effectifs peuvent détenir des participations *directes* au"
+" capital d'une entité ou *indirectes* au capital d'entités intermédiaires "
+"(comme des constructions juridiques ou d'autres entreprises). L'ensemble de "
+"données de la norme BODS doit indiquer clairement les personnes déclarées "
+"comme bénéficiaires effectifs d'entreprises précises (et les entités qui "
+"sont intermédiaires) ainsi que les participations au capital générales "
+"détenues par les bénéficiaires effectifs (qu'elles soient directes ou non)."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst-1
 #: aefdb4612c2b48bc8fc163f8499e7f1c
@@ -67,6 +84,9 @@ msgid ""
 "intermediary: Company A. Person 2 directly holds 32 percent of Company E's "
 "shares."
 msgstr ""
+"Une personne 1 détient de manière indirecte 15 % d'actions dans une "
+"entreprise E, par le biais d'un intermédiaire, à savoir l'entreprise A. Une "
+"personne 2 détient directement 32 % des parts de l'entreprise E."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:23
 #: 6f5fa4520ef84f87a899c90e4336ac17
@@ -80,6 +100,16 @@ msgid ""
 "disclosed. That is: that some details of the chain Company E - Company A - "
 "Person 1 are also disclosed."
 msgstr ""
+"Dans la situation décrite ci-dessus, la personne 1 détient de manière "
+"*indirecte* 15 % d'actions dans l'entreprise E et la personne 2 détient de "
+"manière *directe* 32 % des parts dans l'entreprise E. Au sein d'une "
+"juridiction où les personnes détenant plus de 10 % d'actions (directement ou"
+" non) dans une entreprise doivent être déclarées en tant que bénéficiaires "
+"effectifs, les participations au capital des personnes 1 et 2 doivent être "
+"déclarées. En outre, la juridiction peut exiger la déclaration des "
+"informations sur les participations au capital indirectes de la personne 1. "
+"En d'autres termes, les informations sur la relation entre l'entreprise E, "
+"l'entreprise A et la personne 1 sont également communiquées."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:25
 #: e715a55497544525ab022cca014fb3c7
@@ -87,36 +117,40 @@ msgid ""
 "In BODS, the following properties are used to represent such information "
 "disclosure:"
 msgstr ""
+"Dans la norme BODS, les propriétés suivantes sont utilisées pour représenter"
+" de telles divulgations d'informations :"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:27
 #: bc9496ca5c7044659c32c8c9976456c2
 msgid "``beneficialOwnershipOrControl`` (See :ref:`schema-interest`)"
 msgstr ""
+"``beneficialOwnershipOrControl`` (voir la section :ref:`schema-interest`) ;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:28
 #: 9f599a3ee7784350915acd3f60a26770
 msgid "``directOrIndirect`` (See :ref:`schema-interest`)"
-msgstr ""
+msgstr "``directOrIndirect`` (voir la section :ref:`schema-interest`) ;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:29
 #: 3934328a66c84e0a9b3018f8c867c592
 msgid "``componentRecords`` (See :ref:`schema-relationship-record`)"
 msgstr ""
+"``componentRecords`` (voir la section :ref:`schema-relationship-record`) ;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:30
 #: 6ae58c7200a1482bbae0403c7d8af3e4
 msgid "``isComponent`` (See :ref:`schema-entity-record`)"
-msgstr ""
+msgstr "``isComponent`` (voir la section :ref:`schema-entity-record`)."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:33
 #: f4bac19aabb5412ba92eb75c8e9a0b47
 msgid "Requirements"
-msgstr ""
+msgstr "Exigences"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:36
 #: 7a0fac7054614ccb83331cc70b80c5ab
 msgid "No beneficial ownership relationships"
-msgstr ""
+msgstr "Aucune relation de propriété effective"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:40
 #: 0309e6b756df47b9a631bba862d49fc0
@@ -125,11 +159,15 @@ msgid ""
 "SHOULD be the ``subject`` of a Relationship statement with "
 "``recordDetails.interestedParty.reason`` 'subjectExemptFromDisclosure'."
 msgstr ""
+"Si une entité n'est pas obligée de déclarer ses bénéficiaires effectifs, son"
+" enregistrement doit être le ``subject`` d'une déclaration de relation et "
+"comprendre le champ ``recordDetails.interestedParty.reason`` configuré sur "
+"'subjectExemptFromDisclosure' (sujet exempté de divulgation)."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:44
 #: a655b7f30715474f99bf876a0e226bdc
 msgid "A beneficial ownership relationship"
-msgstr ""
+msgstr "Une relation de propriété effective"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:46
 #: 8b575e7ea0d2467791d659f88842b261
@@ -140,21 +178,29 @@ msgid ""
 "which represents the beneficial ownership relationship. Specifically, in the"
 " ``recordDetails`` for the relationship:"
 msgstr ""
+"Si une personne est un bénéficiaire effectif (direct ou indirect) d'une "
+"entité, appelée entité X, et si l'une de ces parties doit déclarer sa "
+"propriété effective, un enregistrement de relation *principale* doit relier "
+"ces deux parties et constitue la relation de propriété effective. Plus "
+"particulièrement, dans le champ ``recordDetails`` pour la relation :"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:48
 #: 40a1ca08d2604a0491c2c5e07d6b6fe3
 msgid "the entity’s ``recordId`` value MUST be the ``subject``"
 msgstr ""
+"la valeur du champ ``recordId`` de l'entité doit être le champ ``subject`` ;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:49
 #: bb997ccae5b44c54a2e03e6697014a3d
 msgid "the person’s ``recordId`` value MUST be the ``interestedParty``"
 msgstr ""
+"la valeur du champ ``recordId`` de la personne doit être le champ "
+"``interestedParty`` ;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:50
 #: c05c976fe7a04656ab5d8ff0488e2141
 msgid "``isComponent`` MUST be false"
-msgstr ""
+msgstr "le champ ``isComponent`` doit être faux ;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:51
 #: e0124f53606b4542b7f4d5cc07629d88
@@ -167,11 +213,19 @@ msgid ""
 "``directOrIndirect`` MUST be ‘direct’. Otherwise ``directOrIndirect`` MUST "
 "be ‘unknown’."
 msgstr ""
+"le champ ``interests`` pour lequel la personne doit être déclarée un "
+"bénéficiaire effectif doit être inclus, si cette information est connue. Le "
+"champ ``beneficialOwnershipOrControl`` doit être configuré sur 'true' "
+"(vrai). Si une participation au capital est connue pour être indirecte par "
+"le biais d'entités intermédiaires, le champ ``directOrIndirect`` doit être "
+"configuré sur ‘indirect’. Si la participation est directe, le champ "
+"``directOrIndirect`` doit être configuré sur ‘direct’. Sinon, le champ "
+"``directOrIndirect`` doit être configuré sur ‘unknown’ (inconnu)."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:54
 #: b58d4744bc8c4ce7bf0bc2ecc80becc2
 msgid "Intermediaries"
-msgstr ""
+msgstr "Intermédiaires"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:56
 #: ebe50041af2c42d6a5a0116da3cb15b0
@@ -180,6 +234,9 @@ msgid ""
 "intermediary elements, this SHOULD be represented in addition to the above. "
 "In particular:"
 msgstr ""
+"Lorsque la propriété effective est indirecte par le biais d'éléments "
+"intermédiaires, elle doit être représentée en complément des informations "
+"susmentionnées. En particulier :"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:58
 #: 6b7caa1af25f4a42af86deab031f5252
@@ -187,6 +244,8 @@ msgid ""
 "the chain of known intermediary elements SHOULD be represented by "
 "*secondary* records"
 msgstr ""
+"la chaîne d'éléments intermédiaires connus doit être représentée par des "
+"enregistrements *secondaires* ;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:59
 #: dbb99af5a99f4f4a8537a4fd3be7fe92
@@ -194,11 +253,15 @@ msgid ""
 "these secondary records SHOULD link the beneficial owner’s record to entity "
 "X’s record indirectly"
 msgstr ""
+"ces enregistrements secondaires doivent relier indirectement "
+"l'enregistrement du bénéficiaire effectif à l'enregistrement de l'entité X ;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:60
 #: 34ff9f511c7e441f9a088eee6bd70616
 msgid "these secondary records SHOULD all have ``isComponent`` set to 'true'"
 msgstr ""
+"ces enregistrements secondaires doivent tous comprendre le champ "
+"``isComponent`` configuré sur 'true' (vrai) ;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:61
 #: 79eed059690e4223a034bb88afd47158
@@ -207,12 +270,17 @@ msgid ""
 "the ``componentRecords`` array of the ``recordDetails`` for the primary "
 "relationship."
 msgstr ""
+"toutes les valeurs du champ ``recordId`` de ces enregistrements secondaires "
+"doivent être répertoriées dans le tableau ``componentRecords`` du champ "
+"``recordDetails`` pour la relation principale."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:63
 #: 7417e3268bf14e5ca88a7230cc2681dd
 msgid ""
 "When Statements about the primary relationship are published in a BODS file:"
 msgstr ""
+"Lorsque les déclarations au sujet de la relation principale sont publiées "
+"dans un fichier de la norme BODS :"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:65
 #: 51f5bce6ed6f4b48a1297f87e5f00a3b
@@ -220,6 +288,9 @@ msgid ""
 "Statements for all secondary records referenced from ``componentRecords`` "
 "MUST also be published in that file"
 msgstr ""
+"les déclarations de tous les enregistrements secondaires référencés à partir"
+" du champ ``componentRecords`` doivent également être publiées dans ce "
+"fichier :"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:66
 #: 3af240a55c054e049ef8a9f8ac264956
@@ -227,11 +298,13 @@ msgid ""
 "Statements for all secondary records must appear before the the first "
 "Statement for the primary relationship."
 msgstr ""
+"les déclarations pour tous les enregistrements secondaires doivent "
+"apparaître avant la première déclaration pour la relation principale."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:69
 #: 5c3c637e1baf463480b5595f1a3073ac
 msgid "Example"
-msgstr ""
+msgstr "Exemple"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:71
 #: 576d7c2ed89d4406a2cd144cbfcdfde7
@@ -239,6 +312,8 @@ msgid ""
 "In the following example, Person 1 is a beneficial owner of Company E. They "
 "exercise that beneficial ownership via an intermediary company, Company A."
 msgstr ""
+"Dans l'exemple suivant, la personne 1 est un bénéficiaire effectif de "
+"l'entreprise E par le biais d'un intermédiaire, à savoir l'entreprise A."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst-1
 #: 9a3dbe28e89345ee89574de1f7128dbd
@@ -260,11 +335,29 @@ msgid ""
 "ooc-3; and its interests have directOrIndirect as 'indirect' and "
 "beneficialOwnershipOrControl as true."
 msgstr ""
+"Les déclarations de personne, d'entité et de relation sont reliées par des "
+"lignes représentant la structure de la propriété de l'entreprise. Les "
+"valeurs de propriété de la déclaration sont les suivantes. Déclaration de la"
+" personne 1 : recordId est configuré sur 'p-1' et recordDetails.isComponent "
+"sur faux. Déclaration de l'entreprise A intermédiaire : recordId est "
+"configuré sur 'e-2' et recordDetails.isComponent sur vrai. Déclaration de "
+"l'entreprise E : recordId est configuré sur 'e-1' et "
+"recordDetails.isComponent sur faux. Déclaration de relation reliant la "
+"personne 1 et l'entreprise A : recordId est configuré sur 'ooc-3', "
+"recordDetails.isComponent sur vrai, directOrIndirect sur 'direct' et "
+"beneficialOwnershipOrControl sur faux. Déclaration de relation reliant les "
+"entreprises A et E : recordId est configuré sur 'ooc-2', "
+"recordDetails.isComponent sur vrai, directOrIndirect sur 'direct' et "
+"beneficialOwnershipOrControl sur faux. Délaration de relation reliant la "
+"personne 1 et l'entreprise E : recordId est configuré sur 'ooc-1', "
+"recordDetails.isComponent sur faux, componentRecords sur ooc-2, e-2 et "
+"ooc-3, directOrIndirect sur 'indirect' et beneficialOwnershipOrControl sur "
+"vrai."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:79
 #: db7b4850bdb745c6b81186092e3826f2
 msgid "Statement order"
-msgstr ""
+msgstr "Ordre de la déclaration"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:80
 #: f0a25c97efe24faf88d523802210ff4b
@@ -272,3 +365,5 @@ msgid ""
 "An example of valid statement order within a BODS dataset for the above "
 "would be: p-1, e-1, e-2, r-3, r-2, r-1."
 msgstr ""
+"Voici un exemple d'ordre de déclaration valide dans l'ensemble de données de"
+" la norme BODS pour l'exemple ci-dessus : p-1, e-1, e-2, r-3, r-2, r-1."

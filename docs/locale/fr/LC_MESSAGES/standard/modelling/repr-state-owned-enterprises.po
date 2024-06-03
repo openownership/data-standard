@@ -3,6 +3,11 @@
 # This file is distributed under the same license as the Beneficial Ownership Data Standard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Katia Da Silva, 2024
+# Cécile Guarin, 2024
+# Rachel Vint, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +26,7 @@ msgstr ""
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:4
 #: 4bd98b99ad7e45fb8d42c6c297ce5fa2
 msgid "Representing state-owned enterprises"
-msgstr ""
+msgstr "Représentation des entreprises publiques"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:8
 #: e21c52919058452d951b8336e5e933c5
@@ -30,11 +36,16 @@ msgid ""
 "Relationship statements connecting it, either directly or indirectly, to an "
 "Entity statement with ``entityType.type`` of 'state' or 'stateBody'."
 msgstr ""
+"**Principale exigence :** si le statut d'une entité en tant qu'entreprise "
+"publique doit être représenté, sa déclaration d'entité doit être le sujet "
+"des déclarations de relation la reliant, directement ou non, à une "
+"déclaration d'entité avec le champ ``entityType.type`` configuré sur 'state'"
+" (État) ou 'stateBody' (organisme public)."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:12
 #: 65254760020349eca2734bc1695dacc6
 msgid "Overview"
-msgstr ""
+msgstr "Aperçu"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:14
 #: 630c179aab1445768ba34b74659d1f29
@@ -46,6 +57,13 @@ msgid ""
 "represented. This requires the state itself (or state body) to be "
 "represented by an Entity statement."
 msgstr ""
+"La définition de l'entreprise publique est susceptible de varier en fonction"
+" des juridictions ou des domaines. Par conséquent, la norme BODS ne se "
+"repose sur aucune définition en particulier et n'en valide aucune. Au "
+"contraire, elle autorise la représentation des participations au capital "
+"entre un État (ou un organisme public) et une entreprise. Dans ce cas, "
+"l'État (ou l'organisme public) doit être représenté par une déclaration "
+"d'entité."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:16
 #: 541c5e5cdae240a3b997962e6c4b0afb
@@ -53,6 +71,9 @@ msgid ""
 "In particular, the following properties and values SHOULD be used to "
 "represent information about enterprises and their links to states:"
 msgstr ""
+"Plus particulièrement, les valeurs et propriétés suivantes doivent être "
+"utilisées pour représenter les informations sur des entreprises et leurs "
+"liens avec les États :"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:18
 #: 11152c5a279b4eababf0f79db3784794
@@ -60,6 +81,9 @@ msgid ""
 "``entityType.type`` SHOULD be set to 'state' or 'stateBody', and "
 "``jurisdiction`` SHOULD be used to represent the particular state."
 msgstr ""
+"Le champ ``entityType.type`` doit être configuré sur 'state' (État) ou "
+"'stateBody' (organisme public) et le champ ``jurisdiction`` doit être "
+"utilisé pour représenter l'État concerné."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:19
 #: 93aec1189bfb4f39b825eb900681a8ed
@@ -67,6 +91,9 @@ msgid ""
 "``entityType.subtype`` SHOULD be used to refine the category of a given "
 "state body (as a 'government department', 'state agency' or 'other')."
 msgstr ""
+"Le champ ``entityType.subtype`` doit être utilisé pour affiner la catégorie "
+"d'un organisme public donné en tant que 'government department' (service "
+"gouvernemental), 'state agency' (organe public) ou 'other' (autre)."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:20
 #: 8ed32d5728ad49569a33216a477c976c
@@ -74,22 +101,27 @@ msgid ""
 "``formedByStatute`` MAY be used to supply details of a law, where an entity "
 "has been formed as a result of specific legislation."
 msgstr ""
+"Le champ ``formedByStatute`` peut être utilisé pour fournir des informations"
+" sur une loi selon laquelle une entité a été formée dans le cadre d'une "
+"législation spécifique."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:22
 #: cf39b2e82d9448d89347c17cefd2dadd
 msgid ""
 "For more details about these properties see :ref:`schema-entity-record`."
 msgstr ""
+"Pour obtenir des informations supplémentaires sur ces propriétés, consultez "
+"la section :ref:`schema-entity-record`."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:25
 #: b94b98d0e9264fcc957d18259cdadf99
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:28
 #: 6b7cdd46d4444826a3e2492ce6803dfd
 msgid "Ownership by state body"
-msgstr ""
+msgstr "Propriété par un organisme public"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:30
 #: 66a252060732451d9ae526d6e410906c
@@ -97,6 +129,8 @@ msgid ""
 "Ownership or control by a state body is known and a statement about these "
 "interests is possible."
 msgstr ""
+"La propriété ou le contrôle par un organisme public est connu(e) et une "
+"déclaration sur ces participations au capital est possible."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: dbaf772b9f7740febd4f8fcabbd85f89
@@ -105,11 +139,16 @@ msgid ""
 "a Relationship statement to an Entity statement (with entityType type "
 "'stateBody' and jurisdiction 'gb')."
 msgstr ""
+"La déclaration d'entité, contenant le champ entityType dont le type est "
+"configuré 'registeredEntity' (entité immatriculée), est reliée par une "
+"déclaration de relation à une déclaration d'entité, contenant le champ "
+"entityType dont le type est configuré sur 'stateBody' (organisme public) et "
+"la juridiction sur 'gb' (Grande-Bretagne)."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:38
 #: d8c021219bcc40a1a10f644e847fec64
 msgid "Ownership by regional government"
-msgstr ""
+msgstr "Propriété par un gouvernement régional"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:40
 #: 511262e870774b73875fc5d5960b3cb3
@@ -117,6 +156,8 @@ msgid ""
 "Ownership or control by a regional state government is known and a statement"
 " about these interests is possible."
 msgstr ""
+"La propriété ou le contrôle par un gouvernement régional est connu(e) et une"
+" déclaration sur ces participations au capital est possible."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: a919d42096744f1aade937e1ef98a75e
@@ -125,11 +166,16 @@ msgid ""
 "a Relationship statement to an Entity statement (with entityType type "
 "'state' and jurisdiction 'zm')."
 msgstr ""
+"La déclaration d'entité, contenant le champ entityType dont le type est "
+"configuré sur 'registeredEntity' (entité immatriculée) est reliée par une "
+"déclaration de relation à une déclaration d'entité, contenant le champ "
+"entityType dont le type est configuré sur 'state' (État) et la juridiction "
+"sur 'zm' (Zambie)."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:48
 #: e8b709c0349142dab3c775dee22b9bee
 msgid "SOE exempt from disclosure"
-msgstr ""
+msgstr "Entreprise publique exemptée de divulgation"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:50
 #: bbc17533636744bf8da2b8f6bef581ac
@@ -137,6 +183,8 @@ msgid ""
 "A registered entity declares that it is exempt from disclosing beneficial "
 "owners because it is an SOE."
 msgstr ""
+"Une entité immatriculée déclare qu'elle n'est pas obligée de déclarer ses "
+"bénéficiaires effectifs, car il s'agit d'une entreprise publique."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: 8908148364aa4344950409ec50b24394
@@ -149,11 +197,23 @@ msgid ""
 "interestedParty.unspecified.description set to 'Exemption granted on the "
 "basis that the declaring entity is a state-owned enterprise'."
 msgstr ""
+"La déclaration d'entité, contenant le champ entityType dont le type est "
+"configuré sur 'registeredEntity' (entité immatriculée), est reliée par une "
+"déclaration de relation à une déclaration d'entité, contenant le champ "
+"entityType dont le type est configuré sur 'state' (État) et la juridiction "
+"est 'nl' (Pays-Bas). La déclaration d'entité, contenant le champ entityType "
+"dont le type est configuré sur 'registeredEntity' (entité immatriculée), est"
+" également reliée à une déclaration de relation avec le champ "
+"interestedParty.unspecified.reason configuré sur 'noBeneficialOwners' (aucun"
+" bénéficiaire effectif) et le champ interestedParty.unspecified.description "
+"configuré sur 'Exemption granted on the basis that the declaring entity is a"
+" state-owned enterprise' (dispense accordée, car l'entité déclarante est une"
+" entreprise publique)."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:58
 #: 746ef90914c4492bae02a4ed1a20e8c4
 msgid "Golden share provision"
-msgstr ""
+msgstr "Disposition relative aux actions spécifiques"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:60
 #: 6351b146e71b426b9516b9f48712b53d
@@ -161,6 +221,8 @@ msgid ""
 "Control through a golden share provision in company articles or shareholder "
 "agreement."
 msgstr ""
+"Un contrôle s'exerce grâce à une disposition relative aux actions "
+"spécifiques dans les statuts d'une entreprise ou les accords d'actionnaires."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: cd40e7e0e8284f79a156e392de1b8fdc
@@ -171,16 +233,26 @@ msgid ""
 "interests.0.type set to 'controlViaCompanyRulesOrArticles' and "
 "interests.0.details set to 'Veto rights over specified company decisions'."
 msgstr ""
+"La déclaration d'entité, contenant le champ entityType dont le type est "
+"configuré sur 'registeredEntity' (entité immatriculée), est reliée par une "
+"déclaration de relation à une déclaration d'entité, contenant le champ "
+"entityType dont le type est configuré sur 'stateBody' (organisme public) et "
+"la juridiction sur 'nl' (Pays-Bas). La déclaration de proprité ou de "
+"contrôle contient le champ interests.0.type configuré sur "
+"'controlViaCompanyRulesOrArticles' (contrôle exercé par le biais des statuts"
+" ou des règles de l'entreprise) et le interests.0.details sur 'Veto rights "
+"over specified company decisions' (droits de véto sur des décisions précises"
+" de l'entreprise)."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:68
 #: b40eca442a6b46cb82ad3799ffe9eea0
 msgid "Managing official"
-msgstr ""
+msgstr "Gestionnaire"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:70
 #: ad51092f3869426e8818fd6ce3bb2bea
 msgid "An SOE controlled by a natural person."
-msgstr ""
+msgstr "Une entreprise publique est contrôlée par une personne physique."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: 821ff2365f4d48ddb62077eafbe8e2c5
@@ -193,16 +265,27 @@ msgid ""
 "statement is connected to a Person statement with personType set to "
 "'knownPerson'."
 msgstr ""
+"La déclaration d'entité, contenant le champ entityType dont le type est "
+"configuré sur 'registeredEntity' (entité immatriculée) est reliée par une "
+"déclaration de relation à une déclaration d'entité, contenant le champ "
+"entityType dont le type est configuré sur 'state' (État) et la juridiction "
+"sur 'zm' (Zambie). La déclaration d'entité, contenant le champ entityType "
+"dont le type est configuré sur 'registeredEntity' (entité immatriculée), est"
+" également reliée à une déclaration de relation, contenant le champ "
+"interests.0.type confguré sur 'seniorManagingOfficial' (gestionnaire "
+"principal). Cette dernière déclaration de relation est reliée à une "
+"déclaration de personne contenant le champ personType configuré sur "
+"'knownPerson' (personne inconnue)."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:78
 #: ee9495fb8ffd42edaf57de59841e8419
 msgid "Formed by statute"
-msgstr ""
+msgstr "Entreprise constituée par la loi"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:80
 #: 24e01a09d7b44b09a7b20169861d0c4c
 msgid "An SOE is formed by statute."
-msgstr ""
+msgstr "Une entreprise publique est constituée par la loi."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: 67ff57cdc8ce4d9b9dd971e5d42f7210
@@ -214,11 +297,20 @@ msgid ""
 "'stateBody' and jurisdiction 'zm'). The Relationship statement has "
 "interests.0.type set to 'controlByLegalFramework'."
 msgstr ""
+"La déclaration d'entité, contenant le champ entityType dont le type est "
+"configuré sur 'legalEntity' (entité juridique), le champ "
+"formedByLegislation.name  configuré sur 'National Energy Act' (loi nationale"
+" sur l'énergie) et le formedByLegislation.date configuré sur '1980-02-01', "
+"est reliée par une déclaration de relation à une déclaration d'entité, "
+"contenant le champ entityType dont le type est configuré sur 'stateBody' "
+"(organisme public) et la juridiction sur 'zm' (Zambie). La déclaration de "
+"relation contient le champ interests.0.type configuré sur "
+"'controlByLegalFramework' (contrôlé par le cadre juridique)."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:88
 #: 5c1f1781c29c40aba4d730353db6de84
 msgid "Government-linked investment entity"
-msgstr ""
+msgstr "Entité d'investissement gouvernementale"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:90
 #: 5ef1c2b23c854a2e91ebbcb7f3796623
@@ -226,6 +318,8 @@ msgid ""
 "A state's interests in an SOE are managed via a government-linked investment"
 " entity (GLIE)."
 msgstr ""
+"Les participations au capital d'une entreprise publique détenues par un État"
+" sont gérées par une entité d'investissement gouvernementale."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: 3b4deaf888464255bae854b9fbd4edef
@@ -236,3 +330,11 @@ msgid ""
 "connected via a Relationship statement to an Entity statement (with "
 "entityType type 'state' and jurisdiction 'gb')."
 msgstr ""
+"La déclaration d'entité, contenant le champ entityType dont le type est "
+"configuré sur 'registeredEntity' (entité immatriculée), est reliée par une "
+"déclaration de relation à une autre déclaration d'entité, contenant le champ"
+" entityType dont le type est configuré sur 'registeredEntity' (entité "
+"immatriculée) et le nom sur 'A G.L.I.E'. Cette dernière déclaration d'entité"
+" est reliée par une déclaration de relation à une déclaration d'entité, "
+"contenant le champ entityType dont le type est configuré sur 'state' (État) "
+"et la juridiction sur 'gb' (Grande-Bretagne)."

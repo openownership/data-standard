@@ -1,13 +1,14 @@
 # 
 # Translators:
 # Transifex Bot <>, 2024
+# Katia Da Silva, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-05-10 16:05+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Transifex Bot <>, 2024\n"
+"Last-Translator: Katia Da Silva, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +66,7 @@ msgstr ""
 #: docs/_assets/trust-scenario6.svg:889
 #, no-wrap
 msgid "Entity statement"
-msgstr ""
+msgstr "Déclaration d'entité"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/AlphaBeta.svg:405 docs/_assets/AlphaBeta.svg:422
@@ -139,20 +140,20 @@ msgstr ""
 #: docs/_assets/RepresentingChainsBODS-RealWorld.svg:474
 #, no-wrap
 msgid "Direct ownership or control"
-msgstr ""
+msgstr "Propriété ou contrôle direct"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-RealWorld.svg:482
 #, no-wrap
 msgid "Indirect ownership or control"
-msgstr ""
+msgstr "Propriété ou contrôle indirect"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-RealWorld.svg:497
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:628
 #, no-wrap
 msgid "Key"
-msgstr ""
+msgstr "Légende"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-RealWorld.svg:508
@@ -160,7 +161,7 @@ msgstr ""
 #: docs/_assets/key-concepts-img0.svg:911
 #, no-wrap
 msgid "Person 1"
-msgstr ""
+msgstr "Personne 1"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-RealWorld.svg:524
@@ -169,7 +170,7 @@ msgstr ""
 #: docs/_assets/trust-scenario6.svg:742
 #, no-wrap
 msgid "Company A"
-msgstr ""
+msgstr "Société A"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-RealWorld.svg:540
@@ -177,47 +178,47 @@ msgstr ""
 #: docs/_assets/key-concepts-img0.svg:943
 #, no-wrap
 msgid "Company E"
-msgstr ""
+msgstr "Société E"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-RealWorld.svg:556
 #: docs/_assets/key-concepts-img0.svg:959
 #, no-wrap
 msgid "Person 2"
-msgstr ""
+msgstr "Personne 2"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-RealWorld.svg:567
 #: docs/_assets/key-concepts-img0.svg:970
 #, no-wrap
 msgid "32% shareholding"
-msgstr ""
+msgstr "taux de détention d'actions de 32 %"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-RealWorld.svg:578
 #, no-wrap
 msgid "15% shareholding"
-msgstr ""
+msgstr "taux de détention d'actions de 15 %"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:549
 #: docs/_assets/key-concepts-img0.svg:432
 #, no-wrap
 msgid "Direct relationship"
-msgstr ""
+msgstr "Relation directe"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:557
 #: docs/_assets/key-concepts-img0.svg:408
 #, no-wrap
 msgid "Indirect relationship"
-msgstr ""
+msgstr "Relation indirecte"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:565
 #, no-wrap
 msgid "Statement and relevant properties"
-msgstr ""
+msgstr "Déclaration et propriétés concernées"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:639
@@ -238,7 +239,7 @@ msgstr ""
 #: docs/_assets/trust-scenario6.svg:845
 #, no-wrap
 msgid "Person statement"
-msgstr ""
+msgstr "Déclaration de personne physique"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:661
@@ -273,7 +274,7 @@ msgstr ""
 #: docs/_assets/trust-scenario6.svg:818 docs/_assets/trust-scenario6.svg:856
 #, no-wrap
 msgid "Relationship statement"
-msgstr ""
+msgstr "Déclaration de relation"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:677
@@ -362,7 +363,7 @@ msgstr ""
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:889
 #, no-wrap
 msgid "property: value"
-msgstr ""
+msgstr "propriété : valeur"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:899
@@ -580,7 +581,7 @@ msgstr ""
 #: docs/_assets/key-concepts-img3.svg:250
 #: docs/_assets/key-concepts-img3.svg:544
 msgid "source"
-msgstr ""
+msgstr "source"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:197 docs/_assets/key-concepts-img3.svg:569
@@ -602,65 +603,65 @@ msgstr ""
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:334
 msgid "3 Sept 2021"
-msgstr ""
+msgstr "3 sept. 2021"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:344
 msgid "10 Sept 2021"
-msgstr ""
+msgstr "10 sept. 2021"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:354
 msgid "13 Sept 2021"
-msgstr ""
+msgstr "13 sept. 2021"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:365
 #, no-wrap
 msgid "Person A "
-msgstr ""
+msgstr "Personne A"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:370
 #, no-wrap
 msgid "divests from "
-msgstr ""
+msgstr "cède"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:375
 #, no-wrap
 msgid "company B"
-msgstr ""
+msgstr "société B"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:386
 #, no-wrap
 msgid "Public register "
-msgstr ""
+msgstr "Registre public"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:391
 #, no-wrap
 msgid "is updated"
-msgstr ""
+msgstr "est à jour"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:402
 #, no-wrap
 msgid "Company B files updated "
-msgstr ""
+msgstr "Fichiers de la société B mis à jour"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:407
 #, no-wrap
 msgid "ownership information "
-msgstr ""
+msgstr "informations sur la propriété"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:412
 #, no-wrap
 msgid "with the Business Register"
-msgstr ""
+msgstr "avec le registre des entreprises"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:431 docs/_assets/key-concepts-img3.svg:610
@@ -866,37 +867,37 @@ msgstr ""
 #: docs/_assets/key-concepts-img0.svg:346
 #, no-wrap
 msgid "Beneficial ownership network"
-msgstr ""
+msgstr "Réseau des bénéficiaires effectifs"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/key-concepts-img0.svg:360
 #, no-wrap
 msgid "Beneficial owner"
-msgstr ""
+msgstr "Bénéficiaire effectif"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/key-concepts-img0.svg:384
 #, no-wrap
 msgid "Intermediary entity"
-msgstr ""
+msgstr "Entité intermédiaire"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/key-concepts-img0.svg:456
 #, no-wrap
 msgid "Subject of beneficial ownership network"
-msgstr ""
+msgstr "Sujet du réseau des bénéficiaires effectifs"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/key-concepts-img0.svg:480
 #, no-wrap
 msgid "Interest"
-msgstr ""
+msgstr "Participation au capital"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/key-concepts-img0.svg:981
 #, no-wrap
 msgid "45% shareholding"
-msgstr ""
+msgstr "taux de détention d'actions de 45 %"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/key-concepts-img1.svg:199
@@ -1102,7 +1103,7 @@ msgstr ""
 #: docs/_assets/trust-scenario5.svg:632 docs/_assets/trust-scenario6.svg:878
 #, no-wrap
 msgid "Trust A"
-msgstr ""
+msgstr "Trust A"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/trust-scenario1.svg:440 docs/_assets/trust-scenario2.svg:520
@@ -1110,7 +1111,7 @@ msgstr ""
 #: docs/_assets/trust-scenario5.svg:751 docs/_assets/trust-scenario6.svg:656
 #, no-wrap
 msgid "Person A"
-msgstr ""
+msgstr "Personne A"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/trust-scenario1.svg:451 docs/_assets/trust-scenario2.svg:531
@@ -1118,7 +1119,7 @@ msgstr ""
 #: docs/_assets/trust-scenario5.svg:762 docs/_assets/trust-scenario6.svg:602
 #, no-wrap
 msgid "Person B"
-msgstr ""
+msgstr "Personne B"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/trust-scenario1.svg:462 docs/_assets/trust-scenario2.svg:542
@@ -1126,7 +1127,7 @@ msgstr ""
 #: docs/_assets/trust-scenario5.svg:773 docs/_assets/trust-scenario6.svg:791
 #, no-wrap
 msgid "Person C"
-msgstr ""
+msgstr "Personne C"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/trust-scenario1.svg:528 docs/_assets/trust-scenario1.svg:614
@@ -1189,7 +1190,7 @@ msgstr ""
 #: docs/_assets/trust-scenario2.svg:553
 #, no-wrap
 msgid "Person D"
-msgstr ""
+msgstr "Personne D"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/trust-scenario2.svg:613
