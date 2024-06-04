@@ -6,6 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
+# María Renée Briozzo Mitchell, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Carmen Edery, 2024\n"
+"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -56,10 +57,9 @@ msgstr ""
 "una entidad, persona o relación es verdadera. Esto puede registrarse de "
 "forma automática cuando alguien envía un formulario de declaración en línea "
 "o puede ser la fecha de envío que figura en un formulario físico. Para un "
-"servicio que consolida datos de titularidad de beneficiarios reales, sería "
-"la fecha en la que se resolvieron varias fuentes de información para "
-"realizar una afirmación coherente sobre el estado de una entidad, persona o "
-"relación."
+"servicio que consolida datos de titularidad del beneficiario real, sería la "
+"fecha en la que se resolvieron varias fuentes de información para realizar "
+"una afirmación coherente sobre el estado de una entidad, persona o relación."
 
 #: ../../standard/modelling/dates-guidance.rst:13
 #: 3c30d6932609432cafa0acea9dc9d92a
@@ -73,7 +73,7 @@ msgstr ""
 "``publicationDetails.publicationDate`` es la fecha en la que se publicó esta"
 " declaración. Por ejemplo, la fecha en la que la información se agregó a un "
 "registro público o se puso a disposición mediante una API. Puede ser igual "
-"que el valor  ``statementDate`` si los datos se publican inmediatamente "
+"que el valor ``statementDate`` si los datos se publican inmediatamente "
 "después del envío. En muchos casos, se produce un retraso entre el envío y "
 "la publicación."
 
@@ -148,8 +148,8 @@ msgid ""
 "data, to prevent misunderstanding. Publishers SHOULD create accompanying "
 "guidance for data users."
 msgstr ""
-"Cuando se utilizan fechas redondeadas, debe comunicarse sobre esto a los "
-"usuarios de los datos para evitar malentendidos. Los publicadores DEBEN "
+"Cuando se utilizan fechas redondeadas, debería comunicarse este hecho a los "
+"usuarios de los datos para evitar malentendidos. Los publicadores DEBERÍAN "
 "crear guías complementarias para los usuarios de los datos."
 
 #: ../../standard/modelling/dates-guidance.rst:30
@@ -163,7 +163,7 @@ msgid ""
 "If an interest started in March 2022 but the day is not known the interest's"
 " ``startDate`` would be published as 2022-03-01"
 msgstr ""
-"Si un interés empezó en marzo de 2022 pero no se conoce el día, la "
+"Si un interés empezó en marzo de 2022, pero no se conoce el día, la "
 "``startDate`` del interés se publicaría como 2022-03-01"
 
 #: ../../standard/modelling/dates-guidance.rst:33
@@ -172,8 +172,8 @@ msgid ""
 "If an interest started in 2022 but the month is not known the interest's "
 "``startDate`` would be published as 2022-01-01"
 msgstr ""
-"Si un interés empezó en 2022 pero no se conoce el mes, la ``startDate`` del "
-"interés se publicaría como 2022-01-01"
+"Si un interés empezó en 2022, pero no se conoce el mes, la ``startDate`` del"
+" interés se publicaría como 2022-01-01"
 
 #: ../../standard/modelling/dates-guidance.rst:36
 #: eee211860b734644928da833c1653d45
@@ -221,9 +221,9 @@ msgid ""
 " and ``publicationDate``."
 msgstr ""
 "Alguien funda una empresa, la inscribe y divulga a sus beneficiarios reales."
-" Un año después, nada ha cambiado, Presentan una declaración de confirmación"
-" y se genera una nueva declaración sobre relación con una ``statementDate`` "
-"y una ``publicationDate`` actualizadas."
+" Un año después, nada ha cambiado. Presenta una declaración de confirmación "
+"y se genera una nueva declaración sobre relación con una ``statementDate`` y"
+" una ``publicationDate`` actualizadas."
 
 #: ../../standard/modelling/dates-guidance.rst-1
 #: fdb89245f84541f8ab4f95e617a827ea
@@ -278,8 +278,7 @@ msgstr "tiene una ``interest.startDate`` corregida"
 #: ../../standard/modelling/dates-guidance.rst:68
 #: 4868b3b6dab2415eba83abf150ca08a2
 msgid "has an :ref:`Annotation <schema-annotation>` explaining the correction"
-msgstr ""
-"tiene una :ref:`Annotation <schema-annotation>` que explica la corrección"
+msgstr "tiene una :ref:`Nota <schema-annotation>` que explica la corrección"
 
 #: ../../standard/modelling/dates-guidance.rst-1
 #: 24b4163a805e490bb8c1cf44c4302093
@@ -289,7 +288,7 @@ msgid ""
 "date. The second statement has an annotation with motivation \"correction\" "
 "point towards the interest start date."
 msgstr ""
-"2 declaracones que muestran el mismo recordId y statementDate. La segunda "
+"2 declaraciones que muestran el mismo recordId y statementDate. La segunda "
 "declaración tiene una fecha de publicación, un statementId y una fecha de "
 "inicio de interés diferentes. La segunda declaración tiene una nota con el "
 "punto de motivación \"corrección\" hacia la fecha de inicio del interés."

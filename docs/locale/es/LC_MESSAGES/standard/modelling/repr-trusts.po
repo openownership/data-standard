@@ -6,6 +6,7 @@
 # Translators:
 # Carlos Hames, 2024
 # Carmen Edery, 2024
+# María Renée Briozzo Mitchell, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Carmen Edery, 2024\n"
+"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +25,7 @@ msgstr ""
 
 #: ../../standard/modelling/repr-trusts.rst:4 86f44d21e3c742cb86c17a5263e11b92
 msgid "Representing trusts"
-msgstr "Representando fideicomisos"
+msgstr "Representación de fideicomisos"
 
 #: ../../standard/modelling/repr-trusts.rst:7 374be32ff09544a6918ebd124d4dff31
 msgid "Overview"
@@ -35,7 +36,7 @@ msgid ""
 "In this documentation, the term ‘trust’ is inclusive of trusts and trust-"
 "like arrangements (such as *fiducie*, *treuhand* and *waqf*)."
 msgstr ""
-"En esta documentación, el término ‘trust’ iincluye los fideicomisos y "
+"En esta documentación, el término ‘fideicomiso’ incluye los fideicomisos y "
 "estructuras jurídicas similares a un fideicomiso (como *fiducie*, *treuhand*"
 " y *waqf*)."
 
@@ -46,8 +47,8 @@ msgid ""
 "beneficial ownership of entities via trusts. Trusts are represented by an "
 "Entity statement."
 msgstr ""
-"El BODS puede utilizarse para representar la titularidad de beneficiarios "
-"reales de los fideicomisos y la titularidad de beneficiarios reales de las "
+"El BODS puede utilizarse para representar la titularidad del beneficiario "
+"real de los fideicomisos y la titularidad del beneficiario real de las "
 "entidades a través de fideicomisos. Los fideicomisos están representados por"
 " una declaración sobre entidad."
 
@@ -62,7 +63,7 @@ msgid ""
 "If the trust has legal personality ``entityType.type`` MUST be "
 "``legalEntity``"
 msgstr ""
-"Si el fideicomiso tiene personalidad legal, ``entityType.type`` DEBE ser "
+"Si el fideicomiso tiene personería jurídica, ``entityType.type`` DEBE ser "
 "``legalEntity``"
 
 #: ../../standard/modelling/repr-trusts.rst:15
@@ -71,13 +72,13 @@ msgid ""
 "If the trust does not have legal personality ``entityType.type`` MUST be "
 "``arrangement``"
 msgstr ""
-"Si el fideicomiso no tiene personalidad legal, ``entityType.type`` DEBE ser "
-"``arrangement``"
+"Si el fideicomiso no tiene personería jurídica, ``entityType.type`` DEBE ser"
+" ``arrangement``"
 
 #: ../../standard/modelling/repr-trusts.rst:16
 #: 22a6633d4a4a4385a625561376fefa91
 msgid "``entityType.subtype`` MUST be ``trust``"
-msgstr "``entityType.subtype`` DEBE ser ``trust``"
+msgstr "El ``entityType.subtype`` DEBE ser ``trust``"
 
 #: ../../standard/modelling/repr-trusts.rst:17
 #: 1acc2d6fb994478ca3033de7cf141351
@@ -85,9 +86,9 @@ msgid ""
 "``entityType.details`` MAY be used to give a local name (e.g. \"fiducie\") "
 "or specify the type of trust (e.g. \"inter-vivos trust\")"
 msgstr ""
-"``entityType.details`` PUEDE utilizarse para dar un nombre local (p. ej., "
-"\"fiducie\") o especificar el nombre del fideicomiso (p. ej., \"inter-vivos "
-"trust\")"
+"Los ``entityType.details`` PUEDEN utilizarse para dar un nombre local (p. "
+"ej., \"fiducie\") o especificar el tipo de fideicomiso (p. ej., \"inter-"
+"vivos trust\")"
 
 #: ../../standard/modelling/repr-trusts.rst:19
 #: 99e4a072cd9d41d9847a8e3860fb9d24
@@ -129,19 +130,19 @@ msgid ""
 "``interest.details`` MAY be used to give a local name (e.g. \"fiduciaire\") "
 "or more information about the interest (e.g. \"power to dissolve trust\")."
 msgstr ""
-"``interest.details`` PUEDE utilizarse para dar un nombre local (p. ej., "
-"\"fiduciaire\") o más información sobre el interés (p. ej. \"power to "
+"Los ``interest.details`` PUEDEN utilizarse para dar un nombre local (p. ej.,"
+" \"fiduciaire\") o más información sobre el interés (p. ej. \"power to "
 "dissolve trust\")."
 
 #: ../../standard/modelling/repr-trusts.rst:30
 #: 8fc18c327e314609abf59698944e1c85
 msgid "Example Scenarios"
-msgstr "Ejemplos de casos"
+msgstr "Escenarios de ejemplo"
 
 #: ../../standard/modelling/repr-trusts.rst:33
 #: 33222d9e38a34e85978386729a36c4a1
 msgid "Trust without legal personality"
-msgstr "Fideicomiso sin personalidad legal"
+msgstr "Fideicomiso sin personería jurídica"
 
 #: ../../standard/modelling/repr-trusts.rst:34
 #: c8bba18f8dbf4e53b14324835b6963a2
@@ -150,7 +151,7 @@ msgid ""
 " does not have a legal personality."
 msgstr ""
 "Un fideicomiso con un beneficiario conocido, un fiduciario conocido y un "
-"fideicomitente conocido. El fideicomiso no tiene personalidad legal."
+"fideicomitente conocido. El fideicomiso no tiene personería jurídica."
 
 #: ../../standard/modelling/repr-trusts.rst-1 9d096cd42b5c435abd7d0c60baeff83c
 msgid ""
@@ -161,17 +162,17 @@ msgid ""
 "relationship statement with interest type 'beneficiary'"
 msgstr ""
 "Diagrama que muestra declaraciones vinculadas. En la declaración sobre "
-"entidad, se etiquetó el fideicomiso A con el tipo de entityTipe "
-"'arrangement' y el subtipo 'trust'. El fideicomiso A está conectado con la "
-"persona A mediante una declaración sobre relación con el tipo de interés "
-"'fideicomitente', la persona B con una declaración sobre relación con el "
-"tipo de interés 'trustee', y la persona C con una declaración sobre relación"
-" con el tipo de interés 'beneficiary'."
+"entidad, se etiquetó el Fideicomiso A con el entityType tipo 'arrangement' y"
+" subtipo 'trust'. El Fideicomiso A está conectado a la Persona A mediante "
+"una declaración sobre relación con el tipo de interés 'fideicomitente', a la"
+" Persona B mediante una declaración sobre relación con el tipo de interés "
+"'trustee', y a la Persona C con una declaración sobre relación con el tipo "
+"de interés 'beneficiary'."
 
 #: ../../standard/modelling/repr-trusts.rst:42
 #: aa7add7c0f69445a87436d602e4c34ab
 msgid "Trust with legal personality and protector"
-msgstr "Fideicomiso con personalidad legal y curador"
+msgstr "Fideicomiso con personería jurídica y curador"
 
 #: ../../standard/modelling/repr-trusts.rst:43
 #: 38d979aab9f74848beecf1d0402a1517
@@ -180,8 +181,8 @@ msgid ""
 "protector. The trust has a legal personality."
 msgstr ""
 "Un fideicomiso con un beneficiario conocido, un fiduciario conocido, un "
-"fideicomitente conocido y un curador conocido. El fideicomiso tiene una "
-"personalidad legal."
+"fideicomitente conocido y un curador conocido. El fideicomiso tiene "
+"personería jurídica."
 
 #: ../../standard/modelling/repr-trusts.rst-1 d8eabc4556bb44279e6a21f411748f08
 msgid ""
@@ -193,12 +194,12 @@ msgid ""
 "relationship statement with interest type 'beneficiary.'"
 msgstr ""
 "Diagrama que muestra declaraciones vinculadas. En la declaración sobre "
-"entidad, se etiquetó el Fideicomiso A con el tipo de entityTipe "
-"'legalEntity' y el subtipo 'trust'. El Fideicomiso A está conectado con la "
-"persona A mediante una declaración sobre relación con el tipo de interés "
-"'settlor', la persona B con una declaración sobre relación con el tipo de "
-"interés 'trustee', la persona C con una declaración sobre relación con el "
-"tipo de interés 'protector' y la persona D con una declaración sobre "
+"entidad, se etiquetó el Fideicomiso A con el entityType tipo 'legalEntity' y"
+" subtipo 'trust'. El Fideicomiso A está conectado a la Persona A mediante "
+"una declaración sobre relación con el tipo de interés 'settlor', a la "
+"Persona B mediante una declaración sobre relación con el tipo de interés "
+"'trustee', a la Persona C mediante una declaración sobre relación con el "
+"tipo de interés 'protector' y a la Persona D mediante una declaración sobre "
 "relación con el tipo de interés 'beneficiary.'"
 
 #: ../../standard/modelling/repr-trusts.rst:52
@@ -212,8 +213,8 @@ msgid ""
 "A trust where the settlor is also a trustee and the beneficiary is anonymous"
 " due to a disclosure exemption."
 msgstr ""
-"Un fideicomiso donde el fideicomitente también es fiduciario y el "
-"beneficiario es anónimo debido auna exención de divulgación."
+"Un fideicomiso donde el fideicomitente también es fiduciario, y el "
+"beneficiario es anónimo debido a una exención de divulgación."
 
 #: ../../standard/modelling/repr-trusts.rst-1 be5cf3dadba44c6281e5e8a88ab43649
 msgid ""
@@ -224,14 +225,14 @@ msgid ""
 "person statement with person type 'anonymous person' and unspecified person "
 "details 'subject exempt from disclosure'"
 msgstr ""
-"Diagrama que muestra declaraciones vinculadas. El fideicomiso A está "
-"conectado a la persona A mediante una declaración sobre relación con los "
-"tipos de interés 'settlor' y 'trustee', la persona B mediante una "
-"declaración sobre relación con el tipo de interés 'trustee', la persona C "
-"mediante una declaración sobre relación con los tipos de interés "
-"'beneficiary'. La persona D tiene una declaración sobre persona con el tipo "
-"de persona 'persona anónima' y detalles de persona no especificada 'subject "
-"exempt from disclosure'"
+"Diagrama que muestra declaraciones vinculadas. El Fideicomiso A está "
+"conectado a la Persona A mediante una declaración sobre relación con los "
+"tipos de interés 'settlor' y 'trustee', a la Persona B mediante una "
+"declaración sobre relación con el tipo de interés 'trustee' y a la Persona C"
+" mediante una declaración sobre relación con los tipos de interés "
+"'beneficiary'. La Persona D tiene una declaración sobre persona con el tipo "
+"de persona 'anonymous person' y detalles de persona no especificada 'subject"
+" exempt from disclosure'"
 
 #: ../../standard/modelling/repr-trusts.rst:61
 #: db3c7cd0904d4991a2d9acb0e9ca3984
@@ -258,14 +259,14 @@ msgid ""
 "'beneficiary' and interest details 'beneficiaire'"
 msgstr ""
 "Diagrama que muestra declaraciones vinculadas. En la declaración sobre "
-"entidad, se etiquetó el }fideicomiso A con el tipo de entityTipe "
-"'arrangement', el subtipo 'trust' y los detalles 'fiducie-sûreté'. El "
-"fideicomiso A está conectado con la persona A mediante una declaración sobre"
-" relación con el tipo de interés 'settlor' y los detalles del interés "
-"'constituant', la persona B con una declaración sobre relación con el tipo "
-"de interés 'trustee' y los detalles de interés 'fiduciaire', y la persona C "
-"con una declaración sobre relación con el tipo de interés 'beneficiary' y "
-"los detalles de interés 'beneficiaire'"
+"entidad, se etiquetó el Fideicomiso A con el entityType tipo 'arrangement' y"
+" subtipo 'trust', y los detalles 'fiducie-sûreté'. El Fideicomiso A está "
+"conectado a la Persona A mediante una declaración sobre relación con el tipo"
+" de interés 'settlor' y los detalles del interés 'constituant', a la Persona"
+" B mediante una declaración sobre relación con el tipo de interés 'trustee' "
+"y los detalles de interés 'fiduciaire', y a la Persona C mediante una "
+"declaración sobre relación con el tipo de interés 'beneficiary' y los "
+"detalles de interés 'beneficiaire'"
 
 #: ../../standard/modelling/repr-trusts.rst:70
 #: 7b8ab1e384f844f3a48fec83b13cf979
@@ -282,9 +283,9 @@ msgid ""
 msgstr ""
 "Una participación importante en una empresa se mantiene en un fideicomiso. "
 "Las partes del fideicomiso son beneficiarias reales de la empresa. Las "
-"líneas punteadas representan las declaraciones de relación adicionales "
-"necesarias para representar la titularidad indirecta de beneficiario real de"
-" las partes."
+"líneas punteadas representan las declaraciones sobre relación adicionales "
+"necesarias para representar la titularidad indirecta del beneficiario real "
+"de las partes."
 
 #: ../../standard/modelling/repr-trusts.rst:73
 #: ../../standard/modelling/repr-trusts.rst:84
@@ -294,7 +295,7 @@ msgid ""
 "ownership."
 msgstr ""
 "Consulte :ref:`representing-bo` para obtener orientación sobre cómo "
-"representar la titularidad indirecta de beneficiario real."
+"representar la titularidad indirecta del beneficiario real."
 
 #: ../../standard/modelling/repr-trusts.rst-1 5f6be83059774092af67b32c569080ef
 msgid ""
@@ -305,13 +306,13 @@ msgid ""
 "and Person C to represent that they are the ultimate beneficial owners of "
 "Company A."
 msgstr ""
-"Diagrama que muestra declaraciones vinculadas. La empresa A es propiedad del"
-" fideicomiso A y existe una declaración de relación entre ellos con el tipo "
-"de interés 'shareholding'. El fideicomiso A tiene un fideicomitente, la "
-"persona A, un fiduciario, la persona B y un beneficiario, la persona C. Hay "
-"líneas punteadas entre la empresa A y la persona A, la persona B y la "
-"persona C para representar que son los beneficiarios reales principales de "
-"la empresa A."
+"Diagrama que muestra declaraciones vinculadas. La Empresa A es propiedad del"
+" Fideicomiso A y existe una declaración sobre relación entre ellos con el "
+"tipo de interés 'shareholding'. El Fideicomiso A tiene un fideicomitente, la"
+" Persona A, un fiduciario, la Persona B y un beneficiario, la Persona C. Hay"
+" líneas punteadas entre la Empresa A y la Persona A, la Persona B y la "
+"Persona C para representar que son los beneficiarios reales principales de "
+"la Empresa A."
 
 #: ../../standard/modelling/repr-trusts.rst:81
 #: cf2030c94ad347c7a8072235b8aa49bb
@@ -338,20 +339,20 @@ msgid ""
 " type for this relationship statement is 'other influence or control.' There"
 " are also Person A and Person B the settlor and beneficiary of the trust."
 msgstr ""
-"Diagrama que muestra declaraciones vinculadas. El fideicomiso A está "
-"vinculado a la empresa A mediante una declaración sobre relación con el tipo"
-" de interés fiduciario. La empresa A está vinculada a la persona C mediante "
+"Diagrama que muestra declaraciones vinculadas. El Fideicomiso A está "
+"vinculado a la Empresa A mediante una declaración sobre relación con el tipo"
+" de interés fiduciario. La Empresa A está vinculada a la Persona C mediante "
 "una declaración sobre relación con el tipo de interés de participación "
-"accionaria. Además, existe una declaración sobre relación entre la persona C"
-" y el fideicomiso para representar que son uno de los beneficiarios reales "
-"principales del fideicomiso A. El tipo de interés para esta declaración "
-"sobre relación es  'other influence or control'. También está la persona A y"
-" la persona B como fideicomitente y beneficiario del fideicomiso."
+"accionaria. Además, existe una declaración sobre relación entre la Persona C"
+" y el Fideicomiso para representar que son uno de los beneficiarios reales "
+"principales del Fideicomiso A. El tipo de interés para esta declaración "
+"sobre relación es  'other influence or control'. También está la Persona A y"
+" la Persona B como fideicomitente y beneficiario del fideicomiso."
 
 #: ../../standard/modelling/repr-trusts.rst:93
 #: 11ce49d6ef4e46b893765b6701e6497e
 msgid "Further Guidance"
-msgstr "Guía adicional"
+msgstr "Orientación adicional"
 
 #: ../../standard/modelling/repr-trusts.rst:95
 #: 46b56c5e6953492da3e289f5cbe85156
@@ -362,6 +363,5 @@ msgid ""
 msgstr ""
 "El sitio web de `Open Ownership "
 "<https://www.openownership.org/en/topics/trusts-and-legal-arrangements/>`_ "
-"ofrece más orientación e investigación sobre cómo capturar la información de"
-" titularidad de beneficiarios reales en relación con fideicomisos y "
-"estructuras legales."
+"ofrece más orientación e investigación sobre cómo capturar información sobre"
+" la propiedad efectiva en relación con fideicomisos y estructuras jurídicas."

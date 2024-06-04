@@ -9,6 +9,7 @@
 # Agustina De Luca, 2022
 # Stephen Abbott Pugh <stephen@openownership.org>, 2022
 # Carmen Edery, 2024
+# María Renée Briozzo Mitchell, 2024
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-05-10 16:05+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Carmen Edery, 2024\n"
+"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,7 +69,7 @@ msgid ""
 "`country` may be sufficient information. This MUST only apply to the "
 "`placeOfBirth` field for natural persons."
 msgstr ""
-"Lugar donde una persona nació. Una ciudad (en el campo `address`) y "
+"Lugar donde una persona nació. Una ciudad (en el campo `address`) y un "
 "`country` pueden ser información suficiente. Esto solo DEBE aplicarse al "
 "campo `placeOfBirth` para personas físicas."
 
@@ -97,8 +98,8 @@ msgid ""
 "must be provided to company registers. This MUST only apply to entities."
 msgstr ""
 "Dirección oficial para entregar correo reglamentario y avisos legales que "
-"deben proporcionarse a registradores mercantiles. Esto solo DEBE aplicarse a"
-" las entidades."
+"deben proporcionarse a registros de empresas. Esto solo DEBE aplicarse a las"
+" entidades."
 
 #. title
 #: schema/codelists/addressType.csv:4
@@ -164,9 +165,9 @@ msgid ""
 "method in the description field or from the original value given in the "
 "description field."
 msgstr ""
-"El valor de este campo, objeto o declaración se ha corregido usando el "
-"método del campo de descirpción o a partir del valor original indicado en el"
-" campo de descripción."
+"El valor de este campo, objeto o declaración se ha corregido utilizando el "
+"método señalado en el campo de descripción o a partir del valor original "
+"indicado en el campo de descripción."
 
 #. title
 #: schema/codelists/annotationMotivation.csv:3
@@ -211,9 +212,10 @@ msgid ""
 "original form using the method in the description field. The transformed "
 "representation may be provided in the `transformedContent` field."
 msgstr ""
-"La forma original de los valores de este campo, objeto o delcaración se ha "
-"cambiado usando el método del campo de descripción. La representación "
-"transformada puede indicarse en el campo `transformedContent`."
+"La forma original de los valores de este campo, objeto o declaración se ha "
+"cambiado utilizando el método señalado en el campo de descripción. La "
+"representación transformada puede indicarse en el campo "
+"`transformedContent`."
 
 #. title
 #: schema/codelists/directOrIndirect.csv:1
@@ -307,8 +309,8 @@ msgid ""
 msgstr ""
 "Fideicomiso o estructura jurídica similar a un fideicomiso. Una estructura "
 "jurídica en la que un fideicomitente transfiere la titularidad de activos a "
-"fideicomisarios para que controlen el beneficio de los beneficiarios. Esto "
-"DEBE usarse con `entityType.type` 'arrangement' o 'legalEntity'."
+"fiduciarios para que controlen el beneficio de los beneficiarios. Esto DEBE "
+"usarse con `entityType.type` 'arrangement' o 'legalEntity'."
 
 #. title
 #: schema/codelists/entitySubtype.csv:5
@@ -338,7 +340,7 @@ msgid ""
 "cases, registered entities have an officially issued identifier."
 msgstr ""
 "Entidad jurídica creada mediante un acto de inscripción oficial. En la "
-"mayoría de los casos, las entidades inscritas tienen un identificador "
+"mayoría de los casos, las entidades inscriptas tienen un identificador "
 "emitido oficialmente."
 
 #. title
@@ -387,8 +389,8 @@ msgid ""
 " being withheld. The reason for non-disclosure should be given in the "
 "accompanying `unspecifiedEntityDetails` field."
 msgstr ""
-"Entidad que ha sido identificada, pero cuya información de identificación se"
-" retiene. El motivo de la no divulgación debe indicarse en el campo "
+"Entidad que ha sido identificada, pero cuya información identificatoria se "
+"retiene. El motivo de la no divulgación debe indicarse en el campo "
 "`unspecifiedEntityDetails` que lo acompaña."
 
 #. title
@@ -515,7 +517,7 @@ msgid ""
 "legal arrangement that is similar to a trust."
 msgstr ""
 "Persona que, de forma real o conforme a la ley, crea un fideicomiso. Puede "
-"hacerse refierencia a ellas con otros nombres como fiduciente, cedente o "
+"hacerse referencia a ella con otros nombres como fiduciante, cedente o "
 "donante. Este término también debe usarse para una persona con un rol "
 "equivalente al del fideicomitente en cualquier estructura jurídica similar a"
 " un fideicomiso."
@@ -535,10 +537,10 @@ msgid ""
 "a trust."
 msgstr ""
 "Persona que administra un fideicomiso para beneficio de un tercero y a quien"
-" se confiere el título legal de la propiedad fiduciaria, ya se por "
-"declaración del fideicomitente o conforme a ley. Este término también debe "
-"usarse para una persona con un rol equivalente al de un fiduciario en "
-"cualquier estructura legal que sea similar a un fideicomiso."
+" se confiere el título legal de la propiedad fiduciaria, ya sea por "
+"declaración del fideicomitente o conforme a la ley. Este término también "
+"debe usarse para una persona con un rol equivalente al de un fiduciario en "
+"cualquier estructura jurídica similar a un fideicomiso."
 
 #. title
 #: schema/codelists/interestType.csv:8
@@ -553,11 +555,11 @@ msgid ""
 "This should also be used for a person with a protector-equivalent role in "
 "any legal arrangement that is similar to a trust."
 msgstr ""
-"Persona designada para proteger los intereses o deseos del fideicomitente "
+"Persona designada para proteger los intereses o deseos del fideicomitente, "
 "ofreciendo influencia y orientación al fiduciario que administra el "
 "fideicomiso. Este término también debe usarse para una persona con un rol "
-"equivalente al de un protector en cualquier estructura jurídica similar a un"
-" fideicomiso."
+"equivalente al de un curador en cualquier estructura jurídica similar a un "
+"fideicomiso."
 
 #. title
 #: schema/codelists/interestType.csv:9
@@ -693,8 +695,8 @@ msgid ""
 "The interestedParty is known to have an interest in the subject of this "
 "Relationship Statement, but the nature of the interest is unknown."
 msgstr ""
-"La parte interesada es conocida por tener interés en el tema de esta "
-"declaración de relación, pero la naturaleza del interés es desconocida."
+"La parte interesada es conocida por tener interés en el sujeto de esta "
+"declaración sobre relación, pero la naturaleza del interés es desconocida."
 
 #. title
 #: schema/codelists/interestType.csv:19
@@ -839,8 +841,8 @@ msgid ""
 "A natural person who has been identified, and information such as names, "
 "identifiers or biographical information can be provided about them."
 msgstr ""
-"Persona física que ha sido identificada, y puede brindarse información como "
-"nombre, identificadores o información biográfica sobre ella."
+"Persona física que ha sido identificada, y sobre quien puede brindarse "
+"información como nombre, identificadores o información biográfica."
 
 #. title
 #: schema/codelists/personType.csv:2
@@ -854,9 +856,9 @@ msgid ""
 "being withheld. The reason for non-disclosure should be given in the "
 "accompanying `unspecifiedPersonDetails` field."
 msgstr ""
-"Persona física que ha sido identificada, pero se retiene información de "
-"identificación. El motivo de la no divulgación debe indicarse en el campo "
-"`unspecifiedPersonDetails` que lo acompaña."
+"Persona física que ha sido identificada, pero se retiene información "
+"identificatoria. El motivo de la no divulgación debería indicarse en el "
+"campo `unspecifiedPersonDetails` que lo acompaña."
 
 #. title
 #: schema/codelists/personType.csv:3
@@ -893,8 +895,8 @@ msgid ""
 "This Statement updates information published in a prior Statement pertaining"
 " to the record referenced by `recordId`."
 msgstr ""
-"Esta declaración permite actualizar información publicada en una declaración"
-" anterior perteneciente al registro con referencia `recordId`."
+"Esta declaración actualiza información publicada en una declaración anterior"
+" perteneciente al registro con referencia `recordId`."
 
 #. title
 #: schema/codelists/recordStatus.csv:3
@@ -1045,10 +1047,10 @@ msgid ""
 " Securities are issued 9-character identifiers. The scheme is managed by the"
 " American Bankers Association and specified as ANSI X9.6."
 msgstr ""
-"Esquema de identificación única de valores emitidos fuera de Norteamérica. "
-"Los valores son identificadores emitidos de 9 caracteres. El esquema es "
-"administrado por la American Bankers Association y está especificado en ANSI"
-" X9.6."
+"Esquema de identificación única de valores emitidos fuera de América del "
+"Norte. Los valores se emiten con identificadores de 9 caracteres. El esquema"
+" es administrado por la Asociación de Banqueros Estadounidenses y se "
+"especifica como ANSI X9.6."
 
 #. title
 #: schema/codelists/sourceType.csv:1
@@ -1141,8 +1143,8 @@ msgid ""
 "been unwilling or unable to confirm the existence identify a beneficial "
 "owner."
 msgstr ""
-"Como parte divulgadora, el sujeto de esta declaración de relación no ha "
-"estado dispuesta o no ha sido capaz de confirmar la existencia que "
+"Como parte divulgadora, el sujeto de esta declaración sobre relación no ha "
+"estado dispuesto o no ha sido capaz de confirmar la existencia que "
 "identifica a un beneficiario real."
 
 #. title
@@ -1156,7 +1158,7 @@ msgid ""
 "The interested party in this Relationship Statement has not provided enough "
 "information to identify or confirm the identity of the beneficial owner."
 msgstr ""
-"La parte interesada de esta declaración de relación no ha brindado "
+"La parte interesada de esta declaración sobre relación no ha brindado "
 "suficiente información para identificar o confirmar la identidad del "
 "beneficiario real."
 
@@ -1171,8 +1173,8 @@ msgid ""
 "The subject of this Relationship Statement is not required to disclose its "
 "beneficial owner."
 msgstr ""
-"El sujeto de esta declaración de relación no tiene la obligación de revelar "
-"a su beneficiario real."
+"El sujeto de esta declaración sobre relación no tiene la obligación de "
+"revelar a su beneficiario real."
 
 #. title
 #: schema/codelists/unspecifiedReason.csv:5
@@ -1185,7 +1187,7 @@ msgid ""
 "The interested party in this Relationship Statement is exempt from having "
 "their identity disclosed."
 msgstr ""
-"La parte interesada de esta declaración de relación está exenta de la "
+"La parte interesada de esta declaración sobre relación está exenta de la "
 "divulgación de su identidad."
 
 #. title

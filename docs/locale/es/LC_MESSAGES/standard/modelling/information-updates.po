@@ -5,6 +5,8 @@
 # 
 # Translators:
 # Carmen Edery, 2024
+# María Renée Briozzo Mitchell, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Carmen Edery, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,12 +40,13 @@ msgid ""
 msgstr ""
 "Los sistemas que recopilan y gestionan la información sobre la propiedad "
 "efectiva a menudo manejan las actualizaciones o la confirmación de los "
-"registros existentes. Según la forma en la que gestione la información, los "
-"datos del BODS que se producen ofrecen una imagen de alta o baja resolución "
-"de la naturaleza cambiante de una red de titularidad de beneficiarios "
-"reales. Los sistemas de gestión de datos que manejan las actualizaciones de "
-"información deben cumplir con el conjunto mínimo de requisitos indicados a "
-"continuación, para ofrecer una imagen de baja resolución."
+"registros existentes. Según la forma en la que se gestione la información, "
+"los datos del BODS que se producen ofrecerán una imagen de alta o baja "
+"resolución de la naturaleza cambiante de una red de titularidad del "
+"beneficiario real. Los sistemas de gestión de datos que manejan las "
+"actualizaciones de información deben cumplir con el conjunto mínimo de "
+"requisitos indicados a continuación, para ofrecer una imagen de baja "
+"resolución."
 
 #: ../../standard/modelling/information-updates.rst:10
 #: b72479dabf924a408c2434f780629162
@@ -59,7 +62,7 @@ msgid ""
 "requirements."
 msgstr ""
 "DEBE generarse una nueva declaración del BODS para un elemento (entidad, "
-"persona o relación) de la red de titularidad de beneficiarios reales de un "
+"persona o relación) de la red de titularidad del beneficiario real de un "
 "sujeto cuando sus detalles cambian o son confirmados. Consulte "
 ":ref:`generating-statements` para ver más requisitos."
 
@@ -71,11 +74,11 @@ msgid ""
 "network's subject change, or are confirmed, the new Statement generated must"
 " contain the same ``recordId`` as in the outdated Statement."
 msgstr ""
-"El ``recordId`` del sujeto de cada red de titularidad de beneficiarios "
-"reales DEBE ser estable con el tiempo. Es decir, cuando los detalles del "
-"sujeto de la red de titularidad de beneficiarios reales cambian o se "
-"confirman, la nueva declaración generada debe contener el mismo ``recordId``"
-" que la declaración obsoleta."
+"El ``recordId`` del sujeto de cada red de titularidad del beneficiario real "
+"DEBE ser estable con el tiempo. Es decir, cuando los detalles del sujeto de "
+"la red de titularidad del beneficiario real cambian o se confirman, la nueva"
+" declaración generada debe contener el mismo ``recordId`` que la declaración"
+" obsoleta."
 
 #: ../../standard/modelling/information-updates.rst:15
 #: c96002ddc0f64654b5a4ba1a90d55db0
@@ -85,7 +88,7 @@ msgid ""
 "the subject's ``recordId`` as its ``declarationSubject``."
 msgstr ""
 "Cada declaración de BODS emitida en relación con cualquier elemento de la "
-"red de titularidad de beneficiarios reales declarada de un sujeto, en "
+"red de titularidad del beneficiario real declarada de un sujeto, en "
 "cualquier momento, DEBE contener el ``recordId`` del sujeto como su "
 "``declarationSubject``."
 
@@ -96,9 +99,9 @@ msgid ""
 " to understand the lifecycle of declared information with reference to the "
 "available BODS data."
 msgstr ""
-"El productor de datos del BODS DEBE publicar una guía para los usuarios de "
-"los datos donde explique cómo entender el ciclo de vida de la información "
-"declarada en referencia a los datos del BODS disponibles."
+"El productor de datos del BODS DEBERÍA publicar una guía para los usuarios "
+"de los datos donde explique cómo entender el ciclo de vida de la información"
+" declarada con respecto a los datos del BODS disponibles."
 
 #: ../../standard/modelling/information-updates.rst:22
 #: 54b09b7157984f16bf854a3dcb4d532f
@@ -118,8 +121,8 @@ msgid ""
 "Statements:"
 msgstr ""
 "El ciclo de vida de un registro sobre un elemento (entidad, persona o "
-"relación) dentro de una red de titularidad de beneficiarios reales está "
-"representada por una serie de declaraciones:"
+"relación) dentro de una red de titularidad del beneficiario real está "
+"representado por una serie de declaraciones:"
 
 #: ../../standard/modelling/information-updates.rst:27
 #: 378fe2a99bfd4ae9898469e4839de716
@@ -129,10 +132,10 @@ msgid ""
 "confirmed, the new Statement generated must contain the same ``recordId`` as"
 " in the outdated Statement."
 msgstr ""
-"El ``recordId`` de cada elemento de una red de titularidad de beneficiarios "
-"reales DEBE ser estable a través del tiempo. Es decir, cuando los detalles "
-"de un elemento cambian o son confirmados, la nueva declaración generada debe"
-" contener el mismo ``recordId`` que la declaración obsoleta."
+"El ``recordId`` de cada elemento de una red de titularidad del beneficiario "
+"real DEBE ser estable a través del tiempo. Es decir, cuando los detalles de "
+"un elemento cambian o son confirmados, la nueva declaración generada debe "
+"contener el mismo ``recordId`` que la declaración obsoleta."
 
 #: ../../standard/modelling/information-updates.rst:29
 #: 3c8cd0a9072241a7a4ddb5d2d65ab509
@@ -144,11 +147,11 @@ msgid ""
 "ownership network, in the new Statement ``recordStatus`` MUST be 'closed'."
 msgstr ""
 "La primera vez que se publica una declaración sobre un elemento dentro de "
-"una red de titularidad de beneficiarios reales, el ``recordStatus`` DEBE ser"
-" 'nuevo'. Cuando los detalles del elemento cambian o se confirman, en la "
+"una red de titularidad del beneficiario real, el ``recordStatus`` DEBE ser "
+"'nuevo'. Cuando los detalles del elemento cambian o se confirman, en la "
 "nueva declaración ``recordStatus`` DEBE estar 'actualizado'. Cuando el "
-"elemento ya no forme parte de la red de titularidad de beneficiarios reales,"
-" en la nueva declaración ``recordStatus`` DEBE estar 'cerrado'."
+"elemento ya no forme parte de la red de titularidad del beneficiario real, "
+"en la nueva declaración ``recordStatus`` DEBE estar 'cerrado'."
 
 #: ../../standard/modelling/information-updates.rst:31
 #: 81c19e5abb61442c92d066552c8f489d
@@ -157,9 +160,9 @@ msgid ""
 "accurate, a new Statement SHOULD be generated with the same ``recordId`` as "
 "in the outdated Statement and with ``recordStatus`` 'updated'."
 msgstr ""
-"Cuando los detalles de un elemento no han cambiado pero se confirma que son "
-"exactos, DEBE generarse una nueva declaración con el mismo ``recordId`` que "
-"la declaración obsoleta y con ``recordStatus`` 'actualizado'."
+"Cuando los detalles de un elemento no han cambiado, pero se confirma que son"
+" exactos, DEBERÍA generarse una nueva declaración con el mismo ``recordId`` "
+"que la declaración obsoleta y con ``recordStatus`` 'actualizado'."
 
 #: ../../standard/modelling/information-updates.rst:33
 #: 53774796ba4c461dbba217d7c337da79
@@ -204,7 +207,7 @@ msgid ""
 "management system."
 msgstr ""
 "Los errores de los datos publicados pueden deberse a errores al momento de "
-"divulgar la información o el procesamiento incorrecto de la información por "
+"divulgar la información o al procesamiento incorrecto de la información por "
 "parte del sistema de gestión de datos."
 
 #: ../../standard/modelling/information-updates.rst:46
@@ -215,9 +218,9 @@ msgid ""
 "'correcting' and a ``description`` of the correction, and an updated "
 "``publicationDetails.publicationDate``."
 msgstr ""
-"En cualquiera de los casos, los errores DEBEN corregirse emitiendo nuevas "
-"declaraciones, incluida una :any:`annotation <schema-annotation>`, con la "
-"``motivation`` 'en corrección' y una ``description`` de la corrección y un "
+"En cualquiera de los casos, los errores DEBERÍAN corregirse emitiendo nuevas"
+" declaraciones, incluida una :any:`nota <schema-annotation>`, con la "
+"``motivation`` 'corrección' y una ``description`` de la corrección y un "
 "``publicationDetails.publicationDate`` actualizado."
 
 #: ../../standard/modelling/information-updates.rst:48

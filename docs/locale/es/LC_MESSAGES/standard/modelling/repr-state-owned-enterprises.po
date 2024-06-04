@@ -4,11 +4,11 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Agustina De Luca, 2024
 # Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2024
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carlos Hames, 2024
 # Carmen Edery, 2024
+# María Renée Briozzo Mitchell, 2024
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Carmen Edery, 2024\n"
+"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,8 +39,8 @@ msgid ""
 "Entity statement with ``entityType.type`` of 'state' or 'stateBody'."
 msgstr ""
 "**Requisito clave:** Si es necesario representar el estado de una entidad "
-"como empresa estatal, entonces su declaración sobre entidad DEBE ser sujeto "
-"de declaración sobre relación que la conecten, ya sea directa o "
+"como empresa estatal, entonces su declaración sobre entidad DEBE ser el "
+"sujeto de declaraciones sobre relación que la conecten, ya sea directa o "
 "indirectamente, a una declaración sobre entidad con ``entityType.type`` de "
 "'state' o 'stateBody'."
 
@@ -59,13 +59,13 @@ msgid ""
 "represented. This requires the state itself (or state body) to be "
 "represented by an Entity statement."
 msgstr ""
-"La definición de 'state-owned enterprise' (SOE, en inglés) puede cambiar "
-"según la jurisdicción o el dominio. Por lo tanto, el Estándar de Datos de "
-"Beneficiario Final (BODS, en inglés) no se basa ni respalda ninguna "
-"definición en particular. Por el contrario, BODS permite que los intereses "
-"entre un estado (u organismo estatal) y una empresa estén representados. "
-"Esto requiere que el propio estado (o el organismo del estado) esté "
-"representado por una declaración sobre entidad."
+"La definición de 'empresa estatal' (SOE) puede cambiar según la jurisdicción"
+" o el dominio. Por lo tanto, el Estándar de datos sobre titularidad del "
+"beneficiario real (BODS) no se basa ni respalda ninguna definición en "
+"particular. Por el contrario, el BODS permite que los intereses entre un "
+"estado (u organismo estatal) y una empresa estén representados. Esto "
+"requiere que el propio estado (o el organismo estatal) esté representado por"
+" una declaración sobre entidad."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:16
 #: 541c5e5cdae240a3b997962e6c4b0afb
@@ -73,7 +73,7 @@ msgid ""
 "In particular, the following properties and values SHOULD be used to "
 "represent information about enterprises and their links to states:"
 msgstr ""
-"En particular, las siguientes propiedades y valores DEBEN usarse para "
+"En particular, las siguientes propiedades y valores DEBERÍAN usarse para "
 "representar información sobre empresas y sus enlaces a estados:"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:18
@@ -82,8 +82,8 @@ msgid ""
 "``entityType.type`` SHOULD be set to 'state' or 'stateBody', and "
 "``jurisdiction`` SHOULD be used to represent the particular state."
 msgstr ""
-"``entityType.type`` DEBE establecerse como 'state' o 'stateBody', y "
-"``jurisdiction`` DEBE usarse para representar el estado particular."
+"``entityType.type`` DEBERÍA establecerse como 'state' o 'stateBody', y "
+"``jurisdiction`` DEBERÍA usarse para representar el estado particular."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:19
 #: 93aec1189bfb4f39b825eb900681a8ed
@@ -91,8 +91,8 @@ msgid ""
 "``entityType.subtype`` SHOULD be used to refine the category of a given "
 "state body (as a 'government department', 'state agency' or 'other')."
 msgstr ""
-"``entityType.subtype`` DEBE utilizarse para filtrar la categoría de un "
-"órgano estatal determinado (como 'government department', 'state agency' u "
+"``entityType.subtype`` DEBERÍA usarse para filtrar la categoría de un órgano"
+" estatal determinado (como 'government department', 'state agency' u "
 "'other')."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:20
@@ -121,7 +121,7 @@ msgstr "Ejemplos"
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:28
 #: 6b7cdd46d4444826a3e2492ce6803dfd
 msgid "Ownership by state body"
-msgstr "Titularidad del órgano estatal"
+msgstr "Titularidad en manos de un órgano estatal"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:30
 #: 66a252060732451d9ae526d6e410906c
@@ -129,7 +129,7 @@ msgid ""
 "Ownership or control by a state body is known and a statement about these "
 "interests is possible."
 msgstr ""
-"Se conoce la titularidad o el control por parte de un órgano estatal y es "
+"Se conoce la titularidad o el control en manos de un órgano estatal y es "
 "posible emitir una declaración sobre estos intereses."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
@@ -139,14 +139,14 @@ msgid ""
 "a Relationship statement to an Entity statement (with entityType type "
 "'stateBody' and jurisdiction 'gb')."
 msgstr ""
-"La declaración sobre entidad (con el tipo entityType 'registeredEntity') se "
+"La declaración sobre entidad (con el entityType tipo 'registeredEntity') se "
 "conecta a través de una declaración sobre relación a una declaración sobre "
-"entidad (con el tipo entityType 'stateBody' y la jurisdicción 'gb')."
+"entidad (con el entityType tipo 'stateBody' y la jurisdicción 'gb')."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:38
 #: d8c021219bcc40a1a10f644e847fec64
 msgid "Ownership by regional government"
-msgstr "Titularidad del gobierno regional"
+msgstr "Titularidad en manos del gobierno regional"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:40
 #: 511262e870774b73875fc5d5960b3cb3
@@ -154,8 +154,8 @@ msgid ""
 "Ownership or control by a regional state government is known and a statement"
 " about these interests is possible."
 msgstr ""
-"Se conoce la titularidad o control por parte de un gobierno estatal regional"
-" y es posible emitir una declaración sobre estos intereses."
+"Se conoce la titularidad o el control en manos de un gobierno estatal "
+"regional y es posible emitir una declaración sobre estos intereses."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: a919d42096744f1aade937e1ef98a75e
@@ -164,14 +164,14 @@ msgid ""
 "a Relationship statement to an Entity statement (with entityType type "
 "'state' and jurisdiction 'zm')."
 msgstr ""
-"La declaración sobre entidad (con el tipo entityType 'registeredEntity') se "
-"conecta a través de una declaración sobre relación con una declaración sobre"
-" entidad (con el tipo entityType 'state' y la jurisdicción 'zm')."
+"La declaración sobre entidad (con el entityType tipo 'registeredEntity') se "
+"conecta a través de una declaración sobre relación a una declaración sobre "
+"entidad (con el entityType tipo 'state' y la jurisdicción 'zm')."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:48
 #: e8b709c0349142dab3c775dee22b9bee
 msgid "SOE exempt from disclosure"
-msgstr "SOE exento de divulgación"
+msgstr "SOE exenta de divulgación"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:50
 #: bbc17533636744bf8da2b8f6bef581ac
@@ -179,8 +179,8 @@ msgid ""
 "A registered entity declares that it is exempt from disclosing beneficial "
 "owners because it is an SOE."
 msgstr ""
-"Una entidad inscripta declara que está exenta de revelar a los beneficiarios"
-" finales porque es una SOE."
+"Una entidad inscripta declara que está exenta de divulgación a los "
+"beneficiarios finales porque es una SOE."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: 8908148364aa4344950409ec50b24394
@@ -193,19 +193,19 @@ msgid ""
 "interestedParty.unspecified.description set to 'Exemption granted on the "
 "basis that the declaring entity is a state-owned enterprise'."
 msgstr ""
-"La declaración sobre Entidad (con el tipo de entityType 'registeredEntity') "
-"se conecta a través de una declaración sobre relación a una declaración "
-"sobre entidad (con entityType 'state' y jurisdicción 'nl'). La declaración "
-"sobre entidad con el tipo de entityType 'registeredEntity' también está "
-"conectada a una declaración sobre relación que tiene "
-"interestedParty.unspecified.reason establecido como 'noBeneficialOwners' e "
-"interestedParty.unspecified.description establecida como  'Exención otorgada"
-" con base en el hecho de que la entidad declarante es una empresa estatal'."
+"La declaración sobre entidad (con el entityType tipo 'registeredEntity') se "
+"conecta a través de una declaración sobre relación a una declaración sobre "
+"entidad (con el entityType tipo 'state' y jurisdicción 'nl'). La declaración"
+" sobre entidad con el  entityType tipo 'registeredEntity' también está "
+"conectada a una declaración sobre relación que tiene el "
+"interestedParty.unspecified.reason establecido como 'noBeneficialOwners' y "
+"la interestedParty.unspecified.description establecida como  'Exemption "
+"granted on the basis that the declaring entity is a state-owned enterprise'."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:58
 #: 746ef90914c4492bae02a4ed1a20e8c4
 msgid "Golden share provision"
-msgstr "Provisión de acciones de oro"
+msgstr "Provisión de acción de oro"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:60
 #: 6351b146e71b426b9516b9f48712b53d
@@ -213,8 +213,8 @@ msgid ""
 "Control through a golden share provision in company articles or shareholder "
 "agreement."
 msgstr ""
-"Control mediante una acción de oro establecida en los estatutos de la "
-"empresa o en el convenio de accionistas."
+"Control mediante una provisión de acción de oro establecida en los estatutos"
+" de la empresa o en el convenio de accionistas."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: cd40e7e0e8284f79a156e392de1b8fdc
@@ -225,12 +225,12 @@ msgid ""
 "interests.0.type set to 'controlViaCompanyRulesOrArticles' and "
 "interests.0.details set to 'Veto rights over specified company decisions'."
 msgstr ""
-"La declaración sobre entidad (con el tipo de entityType 'registeredEntity') "
-"se conecta a través de una declaración sobre relación con una declaración "
-"sobre entidad (con el tipo de entityType 'stateBody' y la jurisdicción "
-"'nl'). La declaración sobre titularidad o control tiene interests.0.type "
-"establecido como 'controlViaCompanyRulesOrArticles' e interest.0.details "
-"establecido como 'Veto rights over specified company decisions'."
+"La declaración sobre entidad (con el entityType tipo 'registeredEntity') se "
+"conecta a través de una declaración sobre relación a una declaración sobre "
+"entidad (con el entityType tipo 'stateBody' y la jurisdicción 'nl'). La "
+"declaración sobre titularidad o control tiene el interests.0.type "
+"establecido como 'controlViaCompanyRulesOrArticles' y los interest.0.details"
+" establecidos como 'Veto rights over specified company decisions'."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:68
 #: b40eca442a6b46cb82ad3799ffe9eea0
@@ -240,7 +240,7 @@ msgstr "Gerente"
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:70
 #: ad51092f3869426e8818fd6ce3bb2bea
 msgid "An SOE controlled by a natural person."
-msgstr "Un SOE controlado por una persona física."
+msgstr "Una SOE controlada por una persona física."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: 821ff2365f4d48ddb62077eafbe8e2c5
@@ -253,24 +253,24 @@ msgid ""
 "statement is connected to a Person statement with personType set to "
 "'knownPerson'."
 msgstr ""
-"La declaración sobre entidad (con el tipo de entityType 'registeredEntity') "
-"se conecta a través de una declaración sobre relación con una declaración "
-"sobre entidad (con el tipo de entityType 'state' y la jurisdicción 'zm'). La"
-" declaración sobre entidad con el tipo de entityTipe 'registeredEntity' "
-"también está conectada a una declaración sobre relación que tiene "
-"interest.0.type establecido como 'seniorManagingOfficial'. Esa última "
-"declaración sobre relación está conectada a una declaración sobre persona "
-"con personType establecido como 'knownPerson'."
+"La declaración sobre entidad (con el entityType tipo 'registeredEntity') se "
+"conecta a través de una declaración sobre relación a una declaración sobre "
+"entidad (con el entityType tipo 'state' y la jurisdicción 'zm'). La "
+"declaración sobre entidad con el entityTipe tipo 'registeredEntity' también "
+"está conectada a una declaración sobre relación que tiene el interest.0.type"
+" establecido como 'seniorManagingOfficial'. Esa última declaración sobre "
+"relación está conectada a una declaración sobre persona con el personType "
+"establecido como 'knownPerson'."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:78
 #: ee9495fb8ffd42edaf57de59841e8419
 msgid "Formed by statute"
-msgstr "Formado por estatuto"
+msgstr "Formada por estatuto"
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:80
 #: 24e01a09d7b44b09a7b20169861d0c4c
 msgid "An SOE is formed by statute."
-msgstr "Una SOE se forma por estatuto."
+msgstr "Una SOE está formada por estatuto."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: 67ff57cdc8ce4d9b9dd971e5d42f7210
@@ -282,12 +282,12 @@ msgid ""
 "'stateBody' and jurisdiction 'zm'). The Relationship statement has "
 "interests.0.type set to 'controlByLegalFramework'."
 msgstr ""
-"La declaración sobre entidad (con el tipo de entityType 'legalEntity', "
-"formedByLegislation.name establecido como 'National Energy Act', y "
-"formedByLegislation.date establecido como '1980-02-01') se conecta a través "
-"de una declaración sobre relación con una declaración sobre entidad (con el "
-"tipo de entityType 'stateBody' y la jurisdicción 'zm'). La declaración sobre"
-" relación tiene interests.0.type establecido como  "
+"La declaración sobre entidad (con entityType tipo 'legalEntity', el "
+"formedByLegislation.name establecido como 'National Energy Act', y la "
+"formedByLegislation.date establecida como '1980-02-01') se conecta a través "
+"de una declaración sobre relación a una declaración sobre entidad (con el "
+"entityType tipo 'stateBody' y la jurisdicción 'zm'). La declaración sobre "
+"relación tiene el interests.0.type establecido como "
 "'controlByLegalFramework'."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst:88
@@ -301,8 +301,8 @@ msgid ""
 "A state's interests in an SOE are managed via a government-linked investment"
 " entity (GLIE)."
 msgstr ""
-"Los intereses de un estado en una SOE se gestionan a través de una entidad "
-"de inversión vinculada al gobierno (GLIE)."
+"Los intereses de un estado en una SOE están gestionados a través de una "
+"entidad de inversión vinculada al gobierno (GLIE)."
 
 #: ../../standard/modelling/repr-state-owned-enterprises.rst-1
 #: 3b4deaf888464255bae854b9fbd4edef
@@ -313,9 +313,9 @@ msgid ""
 "connected via a Relationship statement to an Entity statement (with "
 "entityType type 'state' and jurisdiction 'gb')."
 msgstr ""
-"La declaración sobre entidad (con el tipo de entityTipe 'registeredEntity') "
-"está conectada a través de una declaración sobre relación con otra "
-"declaración sobre entidad con el tipo de entityType 'registeredEntity' y el "
-"nombre 'A G.L.I.E'. Esta última declaración sobre entidad está conectada a "
-"través de una declaración sobre relación con una declaración sobre entidad "
-"(con el tipo de entityType 'state' y la jurisdicción 'gb')"
+"La declaración sobre entidad (con el entityTipe tipo 'registeredEntity') "
+"está conectada a través de una declaración sobre relación a otra declaración"
+" sobre entidad con el entityType tipo 'registeredEntity' y el nombre 'A "
+"G.L.I.E'. Esta última declaración sobre entidad está conectada a través de "
+"una declaración sobre relación a una declaración sobre entidad (con el "
+"entityType tipo 'state' y la jurisdicción 'gb')"

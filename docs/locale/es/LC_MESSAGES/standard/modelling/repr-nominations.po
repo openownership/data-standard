@@ -7,6 +7,7 @@
 # Carlos Hames, 2024
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
+# María Renée Briozzo Mitchell, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Carmen Edery, 2024\n"
+"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +27,7 @@ msgstr ""
 #: ../../standard/modelling/repr-nominations.rst:4
 #: 643ad864beae4cada1d33d909764e4b2
 msgid "Representing nominee arrangements"
-msgstr "Representando estructuras jurídicas de nominado"
+msgstr "Representación de estructuras jurídicas de nominado"
 
 #: ../../standard/modelling/repr-nominations.rst:7
 #: 609eaad53d114500970aff0a2a36e7a3
@@ -40,9 +41,9 @@ msgid ""
 "nominator) instructs the other (the nominee) to act on their behalf in a "
 "specified capacity."
 msgstr ""
-"Una ‘estructura jurídica de nominado’ es un convenio entre las partes, en el"
-" que una (el nominador) ordena a la otra (el nominado) que actúe en su "
-"nombre en una capacidad específica."
+"Una ‘estructura jurídica de nominado’ es un convenio entre partes, en el que"
+" una (el nominador) ordena a la otra (el nominado) que actúe en su nombre en"
+" una capacidad específica."
 
 #: ../../standard/modelling/repr-nominations.rst:10
 #: 9b7977cd6fce443da87c6d94445499b5
@@ -51,7 +52,7 @@ msgid ""
 "nominee arrangements. Nominee arrangements are represented by an Entity "
 "Statement."
 msgstr ""
-"El BODS puede utilizarse para representar la titularidad de beneficiario "
+"El BODS puede utilizarse para representar la titularidad del beneficiario "
 "real de las entidades a través de estructuras jurídicas de nominado. Las "
 "estructuras jurídicas de nominado se representan mediante una declaración "
 "sobre entidad."
@@ -64,12 +65,12 @@ msgstr "Al representar estructuras jurídicas de nominado:"
 #: ../../standard/modelling/repr-nominations.rst:14
 #: caf402f733a9400eb5bc86565aceebbc
 msgid "The ``entityType.type`` MUST be ``arrangement``"
-msgstr "El ``entityType.type`` DEBE ser ``arrangement``"
+msgstr "el ``entityType.type`` DEBE ser ``arrangement``"
 
 #: ../../standard/modelling/repr-nominations.rst:15
 #: de426324db8a424ca4a6408d3afd043f
 msgid "``entityType.subtype`` MUST be ``nomination``"
-msgstr "``entityType.subtype`` DEBE ser ``nomination``"
+msgstr "el ``entityType.subtype`` DEBE ser ``nomination``"
 
 #: ../../standard/modelling/repr-nominations.rst:16
 #: 7d7e98906ed44850b3f78d0e748d46dd
@@ -77,7 +78,7 @@ msgid ""
 "``entityType.details`` MAY be used to give a local name or specify the type "
 "of nominee arrangement"
 msgstr ""
-"``entityType.details`` PUEDE utilizarse para dar un nombre local o "
+"los ``entityType.details`` PUEDEN utilizarse para dar un nombre local o "
 "especificar el tipo de estructura jurídica de nominado"
 
 #: ../../standard/modelling/repr-nominations.rst:18
@@ -105,8 +106,8 @@ msgid ""
 "``interest.details`` MAY be used to give a local name (e.g. \"agent\" or "
 "\"principal\")"
 msgstr ""
-"``interest.details`` PUEDE utilizarse para dar un nombre local (p. ej., "
-"\"agente\" o \"principal\")"
+"Los ``interest.details`` PUEDEN utilizarse para dar un nombre local (p. ej.,"
+" \"agente\" o \"principal\")"
 
 #: ../../standard/modelling/repr-nominations.rst:26
 #: 3ff681a7131445fead2d0940a3bb9320
@@ -156,18 +157,18 @@ msgid ""
 "'other influence or control'."
 msgstr ""
 "Diagrama que muestra declaraciones vinculadas. Declaración sobre entidad con"
-" 'arrangement' tipo entityType y 'nomination' de subtipo. La entidad de la "
+" entityType tipo 'arrangement' y subtipo 'nomination'. La entidad de la "
 "estructura jurídica está conectada a una declaración sobre persona mediante "
-"una declaración sobre relación con 'nominador' de tipo interés, y con una "
+"una declaración sobre relación con 'nominator' como tipo interés, y a una "
 "segunda declaración sobre persona mediante una declaración sobre relación "
-"con tipo de interés 'nominee'. Una segunda declaración de entidad con el "
-"tipo \"Registered entity\" está conectada con la entidad de la estructura "
-"jurídica mediante una declaración de relación con el tipo de interés 'board "
-"member'. También existe una declaración sobre relación entre la primera "
-"declaración sobre persona y la entidad inscrita para representar que son uno"
-" de los beneficiario reales principales de la entidad inscrita. El tipo de "
-"interés para esta declaración sobre relación es 'other influence or "
-"control'."
+"con tipo de interés 'nominee'. Una segunda declaración sobre entidad con el "
+"tipo \"Registered entity\" está conectada a la entidad de la estructura "
+"jurídica mediante una declaración sobre relación con el tipo de interés "
+"'board member'. También existe una declaración sobre relación entre la "
+"primera declaración sobre persona y la entidad inscripta para representar "
+"que son uno de los beneficiario reales principales de la entidad inscripta. "
+"El tipo de interés para esta declaración sobre relación es 'other influence "
+"or control'."
 
 #: ../../standard/modelling/repr-nominations.rst:40
 #: 84a81e261d954293be243501f33c4c3c
@@ -195,14 +196,14 @@ msgid ""
 "relationship statement with interest type 'shareholding'."
 msgstr ""
 "Diagrama que muestra declaraciones vinculadas. Declaración sobre entidad con"
-" 'arrangement' de tipo entityType y 'nomination' de subtipo. La entidad de "
-"la estructura jurídica está conectada con una declaración sobre persona "
-"mediante una declaración sobre relación con el tipo de interés 'nominator', "
-"y a una segunda declaración sobre persona mediante una declaración sobre "
-"relación con el tipo de interés 'nominee'. Una segunda declaración sobre "
-"entidad con el tipo \"Registered entity\" está conectada con la entidad de "
-"la estructura jurídica mediante una declaración sobre relación con el tipo "
-"de interés 'shareholding'."
+" entityType tipo 'arrangement' y subtipo 'nomination'. La entidad de la "
+"estructura jurídica está conectada a una declaración sobre persona mediante "
+"una declaración sobre relación con el tipo de interés 'nominator', y a una "
+"segunda declaración sobre persona mediante una declaración sobre relación "
+"con el tipo de interés 'nominee'. Una segunda declaración sobre entidad con "
+"el tipo \"Registered entity\" está conectada a la entidad de la estructura "
+"jurídica mediante una declaración sobre relación con el tipo de interés "
+"'shareholding'."
 
 #: ../../standard/modelling/repr-nominations.rst:50
 #: 0965456d67794250aa1b7eabdd2fa5f1
@@ -231,14 +232,14 @@ msgid ""
 "'shareholding'."
 msgstr ""
 "Diagrama que muestra declaraciones vinculadas. Declaración sobre entidad con"
-" 'arrangement' de tipo entityType y 'nomination' de subtipo. La entidad de "
-"la estructura jurídica está conectada con una declaración sobre persona "
-"mediante una declaración sobre relación con el tipo de interés 'nominator', "
-"y a una segunda declaración sobre persona con el tipo de entidad 'registered"
-" entity' mediante una declaración sobre relación con el tipo de interés "
-"'nominado'. Una tercera declaración sobre entidad con el tipo \"Registered "
-"entity\" está conectada con la entidad de la estructura jurídica mediante "
-"una declaración sobre relación con el tipo de interés 'shareholding'."
+" entityType tipo 'arrangement' y subtipo 'nomination'. La entidad de la "
+"estructura jurídica está conectada a una declaración sobre persona mediante "
+"una declaración sobre relación con el tipo de interés 'nominator', y a una "
+"segunda declaración sobre persona con el tipo de entidad 'registered entity'"
+" mediante una declaración sobre relación con el tipo de interés 'nominee'. "
+"Una tercera declaración sobre entidad con el tipo \"Registered entity\" está"
+" conectada a la entidad de la estructura jurídica mediante una declaración "
+"sobre relación con el tipo de interés 'shareholding'."
 
 #: ../../standard/modelling/repr-nominations.rst:59
 #: 322ceee5240e402b813811da5b148156
@@ -252,7 +253,7 @@ msgid ""
 "details for the nominator are required to be disclosed, but are unknown."
 msgstr ""
 "Dos personas participan en una estructura jurídica de dirección de nominado "
-"para una empresa y deben declararse los detalles del nominador, pero no se "
+"para una empresa y deben divulgarse los detalles del nominador, pero no se "
 "conocen."
 
 #: ../../standard/modelling/repr-nominations.rst-1
@@ -270,18 +271,16 @@ msgid ""
 "member'."
 msgstr ""
 "Diagrama que muestra declaraciones vinculadas. Declaración sobre entidad con"
-" 'arrangement' de tipo entityType y 'nomination' de subtipo. La entidad de "
-"la estructura jurídica está conectada con una declaración sobre persona con "
-"el tipo de persona 'unknown person' y el motivo unspecifiedPersonDetails "
+" entityType tipo 'arrangement' y subtipo 'nomination'. La entidad de la "
+"estructura jurídica está conectada a una declaración sobre persona con el "
+"tipo de persona 'unknown person' y el motivo unspecifiedPersonDetails "
 "'subject unable to confirm or identify beneficial owner', mediante una "
-"declaración sobre relación con el tipo de interés 'nominator', y a una "
-"segunda declaración sobre persona mediante una declaración sobre relación "
-"con el tipo de interés 'nominee'. La entidad de la estructura jurídica "
-"también está conectada a una segunda declaración sobre persona mediante una "
-"declaración sobre relación con el tipo de interés 'nominado'. Una segunda "
-"declaración sobre entidad con el tipo \"Registered entity\" está conectada "
-"con la entidad de la estructura jurídica mediante una declaración sobre "
-"relación con el tipo de interés 'board member'."
+"declaración sobre relación con el tipo de interés 'nominator'. La entidad de"
+" la estructura jurídica también está conectada a una segunda declaración "
+"sobre persona mediante una declaración sobre relación con el tipo de interés"
+" 'nominee'. Una segunda declaración sobre entidad con el tipo \"Registered "
+"entity\" está conectada a la entidad de la estructura jurídica mediante una "
+"declaración sobre relación con el tipo de interés 'board member'."
 
 #: ../../standard/modelling/repr-nominations.rst:68
 #: a7db5c26811045cc9e32f628f197f60c
@@ -295,7 +294,8 @@ msgid ""
 "details for the nominator are not required to be disclosed."
 msgstr ""
 "Dos personas participan en una estructura jurídica de dirección de nominado "
-"para una empresa y no se requiere declarar los detalles del nominador."
+"para una empresa y no se requiere la divulgación de los detalles del "
+"nominador."
 
 #: ../../standard/modelling/repr-nominations.rst-1
 #: ad71c0cd1354430bb5007b749788eb1c
@@ -308,9 +308,9 @@ msgid ""
 "interest type 'board member'."
 msgstr ""
 "Diagrama que muestra declaraciones vinculadas. Declaración sobre entidad con"
-" 'arrangement' de tipo entityType y 'nomination' de subtipo. La entidad de "
-"la estructura jurídica está conectada con una declaración sobre persona "
-"mediante una declaración sobre relación con el tipo de interés 'nominator'. "
-"Una segunda declaración sobre persona mediante con el tipo \"Registered "
-"entity\" está conectada con la entidad de la estructura jurídica mediante "
-"una declaración sobre relación con el tipo de interés 'board member'."
+" entityType tipo 'arrangement' y subtipo 'nomination'. La entidad de la "
+"estructura jurídica está conectada a una declaración sobre persona mediante "
+"una declaración sobre relación con el tipo de interés 'nominee'. Una segunda"
+" declaración sobre persona con el tipo \"Registered entity\" está conectada "
+"a la entidad de la estructura jurídica mediante una declaración sobre "
+"relación con el tipo de interés 'board member'."

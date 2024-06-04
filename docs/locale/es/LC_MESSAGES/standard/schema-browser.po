@@ -6,6 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
+# María Renée Briozzo Mitchell, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Carmen Edery, 2024\n"
+"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,9 +32,9 @@ msgid ""
 "This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model, codelists, and technical guidance."
 msgstr ""
-"Esta es la versión 0.3 del Estándar de Datos de Beneficiarios Finales. "
-"Incluye actualizaciones del modelo de datos, listas de códigos y orientación"
-" técnica."
+"Esta es la versión 0.4 del Estándar de datos sobre titularidad del "
+"beneficiario real. Incluye actualizaciones del modelo de datos, listas de "
+"códigos y orientación técnica."
 
 #: ../../standard/warningbox.rst:5 d9f04a5877534626bfd8726a22fe3c84
 msgid ""
@@ -42,16 +43,16 @@ msgid ""
 "information."
 msgstr ""
 "Se anticipan cambios futuros antes del lanzamiento de la versión 1.0. "
-"Consulte las páginas :ref:`Changelog<changelog>` y `About <../about>`_ para "
-"obtener más información."
+"Consulte las páginas :ref:`Registro de modificaciones<changelog>` y `¿De qué"
+" se trata? <../about>`_ para obtener más información."
 
 #: ../../standard/schema-browser.rst:8 f6fa3fd4b9a8492aa0254efec7175771
 msgid ""
 "The draft Beneficial Ownership Data Standard schema is defined using `JSON "
 "Schema 2020-12 <https://json-schema.org/>`_."
 msgstr ""
-"El esquema borrador del Estándar de datos de titularidad de beneficiarios "
-"reales se define utilizando `JSON Schema 0.4 <https://json-schema.org/>`_."
+"El esquema borrador del Estándar de datos sobre titularidad del beneficiario"
+" real se define utilizando `JSON Schema 0.4 <https://json-schema.org/>`_."
 
 #: ../../standard/schema-browser.rst:10 ae98f49242bf4f9ea33a988c7f048948
 msgid ""
@@ -60,11 +61,11 @@ msgid ""
 "structure of these objects can be explored using the viewers below. (Click "
 "on object buttons to reveal their properties.)"
 msgstr ""
-"Un conjunto de datos del BODS es un arreglo de declaraciones. Cada "
-"declaración contiene ``recordDetails`` para uno de tres elementos de "
-"titularidad de beneficiario real. La estructura de estos objetos puede "
-"explorarse usando los siguientes visores (Haga clic en los botones de objeto"
-" para revelar sus propiedades)."
+"Un conjunto de datos del BODS es un arreglo de datos de declaraciones. Cada "
+"declaración contiene ``recordDetails`` para uno de tres elementos de la "
+"titularidad del beneficiario real. La estructura de estos objetos puede "
+"explorarse usando los siguientes visores. (Haga clic en los botones de "
+"objeto para revelar sus propiedades)."
 
 #: ../../standard/schema-browser.rst:12 b56c00fadb1f4a0586e3d32223260c8d
 msgid ":ref:`schema-browser-statement`"
@@ -92,7 +93,7 @@ msgstr ""
 
 #: ../../standard/schema-browser.rst:22 a9974f34febe4993ad00709170a45571
 msgid "Statements array"
-msgstr "Arreglo de declaraciones"
+msgstr "Arreglo de datos de declaraciones"
 
 #: ../../standard/schema-browser.rst:24 6833ff35c3c8456a92ed3c10c3bb2bd4
 msgid ""
@@ -111,7 +112,7 @@ msgid ""
 "View the `Entity record details JSON schema <../_static/entity-"
 "record.json>`_ or explore it using the viewer below."
 msgstr ""
-"Vea el `esquema JSON de registros de entidades <../_static/entity-"
+"Vea el `esquema JSON de registro de entidad <../_static/entity-"
 "statement.json>`_ o explórelo usando el visor incluido más abajo."
 
 #: ../../standard/schema-browser.rst:45 52b71448b3c440c2910c423f3e8474a7
@@ -135,5 +136,5 @@ msgid ""
 "View the `Relationship record details JSON schema <../_static/relationship-"
 "record.json>`_ or explore it using the viewer below."
 msgstr ""
-"Vea el `esquema JSON de registros de relaciones <../_static/entity-"
+"Vea el `esquema JSON de registro de relaciones <../_static/entity-"
 "statement.json>`_ o explórelo usando el visor incluido más abajo."

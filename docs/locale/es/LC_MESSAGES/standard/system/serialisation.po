@@ -7,6 +7,8 @@
 # Carlos Hames, 2024
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
+# Rachel Vint, 2024
+# María Renée Briozzo Mitchell, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Carmen Edery, 2024\n"
+"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -75,8 +77,8 @@ msgid ""
 "A JSON BODS file MUST consist of a series of ordered Statement objects "
 "within a top-level array."
 msgstr ""
-"Un archivo BODS JSON DEBE consistir en una serie de objetos de declaración "
-"ordenados dentro de un arreglo de datos de nivel superior."
+"Un archivo JSON del BODS DEBE consistir en una serie de objetos de "
+"declaración ordenados dentro de un arreglo de datos de nivel superior."
 
 #: ../../standard/system/serialisation.rst:20 40209926298e4b2c9b4fabedc9d904e2
 msgid ""
@@ -84,7 +86,7 @@ msgid ""
 "Relationship statement, when they are a ``recordId`` value, MUST match the "
 "``recordId`` value of at least one other *prior* Statement in the array."
 msgstr ""
-"Específicamente, los valores ``interestedParty`` y``subject`` de una "
+"Específicamente, los valores ``interestedParty`` y ``subject`` de una "
 "declaración sobre relación, cuando son un valor ``recordId``, DEBEN "
 "coincidir con el valor ``recordId`` de al menos otra declaración *anterior* "
 "en el arreglo de datos."
@@ -100,9 +102,9 @@ msgid ""
 "SHOULD use the relevant relative JSON Pointer from the statement root."
 msgstr ""
 "Los datos del BODS también PUEDEN serializarse en forma tabular, donde cada "
-"fila representa una declaración. Las columnas DEBEN representar campos de "
-"declaración y los títulos de las columnas DEBEN utilizar el indicador JSON "
-"relativo relevante de la raíz de la declaración."
+"fila representa una declaración. Las columnas DEBERÍAN representar campos de"
+" declaración y los títulos de las columnas DEBERÍAN utilizar el indicador "
+"JSON relativo relevante de la raíz de la declaración."
 
 #: ../../standard/system/serialisation.rst:27 c1a8fca361544a4ca7a30854967f1aef
 msgid "For example, the extract:"
@@ -110,7 +112,7 @@ msgstr "Por ejemplo, el fragmento:"
 
 #: ../../standard/system/serialisation.rst:65 d002db0cc1ca47e8a4f481bccdb202db
 msgid "may be serialised in a table as:"
-msgstr "pueden serializarse en una tabla como:"
+msgstr "puede serializarse en una tabla como:"
 
 #: ../../standard/system/serialisation.rst:70 82206c161e1e4bfcbba1e9d4fd2437a1
 msgid "statementId"
@@ -142,7 +144,7 @@ msgstr "1810-4eed-b845-4d9f4d97f9d5"
 
 #: ../../standard/system/serialisation.rst:77 0ba3f8fa0c41486da99d1191769d046c
 msgid "entity"
-msgstr "entidad"
+msgstr "entity"
 
 #: ../../standard/system/serialisation.rst:78 6edc27f180864e9089b6585527d8d4d2
 msgid "GB-COH"
@@ -162,7 +164,7 @@ msgstr "e3b6-4fd7-8a6a-930e46cf9957"
 
 #: ../../standard/system/serialisation.rst:82 851669a37d50477897ab6e05bf190715
 msgid "person"
-msgstr "persona"
+msgstr "person"
 
 #: ../../standard/system/serialisation.rst:83 8fe6796597e74c3a812260cfc1447088
 msgid "MX-RFC"
@@ -182,4 +184,4 @@ msgstr "1681-4064-ab51-1e703fbafa"
 
 #: ../../standard/system/serialisation.rst:88 4fe8e97689b9424f8211850f0e4d111c
 msgid "relationship"
-msgstr "relación"
+msgstr "relationship"
