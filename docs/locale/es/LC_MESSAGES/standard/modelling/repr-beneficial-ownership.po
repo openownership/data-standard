@@ -6,6 +6,7 @@
 # Translators:
 # Carlos Hames, 2024
 # Carmen Edery, 2024
+# María Renée Briozzo Mitchell, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Carmen Edery, 2024\n"
+"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +26,7 @@ msgstr ""
 #: ../../standard/modelling/repr-beneficial-ownership.rst:4
 #: 4162c67c29b4479b9f59a1ca5b0b6b5e
 msgid "Representing beneficial owners"
-msgstr "Representando a los beneficiarios reales"
+msgstr "Representación de los beneficiarios reales"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:8
 #: ea568849db304bea85cd418207e22939
@@ -36,9 +37,10 @@ msgid ""
 "connecting the two which represents the beneficial ownership relationship."
 msgstr ""
 "**Requisitos clave:** Si una persona es el beneficiario real de una entidad,"
-" ya sea directa o indirectamente, y la persona o entidad debe declarar este "
-"beneficiario real, DEBE haber una declaración sobre relación que conecte los"
-" dos, que representa la relación de beneficiario real."
+" ya sea directa o indirectamente, y la persona o entidad debe declarar esta "
+"titularidad del beneficiario real, DEBE haber una declaración sobre relación"
+" que conecte los dos, que representa la relación de titularidad del "
+"beneficiario real."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:10
 #: ../../standard/modelling/repr-beneficial-ownership.rst:38
@@ -68,12 +70,12 @@ msgid ""
 "owners have (regardless of whether they are direct or indirect)."
 msgstr ""
 "Los beneficiarios reales pueden ejercer sus intereses *directamente* en una "
-"entidad o *indirectamente*, a través de entidades intermediarias (como "
-"arreglos u otras empresas). Debe quedar claro en un conjunto de datos BODS "
-"qué personas se declaran beneficiarios reales de qué empresas (y qué "
-"entidades son intermediarias). Y debe quedar claro qué control general o "
-"titularidad tienen los beneficiarios reales (independientemente de si es "
-"directo o indirecto)."
+"entidad o *indirectamente* a través de entidades intermediarias (como "
+"estructuras jurídicas u otras empresas). Debe quedar claro en un conjunto de"
+" datos del BODS qué personas se declaran beneficiarios reales de qué "
+"empresas (y qué entidades son intermediarias). Y debe quedar claro qué "
+"intereses generales tienen los beneficiarios reales (independientemente de "
+"si son directos o indirectos)."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst-1
 #: aefdb4612c2b48bc8fc163f8499e7f1c
@@ -82,9 +84,9 @@ msgid ""
 "intermediary: Company A. Person 2 directly holds 32 percent of Company E's "
 "shares."
 msgstr ""
-"La persona 1 posee indirectamente una participación accionaria del 15 por "
-"ciento en la empresa E, a través de un intermediario: la empresa A. La "
-"persona 2 posee directamente el 32 por ciento de las acciones de la empresa "
+"La Persona 1 posee indirectamente un 15 por ciento de participación "
+"accionaria en la Empresa E, a través de un intermediario: la Empresa A. La "
+"persona 2 posee directamente el 32 por ciento de las acciones de la Empresa "
 "E."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:23
@@ -99,15 +101,15 @@ msgid ""
 "disclosed. That is: that some details of the chain Company E - Company A - "
 "Person 1 are also disclosed."
 msgstr ""
-"En la situación anterior, la persona 1 se beneficia *indirectamente* de una "
-"participación accionaria del 15% en la empresa E y la persona 2 tiene una "
-"participación accionaria *directa* del 32% en la empresa E. En una "
-"jurisdicción donde las personas con una participación accionaria (directa o "
-"indirecta) de más de 10 % en una empresa debe revelarse como beneficiarios "
-"finales, se declararán los intereses de la persona 1 y la persona 2. Además,"
-" la jurisdicción puede exigir que se divulguen los detalles de la "
-"participación indirecta de la persona 1. Es decir: que también se divulguen "
-"algunos detalles de la cadena empresa E - empresa A - persona 1."
+"En la situación anterior, la Persona 1 se beneficia *indirectamente* de un "
+"15% de participación accionaria en la Empresa E, y la Persona 2 tiene un 32%"
+" de participación accionaria *directa* en la Empresa E. En una jurisdicción "
+"donde las personas con una participación accionaria (directa o indirecta) de"
+" más de 10% en una empresa deberían revelarse como beneficiarios finales, se"
+" declararían los intereses de la Persona 1 y de la Persona 2. Además, la "
+"jurisdicción puede exigir que se divulguen los detalles del interés "
+"indirecto de la Persona 1. Es decir, que también se divulguen algunos "
+"detalles de la cadena Empresa E - Empresa A - Persona 1."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:25
 #: e715a55497544525ab022cca014fb3c7
@@ -115,28 +117,28 @@ msgid ""
 "In BODS, the following properties are used to represent such information "
 "disclosure:"
 msgstr ""
-"En BODS, se utilizan las siguientes propiedades para representar dicha "
+"En el BODS, se utilizan las siguientes propiedades para representar dicha "
 "divulgación de información:"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:27
 #: bc9496ca5c7044659c32c8c9976456c2
 msgid "``beneficialOwnershipOrControl`` (See :ref:`schema-interest`)"
-msgstr "``beneficialOwnershipOrControl`` (Ver :ref:`schema-interest`)"
+msgstr "``beneficialOwnershipOrControl`` (consultar :ref:`schema-interest`)"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:28
 #: 9f599a3ee7784350915acd3f60a26770
 msgid "``directOrIndirect`` (See :ref:`schema-interest`)"
-msgstr "``directOrIndirect`` (Ver :ref:`schema-interest`)"
+msgstr "``directOrIndirect`` (consultar :ref:`schema-interest`)"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:29
 #: 3934328a66c84e0a9b3018f8c867c592
 msgid "``componentRecords`` (See :ref:`schema-relationship-record`)"
-msgstr "``componentRecords`` (Consulte :ref:`schema-relationship-record`)"
+msgstr "``componentRecords`` (consultar :ref:`schema-relationship-record`)"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:30
 #: 6ae58c7200a1482bbae0403c7d8af3e4
 msgid "``isComponent`` (See :ref:`schema-entity-record`)"
-msgstr "``isComponent`` (Consulte :ref:`schema-entity-record`)"
+msgstr "``isComponent`` (consultar :ref:`schema-entity-record`)"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:33
 #: f4bac19aabb5412ba92eb75c8e9a0b47
@@ -146,7 +148,7 @@ msgstr "Requisitos"
 #: ../../standard/modelling/repr-beneficial-ownership.rst:36
 #: 7a0fac7054614ccb83331cc70b80c5ab
 msgid "No beneficial ownership relationships"
-msgstr "Sin relaciones de beneficario real"
+msgstr "Sin relaciones de titularidad del beneficiario real"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:40
 #: 0309e6b756df47b9a631bba862d49fc0
@@ -156,13 +158,13 @@ msgid ""
 "``recordDetails.interestedParty.reason`` 'subjectExemptFromDisclosure'."
 msgstr ""
 "Si una entidad está exenta de declarar a sus beneficiarios reales, su "
-"registro DEBE ser el ``subject`` de una declaración sobre relación con "
+"registro DEBERÍA ser el ``subject`` de una declaración sobre relación con "
 "``recordDetails.interestedParty.reason`` 'subjectExemptFromDisclosure'."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:44
 #: a655b7f30715474f99bf876a0e226bdc
 msgid "A beneficial ownership relationship"
-msgstr "Una relación de beneficiario real"
+msgstr "Una relación de titularidad del beneficiario real"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:46
 #: 8b575e7ea0d2467791d659f88842b261
@@ -174,10 +176,10 @@ msgid ""
 " ``recordDetails`` for the relationship:"
 msgstr ""
 "Si una persona es un beneficiario real de una entidad, la entidad X (ya sea "
-"directa o indirectamente) y uno de ellos debe declarar su titularidad de "
+"directa o indirectamente) y uno de ellos debe declarar su titularidad del "
 "beneficiario real, DEBE haber un registro de relación *primaria* que conecte"
-" a los dos, que represente la relación de titularidad de beneficiario real. "
-"Específicamente en los ``recordDetails`` para la relación:"
+" a los dos, que represente la relación de titularidad del beneficiario real."
+" Específicament.e en los ``recordDetails`` para la relación:"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:48
 #: 40a1ca08d2604a0491c2c5e07d6b6fe3
@@ -225,8 +227,8 @@ msgid ""
 "intermediary elements, this SHOULD be represented in addition to the above. "
 "In particular:"
 msgstr ""
-"Cuando se sabe que la titularidad de beneficiario real se ejerce de forma "
-"directa, a través de elementos intermediarios, esto DEBE representarse "
+"Cuando se sabe que la titularidad del beneficiario real se ejerce de forma "
+"indirecta, a través de elementos intermediarios, esto DEBERÍA representarse "
 "además de lo anterior. En particular:"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:58
@@ -235,8 +237,8 @@ msgid ""
 "the chain of known intermediary elements SHOULD be represented by "
 "*secondary* records"
 msgstr ""
-"la cadena de elementos intermediarios conocidos DEBE estar representada por "
-"registros *secundarios*"
+"la cadena de elementos intermediarios conocidos DEBERÍA estar representada "
+"por registros *secundarios*"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:59
 #: dbb99af5a99f4f4a8537a4fd3be7fe92
@@ -244,15 +246,15 @@ msgid ""
 "these secondary records SHOULD link the beneficial owner’s record to entity "
 "X’s record indirectly"
 msgstr ""
-"estos registros secundarios DEBEN vincular el registro del beneficiario real"
-" con el registro de la entidad X de forma indirecta"
+"estos registros secundarios DEBERÍAN vincular el registro del beneficiario "
+"real con el registro de la entidad X de forma indirecta"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:60
 #: 34ff9f511c7e441f9a088eee6bd70616
 msgid "these secondary records SHOULD all have ``isComponent`` set to 'true'"
 msgstr ""
-"todos estos registros secundarios DEBEN tener ``isComponent`` establecido "
-"como 'true'"
+"todos estos registros secundarios DEBERÍAN tener ``isComponent`` establecido"
+" como 'true'"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:61
 #: 79eed059690e4223a034bb88afd47158
@@ -261,7 +263,7 @@ msgid ""
 "the ``componentRecords`` array of the ``recordDetails`` for the primary "
 "relationship."
 msgstr ""
-"todos estos registros secundarios DEBEN tener sus valores ``recordId`` "
+"todos estos registros secundarios DEBERÍAN tener sus valores ``recordId`` "
 "enumerados en el arreglo de datos ``componentRecords`` de ``recordDetails`` "
 "para la relación primaria."
 
@@ -271,7 +273,7 @@ msgid ""
 "When Statements about the primary relationship are published in a BODS file:"
 msgstr ""
 "Cuando las declaraciones sobre la relación primaria se publican en un "
-"archivo de BODS:"
+"archivo del BODS:"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:65
 #: 51f5bce6ed6f4b48a1297f87e5f00a3b
@@ -289,7 +291,7 @@ msgid ""
 "Statement for the primary relationship."
 msgstr ""
 "Las declaraciones de todos los registros secundarios deben aparecer antes de"
-" la primera declaración sobre la relación primaria."
+" la primera declaración sobre la relación primaria"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:69
 #: 5c3c637e1baf463480b5595f1a3073ac
@@ -302,9 +304,9 @@ msgid ""
 "In the following example, Person 1 is a beneficial owner of Company E. They "
 "exercise that beneficial ownership via an intermediary company, Company A."
 msgstr ""
-"En el siguiente ejemplo, la Persona 1 es un beneficiario real de la empresa "
-"E. Ellos ejercen esa titularidad de beneficiario real a través de una "
-"empresa intermediaria, la empresa A."
+"En el siguiente ejemplo, la Persona 1 es un beneficiario real de la Empresa "
+"E. Ejerce esa titularidad del beneficiario real a través de una empresa "
+"intermediaria, la Empresa A."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst-1
 #: 9a3dbe28e89345ee89574de1f7128dbd
@@ -330,20 +332,21 @@ msgstr ""
 "declaraciones sobre relaciones están unidas por líneas, que representan la "
 "estructura de titularidad de la empresa. Los valores de propiedad de la "
 "declaración se indican de la siguiente manera. Declaración de la Persona 1: "
-"recordId es 'p-1', recordDetails.isComponent es falso. Declaración de la "
-"empresa intermediaria A: recordId es 'e-2', recordDetails.isComponent es "
-"verdadero. Declaración de la Empresa E': recordId es 'e-1', "
-"recordDetails.isComponent es falso. Declaración sobre relación que conecta a"
-" la persona 1 y a la empresa A: recordId es 'ooc-3', "
-"recordDetails.isComponent es verdadero, su interés tiene directOrIndirect "
-"como 'direct' y beneficialOwnershipOrControl como falso. Declaración sobre "
-"relación que conecta a la empresa A y a la empresa E: recordId es 'ooc-2', "
-"recordDetails.isComponent es verdadero, su interés tiene directOrIndirect "
-"como 'direct' y beneficialOwnershipOrControl como falso. Declaración sobre "
-"relación que conecta a la Persona 1 y a la Empresa E: recordId es 'ooc-1', "
-"recordDetails.isComponent es falso, componentRecords son ooc-2, e-2 y ooc-3;"
-" y sus intereses tienen directOrIndirect como 'indirect' y "
-"beneficialOwnershipOrControl como verdadero."
+"el recordId es 'p-1', el recordDetails.isComponent es falso. Declaración de "
+"la Empresa intermediaria A: el recordId es 'e-2', el "
+"recordDetails.isComponent es verdadero. Declaración de la Empresa E: el "
+"recordId es 'e-1', el recordDetails.isComponent es falso. Declaración sobre "
+"relación que conecta a la Persona 1 y a la Empresa A: el recordId es "
+"'ooc-3', el recordDetails.isComponent es verdadero, su interés tiene "
+"directOrIndirect como 'direct' y beneficialOwnershipOrControl como falso. "
+"Declaración sobre relación que conecta a la Empresa A y a la Empresa E: el "
+"recordId es 'ooc-2', el recordDetails.isComponent es verdadero, su interés "
+"tiene directOrIndirect como 'direct' y beneficialOwnershipOrControl como "
+"falso. Declaración sobre relación que conecta a la Persona 1 y a la Empresa "
+"E: el recordId es 'ooc-1', el recordDetails.isComponent es falso, los "
+"componentRecords son ooc-2, e-2 y ooc-3; y sus intereses tienen "
+"directOrIndirect como 'indirect' y beneficialOwnershipOrControl como "
+"verdadero."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:79
 #: db7b4850bdb745c6b81186092e3826f2
@@ -356,5 +359,5 @@ msgid ""
 "An example of valid statement order within a BODS dataset for the above "
 "would be: p-1, e-1, e-2, r-3, r-2, r-1."
 msgstr ""
-"Un ejemplo de orden de declaraciones válidas dentro de un conjunto de datos "
-"de BODS para lo anterior sería: p-1, e-1, e-2, r-3, r-2, r-1."
+"Un ejemplo de orden de declaración válido dentro de un conjunto de datos del"
+" BODS para lo anterior sería: p-1, e-1, e-2, r-3, r-2, r-1."

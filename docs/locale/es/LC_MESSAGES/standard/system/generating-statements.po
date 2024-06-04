@@ -6,6 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
+# María Renée Briozzo Mitchell, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Carmen Edery, 2024\n"
+"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +26,7 @@ msgstr ""
 #: ../../standard/system/generating-statements.rst:4
 #: b79b109ce85d4e4680967ab9fdd19abd
 msgid "Generating statements"
-msgstr "Generando declaraciones"
+msgstr "Generación de declaraciones"
 
 #: ../../standard/system/generating-statements.rst:6
 #: 47583a932f5e4bb09fcd0fbe8657b894
@@ -35,10 +36,10 @@ msgid ""
 "(``statementId``) and different property values. See :ref:`information-"
 "updates` for more information."
 msgstr ""
-"Las declaraciones DEBEN tratarse como inmutables: una vez que se publica una"
-" declaración, NO DEBE volver a publicarse con el mismo identificador de "
-"declaración (``statementId``) y diferentes valores de propiedad. Consulte "
-":ref:`information-updates` para obtener más información."
+"Las declaraciones DEBERÍAN tratarse como inalterables: una vez que se "
+"publica una declaración, NO DEBERÍA volver a publicarse con el mismo "
+"identificador de declaración (``statementId``) y diferentes valores de "
+"propiedad. Consulte :ref:`information-updates` para obtener más información."
 
 #: ../../standard/system/generating-statements.rst:8
 #: 658194ae9f2249a7a157a8b881e1c1f5
@@ -59,7 +60,7 @@ msgstr "Esto implica que:"
 #: dafbc5730b314cc3a61864e677715056
 msgid "two **different** Statements SHOULD never have the same identifier"
 msgstr ""
-"dos declaraciones **diferentes** nunca DEBEN tener el mismo identificador"
+"dos declaraciones **diferentes** nunca DEBERÍAN tener el mismo identificador"
 
 #: ../../standard/system/generating-statements.rst:13
 #: 372d2fdc2e074622bd5a803325fd2cc9
@@ -68,7 +69,7 @@ msgid ""
 "change."
 msgstr ""
 "una vez que se asigna un identificador a una declaración, el identificador "
-"NO DEBE cambiar."
+"NO DEBERÍA cambiar."
 
 #: ../../standard/system/generating-statements.rst:15
 #: 62b986bb80e149eebf9ed4cf3b147452
@@ -89,10 +90,10 @@ msgid ""
 "which are useful to display to users."
 msgstr ""
 "Los identificadores de declaración suelen ser para uso interno dentro de las"
-" aplicaciones. En la mayoría de circunstancias, no necesitan ser mostrados a"
-" los usuarios. Esto los diferencia de los :ref:`identificadores de entidad o"
-" persona <guidance-identifiers>`, que son útiles cuando son mostrados a los "
-"usuarios."
+" aplicaciones. En la mayoría de las circunstancias, no necesitan ser "
+"mostrados a los usuarios. Esto los diferencia de los :ref:`identificadores "
+"de entidad o persona <guidance-identifiers>`, que son útiles cuando son "
+"mostrados a los usuarios."
 
 #: ../../standard/system/generating-statements.rst:20
 #: 88445e549b714e8b86fa2cd8678814ad
@@ -116,10 +117,10 @@ msgid ""
 "first Statement for a record. Store this in the data management system. "
 "Update it whenever the relevant record is updated."
 msgstr ""
-"Genere un `identificador único universal "
+"Generar un `identificador único universal "
 "<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ para la "
-"primera declaración de un registro. Guárdelo en el sistema de gestión de "
-"datos. Actualícelo cuando se actualice el registro relevante."
+"primera declaración de un registro. Guardarlo en el sistema de gestión de "
+"datos. Actualizarlo cuando se actualice el registro relevante."
 
 #: ../../standard/system/generating-statements.rst:25
 #: b96806d6e653438eabea99845e9a0afa
@@ -129,10 +130,10 @@ msgid ""
 "publisher-related prefix. Append the relevant ``recordId``, and a version "
 "identifier to it."
 msgstr ""
-"Genere un `identificador único universal "
+"Generar un `identificador único universal "
 "<https://es.wikipedia.org/wiki/Identificador_%C3%BAnico_universal>`_ como "
-"prefijo relacionado con el publicador: Anexe un identificador de registro "
-"local y un identificador de versión."
+"prefijo relacionado con el publicador. Anexar el ``recordId`` relevante y un"
+" identificador de versión."
 
 #: ../../standard/system/generating-statements.rst:26
 #: 3fcac2d468cb4c3b85a1921491650ace
@@ -141,7 +142,7 @@ msgid ""
 "a normalised JSON representation of the statement (excluding the "
 "``statementId`` field) with a low collision probability."
 msgstr ""
-"Utilice una función hash diseñada de forma apropiada que genere "
+"Utilizar una función hash diseñada de forma apropiada que genere "
 "identificadores a partir de una representación JSON normalizada de la "
 "declaración (excluyendo el campo ``statementId``) con una baja probabilidad "
 "de conflicto."
@@ -152,6 +153,6 @@ msgid ""
 "Use an internal identifier combined with a unique prefix to avoid collision "
 "between identifiers from different publishers."
 msgstr ""
-"Utilice un identificador interno en combinación con un prefijo único para "
-"evitar eventuales conflictos entre identificadores de diferentes "
+"Utilizar un identificador interno en combinación con un prefijo único para "
+"evitar eventuales colisiones entre identificadores de diferentes "
 "publicadores."
