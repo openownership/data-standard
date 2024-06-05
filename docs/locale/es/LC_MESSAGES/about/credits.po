@@ -6,7 +6,6 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2022
 # Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2022
-# María Renée Briozzo Mitchell, 2024
 # Rachel Vint, 2024
 # 
 #, fuzzy
@@ -39,10 +38,10 @@ msgid ""
 msgstr ""
 "La versión beta del Estándar de datos sobre titularidad del beneficiario "
 "real fue desarrollada por Tim Davies (`Open Data Services "
-"<https://www.opendataservices.coop>`_) con Ben Symonds (`OpenCorporates "
-"<https://www.opencorporates.com>`_), Chris Taggart (`OpenCorporates "
-"<https://www.opencorporates.com>`_) y Jack Lord (`Open Data Services "
-"<https://www.opendataservices.coop>`_), y con aportes del :doc:`grupo de "
+"<https://www.opendataservices.coop>`__) con Ben Symonds (`OpenCorporates "
+"<https://www.opencorporates.com>`__), Chris Taggart (`OpenCorporates "
+"<https://www.opencorporates.com>`__) y Jack Lord (`Open Data Services "
+"<https://www.opendataservices.coop>`__), y con aportes del :doc:`grupo de "
 "trabajo sobre estándares de datos <governance>`."
 
 #: ../../about/credits.rst:11 5851332e903f448ea4f2860614ef0b74
@@ -99,6 +98,6 @@ msgid ""
 msgstr ""
 "La versión 0.4 fue desarrollada por Kadie Armstrong, Emma Howard, Kathryn "
 "Irish, Rachel Vint y Lewis Spurgin (`Open Data Services "
-"<https://www.opendataservices.coop>`_), con trabajo técnico de Amy Guy y Ed "
-"Lloyd-Davies (`Open Data Services <https://www.opendataservices.coop>`_), y "
-"con aportes del grupo de trabajo sobre estándares de datos."
+"<https://www.opendataservices.coop>`__), con trabajo técnico de Amy Guy y Ed"
+" Lloyd-Davies (`Open Data Services <https://www.opendataservices.coop>`__), "
+"y con aportes del grupo de trabajo sobre estándares de datos."
