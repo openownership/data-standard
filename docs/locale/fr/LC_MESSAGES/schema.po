@@ -264,7 +264,7 @@ msgstr ""
 "autorité émettrice d'identifiants (ex. 'GB-COH'). Pour les personnes "
 "physiques, une valeur avec le modèle {JURISDICTION}-{TYPE} où une "
 "JURIDICTION est un code pays à 3 chiffres ISO 3166-1 et un TYPE est un "
-"PASSEPORT, IDFISCAL ou CARTEID."
+"PASSEPORT, un NUMÉRO D'IDENTIFICATION FISCALE ou une CARTE D'IDENTITÉ."
 
 #. /$defs/Identifier/properties/schemeName/title
 #: schema/components.json:1
@@ -365,8 +365,8 @@ msgid ""
 "verification process."
 msgstr ""
 "Types de la source, à l'aide de la liste de codes sourceType. 'verified' "
-"doit être inclus dans la série si les informations contenues dans la "
-"déclaration ont fait l'objet d'une vérification."
+"doit être inclus dans la série si les informations contenues dans l'énoncé "
+"ont fait l'objet d'une vérification."
 
 #. /$defs/Source/properties/description/description
 #: schema/components.json:1
@@ -420,11 +420,10 @@ msgid ""
 " has been verified, the array may include the name of the organisation "
 "providing verification."
 msgstr ""
-"Personnes ou organisations fournissant les informations contenues dans cette"
-" déclaration. Il peut s'agir du sujet d'une autodéclaration ou le nom d'un "
-"agent à l'origine d'une déclaration en son nom. Si cette déclaration a été "
-"vérifiée, la série peut inclure le nom de l'organisation chargée de la "
-"vérification."
+"Personnes ou organisations fournissant les informations contenues dans cet "
+"énoncé. Il peut s'agir du sujet d'une autodéclaration ou le nom d'un agent à"
+" l'origine d'une déclaration en son nom. Si cet énoncé a été vérifié, la "
+"série peut inclure le nom de l'organisation chargée de la vérification."
 
 #. /$defs/Source/properties/assertedBy/items/properties/name/description
 #: schema/components.json:1
@@ -439,7 +438,7 @@ msgstr "URI optionnel pour identifier l'agent à l'origine de l'affirmation."
 #. /title
 #: schema/entity-record.json:1
 msgid "Entity Record Details"
-msgstr "Détails du dossier de l'entité"
+msgstr "Détails de l'enregistrement de l'entité"
 
 #. /description
 #: schema/entity-record.json:1
@@ -466,12 +465,12 @@ msgid ""
 msgstr ""
 "Si cette entité est un composant d'une relation indirecte. Lorsque "
 "`isComponent` est 'true' : 1) le `recordId` de cette entité DOIT être un "
-"élément dans la série `componentRecords` de cette déclaration de relation "
-"principale, 2) cette déclaration d'entité DOIT être antérieure à la "
-"déclaration de relation principale dans un paquet ou un flux de la BODS, 3) "
-"le remplacement de cette déclaration d'entité DEVRAIT être envisagé lors du "
-"remplacement de la déclaration de relation principale. La valeur "
-"`isComponent` de la déclaration de relation principale DOIT être 'false'."
+"élément dans le tableau `componentRecords` de cet énoncé de relation "
+"principal, 2) cet énoncé d'entité DOIT être antérieur à l'énoncé de relation"
+" principal dans un paquet ou un flux de la BODS, 3) le remplacement de cet "
+"énoncé d'entité DEVRAIT être envisagé lors du remplacement de l'énoncé de "
+"relation principal. La valeur `isComponent` de l'énoncé de relation "
+"principal DOIT être 'false'."
 
 #. /properties/entityType/title
 #: schema/entity-record.json:1
@@ -481,7 +480,7 @@ msgstr "Type d'entité"
 #. /properties/entityType/description
 #: schema/entity-record.json:1
 msgid "The form of the entity described in the Statement."
-msgstr "Forme de l'entité décrite dans la déclaration."
+msgstr "Forme de l'entité décrite dans l'énoncé."
 
 #. /properties/entityType/properties/type/description
 #: schema/entity-record.json:1
@@ -668,10 +667,9 @@ msgid ""
 "statement, where applicable. This information SHOULD be provided where a "
 "state has created an agency or other entity with specific legislation."
 msgstr ""
-"Loi ayant qui a établi la constitution de l'entité décrite dans la "
-"déclaration, le cas échéant. Cette information DEVRAIT être fournie si un "
-"État a créé un organisme ou une autre entité ayant une législation "
-"spécifique."
+"Loi ayant qui a établi la constitution de l'entité décrite dans l'énoncé, le"
+" cas échéant. Cette information DEVRAIT être fournie si un État a créé un "
+"organisme ou une autre entité ayant une législation spécifique."
 
 #. /properties/formedByStatute/properties/name/title
 #: schema/entity-record.json:1
@@ -916,12 +914,12 @@ msgid ""
 msgstr ""
 "Si cette personne est un composant d'une relation indirecte. Lorsque "
 "`isComponent` est 'true' : 1) le `recordId` de cette personne DOIT être un "
-"élément dans le tableau `componentRecords` de cette déclaration de relation "
-"principale, 2) cette personne DOIT être antérieure à la déclaration de "
-"relation principale dans un paquet ou un flux de la BODS, 3) le remplacement"
-" de cette déclaration de personne DEVRAIT être envisagé lors du remplacement"
-" de la déclaration de relation principale. La valeur `isComponent` de la "
-"déclaration de relation principale DOIT être 'false'."
+"élément dans le tableau `componentRecords` de cet énoncé de relation "
+"principal, 2) cet énoncé de personne DOIT être antérieur à l'énoncé de "
+"relation principal dans un paquet ou un flux de la BODS, 3) le remplacement "
+"de cet énoncé de personne DEVRAIT être envisagé lors du remplacement de "
+"l'énoncé de relation principal. La valeur `isComponent` de l'énoncé de "
+"relation principal DOIT être 'false'."
 
 #. /properties/personType/title
 #: schema/person-record.json:1
@@ -1041,9 +1039,9 @@ msgid ""
 "declarations."
 msgstr ""
 "Information sur l'éventuelle exposition politique de la personne décrite par"
-" cette déclaration. Il convient d'utiliser cette propriété uniquement si les"
-" déclarations de personne politiquement exposée (PPE) sont attendues dans le"
-" cadre des déclarations des bénéficiaires effectifs."
+" cet énoncé. Il convient d'utiliser cette propriété uniquement si les "
+"déclarations de personne politiquement exposée (PPE) sont attendues dans le "
+"cadre des déclarations des bénéficiaires effectifs."
 
 #. /properties/politicalExposure/properties/status/title
 #: schema/person-record.json:1
@@ -1059,10 +1057,10 @@ msgid ""
 "missing; the reason for the missing data SHOULD be supplied in the `details`"
 " array."
 msgstr ""
-"Cette valeur est 'isPep' ou 'isNotPep' selon que la personne décrite par "
-"cette déclaration possède ou non le statut de personne politiquement exposée"
-" (PPE). Une valeur 'unknown' signifie que la déclaration du statut de PPE "
-"est attendue mais manquante ; le motif de l'absence de données DEVRAIT être "
+"Cette valeur est 'isPep' ou 'isNotPep' selon que la personne décrite par cet"
+" énoncé possède ou non le statut de personne politiquement exposée (PPE). "
+"Une valeur 'unknown' signifie que la déclaration du statut de PPE est "
+"attendue mais manquante ; le motif de l'absence de données DEVRAIT être "
 "fourni dans le tableau `details`."
 
 #. /properties/politicalExposure/properties/details/title
@@ -1285,16 +1283,15 @@ msgid ""
 "`interestedParty`."
 msgstr ""
 "Si cette relation est un composant d'une relation indirecte plus large. "
-"Lorsque `isComponent` est 'true' : 1) le `recordId` de cette déclaration de "
+"Lorsque `isComponent` est 'true' : 1) le `recordId` de cet énoncé de "
 "relation secondaire DOIT être un élément dans le tableau `componentRecords` "
-"de cette déclaration de relation principale, 2) cette déclaration de "
-"relation DOIT être antérieure à la déclaration de relation principale dans "
-"un paquet ou un flux de la BODS, 3) le remplacement de cette déclaration de "
-"relation DEVRAIT être envisagé lors du remplacement de la déclaration de "
-"relation principale et 4) la valeur `isComponent` de la déclaration de la "
-"relation principale DOIT être 'false'. Si `isComponent` est 'false', cette "
-"déclaration de relation est la déclaration principale de la relation entre "
-"le `subject` et la `interestedParty`."
+"de cet énoncé de relation principal, 2) cet énoncé de relation DOIT être "
+"antérieur à l'énoncé de relation principal dans un paquet ou un flux de la "
+"BODS, 3) le remplacement de cet énoncé de relation DEVRAIT être envisagé "
+"lors du remplacement de l'énoncé de relation principal et 4) la valeur "
+"`isComponent` de l'énoncé de relation principal DOIT être 'false'. Si "
+"`isComponent` est 'false', cet énoncé de relation constitue la déclaration "
+"principale de la relation entre le `subject` et la `interestedParty`."
 
 #. /properties/componentRecords/title
 #: schema/relationship-record.json:1
@@ -1551,17 +1548,17 @@ msgstr ""
 #. /title
 #: schema/statement.json:1
 msgid "Statements"
-msgstr "Déclarations"
+msgstr "Énoncés"
 
 #. /description
 #: schema/statement.json:1
 msgid "An array of Statements."
-msgstr "Tableau de déclarations."
+msgstr "Tableau d'énoncés."
 
 #. /$defs/Statement/title
 #: schema/statement.json:1
 msgid "Statement"
-msgstr "Déclaration"
+msgstr "Énoncé"
 
 #. /$defs/Statement/description
 #: schema/statement.json:1
@@ -1575,7 +1572,7 @@ msgstr ""
 #. /$defs/Statement/properties/statementId/title
 #: schema/statement.json:1
 msgid "Statement Identifier"
-msgstr "Identifiant de déclaration"
+msgstr "Identifiant d'énoncé"
 
 #. /$defs/Statement/properties/statementId/description
 #: schema/statement.json:1
@@ -1583,13 +1580,13 @@ msgid ""
 "A persistent globally unique identifier for this Statement. Length MUST be "
 "32 - 64 characters (inclusive)."
 msgstr ""
-"Identifiant global unique persistant de cette déclaration. La longueur DOIT "
-"être de 32 à 64 caractères (inclusive)."
+"Identifiant global unique persistant de cet énoncé. La longueur DOIT être "
+"comprise entre 32 et 64 caractères (inclusive)."
 
 #. /$defs/Statement/properties/statementDate/title
 #: schema/statement.json:1
 msgid "Statement Date"
-msgstr "Date de déclaration"
+msgstr "Date de l'énoncé"
 
 #. /$defs/Statement/properties/statementDate/description
 #: schema/statement.json:1
@@ -1598,7 +1595,7 @@ msgid ""
 "(YYYY-MM-DD) or date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF "
 "RFC3339 standard, section 5.6."
 msgstr ""
-"Date de création de cette déclaration par la source, sous un format de date "
+"Date de création de cet énoncé par la source, sous un format de date "
 "complète (AAAA-MM-JJ) ou de date-heure (ex. AAAA-MM-JJTHH:MM:SSZ). Voir la "
 "norme IETF RFC3339, section 5.6."
 
@@ -1610,9 +1607,7 @@ msgstr "Annotations"
 #. /$defs/Statement/properties/annotations/description
 #: schema/statement.json:1
 msgid "Annotations about this Statement or parts of this Statement"
-msgstr ""
-"Annotations à propos de cette déclaration ou de parties de cette "
-"déclaration."
+msgstr "Annotations à propos de cet énoncé ou de parties de cet énoncé."
 
 #. /$defs/Statement/properties/publicationDetails/title
 #: schema/statement.json:1
@@ -1622,7 +1617,7 @@ msgstr "Détails de la publication"
 #. /$defs/Statement/properties/publicationDetails/description
 #: schema/statement.json:1
 msgid "Information concerning the publication of this Statement."
-msgstr "Informations concernant la publication de cette déclaration."
+msgstr "Informations concernant la publication de cet énoncé."
 
 #. /$defs/Statement/properties/publicationDetails/properties/publicationDate/title
 #: schema/statement.json:1
@@ -1636,9 +1631,9 @@ msgid ""
 " date-time (e.g. YYYY-MM-DDTHH:MM:SSZ) format. See the IETF RFC3339 "
 "standard, section 5.6."
 msgstr ""
-"Date de publication de cette déclaration, sous un format de date complète "
-"(AAAA-MM-JJ) ou de date-heure (ex. AAAA-MM-JJTHH:MM:SSZ). Voir la norme IETF"
-" RFC3339, section 5.6."
+"Date de publication de cet énoncé, sous un format de date complète (AAAA-MM-"
+"JJ) ou de date-heure (ex. AAAA-MM-JJTHH:MM:SSZ). Voir la norme IETF RFC3339,"
+" section 5.6."
 
 #. /$defs/Statement/properties/publicationDetails/properties/bodsVersion/title
 #: schema/statement.json:1
@@ -1654,9 +1649,9 @@ msgid ""
 "number."
 msgstr ""
 "Version de la norme relative aux données sur la propriété effective à "
-"laquelle cette déclaration se conforme, exprimée comme majeure/mineure (ex. "
-"0.2 ou 1.0). Dans un ensemble de données de la BODS publié, toutes les "
-"déclarations DOIVENT avoir le même numéro majeur de version."
+"laquelle cet énoncé se conforme, exprimée comme majeure/mineure (ex. 0.2 ou "
+"1.0). Dans un ensemble de données de la BODS publié, tous les énoncés "
+"DOIVENT avoir le même numéro majeur de version."
 
 #. /$defs/Statement/properties/publicationDetails/properties/license/title
 #: schema/statement.json:1
@@ -1671,9 +1666,9 @@ msgid ""
 " Dedication or Open Definition Conformant "
 "(http://opendefinition.org/licenses/) license."
 msgstr ""
-"Lien vers la licence qui s'applique à cette déclaration. L'URI canonique de "
-"la licence DEVRAIT être utilisé. Les éditeurs sont encouragés à utiliser une"
-" licence Public Domain Dedication ou Open Definition Conformant "
+"Lien vers la licence qui s'applique à cet énoncé. L'URI canonique de la "
+"licence DEVRAIT être utilisé. Les éditeurs sont encouragés à utiliser une "
+"licence Public Domain Dedication ou Open Definition Conformant "
 "(http://opendefinition.org/licenses/)."
 
 #. /$defs/Statement/properties/publicationDetails/properties/publisher/title
@@ -1684,8 +1679,7 @@ msgstr "Éditeur"
 #. /$defs/Statement/properties/publicationDetails/properties/publisher/description
 #: schema/statement.json:1
 msgid "Details of the organisation or person publishing a Statement."
-msgstr ""
-"Détails de l'organisation ou de la personne qui publie une déclaration."
+msgstr "Détails de l'organisation ou de la personne qui publie un énoncé."
 
 #. /$defs/Statement/properties/publicationDetails/properties/publisher/properties/name/description
 #: schema/statement.json:1
@@ -1713,8 +1707,8 @@ msgid ""
 "The source of information in this statement. Each statement SHOULD contain "
 "source information."
 msgstr ""
-"Source d'information de cette déclaration. Chaque déclaration DEVRAIT "
-"contenir une source d'information."
+"Source d'information de cet énoncé. Chaque énoncé DEVRAIT contenir une "
+"source d'information."
 
 #. /$defs/Statement/properties/declaration/title
 #: schema/statement.json:1
@@ -1730,9 +1724,9 @@ msgid ""
 "the declaration."
 msgstr ""
 "Identifiant ou référence d'une déclaration dans le système de l'éditeur. "
-"Lorsqu'une déclaration est une affirmation d'une déclaration en particulier "
-"(faite à un moment donné par une `source` sur un `declarationSubject`), ce "
-"champ identifie la déclaration."
+"Lorsqu'un énoncé est une affirmation d'une déclaration en particulier (faite"
+" à un moment donné par une `source` sur un `declarationSubject`), ce champ "
+"identifie la déclaration."
 
 #. /$defs/Statement/properties/declarationSubject/title
 #: schema/statement.json:1
@@ -1762,8 +1756,8 @@ msgid ""
 "particular declaration subject.)"
 msgstr ""
 "Identifiant unique de l'enregistrement (dans le système de l'éditeur) auquel"
-" cette déclaration se rapporte. (Un enregistrement saisit les informations "
-"sur une entité, une personne physique ou une relation dans le réseau des "
+" cet énoncé se rapporte. (Un enregistrement saisit les informations sur une "
+"entité, une personne physique ou une relation dans le réseau des "
 "bénéficiaires effectifs d'un sujet de déclaration donné.)"
 
 #. /$defs/Statement/properties/recordType/title
@@ -1777,8 +1771,8 @@ msgid ""
 "The type of record (within the publisher's system) to which this Statement "
 "relates: entity, person, or relationship."
 msgstr ""
-"Type d'enregistrement (dans le système de l'éditeur) auquel se rapporte "
-"cette déclaration : entité, personne ou relation."
+"Type d'enregistrement (dans le système de l'éditeur) auquel se rapporte cet "
+"énoncé : entité, personne ou relation."
 
 #. /$defs/Statement/properties/recordStatus/title
 #: schema/statement.json:1
@@ -1792,8 +1786,7 @@ msgid ""
 "this Statement relates, using the recordStatus codelist."
 msgstr ""
 "État du cycle de vie de l'enregistrement (dans le système de l'éditeur) "
-"auquel se rapporte cette déclaration, à l'aide de la liste de codes "
-"recordStatus."
+"auquel se rapporte cet énoncé, à l'aide de la liste de codes recordStatus."
 
 #. /$defs/Statement/properties/recordDetails/title
 #: schema/statement.json:1
@@ -1807,7 +1800,7 @@ msgid ""
 "Statement Date."
 msgstr ""
 "Détails de l'entité, de la personne ou de la relation tel que déclaré à la "
-"date de la déclaration."
+"date de l'énoncé."
 
 #. /$defs/Annotation/title
 #: schema/statement.json:1
@@ -1822,16 +1815,15 @@ msgid ""
 "Custom properties can be included within the Annotation object to provide "
 "structured data where required."
 msgstr ""
-"Informations complémentaires sur les données contenues dans cette "
-"déclaration. Les annotations peuvent s'appliquer à l'ensemble de la "
-"déclaration, à un objet ou à un champ. Des propriétés personnalisées peuvent"
-" être incluses dans l'objet Annotation pour fournir des données structurées,"
-" si nécessaire."
+"Informations complémentaires sur les données contenues dans cet énoncé. Les "
+"annotations peuvent s'appliquer à l'ensemble de l'énoncé, à un objet ou à un"
+" champ. Des propriétés personnalisées peuvent être incluses dans l'objet "
+"Annotation pour fournir des données structurées, si nécessaire."
 
 #. /$defs/Annotation/properties/statementPointerTarget/title
 #: schema/statement.json:1
 msgid "Statement Fragment Pointer"
-msgstr "Pointeur de fragment de déclaration"
+msgstr "Pointeur de fragment d'énoncé"
 
 #. /$defs/Annotation/properties/statementPointerTarget/description
 #: schema/statement.json:1
@@ -1842,9 +1834,9 @@ msgid ""
 "Annotation applies to the whole Statement."
 msgstr ""
 "Pointeur JSON RFC6901 (https://tools.ietf.org/html/rfc6901) décrivant le "
-"fragment cible de la déclaration auquel s'applique cette annotation, en "
-"commençant par la racine de la déclaration. Une chaîne vide (\"\") indique "
-"que l'annotation s'applique à l'ensemble de la déclaration."
+"fragment cible de l'énoncé auquel s'applique cette annotation, en commençant"
+" par la racine de l'énoncé. Une chaîne vide (\"\") indique que l'annotation "
+"s'applique à l'ensemble de l'énoncé."
 
 #. /$defs/Annotation/properties/creationDate/title
 #: schema/statement.json:1
@@ -1909,7 +1901,7 @@ msgid ""
 "Statement."
 msgstr ""
 "Description sous forme de texte libre fournissant des informations "
-"complémentaires sur une partie de cette déclaration."
+"complémentaires sur une partie de cet énoncé."
 
 #. /$defs/Annotation/properties/transformedContent/title
 #: schema/statement.json:1
@@ -1936,6 +1928,6 @@ msgid ""
 "REQUIRED if the value of `motivation` is 'linking'."
 msgstr ""
 "Ressource liée qui annote, fournit un contexte ou apporte une amélioration à"
-" cette déclaration. Le contenu de la ressource, ou la relation à la "
-"déclaration, PEUT être décrit dans le champ `description`. Ce champ est "
-"OBLIGATOIRE si la valeur de la `motivation` est 'lien'."
+" cet énoncé. Le contenu de la ressource, ou la relation à l'énoncé, PEUT "
+"être décrit dans le champ `description`. Ce champ est OBLIGATOIRE si la "
+"valeur de la `motivation` est 'lien'."

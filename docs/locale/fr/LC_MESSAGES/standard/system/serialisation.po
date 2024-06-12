@@ -70,14 +70,14 @@ msgstr ""
 
 #: ../../standard/system/serialisation.rst:16 61045d7036fa4373af813ed17cab0719
 msgid "Statement order"
-msgstr "Ordre de la déclaration"
+msgstr "Ordre de l'énoncé"
 
 #: ../../standard/system/serialisation.rst:18 f561d0b9d8e54b699f04e56265443c8a
 msgid ""
 "A JSON BODS file MUST consist of a series of ordered Statement objects "
 "within a top-level array."
 msgstr ""
-"Un fichier BODS JSON DOIT être composé d'une série d'objets de déclaration "
+"Un fichier BODS JSON DOIT être composé d'une série d'objets d'énoncé "
 "ordonnés dans un tableau de niveau supérieur."
 
 #: ../../standard/system/serialisation.rst:20 40209926298e4b2c9b4fabedc9d904e2
@@ -86,10 +86,10 @@ msgid ""
 "Relationship statement, when they are a ``recordId`` value, MUST match the "
 "``recordId`` value of at least one other *prior* Statement in the array."
 msgstr ""
-"En particulier, les valeurs ``interestedParty`` et ``subject`` d'une "
-"déclaration de relation, s'il s'agit d'une valeur ``recordId``, DOIVENT "
-"correspondre à la valeur ``recordId`` d'au moins une autre déclaration "
-"*précédente* dans un tableau."
+"En particulier, les valeurs ``interestedParty`` et ``subject`` d'un énoncé "
+"de relation, s'il s'agit d'une valeur ``recordId``, DOIVENT correspondre à "
+"la valeur ``recordId`` d'au moins un autre énoncé *précédent* dans le "
+"tableau."
 
 #: ../../standard/system/serialisation.rst:23 0254084d4f4b4ea299b8ef5c3f41774d
 msgid "Alternative tabular form"
@@ -102,9 +102,9 @@ msgid ""
 "SHOULD use the relevant relative JSON Pointer from the statement root."
 msgstr ""
 "Les données de la BODS PEUVENT également être sérialisées sous forme de "
-"tableau dont chaque rangée représente une déclaration. Les colonnes "
-"DEVRAIENT représenter les champs de déclaration et les titres de colonne "
-"utiliser le JSON Pointer correspondant depuis la racine de la déclaration."
+"tableau dont chaque rangée représente un énoncé. Les colonnes DEVRAIENT "
+"représenter les champs de l'énoncé et les titres de colonne utiliser le JSON"
+" Pointer correspondant depuis la racine de l'énoncé."
 
 #: ../../standard/system/serialisation.rst:27 c1a8fca361544a4ca7a30854967f1aef
 msgid "For example, the extract:"

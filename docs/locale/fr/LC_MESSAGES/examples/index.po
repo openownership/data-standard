@@ -31,7 +31,7 @@ msgid ""
 " information is built up through the use of statements."
 msgstr ""
 "Ces exemples fictifs illustrent les principaux éléments de la constitution "
-"d'informations sur la propriété et le contrôle à l'aide des déclarations."
+"d'informations sur la propriété et le contrôle à l'aide des énoncés."
 
 #: ../../examples/index.rst:11 1fa151b77f7d41f99dcbd2a513f05a80
 msgid "A single, direct beneficial owner"
@@ -43,8 +43,8 @@ msgid ""
 "beneficial ownership (and 100% legal ownership) of Profitech Ltd by Jennifer"
 " Hewitson-Smith."
 msgstr ""
-"Trois déclarations (entité, personne et relation) qui décrivent la propriété"
-" effective (et 100 % propriété juridique) de Profitech Ltd de Jennifer "
+"Trois énoncés (entité, personne et relation) décrivent la propriété "
+"effective (et 100 % propriété juridique) de Profitech Ltd de Jennifer "
 "Hewitson-Smith."
 
 #: ../../examples/index.rst:21 c5474214dbd64bacbac298e91314ca3d
@@ -65,15 +65,15 @@ msgstr ""
 
 #: ../../examples/index.rst:31 1a6ff90a6d624df39f6ef258501d4ac6
 msgid "An entity statement for a listed company"
-msgstr "Déclaration d'entité d'une société cotée"
+msgstr "Énoncé d'entité d'une société cotée"
 
 #: ../../examples/index.rst:33 58763970f5fd45d4a66160fe70ff53fc
 msgid ""
 "This statement demonstrates how the details of a listed company can be "
 "published in BODS format."
 msgstr ""
-"Cette déclaration montre comment publier les informations d'une société "
-"cotée dans le format de la BODS."
+"Cet énoncé indique comment publier les informations d'une société cotée dans"
+" le format de la BODS."
 
 #: ../../examples/index.rst:39 ac9303ea413d47b28daef39c7d4401b4
 msgid "Updating information over time 1"
@@ -107,7 +107,7 @@ msgstr "**Chronologie**"
 #: ../../examples/index.rst:51 ../../examples/index.rst:80
 #: 59cc7b14ba1b4e93be42df2b06528a27 fda434e6f71a4910b423c948562fa2d8
 msgid "Statement Date"
-msgstr "Date de déclaration"
+msgstr "Date de l'énoncé"
 
 #: ../../examples/index.rst:52 f71d5d49953d4444bd710cd0366bf33c
 msgid "Declaration"
@@ -242,7 +242,7 @@ msgstr ""
 "En avril 2021, l'un des bénéficiaires décède et ses actions sont transférées"
 " à son plus proche parent. Au lancement du processus de confirmation annuel,"
 " la comptable de Fermcat est invitée à indiquer ce changement dans le "
-"registre. Après la mise à jour du registre, elle dépose la déclaration de "
+"registre. Après la mise à jour du registre, elle dépose l'énoncé de "
 "confirmation."
 
 #: ../../examples/index.rst:88 e950c2d3ce2b441ca8491e803a58e1f7

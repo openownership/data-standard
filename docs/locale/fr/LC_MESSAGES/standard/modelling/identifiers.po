@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Cécile Guarin, 2024
 # Rachel Vint, 2024
+# Cécile Guarin, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Cécile Guarin, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,7 +79,7 @@ msgid ""
 "Identifier (LEI), or other real world identifier."
 msgstr ""
 "Utilisez un :ref:`identifiant <schema-identifier>` dans le tableau "
-"``identifiers`` d'une déclaration d'entité pour fournir un numéro "
+"``identifiers`` d'un énoncé d'entité pour fournir un numéro "
 "d'immatriculation d'entreprise, un identifiant d'entité juridique ou "
 "d'autres identifiants concrets."
 
@@ -149,7 +149,7 @@ msgstr ""
 "Si le système contient des numéros d'identification pour une personne qui "
 "peuvent être publiés sans engendrer aucun risque lié à la confidentialité et"
 " à la sécurité des données, ces données doivent être incluses dans le "
-"tableau ``identifiers`` de la déclaration de personne physique."
+"tableau ``identifiers`` de l'énoncé de personne physique."
 
 #: ../../standard/modelling/identifiers.rst:35
 #: af340a63084c4e14a029c4f631406c20

@@ -246,7 +246,7 @@ msgstr ""
 
 #: ../../primer/index.rst:50 0e60da8eb47541de90e0bf0333a914cf
 msgid "BODS allows publishers to provide statements that describe:"
-msgstr "La BODS permet aux éditeurs d'effectuer des déclarations comportant :"
+msgstr "La BODS permet aux éditeurs de fournir des énoncés comportant :"
 
 #: ../../primer/index.rst:52 fa9d8f94cabe4ded8a7763e412fb4758
 msgid "details about natural persons and entities"

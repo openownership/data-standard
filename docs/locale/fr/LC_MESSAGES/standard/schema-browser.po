@@ -60,11 +60,11 @@ msgid ""
 "structure of these objects can be explored using the viewers below. (Click "
 "on object buttons to reveal their properties.)"
 msgstr ""
-"Un ensemble de données de la BODS est un tableau de déclarations. Chaque "
-"déclaration contient des ``recordDetails`` pour l'un des trois éléments de "
-"la propriété effective. La structure de ces objets peut être explorée à "
-"l'aide des visionneurs ci-dessous. (Cliquez sur les boutons d'objet pour "
-"révéler leurs propriétés.)"
+"Un ensemble de données de la BODS est un tableau d'énoncés. Chaque énoncé "
+"contient des ``recordDetails`` pour l'un des trois éléments de la propriété "
+"effective. La structure de ces objets peut être explorée à l'aide des "
+"visionneurs ci-dessous. (Cliquez sur les boutons d'objet pour révéler leurs "
+"propriétés.)"
 
 #: ../../standard/schema-browser.rst:12 b56c00fadb1f4a0586e3d32223260c8d
 msgid ":ref:`schema-browser-statement`"
@@ -92,14 +92,14 @@ msgstr ""
 
 #: ../../standard/schema-browser.rst:22 a9974f34febe4993ad00709170a45571
 msgid "Statements array"
-msgstr "Tableau de déclarations"
+msgstr "Tableau d'énoncés"
 
 #: ../../standard/schema-browser.rst:24 6833ff35c3c8456a92ed3c10c3bb2bd4
 msgid ""
 "View the `Statements JSON schema <../_static/statement.json>`_ or explore it"
 " using the viewer below."
 msgstr ""
-"Affichez le `Schéma JSON des déclarations <../_static/statement.json>`_ ou "
+"Affichez le `Schéma JSON des énoncés <../_static/statement.json>`_ ou "
 "explorez-le à l'aide du visionneur ci-dessous."
 
 #: ../../standard/schema-browser.rst:33 b9ebc6a087c547119b33ad791054d912

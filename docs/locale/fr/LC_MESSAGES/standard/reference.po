@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Katia Da Silva, 2024
 # Rachel Vint, 2024
+# Katia Da Silva, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Katia Da Silva, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -64,9 +64,9 @@ msgid ""
 "statement contains record details for one of three beneficial ownership "
 "elements:"
 msgstr ""
-"Les objets de niveau supérieur sont les :any:`Déclarations <schema-"
-"statement>`. Chaque déclaration contient les détails de l'enregistrement de "
-"l'un des trois éléments de la propriété effective, à savoir :"
+"Les objets de niveau supérieur sont les :any:`Énoncés <schema-statement>`. "
+"Chaque énoncé contient les détails de l'enregistrement de l'un des trois "
+"éléments de la propriété effective, à savoir :"
 
 #: ../../standard/reference.rst:12 223768f31fed43b887c3cd75a35c4c46
 msgid ":any:`Entity <schema-entity-record>`"
@@ -92,7 +92,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:22 d5e61ebe53af40779625a3a37ed12d07
 msgid "Address"
-msgstr "Adresse"
+msgstr "Address (Adresse)"
 
 #: ../../standard/reference.rst-1 596f4793ec6a4ea683cacea4d3d578dc
 msgid ""
@@ -200,14 +200,14 @@ msgstr ""
 
 #: ../../standard/reference.rst:44 71b6cc517dcb4f49bd070c710c47a9d6
 msgid "Annotation"
-msgstr "Annotation"
+msgstr "Annotation (Annotation)"
 
 #: ../../standard/reference.rst:46 e330faa7f48840e9af1917d0de70f731
 msgid ""
 "The ``annotations`` property of statements is an array of Annotation "
 "objects."
 msgstr ""
-"La propriété ``annotations`` des déclarations est un tableau des objets "
+"La propriété ``annotations`` des énoncés est un tableau des objets "
 "d'annotation."
 
 #: ../../standard/reference.rst:48 1e2f624acc77494f93cd7285428d1aa0
@@ -233,13 +233,13 @@ msgid ""
 "specific field. ``annotation.statementPointerTarget`` indicates where the "
 "annotation applies."
 msgstr ""
-"Les annotations peuvent s'appliquer à l'ensemble de la déclaration, à une "
-"partie d'une déclaration ou à un champ spécifique. "
-"``annotation.statementPointerTarget`` indique où s'applique l'annotation."
+"Les annotations peuvent s'appliquer à l'ensemble de l'énoncé, à une partie "
+"d'un énoncé ou à un champ spécifique. ``annotation.statementPointerTarget`` "
+"indique où s'applique l'annotation."
 
 #: ../../standard/reference.rst:65 7c7ea5683d8c4a7588f5aff3718b45be
 msgid "Country"
-msgstr "Pays"
+msgstr "Country (Pays)"
 
 #: ../../standard/reference.rst-1 5c972fbfa3244f3885253ab352e29815
 msgid ""
@@ -251,7 +251,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:79 2d6eb638a95c4951964dad906c2d7f79
 msgid "Identifier"
-msgstr "Identifiant"
+msgstr "Identifier (Identifiant)"
 
 #: ../../standard/reference.rst:81 0d7050df462340f6b2b96de5a9f71114
 msgid ""
@@ -259,9 +259,9 @@ msgid ""
 "item that it refers to. See :any:`Real world identifiers <guidance-"
 "identifiers>` for guidance on using this object."
 msgstr ""
-"L'objet identifiant relie une déclaration à la personne physique, à l'entité"
-" ou à l'élément qu'elle désigne. Voir :any:`Identifiants uniques du monde "
-"réel <guidance-identifiers>` pour savoir comment utiliser cet objet."
+"L'objet identifiant relie un énoncé à la personne physique, à l'entité ou à "
+"l'élément qu'il désigne. Voir :any:`Identifiants uniques du monde réel "
+"<guidance-identifiers>` pour savoir comment utiliser cet objet."
 
 #: ../../standard/reference.rst-1 27882388f8764cc387d10d399e7e0195
 msgid ""
@@ -273,7 +273,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:94 cc26d5b72c30427fbc7faedd245c6837
 msgid "Interest"
-msgstr "Participation au capital"
+msgstr "Interest (Participation au capital)"
 
 #: ../../standard/reference.rst-1 cbae21e426b44681b8beb14a169e036f
 msgid ""
@@ -284,7 +284,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:110 6f1a93a595264b3cbf0c253bdf263509
 msgid "Jurisdiction"
-msgstr "Juridiction"
+msgstr "Jurisdiction (Juridiction)"
 
 #: ../../standard/reference.rst-1 1f68ce404687489d8d7b6b9dc277502a
 msgid ""
@@ -296,7 +296,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:123 273c5df10a9a440bb759aea49b24b355
 msgid "Name"
-msgstr "Nom"
+msgstr "Name (Nom)"
 
 #: ../../standard/reference.rst-1 4d5d3d9db1c6406aa32df29a8e5101b3
 msgid ""
@@ -315,7 +315,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:138 f79a8b60765a405eb5bee79eb58aa30c
 msgid "PEPstatusDetails"
-msgstr "Détails du statut d'une PPE"
+msgstr "PEPstatusDetails (DétailsDuStatutDePPE)"
 
 #: ../../standard/reference.rst-1 09729a717d29477886c58c531e7532ab
 msgid "Information about a person's political involvement."
@@ -323,7 +323,7 @@ msgstr "Informations sur l'engagement politique d'une personne."
 
 #: ../../standard/reference.rst:152 37220704372047b2a4b46851713a8579
 msgid "PublicListing"
-msgstr "Cotation en bourse"
+msgstr "PublicListing (CotationEnBourse)"
 
 #: ../../standard/reference.rst-1 1b3e168b73294429aebb2a3a58f74117
 msgid ""
@@ -337,24 +337,23 @@ msgstr ""
 
 #: ../../standard/reference.rst:166 7287709734914ba0b8d6a715a496c911
 msgid "Publication Details"
-msgstr "Détails de la publication"
+msgstr "Publication Details (Détails de la publication)"
 
 #: ../../standard/reference.rst-1 20bd3f9bc90a4636a09fba31516bd956
 msgid "Information concerning the publication of this Statement."
-msgstr "Informations concernant la publication de cette déclaration."
+msgstr "Informations concernant la publication de cet énoncé."
 
 #: ../../standard/reference.rst:180 e521a60fd7734e52b0dc23cad32db601
 msgid "Publisher"
-msgstr "Éditeur"
+msgstr "Publisher (Éditeur)"
 
 #: ../../standard/reference.rst-1 fe562614c42f48fabad72659c556842e
 msgid "Details of the organisation or person publishing a Statement."
-msgstr ""
-"Détails de l'organisation ou de la personne qui publie une déclaration."
+msgstr "Détails de l'organisation ou de la personne qui publie un énoncé."
 
 #: ../../standard/reference.rst:194 53590c011b3640fab9e794fc82f824c8
 msgid "Record Details (entity)"
-msgstr "Détails de l'enregistrement (entité)"
+msgstr "Record Details (entity) (Détails de l'enregistrement (entité))"
 
 #: ../../standard/reference.rst-1 24c4713551c848baaa64836e042a03bf
 msgid "Information about an entity."
@@ -362,7 +361,7 @@ msgstr "Informations à propos d'une entité."
 
 #: ../../standard/reference.rst:208 26ef6e4efefa47b2b86637e2066635a8
 msgid "Record Details (person)"
-msgstr "Détails de l'enregistrement (personne)"
+msgstr "Record Details (person) (Détails de l'enregistrement (personne))"
 
 #: ../../standard/reference.rst-1 9e935fd58dbf4d998ab9a081e0d28a2a
 msgid "Information about a natural person."
@@ -370,7 +369,8 @@ msgstr "Informations sur une personne physique."
 
 #: ../../standard/reference.rst:222 fcd2b89543bc4148be55c068225a601f
 msgid "Record Details (relationship)"
-msgstr "Détails de l'enregistrement (relation)"
+msgstr ""
+"Record Details (relationship) (Détails de l'enregistrement (relation))"
 
 #: ../../standard/reference.rst:224 465e6b34389745c7bfe075ead86dc540
 msgid "See :ref:`representing-bo` for detailed requirements."
@@ -386,7 +386,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:238 bd51d9c12f094ca2b08e004f43766727
 msgid "Record Id"
-msgstr "Identifiant de l'enregistrement"
+msgstr "Record Id (Identifiant d'enregistrement)"
 
 #: ../../standard/reference.rst:240 34587424b9ce49e3b0cde8fbb2fc298d
 msgid "See :ref:`record-identifiers` for information about Record Ids"
@@ -402,13 +402,13 @@ msgid ""
 "particular declaration subject.)"
 msgstr ""
 "Identifiant unique de l'enregistrement (dans le système de l'éditeur) auquel"
-" cette déclaration se rapporte. (Un enregistrement saisit les informations "
-"sur une entité, une personne physique ou une relation dans le réseau des "
+" cet énoncé se rapporte. (Un enregistrement saisit les informations sur une "
+"entité, une personne physique ou une relation dans le réseau des "
 "bénéficiaires effectifs d'un sujet de déclaration donné.)"
 
 #: ../../standard/reference.rst:248 9b74f6a898544506a66bdb320dce8f44
 msgid "SecuritiesListing"
-msgstr "Cotation des valeurs mobilières"
+msgstr "SecuritiesListing (CotationDesValeursMobilières)"
 
 #: ../../standard/reference.rst-1 3f0881803e4b40979d0408d85295dcc7
 msgid "Details of a security and the market on which it is traded."
@@ -426,7 +426,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:264 29597c924a9040ec9cb8ccef0b1e326d
 msgid "Share"
-msgstr "Action"
+msgstr "Share (Action)"
 
 #: ../../standard/reference.rst-1 d8bf17da63e641d18bd2d2ecb5049df6
 msgid ""
@@ -445,7 +445,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:277 cf53c1ec6d864d8f82672c05b41753f0
 msgid "Source"
-msgstr "Source"
+msgstr "Source (Source)"
 
 #: ../../standard/reference.rst-1 8d4ebf40a25a41cfa52fff6e6ba742d7
 msgid "Details describing an information source."
@@ -453,7 +453,7 @@ msgstr "Détails décrivant une source d'informations."
 
 #: ../../standard/reference.rst:291 f1cc9b2d695547eb9240fb6b8949f709
 msgid "Statement"
-msgstr "Déclaration"
+msgstr "Statement (Énoncé)"
 
 #: ../../standard/reference.rst-1 786964e76b1b424eb0fcff0f1da18dff
 msgid ""
@@ -465,7 +465,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:306 dab956dbb10545c1a6fce8ab2b1367d8
 msgid "Statement Id"
-msgstr "Identifiant de déclaration"
+msgstr "Statement Id (Identifiant d'énoncé)"
 
 #: ../../standard/reference.rst:308 30f9e3efda094a119c819061b0cb249d
 msgid ""
@@ -473,19 +473,19 @@ msgid ""
 "Ids"
 msgstr ""
 "Voir :ref:`generating-statements` pour avoir des indications sur la "
-"génération d'identifiants uniques de déclaration"
+"génération d'identifiants uniques d'énoncé"
 
 #: ../../standard/reference.rst-1 dbee3c6d06034220bb67327d4fe59de2
 msgid ""
 "A persistent globally unique identifier for this Statement. Length MUST be "
 "32 - 64 characters (inclusive)."
 msgstr ""
-"Identifiant global unique persistant de cette déclaration. La longueur DOIT "
-"être de 32 à 64 caractères (inclusive)."
+"Identifiant global unique persistant de cet énoncé. La longueur DOIT être "
+"comprise entre 32 et 64 caractères (inclusive)."
 
 #: ../../standard/reference.rst:316 106e3abb1b3d43289069c0ada26bee62
 msgid "UnspecifiedRecord"
-msgstr "Enregistrement non spécifié"
+msgstr "UnspecifiedRecord (EnregistrementNonSpécifié)"
 
 #: ../../standard/reference.rst-1 61e601e35fb34689967c17e4482eb971
 msgid "A `reason` MUST be supplied."
@@ -497,51 +497,53 @@ msgstr "Listes de codes"
 
 #: ../../standard/reference.rst:334 a4cf84d680ed4dc0bc4dbc9c6078bfa3
 msgid "Address Type"
-msgstr "Type d'adresse"
+msgstr "Address Type (Type d'adresse)"
 
 #: ../../standard/reference.rst:343 3385ae9b67ab4ea9884e11f5701b7272
 msgid "Annotation Motivation"
-msgstr "Motivation d'annotation"
+msgstr "Annotation Motivation (Motivation d'annotation)"
 
 #: ../../standard/reference.rst:352 850cb22b444c4e26810aa67058490dee
 msgid "Direct Or Indirect"
-msgstr "Directe ou indirecte"
+msgstr "Direct Or Indirect (Directe ou indirecte)"
 
 #: ../../standard/reference.rst:361 2aa4c04cafad499d908c3cfc8512627b
 msgid "Entity Type"
-msgstr "Type d'entité"
+msgstr "Entity Type (Type d'entité)"
 
 #: ../../standard/reference.rst:371 ef95ebb7952c41f5893897cae8f6b06c
 msgid "Entity Subtype"
-msgstr "Sous-type d'entité"
+msgstr "Entity Subtype (Sous-type d'entité)"
 
 #: ../../standard/reference.rst:381 cd19120e6c804e0b9be9b8c5533e0e0e
 msgid "Interest Type"
-msgstr "Type de participation"
+msgstr "Interest Type (Type de participation)"
 
 #: ../../standard/reference.rst:390 eb849185618c4f47bb5ad48ba3ca4a61
 msgid "Name Type"
-msgstr "Type de nom"
+msgstr "Name Type (Type de nom)"
 
 #: ../../standard/reference.rst:399 6c2c74050e09467f81033b567a8afb24
 msgid "Person Type"
-msgstr "Type de personne"
+msgstr "Person Type (Type de personne)"
 
 #: ../../standard/reference.rst:408 a401ee5cb2ba49b280a6c1231a2517a8
 msgid "Record Status"
-msgstr "Statut de l'enregistrement"
+msgstr "Record Status (Statut de l'enregistrement)"
 
 #: ../../standard/reference.rst:418 44ab19d8b77b43119b36dca636a999ee
 msgid "Record Type"
-msgstr "Type d'enregistrement"
+msgstr "Record Type (Type d'enregistrement)"
 
 #: ../../standard/reference.rst:427 9df1f7df207949c181654bffbe95180b
 msgid "Securities Identifier Schemes"
-msgstr "Schémas d'identification des valeurs mobilières"
+msgstr ""
+"Securities Identifier Schemes (Schémas d'identification des valeurs "
+"mobilières)"
 
 #: ../../standard/reference.rst:436 39edb35dac3e44eba7ac4078915c7d4d
 msgid "Source Type"
-msgstr "Type de source"
+msgstr "Source Type (Type de source)"
 
 #: ../../standard/reference.rst:445 e0f64334cf134225bdb4a1c9347795b0
 msgid "Unspecified Reason"
