@@ -66,7 +66,7 @@ msgstr ""
 #: docs/_assets/trust-scenario6.svg:889
 #, no-wrap
 msgid "Entity statement"
-msgstr "Déclaration d'entité"
+msgstr "Énoncé d'entité"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/AlphaBeta.svg:405 docs/_assets/AlphaBeta.svg:422
@@ -218,7 +218,7 @@ msgstr "Relation indirecte"
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:565
 #, no-wrap
 msgid "Statement and relevant properties"
-msgstr "Déclaration et propriétés concernées"
+msgstr "Énoncé et propriétés concernées"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:639
@@ -239,7 +239,7 @@ msgstr "Déclaration et propriétés concernées"
 #: docs/_assets/trust-scenario6.svg:845
 #, no-wrap
 msgid "Person statement"
-msgstr "Déclaration de personne physique"
+msgstr "Énoncé de personne physique"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:661
@@ -274,7 +274,7 @@ msgstr "Déclaration de personne physique"
 #: docs/_assets/trust-scenario6.svg:818 docs/_assets/trust-scenario6.svg:856
 #, no-wrap
 msgid "Relationship statement"
-msgstr "Déclaration de relation"
+msgstr "Énoncé de relation"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:677

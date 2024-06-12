@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../index.rst:2 fc13bceebec2410c8e7da1650e465254
 msgid "Beneficial Ownership Data Standard (v0.4)"
-msgstr "Norme de données sur la propriété effective (version 0.4)"
+msgstr "Norme relative aux données sur la propriété effective (version 0.4)"
 
 #: ../../index.rst:4 bcdb8d77de3240b5baa001a40c5abd3d
 msgid ""
@@ -31,10 +31,10 @@ msgid ""
 "guidance for collecting, sharing and using high-quality beneficial ownership"
 " data."
 msgstr ""
-"La norme de données sur la propriété effective (« Beneficial Ownership Data "
-"Standard » ou BODS) est une norme ouverte fournissant des conseils quant à "
-"la collecte, au partage et à l'utilisation de données sur la propriété "
-"effective de qualité supérieure."
+"La norme relative aux données sur la propriété effective (« Beneficial "
+"Ownership Data Standard » ou BODS) est une norme ouverte fournissant des "
+"conseils quant à la collecte, au partage et à l'utilisation de données sur "
+"la propriété effective de qualité supérieure."
 
 #: ../../index.rst:6 be031c1dc1de4bcaa66bffd88cb94668
 msgid ""
@@ -69,7 +69,7 @@ msgstr ":ref:`Qu'est-ce que la propriété effective ? <primer>`"
 
 #: ../../index.rst:22 85dfef5cf3824d3ab341ee16465a3b28
 msgid ":ref:`What is the data standard? <whatisbods>`"
-msgstr ":ref:`Qu'est-ce que la norme de données ? <whatisbods>`"
+msgstr ":ref:`Qu'est-ce que la norme relative aux données ? <whatisbods>`"
 
 #: ../../index.rst:26 f3879e8d222740548009cab83cfa2fb1
 msgid ":ref:`About the standard's development <about>`"

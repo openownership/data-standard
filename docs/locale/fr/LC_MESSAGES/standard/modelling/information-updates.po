@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Cécile Guarin, 2024
 # Rachel Vint, 2024
+# Cécile Guarin, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Cécile Guarin, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,11 +59,11 @@ msgid ""
 "are changed or confirmed. See :ref:`generating-statements` for further "
 "requirements."
 msgstr ""
-"Une nouvelle déclaration de la norme BODS doit être générée pour un élément "
-"(c'est-à-dire une entité, une personne ou une relation) du réseau des "
-"bénéficiaires effectifs d'un sujet lorsque ses informations sont modifiées "
-"ou confirmées. Consultez la section :ref:`generating-statements` pour "
-"connaître les exigences supplémentaires."
+"Un nouvel énoncé de la norme BODS doit être généré pour un élément (c'est-à-"
+"dire une entité, une personne ou une relation) du réseau des bénéficiaires "
+"effectifs d'un sujet lorsque ses informations sont modifiées ou confirmées. "
+"Consultez la section :ref:`generating-statements` pour connaître les "
+"exigences supplémentaires."
 
 #: ../../standard/modelling/information-updates.rst:13
 #: 9f424dee98a74441b1b66cb0cbb99b38
@@ -76,8 +76,8 @@ msgstr ""
 "Le champ ``recordId`` du sujet de chaque réseau des bénéficiaires effectifs "
 "doit être stable dans le temps. En d'autres termes, lorsque les informations"
 " sur le sujet du réseau des bénéficiaires effectifs sont modifiées ou "
-"confirmées, la nouvelle déclaration générée doit contenir le même champ "
-"``recordId`` que dans la déclaration obsolète."
+"confirmées, le nouvel énoncé généré doit contenir le même champ ``recordId``"
+" que dans l'énoncé obsolète."
 
 #: ../../standard/modelling/information-updates.rst:15
 #: c96002ddc0f64654b5a4ba1a90d55db0
@@ -86,10 +86,9 @@ msgid ""
 "declared beneficial ownership network, at any point in time, MUST contain "
 "the subject's ``recordId`` as its ``declarationSubject``."
 msgstr ""
-"Chaque déclaration de la norme BODS, qui est émise à tout moment en lien "
-"avec tout élément d'un réseau des bénéficiaires effectifs déclaré d'un "
-"sujet, doit contenir le champ ``recordId`` du sujet en tant que "
-"``declarationSubject``."
+"Chaque énoncé de la norme BODS, qui est émis à tout moment en lien avec tout"
+" élément d'un réseau des bénéficiaires effectifs déclaré d'un sujet, doit "
+"contenir le champ ``recordId`` du sujet en tant que ``declarationSubject``."
 
 #: ../../standard/modelling/information-updates.rst:17
 #: 70e36bdaf6c84dcebeb56b75ace94283
@@ -122,7 +121,7 @@ msgid ""
 msgstr ""
 "Le cycle de vie d'un enregistrement concernant un élément (c'est-à-dire une "
 "entité, une personne ou une relation) au sein d'un réseau des bénéficiaires "
-"effectifs est représenté par une série de déclarations :"
+"effectifs est représenté par une série d'énoncés :"
 
 #: ../../standard/modelling/information-updates.rst:27
 #: 378fe2a99bfd4ae9898469e4839de716
@@ -134,9 +133,8 @@ msgid ""
 msgstr ""
 "Le champ ``recordId`` de chaque élément d'un réseau des bénéficiaires "
 "effectifs doit être stable dans le temps. En d'autres termes, lorsque les "
-"informations d'un élément sont modifiées ou confirmées, la nouvelle "
-"déclaration générée doit contenir le même champ ``recordId`` que dans la "
-"déclaration obsolète."
+"informations d'un élément sont modifiées ou confirmées, le nouvel énoncé "
+"généré doit contenir le même champ ``recordId`` que dans l'énoncé obsolète."
 
 #: ../../standard/modelling/information-updates.rst:29
 #: 3c8cd0a9072241a7a4ddb5d2d65ab509
@@ -147,14 +145,13 @@ msgid ""
 "MUST be 'updated'. When the element is no longer a part of the beneficial "
 "ownership network, in the new Statement ``recordStatus`` MUST be 'closed'."
 msgstr ""
-"Lorsqu'une déclaration est publiée pour la première à propos d'un élément "
-"dans un réseau des bénéficiaires effectifs, le champ ``recordStatus`` doit "
-"être configuré sur 'new' (nouveau). Lorsque les informations de l'élément "
-"sont modifiées ou confirmées, le champ ``recordStatus`` dans la nouvelle "
-"déclaration doit être configuré sur 'updated' (actualisé). Quand l'élément "
-"ne fait plus partie d'un réseau des bénéficiaires effectifs, le champ "
-"``recordStatus`` dans la nouvelle déclaration doit être configuré sur "
-"'closed' (clôturé)."
+"Lorsqu'un énoncé est publié pour la première à propos d'un élément dans un "
+"réseau des bénéficiaires effectifs, le champ ``recordStatus`` doit être "
+"configuré sur 'new' (nouveau). Lorsque les informations de l'élément sont "
+"modifiées ou confirmées, le champ ``recordStatus`` dans le nouvel énoncé "
+"doit être configuré sur 'updated' (actualisé). Quand l'élément ne fait plus "
+"partie d'un réseau des bénéficiaires effectifs, le champ ``recordStatus`` "
+"dans le nouvel énoncé doit être configuré sur 'closed' (clôturé)."
 
 #: ../../standard/modelling/information-updates.rst:31
 #: 81c19e5abb61442c92d066552c8f489d
@@ -164,9 +161,9 @@ msgid ""
 "in the outdated Statement and with ``recordStatus`` 'updated'."
 msgstr ""
 "Lorsque les informations d'un élément n'ont pas été modifiées, mais que leur"
-" exactitude a été confirmée, une nouvelle déclaration doit être générée avec"
-" le même champ ``recordId`` que dans la déclaration obsolète et le champ "
-"``recordStatus`` doit être configuré sur` 'updated' (acualisé)."
+" exactitude a été confirmée, un nouvel énoncé doit être généré avec le même "
+"champ ``recordId`` que dans l'énoncé obsolète et le champ ``recordStatus`` "
+"doit être configuré sur` 'updated' (acualisé)."
 
 #: ../../standard/modelling/information-updates.rst:33
 #: 53774796ba4c461dbba217d7c337da79
@@ -174,9 +171,8 @@ msgid ""
 "Once a series of Statements about a given element is closed, further "
 "Statements with the related ``recordId`` MUST NOT be generated."
 msgstr ""
-"Lorsqu'une série de déclarations sur un élément donné est clôturée, les "
-"déclarations suivantes avec un champ ``recordId`` connexe ne doivent pas "
-"être générées."
+"Lorsqu'une série d'énoncés sur un élément donné est clôturée, les énoncés "
+"suivants avec un champ ``recordId`` connexe ne doivent pas être générés."
 
 #: ../../standard/modelling/information-updates.rst:35
 #: ede83e5b90884fd58dcef824d76ce726
@@ -224,9 +220,9 @@ msgid ""
 "``publicationDetails.publicationDate``."
 msgstr ""
 "Dans tous les cas, les erreurs doivent être corrigées en émettant de "
-"nouvelles déclarations avec une :any:`annotation <schema-annotation>` "
-"contenant un champ ``motivation`` configuré sur 'correcting' (correction) et"
-" un champ ``description`` de la correction ainsi qu'un champ "
+"nouveaux énoncés avec une :any:`annotation <schema-annotation>` contenant un"
+" champ ``motivation`` configuré sur 'correcting' (correction) et un champ "
+"``description`` de la correction ainsi qu'un champ "
 "``publicationDetails.publicationDate`` mis à jour."
 
 #: ../../standard/modelling/information-updates.rst:48
@@ -246,6 +242,6 @@ msgid ""
 "Statement MAY be republished with the same statement identifier and updated "
 "property values."
 msgstr ""
-"Si des informations sensibles sont accidentellement divulguées dans une "
-"déclaration, cette dernière peut être republiée avec le même identifiant de "
-"déclaration et des valeurs de propriété actualisées."
+"Si des informations sensibles sont accidentellement divulguées dans un "
+"énoncé, ce dernier peut être republié avec le même identifiant d'énoncé et "
+"des valeurs de propriété actualisées."

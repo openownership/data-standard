@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    version="1.1"
-   viewBox="0.0 0.0 710.5721784776903 438.61679790026244"
+   viewBox="0 0 710.57218 438.6168"
    fill="none"
    stroke="none"
    stroke-linecap="square"
    stroke-miterlimit="10"
    id="svg1077"
    sodipodi:docname="trust-scenario1.svg"
-   inkscape:version="1.3.1 (6036e22fae, 2023-11-19, custom)"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   width="100%"
+   height="100%"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -28,9 +30,9 @@
      showgrid="false"
      inkscape:zoom="1.5218496"
      inkscape:cx="389.65743"
-     inkscape:cy="213.88447"
-     inkscape:window-width="1920"
-     inkscape:window-height="1043"
+     inkscape:cy="213.55593"
+     inkscape:window-width="3770"
+     inkscape:window-height="2096"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -39,7 +41,7 @@
   <clipPath
      id="p.0">
     <path
-       d="m0 0l710.5722 0l0 438.6168l-710.5722 0l0 -438.6168z"
+       d="M 0,0 H 710.5722 V 438.6168 H 0 Z"
        clip-rule="nonzero"
        id="path956" />
   </clipPath>
@@ -48,8 +50,8 @@
      id="g1075">
     <path
        fill="#000000"
-       fill-opacity="0.0"
-       d="m0 0l710.5722 0l0 438.6168l-710.5722 0z"
+       fill-opacity="0"
+       d="M 0,0 H 710.5722 V 438.6168 H 0 Z"
        fill-rule="evenodd"
        id="path959" />
     <path
@@ -473,48 +475,53 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end">Entity statement</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:end;text-anchor:end;fill:#000000"
-       x="642.80518"
-       y="184.17285"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#000000"
+       x="503.53763"
+       y="183.57993"
        id="text747-1"><tspan
          sodipodi:role="line"
          id="tspan745-2"
-         x="642.80518"
-         y="184.17285"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end">Relationship statement</tspan></text>
+         x="503.53763"
+         y="183.57993"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">Relationship statement</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:end;text-anchor:end;fill:#000000"
-       x="642.80518"
-       y="46.070492"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#000000"
+       x="529.32434"
+       y="31.427027"
        id="text747-1-8"><tspan
          sodipodi:role="line"
          id="tspan745-2-7"
-         x="642.80518"
-         y="46.070492"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end">Person statement</tspan></text>
+         x="529.32434"
+         y="31.427027"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">Person </tspan><tspan
+         sodipodi:role="line"
+         x="529.32434"
+         y="44.877487"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
+         id="tspan3">statement</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:end;text-anchor:end;fill:#000000"
-       x="439.62668"
-       y="184.17285"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#000000"
+       x="298.76517"
+       y="182.97929"
        id="text747-1-0"><tspan
          sodipodi:role="line"
          id="tspan745-2-6"
-         x="439.62668"
-         y="184.17285"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end">Relationship statement</tspan></text>
+         x="298.76517"
+         y="182.97929"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">Relationship statement</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:end;text-anchor:end;fill:#000000"
-       x="236.44821"
-       y="184.17285"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#000000"
+       x="96.559517"
+       y="183.27448"
        id="text747-1-2"><tspan
          sodipodi:role="line"
          id="tspan745-2-61"
-         x="236.44821"
-         y="184.17285"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end">Relationship statement</tspan></text>
+         x="96.559517"
+         y="183.27448"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">Relationship statement</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000"
@@ -581,26 +588,36 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">beneficiary</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:end;text-anchor:end;fill:#000000"
-       x="440.12668"
-       y="46.070492"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#000000"
+       x="322.90866"
+       y="31.637501"
        id="text747-1-8-9"><tspan
          sodipodi:role="line"
          id="tspan745-2-7-2"
-         x="440.12668"
-         y="46.070492"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end">Person statement</tspan></text>
+         x="322.90866"
+         y="31.637501"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">Person </tspan><tspan
+         sodipodi:role="line"
+         x="322.90866"
+         y="45.087963"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
+         id="tspan2">statement</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:end;text-anchor:end;fill:#000000"
-       x="236.4482"
-       y="46.070492"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#000000"
+       x="116.47087"
+       y="31.521997"
        id="text747-1-8-0"><tspan
          sodipodi:role="line"
-         id="tspan745-2-7-23"
-         x="236.4482"
-         y="46.070492"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end">Person statement</tspan></text>
+         x="116.47087"
+         y="31.521997"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
+         id="tspan1">Person </tspan><tspan
+         sodipodi:role="line"
+         x="116.47087"
+         y="44.972458"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
+         id="tspan4">statement</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000"
