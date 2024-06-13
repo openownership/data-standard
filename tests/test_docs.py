@@ -71,9 +71,3 @@ def test_examples_valid_bods(bods_validator, bods_json):
     error_msgs = "; ".join(error_msgs)
 
     assert is_valid, f"Validation error: {error_msgs}"
-
-
-def test_docs():
-    # TODO
-    # check the docs build
-    pass
