@@ -6,6 +6,7 @@
 # Translators:
 # Galia Williams, 2022
 # Kateryna Volobuieva, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,7 +45,7 @@ msgid ""
 "sharing and using beneficial ownership data."
 msgstr ""
 "Разработка СДБВ отвечает расширяющимся потребностям тех, кто занимается "
-"сбором, предоставлением и использованием данных о бенефициарном владении."
+"сбором, публикацией и использованием данных о бенефициарном владении."
 
 #: ../../about/governance.rst:8 34142492ba924560b029eb0470a43cb3
 msgid ""
@@ -68,7 +69,7 @@ msgstr ""
 
 #: ../../about/governance.rst:14 f33bb88d817144f18411f0dbdb82944f
 msgid "Feature requests and bug reports"
-msgstr "Запросы на добавление функций и отчеты об ошибках"
+msgstr "Запросы на добавление функций и сообщениях об ошибках"
 
 #: ../../about/governance.rst:16 250ac98febb44225bacc3ce08127e885
 msgid ""
@@ -78,7 +79,7 @@ msgid ""
 "<https://github.com/openownership/data-standard/>`_."
 msgstr ""
 "Чтобы предложить внесение изменений или исправлений, необходимо подать "
-"запрос на добавление функции СДБВ или отчет об ошибке, воспользовавшись "
+"запрос на добавление функции СДБВ или сообщение об ошибке, воспользовавшись "
 "`шаблонами проблем <https://github.com/openownership/data-"
 "standard/issues/new/choose>`_, доступными в `репозитории GitHub для СДБВ "
 "<https://github.com/openownership/data-standard/>`_."
@@ -89,8 +90,8 @@ msgid ""
 "requests or bug reports via comments on the Github issue."
 msgstr ""
 "Open Ownership и Open Data Services ответят на все поданные участниками "
-"запросы на добавление функций или отчеты об ошибках посредством комментариев"
-" к проблеме на Github."
+"запросы на добавление функций или сообщения об ошибках посредством "
+"комментариев к проблеме на Github."
 
 #: ../../about/governance.rst:21 353be43ce2374a69a563956467d062fd
 msgid "Feature development"
@@ -151,7 +152,7 @@ msgstr ""
 
 #: ../../about/governance.rst:32 6e9323319e2f416d8cc5025fdb315a3f
 msgid "Release tracking"
-msgstr "Отслеживание публикации"
+msgstr "Отслеживание релизов"
 
 #: ../../about/governance.rst:34 851f4fe161d64cbe8792e61262381b6d
 msgid ""
@@ -164,11 +165,11 @@ msgid ""
 "<https://github.com/orgs/openownership/projects/4/views/1>`_."
 msgstr ""
 "Для каждой новой версии СДБВ организации Open Ownership и Open Data Services"
-" создают трекер публикаций как `проект "
+" создают трекер релиза как `проект "
 "<https://github.com/orgs/openownership/projects>`_ `GitHub-команды Open "
 "Ownership <https://github.com/openownership>`_, чтобы фиксировать функции, "
 "исправления ошибок, изменения и обновления, которые вносятся в новую версию."
-" `Трекер публикаций для версии 0.4 СДБВ находится по ссылке "
+" `Трекер релиза для версии 0.4 СДБВ находится по ссылке "
 "<https://github.com/orgs/openownership/projects/4/views/1>`_."
 
 #: ../../about/governance.rst:39 c799e349b61c41db96eb7ed1d3bec34c

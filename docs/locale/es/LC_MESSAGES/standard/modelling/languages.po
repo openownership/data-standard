@@ -6,6 +6,7 @@
 # Translators:
 # Carmen Edery, 2024
 # María Renée Briozzo Mitchell, 2024
+# Renzo Lavin <renlavin@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
+"Last-Translator: Renzo Lavin <renlavin@gmail.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +33,7 @@ msgid ""
 "languages or scripts. BODS provides options for representing translated or "
 "transliterated information."
 msgstr ""
-"Es posible que la información de titularidad del beneficiario real deba "
+"Es posible que la información sobre beneficiarios finales deba "
 "proporcionarse en diferentes idiomas o scripts. El BODS ofrece opciones para"
 " representar la información traducida o transliterada."
 

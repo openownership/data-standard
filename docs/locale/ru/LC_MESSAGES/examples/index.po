@@ -7,6 +7,7 @@
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
 # Rachel Vint, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +34,7 @@ msgid ""
 " information is built up through the use of statements."
 msgstr ""
 "В этих вымышленных примерах показаны ключевые аспекты того, как формируется "
-"информация о владении и контроле через использование записей."
+"информация о владении и контроле при помощи характеристик."
 
 #: ../../examples/index.rst:11 1fa151b77f7d41f99dcbd2a513f05a80
 msgid "A single, direct beneficial owner"
@@ -45,9 +46,9 @@ msgid ""
 "beneficial ownership (and 100% legal ownership) of Profitech Ltd by Jennifer"
 " Hewitson-Smith."
 msgstr ""
-"Три записи (субъект, физическое лицо и отношения), которые описывают "
-"бенефициарное владение (и 100%-ное юридическое владение) компанией Profitech"
-" Ltd, осуществляемое Дженнифер Хьюитсон-Смит."
+"Три характеристики (о субъекте, физическом лице и отношениях), которые "
+"описывают бенефициарное владение (и 100%-ное юридическое владение) компанией"
+" Profitech Ltd, осуществляемое Дженнифер Хьюитсон-Смит."
 
 #: ../../examples/index.rst:21 c5474214dbd64bacbac298e91314ca3d
 msgid "A trust-like arrangement"
@@ -69,15 +70,16 @@ msgstr ""
 #: ../../examples/index.rst:31 1a6ff90a6d624df39f6ef258501d4ac6
 msgid "An entity statement for a listed company"
 msgstr ""
-"Запись о субъекте в отношении компании, зарегистрированной на фондовой бирже"
+"Характеристика субъекта о компании, зарегистрированной на фондовой бирже"
 
 #: ../../examples/index.rst:33 58763970f5fd45d4a66160fe70ff53fc
 msgid ""
 "This statement demonstrates how the details of a listed company can be "
 "published in BODS format."
 msgstr ""
-"Эта запись демонстрирует, как сведения о компании, зарегистрированной на "
-"фондовой бирже, могут быть опубликованы в формате СДБВ."
+"Эта характеристика демонстрирует, как сведения о компании, "
+"зарегистрированной на фондовой бирже, могут быть опубликованы в формате "
+"СДБВ."
 
 #: ../../examples/index.rst:39 ac9303ea413d47b28daef39c7d4401b4
 msgid "Updating information over time 1"
@@ -111,7 +113,7 @@ msgstr "**Хронология**"
 #: ../../examples/index.rst:51 ../../examples/index.rst:80
 #: 59cc7b14ba1b4e93be42df2b06528a27 fda434e6f71a4910b423c948562fa2d8
 msgid "Statement Date"
-msgstr "Дата записи"
+msgstr "Дата характеристики"
 
 #: ../../examples/index.rst:52 f71d5d49953d4444bd710cd0366bf33c
 msgid "Declaration"
@@ -217,7 +219,7 @@ msgid ""
 "the company."
 msgstr ""
 "Компания Fermcat зарегистрирована на двух бенефициарных владельцев, каждый "
-"из которых владеет 50%-ной долей в компании."
+"из которых владеет 50% компании."
 
 #: ../../examples/index.rst:84 369957c7cfb8478bb0dc24a98d818980
 msgid "2020-09-11"
@@ -245,7 +247,8 @@ msgstr ""
 "В апреле 2021 г. один из владельцев умирает, и его акции переходят к его "
 "близкому родственнику. Когда начинается ежегодная процедура подтверждения, "
 "бухгалтеру компании Fermcat предлагается внести в реестр это изменение. "
-"После обновления данных в реестре она регистрирует запись о подтверждении."
+"После обновления данных в реестре она регистрирует заявление о "
+"подтверждении."
 
 #: ../../examples/index.rst:88 e950c2d3ce2b441ca8491e803a58e1f7
 msgid "2022-01-21"
@@ -271,7 +274,7 @@ msgid ""
 msgstr ""
 "В репозитории стандарта есть и другие примеры корректных JSON-файлов СДБВ. "
 "Эти примеры демонстрируют отображение косвенного владения, использование "
-"примечаний и отображение информации о государственных прредприятиях."
+"примечаний и отображение информации о государственных предприятиях."
 
 #: ../../examples/index.rst:96 de00e70daac248dfa5fa312d1f6b6b6a
 msgid ""

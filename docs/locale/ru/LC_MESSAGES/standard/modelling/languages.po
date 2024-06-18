@@ -4,8 +4,9 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Kateryna Volobuieva, 2024
 # Rachel Vint, 2024
+# Kateryna Volobuieva, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +25,7 @@ msgstr ""
 
 #: ../../standard/modelling/languages.rst:2 8a42b55124a641859a156f212f26f350
 msgid "Representing alternative languages"
-msgstr "Отображение альтернативных языков"
+msgstr "Представление альтернативных языков"
 
 #: ../../standard/modelling/languages.rst:4 a0fe30292611498281cc9335168a0cf8
 msgid ""
@@ -34,19 +35,19 @@ msgid ""
 msgstr ""
 "Иногда информацию о бенефициарном владении необходимо предоставлять на "
 "других языках или в другом написании. СДБВ предусматривает варианты "
-"отображения переведенной или преобразованной информации."
+"отображения переведенной или транслитерированной информации."
 
 #: ../../standard/modelling/languages.rst:6 c6c1c406cbf3439abcfe54c2e88ef5b7
 msgid "To represent:"
-msgstr "Для отображения:"
+msgstr "Для представления:"
 
 #: ../../standard/modelling/languages.rst:8 6382fbedc1c549b2b6b398b1b7cfda0b
 msgid ""
 "people’s names, use an entry in the names array with ``name.type`` "
 "‘translation’ or ‘transliteration’"
 msgstr ""
-"ФИО физических лиц используйте элемент в массиве names, у которого параметр "
-"``name.type`` имеет значение ‘translation’ (перевод) или ‘transliteration’ "
+"Имен физических лиц используйте элемент в массиве names, у которого свойство"
+" ``name.type`` имеет значение ‘translation’ (перевод) или ‘transliteration’ "
 "(транслитерация);"
 
 #: ../../standard/modelling/languages.rst:10 413423e90b43493f9ce5398af9eec3ae
@@ -64,7 +65,7 @@ msgstr "типов долей участия используйте поле ``i
 
 #: ../../standard/modelling/languages.rst:16 af6152cc36894ae5b87cc55cdb6247ca
 msgid "For other fields or entire records, use an annotation."
-msgstr "Для других полей или целых элементов используйте примечание."
+msgstr "Для других полей или целых записей используйте примечание."
 
 #: ../../standard/modelling/languages.rst:18 3baabe77bc16490e8db6ca15b90b66fe
 msgid "In the annotation:"
@@ -73,7 +74,7 @@ msgstr "В примечании:"
 #: ../../standard/modelling/languages.rst:20 dd0d2e55cdbd436fbb60124a4bbcb4cc
 msgid "``motivation`` MUST be ‘transformation’"
 msgstr ""
-"параметр ``motivation`` ДОЛЖЕН иметь значение ‘transformation’ "
+"свойство ``motivation`` ДОЛЖНО иметь значение ‘transformation’ "
 "(преобразование);"
 
 #: ../../standard/modelling/languages.rst:22 548ad5151e9e489fb87c89880ad8461b

@@ -28,9 +28,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="1.5218496"
-     inkscape:cx="389.65743"
-     inkscape:cy="213.55593"
+     inkscape:zoom="4.3044407"
+     inkscape:cx="380.88572"
+     inkscape:cy="170.75389"
      inkscape:window-width="3770"
      inkscape:window-height="2096"
      inkscape:window-x="0"
@@ -56,41 +56,44 @@
        id="path959" />
     <path
        fill="#efefef"
-       d="m 498.72702,48.69029 h 144.00003 v 48 H 498.72702 Z"
+       d="M 498.72702,37.91744 H 642.72705 V 96.69029 H 498.72702 Z"
        fill-rule="evenodd"
-       id="path961" />
+       id="path961"
+       style="stroke-width:1.10654" />
     <path
        stroke="#000000"
-       stroke-width="1"
+       stroke-width="1.10718"
        stroke-linejoin="round"
        stroke-linecap="butt"
-       d="m 498.72702,48.69029 h 144.00003 v 48 H 498.72702 Z"
+       d="M 498.78061,37.752324 H 642.67346 V 96.636701 H 498.78061 Z"
        fill-rule="evenodd"
        id="path963" />
     <path
        fill="#efefef"
-       d="m 295.54855,48.69029 h 144 v 48 h -144 z"
+       d="m 295.54855,37.990039 h 144 V 96.69029 h -144 z"
        fill-rule="evenodd"
-       id="path965" />
+       id="path965"
+       style="stroke-width:1.10586" />
     <path
        stroke="#000000"
-       stroke-width="1"
+       stroke-width="1.10895"
        stroke-linejoin="round"
        stroke-linecap="butt"
-       d="m 295.54855,48.69029 h 144 v 48 h -144 z"
+       d="M 295.60303,37.56173 H 439.49407 V 96.635813 H 295.60303 Z"
        fill-rule="evenodd"
        id="path967" />
     <path
        fill="#efefef"
-       d="m 92.37008,48.69029 h 144 v 48 h -144 z"
+       d="m 92.37008,37.470953 h 144 V 96.69029 h -144 z"
        fill-rule="evenodd"
-       id="path969" />
+       id="path969"
+       style="stroke-width:1.11074" />
     <path
        stroke="#000000"
-       stroke-width="1"
+       stroke-width="1.1085"
        stroke-linejoin="round"
        stroke-linecap="butt"
-       d="m 92.37008,48.69029 h 144 v 48 h -144 z"
+       d="m 92.42433,37.610508 h 143.8915 V 96.63604 H 92.42433 Z"
        fill-rule="evenodd"
        id="path971" />
     <path
@@ -487,14 +490,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#000000"
-       x="528.11279"
-       y="44.158245"
+       x="640.64172"
+       y="33.859104"
        id="text747-1-8"><tspan
-         sodipodi:role="line"
-         x="528.11279"
-         y="44.158245"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
-         id="tspan3">Person statement</tspan></text>
+         x="640.64172"
+         y="33.859104"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+         id="tspan3"
+         sodipodi:role="line">Person statement</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#000000"
@@ -520,17 +523,17 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000"
-       x="133.83046"
-       y="69.414841"
+       x="133.63989"
+       y="64.009811"
        id="text330"><tspan
          sodipodi:role="line"
-         x="133.83046"
-         y="69.414841"
+         x="133.63989"
+         y="64.009811"
          id="tspan332"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">personType:</tspan><tspan
          sodipodi:role="line"
-         x="133.83046"
-         y="84.414841"
+         x="133.63989"
+         y="79.009811"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
          id="tspan1614">knownPerson</tspan></text>
     <text
@@ -584,55 +587,55 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#000000"
-       x="322.02313"
-       y="43.878464"
+       x="437.37619"
+       y="34.057571"
        id="text747-1-8-9"><tspan
          sodipodi:role="line"
-         x="322.02313"
-         y="43.878464"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
+         x="437.37619"
+         y="34.057571"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
          id="tspan2">Person statement</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Courier New';-inkscape-font-specification:'Courier New';text-align:start;text-anchor:start;fill:#000000"
-       x="117.61822"
-       y="43.945202"
+       x="234.46501"
+       y="33.834824"
        id="text747-1-8-0"><tspan
          sodipodi:role="line"
-         x="117.61822"
-         y="43.945202"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
+         x="234.46501"
+         y="33.834824"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
          id="tspan4">Person statement</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000"
-       x="336.81418"
-       y="69.414841"
+       x="335.94208"
+       y="63.468945"
        id="text330-92"><tspan
          sodipodi:role="line"
-         x="336.81418"
-         y="69.414841"
+         x="335.94208"
+         y="63.468945"
          id="tspan332-2"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">personType:</tspan><tspan
          sodipodi:role="line"
-         x="336.81418"
-         y="84.414841"
+         x="335.94208"
+         y="78.468948"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
          id="tspan1614-4">knownPerson</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-anchor:middle;fill:#000000"
-       x="541.66193"
-       y="69.414841"
+       x="542.55762"
+       y="63.678577"
        id="text330-77"><tspan
          sodipodi:role="line"
-         x="541.66193"
-         y="69.414841"
+         x="542.55762"
+         y="63.678577"
          id="tspan332-54"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start">personType:</tspan><tspan
          sodipodi:role="line"
-         x="541.66193"
-         y="84.414841"
+         x="542.55762"
+         y="78.678574"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-anchor:start"
          id="tspan1614-8">knownPerson</tspan></text>
   </g>

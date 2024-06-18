@@ -7,6 +7,7 @@
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
 # María Renée Briozzo Mitchell, 2024
+# Renzo Lavin <renlavin@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
+"Last-Translator: Renzo Lavin <renlavin@gmail.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -123,7 +124,7 @@ msgstr ""
 "esquema JSON y con requisitos adicionales que pueden validarse de forma "
 "programática, pero no se incluyen en el esquema. Por ejemplo, verifica que "
 "los identificadores de registro en los campos ``subject`` e "
-"``interestedParty`` de las declaraciones sobre relación aparezcan en al "
-"menos una declaración en otro lugar en el arreglo de datos JSON del BODS. La"
-" Herramienta de revisión de datos puede ingerir datos serializados como JSON"
+"``interestedParty`` de los enunciados sobre relación aparezcan en al menos "
+"un enunciado en otro lugar en el arreglo de datos JSON del BODS. La "
+"Herramienta de revisión de datos puede procesar datos serializados como JSON"
 " y en forma tabular."

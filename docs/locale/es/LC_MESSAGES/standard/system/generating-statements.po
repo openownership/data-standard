@@ -5,7 +5,6 @@
 # 
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
-# Carmen Edery, 2024
 # María Renée Briozzo Mitchell, 2024
 # 
 #, fuzzy
@@ -26,7 +25,7 @@ msgstr ""
 #: ../../standard/system/generating-statements.rst:4
 #: b79b109ce85d4e4680967ab9fdd19abd
 msgid "Generating statements"
-msgstr "Generación de declaraciones"
+msgstr "Generación de enunciados"
 
 #: ../../standard/system/generating-statements.rst:6
 #: 47583a932f5e4bb09fcd0fbe8657b894
@@ -36,10 +35,10 @@ msgid ""
 "(``statementId``) and different property values. See :ref:`information-"
 "updates` for more information."
 msgstr ""
-"Las declaraciones DEBERÍAN tratarse como inalterables: una vez que se "
-"publica una declaración, NO DEBERÍA volver a publicarse con el mismo "
-"identificador de declaración (``statementId``) y diferentes valores de "
-"propiedad. Consulte :ref:`information-updates` para obtener más información."
+"Los enunciados DEBERÍAN tratarse como inalterables: una vez que se publica "
+"un enunciado, NO DEBERÍA volver a publicarse con el mismo identificador de "
+"enunciado (``statementId``) y diferentes valores de propiedad. Consulte "
+":ref:`information-updates` para obtener más información."
 
 #: ../../standard/system/generating-statements.rst:8
 #: 658194ae9f2249a7a157a8b881e1c1f5
@@ -47,9 +46,9 @@ msgid ""
 "Each Statement MUST have a unique statement identifier. There MUST NOT be a "
 "possibility of collision between identifiers for different Statements."
 msgstr ""
-"Cada declaración DEBE tener un identificador de declaración único. NO DEBE "
-"haber una posibilidad de colisión entre identificadores para diferentes "
-"declaraciones."
+"Cada enunciado DEBE tener un identificador de enunciado único. NO DEBE haber"
+" una posibilidad de colisión entre identificadores para diferentes "
+"enunciados."
 
 #: ../../standard/system/generating-statements.rst:10
 #: 54f8a2d09e5f4a68b37351e59547b6f9
@@ -60,7 +59,7 @@ msgstr "Esto implica que:"
 #: dafbc5730b314cc3a61864e677715056
 msgid "two **different** Statements SHOULD never have the same identifier"
 msgstr ""
-"dos declaraciones **diferentes** nunca DEBERÍAN tener el mismo identificador"
+"dos enunciados **diferentes** nunca DEBERÍAN tener el mismo identificador"
 
 #: ../../standard/system/generating-statements.rst:13
 #: 372d2fdc2e074622bd5a803325fd2cc9
@@ -68,8 +67,8 @@ msgid ""
 "once an identifier is assigned to a Statement, the identifier SHOULD NOT "
 "change."
 msgstr ""
-"una vez que se asigna un identificador a una declaración, el identificador "
-"NO DEBERÍA cambiar."
+"una vez que se asigna un identificador a un enunciado, el identificador NO "
+"DEBERÍA cambiar."
 
 #: ../../standard/system/generating-statements.rst:15
 #: 62b986bb80e149eebf9ed4cf3b147452
@@ -78,8 +77,7 @@ msgid ""
 "and maximum length of 64 characters."
 msgstr ""
 "El esquema impone una longitud mínima de 32 caracteres para los "
-"identificadores de las declaraciones, y una longitud máxima de 64 "
-"caracteres."
+"identificadores de los enunciados, y una longitud máxima de 64 caracteres."
 
 #: ../../standard/system/generating-statements.rst:17
 #: 048fd7c37f7d46fea60fa4a12ee277fa
@@ -89,8 +87,8 @@ msgid ""
 "contrast to :ref:`entity or person identifiers <guidance-identifiers>`, "
 "which are useful to display to users."
 msgstr ""
-"Los identificadores de declaración suelen ser para uso interno dentro de las"
-" aplicaciones. En la mayoría de las circunstancias, no necesitan ser "
+"Los identificadores de enunciado suelen ser para uso interno dentro de las "
+"aplicaciones. En la mayoría de las circunstancias, no necesitan ser "
 "mostrados a los usuarios. Esto los diferencia de los :ref:`identificadores "
 "de entidad o persona <guidance-identifiers>`, que son útiles cuando son "
 "mostrados a los usuarios."
@@ -98,7 +96,7 @@ msgstr ""
 #: ../../standard/system/generating-statements.rst:20
 #: 88445e549b714e8b86fa2cd8678814ad
 msgid "Strategies for statement identifier creation"
-msgstr "Estrategias para la creación de identificadores de declaración"
+msgstr "Estrategias para la creación de identificadores de enunciado"
 
 #: ../../standard/system/generating-statements.rst:22
 #: ca9dc2a04b5c4905ba1adb861573fd2c
@@ -107,7 +105,7 @@ msgid ""
 "identifiers."
 msgstr ""
 "Los publicadores PUEDEN usar una de las siguientes estrategias para crear "
-"identificadores de declaración."
+"identificadores de enunciado."
 
 #: ../../standard/system/generating-statements.rst:24
 #: b3490008113745ffbc7a47effd16bc6a
@@ -118,8 +116,8 @@ msgid ""
 "Update it whenever the relevant record is updated."
 msgstr ""
 "Generar un `identificador único universal "
-"<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ para la "
-"primera declaración de un registro. Guardarlo en el sistema de gestión de "
+"<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ para el "
+"primer enunciado de un registro. Guardarlo en el sistema de gestión de "
 "datos. Actualizarlo cuando se actualice el registro relevante."
 
 #: ../../standard/system/generating-statements.rst:25
@@ -143,9 +141,9 @@ msgid ""
 "``statementId`` field) with a low collision probability."
 msgstr ""
 "Utilizar una función hash diseñada de forma apropiada que genere "
-"identificadores a partir de una representación JSON normalizada de la "
-"declaración (excluyendo el campo ``statementId``) con una baja probabilidad "
-"de conflicto."
+"identificadores a partir de una representación JSON normalizada del "
+"enunciado (excluyendo el campo ``statementId``) con una baja probabilidad de"
+" conflicto."
 
 #: ../../standard/system/generating-statements.rst:27
 #: 5296651244334e03b65000ea111baa81

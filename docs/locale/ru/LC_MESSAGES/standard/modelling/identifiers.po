@@ -7,7 +7,7 @@
 # Galia Williams, 2024
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
-# Rachel Vint, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,10 +38,10 @@ msgid ""
 msgstr ""
 "Общие идентификаторы необходимы для обеспечения функциональной совместимости"
 " данных о бенефициарном владении. Под 'общими идентификаторами' "
-"подразумеваются ссылочные строки, присвоенные авторитетными регистрационными"
-" схемами, которые получили широкое распространение в мире. Идентификаторы "
-"можно использовать, чтобы проверить существование указанного физического "
-"лица, субъекта или элемента."
+"подразумеваются референтные строки, присвоенные авторитетными "
+"регистрационными схемами, которые получили широкое распространение в мире. "
+"Идентификаторы можно использовать, чтобы проверить существование указанного "
+"физического лица, субъекта или элемента."
 
 #: ../../standard/modelling/identifiers.rst:8 84e447e33eeb4fd2972ab679d12c66fe
 msgid "In BODS, real world identifiers can be published for:"
@@ -80,9 +80,9 @@ msgid ""
 "Identifier (LEI), or other real world identifier."
 msgstr ""
 "Используйте :ref:`Идентификатор <schema-identifier>` в массиве "
-"``identifiers`` Записи о субъекте, чтобы указать регистрационный номер "
-"компании, идентификатор юридического лица (Legal Entity Identifier, LEI) или"
-" другой общий идентификатор."
+"``identifiers`` Характеристики субъекта, чтобы указать регистрационный номер"
+" компании, идентификатор юридического лица (Legal Entity Identifier, LEI) "
+"или другой общий идентификатор."
 
 #: ../../standard/modelling/identifiers.rst:20
 #: a777c8001def4bf58839ba30d3a89629
@@ -111,7 +111,7 @@ msgid ""
 msgstr ""
 "Если полезно опубликовать внутренний идентификатор из своей собственной "
 "системы управления данными, сначала решите, следует ли его использовать как "
-":ref:`идентификатор элемента<record-identifiers>`. Если нет, тогда:"
+":ref:`идентификатор записи<record-identifiers>`. Если нет, тогда:"
 
 #: ../../standard/modelling/identifiers.rst:24
 #: 2cbf9f7e5142479182eddd78a0c00479
@@ -148,7 +148,7 @@ msgid ""
 msgstr ""
 "Если система хранит идентификационные номера физического лица, и они могут "
 "быть опубликованы без риска для конфиденциальности или безопасности, то их "
-"СЛЕДУЕТ включить в массив ``identifiers`` Записи о физическом лице."
+"СЛЕДУЕТ включить в массив ``identifiers`` Характеристик физического лица."
 
 #: ../../standard/modelling/identifiers.rst:35
 #: af340a63084c4e14a029c4f631406c20
@@ -175,8 +175,8 @@ msgstr ""
 "<https://www.iso.org/iso-3166-country-codes.html>`_ (или одно из расширений "
 "из `Документа ICAO 9303, §5 "
 "<http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_, страницы"
-" 21-23), а {TYPE} — это 'PASSPORT', 'TAXID' или 'IDCARD'  (паспорт, ИНН или "
-"удостоверение личности)."
+" 21-23), а {TYPE} — это 'PASSPORT', 'TAXID' или 'IDCARD'  (паспорт, "
+"налоговый номер или удостоверение личности)."
 
 #: ../../standard/modelling/identifiers.rst:41
 #: ea2a0a4036194f76a66f6e636a9135f2
@@ -241,7 +241,7 @@ msgstr ""
 "идентификатора в машиночитаемом паспорте (см. `Приложение B к Части 4 "
 "Документа ICAO 9303 "
 "<http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_), включая"
-" как минимум номер документа.."
+" как минимум номер документа."
 
 #: ../../standard/modelling/identifiers.rst:56
 #: 32b451544840461c9582145fb2fbde03
@@ -257,7 +257,7 @@ msgstr ""
 #: ../../standard/modelling/identifiers.rst:58
 #: 413c48ee5ce8455c84444788b1613946
 msgid "**TAXID**"
-msgstr "**ИНН**"
+msgstr "**Налоговый номер**"
 
 #: ../../standard/modelling/identifiers.rst:60
 #: 0283ae9db01040a296a7dfebcd0e14ad
@@ -298,8 +298,7 @@ msgid ""
 " records about people, or both."
 msgstr ""
 "Системы управления данными могут генерировать внутренние идентификаторы для "
-"физических лиц или для элементов о физических лицах либо и для тех, и для "
-"других."
+"физических лиц или для записей о физических лицах либо и для тех и других."
 
 #: ../../standard/modelling/identifiers.rst:71
 #: 1c4055e49cc74aac9c8d31a64497c72a
@@ -311,10 +310,10 @@ msgid ""
 "‘{publisher name}-{identifier type}’. For example, "
 "'AtlantisCorporateRegister-PersonReference'."
 msgstr ""
-"Если известно, что несколько элементов в системе касаются одного и того же "
+"Если известно, что несколько записей в системе касаются одного и того же "
 "физического лица, РЕКОМЕНДУЕТСЯ присвоить такому физическому лицу уникальный"
 " идентификатор в системе управления данными и опубликовать этот "
-"идентификатор в соответствующих элементах. Идентификатор СЛЕДУЕТ включить в "
+"идентификатор в соответствующих записях. Идентификатор СЛЕДУЕТ включить в "
 "массив ``identifiers``, указав для свойства ``schemeName`` значение "
 "‘{publisher name}-{identifier type}’. Например, 'AtlantisCorporateRegister-"
 "PersonReference'."
@@ -326,10 +325,10 @@ msgid ""
 "the system, then an internal person identifier may serve as the "
 "``recordId``. See :ref:`record-identifiers`."
 msgstr ""
-"Или же, как вариант, если известное физическое лицо всегда представлено в "
-"системе лишь одним элементом, тогда в качестве значения параметра "
-"``recordId`` может выступать внутренний идентификатор физического лица. См. "
-"раздел :ref:`record-identifiers`."
+"Или же, если известное физическое лицо всегда было представлено в системе "
+"лишь одной записью, тогда в качестве значения свойства ``recordId`` может "
+"выступать внутренний идентификатор физического лица. См. раздел "
+":ref:`record-identifiers`."
 
 #: ../../standard/modelling/identifiers.rst:77
 #: 7fb83b3012d84c2ea0aaa6579b998f74
@@ -355,7 +354,7 @@ msgid ""
 "traded on a segment of an exchange."
 msgstr ""
 "Два свойства объекта :ref:`Регистрация ценных бумаг на фондовой бирже "
-"<schema-securities-listing>` в Записи о субъекте указывают на то, где "
+"<schema-securities-listing>` в Характеристике субъекта указывают на то, где "
 "торгуется ценная бумага: свойство ``operatingMarketIdentifierCode`` "
 "действующего рынка и свойство ``marketIdentifierCode``. Если ценная бумага "
 "торгуется на основной бирже, РЕКОМЕНДУЕТСЯ, чтобы значение свойства "

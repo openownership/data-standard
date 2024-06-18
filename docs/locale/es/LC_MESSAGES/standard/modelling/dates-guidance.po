@@ -7,6 +7,7 @@
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
 # María Renée Briozzo Mitchell, 2024
+# Renzo Lavin <renlavin@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
+"Last-Translator: Renzo Lavin <renlavin@gmail.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,9 +58,9 @@ msgstr ""
 "una entidad, persona o relación es verdadera. Esto puede registrarse de "
 "forma automática cuando alguien envía un formulario de declaración en línea "
 "o puede ser la fecha de envío que figura en un formulario físico. Para un "
-"servicio que consolida datos de titularidad del beneficiario real, sería la "
-"fecha en la que se resolvieron varias fuentes de información para realizar "
-"una afirmación coherente sobre el estado de una entidad, persona o relación."
+"servicio que consolida datos de beneficiarios finales, sería la fecha en la "
+"que se resolvieron varias fuentes de información para realizar una "
+"afirmación coherente sobre el estado de una entidad, persona o relación."
 
 #: ../../standard/modelling/dates-guidance.rst:13
 #: 3c30d6932609432cafa0acea9dc9d92a
@@ -70,8 +71,8 @@ msgid ""
 "``statementDate`` value if data is published immediately after submission. "
 "In many cases there will be a delay between submission and publication."
 msgstr ""
-"``publicationDetails.publicationDate`` es la fecha en la que se publicó esta"
-" declaración. Por ejemplo, la fecha en la que la información se agregó a un "
+"``publicationDetails.publicationDate`` es la fecha en la que se publicó este"
+" enunciado. Por ejemplo, la fecha en la que la información se agregó a un "
 "registro público o se puso a disposición mediante una API. Puede ser igual "
 "que el valor ``statementDate`` si los datos se publican inmediatamente "
 "después del envío. En muchos casos, se produce un retraso entre el envío y "
@@ -191,8 +192,8 @@ msgid ""
 "This statement represents someone divesting from shares. We can use the "
 "statement to construct a timeline of events."
 msgstr ""
-"Esta declaración representa a alguien que liquida sus acciones. Podemos usar"
-" la declaración para construir una línea de tiempo de los eventos."
+"Este enunciado representa a alguien que liquida sus acciones. Podemos usar "
+"el enunciado para construir una línea de tiempo de los eventos."
 
 #: ../../standard/modelling/dates-guidance.rst-1
 #: c26fd2565da9460ea915a71a6786cbf9
@@ -202,10 +203,10 @@ msgid ""
 " events - the relationship ending, the change being reported and the change "
 "being published."
 msgstr ""
-"Una declaración con una fecha de declaración 2019-09-10, una fecha de "
-"publicación 2021-09-13 y una fecha de finalización de interés 2021-09-3. "
-"Junto a la declaración hay una línea de tiempo que muestra los eventos: la "
-"relación que finaliza, el cambio que se informa y el cambio que se publica."
+"Un enunciado con una fecha de enunciado 2019-09-10, una fecha de publicación"
+" 2021-09-13 y una fecha de finalización de interés 2021-09-3. Junto al "
+"enunciado hay una línea de tiempo que muestra los eventos: la relación que "
+"finaliza, el cambio que se informa y el cambio que se publica."
 
 #: ../../standard/modelling/dates-guidance.rst:49
 #: 8938de462e294b84928a43c6b3b21918
@@ -220,10 +221,10 @@ msgid ""
 " a new Relationship statement is generated with an updated ``statementDate``"
 " and ``publicationDate``."
 msgstr ""
-"Alguien funda una empresa, la inscribe y divulga a sus beneficiarios reales."
-" Un año después, nada ha cambiado. Presenta una declaración de confirmación "
-"y se genera una nueva declaración sobre relación con una ``statementDate`` y"
-" una ``publicationDate`` actualizadas."
+"Alguien funda una empresa, la inscribe y divulga sus beneficiarios finales. "
+"Un año después, nada ha cambiado. Presenta una declaración de confirmación y"
+" se genera un nuevo enunciado sobre relación con una ``statementDate`` y una"
+" ``publicationDate`` actualizadas."
 
 #: ../../standard/modelling/dates-guidance.rst-1
 #: fdb89245f84541f8ab4f95e617a827ea
@@ -231,8 +232,8 @@ msgid ""
 "2 statements showing the same interest start date and entity founding date. "
 "The statement date and publication date are one year apart."
 msgstr ""
-"2 declaraciones que muestran la misma fecha de inicio del interés y la misma"
-" fecha de fundación de la entidad. La fecha de declaración y la fecha de "
+"2 enunciados que muestran la misma fecha de inicio del interés y la misma "
+"fecha de fundación de la entidad. La fecha de enunciado y la fecha de "
 "publicación están separadas por un año."
 
 #: ../../standard/modelling/dates-guidance.rst:59
@@ -247,14 +248,14 @@ msgid ""
 "published with an incorrect ``interests[0].startDate``. To correct this, a "
 "new statement is published replacing the incorrect one."
 msgstr ""
-"Debido a un error en el sistema de publicación, se publica una declaración "
+"Debido a un error en el sistema de publicación, se publica un enunciado "
 "sobre relación con una ``interests[0].startDate`` incorrecta. Para corregir "
-"esto, se publica una nueva declaración que reemplaza la incorrecta."
+"esto, se publica un nuevo enunciado que reemplaza al incorrecto."
 
 #: ../../standard/modelling/dates-guidance.rst:63
 #: 74976cac7ddb411b8789e4343ce789ec
 msgid "The new statement:"
-msgstr "La nueva declaración:"
+msgstr "El nuevo enunciado:"
 
 #: ../../standard/modelling/dates-guidance.rst:65
 #: fb70c5f391fa4d0b8fbb697e50745633
@@ -288,7 +289,7 @@ msgid ""
 "date. The second statement has an annotation with motivation \"correction\" "
 "point towards the interest start date."
 msgstr ""
-"2 declaraciones que muestran el mismo recordId y statementDate. La segunda "
-"declaración tiene una fecha de publicación, un statementId y una fecha de "
-"inicio de interés diferentes. La segunda declaración tiene una nota con el "
+"2 enunciados que muestran el mismo recordId y statementDate. El segundo "
+"enunciado tiene una fecha de publicación, un statementId y una fecha de "
+"inicio de interés diferentes. El segundo enunciado tiene una nota con el "
 "punto de motivación \"corrección\" hacia la fecha de inicio del interés."

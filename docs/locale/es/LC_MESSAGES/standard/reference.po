@@ -10,6 +10,7 @@
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
 # María Renée Briozzo Mitchell, 2024
+# Renzo Lavin <renlavin@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
+"Last-Translator: Renzo Lavin <renlavin@gmail.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,9 +69,9 @@ msgid ""
 "statement contains record details for one of three beneficial ownership "
 "elements:"
 msgstr ""
-"Los objetos de nivel superior son :any:`declaraciones <schema-statement>`. "
-"Cada declaración contiene detalles de registro para uno de tres elementos de"
-" titularidad del beneficiario real:"
+"Los objetos de nivel superior son :any:`enunciados <schema-statement>`. Cada"
+" enunciado contiene detalles de registro para uno de los tres elementos de "
+"titularidad real:"
 
 #: ../../standard/reference.rst:12 223768f31fed43b887c3cd75a35c4c46
 msgid ":any:`Entity <schema-entity-record>`"
@@ -213,8 +214,8 @@ msgid ""
 "The ``annotations`` property of statements is an array of Annotation "
 "objects."
 msgstr ""
-"La propiedad de declaraciones ``annotations`` es un arreglo de datos de "
-"objetos de notas."
+"La propiedad de enunciados ``annotations`` es un arreglo de datos de objetos"
+" de notas."
 
 #: ../../standard/reference.rst:48 1e2f624acc77494f93cd7285428d1aa0
 msgid "Annotations can be used to:"
@@ -238,9 +239,9 @@ msgid ""
 "specific field. ``annotation.statementPointerTarget`` indicates where the "
 "annotation applies."
 msgstr ""
-"Las notas pueden aplicarse a toda una declaración, a parte de una "
-"declaración o a un campo específico. ``annotation.statementPointerTarget`` "
-"indica dónde se aplica la nota."
+"Las notas pueden aplicarse a todo un enunciado, a parte de un enunciado o a "
+"un campo específico. ``annotation.statementPointerTarget`` indica dónde se "
+"aplica la nota."
 
 #: ../../standard/reference.rst:65 7c7ea5683d8c4a7588f5aff3718b45be
 msgid "Country"
@@ -264,8 +265,8 @@ msgid ""
 "item that it refers to. See :any:`Real world identifiers <guidance-"
 "identifiers>` for guidance on using this object."
 msgstr ""
-"El objeto identificador conecta una declaración a la persona física, entidad"
-" u objeto al cual se refiere. Consulte :any:`Identificadores del mundo real "
+"El objeto identificador conecta un enunciado a la persona física, entidad u "
+"objeto al cual se refiere. Consulte :any:`Identificadores del mundo real "
 "<guidance-identifiers>` para obtener orientación sobre cómo usar este "
 "objeto."
 
@@ -346,7 +347,7 @@ msgstr "Publication Details (Detalles de la publicación)"
 
 #: ../../standard/reference.rst-1 20bd3f9bc90a4636a09fba31516bd956
 msgid "Information concerning the publication of this Statement."
-msgstr "Información relacionada con la publicación de esta declaración."
+msgstr "Información relacionada con la publicación de este enunciado."
 
 #: ../../standard/reference.rst:180 e521a60fd7734e52b0dc23cad32db601
 msgid "Publisher"
@@ -354,7 +355,7 @@ msgstr "Publisher (Publicador)"
 
 #: ../../standard/reference.rst-1 fe562614c42f48fabad72659c556842e
 msgid "Details of the organisation or person publishing a Statement."
-msgstr "Detalles de la organización o persona que publica una declaración."
+msgstr "Detalles de la organización o persona que publica un enunciado."
 
 #: ../../standard/reference.rst:194 53590c011b3640fab9e794fc82f824c8
 msgid "Record Details (entity)"
@@ -407,9 +408,9 @@ msgid ""
 "particular declaration subject.)"
 msgstr ""
 "Un identificador único para el registro (dentro del sistema del publicador) "
-"relacionado con esta declaración. (Un registro captura información sobre una"
-" entidad, persona física o relación dentro de la red de titularidad del "
-"beneficiario real del sujeto de una declaración particular)."
+"relacionado con este enunciado. (Un registro captura información sobre una "
+"entidad, persona física o relación dentro de la red de titularidad real del "
+"sujeto de una declaración particular)."
 
 #: ../../standard/reference.rst:248 9b74f6a898544506a66bdb320dce8f44
 msgid "SecuritiesListing"
@@ -455,7 +456,7 @@ msgstr "Detalles que describen una fuente de información."
 
 #: ../../standard/reference.rst:291 f1cc9b2d695547eb9240fb6b8949f709
 msgid "Statement"
-msgstr "Statement (Declaración)"
+msgstr "Statement (Enunciado)"
 
 #: ../../standard/reference.rst-1 786964e76b1b424eb0fcff0f1da18dff
 msgid ""
@@ -467,7 +468,7 @@ msgstr ""
 
 #: ../../standard/reference.rst:306 dab956dbb10545c1a6fce8ab2b1367d8
 msgid "Statement Id"
-msgstr "Statement Id (Identificador de declaración)"
+msgstr "Statement Id (Identificador de enunciado)"
 
 #: ../../standard/reference.rst:308 30f9e3efda094a119c819061b0cb249d
 msgid ""
@@ -475,15 +476,15 @@ msgid ""
 "Ids"
 msgstr ""
 "Consulte :ref:`generating-statements` para obtener ayuda sobre cómo generar "
-"identificadores de declaración únicos"
+"identificadores de enunciado únicos"
 
 #: ../../standard/reference.rst-1 dbee3c6d06034220bb67327d4fe59de2
 msgid ""
 "A persistent globally unique identifier for this Statement. Length MUST be "
 "32 - 64 characters (inclusive)."
 msgstr ""
-"Un identificador único global persistente para esta declaración. La longitud"
-" DEBE ser de entre 32 y 64 caracteres (inclusive)."
+"Un identificador único global persistente para este enunciado. La longitud "
+"DEBE ser de entre 32 y 64 caracteres (inclusive)."
 
 #: ../../standard/reference.rst:316 106e3abb1b3d43289069c0ada26bee62
 msgid "UnspecifiedRecord"

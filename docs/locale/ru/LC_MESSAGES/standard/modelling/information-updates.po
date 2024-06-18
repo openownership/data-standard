@@ -4,8 +4,9 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Kateryna Volobuieva, 2024
 # Rachel Vint, 2024
+# Kateryna Volobuieva, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +26,7 @@ msgstr ""
 #: ../../standard/modelling/information-updates.rst:4
 #: 63142a2003d54c519c3287f73a6d9c95
 msgid "Information updates"
-msgstr "Обновленная информация"
+msgstr "Обновление информации"
 
 #: ../../standard/modelling/information-updates.rst:6
 #: d9f345fccd09412e9f3892fa8c2bee6d
@@ -38,12 +39,12 @@ msgid ""
 "the minimal set of requirements below, to offer a low-resolution picture."
 msgstr ""
 "Системы сбора и обработки информации о бенефициарном владении часто имеют "
-"дело с обновлением или подтверждением существующих данных. В зависимости от "
-"способа управления информацией сгенерированные данные СДБВ отображают "
+"дело с обновлением или подтверждением существующих записей. В зависимости от"
+" способа управления информацией сгенерированные данные СДБВ отображают "
 "изменяющийся характер сети бенефициарного владения на высоком или низком "
 "уровне детализации. Системы управления данными, предусматривающие обновление"
 " информации, должны соответствовать описанному ниже минимальному набору "
-"требований, чтобы обеспечивать отображение на низком уровне детализации."
+"требований, чтобы обеспечивать представление на низком уровне детализации."
 
 #: ../../standard/modelling/information-updates.rst:10
 #: b72479dabf924a408c2434f780629162
@@ -59,8 +60,8 @@ msgid ""
 "requirements."
 msgstr ""
 "При изменении или подтверждении сведений об элементе (субъекте, физическом "
-"лице или отношениях) сети бенефициарного владения предмета ДОЛЖНА быть "
-"создана новая запись СДБВ. Дополнительные требования приводятся в разделе "
+"лице или отношениях) сети бенефициарного владения ДОЛЖНА быть создана новая "
+"характеристика СДБВ. Дополнительные требования приведены в разделе "
 ":ref:`generating-statements`."
 
 #: ../../standard/modelling/information-updates.rst:13
@@ -71,11 +72,11 @@ msgid ""
 "network's subject change, or are confirmed, the new Statement generated must"
 " contain the same ``recordId`` as in the outdated Statement."
 msgstr ""
-"Значение параметра ``recordId`` для предмета каждой сети бенефициарного "
+"Значение свойства ``recordId`` для предмета каждой сети бенефициарного "
 "владения ДОЛЖНО быть стабильным. То есть при изменении или подтверждении "
-"сведений о предмете сети бенефициарного владения новая созданная Запись "
-"ДОЛЖНА содержать то же значение параметра ``recordId``, что и устаревшая "
-"Запись."
+"сведений о предмете сети бенефициарного владения новая сгенерированная "
+"Характеристика ДОЛЖНА содержать то же значение свойства ``recordId``, что и "
+"устаревшая Характеристика."
 
 #: ../../standard/modelling/information-updates.rst:15
 #: c96002ddc0f64654b5a4ba1a90d55db0
@@ -84,10 +85,10 @@ msgid ""
 "declared beneficial ownership network, at any point in time, MUST contain "
 "the subject's ``recordId`` as its ``declarationSubject``."
 msgstr ""
-"В каждой записи СДБВ, опубликованной в отношении любого элемента заявленной "
-"сети бенефициарного владения предмета, значение ``recordId`` предмета в "
-"любой момент времени ДОЛЖНО быть таким же, что и для свойства "
-"``declarationSubject``."
+"В каждой характеристике СДБВ, опубликованной в отношении любого элемента "
+"задекларированной сети бенефициарного владения, значение ``recordId`` "
+"предмета такой сети в любой момент времени ДОЛЖНО быть таким же, что и для "
+"свойства ``declarationSubject``."
 
 #: ../../standard/modelling/information-updates.rst:17
 #: 70e36bdaf6c84dcebeb56b75ace94283
@@ -97,8 +98,8 @@ msgid ""
 "available BODS data."
 msgstr ""
 "Издателю данных СДБВ СЛЕДУЕТ опубликовать руководство для пользователей "
-"данных, поясняющее, как необходимо понимать жизненный цикл заявленной "
-"информации, со ссылкой на имеющиеся данные СДБВ."
+"данных, поясняющее, как необходимо понимать жизненный цикл задекларированной"
+" информации, со ссылкой на имеющиеся данные СДБВ."
 
 #: ../../standard/modelling/information-updates.rst:22
 #: 54b09b7157984f16bf854a3dcb4d532f
@@ -117,8 +118,8 @@ msgid ""
 "within a beneficial ownership network is represented by a series of "
 "Statements:"
 msgstr ""
-"Жизненный цикл данных об элементе (субъекте, физическом лице или отношениях)"
-" в сети бенефициарного владения представлен серией Записей:"
+"Жизненный цикл записи об элементе (субъекте, физическом лице или отношениях)"
+" в сети бенефициарного владения представлен серией Характеристик:"
 
 #: ../../standard/modelling/information-updates.rst:27
 #: 378fe2a99bfd4ae9898469e4839de716
@@ -128,10 +129,10 @@ msgid ""
 "confirmed, the new Statement generated must contain the same ``recordId`` as"
 " in the outdated Statement."
 msgstr ""
-"Значение параметра ``recordId`` каждого элемента сети бенефициарного "
-"владения ДОЛЖНО быть стабильным. То есть при изменении или подтверждении "
-"сведений об элементе новая созданная Запись должна содержать то же значение "
-"параметра ``recordId``, что и устаревшая Запись."
+"Значение свойства ``recordId`` каждого элемента сети бенефициарного владения"
+" ДОЛЖНО быть стабильным. То есть при изменении или подтверждении сведений об"
+" элементе новая сгенерированная Характеристика должна содержать то же "
+"значение свойства ``recordId``, что и устаревшая Характеристика."
 
 #: ../../standard/modelling/information-updates.rst:29
 #: 3c8cd0a9072241a7a4ddb5d2d65ab509
@@ -142,12 +143,12 @@ msgid ""
 "MUST be 'updated'. When the element is no longer a part of the beneficial "
 "ownership network, in the new Statement ``recordStatus`` MUST be 'closed'."
 msgstr ""
-"Когда Запись об элементе сети бенефициарного владения публикуется впервые, "
-"параметр ``recordStatus`` ДОЛЖЕН иметь значение 'new'. При изменении или "
-"подтверждении сведений об элементе параметр ``recordStatus`` в новой Записи "
-"ДОЛЖЕН иметь значение 'updated'. Если элемент больше не входит в сеть "
-"бенефициарного владения, параметр ``recordStatus`` в новой Записи ДОЛЖЕН "
-"иметь значение 'closed'."
+"Когда Характеристика, касающаяся элемента сети бенефициарного владения, "
+"публикуется впервые, свойство ``recordStatus`` ДОЛЖНО иметь значение 'new'. "
+"При изменении или подтверждении сведений об элементе свойство "
+"``recordStatus`` в новой Характеристике ДОЛЖНО иметь значение 'updated'. "
+"Если элемент больше не входит в сеть бенефициарного владения, свойство "
+"``recordStatus`` в новой Характеристике ДОЛЖНО иметь значение 'closed'."
 
 #: ../../standard/modelling/information-updates.rst:31
 #: 81c19e5abb61442c92d066552c8f489d
@@ -157,9 +158,9 @@ msgid ""
 "in the outdated Statement and with ``recordStatus`` 'updated'."
 msgstr ""
 "Если сведения об элементе не изменились, но подтверждены как точные, СЛЕДУЕТ"
-" создать новую Запись с тем же значением параметра ``recordId``, что и в "
-"устаревшей Записи, а для свойства ``recordStatus`` установить значение "
-"'updated'."
+" создать новую Характеристику с тем же значением свойства ``recordId``, что "
+"и в устаревшей Характеристике, а для свойства ``recordStatus`` установить "
+"значение 'updated'."
 
 #: ../../standard/modelling/information-updates.rst:33
 #: 53774796ba4c461dbba217d7c337da79
@@ -167,8 +168,9 @@ msgid ""
 "Once a series of Statements about a given element is closed, further "
 "Statements with the related ``recordId`` MUST NOT be generated."
 msgstr ""
-"После закрытия серии Записей об определенном элементе дальнейшие Записи со "
-"связанным значением параметра ``recordId`` создаваться НЕ ДОЛЖНЫ."
+"После закрытия серии Характеристик об определенном элементе дальнейшие "
+"Характеристики со связанным значением свойства ``recordId`` создаваться НЕ "
+"ДОЛЖНЫ."
 
 #: ../../standard/modelling/information-updates.rst:35
 #: ede83e5b90884fd58dcef824d76ce726
@@ -183,7 +185,7 @@ msgstr ""
 " цикл таких отношений считается завершенным. Например, если владелец "
 "компании передает свою долю участия родственнику, свойство ``recordStatus`` "
 "первых отношений будет иметь значение 'closed', и будут опубликованы "
-"сведения о новом элементе."
+"сведения о новой записи."
 
 #: ../../standard/modelling/information-updates.rst:38
 #: 1d0af85521804916ade17908c8dcd168
@@ -214,11 +216,11 @@ msgid ""
 "'correcting' and a ``description`` of the correction, and an updated "
 "``publicationDetails.publicationDate``."
 msgstr ""
-"В любом случае ошибки СЛЕДУЕТ исправлять путем публикации новых записей, в "
-"том числе посредством :any:`примечания <schema-annotation>` со значением "
-"'correcting' (исправление) для свойства ``motivation``, описанием "
-"исправления в поле ``description`` и обновленным значением свойства "
-"``publicationDetails.publicationDate``."
+"В любом случае ошибки СЛЕДУЕТ исправлять путем публикации новых "
+"характеристик, в том числе посредством :any:`примечания <schema-annotation>`"
+" со значением 'correcting' (исправление) для свойства ``motivation``, "
+"описанием исправления в поле ``description`` и обновленным значением "
+"свойства ``publicationDetails.publicationDate``."
 
 #: ../../standard/modelling/information-updates.rst:48
 #: e45158bb9bc64c938e4beaf762acf4bf
@@ -228,7 +230,7 @@ msgstr "См. пример в разделе :any:`guidance-dates`."
 #: ../../standard/modelling/information-updates.rst:52
 #: db3d0f1ec1a34b8f8133998b140f5369
 msgid "Redaction"
-msgstr "Редакция"
+msgstr "Анонимизация"
 
 #: ../../standard/modelling/information-updates.rst:54
 #: c2afea5a65df4b0db9e656ab49a7e347
@@ -237,6 +239,6 @@ msgid ""
 "Statement MAY be republished with the same statement identifier and updated "
 "property values."
 msgstr ""
-"Если в Записи опубликована конфиденциальная информация, такая Запись МОЖЕТ "
-"быть опубликована повторно с тем же самым идентификатором записи, но с "
-"обновленными значениями свойств."
+"Если в Характеристике опубликована конфиденциальная информация, такая "
+"Характеристика МОЖЕТ быть опубликована повторно с тем же самым "
+"идентификатором характеристики, но с обновленными значениями свойств."

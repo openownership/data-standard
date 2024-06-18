@@ -10,6 +10,7 @@
 # Stephen Abbott Pugh <stephen@openownership.org>, 2022
 # Carmen Edery, 2024
 # María Renée Briozzo Mitchell, 2024
+# Renzo Lavin <renlavin@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-05-10 16:05+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
+"Last-Translator: Renzo Lavin <renlavin@gmail.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -69,9 +70,9 @@ msgid ""
 "`country` may be sufficient information. This MUST only apply to the "
 "`placeOfBirth` field for natural persons."
 msgstr ""
-"Lugar donde una persona nació. Una ciudad (en el campo `address`) y un "
-"`country` pueden ser información suficiente. Esto solo DEBE aplicarse al "
-"campo `placeOfBirth` para personas físicas."
+"Lugar donde una persona nació. Una ciudad (en el campo `address`) y un país "
+"(en `country`) pueden ser información suficiente. Esto solo DEBE aplicarse "
+"al campo `placeOfBirth` para personas físicas."
 
 #. title
 #: schema/codelists/addressType.csv:2
@@ -151,7 +152,7 @@ msgid ""
 "statement."
 msgstr ""
 "El campo de descripción proporciona comentarios contextuales sobre un campo,"
-" un objeto o una declaración."
+" un objeto o un enunciado."
 
 #. title
 #: schema/codelists/annotationMotivation.csv:2
@@ -165,7 +166,7 @@ msgid ""
 "method in the description field or from the original value given in the "
 "description field."
 msgstr ""
-"El valor de este campo, objeto o declaración se ha corregido utilizando el "
+"El valor de este campo, objeto o enunciado se ha corregido utilizando el "
 "método señalado en el campo de descripción o a partir del valor original "
 "indicado en el campo de descripción."
 
@@ -181,9 +182,9 @@ msgid ""
 " for the purpose of identifying natural persons or legal entities, using the"
 " method in the description field."
 msgstr ""
-"El valor de este campo, objeto o declaración se ha ampliado o procesado a "
-"los efectos de identificar a personas físicas o entidades jurídicas, "
-"utilizando el método señalado en el campo de descripción."
+"El valor de este campo, objeto o enunciado se ha ampliado o procesado a los "
+"efectos de identificar a personas físicas o entidades jurídicas, utilizando "
+"el método señalado en el campo de descripción."
 
 #. title
 #: schema/codelists/annotationMotivation.csv:4
@@ -197,7 +198,7 @@ msgid ""
 " statement. A URL to linked material MUST be provided in the `url` field."
 msgstr ""
 "La descripción explica de qué modo el material vinculado se relaciona con el"
-" campo, el objeto o la declaración. En el campo `url` DEBE indicarse un URL "
+" campo, el objeto o el enunciado. En el campo `url` DEBE indicarse un URL "
 "del material vinculado."
 
 #. title
@@ -212,7 +213,7 @@ msgid ""
 "original form using the method in the description field. The transformed "
 "representation may be provided in the `transformedContent` field."
 msgstr ""
-"La forma original de los valores de este campo, objeto o declaración se ha "
+"La forma original de los valores de este campo, objeto o enunciado se ha "
 "cambiado utilizando el método señalado en el campo de descripción. La "
 "representación transformada puede indicarse en el campo "
 "`transformedContent`."
@@ -254,7 +255,7 @@ msgstr "La participación puede ser directa o indirecta."
 #. title
 #: schema/codelists/entitySubtype.csv:1
 msgid "Government department"
-msgstr "Departamento gubernamental"
+msgstr "Departamento de gobierno"
 
 #. description
 #: schema/codelists/entitySubtype.csv:1
@@ -315,7 +316,7 @@ msgstr ""
 #. title
 #: schema/codelists/entitySubtype.csv:5
 msgid "Nomination"
-msgstr "Nominación"
+msgstr "Mandato"
 
 #. description
 #: schema/codelists/entitySubtype.csv:5
@@ -324,8 +325,8 @@ msgid ""
 " a specified capacity. This MUST be used with `entityType.type` "
 "'arrangement'."
 msgstr ""
-"Estructura jurídica en la que un nominador ordena a un nominado que actúe en"
-" su nombre en una capacidad específica. Esto DEBE usarse con "
+"Acuerdo jurídico en el que un mandante ordena a un mandatario que actúe en "
+"su nombre en una capacidad específica. Esto DEBE usarse con "
 "`entityType.type` 'arrangement'."
 
 #. title
@@ -695,8 +696,8 @@ msgid ""
 "The interestedParty is known to have an interest in the subject of this "
 "Relationship Statement, but the nature of the interest is unknown."
 msgstr ""
-"La parte interesada es conocida por tener interés en el sujeto de esta "
-"declaración sobre relación, pero la naturaleza del interés es desconocida."
+"La parte interesada es conocida por tener interés en el sujeto de este "
+"enunciado sobre relación, pero la naturaleza del interés es desconocida."
 
 #. title
 #: schema/codelists/interestType.csv:19
@@ -735,7 +736,7 @@ msgstr ""
 #. title
 #: schema/codelists/interestType.csv:22
 msgid "Nominee"
-msgstr "Nominado"
+msgstr "Mandatario"
 
 #. description
 #: schema/codelists/interestType.csv:22
@@ -743,13 +744,13 @@ msgid ""
 "A person who agrees to act on behalf of the nominator in a specified "
 "capacity."
 msgstr ""
-"Persona que acepta actuar en nombre del nominador en una capacidad "
+"Persona que acepta actuar en nombre del mandante en una capacidad "
 "especificada."
 
 #. title
 #: schema/codelists/interestType.csv:23
 msgid "Nominator"
-msgstr "Nominador"
+msgstr "Mandante"
 
 #. description
 #: schema/codelists/interestType.csv:23
@@ -757,7 +758,7 @@ msgid ""
 "A person who instructs a nominee to act on their behalf in a specified "
 "capacity."
 msgstr ""
-"Persona que ordena a un nominado actuar en su nombre en una capacidad "
+"Persona que ordena a un mandatario actuar en su nombre en una capacidad "
 "especificada."
 
 #. title
@@ -881,8 +882,8 @@ msgid ""
 "This is the first Statement published pertaining to the record referenced by"
 " `recordId`."
 msgstr ""
-"Esta es la primera declaración publicada perteneciente al registro con "
-"referencia `unspecifiedPersonDetails`"
+"Este es el primer enunciado publicado perteneciente al registro con "
+"referencia `recordId`."
 
 #. title
 #: schema/codelists/recordStatus.csv:2
@@ -895,8 +896,8 @@ msgid ""
 "This Statement updates information published in a prior Statement pertaining"
 " to the record referenced by `recordId`."
 msgstr ""
-"Esta declaración actualiza información publicada en una declaración anterior"
-" perteneciente al registro con referencia `recordId`."
+"Este enunciado actualiza información publicada en un enunciado anterior "
+"perteneciente al registro con referencia `recordId`."
 
 #. title
 #: schema/codelists/recordStatus.csv:3
@@ -909,7 +910,7 @@ msgid ""
 "This is the final Statement published pertaining to the record referenced by"
 " `recordId`."
 msgstr ""
-"Esta es la declaración final publicada perteneciente al registro con "
+"Este es el enunciado final publicado perteneciente al registro con "
 "referencia `recordId`."
 
 #: schema/codelists/recordType.csv
@@ -927,8 +928,8 @@ msgid ""
 "The Record Details in this Statement contain information about a natural "
 "person at a particular point in time."
 msgstr ""
-"Los detalles de registro de esta declaración contienen información sobre una"
-" persona física en un momento particular."
+"Los detalles de registro de este enunciado contienen información sobre una "
+"persona física en un momento particular."
 
 #. technical note
 #: schema/codelists/recordType.csv:1
@@ -948,7 +949,7 @@ msgid ""
 "The Record Details in this Statement contain information that identifies and"
 " describes an entity at a particular point in time."
 msgstr ""
-"Los detalles de registro de esta declaración contienen información que "
+"Los detalles de registro de este enunciado contienen información que "
 "identifica y describe a una entidad en un momento particular."
 
 #. technical note
@@ -969,7 +970,7 @@ msgid ""
 "The Record Details in this Statement describe the interests held by an "
 "interested party in a subject (an entity) at a particular point in time."
 msgstr ""
-"Los detalles de registro de esta declaración describen los intereses de una "
+"Los detalles de registro de este enunciado describen los intereses de una "
 "parte interesada en un sujeto (entidad) en momento particular."
 
 #. technical note
@@ -1088,7 +1089,7 @@ msgid ""
 "person, entity or interests described by this statement."
 msgstr ""
 "La información fue proporcionada por un tercero, no directamente relacionado"
-" con la persona, la entidad o los intereses descritos en esta declaración."
+" con la persona, la entidad o los intereses descritos en este enunciado."
 
 #. title
 #: schema/codelists/sourceType.csv:4
@@ -1129,7 +1130,7 @@ msgid ""
 "the rules under which this statement is made."
 msgstr ""
 "No existen beneficiarios finales que deban divulgar su titularidad en virtud"
-" de las normas conforme a las cuales se hace esta declaración."
+" de las normas conforme a las cuales se hace este enunciado."
 
 #. title
 #: schema/codelists/unspecifiedReason.csv:2
@@ -1143,9 +1144,9 @@ msgid ""
 "been unwilling or unable to confirm the existence identify a beneficial "
 "owner."
 msgstr ""
-"Como parte divulgadora, el sujeto de esta declaración sobre relación no ha "
+"Como parte divulgadora, el sujeto de este enunciado sobre relación no ha "
 "estado dispuesto o no ha sido capaz de confirmar la existencia que "
-"identifica a un beneficiario real."
+"identifica a un beneficiario final."
 
 #. title
 #: schema/codelists/unspecifiedReason.csv:3
@@ -1158,9 +1159,9 @@ msgid ""
 "The interested party in this Relationship Statement has not provided enough "
 "information to identify or confirm the identity of the beneficial owner."
 msgstr ""
-"La parte interesada de esta declaración sobre relación no ha brindado "
+"La parte interesada de este enunciado sobre relación no ha brindado "
 "suficiente información para identificar o confirmar la identidad del "
-"beneficiario real."
+"beneficiario final."
 
 #. title
 #: schema/codelists/unspecifiedReason.csv:4
@@ -1173,8 +1174,8 @@ msgid ""
 "The subject of this Relationship Statement is not required to disclose its "
 "beneficial owner."
 msgstr ""
-"El sujeto de esta declaración sobre relación no tiene la obligación de "
-"revelar a su beneficiario real."
+"El sujeto de este enunciado sobre relación no tiene la obligación de revelar"
+" a su beneficiario final."
 
 #. title
 #: schema/codelists/unspecifiedReason.csv:5
@@ -1187,7 +1188,7 @@ msgid ""
 "The interested party in this Relationship Statement is exempt from having "
 "their identity disclosed."
 msgstr ""
-"La parte interesada de esta declaración sobre relación está exenta de la "
+"La parte interesada de este enunciado sobre relación está exenta de la "
 "divulgación de su identidad."
 
 #. title

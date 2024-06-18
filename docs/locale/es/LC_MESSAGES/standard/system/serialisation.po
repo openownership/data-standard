@@ -4,11 +4,11 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Carlos Hames, 2024
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
 # Rachel Vint, 2024
 # María Renée Briozzo Mitchell, 2024
+# Renzo Lavin <renlavin@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
+"Last-Translator: Renzo Lavin <renlavin@gmail.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,7 +53,7 @@ msgid ""
 "Escape characters that might cause problems when ingesting data (for "
 "example: &, <)."
 msgstr ""
-"eludan los caracteres que puedan causar problemas al ingerir datos (por "
+"eludan los caracteres que puedan causar problemas al procesar datos (por "
 "ejemplo: &, <)."
 
 #: ../../standard/system/serialisation.rst:11 cd6abb160e9c45eb80dd06b15214540b
@@ -70,15 +70,15 @@ msgstr "Las líneas JSON también PUEDEN utilizarse al crear archivos grandes."
 
 #: ../../standard/system/serialisation.rst:16 61045d7036fa4373af813ed17cab0719
 msgid "Statement order"
-msgstr "Orden de la declaración"
+msgstr "Orden del enunciado"
 
 #: ../../standard/system/serialisation.rst:18 f561d0b9d8e54b699f04e56265443c8a
 msgid ""
 "A JSON BODS file MUST consist of a series of ordered Statement objects "
 "within a top-level array."
 msgstr ""
-"Un archivo JSON del BODS DEBE consistir en una serie de objetos de "
-"declaración ordenados dentro de un arreglo de datos de nivel superior."
+"Un archivo JSON del BODS DEBE consistir en una serie de objetos de enunciado"
+" ordenados dentro de un arreglo de datos de nivel superior."
 
 #: ../../standard/system/serialisation.rst:20 40209926298e4b2c9b4fabedc9d904e2
 msgid ""
@@ -86,10 +86,10 @@ msgid ""
 "Relationship statement, when they are a ``recordId`` value, MUST match the "
 "``recordId`` value of at least one other *prior* Statement in the array."
 msgstr ""
-"Específicamente, los valores ``interestedParty`` y ``subject`` de una "
-"declaración sobre relación, cuando son un valor ``recordId``, DEBEN "
-"coincidir con el valor ``recordId`` de al menos otra declaración *anterior* "
-"en el arreglo de datos."
+"Específicamente, los valores ``interestedParty`` y ``subject`` de un "
+"enunciado sobre relación, cuando son un valor ``recordId``, DEBEN coincidir "
+"con el valor ``recordId`` de al menos otro enunciado *anterior* en el "
+"arreglo de datos."
 
 #: ../../standard/system/serialisation.rst:23 0254084d4f4b4ea299b8ef5c3f41774d
 msgid "Alternative tabular form"
@@ -101,10 +101,10 @@ msgid ""
 " a statement. Columns SHOULD represent statement fields and column titles "
 "SHOULD use the relevant relative JSON Pointer from the statement root."
 msgstr ""
-"Los datos del BODS también PUEDEN serializarse en forma tabular, donde cada "
-"fila representa una declaración. Las columnas DEBERÍAN representar campos de"
-" declaración y los títulos de las columnas DEBERÍAN utilizar el indicador "
-"JSON relativo relevante de la raíz de la declaración."
+"Los datos del BODS también PUEDEN serializarse en forma de tabla, donde cada"
+" fila representa un enunciado. Las columnas DEBERÍAN representar campos de "
+"enunciado y los títulos de las columnas DEBERÍAN utilizar el indicador JSON "
+"relativo relevante de la raíz del enunciado."
 
 #: ../../standard/system/serialisation.rst:27 c1a8fca361544a4ca7a30854967f1aef
 msgid "For example, the extract:"

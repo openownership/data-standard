@@ -6,7 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
-# Rachel Vint, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +52,7 @@ msgid ""
 "Schema 2020-12 <https://json-schema.org/>`_."
 msgstr ""
 "Шаблон схемы Стандарта данных о бенефициарном владени определяется с помощью"
-" `Схемы JSON 2020-12 <https://json-schema.org/>`_."
+" `JSON Schema 2020-12 <https://json-schema.org/>`_."
 
 #: ../../standard/schema-browser.rst:10 ae98f49242bf4f9ea33a988c7f048948
 msgid ""
@@ -61,10 +61,11 @@ msgid ""
 "structure of these objects can be explored using the viewers below. (Click "
 "on object buttons to reveal their properties.)"
 msgstr ""
-"Набор данных СДБВ представляет собой массив Записей. Каждая Запись содержит "
-"объект ``recordDetails`` в отношении одного из трех элементов бенефициарного"
-" владения. Структуру этих объектов можно изучить при помощи приведенных ниже"
-" средств просмотра (нажмите на кнопку объекта для отображения его свойств)."
+"Набор данных СДБВ представляет собой массив Характеристик. Каждая "
+"Характеристика содержит объект ``recordDetails`` в отношении одного из трех "
+"элементов бенефициарного владения. Структуру этих объектов можно изучить при"
+" помощи приведенных ниже средств просмотра (нажмите на кнопку объекта для "
+"отображения его свойств)."
 
 #: ../../standard/schema-browser.rst:12 b56c00fadb1f4a0586e3d32223260c8d
 msgid ":ref:`schema-browser-statement`"
@@ -87,24 +88,24 @@ msgid ""
 "For an A - Z guide to the the Data Standard's schema objects and codelists, "
 "see the :ref:`schema-reference`."
 msgstr ""
-"Подробное руководство от A до Я по объектам схемы Стандарта данных и спискам"
-" допустимых значений приводится в :ref:`schema-reference`."
+"Подробное руководство по объектам схемы Стандарта данных и спискам "
+"допустимых значений приводится в :ref:`schema-reference`."
 
 #: ../../standard/schema-browser.rst:22 a9974f34febe4993ad00709170a45571
 msgid "Statements array"
-msgstr "Массив записей"
+msgstr "Массив характеристик"
 
 #: ../../standard/schema-browser.rst:24 6833ff35c3c8456a92ed3c10c3bb2bd4
 msgid ""
 "View the `Statements JSON schema <../_static/statement.json>`_ or explore it"
 " using the viewer below."
 msgstr ""
-"Просмотрите `схему JSON «Записи» <../_static/statement.json>`_ или изучите "
-"ее при помощи приведенного ниже средства просмотра."
+"Просмотрите `схему JSON «Характеристика» <../_static/statement.json>`_ или "
+"изучите ее при помощи средства просмотра ниже."
 
 #: ../../standard/schema-browser.rst:33 b9ebc6a087c547119b33ad791054d912
 msgid "Record details (entity)"
-msgstr "Сведения об элементе (субъект)"
+msgstr "Сведения о записи (субъект)"
 
 #: ../../standard/schema-browser.rst:35 5e437b896aa04c938d17e23a9cb341e3
 msgid ""
@@ -112,12 +113,11 @@ msgid ""
 "record.json>`_ or explore it using the viewer below."
 msgstr ""
 "Просмотрите `схему JSON «Сведения о субъекте» <../_static/entity-"
-"record.json>`_ или изучите ее при помощи приведенного ниже средства "
-"просмотра."
+"record.json>`_ или изучите ее при помощи средства просмотра ниже."
 
 #: ../../standard/schema-browser.rst:45 52b71448b3c440c2910c423f3e8474a7
 msgid "Record details (person)"
-msgstr "Сведения об элементе (физическое лицо)"
+msgstr "Сведения о записи (физическое лицо)"
 
 #: ../../standard/schema-browser.rst:47 b2c83310f7044d4bae430f47e6ce0e12
 msgid ""
@@ -125,12 +125,11 @@ msgid ""
 "statement.json>`_ or explore it using the viewer below."
 msgstr ""
 "Просмотрите `схему JSON «Сведения о физическом лице» <../_static/person-"
-"statement.json>`_ или изучите ее при помощи приведенного ниже средства "
-"просмотра."
+"statement.json>`_ или изучите ее при помощи средства просмотра ниже."
 
 #: ../../standard/schema-browser.rst:56 b031268dc7e844f6a3da20e4ccadc4d2
 msgid "Record details (relationship)"
-msgstr "Сведения об элементе (отношения)"
+msgstr "Сведения о записи (отношения)"
 
 #: ../../standard/schema-browser.rst:58 1a83494714db454e825b4e02aa9c92cf
 msgid ""
@@ -138,5 +137,4 @@ msgid ""
 "record.json>`_ or explore it using the viewer below."
 msgstr ""
 "Просмотрите `схему JSON «Сведения об отношениях» <../_static/relationship-"
-"record.json>`_ или изучите ее при помощи приведенного ниже средства "
-"просмотра."
+"record.json>`_ или изучите ее при помощи средства просмотра ниже."
