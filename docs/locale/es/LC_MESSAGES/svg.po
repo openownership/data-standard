@@ -7,13 +7,15 @@
 # Transifex Bot <>, 2024
 # Carmen Edery, 2024
 # María Renée Briozzo Mitchell, 2024
+# Renzo Lavin <renlavin@gmail.com>, 2024
+# Rachel Vint, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-05-10 16:05+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -71,7 +73,7 @@ msgstr ""
 #: docs/_assets/trust-scenario6.svg:889
 #, no-wrap
 msgid "Entity statement"
-msgstr "Declaración sobre entidad"
+msgstr "Enunciado sobre entidad"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/AlphaBeta.svg:405 docs/_assets/AlphaBeta.svg:422
@@ -223,7 +225,7 @@ msgstr "Relación indirecta"
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:565
 #, no-wrap
 msgid "Statement and relevant properties"
-msgstr "Declaración y propiedades relevantes"
+msgstr "Enunciado y propiedades relevantes"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:639
@@ -244,7 +246,7 @@ msgstr "Declaración y propiedades relevantes"
 #: docs/_assets/trust-scenario6.svg:845
 #, no-wrap
 msgid "Person statement"
-msgstr "Declaración sobre persona"
+msgstr "Enunciado sobre persona"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:661
@@ -279,7 +281,7 @@ msgstr "Declaración sobre persona"
 #: docs/_assets/trust-scenario6.svg:818 docs/_assets/trust-scenario6.svg:856
 #, no-wrap
 msgid "Relationship statement"
-msgstr "Declaración sobre relación"
+msgstr "Enunciado sobre relación"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/RepresentingChainsBODS-Statements.svg:677
@@ -872,13 +874,13 @@ msgstr ""
 #: docs/_assets/key-concepts-img0.svg:346
 #, no-wrap
 msgid "Beneficial ownership network"
-msgstr "Red de titularidad del beneficiario real"
+msgstr "Red de titularidad real"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/key-concepts-img0.svg:360
 #, no-wrap
 msgid "Beneficial owner"
-msgstr "Beneficiario real"
+msgstr "Beneficiario final"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/key-concepts-img0.svg:384
@@ -890,13 +892,13 @@ msgstr "Entidad intermediaria"
 #: docs/_assets/key-concepts-img0.svg:456
 #, no-wrap
 msgid "Subject of beneficial ownership network"
-msgstr "Sujeto de la red de titularidad del beneficiario real"
+msgstr "Sujeto de la red de titularidad de titularidad real"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/key-concepts-img0.svg:480
 #, no-wrap
 msgid "Interest"
-msgstr "Interest"
+msgstr "Participación"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/key-concepts-img0.svg:981

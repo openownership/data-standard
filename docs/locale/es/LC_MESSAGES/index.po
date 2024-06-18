@@ -8,6 +8,7 @@
 # Agustina De Luca, 2022
 # Carmen Edery, 2024
 # María Renée Briozzo Mitchell, 2024
+# Renzo Lavin <renlavin@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
+"Last-Translator: Renzo Lavin <renlavin@gmail.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +27,7 @@ msgstr ""
 
 #: ../../index.rst:2 fc13bceebec2410c8e7da1650e465254
 msgid "Beneficial Ownership Data Standard (v0.4)"
-msgstr "Estándar de datos sobre titularidad del beneficiario real (v0.4)"
+msgstr "Estándar de datos sobre beneficiarios finales (v0.4)"
 
 #: ../../index.rst:4 bcdb8d77de3240b5baa001a40c5abd3d
 msgid ""
@@ -34,9 +35,9 @@ msgid ""
 "guidance for collecting, sharing and using high-quality beneficial ownership"
 " data."
 msgstr ""
-"El Estándar de datos sobre titularidad del beneficiario real (BODS) es un "
-"estándar abierto que ofrece orientación para recopilar, compartir y usar "
-"datos de titularidad del beneficiario real de alta calidad."
+"El Estándar de datos sobre beneficiarios finales (BODS) es un estándar "
+"abierto que ofrece orientación para recopilar, compartir y usar datos de "
+"beneficiarios finales de alta calidad."
 
 #: ../../index.rst:6 be031c1dc1de4bcaa66bffd88cb94668
 msgid ""
@@ -48,7 +49,7 @@ msgid ""
 msgstr ""
 "Es elaborado por `Open Ownership <https://www.openownership.org/>`_, una "
 "organización sin fines de lucro que se enfoca en la transparencia de "
-"beneficiarios reales, en asociación con `Open Data Services "
+"beneficiarios finales, en asociación con `Open Data Services "
 "<https://opendataservices.coop/>`_. Puede encontrar más información sobre la"
 " :doc:`gobernanza del BODS <../about/governance>` y cómo participar."
 
@@ -61,12 +62,12 @@ msgid ""
 "Learn about beneficial ownership and why a standardised format for data is "
 "important."
 msgstr ""
-"Conozca más acerca de la titularidad del beneficiario real y por qué es "
-"importante un formato estandarizado para los datos."
+"Conozca más sobre beneficiarios finales y por qué es importante un formato "
+"estandarizado para los datos."
 
 #: ../../index.rst:18 66a86c7baa804b929aaa415db155db3e
 msgid ":ref:`What is beneficial ownership? <primer>`"
-msgstr ":ref:`¿Qué es la titularidad del beneficiario real? <primer>`"
+msgstr ":ref:`¿Qué significa beneficiario final? <primer>`"
 
 #: ../../index.rst:22 85dfef5cf3824d3ab341ee16465a3b28
 msgid ":ref:`What is the data standard? <whatisbods>`"

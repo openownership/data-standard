@@ -10,6 +10,7 @@
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
 # María Renée Briozzo Mitchell, 2024
+# Renzo Lavin <renlavin@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: María Renée Briozzo Mitchell, 2024\n"
+"Last-Translator: Renzo Lavin <renlavin@gmail.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,9 +36,9 @@ msgid ""
 "This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model, codelists, and technical guidance."
 msgstr ""
-"Esta es la versión 0.4 del Estándar de datos sobre titularidad del "
-"beneficiario real. Incluye actualizaciones del modelo de datos, listas de "
-"códigos y orientación técnica."
+"Esta es la versión 0.4 del Estándar de datos sobre beneficiarios finales. "
+"Incluye actualizaciones del modelo de datos, listas de códigos y orientación"
+" técnica."
 
 #: ../../standard/warningbox.rst:5 3348e6dfff264a19965018ae3908de64
 msgid ""
@@ -45,7 +46,7 @@ msgid ""
 ":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
 "information."
 msgstr ""
-"Se anticipan cambios futuros antes del lanzamiento de la versión 1.0. "
+"Se anticipan cambios futuros antes del lanzamiento de una versión 1.0. "
 "Consulte las páginas :ref:`Registro de modificaciones<changelog>` y `¿De qué"
 " se trata? <../about>`_ para obtener más información."
 
@@ -66,7 +67,7 @@ msgid ""
 "within a Statement."
 msgstr ""
 "Objeto ``recordDetails`` que contiene los campos de persona, entidad o "
-"relación dentro de una declaración."
+"relación dentro de un enunciado."
 
 #: ../../standard/changelog.rst:15 4704ab751f4747beb33593d26669986d
 msgid ""
@@ -74,8 +75,7 @@ msgid ""
 " by parent declaration (filing) or by the declarant"
 msgstr ""
 "``declaration`` y ``declarationSubject`` para apoyar el agrupamiento de "
-"declaraciones por declaración principal (presentación formal) o por "
-"declarante"
+"enunciados por declaración principal (presentación formal) o por declarante"
 
 #: ../../standard/changelog.rst:16 a6bb12aa2caa46a082254cd09bece40a
 msgid "``recordId`` and ``recordStatus`` to support information updates"
@@ -93,7 +93,7 @@ msgstr "Guía de fechas"
 
 #: ../../standard/changelog.rst:20 4b2ed130890046819aed09d753792103
 msgid "Generating statements"
-msgstr "Generación de declaraciones"
+msgstr "Generación de enunciados"
 
 #: ../../standard/changelog.rst:21 294cebedefbf4a6d86adb45eb6d16841
 msgid "Record identifiers"
@@ -105,7 +105,7 @@ msgstr "Representación de fideicomisos"
 
 #: ../../standard/changelog.rst:23 8d4fef32caee4a03b456339b6dce7309
 msgid "Representing nominees"
-msgstr "Representación de nominados"
+msgstr "Representación de acuerdos de mandato"
 
 #: ../../standard/changelog.rst:24 ca716ed6eef1414499d1a50d422a51ae
 msgid "Representing record updates"
@@ -153,12 +153,12 @@ msgstr ""
 #: ../../standard/changelog.rst:33 3f7cfac72f9447c7a0a26e32c51e56a8
 msgid "'Ownership-or-control' statements renamed 'Relationship' statements"
 msgstr ""
-"Se renombraron las declaraciones 'Ownership-or-control' como declaraciones "
+"Se renombraron los enunciados 'Ownership-or-control' como enunciados "
 "'Relationship'"
 
 #: ../../standard/changelog.rst:34 fc600b0f03cb4133b88f45a56399a718
 msgid "Statement fields:"
-msgstr "Campos de declaración:"
+msgstr "Campos de enunciado:"
 
 #: ../../standard/changelog.rst:36 81326c659a3a4a0a95eefc25e85a3000
 msgid "``statementDate`` now required"
@@ -190,7 +190,8 @@ msgstr ""
 #: ../../standard/changelog.rst:43 3bbb15c240304f49b5a11b8ae00bcf24
 msgid "'nomination' and 'trust' added ``entitySubtype`` codelist"
 msgstr ""
-"'nominación' y 'fideicomiso' agregaron la lista de códigos ``entitySubtype``"
+"'mandato' y 'fideicomiso' se agregaron a la lista de códigos "
+"``entitySubtype``"
 
 #: ../../standard/changelog.rst:44 b61bca5c9e4d4dd5ab13357c862c7b88
 msgid ""
@@ -215,7 +216,7 @@ msgstr ""
 #: ../../standard/changelog.rst:48 9e926310da4b4ddeae096fe3e1f2afbc
 msgid "'nominee' and 'nominator' added to ``Interest.type`` codelist"
 msgstr ""
-"Se agregaron 'nominado' y 'nominador' a la lista de códigos "
+"Se agregaron 'mandatario' y 'mandante' a la lista de códigos "
 "``Interest.type``"
 
 #: ../../standard/changelog.rst:49 c09e3bf0d79e4c56b9490db2f40cd087
@@ -311,8 +312,8 @@ msgid ""
 "``beneficialOwnershipOrControl``, ``directOrIndirect``, "
 "``componentStatementIDs``, and ``isComponent``."
 msgstr ""
-"Orientación técnica (normativa) sobre 'Representación de la titularidad del "
-"beneficiario real': proporciona requisitos detallados para el uso de "
+"Orientación técnica (normativa) sobre 'Representación de los beneficiarios "
+"finales': proporciona requisitos detallados para el uso de "
 "``beneficialOwnershipOrControl``, ``directOrIndirect``, "
 "``componentStatementIDs`` e ``isComponent``."
 
@@ -324,7 +325,7 @@ msgid ""
 msgstr ""
 "Apoyo para la descripción de los valores negociados y el estado de una "
 "empresa que cotiza en bolsa (PLC): se ha agregado un nuevo objeto "
-"``publicListing`` a las declaraciones sobre entidad."
+"``publicListing`` a los enunciados sobre entidad."
 
 #: ../../standard/changelog.rst:83 62e830f736ef4a83beb9247090b84773
 msgid "Support for representing state-owned enterprises (SOEs):"
@@ -343,9 +344,9 @@ msgid ""
 "object with properties ``generalCategory`` (codelist, see below) and "
 "``localTerm`` (string)."
 msgstr ""
-"Se agregó la nueva propiedad ``entitySubtype`` a las declaraciones de "
-"entidad. Su valor es un objeto con propiedades ``generalCategory`` (lista de"
-" códigos, ver más abajo) y ``localTerm`` (cadena de caracteres)."
+"Se agregó la nueva propiedad ``entitySubtype`` a los enunciados de entidad. "
+"Su valor es un objeto con propiedades ``generalCategory`` (lista de códigos,"
+" ver más abajo) y ``localTerm`` (cadena de caracteres)."
 
 #: ../../standard/changelog.rst:87 801966cc06c944fc8ffeee1f6bb153d7
 msgid ""
@@ -360,7 +361,7 @@ msgid ""
 "New ``formedByStatute`` property added to Entity Statements. Its value is an"
 " object with properties ``name`` and ``date``."
 msgstr ""
-"Se agregó la nueva propiedad ``formedByStatute`` a las declaraciones de "
+"Se agregó la nueva propiedad ``formedByStatute`` a los enunciados de "
 "entidad. Su valor es un objeto con propiedades ``name`` y ``date``."
 
 #: ../../standard/changelog.rst:89 2f980e73c0fa45349ba3f9f7a24392fb
@@ -404,7 +405,7 @@ msgid ""
 "wrapped in a ``PoliticalExposure`` object and renamed ``status`` and "
 "``details``."
 msgstr ""
-"En la declaración sobre persona, ``hasPepStatus`` y ``pepDetails`` se han "
+"En el enunciado sobre persona, ``hasPepStatus`` y ``pepDetails`` se han "
 "incluido en un objeto ``PoliticalExposure`` y se les ha cambiado el nombre a"
 " ``status`` y ``details``."
 
@@ -413,9 +414,8 @@ msgid ""
 "``incorporatedInJurisdiction`` property in Entity Statements renamed to "
 "``jurisdiction`` and description updated."
 msgstr ""
-"Se cambió el nombre de la propiedad ``incorporatedInJurisdiction`` en las "
-"declaraciones sobre entidad a ``jurisdiction`` y se actualizó la "
-"descripción."
+"Se cambió el nombre de la propiedad ``incorporatedInJurisdiction`` en los "
+"enunciados sobre entidad a ``jurisdiction`` y se actualizó la descripción."
 
 #: ../../standard/changelog.rst:104 922edee38a8a45a195ad4788a8ec8687
 msgid ""
@@ -506,9 +506,9 @@ msgid ""
 "relationships (where a beneficial owner owns or controls an entity through "
 "intermediaries):"
 msgstr ""
-"Apoyo para representar detalles de las relaciones de titularidad del "
-"beneficiario real indirectas (donde un beneficiario real posee o controla "
-"una entidad a través de intermediarios):"
+"Apoyo para representar detalles de las relaciones de titularidad indirecta "
+"del beneficiario final (donde un beneficiario final posee o controla una "
+"entidad a través de intermediarios):"
 
 #: ../../standard/changelog.rst:137 021226ca7c8f4b1bb40e9dc8628b2f88
 msgid ""
@@ -517,8 +517,8 @@ msgid ""
 "represents part of a primary indirect ownership-or-control relationship."
 msgstr ""
 "Se agregó la propiedad requerida ``isComponent`` en los tres objetos de "
-"declaraciones. Toma un valor booleano e indica si una declaración representa"
-" parte de una relación primaria indirecta de titularidad o control."
+"enunciados. Toma un valor booleano e indica si un enunciado representa parte"
+" de una relación primaria indirecta de titularidad o control."
 
 #: ../../standard/changelog.rst:138 9315383a6bae4316981a518f649009c1
 msgid ""
@@ -526,10 +526,10 @@ msgid ""
 "Statements. It takes an array of Statement IDs, indicating which component "
 "statements provide detail about the parent Ownership-or-control Statement."
 msgstr ""
-"Se agregó la propiedad ``componentStatementIDs`` a las declaraciones sobre "
+"Se agregó la propiedad ``componentStatementIDs`` a los enunciados sobre "
 "titularidad o control. Toma un arreglo de datos de Identificaciones de "
-"declaración indicando cuáles son las declaraciones componentes que brindan "
-"detalles acerca de la declaración sobre titularidad o control principal."
+"enunciado indicando cuáles son los enunciados componentes que brindan "
+"detalles acerca del enunciado sobre titularidad o control principal."
 
 #: ../../standard/changelog.rst:140 242e11eb37fc4ecebf8e6d544e5c0b26
 msgid ""
@@ -538,9 +538,9 @@ msgid ""
 "their original publisher. Sub-properties (and their sub-properties) are:"
 msgstr ""
 "Se agregó la propiedad requerida ``publicationDetails`` a los tres objetos "
-"de declaraciones. Representa metadatos de las declaraciones: información "
-"sobre su publicador original. Las subpropiedades (y sus respectivas "
-"subpropiedades) son:"
+"de enunciados. Representa metadatos de los enunciados: información sobre su "
+"publicador original. Las subpropiedades (y sus respectivas subpropiedades) "
+"son:"
 
 #: ../../standard/changelog.rst:142 f0a3c41d679543249d20f5c63bb15a13
 msgid "``publicationDate``\\*"
@@ -568,8 +568,8 @@ msgid ""
 "Person Statements. It is only to be used where disclosure requirements "
 "require that Politically Exposed Persons are flagged."
 msgstr ""
-"Se agregó la propiedad ``hasPepStatus`` (que toma un valor booleano) a las "
-"declaraciones sobre personas. Solo debe utilizarse cuando los requisitos de "
+"Se agregó la propiedad ``hasPepStatus`` (que toma un valor booleano) a los "
+"enunciados sobre personas. Solo debe utilizarse cuando los requisitos de "
 "divulgación exigen que se marque a las personas expuestas políticamente."
 
 #: ../../standard/changelog.rst:151 f2c89e909acc425fb37efded19f4bb40
@@ -585,8 +585,8 @@ msgid ""
 "A ``taxResidencies`` property has been added to Person Statements. It takes "
 "an array of Country objects."
 msgstr ""
-"Se agregó la propiedad ``taxResidencies`` a las declaraciones sobre "
-"personas. Toma un arreglo de datos de objetos País."
+"Se agregó la propiedad ``taxResidencies`` a los enunciados sobre personas. "
+"Toma un arreglo de datos de objetos País."
 
 #: ../../standard/changelog.rst:155 8b265b3948644e1b9c93d337033f6b25
 msgid "Support for more structured accounts of missing and anonymised data:"
@@ -599,7 +599,7 @@ msgid ""
 "``unspecifiedPersonDetails`` has been added to Person Statements (with a "
 "required ``reason`` sub-property)"
 msgstr ""
-"Se agregó ``unspecifiedPersonDetails`` a las declaraciones sobre personas "
+"Se agregó ``unspecifiedPersonDetails`` a los enunciados sobre personas "
 "(junto con ``reason`` como subpropiedad requerida)"
 
 #: ../../standard/changelog.rst:158 dfb2240c600b41cca0c372382edf245a
@@ -607,7 +607,7 @@ msgid ""
 "``unspecifiedEntityDetails`` has been added to Entity Statements (with a "
 "required ``reason`` sub-property)"
 msgstr ""
-"Se agregó ``unspecifiedEntityDetails`` a las declaraciones sobre entidades "
+"Se agregó ``unspecifiedEntityDetails`` a los enunciados sobre entidades "
 "(junto con ``reason`` como subpropiedad requerida)"
 
 #: ../../standard/changelog.rst:160 22fe4fea80f245c1b9406ba53c09c3f2
@@ -617,22 +617,22 @@ msgid ""
 "property)."
 msgstr ""
 "La subpropiedad ``reason`` se sirve de la lista de códigos Motivo no "
-"especificado (al igual que la propiedad ``interestedParty.unspecified`` de "
-"la declaración sobre titularidad o control)."
+"especificado (al igual que la propiedad ``interestedParty.unspecified`` del "
+"enunciado sobre titularidad o control)."
 
 #: ../../standard/changelog.rst:164 0d533cc5aa5940cc89fc68ee84b92af1
 msgid ""
 "The ``pepStatus`` property of Person Statements has been renamed "
 "``pepStatusDetails`` (and still references an array of PEP Status objects)."
 msgstr ""
-"La propiedad ``pepStatus`` de las declaraciones sobre personas cambió su "
+"La propiedad ``pepStatus`` de los enunciados sobre personas cambió su "
 "denominación a ``pepStatusDetails`` (y sigue haciendo referencia a un "
 "arreglo de objetos Condición de PEP)."
 
 #: ../../standard/changelog.rst:166 be8f8683b92e44fdbacbf27cab4a2d76
 msgid "The ``personType`` property of Person Statements is now required."
 msgstr ""
-"La propiedad ``personType`` de las declaraciones sobre personas ahora es "
+"La propiedad ``personType`` de los enunciados sobre personas ahora es "
 "requerida."
 
 #: ../../standard/changelog.rst:168 e43e1af936b242e69305d4ec1561dce3
@@ -713,8 +713,8 @@ msgid ""
 "Statements. It has been replaced with ``unspecifiedPersonDetails`` and "
 "``unspecifiedEntityDetails`` respectively."
 msgstr ""
-"Se eliminó la propiedad ``missingInfoReason`` de las declaraciones sobre "
-"personas y las declaraciones sobre entidades. Se la reemplazó por "
+"Se eliminó la propiedad ``missingInfoReason`` de los enunciados sobre "
+"personas y los enunciados sobre entidades. Se la reemplazó por "
 "``unspecifiedPersonDetails`` y ``unspecifiedEntityDetails``, "
 "respectivamente."
 
@@ -731,7 +731,7 @@ msgstr ""
 "Se agregó la propiedad ``beneficialOwnershipOrControl`` al objeto Interés. "
 "Toma un valor booleano. Puede utilizarse para afirmar que un interés entre "
 "una persona física y una entidad convierte a esa persona en un beneficiario "
-"real."
+"final."
 
 #: ../../standard/changelog.rst:203 31b535874d2448659d86a63d564a30ea
 msgid ""
@@ -739,7 +739,7 @@ msgid ""
 "person to be recorded as a politically exposed person (with a related "
 "reason, jurisdiction, start date and end date)."
 msgstr ""
-"Se agregó la propiedad ``pepStatus`` al objeto Declaración sobre persona. "
+"Se agregó la propiedad ``pepStatus`` al objeto Enunciado sobre persona. "
 "Permite registrar a una persona física como persona expuesta políticamente "
 "(con un motivo, jurisdicción, fecha de inicio y fecha de finalización "
 "relacionados)."
@@ -750,7 +750,7 @@ msgid ""
 "provide a way of including additional (structured) data or transforming "
 "existing data in a targeted way."
 msgstr ""
-"Se agregó la propiedad ``annotations`` a los tres tipos de declaración. Las "
+"Se agregó la propiedad ``annotations`` a los tres tipos de enunciado. Las "
 "notas constituyen un modo de incluir datos (estructurados) adicionales o de "
 "transformar los datos existentes de manera orientada."
 
@@ -794,9 +794,9 @@ msgid ""
 "a flattening of the structure of BODS formatted data."
 msgstr ""
 "Ya no se utilizan arreglos de objetos ``statementGroup`` (cada objeto con su"
-" propia identificación de grupo de declaraciones) para empaquetar arreglos "
-"de datos de declaraciones. Esto refleja el aplanamiento de la estructura de "
-"datos en formato BODS. "
+" propia identificación de grupo de enunciados) para empaquetar arreglos de "
+"datos de enunciados. Esto refleja el aplanamiento de la estructura de datos "
+"en formato BODS. "
 
 #: ../../standard/changelog.rst:216 a3f03f2683d746c5b74d586cfc81ad00
 msgid ""

@@ -8,8 +8,9 @@
 # Simon Whitehouse <simon.whitehouse@opendataservices.coop>, 2024
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Carmen Edery, 2024
-# María Renée Briozzo Mitchell, 2024
 # Rachel Vint, 2024
+# María Renée Briozzo Mitchell, 2024
+# Renzo Lavin <renlavin@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Renzo Lavin <renlavin@gmail.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,11 +40,11 @@ msgid ""
 "or item exists."
 msgstr ""
 "Los identificadores del mundo real son esenciales para que los datos de "
-"titularidad del beneficiario real sean interoperables. Con 'identificador "
-"del mundo real', nos referimos a las cadenas de caracteres de referencia, "
-"emitidas por esquemas de inscripción confiables, que sean de uso amplio en "
-"el mundo. Las personas pueden usarlos para verificar que la persona, entidad"
-" u objeto al que se hace referencia existe."
+"beneficiarios finales sean interoperables. Con 'identificador del mundo "
+"real', nos referimos a las cadenas de caracteres de referencia, emitidas por"
+" esquemas de inscripción confiables, que sean de uso amplio en el mundo. "
+"Pueden usarse para verificar que la persona, entidad u objeto al que se hace"
+" referencia existe."
 
 #: ../../standard/modelling/identifiers.rst:8 84e447e33eeb4fd2972ab679d12c66fe
 msgid "In BODS, real world identifiers can be published for:"
@@ -83,8 +84,8 @@ msgid ""
 "Identifier (LEI), or other real world identifier."
 msgstr ""
 "Utilice un :ref:`Identificador <schema-identifier>` en el arreglo de datos "
-"``identifiers`` de una declaración sobre entidad para proporcionar un número"
-" de inscripción de empresa, un identificador de entidad legal (LEI) u otro "
+"``identifiers`` de un enunciado sobre entidad para proporcionar un número de"
+" inscripción de empresa, un identificador de entidad legal (LEI) u otro "
 "identificador del mundo real."
 
 #: ../../standard/modelling/identifiers.rst:20
@@ -151,7 +152,7 @@ msgstr ""
 "Si el sistema contiene números de identificación de una persona y estos "
 "pueden publicarse sin riesgos en cuanto a su privacidad o seguridad, "
 "entonces también DEBERÍAN incluirse en el arreglo de datos ``identifiers`` "
-"de la declaración sobre persona."
+"del enunciado sobre persona."
 
 #: ../../standard/modelling/identifiers.rst:35
 #: af340a63084c4e14a029c4f631406c20
@@ -351,12 +352,12 @@ msgid ""
 "traded on a segment of an exchange."
 msgstr ""
 "Dos propiedades del objeto de la :ref:`Listado de valores <schema-"
-"securities-listing>` de una declaración sobre entidad identifican dónde se "
-"se negocia un valor: el ``operatingMarketIdentifierCode`` del mercado "
-"operativo y el ``marketIdentifierCode``. El ``marketIdentifierCode`` DEBERÍA"
-" ser igual que el ``operatingMarketIdentifierCode`` si el valor se negocia "
-"en una bolsa principal. El ``marketIdentifierCode`` diferirá cuando un valor"
-" se negocie en un segmento de una bolsa."
+"securities-listing>` de un enunciado sobre entidad identifican dónde se se "
+"negocia un valor: el ``operatingMarketIdentifierCode`` del mercado operativo"
+" y el ``marketIdentifierCode``. El ``marketIdentifierCode`` DEBERÍA ser "
+"igual que el ``operatingMarketIdentifierCode`` si el valor se negocia en una"
+" bolsa principal. El ``marketIdentifierCode`` diferirá cuando un valor se "
+"negocie en un segmento de una bolsa."
 
 #: ../../standard/modelling/identifiers.rst:83
 #: 2ed35d9966d045a2bb14c3f9f3baac74

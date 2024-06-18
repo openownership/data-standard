@@ -7,6 +7,7 @@
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Galia Williams, 2024
 # Kateryna Volobuieva, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # Rachel Vint, 2024
 # 
 #, fuzzy
@@ -56,9 +57,9 @@ msgid ""
 msgstr ""
 "Данный документ является руководством от A до Я по объектам схемы Стандарта "
 "данных и ее `спискам допустимых значений`_ . Сведения о свойствах каждого "
-"объекта приведены в таблице. Для структурированного представления касательно"
-" того, как объекты сочетаются в схеме JSON, воспользуйтесь :doc:`Браузером "
-"схемы <schema-browser>`."
+"объекта приведены в таблице. Для структурированного представления о том, как"
+" объекты сочетаются в схеме JSON, воспользуйтесь :doc:`Браузером схемы "
+"<schema-browser>`."
 
 #: ../../standard/reference.rst:10 4efc0007be0c40789dd46e1e0c4ba2a2
 msgid ""
@@ -66,8 +67,9 @@ msgid ""
 "statement contains record details for one of three beneficial ownership "
 "elements:"
 msgstr ""
-"Объектами высшего уровня являются :any:`Записи <schema-statement>`. Каждая "
-"запись содержит сведения об одном из трех элементов бенефициарного владения:"
+"Объектами высшего уровня являются :any:`Характеристики <schema-statement>`. "
+"Каждая характеристика содержит сведения об одном из трех элементов "
+"бенефициарного владения:"
 
 #: ../../standard/reference.rst:12 223768f31fed43b887c3cd75a35c4c46
 msgid ":any:`Entity <schema-entity-record>`"
@@ -87,7 +89,7 @@ msgid ""
 "<https://tools.ietf.org/html/rfc8259>`_. See :any:`Serialisation <guidance-"
 "serialisation>` for other options."
 msgstr ""
-"Данные СДБВ МОГУТ публиковаться в формате действительного `документа JSON "
+"Данные СДБВ МОГУТ публиковаться в формате корректного `документа JSON "
 "<https://tools.ietf.org/html/rfc8259>`_. См. раздел :any:`Сериализация "
 "<guidance-serialisation>`, чтобы узнать о других возможностях."
 
@@ -102,7 +104,7 @@ msgid ""
 "fields in source systems, this information SHOULD be published in the "
 "dedicated fields and SHOULD NOT be published in the `address` field."
 msgstr ""
-"Полуструктурированные сведения об адресе, подходящие для обработки при "
+"Частично структурированные сведения об адресе, подходящие для обработки при "
 "помощи алгоритмов парсинга адресов. Если почтовые индексы и сведения о "
 "стране — это изолированные поля в исходных системах, такая информация ДОЛЖНА"
 " публиковаться в специально предназначенных полях и НЕ ДОЛЖНА публиковаться "
@@ -208,8 +210,8 @@ msgid ""
 "The ``annotations`` property of statements is an array of Annotation "
 "objects."
 msgstr ""
-"Свойство записей ``annotations`` (примечания) представляет собой массив "
-"объектов Annotation (Примечание)."
+"Свойство характеристики ``annotations`` (примечания) представляет собой "
+"массив объектов Annotation (Примечание)."
 
 #: ../../standard/reference.rst:48 1e2f624acc77494f93cd7285428d1aa0
 msgid "Annotations can be used to:"
@@ -235,9 +237,9 @@ msgid ""
 "specific field. ``annotation.statementPointerTarget`` indicates where the "
 "annotation applies."
 msgstr ""
-"Примечания могут касаться всей записи, части записи или конкретного поля. "
-"Параметр ``annotation.statementPointerTarget`` указывает на то, к чему "
-"относится примечание."
+"Примечания могут касаться характеристики в целом, части характеристики или "
+"конкретного поля. Свойство ``annotation.statementPointerTarget`` указывает "
+"на то, к чему относится примечание."
 
 #: ../../standard/reference.rst:65 7c7ea5683d8c4a7588f5aff3718b45be
 msgid "Country"
@@ -261,8 +263,8 @@ msgid ""
 "item that it refers to. See :any:`Real world identifiers <guidance-"
 "identifiers>` for guidance on using this object."
 msgstr ""
-"Объект Identifier (Идентификатор) соединяет запись с физическим лицом, "
-"субъектом или элементом, на которых она ссылается. Рекомендации по "
+"Объект Identifier (Идентификатор) соединяет характеристику с физическим "
+"лицом, субъектом или элементом, на которых оно ссылается. Рекомендации по "
 "использованию этого объекта см. в разделе :any:`Общие идентификаторы "
 "<guidance-identifiers>`."
 
@@ -272,8 +274,8 @@ msgid ""
 "`schemeName` (or both) MUST be included in an Identifier object."
 msgstr ""
 "Идентификатор, который был присвоен физическому лицу или субъекту. Значения "
-"параметров `scheme` или `schemeName` (или обоих) ДОЛЖНЫ быть включены в "
-"объект Identifier."
+"свойств `scheme` или `schemeName` (или обоих) ДОЛЖНЫ быть включены в объект "
+"Identifier."
 
 #: ../../standard/reference.rst:94 cc26d5b72c30427fbc7faedd245c6837
 msgid "Interest"
@@ -296,11 +298,12 @@ msgid ""
 "country code (ISO 3166-1) or a subdivision code (ISO 3166-2)."
 msgstr ""
 "У юрисдикции ДОЛЖНО быть название. РЕКОМЕНДУЕТСЯ, чтобы у юрисдикции был "
-"2-буквенный код страны (ISO 3166-1) или код подразделения (ISO 3166-2)."
+"2-буквенный код страны (ISO 3166-1) или код  административно-"
+"территориального деления (ISO 3166-2)."
 
 #: ../../standard/reference.rst:123 273c5df10a9a440bb759aea49b24b355
 msgid "Name"
-msgstr "Name (ФИО)"
+msgstr "Name (Полное имя)"
 
 #: ../../standard/reference.rst-1 4d5d3d9db1c6406aa32df29a8e5101b3
 msgid ""
@@ -310,19 +313,19 @@ msgid ""
 "(https://joinup.ec.europa.eu/solution/e-government-core-vocabularies) "
 "definitions."
 msgstr ""
-"ФИО, под которым известно это физическое лицо. ФИО ДОЛЖНО быть указано в "
-"поле `fullName` и МОЖЕТ быть разбито на поля `familyName`, `givenName` и "
-"`patronymicName` в соответствии с определениями из словаря EC ISA Core "
-"Person Vocabulary (https://joinup.ec.europa.eu/solution/e-government-core-"
-"vocabularies)."
+"Полное имя, под которым известно это физическое лицо. Полное имя ДОЛЖНО быть"
+" указано в поле `fullName` и МОЖЕТ быть разбито на поля `familyName`, "
+"`givenName` и `patronymicName` в соответствии с определениями из словаря EC "
+"ISA Core Person Vocabulary "
+"(https://joinup.ec.europa.eu/solution/e-government-core-vocabularies)."
 
 #: ../../standard/reference.rst:138 f79a8b60765a405eb5bee79eb58aa30c
 msgid "PEPstatusDetails"
-msgstr "PEPstatusDetails (Сведения о статусе ПДЛ)"
+msgstr "PEPstatusDetails (Сведения о статусе PEP)"
 
 #: ../../standard/reference.rst-1 09729a717d29477886c58c531e7532ab
 msgid "Information about a person's political involvement."
-msgstr "Информация об участии физического лица в публичной деятельности."
+msgstr "Информация об участии физического лица в политической деятельности."
 
 #: ../../standard/reference.rst:152 37220704372047b2a4b46851713a8579
 msgid "PublicListing"
@@ -344,7 +347,7 @@ msgstr "Publication Details (Сведения о публикации)"
 
 #: ../../standard/reference.rst-1 20bd3f9bc90a4636a09fba31516bd956
 msgid "Information concerning the publication of this Statement."
-msgstr "Информация касательно публикации данной Записи."
+msgstr "Информация касательно публикации данной Характеристики."
 
 #: ../../standard/reference.rst:180 e521a60fd7734e52b0dc23cad32db601
 msgid "Publisher"
@@ -352,11 +355,12 @@ msgstr "Publisher (Издатель)"
 
 #: ../../standard/reference.rst-1 fe562614c42f48fabad72659c556842e
 msgid "Details of the organisation or person publishing a Statement."
-msgstr "Сведения об организации или физическом лице, публикующем Запись."
+msgstr ""
+"Сведения об организации или физическом лице, публикующих Характеристику."
 
 #: ../../standard/reference.rst:194 53590c011b3640fab9e794fc82f824c8
 msgid "Record Details (entity)"
-msgstr "Record Details (entity) (Сведения об элементе (субъект))"
+msgstr "Record Details (entity) (Сведения о записи (субъект))"
 
 #: ../../standard/reference.rst-1 24c4713551c848baaa64836e042a03bf
 msgid "Information about an entity."
@@ -364,7 +368,7 @@ msgstr "Информация о субъекте."
 
 #: ../../standard/reference.rst:208 26ef6e4efefa47b2b86637e2066635a8
 msgid "Record Details (person)"
-msgstr "Record Details (person) (Сведения об элементе (физическое лицо))"
+msgstr "Record Details (person) (Сведения о записи (физическое лицо))"
 
 #: ../../standard/reference.rst-1 9e935fd58dbf4d998ab9a081e0d28a2a
 msgid "Information about a natural person."
@@ -372,7 +376,7 @@ msgstr "Информация о физическом лице."
 
 #: ../../standard/reference.rst:222 fcd2b89543bc4148be55c068225a601f
 msgid "Record Details (relationship)"
-msgstr "Record Details (relationship) (Сведения об элементе (отношения))"
+msgstr "Record Details (relationship) (Сведения о записи (отношения))"
 
 #: ../../standard/reference.rst:224 465e6b34389745c7bfe075ead86dc540
 msgid "See :ref:`representing-bo` for detailed requirements."
@@ -388,12 +392,12 @@ msgstr ""
 
 #: ../../standard/reference.rst:238 bd51d9c12f094ca2b08e004f43766727
 msgid "Record Id"
-msgstr "Record Id (Идентификатор элемента)"
+msgstr "Record Id (Идентификатор записи)"
 
 #: ../../standard/reference.rst:240 34587424b9ce49e3b0cde8fbb2fc298d
 msgid "See :ref:`record-identifiers` for information about Record Ids"
 msgstr ""
-"Информацию об идентификаторах элементов смотрите в разделе :ref:`record-"
+"Информацию об идентификаторах записей смотрите в разделе :ref:`record-"
 "identifiers`."
 
 #: ../../standard/reference.rst-1 4e591769b1074d29b5c440183b32632b
@@ -403,8 +407,8 @@ msgid ""
 "natural person or relationship within the beneficial ownership network of a "
 "particular declaration subject.)"
 msgstr ""
-"Уникальный идентификатор элемента (в системе издателя), к которому относится"
-" данная Запись. (В элементе издателя зафиксирована информация о субъекте, "
+"Уникальный идентификатор записи (в системе издателя), к которому относится "
+"данная Характеристика. (В записи зафиксирована информация о субъекте, "
 "физическом лице или отношениях внутри сети бенефициарного владения "
 "конкретного предмета декларации.)"
 
@@ -438,9 +442,9 @@ msgid ""
 msgstr ""
 "Процентное отношение данной доли участия, принадлежащей заинтересованной "
 "стороне, если доля участия является исчисляемой. Укажите `точный` процент, "
-"если он известен. В противном случае можно использовать параметры `minimum` "
+"если он известен. В противном случае можно использовать свойства `minimum` "
 "(или `exclusiveMinimum`) и `maximum` (или `exclusiveMaximum`) для указания "
-"дипазона, в который входит это процентное отношение (значения параметров "
+"дипазона, в который входит это процентное отношение (значения свойств "
 "`minimum` и `maximum` учитываются включительно)."
 
 #: ../../standard/reference.rst:277 cf53c1ec6d864d8f82672c05b41753f0
@@ -453,7 +457,7 @@ msgstr "Сведения, описывающие источник информа
 
 #: ../../standard/reference.rst:291 f1cc9b2d695547eb9240fb6b8949f709
 msgid "Statement"
-msgstr "Statement (Запись)"
+msgstr "Statement (Характеристика)"
 
 #: ../../standard/reference.rst-1 786964e76b1b424eb0fcff0f1da18dff
 msgid ""
@@ -465,27 +469,27 @@ msgstr ""
 
 #: ../../standard/reference.rst:306 dab956dbb10545c1a6fce8ab2b1367d8
 msgid "Statement Id"
-msgstr "Statement Id (Идентификатор записи)"
+msgstr "Statement Id (Идентификатор характеристики)"
 
 #: ../../standard/reference.rst:308 30f9e3efda094a119c819061b0cb249d
 msgid ""
 "See :ref:`generating-statements` for advice on generating unique Statement "
 "Ids"
 msgstr ""
-"Рекомендации по генерированию уникальных идентификаторов записи см. в "
-"разделе :ref:`generating-statements`."
+"Рекомендации по генерированию уникальных идентификаторов характеристик см. в"
+" разделе :ref:`generating-statements`."
 
 #: ../../standard/reference.rst-1 dbee3c6d06034220bb67327d4fe59de2
 msgid ""
 "A persistent globally unique identifier for this Statement. Length MUST be "
 "32 - 64 characters (inclusive)."
 msgstr ""
-"Постоянный глобальный уникальный идентификатор для данной Записи. Длина "
-"ДОЛЖНА составлять 32–64 символа (включительно)."
+"Постоянный глобальный уникальный идентификатор для данной Характеристики. "
+"Длина ДОЛЖНА составлять 32–64 символа (включительно)."
 
 #: ../../standard/reference.rst:316 106e3abb1b3d43289069c0ada26bee62
 msgid "UnspecifiedRecord"
-msgstr "UnspecifiedRecord (Неуказанный элемент)"
+msgstr "UnspecifiedRecord (Неуказанная запись)"
 
 #: ../../standard/reference.rst-1 61e601e35fb34689967c17e4482eb971
 msgid "A `reason` MUST be supplied."
@@ -521,7 +525,7 @@ msgstr "Interest Type (Тип доли участия)"
 
 #: ../../standard/reference.rst:390 eb849185618c4f47bb5ad48ba3ca4a61
 msgid "Name Type"
-msgstr "Name Type (Тип ФИО)"
+msgstr "Name Type (Тип полного имени)"
 
 #: ../../standard/reference.rst:399 6c2c74050e09467f81033b567a8afb24
 msgid "Person Type"
@@ -529,11 +533,11 @@ msgstr "Person Type (Тип физического лица)"
 
 #: ../../standard/reference.rst:408 a401ee5cb2ba49b280a6c1231a2517a8
 msgid "Record Status"
-msgstr "Record Status (Статус элемента)"
+msgstr "Record Status (Статус записи)"
 
 #: ../../standard/reference.rst:418 44ab19d8b77b43119b36dca636a999ee
 msgid "Record Type"
-msgstr "Record Type (Тип элемента)"
+msgstr "Record Type (Тип записи)"
 
 #: ../../standard/reference.rst:427 9df1f7df207949c181654bffbe95180b
 msgid "Securities Identifier Schemes"

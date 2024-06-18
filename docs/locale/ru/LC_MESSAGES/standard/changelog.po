@@ -4,10 +4,10 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # Galia Williams, 2024
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,8 +63,8 @@ msgid ""
 "``recordDetails`` object to contain person, entity or relationship fields "
 "within a Statement."
 msgstr ""
-"Объект ``recordDetails``, содержащий поля в отношении физического лица, "
-"субъекта или отношений в Записи."
+"Объект ``recordDetails``, с полями о физическом лице, субъекте или "
+"отношениях в Характеристике."
 
 #: ../../standard/changelog.rst:15 4704ab751f4747beb33593d26669986d
 msgid ""
@@ -72,8 +72,8 @@ msgid ""
 " by parent declaration (filing) or by the declarant"
 msgstr ""
 "Свойства ``declaration`` и ``declarationSubject`` для обеспечения "
-"возможности группирования Записей по родительской декларации (подача) или "
-"подателю декларации."
+"возможности группирования Характеристик по родительской декларации "
+"(документ) или декларанту."
 
 #: ../../standard/changelog.rst:16 a6bb12aa2caa46a082254cd09bece40a
 msgid "``recordId`` and ``recordStatus`` to support information updates"
@@ -91,23 +91,23 @@ msgstr "Руководство по указанию дат"
 
 #: ../../standard/changelog.rst:20 4b2ed130890046819aed09d753792103
 msgid "Generating statements"
-msgstr "Создание записей"
+msgstr "Создание характеристик"
 
 #: ../../standard/changelog.rst:21 294cebedefbf4a6d86adb45eb6d16841
 msgid "Record identifiers"
-msgstr "Идентификаторы элементов"
+msgstr "Идентификаторы записей"
 
 #: ../../standard/changelog.rst:22 876795f11fc74563afdc3c6e408cd9f2
 msgid "Representing trusts"
-msgstr "Отображение  трастов"
+msgstr "Представление трастов"
 
 #: ../../standard/changelog.rst:23 8d4fef32caee4a03b456339b6dce7309
 msgid "Representing nominees"
-msgstr "Отображение номинальных владельцев"
+msgstr "Представление номинальных владельцев"
 
 #: ../../standard/changelog.rst:24 ca716ed6eef1414499d1a50d422a51ae
 msgid "Representing record updates"
-msgstr "Отображение обновления элементов"
+msgstr "Представление обновлений записи"
 
 #: ../../standard/changelog.rst:27 ../../standard/changelog.rst:97
 #: ../../standard/changelog.rst:163 ../../standard/changelog.rst:208
@@ -148,11 +148,12 @@ msgstr ""
 #: ../../standard/changelog.rst:33 3f7cfac72f9447c7a0a26e32c51e56a8
 msgid "'Ownership-or-control' statements renamed 'Relationship' statements"
 msgstr ""
-"Записи о 'владении или контроле' переименованы в записи об 'отношениях'."
+"Характеристики о 'владении или контроле' переименованы в Характеристики "
+"'отношений'."
 
 #: ../../standard/changelog.rst:34 fc600b0f03cb4133b88f45a56399a718
 msgid "Statement fields:"
-msgstr "Поля, касающиеся записи:"
+msgstr "Поля характеристики:"
 
 #: ../../standard/changelog.rst:36 81326c659a3a4a0a95eefc25e85a3000
 msgid "``statementDate`` now required"
@@ -222,7 +223,7 @@ msgid ""
 msgstr ""
 "поля ``interestedParty`` и ``subject`` теперь содержат значение свойства "
 "``recordId`` (а не значение свойства ``statementId``); вместо этих значений "
-"в них может использоваться объект Unspecified Record (Неуказанный элемент) "
+"в них может использоваться объект Unspecified Record (Неуказанная запись) "
 "для отображения отсутствующей информации;"
 
 #: ../../standard/changelog.rst:50 56ab2c12ae104dff8459351341cc5dff
@@ -284,7 +285,7 @@ msgstr "Изменения в структуре и логике схемы"
 
 #: ../../standard/changelog.rst:68 e64ff50b50d24195a899f5121808b239
 msgid "Updated the JSON Schema version from draft-04 to 2020-12"
-msgstr "Версия схемы JSON обновлена с «проект-04» до «2020-12»."
+msgstr "Версия JSON Schema обновлена с «draft-04» до «2020-12»."
 
 #: ../../standard/changelog.rst:69 090f4989b6d3456082255fabc4d0b17b
 msgid "Schema files renamed and contents refactored"
@@ -321,8 +322,8 @@ msgid ""
 "Statements."
 msgstr ""
 "Поддержка описания торгуемых ценных бумаг и статуса компании, "
-"зарегистрированной на фондовой бирже (PLC): в записи о субъектах добавлен "
-"новый объект `publicListing``."
+"зарегистрированной на фондовой бирже (PLC): в характеристиках субъектов "
+"добавлен новый объект `publicListing``."
 
 #: ../../standard/changelog.rst:83 62e830f736ef4a83beb9247090b84773
 msgid "Support for representing state-owned enterprises (SOEs):"
@@ -342,9 +343,9 @@ msgid ""
 "object with properties ``generalCategory`` (codelist, see below) and "
 "``localTerm`` (string)."
 msgstr ""
-"В записи о субъектах добавлено новое поле ``entitySubtype``. Его значение "
-"представляет собой объект со свойствами ``generalCategory`` (список "
-"допустимых значений, см. ниже) и ``localTerm`` (строка)."
+"В характеристики субъектов добавлено новое поле ``entitySubtype``. Его "
+"значение представляет собой объект со свойствами ``generalCategory`` (список"
+" допустимых значений, см. ниже) и ``localTerm`` (строка)."
 
 #: ../../standard/changelog.rst:87 801966cc06c944fc8ffeee1f6bb153d7
 msgid ""
@@ -359,8 +360,8 @@ msgid ""
 "New ``formedByStatute`` property added to Entity Statements. Its value is an"
 " object with properties ``name`` and ``date``."
 msgstr ""
-"В записи о субъектах добавлено новое поле ``formedByStatute``. Его значение "
-"представляет собой объект со свойствами ``name`` и ``date``."
+"В характеристики субъектов добавлено новое поле ``formedByStatute``. Его "
+"значение представляет собой объект со свойствами ``name`` и ``date``."
 
 #: ../../standard/changelog.rst:89 2f980e73c0fa45349ba3f9f7a24392fb
 msgid ""
@@ -403,7 +404,7 @@ msgid ""
 "wrapped in a ``PoliticalExposure`` object and renamed ``status`` and "
 "``details``."
 msgstr ""
-"Объекты ``hasPepStatus`` и ``pepDetails`` в записи о физическом лице "
+"Объекты ``hasPepStatus`` и ``pepDetails`` в характеристиках физических лиц "
 "включены в объект ``PoliticalExposure`` и переименованы в ``status`` и "
 "``details``."
 
@@ -412,8 +413,8 @@ msgid ""
 "``incorporatedInJurisdiction`` property in Entity Statements renamed to "
 "``jurisdiction`` and description updated."
 msgstr ""
-"Свойство ``incorporatedInJurisdiction`` в записях о субъектах переименовано "
-"в ``jurisdiction``, его описание обновлено."
+"Свойство ``incorporatedInJurisdiction`` в характеристиках субъектов "
+"переименовано в ``jurisdiction``, его описание обновлено."
 
 #: ../../standard/changelog.rst:104 922edee38a8a45a195ad4788a8ec8687
 msgid ""
@@ -515,8 +516,9 @@ msgid ""
 "represents part of a primary indirect ownership-or-control relationship."
 msgstr ""
 "Обязательное свойство ``isComponent`` было добавлено ко всем трем объектам "
-"записи. Оно принимает логическое значение и указывает на то, отображает ли "
-"запись компонент основных косвенных отношений владения или контроля."
+"характеристик. Оно принимает логическое значение и указывает на то, "
+"отображает ли характеристика компонент основных косвенных отношений владения"
+" или контроля."
 
 #: ../../standard/changelog.rst:138 9315383a6bae4316981a518f649009c1
 msgid ""
@@ -524,10 +526,10 @@ msgid ""
 "Statements. It takes an array of Statement IDs, indicating which component "
 "statements provide detail about the parent Ownership-or-control Statement."
 msgstr ""
-"Свойство ``componentStatementIDs`` было добавлено к записям о владении или "
-"контроле. Оно представлено массивом идентификаторов записи, указывая на то, "
-"какие записи о компонентах содержат сведения касательно родительской записи "
-"о владении или контроле."
+"Свойство ``componentStatementIDs`` было добавлено в характеристику о "
+"владении или контроле. Оно представлено массивом идентификаторов "
+"характеристик, указывая на то, какие характеристики компонентов содержат "
+"сведения касательно родительской характеристики о владении или контроле."
 
 #: ../../standard/changelog.rst:140 242e11eb37fc4ecebf8e6d544e5c0b26
 msgid ""
@@ -536,8 +538,9 @@ msgid ""
 "their original publisher. Sub-properties (and their sub-properties) are:"
 msgstr ""
 "Обязательное свойство ``publicationDetails`` было добавлено ко всем трем "
-"объектам записей. Оно представляет метаданные для записей: информацию об их "
-"первоначальном издателе. Подсвойства (и их подсвойства) следующие:"
+"объектам Характеристик. Оно представляет метаданные для Характеристик: "
+"информацию об их первоначальном издателе. Подсвойства (и их подсвойства) "
+"следующие:"
 
 #: ../../standard/changelog.rst:142 f0a3c41d679543249d20f5c63bb15a13
 msgid "``publicationDate``\\*"
@@ -565,8 +568,8 @@ msgid ""
 "Person Statements. It is only to be used where disclosure requirements "
 "require that Politically Exposed Persons are flagged."
 msgstr ""
-"Свойство ``hasPepStatus`` (принимающее логическое значение) было добавлено к"
-" записям о физических лицах. Его следует использовать только в случаях, "
+"Свойство ``hasPepStatus`` (принимающее логическое значение) было добавлено в"
+" характеристики физических лиц. Его следует использовать только в случаях, "
 "когда требования касательно раскрытия информации требуют отмечать Публичных "
 "должностных лиц."
 
@@ -584,30 +587,30 @@ msgid ""
 "A ``taxResidencies`` property has been added to Person Statements. It takes "
 "an array of Country objects."
 msgstr ""
-"Свойство taxResidencies было добавлено к записям о физических лицах. Оно "
-"представлено массивом объектов стран (Country)."
+"Свойство taxResidencies было добавлено в характеристики физического лица. "
+"Оно представлено массивом объектов стран (Country)."
 
 #: ../../standard/changelog.rst:155 8b265b3948644e1b9c93d337033f6b25
 msgid "Support for more structured accounts of missing and anonymised data:"
 msgstr ""
-"Поддержка более структурированного представления отсутствующих или анонимных"
-" данных:"
+"Поддержка более структурированного представления для отсутствующих или "
+"анонимизированных данных:"
 
 #: ../../standard/changelog.rst:157 64c1b8a6f78d4fc5a7320da8def0a23d
 msgid ""
 "``unspecifiedPersonDetails`` has been added to Person Statements (with a "
 "required ``reason`` sub-property)"
 msgstr ""
-"Свойство ``unspecifiedPersonDetails`` было добавлено к записям о физических "
-"лицах (с обязательным подсвойством ``reason`` (причина))"
+"Свойство ``unspecifiedPersonDetails`` было добавлено в характеристики "
+"физических лиц (с обязательным подсвойством ``reason`` (причина))"
 
 #: ../../standard/changelog.rst:158 dfb2240c600b41cca0c372382edf245a
 msgid ""
 "``unspecifiedEntityDetails`` has been added to Entity Statements (with a "
 "required ``reason`` sub-property)"
 msgstr ""
-"Свойство ``unspecifiedEntityDetails`` было добавлено к записям о субъектах "
-"(с обязательным подсвойством ``reason`` (причина))"
+"Свойство ``unspecifiedEntityDetails`` было добавлено в характеристику "
+"субъектов (с обязательным подсвойством ``reason`` (причина))"
 
 #: ../../standard/changelog.rst:160 22fe4fea80f245c1b9406ba53c09c3f2
 msgid ""
@@ -616,22 +619,22 @@ msgid ""
 "property)."
 msgstr ""
 "Значение подсвойства ``reason`` берется из списка допустимых значений "
-"Неуказанных причин (как и свойство ``interestedParty.unspecified`` записи о "
-"владении или контроле)."
+"Неуказанных причин (как и свойство ``interestedParty.unspecified`` "
+"характеристики о владении или контроле)."
 
 #: ../../standard/changelog.rst:164 0d533cc5aa5940cc89fc68ee84b92af1
 msgid ""
 "The ``pepStatus`` property of Person Statements has been renamed "
 "``pepStatusDetails`` (and still references an array of PEP Status objects)."
 msgstr ""
-"Свойство ``pepStatus`` записей о физических лицах было переименовано в "
+"Свойство ``pepStatus`` характеристик физических лиц было переименовано в "
 "``pepStatusDetails`` (и по-прежнему ссылается на массив объектов статуса "
-"ПДЛ)."
+"PEP)."
 
 #: ../../standard/changelog.rst:166 be8f8683b92e44fdbacbf27cab4a2d76
 msgid "The ``personType`` property of Person Statements is now required."
 msgstr ""
-"Свойство ``personType`` записей о физических лицах теперь является "
+"Свойство ``personType`` характеристик физических лиц теперь является "
 "обязательным."
 
 #: ../../standard/changelog.rst:168 e43e1af936b242e69305d4ec1561dce3
@@ -715,8 +718,8 @@ msgid ""
 "Statements. It has been replaced with ``unspecifiedPersonDetails`` and "
 "``unspecifiedEntityDetails`` respectively."
 msgstr ""
-"Свойство ``missingInfoReason`` было удалено из записей о физических лицах и "
-"субъектах. Оно было заменено на ``unspecifiedPersonDetails`` и "
+"Свойство ``missingInfoReason`` было удалено из характеристик физических лиц "
+"и субъектов. Оно было заменено на ``unspecifiedPersonDetails`` и "
 "``unspecifiedEntityDetails`` соответственно."
 
 #: ../../standard/changelog.rst:198 fce68083a0d24dd2bc4c7e457cb285af
@@ -731,8 +734,8 @@ msgid ""
 msgstr ""
 "Свойство ``beneficialOwnershipOrControl`` было добавлено к объекту доли "
 "участия. Принимает логическое значение. Может использоваться для "
-"утверждения, что при наличии доли участия между физическим лицом и субъектом"
-" такое физическое лицо является бенефициарным владельцем."
+"характеристики, что при наличии доли участия между физическим лицом и "
+"субъектом такое физическое лицо является бенефициарным владельцем."
 
 #: ../../standard/changelog.rst:203 31b535874d2448659d86a63d564a30ea
 msgid ""
@@ -740,9 +743,10 @@ msgid ""
 "person to be recorded as a politically exposed person (with a related "
 "reason, jurisdiction, start date and end date)."
 msgstr ""
-"Свойство ``pepStatus`` было добавлено к объекту записи о физическом лице. "
-"Позволяет объявить физическое лицо публичным должностным лицом (с указанием "
-"соответствующей причины, юрисдикции, начальной даты и конечной даты)."
+"Свойство ``pepStatus`` было добавлено к объекту характеристики физического "
+"лица. Позволяет объявить физическое лицо публичным должностным лицом (с "
+"указанием соответствующей причины, юрисдикции, начальной даты и конечной "
+"даты)."
 
 #: ../../standard/changelog.rst:204 bfaf42464d724bd5923117991262f41f
 msgid ""
@@ -750,7 +754,7 @@ msgid ""
 "provide a way of including additional (structured) data or transforming "
 "existing data in a targeted way."
 msgstr ""
-"Свойство ``annotations`` было добавлено ко всем трем типам записи. "
+"Свойство ``annotations`` было добавлено во все три типа характеристик. "
 "Примечания являются способом указания дополнительных (структурированных) "
 "данных или целенаправленного преобразования существующих данных."
 
@@ -784,8 +788,9 @@ msgid ""
 "'Beneficial ownership statements' have been renamed 'Ownership-or-control "
 "statements' to reflect the scope of their use."
 msgstr ""
-"«Записи о бенефициарном владении» были переименованы в «Записи о владении "
-"или контроле» для отображения сферы их использования."
+"«Характеристики о бенефициарном владении» были переименованы в "
+"«Характеристики о владении или контроле» для отображения сферы их "
+"использования."
 
 #: ../../standard/changelog.rst:215 18551a51164a4d6191761b3f2a9eee9c
 msgid ""
@@ -794,9 +799,9 @@ msgid ""
 "a flattening of the structure of BODS formatted data."
 msgstr ""
 "Массивы объектов ``statementGroup`` (каждый объект имеет свой собственный "
-"идентификатор группы записей) больше не используются для формирования "
-"массивов записей. Это отражает формирование более плоской структуры данных в"
-" формате СДБВ."
+"идентификатор группы характеристик) больше не используются для формирования "
+"массивов характеристик. Это отражает формирование более плоской структуры "
+"данных в формате СДБВ."
 
 #: ../../standard/changelog.rst:216 a3f03f2683d746c5b74d586cfc81ad00
 msgid ""

@@ -7,6 +7,7 @@
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
 # Rachel Vint, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,8 +45,8 @@ msgstr ""
 #: ../../standard/system/serialisation.rst:8 ad1e87e89b64411dafd22e0038cc28f3
 msgid "Use UTF-8 for maximal interoperability (section 8.1 of RFC 8259);"
 msgstr ""
-"использовать формат кодирования символов UTF-8 для обеспечения максимальной "
-"функциональной совместимости (раздел 8.1 стандарта RFC 8259);"
+"использовать кодировку UTF-8 для обеспечения максимальной функциональной "
+"совместимости (раздел 8.1 стандарта RFC 8259);"
 
 #: ../../standard/system/serialisation.rst:9 66beb6f4868c402c934039d57a171c5a
 msgid ""
@@ -65,11 +66,12 @@ msgstr ""
 
 #: ../../standard/system/serialisation.rst:13 525e23c6c47048faa38b7ac93413f444
 msgid "JSON Lines MAY also be used when creating large files."
-msgstr "При создании крупных файлов также МОГУТ использоваться строки JSON."
+msgstr ""
+"При создании крупных файлов также МОЖЕТ использоваться формат JSON lines."
 
 #: ../../standard/system/serialisation.rst:16 61045d7036fa4373af813ed17cab0719
 msgid "Statement order"
-msgstr "Порядок записей"
+msgstr "Порядок характеристик"
 
 #: ../../standard/system/serialisation.rst:18 f561d0b9d8e54b699f04e56265443c8a
 msgid ""
@@ -77,7 +79,7 @@ msgid ""
 "within a top-level array."
 msgstr ""
 "JSON-файл СДБВ ДОЛЖЕН состоять из серии упорядоченных объектов Statement "
-"(Запись) в рамках массива высшего уровня."
+"(Характеристики) в рамках массива высшего уровня."
 
 #: ../../standard/system/serialisation.rst:20 40209926298e4b2c9b4fabedc9d904e2
 msgid ""
@@ -85,10 +87,10 @@ msgid ""
 "Relationship statement, when they are a ``recordId`` value, MUST match the "
 "``recordId`` value of at least one other *prior* Statement in the array."
 msgstr ""
-"В частности, значения полей ``interestedParty`` и ``subject`` в записи об "
-"отношениях, если они выражены значением ``recordId``, ДОЛЖНЫ совпадать со "
-"значением параметра ``recordId`` по крайней мере еще одной *предыдущей* "
-"записи в массиве."
+"В частности, значения полей ``interestedParty`` и ``subject`` в "
+"характеристике отношений, если они выражены значением ``recordId``, ДОЛЖНЫ "
+"совпадать со значением свойства ``recordId`` по крайней мере еще одной "
+"*предыдущей* характеристики в массиве."
 
 #: ../../standard/system/serialisation.rst:23 0254084d4f4b4ea299b8ef5c3f41774d
 msgid "Alternative tabular form"
@@ -101,9 +103,10 @@ msgid ""
 "SHOULD use the relevant relative JSON Pointer from the statement root."
 msgstr ""
 "Данные СДБВ также МОГУТ быть сериализованы в виде таблицы, где каждая строка"
-" представляет запись. СЛЕДУЕТ обеспечить, чтобы столбцы отображали поля "
-"записи, а в заголовках столбцов СЛЕДУЕТ использовать соответствующий "
-"относительный путь к элементу json-документа из корня записи."
+" представляет характеристику. СЛЕДУЕТ обеспечить, чтобы столбцы отображали "
+"поля характеристик, а в заголовках столбцов СЛЕДУЕТ использовать "
+"соответствующий относительный путь к элементу json-документа из корня "
+"характеристики."
 
 #: ../../standard/system/serialisation.rst:27 c1a8fca361544a4ca7a30854967f1aef
 msgid "For example, the extract:"

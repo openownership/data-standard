@@ -6,6 +6,7 @@
 # Translators:
 # Galia Williams, 2024
 # Kateryna Volobuieva, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +26,7 @@ msgstr ""
 #: ../../standard/modelling/repr-beneficial-ownership.rst:4
 #: 4162c67c29b4479b9f59a1ca5b0b6b5e
 msgid "Representing beneficial owners"
-msgstr "Отображение бенефицарных владельцев"
+msgstr "Представление бенефицарных владельцев"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:8
 #: ea568849db304bea85cd418207e22939
@@ -35,12 +36,12 @@ msgid ""
 "declare this beneficial ownership, there MUST be a Relationship statement "
 "connecting the two which represents the beneficial ownership relationship."
 msgstr ""
-"**Важные требования:** если физическое лицо является бенефициарным "
+"**Ключевые требования:** если физическое лицо является бенефициарным "
 "владельцем какого-либо субъекта, напрямую или косвенно, и это физическое "
 "лицо или этот субъект обязаны раскрыть такое бенефициарное владение, то "
-"ДОЛЖНА иметься Запись об отношениях, связывающая это физическое лицо и этого"
-" субъекта, которая отображает наличие отношений бенефициарного владения "
-"между ними."
+"ДОЛЖНА иметься Характеристика отношений, связывающая это физическое лицо и "
+"этого субъекта, которая отображает наличие отношений бенефициарного владения"
+" между ними."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:10
 #: ../../standard/modelling/repr-beneficial-ownership.rst:38
@@ -51,8 +52,8 @@ msgid ""
 "``recordDetails.interestedParty.reason`` 'noBeneficialOwners'."
 msgstr ""
 "Если субъект заявляет, что у него нет бенефициарных владельцев, подлежащих "
-"раскрытию, его идентификатор элемента должен быть значением свойства "
-"``subject`` в записи об отношениях, в которой свойство "
+"раскрытию, его запись должна быть значением свойства ``subject`` в "
+"Характеристике отношений, в которой свойство "
 "``recordDetails.interestedParty.reason`` имеет значение "
 "'noBeneficialOwners'."
 
@@ -72,9 +73,9 @@ msgid ""
 "owners have (regardless of whether they are direct or indirect)."
 msgstr ""
 "Бенефициарные владельцы могут осуществлять долевое участие в субъекте "
-"*напрямую* или *косвенно* через посреднические субъекты (например, в рамках "
-"соглашений о владении и контроле или через другие компании). В наборе данных"
-" СДБВ должно быть четко видно, какие физические лица заявлены как "
+"*напрямую* или *косвенно* через посреднических субъектов (например, в рамках"
+" соглашений о владении и контроле или через другие компании). В наборе "
+"данных СДБВ должно быть четко видно, какие физические лица заявлены как "
 "бенефициарные владельцы и каких компаний (и какие субъекты являются "
 "посредническими). Также должно быть понятно, какое долевое участие в целом "
 "имеют бенефициарные владельцы (независимо от того, осуществляется ли оно "
@@ -108,10 +109,10 @@ msgstr ""
 "32 процентами акций Компании E. В юрисдикции, где физические лица, в "
 "собственности которых находится (напрямую или косвенно) более 10% акций "
 "компании, должны быть раскрыты как бенефициарные владельцы, необходимо "
-"заявить о долях участия как Физического лица 1, так и Физического лица 2. "
-"Кроме того, юрисдикция может требовать раскрытия сведений о косвенной доле "
-"участия Физического лица 1. Это означает, что некоторые детали цепочки "
-"«Компания Е — Компания А — Физическое лицо 1» тоже должны быть раскрыты."
+"задекларировать  доли участия как Физического лица 1, так и Физического лица"
+" 2. Кроме того, юрисдикция может требовать раскрытия сведений о косвенной "
+"доле участия Физического лица 1. Это означает, что некоторые детали цепочки "
+"«Компания Е — Компания А — Физическое лицо 1» также должны быть раскрыты."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:25
 #: e715a55497544525ab022cca014fb3c7
@@ -160,8 +161,8 @@ msgid ""
 "``recordDetails.interestedParty.reason`` 'subjectExemptFromDisclosure'."
 msgstr ""
 "Если субъект освобожден от обязательства заявлять о своих бенефициарных "
-"владельцах, РЕКОМЕНДУЕТСЯ, чтобы его идентификатор элемента был значением "
-"свойства ``subject`` в записи об отношениях, в которой свойство "
+"владельцах, РЕКОМЕНДУЕТСЯ, чтобы его запись была значением свойства "
+"``subject`` в Характеристике отношений, в которой свойство "
 "``recordDetails.interestedParty.reason`` имеет значение "
 "'subjectExemptFromDisclosure'."
 
@@ -180,23 +181,23 @@ msgid ""
 " ``recordDetails`` for the relationship:"
 msgstr ""
 "Если физическое лицо является бенефициарным владельцем субъекта X (напрямую "
-"или косвенно), и кто-то из них обязан заявить о таком бенефициарном "
-"владении, ДОЛЖНА иметься связывающая их *первичная* запись об отношениях, "
+"или косвенно), и кто-то из них обязан задекларировать такое бенефициарное "
+"владение, ДОЛЖНА иметься связывающая их запись о *первичных* отношениях, "
 "отражающая отношения бенефициарного владения. В частности, в поле "
-"``recordDetails`` отношений:"
+"``recordDetails`` для таких отношений:"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:48
 #: 40a1ca08d2604a0491c2c5e07d6b6fe3
 msgid "the entity’s ``recordId`` value MUST be the ``subject``"
 msgstr ""
-"значение параметра ``recordId`` субъекта ДОЛЖНО использоваться для свойства "
+"значение свойства ``recordId`` субъекта ДОЛЖНО использоваться для свойства "
 "``subject``;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:49
 #: bb997ccae5b44c54a2e03e6697014a3d
 msgid "the person’s ``recordId`` value MUST be the ``interestedParty``"
 msgstr ""
-"значение параметра ``recordId`` физического лица ДОЛЖНО использоваться для "
+"значение свойства ``recordId`` физического лица ДОЛЖНО использоваться для "
 "свойства ``interestedParty``;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:50
@@ -247,8 +248,8 @@ msgid ""
 "the chain of known intermediary elements SHOULD be represented by "
 "*secondary* records"
 msgstr ""
-"цепочку звестных посреднических субъектов СЛЕДУЕТ представить *вторичными* "
-"элементами;"
+"цепочку известных посреднических субъектов СЛЕДУЕТ представить *вторичными* "
+"записями;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:59
 #: dbb99af5a99f4f4a8537a4fd3be7fe92
@@ -256,14 +257,14 @@ msgid ""
 "these secondary records SHOULD link the beneficial owner’s record to entity "
 "X’s record indirectly"
 msgstr ""
-"РЕКОМЕНДУЕТСЯ, чтобы эти вторичные элементы косвенно связывали элемент "
-"бенефициарного владельца с элементом субъекта X;"
+"РЕКОМЕНДУЕТСЯ, чтобы эти вторичные записи косвенно связывали запись "
+"бенефициарного владельца с записью субъекта X;"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:60
 #: 34ff9f511c7e441f9a088eee6bd70616
 msgid "these secondary records SHOULD all have ``isComponent`` set to 'true'"
 msgstr ""
-"РЕКОМЕНДУЕТСЯ, чтобы во всех этих вторичных элементах для свойства "
+"РЕКОМЕНДУЕТСЯ, чтобы во всех этих вторичных записях для свойства "
 "``isComponent`` было установлено значение 'true';"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:61
@@ -273,15 +274,17 @@ msgid ""
 "the ``componentRecords`` array of the ``recordDetails`` for the primary "
 "relationship."
 msgstr ""
-"РЕКОМЕНДУЕТСЯ, чтобы значения ``recordId`` всех этих вторичных элементов "
-"были перечислены в массиве ``componentRecords`` поля ``recordDetails`` "
-"первичной записи об отношениях."
+"РЕКОМЕНДУЕТСЯ, чтобы значения ``recordId`` всех этих вторичных записей были "
+"перечислены в массиве ``componentRecords`` поля ``recordDetails`` для "
+"первичных отношений."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:63
 #: 7417e3268bf14e5ca88a7230cc2681dd
 msgid ""
 "When Statements about the primary relationship are published in a BODS file:"
-msgstr "Если записи о первичных отношениях публикуются в файле СДБВ:"
+msgstr ""
+"Если Характеристики, касающиеся первичных отношений, публикуются в файле "
+"СДБВ:"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:65
 #: 51f5bce6ed6f4b48a1297f87e5f00a3b
@@ -289,8 +292,8 @@ msgid ""
 "Statements for all secondary records referenced from ``componentRecords`` "
 "MUST also be published in that file"
 msgstr ""
-"Записи обо всех вторичных элементах, указанных в поле ``componentRecords``, "
-"также ДОЛЖНЫ быть опубликованы в этом файле."
+"Характеристики для всех вторичных записей, указанных в поле "
+"``componentRecords``, также ДОЛЖНЫ быть опубликованы в этом файле."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:66
 #: 3af240a55c054e049ef8a9f8ac264956
@@ -298,8 +301,8 @@ msgid ""
 "Statements for all secondary records must appear before the the first "
 "Statement for the primary relationship."
 msgstr ""
-"Записи обо всех вторичных элементах должны предшествовать первой записи о "
-"первичных отношениях."
+"Характеристики для всех вторичных записей должны предшествовать первой "
+"характеристике, касающейся первичных отношений."
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:69
 #: 5c3c637e1baf463480b5595f1a3073ac
@@ -336,20 +339,20 @@ msgid ""
 "ooc-3; and its interests have directOrIndirect as 'indirect' and "
 "beneficialOwnershipOrControl as true."
 msgstr ""
-"Записи о физических лицах, Записи о субъектах и Записи об отношениях связаны"
-" линиями, отображая структуру владения компаниями. Значения свойств Записей "
-"указаны так, как описано ниже. Запись о Физическом лице 1: recordId — 'p-1',"
-" recordDetails.isComponent — false. Запись о посреднической Компании A: "
-"recordId — 'e-2', recordDetails.isComponent — true. Запись о Компании E: "
-"recordId — 'e-1', recordDetails.isComponent — false. Запись об отношниях, "
-"соединяющая Физическое лицо 1 и Компанию A: recordId — 'r-3', "
-"recordDetails.isComponent — true, в поле доли участия свойство "
-"directOrIndirect имеет значение 'direct', а свойство "
-"beneficialOwnershipOrControl — false. Запись об отношениях, соединяющая "
+"Характеристики физических лиц, Характеристики субъектов и Характеристики "
+"отношений связаны линиями, отображая структуру владения компаниями. Значения"
+" свойств Характеристик указаны следующим образом. Характеристика Физического"
+" лица 1: recordId — 'p-1', recordDetails.isComponent — false. Характеристика"
+" посреднической Компании A: recordId — 'e-2', recordDetails.isComponent — "
+"true. Характеристика Компании E: recordId — 'e-1', recordDetails.isComponent"
+" — false. Характеристика отношений, связывающая Физическое лицо 1 и Компанию"
+" A: recordId — 'r-3', recordDetails.isComponent — true, в поле доли участия "
+"свойство directOrIndirect имеет значение 'direct', а свойство "
+"beneficialOwnershipOrControl — false. Характеристика отношений, связывающая "
 "Компанию A и Компанию E: recordId — 'r-2', recordDetails.isComponent — true,"
 " в поле доли участия свойство directOrIndirect имеет значение 'direct', а "
-"свойство beneficialOwnershipOrControl — false. Запись об отношениях, "
-"соединяющая Физическое лицо 1 и Компанию E: recordId — 'r-1', "
+"свойство beneficialOwnershipOrControl — false. Характеристика отношений, "
+"связывающая Физическое лицо 1 и Компанию E: recordId — 'r-1', "
 "recordDetails.isComponent — false, componentRecords — r-2, e-2 и r-3; в поле"
 " долей участия свойство directOrIndirect имеет значение 'indirect', а "
 "свойство beneficialOwnershipOrControl — true."
@@ -357,7 +360,7 @@ msgstr ""
 #: ../../standard/modelling/repr-beneficial-ownership.rst:79
 #: db7b4850bdb745c6b81186092e3826f2
 msgid "Statement order"
-msgstr "Порядок записей"
+msgstr "Порядок характеристик"
 
 #: ../../standard/modelling/repr-beneficial-ownership.rst:80
 #: f0a25c97efe24faf88d523802210ff4b
@@ -365,5 +368,5 @@ msgid ""
 "An example of valid statement order within a BODS dataset for the above "
 "would be: p-1, e-1, e-2, r-3, r-2, r-1."
 msgstr ""
-"Пример правильного порядка записей в наборе данных СДБВ для описанной выше "
-"ситуации: p-1, e-1, e-2, r-3, r-2, r-1."
+"Пример правильного порядка характеристик в наборе данных СДБВ для описанной "
+"выше ситуации: p-1, e-1, e-2, r-3, r-2, r-1."

@@ -6,6 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -105,7 +106,7 @@ msgid ""
 "using JSON schema 2020-12."
 msgstr ""
 "Схема JSON стандарта СДБВ предусматривает валидационные проверки, содержание"
-" и объем которых можно определить с помощью схемы JSON 2020-12."
+" и объем которых можно определить с помощью JSON Schema 2020-12."
 
 #: ../../standard/system/conformance.rst:34 f7359c770d1648f08417ba1d6ce59f84
 msgid ""
@@ -117,11 +118,11 @@ msgid ""
 " statement elsewhere in the BODS JSON array. The Data Review Tool can ingest"
 " data serialised as JSON and in tabular form."
 msgstr ""
-"`Средство анализа данных СДБВ <https://datareview.openownership.org/>`_ "
+"`Инструмент анализа данных СДБВ <https://datareview.openownership.org/>`_ "
 "выполняет проверку на соответствие схеме JSON и дополнительным требованиям, "
 "которые могут быть проверены программно, но не включены в схему. Например, "
-"это средство позволяет проверить, появляются ли идентификаторы элементов, "
-"указанные в полях ``subject`` и ``interestedParty`` записи об отношениях, по"
-" крайней мере еще в одной записи в массиве данных JSON стандарта СДБВ. "
-"Средство анализа данных может принимать данные, сериализированные в формате "
-"JSON, а также в виде таблицы."
+"этот инструмент позволяет проверить, появляются ли идентификаторы записей, "
+"указанные в полях ``subject`` и ``interestedParty`` характеристик отношений,"
+" по крайней мере еще в одной характеристике в массиве данных JSON стандарта "
+"СДБВ. Инструмент анализа данных может принимать данные, сериализированные в "
+"формате JSON, а также в виде таблицы."

@@ -6,7 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
-# Rachel Vint, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +26,7 @@ msgstr ""
 #: ../../standard/system/generating-statements.rst:4
 #: b79b109ce85d4e4680967ab9fdd19abd
 msgid "Generating statements"
-msgstr "Создание записей"
+msgstr "Создание характеристик"
 
 #: ../../standard/system/generating-statements.rst:6
 #: 47583a932f5e4bb09fcd0fbe8657b894
@@ -36,10 +36,10 @@ msgid ""
 "(``statementId``) and different property values. See :ref:`information-"
 "updates` for more information."
 msgstr ""
-"Записи СЛЕДУЕТ рассматривать как неизменные: после того, как Запись была "
-"опубликована, она НЕ ДОЛЖНА публиковаться повторно с тем же идентификатором "
-"записи (``statementID``) и другими значениями свойств. Дополнительную "
-"информацию см. в разделе :ref:`information-updates`."
+"Характеристики СЛЕДУЕТ рассматривать как неизменные: после того, как "
+"Характеристика была опубликовано, она НЕ ДОЛЖНА публиковаться повторно с тем"
+" же идентификатором характеристики (``statementID``) и другими значениями "
+"свойств. Дополнительную информацию см. в разделе :ref:`information-updates`."
 
 #: ../../standard/system/generating-statements.rst:8
 #: 658194ae9f2249a7a157a8b881e1c1f5
@@ -47,8 +47,9 @@ msgid ""
 "Each Statement MUST have a unique statement identifier. There MUST NOT be a "
 "possibility of collision between identifiers for different Statements."
 msgstr ""
-"Каждая Запись ДОЛЖНА иметь уникальный идентификатор. НЕЛЬЗЯ допускать "
-"никакой возможности конфликта между идентификаторами для разных Записей."
+"Каждая Характеристика ДОЛЖНА иметь уникальный идентификатор. НЕЛЬЗЯ "
+"допускать никакой возможности конфликта между идентификаторами для разных "
+"Характеристик."
 
 #: ../../standard/system/generating-statements.rst:10
 #: 54f8a2d09e5f4a68b37351e59547b6f9
@@ -59,8 +60,8 @@ msgstr "Это означает следующее:"
 #: dafbc5730b314cc3a61864e677715056
 msgid "two **different** Statements SHOULD never have the same identifier"
 msgstr ""
-"НЕ СЛЕДУЕТ допускать, чтобы две **разные** Записи имели один и тот же "
-"идентификатор;"
+"НЕ СЛЕДУЕТ допускать, чтобы две **разные** Характеристики имели один и тот "
+"же идентификатор;"
 
 #: ../../standard/system/generating-statements.rst:13
 #: 372d2fdc2e074622bd5a803325fd2cc9
@@ -68,8 +69,8 @@ msgid ""
 "once an identifier is assigned to a Statement, the identifier SHOULD NOT "
 "change."
 msgstr ""
-"после присвоения идентификатора какой-либо Записи идентификатор НЕ СЛЕДУЕТ "
-"изменять."
+"после присвоения идентификатора какой-либо Характеристике идентификатор НЕ "
+"СЛЕДУЕТ изменять."
 
 #: ../../standard/system/generating-statements.rst:15
 #: 62b986bb80e149eebf9ed4cf3b147452
@@ -77,8 +78,8 @@ msgid ""
 "The schema enforces a minimum statement identifier length of 32 characters, "
 "and maximum length of 64 characters."
 msgstr ""
-"Схемой предусмотрено, чтобы минимальная длина идентификатора составляла 32 "
-"символа, а максимальная — 64 символа."
+"Схема требует, чтобы минимальная длина идентификатора характеристики "
+"составляла 32 символа, а максимальная — 64 символа."
 
 #: ../../standard/system/generating-statements.rst:17
 #: 048fd7c37f7d46fea60fa4a12ee277fa
@@ -88,15 +89,16 @@ msgid ""
 "contrast to :ref:`entity or person identifiers <guidance-identifiers>`, "
 "which are useful to display to users."
 msgstr ""
-"Идентификаторы записей обычно предназначены для внутреннего использования "
-"внутри приложений. В большинстве случаев их не нужно показывать "
-"пользователям, в отличие от :ref:`идентификаторов субъектов или физических "
-"лиц <guidance-identifiers>`, которые полезно показывать пользователям."
+"Идентификаторы характеристик обычно предназначены для внутреннего "
+"использования внутри приложений. В большинстве случаев их не нужно "
+"показывать пользователям, в отличие от :ref:`идентификаторов субъектов или "
+"физических лиц <guidance-identifiers>`, которые полезно показывать "
+"пользователям."
 
 #: ../../standard/system/generating-statements.rst:20
 #: 88445e549b714e8b86fa2cd8678814ad
 msgid "Strategies for statement identifier creation"
-msgstr "Стратегии для создания идентификаторов записей"
+msgstr "Стратегии для создания идентификаторов характеристик"
 
 #: ../../standard/system/generating-statements.rst:22
 #: ca9dc2a04b5c4905ba1adb861573fd2c
@@ -105,7 +107,7 @@ msgid ""
 "identifiers."
 msgstr ""
 "Издатели МОГУТ применять одну из следующих стратегий для создания "
-"идентификаторов записей."
+"идентификаторов характеристик."
 
 #: ../../standard/system/generating-statements.rst:24
 #: b3490008113745ffbc7a47effd16bc6a
@@ -117,8 +119,9 @@ msgid ""
 msgstr ""
 "Создать `UUID "
 "<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ для первой "
-"Записи в отношении элемента. Хранить этот идентификатор в системе управления"
-" данными. Обновлять его при каждом обновлении соответствующего элемента."
+"Характеристики в отношении записи. Хранить этот идентификатор в системе "
+"управления данными. Обновлять его при каждом обновлении соответствующей "
+"записи."
 
 #: ../../standard/system/generating-statements.rst:25
 #: b96806d6e653438eabea99845e9a0afa
@@ -129,9 +132,9 @@ msgid ""
 "identifier to it."
 msgstr ""
 "Создать `UUID "
-"<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ в виде "
-"префикса, относящегося к издателю. Добавить к нему соответствующее значение "
-"``recordId`` и идентификатор версии."
+"<https://en.wikipedia.org/wiki/Universally_unique_identifier>`_ как префикс "
+"издателя. Добавить к нему соответствующее значение ``recordId`` и "
+"идентификатор версии."
 
 #: ../../standard/system/generating-statements.rst:26
 #: 3fcac2d468cb4c3b85a1921491650ace
@@ -141,8 +144,9 @@ msgid ""
 "``statementId`` field) with a low collision probability."
 msgstr ""
 "Использовать соответствующим образом разработанную хэш-функцию, генерирующую"
-" идентификаторы на основе нормализованного представления записи в формате "
-"JSON (за исключением поля ``statementId``) с низкой вероятностью конфликта."
+" идентификаторы на основе нормализованного представления характеристики в "
+"формате JSON (за исключением поля ``statementId``) с низкой вероятностью "
+"коллизий."
 
 #: ../../standard/system/generating-statements.rst:27
 #: 5296651244334e03b65000ea111baa81

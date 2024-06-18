@@ -6,6 +6,7 @@
 # Translators:
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Kateryna Volobuieva, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,8 +100,8 @@ msgid ""
 "dotted line. Person 1 is labelled 'Beneficial owner'. Company A is labelled "
 "'Intermediary entity'."
 msgstr ""
-"Схема сети бенефициарного владения с надписями. Компания Е помечена надписью"
-" 'Предмет сети бенефициарного владения'. Сплошная линия, ведущая к "
+"Аннотированная схема сети бенефициарного владения. Компания Е помечена "
+"надписью 'Предмет сети бенефициарного владения'. Сплошная линия, ведущая к "
 "Физическому лицу 2, помечена надписью 'Прямые отношения'. Текст '32 % акций "
 "в собственности', размещенный на этой сплошной линии, помечен надписью 'Доля"
 " владения'. Компания E также соединена с Компанией A сплошной линией. А "
@@ -166,9 +167,9 @@ msgid ""
 " ownership information. This is based on the :any:`key concepts <key-"
 "concepts>` which underpin beneficial ownership."
 msgstr ""
-"Стандарт данных о бенефициарном владении (СДБВ) предусматривает формат "
-"структурированных данных, а также связанные с этим требования, для "
-"отображения и опубликования информации о бенефициарном владении. В нем "
+"Стандарт данных о бенефициарном владении (СДБВ) предоставляет формат "
+"структурированных данных, а также связанные с ним требования, для "
+"отображения и публикации информации о бенефициарном владении. В нем "
 "использованы :any:`основные концепции <key-concepts>`, лежащие в основе "
 "бенефициарного владения."
 
@@ -194,7 +195,7 @@ msgid ""
 "standard."
 msgstr ""
 "В :any:`разделах о требованиях<data-standard-index>` указано, как следует "
-"отображать информацию и управлять ею в соответствии со стандартом данных."
+"предоставлять информацию и управлять ею в соответствии со стандартом данных."
 
 #: ../../primer/index.rst:42 04954b3cee6145ebb0157288256a42b7
 msgid ""
@@ -210,8 +211,7 @@ msgstr ""
 
 #: ../../primer/index.rst:44 9fec528bcc7d4f4980fa4127e6d0a2a1
 msgid "improves the interoperability of beneficial ownership information"
-msgstr ""
-"улучшает функциональную совместимость информации о бенефициарном владении;"
+msgstr "улучшает интероперабельность информации о бенефициарном владении;"
 
 #: ../../primer/index.rst:45 111e06b9ddf34970a75fa8a4ce40c5ce
 msgid ""
@@ -242,7 +242,8 @@ msgstr ""
 
 #: ../../primer/index.rst:50 0e60da8eb47541de90e0bf0333a914cf
 msgid "BODS allows publishers to provide statements that describe:"
-msgstr "СДБВ позволяет издателям формировать записи, которые содержат:"
+msgstr ""
+"СДБВ позволяет издателям формировать характеристики, которые содержат:"
 
 #: ../../primer/index.rst:52 fa9d8f94cabe4ded8a7763e412fb4758
 msgid "details about natural persons and entities"
