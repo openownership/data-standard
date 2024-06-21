@@ -11,6 +11,7 @@
 # Carmen Edery, 2024
 # María Renée Briozzo Mitchell, 2024
 # Renzo Lavin <renlavin@gmail.com>, 2024
+# Rachel Vint, 2024
 # 
 #, fuzzy
 msgid ""
@@ -19,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Renzo Lavin <renlavin@gmail.com>, 2024\n"
+"Last-Translator: Rachel Vint, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -202,8 +203,8 @@ msgstr ""
 "Se alienta a los diseñadores de nuevos sistemas de recopilación de datos a "
 "elegir un formato estructurado apropiado, que haga referencia a estándares "
 "establecidos y que pueda adaptarse a direcciones de todo el mundo. Consulte "
-"el `tema 18 <https://github.com/openownership/data-standard/issues/18>`_ "
-"para obtener información más detallada."
+"el `incidencia 18 <https://github.com/openownership/data-"
+"standard/issues/18>`_ para obtener información más detallada."
 
 #: ../../standard/reference.rst:44 71b6cc517dcb4f49bd070c710c47a9d6
 msgid "Annotation"

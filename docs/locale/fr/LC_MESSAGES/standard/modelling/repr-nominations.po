@@ -5,8 +5,10 @@
 # 
 # Translators:
 # Katia Da Silva, 2024
-# Rachel Vint, 2024
 # Cécile Guarin, 2024
+# Rachel Vint, 2024
+# Stephen Abbott Pugh <stephen@openownership.org>, 2024
+# Sara Brimbeuf, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Cécile Guarin, 2024\n"
+"Last-Translator: Sara Brimbeuf, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +28,7 @@ msgstr ""
 #: ../../standard/modelling/repr-nominations.rst:4
 #: 643ad864beae4cada1d33d909764e4b2
 msgid "Representing nominee arrangements"
-msgstr "Représentation des constructions juridiques de mandataires"
+msgstr "Représentation des accords de mandat"
 
 #: ../../standard/modelling/repr-nominations.rst:7
 #: 609eaad53d114500970aff0a2a36e7a3
@@ -40,9 +42,9 @@ msgid ""
 "nominator) instructs the other (the nominee) to act on their behalf in a "
 "specified capacity."
 msgstr ""
-"Une construction juridique de mandataires est un accord conclu entre des "
-"parties selon lequel l'une (le mandant) charge l'autre (le mandataire) "
-"d'agir en son nom dans une certaine capacité."
+"Une accord de mandat est un accord conclu entre des parties selon lequel "
+"l'une (le mandant) charge l'autre (le mandataire) d'agir en son nom dans une"
+" certaine capacité."
 
 #: ../../standard/modelling/repr-nominations.rst:10
 #: 9b7977cd6fce443da87c6d94445499b5
@@ -58,8 +60,7 @@ msgstr ""
 #: ../../standard/modelling/repr-nominations.rst:12
 #: c8e51c408f3b4a71bb8c417f9945dcb3
 msgid "When representing nominee arrangements:"
-msgstr ""
-"Lors de la représentation des constructions juridiques de mandataires :"
+msgstr "Lors de la représentation des accord de mandat :"
 
 #: ../../standard/modelling/repr-nominations.rst:14
 #: caf402f733a9400eb5bc86565aceebbc
@@ -80,7 +81,7 @@ msgid ""
 "of nominee arrangement"
 msgstr ""
 "le champ ``entityType.details`` peut être utilisé pour donner un nom local "
-"ou préciser le type de construction juridique de mandataires."
+"ou préciser le type de accord de mandat."
 
 #: ../../standard/modelling/repr-nominations.rst:18
 #: 0bfa300f35c14a609a9703d57179eda4
@@ -88,9 +89,8 @@ msgid ""
 "Relationships between nominee arrangements and their parties MUST be "
 "represented using only these ``interest.type`` codes:"
 msgstr ""
-"Les relations entre les constructions juridiques de mandataires et leurs "
-"parties doivent être représentées uniquement à l'aide des codes "
-"``interest.type`` suivants :"
+"Les relations entre les accord de mandat et leurs parties doivent être "
+"représentées uniquement à l'aide des codes ``interest.type`` suivants :"
 
 #: ../../standard/modelling/repr-nominations.rst:20
 #: 1b9fb34d62f6434a9b13c7c1f9320554
@@ -119,7 +119,7 @@ msgstr "Exemples"
 #: ../../standard/modelling/repr-nominations.rst:29
 #: f9229f6bd3ec40ffba50b32bd3a3ea4e
 msgid "Nominee directorship"
-msgstr "Direction de mandataire"
+msgstr "Direction par mandataire"
 
 #: ../../standard/modelling/repr-nominations.rst:30
 #: 3b4c2d4820fe4992bffc6488ecefdb3e
@@ -129,10 +129,9 @@ msgid ""
 "statements needed to represent the indirect beneficial ownership of the "
 "parties."
 msgstr ""
-"Deux personnes concluent une construction juridique de direction de "
-"mandataire pour une entreprise donnée. Les lignes en pointillés représentent"
-" les énoncés de relation requis pour représenter la propriété effective "
-"indirecte des parties."
+"Deux personnes concluent une accord de mandat pour une entreprise donnée. "
+"Les lignes en pointillés représentent les énoncés de relation requis pour "
+"représenter la propriété effective indirecte des parties."
 
 #: ../../standard/modelling/repr-nominations.rst:32
 #: 3bfe2de7e48c44b38a4b7e2c4ff4eb2e
@@ -164,8 +163,8 @@ msgstr ""
 "construction juridique est reliée à un énoncé de personne par un énoncé de "
 "relation avec le type de participation au capital configuré sur 'nominator' "
 "(mandant) et à un deuxième énoncé de personne par un énoncé de relation avec"
-" le type de participation au capital configuré sur 'nominee' (mandataire. Un"
-" second énoncé d'entité avec le type \"Registered entity\" est relié à "
+" le type de participation au capital configuré sur 'nominee' (mandataire). "
+"Un second énoncé d'entité avec le type \"Registered entity\" est relié à "
 "l'entité de construction juridique par un énoncé de relation avec le type de"
 " participation au capital configuré sur 'board member' (membre du conseil "
 "d'administration). Il existe également un énoncé de relation entre le "
@@ -177,7 +176,7 @@ msgstr ""
 #: ../../standard/modelling/repr-nominations.rst:40
 #: 84a81e261d954293be243501f33c4c3c
 msgid "Nominee shareholding"
-msgstr "Détention d'actions de mandataires"
+msgstr "Actionnaire mandataire"
 
 #: ../../standard/modelling/repr-nominations.rst:41
 #: 15a51de398a7456bb102f08549903847
@@ -185,9 +184,8 @@ msgid ""
 "Two people enter into a nominee shareholding arrangement for a company, and "
 "all details are known."
 msgstr ""
-"Deux personnes signent une construction juridique de détention d'actions de "
-"mandataires pour une entreprise donnée. Toutes les informations sont "
-"connues."
+"Deux personnes concluent un accord de mandat de détention de parts pour une "
+"entreprise. Tous les détails de cet accord sont connus."
 
 #: ../../standard/modelling/repr-nominations.rst-1
 #: ca685775d94f424a9c61411396ab13be
@@ -215,7 +213,7 @@ msgstr ""
 #: ../../standard/modelling/repr-nominations.rst:50
 #: 0965456d67794250aa1b7eabdd2fa5f1
 msgid "Entity as a nominee"
-msgstr "Entité mandataire"
+msgstr "Entité prête-nom"
 
 #: ../../standard/modelling/repr-nominations.rst:51
 #: 79e97f94b8fe4d618771b517cabe4ab0
@@ -223,8 +221,8 @@ msgid ""
 "A person enters into a nominee shareholding arrangement for a company, and "
 "the nominee is an entity."
 msgstr ""
-"Une personne signe une construction juridique de détention d'actions de "
-"mandataires avec une entreprise donnée. Le mandataire est une entité."
+"Une personne signe un contrat de mandat de détention de parts pour une "
+"entreprise donnée. Le mandataire, est une entité."
 
 #: ../../standard/modelling/repr-nominations.rst-1
 #: 52e7a71efd07469394c4886ee4fd3a62
@@ -262,9 +260,8 @@ msgid ""
 "Two people enter into a nominee directorship arrangement for a company and "
 "details for the nominator are required to be disclosed, but are unknown."
 msgstr ""
-"Deux personnes signent une construction juridique de détention d'actions de "
-"mandataires avec une entreprise donnée. Les informations sur le mandant "
-"doivent être divulguées, mais sont inconnues."
+"Deux personnes signent un accord de mandat pour une entreprise donnée. Les "
+"informations sur le mandant doivent être divulguées, mais sont inconnues."
 
 #: ../../standard/modelling/repr-nominations.rst-1
 #: f28642d4cabb4a61be392b5d4d67cadd
@@ -307,9 +304,8 @@ msgid ""
 "Two people enter into a nominee directorship arrangement for a company, and "
 "details for the nominator are not required to be disclosed."
 msgstr ""
-"Deux personnes signent une construction juridique de détention d'actions de "
-"mandataires avec une entreprise donnée. Il n'est pas exigé que les "
-"informations sur le mandant soient divulguées."
+"Deux personnes signent un accord de mandat pour une entreprise donnée. Il "
+"n'est pas exigé que les informations sur le mandant soient divulguées."
 
 #: ../../standard/modelling/repr-nominations.rst-1
 #: ad71c0cd1354430bb5007b749788eb1c

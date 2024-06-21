@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Katia Da Silva, 2024
+# Stephen Abbott Pugh <stephen@openownership.org>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Katia Da Silva, 2024\n"
+"Last-Translator: Stephen Abbott Pugh <stephen@openownership.org>, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -61,10 +62,10 @@ msgid ""
 "benefit from the financial successes of the entity, due to their "
 "relationship with it."
 msgstr ""
-"Bien que les entités possèdent souvent d'autres entités, les personnes "
-"apparaissent presque toujours en bout du réseau des bénéficiaires effectifs."
-" Ce sont elles qui profitent en dernier ressort des succès financiers de "
-"l'entité, du fait de leur relation."
+"Bien que les entités possèdent souvent d'autres entités, des personnes "
+"physiques apparaissent presque toujours au bout de la chaine des "
+"bénéficiaires effectifs. Ce sont elles qui profitent en dernier ressort des "
+"succès financiers de l'entité, du fait de leur relation."
 
 #: ../../primer/index.rst:16 930b088e3305425683ed9cb64460ec4b
 msgid ""
@@ -79,11 +80,11 @@ msgstr ""
 "Les réseaux des bénéficiaires effectifs reliés aux entités peuvent être "
 "complexes et opaques. Cela signifie que l'identité des personnes qui "
 "possèdent, contrôlent ou tirent profit d'entités peut rester cachée. Lorsque"
-" les bénéficiaires effectifs sont cachés, les gouvernements ne sont pas en "
-"mesure de savoir qui soumissionne pour un contrat, les sociétés ignorent "
-"avec qui elles font affaires, la société ne sait pas qui finance un nouveau "
-"parti politique et la police ne peut pas lutter contre le blanchiment "
-"d'argent ou la criminalité financière transfrontalière."
+" les bénéficiaires effectifs sont cachés, les autorités publiques ne sont "
+"pas en mesure de savoir qui soumissionne pour un contrat, les entreprises "
+"ignorent avec qui elles font affaires, la société ne sait pas qui finance un"
+" nouveau parti politique et la police ne peut pas lutter contre le "
+"blanchiment d'argent ou la criminalité financière transfrontalière."
 
 #: ../../primer/index.rst-1 c3b77235c13740c893eaa83811dfcbc2
 msgid ""
@@ -97,7 +98,7 @@ msgid ""
 "dotted line. Person 1 is labelled 'Beneficial owner'. Company A is labelled "
 "'Intermediary entity'."
 msgstr ""
-"Diagramme étiqueté d'un réseau de bénéficiaires effectifs. La Société E est "
+"Schéma annoté d'un réseau de bénéficiaires effectifs. La Société E est "
 "étiquetée 'Sujet du réseau de bénéficiaires effectifs'. Une ligne continue "
 "reliée à la Personne 2 est étiquetée 'Relation directe'. Le texte 'taux de "
 "détention d'actions de 32 %' situé sur cette ligne continue est étiqueté "
@@ -114,9 +115,8 @@ msgid ""
 "Beneficial ownership can include all types of relationship with an entity "
 "such as ownership, control or benefitting from the entity’s activities."
 msgstr ""
-"La propriété effective peut inclure tous les types de relation avec une "
-"entité tels que la propriété, le contrôle ou le profit des activités de "
-"l'entité."
+"La propriété effective peut inclure tous types de relation avec une entité "
+"tels que la propriété, le contrôle ou le profit des activités de l'entité."
 
 #: ../../primer/index.rst:25 616ee4d241474d14bde83c2cd3628700
 msgid ""
@@ -131,8 +131,8 @@ msgid ""
 "where they can enjoy and use assets owned by the entity."
 msgstr ""
 "Lorsqu'une personne détient quelque chose, elle y exerce généralement un "
-"certain contrôle. La détention d'actions dans une société peut conférer des "
-"droits de vote, notamment. Néanmoins, la propriété et le contrôle sont "
+"certain contrôle. La détention d'actions dans une société peut par exemple "
+"conférer des droits de vote. Néanmoins, la propriété et le contrôle sont "
 "parfois séparés (par des catégories d'actions, des contrats, des accords et "
 "d'autres mécanismes). Par exemple, un directeur exécutif pourrait avoir le "
 "droit de nommer 60 % des autres membres du conseil d'administration, malgré "
@@ -176,7 +176,7 @@ msgstr ""
 
 #: ../../primer/index.rst:37 a7b7e68d34e5432f8249321d3c2327c9
 msgid "Within BODS:"
-msgstr "Dans la BODS :"
+msgstr "Selon la BODS :"
 
 #: ../../primer/index.rst:39 c3b0c018304f4d3e9760c568c4f941cf
 msgid ""
@@ -250,7 +250,7 @@ msgstr "La BODS permet aux éditeurs de fournir des énoncés comportant :"
 
 #: ../../primer/index.rst:52 fa9d8f94cabe4ded8a7763e412fb4758
 msgid "details about natural persons and entities"
-msgstr "des détails sur les personnes physiques et les entités ;"
+msgstr "des informations sur les personnes physiques et les entités ;"
 
 #: ../../primer/index.rst:53 26ced1dcb94d48348867f2cfc677e194
 msgid "identifiers for natural persons and entities"

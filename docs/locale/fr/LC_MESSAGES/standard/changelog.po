@@ -6,6 +6,7 @@
 # Translators:
 # Cécile Guarin, 2024
 # Katia Da Silva, 2024
+# Stephen Abbott Pugh <stephen@openownership.org>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Katia Da Silva, 2024\n"
+"Last-Translator: Stephen Abbott Pugh <stephen@openownership.org>, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -61,8 +62,8 @@ msgid ""
 "``recordDetails`` object to contain person, entity or relationship fields "
 "within a Statement."
 msgstr ""
-"Objet ``recordDetails`` qui contient les champs de personne, d'entité ou de "
-"relation dans un énoncé."
+"Objet ``recordDetails`` qui contient les champs relatifs aux personne, "
+"entité ou relation dans un énoncé."
 
 #: ../../standard/changelog.rst:15 4704ab751f4747beb33593d26669986d
 msgid ""
@@ -153,7 +154,7 @@ msgstr ""
 
 #: ../../standard/changelog.rst:34 fc600b0f03cb4133b88f45a56399a718
 msgid "Statement fields:"
-msgstr "Champs d'énoncé :"
+msgstr "Champs relatifs aux énoncés :"
 
 #: ../../standard/changelog.rst:36 81326c659a3a4a0a95eefc25e85a3000
 msgid "``statementDate`` now required"
@@ -169,7 +170,7 @@ msgstr "``statementID`` a été renommé ``statementId``"
 
 #: ../../standard/changelog.rst:39 22a8e727675b4048898ccbf018dc7d4f
 msgid "Entity fields:"
-msgstr "Champs d'entité :"
+msgstr "Champs relatifs aux entités :"
 
 #: ../../standard/changelog.rst:41 199b31fc73b146619234461af9a1a601
 msgid "``entityType`` and ``entitySubtype`` combined into ``entityType``"
@@ -198,7 +199,7 @@ msgstr ""
 
 #: ../../standard/changelog.rst:45 9b9cbea1761642d2b10f7216ff4154d2
 msgid "Relationship fields:"
-msgstr "Champs de relation :"
+msgstr "Champs relatifs aux relations :"
 
 #: ../../standard/changelog.rst:47 734f38adcd1b450d921259d8b93ff8a1
 msgid ""
@@ -236,7 +237,7 @@ msgstr ""
 
 #: ../../standard/changelog.rst:51 b58381f6e34d46c181e8ef17469df9fd
 msgid "Person fields:"
-msgstr "Champs de personne :"
+msgstr "Champs relatifs aux personnes :"
 
 #: ../../standard/changelog.rst:53 caf6274412674446bba801571dcf401c
 msgid "``fullName`` is now required"
@@ -293,7 +294,7 @@ msgstr "Nouveau nommage des fichiers du schéma et refactorisation du contenu"
 
 #: ../../standard/changelog.rst:70 979beda8b79a44a598caf9ed46e97f68
 msgid "Included as much validation as possible within the schema"
-msgstr "Intégration de la meilleure validation possible dans le schéma"
+msgstr "Intégration d'autant de validations que possible dans le schéma"
 
 #: ../../standard/changelog.rst:71 640981356d914a5f9954fd3c6133b2fd
 msgid "enum types with one value replaced with const type"

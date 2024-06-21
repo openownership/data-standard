@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Cécile Guarin, 2024
+# Stephen Abbott Pugh <stephen@openownership.org>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Cécile Guarin, 2024\n"
+"Last-Translator: Stephen Abbott Pugh <stephen@openownership.org>, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,16 +33,16 @@ msgid ""
 msgstr ""
 "Ce site web décrit les spécifications de la version 0.4 de la norme relative"
 " aux données sur la propriété effective (« Beneficial Ownership Data "
-"Standard » ou BODS) et les mesures en faveur de son utilisation."
+"Standard » ou BODS) ainsi qu'un soutien à son utilisation."
 
 #: ../../about/index.rst:8 d4726f521bcf404697719e63ac2a5167
 msgid ""
 "BODS is an open standard for collecting, sharing and using high-quality, "
 "machine-readable data on beneficial ownership."
 msgstr ""
-"La norme BODS est une norme ouverte régissant la collecte, le partage et "
-"l'utilisation des données sur la propriété effective de qualité supérieure "
-"qui sont fournies dans un format lisible par une machine."
+"La norme BODS est une norme ouverte pour la collecte, le partage et "
+"l'utilisation de données de haute qualité et lisibles par machine sur la "
+"propriété effective."
 
 #: ../../about/index.rst:22 74f69d57e5fc4cec93b4478b8b946206
 msgid "Background"
@@ -64,7 +65,7 @@ msgstr ""
 "conservation des informations sont réduits. En outre, les objectifs de la "
 "politique sur la transparence de la propriété effective sont bien plus "
 "susceptibles d'être atteints, notamment l'exposition des réseaux "
-"transnationaux de flux financiers illégaux ou des vérifications préalables "
+"transnationaux de flux financiers illicites ou des vérifications préalables "
 "efficaces réalisées en temps opportuns."
 
 #: ../../about/index.rst:30 81b051aa177745ed8df2b4f85c595e43
@@ -75,7 +76,7 @@ msgid ""
 msgstr ""
 "La norme BODS favorise la transparence de la propriété effective en "
 "fournissant un cadre conceptuel et pratique pour la collecte et la "
-"communication des données sur la propriété effective, ce qui permet de "
+"publication des données sur la propriété effective, ce qui permet de "
 "bénéficier d'informations interopérables et de qualité supérieure."
 
 #: ../../about/index.rst:32 c2f8d84a7f194819859642f9d486ace2
@@ -86,8 +87,8 @@ msgid ""
 msgstr ""
 "La norme BODS est développée par `Open Ownership "
 "<https://www.openownership.org/>`__, une organisation à but non lucratif "
-"orientée vers la transparence de la propriété effective, en partenariat avec"
-" `Open Data Services <https://opendataservices.coop/>`__."
+"travaillant sur la transparence de la propriété effective, en partenariat "
+"avec `Open Data Services <https://opendataservices.coop/>`__."
 
 #: ../../about/index.rst:34 00698e4daf744a07834a97c48d542f4b
 msgid ""
@@ -97,7 +98,7 @@ msgid ""
 msgstr ""
 "En outre, un :any:`groupe de travail ouvert sur la norme <working-group>` "
 "rassemblant des spécialistes des données et de la propriété effective, mais "
-"aussi d'autres parties intéressées fournit des conseils et oriente le "
+"aussi d'autres parties intéressées, fournit des conseils et oriente le "
 "développement de la norme BODS."
 
 #: ../../about/index.rst:40 d1212e7b4cad4498a44ffaecda5427d6
@@ -197,9 +198,9 @@ msgid ""
 " (Norad) <https://www.norad.no/en/front/>`__."
 msgstr ""
 "Le développement initial de la norme BODS a été financé par Open Ownership "
-"dans le cadre d'un projet soutenu par `le département du Développement "
-"international du Royaume-Uni (« Department for International Development » "
-"ou DfID) <https://www.gov.uk/government/organisations/department-for-"
+"dans le cadre d'un projet soutenu par `le département britannique du "
+"Développement international (« Department for International Development » ou"
+" DfID) <https://www.gov.uk/government/organisations/department-for-"
 "international-development>`__ . Son développement est toujours financé par "
 "`le bureau des Affaires étrangères et du Commonwealth du Royaume-Uni "
 "(« Foreign, Commonwealth and Development Office ») "
@@ -217,10 +218,10 @@ msgid ""
 msgstr ""
 "`Open Ownership <https://www.openownership.org/en/>`__ est une organisation "
 "à but non lucratif visant à contribuer au mouvement mondial vers la "
-"transparence et la responsabilisation dans le cadre du contrôle et de la "
-"propriété des entreprises. Elle est gérée par une équipe dirigeante qui est "
+"transparence et la redevabilité dans le cadre du contrôle et de la propriété"
+" des entreprises. Elle est gérée par une équipe dirigeante qui est "
 "supervisée par un groupe de pilotage composé de grands organismes impliqués "
-"dans les domaines de la transparence et de la responsabilisation."
+"dans les domaines de la transparence et de la redevabilité."
 
 #: ../../about/index.rst:83 e154220caf4d4b18927ec9df3164272e
 msgid ""
