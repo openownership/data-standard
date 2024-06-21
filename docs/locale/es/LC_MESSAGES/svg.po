@@ -9,13 +9,14 @@
 # María Renée Briozzo Mitchell, 2024
 # Renzo Lavin <renlavin@gmail.com>, 2024
 # Rachel Vint, 2024
+# Kadie Armstrong <kadie.armstrong@opendataservices.coop>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-05-10 16:05+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Kadie Armstrong <kadie.armstrong@opendataservices.coop>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -644,31 +645,31 @@ msgstr "empresa B"
 #: docs/_assets/dates-guidance1.svg:386
 #, no-wrap
 msgid "Public register "
-msgstr "Registro público"
+msgstr "Se actualiza el "
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:391
 #, no-wrap
 msgid "is updated"
-msgstr "está actualizado"
+msgstr "registro público"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:402
 #, no-wrap
 msgid "Company B files updated "
-msgstr "Archivos de la Empresa B actualizados"
+msgstr "La empresa B presenta información "
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:407
 #, no-wrap
 msgid "ownership information "
-msgstr "información de titularidad"
+msgstr "actualizada de titularidad ante "
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:412
 #, no-wrap
 msgid "with the Business Register"
-msgstr "con el registro comercial"
+msgstr "el Registro de Comercio"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/dates-guidance1.svg:431 docs/_assets/key-concepts-img3.svg:610

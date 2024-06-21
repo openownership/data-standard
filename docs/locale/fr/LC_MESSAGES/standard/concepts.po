@@ -6,6 +6,7 @@
 # Translators:
 # Katia Da Silva, 2024
 # Rachel Vint, 2024
+# Stephen Abbott Pugh <stephen@openownership.org>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Stephen Abbott Pugh <stephen@openownership.org>, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -118,8 +119,8 @@ msgid ""
 "dotted line. Person 1 is labelled 'Beneficial owner'. Company A is labelled "
 "'Intermediary entity'."
 msgstr ""
-"Diagramme étiqueté d'un réseau des bénéficiaires effectifs. La Société E est"
-" étiquetée comme 'Sujet du réseau des bénéficiaires effectifs'. Une ligne "
+"Schéma annoté d'un réseau des bénéficiaires effectifs. La Société E est "
+"étiquetée comme 'Sujet du réseau des bénéficiaires effectifs'. Une ligne "
 "continue reliée à la Personne 2 est étiquetée 'Relation directe'. Le texte "
 "'taux de détention d'actions de 32 %' situé sur cette ligne continue est "
 "étiqueté 'Participation au capital'. La Société E est également reliée à la "

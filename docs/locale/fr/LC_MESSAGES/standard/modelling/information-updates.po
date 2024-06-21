@@ -6,6 +6,7 @@
 # Translators:
 # Rachel Vint, 2024
 # Cécile Guarin, 2024
+# Stephen Abbott Pugh <stephen@openownership.org>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-10 16:04+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Cécile Guarin, 2024\n"
+"Last-Translator: Stephen Abbott Pugh <stephen@openownership.org>, 2024\n"
 "Language-Team: French (https://app.transifex.com/OpenDataServices/teams/95583/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -97,10 +98,10 @@ msgid ""
 " to understand the lifecycle of declared information with reference to the "
 "available BODS data."
 msgstr ""
-"Les générateurs de données de la norme BODS doivent publier des conseils à "
-"destination des utilisateurs et utilisatrices des informations afin de leur "
-"expliquer le cycle de vie des informations déclarées, notamment concernant "
-"les données de la norme BODS disponibles."
+"Les générateurs de données de la norme BODS doivent publier des lignes "
+"directrices à destination des utilisateurs et utilisatrices des informations"
+" afin de leur expliquer le cycle de vie des informations déclarées, "
+"notamment concernant les données de la norme BODS disponibles."
 
 #: ../../standard/modelling/information-updates.rst:22
 #: 54b09b7157984f16bf854a3dcb4d532f
@@ -110,7 +111,7 @@ msgstr "Liste complète des exigences"
 #: ../../standard/modelling/information-updates.rst:23
 #: a43e4a54d7d34664a48c1e20ada9cb21
 msgid "The minimal requirements stated above MUST be met."
-msgstr "Les exigences minimales susmentionnées doivent être respectées."
+msgstr "Les exigences minimales susmentionnées DOIVENT être respectées."
 
 #: ../../standard/modelling/information-updates.rst:25
 #: a0792fee553d49e3b4961fe29c3f2182

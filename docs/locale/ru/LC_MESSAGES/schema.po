@@ -1696,9 +1696,10 @@ msgid ""
 msgstr ""
 "Ссылка на лицензию, которая применяется к данной Характеристике. "
 "РЕКОМЕНДУЕТСЯ использовать общепринятый URI лицензии. Издателям "
-"рекомендуется использовать лицензию, переданную в общественное достояние, "
-"или лицензию, соответствующую определениям о свободном доступе "
-"(http://opendefinition.org/licenses/)."
+"рекомендуется использовать лицензию, переданную в общественное достояние "
+"(Public Domain Dedication), или лицензию, соответствующую определениям о "
+"свободном доступе (Open Definition Conformant, "
+"http://opendefinition.org/licenses/)."
 
 #. /$defs/Statement/properties/publicationDetails/properties/publisher/title
 #: schema/statement.json:1
