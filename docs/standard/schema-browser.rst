@@ -44,7 +44,7 @@ View the `Entity record details JSON schema <../_static/entity-record.json>`_ or
 Record details (person)
 ------------------------
 
-View the `Person record details JSON schema <../_static/person-statement.json>`_ or explore it using the viewer below.
+View the `Person record details JSON schema <../_static/person-record.json>`_ or explore it using the viewer below.
 
 .. raw:: html
 
