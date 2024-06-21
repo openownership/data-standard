@@ -73,7 +73,7 @@ pyyaml==6.0.1
     # via myst-parser
 referencing==0.35.1
     # via sphinxcontrib-opendataservices-jsonschema
-requests==2.31.0
+requests==2.32.2
     # via
     #   -r requirements.in
     #   jscc
