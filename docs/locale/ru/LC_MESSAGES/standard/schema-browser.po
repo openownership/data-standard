@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Kateryna Volobuieva, 2024
 # Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
+# Amy Guy <amy.guy@opendataservices.coop>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Beneficial Ownership Data Standard 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-10 16:04+0000\n"
+"POT-Creation-Date: 2024-06-21 15:09+0000\n"
 "PO-Revision-Date: 2024-05-10 16:09+0000\n"
-"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,11 +23,11 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../../standard/schema-browser.rst:4 df38adce72d3498786da32d792417c47
+#: ../../standard/schema-browser.rst:4 d62fb49fc4b94ff399827b209f9c3b85
 msgid "Schema browser"
 msgstr "Браузер схемы"
 
-#: ../../standard/warningbox.rst:3 7093ebf488d6463f8b7c56089a338da9
+#: ../../standard/warningbox.rst:3 4dfc9424f42644d7ab1cb4f8f4bd423f
 msgid ""
 "This is v0.4 of the Beneficial Ownership Data Standard. It includes updates "
 "to the data model, codelists, and technical guidance."
@@ -36,7 +36,7 @@ msgstr ""
 "себя обновления модели данных, списки допустимых значений и технические "
 "рекомендации."
 
-#: ../../standard/warningbox.rst:5 d9f04a5877534626bfd8726a22fe3c84
+#: ../../standard/warningbox.rst:5 455b61e01c9e459cbcc51716e05821b0
 msgid ""
 "Future changes are anticipated before a version 1.0 release. See the "
 ":ref:`Changelog <changelog>` and `About <../about>`_ pages for more "
@@ -46,7 +46,7 @@ msgstr ""
 "см. на страницах :ref:`Лог изменений <changelog>` и `О стандарте "
 "<../about>`_ ."
 
-#: ../../standard/schema-browser.rst:8 f6fa3fd4b9a8492aa0254efec7175771
+#: ../../standard/schema-browser.rst:8 a27e7e1737044821b8e3060e779dca74
 msgid ""
 "The draft Beneficial Ownership Data Standard schema is defined using `JSON "
 "Schema 2020-12 <https://json-schema.org/>`_."
@@ -54,7 +54,7 @@ msgstr ""
 "Шаблон схемы Стандарта данных о бенефициарном владени определяется с помощью"
 " `JSON Schema 2020-12 <https://json-schema.org/>`_."
 
-#: ../../standard/schema-browser.rst:10 ae98f49242bf4f9ea33a988c7f048948
+#: ../../standard/schema-browser.rst:10 bf95faa982594f2ab760a747c284df20
 msgid ""
 "A BODS dataset is an array of Statements. Each Statement contains "
 "``recordDetails`` for one of three beneficial ownership elements. The "
@@ -67,23 +67,23 @@ msgstr ""
 " помощи приведенных ниже средств просмотра (нажмите на кнопку объекта для "
 "отображения его свойств)."
 
-#: ../../standard/schema-browser.rst:12 b56c00fadb1f4a0586e3d32223260c8d
+#: ../../standard/schema-browser.rst:12 7b5d117dbb914f44825767aaab3b818c
 msgid ":ref:`schema-browser-statement`"
 msgstr ":ref:`schema-browser-statement`"
 
-#: ../../standard/schema-browser.rst:13 80eacb2b2eda4f7d8899a82e5b0a72ef
+#: ../../standard/schema-browser.rst:13 d17579398f5b4f21b32153adb0b99f5a
 msgid ":ref:`schema-browser-entity`"
 msgstr ":ref:`schema-browser-entity`"
 
-#: ../../standard/schema-browser.rst:14 05eb8d313b1541b48d5d85ebaa615809
+#: ../../standard/schema-browser.rst:14 1663a9de919649e79317778544ebe55e
 msgid ":ref:`schema-browser-person`"
 msgstr ":ref:`schema-browser-person`"
 
-#: ../../standard/schema-browser.rst:15 3088a918a4dc479e9905613b51bbe577
+#: ../../standard/schema-browser.rst:15 b392df89595c4d4ab31beb3a4b30ac3e
 msgid ":ref:`schema-browser-relationship`"
 msgstr ":ref:`schema-browser-relationship`"
 
-#: ../../standard/schema-browser.rst:17 db1fbeeee6e14e7e913f49ceaf0b83c0
+#: ../../standard/schema-browser.rst:17 f9bdf957569d49b99aabbed119c1f590
 msgid ""
 "For an A - Z guide to the the Data Standard's schema objects and codelists, "
 "see the :ref:`schema-reference`."
@@ -91,11 +91,11 @@ msgstr ""
 "Подробное руководство по объектам схемы Стандарта данных и спискам "
 "допустимых значений приводится в :ref:`schema-reference`."
 
-#: ../../standard/schema-browser.rst:22 a9974f34febe4993ad00709170a45571
+#: ../../standard/schema-browser.rst:22 e5c0740e2dc74c3386ba7b2248b99d0c
 msgid "Statements array"
 msgstr "Массив характеристик"
 
-#: ../../standard/schema-browser.rst:24 6833ff35c3c8456a92ed3c10c3bb2bd4
+#: ../../standard/schema-browser.rst:24 bcd3f3a892d44311a1ea3718535a4d53
 msgid ""
 "View the `Statements JSON schema <../_static/statement.json>`_ or explore it"
 " using the viewer below."
@@ -103,11 +103,11 @@ msgstr ""
 "Просмотрите `схему JSON «Характеристика» <../_static/statement.json>`_ или "
 "изучите ее при помощи средства просмотра ниже."
 
-#: ../../standard/schema-browser.rst:33 b9ebc6a087c547119b33ad791054d912
+#: ../../standard/schema-browser.rst:33 7273957ed6d8426186b16daf9f8fffdc
 msgid "Record details (entity)"
 msgstr "Сведения о записи (субъект)"
 
-#: ../../standard/schema-browser.rst:35 5e437b896aa04c938d17e23a9cb341e3
+#: ../../standard/schema-browser.rst:35 5255ddeaf81e4a198e60f02833a9814b
 msgid ""
 "View the `Entity record details JSON schema <../_static/entity-"
 "record.json>`_ or explore it using the viewer below."
@@ -115,23 +115,23 @@ msgstr ""
 "Просмотрите `схему JSON «Сведения о субъекте» <../_static/entity-"
 "record.json>`_ или изучите ее при помощи средства просмотра ниже."
 
-#: ../../standard/schema-browser.rst:45 52b71448b3c440c2910c423f3e8474a7
+#: ../../standard/schema-browser.rst:45 e27eb2563d7e40afab952592d2cf5f17
 msgid "Record details (person)"
 msgstr "Сведения о записи (физическое лицо)"
 
-#: ../../standard/schema-browser.rst:47 b2c83310f7044d4bae430f47e6ce0e12
+#: ../../standard/schema-browser.rst:47 b9d62d7df21641c99a409cc2d6d98ff8
 msgid ""
 "View the `Person record details JSON schema <../_static/person-"
-"statement.json>`_ or explore it using the viewer below."
+"record.json>`_ or explore it using the viewer below."
 msgstr ""
 "Просмотрите `схему JSON «Сведения о физическом лице» <../_static/person-"
-"statement.json>`_ или изучите ее при помощи средства просмотра ниже."
+"record.json>`_ или изучите ее при помощи средства просмотра ниже."
 
-#: ../../standard/schema-browser.rst:56 b031268dc7e844f6a3da20e4ccadc4d2
+#: ../../standard/schema-browser.rst:56 86e7b24ea34a4007843e95f329529bb6
 msgid "Record details (relationship)"
 msgstr "Сведения о записи (отношения)"
 
-#: ../../standard/schema-browser.rst:58 1a83494714db454e825b4e02aa9c92cf
+#: ../../standard/schema-browser.rst:58 0aaf0c09239941a3ac05d7360bb227bc
 msgid ""
 "View the `Relationship record details JSON schema <../_static/relationship-"
 "record.json>`_ or explore it using the viewer below."
