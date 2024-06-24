@@ -5,15 +5,15 @@
 # Amy Guy <amy.guy@opendataservices.coop>, 2024
 # Transifex Bot <>, 2024
 # Kateryna Volobuieva, 2024
-# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # Rachel Vint, 2024
+# Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-05-10 16:05+0000\n"
 "PO-Revision-Date: 2022-04-05 16:56+0000\n"
-"Last-Translator: Rachel Vint, 2024\n"
+"Last-Translator: Dmitry Chaplinsky <chaplinsky.dmitry@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/OpenDataServices/teams/95583/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -71,7 +71,7 @@ msgstr ""
 #: docs/_assets/trust-scenario6.svg:889
 #, no-wrap
 msgid "Entity statement"
-msgstr "Характеристика сущности"
+msgstr "Характеристика субъекта"
 
 #. (itstool) path: text/tspan
 #: docs/_assets/AlphaBeta.svg:405 docs/_assets/AlphaBeta.svg:422
