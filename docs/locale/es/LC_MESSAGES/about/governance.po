@@ -168,9 +168,9 @@ msgstr ""
 " un rastreador de ediciones como `proyecto "
 "<https://github.com/orgs/openownership/projects>`_ del `equipo Open "
 "Ownership de GitHub <https://github.com/openownership>`_ para capturar las "
-"funciones, los arreglos de errores, los cambios y las actualizaciones que se"
-" realizan en la nueva versión. Este es el `rastreador de ediciones para la "
-"versión 0.4 del BODS "
+"funcionalidades, los arreglos de errores, los cambios y las actualizaciones "
+"que se realizan en la nueva versión. Este es el `rastreador de ediciones "
+"para la versión 0.4 del BODS "
 "<https://github.com/orgs/openownership/projects/4/views/1>`_."
 
 #: ../../about/governance.rst:39 c799e349b61c41db96eb7ed1d3bec34c
