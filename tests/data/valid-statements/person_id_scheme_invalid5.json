@@ -1,0 +1,17 @@
+[
+  {
+    "statementId": "019a93f1-e470-42e9-957b-03559861b2e2",
+    "declarationSubject": "c359f58d2977",
+    "statementDate": "2020-03-04",
+    "recordId": "10478c6cf6de",
+    "recordType": "person",
+    "recordDetails": {
+      "isComponent": false,
+      "personType": "knownPerson"
+    },
+    "identifiers":{
+      "id": "test",
+      "scheme": "AAA-PASSPORT"
+    }
+  }
+]
