@@ -7,7 +7,8 @@
     "recordType": "entity",
     "annotations":[
       {
-        "statementPointerTarget":"/recordDetails/entityType/subtype"
+        "statementPointerTarget":"/recordDetails/entityType/subtype",
+        "motivation": "identifying"
       }
     ],
     "recordDetails": {

@@ -7,7 +7,8 @@
     "recordType": "person",
     "annotations":[
       {
-        "statementPointerTarget": "/statementId"
+        "statementPointerTarget": "/statementId",
+        "motivation": "correcting"
       }
     ],
     "recordDetails": {
