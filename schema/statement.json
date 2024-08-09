@@ -291,7 +291,8 @@
         }
       },
       "required":[
-        "motivation"
+        "motivation",
+        "statementPointerTarget"
       ],
       "allOf": [
         {
