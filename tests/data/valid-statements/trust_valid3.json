@@ -9,7 +9,7 @@
       "isComponent": false,
       "entityType": {
         "type": "legalEntity",
-        "subtype": "nomination"
+        "subtype": "trust"
       }
     }
   },
