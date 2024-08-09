@@ -35,7 +35,11 @@
       "interestedParty": "10478c6cf6de",
       "interests":[
         {
-          "beneficialOwnershipOrControl": true
+          "share":{
+            "minimum": 88,
+            "exclusiveMaximum":99,
+            "maximum": 98
+          }
         }
       ]
     }

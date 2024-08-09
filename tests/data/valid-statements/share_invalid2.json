@@ -17,12 +17,10 @@
     "declarationSubject": "c359f58d2977",
     "statementDate": "2020-03-04",
     "recordId": "10478c6cf6de",
-    "recordType": "entity",
+    "recordType": "person",
     "recordDetails": {
       "isComponent": false,
-      "entityType": {
-        "type": "registeredEntity"
-      }
+      "personType": "knownPerson"
     }
   },
   {
@@ -37,7 +35,11 @@
       "interestedParty": "10478c6cf6de",
       "interests":[
         {
-          "beneficialOwnershipOrControl": false
+          "share":{
+            "exact": 88,
+            "minimum": 12,
+            "maximum": 100
+          }
         }
       ]
     }
