@@ -291,6 +291,7 @@
         }
       },
       "required":[
+        "motivation"
       ],
       "allOf": [
         {
