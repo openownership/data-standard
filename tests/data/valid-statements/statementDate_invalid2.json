@@ -1,0 +1,15 @@
+[
+  {
+    "statementId": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
+    "declarationSubject": "c359f58d2977",
+    "statementDate": "2099-03-04T12:12:13Z",
+    "recordId": "c359f58d2977",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": false,
+      "entityType": {
+        "type": "registeredEntity"
+      }
+    }
+  }
+]
