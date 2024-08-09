@@ -290,6 +290,8 @@
           "format": "uri"
         }
       },
+      "required":[
+      ],
       "allOf": [
         {
           "if": {
