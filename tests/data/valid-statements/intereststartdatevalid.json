@@ -35,11 +35,8 @@
       "interestedParty": "10478c6cf6de",
       "interests":[
         {
-          "share":{
-            "minimum": 88,
-            "exclusiveMaximum":99,
-            "maximum": 98
-          }
+          "startDate": "2019-01-01",
+          "endDate": "2020-01-01"
         }
       ]
     }
