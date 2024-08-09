@@ -301,15 +301,7 @@
           },
           "then": {
             "required": [
-              "statementPointerTarget",
-              "motivation",
               "url"
-            ]
-          },
-          "else": {
-            "required": [
-              "statementPointerTarget",
-              "motivation"
             ]
           }
         },
