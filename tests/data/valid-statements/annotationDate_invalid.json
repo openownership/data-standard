@@ -7,8 +7,9 @@
     "recordType": "entity",
     "annotations":[
       {
-        "statementPointerTarget":"/test",
-        "motivation": "commenting"
+        "statementPointerTarget":"",
+        "motivation": "commenting",
+        "creationDate": "2200-11-02"
       }
     ],
     "recordDetails": {
