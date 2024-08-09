@@ -6,7 +6,10 @@
     "recordId": "10478c6cf6de",
     "recordType": "person",
     "publicationDetails": {
-      "publicationDate": "2099-01-01"
+      "publicationDate": "2099-01-01",
+      "bodsVersion": "0.4",
+      "publisher":{
+      }
     },
     "recordDetails": {
       "isComponent": false,

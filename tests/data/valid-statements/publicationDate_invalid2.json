@@ -6,7 +6,10 @@
     "recordId": "c359f58d2977",
     "recordType": "entity",
     "publicationDetails":{
-      "publicationDate": "2110-01-01T12:00:00Z"
+      "publicationDate": "2110-01-01T12:00:00Z",
+      "bodsVersion": "0.4",
+      "publisher":{
+      }
     },
     "recordDetails": {
       "isComponent": false,
