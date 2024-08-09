@@ -9,6 +9,7 @@
       "publicationDate": "2110-01-01T12:00:00Z",
       "bodsVersion": "0.4",
       "publisher":{
+        "name": "test"
       }
     },
     "recordDetails": {
