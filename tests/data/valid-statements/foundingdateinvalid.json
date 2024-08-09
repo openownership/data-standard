@@ -5,18 +5,13 @@
     "statementDate": "2020-03-04",
     "recordId": "c359f58d2977",
     "recordType": "entity",
-    "annotations":[
-      {
-        "statementPointerTarget":"",
-        "motivation": "commenting",
-        "creationDate": "2022-11-02"
-      }
-    ],
     "recordDetails": {
       "isComponent": false,
       "entityType": {
         "type": "registeredEntity"
-      }
+      },
+      "foundingDate": "1990-08-21",
+      "dissolutionDate": "1990-08-01"
     }
   }
 ]
