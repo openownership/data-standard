@@ -8,8 +8,7 @@
     "recordDetails": {
       "isComponent": false,
       "entityType": {
-        "type": "arrangement",
-        "subtype": "nomination"
+        "type": "arrangement"
       }
     }
   },
@@ -36,7 +35,7 @@
       "interestedParty": "10478c6cf6de",
       "interests":[
         {
-          "type": "nominator"
+          "type": "protector"
         }
       ]
     }
