@@ -33,7 +33,7 @@
       "personType": "knownPerson",
       "addresses": [
         {
-          "type": "registered",
+          "type": "residence",
           "postCode": "123"
         },
         {
