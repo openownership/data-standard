@@ -12,6 +12,12 @@
         {
           "type": "alternative",
           "postCode": "123"
+        },
+        {
+          "type": "alternative",
+          "country": {
+            "name": "United Kingdom" 
+          }
         }
       ]
     }
