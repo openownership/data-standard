@@ -9,12 +9,18 @@
       "isComponent": false,
       "entityType": {
         "type": "registeredEntity",
-        "addresses": [
-          {
-            "type": "alternative",
-            "address": "123"
-          }
-        ]
+        "publicListing": {
+          "hasPublicListing": true,
+          "securitiesListings": [
+            {
+              "stockExchangeJurisdiction": "GB",
+              "stockExchangeName": "London stock exchange",
+              "security":{
+                "ticker": "123"
+              }
+            }
+          ]
+        }
       }
     }
   }

@@ -9,15 +9,11 @@
       "isComponent": false,
       "entityType": {
         "type": "registeredEntity",
-        "addresses": [
-          {
-            "type": "alternative",
-            "address": "123"
-          },
-          {
-            "address": "1234"
-          }
-        ]
+        "publicListing": {
+          "hasPublicListing": false,
+          "securitiesListings": [
+          ]
+        }
       }
     }
   }
