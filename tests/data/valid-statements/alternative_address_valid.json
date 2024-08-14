@@ -9,8 +9,13 @@
       "isComponent": false,
       "entityType": {
         "type": "registeredEntity",
-        "addresses":[
+        "addresses": [
           {
+            "type": "business", 
+            "address": "123"
+          },
+          {
+            "type": "alternative",
             "address": "123"
           }
         ]
@@ -25,7 +30,19 @@
     "recordType": "person",
     "recordDetails": {
       "isComponent": false,
-      "personType": "knownPerson"
+      "personType": "knownPerson",
+      "addresses": [
+        {
+          "type": "registered",
+          "postCode": "123"
+        },
+        {
+          "type": "alternative",
+          "country": {
+            "name": "United Kingdom" 
+          }
+        }
+      ]
     }
   }
 ]
