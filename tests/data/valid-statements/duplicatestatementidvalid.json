@@ -32,12 +32,7 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "c359f58d2977",
-      "interestedParty": "10478c6cf6de",
-      "interests":[
-        {
-          "beneficialOwnershipOrControl": true
-        }
-      ]
+      "interestedParty": "10478c6cf6de"
     }
   }
 ]

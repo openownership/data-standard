@@ -13,16 +13,14 @@
     }
   },
   {
-    "statementId": "019a93f1-e470-42e9-957b-03559861b2e2",
+    "statementId": "1dc0e987-5c57-4a1c-b3ad-61353b66a9b7",
     "declarationSubject": "c359f58d2977",
     "statementDate": "2020-03-04",
     "recordId": "10478c6cf6de",
-    "recordType": "entity",
+    "recordType": "person",
     "recordDetails": {
       "isComponent": false,
-      "entityType": {
-        "type": "registeredEntity"
-      }
+      "personType": "knownPerson"
     }
   },
   {
@@ -34,29 +32,7 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "c359f58d2977",
-      "interestedParty": "123",
-      "interests":[
-        {
-          "beneficialOwnershipOrControl": true
-        }
-      ]
-    }
-  },
-  {
-    "statementId": "cd4c52633f6761962e98e1dd9dbf7da7",
-    "declarationSubject": "c359f58d2977",
-    "statementDate": "2020-03-04",
-    "recordId": "",
-    "recordType": "relationship",
-    "recordDetails": {
-      "isComponent": false,
-      "subject": "c359f58d2977",
-      "interestedParty": "93b53022ae6a",
-      "interests":[
-        {
-          "beneficialOwnershipOrControl": true
-        }
-      ]
+      "interestedParty": "10478c6cf6de"
     }
   }
 ]
