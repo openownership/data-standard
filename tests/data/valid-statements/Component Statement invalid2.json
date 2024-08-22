@@ -14,6 +14,20 @@
     }
   },
   {
+    "statementId": "e2bbe3ce-f5b4-42d0-bb68-9b405e8fd6a0",
+    "declarationSubject": "ad3f6c2fcc9e",
+    "statementDate": "2018-12-17",
+    "recordId": "d4ab89ea169a",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "recordDetails": {
+      "isComponent": true,
+      "entityType": {
+        "type": "registeredEntity"
+      }
+    }
+  },
+  {
     "statementId": "6b9cfb52-505a-49cb-ab02-cc856a4e5c66",
     "declarationSubject": "ad3f6c2fcc9e",
     "statementDate": "2018-12-17",
@@ -23,19 +37,6 @@
     "recordDetails": {
       "isComponent": false,
       "personType": "knownPerson"
-    }
-  },
-  {
-    "statementId": "7fff3986-233f-413f-bec8-3b28c62a4a51",
-    "declarationSubject": "ad3f6c2fcc9e",
-    "statementDate": "2018-12-17",
-    "recordId": "4cf2837bd01f",
-    "recordStatus": "new",
-    "recordType": "relationship",
-    "recordDetails": {
-      "isComponent": true,
-      "subject": "ad3f6c2fcc9e",
-      "interestedParty": "d4ab89ea169a"
     }
   },
   {
@@ -70,17 +71,16 @@
     }
   },
   {
-    "statementId": "e2bbe3ce-f5b4-42d0-bb68-9b405e8fd6a0",
+    "statementId": "7fff3986-233f-413f-bec8-3b28c62a4a51",
     "declarationSubject": "ad3f6c2fcc9e",
     "statementDate": "2018-12-17",
-    "recordId": "d4ab89ea169a",
+    "recordId": "4cf2837bd01f",
     "recordStatus": "new",
-    "recordType": "entity",
+    "recordType": "relationship",
     "recordDetails": {
       "isComponent": true,
-      "entityType": {
-        "type": "registeredEntity"
-      }
+      "subject": "ad3f6c2fcc9e",
+      "interestedParty": "d4ab89ea169a"
     }
   }
 ]
