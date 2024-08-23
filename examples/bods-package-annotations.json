@@ -60,7 +60,7 @@
         "name": "MONSOON HOLDINGS (NO.1) LIMITED"
       }
     },
-    "recordId": "387a14452645",
+    "recordId": "22e8a31863ee",
     "recordStatus": "new",
     "recordType": "entity",
     "recordDetails": {
@@ -101,7 +101,7 @@
       {
         "statementPointerTarget": "/interestedParty",
         "motivation": "identifying",
-        "description": "Company number missing from benenficial ownership statement. Manually reconciled against official register.",
+        "description": "Company number missing from beneficial ownership statement. Manually reconciled against official register.",
         "createdBy": {
           "name": "Jack Lord"
         }
@@ -119,7 +119,7 @@
     "recordType": "relationship",
     "recordDetails": {
       "isComponent": false,
-      "subject": "387a14452645",
+      "subject": "22e8a31863ee",
       "interestedParty": "387a14452645"
     }
   }
