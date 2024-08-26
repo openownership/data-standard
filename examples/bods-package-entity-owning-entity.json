@@ -39,7 +39,7 @@
         "name": "JENEX LIMITED"
       }
     },
-    "recordId": "12b7dd0770ce",
+    "recordId": "e83cce729ada",
     "recordStatus": "new",
     "recordType": "entity",
     "recordDetails": {
@@ -74,7 +74,7 @@
     "recordDetails": {
       "isComponent": false,
       "subject": "12b7dd0770ce",
-      "interestedParty": "12b7dd0770ce",
+      "interestedParty": "e83cce729ada",
       "interests": [
         {
           "type": "shareholding",
