@@ -129,7 +129,7 @@ referencing==0.34.0
     #   jsonschema
     #   jsonschema-specifications
     #   sphinxcontrib-opendataservices-jsonschema
-requests==2.31.0
+requests==2.32.2
     # via
     #   -r requirements.in
     #   jscc
@@ -187,7 +187,7 @@ sphinxcontrib-serializinghtml==1.1.10
     # via sphinx
 strict-rfc3339==0.7
     # via -r requirements_test.in
-urllib3==2.2.1
+urllib3==2.2.2
     # via
     #   -r requirements.in
     #   requests

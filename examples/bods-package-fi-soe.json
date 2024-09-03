@@ -135,7 +135,7 @@
         "url": "http://www.register.example"
       }
     },
-    "recordId": "19f1c5afe9d7",
+    "recordId": "05ce06ec97b1",
     "recordStatus": "new",
     "recordType": "entity",
     "recordDetails": {
@@ -296,7 +296,7 @@
     "recordType": "relationship",
     "recordDetails": {
       "subject": "7ff95ba3682c",
-      "interestedParty": "19f1c5afe9d7",
+      "interestedParty": "05ce06ec97b1",
       "interests": [
         {
           "type": "otherInfluenceOrControl",
@@ -330,7 +330,7 @@
     "recordType": "relationship",
     "recordDetails": {
       "subject": "19f1c5afe9d7",
-      "interestedParty": "19f1c5afe9d7",
+      "interestedParty": "05ce06ec97b1",
       "interests": [
         {
           "type": "shareholding",
@@ -346,12 +346,12 @@
       ],
       "isComponent": false,
       "componentRecords": [
+        "0199c515a699",
+        "7ff95ba3682c",
         "87ed6d1daf8f",
         "e34164e75ac3",
         "10643ee6d6fa",
-        "324d0f570675",
-        "0199c515a699",
-        "19f1c5afe9d7"
+        "324d0f570675"
       ]
     }
   }
