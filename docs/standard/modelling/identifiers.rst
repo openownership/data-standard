@@ -80,7 +80,7 @@ See this :ref:`example data <examples-plc>` for a valid use of MICs.
 
 Two properties in an Entity Statement’s :ref:`Securities Listing <schema-securities-listing>` object identify where a security is traded: the ``operatingMarketIdentifierCode`` of the operating market and the ``marketIdentifierCode``. The ``marketIdentifierCode`` SHOULD be the same as the ``operatingMarketIdentifierCode`` if the security is traded on a main exchange. The ``marketIdentifierCode`` will differ where a security is traded on a segment of an exchange.
 
-MICs are standardised, issued and maintained by SWIFT as `ISO 10383 <https://www.iso20022.org/market-identifier-codes>`_. The specification of ``operatingMarketIdentifierCode`` and ``marketIdentifierCode`` is part of the ISO standard.
+MICs are standardised, issued and maintained by SWIFT as . The specification of ``operatingMarketIdentifierCode`` and ``marketIdentifierCode`` is part of the ISO standard.
 
 .. guidance-identifiers-securities:
 
