@@ -35,6 +35,7 @@
     "recordType": "entity",
     "declarationSubject": "254900UCWGL6FFMOVH42",
     "recordDetails": {
+      "isComponent": false,
       "entityType": {
         "type": "registeredEntity"
       },
@@ -121,7 +122,8 @@
     "recordStatus": "new",
     "recordType": "relationship",
     "declarationSubject": "254900UCWGL6FFMOVH42",
-    "recordDetails": {
+    "recordDetails": {    
+      "isComponent": false,
       "subject": "59acb2f32c0d",
       "interestedParty": {
         "reason": "subjectUnableToConfirmOrIdentifyBeneficialOwner",
