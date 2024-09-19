@@ -1,0 +1,135 @@
+[
+  {
+    "statementId": "7b97861e-5470-e539-c965-c5dff5f5a17d",
+    "source": {
+      "type": [
+        "officialRegister",
+        "verified"
+      ],
+      "description": "GLEIF"
+    },
+    "statementDate": "2023-10-02",
+    "annotations": [
+      {
+        "motivation": "commenting",
+        "description": "LEI Registration Status: ISSUED",
+        "statementPointerTarget": "/",
+        "creationDate": "2024-08-12",
+        "createdBy": {
+          "name": "Open Ownership",
+          "uri": "https://www.openownership.org"
+        }
+      }
+    ],
+    "publicationDetails": {
+      "publicationDate": "2024-08-12",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher": {
+        "name": "Open Ownership",
+        "url": "https://www.openownership.org"
+      }
+    },
+    "recordId": "254900UCWGL6FFMOVH42",
+    "recordStatus": "new",
+    "recordType": "entity",
+    "declarationSubject": "254900UCWGL6FFMOVH42"
+    "recordDetails": {
+      "entityType": "registeredEntity",
+      "name": "Rescue Lane Properties, LLC",
+      "incorporatedInJurisdiction": {
+        "name": "Pennsylvania, United States",
+        "code": "US-PA"
+      },
+      "identifiers": [
+        {
+          "id": "254900UCWGL6FFMOVH42",
+          "scheme": "XI-LEI",
+          "schemeName": "Global Legal Entity Identifier Index"
+        },
+        {
+          "id": "13583179",
+          "schemeName": "RA000632"
+        }
+      ],
+      "addresses": [
+        {
+          "type": "registered",
+          "address": "4668 Breezyview Road, Columbia",
+          "country": "US",
+          "postCode": "17512"
+        },
+        {
+          "type": "business",
+          "address": "4668 Breezyview Road, Columbia",
+          "country": "US",
+          "postCode": "17512"
+        }
+      ],
+      "foundingDate": "2023-09-13T00:00:00.000Z"
+    }
+  },
+  {
+    "statementId": "1fe05b54-29f8-e9c5-e8cd-6a0093dfe609",
+    "source": {
+      "type": [
+        "officialRegister"
+      ],
+      "description": "GLEIF"
+    },
+    "statementDate": "2024-06-06",
+    "annotations": [
+      {
+        "motivation": "commenting",
+        "description": "The nature of this interest is unknown",
+        "statementPointerTarget": "/interests/0/type",
+        "creationDate": "2024-08-12",
+        "createdBy": {
+          "name": "Open Ownership",
+          "uri": "https://www.openownership.org"
+        }
+      },
+      {
+        "motivation": "commenting",
+        "description": "This statement was created due to a NO_KNOWN_PERSON GLEIF Reporting Exception for 254900UCWGL6FFMOVH42",
+        "statementPointerTarget": "/",
+        "creationDate": "2024-08-12",
+        "createdBy": {
+          "name": "Open Ownership",
+          "uri": "https://www.openownership.org"
+        }
+      }
+    ],
+    "publicationDetails": {
+      "publicationDate": "2024-08-12",
+      "bodsVersion": "0.4",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publisher": {
+        "name": "Open Ownership",
+        "url": "https://www.openownership.org"
+      }
+    },
+    "recordId": "254900UCWGL6FFMOVH42-",
+    "recordStatus": "new",
+    "recordType": "relationship",
+    "declarationSubject": "254900UCWGL6FFMOVH42",
+    "recordDetails": {
+      "subject": "59acb2f32c0d",
+      "interestedParty": {
+        "reason": "subjectUnableToConfirmOrIdentifyBeneficialOwner",
+        "description": "Exception Reason: NO_KNOWN_PERSON"
+      },
+      "interests": [
+        {
+          "type": "other-influence-or-control",
+          "interestLevel": "direct",
+          "beneficialOwnershipOrControl": false,
+          "details": "Exception Category: DIRECT_ACCOUNTING_CONSOLIDATION_PARENT"
+        }
+      ]
+    }
+  } 
+]
+
+
+
