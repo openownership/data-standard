@@ -59,6 +59,7 @@
           "type": "registered",
           "address": "4668 Breezyview Road, Columbia",
           "country": {
+            "name": "United States of America",
             "code": "US"
           },
           "postCode": "17512"
@@ -67,12 +68,13 @@
           "type": "business",
           "address": "4668 Breezyview Road, Columbia",
           "country": {
+            "name": "United States of America",
             "code": "US"
           },
           "postCode": "17512"
         }
       ],
-      "foundingDate": "2023-09-13T00:00:00.000Z"
+      "foundingDate": "2023-09-13"
     }
   },
   {
@@ -127,7 +129,7 @@
       },
       "interests": [
         {
-          "type": "other-influence-or-control",
+          "type": "otherInfluenceOrControl",
           "interestLevel": "direct",
           "beneficialOwnershipOrControl": false,
           "details": "Exception Category: DIRECT_ACCOUNTING_CONSOLIDATION_PARENT"
