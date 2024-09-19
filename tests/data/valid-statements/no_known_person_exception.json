@@ -35,7 +35,9 @@
     "recordType": "entity",
     "declarationSubject": "254900UCWGL6FFMOVH42",
     "recordDetails": {
-      "entityType": "registeredEntity",
+      "entityType": {
+        "type": "registeredEntity"
+      },
       "name": "Rescue Lane Properties, LLC",
       "incorporatedInJurisdiction": {
         "name": "Pennsylvania, United States",
@@ -56,13 +58,17 @@
         {
           "type": "registered",
           "address": "4668 Breezyview Road, Columbia",
-          "country": "US",
+          "country": {
+            "code": "US"
+          },
           "postCode": "17512"
         },
         {
           "type": "business",
           "address": "4668 Breezyview Road, Columbia",
-          "country": "US",
+          "country": {
+            "code": "US"
+          },
           "postCode": "17512"
         }
       ],
