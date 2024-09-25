@@ -1,13 +1,15 @@
 [
   {
-    "statementId": "7b97861e-5470-e539-c965-c5dff5f5a17d",
+    "statementId": "XI-LEI-254900UCWGL6FFMOVH42-20240606",
     "source": {
       "type": [
         "officialRegister",
         "verified"
       ],
-      "description": "GLEIF"
-    },
+      "assertedBy": "GLEIF",
+      "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/939932/20240606-0000-gleif-goldencopy-lei2-golden-copy.json.zip",
+      "retrievedAt": "2024-06-06T00:00:00Z"
+    }, 
     "statementDate": "2023-10-02",
     "annotations": [
       {
@@ -79,36 +81,16 @@
     }
   },
   {
-    "statementId": "1fe05b54-29f8-e9c5-e8cd-6a0093dfe609",
+    "statementId": "XI-LEI-repex-d-254900UCWGL6FFMOVH42-407e32-20240606",
     "source": {
       "type": [
         "officialRegister"
       ],
-      "description": "GLEIF"
+      "assertedBy": "GLEIF",
+      "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/939932/20240606-0000-gleif-goldencopy-lei2-golden-copy.json.zip",
+      "retrievedAt": "2024-06-06T00:00:00Z"
     },
     "statementDate": "2024-06-06",
-    "annotations": [
-      {
-        "motivation": "commenting",
-        "description": "The nature of this interest is unknown",
-        "statementPointerTarget": "/interests/0/type",
-        "creationDate": "2024-08-12",
-        "createdBy": {
-          "name": "Open Ownership",
-          "uri": "https://www.openownership.org"
-        }
-      },
-      {
-        "motivation": "commenting",
-        "description": "This statement was created due to a NO_KNOWN_PERSON GLEIF Reporting Exception for 254900UCWGL6FFMOVH42",
-        "statementPointerTarget": "/",
-        "creationDate": "2024-08-12",
-        "createdBy": {
-          "name": "Open Ownership",
-          "uri": "https://www.openownership.org"
-        }
-      }
-    ],
     "publicationDetails": {
       "publicationDate": "2024-08-12",
       "bodsVersion": "0.4",
@@ -118,7 +100,7 @@
         "url": "https://www.openownership.org"
       }
     },
-    "recordId": "254900UCWGL6FFMOVH42-",
+    "recordId": "repex-d-254900UCWGL6FFMOVH42-407e32",
     "recordStatus": "new",
     "recordType": "relationship",
     "declarationSubject": "254900UCWGL6FFMOVH42",
@@ -126,8 +108,8 @@
       "isComponent": false,
       "subject": "59acb2f32c0d",
       "interestedParty": {
-        "reason": "subjectUnableToConfirmOrIdentifyBeneficialOwner",
-        "description": "Exception Reason: NO_KNOWN_PERSON"
+        "reason": "informationUnknownToPublisher",
+        "description": "Exception Reason: NO_KNOWN_PERSON. There is no known person(s) controlling the entity."
       },
       "interests": [
         {
