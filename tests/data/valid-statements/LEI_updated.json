@@ -1,0 +1,162 @@
+[
+    {
+        "source": {
+            "assertedBy": [
+                {
+                    "name": "GLEIF"
+                }
+            ],
+            "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+        },
+        "statementDate": "2024-06-06",
+        "annotations": [
+            {
+                "motivation": "commenting",
+                "description": "LEI Registration Status: ISSUED",
+                "statementPointerTarget": "/",
+                "creationDate": "2024-08-12",
+                "createdBy": {
+                    "name": "Open Ownership",
+                    "uri": "https://www.openownership.org"
+                }
+            }
+        ],
+        "publicationDetails": {
+            "publicationDate": "2024-08-12",
+            "bodsVersion": "0.4",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "publisher": {
+                "name": "Open Ownership",
+                "url": "https://www.openownership.org"
+            }
+        },
+        "recordId": "52990072YCXRBHR2CS14",
+        "declarationSubject": "52990072YCXRBHR2CS14",
+        "recordStatus": "new",
+        "recordType": "entity",
+        "recordDetails": {
+            "entityType": {
+                "type": "registeredEntity"
+            },
+            "name": "Hochgerner und Auer GesmbH",
+            "incorporatedInJurisdiction": {
+                "name": "Austria",
+                "code": "AT"
+            },
+            "identifiers": [
+                {
+                    "id": "52990072YCXRBHR2CS14",
+                    "scheme": "XI-LEI",
+                    "schemeName": "Global Legal Entity Identifier Index"
+                },
+                {
+                    "id": "284300p",
+                    "schemeName": "RA000017"
+                }
+            ],
+            "addresses": [
+                {
+                    "type": "registered",
+                    "address": "Friedhofgasse 16, Hainfeld (N\u00d6)",
+                    "country": {
+                        "name": "Austria",
+                        "code": "AT"
+                    },
+                    "postCode": "3170"
+                },
+                {
+                    "type": "business",
+                    "address": "Friedhofgasse 16, Hainfeld (N\u00d6)",
+                    "country": {
+                        "name": "Austria",
+                        "code": "AT"
+                    },
+                    "postCode": "3170"
+                }
+            ],
+            "foundingDate": "2006-09-29",
+            "isComponent": false
+        },
+        "statementId": "XI-LEI-52990072YCXRBHR2CS14-20240606"
+    },
+    {
+        "source": {
+            "assertedBy": [
+                {
+                    "name": "GLEIF"
+                }
+            ],
+            "url": "not available"
+        },
+        "statementDate": "2024-07-07",
+        "annotations": [
+            {
+                "motivation": "commenting",
+                "description": "LEI Registration Status: ISSUED",
+                "statementPointerTarget": "/",
+                "creationDate": "2024-08-13",
+                "createdBy": {
+                    "name": "Open Ownership",
+                    "uri": "https://www.openownership.org"
+                }
+            }
+        ],
+        "publicationDetails": {
+            "publicationDate": "2024-08-13",
+            "bodsVersion": "0.4",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "publisher": {
+                "name": "Open Ownership",
+                "url": "https://www.openownership.org"
+            }
+        },
+        "recordId": "52990072YCXRBHR2CS14",
+        "declarationSubject": "52990072YCXRBHR2CS14",
+        "recordStatus": "updated",
+        "recordType": "entity",
+        "recordDetails": {
+            "entityType": {
+                "type": "registeredEntity"
+            },
+            "name": "Hochgerner und Auer GesmbH",
+            "incorporatedInJurisdiction": {
+                "name": "Austria",
+                "code": "AT"
+            },
+            "identifiers": [
+                {
+                    "id": "52990072YCXRBHR2CS14",
+                    "scheme": "XI-LEI",
+                    "schemeName": "Global Legal Entity Identifier Index"
+                },
+                {
+                    "id": "284300p",
+                    "schemeName": "RA000017"
+                }
+            ],
+            "addresses": [
+                {
+                    "type": "registered",
+                    "address": "Friedhofgasse 16, Hainfeld (N\u00d6)",
+                    "country": {
+                        "name": "Austria",
+                        "code": "AT"
+                    },
+                    "postCode": "3170"
+                },
+                {
+                    "type": "business",
+                    "address": "Friedhofgasse 16, Hainfeld (N\u00d6)",
+                    "country": {
+                        "name": "Austria",
+                        "code": "AT"
+                    },
+                    "postCode": "3170"
+                }
+            ],
+            "foundingDate": "2006-09-29",
+            "isComponent": false
+        },
+        "statementId": "XI-LEI-52990072YCXRBHR2CS14-20240707"
+    }
+]
