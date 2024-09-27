@@ -47,6 +47,7 @@
         "name": "United States",
         "code": "US"
       },
+      "isComponent": false,
       "identifiers": [
         {
           "id": "001GPB6A9XPE8XJICC14",
