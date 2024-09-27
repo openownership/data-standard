@@ -31,10 +31,13 @@
         }
       },
       "recordId": "001GPB6A9XPE8XJICC14",
+      "declarationSubject": "001GPB6A9XPE8XJICC14",
       "recordStatus": "new",
       "recordType": "entity",
       "recordDetails": {
-        "entityType": "registeredEntity",
+        "entityType": {
+          "type": "registeredEntity"
+        },
         "name": "Fidelity Advisor Leveraged Company Stock Fund",
         "incorporatedInJurisdiction": {
           "name": "United States",
@@ -55,17 +58,23 @@
           {
             "type": "registered",
             "address": "245 SUMMER STREET, BOSTON",
-            "country": "US",
+            "country": {
+              "name": "United States",
+              "code": "US"
+            },
             "postCode": "02210"
           },
           {
             "type": "business",
             "address": "C/O FIDELITY MANAGEMENT & RESEARCH COMPANY LLC, WILMINGTON",
-            "country": "US",
+            "country": {
+              "name": "United States",
+              "code": "US"
+            },
             "postCode": "19801"
           }
         ],
-        "foundingDate": "2012-11-29T00:00:00.000Z"
+        "foundingDate": "2012-11-29"
       },
       "statementId": "XI-LEI-001GPB6A9XPE8XJICC14-20240606"
     }
