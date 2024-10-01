@@ -1,0 +1,53 @@
+[
+    {
+        "source": {
+            "assertedBy": [
+                {
+                    "name": "GLEIF"
+                }
+            ],
+            "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+        },
+        "statementDate": "2024-06-06",
+        "annotations": [
+            {
+                "motivation": "commenting",
+                "description": "Relationship Registration Status: PUBLISHED",
+                "statementPointerTarget": "/",
+                "creationDate": "2024-08-12",
+                "createdBy": {
+                    "name": "Open Ownership",
+                    "uri": "https://www.openownership.org"
+                }
+            }
+        ],
+        "publicationDetails": {
+            "publicationDate": "2024-08-12",
+            "bodsVersion": "0.4",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "publisher": {
+                "name": "Open Ownership",
+                "url": "https://www.openownership.org"
+            }
+        },
+        "recordId": "rr-u-3003005JY7KTP8L48N10-36fdf1",
+        "recordStatus": "new",
+        "recordType": "relationship",
+        "recordDetails": {
+            "subject": "3003005JY7KTP8L48N10",
+            "interestedParty": "30030096HNNZNN7BZK36",
+            "interests": [
+                {
+                    "directOrIndirect": "indirect",
+                    "type": "otherInterestOrControl",
+                    "beneficialOwnershipOrControl": false,
+                    "startDate": "2016-02-23T00:00:00.000+08:00",
+                    "details": "Relationship Type: IS_ULTIMATELY_CONSOLIDATED_BY"
+                }
+            ],
+            "isComponent": false
+        },
+        "statementId": "XI-LEI-rr-u-3003005JY7KTP8L48N10-36fdf1-20240606",
+        "declarationSubject": "3003005JY7KTP8L48N10"
+    }
+]
