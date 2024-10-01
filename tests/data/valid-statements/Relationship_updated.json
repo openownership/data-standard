@@ -38,7 +38,7 @@
         "interestedParty": "959800M5S8EHVXWG6P95",
         "interests": [
           {
-            "type": "otherInterestOrControl",
+            "type": "otherInfluenceOrControl",
             "beneficialOwnershipOrControl": false,
             "startDate": "2023-08-18",
             "details": "Relationship Type: IS_DIRECTLY_CONSOLIDATED_BY",
@@ -89,7 +89,7 @@
         "interestedParty": "959800M5S8EHVXWG6P95",
         "interests": [
           {
-            "type": "otherInterestOrControl",
+            "type": "otherInfluenceOrControl",
             "beneficialOwnershipOrControl": false,
             "startDate": "2023-08-18",
             "details": "Relationship Type: IS_DIRECTLY_CONSOLIDATED_BY",
