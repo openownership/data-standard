@@ -1,0 +1,82 @@
+[
+    {
+        "source": {
+            "assertedBy": [
+                {
+                    "name": "GLEIF"
+                }
+            ],
+            "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+        },
+        "statementDate": "2024-06-06",
+        "annotations": [
+            {
+                "motivation": "commenting",
+                "description": "LEI Registration Status: LAPSED",
+                "statementPointerTarget": "/",
+                "creationDate": "2024-08-12",
+                "createdBy": {
+                    "name": "Open Ownership",
+                    "uri": "https://www.openownership.org"
+                }
+            }
+        ],
+        "publicationDetails": {
+            "publicationDate": "2024-08-12",
+            "bodsVersion": "0.4",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "publisher": {
+                "name": "Open Ownership",
+                "url": "https://www.openownership.org"
+            }
+        },
+        "recordId": "984500F41LD86971HC57",
+        "recordStatus": "new",
+        "recordType": "entity",
+        "recordDetails": {
+            "entityType": {
+                "type": "registeredEntity"
+            },
+            "name": "FEVISOS LTD",
+            "incorporatedInJurisdiction": {
+                "name": "United Kingdom",
+                "code": "GB"
+            },
+            "identifiers": [
+                {
+                    "id": "984500F41LD86971HC57",
+                    "scheme": "XI-LEI",
+                    "schemeName": "Global Legal Entity Identifier Index"
+                },
+                {
+                    "id": "10415749",
+                    "schemeName": "RA000585"
+                }
+            ],
+            "addresses": [
+                {
+                    "type": "registered",
+                    "address": "40d Ashchurch Park Villas, London",
+                    "country": {
+                        "name": "United Kingdom",
+                        "code": "GB"
+                    },
+                    "postCode": "W12 9SP"
+                },
+                {
+                    "type": "business",
+                    "address": "40d Ashchurch Park Villas, London",
+                    "country": {
+                        "name": "United Kingdom",
+                        "code": "GB"
+                    },
+                    "postCode": "W12 9SP"
+                }
+            ],
+            "foundingDate": "2016-10-07",
+            "isComponent": false
+        },
+        "statementId": "XI-LEI-984500F41LD86971HC57-20240606",
+        "declarationSubject": "984500F41LD86971HC57"
+    }
+]
