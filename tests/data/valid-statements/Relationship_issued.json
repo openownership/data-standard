@@ -39,9 +39,9 @@
             "interests": [
                 {
                     "directOrIndirect": "indirect",
-                    "type": "otherInterestOrControl",
+                    "type": "otherInfluenceOrControl",
                     "beneficialOwnershipOrControl": false,
-                    "startDate": "2016-02-23T00:00:00.000+08:00",
+                    "startDate": "2016-02-23",
                     "details": "Relationship Type: IS_ULTIMATELY_CONSOLIDATED_BY"
                 }
             ],
