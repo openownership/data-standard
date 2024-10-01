@@ -1,0 +1,345 @@
+[
+    {
+      "source": {
+        "assertedBy": [
+          {
+            "name": "GLEIF"
+          }
+        ],
+        "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+      },
+      "statementDate": "2024-06-06",
+      "annotations": [
+        {
+          "motivation": "commenting",
+          "description": "Relationship Registration Status: PUBLISHED",
+          "statementPointerTarget": "/",
+          "creationDate": "2024-08-12",
+          "createdBy": {
+            "name": "Open Ownership",
+            "uri": "https://www.openownership.org"
+          }
+        }
+      ],
+      "publicationDetails": {
+        "publicationDate": "2024-08-12",
+        "bodsVersion": "0.4",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher": {
+          "name": "Open Ownership",
+          "url": "https://www.openownership.org"
+        }
+      },
+      "recordId": "rr-d-959800HPB0TYKYATVE75-766d70",
+      "recordStatus": "new",
+      "recordType": "relationship",
+      "recordDetails": {
+        "subject": "959800HPB0TYKYATVE75",
+        "interestedParty": "959800M5S8EHVXWG6P95",
+        "interests": [
+          {
+            "type": "otherInterestOrControl",
+            "beneficialOwnershipOrControl": false,
+            "startDate": "2023-08-18",
+            "details": "Relationship Type: IS_DIRECTLY_CONSOLIDATED_BY",
+            "directOrIndirect": "direct"
+          }
+        ],
+        "isComponent": false
+      },
+      "statementId": "XI-LEI-rr-d-959800HPB0TYKYATVE75-766d70-20240606",
+      "declarationSubject": "959800HPB0TYKYATVE75"
+    },
+    {
+      "source": {
+        "assertedBy": [
+          {
+            "name": "GLEIF"
+          }
+        ],
+        "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+      },
+      "statementDate": "2024-07-07",
+      "annotations": [
+        {
+          "motivation": "commenting",
+          "description": "Relationship Registration Status: PUBLISHED",
+          "statementPointerTarget": "/",
+          "creationDate": "2024-08-13",
+          "createdBy": {
+            "name": "Open Ownership",
+            "uri": "https://www.openownership.org"
+          }
+        }
+      ],
+      "publicationDetails": {
+        "publicationDate": "2024-08-13",
+        "bodsVersion": "0.4",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher": {
+          "name": "Open Ownership",
+          "url": "https://www.openownership.org"
+        }
+      },
+      "recordId": "rr-d-959800HPB0TYKYATVE75-766d70",
+      "recordStatus": "updated",
+      "recordType": "relationship",
+      "recordDetails": {
+        "subject": "959800HPB0TYKYATVE75",
+        "interestedParty": "959800M5S8EHVXWG6P95",
+        "interests": [
+          {
+            "type": "otherInterestOrControl",
+            "beneficialOwnershipOrControl": false,
+            "startDate": "2023-08-18",
+            "details": "Relationship Type: IS_DIRECTLY_CONSOLIDATED_BY",
+            "directOrIndirect": "direct"
+          }
+        ],
+        "isComponent": false
+      },
+      "statementId": "XI-LEI-rr-d-959800HPB0TYKYATVE75-766d70-20240707",
+      "declarationSubject": "959800HPB0TYKYATVE75"
+    },
+    {
+      "source": {
+        "assertedBy": [
+          {
+            "name": "GLEIF"
+          }
+        ],
+        "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+      },
+      "statementDate": "2024-06-06",
+      "annotations": [
+        {
+          "motivation": "commenting",
+          "description": "LEI Registration Status: ISSUED",
+          "statementPointerTarget": "/",
+          "creationDate": "2024-08-12",
+          "createdBy": {
+            "name": "Open Ownership",
+            "uri": "https://www.openownership.org"
+          }
+        }
+      ],
+      "publicationDetails": {
+        "publicationDate": "2024-08-12",
+        "bodsVersion": "0.4",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher": {
+          "name": "Open Ownership",
+          "url": "https://www.openownership.org"
+        }
+      },
+      "recordId": "959800M5S8EHVXWG6P95",
+      "recordStatus": "new",
+      "recordType": "entity",
+      "recordDetails": {
+        "entityType": {
+          "type": "registeredEntity"
+        },
+        "name": "MAPFRE ESPA\u00d1A COMPA\u00d1IA DE SEGUROS Y REASEGUROS, S.A",
+        "incorporatedInJurisdiction": {
+          "name": "Spain",
+          "code": "ES"
+        },
+        "identifiers": [
+          {
+            "id": "959800M5S8EHVXWG6P95",
+            "scheme": "XI-LEI",
+            "schemeName": "Global Legal Entity Identifier Index"
+          },
+          {
+            "id": "M-9333-8",
+            "schemeName": "RA000533"
+          }
+        ],
+        "addresses": [
+          {
+            "type": "registered",
+            "address": "CARRETERA DE POZUELO A MAJADAHONDA 50, Majadahonda",
+            "country": {
+              "name": "Spain",
+              "code": "ES"
+            },
+            "postCode": "28222"
+          },
+          {
+            "type": "business",
+            "address": "CARRETERA DE POZUELO A MAJADAHONDA 50, Majadahonda",
+            "country": {
+              "name": "Spain",
+              "code": "ES"
+            },
+            "postCode": "28222"
+          }
+        ],
+        "foundingDate": "1965-07-07",
+        "isComponent": false
+      },
+      "statementId": "XI-LEI-959800M5S8EHVXWG6P95-2024-06-06",
+      "declarationSubject": "959800HPB0TYKYATVE75"
+    },
+    {
+      "source": {
+        "assertedBy": [
+          {
+            "name": "GLEIF"
+          }
+        ],
+        "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+      },
+      "statementDate": "2024-06-06",
+      "annotations": [
+        {
+          "motivation": "commenting",
+          "description": "LEI Registration Status: ISSUED",
+          "statementPointerTarget": "/",
+          "creationDate": "2024-08-12",
+          "createdBy": {
+            "name": "Open Ownership",
+            "uri": "https://www.openownership.org"
+          }
+        }
+      ],
+      "publicationDetails": {
+        "publicationDate": "2024-08-12",
+        "bodsVersion": "0.4",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher": {
+          "name": "Open Ownership",
+          "url": "https://www.openownership.org"
+        }
+      },
+      "recordId": "959800HPB0TYKYATVE75",
+      "recordStatus": "new",
+      "recordType": "entity",
+      "recordDetails": {
+        "entityType": {
+          "type": "registeredEntity"
+        },
+        "name": "MULTISERVICIOS MAPFRE MULTIMAP SA",
+        "incorporatedInJurisdiction": {
+          "name": "Spain",
+          "code": "ES"
+        },
+        "identifiers": [
+          {
+            "id": "959800HPB0TYKYATVE75",
+            "scheme": "XI-LEI",
+            "schemeName": "Global Legal Entity Identifier Index"
+          },
+          {
+            "id": "M-221749-8",
+            "schemeName": "RA000533"
+          }
+        ],
+        "addresses": [
+          {
+            "type": "registered",
+            "address": "Carretera de Pozuelo 50, Majadahonda",
+            "country": {
+              "name": "Spain",
+              "code": "ES"
+            },
+            "postCode": "28222"
+          },
+          {
+            "type": "business",
+            "address": "Carretera de Pozuelo 50, Majadahonda",
+            "country": {
+              "name": "Spain",
+              "code": "ES"
+            },
+            "postCode": "28222"
+          }
+        ],
+        "foundingDate": "1998-04-30",
+        "isComponent": false
+      },
+      "statementId": "XI-LEI-959800HPB0TYKYATVE75-20240606",
+      "declarationSubject": "959800HPB0TYKYATVE75"
+    },
+    {
+      "source": {
+        "assertedBy": [
+          {
+            "name": "GLEIF"
+          }
+        ],
+        "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+      },
+      "statementDate": "2024-07-07",
+      "annotations": [
+        {
+          "motivation": "commenting",
+          "description": "LEI Registration Status: ISSUED",
+          "statementPointerTarget": "/",
+          "creationDate": "2024-08-13",
+          "createdBy": {
+            "name": "Open Ownership",
+            "uri": "https://www.openownership.org"
+          }
+        }
+      ],
+      "publicationDetails": {
+        "publicationDate": "2024-08-13",
+        "bodsVersion": "0.4",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher": {
+          "name": "Open Ownership",
+          "url": "https://www.openownership.org"
+        }
+      },
+      "recordId": "959800HPB0TYKYATVE75",
+      "recordStatus": "updated",
+      "recordType": "entity",
+      "recordDetails": {
+        "entityType": {
+          "type": "registeredEntity"
+        },
+        "name": "MULTISERVICIOS MAPFRE MULTIMAP SA",
+        "incorporatedInJurisdiction": {
+          "name": "Spain",
+          "code": "ES"
+        },
+        "identifiers": [
+          {
+            "id": "959800HPB0TYKYATVE75",
+            "scheme": "XI-LEI",
+            "schemeName": "Global Legal Entity Identifier Index"
+          },
+          {
+            "id": "M-221749-8",
+            "schemeName": "RA000533"
+          }
+        ],
+        "addresses": [
+          {
+            "type": "registered",
+            "address": "Carretera de Pozuelo 50, Majadahonda",
+            "country": {
+              "name": "Spain",
+              "code": "ES"
+            },
+            "postCode": "28222"
+          },
+          {
+            "type": "business",
+            "address": "Carretera de Pozuelo 50, Majadahonda",
+            "country": {
+              "name": "Spain",
+              "code": "ES"
+            },
+            "postCode": "28222"
+          }
+        ],
+        "foundingDate": "1998-04-30",
+        "isComponent": false
+      },
+      "statementId": "XI-LEI-959800HPB0TYKYATVE75-20240707",
+      "declarationSubject": "959800HPB0TYKYATVE75"
+    }
+  ]
+  
