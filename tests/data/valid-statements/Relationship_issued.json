@@ -49,5 +49,166 @@
         },
         "statementId": "XI-LEI-rr-u-3003005JY7KTP8L48N10-36fdf1-20240606",
         "declarationSubject": "3003005JY7KTP8L48N10"
-    }
+    },
+    {
+        "source": {
+          "assertedBy": [
+            {
+              "name": "GLEIF"
+            }
+          ],
+          "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+        },
+        "statementDate": "2024-06-06",
+        "annotations": [
+          {
+            "motivation": "commenting",
+            "description": "LEI Registration Status: LAPSED",
+            "statementPointerTarget": "/",
+            "creationDate": "2024-08-12",
+            "createdBy": {
+              "name": "Open Ownership",
+              "uri": "https://www.openownership.org"
+            }
+          }
+        ],
+        "publicationDetails": {
+          "publicationDate": "2024-08-12",
+          "bodsVersion": "0.4",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher": {
+            "name": "Open Ownership",
+            "url": "https://www.openownership.org"
+          }
+        },
+        "recordId": "30030096HNNZNN7BZK36",
+        "recordStatus": "new",
+        "recordType": "entity",
+        "recordDetails": {
+          "entityType": {
+            "type": "registeredEntity"
+          },
+          "name": "\u6a2a\u5e97\u96c6\u56e2\u63a7\u80a1\u6709\u9650\u516c\u53f8",
+          "incorporatedInJurisdiction": {
+            "name": "China",
+            "code": "CN"
+          },
+          "identifiers": [
+            {
+              "id": "30030096HNNZNN7BZK36",
+              "scheme": "XI-LEI",
+              "schemeName": "Global Legal Entity Identifier Index"
+            },
+            {
+              "id": "91330783717672584H",
+              "schemeName": "RA000092"
+            }
+          ],
+          "addresses": [
+            {
+              "type": "registered",
+              "address": "\u6d59\u6c5f\u7701\u4e1c\u9633\u5e02\u6a2a\u5e97\u9547\u4e07\u76db\u885742\u53f7, \u91d1\u534e\u5e02",
+              "country": {
+                "name": "China",
+                "code": "CN"
+              },
+              "postCode": "100000"
+            },
+            {
+              "type": "business",
+              "address": "\u6d59\u6c5f\u7701\u4e1c\u9633\u5e02\u6a2a\u5e97\u9547\u4e07\u76db\u885742\u53f7, \u91d1\u534e\u5e02",
+              "country": {
+                "name": "China",
+                "code": "CN"
+              },
+              "postCode": "100000"
+            }
+          ],
+          "foundingDate": "1999-11-22",
+          "isComponent": false
+        },
+        "statementId": "XI-LEI-30030096HNNZNN7BZK36-20240606",
+        "declarationSubject": "3003005JY7KTP8L48N10"
+      },
+      {
+        "source": {
+          "assertedBy": [
+            {
+              "name": "GLEIF"
+            }
+          ],
+          "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+
+        },
+        "statementDate": "2024-06-06",
+        "annotations": [
+          {
+            "motivation": "commenting",
+            "description": "GLEIF data for this entity - LEI: 3003005JY7KTP8L48N10; Registration Status: ISSUED",
+            "statementPointerTarget": "/",
+            "creationDate": "2024-08-12",
+            "createdBy": {
+              "name": "Open Ownership",
+              "uri": "https://www.openownership.org"
+            }
+          }
+        ],
+        "publicationDetails": {
+          "publicationDate": "2024-08-12",
+          "bodsVersion": "0.4",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher": {
+            "name": "Open Ownership",
+            "url": "https://www.openownership.org"
+          }
+        },
+        "recordId": "3003005JY7KTP8L48N10",
+        "recordStatus": "new",
+        "recordType": "entity",
+        "recordDetails": {
+          "entityType": {
+            "type": "registeredEntity"
+          },
+          "name": "\u6a6b\u83ef\u570b\u969b\u91d1\u878d\u80a1\u4efd\u6709\u9650\u516c\u53f8",
+          "incorporatedInJurisdiction": {
+            "name": "Hong Kong",
+            "code": "HK"
+          },
+          "identifiers": [
+            {
+              "id": "3003005JY7KTP8L48N10",
+              "scheme": "XI-LEI",
+              "schemeName": "Global Legal Entity Identifier Index"
+            },
+            {
+              "id": "58931190",
+              "schemeName": "RA000388"
+            }
+          ],
+          "addresses": [
+            {
+              "type": "registered",
+              "address": "\u6e7e\u4ed4\u544a\u58eb\u6253\u9053181-185\u53f7\u4e2d\u6021\u5546\u4e1a\u5927\u53a617\u5c42, \u9999\u6e2f",
+              "country": {
+                "name": "Hong Kong",
+                "code": "HK"
+              },
+              "postCode": "999077"
+            },
+            {
+              "type": "business",
+              "address": "\u6e7e\u4ed4\u544a\u58eb\u6253\u9053181-185\u53f7\u4e2d\u6021\u5546\u4e1a\u5927\u53a617\u5c42, \u9999\u6e2f",
+              "country": {
+                "name": "Hong Kong",
+                "code": "HK"
+              },
+              "postCode": "999077"
+            }
+          ],
+          "foundingDate": "2011-08-16",
+          "isComponent": false
+        },
+        "statementId": "XI-LEI-3003005JY7KTP8L48N10-20240606",
+        "declarationSubject": "3003005JY7KTP8L48N10"
+      }
 ]
