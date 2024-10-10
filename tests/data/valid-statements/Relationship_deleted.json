@@ -253,6 +253,8 @@
         {
           "motivation": "commenting",
           "description": "Relationship Registration Status: PUBLISHED",
+          "statementPointerTarget": "/",
+          "creationDate": "2024-08-12",
           "createdBy": {
             "name": "Open Ownership",
             "uri": "https://www.openownership.org"
@@ -302,6 +304,8 @@
           {
             "motivation": "commenting",
             "description": "Relationship Registration Status: PUBLISHED",
+            "statementPointerTarget": "/",
+            "creationDate": "2024-08-12",
             "createdBy": {
               "name": "Open Ownership",
               "uri": "https://www.openownership.org"
