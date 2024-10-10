@@ -1,0 +1,123 @@
+[
+    {
+        "source": {
+            "assertedBy": [
+                {
+                    "name": "GLEIF"
+                }
+            ],
+            "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+        },
+        "statementDate": "2024-06-06",
+        "publicationDetails": {
+            "publicationDate": "2024-08-13",
+            "bodsVersion": "0.4",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "publisher": {
+                "name": "Open Ownership",
+                "url": "https://www.openownership.org"
+            }
+        },
+        "recordId": "repex-u-8368002JYF3BWYY2BW50-94dd8f",
+        "recordStatus": "new",
+        "recordType": "relationship",
+        "recordDetails": {
+            "subject": "8368002JYF3BWYY2BW50",
+            "interestedParty": {
+                "reason": "interestedPartyExemptFromDisclosure",
+                "details": "Exception Reason: NO_LEI. This parent legal entity does not consent to obtain an LEI or to authorize its child entity to obtain an LEI on its behalf."
+            },
+            "interests": [
+                {
+                    "directOrIndirect": "indirect",
+                    "details": "Exception Category: ULTIMATE_ACCOUNTING_CONSOLIDATION_PARENT",
+                    "type": "otherInfluenceOrControl",
+                    "beneficialOwnershipOrControl": false
+                }
+            ],
+            "isComponent": false
+        },
+        "statementId": "XI-LEI-repex-u-8368002JYF3BWYY2BW50-94dd8f-20240606",
+        "declarationSubject": "8368002JYF3BWYY2BW50"
+    },
+    {
+        "source": {
+            "assertedBy": [
+                {
+                    "name": "GLEIF"
+                }
+            ],
+            "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+        },
+        "statementDate": "2024-06-06",
+        "annotations": [
+            {
+                "motivation": "commenting",
+                "description": "LEI Registration Status: LAPSED",
+                "statementPointerTarget": "/",
+                "creationDate": "2024-08-12",
+                "createdBy": {
+                    "name": "Open Ownership",
+                    "uri": "https://www.openownership.org"
+                }
+            }
+        ],
+        "publicationDetails": {
+            "publicationDate": "2024-08-12",
+            "bodsVersion": "0.4",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "publisher": {
+                "name": "Open Ownership",
+                "url": "https://www.openownership.org"
+            }
+        },
+        "recordId": "8368002JYF3BWYY2BW50",
+        "recordStatus": "new",
+        "recordType": "entity",
+        "recordDetails": {
+            "entityType": {
+                "type": "registeredEntity"
+            },
+            "name": "\u7518\u8083\u83f2\u5c14\u8d44\u533b\u7597\u79d1\u6280\u6709\u9650\u516c\u53f8",
+            "incorporatedInJurisdiction": {
+                "name": "China",
+                "code": "CN"
+            },
+            "identifiers": [
+                {
+                    "id": "8368002JYF3BWYY2BW50",
+                    "scheme": "XI-LEI",
+                    "schemeName": "Global Legal Entity Identifier Index"
+                },
+                {
+                    "id": "91620421MA74MNAU5L",
+                    "schemeName": "RA000092"
+                }
+            ],
+            "addresses": [
+                {
+                    "type": "registered",
+                    "address": "\u9756\u8fdc\u53bf\u4e4c\u5170\u9547\u83b2\u6e56\u8def3\u53f72\u5e621\u5ba4, \u767d\u94f6\u5e02",
+                    "country": {
+                        "name": "China",
+                        "code": "CN"
+                    },
+                    "postCode": "730600"
+                },
+                {
+                    "type": "business",
+                    "address": "\u9756\u8fdc\u53bf\u4e4c\u5170\u9547\u83b2\u6e56\u8def3\u53f72\u5e621\u5ba4, \u767d\u94f6\u5e02",
+                    "country": {
+                        "name": "China",
+                        "code": "CN"
+                    },
+                    "postCode": "730600"
+                }
+            ],
+            "foundingDate": "2021-03-25",
+            "isComponent": false
+        },
+        "statementId": "XI-LEI-8368002JYF3BWYY2BW50-20240606",
+        "declarationSubject": "8368002JYF3BWYY2BW50"
+    }
+]
