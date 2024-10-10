@@ -1,0 +1,351 @@
+[
+    {
+      "source": {
+        "assertedBy": [
+          {
+            "name": "GLEIF"
+          }
+        ],
+        "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+      },
+      "statementDate": "2024-06-06",
+      "annotations": [
+        {
+          "motivation": "commenting",
+          "description": "LEI Registration Status: ISSUED",
+          "statementPointerTarget": "/",
+          "creationDate": "2024-08-12",
+          "createdBy": {
+            "name": "Open Ownership",
+            "uri": "https://www.openownership.org"
+          }
+        }
+      ],
+      "publicationDetails": {
+        "publicationDate": "2024-08-12",
+        "bodsVersion": "0.4",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher": {
+          "name": "Open Ownership",
+          "url": "https://www.openownership.org"
+        }
+      },
+      "recordId": "OFIZ7W1WYFJC3YYSG330",
+      "recordStatus": "new",
+      "recordType": "entity",
+      "recordDetails": {
+        "entityType": {
+          "type": "registeredEntity"
+        },
+        "name": "GSFS INVESTMENTS I CORP.",
+        "incorporatedInJurisdiction": {
+          "name": "Delaware, United States",
+          "code": "US-DE"
+        },
+        "identifiers": [
+          {
+            "id": "OFIZ7W1WYFJC3YYSG330",
+            "scheme": "XI-LEI",
+            "schemeName": "Global Legal Entity Identifier Index"
+          },
+          {
+            "id": "3803688",
+            "schemeName": "RA000602"
+          }
+        ],
+        "addresses": [
+          {
+            "type": "registered",
+            "address": "CORPORATION TRUST CENTER 1209 ORANGE ST, WILMINGTON",
+            "country": {
+              "name": "United States",
+              "code": "US"
+            },
+            "postCode": "19801"
+          },
+          {
+            "type": "business",
+            "address": "200 West Street, New York",
+            "country": {
+              "name": "United States",
+              "code": "US"
+            },
+            "postCode": "10282"
+          }
+        ],
+        "foundingDate": "2004-05-14",
+        "isComponent": false
+      },
+      "statementId": "XI-LEI-OFIZ7W1WYFJC3YYSG330-20240606",
+      "declarationSubject": "OFIZ7W1WYFJC3YYSG330"
+    },
+    {
+      "source": {
+        "assertedBy": [
+          {
+            "name": "GLEIF"
+          }
+        ],
+        "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+      },
+      "statementDate": "2024-07-07",
+      "annotations": [
+        {
+          "motivation": "commenting",
+          "description": "LEI Registration Status: ISSUED",
+          "statementPointerTarget": "/",
+          "creationDate": "2024-08-13",
+          "createdBy": {
+            "name": "Open Ownership",
+            "uri": "https://www.openownership.org"
+          }
+        }
+      ],
+      "publicationDetails": {
+        "publicationDate": "2024-08-13",
+        "bodsVersion": "0.4",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher": {
+          "name": "Open Ownership",
+          "url": "https://www.openownership.org"
+        }
+      },
+      "recordId": "OFIZ7W1WYFJC3YYSG330",
+      "recordStatus": "updated",
+      "recordType": "entity",
+      "recordDetails": {
+        "entityType": {
+          "type": "registeredEntity"
+        },
+        "name": "GSFS INVESTMENTS I CORP.",
+        "incorporatedInJurisdiction": {
+          "name": "Delaware, United States",
+          "code": "US-DE"
+        },
+        "identifiers": [
+          {
+            "id": "OFIZ7W1WYFJC3YYSG330",
+            "scheme": "XI-LEI",
+            "schemeName": "Global Legal Entity Identifier Index"
+          },
+          {
+            "id": "3803688",
+            "schemeName": "RA000602"
+          }
+        ],
+        "addresses": [
+          {
+            "type": "registered",
+            "address": "CORPORATION TRUST CENTER 1209 ORANGE ST, WILMINGTON",
+            "country": {
+              "name": "United States",
+              "code": "US"
+            },
+            "postCode": "19801"
+          },
+          {
+            "type": "business",
+            "address": "200 West Street, New York",
+            "country": {
+              "name": "United States",
+              "code": "US"
+            },
+            "postCode": "10282"
+          }
+        ],
+        "foundingDate": "2004-05-14",
+        "isComponent": false
+      },
+      "statementId": "XI-LEI-OFIZ7W1WYFJC3YYSG330-20240707",
+      "declarationSubject": "OFIZ7W1WYFJC3YYSG330"
+    },
+    {
+      "source": {
+        "assertedBy": [
+          {
+            "name": "GLEIF"
+          }
+        ],
+        "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+      },
+      "statementDate": "2024-06-06",
+      "annotations": [
+        {
+          "motivation": "commenting",
+          "description": "LEI Registration Status: ISSUED",
+          "statementPointerTarget": "/",
+          "creationDate": "2024-08-12",
+          "createdBy": {
+            "name": "Open Ownership",
+            "uri": "https://www.openownership.org"
+          }
+        }
+      ],
+      "publicationDetails": {
+        "publicationDate": "2024-08-12",
+        "bodsVersion": "0.4",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher": {
+          "name": "Open Ownership",
+          "url": "https://www.openownership.org"
+        }
+      },
+      "recordId": "784F5XWPLTWKTBV3E584",
+      "recordStatus": "new",
+      "recordType": "entity",
+      "recordDetails": {
+        "entityType": {
+          "type": "registeredEntity"
+        },
+        "name": "THE GOLDMAN SACHS GROUP, INC.",
+        "incorporatedInJurisdiction": {
+          "name": "Delaware, United States",
+          "code": "US-DE"
+        },
+        "identifiers": [
+          {
+            "id": "784F5XWPLTWKTBV3E584",
+            "scheme": "XI-LEI",
+            "schemeName": "Global Legal Entity Identifier Index"
+          },
+          {
+            "id": "2923466",
+            "schemeName": "RA000602"
+          }
+        ],
+        "addresses": [
+          {
+            "type": "registered",
+            "address": "CORPORATION TRUST CENTER 1209 ORANGE ST, WILMINGTON",
+            "country": {
+              "name": "United States",
+              "code": "US"
+            },
+            "postCode": "19801"
+          },
+          {
+            "type": "business",
+            "address": "200 WEST STREET, NEW YORK",
+            "country": {
+              "name": "United States",
+              "code": "US"
+            },
+            "postCode": "10282"
+          }
+        ],
+        "foundingDate": "1998-07-21",
+        "isComponent": false
+      },
+      "statementId": "XI-LEI-784F5XWPLTWKTBV3E584",
+      "declarationSubject": "784F5XWPLTWKTBV3E584"
+    },
+    {
+      "source": {
+        "assertedBy": [
+          {
+            "name": "GLEIF"
+          }
+        ],
+        "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+      },
+      "statementDate": "2024-06-06",
+      "annotations": [
+        {
+          "motivation": "commenting",
+          "description": "Relationship Registration Status: PUBLISHED",
+          "createdBy": {
+            "name": "Open Ownership",
+            "uri": "https://www.openownership.org"
+          }
+        }
+      ],
+      "publicationDetails": {
+        "publicationDate": "2024-08-12",
+        "bodsVersion": "0.4",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher": {
+          "name": "Open Ownership",
+          "url": "https://www.openownership.org"
+        }
+      },
+      "recordId": "rr-d-OFIZ7W1WYFJC3YYSG330",
+      "recordStatus": "new",
+      "recordType": "relationship",
+      "recordDetails": {
+        "subject": "OFIZ7W1WYFJC3YYSG330",
+        "interestedParty": "784F5XWPLTWKTBV3E584",
+        "interests": [
+          {
+            "startDate": "2023-02-28",
+            "directOrIndirect": "direct",
+            "details": "Exception Category: DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+            "type": "otherInfluenceOrControl",
+            "beneficialOwnershipOrControl": false
+          }
+        ],
+        "isComponent": false
+      },
+      "statementId": "XI-LEI-rr-d-OFIZ7W1WYFJC3YYSG330-20240606",
+      "declarationSubject": "OFIZ7W1WYFJC3YYSG330"
+    },
+    {
+        "source": {
+          "assertedBy": [
+            {
+              "name": "GLEIF"
+            }
+          ],
+          "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+        },
+        "statementDate": "2024-07-07",
+        "annotations": [
+          {
+            "motivation": "commenting",
+            "description": "Relationship Registration Status: PUBLISHED",
+            "createdBy": {
+              "name": "Open Ownership",
+              "uri": "https://www.openownership.org"
+            }
+          },
+          {
+            "motivation": "commenting",
+            "description": "GLEIF relationship deleted",
+            "statementPointerTarget": "/",
+            "creationDate": "2024-08-13",
+            "createdBy": {
+              "name": "Open Ownership",
+              "uri": "https://www.openownership.org"
+            }
+          }          
+        ],
+        "publicationDetails": {
+          "publicationDate": "2024-08-12",
+          "bodsVersion": "0.4",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "publisher": {
+            "name": "Open Ownership",
+            "url": "https://www.openownership.org"
+          }
+        },
+        "recordId": "rr-d-OFIZ7W1WYFJC3YYSG330",
+        "recordStatus": "closed",
+        "recordType": "relationship",
+        "recordDetails": {
+          "subject": "OFIZ7W1WYFJC3YYSG330",
+          "interestedParty": "784F5XWPLTWKTBV3E584",
+          "interests": [
+            {
+              "startDate": "2023-02-28",
+              "directOrIndirect": "direct",
+              "details": "Exception Category: DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+              "type": "otherInfluenceOrControl",
+              "beneficialOwnershipOrControl": false
+            }
+          ],
+          "isComponent": false
+        },
+        "statementId": "XI-LEI-rr-d-OFIZ7W1WYFJC3YYSG330-20240707",
+        "declarationSubject": "OFIZ7W1WYFJC3YYSG330"
+      }
+  ]
+  
