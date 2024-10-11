@@ -1,0 +1,176 @@
+[
+    {
+        "source": {
+            "assertedBy": [
+                {
+                    "name": "GLEIF"
+                }
+            ],
+            "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+        },
+        "statementDate": "2024-06-06",
+        "annotations": [
+            {
+                "motivation": "commenting",
+                "description": "LEI Registration Status: ISSUED",
+                "statementPointerTarget": "/",
+                "creationDate": "2024-08-12",
+                "createdBy": {
+                    "name": "Open Ownership",
+                    "uri": "https://www.openownership.org"
+                }
+            }
+        ],
+        "publicationDetails": {
+            "publicationDate": "2024-08-12",
+            "bodsVersion": "0.4",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "publisher": {
+                "name": "Open Ownership",
+                "url": "https://www.openownership.org"
+            }
+        },
+        "recordId": "549300CLJRYXBPCXXV46",
+        "recordStatus": "new",
+        "recordType": "entity",
+        "recordDetails": {
+            "entityType": {
+                "type": "registeredEntity"
+            },
+            "name": "Ewellix GmbH",
+            "incorporatedInJurisdiction": {
+                "name": "Germany",
+                "code": "DE"
+            },
+            "identifiers": [
+                {
+                    "id": "549300CLJRYXBPCXXV46",
+                    "scheme": "XI-LEI",
+                    "schemeName": "Global Legal Entity Identifier Index"
+                },
+                {
+                    "id": "HRB 7517",
+                    "schemeName": "RA000336"
+                }
+            ],
+            "addresses": [
+                {
+                    "type": "registered",
+                    "address": "Parisstra\u00dfe 1, Schweinfurt",
+                    "country": {
+                        "name": "Germany",
+                        "code": "DE"
+                    },
+                    "postCode": "97424"
+                },
+                {
+                    "type": "business",
+                    "address": "Parisstr. 1, Schweinfurt",
+                    "country": {
+                        "name": "Germany",
+                        "code": "DE"
+                    },
+                    "postCode": "97424"
+                }
+            ],
+            "foundingDate": "2017-03-17",
+            "isComponent": false
+        },
+        "statementId": "XI-LEI-549300CLJRYXBPCXXV46-20240606",
+        "declarationSubject": "549300CLJRYXBPCXXV46"
+    },
+    {
+        "source": {
+            "assertedBy": [
+                {
+                    "name": "GLEIF"
+                }
+            ],
+            "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+        },
+        "statementDate": "2024-06-06",
+        "publicationDetails": {
+            "publicationDate": "2024-08-12",
+            "bodsVersion": "0.4",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "publisher": {
+                "name": "Open Ownership",
+                "url": "https://www.openownership.org"
+            }
+        },
+        "recordId": "repex-d-549300CLJRYXBPCXXV46-c7db43",
+        "recordStatus": "new",
+        "recordType": "relationship",
+        "recordDetails": {
+            "subject": "549300CLJRYXBPCXXV46",
+            "interestedParty": {
+                "reason": "interestedPartyExemptFromDisclosure",
+                "details": "Exception Reason: NON_CONSOLIDATING. The legal entity or entities are not obliged to provide consolidated accounts in relation to the entity they control."
+            },
+            "interests": [
+                {
+                    "directOrIndirect": "direct",
+                    "details": "Exception Category: DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+                    "type": "otherInfluenceOrControl",
+                    "beneficialOwnershipOrControl": false
+                }
+            ],
+            "isComponent": false
+        },
+        "statementId": "XI-LEI-repex-d-549300CLJRYXBPCXXV46-c7db43-2024-06-06",
+        "declarationSubject": "549300CLJRYXBPCXXV46"
+    },
+    {
+        "source": {
+            "assertedBy": [
+                {
+                    "name": "GLEIF"
+                }
+            ],
+            "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+        },
+        "statementDate": "2024-08-07",
+        "publicationDetails": {
+            "publicationDate": "2024-08-12",
+            "bodsVersion": "0.4",
+            "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "publisher": {
+                "name": "Open Ownership",
+                "url": "https://www.openownership.org"
+            }
+        },
+        "annotations": [
+            {
+                "motivation": "commenting",
+                "description": "Reporting exception deleted",
+                "statementPointerTarget": "/",
+                "creationDate": "2024-08-13",
+                "createdBy": {
+                    "name": "Open Ownership",
+                    "uri": "https://www.openownership.org"
+                }
+            }
+        ],
+        "recordId": "repex-d-549300CLJRYXBPCXXV46-c7db43",
+        "recordStatus": "closed",
+        "recordType": "relationship",
+        "recordDetails": {
+            "subject": "549300CLJRYXBPCXXV46",
+            "interestedParty": {
+                "reason": "interestedPartyExemptFromDisclosure",
+                "details": "Exception Reason: NON_CONSOLIDATING. The legal entity or entities are not obliged to provide consolidated accounts in relation to the entity they control."
+            },
+            "interests": [
+                {
+                    "directOrIndirect": "direct",
+                    "details": "Exception Category: DIRECT_ACCOUNTING_CONSOLIDATION_PARENT",
+                    "type": "otherInfluenceOrControl",
+                    "beneficialOwnershipOrControl": false
+                }
+            ],
+            "isComponent": false
+        },
+        "statementId": "XI-LEI-repex-d-549300CLJRYXBPCXXV46-c7db43-2024-08-07",
+        "declarationSubject": "549300CLJRYXBPCXXV46"
+    }
+]
