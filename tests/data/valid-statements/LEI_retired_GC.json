@@ -1,0 +1,84 @@
+[
+    [
+        {
+            "source": {
+                "assertedBy": [
+                    {
+                        "name": "GLEIF"
+                    }
+                ],
+                "url": "https://goldencopy.gleif.org/storage/golden-copy-files/2024/06/06/940025/20240606-0000-gleif-goldencopy-repex-golden-copy.csv.zip"
+            },
+            "statementDate": "2024-06-06",
+            "annotations": [
+                {
+                    "motivation": "commenting",
+                    "description": "LEI: Registration Status: RETIRED",
+                    "statementPointerTarget": "/",
+                    "creationDate": "2024-08-12",
+                    "createdBy": {
+                        "name": "Open Ownership",
+                        "uri": "https://www.openownership.org"
+                    }
+                }
+            ],
+            "publicationDetails": {
+                "publicationDate": "2024-08-12",
+                "bodsVersion": "0.4",
+                "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "publisher": {
+                    "name": "Open Ownership",
+                    "url": "https://www.openownership.org"
+                }
+            },
+            "recordId": "549300TO4M4OGFTD0561",
+            "recordStatus": "closed",
+            "recordType": "entity",
+            "recordDetails": {
+                "entityType": {
+                    "type": "registeredEntity"
+                },
+                "name": "LIBERTY HARBOR LLC",
+                "incorporatedInJurisdiction": {
+                    "name": "Delaware, United States",
+                    "code": "US-DE"
+                },
+                "identifiers": [
+                    {
+                        "id": "549300TO4M4OGFTD0561",
+                        "scheme": "XI-LEI",
+                        "schemeName": "Global Legal Entity Identifier Index"
+                    },
+                    {
+                        "id": "4314765",
+                        "schemeName": "RA000602"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "type": "registered",
+                        "address": "251 LITTLE FALLS DRIVE, WILMINGTON",
+                        "country": {
+                            "name": "United States",
+                            "code": "US"
+                        },
+                        "postCode": "19808"
+                    },
+                    {
+                        "type": "business",
+                        "address": "200 WEST STREET, NEW YORK",
+                        "country": {
+                            "name": "United States",
+                            "code": "US"
+                        },
+                        "postCode": "10282"
+                    }
+                ],
+                "foundingDate": "2007-03-09",
+                "isComponent": false
+            },
+            "statementId": "XI-LEI-549300TO4M4OGFTD0561-20240606",
+            "declarationSubject": "549300TO4M4OGFTD0561"
+        }
+    ]
+]
