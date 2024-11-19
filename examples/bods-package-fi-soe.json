@@ -183,9 +183,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": false,
           "share": {
-            "exact": 76.5,
-            "maximum": 76.5,
-            "minimum": 76.5
+            "exact": 76.5
           },
           "startDate": "2020-01-01"
         }
@@ -223,9 +221,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": false,
           "share": {
-            "exact": 100,
-            "maximum": 100,
-            "minimum": 100
+            "exact": 100
           },
           "startDate": "2020-01-01"
         }
@@ -263,9 +259,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": false,
           "share": {
-            "exact": 23.5,
-            "maximum": 23.5,
-            "minimum": 23.5
+            "exact": 23.5
           },
           "startDate": "2020-01-01"
         }
@@ -337,9 +331,7 @@
           "directOrIndirect": "indirect",
           "beneficialOwnershipOrControl": false,
           "share": {
-            "exact": 100,
-            "maximum": 100,
-            "minimum": 100
+            "exact": 100
           },
           "startDate": "2020-01-01"
         }
