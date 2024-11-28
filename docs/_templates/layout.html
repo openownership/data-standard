@@ -1,14 +1,6 @@
 {% extends "!layout.html" %}
 {% block footer %}
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158633237-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-158633237-1', { anonymize_ip: true, client_storage: 'none' });
-</script>
-<!-- Google Analytics -->
+<script defer data-domain="standard.openownership.org" src="https://plausible.io/js/script.outbound-links.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 {% endblock %}
