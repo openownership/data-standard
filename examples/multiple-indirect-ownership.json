@@ -30,7 +30,7 @@
   {
     "statementId": "2ba6417f-bd77-4e8c-a4c6-6d6f10315bdb",
     "declarationSubject": "63e3a8a8946f",
-    "statementDate": "2018-12-17",
+    "statementDate": "2019-05-16",
     "publicationDetails": {
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
@@ -118,7 +118,7 @@
   {
     "statementId": "3cfba7c7-95c9-4194-9d6b-0ce063a4d4c5",
     "declarationSubject": "63e3a8a8946f",
-    "statementDate": "2018-12-17",
+    "statementDate": "2019-05-16",
     "publicationDetails": {
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
@@ -139,9 +139,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": false,
           "share": {
-            "exact": 50,
-            "maximum": 50,
-            "minimum": 50
+            "exact": 50
           },
           "startDate": "2017-11-01"
         }
@@ -151,7 +149,7 @@
   {
     "statementId": "ffb65ea4-fe51-46f7-b9c7-b40b375c7b56",
     "declarationSubject": "63e3a8a8946f",
-    "statementDate": "2018-12-17",
+    "statementDate": "2019-05-16",
     "publicationDetails": {
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
@@ -172,9 +170,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": false,
           "share": {
-            "exact": 50,
-            "maximum": 50,
-            "minimum": 50
+            "exact": 50
           },
           "startDate": "2017-11-01"
         }
@@ -194,7 +190,7 @@
       ]
     },
     "declarationSubject": "63e3a8a8946f",
-    "statementDate": "2018-12-17",
+    "statementDate": "2019-05-16",
     "publicationDetails": {
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
@@ -230,7 +226,7 @@
       ]
     },
     "declarationSubject": "63e3a8a8946f",
-    "statementDate": "2018-12-17",
+    "statementDate": "2019-05-16",
     "publicationDetails": {
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
@@ -263,7 +259,7 @@
       ]
     },
     "declarationSubject": "63e3a8a8946f",
-    "statementDate": "2018-12-17",
+    "statementDate": "2019-05-16",
     "publicationDetails": {
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
@@ -284,20 +280,18 @@
           "directOrIndirect": "indirect",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 60,
-            "maximum": 60,
-            "minimum": 60
+            "exact": 60
           },
           "startDate": "2017-11-01"
         }
       ],
       "componentRecords": [
-        "8a323bcd-f047-41d5-a194-205ebffedd7",
-        "e408d5c2-c41c-4b14-a43e-b0b7e9808328",
-        "3cfba7c7-95c9-4194-9d6b-0ce063a4d4c5",
-        "ffb65ea4-fe51-46f7-b9c7-b40b375c7b56",
-        "a0decdf4-6b57-4dc1-ba57-42533e2d17c4",
-        "caa00429-44b2-44da-b562-1384b4cd2a85"
+        "d177864a8b39",
+        "05fbbfb94b79",
+        "40b9a74c70c4",
+        "9615ef9a4a0b",
+        "e351a9247e22",
+        "721da228c733"
       ]
     }
   }
