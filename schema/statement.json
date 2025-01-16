@@ -290,10 +290,6 @@
           "format": "uri"
         }
       },
-      "required":[
-        "motivation",
-        "statementPointerTarget"
-      ],
       "allOf": [
         {
           "if": {
@@ -305,7 +301,15 @@
           },
           "then": {
             "required": [
+              "statementPointerTarget",
+              "motivation",
               "url"
+            ]
+          },
+          "else": {
+            "required": [
+              "statementPointerTarget",
+              "motivation"
             ]
           }
         },
