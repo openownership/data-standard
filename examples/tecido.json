@@ -120,9 +120,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 100,
-            "maximum": 100,
-            "minimum": 100
+            "exact": 100
           },
           "startDate": "2002-03-09"
         },
@@ -131,9 +129,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 100,
-            "maximum": 100,
-            "minimum": 100
+            "exact": 100
           },
           "startDate": "2002-03-09"
         },
@@ -226,9 +222,7 @@
           "type": "shareholding",
           "directOrIndirect": "direct",
           "share": {
-            "exact": 60,
-            "maximum": 60,
-            "minimum": 60
+            "exact": 60
           },
           "startDate": "2021-09-24"
         },
@@ -236,9 +230,7 @@
           "type": "votingRights",
           "directOrIndirect": "direct",
           "share": {
-            "exact": 60,
-            "maximum": 60,
-            "minimum": 60
+            "exact": 60
           },
           "startDate": "2021-09-24"
         }
@@ -281,9 +273,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 40,
-            "maximum": 40,
-            "minimum": 40
+            "exact": 40
           },
           "startDate": "2021-09-24"
         },
@@ -292,9 +282,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 40,
-            "maximum": 40,
-            "minimum": 40
+            "exact": 40
           },
           "startDate": "2021-09-24"
         },
@@ -342,9 +330,7 @@
           "type": "shareholding",
           "directOrIndirect": "direct",
           "share": {
-            "exact": 70,
-            "maximum": 70,
-            "minimum": 70
+            "exact": 70
           },
           "startDate": "2022-09-21"
         },
@@ -352,9 +338,7 @@
           "type": "votingRights",
           "directOrIndirect": "direct",
           "share": {
-            "exact": 70,
-            "maximum": 70,
-            "minimum": 70
+            "exact": 70
           },
           "startDate": "2022-09-21"
         }
@@ -397,9 +381,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 30,
-            "maximum": 30,
-            "minimum": 30
+            "exact": 30
           },
           "startDate": "2022-09-21"
         },
@@ -408,9 +390,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 30,
-            "maximum": 30,
-            "minimum": 30
+            "exact": 30
           },
           "startDate": "2022-09-21"
         },
@@ -419,9 +399,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 30,
-            "maximum": 30,
-            "minimum": 30
+            "exact": 30
           },
           "startDate": "2022-09-21"
         }
@@ -504,9 +482,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 30,
-            "maximum": 30,
-            "minimum": 30
+            "exact": 30
           },
           "startDate": "2022-09-21"
         },
@@ -515,9 +491,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 30,
-            "maximum": 30,
-            "minimum": 30
+            "exact": 30
           },
           "startDate": "2022-09-21"
         },
@@ -526,9 +500,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 30,
-            "maximum": 30,
-            "minimum": 30
+            "exact": 30
           },
           "startDate": "2022-09-21"
         }
@@ -570,9 +542,7 @@
           "type": "shareholding",
           "directOrIndirect": "direct",
           "share": {
-            "exact": 80,
-            "maximum": 80,
-            "minimum": 80
+            "exact": 80
           },
           "startDate": "2023-03-01"
         },
@@ -580,9 +550,7 @@
           "type": "votingRights",
           "directOrIndirect": "direct",
           "share": {
-            "exact": 80,
-            "maximum": 80,
-            "minimum": 80
+            "exact": 80
           },
           "startDate": "2023-03-01"
         }

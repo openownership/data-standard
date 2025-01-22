@@ -146,9 +146,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": false,
           "share": {
-            "exact": 40,
-            "maximum": 40,
-            "minimum": 40
+            "exact": 40
           },
           "startDate": "2017-11-01"
         }
@@ -186,9 +184,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": false,
           "share": {
-            "exact": 20,
-            "maximum": 20,
-            "minimum": 20
+            "exact": 20
           },
           "startDate": "2017-11-01"
         }
@@ -292,20 +288,18 @@
           "directOrIndirect": "indirect",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 60,
-            "minimum": 60,
-            "maximum": 60
+            "exact": 60
           },
           "startDate": "2017-11-01"
         }
       ],
       "componentRecords": [
-        "59368bde-e38d-4a95-9a6c-8ef6aec54f9f",
-        "829ec2d1-6ecb-4ca6-874f-c9c59f2cd843",
-        "426507cf-e5ac-45c4-b6b0-92952a954623",
-        "3a1ba916-5f3d-4335-860d-3f7c20283c42",
-        "a56a0ced-447e-420d-9a07-42dcbc960a5f",
-        "337d8ba1-9d0d-4a64-bc5d-820c95a127fc"
+        "41454e3ba398",
+        "6c9fd5c92201",
+        "803a942b3ec8",
+        "9f4256f3de2f",
+        "b8e59fa7e1a6",
+        "5a8646b55833"
       ]
     }
   }

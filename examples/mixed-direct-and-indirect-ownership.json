@@ -7,7 +7,7 @@
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
       "publisher": {
-        "name": "XXXXXXXXX"
+        "name": "Companies House"
       }
     },
     "recordId": "9bfe59b6a869",
@@ -35,7 +35,7 @@
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
       "publisher": {
-        "name": "XXXXXXXXX"
+        "name": "Companies House"
       }
     },
     "recordId": "ec61aeda7141",
@@ -63,7 +63,7 @@
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
       "publisher": {
-        "name": "XXXXXXXXX"
+        "name": "Companies House"
       }
     },
     "recordId": "53508b65253f",
@@ -102,7 +102,7 @@
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
       "publisher": {
-        "name": "XXXXXXXXX"
+        "name": "Companies House"
       }
     },
     "recordId": "07f0f7024a92",
@@ -118,9 +118,7 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": false,
           "share": {
-            "exact": 50,
-            "maximum": 50,
-            "minimum": 50
+            "exact": 50
           },
           "startDate": "2017-11-01"
         }
@@ -142,7 +140,7 @@
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
       "publisher": {
-        "name": "XXXXXXXXX"
+        "name": "Companies House"
       }
     },
     "recordId": "acdf30ece808",
@@ -175,7 +173,7 @@
       "publicationDate": "2017-12-01",
       "bodsVersion": "0.4",
       "publisher": {
-        "name": "XXXXXXXXX"
+        "name": "Companies House"
       }
     },
     "recordId": "f5a45a6daf31",
@@ -191,9 +189,7 @@
           "directOrIndirect": "indirect",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 50,
-            "minimum": 50,
-            "maximum": 50
+            "exact": 50
           },
           "startDate": "2017-11-01"
         },
@@ -202,17 +198,15 @@
           "directOrIndirect": "direct",
           "beneficialOwnershipOrControl": true,
           "share": {
-            "exact": 50,
-            "minimum": 50,
-            "maximum": 50
+            "exact": 50
           },
           "startDate": "2019-05-01"
         }
       ],
       "componentRecords": [
-        "9f188b1a-cb45-4e6b-abe5-252378d6a0f5",
-        "f500210d-c8b0-4f74-9bbd-ca762724d0e8",
-        "30f1cb63-d849-4550-b6cd-2a6b7268d0cb"
+        "ec61aeda7141",
+        "acdf30ece808",
+        "07f0f7024a92"
       ]
     }
   }

@@ -354,7 +354,8 @@
       "isComponent": false,
       "componentRecords": [
         "103AB1984D",
-        "105AB1984B;107AC1984F"
+        "105AB1984B",
+        "107AC1984F"
       ],
       "subject": "104AB1984C",
       "interestedParty": "101AB1984F"
