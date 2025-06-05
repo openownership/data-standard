@@ -17,7 +17,7 @@ Entity identifiers
 
 Use an :ref:`Identifier <schema-identifier>` in the ``identifiers`` array of an Entity Statement to supply a company registration number, Legal Entity Identifier (LEI), or other real world identifier.
 
-The value for ``Identifier.scheme`` SHOULD come from `org-id.guide <http://org-id.guide>`_. This resource contains details of company registers and other identifier sources. If the identifier scheme you need to reference is not already listed on org-id.guide `propose a new entry <https://org-idguide-handbook.readthedocs.io/en/latest/contribute/#proposing-a-new-entry>`_.
+The value for ``Identifier.scheme`` SHOULD come from `org-id.guide <http://org-id.guide>`_. This resource contains details of company registers and other identifier sources. If the identifier scheme you need to reference is not already listed on org-id.guide `propose a new entry <https://org-idguide-handbook.readthedocs.io/en/latest/contribute.html#proposing-a-new-entry>`_.
 
 If it is useful to publish an internal identifier from your data management system, first consider whether it should be used as a :ref:`record identifier <record-identifiers>`. If not, either:
 

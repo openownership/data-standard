@@ -23,4 +23,5 @@ Closes #
 - [ ] I've thought about how and when this needs to be released. [See the Handbook](https://openownership.github.io/bods-dev-handbook/standard_releases.html)      
 - [ ] I've updated the changelog, if necessary. [See the Handbook](https://openownership.github.io/bods-dev-handbook/standard_releases.html#changelog)
 - [ ] I've updated [reference.rst](https://standard.openownership.org/en/latest/schema/reference.html) to reflect any changes to schema structure or naming.
+- [ ] I've updated the [BODS validation specification](https://docs.google.com/spreadsheets/d/1KTHGSb_ZkCLB9QpjQ891Y_RxvlBJHFEITjOxptaOTAQ/edit?usp=sharing) if necessary. [See the Handbook](https://openownership.github.io/bods-dev-handbook/data_validation.html)
 - [ ] I've added or edited any other related documentation. [See the Handbook](https://github.com/openownership/bods-dev-handbook/blob/master/style_guide.md)

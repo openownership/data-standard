@@ -14,13 +14,6 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
-    - uses: actions/cache@v1
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements_dev.txt') }}-${{ matrix.python-version }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
-
     - name: Install requirements_test.txt
       run: pip install -r requirements_test.txt
     - name: flake8
