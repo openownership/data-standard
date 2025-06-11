@@ -58,7 +58,7 @@
     "recordStatus": "new",
     "recordType": "entity",
     "recordDetails": {
-      "isComponent": false,
+      "isComponent": true,
       "entityType": {
         "type": "arrangement"
       },
@@ -80,7 +80,7 @@
     "recordStatus": "new",
     "recordType": "relationship",
     "recordDetails": {
-      "isComponent": false,
+      "isComponent": true,
       "subject": "31c55e425764",
       "interestedParty": "91b4236a7d89",
       "interests": [
@@ -159,7 +159,7 @@
     "recordStatus": "new",
     "recordType": "relationship",
     "recordDetails": {
-      "isComponent": false,
+      "isComponent": true,
       "subject": "91b4236a7d89",
       "interestedParty": "1accb8b18b99",
       "interests": [
@@ -190,7 +190,7 @@
     "recordStatus": "new",
     "recordType": "relationship",
     "recordDetails": {
-      "isComponent": false,
+      "isComponent": true,
       "subject": "91b4236a7d89",
       "interestedParty": "f040df24d9ec",
       "interests": [
