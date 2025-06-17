@@ -3,7 +3,6 @@ matrix:
   aspell:
     lang: en
     d: en_GB
-  dictionary:Add commentMore actions
     wordlists:
     - .wordlist.txt
     output: wordlist.dic
