@@ -3,6 +3,7 @@ matrix:
   aspell:
     lang: en
     d: en_GB
+  dictionary:
     wordlists:
     - .wordlist.txt
     output: wordlist.dic
