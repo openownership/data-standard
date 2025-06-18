@@ -17,7 +17,7 @@ matrix:
       delimiters:
         # ignore page tags
         - open: '.. _'
-        - close: ':'
+          close: ':'
 
   sources:
   # runs on the docs files
