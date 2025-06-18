@@ -24,7 +24,7 @@ matrix:
           close: '(?P<toctree>(?:((?P<indent>[ ]+).*$)|(\n))+)'
         # ignore directives
         - open: '\.\.\s+(figure|include)::'
-          close: '$'
+          close: '(center)'
   sources:
   # runs on the docs files
   - 'docs/**/*.rst'
