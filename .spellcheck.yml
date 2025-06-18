@@ -20,7 +20,7 @@ matrix:
         - open: '.. _'
           close: ':'
         # ignore images 
-        - open: '.. figure'
+        - open: '.. figure::'
           close: 'center'
 
   sources:
