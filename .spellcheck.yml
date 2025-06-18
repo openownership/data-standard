@@ -14,10 +14,10 @@ matrix:
   #ignore urls 
   - pyspelling.filters.url:
   - pyspelling.filters.context:
-    delimiters:
-      # ignore page tags
-      - open: '.. _'
-      - close: ':'
+      delimiters:
+        # ignore page tags
+        - open: '.. _'
+        - close: ':'
 
   sources:
   # runs on the docs files
