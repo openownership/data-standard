@@ -16,12 +16,12 @@ matrix:
   - pyspelling.filters.context:
       context_visible_first: true
       delimiters:
-        # ignore page tags
-        - open: '.. _'
-          close: ':'
         # ignore images 
         - open: '.. figure::'
           close: 'center'
+        # ignore page tags
+        - open: '.. _'
+          close: ':'
 
   sources:
   # runs on the docs files
