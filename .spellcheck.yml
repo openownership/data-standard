@@ -14,6 +14,7 @@ matrix:
   #ignore urls 
   - pyspelling.filters.url:
   - pyspelling.filters.context:
+      context_visible_first: true
       delimiters:
         # ignore page tags
         - open: '.. _'
