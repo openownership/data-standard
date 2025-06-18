@@ -17,8 +17,8 @@ matrix:
       context_visible_first: true
       delimiters:
         # ignore images 
-        - open: '.. figure::'
-          close: 'center'
+        - open: '.. _'
+          close: ':'
 
   sources:
   # runs on the docs files
