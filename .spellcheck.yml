@@ -19,9 +19,12 @@ matrix:
         # ignore tags
         - open: '.. _'
           close: ':'
-        # ignore multiline content in codeblock
-        - open: '(?s)^::\n\n  '
-          close: '^\n'
+        # ignore reStructuredText toctree
+113      - open: '\.\.\s+toctree::'
+114        close: '(?P<toctree>(?:((?P<indent>[ ]+).*$)|(\n))+)'
+115     # ignore directives
+116      - open: '\.\.\s+(figure|include)::'
+117        close: '$'
 
   sources:
   # runs on the docs files
