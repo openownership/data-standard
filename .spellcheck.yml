@@ -20,8 +20,8 @@ matrix:
         - open: '.. _'
           close: ':'
         # ignore images
-        - open: '\.\.\s+(figure)::'
-          close: '\n'
+        - open: '\.\.\s+(figure)::\n\n'
+          close: '^\n'
 
   sources:
   # runs on the docs files
