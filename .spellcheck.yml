@@ -20,7 +20,7 @@ matrix:
         - open: '.. _'
           close: ':'
         # ignore images
-        - open: '\.\.\s+(figure)::\n\n'
+        - open: '^\.\.\s+(figure)::\n\n'
           close: '^\n'
 
   sources:
