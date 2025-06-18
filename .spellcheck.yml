@@ -21,7 +21,7 @@ matrix:
           close: ':'
         # ignore images
         - open: '\.\.\s+(figure)::'
-        close: '\n'
+          close: '\n'
 
   sources:
   # runs on the docs files
