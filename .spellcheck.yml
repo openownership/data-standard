@@ -23,7 +23,7 @@ matrix:
         - open: '\.\.\s+toctree::'
           close: '(?P<toctree>(?:((?P<indent>[ ]+).*$)|(\n))+)'
         # ignore directives
-        - open: '\.\.\s+(figure|include)::^.*^.*'
+        - open: '\.\.\s+(figure|include)::'
           close: '$'
   sources:
   # runs on the docs files
