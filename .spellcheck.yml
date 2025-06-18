@@ -19,9 +19,6 @@ matrix:
         # ignore images 
         - open: '.. figure::'
           close: 'center'
-        # ignore page tags
-        - open: '.. _'
-          close: ':'
 
   sources:
   # runs on the docs files
