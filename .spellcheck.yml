@@ -19,8 +19,8 @@ matrix:
         # ignore tags
         - open: '.. _'
           close: ':'
-        # ignore images
-        - open: '^\.\.\s+(figure)::\n\n'
+        # ignore multiline content in codeblock
+        - open: '(?s)^::\n\n  '
           close: '^\n'
 
   sources:
