@@ -1,21 +1,25 @@
 matrix:
 - name: Markdown
+  # use aspell british english dictionary 
   aspell:
     lang: en
     d: en_GB
   dictionary:
     wordlists:
+    #additional words not included in the general dictionary
     - .wordlist.txt
     output: wordlist.dic
     encoding: utf-8
   pipeline:
+  #ignore urls 
   - pyspelling.filters.url:
-  - pyspelling.filters.markdown:
-  - pyspelling.filters.html:
-      comments: false
-      ignores:
-      - code
-      - pre
+  - pyspelling.filters.context:
+    delimiters:
+      # ignore page tags
+      - open: '.. _'
+      - close: ':'
+
   sources:
+  # runs on the docs files
   - 'docs/**/*.rst'
   default_encoding: utf-8
