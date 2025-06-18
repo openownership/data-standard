@@ -20,12 +20,11 @@ matrix:
         - open: '.. _'
           close: ':'
         # ignore reStructuredText toctree
-113      - open: '\.\.\s+toctree::'
-114        close: '(?P<toctree>(?:((?P<indent>[ ]+).*$)|(\n))+)'
-115     # ignore directives
-116      - open: '\.\.\s+(figure|include)::'
-117        close: '$'
-
+        - open: '\.\.\s+toctree::'
+          close: '(?P<toctree>(?:((?P<indent>[ ]+).*$)|(\n))+)'
+        # ignore directives
+        - open: '\.\.\s+(figure|include)::'
+          close: '$'
   sources:
   # runs on the docs files
   - 'docs/**/*.rst'
