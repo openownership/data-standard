@@ -19,11 +19,8 @@ matrix:
         # ignore tags
         - open: '.. _'
           close: ':'
-        # ignore images 
-        - open: '(?s)^(?P<open> *)\.\. figure::'
-          close: '^(?!(?P=open) )'
-        # ignore toctree
-        - open: '(?s)^(?P<open> *)\.\. toctree::'
+        # ignore images and toctree
+        - open: '(?s)^(?P<open> *)\.\. (toctree|figure)::'
           close: '^(?!(?P=open) )'
   sources:
   # runs on the docs files
