@@ -66,4 +66,6 @@ subschema
 unknownInterest
 unpublishedInterest
 unspecifiedReason
-
+Subtype
+schema's
+Popolo
