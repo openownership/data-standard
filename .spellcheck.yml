@@ -13,6 +13,7 @@ matrix:
   pipeline:
   #ignore urls 
   - pyspelling.filters.url:
+  - pyspelling.filters.html:
   - pyspelling.filters.context:
       context_visible_first: true
       delimiters:
