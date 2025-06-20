@@ -22,6 +22,9 @@ matrix:
         # ignore images 
         - open: '(?s)^(?P<open> *)\.\. figure::'
           close: '^(?!(?P=open) )'
+        # ignore toctree
+        - open: '(?s)^(?P<open> *)\.\. toctree::'
+          close: '^(?!(?P=open) )'
   sources:
   # runs on the docs files
   - 'docs/**/*.rst'
