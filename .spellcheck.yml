@@ -28,6 +28,9 @@ matrix:
         # ignore anything between two backticks 
         - open: '``'
           close: '``'
+        # ignore ref
+        - open: ':ref: '
+          close: ' '
   sources:
   # runs on the docs files
   - 'docs/**/*.rst'
