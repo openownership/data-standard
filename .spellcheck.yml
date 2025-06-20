@@ -31,6 +31,9 @@ matrix:
         # ignore ref
         - open: ':ref:'
           close: '` '
+        # ignore internal links
+        - open: '<..'
+          close: '>'
   sources:
   # runs on the docs files
   - 'docs/**/*.rst'
