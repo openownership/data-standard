@@ -19,12 +19,9 @@ matrix:
         # ignore tags
         - open: '.. _'
           close: ':'
-        # ignore reStructuredText toctree
-        - open: '\.\.\s+toctree::'
-          close: '(?P<toctree>(?:((?P<indent>[ ]+).*$)|(\n))+)'
-        # ignore directives
-        - open: '\.\.\s+(figure|include)::'
-          close: '$'
+        # ignore images 
+        - open: '(?s)^(?P<open> *)\.\. figure::'
+          close: '^(?!(?P=open) )'
   sources:
   # runs on the docs files
   - 'docs/**/*.rst'
