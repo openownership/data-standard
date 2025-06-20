@@ -17,7 +17,6 @@ matrix:
   - pyspelling.filters.html:
   #ignore specific features
   - pyspelling.filters.context:
-      #ignore things meeting these conditions
       context_visible_first: true
       delimiters:
         # ignore tags
