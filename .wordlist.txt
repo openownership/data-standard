@@ -28,9 +28,13 @@ MICs
 Parsers
 PersonReference
 TAXID
-tradable
+tradeable
 Tradeable
 treuhand
+fiduciaire
+SOE
+
+
 vivos
 waqf
 vivos
