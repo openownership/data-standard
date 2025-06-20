@@ -37,3 +37,6 @@ vivos
 waqf
 GLIE
 stateBody
+disclosable
+noBeneficialOwners
+subjectExemptFromDisclosure
