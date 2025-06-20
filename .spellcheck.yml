@@ -29,8 +29,8 @@ matrix:
         - open: '``'
           close: '``'
         # ignore ref
-        - open: '\:ref\: '
-          close: ' '
+        - open: ':ref:'
+          close: '` '
   sources:
   # runs on the docs files
   - 'docs/**/*.rst'
