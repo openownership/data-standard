@@ -72,3 +72,4 @@ Popolo
 UUID
 ECMA
 IETF
+UTF
