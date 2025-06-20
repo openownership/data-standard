@@ -19,7 +19,7 @@ matrix:
         # ignore tags
         - open: '.. _'
           close: ':'
-        # ignore images and toctree
+        # ignore images, toctree, raw directives
         - open: '(?s)^(?P<open> *)\.\. (toctree|figure|raw)::'
           close: '^(?!(?P=open) )'
   sources:
