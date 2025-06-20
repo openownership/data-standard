@@ -26,6 +26,9 @@ matrix:
         # ignore images, toctree, raw directives
         - open: '(?s)^(?P<open> *)\.\. (toctree|figure|raw|cssclass|container|list-table|literalinclude)::'
           close: '^(?!(?P=open) )'
+        # ignore anything between two backticks 
+        - open: '``'
+          close: '``'
   sources:
   # runs on the docs files
   - 'docs/**/*.rst'
