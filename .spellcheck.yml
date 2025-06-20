@@ -23,7 +23,7 @@ matrix:
         - open: '.. _'
           close: ':'
         # ignore images, toctree, raw directives
-        - open: '(?s)^(?P<open> *)\.\. (toctree|figure|raw|cssclass|container|list-table|literalinclude|include|json-value)::'
+        - open: '(?s)^(?P<open> *)\.\. (toctree|figure|raw|cssclass|container|list-table|literalinclude|include|json-value|jsonschema)::'
           close: '^(?!(?P=open) )'
         # ignore anything between two backticks 
         - open: '``'
