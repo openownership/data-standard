@@ -33,8 +33,7 @@ Tradeable
 treuhand
 fiduciaire
 SOE
-
-
 vivos
 waqf
-vivos
+GLIE
+stateBody
