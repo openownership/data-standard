@@ -64,29 +64,3 @@ For example, the extract:
 
 may be serialised in a table as:
 
-.. list-table:: 
-   :header-rows: 1
-
-   * - statementId 
-     - recordId
-     - recordType 
-     - recordDetails/identifiers/0/scheme 
-     - recordDetails/identifiers/0/id
-   * - e3c07f34-1810-4eed-b845-4d9f4d97f9d5
-     - 1810-4eed-b845-4d9f4d97f9d5
-     - entity
-     - GB-COH
-     - 07444723
-   * - a2b485be-e3b6-4fd7-8a6a-930e46cf9957
-     - e3b6-4fd7-8a6a-930e46cf9957
-     - person
-     - MX-RFC
-     - ABC680524P-76
-
-   * - 34b479f2-1681-4064-ab51-1e703fbafa
-     - 1681-4064-ab51-1e703fbafa
-     - relationship
-     - 
-     - 
-
-
