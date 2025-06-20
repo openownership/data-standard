@@ -20,7 +20,7 @@ matrix:
         - open: '.. _'
           close: ':'
         # ignore images and toctree
-        - open: '(?s)^(?P<open> *)\.\. (toctree|figure|html)::'
+        - open: '(?s)^(?P<open> *)\.\. (toctree|figure|raw)::'
           close: '^(?!(?P=open) )'
   sources:
   # runs on the docs files
