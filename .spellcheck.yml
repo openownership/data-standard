@@ -29,7 +29,7 @@ matrix:
         - open: '``'
           close: '``'
         # ignore ref
-        - open: ':ref: '
+        - open: '\:ref\: '
           close: ' '
   sources:
   # runs on the docs files
