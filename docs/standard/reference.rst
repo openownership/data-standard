@@ -134,7 +134,7 @@ Name
 
 .. _schema-pep-status:
 
-PEPstatusDetails
+PEP Status Details
 ------------------
 
 .. json-value:: ../_build_schema/person-record.json
@@ -148,7 +148,7 @@ PEPstatusDetails
 
 .. _schema-public-listing:
 
-PublicListing
+Public Listing
 --------------
 
 .. json-value:: ../_build_schema/entity-record.json
@@ -244,7 +244,7 @@ See :ref:`record-identifiers` for information about Record Ids
 
 .. _schema-securities-listing:
 
-SecuritiesListing
+Securities Listing
 ------------------
 
 .. json-value:: ../_build_schema/entity-record.json
@@ -312,7 +312,7 @@ See :ref:`generating-statements` for advice on generating unique Statement Ids
 
 .. _schema-unspecified-record:
 
-UnspecifiedRecord
+Unspecified Record
 -----------------
 
 .. json-value:: ../_build_schema/components.json

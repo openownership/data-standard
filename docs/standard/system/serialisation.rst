@@ -66,7 +66,7 @@ may be serialised in a table as:
 
 .. list-table:: 
    :header-rows: 1
-
+    
    * - statementId 
      - recordId
      - recordType 
@@ -82,7 +82,6 @@ may be serialised in a table as:
      - person
      - MX-RFC
      - ABC680524P-76
-
    * - 34b479f2-1681-4064-ab51-1e703fbafa
      - 1681-4064-ab51-1e703fbafa
      - relationship

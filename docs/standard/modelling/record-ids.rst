@@ -35,7 +35,7 @@ Beta Systems declares that it has four direct beneficial owners.
    :figwidth: 60%
    :align: center
 
-Separate records are maintained by the Company Registration Authority for the information about Beta Systems disclosed by Alpha Corp. (record identifier 09d3a4fb) and the information which is self-disclosed by Beta Systems (record identifier 02c83aa2).
+Separate records are maintained by the Company Registration Authority for the information about Beta Systems disclosed by Alpha Corp. (record identifier ``09d3a4fb``) and the information which is self-disclosed by Beta Systems (record identifier ``02c83aa2``).
 
 When the BODS data is published, there are statements about the two new Beta Systems records. 
 

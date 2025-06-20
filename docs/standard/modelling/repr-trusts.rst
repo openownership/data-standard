@@ -34,7 +34,7 @@ Trust without legal personality
 A trust with a known beneficiary, known trustee and known settlor. The trust does not have a legal personality.
 
 .. figure:: ../../_assets/trust-scenario1.svg
-   :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType type 'arrangement' and subtype 'trust.' Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', and person C by a relationship statement with interest type 'beneficiary'
+   :alt: Diagram show linked statements. Entity statement labeled Trust A with  type 'arrangement' and subtype 'trust.' Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', and person C by a relationship statement with interest type 'beneficiary'
    :figwidth: 80%
    :align: center
    
@@ -43,7 +43,7 @@ Trust with legal personality and protector
 A trust with a known beneficiary, known trustee, known settlor and known protector. The trust has a legal personality. 
 
 .. figure:: ../../_assets/trust-scenario2.svg
-   :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType type 'legalEntity' and subtype 'trust.'  Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest type 'protector', and person D by a relationship statement with interest type 'beneficiary.' 
+   :alt: Diagram show linked statements. Entity statement labeled Trust A with  type 'legalEntity' and subtype 'trust.'  Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest type 'protector', and person D by a relationship statement with interest type 'beneficiary.' 
    :figwidth: 100%
    :align: center
    
@@ -59,7 +59,7 @@ A trust where the settlor is also a trustee and the beneficiary is anonymous due
 
 Trust-like arrangement 
 ^^^^^^^^^^^^^^^^^^^^^^
-A trust-like arrangement with local names for the entityType and interestTypes. 
+A trust-like arrangement with local names for the entity type and interest types. 
 
 .. figure:: ../../_assets/trust-scenario4.svg
    :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType type 'arrangement', subtype 'trust', and details 'fiducie-sûreté.' Trust A is connected to person A by a relationship statement with interest type 'settlor' and interest details 'constituant', person B by a relationship statement with interest type 'trustee' and interest details 'fiduciaire', and person C by a relationship statement with interest type 'beneficiary' and interest details 'beneficiaire'
