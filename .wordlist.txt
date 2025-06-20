@@ -69,5 +69,4 @@ unspecifiedReason
 Subtype
 schema's
 Popolo
-conforming
 UUID
