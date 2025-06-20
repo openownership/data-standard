@@ -21,3 +21,10 @@ Profitech
 fiducie
 settlor
 AFG
+AtlantisCorporateRegister
+ICAO
+IDCARD
+MICs
+Parsers
+PersonReference
+TAXID
