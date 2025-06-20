@@ -30,3 +30,7 @@ PersonReference
 TAXID
 tradable
 Tradeable
+treuhand
+vivos
+waqf
+vivos
