@@ -24,7 +24,7 @@ matrix:
         - open: '.. _'
           close: ':'
         # ignore images, toctree, raw directives
-        - open: '(?s)^(?P<open> *)\.\. (toctree|figure|raw|cssclass|container)::'
+        - open: '(?s)^(?P<open> *)\.\. (toctree|figure|raw|cssclass|container|list-table)::'
           close: '^(?!(?P=open) )'
   sources:
   # runs on the docs files
