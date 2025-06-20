@@ -22,7 +22,7 @@ Full requirements
 ------------------------
 The minimal requirements stated above MUST be met.
 
-The lifecycle of a record about an element (entity, person or relationship) within a beneficial ownership network is represented by a series of Statements:
+The life cycle of a record about an element (entity, person or relationship) within a beneficial ownership network is represented by a series of Statements:
 
 * The ``recordId`` of each element of a beneficial ownership network MUST be stable over time. That is: when the details of an element change, or are confirmed, the new Statement generated must contain the same ``recordId`` as in the outdated Statement.
 
@@ -32,7 +32,7 @@ The lifecycle of a record about an element (entity, person or relationship) with
 
 Once a series of Statements about a given element is closed, further Statements with the related ``recordId`` MUST NOT be generated.
 
-When the subject or the interested party of a relationship change, the lifecycle of that relationship is considered to have ended. For example, if the owner of a company transfers their interest to a relative, the ``recordStatus`` of the first relationship would be 'closed', and details of a new record would be published.
+When the subject or the interested party of a relationship change, the life cycle of that relationship is considered to have ended. For example, if the owner of a company transfers their interest to a relative, the ``recordStatus`` of the first relationship would be 'closed', and details of a new record would be published.
 
 Requirements for special cases
 ------------------------------
