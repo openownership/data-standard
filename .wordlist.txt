@@ -16,5 +16,7 @@ changelog
 codelists
 definitional
 funders
-
-
+Hewitson
+Profitech
+fiducie
+settlor
