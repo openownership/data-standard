@@ -9,7 +9,7 @@ boardChair
 boardMember
 BODS
 camelCase
-changelog
+ChangeLog
 changelog
 codelist
 codelists
