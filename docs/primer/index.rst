@@ -20,7 +20,7 @@ The beneficial ownership networks connected to entities can be complex and opaqu
    :figwidth: 85%
    :align: center
    
-Beneficial ownership can include all types of relationship with an entity such as ownership, control or benefiting from the entity’s activities. 
+Beneficial ownership can include all types of relationship with an entity such as ownership, control or benefitting from the entity’s activities. 
 
 If a person owns something, they usually have some control over it. Owning shares in a company may confer voting rights, for example. But ownership and control are sometimes separated - by share classes, contracts, agreements and other mechanisms. For example, an executive director might have the right to appoint 60% of the other board members, while having little financial stake in the business. There are also situations where a person may not have ownership or significant control but still has a relationship which means they benefit from the activities of an entity - for example, where they can enjoy and use assets owned by the entity.
 

@@ -14,7 +14,7 @@ The ``recordId`` of the subject of each beneficial ownership network MUST be sta
 
 Each BODS statement issued in relation to any element of a subject's declared beneficial ownership network, at any point in time, MUST contain the subject's ``recordId`` as its ``declarationSubject``.
 
-The BODS data producer SHOULD publish guidance for data users explaining how to understand the life cycle of declared information with reference to the available BODS data. 
+The BODS data producer SHOULD publish guidance for data users explaining how to understand the lifecycle of declared information with reference to the available BODS data. 
 
 
 
@@ -22,7 +22,7 @@ Full requirements
 ------------------------
 The minimal requirements stated above MUST be met.
 
-The life cycle of a record about an element (entity, person or relationship) within a beneficial ownership network is represented by a series of Statements:
+The lifecycle of a record about an element (entity, person or relationship) within a beneficial ownership network is represented by a series of Statements:
 
 * The ``recordId`` of each element of a beneficial ownership network MUST be stable over time. That is: when the details of an element change, or are confirmed, the new Statement generated must contain the same ``recordId`` as in the outdated Statement.
 
@@ -32,7 +32,7 @@ The life cycle of a record about an element (entity, person or relationship) wit
 
 Once a series of Statements about a given element is closed, further Statements with the related ``recordId`` MUST NOT be generated.
 
-When the subject or the interested party of a relationship change, the life cycle of that relationship is considered to have ended. For example, if the owner of a company transfers their interest to a relative, the ``recordStatus`` of the first relationship would be 'closed', and details of a new record would be published.
+When the subject or the interested party of a relationship change, the lifecycle of that relationship is considered to have ended. For example, if the owner of a company transfers their interest to a relative, the ``recordStatus`` of the first relationship would be 'closed', and details of a new record would be published.
 
 Requirements for special cases
 ------------------------------
