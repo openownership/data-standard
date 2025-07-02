@@ -7,7 +7,7 @@ matrix:
   dictionary:
     wordlists:
     #additional words not included in the general dictionary
-    - .github/.wordlist.txt
+    - .github/workflows/.wordlist.txt
     output: wordlist.dic
     encoding: utf-8
   pipeline:
