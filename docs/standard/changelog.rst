@@ -207,7 +207,7 @@ Added
 Changed
 -------
 - The interestType codelist has been extended to include interests in trusts.
-- The structure of BODS-formatted data has been flattened, to remove extraneous nesting and facilitate serialization using JSON Lines.
+- The structure of BODS-formatted data has been flattened, to remove extraneous nesting and facilitate serialisation using JSON Lines.
 - 'Beneficial ownership statements' have been renamed 'Ownership-or-control statements' to reflect the scope of their use.
 
 Removed

@@ -134,7 +134,7 @@ Name
 
 .. _schema-pep-status:
 
-PEPstatusDetails
+PEPStatusDetails
 ------------------
 
 .. json-value:: ../_build_schema/person-record.json

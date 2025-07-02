@@ -15,7 +15,7 @@ Feature requests and bug reports
 
 To suggest changes or fixes, submit a BODS feature request or bug report via the `issue templates <https://github.com/openownership/data-standard/issues/new/choose>`_ available in the `BODS GitHub repository <https://github.com/openownership/data-standard/>`_.
 
-Open Ownership and Open Data Services will respond to all community feature requests or bug reports via comments on the Github issue.
+Open Ownership and Open Data Services will respond to all community feature requests or bug reports via comments on the GitHub issue.
 
 Feature development
 -------------------

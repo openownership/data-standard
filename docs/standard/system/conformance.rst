@@ -6,7 +6,7 @@ Conformance and validation
 Conformance
 ----------------
 
-A comforming implementation of BODS:
+A conforming implementation of BODS:
 
 * MAY use a subset of the schema's terms
 
