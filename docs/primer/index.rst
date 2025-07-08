@@ -54,4 +54,4 @@ BODS allows publishers to provide statements that describe:
 * types of interests that can be held in entities
 * provenance information
 * historical, as well as current, information
-* placeholders, when information must be witheld
+* placeholders, when information must be withheld

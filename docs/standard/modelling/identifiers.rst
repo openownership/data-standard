@@ -10,7 +10,7 @@ In BODS, real world identifiers can be published for:
 - entities
 - people
 - stock markets and trading exchanges
-- tradable securities
+- tradeable securities
 
 Entity identifiers
 -------------------------------
@@ -84,7 +84,7 @@ MICs are standardised, issued and maintained by SWIFT as `ISO 10383 <https://www
 
 .. guidance-identifiers-securities:
 
-Tradable security identifiers
+Tradeable security identifiers
 ---------------------------------------------
 
 See this :ref:`example data <examples-plc>` for a valid use of securities identifiers.
