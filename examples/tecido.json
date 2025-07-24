@@ -19,7 +19,7 @@
       ],
       "assertedBy": [
         {
-          "name": "Maria Esteves"
+          "name": "Sandi"
         }
       ]
     },
@@ -27,13 +27,13 @@
     "declarationSubject": "01B68D7633",
     "recordDetails": {
       "isComponent": false,
-      "personType": "knownPerson",
+      "personType": "livingPerson",
       "names": [
         {
           "type": "legal",
-          "fullName": "Maria Esteves",
+          "fullName": "Sandi-M.",
           "familyName": "Esteves",
-          "givenName": "Maria"
+          "givenName": "Sandi"
         }
       ],
       "birthDate": "1956-05-24"
@@ -59,7 +59,7 @@
       ],
       "assertedBy": [
         {
-          "name": "Maria Esteves"
+          "name": "Sandi-M."
         }
       ]
     },
@@ -104,7 +104,7 @@
       ],
       "assertedBy": [
         {
-          "name": "Maria Esteves"
+          "name": "Sandi-M."
         }
       ]
     },
@@ -438,9 +438,9 @@
       "names": [
         {
           "type": "legal",
-          "fullName": "Maria Esteves",
+          "fullName": "Sandi-M.",
           "familyName": "Esteves",
-          "givenName": "Maria"
+          "givenName": "Sandi"
         }
       ],
       "birthDate": "1956-05-24"
