@@ -15,7 +15,7 @@ It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-pro
 
    .. cssclass:: primaryfrontpageboxlink
 
-      :ref:`What is beneficial ownership? <primer>`
+      :ref:`What is beneficial ownership? <what-is-bo>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
@@ -27,7 +27,7 @@ It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-pro
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      `Open Ownership's work, team and purpose <https://www.openownership.org/en/about/>`_
+      `Open Ownership's work, team and purpose <https://www.openownership.org/en/about/>`__
 
 
 .. container:: frontpageboxright
@@ -44,7 +44,7 @@ It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-pro
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :ref:`Modelling requirements  <modelling-requirements>`
+      :ref:`Data model <data-model>`
 
    .. cssclass:: secondaryfrontpageboxlink
 
@@ -52,7 +52,7 @@ It is developed by `Open Ownership <https://www.openownership.org/>`_, a non-pro
 
    .. cssclass:: secondaryfrontpageboxlink
 
-      :ref:`System requirements <system-requirements>`
+      :ref:`Modelling requirements  <modelling-requirements>`
 
 
 .. raw:: html
