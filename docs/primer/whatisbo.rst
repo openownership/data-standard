@@ -54,22 +54,22 @@ If a person owns something, they usually have some control over it. Owning share
 
 Significant control over a company’s composition and decisions may be used to steer benefits and direct risks. Those people taking the financial risks for a company may not be the ones making the decisions. In which case, we need to know who is in control.
 
+Understanding who controls and who benefits from different legal vehicles helps governments, citizens and companies know who they are really doing business with.
+
 .. raw:: html
 
    <h2>
 
-See the big picture.
+Laws define beneficial ownership.
 
 .. raw:: html
 
    </h2>
+ 
+Simply, "beneficial owners" are those who significantly control or benefit from a company. They have significant interests in it (directly or indirectly), via ownership, via control or via enjoyment of its assets.
 
-Beneficial ownership therefore covers various types of involvement with a company: ownership, control and enjoyment of its assets.
+Governments and regulators provide legal definitions. They decide the threshold at which an individual's various interests confer beneficial ownership. Legal definitions of "beneficial owner" differ from jurisdiction to jurisdiction, and even from sector to sector, but they are all derived from the particular types of interests people can hold in companies.
 
-Understanding who the beneficial owners are of different legal vehicles helps governments, citizens and companies know who they are really doing business with.
+So whether someone qualifies as a beneficial owner of a company depends on both: the particular interests they hold in it (directly or indirectly), and the applicable definition of "beneficial owner".
 
-
-.. highlights::
-
-    **Beneficial ownership**  is a natural person’s right to some share or enjoyment of a corporate vehicle’s income or assets (ownership), or the right to direct or influence its activities (control). Ownership and control can be exerted either directly or indirectly.
 

@@ -3,7 +3,7 @@
 What is the BODS data model?
 ============================
 
-The :doc:`key beneficial ownership concepts <concepts>` and data use cases require a data model which handles:
+The :doc:`key beneficial ownership concepts <concepts>` and `data use cases <https://github.com/openownership/data-standard/issues/4>`_ require a data model which handles:
 
 * Beneficial ownership networks (graphs),
 * The changing layout of these networks over time,

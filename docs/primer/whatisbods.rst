@@ -3,13 +3,28 @@
 What is the Beneficial Ownership Data Standard (BODS)?
 ======================================================
 
-The Beneficial Ownership Data Standard (BODS) provides a common way of organizing and sharing information about who owns, controls and benefits from companies and other legal vehicles. It is designed so that beneficial ownership networks (corporate structures) can be more easily revealed. Its aim is to make combining and analysing data from different sources less difficult, cheaper and quicker.
+The Beneficial Ownership Data Standard (BODS) provides a common way of organizing and sharing information about who owns, controls and benefits from companies and other legal vehicles, independent of any particular definition of "beneficial owner". It is designed so that beneficial ownership networks (corporate structures) can be easily revealed. Its aim is to make combining and analysing data from different sources easier, cheaper and quicker.
 
 .. raw:: html
 
    <h2>
 
-BODS offers a structure for capturing beneficial ownership information.
+BODS is not a regulatory framework or an industry standard.
+
+.. raw:: html
+
+   </h2>
+
+BODS is a technical standard for structuring data about beneficial ownership. 
+
+Standards such as the FATF requirements or the EITI Standard mention beneficial ownership but they are not technical standards. They provide normative guidance for policy-makers and industry actors, aiming to shape best practice in government and industry.
+
+
+.. raw:: html
+
+   <h2>
+
+BODS offers a structure for sharing beneficial ownership information.
 
 .. raw:: html
 
@@ -24,7 +39,9 @@ Information about beneficial ownership encompasses:
 * Details of intermediate legal vehicles in an ownership chain
 * And more
 
-This information can be scattered across companies’ annual reports, their founding articles, filings to regulatory authorities, and contracts. BODS provides fields and field sets into which this information can be organised and represented as data.
+This information can be scattered across companies’ annual reports, their founding articles, filings to regulatory authorities, and contracts. BODS provides fields and field sets into which this information can be organised and represented as data when it is exported.
+
+BODS is not a format for storing beneficial ownership data.
 
 .. raw:: html
 
