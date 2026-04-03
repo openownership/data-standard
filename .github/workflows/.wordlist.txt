@@ -30,7 +30,7 @@ enum
 FATF
 fiduciaire
 fiducie
-figWidth
+figwidth
 funders
 GLIE
 Hewitson
