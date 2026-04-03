@@ -3,7 +3,7 @@
 What is the Beneficial Ownership Data Standard (BODS)?
 ======================================================
 
-The Beneficial Ownership Data Standard (BODS) provides a common way of organizing and sharing information about who owns, controls and benefits from companies and other legal vehicles, independent of any particular definition of "beneficial owner". It is designed so that beneficial ownership networks (corporate structures) can be easily revealed. Its aim is to make combining and analysing data from different sources easier, cheaper and quicker.
+The Beneficial Ownership Data Standard (BODS) provides a common way of organising and sharing information about who owns, controls and benefits from companies and other legal vehicles, independent of any particular definition of "beneficial owner". It is designed so that beneficial ownership networks (corporate structures) can be easily revealed. Its aim is to make combining and analysing data from different sources easier, cheaper and quicker.
 
 .. raw:: html
 

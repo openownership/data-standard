@@ -17,7 +17,7 @@ Feature requests and bug reports
 
 To suggest changes or fixes, submit a BODS feature request or bug report via the `issue templates <https://github.com/openownership/data-standard/issues/new/choose>`_ available in the `BODS GitHub repository <https://github.com/openownership/data-standard/>`_.
 
-Open Ownership and Open Data Services will respond to community feature requests or bug reports via comments on the Github issue.
+Open Ownership and Open Data Services will respond to community feature requests or bug reports via comments on the GitHub issue.
 
 
 Feature development
@@ -44,7 +44,7 @@ We aim to meet the `OpenStand principles <https://open-stand.org/about-us/princi
 
 - **Due process**. Decisions are made with equity and fairness among participants. No one party dominates or guides standards development. Standards processes are transparent and opportunities exist to appeal decisions. Processes for periodic standards review and updating are well defined.
 - **Broad consensus**. Processes allow for all views to be considered and addressed, such that agreement can be found across a range of interests.
-- **Transparency**. Standards organizations provide advance public notice of proposed standards development activities, the scope of work to be undertaken, and conditions for participation. Easily accessible records of decisions and the materials used in reaching those decisions are provided. Public comment periods are provided before final standards approval and adoption.
+- **Transparency**. Standards organisations provide advance public notice of proposed standards development activities, the scope of work to be undertaken, and conditions for participation. Easily accessible records of decisions and the materials used in reaching those decisions are provided. Public comment periods are provided before final standards approval and adoption.
 - **Balance**. Standards activities are not exclusively dominated by any particular person, company or interest group.
 - **Openness**. Standards processes are open to all interested and informed parties.
 
@@ -55,7 +55,7 @@ You might be interested in BODS as a beneficial ownership policy expert, as a me
 
 **Keep up with general news about BODS**: `sign up <https://openownership.us19.list-manage.com/subscribe/post?u=5a522bc71b24b7202b6bf2c95&id=57602bb40c>`_ for Disclosure, Open Ownership's newsletter.
 
-**Follow all technical development of BODS**: watch or star the `GitHub repo <https://github.com/openownership/data-standard>`_.
+**Follow all technical development of BODS**: watch or star the `GitHub repository <https://github.com/openownership/data-standard>`_.
 
 **Follow discussion on specific GitHub issues**: subscribe to notifications.
 
