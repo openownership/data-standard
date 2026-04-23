@@ -226,7 +226,8 @@
         "statementPointerTarget": {
           "title": "Statement Fragment Pointer",
           "description": "An RFC6901 JSON Pointer (https://tools.ietf.org/html/rfc6901) describing the target fragment of the statement that this Annotation applies to, starting from the root of the Statement. An empty string (\"\") indicates that the Annotation applies to the whole Statement.",
-          "type": "string"
+          "type": "string",
+          "format": "json-pointer"
         },
         "creationDate": {
           "title": "Creation Date",
