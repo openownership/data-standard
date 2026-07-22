@@ -204,7 +204,8 @@ texinfo_documents = [
 linkcheck_ignore = [
     r'https://www.icao.int/sites/default/files/publications/DocSeries/9303_p3_cons_en.pdf',
     r'https://www.icao.int/sites/default/files/publications/DocSeries/9303_p4_cons_en.pdf',
-    r'https://github.com/signup']
+    r'https://github.com/signup',
+    r'https://www.opencorporates.com/']
 
 
 # Adapted from https://github.com/OpenDataServices/sphinxcontrib-opendataservices/blob/master/sphinxcontrib/opendataservices.py#L50 # noqa: E501
