@@ -196,6 +196,15 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
+# -- Options for linkcheck ---------------------------------------------
+
+# urls returning a 403 error are reported as broken by linkcheck. Ignoring them is the best option
+# currently. See https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-the-linkcheck-builder
+# The following links are ignored but should be manually verified as accessible.
+linkcheck_ignore = [
+    r'https://www.icao.int/sites/default/files/publications/DocSeries/9303_p3_cons_en.pdf',
+    r'https://www.icao.int/sites/default/files/publications/DocSeries/9303_p4_cons_en.pdf',
+    r'https://github.com/signup']
 
 # Adapted from https://github.com/OpenDataServices/sphinxcontrib-opendataservices/blob/master/sphinxcontrib/opendataservices.py#L50 # noqa: E501
 # Should eventually move into there
