@@ -14,7 +14,6 @@ Further requirements are described in the :ref:`Modelling requirements <modellin
 .. toctree::
    :maxdepth: 1
 
-   concepts
    schema-browser
    reference
    modelling/index

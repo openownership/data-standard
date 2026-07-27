@@ -36,7 +36,7 @@ In such cases, the values for ``scheme`` SHOULD be:
 
 {JURISDICTION}-{TYPE}
 
-Where {JURISDICTION} is an `ISO 3-digit country code <https://www.iso.org/iso-3166-country-codes.html>`_ (or one of the extensions in `ICAO Document 9303 §5 <http://www.icao.int/publications/Documents/9303_p3_cons_en.pdf>`_, pages 21-23). And {TYPE} is one of 'PASSPORT', 'TAXID' or 'IDCARD'.
+Where {JURISDICTION} is an `ISO 3-digit country code <https://www.iso.org/iso-3166-country-codes.html>`_ (or one of the extensions in `ICAO Doc 9303, part 3 <https://www.icao.int/sites/default/files/publications/DocSeries/9303_p3_cons_en.pdf>`_, pages 21-23). And {TYPE} is one of 'PASSPORT', 'TAXID' or 'IDCARD'.
 
 For example, a passport number from Afghanistan would have the ``scheme`` value:
 
@@ -51,7 +51,7 @@ The following identification types can currently be used in BODS. Suggestions fo
 
 **PASSPORT**
 
-Passport numbers SHOULD follow the format of the identifier line in a machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 <http://www.icao.int/publications/Documents/9303_p4_cons_en.pdf>`_) including at least the document number.
+Passport numbers SHOULD follow the format of the identifier line in a machine-readable passport (see `Appendix B to Part 4 of ICAO Doc 9303 <https://www.icao.int/sites/default/files/publications/DocSeries/9303_p4_cons_en.pdf>`_) including at least the document number.
 
 Parsers should be able to extract the document number from the first 9 characters, and to access any subsequent information supplied according to the ICAO format.
 

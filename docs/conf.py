@@ -36,6 +36,17 @@ import ocds_babel.translate as translate
 # import oods.pygments
 import oods.sphinxtheme
 
+# -- Read the Docs --------------------------------------------------------
+
+# Define the canonical URL if you are using a custom domain on Read the Docs
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "")
+
+# Tell Jinja2 templates the build is running on Read the Docs
+if os.environ.get("READTHEDOCS", "") == "True":
+    if "html_context" not in globals():
+        html_context = {}
+    html_context["READTHEDOCS"] = True
+
 # -- General configuration ------------------------------------------------
 
 html_context = {'bods_schema_version': '0.4'}
@@ -184,6 +195,18 @@ texinfo_documents = [
      author, 'BeneficialOwnershipDataStandard_v_0_4', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+# -- Options for linkcheck ---------------------------------------------
+
+# urls returning a 403 error are reported as broken by linkcheck. Ignoring them is the best option
+# currently. See https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-the-linkcheck-builder
+# The following links are ignored but should be manually verified as accessible.
+linkcheck_ignore = [
+    r'https://www.icao.int/sites/default/files/publications/DocSeries/9303_p3_cons_en.pdf',
+    r'https://www.icao.int/sites/default/files/publications/DocSeries/9303_p4_cons_en.pdf',
+    r'https://github.com/signup',
+    r'https://www.opencorporates.com',
+    r'https://opencorporates.com/']
 
 
 # Adapted from https://github.com/OpenDataServices/sphinxcontrib-opendataservices/blob/master/sphinxcontrib/opendataservices.py#L50 # noqa: E501

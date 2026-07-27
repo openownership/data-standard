@@ -1,20 +1,24 @@
 .. _key-concepts:
 
-Key concepts
-============
+What key concepts are represented in BODS data?
+===============================================
 
-.. include:: warningbox.rst
-
-Two things inform the Beneficial Ownership Data Standard (BODS) data model:
+Two things inform the Beneficial Ownership Data Standard (BODS) :doc:`data model <datamodel>`:
 
 - what beneficial ownership information is
 - how it is processed and used
 
-Understanding these concepts and the data model will help you publish high-quality data.
+Understanding these concepts and how they show up in BODS datasets will help you interpret or publish high-quality BODS data.
 
+.. raw:: html
 
-Beneficial ownership concepts
------------------------------
+   <h2>
+
+Beneficial ownership is exerted in the real world.
+
+.. raw:: html
+
+   </h2>
 
 A natural **person** is a **beneficial owner** of an **entity** because of certain **interests**. These interests may be rooted in legal ownership, or come from controlling the entity, or using its assets. The **relationship** between the beneficial owner and the entity may be **direct**, **indirect** or both. Where it is indirect, **intermediary** entities, people and their relationships, are part of the **beneficial ownership network**.
 
@@ -26,8 +30,15 @@ People or entities are obliged in some jurisdictions to disclose their beneficia
    :figwidth: 85%
    :align: center
 
-BODS Statements represent claims
---------------------------------
+.. raw:: html
+
+   <h2>
+
+Claims about the real world are captured as data.
+
+.. raw:: html
+
+   </h2>
 
 The highest level object in a BODS dataset is a Statement. Each Statement represents a claim made by a source at a particular point in time. The claim can be about one of three elements of a beneficial ownership network:
 
@@ -40,13 +51,7 @@ The highest level object in a BODS dataset is a Statement. Each Statement repres
    :figwidth: 50%
    :align: center
 
-Representing beneficial ownership information in this way allows people to make sense of data received from multiple sources over extended periods of time. In particular, this model means that:
-
-- statements about beneficial ownership can conflict when they come from different sources
-- statements about beneficial ownership can overlap, referring to identical parties
-- historical beneficial ownership snapshots (to answer questions of ‘who knew what, when?’) can be produced. This is known as `bi-temporal modelling <https://en.wikipedia.org/wiki/Bitemporal_Modeling>`_.
-
-Statements should therefore be considered immutable – presenting details about an element of beneficial ownership as claimed at a particular point in time. 
+Statements present details about an element of beneficial ownership as claimed at a particular point in time. The diagram above shows a claim about the relationship between a person and an entity. 
 
 To achieve this, each Statement produced by a data management system needs to include: 
 
@@ -55,9 +60,15 @@ To achieve this, each Statement produced by a data management system needs to in
 
 After publication, publishers do not edit a Statement to indicate an information update: they publish a new Statement with the updated details of the record.
 
+.. raw:: html
 
-Beneficial ownership records
-----------------------------
+   <h2>
+
+Data is organised into records.
+
+.. raw:: html
+
+   </h2>
 
 Data management systems need to internally maintain their own record with an appropriate ``recordId`` string for each person, entity and relationship whose details are disclosed. The ``recordId`` has two purposes:
 
@@ -66,8 +77,15 @@ Data management systems need to internally maintain their own record with an app
 
 See :any:`record-identifiers` for full requirements.
 
-Linking entities and persons via relationships
-++++++++++++++++++++++++++++++++++++++++++++++
+.. raw:: html
+
+   <h2>
+
+Records are connectable.
+
+.. raw:: html
+
+   </h2>
 
 Stable ``recordId`` values in BODS Statements allow the structure of beneficial ownership networks to be derived from BODS datasets.
 
@@ -78,8 +96,15 @@ Stable ``recordId`` values in BODS Statements allow the structure of beneficial 
 
 The Relationship statement holds ``recordId`` values for the interested party and the subject of a relationship. 
 
-Publishing information updates
-++++++++++++++++++++++++++++++
+.. raw:: html
+
+   <h2>
+
+Records are updatable.
+
+.. raw:: html
+
+   </h2>
 
 As real-world beneficial ownership changes, agents submit updated details about people, entities and relationships to the data management system. Then the system updates its records accordingly and publishes a new BODS Statement, containing the relevant ``recordId``, for each updated record.
 
@@ -94,8 +119,15 @@ Published BODS Statements build a write-only ledger, as new Statements are issue
 
 See :ref:`information-updates` for full requirements.
 
-Representing beneficial owners
-------------------------------
+.. raw:: html
+
+   <h2>
+
+Beneficial owners are visible.
+
+.. raw:: html
+
+   </h2>
 
 In a BODS dataset, the fact that a natural person is a beneficial owner of an entity is represented by including this information in the Relationship statement linking the two.
 
@@ -105,9 +137,3 @@ It is also possible to include in BODS datasets information about natural person
 
 See :ref:`representing-bo` for full requirements.
 
-The data model
---------------
-
-Use the :doc:`Schema browser <schema-browser>` to explore the structure of the data model in full. Read the :any:`Schema reference <schema-reference>` for detailed definitions and requirements for each object and field.
-
-The objects and fields of the data model allow you to represent a range of real-world situations. Explore related requirements in the :any:`modelling-requirements` section.
