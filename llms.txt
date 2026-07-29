@@ -1,0 +1,45 @@
+# Beneficial Ownership Data Standard (BODS)
+
+> The Beneficial Ownership Data Standard (BODS) is an open standard providing guidance and a structured, machine-readable data model for collecting, sharing and using high-quality data on the beneficial ownership and control of companies and other legal entities and arrangements. It is developed by Open Ownership in partnership with Open Data Services.
+
+BODS is used to publish and exchange information about ultimate beneficial owners (UBOs), ownership-and-control chains, and complex corporate structures in a consistent, interoperable format. It supports beneficial ownership transparency, anti-money laundering (AML), Know Your Customer (KYC) and Know Your Business (KYB) checks, sanctions and risk screening, public procurement, tax and wider corporate transparency work, and the implementation of the Financial Action Task Force (FATF) Recommendations 24 and 25. The current version of the standard is 0.4, and the documentation is available in English, French, Spanish and Russian.
+
+## Documentation (the standard)
+
+- [BODS documentation](https://standard.openownership.org/): Home of the full BODS documentation — primer, data model, schema and examples (current version 0.4).
+- [Primer: what is beneficial ownership?](https://standard.openownership.org/en/0.4.0/primer/index.html): Introduction to beneficial ownership and why a standardised data format matters.
+- [Key concepts](https://standard.openownership.org/en/0.4.0/standard/concepts.html): The core BODS data model — entity statements, person statements, and ownership-or-control statements.
+- [Schema browser](https://standard.openownership.org/en/0.4.0/standard/schema-browser.html): Interactive browser of the BODS JSON Schema, its fields and codelists.
+- [Schema reference](https://standard.openownership.org/en/0.4.0/standard/reference.html): Detailed field-by-field reference for the BODS schema.
+- [Modelling requirements](https://standard.openownership.org/en/0.4.0/standard/modelling/index.html): Guidance on how to model beneficial ownership and control relationships in BODS, including complex and indirect structures.
+- [Example data](https://standard.openownership.org/en/0.4.0/examples/index.html): Worked examples of BODS data for common ownership and control scenarios.
+
+## News and updates
+
+- [BODS news and updates](https://www.openownership.org/en/topics/beneficial-ownership-data-standard/): Latest news, blog posts, events and releases relating to BODS from Open Ownership.
+
+## Tools and libraries
+
+- [Data review tool (CoVE-BODS)](https://www.openownership.org/en/publications/beneficial-ownership-data-standard-data-review-tool/): Open-source web tool to check that data complies with BODS, hosted at datareview.openownership.org. Source code: https://github.com/openownership/cove-bods
+- [Data review library (lib-cove-bods)](https://github.com/openownership/lib-cove-bods): Python library and command-line interface to validate and review BODS data programmatically.
+- [Visualisation library](https://www.openownership.org/en/publications/beneficial-ownership-data-standard-visualisation-library/): Automatically generate beneficial ownership diagrams (SVG/PNG) from BODS JSON. Source code: https://github.com/openownership/visualisation-tool — npm package: https://www.npmjs.com/package/@openownership/bods-dagre
+- [Data analysis tools (bodsdata)](https://www.openownership.org/en/publications/beneficial-ownership-data-analysis-tools/): Discover, download and analyse open beneficial ownership data republished in BODS format (UK, Denmark, Slovakia, and GLEIF) at bods-data.openownership.org. Source code: https://github.com/openownership/bodsdata
+- [Analysis notebooks and dashboards (bodsanalysis)](https://www.openownership.org/en/publications/analysis-notebooks-and-dashboards-for-beneficial-ownership-data-standard-bods-data/): Notebooks and dashboards for gaining insights from BODS data and spotting "red flags" in ownership datasets. Source code: https://github.com/openownership/bodsanalysis
+- [RDF vocabulary (bodsld)](https://www.openownership.org/en/publications/rdf-vocabulary-for-the-beneficial-ownership-data-standard/): RDF / linked-data vocabulary for BODS, making it easier to query beneficial ownership data and link it with other datasets; published at vocab.openownership.org. Source code: https://github.com/openownership/bodsld
+- [Data generator](https://www.openownership.org/en/publications/beneficial-ownership-data-standard-generator/): Spreadsheet template for converting beneficial ownership information into BODS data for submission to the data review tool for validation and conversion to BODS JSON.
+
+## Code repositories (GitHub)
+
+- [openownership/data-standard](https://github.com/openownership/data-standard): Source of the BODS schema and documentation.
+- [openownership/cove-bods](https://github.com/openownership/cove-bods): BODS data review web application (CoVE-BODS).
+- [openownership/lib-cove-bods](https://github.com/openownership/lib-cove-bods): BODS validation and review library / CLI.
+- [openownership/visualisation-tool](https://github.com/openownership/visualisation-tool): BODS visualisation library (bods-dagre).
+- [openownership/bodsdata](https://github.com/openownership/bodsdata): Tools to fetch, publish and analyse BODS datasets.
+- [openownership/bodsanalysis](https://github.com/openownership/bodsanalysis): Analysis notebooks and dashboards for BODS data.
+- [openownership/bodsld](https://github.com/openownership/bodsld): BODS RDF / linked-data vocabulary.
+
+## More information
+
+- [What is beneficial ownership transparency?](https://www.openownership.org/en/about/what-is-beneficial-ownership-transparency/): Background on beneficial ownership transparency from Open Ownership.
+- [Beneficial ownership glossary](https://www.openownership.org/en/implementation/beneficial-ownership-glossary/): Definitions of key beneficial ownership terms.
+- [Open Ownership and the Financial Action Task Force](https://www.openownership.org/en/topics/financial-action-task-force-fatf/): How beneficial ownership transparency relates to the Financial Action Task Force (FATF) and Recommendations 24 and 25.
