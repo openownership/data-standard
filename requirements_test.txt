@@ -19,7 +19,7 @@ babel==2.14.0
     #   sphinx-intl
 build==1.2.1
     # via pip-tools
-certifi==2024.2.2
+certifi==2024.7.4
     # via requests
 charset-normalizer==3.3.2
     # via requests
