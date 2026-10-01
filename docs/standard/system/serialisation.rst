@@ -12,6 +12,47 @@ See Section 9 of the ECMA-404 JSON specification which deals with strings, encod
 
 JSON Lines MAY also be used when creating large files.
 
+.. _serialisation-missing-values:
+
+Missing values
+--------------
+
+Where a publisher has no value for an optional field, that field MUST be omitted from the statement. A field MUST NOT be present with a value of ``null``: the schema does not permit ``null`` for any field, so a statement containing one will fail validation. Empty strings SHOULD NOT be used to stand in for a missing value.
+
+For example, an Entity statement for which no founding date or identifiers are known omits those fields:
+
+.. code-block:: json
+
+   {
+     "recordDetails": {
+       "isComponent": false,
+       "entityType": {
+         "type": "registeredEntity"
+       },
+       "name": "Example Ltd"
+     }
+   }
+
+The following will not validate:
+
+.. code-block:: json
+
+   {
+     "recordDetails": {
+       "isComponent": false,
+       "entityType": {
+         "type": "registeredEntity"
+       },
+       "name": "Example Ltd",
+       "foundingDate": null,
+       "identifiers": null
+     }
+   }
+
+Omitting a field says nothing about *why* the value is missing. Where the reason matters, the standard provides fields for it: ``unspecifiedEntityDetails`` and ``unspecifiedPersonDetails`` on Entity and Person statements, an :ref:`schema-unspecified-record` in place of a ``recordId`` in a Relationship statement, and ``missingInfoReason`` on political exposure details. Publishers SHOULD use these rather than an empty or placeholder value.
+
+Systems which emit every field, leaving missing ones blank, will need to strip those fields before publishing BODS data. Converters from tabular data SHOULD treat an empty cell as an omitted field (see :ref:`serialisation-tabular`).
+
 Statement order
 ---------------
 
@@ -19,10 +60,12 @@ A JSON BODS file MUST consist of a series of ordered Statement objects within a 
 
 Specifically, the ``interestedParty`` and ``subject`` values of a Relationship statement, when they are a ``recordId`` value, MUST match the ``recordId`` value of at least one other *prior* Statement in the array.
 
+.. _serialisation-tabular:
+
 Alternative tabular form
 ------------------------
 
-BODS data MAY also be serialised in tabular form, with each row representing a statement. Columns SHOULD represent statement fields and column titles SHOULD use the relevant relative JSON Pointer from the statement root. 
+BODS data MAY also be serialised in tabular form, with each row representing a statement. Columns SHOULD represent statement fields and column titles SHOULD use the relevant relative JSON Pointer from the statement root. An empty cell means that the field is omitted from that statement (see :ref:`serialisation-missing-values`).
 
 For example, the extract:
 
