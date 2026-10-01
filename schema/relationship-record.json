@@ -33,7 +33,7 @@
     },
     "interestedParty": {
       "title": "Interested Party",
-      "description": "The `recordId` for the interested party in the relationship, or an Unspecified Record object with a reason for why this information has not been disclosed. The interested party MAY be an entity or a person. An Unspecified Record SHOULD only be used where no information at all is known about interested parties beyond this point of the beneficial ownership network. If the interested party is known to be an entity or person but their particular identity is unavailable, a `recordId` for them SHOULD be provided here (and the their `recordDetails.[person|entity]Type` should indicate that they are anonymous or unknown).",
+      "description": "The `recordId` for the interested party in the relationship, or an Unspecified Record object giving the reason why this information has not been disclosed. The value MUST be one of: the `recordId` of an Entity record, the `recordId` of a Person record, or an Unspecified Record object. An Unspecified Record SHOULD only be used where no information at all is known about interested parties beyond this point of the beneficial ownership network. If the interested party is known to be an entity or a person but their particular identity is unavailable, a `recordId` for them SHOULD be provided here, and their `recordDetails.entityType.type` or `recordDetails.personType` SHOULD indicate that they are anonymous or unknown.",
       "oneOf": [
         {
           "type": "string"
