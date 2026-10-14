@@ -297,6 +297,26 @@ def translate_schema_and_codelists(language='en'):
 
     print(f'Translated schema and codelists to {language}')
 
+    write_docson_urn_aliases(schema_target_dir)
+
+
+def write_docson_urn_aliases(schema_dir):
+    # The schema browser (docson) resolves a `$ref` such as `urn:entity` by
+    # fetching `entity.json` from the same directory. Some schema files are not
+    # named after their `$id` (e.g. `urn:entity` lives in `entity-record.json`),
+    # so those refs 404 (or, on Read the Docs, redirect to the docs home page)
+    # and the viewer cannot expand them. Write a copy of each such file under the
+    # name docson expects. Copies are taken from the translated schemas so that
+    # every language's schema browser shows its own translations.
+    for path in sorted(Path(schema_dir).glob('*.json')):
+        with open(path, encoding='utf-8') as f:
+            schema_id = json.load(f).get('$id', '')
+        if not schema_id.startswith('urn:'):
+            continue
+        alias = Path(schema_dir) / (schema_id[len('urn:'):] + '.json')
+        if alias != path:
+            copy2(path, alias)
+
 
 def compile_schema_and_codelists():
     # Automate compilation to MO for the schema and codelists
