@@ -12,9 +12,9 @@ In BODS, dates represent real world events and information about how data has mo
 
 ``publicationDetails.publicationDate`` is the date this statement was published. For example, the date that the information was added to a public registry, or made available via an API. This can be the same as the ``statementDate`` value if data is published immediately after submission. In many cases there will be a delay between submission and publication.	
 
-``interest.startDate`` is the date an interest started. For example, the date that shares were purchased or someone was appointed to the board of directors.
+``interest.startDate`` is the date an interest started. For example, the date that shares were purchased or someone was appointed to the board of directors. Every interest SHOULD have a ``startDate``: without one, data users cannot tell when a person became a beneficial owner or build a timeline of an entity's ownership. Where only the year or month is known, the date SHOULD be rounded (see `Date rounding`_ below). Where the start date is not known at all, ``startDate`` is omitted, and publishers SHOULD explain in their publication policy when and why start dates may be missing.
 
-``interest.endDate`` is the date an interest ended. For example, the date that shares were divested of or that someone resigned from the board of directors.
+``interest.endDate`` is the date an interest ended. For example, the date that shares were divested of or that someone resigned from the board of directors. An interest that has ended SHOULD have an ``endDate``, rounded in the same way as ``startDate`` where only the year or month is known.
 
 ``source.retrievedAt`` is only applicable where data is being republished. For example, some third parties might download data from government registries, transform it into BODS format and share it elsewhere. When this is done, they must provide information on when they downloaded the data from the government registry. 
 

@@ -49,6 +49,7 @@ If a person is a beneficial owner of an entity, entity X, (whether directly or i
 - the person’s ``recordId`` value MUST be the ``interestedParty``
 - ``isComponent`` MUST be false
 - the ``interests`` which make the person meet the criteria for being declared a beneficial owner MUST be included if known. They MUST have ``beneficialOwnershipOrControl`` set to 'true'. If an interest is known to be exercised indirectly, via intermediary entities then ``directOrIndirect`` MUST be ‘indirect’. If it is known to be exercised directly then ``directOrIndirect`` MUST be ‘direct’. Otherwise ``directOrIndirect`` MUST be ‘unknown’.
+- each of those ``interests`` SHOULD have a ``startDate``. Where only the year or month the interest started is known, the date SHOULD be rounded as described in :ref:`guidance-dates`. Where the start date is not known at all, ``startDate`` is omitted, and publishers SHOULD explain in their publication policy when and why start dates may be missing. If an interest has ended, it SHOULD have an ``endDate``, rounded in the same way where needed.
 
 Intermediaries
 ^^^^^^^^^^^^^^
