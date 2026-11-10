@@ -16,6 +16,10 @@ The identity of a relationship is constituted by the identities of its subject a
 
 Record identifiers are used for :ref:`representing-bo` and for :ref:`information-updates`.
 
+.. warning::
+
+   Relationship statements reference the entities and persons they connect using ``recordId`` values in their ``subject`` and ``interestedParty`` fields, as described in :ref:`guidance-serialisation`. If a publisher never versions its records, the ``statementId`` values it publishes can be identical to the corresponding ``recordId`` values. In such data, a consumer that wrongly joins a relationship's ``subject`` or ``interestedParty`` on ``statementId`` will still appear to work, until it processes the first dataset in which the two identifiers differ. Consumers MUST join relationship links on ``recordId``.
+
 Example scenario
 ----------------
 
