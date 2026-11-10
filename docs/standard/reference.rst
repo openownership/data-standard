@@ -375,6 +375,42 @@ Entity Subtype
    :class: codelist-table
    :file: ../_build_schema/codelists/entitySubtype.csv
 
+``entityType.subtype`` is a closed codelist. Only the codes in the table above are valid, and each code MUST align with the ``entityType.type`` value, as its description says. ``subtype`` is not the place for the name that a register, a law or a publisher's own system gives to a type of entity, such as 'Local Company', 'private limited company' or 'Aktiengesellschaft'. That wording belongs in ``entityType.details``, which can be used with or without a ``subtype``.
+
+For example, an entity that a register describes as a 'Local Company' is not valid as:
+
+.. code-block:: json
+
+   {
+     "entityType": {
+       "type": "registeredEntity",
+       "subtype": "Local Company"
+     }
+   }
+
+The register's wording goes in ``details`` instead:
+
+.. code-block:: json
+
+   {
+     "entityType": {
+       "type": "registeredEntity",
+       "details": "Local Company"
+     }
+   }
+
+The two fields can be used together. A government department in Finland can be described as:
+
+.. code-block:: json
+
+   {
+     "entityType": {
+       "type": "stateBody",
+       "subtype": "governmentDepartment",
+       "details": "ministeriö"
+     }
+   }
+
 
 
 Interest Type
