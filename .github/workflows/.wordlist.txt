@@ -31,10 +31,12 @@ FATF
 fiduciaire
 fiducie
 figwidth
+FollowTheMoney
 funders
 GLIE
 Hewitson
 ICAO
+ICIJ
 IDCARD
 IETF
 Implementers
@@ -49,7 +51,9 @@ noBeneficialOwners
 Norad
 OfTrust
 OpenCorporates
+OpenSanctions
 OpenStand
+otherInfluenceOrControl
 otherInfluenceOrControlOfTrust
 Parsers
 PEPStatusDetails
@@ -62,9 +66,11 @@ Raznick
 recordId
 recordStatus
 recordType
+rightsGrantedByContract
 rightToProfitOrIncomeFromAssets
 schema's
 SecuritiesListing
+selfDeclaration
 settlor
 SOE
 SOEs
