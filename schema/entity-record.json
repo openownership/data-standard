@@ -51,7 +51,7 @@
         "details": {
           "type": "string",
           "title": "Details",
-          "description": "This may be used to provide a local name for this type of entity, or any further information to identify the type of entity. For example, in Finland 'ministeriö' for a government department."
+          "description": "This may be used to provide a local name for this type of entity, or any further information to identify the type of entity. For example, in Finland 'ministeriö' for a government department. Where the entity has a legal form, such as 'private limited company', it SHOULD be given in `legalForm`."
         }
       },
       "propertyOrder": 4,
@@ -145,6 +145,12 @@
           }
         }
       ]
+    },
+    "legalForm": {
+      "title": "Legal Form",
+      "description": "The legal form of the entity under the law of its jurisdiction, such as a private limited company, a public limited company or a foundation. Where an ISO 20275 Entity Legal Form (ELF) code is known it SHOULD be given in `code`.",
+      "$ref": "#/$defs/LegalForm",
+      "propertyOrder": 5
     },
     "unspecifiedEntityDetails": {
       "$ref": "urn:components#/$defs/UnspecifiedRecord",
@@ -251,6 +257,51 @@
     "entityType"
   ],
   "$defs": {
+    "LegalForm": {
+      "type": "object",
+      "title": "Legal Form",
+      "description": "The legal form of an entity. A Legal Form MUST have a `code` or a `name`, and SHOULD have both where both are known.",
+      "properties": {
+        "code": {
+          "type": "string",
+          "title": "Entity Legal Form (ELF) Code",
+          "description": "The ISO 20275 Entity Legal Form (ELF) code for the legal form, from the ELF code list maintained by GLEIF (https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list). The code SHOULD be one that the ELF code list assigns to the entity's jurisdiction. '8888' MAY be used where the legal form is not yet in the ELF code list, in which case `name` MUST be given.",
+          "pattern": "^[A-Z0-9]{4}$"
+        },
+        "name": {
+          "type": "string",
+          "title": "Legal Form Name",
+          "description": "The name of the legal form, as given by the source and in the source's language. For example, 'Private Limited Company' or 'Gesellschaft mit beschr\u00e4nkter Haftung'."
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "code"
+          ]
+        },
+        {
+          "required": [
+            "name"
+          ]
+        }
+      ],
+      "if": {
+        "properties": {
+          "code": {
+            "const": "8888"
+          }
+        },
+        "required": [
+          "code"
+        ]
+      },
+      "then": {
+        "required": [
+          "name"
+        ]
+      }
+    },
     "PublicListing": {
       "type": "object",
       "title": "Public Listing",

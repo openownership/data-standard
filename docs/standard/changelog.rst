@@ -6,6 +6,21 @@ ChangeLog
 
 .. include:: warningbox.rst
 
+[Unreleased]
+============
+
+Added
+-----
+* Entity fields:
+
+  * ``legalForm`` object, to record an entity's legal form using an ISO 20275 Entity Legal Form (ELF) code and the local name of the legal form
+
+Changed
+-------
+* Entity fields:
+
+  * ``entityType.details`` description now says that an entity's legal form SHOULD be given in ``legalForm``
+
 [0.4] - 2024-05-08
 ===============================
 

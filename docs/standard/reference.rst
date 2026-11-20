@@ -117,6 +117,72 @@ Jurisdiction
    :allowexternalrefs:
    :allowurnrefs:
 
+.. _schema-legal-form:
+
+LegalForm
+---------
+
+.. json-value:: ../_build_schema/entity-record.json
+   :pointer: /$defs/LegalForm/description
+
+.. jsonschema:: ../_build_schema/entity-record.json
+   :pointer: /$defs/LegalForm
+   :allowexternalrefs:
+   :allowurnrefs:
+
+``legalForm`` records what an entity is under the law of its jurisdiction. Where possible, it uses an `ISO 20275 Entity Legal Form (ELF) code <https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list>`_. Each ELF code identifies one legal form in one jurisdiction, and the ELF code list gives that legal form's names in the jurisdiction's official languages. Every Legal Entity Identifier (LEI) record carries an ELF code.
+
+BODS references the ELF code list, which is maintained by GLEIF, rather than copying it as a codelist. This follows the approach taken for country codes (ISO 3166) and market identifier codes (ISO 10383). The schema checks only that a ``code`` has the form of an ELF code: four upper case letters or digits. To check that a code exists, or to look up its names, use the ELF code list or the GLEIF API (for example, ``https://api.gleif.org/api/v1/entity-legal-forms/H0PO``).
+
+``legalForm`` is optional. Publishers SHOULD give a ``code`` where their source provides one, or where they hold a reliable mapping from their own list of legal forms to ELF codes. Where there is no such mapping, ``name`` can be given on its own.
+
+GLEIF uses the code '8888' for a legal form that is not yet in the ELF code list. Where ``code`` is '8888', ``name`` MUST be given.
+
+ELF codes can be retired when a jurisdiction changes its law. A statement records the code that applied when the statement was made, so older statements do not need to be updated when a code is retired.
+
+**Relationship to entityType**
+
+``legalForm`` and ``entityType`` describe different things, and one is not derived from the other.
+
+* ``entityType.type`` is required, and gives the general form of the entity in BODS terms. BODS does not define a mapping from ELF codes to ``entityType`` values: the same legal form can be a ``registeredEntity`` or a ``legalEntity`` depending on the source, and most legal arrangements, such as trusts, have no ELF code.
+* ``entityType.subtype`` is a closed codelist, and is not the place for a legal form.
+* The name of an entity's legal form, such as 'private limited company', SHOULD be given in ``legalForm.name``. ``entityType.details`` remains available for other information that identifies the type of entity.
+
+For example, a German limited liability company:
+
+.. code-block:: json
+
+   {
+     "entityType": {
+       "type": "registeredEntity"
+     },
+     "legalForm": {
+       "code": "2HBR",
+       "name": "Gesellschaft mit beschränkter Haftung"
+     },
+     "jurisdiction": {
+       "code": "DE",
+       "name": "Germany"
+     }
+   }
+
+An entity whose source gives only the local name of its legal form:
+
+.. code-block:: json
+
+   {
+     "entityType": {
+       "type": "registeredEntity"
+     },
+     "legalForm": {
+       "name": "Exempted Company"
+     },
+     "jurisdiction": {
+       "code": "KY",
+       "name": "Cayman Islands"
+     }
+   }
+
 .. _schema-name:
 
 Name
@@ -197,7 +263,7 @@ Record Details (entity)
    :pointer: /description
 
 .. jsonschema:: ../_build_schema/entity-record.json
-   :collapse: identifiers,addresses,jurisdiction,publicListing,unspecifiedEntityDetails
+   :collapse: identifiers,addresses,jurisdiction,legalForm,publicListing,unspecifiedEntityDetails
    :externallinks: {"entityType/type":{"url":"#entity-type","text":"Entity Type"},"entityType/subtype":{"url":"#entity-subtype","text":"Entity Subtype"}}
    :allowexternalrefs:
    :allowurnrefs:
