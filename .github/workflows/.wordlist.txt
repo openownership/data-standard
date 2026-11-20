@@ -101,3 +101,11 @@ Whitehouse
 ELF
 GLEIF
 LegalForm
+beschränkter
+entityType
+Gesellschaft
+Haftung
+HBR
+legalForm
+mit
+registeredEntity
