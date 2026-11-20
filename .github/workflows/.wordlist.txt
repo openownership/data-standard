@@ -98,3 +98,6 @@ waqf
 whatisbo
 whatisbods
 Whitehouse
+ELF
+GLEIF
+LegalForm

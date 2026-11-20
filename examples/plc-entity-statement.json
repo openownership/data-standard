@@ -10,6 +10,10 @@
       "entityType": {
         "type": "legalEntity"
       },
+      "legalForm": {
+        "code": "B6ES",
+        "name": "Public Limited Company"
+      },
       "foundingDate": "1992-06-17",
       "identifiers": [
         {

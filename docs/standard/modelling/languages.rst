@@ -11,6 +11,8 @@ To represent:
 
 * entity types use ``entityType.details``
 
+* legal forms use ``legalForm.code``, where known: the ELF code list gives each legal form's names in the official languages of its jurisdiction
+
 * interest types use ``interest.details``
 
 For other fields or entire records, use an annotation. 

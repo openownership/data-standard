@@ -190,3 +190,9 @@ relationship_interested_party_invalid_type.json,oneOf,$[0].recordDetails.interes
 relationship_subject_invalid_type.json,oneOf,$[0].recordDetails.subject,subject
 statement_annotations_transformedContent_wrong_motivation.json,const,$[0].annotations[0].transformedContent,transformedContent
 relationship_component_records_true.json,const,$[0].recordDetails.componentRecords,componentRecords
+entity_legal_form_not_object.json,type,$[0].recordDetails.legalForm,legalForm
+entity_legal_form_empty.json,anyOf,$[0].recordDetails.legalForm,legalForm
+entity_legal_form_code_lowercase.json,pattern,$[0].recordDetails.legalForm.code,code
+entity_legal_form_code_too_long.json,pattern,$[0].recordDetails.legalForm.code,code
+entity_legal_form_name_number.json,type,$[0].recordDetails.legalForm.name,name
+entity_legal_form_8888_no_name.json,required,$[0].recordDetails.legalForm,name
