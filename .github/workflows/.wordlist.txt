@@ -40,6 +40,8 @@ ICIJ
 IDCARD
 IETF
 Implementers
+introducer
+introducers
 interestedParty
 interestType
 JSON

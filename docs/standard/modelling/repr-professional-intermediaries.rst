@@ -16,7 +16,7 @@ Companies and legal arrangements are often set up and run with the help of profe
 
 Users of beneficial ownership data, such as investigative journalists, often want to tell these professionals apart from the beneficial owners they act for. For example, the `Offshore Leaks database <https://offshoreleaks.icij.org/>`_ published by the International Consortium of Investigative Journalists (ICIJ) records who acted as the intermediary or registered agent for each offshore entity.
 
-Professional intermediaries are different from the *intermediary entities* described in :ref:`representing-bo`. An intermediary entity is a company or arrangement in an ownership chain, through which a beneficial owner holds an interest indirectly. A professional intermediary is a person or entity that acts *for* someone else.
+Professional intermediaries are different from the *intermediary entities* described in the :ref:`representing-bo` guidance. An intermediary entity is a company or arrangement in an ownership chain, through which a beneficial owner holds an interest indirectly. A professional intermediary is a person or entity that acts *for* someone else.
 
 How a professional intermediary is represented depends on what they do. They may:
 
@@ -33,9 +33,9 @@ Requirements
 Holding an interest on behalf of a client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Formation agents and service providers often supply nominee shareholders and nominee directors. These MUST be represented using a nominee arrangement, as described in :ref:`representing-nominations`. The intermediary is connected to the arrangement by a Relationship statement with ``interest.type`` 'nominee'. The client is connected by a Relationship statement with ``interest.type`` 'nominator'.
+Formation agents and service providers often supply nominee shareholders and nominee directors. These MUST be represented using a nominee arrangement, following the :ref:`representing-nominations` guidance. The intermediary is connected to the arrangement by a Relationship statement with ``interest.type`` 'nominee'. The client is connected by a Relationship statement with ``interest.type`` 'nominator'.
 
-Professional trustees and protectors, including trust companies, MUST be represented as described in :ref:`representing-trusts`, using the ``interest.type`` 'trustee' or 'protector'. ``interest.details`` MAY be used to record that the trustee acts in a professional capacity (e.g. "professional trustee").
+Professional trustees and protectors, including trust companies, MUST be represented following the :ref:`representing-trusts` guidance, using the ``interest.type`` 'trustee' or 'protector'. ``interest.details`` MAY be used to record that the trustee acts in a professional capacity (e.g. "professional trustee").
 
 Exercising a power on behalf of a client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -46,10 +46,10 @@ An intermediary may hold a power over an entity without holding shares or a boar
 * ``interest.details`` giving the role as it is named in the source data (e.g. "attorney-in-fact" or "authorised signatory")
 * ``beneficialOwnershipOrControl`` set to 'false', unless the definition of beneficial owner in operation treats the role as beneficial ownership
 
-The person on whose behalf the intermediary acts SHOULD be represented by their own Relationship statement with the entity, as described in :ref:`representing-bo`.
+The person on whose behalf the intermediary acts SHOULD be represented by their own Relationship statement with the entity, following the :ref:`representing-bo` guidance.
 
 .. code-block:: json
-
+   
    {
      "subject": "c-0001",
      "interestedParty": "p-0002",
@@ -76,7 +76,7 @@ Where an intermediary makes a declaration on behalf of a declaring subject:
 * ``source.description`` MAY explain the capacity in which they made the declaration
 
 .. code-block:: json
-
+   
    {
      "source": {
        "type": ["selfDeclaration"],
@@ -101,7 +101,7 @@ BODS does not currently have a structured way to represent a service relationshi
 * publish the service relationships in a separate dataset that refers to the BODS records by their ``recordId`` or by entity identifiers
 
 .. code-block:: json
-
+   
    {
      "annotations": [
        {
@@ -127,9 +127,9 @@ The Offshore Leaks database records many roles that link people and companies to
    * - Offshore Leaks role
      - BODS representation
    * - nominee name of; nominated person of; nominee shareholder
-     - Nominee arrangement, with the intermediary as 'nominee'. See :ref:`representing-nominations`.
+     - Nominee arrangement, with the intermediary as 'nominee'. See :ref:`representing-nominations` for the pattern.
    * - trustee of; protector of; co-trustee of
-     - Trust, with ``interest.type`` 'trustee' or 'protector'. See :ref:`representing-trusts`.
+     - Trust, with ``interest.type`` 'trustee' or 'protector'. See :ref:`representing-trusts` for the pattern.
    * - director of; secretary; officer of
      - 'boardMember' for a director. Where the director acts for a client, use a nominee arrangement. A company secretary or other officer has no interest unless the source shows control.
    * - power of attorney; attorney-in-fact; authorised signatory of
