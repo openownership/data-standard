@@ -19,7 +19,7 @@ When representing trusts:
 Relationships between trusts and their parties MUST be represented using only these ``interest.type`` codes:
 
 * ``settlor``
-* ``beneficiary``
+* ``beneficiaryOfLegalArrangement``
 * ``trustee``
 * ``protector``
 * ``otherInfluenceOrControl``
@@ -34,7 +34,7 @@ Trust without legal personality
 A trust with a known beneficiary, known trustee and known settlor. The trust does not have a legal personality.
 
 .. figure:: ../../_assets/trust-scenario1.svg
-   :alt: Diagram show linked statements. Entity statement labeled Trust A with  type 'arrangement' and subtype 'trust.' Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', and person C by a relationship statement with interest type 'beneficiary'
+   :alt: Diagram show linked statements. Entity statement labeled Trust A with  type 'arrangement' and subtype 'trust.' Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', and person C by a relationship statement with interest type 'beneficiaryOfLegalArrangement'
    :figwidth: 80%
    :align: center
    
@@ -43,7 +43,7 @@ Trust with legal personality and protector
 A trust with a known beneficiary, known trustee, known settlor and known protector. The trust has a legal personality. 
 
 .. figure:: ../../_assets/trust-scenario2.svg
-   :alt: Diagram show linked statements. Entity statement labeled Trust A with  type 'legalEntity' and subtype 'trust.'  Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest type 'protector', and person D by a relationship statement with interest type 'beneficiary.' 
+   :alt: Diagram show linked statements. Entity statement labeled Trust A with  type 'legalEntity' and subtype 'trust.'  Trust A is connected to person A by a relationship statement with interest type 'settlor', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest type 'protector', and person D by a relationship statement with interest type 'beneficiaryOfLegalArrangement.' 
    :figwidth: 100%
    :align: center
    
@@ -53,7 +53,7 @@ Trust with combined roles and anonymous beneficiary
 A trust where the settlor is also a trustee and the beneficiary is anonymous due to a disclosure exemption.
 
 .. figure:: ../../_assets/trust-scenario3.svg
-   :alt: Diagram show linked statements. Trust A is connected to person A by a relationship statement with interest types 'settlor' and 'trustee', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest types 'beneficiary.' Person D has a person statement with person type 'anonymous person' and unspecified person details 'subject exempt from disclosure'
+   :alt: Diagram show linked statements. Trust A is connected to person A by a relationship statement with interest types 'settlor' and 'trustee', person B by a relationship statement with interest type 'trustee', person C by a relationship statement with interest types 'beneficiaryOfLegalArrangement.' Person D has a person statement with person type 'anonymous person' and unspecified person details 'subject exempt from disclosure'
    :figwidth: 95%
    :align: center
 
@@ -62,7 +62,7 @@ Trust-like arrangement
 A trust-like arrangement with local names for the entity type and interest types. 
 
 .. figure:: ../../_assets/trust-scenario4.svg
-   :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType type 'arrangement', subtype 'trust', and details 'fiducie-sûreté.' Trust A is connected to person A by a relationship statement with interest type 'settlor' and interest details 'constituant', person B by a relationship statement with interest type 'trustee' and interest details 'fiduciaire', and person C by a relationship statement with interest type 'beneficiary' and interest details 'beneficiaire'
+   :alt: Diagram show linked statements. Entity statement labeled Trust A with entityType type 'arrangement', subtype 'trust', and details 'fiducie-sûreté.' Trust A is connected to person A by a relationship statement with interest type 'settlor' and interest details 'constituant', person B by a relationship statement with interest type 'trustee' and interest details 'fiduciaire', and person C by a relationship statement with interest type 'beneficiaryOfLegalArrangement' and interest details 'beneficiaire'
    :figwidth: 82%
    :align: center
 
